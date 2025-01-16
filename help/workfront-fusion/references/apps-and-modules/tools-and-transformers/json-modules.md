@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion JSON应用程序提供了用于处理JSON格
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: c895d496de66b475f907effaaf43fe2f7b7b457e
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -17,44 +17,48 @@ ht-degree: 0%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 计划*</td>
-  <td> <p>[!UICONTROL Pro] 或更高</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td>
-   <td> <p>[!UICONTROL Plan]， [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成]，[!UICONTROL [!DNL Workfront Fusion]用于工作自动化]</p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
-## 解析JSON
++++
+
+## 解析JSON时的注意事项
 
 * [数据结构](#data-structure)
 * [收藏集与数组](#collection-vs-array)
@@ -75,41 +79,45 @@ ht-degree: 0%
 
 如果JSON字符串字段包含集合`{ ... }`，则输出是包含集合项的单个捆绑。
 
->[!INFO]
->
->**示例：**
->
->```
->{
->    "name" : "Peter",
->
->    "ID" : 1
->}
->```
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+```
+{
+    "name" : "Peter",
+
+    "ID" : 1>}
+```
+
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/json-collection.png)
+
+>[!ENDSHADEBOX]
 
 如果JSON字符串字段包含数组`[ ... ]`，则输出是一系列捆绑包。 每个包都包含数组的一个元素。
 
->[!INFO]
->
->**示例：**
->
->```
->[
->  {
->    "name" : "Peter",
->    "ID" : 1
->  },
->
->  {
->    "name" : "Mike",
->    "ID" : 2
->  }
->]
->```
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+```
+[
+  {
+    "name" : "Peter",
+    "ID" : 1
+  },
+
+  {
+    "name" : "Mike",
+    "ID" : 2
+  }
+]
+```
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/json-array.png)
+
+>[!ENDSHADEBOX]
 
 ## [!UICONTROL JSON]模块及其字段
 
@@ -191,6 +199,10 @@ ht-degree: 0%
    <td role="rowheader">数据结构</td> 
    <td> <p>选择要用于创建JSON的数据结构。 有关详细信息，请参阅本文中的<a href="#data-structure" class="MCXref xref">数据结构</a>。</p> </td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">缩进</td> 
+   <td> <p>选择要用于此JSON的缩进。</p> </td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -222,6 +234,10 @@ ht-degree: 0%
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
+   <td role="rowheader">缩进</td> 
+   <td> <p>选择要用于此JSON的缩进。</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Object]</td> 
    <td> <p>输入或映射要转换为JSON的对象。</p> </td> 
   </tr> 
@@ -230,55 +246,48 @@ ht-degree: 0%
 
 ## 将数据记录转换为JSON
 
->[!INFO]
->
->**示例：**&#x200B;以下示例说明如何将数据记录从[!DNL Google Sheets]转换为JSON格式：
->
->1. 将[!DNL Google Sheets] > [!UICONTROL Select rows]模块放入方案中以获取数据。 设置模块以从[!DNL Google]电子表格中检索行。 将&#x200B;**[!UICONTROL Maximum number of returned rows]**&#x200B;设置为一个较小的数字，但出于测试目的而将其设置为大于1（例如，3）。 执行[!DNL Google Sheets]模块，方法是右键单击该模块并选择“**[!UICONTROL Run this module only]**”。 验证模块的输出。
->
->1. 在[!DNL Google Sheets]模块之后连接[!UICONTROL Array Aggregator]模块。 在模块设置的&#x200B;**[!UICONTROL Source node]**&#x200B;字段中选择[!DNL Google Sheets]模块。 请暂时保留其他字段。
->
->1. 在[!UICONTROL Array Aggregator]模块之后连接[!UICONTROL JSON] > [!UICONTROL Create JSON]模块。 模块设置需要一个描述JSON格式的数据结构。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以打开数据结构设置。 创建此数据结构的最简单方法是自动从JSON示例生成它。 单击&#x200B;**[!UICONTROL Generator]**&#x200B;并将您的JSON示例粘贴到&#x200B;**[!UICONTROL Sample data]**&#x200B;字段：
->
->     **示例：**
->
->     ```
->     {
->     
->     "books": [
->     
->     {
->     
->     "id": "ID",
->     
->     "title": "Title",
->     
->     "author": "Author"
->     
->     }
->     
->     ]
->     
->     }
->     
->     ```
->
->1. 单击 **[!UICONTROL Save]**。数据结构中的[!UICONTROL Specification]字段现在包含生成的结构。
->1. 将数据结构的名称更改为更具体的名称，然后单击&#x200B;**[!UICONTROL Save]**。 与root数组属性对应的字段在JSON模块的设置中显示为可映射字段。
->
->1. 单击字段旁边的&#x200B;**[!UICONTROL Map]**&#x200B;按钮，并将数组聚合器输出中的`Array[]`项映射到它。
->
->1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭[!UICONTROL JSON]模块的设置。
->
->1. 打开[!UICONTROL Array Aggregator]模块的设置。 将&#x200B;**[!UICONTROL Target structure]**&#x200B;从[!UICONTROL Custom]更改为与根数组属性对应的[!UICONTROL JSON]模块的字段。 将[!DNL Google Sheets]模块中的项映射到相应的字段。
->
->1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭[!UICONTROL Array Aggregator]模块的设置。
->
->1. 运行方案。
->
->[!UICONTROL JSON]模块输出正确的JSON格式。
->
->1. 打开[!DNL Google Sheets]模块的设置并增加[!UICONTROL Maximum number of returned rows]个数字，使其大于电子表格中用于处理所有数据的行数。
+>[!BEGINSHADEBOX]
+
+**示例：**&#x200B;以下示例说明如何将数据记录从[!DNL Google Sheets]转换为JSON格式：
+
+1. 将[!DNL Google Sheets] > [!UICONTROL Select rows]模块放入方案中以获取数据。 设置模块以从[!DNL Google]电子表格中检索行。 将&#x200B;**[!UICONTROL Maximum number of returned rows]**&#x200B;设置为一个较小的数字，但出于测试目的而将其设置为大于1（例如，3）。 执行[!DNL Google Sheets]模块，方法是右键单击该模块并选择“**[!UICONTROL Run this module only]**”。 验证模块的输出。
+
+1. 在[!DNL Google Sheets]模块之后连接[!UICONTROL Array Aggregator]模块。 在模块设置的&#x200B;**[!UICONTROL Source node]**&#x200B;字段中选择[!DNL Google Sheets]模块。 请暂时保留其他字段。
+
+1. 在[!UICONTROL Array Aggregator]模块之后连接[!UICONTROL JSON] > [!UICONTROL Create JSON]模块。 模块设置需要一个描述JSON格式的数据结构。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以打开数据结构设置。 创建此数据结构的最简单方法是自动从JSON示例生成它。 单击&#x200B;**[!UICONTROL Generator]**&#x200B;并将您的JSON示例粘贴到&#x200B;**[!UICONTROL Sample data]**&#x200B;字段：
+
+   **示例：**
+
+   ```
+   {
+   "books": [
+   {
+   "id": "ID",
+   "title": "Title",
+   "author": "Author"
+   }
+   ]
+   }
+   ```
+
+1. 单击 **[!UICONTROL Save]**。数据结构中的[!UICONTROL Specification]字段现在包含生成的结构。
+1. 将数据结构的名称更改为更具体的名称，然后单击&#x200B;**[!UICONTROL Save]**。 与root数组属性对应的字段在JSON模块的设置中显示为可映射字段。
+
+1. 单击字段旁边的&#x200B;**[!UICONTROL Map]**&#x200B;按钮，并将数组聚合器输出中的`Array[]`项映射到它。
+
+1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭[!UICONTROL JSON]模块的设置。
+
+1. 打开[!UICONTROL Array Aggregator]模块的设置。 将&#x200B;**[!UICONTROL Target structure]**&#x200B;从[!UICONTROL Custom]更改为与根数组属性对应的[!UICONTROL JSON]模块的字段。 将[!DNL Google Sheets]模块中的项映射到相应的字段。
+
+1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭[!UICONTROL Array Aggregator]模块的设置。
+
+1. 运行方案。
+
+   [!UICONTROL JSON]模块输出正确的JSON格式。
+
+1. 打开[!DNL Google Sheets]模块的设置并增加[!UICONTROL Maximum number of returned rows]个数字，使其大于电子表格中用于处理所有数据的行数。
+
+>[!ENDSHADEBOX]
 
 ## 故障排除
 
@@ -290,8 +299,10 @@ ht-degree: 0%
 
 在JSON中使用条件语句（如`if`）时，请将引号放在条件语句之外。
 
->[!INFO]
->
->**示例：**
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+
+>[!ENDSHADEBOX]
