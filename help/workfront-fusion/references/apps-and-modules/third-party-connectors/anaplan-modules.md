@@ -3,9 +3,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动使用
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 99f2e558db3d2b126adf748d7e013a4a39735bcd
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
@@ -456,8 +456,8 @@ Anaplan连接器使用以下对象：
        <li> <p><b>[!UICONTROL Line items]</b> </p> <p>选择或映射包含要检索的[!DNL line]项的模型的ID。</p> </li> 
        <li> <p><b>[!UICONTROL Model lists]</b> </p> <p>选择或映射包含要检索的模型列表的Workspace ID和模型ID。</p> </li> 
        <li> <p><b>[!UICONTROL Model calendar]</b> </p> <p>选择或映射包含要检索的模型日历的Workspace的ID。</p> </li> 
-       <li> <p><b>模型版本</b> </p> </li> 
-       <li> <p>选择或映射[!UICONTROL ]包含要检索的模型版本的模型ID。</p> </li> 
+       <li> <p><b>[!UICONTROL Model versions]</b> </p> </li> 
+       <li> <p>选择或映射包含要检索的模型版本的模型ID。</p> </li> 
        <li> <p><b>[!UICONTROL Users]</b> </p> </li> 
        <li> <p><b>[!UICONTROL Views]</b> </p> <p>选择是要按模块还是按模型选择视图，然后选择或映射包含要检索的视图的模块或模型的ID。</p> </li> 
       </ul> 

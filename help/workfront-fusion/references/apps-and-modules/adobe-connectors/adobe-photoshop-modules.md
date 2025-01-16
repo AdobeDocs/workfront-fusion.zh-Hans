@@ -4,9 +4,9 @@ description: 借助Adobe Photoshop模块，您可以根据Adobe Photoshop帐户�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 371adb5a5558674ecb8aa38b503b8a958c9fc5f5
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3714'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Adobe Photoshop连接器使用以下对象：
               <p>输入文件的密码。</p>
             </li>
             <li value="5">
-              <p>单击<b>保存</b>以提取文件并返回[!UICONTROL ]e连接设置。</p>
+              <p>单击<b>保存</b>以提取文件并返回连接设置。</p>
             </li>
           </ol>
         </td>

@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动使用
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: b1b206a0554832aadc9c42ce0b4f952301474086
 workflow-type: tm+mt
-source-wordcount: '2730'
+source-wordcount: '2727'
 ht-degree: 0%
 
 ---
@@ -696,8 +696,8 @@ Workfront Proof连接器使用以下对象：
    <td> <p>有关将[!DNL Workfront Proof]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>搜索</td> 
-   <td> <p>选择[!UICONTROL ]您希望模块搜索的记录类型。</p> 
+   <td>[!UICONTROL Search for]</td> 
+   <td> <p>选择要模块搜索的记录类型。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Proof]</strong> </p> <p>输入要搜索的校对的校对名称。</p> </li> 
      <li> <p><strong>[!UICONTROL Recipient]</strong> </p> <p>输入要搜索的收件人的电子邮件地址。</p> </li> 
