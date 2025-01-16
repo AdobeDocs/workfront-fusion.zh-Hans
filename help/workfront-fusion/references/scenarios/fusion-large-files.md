@@ -4,9 +4,9 @@ description: Workfront和HTTP连接器当前支持大文件。
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 4422a0d9236c4fe783b3b8d2757a86c91bcca748
+source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,9 @@ Workfront Fusion中现在提供了增强的数据传输功能，支持在场景�
 * Adobe Experience Manager Assets >上传文档
 * Workfront Proof >上传文件
 * Adobe Authenticator >进行自定义API调用
+* SharePoint >创建文件，SharePoint >获取文件
+* Salesforce >上传文件
+* AWS S3 >上传文件和AWS S3 >获取文件
 * HTTP
 
 其他连接器将在未来版本中受支持。

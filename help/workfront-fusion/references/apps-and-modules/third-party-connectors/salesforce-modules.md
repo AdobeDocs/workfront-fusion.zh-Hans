@@ -4,9 +4,9 @@ description: 在Adobe Workfront Fusion场景中，您可以自动使用Salesforc
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
 workflow-type: tm+mt
-source-wordcount: '2457'
+source-wordcount: '2604'
 ht-degree: 0%
 
 ---
@@ -234,6 +234,7 @@ Salesforce连接器使用以下对象：
 * [[!UICONTROL Custom API Call]](#custom-api-call)
 * [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
 * [[!UICONTROL Download Attachment/Document]](#download-attachmentdocument)
+* [上传文件](#upload-file)
 
 #### [!UICONTROL Create a Record]
 
@@ -498,6 +499,41 @@ Salesforce连接器使用以下对象：
   </tr> 
  </tbody> 
 </table>
+
+#### 上传文件
+
+此操作模块会将单个文件上传到Salesforce。
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL  Adobe Workfront Fusion]的连接 — 基本说明</a></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Document linking]</td> 
+   <td>选择是否应用内容文档链接。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL linkedEntityId]</td> 
+   <td>如果使用文档链接，请输入或映射链接对象的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ShareType]</td> 
+   <td>如果使用文档链接，请选择文件的权限。<ul><li><b>查看器权限</b><p>用户可以查看文件。</p></li><li><b>协作者权限</b><p>用户可以查看和编辑文件。</p></li><li><b>推断的权限</b><p>权限基于用户对相关记录（如库）的权限。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Visibility]</td> 
+   <td>如果使用文档链接，请输入或映射文档的可见性。<ul><li><b>AllUsers</b><p>适用于所有具有权限的用户</p></li><li><b>InternalUsers</b><p>可供具有权限的内部用户使用。</p></li><li><b>共享用户</b><p>可供可以查看文件发布到的馈送的用户使用。</p></li></ul></td> 
+  </tr>
 
 ### 搜索
 
