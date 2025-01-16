@@ -234,7 +234,7 @@ ht-degree: 0%
 >
 >**示例：**&#x200B;以下示例说明如何将数据记录从[!DNL Google Sheets]转换为JSON格式：
 >
->1. 将[!DNL Google Sheets] > [!UICONTROL Select rows]模块放入方案中以获取数据。 设置模块以从[!DNL Google]电子表格中检索行。 将&#x200B;**[!UICONTROL Maximum number of returned rows]**&#x200B;设置为一个较小的数字，但出于测试目的而将其设置为大于1（例如，3）。 执行[!DNL Google Sheets]模块，方法是右键单击该模块并选择"**[!UICONTROL Run this module only]**"。 验证模块的输出。
+>1. 将[!DNL Google Sheets] > [!UICONTROL Select rows]模块放入方案中以获取数据。 设置模块以从[!DNL Google]电子表格中检索行。 将&#x200B;**[!UICONTROL Maximum number of returned rows]**&#x200B;设置为一个较小的数字，但出于测试目的而将其设置为大于1（例如，3）。 执行[!DNL Google Sheets]模块，方法是右键单击该模块并选择“**[!UICONTROL Run this module only]**”。 验证模块的输出。
 >
 >1. 在[!DNL Google Sheets]模块之后连接[!UICONTROL Array Aggregator]模块。 在模块设置的&#x200B;**[!UICONTROL Source node]**&#x200B;字段中选择[!DNL Google Sheets]模块。 请暂时保留其他字段。
 >
