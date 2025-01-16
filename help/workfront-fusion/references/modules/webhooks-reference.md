@@ -1,0 +1,116 @@
+---
+title: 即时触发器(webhook)
+description: 许多服务都提供Webhook，以便在服务发生特定更改时即时发送通知。 若要处理这些通知，我们建议您使用即时触发器。 本文介绍了即时触发器在Adobe Workfront Fusion中的使用和功能。
+author: Becky
+feature: Workfront Fusion
+exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
+source-git-commit: 4c0f050e40d28f236d6086e7dccea53d49252aa8
+workflow-type: tm+mt
+source-wordcount: '842'
+ht-degree: 0%
+
+---
+
+# 即时触发器(webhook)
+
+许多服务都提供Webhook，以便在服务中发生特定更改（事件）时即时发送通知。 要处理这些事件，我们建议您使用即时触发器。 即时触发器显示给定连接器的模块列表中的`Instant`标记。
+
+![](assets/instant.png)
+
+>[!TIP]
+>
+>您可以检查连接器中的模块列表，以查看它是否具有即时触发器，也可以检查[Fusion应用程序及其模块引用](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)下的连接器文档。
+>
+>有关Adobe Workfront instant trigger文档，请参阅Workfront模块一文中的[Triggers](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#triggers)。
+
+如果连接器不包含webhook，则可以执行以下操作之一：
+
+* 使用Webhook模块创建自定义webhook。
+有关详细信息，请参阅[Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)。
+* 使用轮询触发器定期轮询服务。
+有关详细信息，请参阅[计划方案](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)
+
+有关Workfront Fusion中Webhook的视频介绍，请参阅：
+
+* [Webhook简介](https://video.tv.adobe.com/v/3427025/){target=_blank}
+* [中间Webhook](https://video.tv.adobe.com/v/3427030/){target=_blank}
+
+## 计划即时触发器
+
+配置即时触发器时，系统会提示您选择它何时运行。
+
+![](assets/schedule-setting.png)
+
+选择`Immediately`以在[!DNL Workfront Fusion]收到来自服务的新事件时立即运行方案。 这些事件会立即发送到队列中，然后在场景中按接收数据的顺序一次处理一个。
+
+当场景执行时，计算队列中等待的挂起事件的总数，场景执行的周期与挂起事件的数量相同，每个周期处理一个事件。
+
+有关周期的详细信息，请参阅[方案执行、周期和阶段](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)。
+
+>[!NOTE]
+>
+>* 循环与方案运行不同。 一个方案运行中可以有多个周期。
+>* 当您执行计划运行`Immediately`的即时触发程序的方案时，将应用以下例外：
+>
+>     * 根据定价计划，两次执行之间的间隔不受最小间隔的限制。
+>
+>       例如，一旦场景完成执行，将再次检查webhook的队列。 如果存在任何挂起的Webhook，则场景将立即再次执行，并再次处理所有挂起的Webhook。
+>   
+>     * 忽略最大循环数方案设置并将其设置为100，这意味着在单个方案执行期间处理挂起的网页挂接不超过100个（每个循环处理1个事件）。
+>
+
+
+如果您使用[!UICONTROL Immediately]以外的任何其他计划设置，则方案将以您指定的时间间隔执行。 由于在该间隔内队列中可以收集到多个Webhook，因此我们建议将[!UICONTROL Maximum number of cycles]选项设置为比默认值1更高的值，以便在一次方案运行中处理多个Webhook：
+
+1. 单击方案底部的[!UICONTROL Scenario settings]图标![](assets/scenario-settings-icon.png)。
+1. 在显示的&#x200B;**[!UICONTROL Scenario settings]**&#x200B;面板中，在&#x200B;**[!UICONTROL Max number of cycles]**&#x200B;字段中输入一个数字，以指示每次执行方案时要运行的队列中的事件数。
+
+下次运行场景时，将处理队列中剩余的事件，最大处理次数为在“最大循环数”字段中设置的数量。
+
+## Webhook 护栏
+
+为确保获得良好性能，Workfront Fusion为Webhook设置了以下护栏。
+
+### 速率限制
+
+当前的速率限制为每秒5个Webhook。 如果超过限制，将返回`429`状态代码。
+
+### 非活动Webhook的到期
+
+删除了超过120小时未分配给任何场景的webhook。
+
+### Webhook负载
+
+[!DNL Workfront Fusion]存储webhook负载30天。 创建webhook有效负载超过30天后对其进行访问会导致错误[!UICONTROL `Failed to read file from storage.`]
+
+### 错误处理
+
+当使用即时触发器的方案中存在错误时，该方案：
+
+* 当方案设置为运行[!UICONTROL Immediately]时立即停止。
+* 当场景设置为按计划运行时，在3次不成功尝试（3个错误）后停止。
+
+如果在场景执行期间发生错误，则事件将在即时触发器的回滚阶段重新放入队列。 在这种情况下，您可以修复场景并再次运行。
+
+有关详细信息，请参阅方案执行、循环和阶段一文中的[回滚](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback)。
+
+如果您的场景中存在Webhook响应模块，则将错误发送到Webhook响应。 Webhook响应模块始终在最后执行（当Scenario设置中的[!UICONTROL Auto commit]选项未启用时）。
+
+有关详细信息，请参阅Webhooks一文中的[响应Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md#responding-to-webhooks)。
+
+### Webhook停用
+
+如果出现以下任一情况，Webhook将自动停用：
+
+* webhook已超过5天未连接到任何场景。
+* webhook仅用于非活动场景，这些场景已非活动超过30天。
+
+如果停用的Webhook未连接到任何场景，并且已处于停用状态超过30天，则会自动删除和取消注册它们。
+
+## 自定义Webhook
+
+您可以创建自己的Webhook。 有关详细信息，请参阅[Webhooks](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)。
+
+## 资源
+
+有关周期的详细信息，请参阅[方案执行、周期和阶段](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)。
