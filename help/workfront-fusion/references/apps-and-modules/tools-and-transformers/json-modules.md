@@ -81,10 +81,9 @@ ht-degree: 0%
 >
 >```
 >{
->       "name" : "Peter",
+>    "name" : "Peter",
 >
->    
-   "ID" : 1
+>    "ID" : 1
 >}
 >```
 >
@@ -98,16 +97,15 @@ ht-degree: 0%
 >
 >```
 >[
->   {
->       "name" : "Peter",
->       "ID" : 1
->   },
+>  {
+>    "name" : "Peter",
+>    "ID" : 1
+>  },
 >
->  
- {
->       "name" : "Mike",
->       "ID" : 2
->   }
+>  {
+>    "name" : "Mike",
+>    "ID" : 2
+>  }
 >]
 >```
 >
@@ -236,50 +234,51 @@ ht-degree: 0%
 >
 >**示例：**&#x200B;以下示例说明如何将数据记录从[!DNL Google Sheets]转换为JSON格式：
 >
->1. 将[!DNL Google Sheets] > [!UICONTROL Select rows]模块放入方案中以获取数据。 设置模块以从[!DNL Google]电子表格中检索行。 将&#x200B;**[!UICONTROL Maximum number of returned rows]**&#x200B;设置为一个较小的数字，但出于测试目的而将其设置为大于1（例如，3）。 执行[!DNL Google Sheets]模块，方法是右键单击该模块并选择“**[!UICONTROL Run this module only]**”。 验证模块的输出。
+>1. 将[!DNL Google Sheets] > [!UICONTROL Select rows]模块放入方案中以获取数据。 设置模块以从[!DNL Google]电子表格中检索行。 将&#x200B;**[!UICONTROL Maximum number of returned rows]**&#x200B;设置为一个较小的数字，但出于测试目的而将其设置为大于1（例如，3）。 执行[!DNL Google Sheets]模块，方法是右键单击该模块并选择"**[!UICONTROL Run this module only]**"。 验证模块的输出。
 >
-1. 在[!DNL Google Sheets]模块之后连接[!UICONTROL Array Aggregator]模块。 在模块设置的&#x200B;**[!UICONTROL Source node]**&#x200B;字段中选择[!DNL Google Sheets]模块。 请暂时保留其他字段。
+>1. 在[!DNL Google Sheets]模块之后连接[!UICONTROL Array Aggregator]模块。 在模块设置的&#x200B;**[!UICONTROL Source node]**&#x200B;字段中选择[!DNL Google Sheets]模块。 请暂时保留其他字段。
 >
-1. 在[!UICONTROL Array Aggregator]模块之后连接[!UICONTROL JSON] > [!UICONTROL Create JSON]模块。 模块设置需要一个描述JSON格式的数据结构。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以打开数据结构设置。 创建此数据结构的最简单方法是自动从JSON示例生成它。 单击&#x200B;**[!UICONTROL Generator]**&#x200B;并将您的JSON示例粘贴到&#x200B;**[!UICONTROL Sample data]**&#x200B;字段：
+>1. 在[!UICONTROL Array Aggregator]模块之后连接[!UICONTROL JSON] > [!UICONTROL Create JSON]模块。 模块设置需要一个描述JSON格式的数据结构。 单击&#x200B;**[!UICONTROL Add]**&#x200B;以打开数据结构设置。 创建此数据结构的最简单方法是自动从JSON示例生成它。 单击&#x200B;**[!UICONTROL Generator]**&#x200B;并将您的JSON示例粘贴到&#x200B;**[!UICONTROL Sample data]**&#x200B;字段：
 >
-**示例：**
+>     **示例：**
 >
-```
-{
-
-"books": [
-
-{
-
-"id": "ID",
-
-"title": "Title",
-
-"author": "Author"
-
-}
-
-]
-
-}
-```
+>     ```
+>     {
+>     
+>     "books": [
+>     
+>     {
+>     
+>     "id": "ID",
+>     
+>     "title": "Title",
+>     
+>     "author": "Author"
+>     
+>     }
+>     
+>     ]
+>     
+>     }
+>     
+>     ```
 >
-1. 单击 **[!UICONTROL Save]**。数据结构中的[!UICONTROL Specification]字段现在包含生成的结构。
-1. 将数据结构的名称更改为更具体的名称，然后单击&#x200B;**[!UICONTROL Save]**。 与root数组属性对应的字段在JSON模块的设置中显示为可映射字段。
+>1. 单击 **[!UICONTROL Save]**。数据结构中的[!UICONTROL Specification]字段现在包含生成的结构。
+>1. 将数据结构的名称更改为更具体的名称，然后单击&#x200B;**[!UICONTROL Save]**。 与root数组属性对应的字段在JSON模块的设置中显示为可映射字段。
 >
-1. 单击字段旁边的&#x200B;**[!UICONTROL Map]**&#x200B;按钮，并将数组聚合器输出中的`Array[]`项映射到它。
+>1. 单击字段旁边的&#x200B;**[!UICONTROL Map]**&#x200B;按钮，并将数组聚合器输出中的`Array[]`项映射到它。
 >
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭[!UICONTROL JSON]模块的设置。
+>1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭[!UICONTROL JSON]模块的设置。
 >
-1. 打开[!UICONTROL Array Aggregator]模块的设置。 将&#x200B;**[!UICONTROL Target structure]**&#x200B;从[!UICONTROL Custom]更改为与根数组属性对应的[!UICONTROL JSON]模块的字段。 将[!DNL Google Sheets]模块中的项映射到相应的字段。
+>1. 打开[!UICONTROL Array Aggregator]模块的设置。 将&#x200B;**[!UICONTROL Target structure]**&#x200B;从[!UICONTROL Custom]更改为与根数组属性对应的[!UICONTROL JSON]模块的字段。 将[!DNL Google Sheets]模块中的项映射到相应的字段。
 >
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭[!UICONTROL Array Aggregator]模块的设置。
+>1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭[!UICONTROL Array Aggregator]模块的设置。
 >
-1. 运行方案。
+>1. 运行方案。
 >
-[!UICONTROL JSON]模块输出正确的JSON格式。
+>[!UICONTROL JSON]模块输出正确的JSON格式。
 >
-1. 打开[!DNL Google Sheets]模块的设置并增加[!UICONTROL Maximum number of returned rows]个数字，使其大于电子表格中用于处理所有数据的行数。
+>1. 打开[!DNL Google Sheets]模块的设置并增加[!UICONTROL Maximum number of returned rows]个数字，使其大于电子表格中用于处理所有数据的行数。
 
 ## 故障排除
 
@@ -293,6 +292,6 @@ ht-degree: 0%
 
 >[!INFO]
 >
-**示例：**
+>**示例：**
 >
-![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
+>![](/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png)
