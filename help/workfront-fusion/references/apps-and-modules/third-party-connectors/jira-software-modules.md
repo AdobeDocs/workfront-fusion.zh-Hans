@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 4e45e691ed453cec5af1fa7b52204031af83f869
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1881'
 ht-degree: 1%
 
 ---
@@ -15,50 +15,54 @@ ht-degree: 1%
 
 在[!DNL Adobe Workfront Fusion]方案中，您可以自动使用[!DNL Jira Software]的工作流，并将其连接到多个第三方应用程序和服务。
 
+这些说明适用于Jira Cloud和Jira服务器模块。
+
 有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
 
 有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
 
-<!-- Bob Fix this compared to original -->
-
 ## 访问要求
+
++++ 展开以查看本文中各项功能的访问要求。
 
 您必须具有以下权限才能使用本文中的功能：
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 计划*</td>
-  <td> <p>[!UICONTROL Pro] 或更高</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td>
-   <td> <p>[!UICONTROL Plan]， [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成] </p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 先决条件
 
@@ -110,10 +114,10 @@ Jira连接器使用以下对象：
 
 #### 在[!DNL Jira]中创建API令牌
 
-1. 转到[https://id.atlassian.com/manage/api-tokens](https://id.atlassian.com/manage/api-tokens)并登录。
-1. 单击 **[!UICONTROL Create API token]**。
-1. 键入令牌的名称，如&#x200B;*Workfront Fusion*。
-1. 使用&#x200B;**[!UICONTROL Copy to clipboard]**&#x200B;按钮复制令牌。
+1. 在Jira中创建API令牌。
+
+   有关说明，我们建议您在Jira文档中搜索“创建API令牌”。
+1. 创建令牌后，将令牌复制到安全位置。
 
    >[!IMPORTANT]
    >
@@ -123,9 +127,11 @@ Jira连接器使用以下对象：
 
 #### 在[!DNL Workfront Fusion]中配置[!DNL Jira] API令牌
 
-1. 在[!DNL Workfront Fusion]中，将[!DNL Jira]模块添加到方案以打开&#x200B;**[!UICONTROL Create a connection]**&#x200B;框。
+1. 在[!DNL Workfront Fusion]中的任意[!DNL Jira Cloud]模块中，单击[!UICONTROL connection]字段旁边的&#x200B;**[!UICONTROL Add]**。
 1. 指定以下信息：
 
+   * **环境**
+   * **类型**
    * **[!UICONTROL Service URL]：**&#x200B;这是用于访问Jira帐户的基本URL。 示例： `yourorganization.atlassian.net`
    * **[!UICONTROL Username]**
    * **[!UICONTROL API token]：**&#x200B;这是您在[在此文章的 [!DNL Jira]](#create-an-api-token-in-jira)部分中创建API令牌时创建的API令牌。
@@ -133,10 +139,6 @@ Jira连接器使用以下对象：
 1. 单击[!UICONTROL Continue]以创建连接并返回模块。
 
 ### 将[!DNL Jira Server]连接到[!DNL Workfront Fusion]
-
-<!--
-<p style="color: #ff1493;">Becky: Find out and document how to find these things</p>
--->
 
 要授权[!DNL Workfront Fusion]与[!DNL Jira Server]之间的连接，您需要消费者密钥、私钥和服务URL。 您可能需要联系[!DNL Jira]管理员以获取此信息。
 
@@ -160,8 +162,7 @@ Jira连接器使用以下对象：
 
    * `openssl pkcs8 -topk8 -nocrypt -in jira_privatekey.pem -out jira_privatekey.pcks8`
 
-     此命令将私钥（PKCS8格式）提取到`jira_privatekey.pcks8`
-文件。
+     此命令将私钥（PKCS8格式）提取到`jira_privatekey.pcks8`文件。
 
    * `openssl x509 -pubkey -noout -in jira_publickey.cer  > jira_publickey.pem`
 
@@ -175,7 +176,7 @@ Jira连接器使用以下对象：
      >   
      >   `openssl x509 -pubkey -noout -in jira_publickey.cer`
      >   
-     >1. 复制终端输出（包括`-------BEGIN PUBLIC KEY--------`和`-------END PUBLIC KEY--------`）
+     >1. 复制终端输出，包括`-------BEGIN PUBLIC KEY--------`和`-------END PUBLIC KEY--------`。
      >   
      >1. 将终端输出粘贴到名为`jira_publickey.pem`的文件中。
 
@@ -251,6 +252,14 @@ Jira连接器使用以下对象：
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
       <td> <p>输入连接的名称</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Environment]</p> </td> 
+      <td> <p>选择您使用的是生产环境还是非生产环境。</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>[!UICONTROL Type]</p> </td> 
+      <td> <p>选择您使用的是服务帐户还是个人帐户。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Consumer Key]</td> 
@@ -340,7 +349,7 @@ Jira连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Issue ID or Keys]</td> 
-   <td>为要添加到冲刺的每个问题添加问题ID或密钥。</td> 
+   <td>对于要查看体验的每个问题或密钥，单击<b>[!UICONTROL Add item]</b>并输入问题ID或密钥。 在一个模块中最多可输入50个。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -363,7 +372,7 @@ Jira连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td> <p>选择要模块创建的记录类型。 选择记录类型后，该记录类型特有的其他字段将显示在模块中。</p> 
+   <td> <p>选择您希望模块创建的记录类型，然后填写特定于此记录类型的其他字段显示在模块中。</p> 
     <ul> 
      <li>[!UICONTROL Attachment]</li> 
      <li>[!UICONTROL Comment]</li> 
@@ -378,7 +387,7 @@ Jira连接器使用以下对象：
 
 #### [!UICONTROL Custom API Call]
 
-此操作模块允许您对[!DNL Jira Software] API进行经过身份验证的自定义调用。 这样，您可以创建其他[!DNL Jira Software]模块无法实现的数据流自动化。
+此操作模块允许您对[!DNL Jira Software] API进行经过身份验证的自定义调用。 使用此模块创建其他[!DNL Jira Software]模块无法实现的数据流自动化。
 
 配置此模块时，会显示以下字段。
 
@@ -416,7 +425,7 @@ Jira连接器使用以下对象：
 
 #### [!UICONTROL Delete a record]
 
-此操作模块删除特定记录。
+此操作模块删除指定的记录。
 
 您指定记录的ID。
 
@@ -542,7 +551,7 @@ Jira连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID or Key]</td> 
-   <td>输入或映射要更新的记录的ID或键。</td> 
+   <td>输入或映射要更新的记录的ID或键，然后填写特定于该记录类型的其他字段显示在模块中。</td> 
   </tr> 
  </tbody> 
 </table>
