@@ -4,10 +4,10 @@ description: Workfront和HTTP连接器当前支持大文件。
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: c4696ad91dd0a2cf753147bffbb6e7b74bb99b02
+source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 0%
+source-wordcount: '1021'
+ht-degree: 1%
 
 ---
 
@@ -27,15 +27,26 @@ Workfront Fusion中现在提供了增强的数据传输功能，支持在场景�
 
 ## 支持大文件的连接器
 
-对于初始版本，以下连接器支持大型文件。
+目前，以下连接器支持大型文件。
 
-* Workfront >上传文档
-* Adobe Experience Manager Assets >上传文档
-* Workfront Proof >上传文件
-* Adobe Authenticator >进行自定义API调用
-* SharePoint >创建文件，SharePoint >获取文件
-* Salesforce >上传文件
-* AWS S3 >上传文件和AWS S3 >获取文件
+* Workfront
+   * 上传文档
+   * 下载文档
+* Adobe Experience Manager Assets
+   * 上传文档
+* Workfront 验证
+   * 上传文件
+   * 下载校对
+* Adobe Authenticator
+   * 进行自定义API调用
+* SharePoint
+   * 创建文件
+   * 获取文件
+* Salesforce
+   * 上传文件
+* AWS S3
+   * 上传文件
+   * 获取文件
 * HTTP
 
 其他连接器将在未来版本中受支持。
@@ -74,7 +85,7 @@ Fusion处理文件时，会将较大的文件添加到永久存储（S3存储段
 
 ### 何时更新Fusion的UI以显示文件传输数据？
 
-我们正在积极努力更新Fusion的“功能板和场景执行详细信息”页面上的文件传输UI，定于2025年第1季度发布目标版本。
+此功能已经完成并部署到生产环境。
 
 ### 有哪些方法可以帮助我设计场景来考虑新的文件处理限制？
 
