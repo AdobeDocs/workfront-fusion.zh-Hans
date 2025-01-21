@@ -1,16 +1,16 @@
 ---
-user-guide-title: Adobe Workfront Fusion文档
+user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
-user-guide-description: 使用文档、教程和其他资源，了解如何在组织中实施和有效使用Adobe Workfront Fusion。
+user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
 source-git-commit: cf2a4515ecd5e239e3370a6a0a3ffe70ecce3770
 workflow-type: tm+mt
 source-wordcount: '1632'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 
-# Adobe Workfront Fusion文档 {#using}
+# Adobe Workfront Fusion 文档 {#using}
 
 * [Adobe Workfront Fusion文档](home.md)
 * Fusion发布活动{#fusion-release-activity}

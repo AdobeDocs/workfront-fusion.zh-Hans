@@ -4,7 +4,7 @@ content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: product-releases
 title: Adobe Workfront Fusion发行版活动概述
-description: Adobe Workfront Fusion可将您的应用程序和Web服务无缝连接，以使您能够专注于新任务，而不是一次又一次地重复相同的任务。
+description: Adobe Workfront Fusion 可将您的应用程序和网络服务无缝连接起来，这样您就可以集中精力处理新任务，而不是一再重复相同的任务。
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
@@ -12,13 +12,13 @@ exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
 source-git-commit: cf2a4515ecd5e239e3370a6a0a3ffe70ecce3770
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 # Adobe Workfront Fusion发行版活动概述
 
-Adobe Workfront Fusion可将您的应用程序和Web服务无缝连接，以使您能够专注于新任务，而不是一次又一次地重复相同的任务。
+Adobe Workfront Fusion 可将您的应用程序和网络服务无缝连接起来，这样您就可以集中精力处理新任务，而不是一再重复相同的任务。
 
 ## Fusion 2025年发行版
 
