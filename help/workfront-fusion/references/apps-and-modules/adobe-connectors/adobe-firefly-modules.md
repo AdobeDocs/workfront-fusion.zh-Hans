@@ -4,7 +4,7 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动使用
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
 workflow-type: tm+mt
 source-wordcount: '1203'
 ht-degree: 0%
@@ -64,9 +64,9 @@ ht-degree: 0%
 
 * 您必须拥有有效的[!DNL Adobe Firefly]帐户。
 
-## Adobe Campaign API信息
+## Adobe FireflyAPI信息
 
-Adobe Campaign连接器使用以下对象：
+Adobe Firefly连接器使用以下内容：
 
 <table style="table-layout:auto"> 
  <col> 
@@ -109,11 +109,11 @@ Adobe Campaign连接器使用以下对象：
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>输入您的[!UICONTROL Adobe] [!UICONTROL Client ID]。 这可以在[!UICONTROL Credentials]详细信息部分找到， [!DNL Adobe Developer Console]</td>
+        <td>输入您的[!UICONTROL Adobe] [!UICONTROL Client ID]。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL Credentials]详细信息部分找到。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>输入您的[!DNL Adobe] [!UICONTROL Client Secret]。 这可以在[!UICONTROL Credentials]详细信息部分找到， [!DNL Adobe Developer Console]</td>
+        <td>输入您的[!DNL Adobe] [!UICONTROL Client Secret]。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL Credentials]详细信息部分找到。</td>
         </tr>
       </tbody>
     </table>
