@@ -4,9 +4,9 @@ description: 使用 [!DNL Adobe Workfront Planning] 模块，您可以基于 [!D
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-source-git-commit: 1972e445e7d4d3e4441feeda72ba9523fd1d9ff4
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
@@ -228,7 +228,7 @@ Adobe Workfront Planning连接器使用以下对象：
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
       </td>
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法。</p> </td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>

@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动使用
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1202'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ Adobe Firefly连接器使用以下内容：
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
       </td>
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法。</p> </td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>

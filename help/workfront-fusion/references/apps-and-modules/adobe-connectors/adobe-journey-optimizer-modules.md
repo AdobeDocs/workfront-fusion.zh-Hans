@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 1d0ccf4d-9f06-4210-86ec-7da7970f6a47
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '3276'
+source-wordcount: '3275'
 ht-degree: 0%
 
 ---
@@ -1340,7 +1340,7 @@ This action module checks that the service represented by the connection is runn
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
       </td>
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法。</p> </td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>

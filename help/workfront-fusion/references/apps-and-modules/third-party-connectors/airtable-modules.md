@@ -4,9 +4,9 @@ description: 除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1858'
 ht-degree: 2%
 
 ---
@@ -447,7 +447,7 @@ webhook URL需要在Workfront Fusion中生成，然后添加到Airtable中的表
 1. 将Watch New Responses模块添加到您的Workfront Fusion方案。
 1. 生成并复制webhook URL。
 
-   <!--For instructions, see [Instant triggers (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->
+   <!--For instructions, see [ (webhooks) in Adobe Workfront Fusion](/help/workfront-fusion/).-->
 
 1. 登录到您的Airtable帐户。
 1. 打开要用于表单的“基础”和表，并创建“表单”视图。
@@ -486,7 +486,7 @@ webhook URL需要在Workfront Fusion中生成，然后添加到Airtable中的表
   </tr> 
   <tr> 
    <td role="rowheader">方法</td> 
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法。</p> </td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">标头</td> 

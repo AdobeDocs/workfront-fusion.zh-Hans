@@ -4,9 +4,9 @@ description: 此 [!DNL Adobe Workfront Fusion] 操作模块向需要API密钥身
 author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
-source-git-commit: c7309422b44b3804a233bcf09443e24808dbffd8
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP请求方法。</p> </td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers] </td> 

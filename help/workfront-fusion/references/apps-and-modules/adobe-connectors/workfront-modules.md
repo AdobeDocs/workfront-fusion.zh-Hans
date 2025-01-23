@@ -4,7 +4,7 @@ description: 您可以使用Adobe Workfront Fusion Adobe Workfront连接器在Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
 source-wordcount: '6208'
 ht-degree: 3%
@@ -104,7 +104,7 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>输入您的Workfront客户端ID。 您可以在Workfront中“设置”区域的“OAuth2应用程序”区域找到此代码。 如果您的Workfront中的OAuth2应用程序没有客户端密钥，则可以生成另一个密钥。 有关说明，请参阅Workfront文档。</td>
+        <td>输入您的Workfront客户端密码。 您可以在Workfront中“设置”区域的“OAuth2应用程序”区域找到此代码。 如果您的Workfront中的OAuth2应用程序没有客户端密钥，则可以生成另一个密钥。 有关说明，请参阅Workfront文档。</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL Authentication URL]</td>

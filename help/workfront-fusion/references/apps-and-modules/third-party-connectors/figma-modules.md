@@ -4,9 +4,9 @@ description: 使用 [!DNL Adobe Workfront Fusion] Figma模块，您可以检索�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -654,7 +654,7 @@ Figma连接器使用以下对象：
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Method]</td>
-      <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法。</p> </td>
+      <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Headers]</td>

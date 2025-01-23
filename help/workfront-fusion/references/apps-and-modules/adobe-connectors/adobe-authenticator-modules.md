@@ -4,9 +4,9 @@ description: 借助Adobe Authenticator模块，您可以使用单个连接通过
 author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1116'
 ht-degree: 1%
 
 ---
@@ -225,7 +225,7 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
     <tr>
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法。</p> </td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
       </td>
     </tr>
     <tr>
@@ -291,7 +291,7 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
     <tr>
       <td role="rowheader">
         <p>[!UICONTROL Method]</p>
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法。</p> </td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
       </td>
     </tr>
     <tr>
