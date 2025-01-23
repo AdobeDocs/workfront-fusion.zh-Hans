@@ -4,9 +4,9 @@ description: 此 [!DNL Adobe Workfront Fusion] 操作模块向需要API密钥身
 author: Becky
 feature: Workfront Fusion
 exl-id: 362b80b5-42f4-4b82-b06c-39c7c5a1eb1a
-source-git-commit: 6398261775584e33515c546de4e7a72d5830ebe0
+source-git-commit: c7309422b44b3804a233bcf09443e24808dbffd8
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,8 @@ ht-degree: 0%
 配置[!UICONTROL HTTP] >[!UICONTROL Make an API Key Authorization request]模块时，[!DNL Adobe Workfront Fusion]显示下面列出的字段。 模块中的粗体标题表示必填字段。
 
 如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[在 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)中将信息从一个模块映射到另一个模块。
+
+![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto"> 
  <col> 

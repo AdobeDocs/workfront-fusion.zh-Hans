@@ -4,9 +4,9 @@ description: 若要向需要OAuth 2.0授权的服务器发出 [!DNL Adobe Workfr
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 3ba5d67806e0d495bd4a91589d06cfb9adb25c0c
+source-git-commit: d9d3f21279ba89f544adc0ffa9345543907aa777
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1980'
 ht-degree: 0%
 
 ---
@@ -36,44 +36,48 @@ ht-degree: 0%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
-<table style="table-layout:auto">  
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] 计划*</td> 
-   <td> <p>[!UICONTROL Pro] 或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td> 
-   <td> <p>[!UICONTROL Plan]， [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成] </p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
-## 正在为[!DNL OAuth]请求创建连接
++++
+
+## 为[!DNL OAuth]请求创建连接
 
 * [有关在HTTP >发出OAuth 2.0请求模块中创建连接的一般说明](#general-instructions-for-creating-a-connection-in-the-http--make-an-oauth-20-request-module)
 * [有关在HTTP >[!UICONTROL Make] OAuth 2.0请求模块中创建与Google的连接的说明](#instructions-for-creating-a-connection-to-google-in-the-http-make-an-oauth-20-request-module)
@@ -87,9 +91,9 @@ ht-degree: 0%
 
       | 美洲/APAC | `https://app.workfrontfusion.com/oauth/cb/oauth2` |
       |---|---|
-      | EMEA | `https://app-eu.workfrontfusion.com/oauth/cb/oauth2` |
+      | **EMEA** | `https://app-eu.workfrontfusion.com/oauth/cb/oauth2` |
 
-   1. 创建客户端后，给定服务显示2个密钥： `[!UICONTROL Client ID]`和`[!UICONTROL Client Secret]`。 某些服务调用这些`[!UICONTROL App Key]`和`[!UICONTROL App Secret]` 。 将密钥和秘密保存到安全位置，以便您可以在Workfront Fusion中创建连接时提供它们。
+   1. 创建客户端后，给定服务显示2个密钥： `[!UICONTROL Client ID]`和`[!UICONTROL Client Secret]`。 某些服务调用这些`[!UICONTROL App Key]`和`[!UICONTROL App Secret]`。 将密钥和秘密保存到安全位置，以便您可以在Workfront Fusion中创建连接时提供它们。
 
 1. 在给定服务的API文档中查找`[!UICONTROL Authorize URI]`和`[!UICONTROL Token URI]`。 这些是[!DNL Workfront Fusion]与[!DNL target]服务通信的URL地址。 这些地址用于OAuth授权。
 
@@ -97,20 +101,8 @@ ht-degree: 0%
    >
    >如果服务使用隐式流，则您只需要`[!UICONTROL Authorize URI]`。
 
-   >[!INFO]
-   >
-   >**示例：** Yahoo地址：
-   >
-   >* 授权URI：
-   >
-   >`https://api.login.yahoo.com/oauth2/request_auth`
-   >
-   >* 令牌URI：
-   >
-   >`https://api.login.yahoo.com/oauth2/get_token`
-
 1. （视情况而定）如果目标服务使用作用域（访问权限），请检查服务如何分隔各个作用域，并确保在高级设置中相应地设置分隔符。 如果未正确设置分隔符，[!DNL Workfront Fusion]将无法创建连接，并且您会收到无效的范围错误。
-1. 完成上述步骤后，即可开始在[!DNL Workfront Fusion]中创建OAuth连接。 将OAuth 2.0 HTTP(S)请求和响应处理模块添加到您的方案。
+1. 完成上述步骤后，即可开始在[!DNL Workfront Fusion]中创建OAuth连接。 添加HTTP >向方案发出OAuth 2请求模块。
 1. 在模块的“连接”字段中，单击&#x200B;**[!UICONTROL Add]**。
 
 1. 填写以下字段以创建连接：
@@ -122,6 +114,14 @@ ht-degree: 0%
      <tr> 
       <td role="rowheader">[!UICONTROL Connection name] </td> 
       <td> <p>输入连接的名称。</p> </td> 
+     </tr> 
+      <tr> 
+      <td role="rowheader">[!UICONTROL Environment] </td> 
+      <td> <p>选择您使用的是生产环境还是非生产环境。</p> </td> 
+     </tr> 
+      <tr> 
+      <td role="rowheader">[!UICONTROL Type] </td> 
+      <td> <p>选择您使用的是服务帐户还是个人帐户。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Flow type]</p> </td> 
@@ -224,15 +224,15 @@ ht-degree: 0%
     </tbody> 
    </table>
 
-1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;保存连接设置。
-1. 继续[OAuth 2.0请求模块设置](#oauth-20-request-module-setup)。
+1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;保存连接并返回模块。
+1. 继续[配置Make an OAuth 2.0请求模块](#configure-the-make-an-oauth-20-request-module)。
 
 ### 有关在[!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request module]中创建与[!DNL Google]的连接的说明
 
 以下示例显示如何使用[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0]请求模块连接到[!DNL Google]。
 
-1. 请确保已创建项目、配置OAuth设置并生成凭据，如[使用自定义OAuth客户端](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)连接 [!DNL Adobe Workfront Fusion] 到 [!DNL Google Services] 中所述。
-1. 打开[!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request]模块。
+1. 请确保已创建项目、配置OAuth设置并生成凭据，如[Connect [!DNL Adobe Workfront Fusion] to [!DNL Google Services] 文章中所述，使用自定义OAuth客户端](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)。
+1. 打开[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]模块。
 1. 单击连接框旁边的&#x200B;**[!UICONTROL Add]**。
 1. 输入以下值：
 
@@ -243,6 +243,14 @@ ht-degree: 0%
      <tr> 
       <td role="rowheader">[!UICONTROL Connection name] </td> 
       <td> <p>输入连接的名称。</p> </td> 
+     </tr> 
+      <tr> 
+      <td role="rowheader">[!UICONTROL Environment] </td> 
+      <td> <p>选择您使用的是生产环境还是非生产环境。</p> </td> 
+     </tr> 
+      <tr> 
+      <td role="rowheader">[!UICONTROL Type] </td> 
+      <td> <p>选择您使用的是服务帐户还是个人帐户。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Flow type]</p> </td> 
@@ -266,11 +274,11 @@ ht-degree: 0%
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client ID] </td> 
-      <td> <p>输入您的[!DNL Google]客户端ID。 </p> <p>若要创建客户端ID，请参阅在<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md" class="MCXref xref">[!DNL Connect Adobe Workfront Fusion]中使用自定义OAuth客户端</a>创建[!DNL Google Services]的OAuth凭据</a>。<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create2" class="MCXref xref"></p> </td> 
+      <td> <p>输入您的[!DNL Google]客户端ID。 </p> <p>要创建客户端ID，请参阅文章[!DNL Connect Adobe Workfront Fusion]中的<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create-oauth-credentials" class="MCXref xref">使用自定义OAuth客户端</a>创建[!DNL Google Services]的OAuth凭据</a>。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL Client Secret]</td> 
-      <td> <p>输入您的[!DNL Google]客户端密钥。 </p> <p>要创建客户端密钥，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create2" class="MCXref xref">在<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md" class="MCXref xref">[!DNL Connect Adobe Workfront Fusion]中使用自定义OAuth客户端</a>创建[!DNL Google]服务的OAuth凭据</a>。</p> </td> 
+      <td> <p>输入您的[!DNL Google]客户端密钥。 </p> <p>要创建客户端密钥，请参阅文章[!DNL Connect Adobe Workfront Fusion]中的<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md#create-oauth-credentials" class="MCXref xref">使用自定义OAuth客户端创建[!DNL Google]服务的OAuth凭据</a></a>。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL Authorize parameters]</p> </td> 
@@ -280,23 +288,17 @@ ht-degree: 0%
    </table>
 
 1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;保存连接设置。
-1. 继续[OAuth 2.0请求模块设置](#oauth-20-request-module-setup)。
+1. 继续[配置Make an OAuth 2.0请求模块](#configure-the-make-an-oauth-20-request-module)。
 
-<!--### Instructions for connecting to [!DNL Microsoft Graph API] via the [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module 
+## 配置Make an OAuth 2.0请求模块
 
-For instructions regarding [!DNL Microsoft Graph API], see [Call the [!DNL MS Graph REST API] via the [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request] module](/help/workfront-fusion/create-scenarios/connect-to-apps/call-the-ms-graph-rest-api.md).-->
+建立OAuth 2.0连接后，继续根据需要设置模块。 所有授权令牌都会自动包含在此请求中，以及任何其他使用相同连接的请求中。
 
-## OAuth 2.0请求模块设置
-
-当您已建立[!DNL Oauth 2].0连接（如[为 [!DNL OAuth] 请求创建连接](#creating-a-connection-for-an-oauth-request)中所述），请根据需要继续设置模块。 所有授权令牌都会自动包含在此请求中，以及任何其他使用相同连接的请求中。
-
-配置[!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request]模块时，[!DNL Workfront Fusion]显示下面列出的字段。 模块中的粗体标题表示必填字段。
+配置[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]模块时，[!DNL Workfront Fusion]显示下面列出的字段。 模块中的粗体标题表示必填字段。
 
 如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[在 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)中将信息从一个模块映射到另一个模块。
 
-<!--
-<img src="" style="width: 350;height: 74;">
--->
+![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 <table style="table-layout:auto">  
  <col> 
@@ -304,11 +306,11 @@ For instructions regarding [!DNL Microsoft Graph API], see [Call the [!DNL MS Gr
  <tbody> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关设置连接的信息，请参阅本文中的<a href="#creating-a-connection-for-an-oauth-request" class="MCXref xref">为OAuth请求创建连接</a>。</p> </td> 
+   <td> <p>有关设置连接的信息，请参阅本文中的<a href="#create-a-connection-for-an-oauth-request" class="MCXref xref">为OAuth请求创建连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx]) </td> 
-   <td> <p>使用此选项可设置错误处理。</p> <p>有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">错误处理。</p> </td> 
+   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx)] </td> 
+   <td> <p>使用此选项可设置错误处理。</p> <p>有关详细信息，请参阅<a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">错误处理</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
@@ -316,7 +318,7 @@ For instructions regarding [!DNL Microsoft Graph API], see [Call the [!DNL MS Gr
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP请求方法。</p> </td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers] </td> 
@@ -340,7 +342,7 @@ For instructions regarding [!DNL Microsoft Graph API], see [Call the [!DNL MS Gr
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data]是用于发送文件和数据的HTTP多部分请求。 它通常用于将文件上传到服务器。</p> <p>添加要在请求中发送的字段。 每个字段必须包含一个键值对。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>输入要在请求正文中发送的键和值。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>输入密钥，并在请求正文中指定要发送的源文件。</p> <p>映射您要从上一个模块上传的文件(如[!UICONTROL HTTP] &gt;[!UICONTROL Get a File]或[!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)]，或手动输入文件名和文件数据。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>输入密钥，并在请求正文中指定要发送的源文件。</p> <p>映射您要从上一个模块上传的文件（如[!UICONTROL HTTP] &gt;[!UICONTROL Get a File]），或手动输入文件名和文件数据。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -358,7 +360,7 @@ For instructions regarding [!DNL Microsoft Graph API], see [Call the [!DNL MS Gr
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> 如果要使用自签名证书的TLS，请上载证书。</p> </td> 
+   <td> <p>若要对TLS使用自签名证书或私钥，请单击<b>提取</b>并提供证书或私钥的文件和密码。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
