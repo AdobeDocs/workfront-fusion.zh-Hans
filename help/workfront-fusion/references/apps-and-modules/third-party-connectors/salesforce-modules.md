@@ -4,9 +4,9 @@ description: 在Adobe Workfront Fusion场景中，您可以自动使用Salesforc
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 17ac09a19562839a9fdfc11bd274a6ed11f6d8f5
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2704'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Salesforce连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">API版本</td> 
-   <td> v46.0 </td> 
+   <td> v62.0 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">API标记</td> 
@@ -104,6 +104,60 @@ Salesforce连接器使用以下对象：
 * 使用引号运算符(“ ”)查找精确匹配的短语。 例如：“星期一会议”
 
 有关搜索可能性的更多信息，请参阅有关SOQL和SOSL的[!DNL Salesforce]开发人员文档。
+
+## 创建与[!DNL Salesforce]的连接
+
+要为您的[!DNL Salesforce]模块创建连接：
+
+1. 在任意[!DNL Salesforce]模块中，单击“连接”框旁边的&#x200B;**[!UICONTROL Add]**。
+
+1. 填写以下字段：
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[!UICONTROL Connection name]</td>
+        <td>
+          <p>输入新连接的名称。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Environment]</td>
+        <td>
+          <p>选择是连接到生产环境还是非生产环境。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Type]</td>
+        <td>
+          <p>选择您是要连接到服务帐户还是个人帐户。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client ID]</td>
+        <td>输入您的Salesforce客户端ID。</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Client Secret]</td>
+        <td>输入您的Salesforce客户端密码。 </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL Sandbox]</td>
+        <td>如果这是沙盒环境，则启用此选项。</td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL API Version]</td>
+        <td>输入要使用的Salesforce API的版本。 默认版本为62.0。</td>
+      </tr>
+    </tbody>
+    </table>
+
+1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;保存连接并返回模块。
+
 
 ## [!DNL Salesforce]模块及其字段
 
