@@ -4,9 +4,9 @@ description: Workfront和HTTP连接器当前支持大文件。
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 12620e137d2e536b90eb322de93fd39bb8374e51
+source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -15,15 +15,11 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->大文件功能仅适用于Workfront Ultimate客户，是分阶段推出的。 到2025年1月，所有具有Workfront Ultimate计划的Fusion组织都将拥有大文件功能。
+>大文件功能仅适用于Workfront Ultimate包上的组织。
 
 Workfront Fusion中现在提供了增强的数据传输功能，支持在场景中处理显着更大的文件。
 
 要处理较大的文件，必须更新方案。
-
->[!NOTE]
->
->此功能仅适用于Ultimate Workfront包中的用户。
 
 ## 支持大文件的连接器
 
