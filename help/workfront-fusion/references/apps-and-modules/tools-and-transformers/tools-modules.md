@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Tools] 部分包含几个可增强�
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 757580687ff5d1617f83432952d9870bd697925e
+source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1994'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Bundle]</td> 
-   <td> <p>通过添加数组项创建自定义包。 数组由名称 — 值对组成。</p> </td> 
+   <td> <p>通过添加数组项创建自定义包。 对于要添加到捆绑包中的每个项目，单击<b>添加项目</b>并输入项目的名称和值。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -97,32 +97,30 @@ ht-degree: 0%
 
 此模块可检索先前由[!UICONTROL Set Variable]或[!UICONTROL Set Multiple Variables]模块创建的值。
 
-此模块可以读取在场景中任意位置设置的变量，即使该变量在与[!UICONTROL Get Multiple Variables]模块所在的路由不同的路由中设置。 唯一要求是[!UICONTROL Tools] > [!UICONTROL Set Variable]或[!UICONTROL Tools] > [!UICONTROL Set Multiple Variable]模块在[!UICONTROL Tools] > [!UICONTROL Get Multiple Variables]模块之前执行。 有关模块执行顺序的详细信息，请参阅 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)中的[路由器模块。
+此模块可以读取在场景中任意位置设置的变量，即使该变量在与[!UICONTROL Get Multiple Variables]模块所在的路由不同的路由中设置。 唯一要求是[!UICONTROL Tools] > [!UICONTROL Set Variable]或[!UICONTROL Tools] > [!UICONTROL Set Multiple Variable]模块在[!UICONTROL Tools] > [!UICONTROL Get Multiple Variables]模块之前执行。 有关模块执行顺序的详细信息，请参阅[添加路由器模块并配置路由](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)。
 
 <table style="table-layout:auto">
     <tr>
         <td>[!UICONTROL Variables]</td>
-        <td>添加您希望模块获取的变量。</td>
-    </tr>
-    <tr>
-        <td>[!UICONTROL Variable name]</td>
-        <td>对于您添加的每个变量，映射您要获取的变量的名称。</td>
+        <td>对于您希望模块获取的每个变量，单击<b>添加项</b>并输入变量的名称。</td>
     </tr>
 </table>
 
->[!INFO]
->
->**示例：**&#x200B;以下可能是对[!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)]模块的使用：
->
->* 用于存储计算值以供以后使用，即使是在不同的路由中。 当该值在多个模块中使用，并且计算该值的公式过于复杂时，这将很有用。
->* 调试公式。 如果模块中使用的公式似乎未提供正确的结果，请复制该公式并将其粘贴到您在相关模块之前插入的[!UICONTROL Set Variable]模块中。 在[!UICONTROL Set Variable]模块后断开模块连接并执行方案。 验证[!UICONTROL Set Variable]模块的输出，调整或简化公式，再次执行方案，并继续执行该操作，直到问题得到解决。
+>[!BEGINSHADEBOX]
+
+**示例：**&#x200B;以下可能是对[!UICONTROL Set]/[!UICONTROL Get (multiple) variable(s)]模块的使用：
+
+* 用于存储计算值以供以后使用，即使是在不同的路由中。 当该值在多个模块中使用，并且计算该值的公式过于复杂时，这将很有用。
+* 调试公式。 如果模块中使用的公式似乎未提供正确的结果，请复制该公式并将其粘贴到您在相关模块之前插入的[!UICONTROL Set Variable]模块中。 在[!UICONTROL Set Variable]模块后断开模块连接并执行方案。 验证[!UICONTROL Set Variable]模块的输出，调整或简化公式，再次执行方案，并继续执行该操作，直到问题得到解决。
+
+>[!ENDSHADEBOX]
 
 
 #### [!UICONTROL Get Variable]
 
 此模块可检索先前由[!UICONTROL Set Variable]或[!UICONTROL Set Multiple Variables]模块创建的值。
 
-此模块可以读取在场景中任意位置设置的变量，即使该变量在与[!UICONTROL Get Variable]模块所在的路由不同的路由中设置。 唯一要求是[!UICONTROL Tools] > [!UICONTROL Set Variable]或[!UICONTROL Tools] > [!UICONTROL Set Multiple Variables]模块在[!UICONTROL Tools] > [!UICONTROL Get Variable]模块之前执行。 有关模块执行顺序的详细信息，请参阅 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)中的[路由器模块。
+此模块可以读取在场景中任意位置设置的变量，即使该变量在与[!UICONTROL Get Variable]模块所在的路由不同的路由中设置。 唯一要求是[!UICONTROL Tools] > [!UICONTROL Set Variable]或[!UICONTROL Tools] > [!UICONTROL Set Multiple Variables]模块在[!UICONTROL Tools] > [!UICONTROL Get Variable]模块之前执行。 有关模块执行顺序的详细信息，请参阅[添加路由器模块并配置路由](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -137,7 +135,7 @@ ht-degree: 0%
 
 #### [!UICONTROL Increment function]
 
-每个模块运行后，此模块会返回一个以1为单位的值。
+此模块会在每个周期或每个方案运行后返回一个以1递增的值。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -145,7 +143,7 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reset a value]</td> 
-   <td> <p>选择您希望模块何时递增值。 </p> 
+   <td> <p>选择您希望模块重置值的时间。 当您希望值从第一个值开始时。</p> 
     <ul> 
      <li>[!UICONTROL After one cycle]</li> 
      <li>[!UICONTROL After one scenario run]</li> 
@@ -155,27 +153,30 @@ ht-degree: 0%
  </tbody> 
 </table>
 
->[!INFO]
->
->**示例：**
->
->该模块的用途之一是实现向组中的用户分配任务、商机、电子邮件等“循环调度法”。 算法按照一定的合理顺序从一组中选取被分配人，通常从列表的顶部到底部。 当算法到达列表结尾时，它将向位于列表顶部的用户分配下一个分配，并继续向列表下方进行分配。
->
->以下方案会在每个奇数方案运行后向第一个收件人发送电子邮件，并在每个偶数方案运行后向第二个收件人发送电子邮件。
->
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-email-350x246.gif)
->
->1. 要创建此方案，请执行以下操作：
->1. 将模块的&#x200B;**[!UICONTROL Reset a value]**&#x200B;字段设置为从不。
->1. 为奇数值设置路由。 使用等于`1`的模数数学函数设置此路由的过滤器：
->
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd-350x459.png)
->
->  **注意**：不要忘记将[!UICONTROL Equal to]运算符从默认的[!UICONTROL Text]运算符更改为[!UICONTROL Numeric]运算符。
->
->1. 使用等于`0`的模数数学函数为偶数设置路径：
->
->增量函数在每次场景运行时都添加一个。 过滤器会检查增量并根据其值执行操作，以确保平均分配电子邮件。
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+此模块可用于实现向组中的用户分配任务、商机、电子邮件等“循环调度”。 算法按照一定的合理顺序从一组中选取被分配人，通常从列表的顶部到底部。 当算法到达列表结尾时，它将向位于列表顶部的用户分配下一个分配，并继续向列表下方进行分配。
+
+以下方案会在每个奇数方案运行后向第一个收件人发送电子邮件，并在每个偶数方案运行后向第二个收件人发送电子邮件。
+
+![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+
+要创建此方案，请执行以下操作：
+
+1. 将模块的&#x200B;**[!UICONTROL Reset a value]**&#x200B;字段设置为从不。
+1. 为奇数值设置路由。 使用等于`1`的模数数学函数设置此路由的过滤器：
+
+   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+
+**注意**：不要忘记将[!UICONTROL Equal to]运算符从默认的[!UICONTROL Text]运算符更改为[!UICONTROL Numeric]运算符。
+
+1. 使用等于`0`的模数数学函数为偶数设置路径：
+
+增量函数在每次场景运行时都添加一个。 过滤器会检查增量并根据其值执行操作，以确保平均分配电子邮件。
+
+>[!ENDSHADEBOX]
 
 #### [!UICONTROL Set Multiple Variables]
 
@@ -187,21 +188,13 @@ ht-degree: 0%
  <tbody> 
   <tr> 
    <td>[!UICONTROL Variables]</td> 
-   <td>添加您希望模块设置的变量。</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable name] </td> 
-   <td>对于每个变量，输入变量名称。 在其他模块中映射变量时，将显示此名称。 </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Variable value] </td> 
-   <td>对于每个变量，输入变量的值。 </td> 
+   <td>对于要添加的每个变量，单击<b>添加项</b>并输入变量的名称和值。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Variable lifetime] </td> 
    <td> <p>选择您希望变量保持有效的时长（保持相同的值）。</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>：变量在一个周期内有效。 在收到一个场景运行中的多个Webhook时（更多Webhook =更多周期）非常有用。 </li> 
+     <li><strong>[!UICONTROL One cycle]</strong>：变量在一个周期内有效。 当在一个场景运行中收到多个Webhook时，这非常有用，因为更多Webhook会创建更多周期。 </li> 
      <li><strong>[!UICONTROL One execution]</strong>：变量对一个场景执行有效。 一个执行可以包含一个或多个周期。</li> 
     </ul> </td> 
   </tr> 
@@ -254,7 +247,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果您希望将流量暂停更长时间，我们建议将您的方案拆分为两个方案：
+>如果要暂停流量更长的时间段，我们建议您将方案拆分为两个方案：
 >
 >* 第一个方案将包含暂停前的部分。
 >* 第二种方案将包含其后的部分。
@@ -358,19 +351,21 @@ ht-degree: 0%
    <td> <p>定义包含一个或多个映射项的表达式。 聚合的数据用同一表达式的值在“组”下分隔。 每个组输出为一个单独的包，其中包含带有已计算表达式的键和聚合文本。 这样，您就可以在后续模块中将键用作过滤器。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text]</td> 
-   <td> <p> 输入或映射您希望模块聚合的文本。</p> </td> 
-  </tr> 
-  <tr> 
    <td>[!UICONTROL Stop processing after an empty aggregation]</td> 
    <td>选择此选项可在没有结果时停止方案。</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Text]</td> 
+   <td> <p> 输入或映射您希望模块聚合的文本。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**示例：**&#x200B;您可以使用文本聚合器将更多值（例如，客户名称或注释）插入到单个包中，并发送一封包含电子邮件正文或电子邮件主题中所有值的电子邮件。
+>[!BEGINSHADEBOX]
+
+**示例：**&#x200B;您可以使用文本聚合器将更多值（例如，客户名称或注释）插入到单个包中，并发送一封包含电子邮件正文或电子邮件主题中所有值的电子邮件。
+
+>[!ENDSHADEBOX]
 
 ### 变压器
 
@@ -380,7 +375,7 @@ ht-degree: 0%
 
 #### [!UICONTROL Compose a string]
 
-将任意值转换为字符串数据类型（文本）。 它使映射更容易，例如映射二进制数据。
+将任意值转换为字符串数据类型（文本）。 这样可简化映射（例如，映射二进制数据）的操作。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -443,7 +438,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td>[!UICONTROL Cases] </td> 
-   <td> <p>如果输入包含输入到[!UICONTROL Pattern]字段的值，则返回输入到[!UICONTROL Output]字段的值。</p> <p>如果输入与您在[!UICONTROL Pattern]字段中设置的任何值都不匹配，则会出现以下情况之一：</p> 
+   <td> 对于要添加的每个案例，单击<b>添加项目</b>并输入项目的模式和输出。 <p>如果输入包含输入到[!UICONTROL Pattern]字段的值，则返回输入到[!UICONTROL Output]字段的值。</p> <p>如果输入与您在[!UICONTROL Pattern]字段中设置的任何值都不匹配，则会出现以下情况之一：</p> 
     <ul> 
      <li>返回[!UICONTROL Else]字段中的值</li> 
      <li>如果[!UICONTROL Else]字段中没有值，则不会返回任何输出。</li> 
