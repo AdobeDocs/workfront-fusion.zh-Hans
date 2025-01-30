@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 200907bb8d80f874227493b489ef1ea450198dc6
+source-git-commit: e3ec0cf05665559790e4ae96c875e181a1ee36ff
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1641'
 ht-degree: 3%
 
 ---
@@ -346,6 +346,7 @@ ht-degree: 3%
          * [Microsoft Dynamics Finance and Operations模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
          * [Microsoft OneDrive模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-modules.md)
          * [Microsoft OneDrive for Business模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
+         * [Microsoft SharePoint Online模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
          * [Microsoft SQL Server模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)
          * [Microsoft Word Template模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
          * [NetSuite模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
@@ -356,7 +357,6 @@ ht-degree: 3%
          * [Salesforce模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
          * [SDL托管翻译模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
          * [ServiceNow模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-         * [SharePoint模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
          * [Slack模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
          * [Split.io模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [网格模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
