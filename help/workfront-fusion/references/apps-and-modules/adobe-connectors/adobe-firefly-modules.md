@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动使用
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 1219642306c03cb0aa6037493ce2f02ced80b99d
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ ht-degree: 0%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
 <table style="table-layout:auto">
@@ -28,27 +30,27 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+   <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版：任意 </p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
  </tbody> 
@@ -57,6 +59,8 @@ ht-degree: 0%
 有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 先决条件
 
@@ -128,49 +132,6 @@ Adobe Firefly连接器使用以下内容：
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-### 进行自定义API调用
-
-此操作模块对FireflyAPI进行自定义调用。
-
-有关特定的可用API，请参阅Adobe Developer文档中的[Adobe FireflyAPI](https://developer.adobe.com/firefly-services/docs/firefly-api/)。
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Firefly]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与[!DNL Adobe Firefly]</a>的连接。</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL URL]</td>
-      <td>
-        <p>输入相对于<code>https://firefly-api-enterprise-stage.adobe.io/</code>的路径。</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">
-        <p>[!UICONTROL Method]</p>
-      </td>
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
-      <td>
-        <p>以标准JSON对象的形式添加请求的标头。</p>
-        <p>例如， <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 自动添加授权标头。</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注意：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td>     </tr>
-  </tbody>
-</table>
-
 ### 展开图像
 
 此操作模块可展开图像，可以选择从提供的提示中使用内容。
@@ -206,7 +167,7 @@ Adobe Firefly连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>输入或映射整数。 您可以在另一个扩展图像模块中使用此相同的种子，以生成具有不同样式的相似图像。 </td> 
+   <td>对于每个要使用的种子，单击<b>添加项</b>并输入或映射一个整数。 您可以在另一个扩展图像模块中使用此相同的种子，以生成具有不同样式的相似图像。 </td> 
   </tr> 
  </tbody> 
 </table>
@@ -238,12 +199,12 @@ Adobe Firefly连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Image]</td> 
-   <td>  <p> 单击<b>添加图像</b>。 从上一个模块中选择一个源文件，或映射源文件的图像文件名和图像数据。</p> </td> 
+   <td>  <p> 对于每个要填充的图像，单击<b>添加图像</b>，然后从以前的模块中选择源文件或映射源文件的图像文件名和图像数据。</p> </td> 
 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Mask]</td> 
-   <td>  <p> 单击<b>添加蒙版</b>。 从上一个模块中选择一个源文件，或映射源文件的“蒙版”文件名和“蒙版”数据。 蒙版文件表示将使用生成的内容填充的自定义蒙版。</p> </td> 
+   <td>  <p>  对于每个要使用的掩码，单击<b>添加掩码</b>。 从上一个模块中选择一个源文件，或映射源文件的“蒙版”文件名和“蒙版”数据。 蒙版文件表示将使用生成的内容填充的自定义蒙版。</p> </td> 
 </td> 
   </tr> 
   <tr> 
@@ -320,3 +281,49 @@ Adobe Firefly连接器使用以下内容：
   </tr> 
  </tbody> 
 </table>
+
+
+
+### 进行自定义API调用
+
+此操作模块对FireflyAPI进行自定义调用。
+
+有关特定的可用API，请参阅Adobe Developer文档中的[Adobe FireflyAPI](https://developer.adobe.com/firefly-services/docs/firefly-api/)。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>有关创建与[!DNL Adobe Firefly]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与[!DNL Adobe Firefly]</a>的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL URL]</td>
+      <td>
+        <p>输入相对于<code>https://firefly-api.adobe.io/</code>的路径。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Method]</p>
+      </td>
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td>
+        <p>以标准JSON对象的形式添加请求的标头。</p>
+        <p>例如， <code>{"Content-type":"application/json"}</code></p>
+        <p>[!DNL Workfront Fusion] 自动添加授权标头。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Body]</td>
+   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注意：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td>     </tr>
+  </tbody>
+</table>
+
