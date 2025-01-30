@@ -4,9 +4,9 @@ description: 映射是将模块的输出（按项目结构）分配给其他模�
 author: Becky
 feature: Workfront Fusion
 exl-id: 9208ce20-0757-427a-9669-ce4274d05522
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ ht-degree: 0%
 
 单个项目
 
-![](assets/map-single.png)
+![映射单个项目](assets/map-single.png)
 
 包含文本的多个项目
 
-![](assets/map-multiple-with-text.png)
+![映射多个项目](assets/map-multiple-with-text.png)
 
 包含多个项目和文本的函数
 
-![](assets/map-formula-with-text.png)
+![映射包含文本的公式](assets/map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
@@ -56,11 +56,11 @@ ht-degree: 0%
 
 在可以映射数据的字段中单击后，将打开映射面板。
 
-第一个选项卡![](assets/toolbar-icon-functions-you-map-from-other-modules.png)显示可从其他模块映射的项目。
+来自其他模块的第一个选项卡![映射](assets/toolbar-icon-functions-you-map-from-other-modules.png)显示可以从其他模块映射的项目。
 
 其他选项卡包括可用于创建公式的函数、运算符和关键字。 根据它们处理的数据类型，这些报告会被分类为不同的选项卡。
 
-![](assets/mapping-panel-blank.png)
+![映射面板](assets/mapping-panel-blank.png)
 
 
 有关函数选项卡的详细信息，请参阅[函数概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)。
@@ -73,13 +73,13 @@ ht-degree: 0%
 
 集合类型捆绑包在模块输出中捆绑包标签旁显示`(Collection)`。
 
-![](assets/collection.png)
+![收藏集](assets/collection.png)
 
 在大多数情况下，您可以映射收藏集的元素，而不是映射代表整个收藏集的项。
 
 要在映射面板中定位收藏集的元素，请单击收藏集旁边的箭头。
 
-![](assets/collection-dropdown.png)
+![收藏集下拉列表](assets/collection-dropdown.png)
 
 有关集合的详细信息，请参阅[项目数据类型](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)。
 
@@ -93,6 +93,6 @@ ht-degree: 0%
 
 在映射面板中，数组以方括弧显示。 您可以通过项目标签末尾的方括号来标识数组类型项目。 要在映射面板中定位特定的数组元素，请单击数组旁边的箭头。
 
-![](assets/array.png)
+![数组](assets/array.png)
 
 有关映射数组和数组元素的信息和说明，请参阅[映射数组和数组元素](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)。

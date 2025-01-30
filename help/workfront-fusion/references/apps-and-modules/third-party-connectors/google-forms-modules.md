@@ -4,9 +4,9 @@ description: 通过 [!DNL Adobe Workfront Fusion Google Forms] 模块，您可�
 author: Becky
 feature: Workfront Fusion
 exl-id: dc017957-c0f8-4206-916f-21ccda346fb9
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,7 @@ Google Forms连接器使用以下对象：
 
 1. 打开您的表单。
 1. 转到 **[!UICONTROL Responses]** 选项卡。
-1. 单击&#x200B;**[!UICONTROL Create Spreadsheet]**&#x200B;图标![](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png)。
+1. 单击&#x200B;**[!UICONTROL Create Spreadsheet]**&#x200B;图标![电子表格图标](/help/workfront-fusion/references/apps-and-modules/assets/spreadsheet-icon.png)。
 
 1. 选择要创建新电子表格还是现有电子表格
 1. 单击 **[!UICONTROL Create]**。

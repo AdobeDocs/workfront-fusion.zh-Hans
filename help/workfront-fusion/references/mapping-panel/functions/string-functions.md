@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion映射面板中提供了以下字符串函数
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 **示例：**
 
-![](assets/replace---1-350x31.png)
+![替换](assets/replace---1-350x31.png)
 
 所有这些数字X X X X X都替换为X
 
@@ -121,11 +121,11 @@ ht-degree: 0%
 
 **示例：**
 
-![](assets/variable-value-350x63.png)
+![变量值](assets/variable-value-350x63.png)
 
 返回：电话号码`+420777111222`
 
-![](assets/variable-value---2-350x55.png)
+![变量返回](assets/variable-value---2-350x55.png)
 
 返回：电话号码： `+420777111222`
 

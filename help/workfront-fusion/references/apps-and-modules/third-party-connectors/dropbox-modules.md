@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2868'
+source-wordcount: '2876'
 ht-degree: 0%
 
 ---
@@ -744,15 +744,15 @@ Dropbox连接器使用以下内容：
 
 * 将www替换为dl
 
-  ![](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)
+  ![用dl](/help/workfront-fusion/references/apps-and-modules/assets/www-to-dl-350x32.png)替换www
 
 * 要删除？dl=0
 
-  ![](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
+  ![删除DL](/help/workfront-fusion/references/apps-and-modules/assets/remove-dl0-350x33.png)
 
 要一次性完成此操作，请组合以下函数：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
+![替换两者](/help/workfront-fusion/references/apps-and-modules/assets/replace-both-350x47.png)
 
 您也可以复制该模板并将其粘贴到字段中。 将`1.url`替换为URL。
 

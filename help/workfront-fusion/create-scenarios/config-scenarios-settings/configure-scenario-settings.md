@@ -5,9 +5,9 @@ description: 您可以在方案设置面板中配置方案的特定设置。
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3afa631a44c6dae8b1e6def6f842a9ced9de741e
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 0%
 1. 单击方案上的任意位置以输入方案编辑器。
 1. 单击页面左下角附近的齿轮图标。
 
-   ![](assets/scenario-settings-350x221.png)
+   ![方案设置](assets/scenario-settings-350x221.png)
 
    在显示的[!UICONTROL Scenario settings]面板中，您可以为该方案配置各种高级设置。
 1. 根据需要启用或禁用方案设置。 请参阅下面的[方案设置选项](#scenario-settings-options)。
@@ -162,13 +162,13 @@ ht-degree: 0%
 
 **示例：** [!DNL Workfront] > [!UICONTROL Watch record]监视出现的新问题，并且[!DNL Workfront] >[!UICONTROL Convert object]将新请求转换为项目并为其分配适当的模板。
 
-![](assets/scenario-settings-ex-1-350x157.png)
+![方案设置](assets/scenario-settings-ex-1-350x157.png)
 
 [!UICONTROL more cycles]设置仅在您计划方案执行时应用。 使用[!UICONTROL Run once]按钮时，会考虑循环设置。
 
 #### 最大循环数设置为1（默认）
 
-![](assets/max-number-cycles-1-350x201.png)
+![最大循环数](assets/max-number-cycles-1-350x201.png)
 
 Workfront >观察记录模块中的最大周期数设置为`10`。
 如果向[!DNL Workfront]提交了100个请求，且“最大循环数”字段设置为10，则运行一个方案后仍有90个文件未处理。 在下次计划场景执行中处理接下来的10个文件。
@@ -183,7 +183,7 @@ Workfront >观察记录模块中的最大周期数设置为`10`。
 
 您可以在方案详细信息中查看已运行的周期：
 
-![](assets/scenario-detail-350x207.png)
+![方案详细信息](assets/scenario-detail-350x207.png)
 
 有关此页面的详细信息，请参阅[方案详细信息](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)。
 

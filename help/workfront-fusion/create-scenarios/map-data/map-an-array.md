@@ -4,9 +4,9 @@ description: 您可以将一个数组或单个数组元素映射到Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Workfront Fusion中的某些字段允许您将元素映射到数组中。 例如
 
 数组元素在数组名称后方括号中显示为一个数字。 您可以使用此索引号将数组的单个元素映射到字段中。
 
-![](assets/map-array-1st-element.png)
+![映射第一个元素](assets/map-array-1st-element.png)
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Workfront Fusion中的某些字段允许您将元素映射到数组中。 例如
 
 1. 要映射数组的其他元素，请单击[1]并输入要映射的数组元素的索引号。
 
-   ![](assets/access-another-element.png)
+   ![访问其他元素](assets/access-another-element.png)
 
 ### 使用给定键映射数组的元素
 
@@ -138,13 +138,13 @@ Workfront Fusion中的某些字段允许您将元素映射到数组中。 例如
 
 以下示例显示了[!DNL Jira]应用程序的输出。
 
-![](assets/output-of-jira-app-350x100.png)
+![输出Jira模块](assets/output-of-jira-app-350x100.png)
 
 此示例从ID为10108的特定附件的附件数组中获取文件名。
 
 此示例生成以下输出：
 
-![](assets/output-from-jira-350x261.png)
+![输出Jira模块](assets/output-from-jira-350x261.png)
 
 公式解释如下：
 
@@ -153,7 +153,7 @@ Workfront Fusion中的某些字段允许您将元素映射到数组中。 例如
    1. `map()`函数的第一个参数是整个数组项。
    1. 第二个参数是值项的原始名称。 要获取原始名称，请将鼠标悬停在[!UICONTROL mapping]面板中的该项上：
 
-      ![](assets/obtain-raw-name-350x124.png)
+      ![获取原始名称](assets/obtain-raw-name-350x124.png)
 
       >[!NOTE]
       >
@@ -161,7 +161,7 @@ Workfront Fusion中的某些字段允许您将元素映射到数组中。 例如
 
    1. 第三个参数是关键项的原始名称：
 
-      ![](assets/3rd-parameter-350x166.png)
+      ![第三个参数](assets/3rd-parameter-350x166.png)
 
    1. 第四个参数是给定的键值。
 
@@ -175,7 +175,7 @@ Workfront Fusion中的某些字段允许您将元素映射到数组中。 例如
 
 此示例生成以下输出：
 
-![](assets/output-from-jira-350x261.png)
+Jira模块的![输出](assets/output-from-jira-350x261.png)
 
 >[!ENDSHADEBOX]
 
@@ -187,4 +187,4 @@ Workfront Fusion中的某些字段允许您将元素映射到数组中。 例如
 
 可以使用[!UICONTROL Iterator]模块将数组转换为一系列包。 有关详细信息，请参阅[[!UICONTROL Iterator]模块](/help/workfront-fusion/references/modules/iterator-module.md)。
 
-![](assets/series-of-bundles.png)
+![包系列](assets/series-of-bundles.png)

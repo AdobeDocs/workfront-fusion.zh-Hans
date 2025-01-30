@@ -4,9 +4,9 @@ description: 当在执行场景期间发生错误时，通常是因为服务因�
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 0668441df8405610488e3e33658635e4cc7db270
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 0%
 1. 单击方案上的任意位置以进入方案编辑器。
 1. 右键单击要添加错误处理程序路由的模块，然后选择&#x200B;**[!UICONTROL Add error handler]**：
 
-   ![](assets/error-handler-route.png)
+   ![错误处理程序路由](assets/error-handler-route.png)
 
    错误处理程序路由已添加到模块。 如果该模块是路由中的最后一个模块，则错误处理程序将直接遵循该模块。 如果模块之后有更多的模块，则会添加单独的错误处理程序路由。
 

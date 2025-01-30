@@ -7,9 +7,9 @@ description: 了解如何使用Adobe Workfront Fusion创建简单的自动化场
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 8884aef2237ad358c774110b81ac17b9efb386d4
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1315'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 1%
 
    该名称显示在模块正下方。 在其下方，[!DNL Workfront Fusion]包含模块执行的操作类型的简要说明。
 
-   ![](assets/module-renamed-wf.png)
+   ![已重命名模块](assets/module-renamed-wf.png)
 
 1. 继续[添加并配置第二个模块](#add-and-configure-the-second-module)。
 
@@ -191,9 +191,9 @@ ht-degree: 1%
 >
 >1. 关闭&#x200B;**[!UICONTROL Notes]**&#x200B;区域。
 >
->     向方案添加注释后，方案编辑器底部的&#x200B;**[!UICONTROL Notes]**&#x200B;图标![](assets/notes-icon-w-dot.png)上会显示一个橙色点。
+>     向方案添加注释后，在方案编辑器底部的&#x200B;**[!UICONTROL Notes]**&#x200B;图标![注释图标上显示一个橙色点，其中点为](assets/notes-icon-w-dot.png)。
 >
->1. 单击&#x200B;**[!UICONTROL Notes]**&#x200B;图标![](assets/notes-icon-w-dot.png)查看您的备注。
+>1. 单击&#x200B;**[!UICONTROL Notes]**&#x200B;图标![带点的笔记图标](assets/notes-icon-w-dot.png)以查看您的笔记。
 >
 
 ## 激活方案

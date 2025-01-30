@@ -4,9 +4,9 @@ description: 映射项时，可以使用函数创建简单或复杂的公式。
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 在此示例中，子字符串函数将项目名称限制为50个字符。
 
-![](assets/example-meet-length-restriction-350x184.png)
+![示例会议长度限制](assets/example-meet-length-restriction-350x184.png)
 
 >[!ENDSHADEBOX]
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 在此示例中，子字符串函数将修剪后的项目名称限制为50个字符。
 
-![](assets/trimmed-name-under-50.png)
+![已修剪的名称](assets/trimmed-name-under-50.png)
 
 >[!ENDSHADEBOX]
 
@@ -150,9 +150,9 @@ ht-degree: 0%
 
       您可以像往常一样使用前面的模块的输出。
 
-      ![](assets/exploit-google-sheet-functions-350x218.png)
+      ![使用Google工作表功能](assets/exploit-google-sheet-functions-350x218.png)
 
 1. 插入&#x200B;**[!UICONTROL Google Sheets]>[!UICONTROL Get a cell]**&#x200B;模块以获取计算结果。
 1. 使用在步骤4中使用的相同单元格ID配置模块。
 
-   ![](assets/exploit-google-sheet-functions-2-350x187.png)
+   ![使用Google工作表功能](assets/exploit-google-sheet-functions-2-350x187.png)

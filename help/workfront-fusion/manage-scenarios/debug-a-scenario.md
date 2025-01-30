@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Devtool允许您了解场景并排除其故�
 author: Becky
 feature: Workfront Fusion
 exl-id: 34215370-27e3-4c28-8bd1-a16268900b86
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Workfront Fusion Devtool分为3个主要部分。 您可以在Devtool窗口的�
 
 在您的场景中单击运行一次后，实时流会显示后台发生的情况。
 
-1. 单击&#x200B;**[!UICONTROL Live Stream]**&#x200B;图标![](assets/live-stream-icon.png)以打开Live Stream部分。
+1. 单击&#x200B;**[!UICONTROL Live Stream]**&#x200B;图标![实时流图标](assets/live-stream-icon.png)以打开实时流部分。
 1. 执行以下任一操作：
 
    <table style="table-layout:auto"> 
@@ -153,7 +153,7 @@ Workfront Fusion Devtool分为3个主要部分。 您可以在Devtool窗口的�
 
 场景调试器适用于更复杂的场景。 它显示方案运行的历史记录，使您能够按名称或ID搜索模块。
 
-1. 单击&#x200B;**[!UICONTROL Scenario Debugger]**&#x200B;图标![](assets/scenario-debugger-icon.png)以打开方案调试器。
+1. 单击&#x200B;**[!UICONTROL Scenario Debugger]**&#x200B;图标![调试器图标](assets/scenario-debugger-icon.png)以打开方案调试器。
 1. （可选）在搜索字段中输入搜索词（名称或模块ID）。
 1. 单击模块名称。
 1. 单击操作可查看请求详细信息。
@@ -162,7 +162,7 @@ Workfront Fusion Devtool分为3个主要部分。 您可以在Devtool窗口的�
 
 [!DNL Workfront Fusion] Devtool提供了一些工具，可让您更轻松地设置方案。
 
-1. 单击&#x200B;**[!UICONTROL Tools]**&#x200B;图标![](assets/console-tools-icon.png)以打开工具。
+1. 单击&#x200B;**[!UICONTROL Tools]**&#x200B;图标![控制台工具图标](assets/console-tools-icon.png)以打开工具。
 1. 选择要使用的工具
 1. 配置字段，如下所述。
 1. 单击 **[!UICONTROL Run]**。

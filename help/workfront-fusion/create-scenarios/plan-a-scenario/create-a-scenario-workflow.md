@@ -4,9 +4,9 @@ description: 按照此常规工作流创建方案
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: f190217891c1d583e49cacb820e2076b995f6a3d
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -34,19 +34,19 @@ ht-degree: 0%
 ## 创建方案并为其命名
 
 1. 登录您的[!DNL Workfront Fusion]帐户。
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png)。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]** ![方案图标](assets/scenarios-icon.png)。
 
    >[!NOTE]
    >
    >如果未看到左侧导航面板或其图标，请单击菜单![菜单](assets/main-menu-icon-left-nav.png)图标。
 
-1. （可选）在&#x200B;[!UICONTROL **文件夹**]&#x200B;面板中，单击&#x200B;**[!UICONTROL Add folder]**&#x200B;图标![](assets/add-folder-icon.png)，然后为第一个文件夹键入诸如“实践场景”之类的名称。
+1. （可选）在&#x200B;[!UICONTROL **文件夹**]&#x200B;面板中，单击&#x200B;**[!UICONTROL Add folder]**&#x200B;图标![添加文件夹图标](assets/add-folder-icon.png)，然后为第一个文件夹键入诸如“实践方案”之类的名称。
 
 1. （可选）打开文件夹，然后单击页面右上角的&#x200B;**[!UICONTROL Create a new scenario]**。
 
 1. 选择左上角的&#x200B;**[!UICONTROL New scenario]**&#x200B;占位符名称，然后键入诸如“Practice scenario 1”之类的名称。
 
-   ![](assets/name-the-scenario.png)
+   ![命名方案](assets/name-the-scenario.png)
 
 1. 继续[连接下面的第一个模块](#2-connect-the-first-module)。
 
@@ -106,7 +106,7 @@ ht-degree: 0%
    * 有关读取方案执行信息的一般信息，请参阅[方案执行流程](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md)。
    * 有关已处理捆绑包的信息，请参阅[方案执行、周期和 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md)中的阶段。
 
-1. 在[!DNL Workfront Fusion]中，单击左下角附近的&#x200B;**[!UICONTROL Save]** ![](assets/save-icon.png)以保存方案进度。
+1. 在[!DNL Workfront Fusion]中，单击左下角附近的&#x200B;**[!UICONTROL Save]** ![保存图标](assets/save-icon.png)以保存方案进度。
 
    >[!IMPORTANT]
    >

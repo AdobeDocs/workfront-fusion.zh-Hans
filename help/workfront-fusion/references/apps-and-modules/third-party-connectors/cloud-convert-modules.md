@@ -4,9 +4,9 @@ description: CloudConvert模块
 author: Becky
 feature: Workfront Fusion
 exl-id: 52c4d18a-8bee-44d6-9a2c-cc9e157e1dde
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2498'
 ht-degree: 0%
 
 ---
@@ -541,7 +541,7 @@ CloudConvert连接器使用以下对象：
 >* 如果使用数组聚合器（例如，要转换的文件具有多种不同格式），请使用[!UICONTROL Add a task]对话框中的&#x200B;**[!UICONTROL I don't know the input format]**&#x200B;选项。 否则，将返回错误。
 >* 链接作业中的任务（名称>输入，名称>输入，...）：
 >
->  ![](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
+>  跨作业![链接名称](/help/workfront-fusion/references/apps-and-modules/assets/linking-name-across-jobs-350x808.png)>
 
 ### 任务
 
@@ -745,13 +745,13 @@ URL： `/v2/tasks`
 
 方法： `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
+![API示例输入](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-input.png)
 
 在[!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL data]下的模块输出中可以找到搜索匹配项。
 
 在我们的示例中，返回了6个任务：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
+![API示例输出](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-api-example-output.png)
 
 ## 故障排除 {#troubleshooting}
 
@@ -817,6 +817,6 @@ URL： `/v2/tasks`
 >1. 打开模块的设置。
 >1. 按如下所示配置模块：
 >
->   ![](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
+>   ![CloudConvert示例](/help/workfront-fusion/references/apps-and-modules/assets/cloudconvert-mp4-example.png)
 >
 >1. 确保在“转换和引擎特定选项”字段中包括所有设置：对于步骤5中的每个设置，请找到步骤13中的相应参数及其相应值。

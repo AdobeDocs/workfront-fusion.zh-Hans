@@ -4,9 +4,9 @@ description: Adobe Workfront FusionTemplates功能允许您创建和使用现有
 author: Becky
 feature: Workfront Fusion
 exl-id: 560c20b7-155c-40db-9018-5a51b40d6fb0
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '338'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 1%
 
 ## 从模板创建方案
 
-1. 单击左侧导航面板中的&#x200B;**[!UICONTROL Templates]**&#x200B;图标![](assets/templates-icon.png)。
+1. 单击左侧导航面板中的&#x200B;**[!UICONTROL Templates]**&#x200B;图标![模板图标](assets/templates-icon.png)。
 1. 单击包含要使用的模板（公共模板或团队模板）的选项卡。
 1. 单击要用来开始创建方案的模板。 您可以使用右上角的搜索框按模板名称或模板中包含的应用程序名称查找模板。
 1. （视情况而定）如果您是多个组织或团队的成员，请选择要为其创建方案的组织或团队，然后单击&#x200B;**[!UICONTROL Continue]**。
@@ -78,4 +78,4 @@ ht-degree: 1%
 
    有关生成方案的信息，请参阅用于创建方案的[工作流](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)。
 
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;图标![](assets/save-icon.png)以保存方案。 场景将保存到Workfront Fusion的“场景”区域。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;图标![保存图标](assets/save-icon.png)以保存您的方案。 场景将保存到Workfront Fusion的“场景”区域。

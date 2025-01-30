@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Google幻灯片模块允许您创建、更�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -457,17 +457,17 @@ Google幻灯片连接器使用以下内容：
 >
 >**示例：**&#x200B;使用API调用，您可以获取您输入的演示文稿ID的演示详细信息。 在[!DNL Google Slides]中打开演示文稿时，可以在URL中找到演示文稿ID。
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
+>![API调用示例](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
 >
 >以下API调用返回演示文稿详细信息：
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+>![演示详细信息](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
 >
 >在[!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId]下的模块输出中可以找到搜索匹配项。
 >
 >在我们的示例中，返回了请求的演示文稿详细信息：
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+>![演示详细信息](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
 
 #### [!UICONTROL Insert Links in a Presentation]
 

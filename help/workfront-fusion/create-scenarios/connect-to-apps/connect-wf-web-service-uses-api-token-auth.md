@@ -4,9 +4,9 @@ description: 某些服务不允许集成解决方案(如Adobe Workfront Fusion)�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a8ac816-52de-41e8-96d7-1c8cde2ebe32
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '958'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ ht-degree: 1%
 
 1. 输入或映射要从中创建JSON的值。
 
-   ![](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
+   ![JSON值](/help/workfront-fusion/create-scenarios/connect-to-apps/assets/json-values-350x288.png)
 
 1. 将JSON >创建JSON模块连接到HTTP >发出请求模块。
 1. 将JSON字符串从创建JSON模块映射到“HTTP”>“发出请求”模块中的“请求内容”字段。

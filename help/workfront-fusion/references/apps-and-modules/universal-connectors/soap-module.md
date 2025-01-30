@@ -4,7 +4,7 @@ description: 您可以使用SOAP模块连接到Adobe Workfront Fusion中的SOAP 
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: bf9af473f08463c00578a1a8b07c800239225f09
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 1%
@@ -119,7 +119,7 @@ ht-degree: 1%
     </tbody> 
    </table>
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
+   <!--![Workaround](/help/workfront-fusion/references/apps-and-modules/assets/workaround-350x443.png)-->
 
 1. 打开新的Web浏览器窗口或选项卡。
 1. 将WSDL URL粘贴到Web浏览器的地址栏并提取XML文件。
@@ -129,7 +129,7 @@ ht-degree: 1%
 1. 如果WSDL文件未直接显示在Web浏览器中，请在文本编辑器中打开下载的文件。
 1. 搜索`<service>`或`<wsdl:service>`标记：
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
+   <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. 找到后，从`location`属性复制URL。
 1. 在[!DNL Workfront Fusion]中，将URL粘贴到HTTP模块的URL字段中。
@@ -141,7 +141,7 @@ ht-degree: 1%
 1. 在[!UICONTROL Workfront Fusion]中，将复制的内容粘贴到模块的URL字段。
 1. 通过将问号替换为实际值来为所选参数提供值：
 
-   <!--![](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
+   <!--![Request](/help/workfront-fusion/references/apps-and-modules/assets/request-xml-350x172.png)-->
 
 1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;关闭模块的配置。
 1. 执行方案或模块。

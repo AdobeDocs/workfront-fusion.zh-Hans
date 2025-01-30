@@ -4,9 +4,9 @@ description: 您可以恢复方案的先前版本。 这允许您对方案进行
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '199'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 2%
 ## 恢复方案版本
 
 1. 打开您的方案。
-1. 单击屏幕底部的[!UICONTROL More]图标![](assets/more-icon.png)，然后单击&#x200B;**[!UICONTROL Previous Versions]**。
+1. 单击屏幕底部的[!UICONTROL More]图标![更多图标](assets/more-icon.png)，然后单击&#x200B;**[!UICONTROL Previous Versions]**。
 
 1. 单击&#x200B;**[!UICONTROL Pick the version]**，然后单击要还原的版本。
 1. 单击 **[!UICONTROL OK]**。

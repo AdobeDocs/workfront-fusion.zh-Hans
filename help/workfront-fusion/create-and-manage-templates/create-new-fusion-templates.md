@@ -4,9 +4,9 @@ description: 您可以在 [!DNL Adobe] Workfront Fusion中创建新场景模板�
 author: Becky
 feature: Workfront Fusion
 exl-id: 9cb9bd04-e9ae-4162-a1b9-d71566582b7a
-source-git-commit: 7acc27ab2ce80b964b7f9fbb302816aa75964ab5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -71,16 +71,16 @@ ht-degree: 0%
 
 ### 构建模板
 
-1. 在左侧导航面板中单击&#x200B;**[!UICONTROL Templates]** ![](assets/templates-icon.png)。
+1. 在左侧导航面板中单击&#x200B;**[!UICONTROL Templates]** ![模板图标](assets/templates-icon.png)。
 1. 单击右上角的&#x200B;**[!UICONTROL Create a new template]**。
 1. （可选）通过替换左上角的默认&#x200B;**[!UICONTROL New template name]**&#x200B;来重命名模板。
-1. （可选）要更改模板的语言，请单击&#x200B;**[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png)，然后从“语言”下拉列表中选择语言。
+1. （可选）要更改模板的语言，请单击&#x200B;**[!UICONTROL Set up a template]** ![方案设置图标](assets/scenario-settings-icon.png)，然后从“语言”下拉列表中选择语言。
 
    >[!IMPORTANT]
    >
    >语言选择对应于系统设置中可用的语言，仅涉及公共模板的名称及其描述。 保存模板后，无法更改模板语言。
 
-1. （可选）要输入模板的说明，请单击&#x200B;**[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png)并输入说明。
+1. （可选）要输入模板的说明，请单击&#x200B;**[!UICONTROL Set up a template]** ![方案设置图标](assets/scenario-settings-icon.png)并输入说明。
 1. 使用与将模块添加到方案相同的流程添加应用程序、模块和工具。
 
    有关说明，请参阅[添加模块](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)下的文章。
@@ -94,7 +94,7 @@ ht-degree: 0%
    >如果您的模板包含需要添加连接、凭据或其他隐私敏感信息的模块，则不会与模板用户共享此信息。
 
 1. （可选）单击&#x200B;**[!UICONTROL Run once]**&#x200B;以测试您的模板。
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;图标![](assets/save-icon.png)以保存模板。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;图标![保存图标](assets/save-icon.png)以保存模板。
 
 保存模板后，您的团队成员将能够看到该模板。 如果您希望可以在团队外部访问模板，则必须提交请求以批准和发布模板。 该请求将发送到Adobe Workfront Fusion团队以供审批。 在模板获得批准后，您团队之外的其他人可以访问该模板。
 
@@ -113,13 +113,13 @@ ht-degree: 0%
 
    方案将被复制到新模板页面中。
 1. （可选）通过替换左上角的默认&#x200B;**[!UICONTROL New template name]**&#x200B;来重命名模板。
-1. （可选）要更改模板的语言，请单击&#x200B;**[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png)，然后从“语言”下拉列表中选择语言。
+1. （可选）要更改模板的语言，请单击&#x200B;**[!UICONTROL Set up a template]** ![方案设置图标](assets/scenario-settings-icon.png)，然后从“语言”下拉列表中选择语言。
 
    >[!IMPORTANT]
    >
    >语言选择对应于系统设置中可用的语言，仅涉及公共模板的名称及其描述。 保存模板后，无法更改模板语言。
 
-1. （可选）要输入模板的说明，请单击&#x200B;**[!UICONTROL Set up a template]** ![](assets/scenario-settings-icon.png)并输入说明。
+1. （可选）要输入模板的说明，请单击&#x200B;**[!UICONTROL Set up a template]** ![方案设置图标](assets/scenario-settings-icon.png)并输入说明。
 1. 使用与将模块添加到方案相同的流程，根据需要编辑应用程序、模块和工具。
 
    有关说明，请参阅[添加模块](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)下的文章。
@@ -131,7 +131,7 @@ ht-degree: 0%
    >如果您的模板包含需要添加连接、凭据或其他隐私敏感信息的模块，则不会与模板用户共享此信息。
 
 1. （可选）单击&#x200B;**[!UICONTROL Run once]**&#x200B;以测试您的模板。
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;图标![](assets/save-icon.png)。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;图标![保存图标](assets/save-icon.png)。
 
 ## 设置[!UICONTROL Wizard]功能 {#set-up-wizard-functionality}
 

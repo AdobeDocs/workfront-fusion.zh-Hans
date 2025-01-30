@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 473dba8b-faa4-432f-9357-c2146e86b261
-source-git-commit: 86b0d7b16a4ed7e15888f6ee1a58f0279e96fb70
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -73,13 +73,13 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 1. 在左侧导航面板中单击&#x200B;**[!UICONTROL All Templates]**。
 1. 单击要编辑的模板右侧的&#x200B;**[!UICONTROL Detail]**。
 1. （可选）通过单击右上角的&#x200B;**选项**&#x200B;并选择&#x200B;**重命名**&#x200B;来重命名模板。
-1. （可选）要更改模板的语言，请单击&#x200B;**[!UICONTROL Create a new template]** ![](assets/fusion-scenario-settings-icon.png)，然后从“语言”下拉列表中选择语言。
+1. （可选）要更改模板的语言，请单击&#x200B;**[!UICONTROL Create a new template]** ![方案设置图标](assets/fusion-scenario-settings-icon.png)，然后从“语言”下拉列表中选择语言。
 
    >[!IMPORTANT]
    >
    >语言选择对应于系统设置中可用的语言，仅涉及公共模板的名称及其描述。 保存模板后，无法更改模板语言。
 
-1. （可选）要编辑模板说明，请单击&#x200B;**[!UICONTROL Set up a template]** ![](assets/fusion-scenario-settings-icon.png)，然后输入说明。
+1. （可选）要编辑模板说明，请单击&#x200B;**[!UICONTROL Set up a template]** ![方案设置图标](assets/fusion-scenario-settings-icon.png)，然后输入说明。
 1. 使用与创建标准方案相同的方式添加或编辑应用程序、模块和工具。
 
    若要向模块添加上下文帮助，请参阅本文中的[设置[!UICONTROL Wizard]功能](#set-up-wizard-functionality)。
@@ -91,7 +91,7 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
    >如果您的模板包含需要添加连接、凭据或其他隐私敏感信息的模块，则不会与模板用户共享此信息。
 
 1. （可选）单击&#x200B;**[!UICONTROL Run once]**&#x200B;以测试模板。
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;图标![](assets/save-icon.png)。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;图标![保存图标](assets/save-icon.png)。
 
 
 ## 设置[!UICONTROL Wizard]功能

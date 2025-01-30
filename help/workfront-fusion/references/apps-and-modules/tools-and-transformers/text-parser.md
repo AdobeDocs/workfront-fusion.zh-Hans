@@ -4,9 +4,9 @@ description: 您可以使用文本解析器工具来解析用于其他 [!DNL Ado
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 4fa892b7875af2fcabaf26b375925af7a8cad2a0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -267,21 +267,21 @@ ht-degree: 0%
 
 但是，在文本解析器中实施此表达式不会导致匹配：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
+![没有匹配项](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-you-dont-get-a-match-350x365.png)
 
 原因在于“i”仅显示每个匹配的匹配数，因此在本例中，我们有2个匹配，因此“i”后面有一个数值1和2。 用例是，如果您需要仅匹配或传递第二个匹配值的过滤器中的数据，则可以指定由数值表示的值。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
+![匹配](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-matches-350x355.png)
 
 为了能够获取所需的匹配值，以便在要解析的部分中添加括号（例如，从“filename.docx”中提取 — 仅从“docx”中提取），根据我们用于此案例的正则表达式，应在\上应用括号。(.+)
 
 这会捕获DOCX，将其放入组中，然后保留“。” 别想了。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
+![获取匹配项](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-get-matches-350x592.png)
 
 在下图所示的输出中，捕获组将匹配任何字符（行终止符除外）。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
+![输出](/help/workfront-fusion/references/apps-and-modules/assets/text-parser-output-350x389.png)
 
 另一个同时包含正则表达式的解决方法是使用替换函数
 

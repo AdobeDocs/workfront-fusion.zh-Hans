@@ -5,9 +5,9 @@ description: 本文介绍了场景的执行方式以及数据流通过场景的�
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 如果第一个模块返回一个捆绑包，则该捆绑包将传递场景的其余部分。 在此示例中，捆绑包将转到第二个模块，后者将请求转换为项目。
 
-![](assets/example-execution-flow-wf-only.png)
+![Workfront场景的执行流程](assets/example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 如果返回一个束，则该束将通过场景的其余部分。 在此示例中，方案的其余部分包含secondmodule，它将包上载到[!DNL Dropbox]文件夹。
 
-![](assets/example-execution-flow-wf-dropbox.png)
+![集成方案的执行流程](assets/example-execution-flow-wf-dropbox.png)
 
 如果第一个模块返回多个包，则在上传第二个包之前，会将第一个包上传到[!DNL Dropbox]。 然后，第二个包上传，第三个包上传，依此类推。
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 场景运行完成后，每个模块会显示一个图标，其中显示了执行的操作数。 您可以单击此图标以显示有关进程中每个步骤的已处理捆绑的详细信息。 您可以查看使用了哪些模块设置以及每个模块返回的包。
 
-![](assets/Info-processed-bundles.png)
+![已处理的包](assets/Info-processed-bundles.png)
 
 在此示例中，模块接收了如下输入信息：
 

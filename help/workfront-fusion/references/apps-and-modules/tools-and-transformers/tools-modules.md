@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Tools] 部分包含几个可增强�
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: 7d5188d1ee4e40f74c750e3ce3dcbd0e08bc6606
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1994'
+source-wordcount: '2000'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Adobe Workfront Fusion Tools]部分包含几个可以增强方案的有用模块。
 
-[!UICONTROL Tools]模块可从应用列表或屏幕底部的[!UICONTROL Tools]图标![](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png)中获取。
+[!UICONTROL Tools]模块可从应用列表或屏幕底部的[!UICONTROL Tools]图标![工具图标](/help/workfront-fusion/references/apps-and-modules/assets/tools-icon-small.png)中获取。
 
 ## 访问要求
 
@@ -161,14 +161,14 @@ ht-degree: 0%
 
 以下方案会在每个奇数方案运行后向第一个收件人发送电子邮件，并在每个偶数方案运行后向第二个收件人发送电子邮件。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
+![示例电子邮件](/help/workfront-fusion/references/apps-and-modules/assets/example-email.png)
 
 要创建此方案，请执行以下操作：
 
 1. 将模块的&#x200B;**[!UICONTROL Reset a value]**&#x200B;字段设置为从不。
 1. 为奇数值设置路由。 使用等于`1`的模数数学函数设置此路由的过滤器：
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
+   ![奇数](/help/workfront-fusion/references/apps-and-modules/assets/odd.png)
 
 **注意**：不要忘记将[!UICONTROL Equal to]运算符从默认的[!UICONTROL Text]运算符更改为[!UICONTROL Numeric]运算符。
 

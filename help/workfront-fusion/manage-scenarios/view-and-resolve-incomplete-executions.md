@@ -4,9 +4,9 @@ description: '[!UICONTROL Incomplete executions]文件夹存储由于错误未�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '602'
 ht-degree: 7%
 
 ---
@@ -79,7 +79,7 @@ ht-degree: 7%
 
 <!--
 
-![](assets/incomplete-executions-tab-350x102.png)
+![Incomplete executions tab](assets/incomplete-executions-tab-350x102.png)
 
 -->
 
@@ -113,7 +113,7 @@ ht-degree: 7%
 1. 打开模块的日志，其中显示了模块的所有操作。
 1. 找到失败的操作并单击&#x200B;**[!UICONTROL Resolve]**：
 
-   ![](assets/resolve-btn-350x188.png)
+   ![解决按钮](assets/resolve-btn-350x188.png)
 
 ## 与未完成执行相关的选项
 

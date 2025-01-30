@@ -4,9 +4,9 @@ description: 您可以在Adobe Workfront Fusion中复制模块、模块组或整
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '848'
 ht-degree: 1%
 
 ---
@@ -103,7 +103,7 @@ ht-degree: 1%
 
       或
 
-      如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![](assets/exit-editing-arrow.png)。
+      如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](assets/exit-editing-arrow.png)。
 
 1. 右键单击页面右上角的&#x200B;**[!UICONTROL Options]**。
 1. 选择 **[!UICONTROL Clone]**。

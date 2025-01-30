@@ -4,9 +4,9 @@ description: 数据存储类似于数据库或简单表，可以存储场景中�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1215'
 ht-degree: 1%
 
 ---
@@ -197,8 +197,8 @@ Select或Prime包上的Fusion实例将接收：—>
 
 数据存储的属性包括数据存储使用的数据结构以及数据存储的大小。
 
-1. 在左侧导航面板中单击&#x200B;**[!UICONTROL Data stores]** ![](assets/data-store-icon.png)以打开[!UICONTROL Data stores]区域。
-1. 单击要编辑的数据存储旁边的&#x200B;**[!UICONTROL Edit]** ![](assets/data-store-edit.png)。
+1. 单击左侧导航面板中的&#x200B;**[!UICONTROL Data stores]** ![数据存储图标](assets/data-store-icon.png)以打开[!UICONTROL Data stores]区域。
+1. 单击要编辑的数据存储旁边的&#x200B;**[!UICONTROL Edit]** ![编辑数据存储](assets/data-store-edit.png)。
 1. （可选）如果要将此数据存储使用的数据结构更改为其他现有数据结构，请从&#x200B;**[!UICONTROL Data structure]**&#x200B;下拉列表中选择它。
 
    或
@@ -210,7 +210,7 @@ Select或Prime包上的Fusion实例将接收：—>
 
 ### 编辑数据存储的内容
 
-1. 单击左侧导航面板中的&#x200B;**[!UICONTROL Data Store]**&#x200B;图标![](assets/data-store-icon.png)以打开[!UICONTROL Data Store]区域。
+1. 单击左侧导航面板中的&#x200B;**[!UICONTROL Data Store]**&#x200B;图标![数据存储图标](assets/data-store-icon.png)以打开[!UICONTROL Data Store]区域。
 1. 单击要编辑的数据存储旁边的&#x200B;**[!UICONTROL Browse]**。
 1. （可选）通过将列拖动到所需位置来重新排列列。
 1. （可选）单击单个单元格中的&#x200B;**[!UICONTROL Edit]**&#x200B;图标，然后输入所需的值，从而对该单元格执行[!UICONTROL Edit]操作。

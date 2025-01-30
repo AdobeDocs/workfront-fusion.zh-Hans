@@ -4,9 +4,9 @@ description: 聚合器模块是一种旨在将多捆数据合并到单个捆绑�
 author: Becky
 feature: Workfront Fusion
 exl-id: 93cde0d0-4013-463a-b19c-d58180632739
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 下图显示了[!UICONTROL Aggregator]模块的典型设置：
 
-![](assets/array-aggregator.png)
+![数组汇总](assets/array-aggregator.png)
 
 <table style="table-layout:auto">
  <col> 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 此示例方案显示如何压缩所有电子邮件附件并将ZIP文件上传到[!DNL Dropbox]。
 
-![](assets/dropbox-archive.png)
+![Dropbox存档示例](assets/dropbox-archive.png)
 
 以下方案显示如何：
 
@@ -129,4 +129,4 @@ ht-degree: 0%
 
 以下是[!UICONTROL Archive] > [!UICONTROL Create an archive]聚合器的示例设置：
 
-![](assets/archive-create-an-archive.png)
+![创建存档](assets/archive-create-an-archive.png)

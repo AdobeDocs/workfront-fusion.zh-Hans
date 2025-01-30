@@ -4,9 +4,9 @@ description: 为了将 [!DNL Google Sheets] 与 [!DNL Adobe Workfront Fusion],yo
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 80965570-2937-4ac8-97c0-54f7a813ec50
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '3366'
+source-wordcount: '3372'
 ht-degree: 0%
 
 ---
@@ -726,7 +726,7 @@ Google Sheets连接器使用以下对象：
 1. 执行方案。
 1. 在Google工作表中，从主菜单栏中选择&#x200B;**[!UICONTROL Insert]** > **[!UICONTROL Drawing]**...。
 
-1. 在[!UICONTROL Drawing]窗口中，单击窗口顶部附近的&#x200B;**[!UICONTROL Text box]**&#x200B;图标![](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png)。
+1. 在[!UICONTROL Drawing]窗口中，单击窗口顶部附近的&#x200B;**[!UICONTROL Text box]**&#x200B;图标![文本框](/help/workfront-fusion/references/apps-and-modules/assets/text-box.png)。
 1. 设计一个按钮并单击右上角的&#x200B;**[!UICONTROL Save and Close]**&#x200B;按钮：
 1. 该按钮将放置在您的工作表中。 单击按钮右上角的三个垂直圆点：
 1. 选择&#x200B;**[!UICONTROL Assign script..]。菜单中的**。
@@ -750,7 +750,7 @@ Google Sheets连接器使用以下对象：
 
 如果在没有任何格式的电子表格中存储日期值，则该日期值将在电子表格中显示为ISO 8601格式的文本。 但是，使用日期的[!DNL Google Sheets]公式或函数不理解此文本（示例：公式`=A1+10`）将显示以下错误：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
+![错误](/help/workfront-fusion/references/apps-and-modules/assets/mceclip6-350x87.png)
 
 为了帮助[!DNL Google Sheets]了解日期，请使用[[!UICONTROL formatDate] (date； format； [timezone])](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md#formatda)函数设置其格式。 传递给函数的正确格式（作为第二个参数）取决于电子表格的区域设置设置。
 
@@ -764,7 +764,7 @@ Google Sheets连接器使用以下对象：
 
 **示例：**&#x200B;对美国区域设置使用`MM/DD/YYYY HH:mm:ss`格式：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
+![区域设置时间公式](/help/workfront-fusion/references/apps-and-modules/assets/locale-time-350x83.png)
 
 ## 正在利用[!DNL Google Sheets]功能
 

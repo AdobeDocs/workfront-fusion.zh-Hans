@@ -4,9 +4,9 @@ description: 某些触发器模块允许您选择希望开始捆绑包检索的�
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 9ec972ef7677874965d6b4cb646e87c0b2240214
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '325'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 1%
 
    右键单击触发器模块的图标，然后选择&#x200B;**选择开始位置**。
 
-   ![](assets/choose-where-to-start.png)
+   ![选择开始位置](assets/choose-where-to-start.png)
 
 1. 在出现的&#x200B;**[!UICONTROL Choose where to start]**&#x200B;框中选择一个选项。
 

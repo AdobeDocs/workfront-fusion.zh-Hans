@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2180'
 ht-degree: 0%
 
 ---
@@ -426,7 +426,7 @@ Microsoft Office 365 Excel连接器使用以下内容：
 >
 >此处的表引用工作簿中嵌入的表元素。 不是整个表（工作簿/工作表）。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
+![嵌入表](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
 
 <table style="table-layout:auto"> 
  <col> 

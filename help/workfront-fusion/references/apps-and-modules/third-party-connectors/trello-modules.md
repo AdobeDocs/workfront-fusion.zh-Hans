@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '4256'
+source-wordcount: '4259'
 ht-degree: 0%
 
 ---
@@ -1212,7 +1212,7 @@ Trello连接器使用以下功能：
 
 如果要编辑信息卡或创建新评论，您需要知道信息卡或其短链接的ID。 您可以从[!UICONTROL New Card]触发器的输出获取此信息。 也可以通过打开信息卡并单击[!UICONTROL Share]按钮来获取信息卡的短链接。 可以在`https://trello.com/c/`之后的URL末尾的[!UICONTROL Link to this card]框中找到短链接。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
+![共享和更多](/help/workfront-fusion/references/apps-and-modules/assets/share-and-more-350x575.png)
 
 ### 如何在[!DNL Trello]中查找其他对象的ID
 

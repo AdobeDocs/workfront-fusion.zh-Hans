@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] HTTP应用为基于超文本传输�
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: 6398261775584e33515c546de4e7a72d5830ebe0
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 标题：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
+![JWT标头](/help/workfront-fusion/references/apps-and-modules/assets/jwt-header-350x19.png)
 
 用于复制粘贴的代码(&amp;P)：
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 有效负载：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
+![JWT有效负荷](/help/workfront-fusion/references/apps-and-modules/assets/jwt-payload-350x17.png)
 
 用于复制粘贴的代码(&amp;P)：
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 令牌：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
+![JWT令牌](/help/workfront-fusion/references/apps-and-modules/assets/jwt-token-350x15.png)
 
 用于复制粘贴的代码(&amp;P)：
 

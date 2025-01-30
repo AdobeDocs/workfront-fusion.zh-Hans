@@ -4,9 +4,9 @@ description: webhook是由事件触发的HTTP调用。 您可以使用Webhook激
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: d5ab7dc135206a7269ad4fa0b5c02bf77b97d873
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1331'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
     </tbody> 
    </table>
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
+   ![新屏幕设置](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
 1. 在单独的浏览器选项卡或窗口中打开具有[!UICONTROL Webhooks]模块的方案。
 1. 在webhooks模块中，单击&#x200B;**[!UICONTROL Redetermine data structure]**。
@@ -132,7 +132,7 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 
    “[!UICONTROL Successfully determined]”消息表示模块已成功确定数据结构。
 
-   ![](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
+   ![已成功确定](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
 1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;保存数据结构。
 
@@ -241,7 +241,7 @@ Content-Type: application/json
 >
 >以下示例显示了一个从`Headers[]`数组提取`authorization`标头值的公式。 该公式用在过滤器中，该过滤器将提取的值与给定文本进行比较，以仅在存在匹配项时传递Webhook。
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
+>![设置筛选器](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
 >有关使用给定键获取数组元素的更多信息，请参阅“映射数组”一文中的[使用给定键映射数组的元素](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md#map-an-arrays-element-with-a-given-key)。
 
@@ -311,11 +311,11 @@ Content-Type: application/json
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
+>![自定义标头](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
 >这将生成一个HTML响应，并在Web浏览器中显示：
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
+>![HEML响应](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
 
 ### 重定向示例
 
@@ -342,7 +342,7 @@ Content-Type: application/json
 &gt; </tbody> 
 &gt;</table>
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
+>![Webhook响应](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
 ## Webhook停用
 
@@ -360,6 +360,6 @@ Content-Type: application/json
 
 如果[!UICONTROL Webhooks] > [!UICONTROL Custom Webhook]模块之后的模块设置中的映射面板中缺少某些项，请单击&#x200B;**[!UICONTROL Webhooks]>[!UICONTROL Custom Webhook]**&#x200B;模块以打开其设置，然后单击&#x200B;**[!UICONTROL Re-determine data structure]**：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
+![重新确定数据结构](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 然后按照本文中[配置webhook的数据结构](#configure-the-webhook-s-data-structure)部分中描述的步骤进行操作。

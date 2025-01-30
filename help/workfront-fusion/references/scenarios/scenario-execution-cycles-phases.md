@@ -4,9 +4,9 @@ description: 本文介绍了在 [!DNL Adobe Workfront Fusion] 方案运行时发
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '462'
 ht-degree: 1%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 1%
 >
 >所有支持回滚（也称为事务性）的[!DNL Workfront Fusion]模块均标有ACID标记。
 >
->![](assets/acid-modules.png)
+>![Acid模块](assets/acid-modules.png)
 >
 >当其他模块发生错误时，未使用此标记标记的模块无法恢复为初始状态。 非ACID模块的典型示例是[!UICONTROL Email] >[!UICONTROL Send an Email]操作。 发送电子邮件后，无法撤消发送。
 

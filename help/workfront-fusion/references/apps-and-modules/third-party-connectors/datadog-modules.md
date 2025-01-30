@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行
 author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -213,10 +213,10 @@ URL： `/v1/dashboard`
 
 方法： `GET`
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
+![Datadog API调用示例](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-example.png)
 
 结果可以在模块的“输出”中找到，位于“包”>“正文”>“功能板”下。
 
 在我们的示例中，返回了3个仪表板：
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)
+![Datadog API响应](/help/workfront-fusion/references/apps-and-modules/assets/datadog-api-response-example.png)

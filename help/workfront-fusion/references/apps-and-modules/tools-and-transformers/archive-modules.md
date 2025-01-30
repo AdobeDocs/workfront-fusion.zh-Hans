@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以将存档文
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
 >
 >**示例：**&#x200B;从定义的[!DNL Dropbox]文件夹中获取ZIP文件（例如，存档），使用[!UICONTROL Archive]模块提取该文件，并将提取的文件作为带有[!UICONTROL Email]或[!DNL Gmail]模块的附件发送到所需的电子邮件地址。
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
+>![示例Dropbox](/help/workfront-fusion/references/apps-and-modules/assets/example-dropbox-350x134.png)
 
 ## [!UICONTROL Create an archive]
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 >
 >**示例：**&#x200B;使用[!DNL Gmail] >[!UICONTROL Watch emails]模块观看传入电子邮件。 如果收到电子邮件，则其附件将迭代为单独的包，然后存档到[!DNL ZIP]文件并保存到定义的Dropbox文件夹。
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
+>![示例Gmail](/help/workfront-fusion/references/apps-and-modules/assets/example-gmail-350x102.png)
 
 ## [!UICONTROL Inflate]
 

@@ -4,9 +4,9 @@ description: 迭代器模块是一种特殊类型的模块，可将数组转换�
 author: Becky
 feature: Workfront Fusion
 exl-id: 43d39955-3dd7-453d-8eb0-3253a768e114
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
@@ -63,11 +63,11 @@ ht-degree: 1%
 
 常规迭代器模块有一个字段[!UICONTROL Array]字段。 此字段包含要转换或拆分为单独捆绑的数组。
 
-![](assets/set-up-iterator.jpg)
+![设置迭代器](assets/set-up-iterator.jpg)
 
 其它连接器可以包括该迭代器特定的迭代器模块。 它们包含一个Source模块字段，允许您选择输出要迭代的数组的模块。
 
-![](assets/specialized-iterators.jpg)
+![专用迭代器](assets/specialized-iterators.jpg)
 
 有关详细信息，请参阅[配置模块](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)。
 
@@ -79,7 +79,7 @@ ht-degree: 1%
 
   电子邮件可以包含一系列附件。 第一个模块之后的[!UICONTROL Iterator]模块允许方案分别处理每个附件。 [!UICONTROL Iterator]模块将附件数组拆分为单个包。 然后，每个带有一个附件的包都会在选定的[!DNL Dropbox]文件夹中一次保存一个。 迭代器模块中的[!UICONTROL Array]字段应包含`Attachments`数组。
 
-  ![](assets/attachments-array.jpg)
+  ![附件数组](assets/attachments-array.jpg)
 
 >[!ENDSHADEBOX]
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 当[!UICONTROL Iterator]模块没有有关数组项的结构信息时，[!UICONTROL Iterator]模块后面的模块中的映射面板在[!UICONTROL Iterator]模块下只显示两个项： `Total number of bundles`和`Bundle order position`。
 
-![](assets/mapping-panel-doesnt-display.png)
+![映射面板不显示](assets/mapping-panel-doesnt-display.png)
 
 这是因为每个模块负责提供有关其输出的项的信息，以便这些项目可以在后续模块的映射面板中正确显示。 但是，在某些情况下，多个模块可能无法提供此信息。 例如，[!UICONTROL JSON] > [!UICONTROL Parse JSON]或缺少数据结构的[!UICONTROL Webhooks] > [!UICONTROL Custom Webhook]模块将不提供信息。
 
@@ -100,11 +100,11 @@ ht-degree: 1%
 
 例如，方案包含不带数据结构的[!UICONTROL JSON] > [!UICONTROL Parse JSON]模块。
 
-![](assets/json-parse-json.png)
+![解析JSON](assets/json-parse-json.png)
 
 连接到此JSON模块的[!UICONTROL Iterator]模块无法将模块的输出映射到[!UICONTROL Iterator]模块的设置面板中的Array字段。
 
-![](assets/connect-iterator-module.png)
+![连接迭代器模块](assets/connect-iterator-module.png)
 
 要解决此问题：
 
@@ -120,8 +120,8 @@ ht-degree: 1%
 
 执行[!UICONTROL JSON] > [!UICONTROL Parse JSON]后，它可以将其输出信息提供给所有后续模块，包括迭代器模块。 然后，迭代器设置中的映射面板会显示以下项目：
 
-![](assets/mapping-panel-displays-items.png)
+![映射面板显示项目](assets/mapping-panel-displays-items.png)
 
 此外，在[!UICONTROL Iterator]模块之后连接的模块中的映射面板将显示数组中包含的项：
 
-![](assets/items-contained-in-array.png)
+![包含在数组中的项](assets/items-contained-in-array.png)

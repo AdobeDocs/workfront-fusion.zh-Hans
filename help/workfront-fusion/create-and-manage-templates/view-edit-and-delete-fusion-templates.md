@@ -7,9 +7,9 @@ description: 除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: a252de430a3c712c48c1677433ce6176292bc6ce
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '839'
 ht-degree: 2%
 
 ---
@@ -117,7 +117,7 @@ ht-degree: 2%
 
 您可以编辑[!UICONTROL Team templates]选项卡中可用的任何模板。
 
-1. 单击侧面导航菜单中的&#x200B;**[!UICONTROL Templates]**&#x200B;图标![](assets/templates-icon.png)。
+1. 单击侧面导航菜单中的&#x200B;**[!UICONTROL Templates]**&#x200B;图标![模板图标](assets/templates-icon.png)。
 1. 单击 **[!UICONTROL Team templates]** 选项卡。
 1. 单击 **[!UICONTROL Private]** 选项卡。
 1. 单击要编辑的模板。
@@ -128,7 +128,7 @@ ht-degree: 2%
    单击模板图。
 
 1. 在模板中进行更改。 您可以访问创建模板时可用的所有选项。 要查看这些选项，请参阅[创建新模板](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)。
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;图标![](assets/save-icon.png)。
+1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;图标![保存图标](assets/save-icon.png)。
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ ht-degree: 2%
 
 请注意，删除模板后，该模板将无法恢复。 团队模板适用于团队的所有成员，因此在删除模板之前，我们建议您与团队确认，以确保不需要该模板。
 
-1. 单击侧面导航菜单中的&#x200B;**[!UICONTROL Templates]**&#x200B;图标![](assets/templates-icon.png)。
+1. 单击侧面导航菜单中的&#x200B;**[!UICONTROL Templates]**&#x200B;图标![模板图标](assets/templates-icon.png)。
 1. 单击 **[!UICONTROL Team templates]** 选项卡。
 1. 单击模板名称旁边的&#x200B;**[!UICONTROL Delete]**
 

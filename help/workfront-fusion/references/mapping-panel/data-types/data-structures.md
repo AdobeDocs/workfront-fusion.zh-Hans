@@ -4,9 +4,9 @@ description: 数据结构是一个文档，它详细描述了要传输到Adobe W
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-source-git-commit: b7c511c51a2f27292cd0cb754673515e67c8a397
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 1%
 
 ---
@@ -24,4 +24,4 @@ ht-degree: 1%
 
 数据结构并不总是必须创建的。 您可以使用内置生成器中的模板简化操作。 通过提供数据示例，生成器将根据您输入的数据示例自动创建数据结构。 然后，可以手动修改所创建的数据结构。
 
-![](assets/data-structure-generator-350x341.jpg)
+![数据结构生成器](assets/data-structure-generator-350x341.jpg)

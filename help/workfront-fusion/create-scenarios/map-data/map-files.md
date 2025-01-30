@@ -4,9 +4,9 @@ description: 某些模块具有处理文件的功能。 这些模块可以返回
 author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -92,10 +92,10 @@ ht-degree: 1%
 1. 在要映射到的目标模块中，找到&#x200B;**Source文件**&#x200B;区域。
 1. 要映射上一个模块输出的文件，请选择输出文件的模块。
 
-   ![](assets/wf-download-document.png)
+   ![Workfront下载文档](assets/wf-download-document.png)
 
 1. 要手动映射名称和数据，请选择映射，然后输入或映射文件的名称和数据。
 
-   ![](assets/use-the-map-option.png)
+   ![使用映射选项](assets/use-the-map-option.png)
 
 1. 继续配置模块，或单击&#x200B;**确定**。

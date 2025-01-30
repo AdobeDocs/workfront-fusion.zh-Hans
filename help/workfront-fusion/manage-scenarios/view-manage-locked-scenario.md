@@ -7,9 +7,9 @@ description: 管理 [!DNL Adobe Workfront Fusion]中的锁定方案
 author: Becky
 feature: Workfront Fusion
 exl-id: b5e92bdc-cc1d-4b22-8c5f-42cc279d5590
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 1%
 
 ---
@@ -92,4 +92,4 @@ ht-degree: 1%
 1. 单击屏幕右上角的&#x200B;**[!UICONTROL Options]**。
 1. 选择 **[!UICONTROL Unlock execution]**。
 1. 单击 **[!UICONTROL Unlock]**。
-   ![](assets/unlock-scenario.png)
+   ![解锁方案](assets/unlock-scenario.png)

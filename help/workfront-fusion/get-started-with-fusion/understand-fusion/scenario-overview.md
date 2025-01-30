@@ -4,9 +4,9 @@ description: 除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '693'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Adobe Workfront Fusion的职责是自动化您的流程，这样您的用户就�
 
 在此示例中，当在[!DNL Workfront]中的任务或问题中的指定字段发生更改时，将触发该方案。 触发时，场景获取相关项目中的信息，并为分配给项目上特定角色的人员创建量身定制的更新。
 
-![](assets/fusion-template-example.png)
+![模板示例](assets/fusion-template-example.png)
 
 +++
 
@@ -90,7 +90,7 @@ Workfront Fusion可以连接到其他应用程序和Web服务。 您可以从其
 
 在此示例中，将用户添加到[!DNL Excel]电子表格时会触发该方案。 方案检查用户是否在[!DNL Workfront]中。 如果不存在，则方案将在[!DNL Workfront]中创建用户，并将其Workfront用户ID添加回电子表格。
 
-![](assets/fusion-integration-example.png)
+![集成示例](assets/fusion-integration-example.png)
 
 有关专用连接器的列表，请参阅[Fusion应用程序及其模块引用：文章索引](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 

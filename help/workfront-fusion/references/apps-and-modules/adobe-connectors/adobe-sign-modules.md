@@ -4,9 +4,9 @@ description: 使用 [!DNL Adobe Acrobat Sign] 模块，您可以基于 [!DNL Ado
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '5488'
+source-wordcount: '5501'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Adobe Acrobat Sign连接器使用以下对象：
 
 [!DNL Adobe Sign]协议需要一个字段来处理。 有多种方法可用于执行此操作，但最简单、最常见的方法是上传临时文档，然后将该文档映射到您的协议。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
+![Adobe Sign推荐](/help/workfront-fusion/references/apps-and-modules/assets/adobe-sign-recommendations-350x168.png)
 
 ## [!DNL Adobe Acrobat Sign]模块及其字段
 
@@ -941,11 +941,11 @@ Adobe Acrobat Sign连接器使用以下对象：
 
 **示例：**&#x200B;在此工作流中，要签名的文档(以前从Workfront下载)作为临时文档上传。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
+(/help/workfront-fusion/references/apps-and-modules/assets/sign-example-1-350x308.png)
 
 [!UICONTROL Upload document]模块为文档提供了[!DNL Adobe Acrobat Sign] ID，可在以后的模块中引用。 创建协议后，上传文档的ID包含在[!UICONTROL Files to send]字段中。
 
-![](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
+![签名示例](/help/workfront-fusion/references/apps-and-modules/assets/sign-example-2-350x356.png)
 
 +++
 

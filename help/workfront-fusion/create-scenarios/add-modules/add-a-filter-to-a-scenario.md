@@ -4,9 +4,9 @@ description: 在某些情况下，您只需要使用满足特定条件的包。 
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: 839f6edf93df8a935b2c5d0a520bdc125fe60288
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '564'
 ht-degree: 1%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 1%
 
    例如，如果您希望过滤器以XML结尾的[!DNL Adobe Workfront]传递文件，则应在第一个框中输入&#x200B;**[!UICONTROL File name]**&#x200B;并输入。第二个框中的&#x200B;**[!UICONTROL xml]**。 在它们之间的下拉菜单中，选择&#x200B;**[!UICONTROL Ends with (case insensitive)]**。 此过滤器将应用于来自第一个模块(Workfront)的传入包。 只有包含XML文件的包才会传递到下一个模块。
 
-   ![](assets/set-up-filter-box.png)
+   ![设置筛选器](assets/set-up-filter-box.png)
 
 1. 单击 **[!DNL OK]**。
 
@@ -110,7 +110,7 @@ ht-degree: 1%
 
    如果您没有看到DevTool图标，请参阅[调试方案](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)以获取有关打开DevTool的说明。
 
-1. 单击左侧栏中的&#x200B;**[!UICONTROL Tools]**&#x200B;图标![](assets/devtools-tools-icon.png)。
+1. 单击左侧栏中的&#x200B;**[!UICONTROL Tools]**&#x200B;图标![DevTool tools](assets/devtools-tools-icon.png)。
 
 1. 单击&#x200B;**[!UICONTROL Copy Filter]**，然后在右侧面板中配置&#x200B;**[!UICONTROL Copy Filter]**&#x200B;工具：
 

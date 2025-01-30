@@ -4,9 +4,9 @@ description: 利用方案编辑器，可在可视化界面中创建和编辑方�
 author: Becky
 feature: Workfront Fusion
 exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '547'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 利用方案编辑器，可在可视化界面中创建和编辑方案。
 
-![](assets/scenario-editor.jpg)
+![方案编辑器](assets/scenario-editor.jpg)
 
 ## 访问要求
 
@@ -71,7 +71,7 @@ ht-degree: 3%
 
 ## 打开方案编辑器并添加模块：
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]** ![](assets/scenarios-icon.png)。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]** ![方案图标](assets/scenarios-icon.png)。
 1. 单击问号图标![问号图标](assets/question-mark-full-size.png)，然后查找并单击要开始使用的应用程序或服务。 有关配置模块的详细信息，请参阅[配置模块](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)。
 
 ## 可用的方案编辑器操作

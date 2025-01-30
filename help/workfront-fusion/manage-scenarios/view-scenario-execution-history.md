@@ -4,9 +4,9 @@ description: '[!UICONTROL Incomplete executions]文件夹存储由于错误未�
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 0%
 
    或
 
-   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![](assets/exit-editing-arrow.png)。
+   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](assets/exit-editing-arrow.png)。
 
 1. 单击方案名称附近的&#x200B;**历史记录**。
    ![历史记录选项卡](assets/history-tab.png)
@@ -115,7 +115,7 @@ ht-degree: 0%
 
    或
 
-   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![](assets/exit-editing-arrow.png)。
+   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](assets/exit-editing-arrow.png)。
 
 1. 单击右侧面板中的&#x200B;**[!UICONTROL History]**&#x200B;选项卡。
 1. （可选）有关所选方案运行的详细信息，请单击右侧面板中的执行。
@@ -133,7 +133,7 @@ ht-degree: 0%
 您可以过滤执行历史记录以仅查看具有指定值的执行。
 
 1. 打开方案的全页历史记录，如本文中[!UICONTROL History]选项卡](#view-scenario-history-on-the-history-tab)上的[查看方案执行历史记录中所述。
-1. 单击要作为筛选依据的列标题中的[!UICONTROL filter]图标![](assets/fusion-scenario-filter-icon.png)。
+1. 单击要作为筛选依据的列标题中的[!UICONTROL filter]图标![方案筛选器图标](assets/fusion-scenario-filter-icon.png)。
 1. 在[!UICONTROL filter]对话框中，输入要作为筛选依据的值。
 1. 单击 **[!UICONTROL Save]**。
 

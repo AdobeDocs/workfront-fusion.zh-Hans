@@ -5,9 +5,9 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1637'
 ht-degree: 0%
 
 ---
@@ -229,13 +229,13 @@ DocuSign连接器使用以下内容：
 >
 >指定请求何时开始检查帐户信封的状态更改。
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
+>![示例Docusign设置](/help/workfront-fusion/references/apps-and-modules/assets/example-docusign-setup-350x770.png)
 >
 >可以在“包”>“主体”>“信封”下的模块输出中找到结果。
 >
 >在我们的示例中，返回了6个信封：
 >
->![](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
+>![示例docusign输出](/help/workfront-fusion/references/apps-and-modules/assets/docusign-example-output-350x677.png)
 
 #### [!UICONTROL Download a document]
 
