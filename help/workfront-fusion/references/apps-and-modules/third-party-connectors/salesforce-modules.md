@@ -4,9 +4,9 @@ description: 在Adobe Workfront Fusion场景中，您可以自动使用Salesforc
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ab94fe400af51d4beb4439c603ddd91a6b3f421d
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2715'
 ht-degree: 0%
 
 ---
@@ -31,42 +31,46 @@ ht-degree: 0%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 计划*</td>
-  <td> <p>[!UICONTROL Pro] 或更高</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td>
-   <td> <p>[!UICONTROL Plan]， [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成] </p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 先决条件
 
@@ -167,9 +171,36 @@ Salesforce连接器使用以下对象：
 
 ### 触发器
 
+* [[!UICONTROL Watch a field]](#watch-a-field)
 * [[!UICONTROL Watch for Records]](#watch-for-records)
 * [[!UICONTROL Watch Outbound Messages]](#watch-outbound-messages)
-* [[!UICONTROL Watch a field]](#watch-a-field)
+
+#### [!UICONTROL Watch a field]
+
+此触发器模块在[!DNL Salesforce]中更新字段时启动方案。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Record Type] </td> 
+   <td> <p>选择记录类型，其中包含您希望模块监视的字段。 您必须选择在[!DNL Salesforce]设置中启用了[!UICONTROL Field History]的记录类型。 有关详细信息，请参阅[!DNL Salesforce]文档中的<a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">字段历史记录跟踪</a>。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Field]</td> 
+   <td> <p>选择您希望模块关注更改的字段。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Limit]</td> 
+   <td> <p>输入或映射您希望模块在每个方案执行周期中返回的最大字段数。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Watch for Records]
 
@@ -253,41 +284,14 @@ Salesforce连接器使用以下对象：
  </tbody> 
 </table>
 
-#### *[!UICONTROL Watch a field]*
-
-此触发器模块在[!DNL Salesforce]中更新字段时启动方案。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Record Type] </td> 
-   <td> <p>选择记录类型，其中包含您希望模块监视的字段。 您必须选择在[!DNL Salesforce]设置中启用了[!UICONTROL Field History]的记录类型。 有关详细信息，请参阅[!DNL Salesforce]文档中的<a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">字段历史记录跟踪</a>。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Field]</td> 
-   <td> <p>选择您希望模块关注更改的字段。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Limit]</td> 
-   <td> <p>输入或映射您希望模块在每个方案执行周期中返回的最大字段数。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 ### 操作
 
 * [[!UICONTROL Create a Record]](#create-a-record)
-* [[!UICONTROL Read a Record]](#read-a-record)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
 * [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
+* [[!UICONTROL Delete a Record]](#delete-a-record)
 * [[!UICONTROL Download Attachment/Document]](#download-attachmentdocument)
+* [[!UICONTROL Read a Record]](#read-a-record)
+* [[!UICONTROL Upload Attachment/Document]](#upload-attachmentdocument)
 * [上传文件](#upload-file)
 
 #### [!UICONTROL Create a Record]
@@ -315,68 +319,6 @@ Salesforce连接器使用以下对象：
   <tr> 
    <td>[!UICONTROL Select fields to map]</td> 
    <td> <p>选择您希望模块在创建新记录时配置的字段。 必填字段位于列表顶部。 </p> <p>您选择的字段在此字段下打开。 您现在可以在这些字段中输入值。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Read a Record]
-
-此操作模块从[!DNL Salesforce]中的单个对象读取数据。
-
-您指定记录的ID。
-
-该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
-
-配置此模块时，会显示以下字段。
-
-<table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
- <tbody> 
-  <tr>
-    <td>[!UICONTROL Connection]</td>
-   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
-  </tr> 
-  <tr>
-    <td>[!UICONTROL Record Type]</td>
-    <td>选择您希望模块[action].read的[!DNL Salesforce]记录类型。</td>
-  </tr> 
-  <tr>
-    <td>[!UICONTROL Record Fields]</td>
-    <td>选择您希望模块读取的字段。 您必须至少选择一个字段。</td>
-  </tr> 
-  <tr>
-    <td>[!UICONTROL ID]</td>
-    <td> <p>输入或映射您希望模块读取的记录的唯一[!DNL Salesforce] ID。</p> <p>要获取ID，请在浏览器中打开[!DNL Salesforce]对象，并复制URL末尾处最后一个正斜杠(/)后面的文本。 例如： <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td>
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Delete a Record]
-
-此操作模块删除对象中的现有记录。
-
-您指定记录的ID。
-
-该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
-
-配置此模块时，会显示以下字段。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Record Type] </td> 
-   <td> <p>选择要模块删除的[!DNL Salesforce]记录的类型。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL ID]</td> 
-   <td> <p>输入或映射您希望模块删除的记录的唯一[!DNL Salesforce] ID。</p> <p>要获取ID，请在浏览器中打开[!DNL Salesforce]对象，并复制URL末尾处最后一个正斜杠(/)后面的文本。 例如： <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -430,58 +372,31 @@ Salesforce连接器使用以下对象：
  </tbody> 
 </table>
 
->[!INFO]
->
->**示例：**&#x200B;以下API调用返回您[!DNL Salesforce]帐户中所有用户的列表：
->
->* **URL**： `query`
->
->* **方法**： [!UICONTROL GET]
->
->* **查询字符串**：
->
->* **键**： `q`
->
->* **值**： `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
->
->在&#x200B;**[!UICONTROL Bundle]> [!UICONTROL Body] >[!UICONTROL records]**&#x200B;下的模块输出中可以找到搜索匹配项。
->
->在我们的示例中，返回了6个用户：
->
->![搜索匹配](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+#### [!UICONTROL Delete a Record]
 
+此操作模块删除对象中的现有记录。
 
-#### [!UICONTROL Upload Attachment/Document]
+您指定记录的ID。
 
-此操作模块上传文件并将其附加到您指定的记录，或上传文档。
-
-模块会返回附件或文档的ID以及任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
 
 配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
- <col data-mc-conditions=""> 
- <col data-mc-conditions=""> 
+ <col> 
+ <col> 
  <tbody> 
   <tr> 
    <td>[!UICONTROL Connection]</td> 
    <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Type of Upload]</td> 
-   <td>选择您希望模块上载附件还是文档。</td> 
+   <td>[!UICONTROL Record Type] </td> 
+   <td> <p>选择要模块删除的[!DNL Salesforce]记录的类型。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL ID]</td> 
-   <td>输入或映射要向其上载附件的对象的ID。</td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder]</td> 
-   <td>选择包含您希望模块上传的文件的文件夹。 </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Source File]</td> 
-   <td>从上一个模块中选择源文件，或映射源文件的名称和数据。</td> 
+   <td> <p>输入或映射您希望模块删除的记录的唯一[!DNL Salesforce] ID。</p> <p>要获取ID，请在浏览器中打开[!DNL Salesforce]对象，并复制URL末尾处最后一个正斜杠(/)后面的文本。 例如： <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -520,6 +435,59 @@ Salesforce连接器使用以下对象：
  </tbody> 
 </table>
 
+#### [!UICONTROL Read a Record]
+
+此操作模块从[!DNL Salesforce]中的单个对象读取数据。
+
+您指定记录的ID。
+
+该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+
+配置此模块时，会显示以下字段。
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr>
+    <td>[!UICONTROL Connection]</td>
+   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr>
+    <td>[!UICONTROL Record Type]</td>
+    <td>选择您希望模块[action].read的[!DNL Salesforce]记录类型。</td>
+  </tr> 
+  <tr>
+    <td>[!UICONTROL Record Fields]</td>
+    <td>选择您希望模块读取的字段。 您必须至少选择一个字段。</td>
+  </tr> 
+  <tr>
+    <td>[!UICONTROL ID]</td>
+    <td> <p>输入或映射您希望模块读取的记录的唯一[!DNL Salesforce] ID。</p> <p>要获取ID，请在浏览器中打开[!DNL Salesforce]对象，并复制URL末尾处最后一个正斜杠(/)后面的文本。 例如： <code>https://eu5.salesforce.com/&lt;object ID&gt;</code></p> </td>
+  </tr> 
+ </tbody> 
+</table>
+
+>[!INFO]
+>
+>**示例：**&#x200B;以下API调用返回您[!DNL Salesforce]帐户中所有用户的列表：
+>
+>* **URL**： `query`
+>
+>* **方法**： [!UICONTROL GET]
+>
+>* **查询字符串**：
+>
+>* **键**： `q`
+>
+>* **值**： `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
+>
+>在&#x200B;**[!UICONTROL Bundle]> [!UICONTROL Body] >[!UICONTROL records]**&#x200B;下的模块输出中可以找到搜索匹配项。
+>
+>在我们的示例中，返回了6个用户：
+>
+>![搜索匹配](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+
 
 #### [!UICONTROL Update a Record]
 
@@ -550,6 +518,42 @@ Salesforce连接器使用以下对象：
   <tr> 
    <td>[!UICONTROL Select fields to map]</td> 
    <td> <p>选择您希望模块在创建新记录时配置的字段。 必填字段位于列表顶部。 </p> <p>您选择的字段在此字段下打开。 您现在可以在这些字段中输入值。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+#### [!UICONTROL Upload Attachment/Document]
+
+此操作模块上传文件并将其附加到您指定的记录，或上传文档。
+
+模块会返回附件或文档的ID以及任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+
+配置此模块时，会显示以下字段。
+
+<table style="table-layout:auto"> 
+ <col data-mc-conditions=""> 
+ <col data-mc-conditions=""> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Type of Upload]</td> 
+   <td>选择您希望模块上载附件还是文档。</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL ID]</td> 
+   <td>输入或映射要向其上载附件的对象的ID。</td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder]</td> 
+   <td>选择包含您希望模块上传的文件的文件夹。 </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Source File]</td> 
+   <td>从上一个模块中选择源文件，或映射源文件的名称和数据。</td> 
   </tr> 
  </tbody> 
 </table>
