@@ -4,14 +4,18 @@ description: 场景评分专家可以帮助您确保按照最佳实践的方式�
 author: Becky
 feature: Workfront Fusion
 exl-id: b668e7f6-dac5-4ac9-b3f3-109f70eaa2c4
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 1ac1c4358901ef81bb7375c24fcdf1a44119af13
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '349'
 ht-degree: 1%
 
 ---
 
 # 运行方案得分专家
+
+>[!IMPORTANT]
+>
+>场景得分专家已暂时禁用。
 
 场景评分专家可以帮助您确保按照最佳实践的方式配置场景。 它会检查您的方案并提供有关其结构和组织的建议。
 
