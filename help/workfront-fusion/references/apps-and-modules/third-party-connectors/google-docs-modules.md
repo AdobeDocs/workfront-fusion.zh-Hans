@@ -4,9 +4,9 @@ description: 通过Adobe Workfront Fusion [!DNL Google Docs] 模块，您可以�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3222'
 ht-degree: 0%
 
 ---
@@ -583,7 +583,7 @@ Google Docs连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>以标准JSON对象的形式添加请求的标头。例如，<code>{"Content-type":"application/json"}</code>。 [!DNL Workfront Fusion]为您添加授权标头。</p> </td> 
+   <td> <p>以标准JSON对象的形式添加请求的标头。 例如，<code>{"Content-type":"application/json"}</code>。 [!DNL Workfront Fusion]为您添加授权标头。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 

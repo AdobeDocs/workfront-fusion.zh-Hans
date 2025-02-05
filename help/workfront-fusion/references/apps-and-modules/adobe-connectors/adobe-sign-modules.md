@@ -4,9 +4,9 @@ description: 使用 [!DNL Adobe Acrobat Sign] 模块，您可以基于 [!DNL Ado
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0ef9d40e-8ad6-434e-8fa0-076920ff29ea
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '5501'
+source-wordcount: '5503'
 ht-degree: 0%
 
 ---
@@ -229,7 +229,7 @@ Adobe Acrobat Sign连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td>以标准JSON对象的形式添加请求的标头。例如， <code>{"Content-type":"application/json"}</code></td> 
+   <td>以标准JSON对象的形式添加请求的标头。 例如， <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Record type]</td> 
@@ -361,7 +361,7 @@ Adobe Acrobat Sign连接器使用以下对象：
 <td>有关将[!DNL Adobe Acrobat Sign]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a></td>  </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td>以标准JSON对象的形式添加请求的标头。例如， <code>{"Content-type":"application/json"}</code></td> 
+   <td>以标准JSON对象的形式添加请求的标头。 例如， <code>{"Content-type":"application/json"}</code></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Files to send]</td> 

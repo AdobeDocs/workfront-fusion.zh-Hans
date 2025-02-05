@@ -4,9 +4,9 @@ description: 创建或编辑场景时，您可以配置设置以控制数据流�
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -17,56 +17,77 @@ ht-degree: 0%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 计划*</td>
-  <td> <p>[!UICONTROL Pro] 或更高</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td>
-   <td> <p>[!UICONTROL Plan]， [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
-   <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成]，[!UICONTROL [!DNL Workfront Fusion]用于工作自动化]</p>
+   <p>无Workfront Fusion许可证要求。</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 中继器
 
 您可以使用[!UICONTROL Repeater]模块重复指定次数的任务。 [!UICONTROL Repeater]模块逐个生成包。
 
+
+<table>
+    <tr>
+        <td>[!UICONTROL Initial value]</td>
+        <td>输入或映射您希望模块在第一迭代中的值。 默认值为1。</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Repeats]</td>
+        <td>输入或映射您希望模块重复执行的次数。 此数字必须大于或等于0，并且小于或等于10,000。</td>
+    </tr>
+    <tr>
+        <td>[!UICONTROL Step]</td>
+        <td>这是模块增加值所依据的数字。 默认值为1。</td>
+    </tr>
+</table>
+
+>[!BEGINSHADEBOX]
+
 例如，您可以通过将&#x200B;**[!UICONTROL Email]>[!UICONTROL Send me an email]**&#x200B;模块连接到[!UICONTROL Repeater]模块，使用[!UICONTROL Repeater]模块发送主题为“Hello 1”、“Hello 2”等的五封电子邮件。
 
-要使用[!UICONTROL Repeater]模块：
-
 1. 单击屏幕底部的[!UICONTROL Flow Control]图标![流量控制图标](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif)，然后在显示的菜单中单击&#x200B;**[!UICONTROL Repeater]**。
-1. 单击[!UICONTROL Repeater]捆绑包，然后在显示的框中单击&#x200B;**[!UICONTROL Connect automatically]**。
-1. 在出现的[!UICONTROL Flow Control]框中，键入要在&#x200B;**[!UICONTROL Repeats]**&#x200B;框中输入的重复（输出包）数。
+1. 单击[!UICONTROL Repeater]模块，然后在显示的框中单击&#x200B;**[!UICONTROL Connect automatically]**。
 
-   在我们的电子邮件示例中，您将键入5。
+   此时会打开中继器模块。
+
+1. 在&#x200B;**[!UICONTROL Repeats]**&#x200B;字段中，输入您希望模块产生的重复（输出捆绑）数。
+
+   在本例中，您将输入5。
 
    ![中继器](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
@@ -81,17 +102,13 @@ ht-degree: 0%
 
    ![中继器](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
-| 项 | 描述 |
-|---|---|
-| [!UICONTROL Initial value] | 输入或映射您希望模块在第一个迭代中设置为`i`的数字。 默认值为1。 |
-| [!UICONTROL Repeats] | 输入或映射您希望模块重复执行的次数。 此数字必须大于或等于0，并且小于或等于10,000。 |
-| [!UICONTROL Step] | 这是模块增加`i`值所依据的数字。 默认值为1。 |
 
-{style="table-layout:auto"}
 
 >[!NOTE]
 >
 >重复次数不是由`i`的值确定的，因为它在编程中处于循环中。 模块将重复[!UICONTROL Repeats]字段中指示的次数。 值`i`随[!DNL repeater]模块的每个迭代而更改，可以映射到以后的模块。 上面的示例将`i`的值映射到Hello消息中，从而生成显示“Hello 1”、“Hello 2”等的消息。
+
+>[!ENDSHADEBOX]
 
 ## [!UICONTROL Iterator]
 
@@ -105,9 +122,9 @@ ht-degree: 0%
 
 [!UICONTROL Router]模块允许您将流量分支为多条路由，并以不同的方式处理每条路由中的数据。 [!UICONTROL Router]模块收到捆绑包后，会按照路由附加到[!UICONTROL Router]模块的顺序将其转发到每个连接的路由。 有关详细信息，请参阅 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)中的[路由器模块。
 
-<!--
-<div>
-<h2>Directives</h2>
-<p>The error handling directives allow you to control how your scenario reacts to errors. For more information, see <a href="/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md" class="MCXref xref">Advanced error handling in Adobe Workfront Fusion</a> and <a href="/help/workfront-fusion/references/errors/directives-for-error-handling.md" class="MCXref xref">Directives for error handling in Adobe Workfront Fusion</a>.</p>
-</div>
--->
+## 指令
+
+利用错误处理指令，可控制场景对错误的反应方式。
+
+有关错误处理指令的信息，请参阅[错误处理指令](/help/workfront-fusion/references/errors/directives-for-error-handling.md)。
+

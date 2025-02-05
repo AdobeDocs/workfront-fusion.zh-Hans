@@ -4,18 +4,14 @@ description: Adobe Workfront Fusion HTTP &amp；gt；发出请求模块是一个
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 0%
+source-wordcount: '819'
+ht-degree: 1%
 
 ---
 
 # [!UICONTROL HTTP] > [!UICONTROL Make a request]模块
-
->[!NOTE]
->
->除了[!DNL Adobe Workfront]许可证之外，Adobe Workfront Fusion还需要[!DNL Adobe Workfront Fusion]许可证。
 
 [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Make a request module]是一个通用模块，通过该模块可以配置HTTP请求并将其提交到服务器。 接收的HTTP响应随后包含在输出包中。
 
@@ -27,50 +23,48 @@ ht-degree: 0%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] 计划*</td> 
-   <td> <p>[!UICONTROL Pro] 或更高</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td> 
-   <td> <p>[!UICONTROL Plan]， [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
-   <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成] </p>
+   <p>无Workfront Fusion许可证要求。</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
-## [!UICONTROL HTTP] >[!UICONTROL Make a request]模块配置
++++
 
-配置[!UICONTROL HTTP] >[!UICONTROL Make a request]模块时，[!DNL Adobe Workfront Fusion]显示下面列出的字段。 模块中的粗体标题表示必填字段。
+## [!UICONTROL HTTP] > [!UICONTROL Make a request]模块配置
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[在 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)中将信息从一个模块映射到另一个模块。
-
-![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
+配置[!UICONTROL HTTP] > [!UICONTROL Make a request]模块时，[!DNL Adobe Workfront Fusion]显示下面列出的字段。 模块中的粗体标题表示必填字段。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -82,7 +76,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
-   <td> <p>输入要向其发送请求的URL，如API端点、网站等。</p> </td> 
+   <td> <p>输入要向其发送请求的URL，如API端点或网站。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
@@ -90,7 +84,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers] </td> 
-   <td> <p>以标准JSON对象的形式添加请求的标头。例如， <code>{"Content-type":"application/json"}</code></p> </td> 
+   <td> <p>以标准JSON对象的形式添加请求的标头。 例如， <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query String]</td> 
@@ -110,13 +104,13 @@ ht-degree: 0%
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data]是用于发送文件和数据的HTTP多部分请求。 它通常用于将文件上传到服务器。</p> <p>添加要在请求中发送的字段。 每个字段都必须包含键值对。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>输入要在请求正文中发送的键和值。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>输入密钥，并在请求正文中指定要发送的源文件。</p> <p>映射您要从上一个模块上传的文件(如[!UICONTROL HTTP] &gt;[!UICONTROL Get a File]或[!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)]，或手动输入文件名和文件数据。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>输入密钥，并在请求正文中指定要发送的源文件。</p> <p>映射您要从上一个模块上传的文件（如[!UICONTROL HTTP] &gt;[!UICONTROL Get a File]或[!UICONTROL Google Drive] &gt;下载文件），或手动输入文件名和文件数据。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Parse response]</p> </td> 
-   <td> <p>启用此选项可自动解析响应并转换JSON和XML响应，因此您无需使用[!UICONTROL JSON] &gt; [!UICONTROL Parse JSON]或[!UICONTROL XML] &gt; [!UICONTROL Parse XML]模块。</p> <p>在使用解析的JSON或XML内容之前，请手动运行一次模块，以便模块能够识别响应内容并允许您在后续模块中映射该内容。</p> </td> 
+   <td> <p>启用此选项可自动解析响应并转换JSON和XML响应。</p> <p>在使用解析的JSON或XML内容之前，请手动运行一次模块，以便模块能够识别响应内容并允许您在后续模块中映射该内容。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL User name]</p> </td> 
@@ -136,7 +130,25 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> 如果要使用自签名证书的TLS，请上载证书。</p> </td> 
+   <td> <p>要添加自签名证书，请执行以下操作：</p>
+          <ol>
+            <li value="1">
+              <p>单击 <b>[!UICONTROL Extract]</b>。</p>
+            </li>
+            <li value="2">
+              <p>选择要提取的文件类型。</p>
+            </li>
+            <li value="3">
+              <p>选择包含或证书的文件。</p>
+            </li>
+            <li value="4">
+              <p>输入文件的密码。</p>
+            </li>
+            <li value="5">
+              <p>单击<b>[!UICONTROL Save]</b>提取文件并返回模块设置。</p>
+            </li>
+          </ol>
+</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
@@ -160,19 +172,17 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
-   <td> <p>启用此选项可在HTTP请求中使用双向TLS。</p> <p>有关双方TLS的详细信息，请参阅<a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">在[!DNL Adobe Workfront Fusion]</a>中的HTTP模块中使用双方TLS。</p> </td> 
+   <td> <p>启用此选项可在HTTP请求中使用双向TLS。</p> <p>有关双方TLS的详细信息，请参阅<a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">在HTTP模块中使用双方TLS</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!INFO]
->
->**示例：**&#x200B;此示例说明如何设置模块以使用JSON有效负载提交[!UICONTROL POST]请求：
->
->![创建请求示例](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+>[!BEGINSHADEBOX]
 
->[!NOTE]
->
->为确保您的[!UICONTROL JSON]有效，您可以使用可用的联机服务之一，如[https://jsonlint.com/](https://jsonlint.com/)。 您还可以使用[!UICONTROL JSON] >[!UICONTROL Create JSON module]动态创建JSON并处理所有必要的转义。
->
->不建议直接在[!UICONTROL Request content]字段中将JSON片段与表达式和项混合，因为这会导致无效的JSON。
+**示例：**&#x200B;此示例说明如何设置模块以使用JSON有效负载提交[!UICONTROL POST]请求：
+
+![创建请求示例](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
+
+我们不建议直接在[!UICONTROL Request content]字段中将JSON片段与表达式和项混合，因为这会导致无效的JSON。
+
+>[!ENDSHADEBOX]
