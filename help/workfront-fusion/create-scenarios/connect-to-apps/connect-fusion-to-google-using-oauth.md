@@ -4,7 +4,7 @@ description: 您可以使用Adobe Workfront Fusion通过自定义OAuth客户端�
 author: Becky
 feature: Workfront Fusion
 exl-id: 2f0bc289-4ecf-4a31-9d7b-641bbca6fc95
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 1%
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 1. 开始在Google Cloud Platform上创建项目。
 
-   有关说明，请参阅Google文档中的[创建Google Cloud项目](https://developers.google.com/workspace/guides/create-project)。
+   有关说明，请参阅Google文档中的[创建Google云项目](https://developers.google.com/workspace/guides/create-project)。
 1. 启用API时，必须启用Google驱动器API以及要使用的所有Google应用程序的API(例如Google Sheets API)。
 1. 完成创建项目。
 1. 继续阅读本文中的[配置OAuth同意设置](#configure-oauth-consent-settings)部分。
