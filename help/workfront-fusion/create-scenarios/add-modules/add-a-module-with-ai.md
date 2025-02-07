@@ -4,9 +4,9 @@ description: 您可以使用AI输入文本提示，描述需要场景区段执�
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 9d29abc82a3bb09affc4d17d7ea214d7bb850294
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 1%
 
 ---
@@ -68,6 +68,15 @@ ht-degree: 1%
 
 +++
 
+## 先决条件
+
+您的组织必须满足以下先决条件才能使用此功能：
+
+* 贵组织必须已参与Workfront AI助理Beta计划。
+* Adobe必须拥有已签署的AdobeGen AI协议，才能为贵组织文件。
+
+  有关签署协议的更多信息，请参阅Workfront文档中的AI Assistant概述一文中的[签署AdobeGen AI协议](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)。
+
 ## 当前支持的AI模块应用程序
 
 Fusion AI当前可以生成连接到以下应用程序的模块：
@@ -95,15 +104,8 @@ Fusion AI当前可以生成连接到以下应用程序的模块：
 1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
 1. 选择要添加模块的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
-1. 单击方案编辑器页面底部附近的“使用AI生成”图标![使用AI生成](assets/generate-with-ai-icon-beta.png)。
-
-   或
-
-   开始添加模块，并从应用程序列表中选择&#x200B;**使用AI生成**。 将第一个（触发器）模块添加到方案时，不显示此选项。
-
-   将打开AI助手面板。
-1. （视情况而定）如果这是第一次使用AI添加场景区段，请阅读显示的协议，然后单击&#x200B;**同意**。
-1. 在框中输入文本提示。
+1. 单击屏幕右上角附近的&#x200B;**AI助手**&#x200B;图标![AI助手图标](assets/ai-assistant-icon.png)。
+1. 在AI助手面板中输入文本提示。
 
    有关提示的提示，请参阅本文中的[为方案区段创建提示的提示](#tips-for-creating-prompts-for-scenario-segments)。
 
