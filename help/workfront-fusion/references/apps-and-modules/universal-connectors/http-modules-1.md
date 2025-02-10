@@ -4,7 +4,7 @@ description: 除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
-source-git-commit: 1be98b5f6d869f93e1786b1c2be7a325037d7c02
+source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 2%
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 HTTP应用程序为基于超文本传输协议(HTTP)协议的通信提供各种模块。 HTTP是万维网数据通信的基础。 您可以使用这些模块下载网页和文件、调用Webhook和API端点等。
 
-模块的正确选择取决于您要访问的资源采用的身份验证/授权机制。
+模块的正确选择取决于您要访问的资源所使用的身份验证/授权机制。
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ HTTP应用程序为基于超文本传输协议(HTTP)协议的通信提供各种�
 
 有关特定模块说明，请参阅以下文章：
 
-* [HTTP >[!UICONTROL Make a request]模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-request.md)
+* [http > [!UICONTROL Make a request]模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make a Basic Authorization request]模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-an-oauth-2-request.md)
 * [[!UICONTROL HTTP] >[!UICONTROL Make a Client Certificate Authorization request]模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-client-cert-auth-request.md)
