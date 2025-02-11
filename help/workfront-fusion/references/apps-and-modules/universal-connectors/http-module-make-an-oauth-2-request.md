@@ -1,12 +1,12 @@
 ---
-title: HTTP &amp；gt；创建OAuth 2.0请求模块
+title: HTTP >创建OAuth 2.0请求模块
 description: 若要向需要OAuth 2.0授权的服务器发出 [!DNL Adobe Workfront Fusion] HTTP(S)请求，您首先需要创建OAuth连接。 [!DNL Adobe Workfront Fusion] 确保通过此连接进行的所有调用都具有适当的授权标头，并在需要时自动刷新关联的令牌。
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 1a42567e93b4fae67c92720b7642186919e4c93d
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '1980'
+source-wordcount: '1978'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您要连接到的Adobe产品当前没有专用连接器，我们建议您使用Adobe Authenticator模块。
+>如果您要连接到当前没有专用连接器的Adobe产品，我们建议您使用Adobe Authenticator模块。
 >
 >有关详细信息，请参阅[Adobe Authenticator模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)。
 
@@ -227,7 +227,7 @@ ht-degree: 0%
 1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;保存连接并返回模块。
 1. 继续[配置Make an OAuth 2.0请求模块](#configure-the-make-an-oauth-20-request-module)。
 
-### 有关在[!UICONTROL HTTP] >[!UICONTROL Make an OAuth 2.0 request module]中创建与[!DNL Google]的连接的说明
+### 有关在[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request module]中创建与[!DNL Google]的连接的说明
 
 以下示例显示如何使用[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0]请求模块连接到[!DNL Google]。
 
@@ -333,7 +333,7 @@ ht-degree: 0%
    <td> <p>HTTP正文是在HTTP事务消息中传输的数据字节，这些字节紧跟在标头之后（如果存在任何要使用的标头）。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>原始正文类型通常适用于大多数HTTP正文请求，即使在开发人员文档未指定要发送的数据的情况下也是如此。</p> <p>在[!UICONTROL Content type]字段中指定解析数据的形式。</p> <p>尽管选择了内容类型，但数据仍会以开发人员文档规定或要求的任何格式输入。</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>此正文类型将使用<code>[!UICONTROL application/x-www-form-urlencoded]</code>POST数据。</p> <p>对于<code>[!UICONTROL application/x-www-form-urlencoded]</code>，发送到服务器的HTTP消息正文本质上是一个查询字符串。 键和值在以<code>&amp;</code>分隔的键值对中进行编码，且键和值之间有<code>=</code>。 </p> <p>对于二进制数据，改为<code>use [!UICONTROL multipart/form-data]</code>。</p> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>此正文类型使用<code>[!UICONTROL application/x-www-form-urlencoded]</code>发布数据。</p> <p>对于<code>[!UICONTROL application/x-www-form-urlencoded]</code>，发送到服务器的HTTP消息正文本质上是一个查询字符串。 键和值在以<code>&amp;</code>分隔的键值对中进行编码，且键和值之间有<code>=</code>。 </p> <p>对于二进制数据，改为<code>use [!UICONTROL multipart/form-data]</code>。</p> 
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>示例： </b></span></span> 
        <p>生成的HTTP请求格式的示例：</p> 
@@ -342,7 +342,7 @@ ht-degree: 0%
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data]是用于发送文件和数据的HTTP多部分请求。 它通常用于将文件上传到服务器。</p> <p>添加要在请求中发送的字段。 每个字段必须包含一个键值对。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>输入要在请求正文中发送的键和值。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>输入密钥，并在请求正文中指定要发送的源文件。</p> <p>映射您要从上一个模块上传的文件（如[!UICONTROL HTTP] &gt;[!UICONTROL Get a File]），或手动输入文件名和文件数据。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>输入密钥，并在请求正文中指定要发送的源文件。</p> <p>映射您要从上一个模块上传的文件（如[!UICONTROL HTTP] &gt; [!UICONTROL Get a File]），或手动输入文件名和文件数据。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 

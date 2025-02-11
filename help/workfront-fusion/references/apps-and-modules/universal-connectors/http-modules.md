@@ -1,37 +1,76 @@
 ---
-title: HTTP &amp；gt；其他模块
+title: HTTP >其他模块
 description: ' [!DNL Adobe Workfront Fusion] HTTP应用为基于超文本传输协议(HTTP)协议的通信提供了各种模块。 HTTP是万维网数据通信的基础。 您可以使用这些模块下载网页和文件、调用Webhook和API端点等。'
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
 # HTTP >其他模块
 
->[!NOTE]
->
->除[!UICONTROL Adobe Workfront]许可证外，[!UICONTROL Adobe Workfront Fusion]还需要[!UICONTROL Adobe Workfront Fusion]许可证。
-
 [!DNL Adobe Workfront Fusion] [!UICONTROL HTTP]应用为基于超文本传输协议(HTTP)协议的通信提供了各种模块。 HTTP是万维网数据通信的基础。 您可以使用这些模块下载网页和文件、调用Webhook和API端点等。
 
 模块的正确选择取决于您要访问的资源所采用的身份验证/授权机制。 以下是模块示例
 
-* 发出请求：通用模块主要用于未采用任何类型的身份验证/授权的资源
-* 发出基本身份验证请求：针对采用[!DNL HTTP]基本身份验证(BA)的资源
-* 发出OAuth 2.0请求：针对采用OAuth 2.0授权协议的资源
-* 发出客户端证书身份验证请求：对于采用需要客户端证书的授权协议的资源。
-* 发出API密钥授权请求：用于使用API密钥进行授权的资源。
+* **发出请求**：主要用于不使用任何身份验证或授权的资源
+* **发出基本身份验证请求**：对于使用[!DNL HTTP]基本身份验证(BA)的资源
+* **发出OAuth 2.0请求**：对于使用OAuth 2.0授权协议的资源
+* **发出客户端证书身份验证请求**：对于采用需要客户端证书的授权协议的资源
+* **发出API密钥授权请求**：对于采用API密钥进行授权的资源
 
 >[!NOTE]
 >
->如果您要连接到的Adobe产品当前没有专用连接器，我们建议您使用Adobe Authenticator模块。
+>如果您要连接到当前没有专用连接器的Adobe产品，我们建议您使用Adobe Authenticator模块。
 >
 >有关详细信息，请参阅[Adobe Authenticator模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)。
+
+## 访问要求
+
++++ 展开以查看本文中各项功能的访问要求。
+
+您必须具有以下权限才能使用本文中的功能：
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
+   <td>
+   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>或</p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">产品</td> 
+   <td>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>或</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+
+有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 请求模块
 
@@ -57,8 +96,16 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx )] </td> 
+   <td> <p>使用此选项可设置错误处理。</p> <p>有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">错误处理。</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL URL] </td> 
    <td> <p>输入或映射要下载的文件的URL。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules] </td> 
+   <td> <p>如果您希望此站点的Cookie对其他模块可用，请启用此选项。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
