@@ -4,7 +4,7 @@ description: 除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7404dafc0b368a8f1785be7b6a65fe45c0f12172
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 2%
@@ -83,7 +83,7 @@ ht-degree: 2%
 -->
 1. 打开Workfront Fusion，然后打开所需模块的&#x200B;**创建连接**&#x200B;对话框。
 1. 输入连接的名称。
-1. （可选）单击显示高级设置，然后输入您的可传输客户端ID和客户端密钥。
+1. （可选）单击“显示高级设置”，然后输入您的Airtable客户端ID和客户端密钥。
 1. 单击&#x200B;**继续**&#x200B;按钮以创建连接并返回模块。
 
 ## 可飞行模块及其领域

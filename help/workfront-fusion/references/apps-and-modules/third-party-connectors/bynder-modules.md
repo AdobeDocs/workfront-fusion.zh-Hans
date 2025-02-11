@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 024176956d5ca9c88112a67c6948d6297f53810e
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,10 @@ Bynder连接器使用以下对象：
 
 ## 将[!DNL Bynder]连接到Workfront Fusion  {#connect-bynder-to-workfront-fusion}
 
+>[!NOTE]
+>
+>Bynder使用授权代码/刷新令牌授予类型。 这是Fusion Bynder连接器使用的唯一授予类型。
+
 * [创建从 [!DNL Workfront Fusion]到 [!DNL Bynder] 的连接](#create-a-connection-to-bynder-from-workfront-fusion)
 * [在 [!DNL Bynder] 中生成[!UICONTROL Client ID]和[!UICONTROL Client Secret]（可选）](#generate-a-client-id-and-client-secret-in-bynder-optional)
 
@@ -107,9 +111,10 @@ Bynder连接器使用以下对象：
 
 >[!NOTE]
 >
->在[!DNL Bynder]中创建应用程序时，输入以下内容作为`redirect uri`：
+>* 在[!DNL Bynder]中创建应用程序时，输入以下内容作为`redirect uri`：
 >
->`https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>* Bynder使用授权代码/刷新令牌授予类型。 这是Fusion Bynder连接器使用的唯一授予类型。
 
 ## [!DNL Bynder]模块及其字段
 
