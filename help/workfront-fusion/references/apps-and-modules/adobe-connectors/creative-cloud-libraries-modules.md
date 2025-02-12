@@ -4,9 +4,9 @@ description: 使用 [!DNL Adobe Workfront Fusion Adobe Creative Cloud] 库模块
 author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: fedf8f3f4031faaad9f81ed38fbc77e40e3a85b6
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -25,47 +25,46 @@ ht-degree: 0%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] 计划*</td>
-      <td>
-        <p>[!UICONTROL Pro] 或更高</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td>
-      <td>
-        <p>[!UICONTROL Plan]， [!UICONTROL Work]</p>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td>
-      <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
+   <td>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成] </p>
-   </td>
-    </tr>
-    <tr>
-      <td role="rowheader">产品</td>
-      <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">产品</td> 
+   <td>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
-   </td>
-    </tr>
-  </tbody>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   </td> 
+  </tr>
+ </tbody> 
 </table>
 
-
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 先决条件
 
@@ -135,11 +134,11 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >选择包含要存档的元素的库。</td>
+      <td >选择或映射包含要存档的元素的库。</td>
     </tr>
     <tr>
-      <td class="TableStyle-TableStyle-List-options-in-steps-BodyB-Column1-LightGray" role="rowheader">[!UICONTROL Element ID]</td>
-      <td class="TableStyle-TableStyle-List-options-in-steps-BodyA-Column2-LightGray">选择要存档的元素。</td>
+      <td role="rowheader">[!UICONTROL Element ID]</td>
+      <td>选择或映射要存档的元素。</td>
     </tr>
   </tbody>
 </table>
@@ -158,7 +157,7 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >选择包含要检索的元素的库。</td>
+      <td>选择或映射包含要检索的元素的库。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Element ID]</td>
@@ -204,15 +203,15 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >选择要从中列出元素的库。</td>
+      <td >选择或映射要从中列出元素的库。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Order by]</td>
-      <td>选择是要按名称对结果排序，还是要按上次修改元素的日期对结果排序。</td>
+      <td>选择是要按名称对结果进行排序，还是要按上次修改元素的日期对结果进行排序。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Type]</td>
-      <td >输入MIME类型以将结果限制为使用指定MIME类型标识的元素。 示例： <code>string</code>。</td>
+      <td >输入或映射MIME类型以将结果限制为使用指定MIME类型标识的元素。 示例： <code>string</code>。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Selector]</td>
@@ -240,57 +239,6 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL Limit]</td>
       <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td>
-    </tr>
-  </tbody>
-</table>
-
-#### [!UICONTROL Upload an Element]
-
-此操作模块会将小文件资产上传到现有库。 最大文件大小为1 GB。
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>选择现有Creative Cloud Libraries连接。 当前无法在Creative Cloud Libraries连接器中创建连接。 现有连接按预期工作。</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Library ID]</td>
-      <td >选择要从中列出元素的库。</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Invocation Mode]</td>
-      <td>
-        <p>选择要用于调用此请求进程的处理模式。</p>
-        <ul>
-          <li>
-            <p><b>[!UICONTROL sync]</b>
-            </p>
-            <p>API调用会同步处理。 处理完成后会发送响应（除非调用超时）。</p>
-          </li>
-          <li>
-            <p><b>[!UICONTROL async]</b>
-            </p>
-            <p>将立即返回异步监视器响应，并异步进行请求处理。 调用负责轮询端点，直到完成。</p>
-          </li>
-          <li>
-            <p><b>[!UICONTROL sync,async]</b> （默认）</p>
-            <p>尝试同步处理请求。 当处理时间超过5000 ms时，将返回异步监视器响应。 应轮询监视器URL，直到请求完成。</p>
-          </li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Type File]</td>
-      <td >输入或映射上载文件的MIME类型。</td>
-    </tr>
-    <tr>
-      <td role="rowheader">[!UICONTROL Source File]</td>
-      <td>
-        <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p>
-      </td>
     </tr>
   </tbody>
 </table>
@@ -389,6 +337,9 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
 
 ### 其他
 
+* [进行API调用](#make-an-api-call)
+* [上传资产](#upload-an-asset)
+
 #### [!UICONTROL Make an API Call]
 
 此模块对[!DNL Adobe Creative Cloud Libraries] API进行自定义API调用。
@@ -445,6 +396,66 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
       <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p>
     </td>
     </tr>
-
 </tbody>
 </table>
+
+
+#### [!UICONTROL Upload an Asset]
+
+此操作模块会将小文件资产上传到现有库。 最大文件大小为1 GB。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td>选择现有Creative Cloud Libraries连接。 当前无法在Creative Cloud Libraries连接器中创建连接。 现有连接按预期工作。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Library ID]</td>
+      <td >选择要将资产上传到的库。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Invocation Mode]</td>
+      <td>
+        <p>选择要用于调用此请求进程的处理模式。</p>
+        <ul>
+          <li>
+            <p><b>[!UICONTROL sync]</b>
+            </p>
+            <p>API调用会同步处理。 处理完成后会发送响应（除非调用超时）。</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL async]</b>
+            </p>
+            <p>将立即返回异步监视器响应，并异步进行请求处理。 调用负责轮询端点，直到完成。</p>
+          </li>
+          <li>
+            <p><b>[!UICONTROL sync,async]</b> （默认）</p>
+            <p>尝试同步处理请求。 当处理时间超过5000 ms时，将返回异步监视器响应。 应轮询监视器URL，直到请求完成。</p>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Element Type]</td>
+      <td >选择要上载的元素类型</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL File Type]</td>
+      <td >输入或映射上载文件的MIME类型。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Source File]</td>
+      <td>
+        <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+

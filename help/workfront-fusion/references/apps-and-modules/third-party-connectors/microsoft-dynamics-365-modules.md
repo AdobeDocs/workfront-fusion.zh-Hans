@@ -4,10 +4,10 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行
 author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: c377a24c2daeb25effffb28d9912d8c27ad0a08d
 workflow-type: tm+mt
-source-wordcount: '1548'
-ht-degree: 0%
+source-wordcount: '1623'
+ht-degree: 1%
 
 ---
 
@@ -18,6 +18,8 @@ ht-degree: 0%
 >[!NOTE]
 >
 >[!DNL Microsoft Dynamics 365]连接器不支持[!DNL Dynamics Finance and Operations]。
+>
+>有关[!DNL Microsoft Dynamics 365 Finance and Operations]连接器的信息，请参阅[[!DNL Microsoft Dynamics 365 Finance and Operations] 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)。
 
 有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
 
@@ -25,42 +27,46 @@ ht-degree: 0%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 计划*</td>
-  <td> <p>[!UICONTROL Pro] 或更高</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td>
-   <td> <p>[!UICONTROL Plan]， [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成] </p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 先决条件
 
@@ -77,8 +83,48 @@ ht-degree: 0%
 >例如，如果用户拥有通过Excel Connector授予的“读取表”权限，然后在Outlook Connector中创建连接以读取电子邮件，则权限同意屏幕将显示已授予的“读取表”权限和新要求的“写入电子邮件”权限。
 
 1. 在任意[!DNL Microsoft Dynamics 365]模块中，单击[!UICONTROL Connection]字段旁边的&#x200B;**[!UICONTROL Add]**。
-1. 输入连接的名称。
-1. 在&#x200B;**[!UICONTROL Resource]**&#x200B;字段中，输入[!DNL Dynamics 365]帐户的地址，但不输入`https://`。
+
+
+1. 填写以下字段：
+
+   <table style="table-layout:auto"> 
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+      </col>
+      <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+      </col>
+      <tbody>
+        <tr>
+          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td>
+            <p>输入此连接的名称。</p>
+          </td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Environment]</td>
+          <td>选择您要连接到生产环境还是非生产环境。</td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Type]</td>
+          <td>选择您是要连接到服务帐户还是个人帐户。</td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client ID]<p>（可选）</p></td>
+          <td>输入您的[!DNL Microsoft Dynamics] [!UICONTROL Client ID]。</td>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Client Secret]<p>（可选）</p></td>
+          <td>输入您的[!DNL Microsoft Dynamics] [!UICONTROL Client Secret]。
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Authentication URL]</td>
+          <td>输入您的Workfront实例将用于对此连接进行身份验证的URL。 <p>默认值为<code>https://oauth.my.workfront.com/integrations/oauth2</code>。</p>
+        </tr>
+        <tr>
+          <td role="rowheader">[!UICONTROL Resource]</td>
+          <td>输入您的[!DNL Dynamics 365]帐户的地址，不包括<code>>https://</code>。</p>
+        </tr>
+      </tbody>
+    </table>
 1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;以创建连接并返回模块。
 
 >[!NOTE]
@@ -96,53 +142,16 @@ ht-degree: 0%
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
-* [[!UICONTROL Watch Records (Scheduled)]](#watch-records-scheduled)
+* [触发器](#triggers)
+* [操作](#actions)
+* [搜索](#searches)
+
+### 触发器
+
 * [[!UICONTROL Watch Records (Real Time)]](#watch-records-real-time)
-* [[!UICONTROL Create Record]](#create-record)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Delete Record]](#delete-record)
-* [[!UICONTROL Read Records]](#read-records)
-* [[!UICONTROL Update Record]](#update-record)
-* [[!UICONTROL Search Records]](#search-records)
+* [[!UICONTROL Watch Records (Scheduled)]](#watch-records-scheduled)
 
-### [!UICONTROL Watch Records (Scheduled)]
-
-当您指定的对象中的记录在[!DNL Dynamics 365]中上次计划运行之后创建或更新时，此计划触发器模块会执行一个方案。
-
-模块输出指示找到的记录是新的还是更新的（如果它在时段内既添加又更新，则标记为新）。 您可以在场景的后续模块中映射此信息。
-
-此操作在您指定的定期计划间隔内进行。
-
-配置此模块时，会显示以下字段。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>有关将[!DNL Microsoft Dynamics 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将[!DNL Microsoft Dynamics 365]连接到[!DNL Workfront Fusion]</a>。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Include]</td> 
-   <td>选择您希望模块监视<strong>[!UICONTROL Only new records]</strong>、<strong>[!UICONTROL Updated records only]</strong>还是<strong>[!UICONTROL New records and all changes]</strong>。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
-   <td>选择您希望方案监视的[!UICONTROL Microsoft Dynamics 365]记录类型。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td> <p>选择要包含在此模块的输出捆绑包中的信息。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Max Records]</td> 
-   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Watch Records (Real Time)]
+#### [!UICONTROL Watch Records (Real Time)]
 
 此即时触发器模块在[!DNL Dynamics 365]中创建或更新您指定的记录（对象）时执行方案。
 
@@ -165,7 +174,53 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-### [!UICONTROL Create Record]
+#### [!UICONTROL Watch Records (Scheduled)]
+
+此计划触发器模块执行一个方案，即指定对象中的记录是在此方案上次计划运行之后创建或更新的。
+
+模块的输出指示它找到的记录是新的还是更新的。 如果记录是在该时间段内添加和更新的，则作为新记录返回。
+
+此操作在您指定的定期计划间隔内进行。
+
+配置此模块时，会显示以下字段。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> "
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>有关将[!DNL Microsoft Dynamics 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将[!DNL Microsoft Dynamics 365]连接到[!DNL Workfront Fusion]</a>。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Include]</td> 
+   <td>选择您希望模块监视<strong>[!UICONTROL New Records Only]</strong>、<strong>[!UICONTROL Updated Records Only]</strong>还是<strong>[!UICONTROL New and Updated Records]</strong>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td>选择您希望方案监视的[!UICONTROL Microsoft Dynamics 365]记录类型。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td> <p>选择要包含在此模块的输出捆绑包中的信息。 基于所选实体类型，字段可用。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Max Records]</td> 
+   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### 操作
+
+* [[!UICONTROL Create Record]](#create-record)
+* [[!UICONTROL Make an API Call]](#make-an-api-call)
+* [[!UICONTROL Delete Record]](#delete-record)
+* [[!UICONTROL Read Records]](#read-records)
+* [[!UICONTROL Update Record]](#update-record)
+
+
+#### [!UICONTROL Create Record]
 
 此操作模块创建一个实体，如约会或任务。
 
@@ -198,7 +253,36 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-### [!UICONTROL Make an API Call]
+#### [!UICONTROL Delete Record]
+
+此操作模块删除实体。
+
+指定实体的ID。
+
+模块会返回实体的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+
+配置此模块时，会显示以下字段。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+  <td> <p>有关将[!DNL Microsoft Dynamics 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将[!DNL Microsoft Dynamics 365]连接到[!DNL Workfront Fusion]</a>。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td> <p>选择要让模块删除的实体类型。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL ID]</td> 
+   <td> <p>输入或映射您希望模块删除的记录的唯一[!DNL Microsoft Dynamics 365] ID。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Make an API Call]
 
 此操作模块允许您对[!DNL Microsoft Dynamics 365] API进行经过身份验证的自定义调用。 这样，您可以创建其他[!DNL Microsoft Dynamics 365]模块无法实现的数据流自动化。
 
@@ -242,36 +326,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-### [!UICONTROL Delete Record]
-
-此操作模块删除实体。
-
-指定实体的ID。
-
-模块会返回实体的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
-
-配置此模块时，会显示以下字段。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-  <td> <p>有关将[!DNL Microsoft Dynamics 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将[!DNL Microsoft Dynamics 365]连接到[!DNL Workfront Fusion]</a>。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
-   <td> <p>选择要让模块删除的实体类型。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL ID]</td> 
-   <td> <p>输入或映射您希望模块删除的记录的唯一[!DNL Microsoft Dynamics 365] ID。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-### [!UICONTROL Read Records]
+#### [!UICONTROL Read Records]
 
 此操作模块从[!DNL Microsoft Dynamics 365]中的单个实体读取数据。
 
@@ -304,7 +359,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-### [!UICONTROL Update Record]
+#### [!UICONTROL Update Record]
 
 此操作模块可更新实体。
 
@@ -341,7 +396,9 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-### [!UICONTROL Search Records]
+### 搜索
+
+#### [!UICONTROL Search Records]
 
 此搜索模块在[!DNL Microsoft Dynamics 365]中查找与您指定的搜索查询匹配的对象中的记录。 您可以在场景的后续模块中映射此信息。
 
