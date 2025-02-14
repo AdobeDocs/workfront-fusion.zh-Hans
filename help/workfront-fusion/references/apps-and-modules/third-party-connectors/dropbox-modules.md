@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 04f0678b67cf6bffdb791a9ab38be27a6417370c
 workflow-type: tm+mt
-source-wordcount: '2876'
+source-wordcount: '2870'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ ht-degree: 0%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 计划*</td>
-  <td> <p>[!UICONTROL Pro] 或更高</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td>
-   <td> <p>[!UICONTROL Plan]， [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成] </p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 先决条件
 
@@ -68,9 +72,9 @@ ht-degree: 0%
 >
 >有关更多信息，请在Dropbox开发人员指南中搜索“生产批准”。
 
-## DropboxAPI信息
+## Dropbox API信息
 
-Dropbox连接器使用以下内容：
+Dropbox连接器使用以下对象：
 
 <table style="table-layout:auto"> 
  <col> 
@@ -129,7 +133,11 @@ Dropbox连接器使用以下内容：
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Account Type]</td>
-        <td>选择您是要连接到个人Dropbox帐户还是企业(Dropbox企业)帐户。</td>
+        <td>选择您是连接到个人Dropbox帐户还是企业(Dropbox Business)帐户。</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[!UICONTROL Exclude dropbox-api-path-root header]</td>
+        <td>启用此选项以排除具有应用程序文件夹访问权限的Dropbox应用程序的dropbox-api-path-root标头</td>
         </tr>
       </tbody>
     </table>
@@ -180,52 +188,11 @@ Dropbox连接器使用以下内容：
 
 ### 用于获取[!DNL Dropbox]文件和文件夹的模块
 
-* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
 * [[!UICONTROL Download a File]](#download-a-file)
 * [[!UICONTROL Get a Folder Metadata]](#get-a-folder-metadata)
 * [[!UICONTROL List All Files/Subfolders in a Folder]](#list-all-filessubfolders-in-a-folder)
 * [[!UICONTROL List File Revisions]](#list-file-revisions)
-
-#### [!UICONTROL Search Files/Folders]
-
-此搜索模块在[!DNL Dropbox]中查找与您指定的搜索查询匹配的对象中的记录。
-
-您可以在场景的后续模块中映射此信息。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Dropbox]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Search] </td> 
-   <td> <p>输入搜索词。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>选择要搜索的文件夹。 如果未选择文件夹，此模块将搜索整个[!DNL Dropbox]。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>文件状态</td> 
-   <td> <p> 选择文件状态，将搜索限制为选定的文件状态。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>文件类别</td> 
-   <td> <p> 选择文件类别，将搜索限制在选定的类别内。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>文件扩展名</td> 
-   <td> <p> 选择要搜索的文件扩展名。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>限制 </td> 
-   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+* [[!UICONTROL Search Files/Folders]](#search-filesfolders)
 
 #### [!UICONTROL Download a File]
 
@@ -345,7 +312,7 @@ Dropbox连接器使用以下内容：
   </tr> 
   <tr> 
    <td> <p>文件路径/文件</p> </td> 
-   <td> <p style="font-weight: bold;">文件路径</p> <p>输入或映射目标路径到文件。</p> <p style="font-weight: bold;">文件</p> <p>从菜单中选择文件。</p> </td> 
+   <td> <p><b>文件路径</b></p> <p>输入或映射目标路径到文件。</p> <p><b>文件</b></p> <p>从菜单中选择文件。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>限制</p> </td> 
@@ -354,28 +321,13 @@ Dropbox连接器使用以下内容：
  </tbody> 
 </table>
 
-### 用于创建和编辑[!DNL Dropbox]文件和文件夹的模块
+#### [!UICONTROL Search Files/Folders]
 
-* [[!UICONTROL Upload]文件](#upload-a-file)
-* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [[!UICONTROL Create/Overwrite a Text File]](#createoverwrite-a-text-file)
-* [[!UICONTROL Create/Update a Share Link]](#createupdate-a-share-link)
-* [[!UICONTROL Restore a File]](#restore-a-file)
-* [[!UICONTROL Move a File/Folder]](#move-a-filefolder)
-* [[!UICONTROL Rename a File/Folder]](#rename-a-filefolder)
-* [[!UICONTROL Delete a File/Folder]](#delete-a-filefolder)
+此搜索模块在[!DNL Dropbox]中查找与您指定的搜索查询匹配的对象中的记录。
 
-#### [!UICONTROL Upload a File]
+您可以在场景的后续模块中映射此信息。
 
-此操作模块将文件上传到文件夹。
-
-您可以指定信息，例如文件的位置、要上传的文件以及文件的可选新名称。
-
-模块会返回文件的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
-
-配置此模块时，会显示以下字段。
-
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
@@ -384,19 +336,42 @@ Dropbox连接器使用以下内容：
    <td> <p>有关将[!DNL Dropbox]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder]</td> 
-   <td> <p> 选择要将文件上传到的[!DNL Dropbox]的文件夹。</p> </td> 
+   <td>[!UICONTROL Search] </td> 
+   <td> <p>输入搜索词。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>输入或映射要添加到上面所选[!DNL Dropbox]文件夹的文件。</p> <p style="font-weight: bold;">[!UICONTROL File name]</p> <p>输入或映射文件名，包括文件扩展名。</p> <p style="font-weight: bold;">[!UICONTROL File data]</p> <p>输入或映射文件数据（来自上一个模块，如[!UICONTROL Google Drive] &gt;[!UICONTROL Get a File)]）。</p> <p>注意：上传文件的最大大小为150 MB。</p> </td> 
+   <td>[!UICONTROL Folder] </td> 
+   <td> <p>选择要搜索的文件夹。 如果未选择文件夹，此模块将搜索整个[!DNL Dropbox]帐户。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Overwrite an existing file]</td> 
-   <td> <p> 启用此选项可使用新文件替换现有文件。 如果将此选项保留为禁用，则将重命名上传的文件。</p> </td> 
+   <td>文件状态</td> 
+   <td> <p> 选择要包含在搜索中的文件状态。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>文件类别</td> 
+   <td> <p> 选择要包含在搜索中的文件类别。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>文件扩展名</td> 
+   <td> <p>对于要包含在搜索中的每个文件扩展名，单击<b>添加项</b>并输入或映射文件扩展名。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>限制 </td> 
+   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+### 用于创建和编辑[!DNL Dropbox]文件和文件夹的模块
+
+* [[!UICONTROL Create a Folder]](#create-a-folder)
+* [[!UICONTROL Create/Overwrite a Text File]](#createoverwrite-a-text-file)
+* [[!UICONTROL Create/Update a Share Link]](#createupdate-a-share-link)
+* [[!UICONTROL Delete a File/Folder]](#delete-a-filefolder)
+* [[!UICONTROL Move a File/Folder]](#move-a-filefolder)
+* [[!UICONTROL Rename a File/Folder]](#rename-a-filefolder)
+* [[!UICONTROL Restore a File]](#restore-a-file)
+* [[!UICONTROL Upload]文件](#upload-a-file)
 
 #### [!UICONTROL Create a Folder]
 
@@ -422,7 +397,7 @@ Dropbox连接器使用以下内容：
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Folder]</p> </td> 
-   <td> <p>输入或映射要创建新文件夹的路径。</p> <p>注意：   <p>如果您使用[!DNL Dropbox Business]帐户（包含团队空间），则必须删除斜杠<code>/</code>，或者不要单击<strong>[!UICONTROL Click here]以选择文件夹</strong>以在根目录中创建团队文件夹。</p> <p>如果未删除斜杠，则会返回错误<code>[409] path/malformed_path/..</code>。</p> </p> </td> 
+   <td> <p>输入或映射要创建新文件夹的路径。</p> <p>注意：   <p>如果您使用[!DNL Dropbox Business]帐户（包含团队空间），则必须删除斜杠<code>/</code>，或者不要单击<strong>单击此处选择文件夹</strong>以在根目录中创建团队文件夹。</p> <p>如果未删除斜杠，则会返回错误<code>[409] path/malformed_path/..</code>。</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Auto rename]</td> 
@@ -433,11 +408,9 @@ Dropbox连接器使用以下内容：
 
 #### [!UICONTROL Create/Overwrite a Text File]
 
-此操作模块创建DOC文件或覆盖现有文件的内容。
+此操作模块创建DOC文件，或覆盖现有文件的内容。
 
 指定源文件和文件夹。
-
-该模块会返回文件夹ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
 
 配置此模块时，会显示以下字段。
 
@@ -451,15 +424,11 @@ Dropbox连接器使用以下内容：
   </tr> 
   <tr> 
    <td>[!UICONTROL Select to]</td> 
-   <td> <p> 选择是要创建或覆盖DOC文件。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[!UICONTROL Folder] </td> 
-   <td> <p>选择要创建文件的目标位置。</p> </td> 
+   <td> <p> 选择是要创建或覆盖DOC文件。</p><ul><li><b>创建</b></p>选择要创建文件的文件夹。</li><li><b>覆盖</b><p>选择要如何选择要覆盖的文件，然后映射文件路径或选择文件。 </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>输入或映射要添加到[!DNL Dropbox]文件夹的文件。</p> <p style="font-weight: bold;">文件名</p> <p>输入新DOC文件的文件名（不带扩展名）。</p> <p style="font-weight: bold;">文件内容</p> <p>输入DOC文件的文本内容。</p> </td> 
+   <td> <p>从上一个模块中选择源文件，或映射源文件的内容。 </p> <p>如果要创建文件，请选择<b>空</b>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -488,30 +457,31 @@ Dropbox连接器使用以下内容：
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL File Path / File]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>输入或映射目标路径到文件。</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>从菜单中选择文件。</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>输入或映射目标文件的路径。</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>选择目标文件。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Requested Visibility]</p> </td> 
-   <td> <p>选择链接是公共链接、团队链接还是密码受限链接。</p> <p>注意： [!UICONTROL Team only]和[!UICONTROL Access with password]选项仅适用于具有[!DNL Dropbox Pro]或更高版本的用户。</p> </td> 
+   <td> <p>选择链接是公共链接、团队链接还是密码受限链接。</p> <p><b>注意：</b></p><p> [!UICONTROL Team only]仅适用于Dropbox商业帐户。 [!UICONTROL Access with password]仅对[!DNL Dropbox Pro]或Dropbox商业帐户可用。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Link's Expiration Date]</td> 
-   <td> <p> 输入链接到期且无法再访问的日期和时间。 如果此字段留空，链接将不会过期。 有关支持的日期和时间格式的列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">在[!DNL Adobe Workfront Fusion]</a>中键入强制。</p> <p>注意： [!UICONTROL Team only]和[!UICONTROL Access with password]选项仅适用于具有[!UICONTROL Dropbox Pro]或更高版本的用户。</p> </td> 
+   <td> <p> 输入链接到期且无法再访问的日期和时间。 如果此字段留空，链接将不会过期。 有关支持的日期和时间格式的列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">类型强制</a>。</p>  </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Link's Access Level]</p> </td> 
-   <td> <p>设置链接收件人的权限。</p> <p><strong>[!UICONTROL Viewer]</strong> 使用该链接的用户可以查看和评论内容。</p> <p><strong>[!UICONTROL Editor]</strong> 使用该链接的用户可以编辑、查看和评论内容。</p> <p><strong>[!UICONTROL Max]</strong> 使用该链接的用户将获得您可以设置该链接的最大访问级别。</p> </td> 
+   <td> <p>设置链接收件人的权限。</p> <ul><li><strong>[!UICONTROL Viewer]</strong> <p>使用该链接的用户可以查看和评论内容。</p> </li><li><strong>[!UICONTROL Editor]</strong><p> 使用该链接的用户可以编辑、查看和评论内容。 此访问级别仅适用于基于云的文档。</p> </li><li><strong>[!UICONTROL Max]</strong> <p>使用该链接的用户将获得您可以设置该链接的最大访问级别。</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Restore a File]
 
-此操作模块恢复文件的先前版本。
+#### [!UICONTROL Delete a File/Folder]
 
-指定所需的文件和修订版本号。
+此操作模块删除文件或文件夹。
 
-模块会返回版本ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+指定文件或文件夹。
+
+该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
 
 配置此模块时，会显示以下字段。
 
@@ -528,12 +498,8 @@ Dropbox连接器使用以下内容：
    <td> <p> 选择是要映射还是输入文件路径，或者手动选择文件。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File Path] / [!UICONTROL File]</p> </td> 
-   <td> <p><strong>[!UICONTROL File Path]</strong> </p> <p>输入或映射目标路径到文件。</p> <p><strong>[!UICONTROL File]</strong> </p> <p>从菜单中选择文件。</p> </td> 
-  </tr> 
-  <tr> 
-   <td> <p>[!UICONTROL Revision]</p> </td> 
-   <td> <p>输入或映射要恢复的修订版本的修订号。</p> </td> 
+   <td> <p>[!UICONTROL File or Folder Path] / [!UICONTROL File or Folder]</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>输入目标路径或将目标路径映射到文件或文件夹。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>从菜单中选择文件或文件夹。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -557,12 +523,12 @@ Dropbox连接器使用以下内容：
    <td> <p>有关将[!DNL Dropbox]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Way of selecting files] </td> 
-   <td> <p>选择是要映射还是输入文件路径，或者手动选择文件。</p> </td> 
+   <td>[!UICONTROL Way of selecting files / folders] </td> 
+   <td> <p>选择是要映射还是输入文件或文件夹路径，或者手动选择文件或文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL File/Folder Path] / [!UICONTROL File/Folder]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>输入目标路径或将目标路径映射到文件或文件夹。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>从菜单中选择文件或文件夹。</p> </td> 
+   <td> <p>[!UICONTROL File / Folder Path] /</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL File/Folder Path]</p> <p>输入目标路径或将目标路径映射到文件或文件夹。</p> <p style="font-weight: bold;">[!UICONTROL File/Folder]</p> <p>选择是要移动文件或文件夹，然后选择文件或文件夹。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL To Folder]</p> </td> 
@@ -607,22 +573,23 @@ Dropbox连接器使用以下内容：
   </tr> 
   <tr> 
    <td> <p>文件/文件夹路径/文件/文件夹</p> </td> 
-   <td> <p style="font-weight: bold;">文件/文件夹路径</p> <p>输入目标路径或将目标路径映射到文件或文件夹。</p> <p style="font-weight: bold;">文件/文件夹</p> <p>从菜单中选择文件或文件夹。</p> </td> 
+   <td> <p style="font-weight: bold;">文件/文件夹路径</p> <p>输入目标路径或将目标路径映射到文件或文件夹。</p> <p style="font-weight: bold;">文件/文件夹</p> <p>选择是要移动文件或文件夹，然后选择文件或文件夹。</p> </td> 
   </tr> 
   <tr> 
    <td>重命名 </td> 
-   <td> <p>输入文件的[!UICONTROL target name]，包括文件扩展名。</p> </td> 
+   <td> <p>输入文件的新名称，包括文件扩展名。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a File/Folder]
 
-此操作模块删除文件或文件夹。
+#### [!UICONTROL Restore a File]
 
-指定文件或文件夹。
+此操作模块恢复文件的先前版本。
 
-该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+指定所需的文件和修订版本号。
+
+模块会返回版本ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
 
 配置此模块时，会显示以下字段。
 
@@ -640,10 +607,48 @@ Dropbox连接器使用以下内容：
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL File Path] / [!UICONTROL File]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL File Path]</p> <p>输入或映射目标路径到文件。</p> <p style="font-weight: bold;">[!UICONTROL File]</p> <p>从菜单中选择文件。</p> </td> 
+   <td> <p><strong>[!UICONTROL File Path]</strong> </p> <p>输入或映射目标路径到文件。</p> <p><strong>[!UICONTROL File]</strong> </p> <p>从菜单中选择文件。</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Revision]</p> </td> 
+   <td> <p>输入或映射要恢复的修订版本的修订号。</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+#### [!UICONTROL Upload a File]
+
+此操作模块将文件上传到文件夹。
+
+您可以指定信息，例如文件的位置、要上传的文件以及文件的可选新名称。
+
+模块会返回文件的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+
+配置此模块时，会显示以下字段。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[!UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Dropbox]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Folder]</td> 
+   <td> <p> 选择要将文件上传到的[!DNL Dropbox]的文件夹。</p> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[!UICONTROL Source File]</p> </td> 
+   <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> <p><b>注意：</b></p><p> 上传文件的最大大小为150 MB。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Overwrite an existing file]</td> 
+   <td> <p> 启用此选项可使用新文件替换现有文件。 如果将此选项保留为禁用，则将重命名上传的文件。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
 
 ### 其他模块
 
@@ -663,7 +668,7 @@ Dropbox连接器使用以下内容：
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>输入相对路径。输入相对于<code>https://api.dropboxapi.com</code>的路径。 例如， <code>/2/files/list_folder</code></p> <p>注意：有关可用端点的列表，请参阅<a href="https://www.dropbox.com/developers/documentation/http/documentation">DropboxAPI v2文档</a>。</p> </td> 
+   <td> <p>输入相对路径。输入相对于<code>https://api.dropboxapi.com</code>的路径。 例如， <code>/2/files/list_folder</code></p>  </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL Method]</p> </td> 
@@ -687,29 +692,30 @@ Dropbox连接器使用以下内容：
  </tbody> 
 </table>
 
->[!INFO]
->
->**示例：**&#x200B;以下API调用从[!DNL Dropbox]帐户的[!DNL /Text files]文件夹中返回前10个文件：
->
->URL： `/2/files/list_folder`
->
->正文：
-> 
->`{`
->
->`"path": "/Text files",`
->
->`"limit": 10,`
->
->`"recursive": false,`
->
->`"include_deleted": false`
->
->`}`
->
->在[!UICONTROL Bundle] > [!UICONTROL Body] >条目的模块输出中可找到搜索匹配项。
->
->在我们的示例中，返回了10张票证：
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+以下API调用从[!DNL Dropbox]帐户的[!DNL /Text files]文件夹中返回前10个文件：
+
+URL： `/2/files/list_folder`
+
+正文：
+
+```
+{
+"path": "/Text files",
+"limit": 10,
+"recursive": false,
+"include_deleted": false
+}
+```
+
+在[!UICONTROL Bundle] > [!UICONTROL Body] >条目的模块输出中可找到搜索匹配项。
+
+在本例中，我们返回了10张票证。
+
+>[!ENDSHADEBOX]
 
 ## 常见问题
 
@@ -718,14 +724,14 @@ Dropbox连接器使用以下内容：
 
 ### 无法上传或更新文件
 
-上传或更新文件失败时，可能会出现以下几种情况：
+以下可能是上传或更新文件失败的原因：
 
 * 上传的文件太大，超过了您的[!DNL Dropbox]计划允许的最大文件大小，或者您已使用所有[!DNL Dropbox]帐户的存储配额。 您必须从[!DNL Dropbox]帐户中删除现有文件或升级计划。
 * 先前选择的文件夹（文件将上载到该文件夹）不再存在。 场景将停止，您必须再次选择目标文件夹。
 
 ### 无法呈现通过共享链接引用的图像
 
-[!UICONTROL Dropbox] >[!UICONTROL Create a shared link]返回的URL不是直接链接到图像，而是链接到[!DNL Dropbox]页面。 要强制下载图像，请将尾部`?dl=0`替换为`?dl=1`。 要强制呈现图像(例如，在Web浏览器或Facebook Messenger中)，请将`&raw=1`附加到URL。
+[!UICONTROL Dropbox] >[!UICONTROL Create a shared link]返回的URL不是直接链接到图像，而是链接到[!DNL Dropbox]页面。 要强制下载图像，请将尾部`?dl=0`替换为`?dl=1`。 要强制呈现图像（例如，在Web浏览器或Facebook Messenger中），请将`&raw=1`附加到URL。
 
 如果需要获取您网站或其他[!DNL Workfront Fusion]模块的图像的直接或原始链接，则必须通过以下方式修改初始共享URL：
 
