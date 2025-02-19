@@ -4,7 +4,7 @@ description: 打开Fusion时，您有许多操作选项。 本文可帮助您了
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 45775149d8e4e8c2c25b4ebf0b5392f56a04633c
+source-git-commit: 6817565ec2a6a06a26033bb51a080b619a0d211d
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
@@ -32,3 +32,4 @@ ht-degree: 0%
 >[!NOTE]
 >
 >团队标题下的所有区域均由单个团队拥有。 要查看属于不同团队的页面（例如不同团队的“场景”页面），请单击页面顶部附近的团队下拉列表，然后选择另一个团队。
+
