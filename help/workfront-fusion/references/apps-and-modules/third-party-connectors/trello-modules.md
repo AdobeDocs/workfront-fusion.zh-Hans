@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行
 author: Becky
 feature: Workfront Fusion
 exl-id: 5df5cd2b-ad4c-4a02-9d0c-7cee35232f93
-source-git-commit: a0a53d5c5af0956635f5026bbf8f8ee681946d86
+source-git-commit: 46bb455ecc0820dc68468f9f810bd51074c224fa
 workflow-type: tm+mt
-source-wordcount: '4320'
+source-wordcount: '4370'
 ht-degree: 0%
 
 ---
@@ -872,7 +872,7 @@ Trello连接器使用以下功能：
 
 +++ **[!UICONTROL Watch cards]**
 
-在添加新信息卡时，此触发器模块处于激活状态。
+此触发器模块会在添加新信息卡后启动方案。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -893,7 +893,7 @@ Trello连接器使用以下功能：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>在一个执行周期内将返回的最大卡片数[!DNL Workfront Fusion]。</p> </td> 
+   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -947,7 +947,7 @@ Trello连接器使用以下功能：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Query] </td> 
-   <td> <p>输入要查找的用户的全名或用户名。</p> </td> 
+   <td> <p>输入要查找的用户的名称或用户名。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Partial] </td> 
@@ -955,7 +955,7 @@ Trello连接器使用以下功能：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Maximum number of returned members]</td> 
-   <td> <p> 在一个执行周期内将返回的最大成员数[!DNL Workfront Fusion]。</p> </td> 
+   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -996,11 +996,11 @@ Trello连接器使用以下功能：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Position] </td> 
-   <td> <p>选择您要将清单添加到卡片顶部还是将[!UICONTROL append the]清单添加到卡片底部。</p> </td> 
+   <td> <p>选择是将清单添加到顶部还是将清单附加到卡片底部。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL Enter checklist ID]</p> </td> 
-   <td> <p>输入要复制到新清单中的源清单的ID，或者将该ID映射到新清单中。</p> </td> 
+   <td> <p>如果通过复制现有清单来创建清单，请输入要复制的源清单的ID或将该ID映射到新清单中。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1021,7 +1021,7 @@ Trello连接器使用以下功能：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Enter checklist ID]</td> 
-   <td> <p> 选择您要输入要添加项目的清单的ID的方式。</p> 
+   <td> <p> 如果通过复制现有清单来创建新的清单，请选择您要如何输入要添加项目的清单ID。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Enter manually]</strong> </p> <p>在<strong>[!UICONTROL Checklist ID]</strong>字段中，输入或映射要添加清单的卡ID。<br></p> </li> 
      <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>选择包含要在其中添加清单的卡的主板，然后选择包含该卡的列表，然后选择清单。</p> </li> 
@@ -1136,7 +1136,7 @@ Trello连接器使用以下功能：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Comment] </td> 
-   <td> <p>输入要添加到选定信息卡的注释。</p> </td> 
+   <td> <p>输入或映射要添加到选定信息卡的注释。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1180,7 +1180,7 @@ Trello连接器使用以下功能：
 
 +++ **[!UICONTROL Watch Comments]**
 
-当指定位置中有新评论时检索评论详细信息。
+此触发器模块会在添加评论时启动方案。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1203,7 +1203,7 @@ Trello连接器使用以下功能：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Limit] </td> 
-   <td> <p>在一个执行周期内将返回的最大评论数[!DNL Workfront Fusion]。</p> </td> 
+   <td> <p>输入或映射您希望模块在每个方案执行周期中返回的最大注释数。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1223,4 +1223,4 @@ Trello连接器使用以下功能：
 
 ### 如何在[!DNL Trello]中查找其他对象的ID
 
-讨论区、列表和评论ID只能使用触发器获取。 [!DNL trello.com]网站不显示这些ID。
+讨论区、列表和评论ID只能使用触发器获取。 [!DNL `trello.com`]网站不显示这些ID。
