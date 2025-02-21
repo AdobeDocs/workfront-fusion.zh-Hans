@@ -4,9 +4,9 @@ description: 通过 [!DNL Adobe Workfront Fusion] HubSpot CRM模块，您可以�
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
 workflow-type: tm+mt
-source-wordcount: '5661'
+source-wordcount: '5530'
 ht-degree: 0%
 
 ---
@@ -17,42 +17,46 @@ ht-degree: 0%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 计划*</td>
-  <td> <p>[!UICONTROL Pro] 或更高</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td>
-   <td> <p>[!UICONTROL Plan]， [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成] </p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 先决条件
 
@@ -107,19 +111,17 @@ HubSpot CRM连接器使用以下对象：
 * [表单](#forms)
 * [社交媒体（广播）](#social-media-broadcast)
 * [博客帖子](#blog-posts)
-  <!--* [Workflows]-->
+  <!--* [Workflows]()-->
 * [订阅](#subscriptions)
-  <!--* [Associations](#associations)-->
+  <!--* [Associations]()-->
 * [其他](#other)
-
-+++**CRM对象**
 
 ### CRM对象
 
-* [搜索CRM对象](#search-for-crm-objects)
-* [监视CRM对象](#watch-crm-objects)
+<!--* [Search for CRM objects](#search-for-crm-objects)
+* [Watch CRM objects](#watch-crm-objects)-->
 
-#### [!UICONTROL Search for CRM Objects]
++++ **[!UICONTROL Search for CRM Objects]**
 
 此搜索模块按自定义属性或查询搜索CRM对象。 要搜索产品或行项目，请使用具有所需自定义范围的特殊连接。
 
@@ -166,7 +168,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 监视CRM对象
++++
+
++++ **监视CRM对象**
 
 此触发器模块会在创建或更新CRM对象时启动方案。
 
@@ -203,20 +207,18 @@ HubSpot CRM连接器使用以下对象：
 
 +++
 
-+++**记录（交易、联系人和公司）**
-
 ### 记录（交易、联系人和公司）
 
-* [创建记录](#create-a-record)
+<!--* [Create a Record](#create-a-record)
 * [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
 * [[!UICONTROL Delete a Record]](#delete-a-record)
 * [[!UICONTROL Get a Record]](#get-a-record)
 * [[!UICONTROL Get a Record Property]](#get-a-record-property)
-* [列出记录](#list-records)
+* [List Records](#list-records)
 * [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)
+* [[!UICONTROL Watch Records]](#watch-records)-->
 
-#### 创建记录
++++ **创建记录**
 
 此操作模块创建联系人、公司或交易。
 
@@ -239,7 +241,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Create a Record (Legacy)]
++++
+
++++ **[!UICONTROL Create a Record (Legacy)]**
 
 此操作模块创建联系人、公司或交易。
 
@@ -262,7 +266,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Record]
++++
+
++++ **[!UICONTROL Delete a Record]**
 
 此操作模块可删除联系人、公司或交易。
 
@@ -285,7 +291,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Record]
++++
+
++++ [!UICONTROL Get a Record]
 
 此操作模块可获取联系人、公司或交易的详细信息。
 
@@ -321,7 +329,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a Record Property]
++++
+
++++ **[!UICONTROL Get a Record Property]**
 
 此操作模块通过特定记录属性的（内部）名称获取该属性的元数据。
 
@@ -348,7 +358,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 列出记录
++++
+
++++ **列出记录**
 
 此搜索模块返回联系人、公司或交易的列表。 产量限制为5000个联系人、12,500家公司或12,500项交易。
 
@@ -371,12 +383,13 @@ HubSpot CRM连接器使用以下对象：
     <tr> 
    <td role="rowheader">[!UICONTROL Limit]</td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
-  </tr>
-
-</tbody> 
+  </tr> 
+ </tbody> 
 </table>
 
-#### [!UICONTROL Update a Record]
++++
+
++++ **[!UICONTROL Update a Record]**
 
 此操作模块可更新联系人、公司或交易。
 
@@ -415,7 +428,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Records]
++++
+
++++ **[!UICONTROL Watch Records]**
 
 此触发器模块会在联系人、公司或交易在过去30天内被修改或创建时启动场景。 输出限制为10,000条记录。
 
@@ -448,12 +463,10 @@ HubSpot CRM连接器使用以下对象：
 
 +++
 
-+++**联系人**
-
 ### 联系人
 
-* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
-* [创建/更新联系人](#createupdate-a-contact)
+<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
+* [Create/Update a contact](#createupdate-a-contact)
 * [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
 * [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
 * [[!UICONTROL List Contacts]](#list-contacts)
@@ -461,9 +474,9 @@ HubSpot CRM连接器使用以下对象：
 * [[!UICONTROL Merge contacts]](#merge-contacts)
 * [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
 * [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [监视添加到列表中的联系人](#watch-contacts-added-to-a-list)
+* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
-#### [!UICONTROL Add Contacts to a List]
++++ **[!UICONTROL Add Contacts to a List]**
 
 此模块将系统中已创建的联系人记录添加到联系人列表。
 
@@ -490,7 +503,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 创建/更新联系人
++++
+
++++ **创建/更新联系人**
 
 如果门户中不存在联系人，此操作模块将创建联系人。 如果门户中确实存在联系人，则此模块会使用提供的值更新该联系人。
 
@@ -509,7 +524,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Contact (Legacy)]
++++
+
++++ **[!UICONTROL Create/Update a Contact (Legacy)]**
 
 如果门户中不存在联系人，则创建联系人；如果门户中不存在联系人，则使用最新属性值更新联系人。
 
@@ -528,7 +545,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Create/Update a Group of Contacts]
++++
+
++++ **[!UICONTROL Create/Update a Group of Contacts]**
 
 创建联系人组或更新他们（如果已经存在）。 当批次大小限制为100个或更少联系人时，性能最佳。 通过此端点进行的更改是异步处理的，因此可能需要几分钟才能将更改应用到联系人记录。
 
@@ -555,7 +574,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL List Contacts]
++++
+
++++ **[!UICONTROL List Contacts]**
 
 返回在门户中创建的所有联系人。 输出限制为5000个联系人。 要列出上一个或下一个联系人，您可以使用[!UICONTROL advanced]参数偏移列表。
 
@@ -582,7 +603,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL List Contacts of a Company]
++++
+
++++ **[!UICONTROL List Contacts of a Company]**
 
 检索公司中的联系人列表。 输出限制为5000个联系人。 要列出上一个或下一个联系人，您可以使用[!UICONTROL advanced]参数偏移列表。
 
@@ -609,7 +632,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Merge contacts]
++++
+
++++ **[!UICONTROL Merge contacts]**
 
 此操作模块合并联系人
 
@@ -632,7 +657,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Remove a Contact from a List]
++++
+
++++ **[!UICONTROL Remove a Contact from a List]**
 
 从联系人列表中删除联系人。
 
@@ -659,7 +686,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for Contacts]
++++
+
++++ **[!UICONTROL Search for Contacts]**
 
 使用搜索查询检索联系人列表。
 
@@ -682,7 +711,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch contacts added to a list]
++++
+
++++ **[!UICONTROL Watch contacts added to a list]**
 
 此触发器模块会在向列表添加新联系人后启动方案。 这仅适用于拥有付费营销帐户的用户。
 
@@ -711,14 +742,12 @@ HubSpot CRM连接器使用以下对象：
 
 +++
 
-+++**交易**
-
 ### 交易
 
-* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)
+<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
+* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
 
-#### [!UICONTROL Get a Deal's CRM Pipeline]
++++ **[!UICONTROL Get a Deal's CRM Pipeline]**
 
 返回特定的交易管道。
 
@@ -741,7 +770,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL List Deal/Ticket Pipelines]
++++
+
++++ **[!UICONTROL List Deal/Ticket Pipelines]**
 
 返回给定门户的所有交易和票证管道。
 
@@ -762,11 +793,9 @@ HubSpot CRM连接器使用以下对象：
 
 +++
 
-+++**公司**
-
 ### 公司
 
-#### [!UICONTROL Search for Companies by domain]
++++ **[!UICONTROL Search for Companies by domain]**
 
 根据与域属性的完全匹配检索公司列表。
 
@@ -795,16 +824,14 @@ HubSpot CRM连接器使用以下对象：
 
 +++
 
-+++**参与**
-
 ### 参与
 
-* [将参与与CRM对象关联](#associate-an-engagement-with-a-crm-object)
-* [创建参与](#create-an-engagement)
-* [删除参与](#delete-an-engagement)
-* [Watch参与](#watch-engagements)
+<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
+* [Create an Engagement](#create-an-engagement)
+* [Delete an Engagement](#delete-an-engagement)
+* [Watch Engagements](#watch-engagements)-->
 
-#### 将参与与CRM对象关联
++++ **将参与关联到CRM对象**
 
 此操作模块将项目与联系人、公司或交易相关联。
 
@@ -831,7 +858,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 创建参与
++++
+
++++ **创建参与**
 
 此操作模块在HubSpot中创建具有CRM对象的参与（如注释、任务或活动）。 预订是与应记录在CRM中的联系人的任何交互。
 
@@ -898,7 +927,7 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-##### 电子邮件元数据
+#### 电子邮件元数据
 
 <table style="table-layout:auto"> 
  <col> 
@@ -935,7 +964,7 @@ HubSpot CRM连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">HTML</td> 
-   <td>要发送HTML格式的电子邮件，请输入或映射电子邮件的正文，包括HTML标签。</td> 
+   <td>要发送HTML格式的电子邮件，请输入或映射电子邮件正文，包括HTML标签。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">文本</td> 
@@ -944,7 +973,7 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-##### 调用元数据
+#### 调用元数据
 
 <table style="table-layout:auto"> 
  <col> 
@@ -986,7 +1015,7 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-##### 会议字段
+#### 会议字段
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1012,7 +1041,7 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-##### 任务字段
+#### 任务字段
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1038,7 +1067,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 删除参与
++++
+
++++ **删除项目**
 
 此操作模块按其ID删除参与。
 
@@ -1057,7 +1088,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### Watch参与
++++
+
++++ **观看预订**
 
 此触发器模块会在门户中创建新参与时启动方案。 此模块仅返回在过去30天内创建的记录，或最近创建的10,000条记录。
 
@@ -1082,16 +1115,14 @@ HubSpot CRM连接器使用以下对象：
 
 +++
 
-+++**事件和通知**
-
 ### 事件和通知
 
-* [创建/更新时间线事件](#create--update-a-timeline-event)
-* [列出时间线事件类型](#list-timeline-event-types)
-* [观看日历事件](#watch-calendar-events)
-* [Watch通知](#watch-notifications)
+<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
+* [List Timeline Event Types](#list-timeline-event-types)
+* [Watch Calendar Events](#watch-calendar-events)
+* [Watch Notifications](#watch-notifications)-->
 
-#### 创建/更新时间线事件
++++ **创建/更新时间线事件**
 
 此操作模块创建或更新时间线事件。 此模块只能与包括用户标识符、HubSpot API密钥、客户端ID和客户端密钥的开发人员连接一起使用。
 
@@ -1134,7 +1165,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 列出时间线事件类型
++++
+
++++ **列出时间线事件类型**
 
 此搜索模块返回特定应用程序的所有时间线事件的列表。 此模块只能与包括用户标识符、HubSpot API密钥、客户端ID和客户端密钥的开发人员连接一起使用。
 
@@ -1153,7 +1186,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 观看日历事件
++++
+
++++ **观看日历活动**
 
 此触发器模块会在向日历添加新事件时启动方案。 在开始日期和结束日期之间的时间间隔内，最多可包含500个任务。 此模块只能与包括用户标识符、HubSpot API密钥、客户端ID和客户端密钥的开发人员连接一起使用。
 
@@ -1184,7 +1219,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### Watch通知
++++
+
++++ **观看通知**
 
 此触发器模块会在发送有关更改的新通知时启动方案。  在开始日期和结束日期之间的时间间隔内，最多可包含500个任务。 此模块只能与包括用户标识符、HubSpot API密钥、客户端ID和客户端密钥的开发人员连接一起使用。 在HubSpot中，每个开发人员应用程序只能有一个webhook URL。
 
@@ -1215,19 +1252,17 @@ HubSpot CRM连接器使用以下对象：
 
 +++
 
-+++**文件**
-
 ### 文件
 
-* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [删除文件](#delete-a-file)
+<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
+* [Delete a File](#delete-a-file)
 * [[!UICONTROL Delete a Folder]](#delete-a-folder)
-* [列出文件](#list-files)
+* [List Files](#list-files)
 * [[!UICONTROL Move a File]](#move-a-file)
-* [上传文件](#upload-a-file)
-* [监视文件](#watch-files)
+* [Upload a file](#upload-a-file)
+* [Watch files](#watch-files)-->
 
-#### [!UICONTROL Create a Folder]
++++ **[!UICONTROL Create a Folder]**
 
 此模块创建一个文件夹。
 
@@ -1250,7 +1285,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 删除文件
++++
+
++++ **删除文件**
 
 此操作模块会从文件管理器中永久删除文件以及所有相关数据和缩略图。
 
@@ -1269,7 +1306,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a Folder]
++++
+
++++ **[!UICONTROL Delete a Folder]**
 
 将文件夹标记为已删除。
 
@@ -1288,7 +1327,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 列出文件
++++
+
++++ **列出文件**
 
 此搜索模块返回存储在文件管理器中的文件列表。
 
@@ -1315,7 +1356,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File]
++++
+
++++ **[!UICONTROL Move a File]**
 
 将文件移动到其他文件夹。
 
@@ -1342,7 +1385,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 上传文件
++++
+
++++ **上载文件**
 
 此操作模块会将文件上传到文件管理器。
 
@@ -1373,7 +1418,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-### 监视文件
++++
+
++++ **监视文件**
 
 在将新文件保存到文件管理器时，此触发器模块会启动一个方案。
 
@@ -1402,15 +1449,13 @@ HubSpot CRM连接器使用以下对象：
 
 +++
 
-+++**任务**
-
 ### 任务
 
-* [创建日历任务](#create-a-calendar-task)
-* [删除日历任务](#create-a-calendar-task)
-* [观看任务事件](#watch-task-events)
+<!--* [Create a Calendar Task](#create-a-calendar-task)
+* [Delete a Calendar Task](#create-a-calendar-task)
+* [Watch Task Events](#watch-task-events)-->
 
-#### 创建日历任务
++++ **创建日历任务**
 
 此操作模块为日历创建新任务。 此模块中使用的连接必须使用具有付费营销帐户的用户的凭据。
 
@@ -1453,7 +1498,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 删除日历任务
++++
+
++++ **删除日历任务**
 
 此操作模块删除日历任务。 此模块中使用的连接必须使用具有付费营销帐户的用户的凭据。
 
@@ -1472,7 +1519,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 观看任务事件
++++
+
++++ **观看任务事件**
 
 此触发器模块在日历中有新任务事件时启动方案。 此模块中使用的连接必须使用具有付费营销帐户的用户的凭据。 模块最多返回500个事件。
 
@@ -1501,14 +1550,12 @@ HubSpot CRM连接器使用以下对象：
 
 +++
 
-+++**用户**
-
 ### 用户
 
-* [获取所有者](#get-an-owner)
-* [列表所有者](#list-owners)
+<!--* [Get an Owner](#get-an-owner)
+* [List Owners](#list-owners)-->
 
-#### 获取所有者
++++ **获取所有者**
 
 此操作模块返回所有者的详细信息。
 
@@ -1527,7 +1574,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 列表所有者
++++
+
++++ **列出所有者**
 
 此搜索模块返回HubSpot帐户中所有所有者的列表。
 
@@ -1544,20 +1593,18 @@ HubSpot CRM连接器使用以下对象：
 
 +++
 
-+++**票证**
-
 ### 票证
 
 <!--* [Create a Ticket]-->
-* [删除票证](#delete-a-ticket)
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
-  <!--* [Create a Ticket]-->
+<!--* [Delete a Ticket](#delete-a-ticket)-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
+<!--* [Create a Ticket]-->
 
 <!-- Create a Ticket Need to find a working connection-->
 
-#### [!UICONTROL Delete a Ticket]
++++ **[!UICONTROL Delete a Ticket]**
 
 按票证ID删除现有票证。
 
@@ -1576,6 +1623,8 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
++++
+
 <!-- Get a Ticket  Need to find a working connection-->
 
 <!-- List Tickets  Need to find a working connection-->
@@ -1584,18 +1633,14 @@ HubSpot CRM连接器使用以下对象：
 
 <!-- Watch Tickets Need to find a working connection-->
 
-+++
-
-+++**Forms**
-
 ### 表单
 
-* [通过表单上传文件](#get-a-file-uploaded-via-form)
-* [列出Forms](#list-forms)
-  <!--* [Submit Data to a Form]-->
-  <!--* [Watch Submissions for a Form]-->
+<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
+* [List Forms](#list-forms)-->
+<!--* [Submit Data to a Form]-->
+<!--* [Watch Submissions for a Form]-->
 
-#### 通过表单上传文件
++++ **通过表单上传文件**
 
 此操作模块会返回通过表单上传的文件。
 
@@ -1614,7 +1659,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 列出Forms
++++
+
++++ **列出Forms**
 
 此操作模块返回在与用于此模块的连接关联的帐户中创建的所有表单。
 
@@ -1633,23 +1680,21 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
++++
+
 <!--#### Submit Data to a Form Need to find a working connection-->
 
 
 
 &lt;！—####观察表单提交情况 — 需要找到有效连接>—>
 
-+++
-
-+++**社交媒体（广播）**
-
 ### 社交媒体（广播）
 
-* [取消广播消息](#cancel-a-broadcast-message)
-* [创建广播消息](#create-a-broadcast-message)
-* [观看广播消息](#watch-broadcast-messages)
+<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
+* [Create a Broadcast Message](#create-a-broadcast-message)
+* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
-#### 取消广播消息
++++ **取消广播消息**
 
 此操作模块可取消计划的广播，例如推文或Facebook帖子。
 
@@ -1668,7 +1713,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 创建广播消息
++++
+
++++ **创建广播消息**
 
 此操作模块会在指定的社交媒体渠道上创建消息并立即发布消息。
 
@@ -1707,7 +1754,9 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
-#### 观看广播消息
++++
+
++++ **观看广播留言**
 
 当消息从HubSpot发布到指定的社交媒体渠道时，此触发器模块会启动一个方案。
 
@@ -1740,22 +1789,20 @@ HubSpot CRM连接器使用以下对象：
 
 +++
 
-+++**博客帖子**
-
 ### 博客帖子
 
 <!--* [Create a Blog Post]-->
-* [删除博客帖子](#delete-a-blog-post)
-  <!--* [List Blog Posts]-->
-* [Publish/取消发布博客帖子](#publish--unpublish-a-blog-post)
-  <!--* [Watch Blog Posts]-->
+<!--* [Delete a Blog Post](#delete-a-blog-post)-->
+<!--* [List Blog Posts]-->
+&lt;！—* [发布/取消发布博客帖子](#publish--unpublish-a-blog-post)—>
+<!--* [Watch Blog Posts]-->
 
 <!--
 #### Create a Blog Post May need connection
 -->
 
 
-#### 删除博客帖子
++++ **删除博客帖子**
 
 此操作模块删除单个博客帖子。
 
@@ -1774,11 +1821,13 @@ HubSpot CRM连接器使用以下对象：
  </tbody> 
 </table>
 
++++
+
 <!--#### List Blog Posts May need connection
 
 This search module retrieves posts from a HubSpot blog.-->
 
-#### Publish /取消发布博客帖子
++++ **发布/取消发布博客帖子**
 
 此操作模块可计划或取消博客帖子的发布。
 
@@ -1801,9 +1850,9 @@ This search module retrieves posts from a HubSpot blog.-->
  </tbody> 
 </table>
 
-<!--#### Watch Blog PostsMay need connection-->
-
 +++
+
+<!--#### Watch Blog PostsMay need connection-->
 
 <!--+++**Workflows**>
 
@@ -1818,14 +1867,12 @@ This search module retrieves posts from a HubSpot blog.-->
 
 <!--+++-->
 
-+++**订阅**
-
 ### 订阅
 
-* [更新电子邮件订阅](#update-email-subscription)
-* [Watch门户的订阅时间表](#watch-subscriptions-timeline-for-a-portal)
+<!--* [Update Email Subscription](#update-email-subscription)
+* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
-#### 更新电子邮件订阅
++++ **更新电子邮件订阅**
 
 此操作模块可更新HubSpot中的电子邮件订阅。
 
@@ -1856,7 +1903,9 @@ This search module retrieves posts from a HubSpot blog.-->
  </tbody> 
 </table>
 
-#### Watch门户的订阅时间表
++++
+
++++ **观看门户的订阅时间表**
 
 在将新的电子邮件时间线订阅添加到门户后，此触发器模块将启动一个方案。
 
@@ -1909,11 +1958,9 @@ This action module associates two CRM objects.-->
 
 <!--+++-->
 
-+++**其他**
-
 ### 其他
 
-#### [!UICONTROL Make an API Call]
++++ **[!UICONTROL Make an API Call]**
 
 允许您执行自定义API调用。
 

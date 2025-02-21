@@ -1,60 +1,72 @@
 ---
-title: Adobe I/O事件模块
-description: 通过Adobe I/O事件模块，您可以基于Adobe应用程序中的事件启动Adobe Workfront Fusion场景。
+title: Adobe I/O Events模块
+description: 通过Adobe I/O Events模块，您可以基于Adobe应用程序中的事件启动Adobe Workfront Fusion场景。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 9cea5de748873720247db39161cea12c7e9c7186
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '901'
 ht-degree: 1%
 
 ---
 
-# Adobe I/O事件模块
+# Adobe I/O Events模块
 
-通过Adobe I/O事件模块，您可以根据没有专用Adobe Workfront Fusion连接器的Adobe帐户和服务中的事件启动Workfront Fusion方案。
+通过Adobe I/O Events模块，您可以基于没有专用Adobe Workfront Fusion连接器的Adobe帐户和服务中的事件启动Workfront Fusion方案。
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront计划*</td> 
-   <td> <p>专业或专业以上</p> </td> 
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证*</td> 
-   <td> <p>计划、工作</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
-   <td> <p>Workfront Fusion for Work Automation and Integration </p>  </td> 
+   <td>
+   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>或</p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
+   </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
-   <td>您的组织必须购买Adobe Workfront Fusion和Adobe Workfront，才能使用本文中所述的功能。</td> 
-  </tr> 
+   <td>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>或</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   </td> 
+  </tr>
  </tbody> 
 </table>
 
-&#42;要了解您拥有什么计划、许可证类型或访问权限，请与Workfront管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
-&#42;&#42;有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 先决条件
 
-在使用Adobe I/O事件连接器之前，必须确保满足以下先决条件：
+在使用Adobe I/O Events连接器之前，必须确保满足以下先决条件：
 
 * 您必须拥有有效的Adobe帐户。
 
-## Adobe I/O事件API信息
+## Adobe I/O Events API信息
 
-Adobe I/O事件连接器使用以下对象：
+Adobe I/O Events连接器使用以下对象：
 
 <table style="table-layout:auto"> 
  <col> 
@@ -71,9 +83,9 @@ Adobe I/O事件连接器使用以下对象：
  </tbody> 
  </table>
 
-## 创建与Adobe I/O事件的连接
+## 创建与Adobe I/O Events的连接
 
-要为“Adobe I/O事件”模块创建连接，请执行以下操作：
+要为您的Adobe I/O Events模块创建连接，请执行以下操作：
 
 1. 单击“连接”框旁边的“添加”。
 
@@ -135,7 +147,7 @@ Adobe I/O事件连接器使用以下对象：
 
 1. 单击&#x200B;**继续**&#x200B;保存连接并返回模块。
 
-## Adobe I/O事件模块及其字段
+## Adobe I/O Events模块及其字段
 
 配置[!DNL Adobe I/O Events]模块时，[!DNL Workfront Fusion]显示下面列出的字段。 除此以外，可能还会显示其他[!DNL Adobe I/O Events]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
 
@@ -309,7 +321,7 @@ Adobe I/O事件连接器使用以下对象：
 
 #### 获取提供程序和事件ID
 
-此搜索模块获取指定提供程序和事件的Adobe I/O事件ID。
+此搜索模块获取指定提供程序和事件的Adobe I/O Events ID。
 
 <table>
      <col/>
