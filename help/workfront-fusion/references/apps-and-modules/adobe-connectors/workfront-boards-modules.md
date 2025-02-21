@@ -4,10 +4,10 @@ description: 您可以使用Adobe Workfront展示板连接器自动执行Workfro
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: 1ea2bf76b0fe6e0b0c7c3c894fbdede224d2cae2
+source-git-commit: 7895e65dd040f28e6028c24928abe2829b58d9db
 workflow-type: tm+mt
-source-wordcount: '2439'
-ht-degree: 1%
+source-wordcount: '2659'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +25,8 @@ Adobe Workfront展示板是一种灵活的工具，通过提供对包含列和�
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
 <table style="table-layout:auto">
@@ -32,29 +34,29 @@ Adobe Workfront展示板是一种灵活的工具，通过提供对包含列和�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 包</td>
-  <td> <p>任何</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td>
-   <td> <p>新增：标准</p><p>或</p><p>当前： [!UICONTROL Plan]， [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成]，[!UICONTROL [!DNL Workfront Fusion]用于工作自动化]</p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
@@ -62,6 +64,7 @@ Adobe Workfront展示板是一种灵活的工具，通过提供对包含列和�
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
++++
 
 ## 先决条件
 
@@ -148,51 +151,6 @@ Adobe Workfront主板连接器使用以下内容：
 * [标记](#tags)
 * [评论](#comments)
 * [其他](#other)
-
-<!--
-
-### Watch
-
-#### Watch events
-
-This trigger module starts a scenario when an event occurs on a board.
-
-1. Click **[!UICONTROL Add]** to the right of the **Webhook** box.
-
-1. Configure the webhook in the **[!UICONTROL Add a hook]** box that displays.
-
-   When you are configuring this module, the following fields display.
-
-   <table style="table-layout:auto"> 
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td>[!UICONTROL Webhook name]</td> 
-      <td>(Optional) Type a new name for the webhook</td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Connection]</td> 
-      <td> <p>You can use an existing Workfront connection to connect to Workfront Boards, or you can use a specific Workfront Boards connection. </p><p>For instructions about connecting your [!DNL Workfront] app to [!DNL Workfront Fusion], see <a href="#create-a-connection-to-workfront-boards" class="MCXref xref">Create a connection to Workfront Boards</a> in this article.</p> </td> 
-     </tr> 
-     <tr> 
-      <td>[!UICONTROL Object type]</td> 
-      <td>Select the type of [!DNL Workfront] object that you want the module to watch.</td> 
-     </tr> 
-     <tr> 
-      <td> <p>[!UICONTROL Objects to watch]</p> </td> 
-      <td> Select whether you want to trigger a scenario when there is a new object, an updated object, a new or updated object, or a deleted object. </td> 
-     </tr> 
-     <tr data-mc-conditions=""> 
-      <td>Exclude events made by this connection</td> 
-      <td>Enable this option to exclude events created or updated using the same connector that this trigger module uses. This can prevent situations where a scenario might trigger itself, causing it to repeat in an endless loop.</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-After the webhook is created, you can view the address of the endpoint that events are sent to.
-
--->
 
 ### 信息卡
 
@@ -282,7 +240,7 @@ After the webhook is created, you can view the address of the endpoint that even
 
 #### 移动信息卡
 
-该操作模块可将一张信息卡移动到同一展示板上的另一列。
+该操作模块会将一张信息卡移动到同一展示板上的另一列。
 
 <table style="table-layout:auto">
  <col> 
@@ -298,7 +256,7 @@ After the webhook is created, you can view the address of the endpoint that even
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>输入或映射包含要移动的信息卡的主板的ID。<p>在Workfront中查看信息卡时，您可以在URL中找到该信息卡ID。</p></td> 
+   <td>输入或映射包含要移动的信息卡的主板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Destination column ID]</td> 
@@ -327,6 +285,10 @@ After the webhook is created, you can view the address of the endpoint that even
    <td>[!UICONTROL Card ID]</td> 
    <td>输入或映射要读取的信息卡的ID。<p>在Workfront中查看信息卡时，您可以在URL中找到该信息卡ID。</p></td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL Card ID]</td> 
+   <td>输入或映射包含要读取的卡的主板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -348,15 +310,29 @@ After the webhook is created, you can view the address of the endpoint that even
   </tr> 
   <tr> 
    <td>[!UICONTROL Board ID]</td> 
-   <td>输入或映射包含要更新的卡的主板的ID。<p>在Workfront中查看信息卡时，您可以在URL中找到该信息卡ID。</p></td> 
+   <td>输入或映射包含要更新的卡的主板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Name]</td> 
    <td>输入或映射卡的新名称。</p></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Card ID]</td> 
+   <td>[!UICONTROL Description]</td> 
    <td>输入或映射卡的新描述。</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Estimation]</td> 
+   <td>输入或映射完成此信息卡所需时间的估计值。</p></td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Due date]</td> 
+   <td>输入或映射此卡的到期日期。</p>
+   <p>有关支持的日期和时间格式的列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">在[!DNL Adobe Workfront Fusion]</a>中键入强制。</p>
+   </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL Status]</td> 
+   <td>为信息卡选择新状态。</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -383,8 +359,8 @@ After the webhook is created, you can view the address of the endpoint that even
    <td>输入或映射新讨论区的名称。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Type]</td> 
-   <td>选择要创建的展示板类型。</td> 
+   <td>[!UICONTROL Template]</td> 
+   <td>为要创建的展示板类型选择模板。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -438,10 +414,6 @@ After the webhook is created, you can view the address of the endpoint that even
    <td>[!UICONTROL Column name]</td> 
    <td>输入或映射列的新名称。</td> 
   </tr> 
-  <tr> 
-   <td>[!UICONTROL WIP Limit]</td> 
-   <td>输入或映射列的新WIP限制。</td> 
-  </tr> 
  </tbody> 
 </table>
 
@@ -488,12 +460,16 @@ After the webhook is created, you can view the address of the endpoint that even
    <td>[!UICONTROL Column Name]</td> 
    <td>输入或映射要检索的列的名称。</td> 
   </tr> 
+  <tr> 
+   <td>[!UICONTROL WIP Limit]</td> 
+   <td>输入或映射列的新WIP限制。</td> 
+  </tr> 
  </tbody> 
 </table>
 
 ### 标记
 
-* [向信息卡添加标记](#add-card-tag)
+* [向信息卡添加标记](#add-a-tag-to-a-card)
 * [创建标记](#create-a-tag)
 
 #### 向信息卡添加标记
@@ -621,7 +597,7 @@ After the webhook is created, you can view the address of the endpoint that even
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p><p>对于大多数展示板调用，方法POST。 </td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p><p>对于大多数展示板调用，该方法为POST。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -638,5 +614,45 @@ After the webhook is created, you can view the address of the endpoint that even
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
+ </tbody> 
+</table>
+
+
+#### 进行自定义GraphQL API调用
+
+此操作模块向Workfront展示板API发出自定义GraphQL请求。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+      <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将[!DNL Workfront]应用连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>选择此调用的方法。 </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
+   <td> <p>以标准JSON对象的形式添加API调用的查询。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Operation name]</td> 
+   <td> <p>输入此操作的名称。 这样可以更轻松地跟踪和调试调用。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables data source]</td> 
+   <td> <p>选择变量是来自表单还是集合。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Variables]</td> 
+   <td> <p>对于要添加的每个变量，单击<b>添加项</b>并输入变量的键和值。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td> 
+   </tr> 
  </tbody> 
 </table>

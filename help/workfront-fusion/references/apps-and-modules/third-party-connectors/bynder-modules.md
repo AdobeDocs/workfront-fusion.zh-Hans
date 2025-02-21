@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
-source-git-commit: 024176956d5ca9c88112a67c6948d6297f53810e
+source-git-commit: 1861522827aa782877f612bf3f9dc522f6ca221e
 workflow-type: tm+mt
-source-wordcount: '1467'
+source-wordcount: '1534'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,8 @@ ht-degree: 0%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
 <table style="table-layout:auto">
@@ -28,35 +30,37 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 计划*</td>
-  <td> <p>[!UICONTROL Pro] 或更高</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td>
-   <td> <p>[!UICONTROL Plan]， [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成] </p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 先决条件
 
@@ -113,7 +117,9 @@ Bynder连接器使用以下对象：
 >
 >* 在[!DNL Bynder]中创建应用程序时，输入以下内容作为`redirect uri`：
 >
->   `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * 美国群集： `https://app.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * 欧盟群集： `https://app-eu.workfrontfusion.com/oauth/cb/workfront-bynder`
+>   * Azure群集： `https://app-az.workfrontfusion.com/oauth/cb/workfront-bynder`
 >* Bynder使用授权代码/刷新令牌授予类型。 这是Fusion Bynder连接器使用的唯一授予类型。
 
 ## [!DNL Bynder]模块及其字段
@@ -130,15 +136,61 @@ Bynder连接器使用以下对象：
 
 ### 操作
 
-* [[!UICONTROL Custom API Call]](#custom-api-call)
-* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
-* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
-* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
-* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
 * [[!UICONTROL Add a tag to assets]](#add-a-tag-to-assets)
-* [[!UICONTROL Remove a tag]来自资源](#remove-a-tag-from-assets)
+* [[!UICONTROL Add assets to a collection]](#add-assets-to-a-collection)
+* [[!UICONTROL Custom API Call]](#custom-api-call)
 * [[!UICONTROL Download asset]](#download-asset)
+* [[!UICONTROL Read asset metadata]](#read-asset-metadata)
+* [[!UICONTROL Remove a tag]来自资源](#remove-a-tag-from-assets)
+* [[!UICONTROL Remove assets from collection]](#remove-assets-from-collection)
+* [[!UICONTROL Update asset metadata]](#update-asset-metadata)
 * [[!UICONTROL Upload asset]](#upload-asset)
+
+#### [!UICONTROL Add a tag to assets]
+
+此操作模块会将标记添加到一个或多个资源
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>有关将[!DNL Bynder]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到[!DNL Workfront Fusion] </a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tag ID]</td> 
+   <td> <p>输入或映射要添加到资产的标记的ID。</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>对于每个要标记的资源，单击<strong>[!UICONTROL Add item]</strong>，然后输入或映射该资源ID。</p> </td> 
+  </tr> 
+ </tbody> 
+ </table>
+
+#### [!UICONTROL Add assets to a collection]
+
+此操作模块可向收藏集添加一个或多个资产。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>有关将[!DNL Bynder]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到[!DNL Workfront Fusion] </a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td> <p>输入或映射要添加资产的收藏集的ID。</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>对于要添加到收藏集的每个资源，单击<strong>[!UICONTROL Add item]</strong>，然后输入或映射该资源ID。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL Custom API Call]
 
@@ -162,7 +214,7 @@ Bynder连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Method]</td> 
-   td&gt; <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Headers]</td> 
@@ -178,6 +230,29 @@ Bynder连接器使用以下对象：
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Download asset]
+
+此操作模块可下载单个资产。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>有关将[!DNL Bynder]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到[!DNL Workfront Fusion] </a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset ID]</td> 
+   <td>输入或映射要下载的资源的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset version]</td> 
+   <td> <p>输入或映射要下载的资源版本。 要下载最新版本的资源，请将字段留空。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -201,6 +276,52 @@ Bynder连接器使用以下对象：
   <tr> 
    <td role="rowheader">[!UICONTROL Outputs]</td> 
    <td> <p>选择要包含在此模块的输出捆绑包中的信息。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Remove a tag from assets]
+
+此操作模块从一个或多个资产中删除标记
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>有关将[!DNL Bynder]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到[!DNL Workfront Fusion] </a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tag ID]</td> 
+   <td> <p>输入或映射要从资产中删除的标记的ID。</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>对于要从中删除标记的每个资源，单击<strong>[!UICONTROL Add item]</strong>，然后输入或映射该资源ID。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Remove assets from collection]
+
+此操作模块会从收藏集中删除一个或多个资产。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td> <p>有关将[!DNL Bynder]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到[!DNL Workfront Fusion] </a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Collection ID]</td> 
+   <td> <p>输入或映射要删除资产的收藏集的ID。</p> <p> </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
+   <td> <p>对于要从收藏集中移除的每个资源，单击<strong>[!UICONTROL Add item]</strong>，然后输入或映射该资源ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -232,121 +353,6 @@ Bynder连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Add assets to a collection]
-
-此操作模块可向收藏集添加一个或多个资产。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>有关将[!DNL Bynder]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到[!DNL Workfront Fusion] </a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
-   <td> <p>输入或映射要添加资产的收藏集的ID。</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>对于要添加到收藏集的每个资源，单击<strong>[!UICONTROL Add item]</strong>，然后输入或映射该资源ID。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove assets from collection]
-
-此操作模块会从收藏集中删除一个或多个资产。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>有关将[!DNL Bynder]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到[!DNL Workfront Fusion] </a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Collection ID]</td> 
-   <td> <p>输入或映射要删除资产的收藏集的ID。</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>对于要从收藏集中移除的每个资源，单击<strong>[!UICONTROL Add item]</strong>，然后输入或映射该资源ID。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add a tag to assets]
-
-向一个或多个资源添加标记
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>有关将[!DNL Bynder]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到[!DNL Workfront Fusion] </a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Tag ID]</td> 
-   <td> <p>输入或映射要添加到资产的标记的ID。</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>对于每个要标记的资源，单击<strong>[!UICONTROL Add item]</strong>，然后输入或映射该资源ID。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Remove a tag from assets]
-
-从一个或多个资源中删除标记
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>有关将[!DNL Bynder]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到[!DNL Workfront Fusion] </a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Tag ID]</td> 
-   <td> <p>输入或映射要从资产中删除的标记的ID。</p> <p> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset IDs]</td> 
-   <td> <p>对于要从中删除标记的每个资源，单击<strong>[!UICONTROL Add item]</strong>，然后输入或映射该资源ID。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Download asset]
-
-此操作模块可下载单个资产。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-    <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
-   <td> <p>有关将[!DNL Bynder]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到[!DNL Workfront Fusion] </a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset ID]</td> 
-   <td>输入或映射要下载的资源的ID。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Asset version]</td> 
-   <td> <p>输入或映射要下载的资源版本。 要下载最新版本的资源，请将字段留空。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL Upload asset]
 
 此操作模块上传单个资源。
@@ -371,13 +377,17 @@ Bynder连接器使用以下对象：
    <td role="rowheader">[!UICONTROL Source file]</td> 
    <td>从上一个模块中选择源文件，或映射源文件的名称和数据。</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Asynchronous file upload]</td> 
+   <td>在上传大文件时启用此选项。 这样可以防止大型文件阻止场景执行。</td> 
+  </tr> 
  </tbody> 
 </table>
 
 ### 搜索
 
 * [[!UICONTROL List record]](#list-record)
-* [[!UICONTROL Search for assets]](#search-for-assets)
+* [[!UICONTROL Search Assets]](#search-assets)
 
 #### [!UICONTROL List record]
 
@@ -411,7 +421,7 @@ Bynder连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL Search for assets]
+#### [!UICONTROL Search Assets]
 
 此搜索模块会根据您提供的条件搜索资产。
 
@@ -424,12 +434,12 @@ Bynder连接器使用以下对象：
    <td> <p>有关将[!DNL Bynder]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到[!DNL Workfront Fusion] </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Criteria]</td> 
+   <td role="rowheader">[!UICONTROL Search criteria]</td> 
    <td> <p>输入搜索条件。 </p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Field]</strong> </p> <p>选择要在搜索中使用的字段</p> </li> 
      <li> <p><strong>[!UICONTROL Logical Operator]</strong> </p> <p>选择要在搜索中使用的运算符。</p> </li> 
-     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>在选定字段中输入或映射要查找的值。 值类型应与所选字段的数据类型相同。 </p> <p>有关数据类型的详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">项数据类型。</p> </li> 
+     <li> <p><strong>[!UICONTROL Value]</strong> </p> <p>在选定字段中输入或映射要查找的值。 值类型应与所选字段的数据类型相同。 </p> <p>有关数据类型的详细信息，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">项数据类型</a>。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -469,21 +479,17 @@ Bynder连接器使用以下对象：
     <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>有关将[!DNL Bynder]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到[!DNL Workfront Fusion] </a>。</p> </td> 
   </tr> 
-  <tr> <!--
-    <td role="rowheader">Event type</td>
-   --> <!--
-    <td>Select whether you want to start the scenario when a new asset is created or when an existing asset is updated.</td>
-   --> 
+  <tr> 
+    <td role="rowheader">事件类型</td>
+    <td>选择您是否希望在创建新资产或更新现有资产时启动方案。</td>
   </tr> 
   <tr>
      <td role="rowheader">[!UICONTROL Collections]</td>
    <td> <p>选择要监视新资产的收藏集。 若要观看所有收藏集，请将此字段留空。</p> </td> 
   </tr> 
-  <tr> <!--
-    <td role="rowheader">Outputs</td>
-   --> <!--
-    <td>Select the fields that you want to include in the output.</td>
-   --> 
+  <tr> 
+    <td role="rowheader">输出</td>
+    <td>选择要包含在输出中的字段。</td>
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL Limit]</td>
