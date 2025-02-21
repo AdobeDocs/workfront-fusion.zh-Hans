@@ -4,10 +4,10 @@ description: 此 [!DNL Adobe Workfront Fusion] 模块允许您配置具有HTTP�
 author: Becky
 feature: Workfront Fusion
 exl-id: cc33530c-3010-4955-8819-5eb8373a0e10
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: c2680972c616a90b55fdaf2c907920e435f23469
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 0%
+source-wordcount: '847'
+ht-degree: 1%
 
 ---
 
@@ -105,7 +105,7 @@ ht-degree: 0%
    <td> <p>HTTP正文是在HTTP事务消息中传输的数据字节，这些字节紧跟在标头之后（如果存在任何要使用的标头）。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>原始正文类型通常适用于大多数HTTP正文请求，即使在开发人员文档未指定要发送的数据的情况下也是如此。</p> <p>在[!UICONTROL Content type]字段中指定解析数据的形式。</p> <p>尽管选择了内容类型，模块仍会以开发人员文档规定或要求的任何格式输入数据。</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>此正文类型使用<code>application/x-www-form-urlencoded</code>为[!UICONTROL POST]数据。</p> <p>对于<code>[!UICONTROL application/x-www-form-urlencoded]</code>，发送到服务器的HTTP消息正文本质上是一个查询字符串。 键和值在键值对中进行编码，键值对以<code>&amp;</code>分隔，在键和值之间使用<code>=</code>。 </p> <p>对于二进制数据，请改用<code>[!UICONTROL multipart/form-data]</code>。</p> 
+     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>此正文类型使用<code>application/x-www-form-urlencoded</code>为[!UICONTROL POST]数据。</p> <p>对于<code>[!UICONTROL application/x-www-form-urlencoded]</code>，发送到服务器的HTTP消息正文本质上是一个查询字符串。 键和值在键值对中进行编码，键值对以<code>&amp;</code>分隔，在键和值之间使用<code>=</code>。 </p> <p>对于二进制数据，请改用<code>[!UICONTROL multipart/form-data]</code>。</p> <p>对于要添加的每个键值对，在“字段”字段中，单击“<b>添加项</b>”，然后输入键和值。</p>
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>示例： </b></span></span> 
        <p>生成的HTTP请求格式的示例：</p> 
@@ -114,7 +114,7 @@ ht-degree: 0%
      <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL Multipart/form-data]是用于发送文件和数据的HTTP多部分请求。 它通常用于将文件上传到服务器。</p> <p>添加要在请求中发送的字段。 每个字段都必须包含键值对。</p> 
       <ul> 
        <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>输入要在请求正文中发送的键和值。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>输入密钥，并在请求正文中指定要发送的源文件。</p> <p>映射您要从上一个模块上传的文件(如[!UICONTROL HTTP] &gt; [!UICONTROL Get a File]或[!UICONTROL Google Drive] &gt;[!UICONTROL Download a File)]，或手动输入文件名和文件数据。</p> </li> 
+       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>输入密钥，并在请求正文中指定要发送的源文件。 从上一个模块中选择一个源文件，或映射文件的名称和数据。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
@@ -132,7 +132,25 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
-   <td> <p> 如果要使用自签名证书的TLS，请上载证书。</p> </td> 
+   <td> <p>要添加自签名证书，请执行以下操作：</p>
+          <ol>
+            <li value="1">
+              <p>单击 <b>[!UICONTROL Extract]</b>。</p>
+            </li>
+            <li value="2">
+              <p>选择要提取的文件类型。</p>
+            </li>
+            <li value="3">
+              <p>选择包含或证书的文件。</p>
+            </li>
+            <li value="4">
+              <p>输入文件的密码。</p>
+            </li>
+            <li value="5">
+              <p>单击<b>[!UICONTROL Save]</b>提取文件并返回模块设置。</p>
+            </li>
+          </ol>
+</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
@@ -156,7 +174,7 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
-   <td> <p>启用此选项可在HTTP请求中使用双向TLS。</p> <p>有关双方TLS的详细信息，请参阅<a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">在[!DNL Adobe Workfront Fusion]</a>中的HTTP模块中使用双方TLS。</p> </td> 
+   <td> <p>启用此选项可在HTTP请求中使用双向TLS。</p> <p>有关双方TLS的详细信息，请参阅<a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">在HTTP模块中使用双方TLS</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
