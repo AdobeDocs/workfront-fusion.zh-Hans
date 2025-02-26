@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion Google幻灯片模块允许您创建、更�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 6f5f97b9-b06a-4336-b349-ee9e2606d4bf
-source-git-commit: 5b88faa7fc3d501e543c1791eac02cbf2a690382
+source-git-commit: c9c2957aad4c885a622a80b9f25303517db0c506
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1552'
 ht-degree: 0%
 
 ---
@@ -102,18 +102,18 @@ Google幻灯片连接器使用以下内容：
 
 ### 演示文稿
 
-* [[!UICONTROL Watch Presentations]](#watch-presentations)
-* [[!UICONTROL List Presentations]](#list-presentations)
-* [[!UICONTROL Get a Presentation]](#get-a-presentation)
-* [[!UICONTROL Get a Page/Thumbnail]](#get-a-pagethumbnail)
-* [[!UICONTROL Create a Presentation From a Template]](#create-a-presentation-from-a-template)
-* [[!UICONTROL Upload an Image To a Presentation]](#upload-an-image-to-a-presentation)
-* [[!UICONTROL Refresh a Chart]](#refresh-a-chart)
 * [[!UICONTROL Add/Delete a Slide]](#adddelete-a-slide)
+* [[!UICONTROL Create a Presentation From a Template]](#create-a-presentation-from-a-template)
+* [[!UICONTROL Get a Page/Thumbnail]](#get-a-pagethumbnail)
+* [[!UICONTROL Get a Presentation]](#get-a-presentation)
+* [[!UICONTROL List Presentations]](#list-presentations)
+* [[!UICONTROL Refresh a Chart]](#refresh-a-chart)
+* [[!UICONTROL Upload an Image To a Presentation]](#upload-an-image-to-a-presentation)
+* [[!UICONTROL Watch Presentations]](#watch-presentations)
 
-#### [!UICONTROL Watch Presentations]
+#### [!UICONTROL Add/Delete a Slide]
 
-创建或更新新演示文稿时触发。
+此操作模块创建幻灯片或删除指定演示文稿上的现有幻灯片。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -124,110 +124,48 @@ Google幻灯片连接器使用以下内容：
    <td> <p>有关将[!DNL Google Slides]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Watch] </td> 
-   <td> <p>选择观看演示文稿的选项：</p> 
+   <td role="rowheader">[!UICONTROL Select the method]</td> 
+   <td> <p>选择您要添加新幻灯片还是删除幻灯片。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Enter a Slide ID]</td> 
+   <td> <p>如果要删除幻灯片，请选择是要手动输入幻灯片ID，还是从列表中选择幻灯片。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Presentation ID]</td> 
+   <td> <p>选择演示文稿或映射要为其添加或删除幻灯片的演示文稿的演示文稿ID。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!DNL Slide Object ID]</td> 
+   <td> <p>如果要删除幻灯片并选择手动输入幻灯片，请输入或映射幻灯片ID。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Predefined layout type]</td> 
+   <td> <p> 选择您希望添加的幻灯片使用的预定义幻灯片布局。 指定任何其他字段（如[!UICONTROL Title]）的值。</p> 
     <ul> 
-     <li> <p>[!UICONTROL Created Date]</p> </li> 
-     <li> <p>[!UICONTROL Modified Date]</p> </li> 
-    </ul> </td> 
+     <li>[!UICONTROL Blank layout, with no placeholders]</li> 
+     <li>[!UICONTROL Layout with a caption at the bottom]</li> 
+     <li>[!UICONTROL Layout with a title and subtitle]</li> 
+     <li>[!UICONTROL Layout with a title and body]</li> 
+     <li>[!UICONTROL Layout with a title and two columns]</li> 
+     <li>[!UICONTROL Layout with only a title]</li> 
+     <li>[!UICONTROL Layout with a section title]</li> 
+     <li>[!UICONTROL Layout with a title and subtitle on one side and description on the other]</li> 
+     <li>[!UICONTROL Layout with one title and one body, arranged in a single column]</li> 
+     <li>[!UICONTROL Layout with a main point]</li> 
+     <li>[!DNL Layout with a big number heading]</li> 
+    </ul> <p>如果您选择添加幻灯片，则此字段可用。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>Workfront Fusion应在一个场景执行周期内返回的最大演示文稿数。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL List Presentations]
-
-检索所有演示文稿的列表。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Slides]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive location]</td> 
-   <td> <p>选择要列出的演示文稿所在的[!DNL Google Drive]：</p> 
-    <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] 共享驱动器]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Folder ID]</td> 
-   <td> <p>选择要列出的演示文稿的文件夹位置。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td> <p>在一个方案执行周期内应返回的最大演示文稿[!DNL Workfront Fusion]数。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a Presentation]
-
-获取指定演示文稿的最新版本。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Slides]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
-   <td> <p>选择要列出的演示文稿所在的[!DNL Google Drive]：</p> 
-    <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] 共享驱动器]</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
-   <td> <p> 选择要检索的演示文稿。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Get a Page/Thumbnail]
-
-获取指定页面或演示文稿中页面缩略图的最新版本。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Slides]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
-   <td> <p> 选择要检索的演示文稿ID。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Page Object ID]</td> 
-   <td> <p> 选择要查看其页面对象详细信息的幻灯片。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Show Page Thumbnail]</td> 
-   <td> <p> 如果要查看页面缩略图信息，请选中复选框。</p> </td> 
+   <td role="rowheader">[!DNL Content]</td> 
+   <td> <p>输入或映射幻灯片的文本内容。 根据您选择的模板，字段可用。</p> <p>如果您选择添加幻灯片，则此字段可用。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### [!UICONTROL Create a Presentation From a Template]
 
-通过将模板中的所有标记（如`{{Name}}`、`{{Email}}`）替换为提供的数据来创建新演示文稿。
+此操作模块通过复制演示文稿，并将中的所有标记（如`{{Name}}`、`{{Email}}`）替换为提供的数据来创建新演示文稿。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -264,36 +202,163 @@ Google幻灯片连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Presentation ID]</td> 
-   <td> <p> 选择要用作模板的演示文稿的演示文稿ID。</p> </td> 
+   <td> <p> 选择演示文稿，或者输入或映射要用作模板的演示文稿ID。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Values] </td> 
    <td> <p>添加值：</p> 
     <ul> 
      <li><strong>[!UICONTROL Tag]</strong>：在演示文稿中输入要替换的标记。 例如， <code>&#123;&#123;Name&#125;&#125;</code></li> 
-     <li><strong>[!UICONTROL Replaced Value]</strong>：输入要替换现有标记的值。 例如，如果字符串 <tr><ul><tr><tr><tr><code>&#123;&#123;Name&#125;&#125;/code> in the presentation and the replaced value is Sample, then the <code>&#123;&#123;Name&#125;&#125;</code> will be replaced by <code>Sample</code>.</li> 
+     <li><strong>[!UICONTROL Replaced Value]</strong>：输入要替换现有标记的值。 例如，如果演示文稿中的字符串<code>&#123;&#123;Name&#125;&#125;</code>和替换的值是“示例”，则<code>&#123;&#123;Name&#125;&#125;</code>将被替换为<code>Sample</code>。</li> 
     </ul> </td> 
   </tr> 
-   
+  <tr> 
    <td role="rowheader">[!UICONTROL New Drive Location]</td> 
-   <td> <p>Select the [!DNL Google Drive] where you want to store or add the new presentation:</p> 
-     
+   <td> <p>选择要存储或添加新演示文稿的[!DNL Google Drive]：</p> 
+    <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] Shared Drive]</li> 
+     <li>[!UICONTROL [!DNL Google] 共享驱动器]</li> 
     </ul> </td> 
   </tr> 
-   
+  <tr> 
    <td role="rowheader"> <p>[!UICONTROL New Document's Location]</p> </td> 
-   <td> <p>Select the folder where you want to store or add the presentation.</p> </td> 
+   <td> <p>选择要存储或添加演示文稿的文件夹。</p> </td> 
   </tr> 
-   
+  <tr> 
    <td role="rowheader">[!UICONTROL Shared] </td> 
-   <td> <p>Select if you want to share the presentation.</p> </td> 
+   <td> <p>选择是否要共享演示文稿。</p> </td> 
   </tr> 
-   
+  <tr> 
    <td role="rowheader">[!UICONTROL Sharing with Other's Email Address]</td> 
-   <td> <p> Enter the email address with whom you want to share the presentation. If you are not entering an email address and selecting only shared field, the presentation is shareable to anyone.</p> </td> 
+   <td> <p> 输入要与其共享演示文稿的电子邮件地址。 如果启用“共享”选项而没有在此字段中输入电子邮件，则演示文稿可与任何人共享。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get a Page/Thumbnail]
+
+此操作模块获取指定页面或演示文稿中页面缩略图的最新版本。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Google Slides]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter a Presentation and Page ID]</td> 
+   <td> <p> 选择是手动输入演示文稿和页面ID，还是从列表中选择它们。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td> <p> 选择要检索的演示文稿ID。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Page Object ID]</td> 
+   <td> <p> 选择要查看其页面对象详细信息的幻灯片。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Show Page Thumbnail]</td> 
+   <td> <p> 如果要查看页面缩略图信息，请选中复选框。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Get a Presentation]
+
+此操作模块获取指定演示文稿的最新版本。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Google Slides]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
+   <td> <p>选择要列出的演示文稿所在的[!DNL Google Drive]：</p> 
+    <ul> 
+     <li>[!UICONTROL My Drive]</li> 
+     <li>[!UICONTROL Shared With Me]</li> 
+     <li>[!UICONTROL [!DNL Google] 共享驱动器]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td> <p> 选择要检索的演示文稿。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL List Presentations]
+
+本模块将检索给定位置的所有演示文稿的列表。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Google Slides]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a drive location]</td> 
+   <td> <p>选择要列出的演示文稿所在的[!DNL Google Drive]：</p> 
+    <ul> 
+     <li>[!UICONTROL My Drive]</li> 
+     <li>[!UICONTROL Shared With Me]</li> 
+     <li>[!UICONTROL [!DNL Google] 共享驱动器]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Folder ID]</td> 
+   <td> <p>选择要列出的演示文稿的文件夹位置。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>输入或映射您希望模块在一个方案执行周期内返回的最大演示文稿数。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL Refresh a Chart]
+
+该操作模块刷新存储在ID指定的演示文稿中的图表数据。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Google Slides]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Enter a Presentation ID]</td> 
+   <td> <p> 选择是手动输入演示文稿ID，还是从列表中选择它。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
+   <td> <p>如果从列表中选择演示文稿，请选择您要列出的演示文稿所在的[!DNL Google Drive]：</p> 
+    <ul> 
+     <li>[!UICONTROL My Drive]</li> 
+     <li>[!UICONTROL Shared With Me]</li> 
+     <li>[!UICONTROL [!DNL Google] 共享驱动器]</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
+   <td> <p>选择演示文稿，或者输入或映射包含要刷新图表的演示文稿ID。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Chart Object ID]</td> 
+   <td> <p> 如果手动输入数据，请输入或映射要刷新图表的ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -320,31 +385,32 @@ Google幻灯片连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Choose a drive]</td> 
-   <td> <p>选择要列出的演示文稿所在的[!DNL Google Drive]：</p> 
+   <td> <p>如果从下拉列表中选择，则选择要将图像添加到的演示文稿所在的[!DNL Google Drive]：</p> 
     <ul> 
      <li>[!UICONTROL My Drive]</li> 
      <li>[!UICONTROL Shared With Me]</li> 
      <li>[!UICONTROL [!DNL Google] 共享驱动器]</li> 
-    </ul> <p>如果您正在创建演示文稿[!UICONTROL By Dropdown]，则会显示此字段。</p> </td> 
+    </ul>  </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Presentation ID]</td> 
    <td> <p> 选择要将图像上传到的演示文稿的演示文稿ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
-   <td> <p>值添加值：</p> 
-    <ul> 
-     <li><strong>[!UICONTROL Tag]</strong>：输入要将URL添加到其中的标记。</li> 
-     <li><strong>[!UICONTROL Image URL]</strong>：输入要上载的图像的路径或URL。</li> 
-    </ul> <p>注意：图像大小必须小于50MB，不能超过2500万像素，并且必须采用PNG、JPEG或GIF格式。</p> </td> 
+   <td role="rowheader">[!UICONTROL Select the Method]</td> 
+   <td> <p> 选择要如何替换图像。</p>
+   <ul>
+   <li><p><b>通过替换文本标记上载图像</b></p><p>在“值”字段中，对于要上载的每个图像，单击“添加项”<b></b>，然后输入该图像的标记和新图像的URL。</p></li>
+   <li><p><b>通过替换图像上载图像</b></p><p>在“值”字段中，对于要上载的每个图像，单击“添加项”<b></b>，然后输入图像的对象ID、替换方法和新图像的URL。</p></li>
+   </ul>
+  <p>注意：图像大小必须小于50MB，不能超过2500万像素，并且必须采用PNG、JPEG或GIF格式。</p>   </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Refresh a Chart]
+#### [!UICONTROL Watch Presentations]
 
-刷新存储在ID指定的演示文稿中的图表数据。
+此触发器模块会在创建或更新新演示文稿时启动方案。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -355,123 +421,24 @@ Google幻灯片连接器使用以下内容：
    <td> <p>有关将[!DNL Google Slides]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Choose a drive]</td> 
-   <td> <p>选择要列出的演示文稿所在的[!DNL Google Drive]：</p> 
+   <td role="rowheader">[!UICONTROL Watch] </td> 
+   <td> <p>选择观看演示文稿的选项：</p> 
     <ul> 
-     <li>[!UICONTROL My Drive]</li> 
-     <li>[!UICONTROL Shared With Me]</li> 
-     <li>[!UICONTROL [!DNL Google] 共享驱动器]</li> 
+     <li> <p>[!UICONTROL Created Date]</p> </li> 
+     <li> <p>[!UICONTROL Modified Date]</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presentation ID]</td> 
-   <td> <p>选择包含要刷新图表的演示文稿的演示文稿ID。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Chart Object ID]</td> 
-   <td> <p> 选择要刷新的图表。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Add/Delete a Slide]
-
-创建空幻灯片或删除指定演示文稿上的现有幻灯片。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Slides]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Select the method]</td> 
-   <td> <p>选择您要添加新幻灯片还是删除幻灯片。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!DNL Presentation ID]</td> 
-   <td> <p>选择要为其添加或删除幻灯片的演示文稿的演示文稿ID。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Predefined layout type]</td> 
-   <td> <p> 选择您希望添加的幻灯片使用的预定义幻灯片布局。 指定任何其他字段（如[!UICONTROL Title]）的值。</p> 
-    <ul> 
-     <li>[!UICONTROL Blank layout, with no placeholders]</li> 
-     <li>[!UICONTROL Layout with a caption at the bottom]</li> 
-     <li>[!UICONTROL Layout with a title and subtitle]</li> 
-     <li>[!UICONTROL Layout with a title and body]</li> 
-     <li>[!UICONTROL Layout with a title and two columns]</li> 
-     <li>[!UICONTROL Layout with only a title]</li> 
-     <li>[!UICONTROL Layout with a section title]</li> 
-     <li>[!UICONTROL Layout with a title and subtitle on one side and description on the other]</li> 
-     <li>[!UICONTROL Layout with one title and one body, arranged in a single column]</li> 
-     <li>[!UICONTROL Layout with a main point]</li> 
-     <li>[!DNL Layout with a big number heading]</li> 
-    </ul> <p>如果您选择添加幻灯片，则此字段可用。</p> </td> 
+   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td> <p>输入或映射Workfront Fusion在一个场景执行周期内应返回的最大演示文稿数。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### 其他
 
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
 * [[!UICONTROL Insert Links in a Presentation]](#insert-links-in-a-presentation)
-
-#### [!UICONTROL Make an API Call]
-
-执行任意授权的API调用。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Slides]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL URL]</td> 
-   <td> <p>输入相对于https://developers.google.com/slides/的路径。 例如，演示文稿。</p> <p>有关可用端点的列表，请参阅<a href="https://developers.google.com/slides/reference/rest">[!DNL Google Slides] API文档</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP请求方法</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>输入所需的请求标头。 您无需添加授权标头。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
-   <td> <p> 输入请求查询字符串。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注意：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
-     <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
-     </div> </p> </td> 
-  </tr> 
- </tbody> 
-</table>
-
->[!INFO]
->
->**示例：**&#x200B;使用API调用，您可以获取您输入的演示文稿ID的演示详细信息。 在[!DNL Google Slides]中打开演示文稿时，可以在URL中找到演示文稿ID。
->
->![API调用示例](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
->
->以下API调用返回演示文稿详细信息：
->
->![演示详细信息](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
->
->在[!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId]下的模块输出中可以找到搜索匹配项。
->
->在我们的示例中，返回了请求的演示文稿详细信息：
->
->![演示详细信息](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+* [[!UICONTROL Make an API Call]](#make-an-api-call)
 
 #### [!UICONTROL Insert Links in a Presentation]
 
@@ -512,7 +479,63 @@ Google幻灯片连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Text Inputs]</td> 
-   <td>对于要为其添加链接的每个文本项，请将该项及其关联的链接添加到列表。 每次在演示文稿中显示项目时，它都会自动链接到指定的站点。</td> 
+   <td>如果要插入链接，则对于每个要为其添加链接的文本项，单击“添加项”<b></b>并输入文本及其关联的链接。 每次在演示文稿中显示项目时，它都会自动链接到指定的站点。</td> 
   </tr> 
  </tbody> 
 </table>
+
+#### [!UICONTROL Make an API Call]
+
+执行任意授权的API调用。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Google Slides]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL URL]</td> 
+   <td> <p>输入相对于<code>https://developers.google.com/slides/</code>的路径。 例如，演示文稿。</p> <p>有关可用端点的列表，请参阅<a href="https://developers.google.com/slides/reference/rest">[!DNL Google Slides] API文档</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP请求方法</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>输入所需的请求标头。 您无需添加授权标头。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td> <p> 输入请求查询字符串。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注意：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+     <div class="example" data-mc-autonum="<b>Example: </b>"> 
+      <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+     </div> </p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+>[!BEGINSHADEBOX]
+
+**示例：**&#x200B;使用API调用，您可以获取您输入的演示文稿ID的演示详细信息。 在[!DNL Google Slides]中打开演示文稿时，可以在URL中找到演示文稿ID。
+
+![API调用示例](/help/workfront-fusion/references/apps-and-modules/assets/api-call-350x13.png)
+
+以下API调用返回演示文稿详细信息：
+
+![演示详细信息](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details.png)
+
+在[!UICONTROL Bundle] > [!UICONTROL Body] > [!UICONTROL presentationId]下的模块输出中可以找到搜索匹配项。
+
+在我们的示例中，返回了请求的演示文稿详细信息：
+
+![演示详细信息](/help/workfront-fusion/references/apps-and-modules/assets/presentation-details-2.png)
+
+>[!ENDSHADEBOX]
