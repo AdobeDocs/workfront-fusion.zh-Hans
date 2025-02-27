@@ -4,7 +4,7 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动使用
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: a3494479614a4930427842fa68e6b586edca0833
+source-git-commit: 70038b21d9b486da23895533cad0fa1f58850e76
 workflow-type: tm+mt
 source-wordcount: '2248'
 ht-degree: 0%
@@ -136,7 +136,7 @@ Adobe Firefly连接器使用以下对象：
 
 此操作模块可展开图像，可以选择从提供的提示中使用内容。
 
-此模块适用于Firefly API V3异步。 此模块的上一个版本已弃用，不久将会删除。
+此模块适用于Firefly API V3异步。 此模块的先前版本已被弃用，不久将会删除。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -191,7 +191,7 @@ Adobe Firefly连接器使用以下对象：
 
 此操作模块会填充图像的蒙版区域，可以选择使用您提供的提示中的内容。
 
-此模块适用于Firefly API V3异步。 此模块的上一个版本已弃用，不久将会删除。
+此模块适用于Firefly API V3异步。 此模块的先前版本已被弃用，不久将会删除。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -245,7 +245,7 @@ Adobe Firefly连接器使用以下对象：
 
 该操作模块会根据您提供的提示生成和图像。 您还可以提供一个可选的参考图像，生成的图像将与参考图像的样式匹配。
 
-此模块适用于Firefly API V3异步。 此模块的上一个版本已弃用，不久将会删除。
+此模块适用于Firefly API V3异步。 此模块的先前版本已被弃用，不久将会删除。
 
 <table style="table-layout:auto"> 
  <col> 
