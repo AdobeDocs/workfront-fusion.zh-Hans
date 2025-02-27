@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动使用
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 1219642306c03cb0aa6037493ce2f02ced80b99d
+source-git-commit: a3494479614a4930427842fa68e6b586edca0833
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '2248'
 ht-degree: 0%
 
 ---
@@ -68,9 +68,9 @@ ht-degree: 0%
 
 * 您必须拥有有效的[!DNL Adobe Firefly]帐户。
 
-## Adobe FireflyAPI信息
+## Adobe Firefly API信息
 
-Adobe Firefly连接器使用以下内容：
+Adobe Firefly连接器使用以下对象：
 
 <table style="table-layout:auto"> 
  <col> 
@@ -136,6 +136,8 @@ Adobe Firefly连接器使用以下内容：
 
 此操作模块可展开图像，可以选择从提供的提示中使用内容。
 
+此模块适用于Firefly API V3异步。 此模块的上一个版本已弃用，不久将会删除。
+
 <table style="table-layout:auto"> 
  <col> 
  <col> 
@@ -153,29 +155,43 @@ Adobe Firefly连接器使用以下内容：
    <td>输入一个介于1-4之间的数字。 模块将生成此数量的扩展图像变体。</td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[!UICONTROL Source]</td> 
+   <td>选择提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
    <td role="rowheader">[!UICONTROL Expanded image format]</td> 
    <td>选择将保存扩展图像的文件格式。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>  <p>从上一个模块中选择一个源文件，或映射源文件的图像文件名和图像文件（数据）。</p> </td> 
+   <td role="rowheader">[!UICONTROL Expand by]</td> 
+   <td>  <p>选择要通过使用图像放置还是使用蒙版来展开图像。</p> 
+   <ul>
+   <li><b>放置环境</b><p>输入水平和垂直对齐方式，以及置入的图像从边缘的插入。</p></li>
+   <li><b>蒙版</b><p>选择掩码的源文件，以及是否应反转掩码。</p></li>
+   </ul>
+</td> 
 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
-   <td>选择希望扩展图像的大小。</td> 
+   <td>选择希望扩展图像达到的高度和宽度。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>对于每个要使用的种子，单击<b>添加项</b>并输入或映射一个整数。 您可以在另一个扩展图像模块中使用此相同的种子，以生成具有不同样式的相似图像。 </td> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>对于模块将生成的每个图像，单击<b>添加项</b>并输入或映射整数。 您可以在另一个扩展图像模块中使用此相同的种子，以生成具有不同样式的相似图像。 添加的种子数必须等于变体数字段。</td> 
   </tr> 
  </tbody> 
 </table>
 
-## 填充图像
+### 展开图像（已弃用）
+
+此模块已弃用，不久将会删除。 请改用展开图像模块。
+
+### 填充图像
 
 此操作模块会填充图像的蒙版区域，可以选择使用您提供的提示中的内容。
 
+此模块适用于Firefly API V3异步。 此模块的上一个版本已弃用，不久将会删除。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -184,6 +200,14 @@ Adobe Firefly连接器使用以下内容：
   <tr> 
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Campaign]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与[!DNL Adobe Firefly]</a>的连接。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+   <td>选择提供图像源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Mask > Source]</td> 
+   <td>选择提供掩码源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
@@ -197,30 +221,31 @@ Adobe Firefly连接器使用以下内容：
    <td role="rowheader">[!UICONTROL Filled image format]</td> 
    <td>选择将保存已填充图像的文件格式。</td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Image]</td> 
-   <td>  <p> 对于每个要填充的图像，单击<b>添加图像</b>，然后从以前的模块中选择源文件或映射源文件的图像文件名和图像数据。</p> </td> 
-</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Mask]</td> 
-   <td>  <p>  对于每个要使用的掩码，单击<b>添加掩码</b>。 从上一个模块中选择一个源文件，或映射源文件的“蒙版”文件名和“蒙版”数据。 蒙版文件表示将使用生成的内容填充的自定义蒙版。</p> </td> 
-</td> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>对于模块将生成的每个图像，单击<b>添加项</b>并输入或映射整数。 您可以在另一个扩展图像模块中使用此相同的种子，以生成具有不同样式的相似图像。 添加的种子数必须等于变体数字段。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
    <td>选择希望填充图像的大小。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Seeds]</td> 
-   <td>对于模块将生成的每个图像，单击<b>添加项<b>并输入或映射整数。 您可以在另一个扩展图像模块中使用此相同的种子，以生成具有不同样式的相似图像。 添加的种子数必须等于变体数字段。</td> 
+   <td role="rowheader">[!UICONTROL Locale]</td> 
+   <td>如果提供了区域设置，则模块会生成与指定区域设置更相关的内容。 <p>必须以ISO 639-1语言代码和ISO 3166-1区域提供区域设置。</p><p> 示例： <code>en-US</code></p></td> 
   </tr> 
  </tbody> 
 </table>
 
+### 填充图像（已弃用）
+
+此模块已弃用，不久将会删除。 请改用“填充图像”模块。
+
 ## 生成图像
 
 该操作模块会根据您提供的提示生成和图像。 您还可以提供一个可选的参考图像，生成的图像将与参考图像的样式匹配。
+
+此模块适用于Firefly API V3异步。 此模块的上一个版本已弃用，不久将会删除。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -232,7 +257,7 @@ Adobe Firefly连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Prompt]</td> 
-   <td>为要创建的图像输入或映射提示。 在提示中显示更多详细信息，将允许您更好地控制映像中显示的内容。</td> 
+   <td>为要生成的图像输入或映射提示。 在提示中显示更多详细信息，将允许您更好地控制映像中显示的内容。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Number of variations]</td> 
@@ -240,15 +265,26 @@ Adobe Firefly连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Generated image format]</td> 
-   <td>选择将保存扩展图像的文件格式。 如果选择default，则在未提供参考图像的情况下，文件格式将JPEG。 如果提供了参考图像，则生成的图像的文件格式将与参考图像相同。</td> 
+   <td>选择将保存扩展图像的文件格式。 如果选择“默认”，则在未提供参考图像的情况下，文件格式将为JPEG。 如果提供了参考图像，则生成的图像的文件格式将与参考图像相同。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
-   <td>  <p>从上一个模块中选择一个源文件，或映射源文件的“参考图像文件名”和“参考图像文件（数据）”。 将创建生成的图像以匹配参考图像的样式。</p> </td> 
-</td> 
+   <td role="rowheader">[!UICONTROL Structure > Image reference]</td> 
+    <td>选择为新图像结构提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Presets]</td> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>输入一个介于0和100之间的数字，以控制Firefly遵循源图像结构的严格程度。 数字越大，表示Firefly越严格地遵循图像。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>选择为新图像的样式提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>输入一个介于0和100之间的数字，以控制Firefly遵循源图像样式的严格程度。 数字越大，表示Firefly越严格地遵循图像。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
    <td>如果要使用预设样式，请单击“添加项目”，然后输入或映射要使用的样式。<p>有关预设样式的列表，请参阅Adobe开发人员文档中的<a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >图像模型样式</a>。</td> 
   </tr> 
   <tr> 
@@ -261,17 +297,13 @@ Adobe Firefly连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Seed]</td> 
-   <td>输入或映射整数。 您可以在另一个扩展图像模块中使用此相同的种子，以生成具有不同样式的相似图像。 </td> 
+   <td>对于模块将生成的每个图像，单击<b>添加项</b>并输入或映射整数。 您可以在另一个扩展图像模块中使用此相同的种子，以生成具有不同样式的相似图像。 添加的种子数必须等于变体数字段。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL Size]</td> 
    <td>选择希望生成的图像的大小。</td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Strength]</td> 
-   <td>输入或映射一个整数，该整数表示生成的图像与预设样式或参考图像的样式匹配的强度。 </td> 
-  </tr> 
-  <tr> 
+   <tr> 
    <td role="rowheader">[!UICONTROL Visual intensity]</td> 
    <td>输入或映射一个整数，该整数表示照片现有视觉特征的整体强度。 </td> 
   </tr> 
@@ -279,16 +311,117 @@ Adobe Firefly连接器使用以下内容：
    <td role="rowheader">[!UICONTROL Locale]</td> 
    <td>如果提供了区域设置，则模块会生成与指定区域设置更相关的内容。 <p>必须以ISO 639-1语言代码和ISO 3166-1区域提供区域设置。</p><p> 示例： <code>en-US</code></p></td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tileable]</td> 
+   <td>启用此选项可生成可在每个方向无限重复的图像。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### 生成图像（已弃用）
+
+此模块已弃用，不久将会删除。 请改用生成图像模块。
+
+### 生成对象组合
+
+此操作模块可合并Firefly生成的图像以创建图像复合。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>有关创建与[!DNL Adobe Campaign]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与[!DNL Adobe Firefly]</a>的连接。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td>为要生成的图像输入或映射提示。 在提示中显示更多详细信息，将允许您更好地控制映像中显示的内容。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td>输入一个介于1-4之间的数字。 模块将生成此数量的图像变体。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Content classs]</td> 
+   <td>选择您希望生成的图像更类似于照片还是图像。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+    <td>选择为新图像结构提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Generated image format]</td> 
+   <td>选择将保存扩展图像的文件格式。 如果选择“默认”，则在未提供参考图像的情况下，文件格式将为JPEG。 如果提供了参考图像，则生成的图像的文件格式将与参考图像相同。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>选择为新图像的样式提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Structure > Strength]</td> 
+    <td>输入一个介于0和100之间的数字，以控制Firefly遵循源图像样式的严格程度。 数字越大，表示Firefly越严格地遵循图像。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Presets]</td> 
+   <td>如果要使用预设样式，请单击“添加项目”，然后输入或映射要使用的样式。<p>有关预设样式的列表，请参阅Adobe开发人员文档中的<a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >图像模型样式</a>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size]</td> 
+   <td>选择要生成的复合的大小。 </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### 生成类似图像
+
+此操作模块生成的图像与指定的源图像类似。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td>有关创建与[!DNL Adobe Campaign]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与[!DNL Adobe Firefly]</a>的连接。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Number of variations]</td> 
+   <td>输入一个介于1-4之间的数字。 模块将生成此数量的图像变体。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Generated image format]</td> 
+   <td>选择将保存扩展图像的文件格式。 如果选择“默认”，则在未提供参考图像的情况下，文件格式将为JPEG。 如果提供了参考图像，则生成的图像的文件格式将与参考图像相同。</td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader">[!UICONTROL Image > Source]</td> 
+    <td>选择为新图像结构提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Style > Image reference]</td> 
+    <td>选择为新图像的样式提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Size]</td> 
+   <td>选择要生成的复合的大小。 </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Seeds]</td> 
+   <td>对于模块将生成的每个图像，单击<b>添加项</b>并输入或映射整数。 您可以在另一个扩展图像模块中使用此相同的种子，以生成具有不同样式的相似图像。 添加的种子数必须等于变体数字段。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Tileable]</td> 
+   <td>启用此选项可生成可在每个方向无限重复的图像。</td> 
+  </tr> 
  </tbody> 
 </table>
 
 
-
 ### 进行自定义API调用
 
-此操作模块对FireflyAPI进行自定义调用。
+此操作模块对Firefly API进行自定义调用。
 
-有关特定的可用API，请参阅Adobe Developer文档中的[Adobe FireflyAPI](https://developer.adobe.com/firefly-services/docs/firefly-api/)。
+有关特定的可用API，请参阅Adobe Developer文档中的[Adobe Firefly API](https://developer.adobe.com/firefly-services/docs/firefly-api/)。
 
 <table style="table-layout:auto"> 
   <col/>
