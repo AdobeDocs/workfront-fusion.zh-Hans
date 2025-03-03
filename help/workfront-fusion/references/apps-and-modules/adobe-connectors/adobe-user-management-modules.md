@@ -4,11 +4,11 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Adobe用户管理模块
-description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行管理Adobe帐户中的用户的工作流。
+description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行在Adobe帐户中管理用户的工作流。
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 640fec2de63ad59ba89fae5373f85b8147d8dac0
+source-git-commit: 234a6a537718328e92eec13672a73bc43add17c1
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # Adobe用户管理模块
 
-在[!DNL Adobe Workfront Fusion]方案中，您可以自动执行管理Adobe帐户中的用户的工作流。
+在[!DNL Adobe Workfront Fusion]方案中，您可以自动执行在Adobe帐户中管理用户的工作流。
 
 如果需要有关创建方案的说明，请参阅[创建方案：项目索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
 
@@ -66,7 +66,7 @@ ht-degree: 2%
 
 +++
 
-## 创建与Adobe用户管理的连接
+## 创建与Adobe User Management的连接
 
 要为您的[!DNL Adobe User Management]模块创建连接：
 
@@ -104,7 +104,7 @@ ht-degree: 2%
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
-        <td>输入您的[!DNL Adobe] IMS凭据。 组织的唯一标识符。 这是一个格式为A495E53@AdobeOrg的字符串，其中@的前缀为十六进制数字。 您可以在Admin Console或User Management集成的adobe.io控制台中，将此值作为组织的URL路径的一部分找到。</td>
+        <td>输入您的[!DNL Adobe] IMS凭据。 组织的唯一标识符。 这是一个格式为A495E53@AdobeOrg的字符串，其中@的前缀为十六进制数字。 您可以在Admin Console或adobe.io控制台中，将此值作为组织的URL路径的一部分来查找，以便进行用户管理集成。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Additional scopes]</td>
@@ -119,7 +119,7 @@ ht-degree: 2%
 
 ## Adobe用户管理模块及其字段
 
-在配置Adobe用户管理模块时，Workfront Fusion会显示以下列出的字段。 除此之外，还可能会显示其他Adobe用户管理字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在配置Adobe用户管理模块时，Workfront Fusion会显示以下列出的字段。 除此之外，可能还会显示其他Adobe用户管理字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
 
 如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
@@ -148,7 +148,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+   <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">返回结果的最大数目</td> 
@@ -167,7 +167,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+   <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">电子邮件地址</td> 
@@ -186,7 +186,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+   <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">组名称</td> 
@@ -222,7 +222,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+   <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">返回结果的最大数目</td> 
@@ -248,7 +248,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+   <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">用户</td> 
@@ -279,15 +279,15 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+   <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">ID类型</td> 
-   <td>选择您要创建具有Adobe ID、Enterprise ID还是Federated ID的用户。 </td> 
+   <td>选择您要使用Adobe ID、Enterprise ID还是Federated ID创建用户。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">登录</td> 
-   <td>如果要创建具有Federated ID的用户，请选择登录类型。</td> 
+   <td>如果要使用Federated ID创建用户，请选择登录类型。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">电子邮件</td> 
@@ -295,11 +295,11 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td role="rowheader">域</td> 
-   <td>如果要创建Federated ID具有基于域的登录名的用户，请输入或映射域。</td> 
+   <td>如果要使用Federated ID创建具有基于域的登录名的用户，请输入或映射域。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">用户</td> 
-   <td>如果要创建具有基于域的登录的Federated ID的用户，请输入或映射该新用户将代表的用户。</td> 
+   <td>如果要使用Federated ID创建具有基于域的登录名的用户，请输入或映射该新用户将代表的用户。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">名字</td> 
@@ -319,7 +319,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td role="rowheader">使用Adobe ID</td> 
-   <td>为true时，即使用户的ID被解释为引用现有的Adobe ID，即使存在具有相同名称的Enterprise或Federated ID也是如此。</td> 
+   <td>为true时，将用户ID解释为引用现有的Adobe ID，即使存在具有相同名称的Enterprise或Federated ID也是如此。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -334,7 +334,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+   <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">用户</td> 
@@ -367,7 +367,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+   <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">用户</td> 
@@ -410,7 +410,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+   <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">组名称</td> 
@@ -437,7 +437,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+   <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">组名称</td> 
@@ -464,7 +464,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+   <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">组名称</td> 
@@ -483,7 +483,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+   <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">组名称</td> 
@@ -499,7 +499,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td role="rowheader">使用Adobe ID</td> 
-   <td>为true时，即使用户的ID被解释为引用现有的Adobe ID，即使存在具有相同名称的Enterprise或Federated ID也是如此。</td> 
+   <td>为true时，将用户ID解释为引用现有的Adobe ID，即使存在具有相同名称的Enterprise或Federated ID也是如此。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -514,7 +514,7 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+   <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">原始组名称</td> 
@@ -528,13 +528,15 @@ ht-degree: 2%
    <td role="rowheader">原始组名称</td> 
    <td>输入或映射更新的组说明。</td> 
   </tr> 
- </tbody>
+ </tbody> 
+ </table>
 
 ### 其他
 
-此操作模块对Adobe用户管理API进行自定义调用。
 
 #### 进行自定义API调用
+
+此操作模块对Adobe用户管理API进行自定义调用。
 
 <table style="table-layout:auto"> 
   <col/>
@@ -542,7 +544,7 @@ ht-degree: 2%
   <tbody>
     <tr>
       <td role="rowheader">连接</td>
-      <td>有关创建与Adobe用户管理的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe用户管理的连接</a>。</td> 
+      <td>有关创建与Adobe User Management的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-user-management" class="MCXref xref" >创建与Adobe User Management的连接</a>。</td> 
     </tr>
     <tr>
       <td role="rowheader">

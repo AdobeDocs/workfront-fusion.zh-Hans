@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: a3494479614a4930427842fa68e6b586edca0833
+source-git-commit: df86b190a21bfd871387d5e6174f62b8ae184bcb
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1665'
 ht-degree: 3%
 
 ---
@@ -307,6 +307,7 @@ ht-degree: 3%
          * [Adobe Marketo模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-modules.md)
          * [Adobe PDF Services模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/pdf-modules.md)
          * [Adobe Photoshop模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-photoshop-modules.md)
+         * [Adobe存储模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-storage-modules.md)
          * [Adobe Target模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-target-modules.md)
          * [Adobe用户管理模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
          * [Adobe Workfront模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
