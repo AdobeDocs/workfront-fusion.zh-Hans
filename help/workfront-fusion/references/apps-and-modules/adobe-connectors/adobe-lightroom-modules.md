@@ -4,9 +4,9 @@ description: 通过Adobe Lightroom模块，您可以根据Adobe Lightroom帐户�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '2019'
 ht-degree: 0%
 
 ---
@@ -297,7 +297,7 @@ Adobe Lightroom连接器使用以下对象：
 
 #### 创建资源外部XMP开发设置文件
 
-此操作模块支持两个工作流。 第一个工作流是为资源上传外部XMP开发设置文件。 第二个工作流是通过从另一个资源的外部xmp开发设置文件复制来创建外部XMP开发设置文件。
+此操作模块支持两个工作流。 第一个工作流程是上传资源的外部XMP开发设置文件。 第二个工作流是通过从其他资源的外部xmp开发设置文件复制来创建外部XMP开发设置文件。
 
 <table style="table-layout:auto"> 
   <col/>
@@ -500,7 +500,7 @@ Adobe Lightroom连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL Maximum number of returned assets]</td>
       <td>
-        <p>设置[!DNL Workfront Fusion]在一个执行周期内返回的最大资源数。 此数字必须小于或等于100。</p>
+        <p>输入您希望模块在每个方案执行周期内返回的最大记录数。</p>
       </td>
     </tr>
     <tr>
