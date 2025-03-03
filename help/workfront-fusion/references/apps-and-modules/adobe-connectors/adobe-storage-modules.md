@@ -7,9 +7,11 @@ title: Adobe存储模块
 description: 在 [!DNL Adobe Workfront Fusion] 方案中，要在Adobe Admin Console中创建和管理项目。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: e027c93b77d825337b7fb2582c3de2a93c5c71f6
+hide: true
+hidefromtoc: true
+source-git-commit: 70a2d06da6be6c892df12faa3a168e66daef118e
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1351'
 ht-degree: 3%
 
 ---
@@ -116,30 +118,25 @@ ht-degree: 3%
       </col>
       <tbody>
         <tr>
+        <td role="rowheader">[!UICONTROL Connection type]</td>
+        <td>选择 <code>Server to server</code>。</td>
+        </tr>
+        <tr>
         <td role="rowheader">[!UICONTROL Connection name]</td>
         <td>
           <p>输入此连接的名称。</p>
         </td>
         </tr>
-        <tr>
-        <td role="rowheader">[!UICONTROL Environment]</td>
-        <td>选择您要连接到生产环境还是非生产环境。</td>
-        </tr>
-        <tr>
-        <td role="rowheader">[!UICONTROL Type]</td>
-        <td>选择您是要连接到服务帐户还是个人帐户。</td>
-        </tr>
-        <tr>
         <td role="rowheader">[!UICONTROL Client ID]</td>
-        <td>输入您的[!UICONTROL Adobe] [!UICONTROL Client ID]。 这可以在项目的[!UICONTROL Credential details]部分中找到 [!DNL Adobe Developer Console]</td>
+        <td>输入您的[!UICONTROL Adobe] [!UICONTROL Client ID]。 可以在[!DNL Adobe Developer Console]中项目的[!UICONTROL Credential details]部分找到它。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL Client Secret]</td>
-        <td>输入您的[!DNL Adobe] [!UICONTROL Client Secret]。 这可以在项目的[!UICONTROL Credential details]部分中找到 [!DNL Adobe Developer Console]</td>
+        <td>输入您的[!DNL Adobe] [!UICONTROL Client Secret]。 可以在[!DNL Adobe Developer Console]中项目的[!UICONTROL Credential details]部分找到它。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL Authentication URL]</td>
-        <td>输入身份验证URL。 默认值为<code>https://ims-na1.adobelogin.com</code>。 </td>
+        <td role="rowheader">[!UICONTROL IMS Organization ID]</td>
+        <td>输入或映射您的Adobe IMS组织ID。 这是一个格式为<code> 123abc@AdobeOrg</code>的字符串，其中@之前的部分是一个十六进制数字。 您可以在Adobe Admin Console或用户管理集成的Adobe.IO控制台中，将此值作为组织的URL路径的一部分找到。</td>
         </tr>
       </tbody>
     </table>
