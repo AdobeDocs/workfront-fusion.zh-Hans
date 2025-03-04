@@ -4,9 +4,9 @@ description: 使用 [!DNL Adobe Workfront Fusion SFTP] 模块可以监视所选�
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '2077'
 ht-degree: 0%
 
 ---
@@ -71,49 +71,49 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection name]</td> 
+   <td role="rowheader">[！UICONTROL连接名称]</td> 
    <td> <p> 输入SFTP连接的名称。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader">[!UICONTROL Environment]</td>
+    <td role="rowheader">[！UICONTROL环境]</td>
     <td>选择您要连接到生产环境还是非生产环境。</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL Type]</td>
+    <td role="rowheader">[！UICONTROL类型]</td>
     <td>选择您是要连接到服务帐户还是个人帐户。</td>
   </tr>
   <tr>
-   <td role="rowheader"> <p>[!UICONTROL Host]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL主机]</p> </td> 
    <td> <p>输入要连接的SFTP服务器的主机名。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Port] </td> 
+   <td role="rowheader">[！UICONTROL端口] </td> 
    <td> <p>输入SFTP服务器端口。 例如，22。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Auth type]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL身份验证类型]</p> </td> 
    <td> <p>选择要用于连接到SFTP服务器的授权方法。</p> 
     <ul> 
-     <li><strong>[!UICONTROL User name and password]</strong>：输入您的凭据。</li> 
-     <li> <p><strong>[!UICONTROL User name and key]</strong>：输入用户名和私钥/证书</p> <p>如果要使用自签名证书的TLS，请上载私钥以使用客户端授权，或上载证书（P12或PFX文件）。 如果您使用的是客户端证书授权，可以在此处输入您的CA证书。</p> <p>[!DNL Workfront Fusion] 不保留或存储您在此处提供的任何数据（文件、密码）。 文件和密码仅用于提取私钥/证书。</p> </li> 
+     <li><strong>[！UICONTROL用户名和密码]</strong>：输入您的凭据。</li> 
+     <li> <p><strong>[！UICONTROL用户名和密钥]</strong>：输入您的用户名和私钥/证书</p> <p>如果要使用自签名证书的TLS，请上载私钥以使用客户端授权，或上载证书（P12或PFX文件）。 如果您使用的是客户端证书授权，可以在此处输入您的CA证书。</p> <p>[!DNL Workfront Fusion] 不保留或存储您在此处提供的任何数据（文件、密码）。 文件和密码仅用于提取私钥/证书。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Key exchange algorithms] </td> 
+   <td role="rowheader">[！UICONTROL密钥交换算法] </td> 
    <td> <p>您可以输入一组密钥交换算法。 模块根据添加算法的顺序排列算法的优先级。 对于要添加的每个算法，单击<b>添加项</b>并选择算法。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Ciphers] </td> 
+   <td role="rowheader">[！UICONTROL密码] </td> 
    <td> <p>您可以输入一组密码进行密钥交换。 模块会根据密码添加的顺序为其设置优先级。 对于要添加的每个密码，单击<b>添加项</b>并选择密码。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-输入连接信息后，单击&#x200B;**[!UICONTROL Continue]**&#x200B;建立连接。
+输入连接信息后，单击&#x200B;**[!UICONTROL 继续]**&#x200B;建立连接。
 
 ## [!UICONTROL SFTP]模块及其字段
 
-配置[!UICONTROL SFTP]模块时，[!DNL Workfront Fusion]显示下面列出的字段。 除此以外，可能还会显示其他[!UICONTROL SFTP]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+配置[!UICONTROL SFTP]模块时，[!DNL Workfront Fusion]显示以下列出的字段。 此外，可能还会显示其他[!UICONTROL SFTP]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
 
 如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
@@ -124,7 +124,7 @@ ht-degree: 0%
 * [监视文件夹中的文件](#watch-files-in-a-folder)
 * [监视文件夹中的子文件夹](#watch-subfolders-in-a-folder)
 
-#### [!UICONTROL Watch Files in a Folder]
+#### [!UICONTROL 监视文件夹中的文件]
 
 在指定文件夹中创建或更改文件时，返回包含详细信息的文件。
 
@@ -133,11 +133,11 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[！UICONTROL Connection] </td>
    <td> <p>有关将SFTP帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到[!DNL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[！UICONTROL文件夹] </td> 
    <td> <p>输入要监视的文件夹。 您可以指定绝对路径，如<code>/home/user/</code>，也可以指定指向登录用户的特定文件夹的相对路径，如 <code>./.</code></p> </td> 
   </tr> 
   <tr> 
@@ -145,13 +145,13 @@ ht-degree: 0%
    <td> <p> 输入缓冲区大小（字节）。 该值定义从服务器传送的块的大小。 当值过高时，某些服务器可能会导致问题或文件损坏。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned files]</td> 
+   <td>[！UICONTROL返回的最大文件数]</td> 
    <td> <p> 输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Subfolders in a Folder]
+#### [!UICONTROL 监视文件夹中的子文件夹]
 
 在指定文件夹中创建或更改文件夹时，返回包含详细信息的文件夹。
 
@@ -160,15 +160,15 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[！UICONTROL Connection] </td> 
    <td> <p>有关将SFTP帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到[!DNL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[！UICONTROL文件夹] </td> 
    <td> <p>输入或映射要监视的文件夹。 您可以指定绝对路径，如<code>/home/user/</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，例如 <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned files]</td> 
+   <td>[！UICONTROL返回的最大文件数]</td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
@@ -187,62 +187,62 @@ ht-degree: 0%
 * [更新文件权限](#update-file-permissions)
 * [上传文件](#upload-a-file)
 
-#### [!UICONTROL Create a folder]
+#### [!UICONTROL 创建文件夹]
 
-在指定位置创建新文件夹。
+此操作模块在指定位置创建新文件夹。
 
 >[!NOTE]
 >
->如果该文件夹已存在，则模块将引发错误。 要继续流而不中断，请将错误处理程序路由附加到模块以捕获错误，并使用[!UICONTROL Resume]指令继续流。 有关附加错误处理程序路由的信息，请参阅 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)中的[错误处理。 有关错误处理程序路由的信息，请参阅 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md)中用于错误处理的[指令。
+>如果该文件夹已存在，则模块将引发错误。 若要继续流而不中断，请将错误处理程序路由附加到模块以捕获错误，并使用[!UICONTROL Resume]指令继续流。 有关附加错误处理程序路由的信息，请参阅 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)中的[错误处理。 有关错误处理程序路由的信息，请参阅 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/errors/directives-for-error-handling.md)中用于错误处理的[指令。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[！UICONTROL Connection] </td>
    <td> <p>有关将SFTP帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到[!DNL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[！UICONTROL文件夹] </td> 
    <td> <p>指定现有文件夹作为新文件夹的存储位置。 您可以指定绝对路径，如<code>/home/user/file.txt</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，如<code>./</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder Name]</td> 
+   <td>[！UICONTROL文件夹名称]</td> 
    <td> <p> 输入文件夹名称。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permissions]</p> </td> 
+   <td> <p>[！UICONTROL Permissions]</p> </td> 
    <td> <p>设置所需的文件夹权限。 使用chmod参数。 例如，<code>777</code>或<code>-rwxrwxrwx</code>。</p> <p>这些权限必须匹配以下模式 <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>有关chmod的详细信息，请参阅<a href="https://ss64.com/bash/chmod.html">chmod文档</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a file]
+#### [!UICONTROL 删除文件]
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[！UICONTROL Connection] </td>
    <td> <p>有关将SFTP帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到[!DNL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path]</td> 
+   <td>[！UICONTROL文件路径]</td> 
    <td> <p> 输入要删除的文件的路径。 您可以指定绝对路径，如<code>/home/user/file.txt</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，如<code>./file.txt</code>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete a folder]
+#### [!UICONTROL 删除文件夹]
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[！UICONTROL Connection] </td>
    <td> <p>有关将SFTP帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到[!DNL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -252,7 +252,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-#### [!UICONTROL Get a file]
+#### [!UICONTROL 获取文件]
 
 此模块可检索文件详细信息，包括文件数据。
 
@@ -261,21 +261,21 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[！UICONTROL Connection] </td>
    <td> <p>有关将SFTP帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到[!DNL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Buffer Size [B]]</td> 
+   <td>[！UICONTROL缓冲区大小[B]]</td> 
    <td> <p> 输入缓冲区大小（字节）。 该值定义从服务器传送的块的大小。 当值过高时，某些服务器可能会导致问题或文件损坏。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path] </td> 
+   <td>[！UICONTROL文件路径] </td> 
    <td> <p>输入文件的路径。 您可以指定绝对路径，如<code>/home/user/file.txt</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，如<code>./file.txt</code>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get files]
+#### [!UICONTROL 获取文件]
 
 此模块从指定的文件夹返回文件。
 
@@ -284,103 +284,103 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[！UICONTROL Connection] </td>
    <td> <p>有关将SFTP帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到[!DNL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Buffer Size [B]]</td> 
+   <td>[！UICONTROL缓冲区大小[B]]</td> 
    <td> <p> 输入缓冲区大小（字节）。 该值定义从服务器传送的块的大小。 当值过高时，某些服务器可能会导致问题或文件损坏。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[！UICONTROL文件夹] </td> 
    <td> <p>输入或映射包含要列出的文件或文件夹的文件夹。 您可以指定绝对路径，如<code>/home/user/</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，例如 <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Search] </td> 
+   <td>[！UICONTROL搜索] </td> 
    <td> <p>输入或映射搜索词。 例如，如果要搜索文件扩展名为.txt的文件，请输入<code>.txt</code>。您还可以输入或映射要搜索的文件名。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort By]</td> 
+   <td>[！UICONTROL排序方式]</td> 
    <td> <p> 选择是否要按文件名、大小、上次访问日期或上次修改日期对结果进行排序。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort Order]</td> 
+   <td>[！UICONTROL排序顺序]</td> 
    <td> <p> 选择应按升序还是降序返回结果。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Continue the execution of the route even if the module returns no results]</p> </td> 
+   <td> <p>[！UICONTROL即使模块未返回任何结果，仍继续执行路由]</p> </td> 
    <td>启用此选项以确保此模块在未返回任何结果时不会停止方案。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>[！UICONTROL返回结果的最大数目]</td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL List a folder's content]
+#### [!UICONTROL 列出文件夹的内容]
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[！UICONTROL Connection] </td>
    <td> <p>有关将SFTP帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到[!DNL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Show] </td> 
+   <td>[！UICONTROL Show] </td> 
    <td> <p>选择是要检索文件、文件夹还是两者。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[！UICONTROL文件夹] </td> 
    <td> <p>输入或映射包含要列出的文件或文件夹的文件夹。 您可以指定绝对路径，如<code>/home/user/</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，例如 <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Search] </td> 
+   <td>[！UICONTROL搜索] </td> 
    <td> <p>输入或映射搜索词。 例如，如果要搜索文件扩展名为.txt的文件，请输入<code>.txt</code>。您还可以输入或映射要搜索的文件名。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort By]</td> 
+   <td>[！UICONTROL排序方式]</td> 
    <td> <p> 选择是否要按文件名、大小、上次访问日期或上次修改日期对结果进行排序。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Sort Order] </td> 
+   <td>[！UICONTROL排序顺序] </td> 
    <td> <p>选择应按升序还是降序返回结果。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Continue the execution of the route even if the module returns no results]</p> </td> 
+   <td> <p>[！UICONTROL即使模块未返回任何结果，仍继续执行路由]</p> </td> 
    <td>启用此选项以确保此模块在未返回任何结果时不会停止方案。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Maximum number of returned results]</td> 
+   <td>[！UICONTROL返回结果的最大数目]</td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Move a File]
+#### [!UICONTROL 移动文件]
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[！UICONTROL Connection] </td>
    <td> <p>有关将SFTP帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到[!DNL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path]</td> 
+   <td>[！UICONTROL文件路径]</td> 
    <td> <p> 输入要移动文件的路径。 您可以指定绝对路径，如<code>/home/user/file.txt</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，如<code>./file.txt</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New Folder]</td> 
+   <td>[！UICONTROL新文件夹]</td> 
    <td> <p> 输入文件新位置的路径。 您可以指定绝对路径，如<code>/home/user/</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，例如 <code>./.</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Rename a File]
+#### [!UICONTROL 重命名文件]
 
 重命名文件。
 
@@ -389,21 +389,21 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[！UICONTROL Connection] </td>
    <td> <p>有关将SFTP帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到[!DNL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path]</td> 
+   <td>[！UICONTROL文件路径]</td> 
    <td> <p> 输入要重命名的文件的路径。 您可以指定绝对路径，如<code>/home/user/file.txt</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，如<code>./file.txt</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New file name]</td> 
+   <td>[！UICONTROL新文件名]</td> 
    <td> <p> 输入文件的新名称，包括文件扩展名。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update file permissions]
+#### [!UICONTROL 更新文件权限]
 
 允许您更改文件的权限。
 
@@ -412,21 +412,21 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[！UICONTROL Connection] </td>
    <td> <p>有关将SFTP帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到[!DNL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL File Path]</td> 
+   <td>[！UICONTROL文件路径]</td> 
    <td> <p> 输入要移动文件的路径。 您可以指定绝对路径，如<code>/home/user/file.txt</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，如<code>./file.txt</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permissions]</p> </td> 
+   <td> <p>[！UICONTROL Permissions]</p> </td> 
    <td> <p>设置所需的文件权限。 使用chmod参数。 例如，<code>777</code>或<code>-rwxrwxrwx</code>。</p> <p>这些权限必须匹配以下模式 <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>有关chmod的详细信息，请参阅<a href="https://ss64.com/bash/chmod.html">chmod文档</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Upload a File]
+#### [!UICONTROL 上载文件]
 
 此模块允许您将文件上传到SFTP服务器。
 
@@ -435,19 +435,19 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td>
+   <td>[！UICONTROL Connection] </td>
    <td> <p>有关将SFTP帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到[!DNL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Folder] </td> 
+   <td>[！UICONTROL文件夹] </td> 
    <td> <p>指定现有文件夹作为文件的存储位置。 您可以指定绝对路径，如<code>/home/user/</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，例如 <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source File]</td> 
+   <td>[！UICONTROL Source File]</td> 
    <td> <p> 从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Permissions]</p> </td> 
+   <td> <p>[！UICONTROL Permissions]</p> </td> 
    <td> <p>为文件或文件夹设置所需的权限。 使用chmod参数。 例如，<code>777</code>或<code>-rwxrwxrwx</code>。</p> <p>这些权限必须匹配以下模式 <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>有关chmod的详细信息，请参阅<a href="https://ss64.com/bash/chmod.html">chmod文档</a>。</p> </td> 
   </tr> 
  </tbody> 
