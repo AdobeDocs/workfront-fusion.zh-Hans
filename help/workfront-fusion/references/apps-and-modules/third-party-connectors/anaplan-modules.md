@@ -3,9 +3,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动使用
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 85cd8dbf70dff220f593fa669b447bf5df2a21a2
+source-git-commit: defc5aa9b2e3ffa5c698c5a19dd8d9d8768d72c2
 workflow-type: tm+mt
-source-wordcount: '1859'
+source-wordcount: '1983'
 ht-degree: 1%
 
 ---
@@ -87,7 +87,7 @@ Anaplan连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">API标记</td> 
-   <td>v1.11.5/td&gt; 
+   <td>v1.11.5</td> 
  </tbody> 
 </table>
 
@@ -96,24 +96,66 @@ Anaplan连接器使用以下对象：
 要为您的[!DNL Anaplan]模块创建连接：
 
 1. 单击[!UICONTROL 连接]框旁边的&#x200B;**[!UICONTROL 添加]**。
-1. 选择连接类型。
+1. 填写以下字段：
+
+   <table style="table-layout:auto"> 
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column1">
+    </col>
+    <col class="TableStyle-TableStyle-List-options-in-steps-Column-Column2">
+    </col>
+    <tbody>
+      <tr>
+        <td role="rowheader">[！UICONTROL连接名称]</td>
+        <td>
+          <p>输入新连接的名称。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[！UICONTROL环境]</td>
+        <td>
+          <p>选择是连接到生产环境还是非生产环境。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[！UICONTROL类型]</td>
+        <td>
+          <p>选择您是要连接到服务帐户还是个人帐户。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[！UICONTROL电子邮件]</td>
+        <td>
+          <p>输入此Anaplan帐户的电子邮件地址</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[！UICONTROL密码]</td>
+        <td>输入此Anaplan帐户的密码。</td>
+      </tr>
+     </tbody>
+    </table>
+
+1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
+
+<!--1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
+1. Select the connection type.
 
    <table style="table-layout:auto">
     <col> 
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!DNL Anaplan] [！UICONTROL Basic]</td> 
-      <td> <p>[!DNL Anaplan] [！UICONTROL Basic]连接只需要电子邮件地址和密码即可创建连接。 </p> <p>输入连接的名称，然后输入您的电子邮件地址和[!DNL Anaplan]帐户的密码。</p> </td> 
+      <td role="rowheader">[!DNL Anaplan] [!UICONTROL Basic]</td> 
+      <td> <p>An [!DNL Anaplan] [!UICONTROL Basic] connection requires only an email address and password to create the connection. </p> <p>Enter a name for the connection, then enter your email address and the password of your [!DNL Anaplan] account.</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!DNL Anaplan] [！UICONTROL CA证书]</td> 
-      <td> <p>[!DNL Anaplan] [！UICONTROL CA Certificate]连接需要[！UICONTROL证书密钥]、[！UICONTROL编码数据]和[！UICONTROL编码签名数据]。 您可以在[!DNL Anaplan]帐户中生成这些内容。 有关说明，请参阅[!DNL Anaplan]文档。</p> <p>输入连接的名称，然后输入您在[!DNL Anaplan]帐户中生成的[！UICONTROL证书密钥]、[！UICONTROL编码数据]和[！UICONTROL编码签名数据]。</p> </td> 
+      <td role="rowheader">[!DNL Anaplan] [!UICONTROL CA Certificate]</td> 
+      <td> <p>An [!DNL Anaplan] [!UICONTROL CA Certificate] connection requires a [!UICONTROL Certificate Key], [!UICONTROL Encoded Data], and [!UICONTROL Encoded Signed Data]. You can generate these in your [!DNL Anaplan] account. For instructions, see the [!DNL Anaplan] documentation.</p> <p>Enter a name for the connection, then enter the [!UICONTROL Certificate Key], [!UICONTROL Encoded Data], and [!UICONTROL Encoded Signed Data] that you generated in your [!DNL Anaplan] account.</p> </td> 
      </tr> 
     </tbody> 
    </table>
 
-1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
+1. Click **[!UICONTROL Continue]** to save the connection and return to the module.-->
 
 ## [!DNL Anaplan]模块及其字段
 
@@ -163,6 +205,9 @@ Anaplan连接器使用以下对象：
 ### 操作
 
 * [[!UICONTROL 创建列表项]](#create-a-list-item)
+* [删除记录](#delete-a-record)
+* [导出数据](#export-data)
+* [导入数据](#import-data)
 * [[!UICONTROL 进行自定义API调用]](#make-a-custom-api-call)
 * [[!UICONTROL 读取记录]](#read-a-record)
 * [[!UICONTROL 运行操作]](#run-an-action)
@@ -208,8 +253,98 @@ Anaplan连接器使用以下对象：
     </tr>
     <tr>
         <td>[！UICONTROL子集]</td>
-        <td>如果要将项添加到的列表具有自定义子集，请选择要将该项添加到的子集，然后选择<b>[！UICONTROL是]</b>以将该项添加到该子集。</td>
+        <td>如果要将项目添加到的列表具有自定义子集，请选择要将该项目添加到的子集。</td>
     </tr>
+</table>
+
+#### [!UICONTROL 删除记录]
+
+此操作模块删除现有记录。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到[!DNL Workfront Fusion]</a>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL Workspace ID]</td> 
+   <td>选择或映射包含要删除对象的Anaplan Workspace的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL模型ID]</td> 
+   <td>输入或映射包含要删除对象的模型的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">记录类型</td> 
+   <td> <p>选择要删除的对象类型。</p> 
+    <ul> 
+     <li> <p><b>操作</b> </p> <p>选择或映射要删除的操作。</p> </li> 
+     <li> <p><b>列表项</b> </p> <p>选择要从中删除项目的列表，然后输入或映射要删除项目的ID或代码</p>  </li> 
+     <li> <p><b>[！UICONTROL文件]</b> </p> <p>选择或映射要删除的文件。</p> </li> 
+    </ul> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+
+#### [!UICONTROL 导出数据]
+
+此操作模块使用导出定义从Anaplan中检索数据。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到[!DNL Workfront Fusion]</a>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL Workspace ID]</td> 
+   <td>选择或映射包含要导出数据的Anaplan Workspace的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL模型ID]</td> 
+   <td>输入或映射包含要导出数据的模型的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">导出定义Id</td> 
+   <td> <p>输入或映射要使用的Anaplan导出定义的ID。</p> 
+   </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 导入数据
+
+此操作模块将数据导入Anaplan。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到[!DNL Workfront Fusion]</a>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL Workspace ID]</td> 
+   <td>选择或映射要从中导入数据的Anaplan Workspace的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL模型ID]</td> 
+   <td>输入或映射要导入数据的模型的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">导出定义Id</td> 
+   <td> <p>输入或映射要使用的Anaplan导入定义的ID。</p> 
+   </td> 
+  </tr> 
+ </tbody> 
 </table>
 
 #### [!UICONTROL 进行自定义API调用]
@@ -250,38 +385,6 @@ Anaplan连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL 删除记录]
-
-此操作模块删除现有记录。
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
-   <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到[!DNL Workfront Fusion]</a>。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL Workspace ID]</td> 
-   <td>选择或映射包含要删除对象的Anaplan Workspace的ID。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL模型ID]</td> 
-   <td>输入或映射包含要删除对象的模型的ID。</td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">删除</td> 
-   <td> <p>选择要删除的对象类型。</p> 
-    <ul> 
-     <li> <p><b>操作</b> </p> <p>选择或映射要删除的操作。</p> </li> 
-     <li> <p><b>列表项</b> </p> <p>选择要从中删除项目的列表，然后输入或映射要删除项目的ID或代码</p>  </li> 
-     <li> <p><b>[！UICONTROL文件]</b> </p> <p>选择或映射要删除的文件。</p> </li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
-
 #### [!UICONTROL 读取记录]
 
 此操作模块读取单个记录。
@@ -303,6 +406,7 @@ Anaplan连接器使用以下对象：
      <li> <p><b>模型版本</b> </p> <p>选择或映射要读取的模型的ID。</p> </li> 
      <li> <p><b>用户</b> </p> <p>选择您是要返回有关正在使用的帐户的所有者的数据，还是要返回其他用户的数据。 如果选择另一个用户，请选择该用户的名称。</p> </li> 
      <li> <p><b>Workspace</b> </p> <p>选择或映射您要读取的Workspace的ID。</p> </li> 
+     <li> <p><b>视图</b> </p> <p>选择或映射包含要读取的视图的模型ID。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -410,9 +514,9 @@ Anaplan连接器使用以下对象：
  </tbody> 
 </table>
 
-#### [!UICONTROL 上载文件]
+#### [!UICONTROL 上载操作文件]
 
-此操作模块将文件上传到Anaplan。 该文件必须已上载到Anaplan。 您可以使用此模块将其上传到Anaplan中的其他位置。
+此操作模块会将Anaplan中的现有文件上传到Anaplan中的其他位置。
 <table style="table-layout:auto">
 <col>
 <col>

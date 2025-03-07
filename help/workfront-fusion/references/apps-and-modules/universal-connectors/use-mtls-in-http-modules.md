@@ -4,18 +4,14 @@ description: 您可以在Adobe Workfront Fusion HTTP模块中使用双方TLS，�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 1fa1ef68267d971a2769400a031b333de2f684ce
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # 在[!DNL Adobe Workfront Fusion]的HTTP模块中使用双向TLS
-
->[!NOTE]
->
->除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需要[!DNL Adobe Workfront Fusion]许可证。
 
 ## 双向TLS概述
 
@@ -35,45 +31,48 @@ ht-degree: 0%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 计划*</td> 
-   <td> <p>[!UICONTROL Pro] 或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td> 
-   <td> <p>[!UICONTROL Plan]， [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成] </p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-&#42;要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
-&#42;&#42;有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
+有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 提供您的[!DNL Workfront Fusion]公共证书
-
 
 当您使用HTTP请求连接到Web服务时，Web服务通常需要[!DNL Workfront Fusion]公共证书才能进行验证。 这允许Web服务将HTTP请求中提供的证书与文件上的证书进行比较，以确保证书位于Web服务的允许列表上。
 
@@ -85,7 +84,7 @@ ht-degree: 0%
 
 您可以使用以下链接下载Workfront Fusion公共证书：
 
-### 2023年4月23日至2024年5月7日证书
+### 2024年4月23日至2025年5月7日证书
 
 >[!IMPORTANT]
 >
@@ -101,21 +100,6 @@ ht-degree: 0%
 
   在欧盟使用
 
-<!--
-
-### Certificates for November 14, 2022 - July 15, 2023
-
->[!IMPORTANT]
->
->* These [!DNL Workfront Fusion] public certificates expire on July 15, 2023.
->* These are wildcard mTLS certificates.
-
-* [Download [!DNL Workfront Fusion] Certificate 2023](https://cdn.experience.workfront.com/Documentation/Workfront+Fusion+2.0+public+certificates/app_workfrontfusion_com-jul-15-2023+updated.cer)
-* [Download [!DNL Workfront Fusion] EU Certificate 2023](https://cdn.experience.workfront.com/Documentation/Workfront+Fusion/app-eu_workfrontfusion_com-jul-15-2023.cer)
-
-   For use in the EU 
-
-   -->
 
 ## 在[!DNL Workfront Fusion] HTTP模块中启用双向TLS
 
@@ -123,10 +107,10 @@ ht-degree: 0%
 
 要在[!UICONTROL HTTP]请求模块中启用双向TLS，请执行以下操作：
 
-1. 将[!UICONTROL HTTP]请求模块添加到您的方案。
+1. 向方案添加[!UICONTROL HTTP]请求模块。
 1. 开始配置模块。
 
-   <!--For instructions on configuring an [!UICONTROL HTTP] request module, see the appropriate article under [[!UICONTROL Universal connectors] modules](/help/workfront-fusion/references/apps-and-modules/universal-connectors/).-->
+   有关配置[!UICONTROL HTTP]请求模块的说明，请参阅[通用连接器](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)下的相应文章。
 
-1. 在模块底部附近启用&#x200B;**[!UICONTROL Show advanced settings]**。
-1. 启用&#x200B;**[!UICONTROL Use Mutual TLS]**。
+1. 在模块底部附近启用&#x200B;**[!UICONTROL 显示高级设置]**。
+1. 启用&#x200B;**[!UICONTROL 使用双向TLS]**。
