@@ -4,9 +4,9 @@ description: 打开Fusion时，您有许多操作选项。 本文可帮助您了
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: 6817565ec2a6a06a26033bb51a080b619a0d211d
+source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 | 面积 | 描述 | 有关更多信息，请参阅 |
 |---|---|---|
 | 组织概述<br> ![组织图标](assets/org-icon.png) | 在这里，您可以看到有关您的Fusion组织的信息。 您可以查看此组织中方案执行的操作数，以及活动方案的列表。 您还可以查看此组织的团队、用户和环境的列表。<br>当前选定的组织将显示在此图标上方。 | [组织和团队](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
-| 团队概述<br> ![团队图标](assets/team-icon.png) | 在这里，您可以看到有关Fusion团队的信息，例如此团队中场景执行的操作数量和活动场景列表。 您还可以查看和管理此团队中的用户。 查看团队时，您可以从本页顶部的下拉菜单中选择其他团队。<br>当前选定的团队将显示在此图标上方。 | [组织和团队](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
+| 团队概述<br> ![团队图标](assets/team-icon.png) | 在这里，您可以看到有关Fusion团队的信息，例如此团队中场景执行的操作数量和活动场景列表。 您还可以查看和管理此团队中的用户。 查看团队时，您可以从本页顶部的下拉菜单中选择其他团队。<br>当前选定的团队将显示在此图标上方。<br>您可能需要先创建团队，然后才能查看团队概述或本文中列出的任何团队部分。 | [组织和团队](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | 方案<br> ![方案图标](assets/scenarios-icon.png) | Fusion中的场景表示自动化工作流。 例如，一个场景可以监视传入的Workfront请求并将它们转换为项目，而另一个场景可以生成图像，将它们上传到文档提供商，并将审批任务添加到Workfront。 您在Fusion中的大多数工作都是配置和管理场景。 在“方案”区域中，可以查看和组织团队方案的列表，选择要查看或修改的单个方案，或者开始创建新方案。 | [方案概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |
 | 模板<br> ![模板图标](assets/templates-icon.png) | 模板是预建的场景，您可以根据自己的用例对其进行配置。 在这里，您可以看到Workfront Fusion提供的公共场景以及您的团队创建的模板。 | [创建和管理模板：文章索引](/help/workfront-fusion/create-and-manage-templates/create-manage-templates-toc.md) |
 | 连接<br> ![连接图标](assets/connections-icon.png) | 连接包含允许Fusion与其他应用程序交互的登录凭据和权限。 您可以为特定应用程序创建具有一组特定凭据和权限的连接，然后在场景中使用该连接。 然后，该场景可以访问和修改具有这些凭据和权限的用户可用的记录或其他数据。 您可以为一个应用程序创建多个连接，并可以在多个方案中使用一个连接。 在“连接”区域中，可以查看和管理由您的团队设置的连接列表。 | [连接概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md) |

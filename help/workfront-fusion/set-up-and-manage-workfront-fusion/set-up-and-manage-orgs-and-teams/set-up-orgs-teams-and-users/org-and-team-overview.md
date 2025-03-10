@@ -4,9 +4,9 @@ description: 通过Adobe Workfront Fusion的“组织”和“团队”功能，
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '518'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,8 @@ ht-degree: 1%
 
 团队是组织内的较小组，可共享Fusion资源，如方案、连接和模板。
 
+有关创建团队的说明，请参阅[创建团队](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/create-a-team.md)。
+
 ## 组织
 
 [!DNL Workfront Fusion]用户属于某个组织。
@@ -29,11 +31,11 @@ ht-degree: 1%
 
 用户在组织中具有以下角色之一：
 
-* **[!UICONTROL Owner]**：所有者拥有组织中可用的所有权限。
-* **[!UICONTROL Admin]**：管理员可以为组织创建和管理团队和用户，还可以批准模板。
-* **[!UICONTROL Member]**：成员可以使用[!DNL Workfront Fusion]，但无法进行组织更改。
-* **[!UICONTROL Accountant]**：会计师可以在组织仪表板上看到许可证信息，但无法执行任何操作。
-* **[!UICONTROL App Developer]**：此角色的功能当前不可用，并且将在不久的将来可用。 我们建议目前不要将用户分配给此角色。
+* **[!UICONTROL 所有者]**：所有者拥有组织中可用的所有权限。
+* **[!UICONTROL 管理员]**：管理员可以为组织创建和管理团队和用户，还可以批准模板。
+* **[!UICONTROL 成员]**：成员可以使用[!DNL Workfront Fusion]，但无法进行组织更改。
+* **[!UICONTROL 会计师]**：会计师可以在组织仪表板上查看许可证信息，但无法执行任何操作。
+* **[!UICONTROL 应用程序开发人员]**：此角色的功能当前不可用，并且将在不久的将来可用。 我们建议目前不要将用户分配给此角色。
 
 有关每个组织角色中用户可以执行的特定操作的信息，请参阅[组织和团队角色](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)。
 
@@ -61,10 +63,10 @@ ht-degree: 1%
 
 用户在其每个团队中具有以下角色之一：
 
-* **[!UICONTROL Team Admin]**：管理员可以添加、删除或更改团队成员的角色。 他们还可以执行对其他团队角色可用的任何操作。
-* **[!UICONTROL Team Member]**：团队成员角色允许用户创建和执行方案。
-* **[!UICONTROL Team Monitoring]**： [!UICONTROL monitoring]角色允许用户访问方案的执行信息，但他们无法设计方案或更改其“活动”状态。
-* **[!UICONTROL Team Operator]**： [!UICONTROL operator]角色允许用户查看执行数据并更改方案的“活动”状态。
-* **[!UICONTROL Team Restricted Member]**：此角色的功能当前不可用，并且将在不久的将来可用。 我们建议目前不要将用户分配给此角色。
+* **[!UICONTROL 团队管理员]**：管理员可以添加、删除或更改团队成员的角色。 他们还可以执行对其他团队角色可用的任何操作。
+* **[!UICONTROL 团队成员]**：团队成员角色允许用户创建和执行方案。
+* **[!UICONTROL 团队监控]**： [!UICONTROL 监控]角色允许用户访问方案的执行信息，但他们无法设计方案或更改其“活动”状态。
+* **[!UICONTROL 团队操作员]**： [!UICONTROL 操作员]角色允许用户查看执行数据并更改方案的“活动”状态。
+* **[!UICONTROL 团队限制成员]**：此角色的功能当前不可用，并且将在不久的将来可用。 我们建议目前不要将用户分配给此角色。
 
 有关每个团队角色中用户可以执行的特定操作的信息，请参阅[组织和团队角色](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)。
