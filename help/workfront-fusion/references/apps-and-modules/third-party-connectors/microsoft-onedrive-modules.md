@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行
 author: Becky
 feature: Workfront Fusion
 exl-id: d21eafad-9c67-4f42-b718-0aa4223846e6
-source-git-commit: 632128bdcb6f8b8361f5a28e4a5fb527eb274d54
+source-git-commit: 337a6918dc20f2e7523438dea752393a1b3f50ee
 workflow-type: tm+mt
-source-wordcount: '4087'
+source-wordcount: '4088'
 ht-degree: 0%
 
 ---
@@ -207,8 +207,6 @@ OneDrive连接器使用以下功能：
  </tbody> 
 </table>
 
-<!-- Start audit here-->
-
 #### [!UICONTROL 创建文件夹]
 
 此操作模块在指定的驱动器中创建新文件夹。
@@ -231,7 +229,7 @@ OneDrive连接器使用以下功能：
        <li> <p><b>[！UICONTROL编号]</b> </p> </li> 
       </ul> </li> 
      <li> <p><b>[！UICONTROL站点的驱动器]</b> </p> <p>选择要创建文件夹的[!DNL SharePoint]站点。 可用站点是后跟登录用户的站点。</p> </li> 
-     <li> <p><b>[！UICONTROL组的驱动器]</b> </p> <p>选择拥有要在其中创建文件夹的驱动器的组。</p> </li> 
+     <li> <p><b>[！UICONTROL组的驱动器]</b> </p> <p>选择要创建文件夹的驱动器所属的组。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -255,7 +253,7 @@ OneDrive连接器使用以下功能：
 
 #### [!UICONTROL 删除文件/文件夹]
 
-此操作模块删除选定的文件。
+此操作模块删除选定的文件或文件夹。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -730,7 +728,7 @@ OneDrive连接器使用以下功能：
   </tr> 
   <tr> 
    <td role="rowheader">[！UICONTROL方法]</td> 
-   td&gt; <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[！UICONTROL Headers]</td> 
