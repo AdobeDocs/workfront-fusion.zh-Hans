@@ -4,16 +4,20 @@ description: 在您规划场景时，这些视频可能会很有帮助
 author: Becky
 feature: Workfront Fusion
 exl-id: 875b4c9a-7065-4960-9fdc-85fb0a4bf146
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 914f108dc7e13e89806f233812a687cdc06cf1c8
 workflow-type: tm+mt
-source-wordcount: '52'
-ht-degree: 0%
+source-wordcount: '60'
+ht-degree: 1%
 
 ---
 
 # 视频概述
 
 这些视频可帮助您熟悉Adobe Workfront Fusion的某些功能。
+
+## 导航
+
+* Adobe Unified Shell上的[Workfront Fusion](https://video.tv.adobe.com/v/3412392/){target=_blank}
 
 ## 基础知识
 
