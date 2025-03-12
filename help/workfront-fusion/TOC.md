@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: af7ab967e789311f72c67cc12b93334146218449
+source-git-commit: d69c9f3661a9aee1f7f818a5bd729aea387ad85b
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '1709'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 2%
 * Fusion发布活动{#fusion-release-activity}
    * [Adobe Workfront Fusion发布活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion版本 — 2025 {#fusion-releases-2025}
+      * [Workfront Fusion发布活动： 2025年3月10日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-10.md)
       * [Workfront Fusion发行活动：2025年3月3日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-3-3.md)
       * [Workfront Fusion发行活动： 2025年2月24日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-24.md)
       * [Workfront Fusion发行活动： 2025年2月17日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-2-17.md)
@@ -282,11 +283,11 @@ ht-degree: 2%
    * 应用及其模块{#apps-and-their-modules}
       * [应用程序及其模块](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
       * 通用连接器{#universal-connectors}
-         * [HTTP > [!UICONTROL Make a request]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-         * [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+         * [HTTP > [!UICONTROL 发出请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL 发出基本授权请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL 发出OAuth 2.0请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL 发出客户端证书授权请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+         * [[!UICONTROL HTTP] > [!UICONTROL 发出API密钥授权请求]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
          * [[!UICONTROL HTTP] >其他模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-modules.md)
          * [SOAP 模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/soap-module.md)
          * [FTP模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
