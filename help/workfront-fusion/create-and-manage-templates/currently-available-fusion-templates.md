@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion中当前提供以下公共模板。
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 47f1e2b6a812f4ac44e2daf08cb1937f1ef02981
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -25,17 +25,21 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 ### [!BADGE 新！]{type=Informative}
 
+<!--New March 12, 2025-->
+
+根据需要从指定展示板的指定列中删除已存档的卡片。
+
+### Workfront展示板>根据展示板列创建标准核对清单
+
 此Fusion模板为定时输入特定展示板上特定列的所有信息卡创建标准核对清单。
 
-### [!BADGE 新！]{type=Informative}
-
-<!--new Aug 1. 2024-->
+### Workfront > Workfront展示板 — 创建自定义配置的展示板
 
 此方案由正在创建的新项目触发。 在此方案中，您可以创建以项目命名的展示板，根据需求重命名或创建列，创建自定义标记，并将引入列过滤器与原始项目关联。  还可以进行数千项其他更改，但从此处开始，您将看到为组织的董事会标准化创建起点的可能性。
 
 ### Workfront — 从CSV创建项目
 
-此自动化会根据您在CSV中指定的名称、Portfolio、状态、计划开始日期和模板详细信息在Workfront中创建新项目。
+此自动化根据您在CSV中指定的名称、Portfolio、状态、计划开始日期和模板详细信息在Workfront中创建新项目。
 
 ### Workfront — 清理请求，过去30天内未添加任何新注释
 
@@ -97,6 +101,12 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 这些模板可自动执行将Workfront与Workfront Proof相结合的工作流。
 
+### [!BADGE 新！]{type=Informative}
+
+<!--New March 12, 2025-->
+
+此模板用于监视项目是否更新到等于被拒绝、已完成或终止的状态。 然后，它会将任何具有待处理验证决策的用户的身份更改为只读。 最后，它会锁定验证并向文档发送更新。
+
 ### Workfront Proof > Workfront — 验证决策中的项目更新
 
 当对直接添加到项目的验证做出决策时，此自动化会收集有关验证决策的信息（例如做出决策的人员），然后在相应的Workfront项目中作为更新反映此进度。
@@ -131,11 +141,11 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 ### 通过Workfront审批工作流审批您的Marketo Engage电子邮件草稿
 
-这是Workfront与Marketo Engage之间的“审核和批准”集成的一部分。 此模板检测Workfront中的电子邮件验证是否已被批准，然后按照批准更新Marketo Engage中的相应电子邮件。
+这是Workfront与Marketo Engage之间的“审核和批准”集成的一部分。 此模板检测Workfront中的电子邮件验证是否已被批准，然后按照批准情况更新Marketo Engage中的相应电子邮件。
 
 ### 在Workfront中提出引入营销活动请求并在Marketo Engage中自动创建营销活动
 
-此方案提供了一种以编程方式根据在Workfront中发出的请求在Marketo Engage中创建电子邮件和网络研讨会营销活动。 通过使用自动化来创建、组织和配置活动，团队可以提高效率。
+此方案提供了一种以编程方式根据在Marketo Engage中发出的请求在Workfront中创建电子邮件和网络研讨会营销活动。 通过使用自动化来创建、组织和配置活动，团队可以提高效率。
 
 ### 在Workfront中查看Marketo Engage电子邮件草稿的电子邮件验证
 
