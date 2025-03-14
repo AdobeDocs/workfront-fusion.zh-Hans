@@ -4,9 +4,9 @@ description: 通过Adobe Workfront Fusion [!DNL Google Docs] 模块，您可以�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: cd44250d-c2cd-46b2-8773-15b30472a8d8
-source-git-commit: eac874d588e026cab3a01017d32e291d5c8b7b74
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4045'
 ht-degree: 0%
 
 ---
@@ -498,8 +498,12 @@ Google Docs连接器使用以下对象：
     </ul> </td> 
   </tr> 
   <tr> 
+   <td role="rowheader">[！UICONTROL文档ID]</td> 
+   <td> <p>映射或选择要替换文本的文档。</p> </td> 
+  </tr> 
+  <tr> 
    <td role="rowheader"> <p>[！UICONTROL替换文本]</p> </td> 
-   <td> <p>添加要替换的每个文本。</p> 
+   <td> <p>对于要替换的每段文本，单击<b>添加项</b>并输入以下内容：</p> 
     <ul> 
      <li> <p><strong>[！UICONTROL要替换的旧文本]</strong> </p> <p>输入要替换的文本。</p> </li> 
      <li> <p><strong>[！UICONTROL要插入的新文本]</strong> </p> <p>输入新文本。</p> </li> 
@@ -538,8 +542,12 @@ Google Docs连接器使用以下对象：
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL图像URL]</p> </td> 
-   <td> <p>输入或映射将替换现有图像的新图像的URL。</p> <p>图像按其在文档中的显示顺序列出。 例如，<code>Body: Image No. 1</code>是文档中的第一个图像。</p> </td> 
+   <td role="rowheader">[！UICONTROL文档ID]</td> 
+   <td> <p>映射或选择要替换图像的文档。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[！UICONTROL图像替换]</p> </td> 
+   <td> 对于每个要替换的图像，单击<b>添加项</b>并输入现有图像ID，然后输入或映射将替换现有图像的新图像的URL。 <p>图像按其在文档中的显示顺序列出。 例如，<code>Body: Image No. 1</code>是文档中的第一个图像。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -579,8 +587,48 @@ Google Docs连接器使用以下对象：
 
 ### 其他
 
-* [[!UICONTROL 进行API调用]](#make-an-api-call)
 * [[!UICONTROL 使文档中的所有链接都可点击]](#make-all-links-in-a-document-clickable)
+* [[!UICONTROL 进行API调用]](#make-an-api-call)
+
+#### [!UICONTROL 使文档中的所有链接都可点击]
+
+此操作模块查找文档中的所有链接并使它们可点击。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Google]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>[！UICONTROL Make All Links in a Document]</p> </td> 
+   <td> 
+    <ul> 
+     <li><strong>[！UICONTROL By Mapping]</strong> <br>选择此选项以映射文档模板。</li> 
+     <li><strong>[！UICONTROL By Dropdown]</strong> <br>选择此选项可从下拉菜单中选择文档。</li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL选择驱动器]</td> 
+   <td> <p>选择要使链接可点击的文档所在的驱动器类型。 如果您在上一个字段中选择了[！UICONTROL By Dropdown] ，则此选项可用。</p> 
+    <ul> 
+     <li> <p><strong>[！UICONTROL我的驱动器]</strong> </p> <p>选择要使链接可点击的文档所在的文件夹。</p> </li> 
+     <li> <p><strong>[！UICONTROL已与我共享]</strong> </p> <p>选择要使链接可点击的文档所在的文件夹。</p> </li> 
+     <li> <p><strong>[！UICONTROL [!DNL Google]共享驱动器]</strong> （仅适用于[!DNL Google Workspace]用户）</p> <p>选择是否希望[！UICONTROL使用域管理员访问权限]。 选择[！UICONTROL是]会以域管理员身份发出请求，并且会返回请求者是管理员的所有共享驱动器。</p> <p>选择要使链接可点击的文档所在的共享驱动器，然后选择该文档。</p> <p>注意：如果您在此字段中选择了[!DNL Google Docs]选项，并且您不是[!DNL Google Workspace]用户，则会返回错误<code>[400] Invalid Value</code>。</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL共享驱动器]</td> 
+   <td> <p>选择包含要更新链接的文档的驱动器，然后选择文档。 如果您在[！UICONTROL选择驱动器字段]中选择了[!DNL My Drive]，则此选项可用。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL文档ID]</td> 
+   <td> <p> 选择或映射要更新链接的文档。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
 
 #### [!UICONTROL 进行API调用]
 
@@ -620,6 +668,8 @@ Google Docs连接器使用以下对象：
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
 **示例：**&#x200B;以下API调用检索Google Docs中指定文档的详细信息：
 
 **URL：**
@@ -636,42 +686,4 @@ Google Docs连接器使用以下对象：
 
 ![API调用输出](/help/workfront-fusion/references/apps-and-modules/assets/api-output.png)
 
-#### [!UICONTROL 使文档中的所有链接都可点击]
-
-此操作模块查找文档中的所有链接并使它们可点击。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Google]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Make All Links in a Document]</p> </td> 
-   <td> 
-    <ul> 
-     <li><strong>[！UICONTROL By Mapping]</strong> <br>选择此选项以映射文档模板。</li> 
-     <li><strong>[！UICONTROL By Dropdown]</strong> <br>选择此选项可从下拉菜单中选择文档。</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL选择驱动器]</td> 
-   <td> <p>选择要使链接可点击的文档所在的驱动器类型。 如果您在上一个字段中选择了[！UICONTROL By Dropdown] ，则此选项可用。</p> 
-    <ul> 
-     <li> <p><strong>[！UICONTROL我的驱动器]</strong> </p> <p>选择要使链接可点击的文档所在的文件夹，然后选择该文档。</p> </li> 
-     <li> <p><strong>[！UICONTROL已与我共享]</strong> </p> <p>选择要使链接可点击的文档所在的文件夹，然后选择该文档。</p> </li> 
-     <li> <p><strong>[！UICONTROL [!DNL Google]共享驱动器]</strong> （仅适用于[!DNL Google Workspace]用户）</p> <p>选择是否希望[！UICONTROL使用域管理员访问权限]。 选择[！UICONTROL是]会以域管理员身份发出请求，并且会返回请求者是管理员的所有共享驱动器。</p> <p>选择要使链接可点击的文档所在的共享驱动器，然后选择该文档。</p> <p>注意：如果您在此字段中选择了[!DNL Google Docs]选项，并且您不是[!DNL Google Workspace]用户，则会返回错误<code>[400] Invalid Value</code>。</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL共享驱动器]</td> 
-   <td> <p>选择包含要更新链接的文档的驱动器，然后选择文档。 如果您在[！UICONTROL选择驱动器字段]中选择了[!DNL My Drive]，则此选项可用。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL文档ID]</td> 
-   <td> <p> 选择或映射要更新链接的文档。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
+>[!ENDSHADEBOX]

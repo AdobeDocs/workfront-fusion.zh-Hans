@@ -4,9 +4,9 @@ description: 工作自动化要求快速处理，因此 [!DNL Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: fe503c27bc4e3beb5645f0efa7c2097297f19190
+source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -55,8 +55,8 @@ ht-degree: 0%
 ## Webhook
 
 * 有效负载的默认最大大小为&#x200B;**5 MB**。
-* Webhook限制为每秒&#x200B;**100个请求**。 达到此限制后，Workfront Fusion将发送429 ([!UICONTROL Too Many Requests])状态。
-* [!DNL Workfront Fusion]存储webhook负载30天。 在收到webhook有效负载超过30天后对其进行访问会导致错误“[!UICONTROL Failed to read file from storage.]”
+* Webhook限制为每秒&#x200B;**100个请求**。 达到此限制后，Workfront Fusion将发送429 （[!UICONTROL 太多请求]）状态。
+* [!DNL Workfront Fusion]存储webhook负载30天。 在收到webhook有效负载超过30天后对其进行访问会导致错误“[!UICONTROL 无法从存储中读取文件。]”
 * 如果出现以下任一情况，Webhook将自动停用：
 
    * webhook已超过5天未连接到任何场景
@@ -76,3 +76,17 @@ ht-degree: 0%
 ## 重试
 
 * 使用Break模块并指定Retry指令时，如果某个方案在2分钟的时间范围内连续失败10次，则将自动停用该方案。
+
+## 递归
+
+当场景触发其自身的新执行，从而触发新的执行，并以无限循环等形式出现时，会发生递归。
+
+例如，创建任务时会触发场景，该场景会创建任务。 新创建的任务会再次触发场景，从而创建另一个任务。 每次创建任务时，都会触发场景，每次场景运行时，都会创建任务。
+
+递归会给拥有递归方案的组织以及其他组织造成性能问题。
+
+有关递归，请考虑以下事项：
+
+* **当场景导致递归时，Fusion工程团队将停用它以防止进一步的性能问题。**
+* 由于递归是方案设计的结果，因此您必须通过某种方式设计方案，以确保方案不包含触发方案的操作。
+
