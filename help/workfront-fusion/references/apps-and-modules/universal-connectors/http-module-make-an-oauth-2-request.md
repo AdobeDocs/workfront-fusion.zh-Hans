@@ -4,7 +4,7 @@ description: 若要向需要OAuth 2.0授权的服务器发出 [!DNL Adobe Workfr
 author: Becky
 feature: Workfront Fusion
 exl-id: a302a1d4-fddf-4a71-adda-6b87ff7dba4b
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '2256'
 ht-degree: 0%
@@ -55,7 +55,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 

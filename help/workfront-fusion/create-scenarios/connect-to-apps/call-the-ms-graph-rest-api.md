@@ -4,7 +4,7 @@ description: 通过Adobe Workfront Fusion HTTP调用MS Graph REST API &>发出OA
 author: Becky
 feature: Workfront Fusion
 exl-id: f411c807-955d-44fe-98b1-3ebba3fe0861
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 2%
@@ -36,7 +36,7 @@ ht-degree: 2%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 

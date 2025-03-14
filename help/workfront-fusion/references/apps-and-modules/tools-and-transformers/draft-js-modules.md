@@ -1,13 +1,13 @@
 ---
 title: Draft.js模块
-description: 在 [!DNL Adobe Workfront Fusion] 场景中，可以使用Draft.js模块将Draft.js转换为HTML，并将HTML转换为Draft.js。
+description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以使用Draft.js模块将Draft.js转换为HTML，将HTML转换为Draft.js。
 author: Becky
 feature: Workfront Fusion
 exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 54098f2da1db85d9a596f3fc4753aebb298d5b78
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 2%
+source-wordcount: '244'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +21,8 @@ ht-degree: 2%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
 <table style="table-layout:auto">
@@ -28,27 +30,25 @@ ht-degree: 2%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+   <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
-   <p>或</p>
-   <p>旧版：任意 </p>
+   <p>无Workfront Fusion许可证要求</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
  </tbody> 
@@ -58,7 +58,9 @@ ht-degree: 2%
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
-## [!UICONTROL Draft.js to HTML]
++++
+
+## [!UICONTROL Draft.js到HTML]
 
 此模块将Draft.js转换为HTML。
 
@@ -69,23 +71,23 @@ ht-degree: 2%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>输入Draft.js文本。</p> </td> 
+   <td role="rowheader">[！UICONTROL Draft.js]</td> 
+   <td> <p>输入或映射要转换为HTML的Draft.js文本。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## [!UICONTROL HTML to Draft.js]
+## [!UICONTROL HTML到Draft.js]
 
-此模块可将HTML代码转换为Draft.js。
+此模块将HTML代码转换为Draft.js。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Draft.js]</td> 
-   <td> <p>输入要转换为Draft.js的HTML代码。</p> </td> 
+   <td role="rowheader">[！UICONTROL Draft.js]</td> 
+   <td> <p>输入或映射要转换为Draft.js的HTML代码。</p> </td> 
   </tr> 
  </tbody> 
 </table>

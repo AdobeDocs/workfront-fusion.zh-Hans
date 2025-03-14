@@ -8,9 +8,9 @@ description: 在某些情况下，您可能希望强制停止场景执行，然�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '383'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 ## `throw`的解决方法
 
-要有条件地引发错误，您可以配置模块，使其在操作期间故意失败。 一种可能是使用[!UICONTROL JSON] > [!UICONTROL Parse JSON]模块，该模块配置为选择性地引发错误（在本例中为`BundleValidationError`）：
+要有条件地引发错误，您可以配置模块，使其在操作期间故意失败。 一种方法是使用[!UICONTROL JSON] > [!UICONTROL 分析JSON]模块，该模块配置为可选地引发错误（在本例中为`BundleValidationError`）：
 
 ![JSON错误](assets/json-parse-json.png)
 

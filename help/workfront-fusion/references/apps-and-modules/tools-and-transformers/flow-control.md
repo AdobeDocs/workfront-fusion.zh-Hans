@@ -4,9 +4,9 @@ description: 创建或编辑场景时，您可以配置设置以控制数据流�
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: 5a95b2c191d4e6d8750dc57a47923f416612b4a9
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '600'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>无Workfront Fusion许可证要求。</p>
+   <p>无Workfront Fusion许可证要求</p>
    </td> 
   </tr> 
   <tr> 
@@ -58,47 +58,47 @@ ht-degree: 0%
 
 ## 中继器
 
-您可以使用[!UICONTROL Repeater]模块重复指定次数的任务。 [!UICONTROL Repeater]模块逐个生成包。
+您可以使用[!UICONTROL 中继器]模块按指定次数重复执行任务。 [!UICONTROL 中继器]模块逐个生成包。
 
 
 <table>
     <tr>
-        <td>[!UICONTROL Initial value]</td>
+        <td>[！UICONTROL初始值]</td>
         <td>输入或映射您希望模块在第一迭代中的值。 默认值为1。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Repeats]</td>
+        <td>[！UICONTROL重复]</td>
         <td>输入或映射您希望模块重复执行的次数。 此数字必须大于或等于0，并且小于或等于10,000。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Step]</td>
+        <td>[！UICONTROL步骤]</td>
         <td>这是模块增加值所依据的数字。 默认值为1。</td>
     </tr>
 </table>
 
 >[!BEGINSHADEBOX]
 
-例如，您可以通过将&#x200B;**[!UICONTROL Email]>[!UICONTROL Send me an email]**&#x200B;模块连接到[!UICONTROL Repeater]模块，使用[!UICONTROL Repeater]模块发送主题为“Hello 1”、“Hello 2”等的五封电子邮件。
+例如，您可以通过将&#x200B;**[!UICONTROL 电子邮件] >[!UICONTROL 向我发送电子邮件]**&#x200B;模块连接到[!UICONTROL 中继器]模块，使用[!UICONTROL 中继器]模块发送主题为“Hello 1”、“Hello 2”等的五封电子邮件。
 
-1. 单击屏幕底部的[!UICONTROL Flow Control]图标![流量控制图标](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif)，然后在显示的菜单中单击&#x200B;**[!UICONTROL Repeater]**。
-1. 单击[!UICONTROL Repeater]模块，然后在显示的框中单击&#x200B;**[!UICONTROL Connect automatically]**。
+1. 单击屏幕底部的[!UICONTROL 流量控制]图标![流量控制图标](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif)，然后在显示的菜单中单击&#x200B;**[!UICONTROL 中继器]**。
+1. 单击[!UICONTROL 中继器]模块，然后在显示的框中单击&#x200B;**[!UICONTROL 自动连接]**。
 
    此时会打开中继器模块。
 
-1. 在&#x200B;**[!UICONTROL Repeats]**&#x200B;字段中，输入您希望模块产生的重复（输出捆绑）数。
+1. 在&#x200B;**[!UICONTROL 重复]**&#x200B;字段中，输入您希望模块产生的重复（输出捆绑）数。
 
    在本例中，您将输入5。
 
    ![中继器](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
 
-   每次重复时，该项的值将按在&#x200B;**[!UICONTROL Step]**&#x200B;字段中指定的值增加，您可以通过选择&#x200B;**[!UICONTROL Show advanced settings]**&#x200B;来查看该字段。 默认情况下，此数字为1。
+   每次重复时，该项的值将增加在&#x200B;**[!UICONTROL 步骤]**&#x200B;字段中指定的值，您可以通过选择&#x200B;**[!UICONTROL 显示高级设置]**&#x200B;来查看该字段。 默认情况下，此数字为1。
 
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以关闭&#x200B;**[!UICONTROL Flow Control]**&#x200B;框。
+1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭&#x200B;**[!UICONTROL 流量控制]**&#x200B;框。
 
-1. 单击连接到[!UICONTROL Repeater]模块的应用或服务模块。
+1. 单击连接到[!UICONTROL 中继器]模块的应用或服务模块。
 1. 在出现的框中，键入要重复的信息。
 
-   在我们的电子邮件示例中，您需要在[!UICONTROL Subject]框中键入Hello，然后从中继器模块映射`i`。
+   在我们的电子邮件示例中，您可以在[!UICONTROL 主题]框中键入Hello，然后从中继器模块映射`i`。
 
    ![中继器](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
 
@@ -106,21 +106,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->重复次数不是由`i`的值确定的，因为它在编程中处于循环中。 模块将重复[!UICONTROL Repeats]字段中指示的次数。 值`i`随[!DNL repeater]模块的每个迭代而更改，可以映射到以后的模块。 上面的示例将`i`的值映射到Hello消息中，从而生成显示“Hello 1”、“Hello 2”等的消息。
+>重复次数不是由`i`的值确定的，因为它在编程中处于循环中。 模块将重复[!UICONTROL 重复]字段中指示的次数。 值`i`随[!DNL repeater]模块的每个迭代而更改，可以映射到以后的模块。 上面的示例将`i`的值映射到Hello消息中，从而生成显示“Hello 1”、“Hello 2”等的消息。
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL Iterator]
+## [!UICONTROL 迭代器]
 
-[!UICONTROL Iterator]是一种特殊类型的模块，可将数组转换为一系列捆绑包。 在[!UICONTROL Iterator]模块输出中，每个数组项都将是一个单独的捆绑包。 有关详细信息，请参阅[迭代器模块](/help/workfront-fusion/references/modules/iterator-module.md)。
+[!UICONTROL 迭代器]是一种将数组转换为一系列捆绑的特殊模块类型。 在[!UICONTROL 迭代器]模块输出中，每个数组项都将是一个单独的捆绑包。 有关详细信息，请参阅[迭代器模块](/help/workfront-fusion/references/modules/iterator-module.md)。
 
 ## 数组汇总
 
 数组聚合器是一种特殊类型的模块，允许将多个捆绑合并为一个捆绑包。 有关详细信息，请参阅[聚合器模块](/help/workfront-fusion/references/modules/aggregator-module.md)。
 
-## [!UICONTROL Router]
+## [!UICONTROL 路由器]
 
-[!UICONTROL Router]模块允许您将流量分支为多条路由，并以不同的方式处理每条路由中的数据。 [!UICONTROL Router]模块收到捆绑包后，会按照路由附加到[!UICONTROL Router]模块的顺序将其转发到每个连接的路由。 有关详细信息，请参阅 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)中的[路由器模块。
+[!UICONTROL 路由器]模块允许您将流量分为多条路由，并以不同的方式处理每条路由中的数据。 一旦[!UICONTROL 路由器]模块收到捆绑包，它会按照路由连接到[!UICONTROL 路由器]模块的顺序将其转发到每个连接的路由。 有关详细信息，请参阅 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)中的[路由器模块。
 
 ## 指令
 

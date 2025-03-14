@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] [!UICONTROL JWT]应用程序提供�
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: e1e15985db9683525250d1f9f9276224b2baf0e6
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>无Workfront Fusion许可证要求。</p>
+   <p>无Workfront Fusion许可证要求</p>
    </td> 
   </tr> 
   <tr> 
@@ -82,7 +82,7 @@ JWT连接器使用以下内容：
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Algorithm]</td> 
+   <td role="rowheader">[！UICONTROL算法]</td> 
    <td> <p>选择要生成JWT的算法。</p> <ul>
    <li><b>HS256</b>：使用SHA-256哈希算法的HMAC</li>
    <li><b>HS384</b>：使用SHA-384哈希算法的HMAC</li>
@@ -99,11 +99,11 @@ JWT连接器使用以下内容：
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Payload] </td> 
+   <td role="rowheader">[！UICONTROL有效负载] </td> 
    <td> <p>对于每个要添加的有效负荷项，单击<b>添加项</b>并输入该项的键和值。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Options] </td> 
+   <td role="rowheader">[！UICONTROL Options] </td> 
    <td> <p>对于要添加的每个选项项，单击<b>添加项</b>并输入该项的键和值。</p> <p>可以使用以下键：
    <ul>
    <li><b>算法</b>： （默认值： RS256）</li>

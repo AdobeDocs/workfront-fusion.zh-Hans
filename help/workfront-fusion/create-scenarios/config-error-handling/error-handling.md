@@ -4,9 +4,9 @@ description: 当在执行场景期间发生错误时，通常是因为服务因�
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -77,10 +77,10 @@ ht-degree: 0%
 
 向模块添加错误处理程序：
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要添加错误处理路由的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
-1. 右键单击要添加错误处理程序路由的模块，然后选择&#x200B;**[!UICONTROL Add error handler]**：
+1. 右键单击要添加错误处理程序路由的模块，然后选择&#x200B;**[!UICONTROL 添加错误处理程序]**：
 
    ![错误处理程序路由](assets/error-handler-route.png)
 
@@ -114,16 +114,16 @@ ht-degree: 0%
 
 以下指令可确保场景执行继续：
 
-* **[!UICONTROL Resume]**：允许您为出现错误的模块指定替代输出。 方案执行状态标记为成功。
-* **[!UICONTROL Ignore]**：忽略该错误。 方案执行状态标记为成功。
-* **[!UICONTROL Break]**：将输入存储到未完成执行的队列。 方案执行状态标记为警告。
+* **[!UICONTROL 恢复]**：允许您为出现错误的模块指定替代输出。 方案执行状态标记为成功。
+* **[!UICONTROL 忽略]**：忽略该错误。 方案执行状态标记为成功。
+* **[!UICONTROL 中断]**：将输入存储到未完成执行的队列。 方案执行状态标记为警告。
 
   有关详细信息，请参阅[查看并解决未完成的执行](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)。
 
 如果发生错误时应停止场景执行，请使用以下指令之一：
 
-* **[!UICONTROL Rollback]**：立即停止方案执行并将其状态标记为错误。
-* **[!UICONTROL Commit]**：立即停止方案执行并将其状态标记为成功。
+* **[!UICONTROL 回滚]**：立即停止方案执行并将其状态标记为错误。
+* **[!UICONTROL 提交]**：立即停止方案执行并将其状态标记为成功。
 
 ## 资源
 

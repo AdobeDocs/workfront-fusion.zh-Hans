@@ -4,16 +4,16 @@ description: 您可以使用文本解析器工具来解析用于其他 [!DNL Ado
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1290'
 ht-degree: 0%
 
 ---
 
-# [!UICONTROL Text parser]
+# [!UICONTROL 文本分析器]
 
-您可以使用[!UICONTROL Text parser tool]来分析文本，以供在其他[!DNL Adobe Workfront Fusion]方案模块中使用。 [!UICONTROL Text parser]不需要连接。
+您可以使用[!UICONTROL 文本解析器工具]来解析要在其他[!DNL Adobe Workfront Fusion]方案模块中使用的文本。 [!UICONTROL 文本分析器]不需要连接。
 
 ## 访问要求
 
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>无Workfront Fusion许可证要求。</p>
+   <p>无Workfront Fusion许可证要求</p>
    </td> 
   </tr> 
   <tr> 
@@ -71,9 +71,9 @@ ht-degree: 0%
  </tbody> 
  </table>
 
-## [!UICONTROL Text parser]模块及其字段
+## [!UICONTROL 文本分析器]模块及其字段
 
-配置[!UICONTROL Text parser]模块时，[!DNL Adobe Workfront Fusion]显示下面列出的字段。 模块中的粗体标题表示必填字段。
+配置[!UICONTROL 文本分析器]模块时，[!DNL Adobe Workfront Fusion]显示下面列出的字段。 模块中的粗体标题表示必填字段。
 
 如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
@@ -81,13 +81,13 @@ ht-degree: 0%
 
 ### 变压器
 
-* [[!UICONTROL Get Elements from HTML]](#get-elements-from-html)
-* [[!UICONTROL Get Elements from text]](#get-elements-from-text)
-* [[!UICONTROL HTML to Text]](#html-to-text)
-* [[!UICONTROL Match Pattern]](#match-pattern)
-* [[!UICONTROL Replace]](#replace)
+* [[!UICONTROL 从HTML获取元素]](#get-elements-from-html)
+* [[!UICONTROL 从文本中获取元素]](#get-elements-from-text)
+* [[!UICONTROL HTML至文本]](#html-to-text)
+* [[!UICONTROL 匹配模式]](#match-pattern)
+* [[!UICONTROL 替换]](#replace)
 
-#### [!UICONTROL Get Elements from HTML]
+#### [!UICONTROL 从HTML获取元素]
 
 从HTML代码中检索所需的元素。
 
@@ -96,26 +96,26 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module finds no matches]</td> 
+   <td>[！UICONTROL即使模块找不到匹配项，仍继续执行路由]</td> 
    <td> <p>启用此选项以确保模块在未返回任何结果时不会停止场景。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Element type]</td> 
+   <td>[！UICONTROL元素类型]</td> 
    <td> <p> 选择要从HTML代码中检索的元素类型。 </p> 
     <ul> 
-     <li>[!UICONTROL Image]</li> 
-     <li>[!UICONTROL Link]</li> 
-     <li>[!UICONTROL iFrame element(s)]</li> 
+     <li>[！UICONTROL图像]</li> 
+     <li>[！UICONTROL链接]</li> 
+     <li>[！UICONTROL iFrame元素]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL HTML] </td> 
+   <td>[！UICONTROL HTML] </td> 
    <td> <p>输入或映射要从中检索指定元素类型的HTML代码。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Get Elements from text]
+#### [!UICONTROL 从文本中获取元素]
 
 根据给定的模式解析文本中的元素。
 
@@ -124,44 +124,44 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Input text]</td> 
+   <td>[！UICONTROL输入文本]</td> 
    <td> <p>输入或映射要分析的文本。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Pattern]</td> 
+   <td>[！UICONTROL模式]</td> 
    <td> <p>选择反映要从文本中解析的元素的图案。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Ignore Duplicate Occurrences]</td> 
+   <td>[！UICONTROL忽略重复发生次数]</td> 
    <td> <p>选中此框可忽略文本元素的重复出现次数。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL HTML to Text]
+#### [!UICONTROL HTML至文本]
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL HTML] </td> 
+   <td>[！UICONTROL HTML] </td> 
    <td> <p>输入要转换为纯文本的HTML代码。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Line break] </td> 
+   <td>[！UICONTROL换行符] </td> 
    <td> <p>选择换行符（换行符）的类型。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Uppercase headings]</p> </td> 
+   <td> <p>[！UICONTROL大写标题]</p> </td> 
    <td> <p>启用此选项可将标题标记中包含的文本（如&lt;h2&gt; &lt;/h2&gt;）转换为大写文本。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Match Pattern]
+#### [!UICONTROL 匹配模式]
 
-[!UICONTROL Match pattern]模块允许您从给定文本中查找和提取与搜索模式匹配的字符串元素。 此模块使用正则表达式（也称为正则表达式或正则表达式）。
+[!UICONTROL 匹配模式]模块允许您从给定文本中查找和提取与搜索模式匹配的字符串元素。 此模块使用正则表达式（也称为正则表达式或正则表达式）。
 
 正则表达式是一系列字符，其中每个字符要么是具有特殊意义的元字符，要么是具有字面含义的常规字符。 这些字符和元字符标识了可用于搜索文本的模式。 例如，如果要搜索名称，可设置正则表达式以搜索由两个以大写字母开头的连续单词组成的模式。 正则表达式是用于搜索和处理文本的强大工具。
 
@@ -176,37 +176,37 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Pattern] </td> 
+   <td>[！UICONTROL模式] </td> 
    <td> <p>输入正则表达式模式。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code>提取所提供文本中的所有数字。</p> <p>注意：  <p>模式应至少包含一个位于括号<code>()</code>中的捕获组。 如果模式不包含任何捕获组，则输出包为空。</p> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Global match]</td> 
+   <td>[！UICONTROL全局匹配]</td> 
    <td> <p>启用此选项以检索文本中的所有匹配项。 每个匹配项都在单独的捆绑包中输出。 如果禁用此选项，则模块将仅检索第一个条目。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Case sensitive]</td> 
+   <td>[！UICONTROL区分大小写]</td> 
    <td> <p> 启用此选项可让此模块将文本视为区分大小写。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Multiline] </td> 
+   <td>[！UICONTROL Multiline] </td> 
    <td> <p>启用此选项可确保开始和结束元字符（<code>^</code>和<code>$</code>）匹配每行的开始或结束，而不只是整个输入字符串的开始或结束。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Singleline]</td> 
+   <td>[！UICONTROL单行]</td> 
    <td>启用此选项以确保句点(.)与换行符(<code>\n</code>)匹配。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Continue the execution of the route even if the module returns no results]</td> 
+   <td>[！UICONTROL即使模块未返回任何结果，仍继续执行路由]</td> 
    <td> <p>启用此选项以确保模块在未返回任何结果时不会停止场景。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text] </td> 
+   <td>[！UICONTROL Text] </td> 
    <td> <p>输入或映射要与模式匹配的文本。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Replace]
+#### [!UICONTROL 替换]
 
 在输入的文本中搜索指定的值或正则表达式，并将结果替换为新的值。
 
@@ -215,31 +215,31 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Pattern] </td> 
-   <td> <p>输入搜索词。 您也可以使用正则表达式。 有关正则表达式的更多详细信息，请参阅<a href="#match-pattern" class="MCXref xref">[!UICONTROL Match Pattern]</a>模块。</p> </td> 
+   <td>[！UICONTROL模式] </td> 
+   <td> <p>输入搜索词。 您也可以使用正则表达式。 有关正则表达式的更多详细信息，请参阅<a href="#match-pattern" class="MCXref xref">[！UICONTROL匹配模式]</a>模块。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL New value]</td> 
+   <td>[！UICONTROL新值]</td> 
    <td> <p> 输入您要替换搜索词的值。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Global match]</td> 
+   <td>[！UICONTROL全局匹配]</td> 
    <td> <p>启用此选项以检索文本中的所有匹配项。 每个匹配项都在单独的捆绑包中输出。 如果禁用此选项，则模块将仅检索第一个条目。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Case sensitive]</td> 
+   <td>[！UICONTROL区分大小写]</td> 
    <td> <p> 启用此选项可让此模块将文本视为区分大小写。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Multiline] </td> 
+   <td>[！UICONTROL Multiline] </td> 
    <td> <p>启用此选项可确保开始和结束元字符（<code>^</code>和<code>$</code>）匹配每行的开始或结束，而不只是整个输入字符串的开始或结束。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Singleline]</td> 
+   <td>[！UICONTROL单行]</td> 
    <td>启用此选项以确保句点(.)与换行符(<code>\n</code>)匹配。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text] </td> 
+   <td>[！UICONTROL Text] </td> 
    <td> <p>输入要搜索的文本。</p> </td> 
   </tr> 
  </tbody> 

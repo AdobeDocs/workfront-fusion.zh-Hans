@@ -4,9 +4,9 @@ description: webhook是由事件触发的HTTP调用。 您可以使用Webhook激
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1331'
+source-wordcount: '1445'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
@@ -70,12 +70,12 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 
 要使用webhook将应用程序连接到[!DNL Workfront Fusion]，请执行以下操作：
 
-1. 将&#x200B;**[!UICONTROL Webhooks]** >**[!UICONTROL Custom Webhook]**&#x200B;即时触发器模块添加到您的方案中。
+1. 将&#x200B;**[!UICONTROL Webhook]** >**[!UICONTROL 自定义Webhook]**&#x200B;即时触发器模块添加到您的方案中。
 
-1. 单击Webhook字段旁边的&#x200B;**[!UICONTROL Add]**，然后输入新webhook的名称。
-1. （可选）单击&#x200B;**[!UICONTROL Advanced Settings]**。
-1. 在&#x200B;**[!UICONTROL IP restrictions]**&#x200B;字段中，输入模块可以接受其数据的IP地址列表（以逗号分隔）。
-1. 单击 **[!UICONTROL Save]**
+1. 单击Webhook字段旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;并输入新webhook的名称。
+1. （可选）单击&#x200B;**[!UICONTROL 高级设置]**。
+1. 在&#x200B;**[!UICONTROL IP限制]**&#x200B;字段中，输入模块可以接受其数据的IP地址列表（以逗号分隔）。
+1. 单击&#x200B;**[!UICONTROL 保存]**
 
 创建webhook后，将显示唯一的URL。 这是webhook发送数据的地址。 Workfront Fusion会验证发送到此地址的数据，然后传递它以在场景中处理。
 
@@ -87,9 +87,9 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 
 为了识别传入有效负载的数据结构，[!DNL Workfront Fusion]将解析您发送到所显示地址的示例数据。 您可以通过在服务或应用程序中进行更改来提供示例数据，该服务或应用程序会将该服务或应用程序调用webhook。 例如，您可以删除文件。
 
-或者，您可以通过[!UICONTROL HTTP] > [!UICONTROL Make a request]模块发送示例数据：
+或者，您可以通过[!UICONTROL HTTP] > [!UICONTROL 发出请求]模块发送示例数据：
 
-1. 使用&#x200B;**[!UICONTROL HTTP]** > **[!UICONTROL Make a request]**&#x200B;模块创建新方案
+1. 使用&#x200B;**[!UICONTROL HTTP]** > **[!UICONTROL 发起请求]**&#x200B;模块创建新方案
 
 1. 使用以下值配置模块：
 
@@ -98,23 +98,23 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader"><p>[!UICONTROL URL] </p></td> 
-      <td>输入webhook的URL。 您可以在用于设置webhook的[!UICONTROL Webhooks]模块中找到此URL。</td> 
+      <td role="rowheader"><p>[！UICONTROL URL] </p></td> 
+      <td>输入webhook的URL。 您可以在用于设置webhook的[！UICONTROL Webhooks]模块中找到此URL。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Method] </td> 
-      <td><p>[!UICONTROL POST]</p></td> 
+      <td role="rowheader">[！UICONTROL方法] </td> 
+      <td><p>[！UICONTROL POST]</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Body type]</td> 
-      <td><p> [!UICONTROL Raw]</p></td> 
+      <td role="rowheader">[！UICONTROL主体类型]</td> 
+      <td><p> [！UICONTROL Raw]</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Content type]</td> 
+      <td role="rowheader">[！UICONTROL内容类型]</td> 
       <td><p> JSON (application/json)</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Request content]</td> 
+      <td role="rowheader">[！UICONTROL请求内容]</td> 
       <td><p>webhook中需要原始JSON</p></td> 
      </tr> 
     </tbody> 
@@ -123,18 +123,18 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
    ![新屏幕设置](/help/workfront-fusion/references/apps-and-modules/assets/new-scenario-set-up-like-this-350x446.png)
 
 1. 在单独的浏览器选项卡或窗口中打开具有[!UICONTROL Webhooks]模块的方案。
-1. 在webhooks模块中，单击&#x200B;**[!UICONTROL Redetermine data structure]**。
+1. 在webhooks模块中，单击&#x200B;**[!UICONTROL 重新确定数据结构]**。
 
    您无需取消其他模块与Webhooks模块的链接。
 
 1. 切换到具有[!UICONTROL HTTP]模块的方案并运行它。
 1. 切换回使用Webhooks模块的场景。
 
-   “[!UICONTROL Successfully determined]”消息表示模块已成功确定数据结构。
+   “[!UICONTROL 已成功确定]”消息表示模块已成功确定数据结构。
 
    ![已成功确定](/help/workfront-fusion/references/apps-and-modules/assets/successfully-determined-350x175.png)
 
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;保存数据结构。
+1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以保存数据结构。
 
    webhook的项目现在位于“映射”面板中，可用于场景中的后续模块。
 
@@ -148,23 +148,23 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 
 ## 支持的传入数据格式
 
-[!DNL Workfront Fusion]支持3种传入数据格式：[!UICONTROL Query String]、[!UICONTROL Form Data]和[!UICONTROL JSON]。
+[!DNL Workfront Fusion]支持3种传入数据格式：[!UICONTROL 查询字符串]、[!UICONTROL 表单数据]和[!UICONTROL JSON]。
 
 [!DNL Workfront Fusion]根据所选的数据结构验证所有传入数据。 然后，根据方案的设置，数据会存储在队列中以供处理，或者会立即进行处理。
 
 如果数据的任何部分未通过验证，[!DNL Workfront Fusion]将返回400 HTTP状态代码，并在HTTP响应的正文中指定传入数据未通过验证检查的原因。 如果传入数据验证成功，Workfront Fusion将返回“[!UICONTROL 200 Accepted]”状态。
 
-* [[!UICONTROL Query String]](#query-string)
-* [[!UICONTROL Form Data]](#form-data)
+* [[!UICONTROL 查询字符串]](#query-string)
+* [[!UICONTROL 表单数据]](#form-data)
 * [[!UICONTROL JSON]](#json)
 
-### [!UICONTROL Query String]
+### [!UICONTROL 查询字符串]
 
 ```
 GET https://app.workfrontfusion.com/wh/<yourunique32characterslongstring>?name=<yourname>&job=automate
 ```
 
-### [!UICONTROL Form Data]
+### [!UICONTROL 表单数据]
 
 ```
 POST https://app.workfrontfusion.com/wh/<yourunique32characterslongstring>
@@ -220,18 +220,18 @@ Content-Type: application/json
 >
 >如果要访问原始JSON，请在设置webhook时启用JSON传递。
 >
->1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;添加新的webhook。
->1. 单击 **[!UICONTROL Show advanced settings]**。
->1. 单击 **[!UICONTROL JSON pass-through]**。
+>1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;添加新的webhook。
+>1. 单击&#x200B;**[!UICONTROL 显示高级设置]**。
+>1. 单击&#x200B;**[!UICONTROL JSON传递]**。
 >
 
 ## Webhook标题
 
 要访问webhook的标头，请在设置webhook时启用Get请求标头。
 
-1. 单击&#x200B;**[!UICONTROL Add]**&#x200B;添加新的webhook。
-1. 单击 **[!UICONTROL Show advanced settings]**。
-1. 单击 **[!UICONTROL Get request headers]**。
+1. 单击&#x200B;**[!UICONTROL 添加]**&#x200B;添加新的webhook。
+1. 单击&#x200B;**[!UICONTROL 显示高级设置]**。
+1. 单击&#x200B;**[!UICONTROL 获取请求标头]**。
 
 您可以使用`map()`和`get()`函数的组合提取特定的标头值。
 
@@ -255,20 +255,20 @@ Content-Type: application/json
 
 ### 测试对webhook的响应
 
-1. 在您的方案中包含模块&#x200B;**[!UICONTROL Custom Webhook]**。
+1. 在场景中包含&#x200B;**[!UICONTROL 自定义Webhook]**&#x200B;模块。
 1. 将新的webhook添加到模块。
 1. 将webhook URL复制到剪贴板。
 1. 运行方案。
 
-   [!UICONTROL Custom Webhook]模块上的闪电图标将变为旋转圆点。 这显示了模块现在正在等待webhook调用。
+   [!UICONTROL 自定义Webhook]模块上的闪电图标将变为旋转圆点。 这显示了模块现在正在等待webhook调用。
 
 1. 打开一个新的浏览器窗口，将复制的URL粘贴到地址栏中，然后按&#x200B;**[!UICONTROL Enter]**。
 
-   已触发[!UICONTROL Custom Webhook]模块，浏览器将显示一个新页面。
+   已触发[!UICONTROL 自定义Webhook]模块，浏览器将显示一个新页面。
 
 如果要自定义webhook的响应，请使用模块Webhook响应。
 
-模块的配置包含两个字段：[!UICONTROL Status]和[!UICONTROL Body]。
+模块的配置包含两个字段：[!UICONTROL 状态]和[!UICONTROL 正文]。
 
 * [!UICONTROL Status]字段包含HTTP响应状态代码，例如，2xx表示成功（例如，`200`表示正常），3xx表示重定向（例如，`307`表示临时重定向），4xx表示客户端错误（例如，`400`表示错误请求）等等。
 
@@ -286,22 +286,22 @@ Content-Type: application/json
 >
 >**示例：**
 >
->按如下方式配置[!UICONTROL Webhook Response]模块：
+>按如下方式配置[!UICONTROL Webhook响应]模块：
 >
 ><table style="table-layout:auto"> 
 &gt; <col> 
 &gt; <col> 
 &gt; <tbody> 
 &gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td role="rowheader">[！UICONTROL状态] </td> 
 &gt;   <td> <p>2xx成功HTTP状态代码，例如200</p> </td> 
 &gt;  </tr> 
 &gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+&gt;   <td role="rowheader">[！UICONTROL Body] </td> 
 &gt;   <td> <p>HTML代码</p> </td> 
 &gt;  </tr> 
 &gt;  <tr> 
-&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td role="rowheader"> <p>[！UICONTROL Custom headers]</p> </td> 
 &gt;   <td> 
 &gt;    <ul> 
 &gt;     <li><strong>键</strong>： Content-type</li> 
@@ -313,7 +313,7 @@ Content-Type: application/json
 >
 >![自定义标头](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
->这将生成一个HTML响应，并在Web浏览器中显示：
+>这将生成HTML响应，并在Web浏览器中显示：
 >
 >![HEML响应](/help/workfront-fusion/references/apps-and-modules/assets/html-response-350x70.png)
 
@@ -321,22 +321,22 @@ Content-Type: application/json
 
 >[!INFO]
 >
->**示例：**&#x200B;按如下方式配置[!UICONTROL Webhook Response]模块：
+>**示例：**&#x200B;按如下方式配置[!UICONTROL Webhook响应]模块：
 >
 ><table style="table-layout:auto"> 
 &gt; <col> 
 &gt; <col> 
 &gt; <tbody> 
 &gt;  <tr> 
-&gt;   <td role="rowheader">[!UICONTROL Status] </td> 
+&gt;   <td role="rowheader">[！UICONTROL状态] </td> 
 &gt;   <td> <p>3xx重定向HTTP状态代码，例如303</p> </td> 
 &gt;  </tr> 
 &gt;  <tr> 
-&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+&gt;   <td role="rowheader"> <p>[！UICONTROL Custom headers]</p> </td> 
 &gt;   <td> 
 &gt;    <ul> 
-&gt;     <li><strong>[!UICONTROL Key]</strong>：位置</li> 
-&gt;     <li><strong>[!UICONTROL Value]</strong>：要重定向到的URL。</li> 
+&gt;     <li><strong>[！UICONTROL键]</strong>：位置</li> 
+&gt;     <li><strong>[！UICONTROL值]</strong>：要重定向到的URL。</li> 
 &gt;    </ul> </td> 
 &gt;  </tr> 
 &gt; </tbody> 
@@ -358,7 +358,7 @@ Content-Type: application/json
 
 ### 映射面板中缺少项目
 
-如果[!UICONTROL Webhooks] > [!UICONTROL Custom Webhook]模块之后的模块设置中的映射面板中缺少某些项，请单击&#x200B;**[!UICONTROL Webhooks]>[!UICONTROL Custom Webhook]**&#x200B;模块以打开其设置，然后单击&#x200B;**[!UICONTROL Re-determine data structure]**：
+如果在[!UICONTROL Webhook] > [!UICONTROL 自定义Webhook]模块之后的模块设置中的映射面板中缺少某些项，请单击&#x200B;**[!UICONTROL Webhooks] > [!UICONTROL 自定义Webhook]**&#x200B;模块以打开其设置，然后单击&#x200B;**[!UICONTROL 重新确定数据结构]**：
 
 ![重新确定数据结构](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 

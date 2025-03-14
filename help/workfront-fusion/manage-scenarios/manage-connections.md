@@ -4,7 +4,7 @@ description: 您可以在“连接”区域查看和管理团队连接。
 author: Becky
 feature: Workfront Fusion
 exl-id: b7e4d3ac-ccbe-4ee2-ba73-b37032980696
-source-git-commit: d79f8ac6d678a874e05e606d7b9ff7c812d93db1
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 

@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion] HTTP应用为基于超文本传输�
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
@@ -76,18 +76,18 @@ ht-degree: 0%
 
 有关特定请求模块说明，请参阅以下文章：
 
-* [[!UICONTROL HTTP] > [!UICONTROL Make a request]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 发出请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 发出基本授权请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 发出OAuth 2.0请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 发出客户端证书授权请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 发出API密钥授权请求]](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-api-key-auth-request.md)
 
 ## 其他操作模块
 
-* [[!UICONTROL Get a File]](#get-a-file)
-* [[!UICONTROL Resolve a target URL]](#resolve-a-target-url)
+* [[!UICONTROL 获取文件]](#get-a-file)
+* [[!UICONTROL 解析目标URL]](#resolve-a-target-url)
 
-### [!UICONTROL Get a File]
+### [!UICONTROL 获取文件]
 
 此操作模块从指定的URL下载文件。 下载文件后，您可以使用场景中的其他模块进一步处理文件（映射文件数据）。
 
@@ -96,21 +96,21 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx )] </td> 
+   <td role="rowheader">[！UICONTROL将所有状态计算为错误（2xx和3xx除外）] </td> 
    <td> <p>使用此选项可设置错误处理。</p> <p>有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">错误处理。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL URL] </td> 
+   <td role="rowheader">[！UICONTROL URL] </td> 
    <td> <p>输入或映射要下载的文件的URL。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules] </td> 
+   <td role="rowheader">[！UICONTROL与其他HTTP模块共享Cookie] </td> 
    <td> <p>如果您希望此站点的Cookie对其他模块可用，请启用此选项。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Resolve a target URL]
+### [!UICONTROL 解析目标URL]
 
 此操作模块解析HTTP重定向链并返回目标URL。
 
@@ -119,19 +119,19 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL URL] </td> 
+   <td role="rowheader">[！UICONTROL URL] </td> 
    <td> <p>输入或映射要解析的URL，如[!DNL bit.ly] URL。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method] </td> 
-   <td> <p>选择您要使用[!UICONTROL HEAD]方法还是[!UICONTROL GET]方法。</p> </td> 
+   <td role="rowheader">[！UICONTROL方法] </td> 
+   <td> <p>选择您要使用[！UICONTROL HEAD]方法还是[！UICONTROL GET]方法。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 迭代器模块
 
-### [!UICONTROL Retrieve headers]
+### [!UICONTROL 检索标头]
 
 此模块在一个单独的捆绑包中从指定的HTTP模块返回每个标头（名称和值）。
 
@@ -140,7 +140,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Module]</td> 
+   <td role="rowheader">[！UICONTROL Source Module]</td> 
    <td> <p> 选择要从中检索标头的模块。</p> </td> 
   </tr> 
  </tbody> 

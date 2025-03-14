@@ -4,7 +4,7 @@ description: 您可以使用Adobe Workfront Fusion通过自定义OAuth客户端�
 author: Becky
 feature: Workfront Fusion
 exl-id: 2f0bc289-4ecf-4a31-9d7b-641bbca6fc95
-source-git-commit: 5971b2210eaac8f8a75fd7a4aac5a9f7954d27ef
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '964'
 ht-degree: 1%
@@ -36,7 +36,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 

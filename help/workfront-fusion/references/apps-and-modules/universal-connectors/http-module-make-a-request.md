@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion HTTP >发出请求模块是一个通用模�
 author: Becky
 feature: Workfront Fusion
 exl-id: 42f6176e-86e0-489e-868b-66823a932daf
-source-git-commit: a7ee3e751b75523c4da62cea71e59a63f98b95e0
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '946'
 ht-degree: 1%
 
 ---
 
-# [!UICONTROL HTTP] > [!UICONTROL Make a request]模块
+# [!UICONTROL HTTP] > [!UICONTROL 发出请求]模块
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL Make a request module]是一个通用模块，通过该模块可以配置HTTP请求并将其提交到服务器。 接收的HTTP响应随后包含在输出包中。
+[!DNL Adobe Workfront Fusion] [!UICONTROL HTTP] > [!UICONTROL 生成请求模块]是一个通用模块，通过该模块可以配置HTTP请求并将其提交到服务器。 接收的HTTP响应随后包含在输出包中。
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>无Workfront Fusion许可证要求。</p>
+   <p>无Workfront Fusion许可证要求</p>
    </td> 
   </tr> 
   <tr> 
@@ -62,78 +62,78 @@ ht-degree: 1%
 
 +++
 
-## [!UICONTROL HTTP] > [!UICONTROL Make a request]模块配置
+## [!UICONTROL HTTP] > [!UICONTROL 发出请求]模块配置
 
-配置[!UICONTROL HTTP] > [!UICONTROL Make a request]模块时，[!DNL Adobe Workfront Fusion]显示下面列出的字段。 模块中的粗体标题表示必填字段。
+配置[!UICONTROL HTTP] > [!UICONTROL 发出请求]模块时，[!DNL Adobe Workfront Fusion]显示以下列出的字段。 模块中的粗体标题表示必填字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Evaluate all states as errors (except for 2xx and 3xx)] </td> 
+   <td role="rowheader">[！UICONTROL将所有状态计算为错误（2xx和3xx除外） </td> 
    <td> <p>使用此选项可设置错误处理。</p> <p>有关详细信息，请参阅<a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">添加错误处理</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL URL] </td> 
+   <td role="rowheader">[！UICONTROL URL] </td> 
    <td> <p>输入要向其发送请求的URL，如API端点或网站。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Method]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL方法]</p> </td> 
    <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers] </td> 
+   <td role="rowheader">[！UICONTROL Headers] </td> 
    <td> <p>以标准JSON对象的形式添加请求的标头。 例如， <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[！UICONTROL查询字符串]</td> 
    <td> <p> 输入所需的查询键值对。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Body type]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL主体类型]</p> </td> 
    <td> <p>HTTP正文是在HTTP事务消息中传输的数据字节，这些字节紧跟在标头之后（如果存在任何要使用的标头）。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p>原始正文类型通常适用于大多数HTTP正文请求，即使在开发人员文档未指定要发送的数据的情况下也是如此。</p> <p>在[!UICONTROL Content type]字段中指定解析数据的形式。</p> <p>尽管选择了内容类型，但数据仍会以开发人员文档规定或要求的任何格式输入。</p> </li> 
-     <li> <p><strong>[!UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>此正文类型使用<code>[!UICONTROL application/x-www-form-urlencoded]</code>为[!UICONTROL POST]数据。</p> <p>对于<code>application/x-www-form-urlencoded</code>，发送到服务器的HTTP消息正文本质上是一个查询字符串。 键和值在键值对中进行编码，键值对以<code>&amp;</code>分隔，在键和值之间使用<code>=</code>。 </p> <p>对于二进制数据，请改用<code>[!UICONTROL multipart/form-data]</code>。</p> 
+     <li> <p><strong>[！UICONTROL Raw]</strong> </p> <p>原始正文类型通常适用于大多数HTTP正文请求，即使在开发人员文档未指定要发送的数据的情况下也是如此。</p> <p>在[！UICONTROL内容类型]字段中指定解析数据的形式。</p> <p>尽管选择了内容类型，但数据仍会以开发人员文档规定或要求的任何格式输入。</p> </li> 
+     <li> <p><strong>[！UICONTROL Application/x-www-form-urlencoded]</strong> </p> <p>此正文类型使用<code>[!UICONTROL application/x-www-form-urlencoded]</code>对[！UICONTROL POST]数据进行处理。</p> <p>对于<code>application/x-www-form-urlencoded</code>，发送到服务器的HTTP消息正文本质上是一个查询字符串。 键和值在键值对中进行编码，键值对以<code>&amp;</code>分隔，在键和值之间使用<code>=</code>。 </p> <p>对于二进制数据，请改用<code>[!UICONTROL multipart/form-data]</code>。</p> 
       <div class="example" data-mc-autonum="<b>Example: </b>">
        <span class="autonumber"><span><b>示例： </b></span></span> 
        <p>生成的HTTP请求格式的示例：</p> 
        <p><code>field1=value1&amp;field2=value2</code> </p> 
       </div> </li> 
-     <li> <p><strong>[!UICONTROL Multipart/form-data]</strong> </p> <p>[!UICONTROL  Multipart/form-data]是用于发送文件和数据的HTTP多部分请求。 它通常用于将文件上传到服务器。</p> <p>添加要在请求中发送的字段。 每个字段都必须包含键值对。</p> 
+     <li> <p><strong>[！UICONTROL Multipart/form-data]</strong> </p> <p>[！UICONTROL Multipart/form-data]是用于发送文件和数据的HTTP多部分请求。 它通常用于将文件上传到服务器。</p> <p>添加要在请求中发送的字段。 每个字段都必须包含键值对。</p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL Text]</strong> </p> <p>输入要在请求正文中发送的键和值。</p> </li> 
-       <li> <p><strong>[!UICONTROL File]</strong> </p> <p>输入密钥，并在请求正文中指定要发送的源文件。</p> <p>映射您要从上一个模块上传的文件（如[!UICONTROL HTTP] &gt; [!UICONTROL Get a File]或[!UICONTROL Google Drive] &gt;下载文件），或手动输入文件名和文件数据。</p> </li> 
+       <li> <p><strong>[！UICONTROL文本]</strong> </p> <p>输入要在请求正文中发送的键和值。</p> </li> 
+       <li> <p><strong>[！UICONTROL文件]</strong> </p> <p>输入密钥，并在请求正文中指定要发送的源文件。</p> <p>映射您要从上一个模块上传的文件(如[！UICONTROL HTTP] &gt; [！UICONTROL Get a File]或[！UICONTROL Google Drive] &gt;下载文件)，或手动输入文件名和文件数据。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Parse response]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL解析响应]</p> </td> 
    <td> <p>启用此选项可自动解析响应并转换JSON和XML响应。</p> <p>在使用解析的JSON或XML内容之前，请手动运行一次模块，以便模块能够识别响应内容并允许您在后续模块中映射该内容。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL User name]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL用户名]</p> </td> 
    <td> <p> 如果要使用基本授权发送请求，请输入用户名。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Password] </td> 
+   <td role="rowheader">[！UICONTROL密码] </td> 
    <td> <p>如果要使用基本授权发送请求，请输入密码。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Timeout] </td> 
+   <td role="rowheader">[！UICONTROL超时] </td> 
    <td> <p>以秒为单位指定请求超时(1-300)。 默认值为40秒。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Share cookies with other HTTP modules]</td> 
+   <td role="rowheader">[！UICONTROL与其他HTTP模块共享Cookie]</td> 
    <td> <p> 启用此选项可将来自服务器的Cookie与场景中的所有HTTP模块共享。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Self-signed certificate]</td> 
+   <td role="rowheader">[！UICONTROL自签名证书]</td> 
    <td> <p>要添加自签名证书，请执行以下操作：</p>
           <ol>
             <li value="1">
-              <p>单击 <b>[!UICONTROL Extract]</b>。</p>
+              <p>单击<b>[！UICONTROL提取]</b>。</p>
             </li>
             <li value="2">
               <p>选择要提取的文件类型。</p>
@@ -145,33 +145,33 @@ ht-degree: 1%
               <p>输入文件的密码。</p>
             </li>
             <li value="5">
-              <p>单击<b>[!UICONTROL Save]</b>提取文件并返回模块设置。</p>
+              <p>单击<b>[！UICONTROL保存]</b>以提取文件并返回到模块设置。</p>
             </li>
           </ol>
 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Reject connections that are using unverified (self-signed) certificates] </td> 
+   <td role="rowheader">[！UICONTROL拒绝使用未验证（自签名）证书的连接] </td> 
    <td> <p>启用此选项可拒绝使用未经验证的TLS证书的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Follow redirect]</td> 
+   <td role="rowheader">[！UICONTROL遵循重定向]</td> 
    <td> <p> 启用此选项可在3xx响应中遵循URL重定向。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Follow all redirects] </td> 
+   <td role="rowheader">[！UICONTROL遵循所有重定向] </td> 
    <td> <p>启用此选项后，URL重定向会带有所有响应代码。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Disable serialization of multiple same query string keys as arrays]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL禁用将多个相同的查询字符串键序列化为数组]</p> </td> 
    <td> <p>默认情况下，[!DNL Workfront Fusion]处理与数组相同的URL查询字符串参数键的多个值。 例如，<code>www.test.com?foo=bar&amp;foo=baz</code>将转换为<code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>。 激活此选项以禁用此功能。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Request compressed content]</td> 
+   <td role="rowheader">[！UICONTROL请求压缩内容]</td> 
    <td> <p> 启用此选项可请求网站的压缩版本。</p> <p>添加<code>[!UICONTROL Accept-Encoding]</code>标头以请求压缩的内容。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Use Mutual TLS]</td> 
+   <td role="rowheader">[！UICONTROL使用双向TLS]</td> 
    <td> <p>启用此选项可在HTTP请求中使用双向TLS。</p> <p>有关双方TLS的详细信息，请参阅<a href="/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md" class="MCXref xref">在HTTP模块中使用双方TLS</a>。</p> </td> 
   </tr> 
  </tbody> 
@@ -183,6 +183,6 @@ ht-degree: 1%
 
 ![创建请求示例](/help/workfront-fusion/references/apps-and-modules/assets/make-a-request-example-350x522.png)
 
-我们不建议直接在[!UICONTROL Request content]字段中将JSON片段与表达式和项混合，因为这会导致无效的JSON。
+我们不建议直接在[!UICONTROL 请求内容]字段中将JSON片段与表达式和项混合，因为这会导致无效的JSON。
 
 >[!ENDSHADEBOX]

@@ -4,10 +4,10 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行
 author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
-source-git-commit: c377a24c2daeb25effffb28d9912d8c27ad0a08d
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 1%
+source-wordcount: '1810'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
@@ -82,7 +82,7 @@ ht-degree: 1%
 >
 >例如，如果用户拥有通过Excel Connector授予的“读取表”权限，然后在Outlook Connector中创建连接以读取电子邮件，则权限同意屏幕将显示已授予的“读取表”权限和新要求的“写入电子邮件”权限。
 
-1. 在任意[!DNL Microsoft Dynamics 365]模块中，单击[!UICONTROL Connection]字段旁边的&#x200B;**[!UICONTROL Add]**。
+1. 在任意[!DNL Microsoft Dynamics 365]模块中，单击[!UICONTROL 连接]字段旁边的&#x200B;**[!UICONTROL 添加]**。
 
 
 1. 填写以下字段：
@@ -94,38 +94,38 @@ ht-degree: 1%
       </col>
       <tbody>
         <tr>
-          <td role="rowheader">[!UICONTROL Connection name]</td>
+          <td role="rowheader">[！UICONTROL连接名称]</td>
           <td>
             <p>输入此连接的名称。</p>
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Environment]</td>
+          <td role="rowheader">[！UICONTROL环境]</td>
           <td>选择您要连接到生产环境还是非生产环境。</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Type]</td>
+          <td role="rowheader">[！UICONTROL类型]</td>
           <td>选择您是要连接到服务帐户还是个人帐户。</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client ID]<p>（可选）</p></td>
-          <td>输入您的[!DNL Microsoft Dynamics] [!UICONTROL Client ID]。</td>
+          <td role="rowheader">[！UICONTROL客户端ID]<p>（可选）</p></td>
+          <td>输入您的[!DNL Microsoft Dynamics] [！UICONTROL客户端ID]。</td>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Client Secret]<p>（可选）</p></td>
-          <td>输入您的[!DNL Microsoft Dynamics] [!UICONTROL Client Secret]。
+          <td role="rowheader">[！UICONTROL客户端密钥]<p>（可选）</p></td>
+          <td>输入您的[!DNL Microsoft Dynamics] [！UICONTROL客户端密钥]。
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Authentication URL]</td>
+          <td role="rowheader">[！UICONTROL身份验证URL]</td>
           <td>输入您的Workfront实例将用于对此连接进行身份验证的URL。 <p>默认值为<code>https://oauth.my.workfront.com/integrations/oauth2</code>。</p>
         </tr>
         <tr>
-          <td role="rowheader">[!UICONTROL Resource]</td>
+          <td role="rowheader">[！UICONTROL资源]</td>
           <td>输入您的[!DNL Dynamics 365]帐户的地址，不包括<code>>https://</code>。</p>
         </tr>
       </tbody>
     </table>
-1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;以创建连接并返回模块。
+1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;以创建连接并返回模块。
 
 >[!NOTE]
 >
@@ -148,10 +148,10 @@ ht-degree: 1%
 
 ### 触发器
 
-* [[!UICONTROL Watch Records (Real Time)]](#watch-records-real-time)
-* [[!UICONTROL Watch Records (Scheduled)]](#watch-records-scheduled)
+* [[!UICONTROL 观看记录（实时）]](#watch-records-real-time)
+* [[!UICONTROL 观看记录（已计划）]](#watch-records-scheduled)
 
-#### [!UICONTROL Watch Records (Real Time)]
+#### [!UICONTROL 观看记录（实时）]
 
 此即时触发器模块在[!DNL Dynamics 365]中创建或更新您指定的记录（对象）时执行方案。
 
@@ -162,19 +162,19 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Webhook]</td> 
+   <td role="rowheader">[！UICONTROL Webhook]</td> 
    <td> <p>选择要用于此模块的webhook。 </p> <p>要添加新的webhook，请执行以下操作：</p> 
     <ol> 
-     <li value="1"> <p>单击Webhook字段右侧的<strong>[!UICONTROL Add]</strong></p> </li> 
-     <li value="2"> <p>在<strong>[!UICONTROL Webhook]</strong>名称字段中，为webhook键入一个描述性名称。</p> </li> 
-     <li value="3"> <p>在<strong>[!UICONTROL Connection]</strong>字段中，选择要使用的连接</p> <p>有关将[!DNL Microsoft Dynamics 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将[!DNL Microsoft Dynamics 365]连接到[!DNL Workfront Fusion]</a>。 </p> </li> 
-     <li value="4"> <p>单击<strong>[!UICONTROL Save]</strong>以保存webhook并返回模块。</p> </li> 
+     <li value="1"> <p>单击Webhook字段右侧的<strong>[！UICONTROL Add]</strong></p> </li> 
+     <li value="2"> <p>在<strong>[！UICONTROL Webhook]</strong>名称字段中，为webhook键入一个描述性名称。</p> </li> 
+     <li value="3"> <p>在<strong>[！UICONTROL连接]</strong>字段中，选择要使用的连接</p> <p>有关将[!DNL Microsoft Dynamics 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将[!DNL Microsoft Dynamics 365]连接到[!DNL Workfront Fusion]</a>。 </p> </li> 
+     <li value="4"> <p>单击<strong>[！UICONTROL保存]</strong>以保存webhook并返回模块。</p> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Watch Records (Scheduled)]
+#### [!UICONTROL 观看记录（已计划）]
 
 此计划触发器模块执行一个方案，即指定对象中的记录是在此方案上次计划运行之后创建或更新的。
 
@@ -189,23 +189,23 @@ ht-degree: 1%
  <col> 
  <tbody> "
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Microsoft Dynamics 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将[!DNL Microsoft Dynamics 365]连接到[!DNL Workfront Fusion]</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Include]</td> 
-   <td>选择您希望模块监视<strong>[!UICONTROL New Records Only]</strong>、<strong>[!UICONTROL Updated Records Only]</strong>还是<strong>[!UICONTROL New and Updated Records]</strong>。</td> 
+   <td role="rowheader">[！UICONTROL Include]</td> 
+   <td>选择您希望模块仅观看<strong>[！UICONTROL新记录]</strong>、<strong>[！UICONTROL仅更新记录]</strong>还是<strong>[！UICONTROL新记录和更新记录]</strong>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
-   <td>选择您希望方案监视的[!UICONTROL Microsoft Dynamics 365]记录类型。</td> 
+   <td role="rowheader">[！UICONTROL实体类型]</td> 
+   <td>选择要让方案关注的[！UICONTROL Microsoft Dynamics 365]记录类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[！UICONTROL输出]</td> 
    <td> <p>选择要包含在此模块的输出捆绑包中的信息。 基于所选实体类型，字段可用。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Max Records]</td> 
+   <td role="rowheader">[！UICONTROL最大记录数]</td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
@@ -213,14 +213,14 @@ ht-degree: 1%
 
 ### 操作
 
-* [[!UICONTROL Create Record]](#create-record)
-* [[!UICONTROL Make an API Call]](#make-an-api-call)
-* [[!UICONTROL Delete Record]](#delete-record)
-* [[!UICONTROL Read Records]](#read-records)
-* [[!UICONTROL Update Record]](#update-record)
+* [[!UICONTROL 创建记录]](#create-record)
+* [[!UICONTROL 进行API调用]](#make-an-api-call)
+* [[!UICONTROL 删除记录]](#delete-record)
+* [[!UICONTROL 读取记录]](#read-records)
+* [[!UICONTROL 更新记录]](#update-record)
 
 
-#### [!UICONTROL Create Record]
+#### [!UICONTROL 创建记录]
 
 此操作模块创建一个实体，如约会或任务。
 
@@ -235,25 +235,25 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
    <td> <p>有关将[!DNL Microsoft Dynamics 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将[!DNL Microsoft Dynamics 365]连接到[!DNL Workfront Fusion]</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[！UICONTROL实体类型]</td> 
    <td>选择您希望模块创建的实体类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select Fields to Map]</td> 
+   <td role="rowheader">[！UICONTROL选择要映射的字段]</td> 
    <td>选择创建记录时要包含其值的字段。 可用字段取决于实体类型。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Property fields]</td> 
+   <td role="rowheader">[！UICONTROL属性字段]</td> 
    <td> 这些是您选择的字段。 输入您希望记录具有的给定属性值。 </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Delete Record]
+#### [!UICONTROL 删除记录]
 
 此操作模块删除实体。
 
@@ -268,21 +268,21 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Microsoft Dynamics 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将[!DNL Microsoft Dynamics 365]连接到[!DNL Workfront Fusion]</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[！UICONTROL实体类型]</td> 
    <td> <p>选择要让模块删除的实体类型。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID]</td> 
+   <td role="rowheader">[！UICONTROL ID]</td> 
    <td> <p>输入或映射您希望模块删除的记录的唯一[!DNL Microsoft Dynamics 365] ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Make an API Call]
+#### [!UICONTROL 进行API调用]
 
 此操作模块允许您对[!DNL Microsoft Dynamics 365] API进行经过身份验证的自定义调用。 这样，您可以创建其他[!DNL Microsoft Dynamics 365]模块无法实现的数据流自动化。
 
@@ -297,27 +297,27 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Microsoft Dynamics 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将[!DNL Microsoft Dynamics 365]连接到[!DNL Workfront Fusion]</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL URL]</td> 
+   <td role="rowheader">[！UICONTROL URL]</td> 
    <td> <p>输入相对于<code>&lt;Instance URL>/api/data/v9.1/</code>的路径。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
+   <td role="rowheader">[！UICONTROL方法]</td> 
    <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> <p>中的更多信息</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[！UICONTROL Headers]</td> 
    <td> <p>以标准JSON对象的形式添加请求的标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> <p>[!DNL Workfront Fusion] 为您添加授权标头。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
+   <td role="rowheader">[！UICONTROL查询字符串]</td> 
    <td> <p>以标准JSON对象的形式添加API调用的查询。</p> <p>例如： <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
+   <td role="rowheader">[！UICONTROL Body]</td> 
    <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注意：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -326,7 +326,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-#### [!UICONTROL Read Records]
+#### [!UICONTROL 读取记录]
 
 此操作模块从[!DNL Microsoft Dynamics 365]中的单个实体读取数据。
 
@@ -341,25 +341,25 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Microsoft Dynamics 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将[!DNL Microsoft Dynamics 365]连接到[!DNL Workfront Fusion]</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[！UICONTROL实体类型]</td> 
    <td>选择您希望模块读取的实体类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[！UICONTROL输出]</td> 
    <td> <p>选择要包含在此模块的输出捆绑包中的信息。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID]</td> 
+   <td role="rowheader">[！UICONTROL ID]</td> 
    <td>输入或映射您希望模块读取的记录的唯一[!DNL Microsoft Dynamics 365] ID。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Update Record]
+#### [!UICONTROL 更新记录]
 
 此操作模块可更新实体。
 
@@ -374,23 +374,23 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Microsoft Dynamics 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将[!DNL Microsoft Dynamics 365]连接到[!DNL Workfront Fusion]</a>。 </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[！UICONTROL实体类型]</td> 
    <td>选择要更新模块的实体类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Select Fields to Map]</td> 
+   <td role="rowheader">[！UICONTROL选择要映射的字段]</td> 
    <td>选择创建记录时要包含其值的字段。 可用字段取决于实体类型。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Property fields]</td> 
+   <td role="rowheader">[！UICONTROL属性字段]</td> 
    <td>这些是您选择的字段。 输入您希望记录具有的给定属性值。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL ID]</td> 
+   <td role="rowheader">[！UICONTROL ID]</td> 
    <td>输入或映射您希望模块更新的记录的唯一[!DNL Microsoft Dynamics] 365 ID。</td> 
   </tr> 
  </tbody> 
@@ -398,7 +398,7 @@ ht-degree: 1%
 
 ### 搜索
 
-#### [!UICONTROL Search Records]
+#### [!UICONTROL 搜索记录]
 
 此搜索模块在[!DNL Microsoft Dynamics 365]中查找与您指定的搜索查询匹配的对象中的记录。 您可以在场景的后续模块中映射此信息。
 
@@ -409,35 +409,35 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Microsoft Dynamics 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将[!DNL Microsoft Dynamics 365]连接到[!DNL Workfront Fusion]</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Entity Type]</td> 
+   <td role="rowheader">[！UICONTROL实体类型]</td> 
    <td>选择要更新模块的实体类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filters]</td> 
+   <td role="rowheader">[！UICONTROL过滤器]</td> 
    <td> <p>选择要用于此搜索的过滤器。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Standard Filters]</strong> </p> <p>选择字段和运算符，然后输入或映射要搜索的值，从而设置过滤器。 您可以在过滤器中使用AND或OR规则。</p> </li> 
-     <li> <p><strong>[!UICONTROL Query Functions]</strong> </p> <p>输入要用于搜索的[!DNL Dynamics 365] Web API查询函数。 </p> <p>有关查询函数的更多信息，请参阅[!DNL Microsoft]文档中的<a href="https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/queryfunctions?view=dynamics-ce-odata-9">Web API查询函数引用</a>。</p> </li> 
+     <li> <p><strong>[！UICONTROL标准筛选器]</strong> </p> <p>选择字段和运算符，然后输入或映射要搜索的值，从而设置过滤器。 您可以在过滤器中使用AND或OR规则。</p> </li> 
+     <li> <p><strong>[！UICONTROL查询函数]</strong> </p> <p>输入要用于搜索的[!DNL Dynamics 365] Web API查询函数。 </p> <p>有关查询函数的更多信息，请参阅[!DNL Microsoft]文档中的<a href="https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/queryfunctions?view=dynamics-ce-odata-9">Web API查询函数引用</a>。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sort]</td> 
+   <td role="rowheader">[！UICONTROL排序]</td> 
    <td> <p>指定项目的返回顺序。 您可以添加多个排序。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL Field]</strong> </p> <p>指定要作为结果排序依据的字段。</p> </li> 
-     <li> <p><strong>[!UICONTROL Direction]</strong> </p> <p>指定排序方向（升序或降序）。</p> </li> 
+     <li> <p><strong>[！UICONTROL字段]</strong> </p> <p>指定要作为结果排序依据的字段。</p> </li> 
+     <li> <p><strong>[！UICONTROL方向]</strong> </p> <p>指定排序方向（升序或降序）。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Max Records]</td> 
+   <td role="rowheader">[！UICONTROL最大记录数]</td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
+   <td role="rowheader">[！UICONTROL输出]</td> 
    <td> <p>选择要包含在此模块的输出捆绑包中的信息。</p> </td> 
   </tr> 
  </tbody> 

@@ -4,9 +4,9 @@ description: 您可以在“连接”区域查看和管理团队连接。
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: 945fd574afef0cfdd8b36ba5a24f5262e772ed8b
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '224'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 您可以在[!DNL Adobe Workfront Fusion]帐户中存储和删除以下区域中的方案元素：
 
-* [!UICONTROL Scenario]
-* [!UICONTROL Connections]
+* [!UICONTROL 方案]
+* [!UICONTROL 连接]
 * [!UICONTROL Webhooks]
-* [!UICONTROL Keys]
-* [!UICONTROL Devices]
-* [!UICONTROL Data stores]
-* [!UICONTROL User profiles]
+* [!UICONTROL 键]
+* [!UICONTROL 设备]
+* [!UICONTROL 数据存储]
+* [!UICONTROL 用户配置文件]
 
 
 ## 访问要求
@@ -45,7 +45,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -82,7 +82,7 @@ ht-degree: 1%
 
 1. 单击左侧面板中的区域。
 
-   例如，如果要删除方案，请单击左侧面板中的&#x200B;**[!UICONTROL Scenario]**。
+   例如，如果要删除方案，请单击左侧面板中的&#x200B;**[!UICONTROL 方案]**。
 
-1. 单击要删除的项右侧的向下箭头，然后单击&#x200B;**[!UICONTROL Delete]**。
-1. 单击&#x200B;**[!UICONTROL Really]**&#x200B;确认。
+1. 单击要删除的项右侧的向下箭头，然后单击“**[!UICONTROL 删除]**”。
+1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;确认。

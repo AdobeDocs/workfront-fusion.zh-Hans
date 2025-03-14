@@ -4,9 +4,9 @@ description: 您可以使用 [!DNL Adobe Workfront Fusion] 连接到Microsoft SQ
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f3293f7-8b45-4e42-8ad8-f9d4969b63fd
-source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
@@ -82,7 +82,7 @@ ht-degree: 0%
 >
 >[!DNL Workfront Fusion]不支持多个记录集。 仅处理第一个实例。
 
-## 疑难解答错误[!UICONTROL ER_LOCK_WAIT_TIMEOUT: Lock wait timeout exceeded; try restarting transaction]
+## 疑难解答错误[!UICONTROL ER_LOCK_WAIT_TIMEOUT：超过锁定等待超时；请尝试重新启动事务]
 
 使用多个模块修改相同的数据时，会发生此错误。 它由SQL事务引起。
 
@@ -94,6 +94,6 @@ ht-degree: 0%
 
 打开自动提交。 自动提交在模块执行完成后立即完成（提交）每个事务。
 
-1. 单击屏幕底部的[!UICONTROL Scenario settings]图标![方案设置图标](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)。
-1. 单击&#x200B;**[!UICONTROL Auto commit]**&#x200B;复选框。
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;保存方案设置。
+1. 单击屏幕底部的[!UICONTROL 方案设置]图标![方案设置图标](/help/workfront-fusion/references/apps-and-modules/assets/scenario-settings-icon.png)。
+1. 单击&#x200B;**[!UICONTROL 自动提交]**&#x200B;复选框。
+1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以保存方案设置。

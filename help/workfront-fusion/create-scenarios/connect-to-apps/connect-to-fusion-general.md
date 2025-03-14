@@ -4,10 +4,10 @@ description: 许多 [!DNL Adobe Workfront Fusion] 连接器在创建连接时不
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: ef1a96d9ef4c2c82eaf376c84188e3ed6ea7b2cf
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 1%
+source-wordcount: '470'
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -70,17 +70,17 @@ ht-degree: 1%
 
 要在[!DNL Workfront Fusion]模块内创建连接，请执行以下操作：
 
-1. 单击[!UICONTROL Connection]框旁的&#x200B;**[!UICONTROL Add]**&#x200B;以打开&#x200B;**[!UICONTROL Create a connection]**&#x200B;面板。
-1. （可选）更改默认&#x200B;**[!UICONTROL Connection name]**。
+1. 单击[!UICONTROL 连接]框旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;以打开&#x200B;**[!UICONTROL 创建连接]**&#x200B;面板。
+1. （可选）更改默认&#x200B;**[!UICONTROL 连接名称]**。
 1. 在环境字段中，选择是生产环境还是非生产环境。 此信息显示在Fusion的“连接”区域中。
 1. 在“类型”字段中，选择此帐户是服务帐户还是个人帐户。 此信息显示在Fusion的“连接”区域中。
-1. （有条件）如果应用程序需要高级连接设置（如ID、键或[!UICONTROL secret]），请输入该信息。
+1. （有条件）如果应用程序需要高级连接设置（如ID、密钥或[!UICONTROL 密钥]），请输入该信息。
 
-   您可能需要单击&#x200B;**[!UICONTROL Show advanced settings]**&#x200B;以显示可在其中输入此类信息的字段。
+   您可能需要单击&#x200B;**[!UICONTROL 显示高级设置]**&#x200B;以显示可在其中输入此类信息的字段。
 
-1. 单击 **[!UICONTROL Continue]**。
+1. 单击&#x200B;**[!UICONTROL 继续]**。
 1. 在显示的登录窗口中，输入您的凭据以登录应用程序（如果尚未登录）。
-1. （视情况而定）如果显示&#x200B;**[!UICONTROL Allow]**&#x200B;按钮，请检查连接器能够执行的操作，然后单击按钮以将应用程序连接到[!DNL Workfront Fusion]。
+1. （视情况而定）如果显示&#x200B;**[!UICONTROL 允许]**&#x200B;按钮，请检查连接器能够执行的操作，然后单击按钮以将应用程序连接到[!DNL Workfront Fusion]。
 
    >[!NOTE]
    >

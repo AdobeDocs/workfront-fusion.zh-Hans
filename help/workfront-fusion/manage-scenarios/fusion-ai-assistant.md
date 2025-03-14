@@ -4,7 +4,7 @@ description: Workfront Fusion中的AI助手
 author: Becky
 feature: Workfront Fusion
 exl-id: 22f24c0e-4eb3-4ef7-b012-374ee5e8a844
-source-git-commit: 3d06958b6f706f4f974230853fb6553232656fd3
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Workfront Fusion中的AI助手
 
-AI助手可以从Workfront文档中找到信息，因此无需访问Adobe Experience League即可获得所需的帮助。
+AI Assistant可以从Workfront文档中找到信息，从而无需访问Adobe Experience League即可获得所需的帮助。
 
 ## 访问要求
 
@@ -36,7 +36,7 @@ AI助手可以从Workfront文档中找到信息，因此无需访问Adobe Experi
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -68,9 +68,9 @@ AI助手可以从Workfront文档中找到信息，因此无需访问Adobe Experi
 
 ## 先决条件
 
-Adobe必须已签署AdobeGen AI协议。
+Adobe必须有一个已签署的Adobe Gen AI协议文件。
 
-有关签署协议的更多信息，请参阅Workfront文档中的AI Assistant概述一文中的[签署AdobeGen AI协议](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)。
+有关签署协议的更多信息，请参阅Adobe文档中的AI Assistant概述一文中的[签署Workfront Gen AI协议](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)。
 
 ## 从AI助手获取信息
 
@@ -83,4 +83,4 @@ Adobe必须已签署AdobeGen AI协议。
 
 1. 在AI助手面板中查看响应。
 1. （可选）如果响应不包含您需要的信息，请优化您的响应并重试。
-1. （可选且视情况而定）如果响应中包含指向Adobe Experience League文章的链接，请单击该链接以在新窗口中打开该文章。
+1. （可选且视情况而定）如果响应包含指向Adobe Experience League文章的链接，请单击该链接以在新窗口中打开文章。

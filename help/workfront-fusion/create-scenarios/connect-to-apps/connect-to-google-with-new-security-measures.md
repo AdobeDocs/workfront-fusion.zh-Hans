@@ -4,7 +4,7 @@ description: Google对用户使用其API的方式引入了限制。 本文介绍
 author: Becky
 feature: Workfront Fusion
 exl-id: eac7ba26-664e-464c-b05c-8c2ebf407fb3
-source-git-commit: 362952ec85b0df2306ba117ba530e95201330cca
+source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Google对用户使用其API的方式引入了限制。 本文介绍了如何将A
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
