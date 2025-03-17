@@ -4,9 +4,9 @@ description: 工作自动化要求快速处理，因此 [!DNL Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 2af808aaf8136253c623ee65641d0e57d4f6cf10
+source-git-commit: 1253470a23a2a9124824d5ab1ff2b5013d773517
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '880'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 当场景触发其自身的新执行，从而触发新的执行，并以无限循环等形式出现时，会发生递归。
 
-例如，创建任务时会触发场景，该场景会创建任务。 新创建的任务会再次触发场景，从而创建另一个任务。 每次创建任务时，都会触发场景，每次场景运行时，都会创建任务。
+例如，创建任务时会触发一个方案，该方案会创建两个任务。 新创建的任务都会再次触发场景，从而创建四个新任务。 每次创建任务时，都会触发场景，而每次场景运行时，任务数都会翻倍。 任务数量呈指数增长。
 
 递归会给拥有递归方案的组织以及其他组织造成性能问题。
 
