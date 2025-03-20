@@ -4,9 +4,9 @@ description: 在Adobe Workfront Fusion场景中，您可以自动使用Salesforc
 author: Becky
 feature: Workfront Fusion
 exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 87b15e32338b798983adbf0016709752ee862567
 workflow-type: tm+mt
-source-wordcount: '3042'
+source-wordcount: '2952'
 ht-degree: 0%
 
 ---
@@ -185,15 +185,15 @@ Salesforce连接器使用以下对象：
  <tbody> 
   <tr> 
    <td>[！UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-salesforce">创建与Salesforce的连接</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[！UICONTROL记录类型] </td> 
-   <td> <p>选择记录类型，其中包含您希望模块监视的字段。 您必须选择在[!DNL Salesforce]设置中启用了[！UICONTROL字段历史记录]的记录类型。 有关详细信息，请参阅[!DNL Salesforce]文档中的<a href="https://help.salesforce.com/articleView?id=tracking_field_history.htm&amp;type=5">字段历史记录跟踪</a>。 </p> </td> 
+   <td> <p>选择记录类型，其中包含您希望模块监视的字段。 您必须选择在[!DNL Salesforce]设置中启用了[！UICONTROL字段历史记录]的记录类型。 有关详细信息，请参阅[!DNL Salesforce]文档中的<a href="https://help.salesforce.com/s/articleView?id=xcloud.tracking_field_history.htm&amp;type=5">字段历史记录跟踪</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td>[！UICONTROL字段]</td> 
-   <td> <p>选择您希望模块关注更改的字段。</p> </td> 
+   <td> <p>选择您希望模块关注更改的字段。 可用字段取决于所选的记录类型。</p> </td> 
   </tr> 
   <tr> 
    <td>[！UICONTROL限制]</td> 
@@ -214,7 +214,7 @@ Salesforce连接器使用以下对象：
  <tbody> 
   <tr> 
    <td>[！UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-salesforce">创建与Salesforce的连接</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[！UICONTROL类型] </td> 
@@ -239,29 +239,36 @@ Salesforce连接器使用以下对象：
 
 此触发器模块会在有人发送消息时执行场景。 该模块返回与一个或多个记录关联的所有标准字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
 
-此模块需要一些额外的设置：
+此模块需要一些额外的设置。 必须为出站消息配置流。
 
-1. 转到[!DNL Salesforce]设置页面。
+* 有关Salesforce中的流的说明，请参阅Salesforce文档中的[使用流自动执行任务](https://help.salesforce.com/s/articleView?id=platform.flow.htm)。
+* 有关在Salesforce中配置出站消息的信息，请参阅Salesforce文档中的[从记录触发的流发送出站消息](https://help.salesforce.com/s/articleView?id=release-notes.rn_automate_flow_builder_outbound_message.htm)
 
-   要访问设置页面，请找到并单击[!DNL Salesforce]帐户右上角标记为“[!UICONTROL 设置]”的按钮。 从[!DNL Salesforce]设置页面中，找到左侧的“[!UICONTROL 快速查找/搜索]”栏。 搜索“[!UICONTROL 工作流规则]”。
+<!--
 
-1. 单击&#x200B;**[!UICONTROL 工作流规则]**。
-1. 在显示的[!UICONTROL 工作流规则]页面上，单击&#x200B;**[!UICONTROL 新建规则]**，然后选择该规则将应用到的对象类型（例如，如果您正在监视对Opportunity记录的更新，则为“[!UICONTROL Opportunity]”）。
-1. 单击&#x200B;**[!UICONTROL 下一步]**。
-1. 设置规则名称、评估标准和规则条件，然后单击&#x200B;**[!UICONTROL 保存]**&#x200B;和&#x200B;**[!UICONTROL 下一步]**。
+1. Go to the [!DNL Salesforce] setup page.
 
-1. 单击&#x200B;**[!UICONTROL 完成]**。
-1. 在新创建的工作流规则中，单击&#x200B;**[!UICONTROL 编辑]**。
-1. 从&#x200B;**[!UICONTROL 添加工作流操作]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 新建出站消息]**。
+   To access the setup page, locate and click the button labeled "[!UICONTROL Setup]" in the upper-right hand corner of the [!DNL Salesforce] account. From the [!DNL Salesforce] setup page, locate the "[!UICONTROL Quick Find / Search]" bar on the left hand side. Search for "[!UICONTROL Workflow Rules]." 
 
-1. 指定名称、描述、端点URL以及要包括在新出站消息中的字段，然后单击&#x200B;**[!UICONTROL 保存]**。
+1. Click **[!UICONTROL Workflow Rules]**. 
+1. On the the [!UICONTROL Workflow Rules] page that appears, click **[!UICONTROL New Rule]** and select the object type the rule will apply to (such as "[!UICONTROL Opportunity]" if you are monitoring updates to Opportunity records).
+1. Click **[!UICONTROL Next]**.
+1. Set a rule name, evaluation criteria, and rule criteria, then click **[!UICONTROL Save]** and **[!UICONTROL Next]**.
 
-   **[!UICONTROL 终结点URL]**&#x200B;字段包含在[!DNL Workfront Fusion]中的[!DNL Salesforce] [!UICONTROL 出站消息]上提供的URL。
+1. Click **[!UICONTROL Done]**.
+1. From the newly created Workflow rule, click **[!UICONTROL Edit]**..
+1. From the **[!UICONTROL Add Workflow Action]** drop-down list, select **[!UICONTROL New Outbound Message]**.
 
-1. 配置以[!UICONTROL 出站消息]事件开头的方案。
+1. Specify name, description, Endpoint URL, and fields you want to include in the new outbound message, then click **[!UICONTROL Save]**.
 
-1. 单击右下角的&#x200B;**&lt;/>**&#x200B;图标，并复制提供的URL。
-1. 返回&#x200B;**[!UICONTROL 工作流规则]**&#x200B;页面，找到新创建的规则，然后单击&#x200B;**[!UICONTROL 激活]**。
+   The **[!UICONTROL Endpoint URL]** field contains the URL provided on the [!DNL Salesforce] [!UICONTROL Outbound Message] in [!DNL Workfront Fusion].
+
+1. Configure a scenario beginning with the [!UICONTROL Outbound Message] event. 
+
+1. Click the **</>** icon in the bottom right and copy the provided URL.
+1. Return to the **[!UICONTROL Workflow Rules]** page, locate the newly created rule, then click **[!UICONTROL Activate]**.
+
+-->
 
 配置此模块时，会显示以下字段。
 
@@ -310,7 +317,7 @@ Salesforce连接器使用以下对象：
  <tbody> 
   <tr> 
    <td>[！UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-salesforce">创建与Salesforce的连接</a>。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[！UICONTROL记录类型] </p> </td> 
@@ -344,15 +351,15 @@ Salesforce连接器使用以下对象：
  <tbody> 
   <tr> 
    <td role="rowheader">[！UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-salesforce">创建与Salesforce的连接</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[！UICONTROL URL]</p> </td> 
-   <td> <p>输入相对于<code> &lt;Instance URL&gt;/services/data/v46.0/</code>的路径。</p> <p>有关可用端点的列表，请参阅<a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Salesforce REST API开发人员指南</a>。</p> </td> 
+   <td> <p>输入相对于<code> &lt;Instance URL&gt;/services/data/v62.0/</code>的路径。</p> <p>有关可用端点的列表，请参阅<a href="https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm">Salesforce REST API开发人员指南</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[！UICONTROL方法]</p> </td> 
-   td&gt; <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[！UICONTROL Headers]</td> 
@@ -372,6 +379,28 @@ Salesforce连接器使用以下对象：
  </tbody> 
 </table>
 
+>[!BEGINSHADEBOX]
+
+**示例：**&#x200B;以下API调用返回您[!DNL Salesforce]帐户中所有用户的列表：
+
+* **URL**： `query`
+
+* **方法**： [!UICONTROL GET]
+
+* **查询字符串**：
+
+* **键**： `q`
+
+* **值**： `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
+
+在&#x200B;**[!UICONTROL 包] > [!UICONTROL 正文] > [!UICONTROL 记录]**&#x200B;下的模块输出中可以找到搜索匹配项。
+
+在我们的示例中，返回了6个用户：
+
+![搜索匹配](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
+
+>[!ENDSHADEBOX]
+
 #### [!UICONTROL 删除记录]
 
 此操作模块删除对象中的现有记录。
@@ -388,7 +417,7 @@ Salesforce连接器使用以下对象：
  <tbody> 
   <tr> 
    <td>[！UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-salesforce">创建与Salesforce的连接</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[！UICONTROL记录类型] </td> 
@@ -417,7 +446,7 @@ Salesforce连接器使用以下对象：
  <tbody> 
   <tr>
     <td>[！UICONTROL Connection]</td>
-   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-salesforce">创建与Salesforce的连接</a>。</p> </td> 
   </tr> 
   <tr>
     <td>[！UICONTROL下载类型]</td>
@@ -451,7 +480,7 @@ Salesforce连接器使用以下对象：
  <tbody> 
   <tr>
     <td>[！UICONTROL Connection]</td>
-   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-salesforce">创建与Salesforce的连接</a>。</p> </td> 
   </tr> 
   <tr>
     <td>[！UICONTROL记录类型]</td>
@@ -459,7 +488,7 @@ Salesforce连接器使用以下对象：
   </tr> 
   <tr>
     <td>[！UICONTROL记录字段]</td>
-    <td>选择您希望模块读取的字段。 您必须至少选择一个字段。</td>
+    <td>选择您希望模块读取的字段。 您必须至少选择一个字段。 可用字段取决于记录类型。</td>
   </tr> 
   <tr>
     <td>[！UICONTROL ID]</td>
@@ -467,26 +496,6 @@ Salesforce连接器使用以下对象：
   </tr> 
  </tbody> 
 </table>
-
->[!INFO]
->
->**示例：**&#x200B;以下API调用返回您[!DNL Salesforce]帐户中所有用户的列表：
->
->* **URL**： `query`
->
->* **方法**： [!UICONTROL GET]
->
->* **查询字符串**：
->
->* **键**： `q`
->
->* **值**： `SELECT Id, Name, CreatedDate, LastModifiedDate FROM User LIMIT 10`
->
->在&#x200B;**[!UICONTROL 包] > [!UICONTROL 正文] > [!UICONTROL 记录]**&#x200B;下的模块输出中可以找到搜索匹配项。
->
->在我们的示例中，返回了6个用户：
->
->![搜索匹配](/help/workfront-fusion/references/apps-and-modules/assets/matches-of-the-search-350x573.png)
 
 
 #### [!UICONTROL 更新记录]
@@ -505,7 +514,7 @@ Salesforce连接器使用以下对象：
  <tbody> 
   <tr> 
    <td>[！UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-salesforce">创建与Salesforce的连接</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[！UICONTROL ID]</td> 
@@ -537,7 +546,7 @@ Salesforce连接器使用以下对象：
  <tbody> 
   <tr> 
    <td>[！UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-salesforce">创建与Salesforce的连接</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[！UICONTROL上载类型]</td> 
@@ -549,7 +558,7 @@ Salesforce连接器使用以下对象：
   </tr> 
   <tr> 
    <td>[！UICONTROL文件夹]</td> 
-   <td>选择包含您希望模块上传的文件的文件夹。 </td> 
+   <td>选择要上载文档的文件夹。 </td> 
   </tr> 
   <tr> 
    <td>[！UICONTROL Source File]</td> 
@@ -561,8 +570,6 @@ Salesforce连接器使用以下对象：
 #### 上传文件
 
 此操作模块会将单个文件上传到Salesforce。
-
-
 
 <table style="table-layout:auto"> 
  <col> 
@@ -591,47 +598,14 @@ Salesforce连接器使用以下对象：
   <tr> 
    <td role="rowheader">[！UICONTROL可见性]</td> 
    <td>如果使用文档链接，请输入或映射文档的可见性。<ul><li><b>AllUsers</b><p>适用于所有具有权限的用户</p></li><li><b>InternalUsers</b><p>可供具有权限的内部用户使用。</p></li><li><b>共享用户</b><p>可供可以查看文件发布到的馈送的用户使用。</p></li></ul></td> 
-  </tr>
-
-### 搜索
-
-#### [!UICONTROL 使用查询搜索]
-
-此搜索模块在[!DNL Salesforce]中查找与您指定的搜索查询匹配的对象中的记录。 您可以在场景的后续模块中映射此信息。
-
-配置此模块时，会显示以下字段。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td>[！UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[！UICONTROL搜索类型]</td> 
-   <td> <p>选择您希望模块执行的搜索类型：</p> 
-    <ul> 
-     <li> <p>[！UICONTROL Simple]</p> </li> 
-     <li> <p>[！UICONTROL使用SOSL(Salesforce对象搜索语言)]</p> </li> 
-     <li> <p>[！UICONTROL使用SOQL(Salesforce对象查询语言)]</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td> <p>[！UICONTROL类型] </p> </td> 
-   <td> <p>如果您选择了简单搜索类型，请选择您希望模块搜索的[!DNL Salesforce]记录的类型。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[！UICONTROL查询] / [！UICONTROL SOSL查询] / [！UICONTROL SOQL查询]</td> 
-   <td> <p>输入要作为搜索依据的查询。</p> <p>有关SOSL的详细信息，请参阅[!DNL Salesforce]文档中的<a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce对象搜索语言(SOSL)</a>。</p> <p>有关SOQL的详细信息，请参阅[!DNL Salesforce]文档中的<a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce对象查询语言(SOQL)</a>。</p> <p>注意：请注意，参数<code>RETURNING </code>的值会影响模块的输出。 如果您使用<code>LIMIT</code>，[!DNL Fusion]将忽略[！UICONTROL最大记录计数]字段中的设置。 如果不设置任何限制，Fusion将插入值[！UICONTROL LIMIT = Maximum count of records]。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>[！UICONTROL最大记录数]</td> 
-   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+### 搜索
+
+* [搜索](#search)
+* [通过查询搜索](#search-with-query)
 
 #### [!UICONTROL 搜索]
 
@@ -655,7 +629,7 @@ Salesforce连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[！UICONTROL输出]</td> 
-   <td>选择要包含在模块输出中的字段。</td> 
+   <td>选择要包含在模块输出中的字段。 字段基于记录类型可用。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[！UICONTROL结果集]</td> 
@@ -664,6 +638,44 @@ Salesforce连接器使用以下对象：
   <tr> 
    <td role="rowheader">[！UICONTROL最大]</td> 
    <td>输入或映射您希望模块在每个方案执行周期中检索的最大记录数。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL 使用查询搜索]
+
+此搜索模块在[!DNL Salesforce]中查找与您指定的搜索查询匹配的对象中的记录。 您可以在场景的后续模块中映射此信息。
+
+配置此模块时，会显示以下字段。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Salesforce]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#create-a-connection-to-salesforce">创建与Salesforce的连接</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[！UICONTROL搜索类型]</td> 
+   <td> <p>选择您希望模块执行的搜索类型：</p> 
+    <ul> 
+     <li> <p>[！UICONTROL Simple]</p> </li> 
+     <li> <p>[！UICONTROL使用SOSL(Salesforce对象搜索语言)]</p> </li> 
+     <li> <p>[！UICONTROL使用SOQL(Salesforce对象查询语言)]</p> </li> 
+    </ul> </td> 
+  </tr> 
+  <tr> 
+   <td> <p>[！UICONTROL类型] </p> </td> 
+   <td> <p>如果您选择了简单搜索类型，请选择您希望模块搜索的[!DNL Salesforce]记录的类型。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[！UICONTROL查询] / [！UICONTROL SOSL查询] / [！UICONTROL SOQL查询]</td> 
+   <td> <p>输入要作为搜索依据的查询。</p> <p>有关SOSL的详细信息，请参阅[!DNL Salesforce]文档中的<a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_sosl.htm">Salesforce对象搜索语言(SOSL)</a>。</p> <p>有关SOQL的详细信息，请参阅[!DNL Salesforce]文档中的<a href="https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm">Salesforce对象查询语言(SOQL)</a>。</p> <p>注意：请注意，参数<code>RETURNING </code>的值会影响模块的输出。 如果您使用<code>LIMIT</code>，[!DNL Fusion]将忽略[！UICONTROL最大记录计数]字段中的设置。 如果不设置任何限制，Fusion将插入值[！UICONTROL LIMIT = Maximum count of records]。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[！UICONTROL最大记录数]</td> 
+   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
 </table>
