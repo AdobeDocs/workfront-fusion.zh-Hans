@@ -4,9 +4,9 @@ description: 您可以使用Adobe Workfront Fusion Adobe Workfront连接器在Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: dab5aacd091cec2644f3e8ddac2549dac7b927b8
 workflow-type: tm+mt
-source-wordcount: '6684'
+source-wordcount: '7075'
 ht-degree: 2%
 
 ---
@@ -852,6 +852,79 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
 
 +++
 
++++ **更新事件有效负载版本**
+
+Workfront最近发布了其事件订阅服务的新版本。 新版本不是对Workfront API的更改，而是对事件订阅功能的更改。 此操作模块会更新用于此方案的事件有效负载版本。
+
+有关新的事件订阅版本的详细信息，请参阅Workfront文档中的[事件订阅版本控制](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[！UICONTROL Connection]</td> 
+   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[！UICONTROL版本]</td> 
+   <td> 选择要用于此有效负载的事件订阅的版本。 </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
++++
+
++++ **更新记录（附加自定义表单）**
+
+
+此操作模块可更新对象，如项目、任务或问题。 利用模块，可选择模块中可用的对象字段。
+
+您指定记录的ID。
+
+模块会返回对象的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+
+配置此模块时，会显示以下字段。
+
+<table style="table-layout:auto">
+ <col> 
+ </col> 
+ <col> 
+ </col> 
+ <tbody> 
+  <tr> 
+   <td>[！UICONTROL Connection]</td> 
+   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[！UICONTROL ID]</td> 
+   <td> <p>输入您希望模块更新的记录的唯一Workfront ID。</p> <p>要获取ID，请在浏览器中打开Workfront对象，并复制URL末尾处“ID=”后的文本。 例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!DNL Record Type]</td> 
+   <td> <p>选择要更新模块的Workfront记录类型。</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!DNL Select fields to map]</td> 
+   <td>选择可用于数据输入的字段。 这样，您就无需滚动浏览不需要的字段即可使用这些字段。 然后，您可以在这些字段中输入或映射数据。</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[!DNL Attach Custom Form]</td> 
+   <td>选择要附加到新记录的自定义表单。 选择表单后，为该表单上的字段输入数据。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+查看可在每个Workfront模块](#workfront-object-types-available-for-each-workfront-module)可用的[Workfront对象类型中使用此模块的Workfront对象类型列表。
+
+>[!NOTE]
+>
+> 输入自定义字段或[!UICONTROL Note]对象的文本（注释或回复）时，您可以使用[!UICONTROL 注释文本]字段中的HTML标记创建富文本，如粗体或斜体文本。
+
+
++++
+
 +++ **[!UICONTROL 更新记录]**
 
 此操作模块可更新对象，如项目、任务或问题。 利用模块，可选择模块中可用的对象字段。
@@ -1164,7 +1237,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>基线</td> 
+   <td>基准</td> 
    <td>✓</td> 
    <td> </td> 
    <td> </td> 
@@ -1451,7 +1524,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>基线</td> 
+   <td>基准</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
