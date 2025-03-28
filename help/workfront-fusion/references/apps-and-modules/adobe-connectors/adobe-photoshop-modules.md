@@ -4,9 +4,9 @@ description: 借助Adobe Photoshop模块，您可以根据Adobe Photoshop帐户�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
-source-git-commit: ad5701c5484da802dea8668c9c4aad58a6dba3eb
+source-git-commit: db1d6f5bf29063b069681395c6ff6d3554c67dc3
 workflow-type: tm+mt
-source-wordcount: '4352'
+source-wordcount: '4359'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,8 @@ ht-degree: 0%
 在使用[!DNL Adobe Photoshop]连接器之前，必须确保满足以下先决条件：
 
 * 您必须拥有有效的[!DNL Adobe Photoshop]帐户。
-* 您必须具有客户端ID和客户端密钥。 你可以从Adobe Developer Console上买到这些。
+* 您必须拥有Firefly服务许可证。
+* 您必须具有客户端ID和客户端密钥。 您可以从Adobe Developer Console获取这些资源。
 
 ## Adobe Photoshop API信息
 
