@@ -4,9 +4,9 @@ description: 您可以使用Adobe Workfront Fusion Adobe Workfront连接器在Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: dab5aacd091cec2644f3e8ddac2549dac7b927b8
+source-git-commit: 76272b2e9f084f670075d9b975ffa26c0be07fe5
 workflow-type: tm+mt
-source-wordcount: '7075'
+source-wordcount: '7796'
 ht-degree: 2%
 
 ---
@@ -375,7 +375,7 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
 
 +++
 
-+++ **[!UICONTROL 创建记录（附加自定义表单）]**
++++ **[!UICONTROL 创建记录]**
 
 此操作模块可在Workfront中创建对象，如项目、任务或问题，并允许您向新对象添加自定义表单。 利用模块，可选择模块中可用的对象字段。
 
@@ -422,7 +422,12 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
 
 +++
 
-+++ **[!UICONTROL 创建记录]**
++++ **[!UICONTROL 创建记录（旧版）]**
+
+>[!IMPORTANT]
+>
+>此模块已替换为创建记录模块。 我们建议在新场景中使用该模块。
+>使用此模块的现有方案将继续按预期运行。 此模块将于2025年5月从模块选择器中移除。
 
 此操作模块可在Workfront中创建对象，如项目、任务或问题。 利用模块，可选择模块中可用的对象字段。
 
@@ -820,8 +825,65 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
  <tbody> 
   <tr> 
     <td>[！UICONTROL Connection]</td>
+    <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[！UICONTROL记录类型]</td>
 
-<td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+<td>选择要让模块读取的Workfront对象类型。</td> 
+  </tr> 
+  <tr> 
+    <td>[！UICONTROL输出]</td>
+
+<td> <p>选择要包含在此模块的输出捆绑包中的信息。</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[！UICONTROL输出自定义表单]</td>
+     <td> <p>选择要包含在此模块输出捆绑包中的自定义表单，然后从要包含在输出中的自定义表单中选择特定字段。</p> </td> 
+  </tr> 
+  <tr> 
+    <td>[！UICONTROL引用]</td>
+   <td>选择要包含在输出中的任何引用字段。</td> 
+  </tr> 
+  <tr> 
+    <td>[！UICONTROL收藏集]</td>
+   <td>选择要包含在输出中的任何引用字段。</td> 
+  </tr> 
+  <tr> 
+    <td>[！UICONTROL ID]</td>
+   <td> <p>输入您希望模块读取的记录的唯一Workfront ID。</p> <p>要获取ID，请在浏览器中打开Workfront对象，并复制URL末尾处“ID=”后的文本。 例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+查看可在每个Workfront模块](#workfront-object-types-available-for-each-workfront-module)可用的[Workfront对象类型中使用此模块的Workfront对象类型列表。
+
++++
+
++++ **[!UICONTROL 读取记录（旧版）]**
+
+>[!IMPORTANT]
+>
+>此模块已替换为读取记录模块。 我们建议在新场景中使用该模块。
+>使用此模块的现有方案将继续按预期运行。 此模块将于2025年5月从模块选择器中移除。
+
+此操作模块从单个记录中检索数据。
+
+您指定记录的ID。 您还可以指定希望模块读取哪些相关记录。
+
+例如，如果模块正在读取的记录是项目，则可以指定希望读取项目的任务。
+
+模块会从您指定的输出字段中返回一个数据数组。
+
+配置此模块时，会显示以下字段。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+    <td>[！UICONTROL Connection]</td>
+    <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
     <td>[！UICONTROL记录类型]</td>
@@ -876,7 +938,12 @@ Workfront最近发布了其事件订阅服务的新版本。 新版本不是对W
 
 +++
 
-+++ **更新记录（附加自定义表单）**
++++ **更新记录**
+
+>[!IMPORTANT]
+>
+>此模块已替换为更新记录模块。 我们建议在新场景中使用该模块。
+>使用此模块的现有方案将继续按预期运行。 此模块将于2025年5月从模块选择器中移除。
 
 
 此操作模块可更新对象，如项目、任务或问题。 利用模块，可选择模块中可用的对象字段。
@@ -925,7 +992,7 @@ Workfront最近发布了其事件订阅服务的新版本。 新版本不是对W
 
 +++
 
-+++ **[!UICONTROL 更新记录]**
++++ **[!UICONTROL 更新记录（旧版）]**
 
 此操作模块可更新对象，如项目、任务或问题。 利用模块，可选择模块中可用的对象字段。
 
@@ -1095,9 +1162,69 @@ Workfront最近发布了其事件订阅服务的新版本。 新版本不是对W
  </tbody> 
 </table>
 
++++ **[!UICONTROL 搜索记录]**
+
+此搜索模块在Workfront中查找与您指定的搜索查询匹配的对象中的记录。
+
+您可以在场景的后续模块中映射此信息。
+
+配置此模块时，会显示以下字段。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td>[！UICONTROL Connection]</td> 
+   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[！UICONTROL记录类型]</td> 
+   <td> <p>选择要模块搜索的Workfront记录类型。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[！UICONTROL自定义表单列表]</td> 
+   <td> <p>至少选择一个自定义表单。 这些自定义表单中的字段可用于搜索查询。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[！UICONTROL结果集]</td> 
+   <td>选择一个选项，以指定您希望模块获得符合您的搜索条件的第一个结果还是所有符合该条件的结果。</td> 
+  </tr> 
+  <tr> 
+   <td>[！UICONTROL最大]</td> 
+   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[！UICONTROL搜索条件字段]</td> 
+   <td> <p>选择要用于搜索条件的字段。 随后，这些字段将显示在搜索条件下拉列表中。</p></td> 
+  </tr> 
+  <tr> 
+   <td>[！UICONTROL搜索条件]</td> 
+   <td> <p>输入搜索依据的字段、要在查询中使用的运算符以及要在字段中搜索的值。</p> <p>注意：请勿在您的搜索条件中使用<code>username </code>。 若在Workfront的API查询中包含<code>username </code>，则会将用户记录到Workfront中，搜索将不会成功。</p> <p>注意： <code>In</code>和<code>NotIn</code>使用数组。 输入的格式应为数组。</p></td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[！UICONTROL输出]</td> 
+   <td> <p>选择要包含在此模块输出中的字段。</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[！UICONTROL引用]</td> 
+   <td>选择要包含在搜索中的任何引用字段。</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td>[！UICONTROL收藏集]</td> 
+   <td>选择要添加到搜索的任何收藏集。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 +++
 
-+++ **[!UICONTROL 搜索]**
++++ **[!UICONTROL 搜索（旧版）]**
+
+>[!IMPORTANT]
+>
+>此模块已替换为搜索记录模块。 我们建议在新场景中使用该模块。
+>使用此模块的现有方案将继续按预期运行。 此模块将于2025年5月从模块选择器中移除。
 
 此搜索模块在Workfront中查找与您指定的搜索查询匹配的对象中的记录。
 
