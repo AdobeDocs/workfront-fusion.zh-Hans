@@ -4,7 +4,7 @@ description: 您可以使用Adobe Workfront Fusion Adobe Workfront连接器在Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 76272b2e9f084f670075d9b975ffa26c0be07fe5
+source-git-commit: 5ba6e0ba687eb290c7d8882c6a615de8b3692617
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 2%
@@ -940,11 +940,6 @@ Workfront最近发布了其事件订阅服务的新版本。 新版本不是对W
 
 +++ **更新记录**
 
->[!IMPORTANT]
->
->此模块已替换为更新记录模块。 我们建议在新场景中使用该模块。
->使用此模块的现有方案将继续按预期运行。 此模块将于2025年5月从模块选择器中移除。
-
 
 此操作模块可更新对象，如项目、任务或问题。 利用模块，可选择模块中可用的对象字段。
 
@@ -993,6 +988,11 @@ Workfront最近发布了其事件订阅服务的新版本。 新版本不是对W
 +++
 
 +++ **[!UICONTROL 更新记录（旧版）]**
+
+>[!IMPORTANT]
+>
+>此模块已替换为更新记录模块。 我们建议在新场景中使用该模块。
+>使用此模块的现有方案将继续按预期运行。 此模块将于2025年5月从模块选择器中移除。
 
 此操作模块可更新对象，如项目、任务或问题。 利用模块，可选择模块中可用的对象字段。
 
