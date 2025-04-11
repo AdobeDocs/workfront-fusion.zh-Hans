@@ -5,9 +5,9 @@ description: 本文介绍了场景的执行方式以及数据流通过场景的�
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 0%
 # 方案执行流程
 
 本文介绍了场景如何执行以及数据流经场景以及如何查看每个模块处理的数据。
+
+要查看数据如何流经活动方案，请参阅[查看正在运行方案中的数据流](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)。
 
 ## 方案执行流程
 
@@ -26,7 +28,7 @@ ht-degree: 0%
 
 如果捆绑包在所有模块中正确处理，则在“方案详细信息”页面中将该方案标记为成功。
 
-### 示例： [!UICONTROL [!DNL Workfront Fusion] for Work Automation]
+### 示例：工作自动化]的[!UICONTROL [!DNL Workfront Fusion]
 
 >[!BEGINSHADEBOX]
 
@@ -40,7 +42,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-### 示例： [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration]
+### 示例： [!UICONTROL [!DNL Workfront Fusion]工作自动化和集成]
 
 >[!BEGINSHADEBOX]
 
