@@ -4,16 +4,23 @@ description: Adobe Workfront Fusion映射面板中提供了以下常规函数。
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: 295004ab7536b85124bc366d6832c08365338d08
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
 
 # 常规函数
 
-## [!UICONTROL get (object or array; path)]
+## 变量
+
+您可以使用两个常规变量来标识有关执行的详细信息：
+
+* `executionID`：此方案执行的ID
+* `triggerTimestamp`：触发此执行的时间
+
+## [!UICONTROL get （对象或数组；路径）]
 
 返回对象或数组的值路径。 要访问嵌套对象，请使用点表示法。 数组中的第一项是索引1。
 
@@ -28,7 +35,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL if (expression; value1; value2)]
+## [!UICONTROL if （表达式；值1；值2）]
 
 如果表达式计算为true，则返回`value1`；否则，返回`value2`。
 
@@ -56,7 +63,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL ifempty (value1; value2)]
+## [!UICONTROL ifempty （值1；值2）]
 
 如果此值不为空，则返回`value1`；否则返回`value2`。
 
@@ -78,7 +85,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL switch (expression; value1; result1; [value2; result2; ...]; [else])]
+## [!UICONTROL switch （表达式；值1；结果1；[值2；结果2； ...]；[else]）]
 
 根据值列表计算一个值（称为表达式）；返回与第一个匹配值对应的结果。 要包含`else`值，请将其添加到最终表达式或值之后。
 
@@ -102,7 +109,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL omit(object; key1; [key2; ...])]
+## [!UICONTROL 省略（对象；键1；[键2； ...]）]
 
 省略对象的给定键并返回其余键。
 
@@ -116,7 +123,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL pick(object; key1; [key2; ...])]
+## [!UICONTROL pick(object； key1； [key2； ...])]
 
 仅从对象中选取给定的键。
 
