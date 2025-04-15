@@ -4,16 +4,31 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 31487c8b5b6efad1e6d7817dfe7dda67eea88e43
 workflow-type: tm+mt
-source-wordcount: '2510'
+source-wordcount: '2586'
 ht-degree: 0%
 
 ---
 
-# [!DNL Frame.io]模块
+# [!DNL Frame.io]个旧模块
+
+>[!IMPORTANT]
+>
+>本文介绍了旧版Frame.io连接器。 此连接器用于连接到Frame.io版本3。
+>
+>有关Frame.io连接器的新（测试版）版本的说明，请参阅[Frame.io Beta连接器](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)。
 
 通过[!DNL Adobe Workfront Fusion] [!DNL Frame.io]模块，您可以在[!DNL Frame.io]帐户中监视、创建、更新、检索或删除资源和评论。
+
+Workfront提供了两个Frame.io连接器，它们基于您所连接的Frame.io版本。
+
+| 连接器 | Frame.io版本 |
+|---|---|
+| Frame.io (Beta) | V4 |
+| Frame.io（旧版） | V3 |
+
+有关Frame.io连接器的新（测试版）版本的说明，请参阅[Frame.io Beta连接器](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)。
 
 有关Frame.io连接器的视频介绍，请参阅：
 
@@ -452,7 +467,7 @@ Frame.io连接器使用以下对象：
 * [[!UICONTROL 删除评论]](#delete-a-comment)
 * [[!UICONTROL 获取评论]](#get-a-comment)
 * [[!UICONTROL 列出评论]](#list-comments)
-* [[!UICONTROL 更新评论]](#update-a-comment)
+* [[!UICONTROL 更新注释]](#update-a-comment)
 * [[!UICONTROL 观看评论已更新]](#watch-comment-updated)
 * [[!UICONTROL 观看新评论]](#watch-new-comment)
 
@@ -595,10 +610,10 @@ Frame.io连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[！UICONTROL文件夹ID] </td> 
-   <td> <p>选择包含要从中列出注释的资源文件夹。</p> </td> 
+   <td> <p>选择包含要从中列出注释的资源所在的文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资产ID] </td> 
+   <td role="rowheader">[！UICONTROL Asset ID] </td> 
    <td> <p>选择要为其列出注释的资源。</p> </td> 
   </tr> 
   <tr> 
@@ -626,7 +641,7 @@ Frame.io连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[！UICONTROL项目ID] </td> 
-   <td> <p>选择包含要更新评论的资源的项目\ 。</p> </td> 
+   <td> <p>选择包含要更新评论的资源的项目。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[！UICONTROL文件夹ID] </td> 
