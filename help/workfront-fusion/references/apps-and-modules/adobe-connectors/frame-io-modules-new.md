@@ -1,11 +1,12 @@
 ---
-title: Frame.io模块
+title: Frame.io (Beta)模块
 description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] 帐户。'
 author: Becky
 feature: Workfront Fusion
-source-git-commit: c0b08b206f69d6af3b629c5d31cc0b840edea766
+exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
+source-git-commit: d81785ec60dfd74583a54a75ab1bfc1a253d8faf
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2168'
 ht-degree: 1%
 
 ---

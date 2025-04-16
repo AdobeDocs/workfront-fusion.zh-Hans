@@ -1,12 +1,12 @@
 ---
-title: Frame.io模块
+title: Frame.io（旧版）模块
 description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to monitor, create, update, retrieve, or delete assets and comments in your [!DNL Frame.io] 帐户。'
 author: Becky
 feature: Workfront Fusion
 exl-id: 121b145c-d04d-44b9-b673-ea2928e2346d
-source-git-commit: 31487c8b5b6efad1e6d7817dfe7dda67eea88e43
+source-git-commit: 31266e79d736cdb055bb0ad36a75ac61ce426ec2
 workflow-type: tm+mt
-source-wordcount: '2586'
+source-wordcount: '2587'
 ht-degree: 0%
 
 ---
@@ -467,7 +467,7 @@ Frame.io连接器使用以下对象：
 * [[!UICONTROL 删除评论]](#delete-a-comment)
 * [[!UICONTROL 获取评论]](#get-a-comment)
 * [[!UICONTROL 列出评论]](#list-comments)
-* [[!UICONTROL 更新注释]](#update-a-comment)
+* [[!UICONTROL 更新评论]](#update-a-comment)
 * [[!UICONTROL 观看评论已更新]](#watch-comment-updated)
 * [[!UICONTROL 观看新评论]](#watch-new-comment)
 
@@ -610,10 +610,10 @@ Frame.io连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[！UICONTROL文件夹ID] </td> 
-   <td> <p>选择包含要从中列出注释的资源所在的文件夹。</p> </td> 
+   <td> <p>选择包含要从中列出注释的资源文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Asset ID] </td> 
+   <td role="rowheader">[！UICONTROL资产ID] </td> 
    <td> <p>选择要为其列出注释的资源。</p> </td> 
   </tr> 
   <tr> 
