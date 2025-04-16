@@ -4,14 +4,16 @@ description: 您可以恢复方案的先前版本。 这允许您对方案进行
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '287'
+ht-degree: 1%
 
 ---
 
-# 恢复方案版本
+# 查看和管理方案版本
+
+您可以查看、还原或重命名方案的早期版本。
 
 ## 访问要求
 
@@ -29,7 +31,7 @@ ht-degree: 2%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td> <p>新文档： [！UICONTROL Standard]</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
@@ -42,7 +44,7 @@ ht-degree: 2%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新增：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包含[！UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
    </td> 
@@ -65,16 +67,20 @@ ht-degree: 2%
 
 +++
 
-## 恢复方案版本
+<!--procedure - open, optional add comment, optional restore version-->
 
-1. 打开您的方案。
-1. 单击屏幕底部的[!UICONTROL More]图标![更多图标](assets/more-icon.png)，然后单击&#x200B;**[!UICONTROL Previous Versions]**。
+## 查看和管理方案的版本历史记录
 
-1. 单击&#x200B;**[!UICONTROL Pick the version]**，然后单击要还原的版本。
-1. 单击 **[!UICONTROL OK]**。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]** ![方案图标](assets/scenarios-icon.png)，然后单击方案以将其打开。
+1. 单击屏幕底部的[!UICONTROL 更多]图标![更多图标](assets/more-icon.png)，然后单击&#x200B;**[!UICONTROL 以前的版本]**。
 
-   将恢复选定的方案版本。
+   此时将显示早期版本的列表。
+1. （可选）若要重命名版本，请单击该版本行上的更多菜单![更多菜单](assets/more-icon-vertical.png)，选择&#x200B;**编辑**，然后在字段中输入名称。 单击&#x200B;**保存**&#x200B;以保存新名称。
 
->[!NOTE]
->
->方案的还原版本不会自动保存。 如果要保存方案的恢复版本，则必须手动保存。
+   我们建议提供一个名称，用于描述对此版本所做的更改。
+1. （可选）要还原该版本，请单击该版本行上的还原![更多菜单](assets/more-icon-vertical.png)
+
+
+   >[!NOTE]
+   >
+   >方案的还原版本不会自动保存。 如果要保存方案的恢复版本，则必须手动保存。
