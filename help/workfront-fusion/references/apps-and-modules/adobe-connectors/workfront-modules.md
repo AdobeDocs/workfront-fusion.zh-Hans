@@ -4,9 +4,9 @@ description: 您可以使用Adobe Workfront Fusion Adobe Workfront连接器在Wo
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 5ba6e0ba687eb290c7d8882c6a615de8b3692617
+source-git-commit: 7287e0460318cf5328e703af7ecc948b1ce62257
 workflow-type: tm+mt
-source-wordcount: '7796'
+source-wordcount: '7795'
 ht-degree: 2%
 
 ---
@@ -1162,7 +1162,9 @@ Workfront最近发布了其事件订阅服务的新版本。 新版本不是对W
  </tbody> 
 </table>
 
-+++ **[!UICONTROL 搜索记录]**
++++
+
++++ **[!UICONTROL 搜索]**
 
 此搜索模块在Workfront中查找与您指定的搜索查询匹配的对象中的记录。
 
