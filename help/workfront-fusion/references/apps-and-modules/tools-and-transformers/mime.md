@@ -4,10 +4,10 @@ description: 您可以在Adobe Workfront Fusion中使用MIME类型。 多用途I
 author: Becky
 feature: Workfront Fusion
 exl-id: 9259356b-5b42-4b6d-9854-fce9718d14e3
-source-git-commit: e14f49dbb7b57a7247a62a27205df1b6da11a259
+source-git-commit: 7edfe4a7b19597ea6e56bb2ca3969d742dbaf999
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 1%
+source-wordcount: '367'
+ht-degree: 0%
 
 ---
 
@@ -36,9 +36,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求</p>
-   <p>或</p>
-   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
+   <p>无Workfront Fusion许可证要求</p>
    </td> 
   </tr> 
   <tr> 
