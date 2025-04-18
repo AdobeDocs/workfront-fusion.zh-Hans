@@ -4,7 +4,7 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
 workflow-type: tm+mt
 source-wordcount: '3203'
 ht-degree: 0%
@@ -122,7 +122,6 @@ Dropbox连接器使用以下对象：
         <tr>
         <td role="rowheader">[！UICONTROL类型]</td>
         <td>选择您是要连接到服务帐户还是个人帐户。</td>
-        </tr>
         </tr>
         <tr>
         <td role="rowheader">[！UICONTROL客户端ID]</td>

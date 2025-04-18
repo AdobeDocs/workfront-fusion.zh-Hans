@@ -5,9 +5,9 @@ author: Becky
 draft: Probably
 feature: Workfront Fusion
 exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -22,42 +22,46 @@ ht-degree: 0%
 
 ## 访问要求
 
++++ 展开以查看本文中各项功能的访问要求。
+
 您必须具有以下权限才能使用本文中的功能：
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 计划*</td>
-  <td> <p>[!UICONTROL Pro] 或更高</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td>
-   <td> <p>[!UICONTROL Plan]， [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求</p>
    <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion]用于工作自动化和集成] </p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 先决条件
 
@@ -67,7 +71,7 @@ ht-degree: 0%
 
 您可以在[!DNL MariaDB]模块内直接创建与[!DNL MariaDB]帐户的连接。
 
-1. 在任意[!DNL MariaDB]模块中，单击[!UICONTROL Connection]字段旁边的&#x200B;**[!UICONTROL Add]**。
+1. 在任意[!DNL MariaDB]模块中，单击[!UICONTROL 连接]字段旁边的&#x200B;**[!UICONTROL 添加]**。
 1. 配置以下字段：
 
    <table style="table-layout:auto"> 
@@ -75,33 +79,41 @@ ht-degree: 0%
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
+      <td role="rowheader"> <p>[！UICONTROL连接名称]</p> </td> 
       <td> <p>输入新连接的名称。</p> </td> 
      </tr> 
+        <tr>
+        <td role="rowheader">[！UICONTROL环境]</td>
+        <td>选择此连接是用于生产环境还是非生产环境。</td>
+        </tr>
+        <tr>
+        <td role="rowheader">[！UICONTROL类型]</td>
+        <td>选择您是要连接到服务帐户还是个人帐户。</td>
+        </tr>
      <tr> 
-      <td role="rowheader">[!UICONTROL Host]</td> 
+      <td role="rowheader">[！UICONTROL主机]</td> 
       <td> <p>输入数据库实例的IP地址或主机名。 此主机必须可从网络外部访问。</p> <p>示例： <code>[!DNL mariadb.hwoh2j5h.us-east-1.rds.amazon.com]</code></p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Port]</td> 
+      <td role="rowheader">[！UICONTROL端口]</td> 
       <td>默认端口为3306。 如果您使用的是非标准端口，请将此号码设置为您的端口。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Database Name]</td> 
+      <td role="rowheader">[！UICONTROL数据库]</td> 
       <td>输入要与之交互的数据库名称。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Username]</td> 
+      <td role="rowheader">[！UICONTROL用户]</td> 
       <td>输入您的用户名。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Password]</td> 
+      <td role="rowheader">[！UICONTROL密码]</td> 
       <td>输入密码。</td> 
      </tr> 
     </tbody> 
    </table>
 
-1. 单击&#x200B;**[!UICONTROL Continue]**&#x200B;以创建连接并返回模块。
+1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;以创建连接并返回模块。
 
 ## [!DNL MariaDB]模块及其字段
 
@@ -120,17 +132,17 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
    <td>有关将[!DNL MariaDB]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">将[!DNL MariaDB]连接到[!DNL Workfront Fusion]</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query]</td> 
+   <td role="rowheader">[！UICONTROL Query]</td> 
    <td> <p>输入您希望模块用于检索数据的SQL查询。</p> <p>重要信息：查询中使用的变量不会经过清理。 确保正确清理变量以防止SQL注入。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### [!UICONTROL Select rows from a table (advanced)]
+### [!UICONTROL 从表中选择行（高级）]
 
 此模块从数据库中读取记录。
 
@@ -139,15 +151,15 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
    <td>有关将[!DNL MariaDB]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">将[!DNL MariaDB]连接到[!DNL Workfront Fusion]</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Table]</td> 
+   <td role="rowheader">[！UICONTROL表]</td> 
    <td> <p>选择包含要读取的记录的表。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Filter]</td> 
+   <td role="rowheader">[！UICONTROL筛选器]</td> 
    <td> <p>设置要按其选择行的筛选器</p> 
     <ul> 
      <li> <p>选择要作为搜索依据的字段</p> </li> 
@@ -156,11 +168,11 @@ ht-degree: 0%
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sort] </td> 
-   <td> <p>对于要作为结果排序依据的每个级别，单击<strong>[!UICONTROL Add item]</strong>，然后选择要作为结果排序依据的字段以及要按升序还是按降序排序</p> </td> 
+   <td role="rowheader">[！UICONTROL排序] </td> 
+   <td> <p>对于要作为结果排序依据的每个级别，单击<strong>[！UICONTROL添加项]</strong>，然后选择要作为结果排序依据的字段以及要按升序还是降序排序</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
+   <td role="rowheader">[！UICONTROL限制]</td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
