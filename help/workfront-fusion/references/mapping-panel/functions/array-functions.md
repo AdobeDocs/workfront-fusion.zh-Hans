@@ -4,48 +4,48 @@ description: Adobe Workfront Fusion映射面板中提供了以下数组函数。
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: 2c732659f3f3e81e13b7b12a5df5bde19c0e0928
+source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
 # 数组函数
 
-## [!UICONTROL join (array; separator)]
+## [!UICONTROL 联接（数组；分隔符）]
 
 将数组的全部项串联到一个字符串中，在每个项之间使用指定的分隔符。
 
-## [!UICONTROL length (array)]
+## [!UICONTROL 长度（数组）]
 
 返回数组中的项数。
 
-## [!UICONTROL keys (object)]
+## [!UICONTROL 键（对象）]
 
 返回给定对象或数组的属性的数组。
 
-## [!UICONTROL slice (array; start; [end])]
+## [!UICONTROL 片（数组；开始；[结束]）]
 
 返回仅包含选定项目的新数组。
 
-## [!UICONTROL merge (array1; array2; ...)]
+## [!UICONTROL 合并(array1； array2； ...)]
 
 将一个或多个阵列合并到一个阵列中。
 
-## [!UICONTROL contains (array; value)]
+## [!UICONTROL 包含（数组；值）]
 
 验证数组是否包含值。
 
-## [!UICONTROL remove (array; value1; value2; ...)]
+## [!UICONTROL 移除（数组；值1；值2； ...）]
 
 删除数组的参数中指定的值。 此函数仅对文本或数字的原始数组有效。
 
-## [!UICONTROL add (array; value1; value2; ...)]
+## [!UICONTROL 添加（数组；值1；值2； ...）]
 
 将参数中指定的值添加到数组中并返回该数组。
 
-## [!UICONTROL map (complex array; key;[key for filtering];[possible values for filtering])]
+## [!UICONTROL 映射（复数数组；键；[用于筛选的键]；[用于筛选的可能值]）]
 
 返回包含复杂数组的值的原始数组。 此函数允许过滤值。 对键使用原始变量名称。
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ## 随机播放
 
-## [!UICONTROL sort (array; [order]; [key])]
+## [!UICONTROL 排序（数组；[顺序]；[键]）]
 
 对数组的值进行排序。 `order`参数的有效值为：
 
@@ -117,15 +117,15 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL reverse (array)]
+## [!UICONTROL 反向（数组）]
 
 数组的第一个元素成为最后一个元素，第二个元素成为倒数第二个元素，依此类推。
 
-## [!UICONTROL flatten (array)]
+## [!UICONTROL 平面化（数组）]
 
 创建一个新数组，其中所有子数组元素以递归方式连接到该数组，直至指定深度。
 
-## [!UICONTROL distinct (array; [key])]
+## [!UICONTROL distinct （数组；[键]）]
 
 删除数组中的重复项。 使用“[!UICONTROL key]”参数访问复杂对象内的属性。 要访问嵌套属性，请使用点表示法。 数组中的第一项是索引1。
 
@@ -138,6 +138,39 @@ ht-degree: 0%
 >[!ENDSHADEBOX]
 
 ## toCollection
+
+* 此函数接受一个包含键值对的数组，并将其转换为一个集合。 函数有3个参数：
+
+* （数组）包含键值对
+* （字符串）用作键的字段的名称
+* （字符串）要用作值的字段的名称
+
+>[!BEGINSHADEBOX]
+
+示例：
+
+给定数组：
+
+```
+[{"name":"Bob", "age":22}, {"name":"Tim", "age":23}]
+```
+
+和参数
+
+```
+{{toCollection(6.array; "name"; "age")}}
+```
+
+函数返回
+
+```
+{
+    "Bob": 22,
+    "Tim": 23
+}
+```
+
+>[!ENDSHADEBOX]
 
 ## toArray
 
@@ -161,7 +194,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL arrayDifference [array1, array2, mode]]
+## [!UICONTROL arrayDifference [array1， array2， mode]]
 
 返回两个数组之间的差值。
 

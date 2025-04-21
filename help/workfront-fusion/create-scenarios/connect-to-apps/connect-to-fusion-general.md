@@ -4,9 +4,9 @@ description: 许多 [!DNL Adobe Workfront Fusion] 连接器在创建连接时不
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 6aec65919e79a9e9d950a11de53bfbb1051ca20b
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -68,12 +68,14 @@ ht-degree: 0%
 
 ## 创建连接
 
+要创建与给定应用程序的连接，您必须处于该应用程序的模块中。 例如，要创建与Workfront的连接，您必须在Workfront模块中。
+
 要在[!DNL Workfront Fusion]模块内创建连接，请执行以下操作：
 
-1. 单击[!UICONTROL 连接]框旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;以打开&#x200B;**[!UICONTROL 创建连接]**&#x200B;面板。
+1. 在给定应用程序的任意模块中，单击[!UICONTROL 连接]框旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;以打开&#x200B;**[!UICONTROL 创建连接]**&#x200B;面板。
 1. （可选）更改默认&#x200B;**[!UICONTROL 连接名称]**。
-1. 在环境字段中，选择是生产环境还是非生产环境。 此信息显示在Fusion的“连接”区域中。
-1. 在“类型”字段中，选择此帐户是服务帐户还是个人帐户。 此信息显示在Fusion的“连接”区域中。
+1. 在环境字段中，选择是生产环境还是非生产环境。
+1. 在“类型”字段中，选择此帐户是服务帐户还是个人帐户。
 1. （有条件）如果应用程序需要高级连接设置（如ID、密钥或[!UICONTROL 密钥]），请输入该信息。
 
    您可能需要单击&#x200B;**[!UICONTROL 显示高级设置]**&#x200B;以显示可在其中输入此类信息的字段。
@@ -84,6 +86,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >某些Microsoft应用程序使用相同的连接，该连接与单个用户权限相关联。 因此，在创建连接时，权限同意屏幕除了显示当前应用程序所需的任何新权限外，还会显示以前授予此用户连接的任何权限。
+   >* “环境”和“类型”字段仅供参考，不会更改连接的功能。 此信息显示在Fusion的“连接”区域中，允许您确定要在组织中的给定用例中使用的连接。
+   >* 某些Microsoft应用程序使用相同的连接，该连接与单个用户权限相关联。 因此，在创建连接时，权限同意屏幕除了显示当前应用程序所需的任何新权限外，还会显示以前授予此用户连接的任何权限。
    >
-   >例如，如果用户拥有通过Excel Connector授予的“读取表”权限，然后在Outlook Connector中创建连接以读取电子邮件，则权限同意屏幕将显示已授予的“读取表”权限和新要求的“写入电子邮件”权限。
+   >   例如，如果用户拥有通过Excel Connector授予的“读取表”权限，然后在Outlook Connector中创建连接以读取电子邮件，则权限同意屏幕将显示已授予的“读取表”权限和新要求的“写入电子邮件”权限。
