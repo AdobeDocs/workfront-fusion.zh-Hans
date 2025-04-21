@@ -4,9 +4,9 @@ description: 以下日期和时间函数在Adobe Workfront Fusion映射面板中
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1876'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ## 函数
 
-### [!UICONTROL addSeconds (date; number)]
+### [!UICONTROL addSeconds（日期；数字）]
 
 将给定秒数添加到日期后返回新日期。 要减去秒数，请输入一个负数。
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMinutes (date; number)] {#addminutes-date-number}
+### [!UICONTROL addMinutes （日期；数字）] {#addminutes-date-number}
 
 将给定分钟数添加到日期后返回新日期。 要减去分钟，请输入一个负数。
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addHours (date; number)] {#addhours-date-number}
+### [!UICONTROL addHours （日期；数字）] {#addhours-date-number}
 
 将给定小时数添加到日期后返回新日期。 要减去小时数，请输入负数。
 
@@ -79,7 +79,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addDays (date; number)] {#adddays-date-number}
+### [!UICONTROL addDays （日期；数字）] {#adddays-date-number}
 
 将给定天数添加到日期后返回新日期。 要减去天数，请输入一个负数。
 
@@ -97,7 +97,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMonths (date; number)]
+### [!UICONTROL addMonths（日期；数字）]
 
 向日期添加指定月份数后，返回新日期。 要减去月份，请输入负数。
 
@@ -115,7 +115,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addYears (date; number)]
+### [!UICONTROL addYears （日期；数字）]
 
 将给定年数添加到日期后返回新日期。 要减去年数，请输入一个负数。
 
@@ -133,7 +133,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setSecond (date; number)]
+### [!UICONTROL setSecond （日期；数字）]
 
 此函数使用参数中指定的秒数返回新日期。
 
@@ -149,13 +149,13 @@ ht-degree: 1%
 
   返回2015-10-07T11:36:10.138Z
 
-* `setSecond(2015-10-07T11:36:39.138Z; 6)`
+* `setSecond(2015-10-07T11:36:39.138Z; 61)`
 
   返回2015-10-07T11:37:01.138Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMinute (date; number)]
+### [!UICONTROL setMinute （日期；数字）]
 
 此函数使用参数中指定的分钟数返回一个新日期。
 
@@ -177,7 +177,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setHour (date; number)]
+### [!UICONTROL setHour（日期；数字）]
 
 此函数使用参数中指定的小时数返回一个新日期。
 
@@ -199,7 +199,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setDay (date; number/name of the day in English)]
+### [!UICONTROL setDay （日期；英文的日期编号/名称）]
 
 此函数使用参数中指定的日期返回一个新日期。
 
@@ -225,7 +225,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setDate (date; number)]
+### [!UICONTROL setDate （日期；数字）]
 
 此函数返回一个新日期，其中包含在参数中指定的月份日期。
 
@@ -245,7 +245,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setMonth (date; number/name of the month in English)]
+### [!UICONTROL setMonth（日期；英文月份编号/名称）]
 
 此函数使用参数中指定的月份返回一个新日期。
 
@@ -269,7 +269,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setYear (date; number)]
+### [!UICONTROL setYear（日期；数字）]
 
 返回具有参数中指定的年份的新日期。
 
@@ -283,7 +283,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL formatDate (date; format; [timezone])]
+### [!UICONTROL formatDate （日期；格式；[时区]）]
 
 当您有日期值（如`12-10-2021 20:30`）且要将其格式化为文本值（如`Dec 10, 2021 8:30 PM`）时，请使用此函数。
 
@@ -306,17 +306,17 @@ ht-degree: 1%
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL date] </td> 
+   <td>[！UICONTROL日期] </td> 
    <td>日期 </td> 
    <td> <p>将日期值转换为文本值。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL format] </td> 
+   <td>[！UICONTROL格式] </td> 
    <td>文本 </td> 
    <td> <p>允许您使用日期/时间格式令牌指定格式。 有关详细信息，请参阅日期和时间格式的<a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">令牌</a>。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL timezone] </td> 
+   <td>[！UICONTROL时区] </td> 
    <td>文本 </td> 
    <td> <p>（可选）用于指定用于转换的时区。 </p> <p>有关可识别时区的列表，请参阅Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> tz数据库时区列表</a>中的“TZ数据库名称”列。 函数仅将此列中列出的值识别为有效时区。 将忽略任何其他值，并改为使用配置文件中指定的方案时区。 </p> <p>如果忽略此参数，将应用用户档案设置中指定的方案时区。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>Europe/Prague</code>， <code>UTC</code></p> </td> 
   </tr> 
@@ -353,7 +353,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL parseDate (text; format; [timezone])]
+### [!UICONTROL parseDate （文本；格式；[时区]）]
 
 当您具有表示日期（如`12-10-2019 20:30`或`Aug 18, 2019 10:00 AM`）的文本值，并且要将其转换（解析）为日期值（二进制计算机可读表示法）时，请使用此函数。 有关详细信息，请参阅文章[项目数据类型](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)中的日期和文本。
 
@@ -374,17 +374,17 @@ ht-degree: 1%
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL text] </td> 
+   <td>[！UICONTROL文本] </td> 
    <td>文本 </td> 
    <td> <p>将日期值转换为文本值。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL format] </td> 
+   <td>[！UICONTROL格式] </td> 
    <td>文本 </td> 
    <td> <p>允许您使用日期/时间格式令牌指定格式。 有关详细信息，请参阅日期和时间格式的<a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">令牌</a>。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL timezone] </td> 
+   <td>[！UICONTROL时区] </td> 
    <td>文本 </td> 
    <td> <p>（可选）用于指定用于转换的时区。 </p> <p>有关可识别时区的列表，请参阅Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> tz数据库时区列表</a>中的“TZ数据库名称”列。 函数仅将此列中列出的值识别为有效时区。 将忽略任何其他值，并改为使用配置文件中指定的方案时区。 </p> <p>如果忽略此参数，将应用用户档案设置中指定的方案时区。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>Europe/Prague</code>， <code>UTC</code></p> </td> 
   </tr> 
@@ -419,7 +419,7 @@ ht-degree: 1%
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL dateDifference (Date1; Date2; Unit)]
+### [!UICONTROL dateDifference (Date1； Date2； Unit)]
 
 返回表示两个日期之差的数字，以指定的单位表示。
 
