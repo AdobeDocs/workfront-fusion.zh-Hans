@@ -4,9 +4,9 @@ description: 通过 [!DNL Adobe Workfront Fusion] HubSpot CRM模块，您可以�
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 0e4986d0d66b98213efabd487e6701f8385161e3
 workflow-type: tm+mt
-source-wordcount: '6203'
+source-wordcount: '7003'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,6 @@ HubSpot CRM连接器使用以下对象：
 
 ### CRM对象
 
-<!--* [Search for CRM objects](#search-for-crm-objects)
-* [Watch CRM objects](#watch-crm-objects)-->
-
 +++ **[!UICONTROL 搜索CRM对象]**
 
 此搜索模块按自定义属性或查询搜索CRM对象。 要搜索产品或行项目，请使用具有所需自定义范围的特殊连接。
@@ -208,15 +205,6 @@ HubSpot CRM连接器使用以下对象：
 +++
 
 ### 记录（交易、联系人和公司）
-
-<!--* [Create a Record](#create-a-record)
-* [[!UICONTROL Create a Record (Legacy)]](#create-a-record-legacy)
-* [[!UICONTROL Delete a Record]](#delete-a-record)
-* [[!UICONTROL Get a Record]](#get-a-record)
-* [[!UICONTROL Get a Record Property]](#get-a-record-property)
-* [List Records](#list-records)
-* [[!UICONTROL Update a Record]](#update-a-record)
-* [[!UICONTROL Watch Records]](#watch-records)-->
 
 +++ **创建记录**
 
@@ -464,17 +452,6 @@ HubSpot CRM连接器使用以下对象：
 +++
 
 ### 联系人
-
-<!--* [[!UICONTROL Add Contacts to a List]](#add-contacts-to-a-list)
-* [Create/Update a contact](#createupdate-a-contact)
-* [[!UICONTROL Create/Update a Contact (Legacy)]](#createupdate-a-contact-legacy)
-* [[!UICONTROL Create/Update a Group of Contacts]](#createupdate-a-group-of-contacts)
-* [[!UICONTROL List Contacts]](#list-contacts)
-* [[!UICONTROL List Contacts of a Company]](#list-contacts-of-a-company)
-* [[!UICONTROL Merge contacts]](#merge-contacts)
-* [[!UICONTROL Remove a Contact from a List]](#remove-a-contact-from-a-list)
-* [[!UICONTROL Search for Contacts]](#search-for-contacts)
-* [Watch Contacts Added to a List](#watch-contacts-added-to-a-list)-->
 
 +++ **[!UICONTROL 将联系人添加到列表]**
 
@@ -744,9 +721,6 @@ HubSpot CRM连接器使用以下对象：
 
 ### 交易
 
-<!--* [[!UICONTROL Get a Deal's CRM Pipeline]](#get-a-deals-crm-pipeline)
-* [[!UICONTROL List Deal/Ticket Pipelines]](#list-dealticket-pipelines)-->
-
 +++ **[!UICONTROL 获取交易的CRM管道]**
 
 返回特定的交易管道。
@@ -825,11 +799,6 @@ HubSpot CRM连接器使用以下对象：
 +++
 
 ### 参与
-
-<!--* [Associate an Engagement with a CRM object](#associate-an-engagement-with-a-crm-object)
-* [Create an Engagement](#create-an-engagement)
-* [Delete an Engagement](#delete-an-engagement)
-* [Watch Engagements](#watch-engagements)-->
 
 +++ **将参与关联到CRM对象**
 
@@ -1117,11 +1086,6 @@ HubSpot CRM连接器使用以下对象：
 
 ### 事件和通知
 
-<!--* [Create / Update a Timeline Event](#create--update-a-timeline-event)
-* [List Timeline Event Types](#list-timeline-event-types)
-* [Watch Calendar Events](#watch-calendar-events)
-* [Watch Notifications](#watch-notifications)-->
-
 +++ **创建/更新时间线事件**
 
 此操作模块创建或更新时间线事件。 此模块只能与包括用户标识符、HubSpot API密钥、客户端ID和客户端密钥的开发人员连接一起使用。
@@ -1253,14 +1217,6 @@ HubSpot CRM连接器使用以下对象：
 +++
 
 ### 文件
-
-<!--* [[!UICONTROL Create a Folder]](#create-a-folder)
-* [Delete a File](#delete-a-file)
-* [[!UICONTROL Delete a Folder]](#delete-a-folder)
-* [List Files](#list-files)
-* [[!UICONTROL Move a File]](#move-a-file)
-* [Upload a file](#upload-a-file)
-* [Watch files](#watch-files)-->
 
 +++ **[!UICONTROL 创建文件夹]**
 
@@ -1451,10 +1407,6 @@ HubSpot CRM连接器使用以下对象：
 
 ### 任务
 
-<!--* [Create a Calendar Task](#create-a-calendar-task)
-* [Delete a Calendar Task](#create-a-calendar-task)
-* [Watch Task Events](#watch-task-events)-->
-
 +++ **创建日历任务**
 
 此操作模块为日历创建新任务。 此模块中使用的连接必须使用具有付费营销帐户的用户的凭据。
@@ -1552,9 +1504,6 @@ HubSpot CRM连接器使用以下对象：
 
 ### 用户
 
-<!--* [Get an Owner](#get-an-owner)
-* [List Owners](#list-owners)-->
-
 +++ **获取所有者**
 
 此操作模块返回所有者的详细信息。
@@ -1595,13 +1544,6 @@ HubSpot CRM连接器使用以下对象：
 
 ### 票证
 
-<!--* [Create a Ticket]-->
-<!--* [Delete a Ticket](#delete-a-ticket)-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-<!--* [Create a Ticket]-->
-
 <!-- Create a Ticket Need to find a working connection-->
 
 +++ **[!UICONTROL 删除票证]**
@@ -1634,11 +1576,6 @@ HubSpot CRM连接器使用以下对象：
 <!-- Watch Tickets Need to find a working connection-->
 
 ### 表单
-
-<!--* [Get a File Uploaded via Form](#get-a-file-uploaded-via-form)
-* [List Forms](#list-forms)-->
-<!--* [Submit Data to a Form]-->
-<!--* [Watch Submissions for a Form]-->
 
 +++ **通过表单上传文件**
 
@@ -1689,10 +1626,6 @@ HubSpot CRM连接器使用以下对象：
 &lt;！—####观察表单提交情况 — 需要找到有效连接>—>
 
 ### 社交媒体（广播）
-
-<!--* [Cancel a Broadcast Message](#cancel-a-broadcast-message)
-* [Create a Broadcast Message](#create-a-broadcast-message)
-* [Watch Broadcast Messages](#watch-broadcast-messages)-->
 
 +++ **取消广播消息**
 
@@ -1791,16 +1724,90 @@ HubSpot CRM连接器使用以下对象：
 
 ### 博客帖子
 
-<!--* [Create a Blog Post]-->
-<!--* [Delete a Blog Post](#delete-a-blog-post)-->
-<!--* [List Blog Posts]-->
-&lt;！—* [发布/取消发布博客帖子](#publish--unpublish-a-blog-post)—>
-<!--* [Watch Blog Posts]-->
++++ **创建博客帖子**
 
-<!--
-#### Create a Blog Post May need connection
--->
+此操作模块将创建新的博客帖子。
 
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[！UICONTROL Connection]</p> </td> 
+   <td> <p>有关将[!DNL HubSpot CRM]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">名称</td> 
+   <td>输入或映射帖子标题（帖子的内部名称）。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">帖子正文</td> 
+   <td>以HTML格式输入或映射帖子的主体。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">帖子摘要</td> 
+   <td>输入或映射帖子的摘要。 此摘要会显示在主列表页面上。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">博客作者编号</td> 
+   <td>输入或映射与帖子关联的作者的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">内容组ID</td> 
+   <td>输入或映射此帖子所属博客的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">页脚HTML</td> 
+   <td>输入或映射HTML中的嵌入代码或JavaScript，应将其放在页面的标记之前。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">Head HTML</td> 
+   <td>输入或映射应放置在顶部的嵌入代码或javascript的HTML。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">营销活动ID</td> 
+   <td>输入或映射与此帖子关联的营销活动的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">特色图像</td> 
+   <td>输入或映射此帖子将用作精选图像的图像URL。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">关键词</td> 
+   <td>对于要添加到此帖子的每个关键字，单击<b>添加项</b>并输入关键字和关键字GUID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">元描述</td> 
+   <td>在页面上输入或映射<code>meta</code>标记的文本。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">发布日期</td> 
+   <td>输入或映射发布博客帖子的日期。 <p>有关支持的日期和时间格式的列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">在[!DNL Adobe Workfront Fusion]</a>中键入强制。</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">名称</td> 
+   <td>启用此选项可在创建博客帖子后立即发布该帖子。 如果设置为“是”，则此选项将忽略“发布日期”字段。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">概要</td> 
+   <td>输入或映射帖子的概要。 该概要文件会附加到域的末尾，以形成博客帖子的URL。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">主题Id</td> 
+   <td>对于要添加到帖子中的每个主题，单击<b>添加项</b>并输入主题ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">使用精选图像</td> 
+   <td>启用此选项可将精选图像用于博客帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">小组件</td> 
+   <td>输入或映射包含此博客帖子所有模块日期的数据结构。 这指的是博客帖子的模块，而不是Fusion模块。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **删除博客帖子**
 
@@ -1823,9 +1830,70 @@ HubSpot CRM连接器使用以下对象：
 
 +++
 
-<!--#### List Blog Posts May need connection
++++ **列出博客帖子**
 
-This search module retrieves posts from a HubSpot blog.-->
+此搜索模块从HubSpot博客中检索帖子。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[！UICONTROL Connection]</p> </td> 
+   <td> <p>有关将[!DNL HubSpot CRM]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">限制</td> 
+   <td>输入或映射在一个执行周期中返回的最大博客帖子数。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">已存档</td> 
+   <td>启用此选项以在结果中包含已存档的帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">博客作者编号</td> 
+   <td>输入或映射作者的ID以返回与该作者关联的帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">营销活动ID</td> 
+   <td>输入或映射营销活动的ID以返回与该营销活动关联的帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">内容组ID</td> 
+   <td>输入或映射博客的ID以返回与该博客关联的帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">名称</td> 
+   <td>输入帖子名称，以仅返回具有该名称的帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">按已创建内容筛选</td> 
+   <td>选择筛选器以按创建的时间值返回帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">按已更新内容筛选</td> 
+   <td>选择筛选器以按更新的时间值返回帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">按已删除内容过滤</td> 
+   <td>选择筛选器以按删除的时间值返回帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">概要</td> 
+   <td>输入或映射概要文件以返回与概要文件匹配的帖子。 该概要文件会附加到域的末尾，以形成博客帖子的URL。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">状态</td> 
+   <td>选择一个状态（“草稿”、“已发布”或“已计划”）以仅包含处于该状态的结果。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">按发布日期排序</td> 
+   <td>选择是按发布日期对结果进行升序排序还是降序排序。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 +++ **发布/取消发布博客帖子**
 
@@ -1852,7 +1920,70 @@ This search module retrieves posts from a HubSpot blog.-->
 
 +++
 
-<!--#### Watch Blog PostsMay need connection-->
++++ **观看博客帖子**
+
+当创建、更新或删除与您设置的标准匹配的博客帖子时，此触发器模块会启动一个方案。
+
+
+
+此搜索模块从HubSpot博客中检索帖子。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[！UICONTROL Connection]</p> </td> 
+   <td> <p>有关将[!DNL HubSpot CRM]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">限制</td> 
+   <td>输入或映射在一个执行周期中返回的最大博客帖子数。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">已存档</td> 
+   <td>启用此选项以在结果中包含已存档的帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">博客作者编号</td> 
+   <td>输入或映射作者的ID以返回与该作者关联的帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">营销活动ID</td> 
+   <td>输入或映射营销活动的ID以返回与该营销活动关联的帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">内容组ID</td> 
+   <td>输入或映射博客的ID以返回与该博客关联的帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">名称</td> 
+   <td>输入帖子名称，以仅返回具有该名称的帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">按已创建内容筛选</td> 
+   <td>选择筛选器以按创建的时间值返回帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">按已更新内容筛选</td> 
+   <td>选择筛选器以按更新的时间值返回帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">按已删除内容过滤</td> 
+   <td>选择筛选器以按删除的时间值返回帖子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">概要</td> 
+   <td>输入或映射概要文件以返回与概要文件匹配的帖子。 该概要文件会附加到域的末尾，以形成博客帖子的URL。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">状态</td> 
+   <td>选择一个状态（“草稿”、“已发布”或“已计划”）以仅包含处于该状态的结果。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
++++
 
 <!--+++**Workflows**>
 
@@ -1868,9 +1999,6 @@ This search module retrieves posts from a HubSpot blog.-->
 <!--+++-->
 
 ### 订阅
-
-<!--* [Update Email Subscription](#update-email-subscription)
-* [Watch Subscriptions Timeline for a Portal](#watch-subscriptions-timeline-for-a-portal)-->
 
 +++ **更新电子邮件订阅**
 
