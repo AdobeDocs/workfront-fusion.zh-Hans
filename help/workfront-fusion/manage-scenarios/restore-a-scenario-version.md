@@ -4,9 +4,9 @@ description: 您可以恢复方案的先前版本。 这允许您对方案进行
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 18bbd77630eafac0cb293c3a6f658a74b622bdae
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '309'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,8 @@ ht-degree: 1%
 1. （可选）若要重命名版本，请单击该版本行上的更多菜单![更多菜单](assets/more-icon-vertical.png)，选择&#x200B;**编辑**，然后在字段中输入名称。 单击&#x200B;**保存**&#x200B;以保存新名称。
 
    我们建议提供一个名称，用于描述对此版本所做的更改。
-1. （可选）要还原该版本，请单击该版本行上的还原![更多菜单](assets/more-icon-vertical.png)
+1. （可选）要下载以前版本的Blueprint，请单击该版本行上的更多菜单![更多菜单](assets/more-icon-vertical.png)，然后选择&#x200B;**下载**。
+1. （可选）要还原该版本，请单击该版本行上的&#x200B;**还原**
 
 
    >[!NOTE]

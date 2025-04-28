@@ -4,10 +4,10 @@ description: 您可以在Adobe Workfront Fusion中复制模块、模块组或整
 author: Becky
 feature: Workfront Fusion
 exl-id: 5cece7d4-b2c7-4276-8a6f-f65bad799c7a
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 1%
+source-wordcount: '908'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 1%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td> <p>新文档： [！UICONTROL Standard]</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
@@ -44,7 +44,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新增：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包含[！UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
    </td> 
@@ -77,18 +77,18 @@ ht-degree: 1%
 
 复制一组模块与复制单个模块类似。
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要复制模块的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
 1. 右键单击要复制的模块。
 
    >[!NOTE]
    >
-   >按住[!UICONTROL shift]并单击要复制的模块，可选择多个模块。 复制一组模块时，还会复制它们之间的任何连接线、过滤器或路由逻辑。
+   >按住[!UICONTROL Shift]并单击要复制的模块，可选择多个模块。 复制一组模块时，还会复制它们之间的任何连接线、过滤器或路由逻辑。
 
-1. 选择 **[!UICONTROL Copy module]**。
+1. 选择&#x200B;**[!UICONTROL 复制模块]**。
 1. 将光标移动到您希望场景副本所在的场景区域。
-1. 右键单击，然后选择&#x200B;**[!UICONTROL Paste]**。
+1. 右键单击，然后选择&#x200B;**[!UICONTROL 粘贴]**。
 1. 通过将粘贴的模块拖动到方案中的适当位置，将其连接到方案。
 
    您还可以使用键盘快捷键进行复制和粘贴。
@@ -99,17 +99,17 @@ ht-degree: 1%
 
 1. 打开方案详细信息页：
 
-   1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenario]**&#x200B;选项卡，然后单击要了解详细信息的方案。
+   1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡，然后单击要了解详细信息的方案。
 
       或
 
       如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](assets/exit-editing-arrow.png)。
 
-1. 右键单击页面右上角的&#x200B;**[!UICONTROL Options]**。
-1. 选择 **[!UICONTROL Clone]**。
+1. 右键单击页面右上角的&#x200B;**[!UICONTROL 选项]**。
+1. 选择&#x200B;**[!UICONTROL 克隆]**。
 1. （可选）输入新方案的名称。
-1. （可选）启用&#x200B;**[!UICONTROL Keep the states of any new modules the same as those being duplicated]**&#x200B;以确保复制的方案也包含有关原始方案处理的最新记录的信息。
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;以创建方案。
+1. （可选）启用&#x200B;**[!UICONTROL 使任何新模块的状态与正在复制的模块状态相同]**，以确保复制的方案也包含有关原始方案处理的最新记录的信息。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以创建方案。
 
 ## 使用Blueprint复制方案
 
@@ -119,13 +119,17 @@ ht-degree: 1%
 
 ### 导出方案Blueprint
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要导出Blueprint的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
-1. 在方案中，单击方案设置区域中的&#x200B;**[!UICONTROL More]**&#x200B;菜单。
-1. 单击 **[!UICONTROL Export Blueprint]**。
+1. 在方案中，单击方案设置区域中的&#x200B;**[!UICONTROL 更多]**&#x200B;菜单。
+1. 单击&#x200B;**[!UICONTROL 导出Blueprint]**。
 
    将创建一个JSON文件并下载到您的计算机。 您可以在[!DNL Downloads]文件夹中找到此文件。
+
+>[!NOTE]
+>
+>要导出方案的先前版本的Blueprint，请参阅[查看和管理方案版本](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)。
 
 ### 导入Blueprint
 
@@ -134,13 +138,13 @@ ht-degree: 1%
 >如果将Blueprint导入现有方案，则方案Blueprint将替换现有方案。 不能将Blueprint附加到现有方案。
 
 1. 开始创建新方案。
-1. 在方案中，单击方案设置区域中的&#x200B;**[!UICONTROL More]**&#x200B;菜单。
-1. 单击 **[!UICONTROL Import Blueprint]**。
-1. 在出现的对话框中，单击&#x200B;**[!UICONTROL Browse]**
-1. 导航到要导入的Blueprint，然后单击&#x200B;**[!UICONTROL Open]**。
-1. 单击 **[!UICONTROL Save]**。
+1. 在方案中，单击方案设置区域中的&#x200B;**[!UICONTROL 更多]**&#x200B;菜单。
+1. 单击&#x200B;**[!UICONTROL 导入Blueprint]**。
+1. 在出现的对话框中，单击&#x200B;**[!UICONTROL 浏览]**
+1. 导航到要导入的Blueprint，然后单击&#x200B;**[!UICONTROL 打开]**。
+1. 单击&#x200B;**[!UICONTROL 保存]**。
 
-   将创建一个JSON文件并下载到您的计算机。 您可以在[!UICONTROL Downloads]文件夹中找到此文件。
+   将创建一个JSON文件并下载到您的计算机。 您可以在[!UICONTROL 下载]文件夹中找到此文件。
 
 ## 使用模板复制和重用方案
 

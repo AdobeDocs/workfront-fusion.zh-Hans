@@ -4,9 +4,9 @@ description: 本文介绍了将模块添加到场景的基本过程。
 author: Becky
 feature: Workfront Fusion
 exl-id: f3757468-3e11-4862-a83e-ed447805545b
-source-git-commit: 55fe4bc46bc50ad9ccfd1b234e89028cf3cd12d5
+source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '628'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td> <p>新文档： [！UICONTROL Standard]</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
@@ -46,7 +46,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新增：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包含[！UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
    </td> 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 有关触发器模块的详细信息，请参阅文章模块概述中的[触发器模块](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#trigger-modules)。
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 通过单击屏幕右上角的&#x200B;**创建新方案**&#x200B;开始创建方案。
 
    场景编辑器将打开，其中包含占位符（问号）模块和可用连接器的列表。
@@ -84,8 +84,7 @@ ht-degree: 0%
 
 ## 向方案添加其他模块
 
-1. 如果您不在要添加模块的方案的方案编辑器中，请单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
-1. 选择要导出Blueprint的方案。
+1. 如果您不在要添加模块的方案的方案编辑器中，请单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 单击方案上的任意位置以进入方案编辑器。
 1. 若要将某个模块添加到另一个模块，请将鼠标悬停在该模块的右侧句柄上，以便在该句柄之后添加模块，然后在该模块出现时单击&#x200B;**添加另一个模块**。
 
@@ -98,8 +97,7 @@ ht-degree: 0%
 
 ## 在场景中的现有模块之间插入模块
 
-1. 如果您不在要添加模块的方案的方案编辑器中，请单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
-1. 选择要导出Blueprint的方案。
+1. 如果您不在要添加模块的方案的方案编辑器中，请单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 单击方案上的任意位置以进入方案编辑器。
 1. 单击要插入模块的模块之间的点状路径。
 1. 在出现的菜单中，选择&#x200B;**添加模块**。
