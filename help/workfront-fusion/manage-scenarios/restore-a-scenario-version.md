@@ -1,19 +1,19 @@
 ---
-title: 恢复方案版本
-description: 您可以恢复方案的先前版本。 这允许您对方案进行更改，如果您希望使用以前的功能，可以轻松还原这些更改。
+title: 查看和管理方案版本
+description: 您可以查看、恢复、重命名或下载方案的早期版本的Blueprint。
 author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
-source-git-commit: 860209fdcf2e7707663cc2d454c0499972b1261e
+source-git-commit: 2270b386bbf62cfc3b82bd4f9c293b36d3b7a35a
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '298'
 ht-degree: 1%
 
 ---
 
 # 查看和管理方案版本
 
-您可以查看、还原或重命名方案的早期版本。
+您可以查看、恢复、重命名或下载方案的早期版本的Blueprint。
 
 ## 访问要求
 
