@@ -54,7 +54,7 @@ Adobe Workfront Fusion当前不提供`retry`错误处理指令，但有两种变
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -64,7 +64,7 @@ Adobe Workfront Fusion当前不提供`retry`错误处理指令，但有两种变
 
 Workfront Fusion当前不提供`retry`错误处理指令。 使用以下变通方法之一来模拟重试功能。
 
-有关说明，请参阅错误处理](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的[指令。
+有关说明，请参阅错误处理[&#128279;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的指令。
 
 * [使用Break指令](#use-the-break-directive)
 * [使用中继器模块](#use-the-repeater-module)

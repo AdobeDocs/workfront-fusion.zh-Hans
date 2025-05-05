@@ -50,7 +50,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -63,15 +63,15 @@ ht-degree: 0%
 
 <table>
     <tr>
-        <td>[！UICONTROL初始值]</td>
+        <td>[!UICONTROL 初始值]</td>
         <td>输入或映射您希望模块在第一迭代中的值。 默认值为1。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL重复]</td>
+        <td>[!UICONTROL 重复]</td>
         <td>输入或映射您希望模块重复执行的次数。 此数字必须大于或等于0，并且小于或等于10,000。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL步骤]</td>
+        <td>[!UICONTROL 步骤]</td>
         <td>这是模块增加值所依据的数字。 默认值为1。</td>
     </tr>
 </table>
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 ## [!UICONTROL 路由器]
 
-[!UICONTROL 路由器]模块允许您将流量分为多条路由，并以不同的方式处理每条路由中的数据。 一旦[!UICONTROL 路由器]模块收到捆绑包，它会按照路由连接到[!UICONTROL 路由器]模块的顺序将其转发到每个连接的路由。 有关详细信息，请参阅 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)中的[路由器模块。
+[!UICONTROL 路由器]模块允许您将流量分为多条路由，并以不同的方式处理每条路由中的数据。 一旦[!UICONTROL 路由器]模块收到捆绑包，它会按照路由连接到[!UICONTROL 路由器]模块的顺序将其转发到每个连接的路由。 有关详细信息，请参阅 [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)中的路由器模块。
 
 ## 指令
 

@@ -52,7 +52,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 <table style="table-layout:auto">
     <tr>
-        <td>[！UICONTROL Key]</td>
+        <td>[!UICONTROL Key]</td>
         <td>选择您希望模块使用的键。 要创建密钥，请单击<b>添加</b>并输入密钥的名称、密钥和编码类型。</td>
     </tr>
     <tr>
@@ -142,7 +142,7 @@ ht-degree: 0%
 
 <table style="table-layout:auto">
     <tr>
-        <td>[！UICONTROL Key]</td>
+        <td>[!UICONTROL Key]</td>
         <td>选择您希望模块使用的键。 要创建密钥，请单击<b>添加</b>并输入密钥的名称、密钥和编码类型。</td>
     </tr>
    <tr>
@@ -179,7 +179,7 @@ ht-degree: 0%
 
 <table style="table-layout:auto">
     <tr>
-        <td>[！UICONTROL Key]</td>
+        <td>[!UICONTROL Key]</td>
         <td>选择您希望模块使用的键。 要创建密钥，请单击<b>添加</b>并输入密钥的名称、密钥和编码类型。</td>
     </tr>
     <tr>
@@ -236,7 +236,7 @@ ht-degree: 0%
 
 <table style="table-layout:auto">
     <tr>
-        <td>[！UICONTROL Key]</td>
+        <td>[!UICONTROL Key]</td>
         <td>选择您希望模块使用的键。 要创建密钥，请单击<b>添加</b>并输入密钥的名称、密钥和编码类型。</td>
     </tr>
    <tr>
@@ -276,7 +276,7 @@ ht-degree: 0%
 
 <table style="table-layout:auto">
     <tr>
-        <td>[！UICONTROL私钥]</td>
+        <td>[!UICONTROL 私钥]</td>
         <td>选择要用于此签名的私钥。 要添加私钥，请单击<b>添加</b>并输入密钥的名称、密钥文本和密码。</td>
     </tr>
     <tr>
@@ -314,15 +314,15 @@ ht-degree: 0%
 
 <table style="table-layout:auto">
     <tr>
-        <td>[！UICONTROL私钥]</td>
+        <td>[!UICONTROL 私钥]</td>
         <td>选择要用于此邮件的收件人私钥。 要添加私钥，请单击<b>添加</b>并输入密钥的名称、密钥文本和密码。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL公钥]</td>
+        <td>[!UICONTROL 公钥]</td>
         <td>输入发件人的公钥。 这可以对发件人的身份进行身份验证。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL Message]</td>
+        <td>[!UICONTROL Message]</td>
         <td>映射要解密的消息。</td>
     </tr>
 </table>
@@ -333,15 +333,15 @@ ht-degree: 0%
 
 <table style="table-layout:auto">
     <tr>
-        <td>[！UICONTROL私钥]</td>
+        <td>[!UICONTROL 私钥]</td>
         <td>输入发件人的私钥。 这可以对发件人的身份进行身份验证。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL公钥]</td>
+        <td>[!UICONTROL 公钥]</td>
         <td>输入收件人的公钥。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL Message]</td>
+        <td>[!UICONTROL Message]</td>
         <td>输入要加密的消息。</td>
     </tr>
     </table>

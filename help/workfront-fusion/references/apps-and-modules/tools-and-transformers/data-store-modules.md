@@ -58,7 +58,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -109,19 +109,19 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL数据存储]</td> 
+   <td>[!UICONTROL 数据存储]</td> 
    <td> <p> 选择或添加要在其中创建记录的数据存储。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Key] </td> 
+   <td>[!UICONTROL Key] </td> 
    <td> <p>输入您希望模块添加或替换的记录的唯一键。 该键以后可用于检索记录。 如果将此字段留空，则会自动生成键。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL覆盖现有记录] </td> 
+   <td>[!UICONTROL 覆盖现有记录] </td> 
    <td> <p>启用此选项以覆盖记录。 要覆盖的记录必须在上面的“键”字段中指定。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL记录] </td> 
+   <td>[!UICONTROL 记录] </td> 
    <td> <p>在记录的字段中输入所需的值。</p> </td> 
   </tr> 
  </tbody> 
@@ -138,11 +138,11 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL数据存储] </td> 
+   <td>[!UICONTROL 数据存储] </td> 
    <td> <p>选择要检查记录是否存在的数据存储。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Key] </td> 
+   <td>[!UICONTROL Key] </td> 
    <td> <p>输入您希望模块检查是否存在记录的唯一键。</p> </td> 
   </tr> 
  </tbody> 
@@ -161,7 +161,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL数据存储] </td> 
+   <td>[!UICONTROL 数据存储] </td> 
    <td> <p>选择包含要计数的记录的数据存储。</p> </td> 
   </tr> 
  </tbody> 
@@ -180,11 +180,11 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL数据存储] </td> 
+   <td>[!UICONTROL 数据存储] </td> 
    <td> <p>选择要检查记录是否存在的数据存储。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Key] </td> 
+   <td>[!UICONTROL Key] </td> 
    <td> <p>输入您希望模块删除的记录的唯一键值。</p> </td> 
   </tr> 
  </tbody> 
@@ -201,7 +201,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL数据存储] </td> 
+   <td>[!UICONTROL 数据存储] </td> 
    <td> <p>选择要从中删除所有记录的数据存储。</p> </td> 
   </tr> 
  </tbody> 
@@ -220,11 +220,11 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL数据存储]</td> 
+   <td>[!UICONTROL 数据存储]</td> 
    <td> <p> 选择要从中检索记录的数据存储</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Key] </td> 
+   <td>[!UICONTROL Key] </td> 
    <td> <p>输入您希望模块检索的记录的唯一键值。</p> </td> 
   </tr> 
  </tbody> 
@@ -243,23 +243,23 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL数据存储]</td> 
+   <td>[!UICONTROL 数据存储]</td> 
    <td> <p> 选择要搜索的数据存储。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL筛选器]</p> </td> 
+   <td> <p>[!UICONTROL 筛选器]</p> </td> 
    <td> <p>为搜索设置过滤器。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL排序]</p> </td> 
-   <td> <p style="font-weight: normal;">对于要作为排序依据的每个字段，请填写以下字段：</p> <p style="font-weight: bold;">[！UICONTROL Key]</p> <p>选择要作为结果排序依据的列名。</p> <p style="font-weight: bold;">[！UICONTROL顺序]</p> <p>选择是否要以升序或降序对结果进行排序。</p> </td> 
+   <td> <p>[!UICONTROL 排序]</p> </td> 
+   <td> <p style="font-weight: normal;">对于要作为排序依据的每个字段，请填写以下字段：</p> <p style="font-weight: bold;">[!UICONTROL Key]</p> <p>选择要作为结果排序依据的列名。</p> <p style="font-weight: bold;">[!UICONTROL 顺序]</p> <p>选择是否要以升序或降序对结果进行排序。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL限制]</td> 
+   <td>[!UICONTROL 限制]</td> 
    <td> <p> 设置在一个执行周期内返回的最大搜索结果数[!DNL Workfront Fusion]。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL即使模块未返回任何结果，仍继续执行路由]</td> 
+   <td>[!UICONTROL 即使模块未返回任何结果，仍继续执行路由]</td> 
    <td> <p> 如果启用，则此模块所属的路由将继续处理，即使此模块未返回任何结果。</p> </td> 
   </tr> 
  </tbody> 
@@ -280,19 +280,19 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL数据存储]</td> 
+   <td>[!UICONTROL 数据存储]</td> 
    <td> <p> 选择或添加要在其中创建记录的数据存储。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Key] </td> 
+   <td>[!UICONTROL Key] </td> 
    <td> <p>输入您希望模块更新的记录的唯一键。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Insert missing record] </td> 
+   <td>[!UICONTROL Insert missing record] </td> 
    <td> <p>启用此选项以在具有指定键的记录不存在时创建新记录。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL记录]</td> 
+   <td>[!UICONTROL 记录]</td> 
    <td> <p> 在要更新的记录字段中输入所需的值。</p> </td> 
   </tr> 
  </tbody> 

@@ -67,7 +67,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 
 ## 处理指令时出错
 
-这些指令简要说明如下。 有关详细信息，请参阅错误处理](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的[指令。
+这些指令简要说明如下。 有关详细信息，请参阅错误处理[&#128279;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的指令。
 
 有五个指令，可根据错误后场景执行是否继续将其分组为以下类别。
 

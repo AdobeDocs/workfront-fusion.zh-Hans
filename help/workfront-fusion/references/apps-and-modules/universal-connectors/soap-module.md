@@ -62,7 +62,7 @@ SOAP连接器仅包含一个模块：执行SOAP操作
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -87,19 +87,19 @@ SOAP连接器仅包含一个模块：执行SOAP操作
  </col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL WSDL]</td> 
+   <td>[!UICONTROL WSDL]</td> 
    <td> 选择您希望模块使用的WSDL。 要创建WSDL，请单击字段旁边的<b>添加</b>并填写这些字段。 </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL HTTP标头]</td> 
+   <td>[!UICONTROL HTTP标头]</td> 
    <td> 对于每个要添加的HTTP标头，单击<b>添加项</b>并输入标头的名称和值。</td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL SOAP headers]</td> 
+   <td>[!UICONTROL SOAP headers]</td> 
    <td> 对于每个要添加的SOAP标头，单击<b>添加项</b>并输入标头的名称、值、命名空间和XMLNS。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[！UICONTROL Force SOAP headers]</td> 
+   <td>[!UICONTROL Force SOAP headers]</td> 
    <td> 启用此选项以配置SOAP 1.2的标头。 </td> 
   </tr> 
   </tbody> 
@@ -154,20 +154,20 @@ SOAP连接器仅包含一个模块：执行SOAP操作
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[！UICONTROL方法]</td> 
-      <td> <p>[！UICONTROL POST]</p> </td> 
+      <td role="rowheader">[!UICONTROL 方法]</td> 
+      <td> <p>[!UICONTROL POST]</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
-      <td role="rowheader">[！UICONTROL主体类型]</td> 
-      <td> <p>[！UICONTROL Raw]</p> </td>
+      <td role="rowheader">[!UICONTROL 主体类型]</td> 
+      <td> <p>[!UICONTROL Raw]</p> </td>
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL内容类型]</td> 
-      <td> <p>[！UICONTROL XML (application/xml)]</p> </td> 
+      <td role="rowheader">[!UICONTROL 内容类型]</td> 
+      <td> <p>[!UICONTROL XML (application/xml)]</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL解析响应]</td> 
-      <td>[！UICONTROL已启用]</td> 
+      <td role="rowheader">[!UICONTROL 解析响应]</td> 
+      <td>[!UICONTROL 已启用]</td> 
      </tr> 
     </tbody> 
    </table>

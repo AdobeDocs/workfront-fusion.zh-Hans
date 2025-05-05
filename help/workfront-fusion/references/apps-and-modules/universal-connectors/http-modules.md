@@ -66,7 +66,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -96,15 +96,15 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL将所有状态计算为错误（2xx和3xx除外）] </td> 
+   <td role="rowheader">[!UICONTROL 将所有状态计算为错误（2xx和3xx除外）] </td> 
    <td> <p>使用此选项可设置错误处理。</p> <p>有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">错误处理。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL URL] </td> 
+   <td role="rowheader">[!UICONTROL URL] </td> 
    <td> <p>输入或映射要下载的文件的URL。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL与其他HTTP模块共享Cookie] </td> 
+   <td role="rowheader">[!UICONTROL 与其他HTTP模块共享Cookie] </td> 
    <td> <p>如果您希望此站点的Cookie对其他模块可用，请启用此选项。 </p> </td> 
   </tr> 
  </tbody> 
@@ -119,12 +119,12 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL URL] </td> 
+   <td role="rowheader">[!UICONTROL URL] </td> 
    <td> <p>输入或映射要解析的URL，如[!DNL bit.ly] URL。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL方法] </td> 
-   <td> <p>选择您要使用[！UICONTROL HEAD]方法还是[！UICONTROL GET]方法。</p> </td> 
+   <td role="rowheader">[!UICONTROL 方法] </td> 
+   <td> <p>选择您要使用[!UICONTROL HEAD]方法还是[!UICONTROL GET]方法。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -140,7 +140,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Source Module]</td> 
+   <td role="rowheader">[!UICONTROL Source Module]</td> 
    <td> <p> 选择要从中检索标头的模块。</p> </td> 
   </tr> 
  </tbody> 

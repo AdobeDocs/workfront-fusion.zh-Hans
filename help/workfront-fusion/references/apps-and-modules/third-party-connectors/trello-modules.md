@@ -56,7 +56,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -120,15 +120,15 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL展示板ID]</td> 
+   <td role="rowheader">[!UICONTROL 展示板ID]</td> 
    <td> <p> 输入或映射要关闭或重新打开的主板的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存档或取消存档]</td> 
+   <td role="rowheader">[!UICONTROL 存档或取消存档]</td> 
    <td> <p> 选择要关闭（存档）还是重新打开（取消存档）展示板。</p> </td> 
   </tr> 
  </tbody> 
@@ -145,28 +145,28 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL展示板ID]</td> 
+   <td role="rowheader">[!UICONTROL 展示板ID]</td> 
    <td> <p> 选择要添加成员的讨论区。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL电子邮件地址]</td> 
+   <td role="rowheader">[!UICONTROL 电子邮件地址]</td> 
    <td> <p> 输入或映射要添加到讨论区的成员的电子邮件地址。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL成员类型]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 成员类型]</p> </td> 
    <td> <p>选择您希望新成员成为的成员类型。</p> 
     <ul> 
-     <li><strong>[！UICONTROL管理员]</strong>：讨论区管理员可以对讨论区执行任何讨论区操作。</li> 
-     <li><strong>[！UICONTROL Normal]</strong>：普通成员只是讨论区的成员。</li> 
-     <li><strong>[！UICONTROL观察者]</strong>：观察者是对讨论区具有只读访问权限的成员。 <br>观察者仅适用于具有[！UICONTROL Trello Business Class]的团队。</li> 
+     <li><strong>[!UICONTROL 管理员]</strong>：讨论区管理员可以对讨论区执行任何讨论区操作。</li> 
+     <li><strong>[!UICONTROL Normal]</strong>：普通成员只是讨论区的成员。</li> 
+     <li><strong>[!UICONTROL 观察者]</strong>：观察者是对讨论区具有只读访问权限的成员。 <br>观察者仅适用于具有[!UICONTROL Trello Business Class]的团队。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL全名]</td> 
+   <td role="rowheader">[!UICONTROL 全名]</td> 
    <td> <p> 输入或映射要添加到展示板的用户的全名。</p> </td> 
   </tr> 
  </tbody> 
@@ -183,79 +183,79 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL名称] </td> 
+   <td role="rowheader">[!UICONTROL 名称] </td> 
    <td> <p>输入或映射新讨论区的名称。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL描述]</td> 
+   <td role="rowheader">[!UICONTROL 描述]</td> 
    <td> <p>根据需要输入或映射讨论区描述。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL组织ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 组织ID]</p> </td> 
    <td> <p>输入或映射组织的ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL权限级别]</p> </td> 
-   <td> <p>董事会在每个权限级别都有不同的投票和注释规则。 例如，如果您的讨论区是[！UICONTROL Private]，并且您将投票和注释规则设置为[！UICONTROL All]，则会收到错误。 </p> <p>每个权限级别的投票和评论仅限以下组：</p> 
+   <td role="rowheader"> <p>[!UICONTROL 权限级别]</p> </td> 
+   <td> <p>董事会在每个权限级别都有不同的投票和注释规则。 例如，如果您的讨论区是[!UICONTROL Private]，并且您将投票和注释规则设置为[!UICONTROL All]，则会收到错误。 </p> <p>每个权限级别的投票和评论仅限以下组：</p> 
     <ul> 
-     <li><strong>[！UICONTROL Private]</strong>： 
+     <li><strong>[!UICONTROL Private]</strong>： 
       成员、成员和观察员</li> 
-     <li><strong>[！UICONTROL对于组织]</strong>： 
+     <li><strong>[!UICONTROL 对于组织]</strong>： 
       成员、成员和观察员、组织成员</li> 
-     <li><strong>[！UICONTROL Public]</strong>： 
+     <li><strong>[!UICONTROL Public]</strong>： 
       成员、成员和观察员、组织成员、所有</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Voting]</p> </td> 
-   <td> <p>选择一个选项，以指定可以在该讨论区投票的人员。 有关权限级别的投票限制，请参阅[！UICONTROL权限级别]字段。</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
+   <td> <p>选择一个选项，以指定可以在该讨论区投票的人员。 有关权限级别的投票限制，请参阅[!UICONTROL 权限级别]字段。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Comments]</p> </td> 
-   <td> <p>选择一个选项，以指定可以对此讨论区的信息卡进行评论的人员。 有关对权限级别的限制的注释，请参阅[！UICONTROL权限级别]字段。</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
+   <td> <p>选择一个选项，以指定可以对此讨论区的信息卡进行评论的人员。 有关对权限级别的限制的注释，请参阅[!UICONTROL 权限级别]字段。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL邀请]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 邀请]</p> </td> 
    <td> <p>选择谁可以邀请其他人加入此讨论区。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Self-join]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Self-join]</p> </td> 
    <td> <p>选择团队成员是否可以自己加入讨论区，或者必须邀请他们。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL默认标签]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 默认标签]</p> </td> 
    <td> <p>选择是否为新展示板使用默认标签集。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL默认列表]</p> </td> 
-   <td> <p>选择是否将默认列表集添加到展示板([！UICONTROL To Do]、[！UICONTROL Doing]、[！UICONTROL Done])。</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 默认列表]</p> </td> 
+   <td> <p>选择是否将默认列表集添加到展示板([!UICONTROL To Do]、[!UICONTROL Doing]、[!UICONTROL Done])。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL展示板源ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 展示板源ID]</p> </td> 
    <td> <p>选择或映射要复制到新展示板中的展示板ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL卡盖]</p> </td> 
-   <td> <p>如果要为展示板启用卡盖，请选择<strong>[！UICONTROL是]</strong>。</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 卡盖]</p> </td> 
+   <td> <p>如果要为展示板启用卡盖，请选择<strong>[!UICONTROL 是]</strong>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL背景]</p> </td> 
-   <td> <p>选择背景或自定义背景的颜色。</p> <p>注意：自定义背景仅适用于[！UICONTROL Trello Gold and Business Class]订阅者。</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 背景]</p> </td> 
+   <td> <p>选择背景或自定义背景的颜色。</p> <p>注意：自定义背景仅适用于[!UICONTROL Trello Gold and Business Class]订阅者。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL背景ID]</td> 
-   <td> <p> 如果已在[！UICONTROL背景]字段中选择使用自定义背景，请输入或映射要使用的背景的ID。</p> </td> 
+   <td role="rowheader">[!UICONTROL 背景ID]</td> 
+   <td> <p> 如果已在[!UICONTROL 背景]字段中选择使用自定义背景，请输入或映射要使用的背景的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL卡老化]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 卡老化]</p> </td> 
    <td> <p>选择两种信息卡老化模式。 </p> 
     <ul> 
-     <li><strong>[！UICONTROL海盗模式]</strong>：信息卡会随着年龄增长而撕裂、变黄和破裂，就像旧海盗地图一样。</li> 
-     <li><strong>[！UICONTROL常规模式]</strong>：卡片会随着年龄增长而逐渐变透明。 </li> 
+     <li><strong>[!UICONTROL 海盗模式]</strong>：信息卡会随着年龄增长而撕裂、变黄和破裂，就像旧海盗地图一样。</li> 
+     <li><strong>[!UICONTROL 常规模式]</strong>：卡片会随着年龄增长而逐渐变透明。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -270,95 +270,95 @@ Trello连接器使用以下功能：
 >[!SUCCESS]
 >
 ><table style="table-layout:auto">
-<col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[！UICONTROL展示板ID]</p> </td> 
-   <td> <p>输入或映射您希望模块创建的讨论区的唯一[！UICONTROL Trello] ID。 您可以使用其他模块（如监视板模块）检索展示板ID</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL新名称]</td> 
-   <td> <p> 输入或映射展示板的新名称。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL新描述]</td> 
-   <td> <p> 输入或映射新的讨论区描述。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[！UICONTROL组织ID]</p> </td> 
-   <td> <p>输入或映射您希望模块编辑的讨论区的唯一[！UICONTROL Trello] ID。  </p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL订阅] </td> 
-   <td> <p>选择一个选项，以指定拥有此模块使用的连接的用户是否订阅了展示板。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[！UICONTROL权限级别]</p> </td> 
-   <td> <p>董事会在每个权限级别都有不同的投票和注释规则。 例如：如果您的讨论区是[！UICONTROL Private]，并且您将投票和注释规则设置为[！UICONTROL All]，则会收到错误。 </p> <p>每个权限级别的投票和评论仅限以下组：</p> 
-    <ul> 
-     <li><strong>[！UICONTROL Private]</strong>： 
-      成员、成员和观察员</li> 
-     <li><strong>[！UICONTROL对于组织]</strong>： 
-      成员、成员和观察员、组织成员</li> 
-     <li><strong>[！UICONTROL Public]</strong>： 
-      成员、成员和观察员、组织成员、所有</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Voting]</p> </td> 
-   <td> <p>选择一个选项，以指定可以在该讨论区投票的人员。 有关权限级别的投票限制，请参阅[！UICONTROL权限级别]字段。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Comments]</p> </td> 
-   <td> <p>选择一个选项，以指定可以对此讨论区的信息卡进行评论的人员。 有关对权限级别的限制的注释，请参阅[！UICONTROL权限级别]字段。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL邀请] </td> 
-   <td> <p>选择谁可以邀请人员加入此讨论区。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL Self-join]</td> 
-   <td> <p> 选择团队成员是否可以自己加入讨论区，或者必须邀请他们。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL卡盖]</td> 
-   <td> <p> 选择是否应在此展示板上显示卡盖。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL背景] </td> 
-   <td> <p>选择背景或自定义背景的颜色。</p> <p>注意：自定义背景仅适用于[！UICONTROL Trello Gold and Business Class]订阅者。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL背景ID]</td> 
-   <td> <p> 如果已在[！UICONTROL背景]字段中选择使用自定义背景，请输入或映射要使用的背景的ID。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader"> <p>[！UICONTROL卡老化]</p> </td> 
-   <td> <p>选择两种信息卡老化模式。 </p> 
-    <ul> 
-     <li><strong>[！UICONTROL海盗模式]</strong>：信息卡会随着年龄增长而撕裂、变黄和破裂，就像旧海盗地图一样。</li> 
-     <li><strong>[！UICONTROL常规模式]</strong>：卡片会随着年龄增长而逐渐变透明。 </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL日历信息源已启用]</td> 
-   <td> <p> 选择是否启用日历馈送。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL &lt;颜色&gt;标签名称]</td> 
-   <td> <p> 为所需的颜色标签指定一个名称。</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL存档] </td> 
-   <td> <p>选择一个选项以指示是否要存档（关闭）展示板。 </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+><col> 
+> <col> 
+> <tbody> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Connection] </td> 
+>   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL 展示板ID]</p> </td> 
+>   <td> <p>输入或映射您希望模块创建的讨论区的唯一[!UICONTROL Trello] ID。 您可以使用其他模块（如监视板模块）检索展示板ID</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/watch-boards.png"> </p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL 新名称]</td> 
+>   <td> <p> 输入或映射展示板的新名称。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL 新描述]</td> 
+>   <td> <p> 输入或映射新的讨论区描述。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL 组织ID]</p> </td> 
+>   <td> <p>输入或映射您希望模块编辑的讨论区的唯一[!UICONTROL Trello] ID。  </p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL 订阅] </td> 
+>   <td> <p>选择一个选项，以指定拥有此模块使用的连接的用户是否订阅了展示板。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL 权限级别]</p> </td> 
+>   <td> <p>董事会在每个权限级别都有不同的投票和注释规则。 例如：如果您的讨论区是[!UICONTROL Private]，并且您将投票和注释规则设置为[!UICONTROL All]，则会收到错误。 </p> <p>每个权限级别的投票和评论仅限以下组：</p> 
+>    <ul> 
+>     <li><strong>[!UICONTROL Private]</strong>： 
+>      成员、成员和观察员</li> 
+>     <li><strong>[!UICONTROL 对于组织]</strong>： 
+>      成员、成员和观察员、组织成员</li> 
+>     <li><strong>[!UICONTROL Public]</strong>： 
+>      成员、成员和观察员、组织成员、所有</li> 
+>    </ul> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Voting]</p> </td> 
+>   <td> <p>选择一个选项，以指定可以在该讨论区投票的人员。 有关权限级别的投票限制，请参阅[!UICONTROL 权限级别]字段。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL Comments]</p> </td> 
+>   <td> <p>选择一个选项，以指定可以对此讨论区的信息卡进行评论的人员。 有关对权限级别的限制的注释，请参阅[!UICONTROL 权限级别]字段。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL 邀请] </td> 
+>   <td> <p>选择谁可以邀请人员加入此讨论区。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL Self-join]</td> 
+>   <td> <p> 选择团队成员是否可以自己加入讨论区，或者必须邀请他们。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL 卡盖]</td> 
+>   <td> <p> 选择是否应在此展示板上显示卡盖。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL 背景] </td> 
+>   <td> <p>选择背景或自定义背景的颜色。</p> <p>注意：自定义背景仅适用于[!UICONTROL Trello Gold and Business Class]订阅者。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL 背景ID]</td> 
+>   <td> <p> 如果已在[!UICONTROL 背景]字段中选择使用自定义背景，请输入或映射要使用的背景的ID。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader"> <p>[!UICONTROL 卡老化]</p> </td> 
+>   <td> <p>选择两种信息卡老化模式。 </p> 
+>    <ul> 
+>     <li><strong>[!UICONTROL 海盗模式]</strong>：信息卡会随着年龄增长而撕裂、变黄和破裂，就像旧海盗地图一样。</li> 
+>     <li><strong>[!UICONTROL 常规模式]</strong>：卡片会随着年龄增长而逐渐变透明。 </li> 
+>    </ul> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL 日历信息源已启用]</td> 
+>   <td> <p> 选择是否启用日历馈送。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL &lt;颜色&gt;标签名称]</td> 
+>   <td> <p> 为所需的颜色标签指定一个名称。</p> </td> 
+>  </tr> 
+>  <tr> 
+>   <td role="rowheader">[!UICONTROL 存档] </td> 
+>   <td> <p>选择一个选项以指示是否要存档（关闭）展示板。 </p> </td> 
+>  </tr> 
+> </tbody> 
+></table>
 
 
 +++
@@ -372,11 +372,11 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL展示板ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 展示板ID]</p> </td> 
    <td> <p>输入或映射要检索相关信息的展示板的ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -393,23 +393,23 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Query] </td> 
+   <td role="rowheader">[!UICONTROL Query] </td> 
    <td> <p>输入或映射要获取相关信息的展示板的名称（或部分名称）。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回展示板的最大数量]</td> 
+   <td role="rowheader">[!UICONTROL 返回展示板的最大数量]</td> 
    <td> <p> 输入在一个执行周期内将返回的最大展示板数[!DNL Workfront Fusion]。 此值必须小于或等于1000。</p>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Partial] </p> </td> 
-   <td> <p>默认情况下，此模块会搜索成员内容，以查找与查询中每个单词完全匹配的内容。 启用[！UICONTROL Partial]后，模块会查找以查询中任意单词开头的内容。</p> <p> 例如，如果您使用“development”一词来查找标题为“My Development Status Report”（我的开发状态报告）的展示板，则默认情况下需要搜索整个词。 如果您启用了[！UICONTROL Partial]，则可以搜索“dev”，但不能搜索“velopment”。</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Partial] </p> </td> 
+   <td> <p>默认情况下，此模块会搜索成员内容，以查找与查询中每个单词完全匹配的内容。 启用[!UICONTROL Partial]后，模块会查找以查询中任意单词开头的内容。</p> <p> 例如，如果您使用“development”一词来查找标题为“My Development Status Report”（我的开发状态报告）的展示板，则默认情况下需要搜索整个词。 如果您启用了[!UICONTROL Partial]，则可以搜索“dev”，但不能搜索“velopment”。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Boards] </td> 
+   <td role="rowheader">[!UICONTROL Boards] </td> 
    <td> <p>输入“我的”，或映射以逗号分隔的展示板ID列表。</p> </td> 
   </tr> 
  </tbody> 
@@ -426,15 +426,15 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL展示板ID]</td> 
+   <td role="rowheader">[!UICONTROL 展示板ID]</td> 
    <td> <p> 输入（映射或选择）要从其中移除用户的展示板的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL成员] </td> 
+   <td role="rowheader">[!UICONTROL 成员] </td> 
    <td> <p>选择要从展示板中移除的成员。</p> </td> 
   </tr> 
  </tbody> 
@@ -451,11 +451,11 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL限制] </td> 
+   <td role="rowheader">[!UICONTROL 限制] </td> 
    <td> <p>输入或映射每个方案执行周期中您希望模块返回的最大展示板数。</p> </td> 
   </tr> 
  </tbody> 
@@ -474,26 +474,26 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL展示板ID]</td> 
+   <td role="rowheader">[!UICONTROL 展示板ID]</td> 
    <td> <p> 输入或映射要创建列表的展示板的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL名称] </td> 
+   <td role="rowheader">[!UICONTROL 名称] </td> 
    <td> <p>输入或映射新列表的名称。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL位置] </td> 
+   <td role="rowheader">[!UICONTROL 位置] </td> 
    <td> <p>选择是将列表添加到顶部还是将其附加到卡片的底部。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL复制列表]</td> 
+   <td role="rowheader">[!UICONTROL 复制列表]</td> 
    <td> <p> 如果要复制列表，请选择您要如何输入要复制的列表的ID。</p> 
     <ul> 
-     <li> <p><strong>手动输入</strong> </p> <p>在<strong>[！UICONTROL列表ID]</strong>字段中，输入或映射要复制的列表的ID。<br></p> </li> 
+     <li> <p><strong>手动输入</strong> </p> <p>在<strong>[!UICONTROL 列表ID]</strong>字段中，输入或映射要复制的列表的ID。<br></p> </li> 
      <li> <p><strong>选择</strong> </p> <p>选择包含要复制的列表的主板，然后选择该列表。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -511,27 +511,27 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL列表ID]</td> 
+   <td role="rowheader">[!UICONTROL 列表ID]</td> 
    <td> <p> 输入或映射要更新的列表的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL名称] </td> 
+   <td role="rowheader">[!UICONTROL 名称] </td> 
    <td> <p>输入或映射列表的新名称。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL展示板ID]</td> 
+   <td role="rowheader">[!UICONTROL 展示板ID]</td> 
    <td> <p> 映射或选择要移动列表的展示板。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL位置] </td> 
+   <td role="rowheader">[!UICONTROL 位置] </td> 
    <td> <p>选择是将列表添加到顶部还是将其附加到卡片的底部。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL已订阅]</td> 
+   <td role="rowheader">[!UICONTROL 已订阅]</td> 
    <td> <p>如果要将活动成员订阅到列表，请启用此选项。</p> </td> 
   </tr> 
  </tbody> 
@@ -548,11 +548,11 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL列表ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 列表ID]</p> </td> 
    <td> <p>输入或映射要检索其相关信息的列表的ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -569,19 +569,19 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Board]</td> 
+   <td role="rowheader">[!UICONTROL Board]</td> 
    <td>选择包含您要监视卡片列表的展示板。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL列表]</td> 
+   <td role="rowheader">[!UICONTROL 列表]</td> 
    <td>选择要监视卡片的列表。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL限制] </td> 
+   <td role="rowheader">[!UICONTROL 限制] </td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
@@ -600,23 +600,23 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输入卡片ID]</td> 
+   <td role="rowheader">[!UICONTROL 输入卡片ID]</td> 
    <td> <p> 选择您希望如何输入要向其添加附件的卡的ID。</p> 
     <ul> 
-     <li> <p><strong>手动输入</strong> </p> <p>在<strong>[！UICONTROL卡片ID]</strong>字段中，输入或映射要向其添加附件的卡片ID。<br></p> </li> 
-     <li> <p><strong>[！UICONTROL Select]</strong> </p> <p>选择包含要向其添加附件的卡的主板，然后选择包含该卡的列表，然后选择该卡。</p> </li> 
+     <li> <p><strong>手动输入</strong> </p> <p>在<strong>[!UICONTROL 卡片ID]</strong>字段中，输入或映射要向其添加附件的卡片ID。<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>选择包含要向其添加附件的卡的主板，然后选择包含该卡的列表，然后选择该卡。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL附件类型]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 附件类型]</p> </td> 
    <td> <p>选择是要直接上载文件，还是要提供文件的URL。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL文件]</strong> </p> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </li> 
-     <li> <p><strong>[！UICONTROL URL]</strong> </p> <p>输入文件的URL，并提供附件的名称。</p> </li> 
+     <li> <p><strong>[!UICONTROL 文件]</strong> </p> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </li> 
+     <li> <p><strong>[!UICONTROL URL]</strong> </p> <p>输入文件的URL，并提供附件的名称。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -633,15 +633,15 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL卡ID]</td> 
+   <td role="rowheader">[!UICONTROL 卡ID]</td> 
    <td> <p> 输入或映射要存档或发回展示板的卡片ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存档或取消存档]</td> 
+   <td role="rowheader">[!UICONTROL 存档或取消存档]</td> 
    <td> <p> 选择是要关闭卡片（存档）还是将其发送回展示板（取消存档）。</p> </td> 
   </tr> 
  </tbody> 
@@ -658,62 +658,62 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输入列表ID]</td> 
+   <td role="rowheader">[!UICONTROL 输入列表ID]</td> 
    <td> <p> 选择您希望如何输入要添加信息卡的列表的ID。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>在<strong>[！UICONTROL列表ID]</strong>字段中，输入或映射要添加卡片的列表的ID。<br></p> </li> 
-     <li> <p><strong>[！UICONTROL Select]</strong> </p> <p>选择包含要添加卡片的列表的主板，然后选择列表。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在<strong>[!UICONTROL 列表ID]</strong>字段中，输入或映射要添加卡片的列表的ID。<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>选择包含要添加卡片的列表的主板，然后选择列表。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL标签] </td> 
+   <td role="rowheader">[!UICONTROL 标签] </td> 
    <td> <p>对于要添加到卡片中的每个标签，单击<b>添加项</b>并输入标签的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL成员]</td> 
+   <td role="rowheader">[!UICONTROL 成员]</td> 
    <td>对于要添加到卡片中的每个成员，单击<b>添加项</b>并输入成员的ID。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL名称] </td> 
+   <td role="rowheader">[!UICONTROL 名称] </td> 
    <td> <p>输入新卡的名称。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL描述]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 描述]</p> </td> 
    <td> <p>输入卡的说明。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL位置] </td> 
+   <td role="rowheader">[!UICONTROL 位置] </td> 
    <td> <p>选择是将信息卡添加到顶部还是将信息卡附加到列表的底部。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL到期日期]</td> 
+   <td role="rowheader">[!UICONTROL 到期日期]</td> 
    <td> <p> 输入信息卡的到期日期。 有关支持的日期和时间格式的列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">在[!DNL Adobe Workfront Fusion]</a>中键入强制。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL到期结束]</td> 
+   <td role="rowheader">[!UICONTROL 到期结束]</td> 
    <td> <p> 启用此选项以在到期日期将信息卡标记为完成。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL文件URL]</td> 
+   <td role="rowheader">[!UICONTROL 文件URL]</td> 
    <td> <p>输入或映射要作为附件添加到信息卡的文件的URL。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Source file]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Source file]</p> </td> 
    <td> <p>输入或映射要作为附件添加到卡片上的文件信息。 从上一个模块中选择一个文件，或映射文件的名称和数据</p> 
-     <p>注意：每个附件有10 MB的文件上传限制。 但是，[！UICONTROL Business Class]和[！UICONTROL Trello Gold]成员在每个附件中的文件上传限制为250 MB。</p> 
+     <p>注意：每个附件有10 MB的文件上传限制。 但是，[!UICONTROL Business Class]和[!UICONTROL Trello Gold]成员在每个附件中的文件上传限制为250 MB。</p> 
      </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL复制卡]</td> 
+   <td role="rowheader">[!UICONTROL 复制卡]</td> 
    <td> <p> 如果要创建新信息卡作为现有信息卡的副本，请选择您要如何输入要复制的信息的卡ID。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>在<strong>[！UICONTROL卡片ID]</strong>字段中，输入或映射要复制的卡片ID。<br></p> </li> 
-     <li> <p><strong>[！UICONTROL Select]</strong> </p> <p>选择包含要复制的信息卡的主板，然后选择包含该信息卡的列表，然后选择该信息卡。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在<strong>[!UICONTROL 卡片ID]</strong>字段中，输入或映射要复制的卡片ID。<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>选择包含要复制的信息卡的主板，然后选择包含该信息卡的列表，然后选择该信息卡。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -730,59 +730,59 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输入卡片ID]</td> 
+   <td role="rowheader">[!UICONTROL 输入卡片ID]</td> 
    <td> <p> 选择您要如何输入要编辑的卡片ID。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>在<strong>[！UICONTROL卡片ID]</strong>字段中，输入或映射要编辑的卡片ID。<br></p> </li> 
-     <li> <p><strong>[！UICONTROL Select]</strong> </p> <p>选择包含要编辑的信息卡的主板，然后选择包含该信息卡的列表，然后选择该信息卡。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在<strong>[!UICONTROL 卡片ID]</strong>字段中，输入或映射要编辑的卡片ID。<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>选择包含要编辑的信息卡的主板，然后选择包含该信息卡的列表，然后选择该信息卡。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL新名称]</td> 
+   <td role="rowheader">[!UICONTROL 新名称]</td> 
    <td> <p>输入或映射卡的新名称。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL新描述]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 新描述]</p> </td> 
    <td> <p>输入或映射卡的新描述。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL移动卡片]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 移动卡片]</p> </td> 
    <td> <p>选择展示板或展示板，并列出您要移动卡的位置。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL标签] </td> 
+   <td role="rowheader">[!UICONTROL 标签] </td> 
    <td> <p>对于要添加到卡片中的每个标签，单击<b>添加项</b>并输入标签的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL位置] </td> 
+   <td role="rowheader">[!UICONTROL 位置] </td> 
    <td> <p>选择是将信息卡添加到列表顶部还是将信息卡附加到列表底部。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL到期日期]</td> 
+   <td role="rowheader">[!UICONTROL 到期日期]</td> 
    <td> <p> 输入信息卡的到期日期。 有关支持的日期和时间格式的列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">在[!DNL Adobe Workfront Fusion]</a>中键入强制。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL到期结束]</td> 
+   <td role="rowheader">[!UICONTROL 到期结束]</td> 
    <td> <p> 启用此选项以在到期日期将信息卡标记为完成。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL成员] </td> 
+   <td role="rowheader">[!UICONTROL 成员] </td> 
    <td> <p>对于每个要添加到卡片的成员，单击<b>添加项</b>并输入或映射成员的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL附件封面ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 附件封面ID]</p> </td> 
    <td> <p>输入或映射您希望卡用作封面的图像附件的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL订阅] </td> 
+   <td role="rowheader">[!UICONTROL 订阅] </td> 
    <td> <p>选择是否应订阅该卡。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存档] </td> 
+   <td role="rowheader">[!UICONTROL 存档] </td> 
    <td> <p>选择一个选项以指示是否要存档（关闭）卡片。 </p> </td> 
   </tr> 
  </tbody> 
@@ -799,19 +799,19 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL展示板ID]</td> 
+   <td role="rowheader">[!UICONTROL 展示板ID]</td> 
    <td> <p>输入包含要检索其详细信息的卡的主板的ID。 这允许您查看展示板自定义字段的名称。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输入卡片ID]</td> 
+   <td role="rowheader">[!UICONTROL 输入卡片ID]</td> 
    <td> <p> 选择您要如何输入用于检索其详细信息的卡的ID。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>在<strong>[！UICONTROL卡片ID]</strong>字段中，输入或映射要检索其详细信息的卡片ID。<br></p> </li> 
-     <li> <p><strong>[！UICONTROL Select]</strong> </p> <p>选择包含要检索其详细信息的信息卡的主板，选择包含该信息卡的列表，然后选择该信息卡。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在<strong>[!UICONTROL 卡片ID]</strong>字段中，输入或映射要检索其详细信息的卡片ID。<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>选择包含要检索其详细信息的信息卡的主板，选择包含该信息卡的列表，然后选择该信息卡。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -828,41 +828,41 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Board] </td> 
+   <td role="rowheader">[!UICONTROL Board] </td> 
    <td> <p>选择要搜索的主板。 如果未选择展示板，则将搜索所有展示板。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Query]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Query]</p> </td> 
    <td> <p>输入搜索查询。 您可以使用以下搜索运算符来优化搜索：</p> 
     <ul> 
      <li><code><strong>-operator</strong></code> <p>您可以将“ — ”添加到任何运算符以进行负面搜索，例如<code>[!UICONTROL -has:members]</code>来搜索未分配任何成员的卡片。</p> </li> 
      <li><code><strong>@name</strong></code> <p>返回分配给成员的卡片。 您也可以使用<code>member:</code>。 使用<code>@me</code>仅包含您的卡片。</p> </li> 
      <li><code><strong>#label</strong></code> <p>返回标记的卡片。 您也可以使用<code>label:</code>。 例如，<code>label:"FIX IT"</code>将返回标签为“FIX IT”的卡片。</p> </li> 
-     <li><code><strong>board:id</strong></code> <p>返回特定展示板中的卡片。 例如，<code>board:Trello</code>将返回展示板名称中带有[！UICONTROL Trello]的展示板上的卡片。</p> </li> 
+     <li><code><strong>board:id</strong></code> <p>返回特定展示板中的卡片。 例如，<code>board:Trello</code>将返回展示板名称中带有[!UICONTROL Trello]的展示板上的卡片。</p> </li> 
      <li><code><strong>list:name</strong></code> <p>返回列表中名为“name”的卡片。</p> </li> 
      <li><code><strong>has:attachments</strong></code> <p>返回带有附件的卡片。 <code>has</code>：运算符也可以与其他属性（如<code>has:description</code>、<code>has:cover</code>、<code>has:members</code>或<code>has:stickers</code>）一起使用。</p> </li> 
      <li><code><strong>due:day</strong></code> <p>返回24小时内到期的卡片。 <code>due:</code>运算符也可以与其他时间范围一起使用，如<code>due:week</code>、<code>due:month</code>或<code>due:overdue</code>。 您还可以搜索特定的日期范围。 例如，向搜索添加<code>due:14</code>将包含未来14天到期的卡片。</p> </li> 
      <li><code><strong>created:day</strong></code> <p>返回过去24小时内创建的卡片。 <code> created:</code>运算符还可以与其他时间范围（如<code>created:week</code>或<code>created:month</code>）一起使用。 您还可以搜索特定的日期范围。 例如，将<code>created:14</code>添加到搜索包括最近14天创建的卡片。</p> </li> 
      <li><code><strong>edited:day</strong></code> <p>返回过去24小时内编辑的卡片。 <code>edited:</code>运算符也可以与其他时间范围一起使用，如<code>edited:week</code>或<code>edited:month</code>。 您还可以搜索特定的日期范围。 例如，将<code>edited:21</code>添加到搜索包括过去21天内编辑的卡片。</p> </li> 
      <li><code><strong>description:</strong>, <strong>checklist:</strong>, <strong>comment:</strong>, and <strong>name:</strong></code> <p>返回与信息卡描述、核对清单、注释或名称文本匹配的信息卡。 例如，<code>comment:"FIX IT"</code>将在注释中返回带有“FIX IT”的卡片。</p> </li> 
-     <li><code><strong>is:open</strong> and <strong>is:archived</strong></code> <p>返回打开或存档的卡片。 如果未指定，则[！UICONTROL Trello]会返回这两种类型。</p> </li> 
+     <li><code><strong>is:open</strong> and <strong>is:archived</strong></code> <p>返回打开或存档的卡片。 如果未指定，则[!UICONTROL Trello]会返回这两种类型。</p> </li> 
      <li><code><strong>is:starred</strong> </code> <p>仅包括星形展示板上的信息卡。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回的信息卡最大数量]</td> 
+   <td role="rowheader">[!UICONTROL 返回的信息卡最大数量]</td> 
    <td> <p> 输入或映射您希望[!DNL Workfront Fusion]在一个执行周期内返回的最大卡片数。 此值必须小于或等于1000。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Partial] </td> 
-   <td> <p>默认情况下，此模块会搜索成员内容，以查找与查询中每个单词完全匹配的内容。 启用[！UICONTROL Partial]后，模块会查找以查询中任意单词开头的内容。</p> <p> 例如，如果您使用“development”一词来查找标题为“My Development Status Report”（我的开发状态报告）的展示板，则默认情况下需要搜索整个词。 如果您启用了[！UICONTROL Partial]，则可以搜索“dev”，但不能搜索“velopment”。</p> </td> 
+   <td role="rowheader">[!UICONTROL Partial] </td> 
+   <td> <p>默认情况下，此模块会搜索成员内容，以查找与查询中每个单词完全匹配的内容。 启用[!UICONTROL Partial]后，模块会查找以查询中任意单词开头的内容。</p> <p> 例如，如果您使用“development”一词来查找标题为“My Development Status Report”（我的开发状态报告）的展示板，则默认情况下需要搜索整个词。 如果您启用了[!UICONTROL Partial]，则可以搜索“dev”，但不能搜索“velopment”。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL卡片] </td> 
+   <td role="rowheader">[!UICONTROL 卡片] </td> 
    <td> <p>要搜索特定信息卡，请单击<b>添加项目</b>并添加该信息卡的ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -879,20 +879,20 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL观察对象]</td> 
+   <td role="rowheader">[!UICONTROL 观察对象]</td> 
    <td> <p>选择要监视卡的位置。</p> 
     <ul> 
-     <li><strong>[！UICONTROL所有卡片]</strong> </li> 
+     <li><strong>[!UICONTROL 所有卡片]</strong> </li> 
      <li> <p>特定展示板上的<strong>卡片</strong> </p> <p>选择要监视卡片的讨论区</p> </li> 
-     <li> <p><strong>[！UICONTROL卡片位于特定列表]</strong> </p> <p>选择包含要监视卡片列表的展示板，然后选择列表。</p> </li> 
+     <li> <p><strong>[!UICONTROL 卡片位于特定列表]</strong> </p> <p>选择包含要监视卡片列表的展示板，然后选择列表。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL限制] </td> 
+   <td role="rowheader">[!UICONTROL 限制] </td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
@@ -911,15 +911,15 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL输入卡片ID和成员ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 输入卡片ID和成员ID]</p> </td> 
    <td> <p>选择您希望如何输入卡片ID和成员ID。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射<strong>[！UICONTROL卡ID]</strong>和<strong>[！UICONTROL成员ID]</strong>。</p> </li> 
-     <li> <p><strong>[！UICONTROL Select]</strong> </p> <p>选择包含要向其添加成员的卡片的展示板，然后选择包含该卡片的列表、卡片本身以及要添加到卡片中的成员。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射<strong>[!UICONTROL 卡ID]</strong>和<strong>[!UICONTROL 成员ID]</strong>。</p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>选择包含要向其添加成员的卡片的展示板，然后选择包含该卡片的列表、卡片本身以及要添加到卡片中的成员。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -942,19 +942,19 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Query] </td> 
+   <td role="rowheader">[!UICONTROL Query] </td> 
    <td> <p>输入要查找的用户的名称或用户名。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Partial] </td> 
-   <td> <p>默认情况下，此模块会搜索成员内容，以查找与查询中每个单词完全匹配的内容。 启用[！UICONTROL Partial]后，模块会查找以查询中任意单词开头的内容。</p> <p> 例如，如果您使用“development”一词来查找标题为“My Development Status Report”（我的开发状态报告）的展示板，则默认情况下需要搜索整个词。 如果您启用了[！UICONTROL Partial]，则可以搜索“dev”，但不能搜索“velopment”。</p> </td> 
+   <td role="rowheader">[!UICONTROL Partial] </td> 
+   <td> <p>默认情况下，此模块会搜索成员内容，以查找与查询中每个单词完全匹配的内容。 启用[!UICONTROL Partial]后，模块会查找以查询中任意单词开头的内容。</p> <p> 例如，如果您使用“development”一词来查找标题为“My Development Status Report”（我的开发状态报告）的展示板，则默认情况下需要搜索整个词。 如果您启用了[!UICONTROL Partial]，则可以搜索“dev”，但不能搜索“velopment”。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回成员的最大数目]</td> 
+   <td role="rowheader">[!UICONTROL 返回成员的最大数目]</td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
  </tbody> 
@@ -979,27 +979,27 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输入卡片ID]</td> 
+   <td role="rowheader">[!UICONTROL 输入卡片ID]</td> 
    <td> <p> 选择您要如何输入要添加核对清单的卡的ID。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>在<strong>[！UICONTROL卡ID]</strong>字段中，输入或映射要添加清单的卡ID。<br></p> </li> 
-     <li> <p><strong>[！UICONTROL Select]</strong> </p> <p>选择包含要在其中添加清单的卡的主板，然后选择包含该卡的列表，然后选择该卡。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在<strong>[!UICONTROL 卡ID]</strong>字段中，输入或映射要添加清单的卡ID。<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>选择包含要在其中添加清单的卡的主板，然后选择包含该卡的列表，然后选择该卡。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL名称] </td> 
+   <td role="rowheader">[!UICONTROL 名称] </td> 
    <td> <p>输入或映射清单的名称。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL位置] </td> 
+   <td role="rowheader">[!UICONTROL 位置] </td> 
    <td> <p>选择是将清单添加到顶部还是将清单附加到卡片底部。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL输入核对清单ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 输入核对清单ID]</p> </td> 
    <td> <p>如果通过复制现有清单来创建清单，请输入要复制的源清单的ID或将该ID映射到新清单中。</p> </td> 
   </tr> 
  </tbody> 
@@ -1016,27 +1016,27 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输入核对清单ID]</td> 
+   <td role="rowheader">[!UICONTROL 输入核对清单ID]</td> 
    <td> <p> 如果通过复制现有清单来创建新的清单，请选择您要如何输入要添加项目的清单ID。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>在<strong>[！UICONTROL清单ID]</strong>字段中，输入或映射要添加清单的卡ID。<br></p> </li> 
-     <li> <p><strong>[！UICONTROL Select]</strong> </p> <p>选择包含要在其中添加清单的卡的主板，然后选择包含该卡的列表，然后选择清单。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在<strong>[!UICONTROL 清单ID]</strong>字段中，输入或映射要添加清单的卡ID。<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>选择包含要在其中添加清单的卡的主板，然后选择包含该卡的列表，然后选择清单。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL项名称]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 项名称]</p> </td> 
    <td> <p>输入或映射新项目的名称。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL位置]</p> </td> 
-   <td> <p>选择是将项目添加到清单顶部还是将[！UICONTROL append]添加到清单底部。</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 位置]</p> </td> 
+   <td> <p>选择是将项目添加到清单顶部还是将[!UICONTROL append]添加到清单底部。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL已选中]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 已选中]</p> </td> 
    <td> <p>如果要将项目添加为已选中，则启用此选项。</p> </td> 
   </tr> 
  </tbody> 
@@ -1053,31 +1053,31 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输入卡片ID和清单项目ID]</td> 
+   <td role="rowheader">[!UICONTROL 输入卡片ID和清单项目ID]</td> 
    <td> <p> 选择您要如何输入卡的ID以及要在其中编辑项目的核对清单。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>在<strong>[！UICONTROL清单ID]</strong>字段中，输入或映射要添加清单的卡ID。</p> <p>在<strong>[！UICONTROL清单项目ID]</strong>字段中，输入或映射清单的ID。</p> </li> 
-     <li> <p><strong>[！UICONTROL Select]</strong> </p> <p>选择包含要在其中添加清单的卡的主板，然后选择包含该卡的列表，然后选择清单。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在<strong>[!UICONTROL 清单ID]</strong>字段中，输入或映射要添加清单的卡ID。</p> <p>在<strong>[!UICONTROL 清单项目ID]</strong>字段中，输入或映射清单的ID。</p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>选择包含要在其中添加清单的卡的主板，然后选择包含该卡的列表，然后选择清单。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL核对清单ID]</td> 
+   <td role="rowheader">[!UICONTROL 核对清单ID]</td> 
    <td>选择或映射要将清单项目移动到的清单。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL项名称]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 项名称]</p> </td> 
    <td> <p>输入或映射新项目的名称。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL位置]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 位置]</p> </td> 
    <td> <p>选择是将项目添加到清单顶部还是附加到清单底部。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL状态]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 状态]</p> </td> 
    <td> <p>选择清单项目是完整的还是不完整的。</p> </td> 
   </tr> 
  </tbody> 
@@ -1096,15 +1096,15 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输入卡片ID]</td> 
+   <td role="rowheader">[!UICONTROL 输入卡片ID]</td> 
    <td> <p> 选择您要如何输入要添加核对清单的卡的ID。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>在<strong>[！UICONTROL卡ID]</strong>字段中，输入或映射要添加清单的卡ID。 在<strong>[！UICONTROL标签ID]</strong>字段中，输入或映射要添加标签的ID。<br></p> </li> 
-     <li> <p><strong>[！UICONTROL Select]</strong> </p> <p>选择包含要在其中添加清单的卡的主板，然后选择包含该卡的列表，然后选择该卡。 </p> <p>选择要添加到卡片的标签。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在<strong>[!UICONTROL 卡ID]</strong>字段中，输入或映射要添加清单的卡ID。 在<strong>[!UICONTROL 标签ID]</strong>字段中，输入或映射要添加标签的ID。<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>选择包含要在其中添加清单的卡的主板，然后选择包含该卡的列表，然后选择该卡。 </p> <p>选择要添加到卡片的标签。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -1123,19 +1123,19 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输入卡片ID]</td> 
+   <td role="rowheader">[!UICONTROL 输入卡片ID]</td> 
    <td> <p> 选择您希望如何输入要添加注释的卡片ID。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>在<strong>[！UICONTROL卡片ID]</strong>字段中，输入或映射要添加注释的卡片ID。<br></p> </li> 
-     <li> <p><strong>[！UICONTROL Select]</strong> </p> <p>选择包含要在其中添加注释的卡片的展示板，然后选择包含该卡片的列表，然后选择该卡片。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在<strong>[!UICONTROL 卡片ID]</strong>字段中，输入或映射要添加注释的卡片ID。<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>选择包含要在其中添加注释的卡片的展示板，然后选择包含该卡片的列表，然后选择该卡片。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Comment] </td> 
+   <td role="rowheader">[!UICONTROL Comment] </td> 
    <td> <p>输入或映射要添加到选定信息卡的注释。</p> </td> 
   </tr> 
  </tbody> 
@@ -1150,27 +1150,27 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输入卡片ID]</td> 
+   <td role="rowheader">[!UICONTROL 输入卡片ID]</td> 
    <td> <p> 选择您希望如何输入要添加注释的卡片ID。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>在<strong>[！UICONTROL卡片ID]</strong>字段中，输入或映射要添加注释的卡片ID。<br></p> </li> 
-     <li> <p><strong>[！UICONTROL Select]</strong> </p> <p>选择包含要在其中添加注释的卡片的展示板，然后选择包含该卡片的列表，然后选择该卡片。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在<strong>[!UICONTROL 卡片ID]</strong>字段中，输入或映射要添加注释的卡片ID。<br></p> </li> 
+     <li> <p><strong>[!UICONTROL Select]</strong> </p> <p>选择包含要在其中添加注释的卡片的展示板，然后选择包含该卡片的列表，然后选择该卡片。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回的最大评论数]</td> 
+   <td role="rowheader">[!UICONTROL 返回的最大评论数]</td> 
    <td> <p> 输入在一个执行周期内[!DNL Workfront Fusion]将返回的最大注释数。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL始自] </td> 
+   <td role="rowheader">[!UICONTROL 始自] </td> 
    <td> <p>设置创建评论时段的开始日期。 有关支持的日期和时间格式的列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">在[!DNL Adobe Workfront Fusion]</a>中键入强制。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Before] </td> 
+   <td role="rowheader">[!UICONTROL Before] </td> 
    <td> <p>设置创建评论时段的结束日期。 有关支持的日期和时间格式的列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">在[!DNL Adobe Workfront Fusion]</a>中键入强制。</p> </td> 
   </tr> 
  </tbody> 
@@ -1187,22 +1187,22 @@ Trello连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
-   <td> <p>有关将您的[！UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
+   <td> <p>有关将您的[!UICONTROL Trello]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL观察对象]</td> 
+   <td role="rowheader">[!UICONTROL 观察对象]</td> 
    <td> <p>选择要监视注释的位置。</p> 
     <ul> 
-     <li><strong>[！UICONTROL所有卡片]随处</strong> </li> 
-     <li> <p><strong>[！UICONTROL板]</strong> </p> <p>选择要监视其评论的讨论区</p> </li> 
-     <li> <p><strong>[！UICONTROL列表]</strong> </p> <p>选择包含要监视其注释的列表的展示板，然后选择列表。</p> </li> 
-     <li><strong>[！UICONTROL卡]</strong> </li> 
+     <li><strong>[!UICONTROL 所有卡片]随处</strong> </li> 
+     <li> <p><strong>[!UICONTROL 板]</strong> </p> <p>选择要监视其评论的讨论区</p> </li> 
+     <li> <p><strong>[!UICONTROL 列表]</strong> </p> <p>选择包含要监视其注释的列表的展示板，然后选择列表。</p> </li> 
+     <li><strong>[!UICONTROL 卡]</strong> </li> 
      <li>选择包含要监视其注释的信息卡的主板，然后选择包含该信息卡的列表，然后选择该信息卡。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL限制] </td> 
+   <td role="rowheader">[!UICONTROL 限制] </td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期中返回的最大注释数。</p> </td> 
   </tr> 
  </tbody> 

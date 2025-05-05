@@ -19,7 +19,7 @@ ht-degree: 2%
 
 您可以将用户添加到[!DNL Adobe Admin Console]并将其分配给[!DNL Adobe Workfront Fusion]，或将[!DNL Adobe Admin Console]中的现有用户分配给[!DNL Workfront Fusion]。
 
-有关描述[!DNL Adobe Admin Console]中的[!DNL Workfront Fusion]的视频（包括如何添加用户），请参阅Adobe IMS](https://video.tv.adobe.com/v/3412464/){target=_blank}上的[[!DNL Fusion] 。
+有关描述[!DNL Adobe Admin Console]中的[!DNL Workfront Fusion]的视频（包括如何添加用户），请参阅Adobe IMS[&#128279;](https://video.tv.adobe.com/v/3412464/){target=_blank}上的[!DNL Fusion] 。
 
 
 
@@ -112,7 +112,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -134,11 +134,11 @@ ht-degree: 2%
 
 1. 从[[!DNL Adobe Admin Console] 页面](https://adminconsole.adobe.com/)中，选择顶部导航栏中的&#x200B;**[!UICONTROL Products]**&#x200B;选项卡，然后选择&#x200B;**[!DNL Workfront Fusion]**&#x200B;产品拼贴。
 
-   Admin Console](assets/fusion-product-admin-console.png)中的![Fusion
+   Admin Console![&#128279;](assets/fusion-product-admin-console.png)中的Fusion
 
 1. 在显示的列表中，选择要添加用户的组织。
 
-   Admin Console](assets/fusion-instances-admin-console.png)中的![Fusion实例
+   Admin Console![&#128279;](assets/fusion-instances-admin-console.png)中的Fusion实例
 
 1. 在显示的列表中，选择&#x200B;**[!UICONTROL Product Profiles]**&#x200B;选项卡，单击[!DNL Workfront Fusion] [!UICONTROL Product Profile]链接的名称。
 

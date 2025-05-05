@@ -56,7 +56,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -101,23 +101,23 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Connection]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>有关将[!DNL Office 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL驱动器ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 驱动器ID]</p> </td> 
    <td> <p>选择要监视的驱动器。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL文件夹]</td> 
+   <td role="rowheader">[!UICONTROL 文件夹]</td> 
    <td> <p> 选择要监视的文件夹。 在场景中，您只能监视一个文件夹。</p> <p>提示：要监视多个文件夹，请为每个文件夹创建一个独立的方案。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL我要观看]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 我要观看]</p> </td> 
    <td> <p>选择是要监视新文件和所有更改，还是只监视新文件。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回的最大行数]</td> 
+   <td role="rowheader">[!UICONTROL 返回的最大行数]</td> 
    <td> <p> 设置您希望模块在一个周期内返回的最大结果数。</p> </td> 
   </tr> 
  </tbody> 
@@ -132,23 +132,23 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Connection]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
    <td> <p>有关将[!DNL Office 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL驱动器ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 驱动器ID]</p> </td> 
    <td> <p>选择要监视的驱动器。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL文件夹]</td> 
+   <td role="rowheader">[!UICONTROL 文件夹]</td> 
    <td> <p> 选择要监视的文件夹。 在场景中，您只能监视一个文件夹。</p> <p>提示：要跟踪多个文件夹，请为每个文件夹创建一个独立的方案。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL我要观看]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 我要观看]</p> </td> 
    <td> <p>选择是要监视新文件夹和所有更改，还是只监视新文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回的最大行数]</td> 
+   <td role="rowheader">[!UICONTROL 返回的最大行数]</td> 
    <td> <p> 设置您希望模块在一个周期内返回的最大结果数。</p> </td> 
   </tr> 
  </tbody> 
@@ -173,19 +173,19 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td><strong>[！UICONTROL连接]</strong> </td> 
+   <td><strong>[!UICONTROL 连接]</strong> </td> 
    <td> <p>有关将[!DNL Office 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[！UICONTROL驱动器ID]</strong> </td> 
+   <td><strong>[!UICONTROL 驱动器ID]</strong> </td> 
    <td> <p>选择要创建新文件夹的驱动器。</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[！UICONTROL文件夹]</strong> </td> 
+   <td><strong>[!UICONTROL 文件夹]</strong> </td> 
    <td> <p>选择要在其中创建新文件夹的文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td><strong>[！UICONTROL文件夹名称]</strong> </td> 
+   <td><strong>[!UICONTROL 文件夹名称]</strong> </td> 
    <td>输入或映射新文件夹的名称。</td> 
   </tr> 
  </tbody> 
@@ -201,15 +201,15 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Office 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL驱动器ID]</td> 
+   <td>[!UICONTROL 驱动器ID]</td> 
    <td> <p>选择要从中删除文件的驱动器。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL文件ID]</td> 
+   <td>[!UICONTROL 文件ID]</td> 
    <td> <p>输入要删除的文件的ID。 </p> </td> 
   </tr> 
  </tbody> 
@@ -223,15 +223,15 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Office 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL驱动器ID]</td> 
+   <td>[!UICONTROL 驱动器ID]</td> 
    <td> <p>选择要从中删除文件的驱动器。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL文件夹ID]</td> 
+   <td>[!UICONTROL 文件夹ID]</td> 
    <td> <p>输入或映射要删除的文件夹的ID。 </p> </td> 
   </tr> 
  </tbody> 
@@ -247,15 +247,15 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Office 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL驱动器ID]</td> 
+   <td>[!UICONTROL 驱动器ID]</td> 
    <td> <p>选择要从中检索文件的驱动器。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL文件ID]</td> 
+   <td>[!UICONTROL 文件ID]</td> 
    <td> <p>输入要检索的文件的ID。 </p> </td> 
   </tr> 
  </tbody> 
@@ -271,23 +271,23 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Office 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL驱动器ID]</td> 
+   <td>[!UICONTROL 驱动器ID]</td> 
    <td> <p>选择要将文件上传到的驱动器。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Enter]</td> 
+   <td>[!UICONTROL Enter]</td> 
    <td> <p>选择是要使用“文件ID”还是“文件”路径选择文件。 在显示的字段中输入文件ID或路径。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL权限类型]</p> </td> 
+   <td> <p>[!UICONTROL 权限类型]</p> </td> 
    <td> <p>选择您希望接收链接的人员具有读/写权限还是只读权限。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL作用域]</td> 
+   <td>[!UICONTROL 作用域]</td> 
    <td> <p> 选择您希望拥有链接的任何人都可以访问文件，还是希望只有贵组织的成员才能访问文件。</p> </td> 
   </tr> 
  </tbody> 
@@ -303,28 +303,28 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Office 365]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL驱动器ID]</td> 
+   <td>[!UICONTROL 驱动器ID]</td> 
    <td> <p>选择要将文件上传到的驱动器。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL文件夹] </td> 
+   <td>[!UICONTROL 文件夹] </td> 
    <td> <p>选择驱动器中的文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL Source File]</p> </td> 
+   <td> <p>[!UICONTROL Source File]</p> </td> 
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL如果存在同名文件]</td> 
+   <td>[!UICONTROL 如果存在同名文件]</td> 
    <td> <p> 选择当与正在尝试上载的文件同名的文件已存在时要执行的操作。</p> 
     <ul> 
-     <li>[！UICONTROL替换现有文件]</li> 
-     <li>[！UICONTROL重命名新文件]</li> 
-     <li>[！UICONTROL以错误结尾]</li> 
+     <li>[!UICONTROL 替换现有文件]</li> 
+     <li>[!UICONTROL 重命名新文件]</li> 
+     <li>[!UICONTROL 以错误结尾]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 

@@ -54,7 +54,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -69,7 +69,7 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Markdown]</td> 
+   <td role="rowheader">[!UICONTROL Markdown]</td> 
    <td> <p>输入要转换为Markdown的HTML代码。</p> </td> 
   </tr> 
   <tr> 
@@ -90,7 +90,7 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Markdown]</td> 
+   <td role="rowheader">[!UICONTROL Markdown]</td> 
    <td> <p>输入Markdown格式纯文本。</p> </td> 
   </tr> 
   <tr> 
@@ -98,7 +98,7 @@ ht-degree: 1%
    <td> <p>启用此选项可将GitHub Flavored Markdown转换为HTML。</p> <p>有关详细信息，请参阅[!DNL GitHub]文档中的Markdown备忘单。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Sanitize]</td> 
+   <td role="rowheader">[!UICONTROL Sanitize]</td> 
    <td>选择一个选项以指示您是要从文本中剥离HTML标签还是要转义HTML。</td> 
   </tr> 
  </tbody> 

@@ -50,7 +50,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -65,7 +65,7 @@ ht-degree: 2%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL表达式]</td> 
+   <td role="rowheader">[!UICONTROL 表达式]</td> 
    <td> <p>输入您希望模块计算的表达式。 </p> <p> </p> <p>有关如何编写数学表达式的信息，请参阅mathjs.org上的<a href="https://mathjs.org/docs/expressions/syntax.html">表达式语法</a>。</p> </td> 
   </tr> 
  </tbody> 

@@ -56,7 +56,7 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -98,23 +98,23 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader"><p>[！UICONTROL URL] </p></td> 
-      <td>输入webhook的URL。 您可以在用于设置webhook的[！UICONTROL Webhooks]模块中找到此URL。</td> 
+      <td role="rowheader"><p>[!UICONTROL URL] </p></td> 
+      <td>输入webhook的URL。 您可以在用于设置webhook的[!UICONTROL Webhooks]模块中找到此URL。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL方法] </td> 
-      <td><p>[！UICONTROL POST]</p></td> 
+      <td role="rowheader">[!UICONTROL 方法] </td> 
+      <td><p>[!UICONTROL POST]</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL主体类型]</td> 
-      <td><p> [！UICONTROL Raw]</p></td> 
+      <td role="rowheader">[!UICONTROL 主体类型]</td> 
+      <td><p> [!UICONTROL Raw]</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL内容类型]</td> 
+      <td role="rowheader">[!UICONTROL 内容类型]</td> 
       <td><p> JSON (application/json)</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL请求内容]</td> 
+      <td role="rowheader">[!UICONTROL 请求内容]</td> 
       <td><p>webhook中需要原始JSON</p></td> 
      </tr> 
     </tbody> 
@@ -289,27 +289,27 @@ Content-Type: application/json
 >按如下方式配置[!UICONTROL Webhook响应]模块：
 >
 ><table style="table-layout:auto"> 
-&gt; <col> 
-&gt; <col> 
-&gt; <tbody> 
-&gt;  <tr> 
-&gt;   <td role="rowheader">[！UICONTROL状态] </td> 
-&gt;   <td> <p>2xx成功HTTP状态代码，例如200</p> </td> 
-&gt;  </tr> 
-&gt;  <tr> 
-&gt;   <td role="rowheader">[！UICONTROL Body] </td> 
-&gt;   <td> <p>HTML代码</p> </td> 
-&gt;  </tr> 
-&gt;  <tr> 
-&gt;   <td role="rowheader"> <p>[！UICONTROL Custom headers]</p> </td> 
-&gt;   <td> 
-&gt;    <ul> 
-&gt;     <li><strong>键</strong>： Content-type</li> 
-&gt;     <li><strong>值</strong>： text/html</li> 
-&gt;    </ul> </td> 
-&gt;  </tr> 
-&gt; </tbody> 
-&gt;</table>
+>&gt; <col> 
+>&gt; <col> 
+>&gt; <tbody> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader">[!UICONTROL 状态] </td> 
+>&gt;   <td> <p>2xx成功HTTP状态代码，例如200</p> </td> 
+>&gt;  </tr> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
+>&gt;   <td> <p>HTML代码</p> </td> 
+>&gt;  </tr> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+>&gt;   <td> 
+>&gt;    <ul> 
+>&gt;     <li><strong>键</strong>： Content-type</li> 
+>&gt;     <li><strong>值</strong>： text/html</li> 
+>&gt;    </ul> </td> 
+>&gt;  </tr> 
+>&gt; </tbody> 
+>&gt;</table>
 >
 >![自定义标头](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -324,23 +324,23 @@ Content-Type: application/json
 >**示例：**&#x200B;按如下方式配置[!UICONTROL Webhook响应]模块：
 >
 ><table style="table-layout:auto"> 
-&gt; <col> 
-&gt; <col> 
-&gt; <tbody> 
-&gt;  <tr> 
-&gt;   <td role="rowheader">[！UICONTROL状态] </td> 
-&gt;   <td> <p>3xx重定向HTTP状态代码，例如303</p> </td> 
-&gt;  </tr> 
-&gt;  <tr> 
-&gt;   <td role="rowheader"> <p>[！UICONTROL Custom headers]</p> </td> 
-&gt;   <td> 
-&gt;    <ul> 
-&gt;     <li><strong>[！UICONTROL键]</strong>：位置</li> 
-&gt;     <li><strong>[！UICONTROL值]</strong>：要重定向到的URL。</li> 
-&gt;    </ul> </td> 
-&gt;  </tr> 
-&gt; </tbody> 
-&gt;</table>
+>&gt; <col> 
+>&gt; <col> 
+>&gt; <tbody> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader">[!UICONTROL 状态] </td> 
+>&gt;   <td> <p>3xx重定向HTTP状态代码，例如303</p> </td> 
+>&gt;  </tr> 
+>&gt;  <tr> 
+>&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
+>&gt;   <td> 
+>&gt;    <ul> 
+>&gt;     <li><strong>[!UICONTROL 键]</strong>：位置</li> 
+>&gt;     <li><strong>[!UICONTROL 值]</strong>：要重定向到的URL。</li> 
+>&gt;    </ul> </td> 
+>&gt;  </tr> 
+>&gt; </tbody> 
+>&gt;</table>
 >
 >![Webhook响应](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 

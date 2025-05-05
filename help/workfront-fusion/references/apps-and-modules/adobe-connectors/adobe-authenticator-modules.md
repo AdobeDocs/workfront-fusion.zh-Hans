@@ -28,13 +28,13 @@ Adobe Authenticator模块允许您通过单个连接连接到任何Adobe API。 
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] 包</td>
       <td>
-        <p>新建：任何</p><p>或</p><p>当前： [！UICONTROL Pro]或更高版本</p>
+        <p>新建：任何</p><p>或</p><p>当前： [!UICONTROL Pro]或更高版本</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!DNL Adobe Workfront] 许可证</td>
       <td>
-        <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL计划]，[！UICONTROL工作]</p>
+        <p>新增：标准</p><p>或</p><p>当前： [!UICONTROL 计划]，[!UICONTROL 工作]</p>
       </td>
     </tr>
     <tr>
@@ -42,13 +42,13 @@ Adobe Authenticator模块允许您通过单个连接连接到任何Adobe API。 
       <td>
    <p>当前Fusion许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
    <p>或</p>
-   <p>旧版Fusion许可证要求：[！UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>旧版Fusion许可证要求：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
    </td>
     </tr>
     <tr>
       <td role="rowheader">产品</td>
       <td>
-   <p>新的Workfront计划：如果您有[！UICONTROL Select]或[！UICONTROL Prime] [!DNL Adobe Workfront]计划，则贵组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[！UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>新的Workfront计划：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则贵组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
    <p>或</p>
    <p>当前Workfront计划：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中描述的功能。</p>
    </td>
@@ -108,49 +108,49 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
     </col>
     <tbody>
       <tr>
-        <td role="rowheader">[！UICONTROL连接类型]</td>
+        <td role="rowheader">[!UICONTROL 连接类型]</td>
         <td>
           <p>选择是要创建OAuth服务器到服务器连接，还是要创建服务帐户(JWT)连接。</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL连接名称]</td>
+        <td role="rowheader">[!UICONTROL 连接名称]</td>
         <td>
           <p>输入此连接的名称。</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL客户端ID]</td>
-        <td>输入您的[!DNL Adobe]客户端ID。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL凭据详细信息]部分找到。
+        <td role="rowheader">[!UICONTROL 客户端ID]</td>
+        <td>输入您的[!DNL Adobe]客户端ID。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL客户端密钥]</td>
-        <td>输入您的[!DNL Adobe]客户端密钥。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL凭据详细信息]部分找到。
+        <td role="rowheader">[!UICONTROL 客户端密钥]</td>
+        <td>输入您的[!DNL Adobe]客户端密钥。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL范围]</td>
+        <td role="rowheader">[!UICONTROL 范围]</td>
         <td>如果您选择了OAuth连接，请输入此连接所需的范围。</td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL技术帐户ID]</td>
-        <td>输入您的[!DNL Adobe]技术帐户ID。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL凭据详细信息]部分找到。
+        <td role="rowheader">[!UICONTROL 技术帐户ID]</td>
+        <td>输入您的[!DNL Adobe]技术帐户ID。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL组织ID]</td>
-        <td>如果您选择了JWT连接，请输入您的[!DNL Adobe]组织ID。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL凭据详细信息]部分找到。
+        <td role="rowheader">[!UICONTROL 组织ID]</td>
+        <td>如果您选择了JWT连接，请输入您的[!DNL Adobe]组织ID。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL元范围]</td>
+        <td role="rowheader">[!UICONTROL 元范围]</td>
         <td>如果已选择JWT连接，请输入此连接所需的元范围。 </td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL私钥]</td>
+        <td role="rowheader">[!UICONTROL 私钥]</td>
         <td>
           <p>如果您选择了JWT连接，请输入在[!DNL Adobe Developer Console]中创建凭据时生成的私钥。 </p>
           <p>要提取您的私钥或证书，请执行以下操作：</p>
           <ol>
             <li value="1">
-              <p>单击<b>[！UICONTROL提取]</b>。</p>
+              <p>单击<b>[!UICONTROL 提取]</b>。</p>
             </li>
             <li value="2">
               <p>选择要提取的文件类型。</p>
@@ -162,25 +162,25 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
               <p>输入文件的密码。</p>
             </li>
             <li value="5">
-              <p>单击<b>[！UICONTROL保存]</b>以提取文件并返回到连接设置。</p>
+              <p>单击<b>[!UICONTROL 保存]</b>以提取文件并返回到连接设置。</p>
             </li>
           </ol>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL基本URL]</td>
+        <td role="rowheader">[!UICONTROL 基本URL]</td>
         <td>必须添加希望此验证器允许的基本URL。 在场景的后面部分使用进行自定义API调用模块时，您将添加选定URL的相对路径。 通过在此处输入URL，您可以控制发出自定义API调用模块可以连接到的内容，从而提高安全性。<p>对于要添加到验证器的每个基本URL，单击<b>添加项</b>并输入基本URL。</td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL身份验证URL]</td>
+        <td role="rowheader">[!UICONTROL 身份验证URL]</td>
         <td>将此项留空以使用<code>https://ims-na1.adobelogin.com</code>的标准Adobe IMS身份验证URL。 如果不使用Adobe IMS进行身份验证，请输入用于身份验证的URL。</td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL环境]</td>
+        <td role="rowheader">[!UICONTROL 环境]</td>
         <td>选择您要连接到生产环境还是非生产环境。</td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL类型]</td>
+        <td role="rowheader">[!UICONTROL 类型]</td>
         <td>选择您是要连接到服务帐户还是个人帐户。</td>
       </tr>
     </tbody>
@@ -204,19 +204,19 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[！UICONTROL Connection]</td>
+     <td role="rowheader">[!UICONTROL Connection]</td>
      <td>有关创建与Adobe Authenticator模块的连接的说明，请参阅本文中的<a href="#create-a-connection" class="MCXref xref" >创建连接</a>。</td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[！UICONTROL基本URL]</p>
+        <p>[!UICONTROL 基本URL]</p>
       </td>
       <td>
         <p>输入要连接的API点的基本URL。</p>
       </td>
     <tr>
       <td role="rowheader">
-        <p>[！UICONTROL URL]</p>
+        <p>[!UICONTROL URL]</p>
       </td>
       <td>
         <p>输入相对于基本URL的路径。</p>
@@ -224,12 +224,12 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[！UICONTROL方法]</p>
+        <p>[!UICONTROL 方法]</p>
    <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL Headers]</td>
+      <td role="rowheader">[!UICONTROL Headers]</td>
       <td>
         <p>以标准JSON对象的形式添加请求的标头。</p>
         <p>例如， <code>{"Content-type":"application/json"}</code></p>
@@ -237,13 +237,13 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL查询字符串]  </td>
+      <td role="rowheader">[!UICONTROL 查询字符串]  </td>
       <td>
         <p>输入请求查询字符串。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL主体类型]</td>
+      <td role="rowheader">[!UICONTROL 主体类型]</td>
    <td> 选择此API请求的主体类型：
    <ul>
    <li>原始</li>
@@ -253,19 +253,19 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
       </td>
       </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL请求内容]  </td>
+      <td role="rowheader">[!UICONTROL 请求内容]  </td>
       <td>
         <p>输入请求的内容。 如果您选择了<code>Raw</code>正文类型，则此选项可用</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL字段]  </td>
+      <td role="rowheader">[!UICONTROL 字段]  </td>
       <td>
         <p>对于要添加到API请求的每个文件，单击<b>添加项</b>并输入文件的文本（用于原始数据），或输入键<code>uploadedFile</code>并映射文件数据。如果您选择了<code>application</code>或<code>multipart</code>正文类型，则此选项可用。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL输出类型]  </td>
+      <td role="rowheader">[!UICONTROL 输出类型]  </td>
       <td>
         <p>选择您希望模块输出的数据类型。 如果不选择类型，模块将自动选择类型。</p>
       </td>
@@ -282,19 +282,19 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[！UICONTROL Connection]</td>
+     <td role="rowheader">[!UICONTROL Connection]</td>
      <td>有关创建与Adobe Authenticator模块的连接的说明，请参阅本文中的<a href="#create-a-connection" class="MCXref xref" >创建连接</a>。</td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[！UICONTROL基本URL]</p>
+        <p>[!UICONTROL 基本URL]</p>
       </td>
       <td>
         <p>输入要连接的API点的基本URL。</p>
       </td>
     <tr>
       <td role="rowheader">
-        <p>[！UICONTROL URL]</p>
+        <p>[!UICONTROL URL]</p>
       </td>
       <td>
         <p>输入相对于基本URL的路径。</p>
@@ -302,12 +302,12 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[！UICONTROL方法]</p>
+        <p>[!UICONTROL 方法]</p>
    <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL Headers]</td>
+      <td role="rowheader">[!UICONTROL Headers]</td>
       <td>
         <p>以标准JSON对象的形式添加请求的标头。</p>
         <p>例如， <code>{"Content-type":"application/json"}</code></p>
@@ -315,19 +315,19 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL查询字符串]  </td>
+      <td role="rowheader">[!UICONTROL 查询字符串]  </td>
       <td>
         <p>输入请求查询字符串。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL Body]</td>
+      <td role="rowheader">[!UICONTROL Body]</td>
    <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注意：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> 
      </div> </p> </td>     </tr>
      <tr>
-      <td role="rowheader">[！UICONTROL限制]  </td>
+      <td role="rowheader">[!UICONTROL 限制]  </td>
       <td>
         <p>输入您希望模块在一个执行周期内返回的结果的最大数目。</p>
       </td>

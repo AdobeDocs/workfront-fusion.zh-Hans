@@ -28,7 +28,7 @@ ht-degree: 0%
 
 如果捆绑包在所有模块中正确处理，则在“方案详细信息”页面中将该方案标记为成功。
 
-### 示例：工作自动化]的[!UICONTROL [!DNL Workfront Fusion]
+### 示例：工作自动化的[!DNL Workfront Fusion]
 
 >[!BEGINSHADEBOX]
 

@@ -78,7 +78,7 @@ ht-degree: 0%
       <td> <p>输入连接的名称。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL [!DNL GitLab] URL</td> 
+      <td role="rowheader">[!DNL GitLab] URL</td> 
       <td>输入[!DNL GitLab]实例的URL。</td> 
      </tr> 
      <tr> 
