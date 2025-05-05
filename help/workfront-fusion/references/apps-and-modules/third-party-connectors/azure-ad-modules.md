@@ -4,10 +4,10 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行
 author: Becky
 feature: Workfront Fusion
 exl-id: 96455ae4-ef68-46b5-a172-429cf9f982fb
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 719112fa82132b6294560fc9f9dff8355181e8df
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 0%
+source-wordcount: '1050'
+ht-degree: 1%
 
 ---
 
@@ -15,272 +15,274 @@ ht-degree: 0%
 
 在[!DNL Adobe Workfront Fusion]方案中，您可以自动使用[!DNL Azure Active Directory]的工作流，并将其连接到多个第三方应用程序和服务。
 
-<!--
+有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
 
-If you need instructions on creating a scenario, see [Create a scenario in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/scenarios/create-a-scenario.md). For information about modules, see [Modules in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/modules/modules.md).
+有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
 
-## Access requirements
+## 访问要求
 
-You must have the following access to use the functionality in this article:
++++ 展开以查看本文中各项功能的访问要求。
+
+您必须具有以下权限才能使用本文中的功能：
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] plan*</td>
-  <td> <p>[!UICONTROL Pro] or higher</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] license*</td>
-   <td> <p>[!UICONTROL Plan], [!UICONTROL Work]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] license**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>Current license requirement: No [!DNL Workfront Fusion] license requirement.</p>
-   <p>Or</p>
-   <p>Legacy license requirement: [!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration] </p>
+   <p>当前：无Workfront Fusion许可证要求</p>
+   <p>或</p>
+   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Product</td> 
+   <td role="rowheader">产品</td> 
    <td>
-   <p>Current product requirement: If you have the [!UICONTROL Select] or [!UICONTROL Prime] [!DNL Adobe Workfront] plan, your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article. [!DNL Workfront Fusion] is included in the [!UICONTROL Ultimate] [!DNL Workfront] plan.</p>
-   <p>Or</p>
-   <p>Legacy product requirement: Your organization must purchase [!DNL Adobe Workfront Fusion] as well as [!DNL Adobe Workfront] to use functionality described in this article.</p>
+   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>或</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-To find out what plan, license type, or access you have, contact your [!DNL Workfront] administrator.
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).
+有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
-## Prerequisites
++++
 
-To use [!DNL Azure Active Directory] modules, you must have an [!DNL Azure Active Directory] account.
+## 先决条件
 
-## [!DNL Azure Active Directory] API information
+要使用[!DNL Azure Active Directory]模块，您必须具有[!DNL Azure Active Directory]帐户。
 
-The Azure Active Directory connector uses the following:
+## [!DNL Azure Active Directory] API信息
+
+Azure Active Directory连接器使用以下内容：
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">API version</td> 
+   <td role="rowheader">API版本</td> 
    <td> v1.0 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API tag</td> 
+   <td role="rowheader">API标记</td> 
    <td>v1.4.5</td> 
   </tr>
  </tbody> 
 </table>
 
-## [!DNL Azure Active Directory] modules and their fields
+## [!DNL Azure Active Directory]模块及其字段
 
-When you configure [!DNL Azure Active Directory] modules, [!DNL Workfront Fusion] displays the fields listed below. Along with these, additional [!DNL Azure Active Directory] fields might display, depending on factors such as your access level in the app or service. A bolded title in a module indicates a required field.
+配置[!DNL Azure Active Directory]模块时，[!DNL Workfront Fusion]显示下面列出的字段。 除此以外，可能还会显示其他[!DNL Azure Active Directory]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
 
-If you see the map button above a field or function, you can use it to set variables and functions for that field. For more information, see [Map information from one module to another in [!DNL Adobe Workfront Fusion]](../../workfront-fusion/mapping/map-information-between-modules.md).
+如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[在 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)中将信息从一个模块映射到另一个模块。
 
-![Map toggle](assets/map-toggle-350x74.png)
+![映射切换](../assets/map-toggle-350x74.png)
 
-* [Triggers](#triggers)
-* [Actions](#actions)
-* [Searches](#searches)
+* [触发器](#triggers)
+* [操作](#actions)
+* [搜索](#searches)
 
-### Triggers 
+### 触发器
 
-#### [!UICONTROL Watch records] (scheduled)
+#### [!UICONTROL 观看记录] （已计划）
 
-This polling (scheduled) trigger module executes a scenario when a record in a selected object has been created since the last scheduled run in [!DNL Azure Active Directory]. It also returns all standard fields associated with the record or records, along with any custom fields and values that the connection accesses.You can map this information in subsequent modules in the scenario.
+此轮询（计划）触发器模块执行的情况是，选定对象中的记录自[!DNL Azure Active Directory]中上次计划运行以来已创建。 它还返回与一个或多个记录关联的所有标准字段，以及连接访问的任何自定义字段和值。您可以在场景的后续模块中映射此信息。
 
-When you are configuring this module, the following fields display.
+配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Type]</td> 
-   <td>Select whether you want to watch User records or Group records.</td> 
+   <td role="rowheader">[！UICONTROL类型]</td> 
+   <td>选择要监视用户记录还是组记录。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Maximum Number of Records]</td> 
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+   <td role="rowheader">[！UICONTROL最大记录数]</td> 
+   <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td> 
   </tr> 
  </tbody> 
 </table>
 
-### Actions 
+### 操作
 
-* [[!UICONTROL Read Record]](#read-record)
-* [[!UICONTROL Create Record]](#create-record)
-* [[!UICONTROL Custom API Call]](#custom-api-call)
+* [[!UICONTROL 读取记录]](#read-record)
+* [[!UICONTROL 创建记录]](#create-record)
+* [[!UICONTROL 自定义API调用]](#custom-api-call)
 
-#### [!UICONTROL Read Record] 
+#### [!UICONTROL 读取记录]
 
-This action module reads data from a single record in [!DNL Azure Active Directory].
+此操作模块从[!DNL Azure Active Directory]中的单个记录读取数据。
 
-You specify the ID of the record.
+您指定记录的ID。
 
-The module returns the ID of the record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
 
-You must have sufficient permissions to access the record in [!DNL Azure Active Directory] in order to retrieve this information.
+您必须具有足够的权限才能访问[!DNL Azure Active Directory]中的记录以检索此信息。
 
-When you are configuring this module, the following fields display.
+配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>Select whether you want to read a [!UICONTROL User] record or a [!UICONTROL Group] record.</td> 
+   <td role="rowheader">[！UICONTROL记录类型]</td> 
+   <td>选择您要读取[！UICONTROL User]记录还是[！UICONTROL Group]记录。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>Select the information you want included in the output bundle for this module.</td> 
+   <td role="rowheader">[！UICONTROL输出]</td> 
+   <td>选择要包含在此模块的输出捆绑包中的信息。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID]</td> 
-   <td>Enter or map the unique [!DNL Azure Active Directory] ID of the record that you want the module to read.</td> 
+   <td role="rowheader">[！UICONTROL ID]</td> 
+   <td>输入或映射您希望模块读取的记录的唯一[!DNL Azure Active Directory] ID。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Create Record] 
+#### [!UICONTROL 创建记录]
 
-This action module creates a new user or group record.
+此操作模块创建新用户或组记录。
 
-You specify the type of the record you want.
+指定所需记录的类型。
 
-The module returns the ID of the  record and any associated fields, along with any custom fields and values that the connection accesses. You can map this information in subsequent modules in the scenario.
+该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
 
-When you are configuring this module, the following fields display.
+配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Record Type]</td> 
-   <td>Select whether you want to read a [!UICONTROL User] record or a [!UICONTROL Group] record.</td> 
+   <td role="rowheader">[！UICONTROL记录类型]</td> 
+   <td>选择您要读取[！UICONTROL User]记录还是[！UICONTROL Group]记录。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Other Fields]</td> 
-   <td>Fill in these fields to set the values for the new record.</td> 
+   <td role="rowheader">[！UICONTROL其他字段]</td> 
+   <td>填写这些字段以设置新记录的值。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL Custom API Call] 
+#### [!UICONTROL 自定义API调用]
 
-This action module lets you make a custom authenticated call to the [!DNL Azure Active Directory] API. This way, you can create a data flow automation that can't be accomplished by the other [!DNL Azure Active Directory] modules.
+此操作模块允许您对[!DNL Azure Active Directory] API进行经过身份验证的自定义调用。 这样，您可以创建其他[!DNL Azure Active Directory]模块无法实现的数据流自动化。
 
-When you are configuring this module, the following fields display.
+配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>Enter or map a path relative to <code>https://graph.microsoft.com/{version}/{resource}?{query-parameters}</code></td> 
+   <td role="rowheader">[！UICONTROL URL]</td> 
+   <td>输入或映射相对路径 <code>https://graph.microsoft.com/{version}/{resource}?{query-parameters}</code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Method]</td> 
-   <td> <p>Select the HTTP request method you need to configure the API call. For more information, see <a href="../../workfront-fusion/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP request methods</a>.</p> </td> 
+   <td role="rowheader">[！UICONTROL方法]</td> 
+   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>Add the headers of the request in the form of a standard JSON object.</p> <p>For example, <code>{"Content-type":"application/json"}</code></p> </td> 
+   <td role="rowheader">[！UICONTROL Headers]</td> 
+   <td> <p>以标准JSON对象的形式添加请求的标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Query String]</td> 
-   <td> <p>Add the query for the API call in the form of a standard JSON object.</p> <p>For example: <code>{"name":"something-urgent"}</code></p> </td> 
+   <td role="rowheader">[！UICONTROL查询字符串]</td> 
+   <td> <p>以标准JSON对象的形式添加API调用的查询。</p> <p>例如： <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>Add the body content for the API call in the form of a standard JSON object.</p> <p>Note:  <p>When using conditional statements such as <code>if</code> in your JSON, put the quotation marks outside of the conditional statement.</p> 
+   <td role="rowheader">[！UICONTROL Body]</td> 
+   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注意：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
-      <p> <img src="assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
+      <p> <img src="../assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Searches 
+### 搜索
 
-* [Search Users](#search-users)
-* [Search Users/Groups Delta](#search-usersgroups-delta)
+* [搜索用户](#search-users)
+* [搜索用户/组增量](#search-usersgroups-delta)
 
-#### [!UICONTROL Search Users] 
+#### [!UICONTROL 搜索用户]
 
-This search module looks for records in an object in [!DNL Azure Active Directory] that match the search query you specify. You can map this information in subsequent modules in the scenario.
+此搜索模块在[!DNL Azure Active Directory]中查找与您指定的搜索查询匹配的对象中的记录。 您可以在场景的后续模块中映射此信息。
 
-When you are configuring this module, the following fields display.
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Search Criteria]</td> 
-   <td> <p>Enter the criteria that you want to use in your search.</p> <p>For information about the parameters to use, such as "[!UICONTROL $filter]", see <a href="https://docs.microsoft.com/en-us/graph/query-parameters">Use query parameters to customize responses</a> in the [!DNL Microsoft] API documentation.</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Outputs]</td> 
-   <td>Select the information you want included in the output bundle for this module.</td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Maximal count of records]</td> 
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
-  </tr> 
- </tbody> 
-</table>
-
-#### [!UICONTROL Search Users/Groups Delta]  
-
-This search module looks for records in [!DNL Azure AD] that have been created, updated, or deleted. You can map this information in subsequent modules in the scenario.
+配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>For instructions about connecting your [!DNL Azure Active Directory] account to [!DNL Workfront Fusion], see <a href="../../workfront-fusion/connections/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">Create a connection to [!DNL Adobe Workfront Fusion] - Basic instructions</a>.</p> </td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL Limit]</td> 
-   <td>Enter or map the maximum number of records you want the module to return during each scenario execution cycle.</td> 
+   <td role="rowheader">[！UICONTROL搜索条件]</td> 
+   <td> <p>输入要在搜索中使用的标准。</p> <p>有关要使用的参数（如“[！UICONTROL $filter]”）的信息，请参阅[!DNL Microsoft] API文档中的<a href="https://docs.microsoft.com/en-us/graph/query-parameters">使用查询参数自定义响应</a>。</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[！UICONTROL输出]</td> 
+   <td>选择要包含在此模块的输出捆绑包中的信息。</td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[！UICONTROL最大记录数]</td> 
+   <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td> 
   </tr> 
  </tbody> 
 </table>
 
--->
+#### [!UICONTROL 搜索用户/组增量]
+
+此搜索模块查找[!DNL Azure AD]中已创建、更新或删除的记录。 您可以在场景的后续模块中映射此信息。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">[！UICONTROL限制]</td> 
+   <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td> 
+  </tr> 
+ </tbody> 
+</table>
