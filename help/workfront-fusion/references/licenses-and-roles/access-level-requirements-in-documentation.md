@@ -34,7 +34,7 @@ Adobe Workfront Fusion文档操作方法文章包含一个表，其中说明了�
    <td role="rowheader">Adobe Workfront包 
    <td> Adobe Workfront包是指您的组织已购买的一组功能。 大多数Fusion功能在所有计划中均可用，但有一些例外情况仅适用于具有Ultimate Workfront包的组织。 
    <ul><li>要了解贵组织使用哪个Adobe Workfront包（包括贵组织使用的是新包模型还是当前包模型），请与Workfront管理员联系。</li>
-   <li>有关Workfront管理员如何找到您组织的Workfront包的说明，请参阅Workfront文档中的<a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">查看您组织的群集和Workfront计划</a>。</li><li>有关新的Workfront包的更多信息，请参阅<a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront定价和打包</a>。</li></ul> </td> 
+   <li>有关Workfront管理员如何找到您组织的Workfront包的说明，请参阅Workfront文档中的<a href="https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">查看您组织的群集和Workfront计划</a>。</li><li>有关新的Workfront包的更多信息，请参阅<a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront定价和打包</a>。</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront许可证</td> 
@@ -43,9 +43,9 @@ Adobe Workfront Fusion文档操作方法文章包含一个表，其中说明了�
    <li>要了解您分配的许可证，请与Workfront管理员联系。</li>
    <li>Adobe Workfront正在过渡到一个新的定价和打包模式。 有关许可证的信息，请参阅：
    <ul>
-   <li>新： <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">新许可证概述</a></li>
-   <li>当前： <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">许可证概述</a></li></ul></li>
-   <li>如果您拥有正确的访问级别，但仍没有访问权限，请咨询Workfront管理员是否对您的访问级别设置了其他限制。 有关Workfront管理员如何修改您的访问级别的信息，请参阅<a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">创建或修改自定义访问级别</a>。
+   <li>新： <a href="https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">新许可证概述</a></li>
+   <li>当前： <a href="https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">许可证概述</a></li></ul></li>
+   <li>如果您拥有正确的访问级别，但仍没有访问权限，请咨询Workfront管理员是否对您的访问级别设置了其他限制。 有关Workfront管理员如何修改您的访问级别的信息，请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan" class="MCXref xref">创建或修改自定义访问级别</a>。
    </ul>
       </p> </td> 
   </tr> 

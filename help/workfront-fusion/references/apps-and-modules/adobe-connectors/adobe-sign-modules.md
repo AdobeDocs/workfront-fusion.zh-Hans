@@ -124,7 +124,7 @@ Adobe Acrobat Sign连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 查找文本]</td> 
-   <td> <p>输入要搜索的搜索词。 模块会返回包含这些术语作为字段值的记录。</p> <p>有关在[!DNL Adobe Acrobat Sign]中搜索字段的更多信息，请参阅<a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign搜索中的“文本搜索的工作原理” — 其工作方式</a>。</p> </td> 
+   <td> <p>输入要搜索的搜索词。 模块会返回包含这些术语作为字段值的记录。</p> <p>有关在[!DNL Adobe Acrobat Sign]中搜索字段的更多信息，请参阅<a href="https://helpx.adobe.com/cn/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign搜索中的“文本搜索的工作原理” — 其工作方式</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 返回的最大协议数]</td> 
@@ -973,7 +973,7 @@ Adobe Acrobat Sign连接器使用以下对象：
     <ul> 
      <li> <p><b>[!UICONTROL 查找文本]</b> </p> <p>输入要在协议元数据中查找的文本。 每个单词都被视为单独的文本项。 </p> </li> 
      <li> <p><b>[!UICONTROL 在]</b>中查找文本 </p> <p>选择要在其中查找文本的元数据字段。 如果未选择任何内容，则模块将搜索所有元数据。</p> </li> 
-    </ul> <p>模块会返回包含任何选定字段中所输入文本的任何协议。 示例：输入“Spring campaign”并选择“Title”和“Note”选项会返回在“Title”或“Note”中带有“Spring”或“Campaign”字样的任何协议。</p> <p>有关在[!DNL Adobe Acrobat Sign]中搜索字段的更多信息，请参阅<a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign]搜索中的“文本搜索的工作方式” — 其工作方式</a>。</p> </td> 
+    </ul> <p>模块会返回包含任何选定字段中所输入文本的任何协议。 示例：输入“Spring campaign”并选择“Title”和“Note”选项会返回在“Title”或“Note”中带有“Spring”或“Campaign”字样的任何协议。</p> <p>有关在[!DNL Adobe Acrobat Sign]中搜索字段的更多信息，请参阅<a href="https://helpx.adobe.com/cn/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign]搜索中的“文本搜索的工作方式” — 其工作方式</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 创建日期]</td> 

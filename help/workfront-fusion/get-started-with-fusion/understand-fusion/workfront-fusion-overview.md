@@ -31,7 +31,7 @@ Workfront Fusion还提供支持场景的功能，例如场景创建模板、执�
 
 在开始使用Workfront Fusion时，您可能会发现以下资源非常有用：
 
-* 有关Workfront Fusion培训资源，请参阅[Workfront Fusion培训概述](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy)。
+* 有关Workfront Fusion培训资源，请参阅[Workfront Fusion培训概述](https://experienceleague.adobe.com/zh-hans/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy)。
 
 
 * 有关方案的详细信息，请参阅[方案概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)。

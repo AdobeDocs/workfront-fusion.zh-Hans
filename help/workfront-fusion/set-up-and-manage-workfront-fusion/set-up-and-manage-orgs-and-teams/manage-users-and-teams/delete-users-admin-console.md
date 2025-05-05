@@ -70,7 +70,7 @@ ht-degree: 0%
 
 您可以从Workfront Fusion中删除用户，同时将其他Adobe产品权限保持不变。
 
-有关说明，请参阅[在Admin Console上管理产品](https://helpx.adobe.com/enterprise/using/manage-products.html)一文中的“从产品中删除用户和用户组”。
+有关说明，请参阅[在Admin Console上管理产品](https://helpx.adobe.com/cn/enterprise/using/manage-products.html)一文中的“从产品中删除用户和用户组”。
 
 ## 在[!DNL Adobe Admin Console]的所有产品中停用用户
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 * 该用户将从产品配置文件中删除，并且未分配给其他产品配置文件。
 * 在包括Workfront Fusion的组织中删除或停用用户。
 
-  有关说明，请参阅[单独管理用户](https://helpx.adobe.com/enterprise/using/manage-users-individually.html)中的“删除用户”部分。
+  有关说明，请参阅[单独管理用户](https://helpx.adobe.com/cn/enterprise/using/manage-users-individually.html)中的“删除用户”部分。
 
 在[!DNL Workfront Fusion]中，停用会以下列方式之一影响用户：
 
