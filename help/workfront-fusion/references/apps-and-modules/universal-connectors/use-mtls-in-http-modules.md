@@ -4,9 +4,9 @@ description: 您可以在Adobe Workfront Fusion HTTP模块中使用双方TLS，�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: 89017451c8e0b821616adda861222127e100a08d
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -101,23 +101,26 @@ ht-degree: 0%
 | 欧盟数据中心 | [下载 [!DNL Workfront Fusion] EU证书2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 2025年3月3日至2026年4月4日 |
 | Azure群集 | [下载 [!DNL Workfront Fusion] Azure证书2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 2024年10月24日至2025年11月25日 |
 
+<!--
 
-### 2024年证书
+### Certificates for 2024
 
 >[!IMPORTANT]
 >
->* 我们建议安装2025年的证书，如上所示。
->* 这[!DNL Workfront Fusion]个公共证书将于2025年5月7日&#x200B;**到期**。 您的证书过期后，您需要向Web服务上传新证书。 我们建议您：
+>* We recommend installing the certificates for 2025, available above.
+>* These [!DNL Workfront Fusion] public certificates expire on **May 7, 2025**. After yours expires you will need to upload a new certificate to the web service. We recommend that you:
 >
->   * 记下过期日期，并设置一个提醒，提醒您自己将证书上传到您的Web服务。
->   * 将此页加入书签以轻松查找新证书。
+>   * Make note of the expiration date and set a reminder for yourself to upload the certificate to your web service.
+>   * Bookmark this page to easily find the new certificates.
 >
->* 这些是非通配符mTLS证书。
+>* These are non-wildcard mTLS certificates.
 
-| 数据中心 | 下载链接 | 日期有效 |
+| Datacenter | Download link | Dates valid |
 |---|---|---|
-| 美国数据中心 | [下载 [!DNL Workfront Fusion] 证书2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | 2024年4月5日至2025年5月7日 |
-| 欧盟数据中心 | [下载 [!DNL Workfront Fusion] EU证书2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | 2024年4月5日至2025年5月7日 |
+| US Datacenter | [Download [!DNL Workfront Fusion] Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
+| EU Datacenter | [Download [!DNL Workfront Fusion] EU Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
+
+-->
 
 ## 在[!DNL Workfront Fusion] HTTP模块中启用双向TLS
 
