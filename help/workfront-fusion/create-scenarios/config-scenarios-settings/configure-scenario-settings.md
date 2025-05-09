@@ -5,9 +5,9 @@ description: 您可以在方案设置面板中配置方案的特定设置。
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: a7411649c0d65956552f40a7710315536755dc65
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td> <p>新文档： [！UICONTROL Standard]</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
@@ -45,7 +45,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新增：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包括[！UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
    </td> 
@@ -77,12 +77,12 @@ ht-degree: 0%
 
    ![方案设置](assets/scenario-settings-350x221.png)
 
-   在显示的[!UICONTROL Scenario settings]面板中，您可以为该方案配置各种高级设置。
+   在显示的[!UICONTROL 方案设置]面板中，您可以为该方案配置各种高级设置。
 1. 根据需要启用或禁用方案设置。 请参阅下面的[方案设置选项](#scenario-settings-options)。
 
 ## 方案设置选项
 
-### [!UICONTROL Sequential processing]
+### [!UICONTROL 连续处理]
 
 此选项强制按顺序执行所有执行，并且主要与Webhook和未完成执行相关。
 
@@ -111,13 +111,13 @@ ht-degree: 0%
 
 ### 数据是机密的
 
-执行方案后，您可以默认显示有关方案中的模块处理了哪些数据的信息。 如果不希望存储此信息，请启用[!UICONTROL Data is confidential]选项。
+执行方案后，您可以默认显示有关方案中的模块处理了哪些数据的信息。 如果不希望存储此信息，请启用[!UICONTROL 数据是机密的]选项。
 
 >[!IMPORTANT]
 >
 >如果启用此选项，则可能很难解决在执行场景期间可能发生的错误。
 
-### [!UICONTROL Allow storing incomplete executions]
+### [!UICONTROL 允许存储未完成的执行]
 
 此选项确定在执行场景期间发生错误时[!DNL Adobe Workfront Fusion]如何进行。 启用此选项后，方案将暂停并移至不完整的执行文件夹。 这使您能够修复问题，并从场景停止的地方继续执行。 如果禁用此选项，则方案运行将停止，并且回滚阶段将启动。
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 此选项与启用数据丢失有关，如果[!DNL Workfront Fusion]无法将捆绑包保存到未完成执行的队列（例如，由于缺少可用空间）。 启用此选项后，数据将丢失，以防止整个场景执行过程中的中断。 当最高优先级是连续执行并且传入的错误数据没有那么重要时，此选项非常有用。
 
-除此之外，在执行场景时，模块有时可能会遇到大于最大允许大小的文件。 在这种情况下，将根据[!UICONTROL Enable data loss]选项的设置继续执行[!DNL Workfront Fusion]，并显示一条警告消息。
+除此之外，在执行场景时，模块有时可能会遇到大于最大允许大小的文件。 在这种情况下，[!DNL Workfront Fusion]按照[!UICONTROL 启用数据丢失]选项的设置继续进行，并显示一条警告消息。
 
 有关未完成执行的详细信息，请参阅[查看并解决未完成的执行](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)。
 
@@ -135,9 +135,9 @@ ht-degree: 0%
 
 有关警告的详细信息，请参阅[错误类型](/help/workfront-fusion/references/errors/error-processing.md)。
 
-### [!UICONTROL Auto commit]
+### [!UICONTROL 自动提交]
 
-[!UICONTROL Auto commit]设置适用于事务并定义处理方案的方式。 如果自动提交选项处于打开状态，则每个模块上的提交阶段将在完成操作阶段后立即启动。 禁用自动提交选项后，直到对所有模块执行操作（这是默认模式）后，才会执行提交。
+[!UICONTROL 自动提交]设置适用于事务并定义处理方案的方法。 如果自动提交选项处于打开状态，则每个模块上的提交阶段将在完成操作阶段后立即启动。 禁用自动提交选项后，直到对所有模块执行操作（这是默认模式）后，才会执行提交。
 
 ### 最大循环数
 
@@ -160,11 +160,11 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-**示例：** [!DNL Workfront] > [!UICONTROL Watch record]监视出现的新问题，并且[!DNL Workfront] >[!UICONTROL Convert object]将新请求转换为项目并为其分配适当的模板。
+**示例：** [!DNL Workfront] > [!UICONTROL 监视记录]监视新出现的问题，并且[!DNL Workfront] >[!UICONTROL 转换对象]将新请求转换为项目并为其分配适当的模板。
 
 ![方案设置](assets/scenario-settings-ex-1-350x157.png)
 
-[!UICONTROL more cycles]设置仅在您计划方案执行时应用。 使用[!UICONTROL Run once]按钮时，会考虑循环设置。
+仅当您计划方案执行时，才应用[!UICONTROL 更多周期]设置。 当您使用[!UICONTROL 运行一次]按钮时，周期设置将被考虑在内。
 
 #### 最大循环数设置为1（默认）
 
@@ -177,7 +177,7 @@ Workfront >观察记录模块中的最大周期数设置为`10`。
 
 Workfront >观察记录模块中的最大周期数设置为`10`。
 
-如果将100个文件添加到Dropbox文件夹，且“最大循环数”选项设置为10，则会在第一个循环中处理10个文件，在第二个循环中处理下一个10个文件，在第三个循环中处理下一个10个文件，依此类推，直到处理完所有文件为止。
+如果向Dropbox文件夹添加了100个文件，且“最大循环数”选项设置为10，则会在第一个循环中处理10个文件，在第二个循环中处理下一个10个文件，在第三个循环中处理下一个10个文件，以此类推，直到处理完所有文件为止。
 
 所有文件都在1个场景运行内处理。
 
@@ -198,3 +198,14 @@ Workfront >观察记录模块中的最大周期数设置为`10`。
 >[!NOTE]
 >
 >如果方案以即时触发器开始，则忽略设置，并在发生第一个错误后立即停用方案。
+
+### 工作线程池
+
+>[!NOTE]
+>
+>仅当满足以下两个条件时，此设置才可见：
+>
+>* 您是组织管理员或所有者
+>* 多个工作线程池与您的组织相关联。
+
+此设置会将方案分配给与您的组织关联的特定工作人员池，从而允许您将资源专用于高优先级方案。
