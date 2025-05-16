@@ -4,9 +4,9 @@ description: 某些触发器模块允许您选择希望开始捆绑包检索的�
 author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 40470e5d2183f690ad65f5e1170f78c37dee8603
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '328'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 1%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td> <p>新文档： [！UICONTROL Standard]</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
@@ -48,7 +48,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新增：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包含[！UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
    </td> 
@@ -56,7 +56,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -64,7 +64,7 @@ ht-degree: 1%
 
 ## 选择触发器模块的启动位置
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要选择触发器开始位置的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
 1. 配置并保存触发器模块。
@@ -75,7 +75,7 @@ ht-degree: 1%
 
    ![选择开始位置](assets/choose-where-to-start.png)
 
-1. 在出现的&#x200B;**[!UICONTROL Choose where to start]**&#x200B;框中选择一个选项。
+1. 在出现的&#x200B;**[!UICONTROL 选择开始位置]**&#x200B;框中选择一个选项。
 
    显示的选项取决于给定服务的可能性。 它们可能包括：
 
@@ -84,39 +84,20 @@ ht-degree: 1%
     <col> 
     <tbody>
     <tr>
-    <td>[!UICONTROL From now on] （默认）</td>
+    <td>[！UICONTROL从现在开始]（默认）</td>
     <td>在选择此选项后检索添加或更新的所有包（取决于设置）</td>
     </tr>
      <tr>
-    <td>[!UICONTROL Since specific date]</td>
+    <td>[！UICONTROL自特定日期起]</td>
     <td>检索在指定日期和时间之后添加或更新的所有包（取决于设置）</td>
       </tr>
       <tr>
-    <td>[!UICONTROL All]</td>
+    <td>[！UICONTROL All]</td>
     <td>检索所有可用的包</td>
      </tr>
       <tr>
-    <td>[!UICONTROL Choose manually]</td>
+    <td>[！UICONTROL手动选择]</td>
     <td>允许您选择从中开始检索包的第一个包</td>
      </tr>
      </tbody>
    </table>
-
-
-
-   <table style="table-layout:auto">
-    <col> 
-    <col> 
-    <tbody> 
-     <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Connection name]</p> </td> 
-      <td>输入新[!DNL DocuSign]连接的名称</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">[!UICONTROL Account type]</td> 
-      <td>选择要连接的帐户是生产帐户还是演示帐户。</td> 
-     </tr> 
-    </tbody> 
-   </table>
-
-
