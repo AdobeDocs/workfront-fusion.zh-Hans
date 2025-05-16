@@ -35,7 +35,7 @@ ht-degree: 1%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新文档： [！UICONTROL Standard]</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
+   <td> <p>新文档： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
@@ -48,7 +48,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包含[！UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
+   <p>新增：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包含[!UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
    </td> 
@@ -56,7 +56,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -84,19 +84,19 @@ ht-degree: 1%
     <col> 
     <tbody>
     <tr>
-    <td>[！UICONTROL从现在开始]（默认）</td>
+    <td>[!UICONTROL 从现在开始]（默认）</td>
     <td>在选择此选项后检索添加或更新的所有包（取决于设置）</td>
     </tr>
      <tr>
-    <td>[！UICONTROL自特定日期起]</td>
+    <td>[!UICONTROL 自特定日期起]</td>
     <td>检索在指定日期和时间之后添加或更新的所有包（取决于设置）</td>
       </tr>
       <tr>
-    <td>[！UICONTROL All]</td>
+    <td>[!UICONTROL All]</td>
     <td>检索所有可用的包</td>
      </tr>
       <tr>
-    <td>[！UICONTROL手动选择]</td>
+    <td>[!UICONTROL 手动选择]</td>
     <td>允许您选择从中开始检索包的第一个包</td>
      </tr>
      </tbody>
