@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 2b970a6f0b6abac7b8dfb38922f30d59b4f91486
+source-git-commit: 0f7626e549b872b868855c0fbc54dd0f06ce0154
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1772'
 ht-degree: 3%
 
 ---
@@ -224,6 +224,7 @@ ht-degree: 3%
    * [管理锁定的方案](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
    * [查看并解决未完成的执行](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
    * [查看方案的执行历史记录](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
+   * [查看特定场景执行](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
    * [查看正在运行的方案中的数据流](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
    * [查看Webhook的队列](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
    * [Workfront Fusion中的AI助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
