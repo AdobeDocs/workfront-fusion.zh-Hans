@@ -4,9 +4,9 @@ description: 路由器模块允许您将流量分为多条路由，并以不同�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8344cde4-df3e-4b72-9d10-46ff4b186400
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: c1c11c6766678263b36488909c3799299a1c510a
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td> <p>新文档： [！UICONTROL Standard]</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
@@ -47,7 +47,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新增：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包含[！UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
    </td> 
@@ -55,7 +55,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -65,17 +65,17 @@ ht-degree: 0%
 
 在配置路由之前，必须添加路由器模块。
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要添加路由器的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
 1. 在场景编辑器中，单击要在其后添加路由器的模块的右手柄。
-1. 在显示的模块列表中选择&#x200B;**[!UICONTROL Flow Control]** > **路由器**。
+1. 在显示的模块列表中选择&#x200B;**[!UICONTROL 流量控制]** > **路由器**。
 
    ![连接路由](assets/connect-the-router-350x108.png)
 
    或
 
-   要在两个模块之间插入路由器模块，请单击连接两个模块的路由下面的扳手图标，然后从菜单中选择&#x200B;**[!UICONTROL Add a router]**。
+   要在两个模块之间插入路由器模块，请单击连接两个模块的路由下面的扳手图标，然后从菜单中选择&#x200B;**[!UICONTROL 添加路由器]**。
 
    ![插入路由器](assets/insert-router-350x191.png)
 1. 通过单击路由器的右侧句柄并添加模块（类似于添加任何模块），向路由器添加第一条路由。
@@ -87,7 +87,7 @@ ht-degree: 0%
 
    这些路由按其执行顺序排列。 首先执行顶层路由。
 
-1. （可选）要更改路由顺序，请取消路由链接，方法是：右键单击路由器的路径，选择“取消链接”，然后按所需顺序将其拖到路由器模块中。 附加的第一个路由将是要执行的第一个路由（顶部路由）。
+1. （可选）要更改路由顺序，请右键单击路由器模块，然后选择&#x200B;**对路由排序**&#x200B;按您希望路由执行的顺序拖放路由。 路由由路由器后面的第一个模块（路由的第一个模块）标记。
 
 1. 继续[将筛选器添加到路由](#add-a-filter-to-a-route)。
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 如果数据通过多条路由的过滤，则数据由两条路由处理。 顶部路由首先处理数据。
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要添加过滤器的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
 1. 单击要设置过滤器的路径上的扳手图标![扳手](assets/wrench-icon.png)。 这是路由器模块与路由的第一个模块之间的路径。
@@ -107,7 +107,7 @@ ht-degree: 0%
 
    有关详细信息，请参阅[将筛选器添加到方案](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)。
 
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以保存筛选器设置。
+1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以保存筛选器设置。
 
 1. 继续[配置后备路由](#configure-a-fallback-route)。
 
@@ -117,7 +117,7 @@ ht-degree: 0%
 
 您可以在过滤器面板中启用回退路由。
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要添加回退路由的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
 1. 单击要设置过滤器的路径上的扳手图标![扳手](assets/wrench-icon.png)。 这是路由器模块与路由的第一个模块之间的路径。
@@ -127,7 +127,7 @@ ht-degree: 0%
 
    ![备用路由](assets/fallback-route-350x260.png)
 
-1. 单击&#x200B;**[!UICONTROL OK]**&#x200B;以保存筛选器设置。
+1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以保存筛选器设置。
 
 备用路由在路由器模块中用不同的箭头标记：
 
