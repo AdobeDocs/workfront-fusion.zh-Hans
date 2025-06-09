@@ -55,7 +55,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
+有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -74,15 +74,15 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL大语言模型(LLM)键]</td> 
+   <td role="rowheader">[!UICONTROL 大语言模型(LLM)键]</td> 
    <td> <p>输入或映射要用于此提示的大型语言模型的API密钥。 </p> <p>目前，仅支持Anthropic API密钥。</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL MCP服务器]</td> 
+   <td role="rowheader">[!UICONTROL MCP服务器]</td> 
    <td> <p>对于要用于此提示的每个MCP服务器，单击<b>添加项</b>并输入服务器的名称和主机。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输入提示]</td> 
+   <td role="rowheader">[!UICONTROL 输入提示]</td> 
    <td> <p>输入或映射大语言模型的提示。 </p> </td> 
   </tr> 
  </tbody> 
