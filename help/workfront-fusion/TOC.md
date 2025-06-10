@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: d03c4a68a69ea5302f6898418c3da9edaa404bad
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1797'
 ht-degree: 3%
 
 ---
@@ -173,6 +173,7 @@ ht-degree: 3%
    * [创建方案](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
    * 规划方案 {#plan-a-scenario}
       * [计划方案：文章索引](/help/workfront-fusion/create-scenarios/plan-a-scenario/plan-a-scenario-toc.md)
+      * [将多个方案链接在一起](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)
       * [方案规划常见问题解答](/help/workfront-fusion/create-scenarios/plan-a-scenario/faq.md)
       * [视频概述](/help/workfront-fusion/create-scenarios/plan-a-scenario/fusion-basics-videos.md)
       * [用于创建方案的工作流](/help/workfront-fusion/create-scenarios/plan-a-scenario/create-a-scenario-workflow.md)
@@ -381,6 +382,7 @@ ht-degree: 3%
          * [Workday模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
       * 工具和转换器 {#tools-and-transformers}
          * [存档模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
+         * [链模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)
          * [CSV模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
          * [数据存储模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
          * [Draft.js模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/draft-js-modules.md)

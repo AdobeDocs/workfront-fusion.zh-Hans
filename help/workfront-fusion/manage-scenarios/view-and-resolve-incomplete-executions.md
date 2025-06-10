@@ -1,23 +1,23 @@
 ---
 title: 查看并解决未完成的执行
-description: '[!UICONTROL Incomplete executions]文件夹存储由于错误未能成功完成的场景执行。 可以手动或自动解决每个存储的不完整执行。'
+description: '[!UICONTROL 未完成的执行]文件夹存储由于错误未成功完成的场景执行。 可以手动或自动解决每个存储的不完整执行。'
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: ad304117fb6e9d1320b8e50d71a162609dc6e6f4
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 7%
+source-wordcount: '649'
+ht-degree: 5%
 
 ---
 
 # 查看并解决未完成的执行
 
-[!UICONTROL Incomplete executions]文件夹存储由于错误未能成功完成的场景执行。 可以手动或自动解决每个存储的不完整执行。
+[!UICONTROL 未完成的执行]文件夹存储由于错误未成功完成的场景执行。 可以手动或自动解决每个存储的不完整执行。
 
 >[!NOTE]
 >
->默认情况下，不完整执行的存储被禁用。 要启用它，请在方案高级设置中启用[!UICONTROL Allow storing incomplete executions]选项。
+>默认情况下，不完整执行的存储被禁用。 要启用它，请在场景高级设置中启用[!UICONTROL 允许存储未完成的执行]选项。
 >
 >有关方案设置的详细信息，请参阅[配置方案设置](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)。
 
@@ -37,7 +37,7 @@ ht-degree: 7%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td> <p>新文档： [！UICONTROL Standard]</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
@@ -50,7 +50,7 @@ ht-degree: 7%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新增：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包含[！UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
    </td> 
@@ -67,7 +67,7 @@ ht-degree: 7%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的[访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -75,7 +75,7 @@ ht-degree: 7%
 
 ## 查看未完成的执行
 
-如果模块在操作过程中遇到错误，则会将新的未完成执行添加到“未完成执行”文件夹。 每个不完整的执行都包含场景的Blueprint以及可以映射到失败模块的所有捆绑包。 通过单击场景详细信息页面上的[!UICONTROL Incomplete Executions]选项卡，可以打开未完成执行的列表。
+如果模块在操作过程中遇到错误，则会将新的未完成执行添加到“未完成执行”文件夹。 每个不完整的执行都包含场景的Blueprint以及可以映射到失败模块的所有捆绑包。 通过单击场景详细信息页面上的[!UICONTROL 未完成的执行]选项卡，可以打开未完成的执行列表。
 
 <!--
 
@@ -99,25 +99,30 @@ ht-degree: 7%
 在存储新的未完成执行时，您可以按如下方式解决它：
 
 1. 打开受影响的方案。
-1. 单击 **[!UICONTROL Incomplete Executions]** 选项卡。
-1. 找到要解析的未完成执行，然后单击&#x200B;**[!UICONTROL Details]**。
+1. 单击&#x200B;**[!UICONTROL 未完成的执行]**&#x200B;选项卡。
+1. 找到要解析的未完成执行，然后单击&#x200B;**[!UICONTROL 详细信息]**。
+1. 打开模块的日志，其中显示了模块的所有操作。
+1. 找到失败的操作，然后单击&#x200B;**[!UICONTROL 解决]**：
+
+   ![解决按钮](assets/resolve-btn-350x188.png)
+
 
 
 ## 从“历史记录”选项卡中解决未完成的执行
 
-如果您想在尝试解析未完成的执行之前查看所有模块操作的日志，则可以从[!UICONTROL History]文件夹解析未完成执行：
+如果您想在尝试解析未完成的执行之前查看所有模块操作的日志，可以从[!UICONTROL History]文件夹解析未完成执行：
 
 1. 打开受影响的方案。
-1. 单击 **[!UICONTROL History]** 选项卡。
-1. 找到方案的失败执行，然后单击&#x200B;**[!UICONTROL Details]**。
+1. 单击&#x200B;**[!UICONTROL 历史记录]**&#x200B;选项卡。
+1. 找到方案的失败执行，然后单击&#x200B;**[!UICONTROL 详细信息]**。
 1. 打开模块的日志，其中显示了模块的所有操作。
-1. 找到失败的操作并单击&#x200B;**[!UICONTROL Resolve]**：
+1. 找到失败的操作，然后单击&#x200B;**[!UICONTROL 解决]**：
 
    ![解决按钮](assets/resolve-btn-350x188.png)
 
 ## 与未完成执行相关的选项
 
-[!UICONTROL Scenario settings]面板中的以下选项确定是否以及如何存储未完成的执行：
+[!UICONTROL 场景设置]面板中的以下选项确定是否以及如何存储未完成的执行：
 
 * 允许存储未完成的执行
 * 顺序处理
@@ -136,6 +141,20 @@ ht-degree: 7%
 
 如果任何其他模块发生错误，并且没有附加错误处理程序路由，则会出现以下情况之一：
 
-* 如果错误类型为`ConnectionError`、`RateLimitError`、`OutOfSpaceError`或`ModuleTimeoutError`，则存储具有自动重试的不完整执行记录。
-* 如果错误类型为`DataError`、`InvalidConfigurationError`、`InvalidAccessTokenError`、`UnexpectedError`、`MaxFileSizeExceededError`或`MaxResultsExceededError`，则存储了不完整的执行记录而不进行自动重试。
+* 为以下错误类型存储具有自动重试的不完整执行记录：
+
+   * `ConnectionError`
+   * `RateLimitError`
+   * `OutOfSpaceError`
+   * `ModuleTimeoutError`
+
+* 为以下错误类型存储了未完成的执行记录（没有自动重试）：
+
+   * `DataError`
+   * `InvalidConfigurationError`
+   * `InvalidAccessTokenError`
+   * `UnexpectedError`
+   * `MaxFileSizeExceededError`
+   * `MaxResultsExceededError`
+
 * 如果错误类型不是上述类型，则执行失败。

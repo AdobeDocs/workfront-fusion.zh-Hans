@@ -4,9 +4,9 @@ description: 工作自动化要求快速处理，因此 [!DNL Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 1253470a23a2a9124824d5ab1ff2b5013d773517
+source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 0%
 ## 方案
 
 * 默认方案执行超时为&#x200B;**40分钟**。 当执行达到此超时时，[!DNL Workfront Fusion]将在下一个循环或操作后中断方案执行，具体取决于方案。 这将强制在达到40分钟限制后不久停止场景
+
+  链接方案不计入方案执行超时。 等待子方案执行时，父方案不会累积时间。
 * 方案Blueprint的最大大小为&#x200B;**5 MB**，但我们建议将方案大小保持在&#x200B;**3 MB**&#x200B;以下。
 
   使用大量字段创建或更新数据的应用程序模块可能会导致生成非常大的Blueprint。

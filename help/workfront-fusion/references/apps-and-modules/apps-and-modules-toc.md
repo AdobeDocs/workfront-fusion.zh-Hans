@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 9c0ecebddbd02d34e936bc06ddd1c27186d2433f
+source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -123,6 +123,7 @@ Fusion为许多第三方应用程序提供了连接器。
 这些模块允许您对数据执行操作，但不需要连接到Fusion之外的任何服务。
 
 * [存档模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
+* [链模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)
 * [CSV模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/csv.md)
 * [数据存储模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)
 * [Draft.js模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/draft-js-modules.md)
