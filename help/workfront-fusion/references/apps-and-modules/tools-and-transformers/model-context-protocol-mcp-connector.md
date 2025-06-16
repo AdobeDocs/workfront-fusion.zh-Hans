@@ -3,87 +3,95 @@ title: 模型上下文协议(MCP)模块
 description: 模型上下文协议(MCP)模块允许您使用MCP处理用户提示。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: d8ae176db714d2b9f041b74a62e8276171745c4b
+hide: true
+hidefromtoc: true
+source-git-commit: 12315eca71d8febf7f3e5bb055d94cd5ccb9361e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 1%
+source-wordcount: '34'
+ht-degree: 0%
 
 ---
 
 # 模型上下文协议(MCP)模块
 
-模型上下文协议(Model Context Protocol，MCP)是一种将AI语言模型与其他应用程序安全连接的方法。 您可以配置MCP服务器，以允许AI模型访问应用程序。 然后，您可以向AI模型发送提示，它可以从应用程序返回信息。
+目前没有可用的MCP模块。
 
-例如，您可以配置MCP服务器将AI模型与Gmail连接。 当您发送提示“Give my last 5 emails from Gmail”时，它可以访问您的Gmail并返回电子邮件。
+<!--
 
-模型上下文协议(MCP)模块允许您使用语言模型和MCP服务器处理用户提示。
+Model Context Protocol (MCP) is a way to securely connect AI language models with other applications. You configure MCP servers, which allow the AI model to access the application. You can then send a prompt to the AI model, and it can return information from the application.
 
-## 访问要求
+For example, you could configure a MCP server to connect an AI model with Gmail. When you send the prompt "Give me my last 5 emails from Gmail," it can access your Gmail and return the emails.
 
-+++ 展开以查看本文中各项功能的访问要求。
+The Model Context Protocol (MCP) module allows you to process a user prompt using a language model and MCP servers.
 
-您必须具有以下权限才能使用本文中的功能：
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
+
+You must have the following access to use the functionality in this article:
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront license</td> 
+   <td> <p>New: Standard</p><p>Or</p><p>Current:  Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion license**</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求</p>
-   <p>或</p>
-   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
+   <p>Current: No Workfront Fusion license requirement</p>
+   <p>Or</p>
+   <p>Legacy: Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">产品</td> 
+   <td role="rowheader">Product</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
-   <p>或</p>
-   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   <p>New:</p> <ul><li>Select or Prime Workfront package: Your organization must purchase Adobe Workfront Fusion.</li><li>Ultimate Workfront package: Workfront Fusion is included.</li></ul>
+   <p>Or</p>
+   <p>Current: Your organization must purchase Adobe Workfront Fusion.</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md).
 
 +++
 
-## 模型上下文协议模块及其字段
+## Model Context Protocol module and its fields
 
-配置MCP模块时，[!DNL Adobe Workfront Fusion]显示下面列出的字段。 模块中的粗体标题表示必填字段。
+When you configure the MCP module, [!DNL Adobe Workfront Fusion] displays the fields listed below. A bolded title in a module indicates a required field.
 
-### 进程用户提示
+### Process User Prompt
 
-该操作模块使用您指定的语言模型和MCP服务器来处理提示。
+This action module processes a prompt, using the language model and MCP servers you specify.
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 大语言模型(LLM)键]</td> 
-   <td> <p>输入或映射要用于此提示的大型语言模型的API密钥。 </p> <p>目前，仅支持Anthropic API密钥。</p></td> 
+   <td role="rowheader">[!UICONTROL Large language model (LLM) key]</td> 
+   <td> <p>Enter or map API key for the large language model you want to use for this prompt. </p> <p>Currently, only the Anthropic API key is supported.</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL MCP服务器]</td> 
-   <td> <p>对于要用于此提示的每个MCP服务器，单击<b>添加项</b>并输入服务器的名称和主机。 </p> </td> 
+   <td role="rowheader">[!UICONTROL MCP servers]</td> 
+   <td> <p>For each MCP server that you want to make available for this prompt, click <b>Add item</b> and enter the server's name and host. </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入提示]</td> 
-   <td> <p>输入或映射大语言模型的提示。 </p> </td> 
+   <td role="rowheader">[!UICONTROL Enter your prompt]</td> 
+   <td> <p>Enter or map the prompt for the large lanugage model. </p> </td> 
   </tr> 
  </tbody> 
 </table>
+
+-->
