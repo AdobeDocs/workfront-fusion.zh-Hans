@@ -4,9 +4,9 @@ description: 工作自动化要求快速处理，因此 [!DNL Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 391675882c9f8c4e8f66e3b63da3e878c413d031
+source-git-commit: bebb30132a2cce66037f243563d61939625ea59d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,7 @@ ht-degree: 0%
 * **当场景导致递归时，Fusion工程团队将停用它以防止进一步的性能问题。**
 * 由于递归是方案设计的结果，因此您必须通过某种方式设计方案，以确保方案不包含触发方案的操作。
 
+## TLS
+
+* 默认情况下，Fusion当前支持TLS版本1.2。
+* 组织可以请求为其Fusion实例启用TLS版本1.3。
