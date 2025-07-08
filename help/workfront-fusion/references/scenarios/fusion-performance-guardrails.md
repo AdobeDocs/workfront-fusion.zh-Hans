@@ -4,9 +4,9 @@ description: 工作自动化要求快速处理，因此 [!DNL Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 784516c1282f318a46b32c803064d869cc116790
+source-git-commit: 74324fd5f2f68dfbbd0dfe1286c202c246f29d43
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -96,6 +96,7 @@ ht-degree: 0%
 
 * 默认情况下，Fusion当前支持TLS版本1.2。
 * 如果为目标服务启用了TLS 1.3，Fusion可以对出站HTTPS请求使用TLS 1.3。
+* 对于传入Webhook的HTTPS请求，Fusion支持TLS 1.2和TLS 1.3。
 * 组织可以请求为其Fusion实例启用TLS版本1.3。
 
 >[!NOTE]
