@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 2e89b74dbd0702b152c366f5d08f8868165a538c
+source-git-commit: 7f5339de5164a6eb43dae311335cacbc5c10ff96
 workflow-type: tm+mt
-source-wordcount: '1807'
+source-wordcount: '1809'
 ht-degree: 3%
 
 ---
@@ -394,6 +394,7 @@ ht-degree: 3%
          * [JSON 模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/json-modules.md)
          * [JSONata模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)
          * [JWT模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jwt-modules.md)
+         * [词汇模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
          * [Markdown模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
          * [数学模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
          * [MIME模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)

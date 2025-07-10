@@ -1,19 +1,20 @@
 ---
-title: Draft.js模块
-description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以使用Draft.js模块将Draft.js转换为HTML，将HTML转换为Draft.js。
+title: 词汇模块
+description: 在Adobe Workfront Fusion场景中，您可以使用词汇模块将词汇转换为HTML并将HTML转换为词汇。
 author: Becky
 feature: Workfront Fusion
-exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: d8c40e310931e5901a5c5a2be2357b5021452bc2
+source-git-commit: 3c9392b35e5f68706d7e6837e330ee98796b8922
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '254'
 ht-degree: 1%
 
 ---
 
-# [!UICONTROL Draft.js]模块
+# 词汇模块
 
-在[!DNL Adobe Workfront Fusion]方案中，您可以使用[!UICONTROL Draft.js]模块将Draft.js转换为HTML，将HTML转换为Draft.js。 您可以将其与Workfront模块结合使用，以向Workfront字段添加富文本或从中读取富文本。
+<!-- ADD REDIRECTS -->
+
+在Adobe Workfront Fusion场景中，您可以使用词汇模块将词汇转换为HTML并将HTML转换为词汇。  您可以将其与Workfront模块结合使用，以向Workfront字段添加富文本或从中读取富文本。
 
 有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
 
@@ -56,13 +57,29 @@ ht-degree: 1%
 
 有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
-## [!UICONTROL Draft.js到HTML]
+## HTML到词典
 
-此模块将Draft.js转换为HTML。
+此模块将HTML代码转换为Lexical。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">HTML</td> 
+   <td> <p>输入或映射要转换为词汇的HTML代码。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+## 词汇到HTML
+
+此模块将Lexical转换为HTML。
 
 配置此模块时，会显示以下字段。
 
@@ -71,23 +88,9 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Draft.js]</td> 
-   <td> <p>输入或映射要转换为HTML的Draft.js文本。</p> </td> 
+   <td role="rowheader">词典</td> 
+   <td> <p>输入或映射要转换为HTML的词法文本。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## [!UICONTROL HTML到Draft.js]
-
-此模块将HTML代码转换为Draft.js。
-
-<table style="table-layout:auto"> 
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">[！UICONTROL HTML]</td> 
-   <td> <p>输入或映射要转换为Draft.js的HTML代码。</p> </td> 
-  </tr> 
- </tbody> 
-</table>
