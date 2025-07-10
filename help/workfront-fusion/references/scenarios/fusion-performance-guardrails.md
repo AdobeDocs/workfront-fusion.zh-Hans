@@ -4,9 +4,9 @@ description: 工作自动化要求快速处理，因此 [!DNL Adobe Workfront Fu
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 74324fd5f2f68dfbbd0dfe1286c202c246f29d43
+source-git-commit: f2ddf62d660c4709f1e7e59c4302cde5b062725f
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,8 @@ ht-degree: 0%
 
 ## 未完成的执行
 
-* 未完成的执行限制为&#x200B;**500 MB**&#x200B;的总大小。 如果达到500 MB限制，则不会存储更多未完成的执行。
+* 未完成的执行被限制为每个方案&#x200B;*10 MB**的总大小。 如果达到10 MB限制，则不会为该场景存储更多不完整的执行。
+* 未完成的执行限制为每个团队的总大小为&#x200B;**500 MB**。 如果达到500 MB限制，将不会为该团队存储更多未完成的执行。
 
 ## 重试
 
