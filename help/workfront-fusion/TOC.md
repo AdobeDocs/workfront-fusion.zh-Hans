@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: e0058a54039f100ba82bc8a3ed8f5d3d4445ffeb
+source-git-commit: 8a707d6852c79bff5c2772e03d0888b4a637ba9a
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1800'
 ht-degree: 3%
 
 ---
@@ -366,6 +366,7 @@ ht-degree: 3%
          * [Microsoft OneDrive for Business模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
          * [Microsoft SharePoint Online模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
          * [Microsoft SQL Server模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)
+         * [Microsoft Teams模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-teams-modules.md)
          * [Microsoft Word Template模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
          * [NetSuite模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
          * [OpenAI （ChatGPT和DALL-E）模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/openai-chatgpt-modules.md)

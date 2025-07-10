@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 12315eca71d8febf7f3e5bb055d94cd5ccb9361e
+source-git-commit: 8a707d6852c79bff5c2772e03d0888b4a637ba9a
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -102,6 +102,7 @@ Fusion为许多第三方应用程序提供了连接器。
 * [Microsoft OneDrive for Business模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
 * [Microsoft SharePoint Online模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
 * [Microsoft SQL Server模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)
+* [Microsoft Teams模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-teams-modules.md)
 * [Microsoft Word Template模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
 * [NetSuite模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
 * [OpenAI （ChatGPT和DALL-E）模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/openai-chatgpt-modules.md)
