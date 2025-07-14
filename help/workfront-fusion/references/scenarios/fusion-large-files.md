@@ -4,9 +4,9 @@ description: Workfront和HTTP连接器当前支持大文件。
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 0e69dfa23fc12cb20c3fed772d72ef348536ea24
+source-git-commit: a5a98d2e0b246d46389d4574e29f91c74f053472
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '1050'
 ht-degree: 1%
 
 ---
@@ -25,12 +25,17 @@ Workfront Fusion中现在提供了增强的数据传输功能，支持在场景�
 
 目前，以下连接器支持大型文件。
 
+>[!NOTE]
+>
+>* 如果使用支持大文件的模块下载文件，然后将该文件传递到不支持大文件的模块，则该模块无法成功处理该文件。 在整个工作流中，大型文件必须以受支持的模块专门进行处理。
+>* 不支持大文件的模块可以处理大小最大为200 MB的文件。
+
 * Workfront
    * 上传文档
    * 下载文档
 * Adobe Experience Manager Assets
    * 上传文档
-* Workfront 验证
+* Workfront 校样
    * 上传文件
    * 下载校对
 * Adobe Authenticator
