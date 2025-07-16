@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion中的操作是由模块执行的任务。 �
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 3470f7a9658ac4e6214c27f94f5b41821f2f8665
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe Workfront Fusion中的操作是由模块执行的任务。 出于跟踪目
 * 通常，任何成功的操作步骤执行都被视为操作。
 * 场景中的第一个模块仅运行一次，并始终计为一个操作，即使它不返回捆绑包。
 * 其余模块运行的次数取决于它们必须处理的捆绑包数量。  针对一个捆绑包运行一个模块即是一种操作。 聚合器模块例外，该模块被计为每组正在处理的捆绑包进行一次操作。
-* 在场景执行的[!UICONTROL Finalization]阶段计算操作。
+* 在方案执行的[!UICONTROL 最终化]阶段计算操作。
 * 以下&#x200B;**不计算为操作**：
    * 任何过滤步骤。
    * 任何出错或中断的操作。
@@ -32,6 +32,13 @@ Adobe Workfront Fusion中的操作是由模块执行的任务。 出于跟踪目
 您的组织可能具有每月运营限制。 此计划基于贵组织购买的[!DNL Workfront]计划。 [!UICONTROL Ultimate] [!DNL Workfront]计划提供了无限量的操作。
 
 如果贵组织有每月限额，则当贵组织接近限额时会通知您。 如果贵组织超过限制，[!DNL Workfront]将联系贵组织，以确保您的计划满足您的需求。
+
+当您的组织达到组织每月限制的以下百分比时，Workfront Fusion会发送通知：
+
+* 50%
+* 75%
+* 90%
+* 100%
 
 ## 查看过去30天内执行的操作数
 
