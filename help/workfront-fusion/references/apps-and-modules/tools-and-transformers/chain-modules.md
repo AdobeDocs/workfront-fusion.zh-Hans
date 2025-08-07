@@ -5,9 +5,10 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 454e06527fe1a624f36be3b7f3682ff49a61d42d
+exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
+source-git-commit: efab436edce8a5253b147c77b87a005f6efc63d0
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '628'
 ht-degree: 1%
 
 ---
@@ -56,7 +57,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -105,6 +106,7 @@ ht-degree: 1%
    在子方案的触发器模块中配置的字段显示在调用子方案模块中。
 
 1. 在调用子方案模块中输入或映射要传递给子方案的信息。
+1. （视情况而定）如果希望父方案继续执行，而不等待子方案的响应，请启用&#x200B;**触发并忘记**&#x200B;选项。
 1. 单击&#x200B;**确定**&#x200B;以保存模块。
 
 >[!NOTE]
@@ -128,4 +130,3 @@ ht-degree: 1%
    有关创建数据结构的说明，请参阅[数据结构](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)。
 
 1. 单击&#x200B;**确定**&#x200B;以保存模块。
-
