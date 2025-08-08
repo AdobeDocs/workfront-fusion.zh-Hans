@@ -23,7 +23,7 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 这些模板可自动化Workfront流程和工作流。
 
-### [!BADGE 新建！ ]{type=Informative} Workfront — 当任务提早完成时，自动调整项目时间表
+### [!BADGE 新建！ &#x200B;]{type=Informative} Workfront — 当任务提早完成时，自动调整项目时间表
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 此Fusion模板可自动完成该过程。 当任务提早完成时，所有依赖（后续）任务都会自动重新计划以更快地开始，从而帮助您的团队更快地行动并保持敏捷。
 
-### [!BADGE 新建！ ]{type=Informative} HTTP>CSV>WF — 按域和层创建事件子列表并导出到CSV
+### [!BADGE 新建！ &#x200B;]{type=Informative} HTTP>CSV>WF — 按域和层创建事件子列表并导出到CSV
 
 下载事件订阅信息，创建CSV文件，然后将该文件上传到Workfront。
 
 <!--New August 8, 2025-->
 
-### [!BADGE 新建！ ]{type=Informative}个Workfront展示板 — 从指定列中删除已存档的卡片（按需）
+### [!BADGE 新建！ &#x200B;]{type=Informative}个Workfront展示板 — 从指定列中删除已存档的卡片（按需）
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 这些模板可自动执行将Workfront与Workfront Proof相结合的工作流。
 
-### [!BADGE 新建！ ]{type=Informative} Workfront > Workfront Proof — 将验证用户角色更改为只读并在项目关闭时锁定验证
+### [!BADGE 新建！ &#x200B;]{type=Informative} Workfront > Workfront Proof — 将验证用户角色更改为只读并在项目关闭时锁定验证
 
 <!--New March 12, 2025-->
 
