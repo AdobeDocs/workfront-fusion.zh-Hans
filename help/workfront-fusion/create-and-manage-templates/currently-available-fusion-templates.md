@@ -184,7 +184,7 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 这些模板支持Workfront-Anaplan集成，并期待在Workfront中的Anaplan中进行特定配置。 有关这些模板及其所需配置的信息，请参阅各个模板的文章。
 
-有关Workfront-Anaplan集成的详细信息，请参阅Workfront文档中的[Adobe Workfront与Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)。
+有关Workfront-Anaplan集成的详细信息，请参阅Workfront文档中的[Adobe Workfront与Anaplan](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)。
 
 >[!NOTE]
 >
@@ -192,19 +192,19 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 ### 支出优化工作流
 
-* [将 [!DNL Adobe Workfront] 项目更新发送到 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [将 [!DNL Adobe Workfront] 费用发送到 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [向 [!DNL Adobe Workfront] 列表项 [!DNL Anaplan] 发送](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)实际小时更新
+* [将 [!DNL Adobe Workfront] 项目更新发送到 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [将 [!DNL Adobe Workfront] 费用发送到 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [向 [!DNL Adobe Workfront] 列表项 [!DNL Anaplan] 发送](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)实际小时更新
 
 ### 用于链接预算请求的工作流
 
-* [根据 [!DNL Anaplan] 预算请求创建 [!DNL Adobe Workfront] 列表项](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [将 [!DNL Anaplan] 预算分配应用于 [!DNL Adobe Workfront] 项目](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [根据 [!DNL Anaplan] 预算请求创建 [!DNL Adobe Workfront] 列表项](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [将 [!DNL Anaplan] 预算分配应用于 [!DNL Adobe Workfront] 项目](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### 用于链接营销活动请求的工作流
 
-* [根据 [!DNL Anaplan] 营销活动请求创建 [!DNL Adobe Workfront] 列表项](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [将 [!DNL Anaplan] 预算分配应用于 [!DNL Adobe Workfront] 营销活动请求或营销活动项目](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [根据 [!DNL Anaplan] 营销活动请求创建 [!DNL Adobe Workfront] 列表项](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [将 [!DNL Anaplan] 预算分配应用于 [!DNL Adobe Workfront] 营销活动请求或营销活动项目](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 
 <!--[!BADGE New!]{type=Informative} -->
