@@ -5,7 +5,7 @@ description: 您可以在方案设置面板中配置方案的特定设置。
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: a7411649c0d65956552f40a7710315536755dc65
+source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -32,7 +32,7 @@ ht-degree: 0%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新文档： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
+   <td> <p>新文档： [！UICONTROL Standard]</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
@@ -45,7 +45,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包括[!UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
+   <p>新增：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包括[！UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
    </td> 
@@ -191,7 +191,7 @@ Workfront >观察记录模块中的最大周期数设置为`10`。
 
 ### 连续错误数
 
-定义在停用方案的执行之前连续执行尝试的最大次数（不包括`DataError`、`DuplicateDataError`和`ConnectionError`）。
+定义在停用方案的执行之前连续执行尝试的最大次数（不包括`DataError`、`DuplicateDataError`、`ModuleTimeoutError`和`ConnectionError`）。
 
 有关错误的详细信息，请参阅[错误类型](/help/workfront-fusion/references/errors/error-processing.md)。
 
