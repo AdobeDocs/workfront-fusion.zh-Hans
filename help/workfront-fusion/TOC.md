@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 14960edd32497a06620a9a039632a58ebd246c2b
+source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
 workflow-type: tm+mt
-source-wordcount: '1823'
+source-wordcount: '1837'
 ht-degree: 3%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 3%
 * 融合释放活动 {#fusion-release-activity}
    * [Adobe Workfront Fusion发布活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion版本 — 2025 {#fusion-releases-2025}
+      * [Workfront Fusion发行活动： 2025年8月18日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-8-18.md)
+      * [Workfront Fusion发行活动： 2025年7月31日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-31.md)
       * [Workfront Fusion发行活动： 2025年7月7日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-7-7.md)
       * [Workfront Fusion发布活动： 2025年6月6日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-9.md)
       * [Workfront Fusion发布活动： 2025年6月23日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-6-23.md)
@@ -277,8 +279,8 @@ ht-degree: 3%
          * [项目数据类型](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)
          * [强制键入](/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md)
          * [数据结构](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)
-      * 函数 {#functions}
-         * [函数](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
+      * 功能 {#functions}
+         * [功能](/help/workfront-fusion/references/mapping-panel/functions/functions-toc.md)
          * [常规函数](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md)
          * [日期和时间函数](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)
          * [日期和时间格式的令牌](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)
