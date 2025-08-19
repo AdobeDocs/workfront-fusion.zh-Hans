@@ -3,9 +3,10 @@ title: 查看特定场景执行
 description: 您可以查看特定场景执行的详细信息，包括筛选和搜索场景事件。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 5915476de34a883560d207d101a14e5b24abf3da
+exl-id: 34dd9836-9a1b-4ce2-b24e-ae769888a52a
+source-git-commit: 62b09469c1d85fd2bd1f154cde339cc4a10fc34a
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '430'
 ht-degree: 1%
 
 ---
@@ -41,7 +42,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -49,7 +50,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -85,3 +86,17 @@ ht-degree: 1%
 1. 要查看通过过滤器的包，请单击过滤器。 过滤器附近的数字表示通过过滤器的捆绑数。
 1. 要在执行面板中搜索特定的模块或事件，请在&#x200B;**搜索执行事件**&#x200B;框中输入搜索词。 键入内容时，将显示结果。
 1. 要按状态（如成功或警告）限制执行面板搜索结果，请单击&#x200B;**状态筛选器**&#x200B;下拉列表并选择状态。
+
+
+
+
+>[!NOTE]
+>
+>要创建指向特定模块的链接，请在查看以下页面时将`?moduleId=<module-id>`添加到URL：
+>
+>* 方案编辑页面（URL以`/edit`结尾）
+>* 特定场景执行（URL以`/logs/<log-id>`结尾）
+>
+>查看场景时，`<module-id>`引用模块标签旁边的数字。
+>
+>这在调试方案或复制模块配置时可能很有用。
