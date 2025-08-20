@@ -3,10 +3,11 @@ title: Jira模块
 description: 在Adobe Workfront Fusion场景中，您可以自动使用Jira软件的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: d16c1d9f257d44b72cfb93caa2a814fd62b0b733
+exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
+source-git-commit: 9865101fe57c2668ecb5ad743b3d6963833feb4a
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 5%
+source-wordcount: '1608'
+ht-degree: 6%
 
 ---
 
@@ -73,15 +74,50 @@ Jira连接器可用于Jira云和Jira数据服务器。
 
 ## 将Jira连接到Workfront Fusion
 
-您可以直接从Jira模块内创建与Jira帐户的连接。
+### 创建所需的凭据
 
->[!IMPORTANT]
->
->* 要创建与Jira数据中心的基本连接，您需要一个Jira个人访问令牌。
->* 要创建与Jira云的基本连接，您需要一个Jira API令牌
->* 要创建与Jira云或Jira数据中心的OAuth 2连接，您需要一个Jira客户端ID和客户端密钥。
->
->有关创建其中任何内容的说明，请参阅Jira文档。
+要创建与Jira的连接，您将需要以下各项：
+
+| 连接类型 | 帐户类型 | 需要凭据 |
+|---|---|---|
+| OAuth 2 | 任何 | 客户端ID和客户端密码 |
+| 基本 | Jira Cloud | Jira API令牌 |
+| 基本 | Jira数据中心 | Jira个人访问令牌(PAT) |
+
+有关创建其中任何内容的说明，请参阅Jira文档。
+
+创建这些凭据时，您将需要以下信息：
+
+* 对于OAuth 2：
+
+  | 融合数据中心 | 重定向 URL |
+  |---|---|
+  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
+  | 欧盟 | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
+  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
+
+
+
+* 对于个人访问令牌(PAT)：
+
+  | 融合数据中心 | 重定向 URL |
+  |---|---|
+  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | 欧盟 | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
+
+  >[!IMPORTANT]
+  >
+  >要使用PAT，必须在文件`jira/bin/WEB-INF/classes`的文件`jira-config.properties`中启用以下内容：
+  >
+  >* `jira.rest.auth.allow.basic = true`
+  >* `jira.rest.csrf.disabled = true`
+  >
+  >如果此文件不存在，则必须创建它。
+
+### 在Workfront Fusion中创建与Jira的连接
+
+要在Workfront Fusion中创建连接，请执行以下操作：
 
 1. 在任意Jira模块中，单击“连接”字段旁边的&#x200B;**添加**。
 1. 配置以下字段：
