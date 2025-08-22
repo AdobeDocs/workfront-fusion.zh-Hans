@@ -1,13 +1,13 @@
 ---
-title: 管理组织中的 [!DNL Adobe Workfront Fusion] 用户
+title: 查看或编辑用户详细信息
 description: 管理组织中的 [!DNL Adobe Workfront Fusion] 用户
 author: Becky
 feature: Workfront Fusion
 exl-id: 0eeed98c-0c87-4e34-9efe-027f3f03af1b
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 1%
+source-wordcount: '232'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 1%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td> <p>新文档： [！UICONTROL Standard]</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
@@ -48,7 +48,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包含[！UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
    </td> 
@@ -65,7 +65,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
 有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 [!DNL Adobe Workfront Fusion]管理员可以查看和更新用户详细信息。
 
-1. 以[!DNL Workfront Fusion]管理员身份登录时，在左侧导航中选择&#x200B;**[!UICONTROL All users]**。
-1. 在要查看的用户行中单击&#x200B;**[!UICONTROL Details]**。
-1. （可选）要更新用户的详细信息，请单击屏幕右上角的&#x200B;**[!UICONTROL Options]**，然后选择&#x200B;**[!UICONTROL Change Details]**。
+1. 以[!DNL Workfront Fusion]管理员身份登录时，在左侧导航中选择&#x200B;**[!UICONTROL 所有用户]**。
+1. 在要查看的用户行中单击&#x200B;**[!UICONTROL 详细信息]**。
+1. （可选）要更新用户的详细信息，请单击屏幕右上角的&#x200B;**[!UICONTROL 选项]**，然后选择&#x200B;**[!UICONTROL 更改详细信息]**。
 1. 编辑详细信息，然后单击&#x200B;**保存**。
