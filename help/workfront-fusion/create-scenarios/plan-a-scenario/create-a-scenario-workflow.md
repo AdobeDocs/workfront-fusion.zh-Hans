@@ -138,32 +138,32 @@ ht-degree: 0%
  </thead> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL保存] </td> 
+   <td role="rowheader">[!UICONTROL 保存] </td> 
    <td>Ctrl+Shift+S</td> 
    <td>Cmd+Shift+S</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL运行一次]</td> 
+   <td role="rowheader">[!UICONTROL 运行一次]</td> 
    <td>Ctrl+Shift+Enter</td> 
    <td>Cmd+Shift+Enter</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL打开DevTool]</td> 
+   <td role="rowheader">[!UICONTROL 打开DevTool]</td> 
    <td>F12</td> 
    <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择多个模块]</td> 
+   <td role="rowheader">[!UICONTROL 选择多个模块]</td> 
    <td>Shift +拖动</td> 
    <td>Shift +拖动</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL副本]</td> 
+   <td role="rowheader">[!UICONTROL 副本]</td> 
    <td>Ctrl+C</td> 
    <td>Cmd+C</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL粘贴]</td> 
+   <td role="rowheader">[!UICONTROL 粘贴]</td> 
    <td>Ctrl+V</td> 
    <td>Cmd+V</span> </td> 
   </tr> 

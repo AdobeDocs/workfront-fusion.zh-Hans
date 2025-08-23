@@ -26,15 +26,15 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront计划*</td>
-  <td> <p>[！UICONTROL Pro]或更高版本</p> </td>
+  <td> <p>[!UICONTROL Pro]或更高版本</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证*</td>
-   <td> <p>[！UICONTROL计划]，[！UICONTROL工作]</p> </td> 
+   <td> <p>[!UICONTROL 计划]，[!UICONTROL 工作]</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
-   <td> <p>[！UICONTROL Workfront Fusion for Work Automation and Integration] </p> </td> 
+   <td> <p>[!UICONTROL Workfront Fusion for Work Automation and Integration] </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 

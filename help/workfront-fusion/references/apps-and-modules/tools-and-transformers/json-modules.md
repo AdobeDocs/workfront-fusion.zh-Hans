@@ -143,23 +143,23 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Source module] </td> 
+   <td role="rowheader">[!UICONTROL Source module] </td> 
    <td> <p>选择用于输出要汇总到JSON的数据的模块。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Data structure]</td> 
+   <td role="rowheader">[!UICONTROL Data structure]</td> 
    <td> <p>选择要用于创建JSON的数据结构。 数据结构决定了此模块中可用的其他字段。 有关详细信息，请参阅本文中的<a href="#data-structure" class="MCXref xref">数据结构</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL缩进]</td> 
+   <td role="rowheader">[!UICONTROL 缩进]</td> 
    <td> <p> 选择是要使用制表符、两个空格还是四个空格缩进JSON。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL分组依据]</td> 
+   <td role="rowheader">[!UICONTROL 分组依据]</td> 
    <td>定义要按其分组聚合输出的表达式。 此表达式可以包含一个或多个映射项。 然后，使用此表达式的值将聚合的数据分成不同的组。 每个组输出为一个单独的捆绑，其中包含一个键（经过计算的表达式）和一个值（聚合文本）。 在后续模块中，您可以将该键用作过滤器。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL在出现空聚合后停止处理]</td> 
+   <td role="rowheader">[!UICONTROL 在出现空聚合后停止处理]</td> 
    <td>启用此选项可在没有结果时停止方案。</td> 
   </tr> 
  </tbody> 
@@ -181,7 +181,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL JSON string] </td> 
+   <td role="rowheader">[!UICONTROL JSON string] </td> 
    <td> <p>输入或映射要转换为XML的JSON。</p> </td> 
   </tr> 
  </tbody> 
@@ -215,11 +215,11 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Data structure]</td> 
+   <td role="rowheader">[!UICONTROL Data structure]</td> 
    <td> <p>选择要用于创建JSON的数据结构。 有关详细信息，请参阅本文中的<a href="#data-structure" class="MCXref xref">数据结构</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL JSON string] </td> 
+   <td role="rowheader">[!UICONTROL JSON string] </td> 
    <td> <p>输入或映射要解析的JSON。</p> </td> 
   </tr> 
  </tbody> 
@@ -238,7 +238,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
    <td> <p>选择要用于此JSON的缩进。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL对象]</td> 
+   <td role="rowheader">[!UICONTROL 对象]</td> 
    <td> <p>输入或映射要转换为JSON的对象。</p> </td> 
   </tr> 
  </tbody> 

@@ -33,13 +33,13 @@ ht-degree: 0%
     <tr>
       <td role="rowheader">Adobe Workfront计划*</td>
       <td>
-        <p>[！UICONTROL Pro]或更高版本</p>
+        <p>[!UICONTROL Pro]或更高版本</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">Adobe Workfront许可证*</td>
       <td>
-        <p>[！UICONTROL计划]，[！UICONTROL工作]</p>
+        <p>[!UICONTROL 计划]，[!UICONTROL 工作]</p>
       </td>
     </tr>
     <tr>
@@ -47,13 +47,13 @@ ht-degree: 0%
       <td>
    <p>当前许可证要求：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[！UICONTROL Workfront Fusion for Work Automation and Integration] </p>
+   <p>旧版许可证要求：[!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
    </td>
     </tr>
     <tr>
       <td role="rowheader">产品</td>
       <td>
-   <p>当前产品要求：如果您有[！UICONTROL Select]或[！UICONTROL Prime] Adobe Workfront计划，则贵组织必须购买Adobe Workfront Fusion和Adobe Workfront，才能使用本文中所述的功能。 Workfront Fusion包含在[！UICONTROL Ultimate] Workfront计划中。</p>
+   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] Adobe Workfront计划，则贵组织必须购买Adobe Workfront Fusion和Adobe Workfront，才能使用本文中所述的功能。 Workfront Fusion包含在[!UICONTROL Ultimate] Workfront计划中。</p>
    <p>或</p>
    <p>旧版产品要求：您的组织必须购买Adobe Workfront Fusion和Adobe Workfront，才能使用本文中所述的功能。</p>
    </td>
@@ -108,33 +108,33 @@ Adobe Journey Optimizer连接器使用以下对象：
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[！UICONTROL连接名称]</td>
+        <td role="rowheader">[!UICONTROL 连接名称]</td>
         <td>
           <p>输入此连接的名称。</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL环境]</td>
+        <td role="rowheader">[!UICONTROL 环境]</td>
         <td>选择您要连接到生产环境还是非生产环境。</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL类型]</td>
+        <td role="rowheader">[!UICONTROL 类型]</td>
         <td>选择您是要连接到服务帐户还是个人帐户。</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL客户端ID]</td>
-        <td>输入您的[！UICONTROL Adobe] [！UICONTROL客户端ID]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL 客户端ID]</td>
+        <td>输入您的[!UICONTROL Adobe] [!UICONTROL 客户端ID]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL客户端密钥]</td>
-        <td>输入您的[!DNL Adobe] [！UICONTROL客户端密钥]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL 客户端密钥]</td>
+        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL组织ID]</td>
-        <td>输入您的[!DNL Adobe] [！UICONTROL组织ID]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL 组织ID]</td>
+        <td>输入您的[!DNL Adobe] [!UICONTROL 组织ID]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL沙盒名称]</td>
+        <td role="rowheader">[!UICONTROL 沙盒名称]</td>
         <td>输入此连接将使用的沙盒的名称。</td>
         </tr>
       </tbody>
@@ -183,11 +183,11 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择配置类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择配置类型]</td> 
    <td>选择是创建上限配置还是限制配置。<ul><li><p><b>频次封顶</b></p>继续<a href="#capping-fields" class="MCXref xref" >设置字段上限</a>。</li><li><p><b>限制</b></p>继续<a href="#throttling-fields" class="MCXref xref" >限制字段</a>。</li></ul></td> 
   </tr> 
    </tbody> 
@@ -199,31 +199,31 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <col> 
  <tbody> <tr> 
-   <td role="rowheader">[！UICONTROL URL]</td> 
+   <td role="rowheader">[!UICONTROL URL]</td> 
    <td>输入或映射要配置的端点的URL。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL IMS组织ID]</td> 
+   <td role="rowheader">[!UICONTROL IMS组织ID]</td> 
    <td>输入或映射组织的Adobe IMS ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL方法]</td> 
+   <td role="rowheader">[!UICONTROL 方法]</td> 
    <td>选择要在此配置中使用的方法。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL服务]</td> 
+   <td role="rowheader">[!UICONTROL 服务]</td> 
    <td>选择您是使用此配置的操作还是数据源。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL最大HTTP连接数]</td> 
+   <td role="rowheader">[!UICONTROL 最大HTTP连接数]</td> 
    <td>输入或映射与此端点的最大同时连接数。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL最大调用数]</td> 
+   <td role="rowheader">[!UICONTROL 最大调用数]</td> 
    <td>输入或映射“时间段”字段中指定的时间段内要执行的最大呼叫数。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL时段（毫秒）]</td> 
+   <td role="rowheader">[!UICONTROL 时段（毫秒）]</td> 
    <td>输入或映射与最大调用数字段相关的毫秒数。</td> 
   </tr> 
  </tbody> 
@@ -235,31 +235,31 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <col> 
  <tbody> <tr> 
-   <td role="rowheader">[！UICONTROL名称]</td> 
+   <td role="rowheader">[!UICONTROL 名称]</td> 
    <td>输入或映射此配置的名称。</td> 
 <tr> 
-   <td role="rowheader">[！UICONTROL描述]</td> 
+   <td role="rowheader">[!UICONTROL 描述]</td> 
    <td>输入或映射此配置的描述。</td> 
   </tr> 
 <tr> 
-   <td role="rowheader">[！UICONTROL URL模式]</td> 
+   <td role="rowheader">[!UICONTROL URL模式]</td> 
    <td>输入或映射要限制的终结点的URL。</td> 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL方法]</td> 
+   <td role="rowheader">[!UICONTROL 方法]</td> 
    <td>选择要在此配置中使用的方法。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL最大吞吐量]</td> 
+   <td role="rowheader">[!UICONTROL 最大吞吐量]</td> 
    <td>选择您是使用此配置的操作还是数据源。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL最大HTTP连接数]</td> 
+   <td role="rowheader">[!UICONTROL 最大HTTP连接数]</td> 
    <td>输入或映射与此端点的最大同时连接数。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL最大调用数]</td> 
+   <td role="rowheader">[!UICONTROL 最大调用数]</td> 
    <td>输入或映射您要为此端点设置的最大吞吐量。 此值必须介于200和5000之间。</td> 
   </tr> 
  </tbody> 
@@ -274,15 +274,15 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择配置类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择配置类型]</td> 
    <td>选择是部署上限配置还是限制配置。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL配置ID]</td> 
+   <td role="rowheader">[!UICONTROL 配置ID]</td> 
    <td>输入或映射要部署的配置的ID。</td> 
   </tr> 
  </tbody> 
@@ -297,11 +297,11 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择配置类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择配置类型]</td> 
    <td>选择是更新上限配置还是限制配置。<ul><li><p><b>频次封顶</b></p>有关字段，请参阅本文创建配置部分中的<a href="#capping-fields" class="MCXref xref" >字段上限</a>。</li><li><p><b>限制</b></p>有关字段，请参阅本文创建配置部分中的<a href="#throttling-fields" class="MCXref xref" >限制字段</a>。</li></ul></td> 
   </tr> 
   </tbody> 
@@ -316,15 +316,15 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择配置类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择配置类型]</td> 
    <td>选择是取消部署上限配置还是限制配置。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL配置ID]</td> 
+   <td role="rowheader">[!UICONTROL 配置ID]</td> 
    <td>输入或映射要取消部署的配置的ID。</td> 
   </tr> 
  </tbody> 
@@ -339,15 +339,15 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择配置类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择配置类型]</td> 
    <td>选择您是检查上限配置还是限制配置。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL配置ID]</td> 
+   <td role="rowheader">[!UICONTROL 配置ID]</td> 
    <td>输入或映射要检查的配置的ID。</td> 
   </tr> 
  </tbody> 
@@ -364,15 +364,15 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择配置类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择配置类型]</td> 
    <td>选择是删除上限配置还是限制配置。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL配置ID]</td> 
+   <td role="rowheader">[!UICONTROL 配置ID]</td> 
    <td>输入或映射要删除的配置的ID。</td> 
   </tr> 
  </tbody> 
@@ -387,15 +387,15 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择配置类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择配置类型]</td> 
    <td>选择是检索上限配置还是限制配置。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL配置ID]</td> 
+   <td role="rowheader">[!UICONTROL 配置ID]</td> 
    <td>输入或映射要检索的配置的ID。</td> 
   </tr> 
  </tbody> 
@@ -425,31 +425,31 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL名称]</td> 
+   <td role="rowheader">[!UICONTROL 名称]</td> 
    <td>输入或映射包的名称。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL描述]</td> 
+   <td role="rowheader">[!UICONTROL 描述]</td> 
    <td>输入或映射包的描述。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL过期日期]</td> 
+   <td role="rowheader">[!UICONTROL 过期日期]</td> 
    <td>输入或映射定义包到期日期的时间戳。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL包类型]</td> 
+   <td role="rowheader">[!UICONTROL 包类型]</td> 
    <td>选择要创建的包类型。<ul><li><p><b>完全</b></p>程序包将包含所有工件</p></li><li><p><b>部分</b></p><p>该资源包将仅包含您添加的工件。 </p></li><ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL工件]</td> 
+   <td role="rowheader">[!UICONTROL 工件]</td> 
    <td>如果要创建部分包，请为每个要添加的项目单击<b>添加项目</b>并指定项目的ID、类型和标题。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Source Sandbox]</td> 
+   <td role="rowheader">[!UICONTROL Source Sandbox]</td> 
    <td>输入或映射沙盒的名称和IMS组织ID，该沙盒包含您希望包中包含的项目。</td> 
   </tr> 
  </tbody> 
@@ -464,11 +464,11 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择操作]</td> 
+   <td role="rowheader">[!UICONTROL 选择操作]</td> 
    <td>选择要执行的操作。<ul><li><p><b>添加工件</b></p><p>对于要添加的每个项目，单击<b>添加项目</b>并指定项目的ID、类型和标题，然后输入或映射包的到期日期。 </p></li><li><p><b>删除构件</b></p><p>对于要删除的每个项目，单击<b>添加项目</b>并指定项目的ID、类型和标题。 </p></li><li><p><b>更新元数据</b></p><p>为名称、描述或源沙盒的名称或IMS组织ID输入新值。</p></li></ul></td> 
   </tr> 
  </tbody> 
@@ -483,11 +483,11 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL包ID]</td> 
+   <td role="rowheader">[!UICONTROL 包ID]</td> 
    <td>输入或映射要删除的程序包的ID。</td> 
   </tr> 
  </tbody> 
@@ -502,11 +502,11 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL包ID]</td> 
+   <td role="rowheader">[!UICONTROL 包ID]</td> 
    <td>输入或映射要为其返回详细信息的程序包的ID。</td> 
   </tr> 
  </tbody> 
@@ -523,15 +523,15 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL包ID]</td> 
+   <td role="rowheader">[!UICONTROL 包ID]</td> 
    <td>输入或映射要导入的程序包的ID。</td> 
   </tr> 
     <tr> 
-   <td role="rowheader">[！UICONTROL Target沙盒]</td> 
+   <td role="rowheader">[!UICONTROL Target沙盒]</td> 
    <td>输入或映射要从中导入包的沙盒的名称。</td> 
   </tr> 
  </tbody> 
@@ -546,11 +546,11 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL包ID]</td> 
+   <td role="rowheader">[!UICONTROL 包ID]</td> 
    <td>输入或映射要发布的包的ID。</td> 
   </tr> 
  </tbody> 
@@ -565,39 +565,39 @@ Adobe Journey Optimizer连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL包ID]</td> 
+   <td role="rowheader">[!UICONTROL 包ID]</td> 
    <td>输入或映射要发布的包的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL名称]</td> 
+   <td role="rowheader">[!UICONTROL 名称]</td> 
    <td>输入或映射导入作业的名称。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL描述]</td> 
+   <td role="rowheader">[!UICONTROL 描述]</td> 
    <td>输入或映射导入作业的描述</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL（目标沙盒）名称]</td> 
+   <td role="rowheader">[!UICONTROL （目标沙盒）名称]</td> 
    <td>输入或映射要将导入提交到的沙盒的名称。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL（目标沙盒） IMS组织ID]</td> 
+   <td role="rowheader">[!UICONTROL （目标沙盒） IMS组织ID]</td> 
    <td>输入或映射要将导入提交到的沙盒的Adobe IMS组织ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL (Source sandbox) ID]</td> 
+   <td role="rowheader">[!UICONTROL (Source sandbox) ID]</td> 
    <td>输入或映射包含要发布的包的沙盒的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL (Source sandbox)类型]</td> 
+   <td role="rowheader">[!UICONTROL (Source sandbox)类型]</td> 
    <td></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL (Source sandbox)链接]</td> 
+   <td role="rowheader">[!UICONTROL (Source sandbox)链接]</td> 
    <td>输入或映射要发布的包的链接。</td> 
   </tr> 
  </tbody> 
@@ -820,11 +820,11 @@ This action module imports a snapshot containing artifacts.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择内容类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择内容类型]</td> 
    <td>选择是创建内容模板还是内容片段。<ul><li><p><b>内容模板</b></p>继续<a href="#template-fields" class="MCXref xref" >模板字段</a>。</li><li><p><b>内容片段</b></p>继续<a href="#fragment-fields" class="MCXref xref" >片段字段</a>。</li></ul></td> 
   </tr> 
   </tbody> 
@@ -836,35 +836,35 @@ This action module imports a snapshot containing artifacts.
  <col> 
  <col> 
  <tbody> <tr> 
-   <td role="rowheader">[！UICONTROL名称]</td> 
+   <td role="rowheader">[!UICONTROL 名称]</td> 
    <td>输入或映射此内容模板的名称。</td> 
 <tr> 
-   <td role="rowheader">[！UICONTROL描述]</td> 
+   <td role="rowheader">[!UICONTROL 描述]</td> 
    <td>输入或映射此内容模板的描述。</td> 
   </tr> 
 <tr> 
-   <td role="rowheader">[！UICONTROL类型]</td> 
+   <td role="rowheader">[!UICONTROL 类型]</td> 
    <td>选择要创建的模板类型。</td> 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL通道]</td> 
+   <td role="rowheader">[!UICONTROL 通道]</td> 
    <td>选择此模板中包含的渠道。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL内容模板来源]</td> 
+   <td role="rowheader">[!UICONTROL 内容模板来源]</td> 
    <td>选择此模板的源。</td>  
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL元数据]</td> 
+   <td role="rowheader">[!UICONTROL 元数据]</td> 
    <td>要在新模板中包含自定义属性，请选择“添加元数据”，然后输入或映射元数据的键和值。 对每个要包含的自定义字段重复执行上述操作。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL电子邮件HTML]</td> 
+   <td role="rowheader">[!UICONTROL 电子邮件HTML]</td> 
    <td>输入或映射此模板中包含的电子邮件的HTML。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL编辑器上下文]</td> 
+   <td role="rowheader">[!UICONTROL 编辑器上下文]</td> 
    <td>要在电子邮件中包含自定义属性，请选择“添加编辑器上下文”，然后输入或映射上下文的键和值。 对每个要包含的自定义字段重复执行上述操作。</td> 
   </tr> 
  </tbody> 
@@ -876,35 +876,35 @@ This action module imports a snapshot containing artifacts.
  <col> 
  <col> 
  <tbody> <tr> 
-   <td role="rowheader">[！UICONTROL名称]</td> 
+   <td role="rowheader">[!UICONTROL 名称]</td> 
    <td>输入或映射此内容片段的名称。</td> 
 <tr> 
-   <td role="rowheader">[！UICONTROL描述]</td> 
+   <td role="rowheader">[!UICONTROL 描述]</td> 
    <td>输入或映射此内容片段的描述。</td> 
   </tr> 
 <tr> 
-   <td role="rowheader">[！UICONTROL类型]</td> 
+   <td role="rowheader">[!UICONTROL 类型]</td> 
    <td>选择要创建的模板类型。</td> 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL通道]</td> 
+   <td role="rowheader">[!UICONTROL 通道]</td> 
    <td>选择此模板中包含的渠道。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL内容片段来源]</td> 
+   <td role="rowheader">[!UICONTROL 内容片段来源]</td> 
    <td>选择此片段的源。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL元数据]</td> 
+   <td role="rowheader">[!UICONTROL 元数据]</td> 
    <td>要在新模板中包含自定义属性，请选择“添加元数据”，然后输入或映射元数据的键和值。 对每个要包含的自定义字段重复执行上述操作。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL内容]</td> 
+   <td role="rowheader">[!UICONTROL 内容]</td> 
    <td>输入或映射片段的内容。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL编辑器上下文]</td> 
+   <td role="rowheader">[!UICONTROL 编辑器上下文]</td> 
    <td>要在电子邮件中包含自定义属性，请选择“添加编辑器上下文”，然后输入或映射上下文的键和值。 对每个要包含的自定义字段重复执行上述操作。</td> 
   </tr> 
  </tbody> 
@@ -919,11 +919,11 @@ This action module imports a snapshot containing artifacts.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择内容类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择内容类型]</td> 
    <td>选择是更新上限配置还是限制配置。<ul><li><p><b>模板</b></p>有关字段，请参阅本文创建记录部分中的<a href="#template-fields" class="MCXref xref" >模板字段</a>。</li><li><p><b>片段</b></p>有关字段，请参阅本文创建记录一节中的<a href="#fragment-fields" class="MCXref xref" >片段字段</a>。</li></ul></td> 
   </tr> 
   </tbody> 
@@ -938,15 +938,15 @@ This action module imports a snapshot containing artifacts.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择内容类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择内容类型]</td> 
    <td>选择您要删除内容模板还是内容片段。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL模板/片段ID]</td> 
+   <td role="rowheader">[!UICONTROL 模板/片段ID]</td> 
    <td>输入或映射要删除的模板或片段的ID。</td> 
   </tr> 
  </tbody> 
@@ -961,19 +961,19 @@ This action module imports a snapshot containing artifacts.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择内容类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择内容类型]</td> 
    <td>选择是要修补内容模板还是内容片段。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL模板/片段ID]</td> 
+   <td role="rowheader">[!UICONTROL 模板/片段ID]</td> 
    <td>输入或映射要修补的模板或片段的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL有效负载数据]</td> 
+   <td role="rowheader">[!UICONTROL 有效负载数据]</td> 
    <td>要将记录添加到此修补程序的负载中，请执行以下操作： <ol><li>单击<b>添加记录</b>。</li><li>选择操作：“添加”、“移除”或“替换”。</li><li>在“路径”字段中，选择要为名称或说明打补丁。</li><li> 在从字段中，输入或映射包含JSON指针值的字符串。</li><li>在“值”字段中，输入要在工序中使用的值。</li></ol></td> 
   </tr> 
  </tbody> 
@@ -988,15 +988,15 @@ This action module imports a snapshot containing artifacts.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择内容类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择内容类型]</td> 
    <td>选择是检索内容模板还是内容片段。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL模板/片段ID]</td> 
+   <td role="rowheader">[!UICONTROL 模板/片段ID]</td> 
    <td>输入或映射要检索的模板或片段的ID。</td> 
   </tr> 
  </tbody> 
@@ -1020,19 +1020,19 @@ This action module imports a snapshot containing artifacts.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL请求ID]</td> 
+   <td role="rowheader">[!UICONTROL 请求ID]</td> 
    <td>输入或映射与此消息关联的请求的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL营销活动ID]</td> 
+   <td role="rowheader">[!UICONTROL 营销活动ID]</td> 
    <td>输入或映射与此消息关联的营销活动的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL收件人]</td> 
+   <td role="rowheader">[!UICONTROL 收件人]</td> 
    <td>对于要接收此邮件的每个收件人，单击<b>添加收件人</b>并输入以下内容：
    <ul>
    <li><p><b>类型</b></p>选择 <code>aep</code>。</li>
@@ -1057,19 +1057,19 @@ This action module imports a snapshot containing artifacts.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL请求ID]</td> 
+   <td role="rowheader">[!UICONTROL 请求ID]</td> 
    <td>输入或映射与此消息关联的请求的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL营销活动ID]</td> 
+   <td role="rowheader">[!UICONTROL 营销活动ID]</td> 
    <td>输入或映射与此消息关联的营销活动的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL产品]</td> 
+   <td role="rowheader">[!UICONTROL 产品]</td> 
    <td>输入或映射与此消息关联的产品。 这用于消息内容中的动态变量替换。</td> 
   </tr> 
  </tbody> 
@@ -1084,11 +1084,11 @@ This action module imports a snapshot containing artifacts.
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL消息执行ID]</td> 
+   <td role="rowheader">[!UICONTROL 消息执行ID]</td> 
    <td>输入或映射要检查的消息执行ID。</td> 
   </tr> 
  </tbody> 
@@ -1128,15 +1128,15 @@ This action module checks that the service represented by the connection is runn
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL包ID]</td> 
+   <td role="rowheader">[!UICONTROL 包ID]</td> 
    <td>输入或映射要检查其权限的包ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Target沙盒]</td> 
+   <td role="rowheader">[!UICONTROL Target沙盒]</td> 
    <td>输入或映射要将包导入到的沙盒的名称。</td> 
   </tr> 
  </tbody> 
@@ -1151,11 +1151,11 @@ This action module checks that the service represented by the connection is runn
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL作业ID]</td> 
+   <td role="rowheader">[!UICONTROL 作业ID]</td> 
    <td>输入或映射要为其检索数据的作业的ID。</td> 
   </tr> 
  </tbody> 
@@ -1178,19 +1178,19 @@ This action module checks that the service represented by the connection is runn
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL包对象]</td> 
+   <td role="rowheader">[!UICONTROL 包对象]</td> 
    <td>对于包中要返回其依赖对象的每个对象，单击<b>添加对象</b>并输入对象的名称和类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL包ID]</td> 
+   <td role="rowheader">[!UICONTROL 包ID]</td> 
    <td>输入或映射要为其列出依赖对象的程序包的ID。</td> 
   </tr> 
     <tr> 
-   <td role="rowheader">[！UICONTROL Target沙盒]</td> 
+   <td role="rowheader">[!UICONTROL Target沙盒]</td> 
    <td>输入或映射沙盒的名称，该沙盒包含要为其列出依赖对象的包。</td> 
   </tr> 
  </tbody> 
@@ -1205,11 +1205,11 @@ This action module checks that the service represented by the connection is runn
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择配置类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择配置类型]</td> 
    <td>选择您要列出上限配置还是限制配置。</td> 
   </tr> 
  </tbody> 
@@ -1224,23 +1224,23 @@ This action module checks that the service represented by the connection is runn
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL开始]</td> 
+   <td role="rowheader">[!UICONTROL 开始]</td> 
    <td></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回结果的最大数目]</td> 
+   <td role="rowheader">[!UICONTROL 返回结果的最大数目]</td> 
       <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td>
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Order by]</td> 
+   <td role="rowheader">[!UICONTROL Order by]</td> 
       <td>选择是按创建日期还是按修改日期对结果进行排序。</td>
   </tr> 
     <tr> 
-   <td role="rowheader">[！UICONTROL查询参数]</td> 
+   <td role="rowheader">[!UICONTROL 查询参数]</td> 
    <td>对于要作为筛选依据的每个查询参数，单击<b>添加查询参数</b>，然后选择字段和运算符，输入筛选器的字段值。</td> 
   </tr> 
  </tbody> 
@@ -1257,23 +1257,23 @@ This action module checks that the service represented by the connection is runn
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL开始]</td> 
+   <td role="rowheader">[!UICONTROL 开始]</td> 
    <td></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回结果的最大数目]</td> 
+   <td role="rowheader">[!UICONTROL 返回结果的最大数目]</td> 
       <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td>
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Order by]</td> 
+   <td role="rowheader">[!UICONTROL Order by]</td> 
       <td>选择是按创建日期还是按修改日期对结果进行排序。</td>
   </tr> 
     <tr> 
-   <td role="rowheader">[！UICONTROL查询参数]</td> 
+   <td role="rowheader">[!UICONTROL 查询参数]</td> 
    <td>对于要作为筛选依据的每个查询参数，单击<b>添加查询参数</b>，然后选择字段和运算符，输入筛选器的字段值。</td> 
   </tr> 
  </tbody> 
@@ -1288,27 +1288,27 @@ This action module checks that the service represented by the connection is runn
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择内容类型]</td> 
+   <td role="rowheader">[!UICONTROL 选择内容类型]</td> 
    <td>选择是检索内容模板还是内容片段。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Order by]</td> 
+   <td role="rowheader">[!UICONTROL Order by]</td> 
    <td>输入或映射要作为此列表排序依据的参数名称。 添加<code>-</code>或<code>+</code>以按降序或升序排序。 如果未指定符号，则列表将降序排序。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL开始]</td> 
+   <td role="rowheader">[!UICONTROL 开始]</td> 
    <td>此字段用于分页。 根据排序依据字段中指定的属性，输入或映射下一页的条件。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Order by]</td> 
+   <td role="rowheader">[!UICONTROL Order by]</td> 
    <td>输入或映射要作为此列表排序依据的参数名称。 添加<code>-</code>或<code>+</code>以按降序或升序排序。 如果未指定符号，则列表将降序排序。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL按属性筛选]</td> 
+   <td role="rowheader">[!UICONTROL 按属性筛选]</td> 
    <td>对于要添加的每个属性筛选器，单击<b>添加项</b>并输入属性的键和值。 列表中包括为该属性指定的值的记录。</td> 
   </tr> 
  </tbody> 
@@ -1327,23 +1327,23 @@ This action module checks that the service represented by the connection is runn
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[！UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL Connection]</td>
    <td>有关创建与[!DNL Adobe Journey Optimizer]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-journey-optimizer" class="MCXref xref" >创建与[!DNL Adobe Journey Optimizer]</a>的连接。</td> 
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL URL]</td>
+      <td role="rowheader">[!UICONTROL URL]</td>
       <td>
         <p>输入相对于基本URL的路径。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[！UICONTROL方法]</p>
+        <p>[!UICONTROL 方法]</p>
       </td>
    <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL Headers]</td>
+      <td role="rowheader">[!UICONTROL Headers]</td>
       <td>
         <p>以标准JSON对象的形式添加请求的标头。</p>
         <p>例如， <code>{"Content-type":"application/json"}</code></p>
@@ -1351,13 +1351,13 @@ This action module checks that the service represented by the connection is runn
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL查询字符串]  </td>
+      <td role="rowheader">[!UICONTROL 查询字符串]  </td>
       <td>
         <p>输入请求查询字符串。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL Body]</td>
+      <td role="rowheader">[!UICONTROL Body]</td>
    <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 

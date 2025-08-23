@@ -34,7 +34,7 @@ ht-degree: 1%
    <td> 新增：标准<p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Adobe Workfront Fusion]许可证</td> 
+   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion]许可证</td> 
    <td>
    <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
@@ -44,7 +44,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[!UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -115,7 +115,7 @@ ht-degree: 1%
 >要阻止运行整个方案，您可以：
 >
 >* 在[!UICONTROL JSON] > [!UICONTROL 解析JSON]模块后取消模块链接，以防止流进一步继续。
->  >   或
+>  &#x200B;>   或
 >* 右键单击[!UICONTROL JSON] > [!UICONTROL 分析JSON]模块，然后从上下文菜单中选择&#x200B;**[!UICONTROL 仅运行此模块]**&#x200B;以仅执行[!UICONTROL JSON] > [!UICONTROL 分析JSON]模块。
 
 执行[!UICONTROL JSON] > [!UICONTROL 解析JSON]后，它可以向所有后续模块（包括迭代器模块）提供有关其输出的信息。 然后，迭代器设置中的映射面板会显示以下项目：

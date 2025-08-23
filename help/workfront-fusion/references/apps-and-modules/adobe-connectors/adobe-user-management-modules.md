@@ -35,24 +35,24 @@ ht-degree: 2%
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront计划*</td>
-  <td> <p>[！UICONTROL Pro]或更高版本</p> </td>
+  <td> <p>[!UICONTROL Pro]或更高版本</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证*</td>
-   <td> <p>[！UICONTROL计划]，[！UICONTROL工作]</p> </td> 
+   <td> <p>[!UICONTROL 计划]，[!UICONTROL 工作]</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
    <p>当前许可证要求：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[！UICONTROL Workfront Fusion for Work Automation and Integration]、[！UICONTROL Workfront Fusion for Work Automation]</p>
+   <p>旧版许可证要求：[!UICONTROL Workfront Fusion for Work Automation and Integration]、[!UICONTROL Workfront Fusion for Work Automation]</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[！UICONTROL Select]或[！UICONTROL Prime] Adobe Workfront计划，则贵组织必须购买Adobe Workfront Fusion以及Adobe Workfront，才能使用本文中所述的功能。 Workfront Fusion包含在[！UICONTROL Ultimate] Workfront计划中。</p>
+   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] Adobe Workfront计划，则贵组织必须购买Adobe Workfront Fusion以及Adobe Workfront，才能使用本文中所述的功能。 Workfront Fusion包含在[!UICONTROL Ultimate] Workfront计划中。</p>
    <p>或</p>
    <p>旧版产品要求：您的组织必须购买Adobe Workfront Fusion和Adobe Workfront，才能使用本文中所述的功能。</p>
    </td> 
@@ -81,33 +81,33 @@ ht-degree: 2%
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[！UICONTROL连接名称]</td>
+        <td role="rowheader">[!UICONTROL 连接名称]</td>
         <td>
           <p>输入此连接的名称。</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL环境]</td>
+        <td role="rowheader">[!UICONTROL 环境]</td>
         <td>选择您要连接到生产环境还是非生产环境。</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL类型]</td>
+        <td role="rowheader">[!UICONTROL 类型]</td>
         <td>选择您是要连接到服务帐户还是个人帐户。</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL客户端ID]</td>
-        <td>输入您的[！UICONTROL Adobe] [！UICONTROL客户端ID]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL 客户端ID]</td>
+        <td>输入您的[!UICONTROL Adobe] [!UICONTROL 客户端ID]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL客户端密钥]</td>
-        <td>输入您的[!DNL Adobe] [！UICONTROL客户端密钥]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[!UICONTROL 客户端密钥]</td>
+        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL IMS组织ID]</td>
+        <td role="rowheader">[!UICONTROL IMS组织ID]</td>
         <td>输入您的[!DNL Adobe] IMS凭据。 组织的唯一标识符。 这是一个格式为A495E53@AdobeOrg的字符串，其中@的前缀为十六进制数字。 您可以在Admin Console或adobe.io控制台中，将此值作为组织的URL路径的一部分来查找，以便进行用户管理集成。</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL其他作用域]</td>
+        <td role="rowheader">[!UICONTROL 其他作用域]</td>
         <td>对于要添加的每个其他范围，单击<b>添加项</b>并输入该范围。</td>
         </tr>
       </tbody>

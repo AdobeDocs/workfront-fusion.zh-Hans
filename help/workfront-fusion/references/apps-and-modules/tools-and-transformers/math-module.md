@@ -65,7 +65,7 @@ ht-degree: 2%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL表达式]</td> 
+   <td role="rowheader">[!UICONTROL 表达式]</td> 
    <td> <p>输入您希望模块计算的表达式。 </p> <p> </p> <p>有关如何编写数学表达式的信息，请参阅mathjs.org上的<a href="https://mathjs.org/docs/expressions/syntax.html">表达式语法</a>。</p> </td> 
   </tr> 
  </tbody> 

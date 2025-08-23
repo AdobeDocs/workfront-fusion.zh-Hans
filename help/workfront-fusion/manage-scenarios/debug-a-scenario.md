@@ -40,7 +40,7 @@ Adobe Workfront Fusion Devtool可帮助您了解场景并排除其故障。 使�
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
@@ -53,7 +53,7 @@ Adobe Workfront Fusion Devtool可帮助您了解场景并排除其故障。 使�
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[!UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -142,8 +142,8 @@ Workfront Fusion Devtool分为3个主要部分。 您可以在Devtool窗口的�
       <td role="rowheader"> <p>以原始JSON格式或cURL检索请求</p> </td> 
       <td> 
        <ul> 
-        <li> <p><strong>原始JSON</strong> </p> <p>单击Devtool右窗格右上角的<strong>[！UICONTROL Copy RAW]</strong>。</p> </li> 
-        <li> <p><strong>cURL</strong> </p> <p>单击Devtool右窗格右上角的<strong>[！UICONTROL Copy cURL]</strong>。</p> </li> 
+        <li> <p><strong>原始JSON</strong> </p> <p>单击Devtool右窗格右上角的<strong>[!UICONTROL Copy RAW]</strong>。</p> </li> 
+        <li> <p><strong>cURL</strong> </p> <p>单击Devtool右窗格右上角的<strong>[!UICONTROL Copy cURL]</strong>。</p> </li> 
        </ul> </td> 
      </tr> 
     </tbody> 
@@ -186,7 +186,7 @@ Workfront Fusion Devtool提供了一些工具，可更轻松地设置场景。
 
 <table style="table-layout:auto">
     <tr>
-        <td>[！UICONTROL模块ID]</td>
+        <td>[!UICONTROL 模块ID]</td>
         <td>输入模块的ID以打开其设置。</td>
     </tr>
 </table>
@@ -200,11 +200,11 @@ Workfront Fusion Devtool提供了一些工具，可更轻松地设置场景。
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Keyword]</td> 
+   <td role="rowheader">[!UICONTROL Keyword]</td> 
    <td> <p> 输入要搜索的搜索词。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL仅使用值]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 仅使用值]</p> </td> 
    <td> <p>启用此选项可仅搜索模块字段的值。</p> <p>禁用此选项还可搜索模块字段的名称。</p> <p>通过名称和标签参数执行搜索。</p> </td> 
   </tr> 
  </tbody> 
@@ -216,7 +216,7 @@ Workfront Fusion Devtool提供了一些工具，可更轻松地设置场景。
 
 <table style="table-layout:auto">
     <tr>
-        <td>[！UICONTROL Source Module]</td>
+        <td>[!UICONTROL Source Module]</td>
         <td>选择要检索元数据的模块。</td>
     </tr>
 </table>
@@ -234,11 +234,11 @@ Workfront Fusion Devtool提供了一些工具，可更轻松地设置场景。
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Source Module]</td> 
+   <td role="rowheader">[!UICONTROL Source Module]</td> 
    <td> <p> 选择模块或输入要从中复制字段值的模块的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL目标模块]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 目标模块]</p> </td> 
    <td> <p>选择模块或输入要插入源模块值的模块的ID。</p> <p>重要信息：将覆盖目标模块中的值。</p> </td> 
   </tr> 
  </tbody> 
@@ -257,15 +257,15 @@ Workfront Fusion Devtool提供了一些工具，可更轻松地设置场景。
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Source Module]</td> 
+   <td role="rowheader">[!UICONTROL Source Module]</td> 
    <td> <p> 选择模块或输入要从中复制筛选器值的模块的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL目标模块]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 目标模块]</p> </td> 
    <td> <p>选择模块或输入要插入源模块中的过滤器值的模块的ID。</p> <p>重要信息：将覆盖目标模块中的值。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL保留回退路由设置]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 保留回退路由设置]</p> </td> 
    <td> <p>源筛选器设置为回退路由。 启用此选项还可以将目标过滤器设置为回退路由。</p> </td> 
   </tr> 
  </tbody> 
@@ -281,7 +281,7 @@ Workfront Fusion Devtool提供了一些工具，可更轻松地设置场景。
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL模块] </td> 
+   <td role="rowheader">[!UICONTROL 模块] </td> 
    <td> <p>选择要复制其名称的模块。</p> </td> 
   </tr> 
  </tbody> 
@@ -293,7 +293,7 @@ Workfront Fusion Devtool提供了一些工具，可更轻松地设置场景。
 
 <table style="table-layout:auto">
     <tr>
-        <td>[！UICONTROL Source Module]</td>
+        <td>[!UICONTROL Source Module]</td>
         <td>选择模块或输入要从中复制连接的模块的ID。</td>
     </tr>
 </table>
@@ -307,15 +307,15 @@ Workfront Fusion Devtool提供了一些工具，可更轻松地设置场景。
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL变量查找]</td> 
-   <td> <p> 从场景的变量模块中查找要替换的可变丸子，并将其复制到此（[！UICONTROL变量到查找]）字段中。 在字段中，它带有双大括号。 示例：<code>&#123;&#123;5.value&#125;&#125;</code>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 变量查找]</td> 
+   <td> <p> 从场景的变量模块中查找要替换的可变丸子，并将其复制到此（[!UICONTROL 变量到查找]）字段中。 在字段中，它带有双大括号。 示例：<code>&#123;&#123;5.value&#125;&#125;</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL替换为]</p> </td> 
-   <td> <p>从场景的变量模块中找到要用变量替换变量的变量丸子，并将其复制到此（[！UICONTROL要查找的变量]）字段中。 在字段中，它带有双大括号。 示例：<code>&#123;&#123;5.value&#125;&#125;</code>。</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 替换为]</p> </td> 
+   <td> <p>从场景的变量模块中找到要用变量替换变量的变量丸子，并将其复制到此（[!UICONTROL 要查找的变量]）字段中。 在字段中，它带有双大括号。 示例：<code>&#123;&#123;5.value&#125;&#125;</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL模块]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 模块]</p> </td> 
    <td> <p>选择要替换变量的变量模块。 如果未选择任何模块，则变量将在整个场景中被替换。</p> </td> 
   </tr> 
  </tbody> 
@@ -330,12 +330,12 @@ Workfront Fusion Devtool提供了一些工具，可更轻松地设置场景。
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL操作] </td> 
-   <td> <p>选择是要将数据从[！UICONTROL Raw Data]字段编码为Base64，还是要将Base64解码为Raw Data。</p> </td> 
+   <td role="rowheader">[!UICONTROL 操作] </td> 
+   <td> <p>选择是要将数据从[!UICONTROL Raw Data]字段编码为Base64，还是要将Base64解码为Raw Data。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL原始数据]</p> </td> 
-   <td> <p> 根据上面[！UICONTROL Operation]字段中选择的选项，输入要编码为Base64的数据，如果要解码为原始数据，则输入Base64。</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 原始数据]</p> </td> 
+   <td> <p> 根据上面[!UICONTROL Operation]字段中选择的选项，输入要编码为Base64的数据，如果要解码为原始数据，则输入Base64。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -351,15 +351,15 @@ Workfront Fusion Devtool提供了一些工具，可更轻松地设置场景。
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Source Module] </td> 
+   <td role="rowheader">[!UICONTROL Source Module] </td> 
    <td> <p> 选择要替换的模块作为场景中其他模块的映射源。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL目标模块]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 目标模块]</p> </td> 
    <td> <p>选择要用作新映射源的模块。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL要编辑的模块]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 要编辑的模块]</p> </td> 
    <td> <p>如果不想更改整个方案中的映射，请选择要更改映射的模块。 </p> </td> 
   </tr> 
  </tbody> 

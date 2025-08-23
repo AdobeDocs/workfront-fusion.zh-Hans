@@ -112,43 +112,43 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection] </td> 
+   <td role="rowheader">[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Spreadsheet] </td> 
+   <td role="rowheader">[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择包含要监视的工作表的电子表格。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL工作表] </td> 
+   <td role="rowheader">[!UICONTROL 工作表] </td> 
    <td> <p>选择要监视新行的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL表包含标头]</td> 
+   <td role="rowheader">[!UICONTROL 表包含标头]</td> 
    <td> <p> 选择电子表格是否包含标题行。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL是]</strong> </p> <p>模块不会检索标题行作为输出数据。 </p> <p>输出中的变量名称由标头调用。</p> </li> 
-     <li> <p><strong>[！UICONTROL编号]</strong> </p> <p>模块还会检索第一个表行</p> <p>输出中的变量名称称为A、B、C、D等。</p> </li> 
+     <li> <p><strong>[!UICONTROL 是]</strong> </p> <p>模块不会检索标题行作为输出数据。 </p> <p>输出中的变量名称由标头调用。</p> </li> 
+     <li> <p><strong>[!UICONTROL 编号]</strong> </p> <p>模块还会检索第一个表行</p> <p>输出中的变量名称称为A、B、C、D等。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL带有标题的行] </td> 
+   <td role="rowheader">[!UICONTROL 带有标题的行] </td> 
    <td> <p>输入标题行的范围。 例如：<code>A1:F1</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL第一个表行]</td> 
+   <td role="rowheader">[!UICONTROL 第一个表行]</td> 
    <td> <p>输入表第一行的范围。 例如：<code>A1:F1</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL值渲染选项]</p> </td> 
-   <td> <ul><li><p style="font-weight: bold;">[！UICONTROL格式的值]</p> <p>将根据单元格的格式在回复中计算值并设置其格式。 格式设置基于电子表格的区域设置，而不是请求用户的区域设置。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"$1.23"</code>。</p></li><li> <p style="font-weight: bold;">[！UICONTROL未格式化的值]</p> <p>系统会计算这些值，但不会在回复中设置格式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回数字<code>"1.23"</code>。</p></li><li> <p style="font-weight: bold;">[！UICONTROL公式]</p> <p>不会计算值。 回复包括公式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"=A1"</code>。</p> </li><ul></td> 
+   <td role="rowheader"> <p>[!UICONTROL 值渲染选项]</p> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 格式的值]</p> <p>将根据单元格的格式在回复中计算值并设置其格式。 格式设置基于电子表格的区域设置，而不是请求用户的区域设置。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"$1.23"</code>。</p></li><li> <p style="font-weight: bold;">[!UICONTROL 未格式化的值]</p> <p>系统会计算这些值，但不会在回复中设置格式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回数字<code>"1.23"</code>。</p></li><li> <p style="font-weight: bold;">[!UICONTROL 公式]</p> <p>不会计算值。 回复包括公式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"=A1"</code>。</p> </li><ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL日期和时间渲染选项]</p> </td> 
-   <td> <ul><li><p style="font-weight: bold;">[！UICONTROL序列号]</p> <p>日期、时间、日期时间和持续时间字段以“序列号”格式输出为两倍，由Lotus 1-2-3推广。 值的整数部分（小数点左侧）计算自1899年12月30日以来的天数。 小数部分（小数的右侧）将时间计为一天中的小数。 例如，1900年1月1日中午是2.5， 2 ，因为是在1899年12月30日后的2天， 0.5 ，因为中午是半天。 1900年2月1日下午3点将为33:625。这正确地将1900年视为非闰年。</p> </li><li><p style="font-weight: bold;">[！UICONTROL格式字符串]</p> <p>日期、时间、日期时间和持续时间字段以其给定的数字格式（取决于电子表格的区域设置）作为字符串输出。</p></li><ul> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 日期和时间渲染选项]</p> </td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 序列号]</p> <p>日期、时间、日期时间和持续时间字段以“序列号”格式输出为两倍，由Lotus 1-2-3推广。 值的整数部分（小数点左侧）计算自1899年12月30日以来的天数。 小数部分（小数的右侧）将时间计为一天中的小数。 例如，1900年1月1日中午是2.5， 2 ，因为是在1899年12月30日后的2天， 0.5 ，因为中午是半天。 1900年2月1日下午3点将为33:625。这正确地将1900年视为非闰年。</p> </li><li><p style="font-weight: bold;">[!UICONTROL 格式字符串]</p> <p>日期、时间、日期时间和持续时间字段以其给定的数字格式（取决于电子表格的区域设置）作为字符串输出。</p></li><ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL限制] </td> 
+   <td role="rowheader">[!UICONTROL 限制] </td> 
    <td> <p>设置Workfront Fusion在一个执行周期内可处理的最大结果数。</p> </td> 
   </tr> 
  </tbody> 
@@ -183,51 +183,51 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL模式]</td> 
+   <td>[!UICONTROL 模式]</td> 
    <td> <p>选择您要手动还是通过映射选择电子表格和工作表。</p> <p>注意：例如，当在Workfront Fusion场景中创建新电子表格，并且您想要直接在新创建的电子表格中向场景中添加数据时，手动映射很有用。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择[!DNL Google]电子表格。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL工作表] </td> 
+   <td>[!UICONTROL 工作表] </td> 
    <td> <p>选择要向其添加行的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL列范围]</td> 
+   <td>[!UICONTROL 列范围]</td> 
    <td>选择要使用的列范围。</td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL表包含标头]</td> 
+   <td>[!UICONTROL 表包含标头]</td> 
    <td> <p> 选择电子表格是否包含标题行。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL是]</strong> </p> <p>模块不会检索标题行作为输出数据。 </p> <p>输出中的变量名称由标头调用。</p> </li> 
-     <li> <p><strong>[！UICONTROL编号]</strong> </p> <p>模块还会检索第一个表行</p> <p>输出中的变量名称称为A、B、C、D等。</p> </li> 
+     <li> <p><strong>[!UICONTROL 是]</strong> </p> <p>模块不会检索标题行作为输出数据。 </p> <p>输出中的变量名称由标头调用。</p> </li> 
+     <li> <p><strong>[!UICONTROL 编号]</strong> </p> <p>模块还会检索第一个表行</p> <p>输出中的变量名称称为A、B、C、D等。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Values] </td> 
+   <td>[!UICONTROL Values] </td> 
    <td> <p>在要添加的行中输入或映射所需的单元格。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL值输入选项]</td> 
+   <td>[!UICONTROL 值输入选项]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[！UICONTROL用户已进入]</strong></p> <p>这些值会像用户在UI中键入值一样进行解析。 数字仍为数字，但字符串可能会转换为数字、日期或其他格式，这些规则与通过[!DNL Google Sheets] UI在单元格中输入文本时应用的规则相同。</p> </li> 
-     <li> <p><strong>[！UICONTROL Raw]</strong> </p> <p> 用户输入的值不会进行解析，并且会在输入时进行存储。 </p> </li> 
+     <li> <p><strong>[!UICONTROL 用户已进入]</strong></p> <p>这些值会像用户在UI中键入值一样进行解析。 数字仍为数字，但字符串可能会转换为数字、日期或其他格式，这些规则与通过[!DNL Google Sheets] UI在单元格中输入文本时应用的规则相同。</p> </li> 
+     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> 用户输入的值不会进行解析，并且会在输入时进行存储。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Insert data option]</td> 
+   <td>[!UICONTROL Insert data option]</td> 
    <td> <p>指定在输入新数据时如何更改现有数据。 </p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL插入行]</strong></p> <p>为新数据插入行。</p> </li> 
-     <li> <p><strong>[！UICONTROL覆盖]</strong> </p> <p>新数据将覆盖其写入区域中的现有数据。 将数据添加到工作表末尾会插入新的行或列，以便写入数据。</p> </li> 
+     <li> <p><strong>[!UICONTROL 插入行]</strong></p> <p>为新数据插入行。</p> </li> 
+     <li> <p><strong>[!UICONTROL 覆盖]</strong> </p> <p>新数据将覆盖其写入区域中的现有数据。 将数据添加到工作表末尾会插入新的行或列，以便写入数据。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -242,19 +242,19 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择要添加工作表的Google电子表格。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL属性]</td> 
+   <td>[!UICONTROL 属性]</td> 
    <td> 
     <ul> 
-     <li> <p style="font-weight: bold;">[！UICONTROL标题]</p> <p>输入新工作表的名称。</p> </li> 
-     <li> <p style="font-weight: bold;">[！UICONTROL索引]</p> <p>输入工作表位置。 缺省值为0（将页面放在第一位）。</p> </li> 
+     <li> <p style="font-weight: bold;">[!UICONTROL 标题]</p> <p>输入新工作表的名称。</p> </li> 
+     <li> <p style="font-weight: bold;">[!UICONTROL 索引]</p> <p>输入工作表位置。 缺省值为0（将页面放在第一位）。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -269,19 +269,19 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择包含要从中清除单元格的工作表的Google电子表格。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL工作表] </td> 
+   <td>[!UICONTROL 工作表] </td> 
    <td> <p>选择要从中清除单元格的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL单元格] </td> 
+   <td>[!UICONTROL 单元格] </td> 
    <td> <p>输入或映射要清除的单元格的ID。 示例：<code>A5</code>。</p> </td> 
   </tr> 
  </tbody> 
@@ -296,19 +296,19 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择包含要从中清除行的工作表的[!DNL Google]电子表格。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL工作表] </td> 
+   <td>[!UICONTROL 工作表] </td> 
    <td> <p> 选择要从中清除数据的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL行号]</td> 
+   <td>[!UICONTROL 行号]</td> 
    <td> <p>输入要从中清除数据的行的编号。 示例：<code> 23</code>。</p> </td> 
   </tr> 
  </tbody> 
@@ -321,15 +321,15 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL标题] </td> 
+   <td>[!UICONTROL 标题] </td> 
    <td> <p>输入新电子表格的名称。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL区域设置]</td> 
+   <td>[!UICONTROL 区域设置]</td> 
    <td> <p>使用以下格式之一输入电子表格的区域设置：</p> 
     <ul> 
      <li>ISO 639-1语言代码，例如 <code>en</code></li> 
@@ -338,20 +338,20 @@ Google Sheets连接器使用以下对象：
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL重新计算间隔]</td> 
-   <td> <p>重新计算volatile函数前等待的时间：</p> <ul><li><p style="font-weight: bold;">[！UICONTROL更改时]</p> <p>在每次更改时更新易失性函数。</p></li><li> <p style="font-weight: bold;">[！UICONTROL更改时每分钟]</p> <p>易失性函数在每次更改时和每分钟都会更新。</p></li> <li><p style="font-weight: bold;">[！UICONTROL更改时和每小时]</p> <p>易失性函数会在每次更改时每小时更新一次。</p></li></ul> </td> 
+   <td>[!UICONTROL 重新计算间隔]</td> 
+   <td> <p>重新计算volatile函数前等待的时间：</p> <ul><li><p style="font-weight: bold;">[!UICONTROL 更改时]</p> <p>在每次更改时更新易失性函数。</p></li><li> <p style="font-weight: bold;">[!UICONTROL 更改时每分钟]</p> <p>易失性函数在每次更改时和每分钟都会更新。</p></li> <li><p style="font-weight: bold;">[!UICONTROL 更改时和每小时]</p> <p>易失性函数会在每次更改时每小时更新一次。</p></li></ul> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL时区]</td> 
+   <td>[!UICONTROL 时区]</td> 
    <td> <p> 选择电子表格的时区。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL数字格式]</td> 
-   <td> <p>选择电子表格中所有单元格的默认格式。</p> <p><strong>[！UICONTROL Text]</strong>：文本格式。 示例： <code>1000. 12</code></p> <p><strong>[！UICONTROL Number]</strong>：数字格式。 示例： <code>1,000.12</code></p> <p><strong>[！UICONTROL百分比]</strong>：格式百分比。 示例： <code>10. 12%</code></p> <p><strong>[！UICONTROL货币]</strong>：货币格式。 示例： <code>$1,000.12</code></p> <p><strong>[！UICONTROL日期]</strong>：日期格式。 示例： <code>9/26/2008</code></p> <p><strong>[！UICONTROL时间]</strong>：时间格式。 示例： <code>3:59:00 PM</code></p> <p><strong>[！UICONTROL日期时间]</strong>：日期和时间格式。 示例：<code>9/26/08 15:59:00</code> </p> <p><strong>[！UICONTROL Scientific]</strong>：科学数字格式。 示例： <code>1. 01E+03</code></p> </td> 
+   <td>[!UICONTROL 数字格式]</td> 
+   <td> <p>选择电子表格中所有单元格的默认格式。</p> <p><strong>[!UICONTROL Text]</strong>：文本格式。 示例： <code>1000. 12</code></p> <p><strong>[!UICONTROL Number]</strong>：数字格式。 示例： <code>1,000.12</code></p> <p><strong>[!UICONTROL 百分比]</strong>：格式百分比。 示例： <code>10. 12%</code></p> <p><strong>[!UICONTROL 货币]</strong>：货币格式。 示例： <code>$1,000.12</code></p> <p><strong>[!UICONTROL 日期]</strong>：日期格式。 示例： <code>9/26/2008</code></p> <p><strong>[!UICONTROL 时间]</strong>：时间格式。 示例： <code>3:59:00 PM</code></p> <p><strong>[!UICONTROL 日期时间]</strong>：日期和时间格式。 示例：<code>9/26/08 15:59:00</code> </p> <p><strong>[!UICONTROL Scientific]</strong>：科学数字格式。 示例： <code>1. 01E+03</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL工作表] </td> 
-   <td> <p>对于要添加到电子表格的每个工作表，单击<strong>[！UICONTROL添加项]</strong>并输入或映射工作表的标题以及工作表的索引。 索引0表示第一个工作表。</p> </td> 
+   <td>[!UICONTROL 工作表] </td> 
+   <td> <p>对于要添加到电子表格的每个工作表，单击<strong>[!UICONTROL 添加项]</strong>并输入或映射工作表的标题以及工作表的索引。 索引0表示第一个工作表。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -365,11 +365,11 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择包含您要从中删除行的工作表的Google电子表格。</p> </td> 
   </tr> 
   <tr> 
@@ -392,15 +392,15 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择[!DNL Google]电子表格。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL工作表] </td> 
+   <td>[!UICONTROL 工作表] </td> 
    <td> <p>选择要删除的工作表。</p> </td> 
   </tr> 
  </tbody> 
@@ -415,24 +415,24 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择[!DNL Google]电子表格。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL工作表] </td> 
+   <td>[!UICONTROL 工作表] </td> 
    <td> <p>选择包含要从中检索数据的单元格的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL单元格] </td> 
+   <td>[!UICONTROL 单元格] </td> 
    <td> <p>输入要从中检索数据的单元格的ID。 示例： <code>A6</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL值渲染选项]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[！UICONTROL格式的值]</p> <p>将根据单元格的格式在回复中计算值并设置其格式。 格式设置基于电子表格的区域设置，而不是请求用户的区域设置。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"$1.23"</code>。</p></li><li> <p style="font-weight: bold;">[！UICONTROL未格式化的值]</p> <p>系统会计算这些值，但不会在回复中设置格式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回数字<code>"1.23"</code>。</p></li><li> <p style="font-weight: bold;">[！UICONTROL公式]</p> <p>不会计算值。 回复包括公式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"=A1"</code>。</p> </li><ul></td> 
+   <td>[!UICONTROL 值渲染选项]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 格式的值]</p> <p>将根据单元格的格式在回复中计算值并设置其格式。 格式设置基于电子表格的区域设置，而不是请求用户的区域设置。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"$1.23"</code>。</p></li><li> <p style="font-weight: bold;">[!UICONTROL 未格式化的值]</p> <p>系统会计算这些值，但不会在回复中设置格式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回数字<code>"1.23"</code>。</p></li><li> <p style="font-weight: bold;">[!UICONTROL 公式]</p> <p>不会计算值。 回复包括公式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"=A1"</code>。</p> </li><ul></td> 
   </tr> 
   <tr> 
    <td>[!DNL Date and time render option]</td> 
@@ -450,27 +450,27 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>有关将Google Sheets帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL URL]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
    <td>输入相对于<code>https://sheets.googleapis.com/v4/</code>的路径。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL方法]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 方法]</p> </td> 
    <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Headers]</td> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
    <td> <p>以标准JSON对象的形式添加请求的标头。 例如：<code>{"Content-type":"application/json"}</code>。Workfront Fusion会为您添加授权标头。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL查询字符串]</td> 
+   <td role="rowheader">[!UICONTROL 查询字符串]</td> 
    <td> <p> 以标准JSON对象的形式添加API调用的查询。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
    <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：   <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -486,31 +486,31 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择[!DNL Google]电子表格。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL工作表] </td> 
+   <td>[!UICONTROL 工作表] </td> 
    <td> <p>选择要更新单元格的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL单元格] </td> 
+   <td>[!UICONTROL 单元格] </td> 
    <td> <p>输入要更新的单元格的ID。 示例： <code>A5</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL值]</td> 
+   <td>[!UICONTROL 值]</td> 
    <td> <p>输入单元格的新值。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL值输入选项]</td> 
+   <td>[!UICONTROL 值输入选项]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[！UICONTROL用户已进入]</strong></p> <p>这些值会像用户在UI中键入值一样进行解析。 数字仍为数字，但字符串可能会转换为数字、日期或其他格式，这些规则与通过[!DNL Google Sheets] UI在单元格中输入文本时应用的规则相同。</p> </li> 
-     <li> <p><strong>[！UICONTROL Raw]</strong> </p> <p> 用户输入的值不会进行解析，并且会在输入时进行存储。 </p> </li> 
+     <li> <p><strong>[!UICONTROL 用户已进入]</strong></p> <p>这些值会像用户在UI中键入值一样进行解析。 数字仍为数字，但字符串可能会转换为数字、日期或其他格式，这些规则与通过[!DNL Google Sheets] UI在单元格中输入文本时应用的规则相同。</p> </li> 
+     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> 用户输入的值不会进行解析，并且会在输入时进行存储。 </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -525,43 +525,43 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL模式]</td> 
-   <td> <p>选择您要手动还是通过映射选择电子表格和工作表。</p> <p>注意：例如，在[！UICONTROL Workfront Fusion]场景中创建新电子表格，并且您希望将数据直接添加到场景中新创建的电子表格时，手动映射很有用。</p> </td> 
+   <td>[!UICONTROL 模式]</td> 
+   <td> <p>选择您要手动还是通过映射选择电子表格和工作表。</p> <p>注意：例如，在[!UICONTROL Workfront Fusion]场景中创建新电子表格，并且您希望将数据直接添加到场景中新创建的电子表格时，手动映射很有用。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择[!DNL Google]电子表格。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL工作表] </td> 
+   <td>[!UICONTROL 工作表] </td> 
    <td> <p>选择要在其中更新行的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL行号]</td> 
+   <td>[!UICONTROL 行号]</td> 
    <td> <p> 输入要更新的行号。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL表包含标头]</td> 
+   <td>[!UICONTROL 表包含标头]</td> 
    <td> <p> 选择电子表格是否包含标题行。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL是]</strong> </p> <p>模块不会检索标题行作为输出数据。 </p> <p>输出中的变量名称由标头调用。</p> </li> 
-     <li> <p><strong>[！UICONTROL编号]</strong> </p> <p>模块还会检索第一个表行</p> <p>输出中的变量名称称为A、B、C、D等。</p> </li> 
+     <li> <p><strong>[!UICONTROL 是]</strong> </p> <p>模块不会检索标题行作为输出数据。 </p> <p>输出中的变量名称由标头调用。</p> </li> 
+     <li> <p><strong>[!UICONTROL 编号]</strong> </p> <p>模块还会检索第一个表行</p> <p>输出中的变量名称称为A、B、C、D等。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Values] </td> 
+   <td>[!UICONTROL Values] </td> 
    <td> <p>输入值或将值映射到要更改（更新）的行的所需单元格。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL值输入选项]</td> 
+   <td>[!UICONTROL 值输入选项]</td> 
    <td> 
     <ul> 
-     <li> <p><strong>[！UICONTROL用户已进入]</strong></p> <p>这些值会像用户在UI中键入值一样进行解析。 数字仍为数字，但字符串可能会转换为数字、日期或其他格式，这些规则与通过[!DNL Google Sheets] UI在单元格中输入文本时应用的规则相同。</p> </li> 
-     <li> <p><strong>[！UICONTROL Raw]</strong> </p> <p> 用户输入的值不会进行解析，并且会在输入时进行存储。 </p> </li> 
+     <li> <p><strong>[!UICONTROL 用户已进入]</strong></p> <p>这些值会像用户在UI中键入值一样进行解析。 数字仍为数字，但字符串可能会转换为数字、日期或其他格式，这些规则与通过[!DNL Google Sheets] UI在单元格中输入文本时应用的规则相同。</p> </li> 
+     <li> <p><strong>[!UICONTROL Raw]</strong> </p> <p> 用户输入的值不会进行解析，并且会在输入时进行存储。 </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -581,36 +581,36 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择[!DNL Google]电子表格。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL工作表] </td> 
+   <td>[!UICONTROL 工作表] </td> 
    <td> <p>选择要从中获取范围内容的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL范围] </td> 
+   <td>[!UICONTROL 范围] </td> 
    <td> <p>输入要获取的范围。 示例：<code>A1:D25</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL表包含标头]</td> 
+   <td>[!UICONTROL 表包含标头]</td> 
    <td> <p>如果工作表具有标题行，请选中此框</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL带有标题的行]</td> 
+   <td>[!UICONTROL 带有标题的行]</td> 
    <td>输入表标题的范围。 示例<code>A1:F1</code>。 如果将该字段留空，Workfront Fusion会将指定范围的第一行视为标头。</td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL值渲染选项]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[！UICONTROL格式的值]</p> <p>将根据单元格的格式在回复中计算值并设置其格式。 格式设置基于电子表格的区域设置，而不是请求用户的区域设置。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"$1.23"</code>。</p></li><li> <p style="font-weight: bold;">[！UICONTROL未格式化的值]</p> <p>系统会计算这些值，但不会在回复中设置格式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回数字<code>"1.23"</code>。</p></li><li> <p style="font-weight: bold;">[！UICONTROL公式]</p> <p>不会计算值。 回复包括公式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"=A1"</code>。</p> </li><ul></td> 
+   <td>[!UICONTROL 值渲染选项]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 格式的值]</p> <p>将根据单元格的格式在回复中计算值并设置其格式。 格式设置基于电子表格的区域设置，而不是请求用户的区域设置。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"$1.23"</code>。</p></li><li> <p style="font-weight: bold;">[!UICONTROL 未格式化的值]</p> <p>系统会计算这些值，但不会在回复中设置格式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回数字<code>"1.23"</code>。</p></li><li> <p style="font-weight: bold;">[!UICONTROL 公式]</p> <p>不会计算值。 回复包括公式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"=A1"</code>。</p> </li><ul></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL日期和时间渲染选项]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[！UICONTROL序列号]</p> <p>日期、时间、日期时间和持续时间字段以“序列号”格式输出为两倍，由Lotus 1-2-3推广。 值的整数部分（小数点左侧）计算自1899年12月30日以来的天数。 小数部分（小数的右侧）将时间计为一天中的小数。 例如，1900年1月1日中午是2.5， 2 ，因为是在1899年12月30日后的2天， 0.5 ，因为中午是半天。 1900年2月1日下午3点将为33:625。这正确地将1900年视为非闰年。</p> </li><li><p style="font-weight: bold;">[！UICONTROL格式字符串]</p> <p>日期、时间、日期时间和持续时间字段以其给定的数字格式（取决于电子表格的区域设置）作为字符串输出。</p></li><ul> </td> 
+   <td>[!UICONTROL 日期和时间渲染选项]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 序列号]</p> <p>日期、时间、日期时间和持续时间字段以“序列号”格式输出为两倍，由Lotus 1-2-3推广。 值的整数部分（小数点左侧）计算自1899年12月30日以来的天数。 小数部分（小数的右侧）将时间计为一天中的小数。 例如，1900年1月1日中午是2.5， 2 ，因为是在1899年12月30日后的2天， 0.5 ，因为中午是半天。 1900年2月1日下午3点将为33:625。这正确地将1900年视为非闰年。</p> </li><li><p style="font-weight: bold;">[!UICONTROL 格式字符串]</p> <p>日期、时间、日期时间和持续时间字段以其给定的数字格式（取决于电子表格的区域设置）作为字符串输出。</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -624,11 +624,11 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择包含要列出工作表的[!DNL Google]电子表格。</p> </td> 
   </tr> 
  </tbody> 
@@ -643,47 +643,47 @@ Google Sheets连接器使用以下对象：
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将Google Sheets帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择[!DNL Google]电子表格。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL工作表] </td> 
+   <td>[!UICONTROL 工作表] </td> 
    <td> <p>选择要在其中搜索行的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL表包含标头]</td> 
-   <td> <p> 选择电子表格是否包含标题行。 如果选择了[！UICONTROL是]选项，则模块不会检索标头行作为输出数据，并且输出中的变量名称随后由标头调用。 如果选择了[！UICONTROL否]选项，则模块还会检索第一个表行，然后输出中的变量名称将仅称为A、B、C、D等。</p> </td> 
+   <td>[!UICONTROL 表包含标头]</td> 
+   <td> <p> 选择电子表格是否包含标题行。 如果选择了[!UICONTROL 是]选项，则模块不会检索标头行作为输出数据，并且输出中的变量名称随后由标头调用。 如果选择了[!UICONTROL 否]选项，则模块还会检索第一个表行，然后输出中的变量名称将仅称为A、B、C、D等。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL列范围]</td> 
+   <td>[!UICONTROL 列范围]</td> 
    <td>选择要使用的列范围。 示例： <code>A-F</code></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL筛选器]</td> 
+   <td>[!UICONTROL 筛选器]</td> 
    <td> <p>设置要用于搜索行的筛选器。</p> <!--<p>For more information about filters, see <a href="/help/workfront-fusion/create-scenarios/add-modules/" class="MCXref xref">Add a filter to a scenario in [!UICONTROL Adobe Workfront Fusion]</a>.</p>--> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL排序顺序]</td> 
+   <td>[!UICONTROL 排序顺序]</td> 
    <td>选择是要升序排序还是降序排序。</td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Order by]</td> 
+   <td>[!UICONTROL Order by]</td> 
    <td>选择要作为排序依据的列。</td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL值渲染选项]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[！UICONTROL格式的值]</p> <p>将根据单元格的格式在回复中计算值并设置其格式。 格式设置基于电子表格的区域设置，而不是请求用户的区域设置。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"$1.23"</code>。</p></li><li> <p style="font-weight: bold;">[！UICONTROL未格式化的值]</p> <p>系统会计算这些值，但不会在回复中设置格式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回数字<code>"1.23"</code>。</p></li><li> <p style="font-weight: bold;">[！UICONTROL公式]</p> <p>不会计算值。 回复包括公式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"=A1"</code>。</p> </li><ul></td> 
+   <td>[!UICONTROL 值渲染选项]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 格式的值]</p> <p>将根据单元格的格式在回复中计算值并设置其格式。 格式设置基于电子表格的区域设置，而不是请求用户的区域设置。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"$1.23"</code>。</p></li><li> <p style="font-weight: bold;">[!UICONTROL 未格式化的值]</p> <p>系统会计算这些值，但不会在回复中设置格式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回数字<code>"1.23"</code>。</p></li><li> <p style="font-weight: bold;">[!UICONTROL 公式]</p> <p>不会计算值。 回复包括公式。 例如，如果<code>A1</code>是<code>1.23</code>，<code>A2</code>是<code>=A1</code>并且格式为货币，则<code>A2</code>将返回<code>"=A1"</code>。</p> </li><ul></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL日期和时间渲染选项]</td> 
-   <td> <ul><li><p style="font-weight: bold;">[！UICONTROL序列号]</p> <p>日期、时间、日期时间和持续时间字段以“序列号”格式输出为两倍，由Lotus 1-2-3推广。 值的整数部分（小数点左侧）计算自1899年12月30日以来的天数。 小数部分（小数的右侧）将时间计为一天中的小数。 例如，1900年1月1日中午是2.5， 2 ，因为是在1899年12月30日后的2天， 0.5 ，因为中午是半天。 1900年2月1日下午3点将为33:625。这正确地将1900年视为非闰年。</p> </li><li><p style="font-weight: bold;">[！UICONTROL格式字符串]</p> <p>日期、时间、日期时间和持续时间字段以其给定的数字格式（取决于电子表格的区域设置）作为字符串输出。</p></li><ul> </td> 
+   <td>[!UICONTROL 日期和时间渲染选项]</td> 
+   <td> <ul><li><p style="font-weight: bold;">[!UICONTROL 序列号]</p> <p>日期、时间、日期时间和持续时间字段以“序列号”格式输出为两倍，由Lotus 1-2-3推广。 值的整数部分（小数点左侧）计算自1899年12月30日以来的天数。 小数部分（小数的右侧）将时间计为一天中的小数。 例如，1900年1月1日中午是2.5， 2 ，因为是在1899年12月30日后的2天， 0.5 ，因为中午是半天。 1900年2月1日下午3点将为33:625。这正确地将1900年视为非闰年。</p> </li><li><p style="font-weight: bold;">[!UICONTROL 格式字符串]</p> <p>日期、时间、日期时间和持续时间字段以其给定的数字格式（取决于电子表格的区域设置）作为字符串输出。</p></li><ul> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL返回的最大行数]</td> 
+   <td>[!UICONTROL 返回的最大行数]</td> 
    <td>设置Workfront Fusion在一个执行周期内返回的最大行数。</td> 
   </tr> 
  </tbody> 
@@ -698,19 +698,19 @@ Google Sheets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Connection] </td> 
+   <td>[!UICONTROL Connection] </td> 
    <td> <p>有关将[!DNL Google Sheets]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Spreadsheet] </td> 
+   <td>[!UICONTROL Spreadsheet] </td> 
    <td> <p>选择包含要搜索的工作表的Google电子表格。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL工作表] </td> 
+   <td>[!UICONTROL 工作表] </td> 
    <td> <p>选择包含要搜索的行的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Query]</td> 
+   <td>[!UICONTROL Query]</td> 
    <td> <p>使用[!DNL Google Charts Query Language]。 示例： <code>select * where B = "John"</code></p> <p>有关[!DNL Google Charts Query Language]的详细信息，请参阅<a href="https://developers.google.com/chart/interactive/docs/querylanguage">文档中的</a>查询语言引用[!DNL Google]。</p> </td> 
   </tr> 
  </tbody> 

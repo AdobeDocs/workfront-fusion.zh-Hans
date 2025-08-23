@@ -35,7 +35,7 @@ ht-degree: 1%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
@@ -48,7 +48,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[!UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -84,19 +84,19 @@ ht-degree: 1%
     <col> 
     <tbody>
     <tr>
-    <td>[！UICONTROL从现在开始]（默认）</td>
+    <td>[!UICONTROL 从现在开始]（默认）</td>
     <td>在选择此选项后检索添加或更新的所有包（取决于设置）</td>
     </tr>
      <tr>
-    <td>[！UICONTROL自特定日期起]</td>
+    <td>[!UICONTROL 自特定日期起]</td>
     <td>检索在指定日期和时间之后添加或更新的所有包（取决于设置）</td>
       </tr>
       <tr>
-    <td>[！UICONTROL All]</td>
+    <td>[!UICONTROL All]</td>
     <td>检索所有可用的包</td>
      </tr>
       <tr>
-    <td>[！UICONTROL手动选择]</td>
+    <td>[!UICONTROL 手动选择]</td>
     <td>允许您选择从中开始检索包的第一个包</td>
      </tr>
      </tbody>

@@ -71,7 +71,7 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Draft.js]</td> 
+   <td role="rowheader">[!UICONTROL Draft.js]</td> 
    <td> <p>输入或映射要转换为HTML的Draft.js文本。</p> </td> 
   </tr> 
  </tbody> 
@@ -86,7 +86,7 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL HTML]</td> 
+   <td role="rowheader">[!UICONTROL HTML]</td> 
    <td> <p>输入或映射要转换为Draft.js的HTML代码。</p> </td> 
   </tr> 
  </tbody> 
