@@ -16,7 +16,7 @@ ht-degree: 2%
 ## 新增功能
 
 * [发布活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
-* [已知问题](https://experienceleague.adobe.com/en/docs/workfront-known-issues/issues/fusion/workfrontfusion)
+* [已知问题](https://experienceleague.adobe.com/zh-hans/docs/workfront-known-issues/issues/fusion/workfrontfusion)
 
 ## 浏览文档
 
@@ -55,7 +55,7 @@ ht-degree: 2%
 ### 探索学习和培训部分
 
 * **讲师指导的实时培训课程** Adobe为Fusion提供为期三天的实时培训课程。 有关详细信息和可用会话，请参阅[在Adobe Workfront Fusion中管理连接和工作流](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html)。
-* **培训材料**：导航到[简介和技术策略](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) Workfront Fusion培训页面，开始一系列旨在帮助您更好地了解如何最好地使用Fusion的课程和练习。
+* **培训材料**：导航到[简介和技术策略](https://experienceleague.adobe.com/zh-hans/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) Workfront Fusion培训页面，开始一系列旨在帮助您更好地了解如何最好地使用Fusion的课程和练习。
 
 ### 在社区论坛中查找答案
 
