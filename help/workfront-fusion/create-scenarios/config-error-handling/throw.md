@@ -8,9 +8,9 @@ description: 在某些情况下，您可能希望强制停止场景执行，然�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4bf2a6c7-16b2-4545-9adf-be3947a7017d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 有关未完成执行的信息，请参阅[在Adobe Workfront Fusion中查看和解决未完成的执行](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)。
 
-有关错误处理指令的信息，请参阅 [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)中用于错误处理的指令。
+有关错误处理指令的信息，请参阅Adobe Workfront Fusion中用于错误处理的[指令](/help/workfront-fusion/references/errors/directives-for-error-handling.md)。
 
 ## 访问要求
 
@@ -56,7 +56,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront计划：包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront计划：包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -64,7 +64,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
 有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 

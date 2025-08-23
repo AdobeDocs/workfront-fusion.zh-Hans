@@ -4,10 +4,10 @@ description: 创建或编辑场景时，您可以配置设置以控制数据流�
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 0%
+source-wordcount: '649'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -50,9 +50,9 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -63,22 +63,22 @@ ht-degree: 0%
 
 <table>
     <tr>
-        <td>[!UICONTROL 初始值]</td>
-        <td>输入或映射您希望模块在第一迭代中的值。 默认值为1。</td>
+        <td>[！UICONTROL初始值]</td>
+        <td>输入或映射您希望模块在第一迭代中的值。 默认值为 1。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 重复]</td>
+        <td>[！UICONTROL重复]</td>
         <td>输入或映射您希望模块重复执行的次数。 此数字必须大于或等于0，并且小于或等于10,000。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 步骤]</td>
-        <td>这是模块增加值所依据的数字。 默认值为1。</td>
+        <td>[！UICONTROL步骤]</td>
+        <td>这是模块增加值所依据的数字。 默认值为 1。</td>
     </tr>
 </table>
 
 >[!BEGINSHADEBOX]
 
-例如，您可以通过将&#x200B;**[!UICONTROL 电子邮件] >[!UICONTROL 向我发送电子邮件]**&#x200B;模块连接到[!UICONTROL 中继器]模块，使用[!UICONTROL 中继器]模块发送主题为“Hello 1”、“Hello 2”等的五封电子邮件。
+例如，您可以通过将[!UICONTROL 电子邮件] >**[!UICONTROL 向我发送电子邮件]模块连接到[!UICONTROL 中继器]**&#x200B;模块，使用[!UICONTROL 中继器]模块发送主题为“Hello 1”、“Hello 2”等的五封电子邮件。
 
 1. 单击屏幕底部的[!UICONTROL 流量控制]图标![流量控制图标](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif)，然后在显示的菜单中单击&#x200B;**[!UICONTROL 中继器]**。
 1. 单击[!UICONTROL 中继器]模块，然后在显示的框中单击&#x200B;**[!UICONTROL 自动连接]**。
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 ## [!UICONTROL 路由器]
 
-[!UICONTROL 路由器]模块允许您将流量分为多条路由，并以不同的方式处理每条路由中的数据。 一旦[!UICONTROL 路由器]模块收到捆绑包，它会按照路由连接到[!UICONTROL 路由器]模块的顺序将其转发到每个连接的路由。 有关详细信息，请参阅 [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)中的路由器模块。
+[!UICONTROL 路由器]模块允许您将流量分为多条路由，并以不同的方式处理每条路由中的数据。 一旦[!UICONTROL 路由器]模块收到捆绑包，它会按照路由连接到[!UICONTROL 路由器]模块的顺序将其转发到每个连接的路由。 有关详细信息，请参阅Adobe Workfront Fusion中的[路由器模块](/help/workfront-fusion/create-scenarios/add-modules/router-module.md)。
 
 ## 指令
 

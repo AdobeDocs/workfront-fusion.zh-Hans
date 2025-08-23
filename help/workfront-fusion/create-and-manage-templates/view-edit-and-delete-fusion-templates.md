@@ -7,16 +7,16 @@ description: 除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 2%
+source-wordcount: '902'
+ht-degree: 0%
 
 ---
 
 # 查看、编辑和删除模板
 
-[!DNL Workfront Fusion]模板功能允许您创建和使用现有模板，作为您的Workfront Fusion方案的起点。 模板表示一些常见用例，您可以根据组织和特定用例的需要对这些用例进行配置和修改。
+Workfront Fusion模板功能允许您创建并使用现有模板作为Workfront Fusion方案的起点。 模板表示一些常见用例，您可以根据组织和特定用例的需要对这些用例进行配置和修改。
 
 有关当前可用的Fusion模板的列表，请参阅[当前可用的Adobe Workfront Fusion模板](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)。
 
@@ -31,17 +31,17 @@ ht-degree: 2%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+   <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -49,17 +49,17 @@ ht-degree: 2%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -81,11 +81,11 @@ ht-degree: 2%
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Public templates]</td> 
+      <td role="rowheader">[！UICONTROL公共模板]</td> 
       <td> <p> 已发布然后由管理员批准的所有模板。 在模板磁贴上，您可以看到模板的名称、其预览以及带有数字的套接字图标，该数字表示迄今为止已使用该模板的次数。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Team templates]</td> 
+      <td role="rowheader">[！UICONTROL团队模板]</td> 
       <td> <p>您的团队成员创建的所有模板，包括管理员已公开的那些模板。 在模板图块上，您可以看到模板的名称、本文档的“发布和共享模板”部分中详述的状态图标以及“删除”按钮。</p> <b>注意：</b>如果在“团队模板”选项卡下看不到预期的模板，请检查左侧导航或标题以确保您当前查看的团队正确。</td> 
      </tr> 
     </tbody> 
@@ -115,24 +115,24 @@ ht-degree: 2%
 
 ## 编辑模板
 
-您可以编辑[!UICONTROL Team templates]选项卡中可用的任何模板。
+您可以编辑[!UICONTROL 团队模板]选项卡中可用的任何模板。
 
-1. 单击侧面导航菜单中的&#x200B;**[!UICONTROL Templates]**&#x200B;图标![模板图标](assets/templates-icon.png)。
-1. 单击 **[!UICONTROL Team templates]** 选项卡。
-1. 单击 **[!UICONTROL Private]** 选项卡。
+1. 单击侧面导航菜单中的&#x200B;**[!UICONTROL 模板]**&#x200B;图标![模板图标](assets/templates-icon.png)。
+1. 单击&#x200B;**[!UICONTROL 团队模板]**&#x200B;选项卡。
+1. 单击“**[!UICONTROL 专用]**”选项卡。
 1. 单击要编辑的模板。
-1. 单击右上角的&#x200B;**[!UICONTROL Edit]**
+1. 单击右上角的&#x200B;**[!UICONTROL 编辑]**
 
    或
 
    单击模板图。
 
 1. 在模板中进行更改。 您可以访问创建模板时可用的所有选项。 要查看这些选项，请参阅[创建新模板](/help/workfront-fusion/create-and-manage-templates/create-new-fusion-templates.md)。
-1. 单击&#x200B;**[!UICONTROL Save]**&#x200B;图标![保存图标](assets/save-icon.png)。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;图标![保存图标](assets/save-icon.png)。
 
 >[!NOTE]
 >
->[!UICONTROL Team templates]选项卡不仅包含已发布的模板，还包含管理员已发布的模板副本。 这意味着您可以编辑已对所有人都可见的模板。 如果修改其中一个模板，则更改不会立即覆盖公共模板。 [!UICONTROL Public templates]选项卡中的模板仍保持不变，并保持公开，但包含您从[!UICONTROL Team templates]中进行的更改的较新版本开始发布流程。 发布并批准修改后的版本后，将覆盖原始公共模板。
+>[!UICONTROL 团队模板]选项卡不仅包含已发布的模板，还包含管理员已发布的模板的副本。 这意味着您可以编辑已对所有人都可见的模板。 如果修改其中一个模板，则更改不会立即覆盖公共模板。 [!UICONTROL 公共模板]选项卡中的模板仍保持不变，并保留为公共模板，但更新版本随您在[!UICONTROL 团队模板]中的更改开始发布过程。 发布并批准修改后的版本后，将覆盖原始公共模板。
 
 ## 删除模板
 
@@ -140,12 +140,12 @@ ht-degree: 2%
 
 请注意，删除模板后，该模板将无法恢复。 团队模板适用于团队的所有成员，因此在删除模板之前，我们建议您与团队确认，以确保不需要该模板。
 
-1. 单击侧面导航菜单中的&#x200B;**[!UICONTROL Templates]**&#x200B;图标![模板图标](assets/templates-icon.png)。
-1. 单击 **[!UICONTROL Team templates]** 选项卡。
-1. 单击模板名称旁边的&#x200B;**[!UICONTROL Delete]**
+1. 单击侧面导航菜单中的&#x200B;**[!UICONTROL 模板]**&#x200B;图标![模板图标](assets/templates-icon.png)。
+1. 单击&#x200B;**[!UICONTROL 团队模板]**&#x200B;选项卡。
+1. 单击模板名称旁边的&#x200B;**[!UICONTROL 删除]**
 
    或
 
-   单击模板名称以进入模板。 单击右上角的&#x200B;**[!UICONTROL Options]**&#x200B;并选择&#x200B;**[!UICONTROL Delete]**。
+   单击模板名称以进入模板。 单击右上角的&#x200B;**[!UICONTROL 选项]**&#x200B;并选择&#x200B;**[!UICONTROL 删除]**。
 
-1. 单击&#x200B;**[!UICONTROL Really?]**&#x200B;以确认删除。
+1. 单击&#x200B;**[!UICONTROL 确定？]**&#x200B;以确认删除。

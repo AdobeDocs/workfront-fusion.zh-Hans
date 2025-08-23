@@ -1,19 +1,19 @@
 ---
 title: Fusion Performance护栏
-description: 工作自动化要求快速处理，因此 [!DNL Adobe Workfront Fusion] 是为高性能而设计的。 由于长时间运行的方案可能会减慢工作速度，因此我们设计了 [!DNL Workfront Fusion] 性能保留护栏，以限制执行时间、数据大小和其他方案参数。 [!DNL Workfront Fusion] 设计人员应了解这些护栏，并将它们融入到其设计实践中。
+description: 工作自动化要求快速处理，因此Adobe Workfront Fusion专为高性能而设计。 由于长时间运行的场景可能会减慢您的工作速度，因此我们设计了Workfront Fusion，它提供了保留性能的护栏，以限制执行时间、数据大小和其他场景参数。 Workfront Fusion设计人员应该了解这些护栏，并将它们融入到其设计实践中。
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: e036784fbf241c6d528f2020b7c368249e4f2133
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1104'
 ht-degree: 0%
 
 ---
 
 # Fusion性能护栏
 
-工作自动化需要快速处理，因此[!DNL Adobe Workfront Fusion]专为高性能而设计。 由于长时间运行的方案可能会减慢工作的速度，因此我们设计了[!DNL Workfront Fusion]保留性能的护栏，以限制执行时间、数据大小和其他方案参数。 [!DNL Workfront Fusion]设计人员应了解这些护栏，并将它们融入到其设计实践中。
+工作自动化要求快速处理，因此Adobe Workfront Fusion专为高性能而设计。 由于长时间运行的场景可能会减慢您的工作速度，因此我们设计了Workfront Fusion，它提供了保留性能的护栏，以限制执行时间、数据大小和其他场景参数。 Workfront Fusion设计人员应该了解这些护栏，并将它们融入到其设计实践中。
 
 ## 浏览器
 
@@ -21,17 +21,17 @@ ht-degree: 0%
 
 ## 方案
 
-* 默认方案执行超时为&#x200B;**40分钟**。 当执行达到此超时时，[!DNL Workfront Fusion]将在下一个循环或操作后中断方案执行，具体取决于方案。 这将强制在达到40分钟限制后不久停止场景
+* 默认方案执行超时为&#x200B;**40分钟**。 当执行达到此超时时，Workfront Fusion会在下一个周期或操作之后中断场景执行，具体取决于场景。 这将强制在达到40分钟限制后不久停止场景
 
   链接方案不计入方案执行超时。 等待子方案执行时，父方案不会累积时间。
 * 方案Blueprint的最大大小为&#x200B;**5 MB**，但我们建议将方案大小保持在&#x200B;**3 MB**&#x200B;以下。
 
   使用大量字段创建或更新数据的应用程序模块可能会导致生成非常大的Blueprint。
 
-   * 使用[!DNL Workfront]应用时，请确保仅选择创建或更新用例所需的字段。
+   * 使用Workfront应用程序时，请确保仅选择创建或更新用例所需的字段。
    * 使用其他应用程序时，使用自定义API模块与任何具有大量字段的记录类型进行交互。
 
-* 虽然某个方案中的模块数没有上限，但超过150个模块的方案会对[!DNL Workfront Fusion]系统的性能产生负面影响。 因此，我们不建议创建超过150个模块的场景。
+* 虽然场景中的模块数没有上限，但超过150个模块的场景会对Workfront Fusion系统的性能产生负面影响。 因此，我们不建议创建超过150个模块的场景。
 
 ## 运营
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 * 有效负载的默认最大大小为&#x200B;**5 MB**。
 * Webhook限制为每秒&#x200B;**100个请求**。 达到此限制后，Workfront Fusion将发送429 （[!UICONTROL 太多请求]）状态。
-* [!DNL Workfront Fusion]存储webhook负载30天。 在收到webhook有效负载超过30天后对其进行访问会导致错误“[!UICONTROL 无法从存储中读取文件。]”
+* Workfront Fusion会存储webhook负载30天。 在收到webhook有效负载超过30天后对其进行访问会导致错误“[!UICONTROL 无法从存储中读取文件。]”
 * 如果出现以下任一情况，Webhook将自动停用：
 
    * webhook已超过5天未连接到任何场景

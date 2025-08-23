@@ -2,21 +2,21 @@
 title: Adobe Workfront Fusion
 description: 欢迎访问Adobe Workfront Fusion产品和技术文档主页。 使用以下链接、帮助文章和其他资源，了解如何在组织中实施和有效使用Adobe Workfront Fusion。
 exl-id: c005fc89-4b58-4c4e-ba45-0155cd2c8f03
-source-git-commit: 6e62836006dcca1acc2cc314c44dbb114cda0e08
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 0%
+source-wordcount: '306'
+ht-degree: 2%
 
 ---
 
-# [!DNL Workfront] Fusion文档
+# Workfront Fusion文档
 
 欢迎访问Adobe Workfront Fusion产品和技术文档主页。 使用以下链接、帮助文章和其他资源，了解如何在组织中实施和有效使用Adobe Workfront Fusion。
 
 ## 新增功能
 
 * [发布活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
-* [已知问题](https://experienceleague.adobe.com/zh-hans/docs/workfront-known-issues/issues/fusion/workfrontfusion)
+* [已知问题](https://experienceleague.adobe.com/en/docs/workfront-known-issues/issues/fusion/workfrontfusion)
 
 ## 浏览文档
 
@@ -54,8 +54,8 @@ ht-degree: 0%
 
 ### 探索学习和培训部分
 
-* **讲师指导的现场培训课程** Adobe为Fusion提供为期三天的现场培训课程。 有关详细信息和可用会话，请参阅[在Adobe Workfront Fusion中管理连接和工作流](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html)。
-* **培训材料**：导航到[简介和技术策略](https://experienceleague.adobe.com/zh-hans/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) Workfront Fusion培训页面，开始一系列旨在帮助您更好地了解如何最好地使用Fusion的课程和练习。
+* **讲师指导的实时培训课程** Adobe为Fusion提供为期三天的实时培训课程。 有关详细信息和可用会话，请参阅[在Adobe Workfront Fusion中管理连接和工作流](https://learning.adobe.com/courses/adobe_workfront/cours000000000098121.html)。
+* **培训材料**：导航到[简介和技术策略](https://experienceleague.adobe.com/en/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy) Workfront Fusion培训页面，开始一系列旨在帮助您更好地了解如何最好地使用Fusion的课程和练习。
 
 ### 在社区论坛中查找答案
 

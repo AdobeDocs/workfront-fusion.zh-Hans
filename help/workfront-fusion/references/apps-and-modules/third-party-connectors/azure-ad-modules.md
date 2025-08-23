@@ -1,19 +1,19 @@
 ---
 title: Azure Active Directory模块
-description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行使用 [!DNL Azure] Active Directory的工作流，并将其连接到多个第三方应用程序和服务。
+description: 在Adobe Workfront Fusion方案中，您可以自动使用 [!DNL Azure] Active Directory的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion
 exl-id: 96455ae4-ef68-46b5-a172-429cf9f982fb
-source-git-commit: 719112fa82132b6294560fc9f9dff8355181e8df
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1097'
 ht-degree: 1%
 
 ---
 
 # [!DNL Azure Active Directory]模块
 
-在[!DNL Adobe Workfront Fusion]方案中，您可以自动使用[!DNL Azure Active Directory]的工作流，并将其连接到多个第三方应用程序和服务。
+在Adobe Workfront Fusion场景中，您可以自动使用[!DNL Azure Active Directory]的工作流，并将其连接到多个第三方应用程序和服务。
 
 有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
 
@@ -48,7 +48,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -56,9 +56,9 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -87,9 +87,9 @@ Azure Active Directory连接器使用以下内容：
 
 ## [!DNL Azure Active Directory]模块及其字段
 
-配置[!DNL Azure Active Directory]模块时，[!DNL Workfront Fusion]显示下面列出的字段。 除此以外，可能还会显示其他[!DNL Azure Active Directory]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在配置[!DNL Azure Active Directory]模块时，Workfront Fusion将显示以下列出的字段。 除此以外，可能还会显示其他[!DNL Azure Active Directory]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[在 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)中将信息从一个模块映射到另一个模块。
+如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[在Adobe Workfront Fusion中将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](../assets/map-toggle-350x74.png)
 
@@ -110,15 +110,15 @@ Azure Active Directory连接器使用以下内容：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 类型]</td> 
+   <td role="rowheader">[！UICONTROL类型]</td> 
    <td>选择要监视用户记录还是组记录。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 最大记录数]</td> 
+   <td role="rowheader">[！UICONTROL最大记录数]</td> 
    <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td> 
   </tr> 
  </tbody> 
@@ -147,19 +147,19 @@ Azure Active Directory连接器使用以下内容：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 记录类型]</td> 
-   <td>选择您要读取[!UICONTROL User]记录还是[!UICONTROL Group]记录。</td> 
+   <td role="rowheader">[！UICONTROL记录类型]</td> 
+   <td>选择您要读取[！UICONTROL User]记录还是[！UICONTROL Group]记录。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输出]</td> 
+   <td role="rowheader">[！UICONTROL输出]</td> 
    <td>选择要包含在此模块的输出捆绑包中的信息。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID]</td> 
+   <td role="rowheader">[！UICONTROL ID]</td> 
    <td>输入或映射您希望模块读取的记录的唯一[!DNL Azure Active Directory] ID。</td> 
   </tr> 
  </tbody> 
@@ -180,15 +180,15 @@ Azure Active Directory连接器使用以下内容：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 记录类型]</td> 
-   <td>选择您要读取[!UICONTROL User]记录还是[!UICONTROL Group]记录。</td> 
+   <td role="rowheader">[！UICONTROL记录类型]</td> 
+   <td>选择您要读取[！UICONTROL User]记录还是[！UICONTROL Group]记录。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 其他字段]</td> 
+   <td role="rowheader">[！UICONTROL其他字段]</td> 
    <td>填写这些字段以设置新记录的值。</td> 
   </tr> 
  </tbody> 
@@ -205,28 +205,28 @@ Azure Active Directory连接器使用以下内容：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL URL]</td> 
+   <td role="rowheader">[！UICONTROL URL]</td> 
    <td>输入或映射相对路径 <code>https://graph.microsoft.com/{version}/{resource}?{query-parameters}</code></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 方法]</td> 
+   <td role="rowheader">[！UICONTROL方法]</td> 
    <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td role="rowheader">[！UICONTROL Headers]</td> 
    <td> <p>以标准JSON对象的形式添加请求的标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 查询字符串]</td> 
+   <td role="rowheader">[！UICONTROL查询字符串]</td> 
    <td> <p>以标准JSON对象的形式添加API调用的查询。</p> <p>例如： <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注意：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+   <td role="rowheader">[！UICONTROL Body]</td> 
+   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="../assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -250,19 +250,19 @@ Azure Active Directory连接器使用以下内容：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL 搜索条件]</td> 
-   <td> <p>输入要在搜索中使用的标准。</p> <p>有关要使用的参数（如“[!UICONTROL $filter]”）的信息，请参阅[!DNL Microsoft] API文档中的<a href="https://docs.microsoft.com/en-us/graph/query-parameters">使用查询参数自定义响应</a>。</p> </td> 
+   <td role="rowheader">[！UICONTROL搜索条件]</td> 
+   <td> <p>输入要在搜索中使用的标准。</p> <p>有关要使用的参数（如“[！UICONTROL $filter]”）的信息，请参阅<a href="https://docs.microsoft.com/en-us/graph/query-parameters"> API文档中的</a>使用查询参数自定义响应[!DNL Microsoft]。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL 输出]</td> 
+   <td role="rowheader">[！UICONTROL输出]</td> 
    <td>选择要包含在此模块的输出捆绑包中的信息。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL 最大记录数]</td> 
+   <td role="rowheader">[！UICONTROL最大记录数]</td> 
    <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td> 
   </tr> 
  </tbody> 
@@ -277,11 +277,11 @@ Azure Active Directory连接器使用以下内容：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到[!DNL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!DNL Adobe Workfront Fusion]的连接 — 基本说明</a>。</p> </td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td> <p>有关将[!DNL Azure Active Directory]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL 限制]</td> 
+   <td role="rowheader">[！UICONTROL限制]</td> 
    <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td> 
   </tr> 
  </tbody> 

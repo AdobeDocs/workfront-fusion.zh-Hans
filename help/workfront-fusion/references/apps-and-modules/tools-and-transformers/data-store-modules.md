@@ -1,23 +1,23 @@
 ---
 title: 数据存储模块
-description: ' [!DNL Adobe Workfront Fusion] 数据存储类似于数据库或简单表，可以存储方案中的数据，从而可以在各个方案或方案运行之间传输数据。 在同步过程中，您可以使用数据存储来存储来自不同系统的新数据。'
+description: Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储场景中的数据，从而可以在各个场景或场景运行之间传输数据。 在同步过程中，您可以使用数据存储来存储来自不同系统的新数据。
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL 数据存储]模块
 
-[!DNL Adobe Workfront Fusion]数据存储类似于数据库或简单表，可以存储方案中的数据，从而可以在各个方案或方案运行之间传输数据。 在同步过程中，您可以使用数据存储来存储来自不同系统的新数据。
+Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储场景中的数据，从而可以在各个场景或场景运行之间传输数据。 在同步过程中，您可以使用数据存储来存储来自不同系统的新数据。
 
-数据存储模块允许您在[!DNL Adobe Workfront Fusion]数据存储中添加、替换、更新、检索、删除、搜索或计数记录。
+通过数据存储模块，您可以在Adobe Workfront Fusion数据存储中添加、替换、更新、检索、删除、搜索或计数记录。
 
-<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/)-->
+<!--For information on creating, editing, and troubleshooting data stores, see [Data Stores in Adobe Workfront Fusion](/help/workfront-fusion/references/mapping-panel/data-types/)-->
 
 有关Workfront Fusion中数据存储的视频介绍，请参阅：
 
@@ -50,7 +50,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -58,9 +58,9 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 ## [!UICONTROL 数据存储]模块及其字段
 
-配置数据存储模块时，[!DNL Workfront Fusion]显示下面列出的字段。 除此之外，还可能会显示其他数据存储字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+配置数据存储模块时，Workfront Fusion会显示以下列出的字段。 除此之外，还可能会显示其他数据存储字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
 
 您无需创建连接即可使用数据存储。
 
@@ -109,19 +109,19 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储]</td> 
+   <td>[！UICONTROL数据存储]</td> 
    <td> <p> 选择或添加要在其中创建记录的数据存储。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[！UICONTROL Key] </td> 
    <td> <p>输入您希望模块添加或替换的记录的唯一键。 该键以后可用于检索记录。 如果将此字段留空，则会自动生成键。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 覆盖现有记录] </td> 
+   <td>[！UICONTROL覆盖现有记录] </td> 
    <td> <p>启用此选项以覆盖记录。 要覆盖的记录必须在上面的“键”字段中指定。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 记录] </td> 
+   <td>[！UICONTROL记录] </td> 
    <td> <p>在记录的字段中输入所需的值。</p> </td> 
   </tr> 
  </tbody> 
@@ -138,11 +138,11 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储] </td> 
+   <td>[！UICONTROL数据存储] </td> 
    <td> <p>选择要检查记录是否存在的数据存储。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[！UICONTROL Key] </td> 
    <td> <p>输入您希望模块检查是否存在记录的唯一键。</p> </td> 
   </tr> 
  </tbody> 
@@ -161,7 +161,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储] </td> 
+   <td>[！UICONTROL数据存储] </td> 
    <td> <p>选择包含要计数的记录的数据存储。</p> </td> 
   </tr> 
  </tbody> 
@@ -180,11 +180,11 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储] </td> 
+   <td>[！UICONTROL数据存储] </td> 
    <td> <p>选择要检查记录是否存在的数据存储。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[！UICONTROL Key] </td> 
    <td> <p>输入您希望模块删除的记录的唯一键值。</p> </td> 
   </tr> 
  </tbody> 
@@ -201,7 +201,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储] </td> 
+   <td>[！UICONTROL数据存储] </td> 
    <td> <p>选择要从中删除所有记录的数据存储。</p> </td> 
   </tr> 
  </tbody> 
@@ -220,11 +220,11 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储]</td> 
+   <td>[！UICONTROL数据存储]</td> 
    <td> <p> 选择要从中检索记录的数据存储</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[！UICONTROL Key] </td> 
    <td> <p>输入您希望模块检索的记录的唯一键值。</p> </td> 
   </tr> 
  </tbody> 
@@ -243,23 +243,23 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储]</td> 
+   <td>[！UICONTROL数据存储]</td> 
    <td> <p> 选择要搜索的数据存储。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 筛选器]</p> </td> 
+   <td> <p>[！UICONTROL筛选器]</p> </td> 
    <td> <p>为搜索设置过滤器。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 排序]</p> </td> 
-   <td> <p style="font-weight: normal;">对于要作为排序依据的每个字段，请填写以下字段：</p> <p style="font-weight: bold;">[!UICONTROL Key]</p> <p>选择要作为结果排序依据的列名。</p> <p style="font-weight: bold;">[!UICONTROL 顺序]</p> <p>选择是否要以升序或降序对结果进行排序。</p> </td> 
+   <td> <p>[！UICONTROL排序]</p> </td> 
+   <td> <p style="font-weight: normal;">对于要作为排序依据的每个字段，请填写以下字段：</p> <p style="font-weight: bold;">[！UICONTROL Key]</p> <p>选择要作为结果排序依据的列名。</p> <p style="font-weight: bold;">[！UICONTROL顺序]</p> <p>选择是否要以升序或降序对结果进行排序。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 限制]</td> 
-   <td> <p> 设置在一个执行周期内返回的最大搜索结果数[!DNL Workfront Fusion]。</p> </td> 
+   <td>[！UICONTROL限制]</td> 
+   <td> <p> 设置Workfront Fusion在一个执行周期内返回的最大搜索结果数。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 即使模块未返回任何结果，仍继续执行路由]</td> 
+   <td>[！UICONTROL即使模块未返回任何结果，仍继续执行路由]</td> 
    <td> <p> 如果启用，则此模块所属的路由将继续处理，即使此模块未返回任何结果。</p> </td> 
   </tr> 
  </tbody> 
@@ -280,19 +280,19 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储]</td> 
+   <td>[！UICONTROL数据存储]</td> 
    <td> <p> 选择或添加要在其中创建记录的数据存储。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Key] </td> 
+   <td>[！UICONTROL Key] </td> 
    <td> <p>输入您希望模块更新的记录的唯一键。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Insert missing record] </td> 
+   <td>[！UICONTROL Insert missing record] </td> 
    <td> <p>启用此选项以在具有指定键的记录不存在时创建新记录。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 记录]</td> 
+   <td>[！UICONTROL记录]</td> 
    <td> <p> 在要更新的记录字段中输入所需的值。</p> </td> 
   </tr> 
  </tbody> 

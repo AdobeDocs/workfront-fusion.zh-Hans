@@ -4,9 +4,9 @@ description: 以下日期和时间函数在Adobe Workfront Fusion映射面板中
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 9249223c6fbe0360b11d41988fe8b9c35e45dbb8
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1879'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 变量
 
-### 现在
+### now
 
 获取YYYY-MM-DD-hh:mm:ss格式的当前时间。
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 以Unix时间戳形式获取当前时间。
 
-## 函数
+## 功能
 
 ### [!UICONTROL addSeconds（日期；数字）]
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 指定从0到59的数字。 如果数字超出该范围，则函数返回前一分钟（对于负数）或后续分钟（对于正数）的秒数。
 
-如果您需要指定超出范围的数字，我们建议您使用[!UICONTROL &#x200B; addSeconds]，如上文[addSeconds (date； number)](#addseconds-date-number)部分所述。
+如果您需要指定超出范围的数字，我们建议您使用[!UICONTROL  addSeconds]，如上文[addSeconds (date； number)](#addseconds-date-number)部分所述。
 
 >[!BEGINSHADEBOX]
 
@@ -306,17 +306,17 @@ ht-degree: 1%
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 日期] </td> 
+   <td>[！UICONTROL日期] </td> 
    <td>日期 </td> 
    <td> <p>将日期值转换为文本值。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 格式] </td> 
+   <td>[！UICONTROL格式] </td> 
    <td>文本 </td> 
    <td> <p>允许您使用日期/时间格式令牌指定格式。 有关详细信息，请参阅日期和时间格式的<a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">令牌</a>。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 时区] </td> 
+   <td>[！UICONTROL时区] </td> 
    <td>文本 </td> 
    <td> <p>（可选）用于指定用于转换的时区。 </p> <p>有关可识别时区的列表，请参阅Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> tz数据库时区列表</a>中的“TZ数据库名称”列。 函数仅将此列中列出的值识别为有效时区。 将忽略任何其他值，并改为使用配置文件中指定的方案时区。 </p> <p>如果忽略此参数，将应用用户档案设置中指定的方案时区。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>Europe/Prague</code>， <code>UTC</code></p> </td> 
   </tr> 
@@ -374,17 +374,17 @@ ht-degree: 1%
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 文本] </td> 
+   <td>[！UICONTROL文本] </td> 
    <td>文本 </td> 
    <td> <p>将日期值转换为文本值。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 格式] </td> 
+   <td>[！UICONTROL格式] </td> 
    <td>文本 </td> 
    <td> <p>允许您使用日期/时间格式令牌指定格式。 有关详细信息，请参阅日期和时间格式的<a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">令牌</a>。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 时区] </td> 
+   <td>[！UICONTROL时区] </td> 
    <td>文本 </td> 
    <td> <p>（可选）用于指定用于转换的时区。 </p> <p>有关可识别时区的列表，请参阅Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> tz数据库时区列表</a>中的“TZ数据库名称”列。 函数仅将此列中列出的值识别为有效时区。 将忽略任何其他值，并改为使用配置文件中指定的方案时区。 </p> <p>如果忽略此参数，将应用用户档案设置中指定的方案时区。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>Europe/Prague</code>， <code>UTC</code></p> </td> 
   </tr> 
@@ -459,7 +459,7 @@ ht-degree: 1%
 
 #### 如何计算月中每周的第n天
 
-此部分针对[!DNL Exceljet]网页中的[!DNL Workfront Fusion]进行改编，该网页介绍了如何获取一个月中的第n天。
+此部分改编自[!DNL Exceljet]网页中的Workfront Fusion，该网页介绍了如何获取一个月中的第n天。
 
 如果您需要计算与每月第n天对应的日期（例如，第一个星期二、第三个星期五等），可以使用以下公式：
 

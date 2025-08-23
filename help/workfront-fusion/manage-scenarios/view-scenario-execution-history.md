@@ -4,9 +4,9 @@ description: 您可以显示有关场景的事件或执行的信息，也可以�
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: cc7c05614390e20d4051635c605e12dfa65493a1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '924'
 ht-degree: 1%
 
 ---
@@ -34,17 +34,17 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+   <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新文档： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -52,16 +52,16 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包含[!UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">访问级别配置*</td> 
    <td> 
-     <p>您必须是组织的[!DNL Workfront Fusion]管理员。</p>
-     <p>您必须是团队的[!DNL Workfront Fusion]管理员。</p>
+     <p>您必须是组织的Workfront Fusion管理员。</p>
+     <p>您必须是团队的Workfront Fusion管理员。</p>
    </td> 
   </tr> 
    </td> 
@@ -69,9 +69,9 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 
    针对方案的每次执行都列出了以下详细信息：
 
-   * 运行开始日期&#x200B;**&#x200B;**
+   * 运行开始日期&#x200B;****
    * 执行Id
    * **[!UICONTROL 状态]** （成功或失败）
    * 运行&#x200B;**[!UICONTROL 持续时间]**
@@ -134,7 +134,7 @@ ht-degree: 1%
 
 您可以过滤执行历史记录以仅查看具有指定值的执行。
 
-1. 打开方案的全页历史记录，如本文中[!UICONTROL 历史记录]选项卡[&#128279;](#view-scenario-history-on-the-history-tab)上的查看方案执行历史记录中所述。
+1. 打开方案的全页历史记录，如本文中[历史记录[!UICONTROL 选项卡]上的](#view-scenario-history-on-the-history-tab)查看方案执行历史记录中所述。
 1. 单击要作为筛选依据的列标题中的[!UICONTROL 筛选器]图标![方案筛选器图标](assets/fusion-scenario-filter-icon.png)。
 1. 在[!UICONTROL 筛选器]对话框中，输入筛选依据的值。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
@@ -153,7 +153,7 @@ You can sort the scenario execution history.
 
 ## 搜索场景的所有执行
 
-1. 打开方案的全页历史记录，如本文中[!UICONTROL 历史记录]选项卡[&#128279;](#view-scenario-history-on-the-history-tab)上的查看方案执行历史记录中所述。
+1. 打开方案的全页历史记录，如本文中[历史记录[!UICONTROL 选项卡]上的](#view-scenario-history-on-the-history-tab)查看方案执行历史记录中所述。
 1. 单击执行列表顶部的&#x200B;**[!UICONTROL 全文搜索]**。
 
    或
@@ -177,7 +177,7 @@ You can sort the scenario execution history.
    >
    >* 执行仅可用于之前的30天。
    >
-   >* [!DNL Workfront Fusion]存储webhook负载30天。 创建webhook有效负载超过30天后对其进行访问会导致错误“[!UICONTROL 无法从存储中读取文件。]”
+   >* Workfront Fusion会存储webhook负载30天。 创建webhook有效负载超过30天后对其进行访问会导致错误“[!UICONTROL 无法从存储中读取文件。]”
 
 
 1. （可选）要按状态限制搜索，请在&#x200B;**[!UICONTROL 按状态]**&#x200B;下拉列表中选择所需的状态。
@@ -189,7 +189,7 @@ You can sort the scenario execution history.
 
    * [!UICONTROL 错误]
 
-   * [!UICONTROL 警告]
+   * [!UICONTROL Warning]
 
    * [!UICONTROL 成功]
 

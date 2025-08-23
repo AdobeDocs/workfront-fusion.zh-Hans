@@ -4,9 +4,9 @@ description: Fusion使用特定的IP地址和域进行Web通信。 必须将这�
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-source-git-commit: 59d739093c88238af7a7e97499fd0c7d7cf6053a
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 这可以通过允许列表实现，它实际上是“允许”通过防火墙发送或接收数据的站点的“列表”。 可以通过以下两种方式之一标识站点：
 
 * **IP地址**：一系列数字，如52.31.132.175
-* **域**： URL的一部分，如`www.thisdomain.com`中的`thisdomain`
+* **域**： URL的一部分，如`thisdomain`中的`www.thisdomain.com`
 
 Fusion使用特定的IP地址和域进行Web通信。 必须将这些组件添加到您组织的允许列表中，然后才能在您的组织中使用Workfront。
 
@@ -82,7 +82,7 @@ IP地址因存储数据的位置而异。
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 欧盟数据中心</td> 
+   <td role="rowheader">Adobe Workfront EU数据中心</td> 
    <td> 
     <ul> 
      <li>52.30.133.50</li> 
@@ -91,7 +91,7 @@ IP地址因存储数据的位置而异。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] 美国数据中心</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront美国数据中心</p> </td> 
    <td> 
     <ul> 
      <li>54.244.142.219</li> 
@@ -103,7 +103,7 @@ IP地址因存储数据的位置而异。
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 在Microsoft Azure群集上</td> 
+   <td role="rowheader">Microsoft Azure群集上的Adobe Workfront Fusion</td> 
    <td> 
     <ul> 
      <li>20.36.133.48/28</li> 
@@ -121,15 +121,15 @@ IP地址因存储数据的位置而异。
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 欧盟数据中心</td> 
+   <td role="rowheader">Adobe Workfront EU数据中心</td> 
    <td> <p> hook.app-eu.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront] 美国数据中心</p> </td> 
+   <td role="rowheader"> <p>Adobe Workfront美国数据中心</p> </td> 
    <td> <p>hook.app.workfrontfusion.com </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!DNL Adobe Workfront Fusion] 在Microsoft Azure群集上</p> </td> 
+   <td role="rowheader"> <p>Microsoft Azure群集上的Adobe Workfront Fusion</p> </td> 
    <td> <p>hook.app-az.workfrontfusion.com </p> </td> 
   </tr> 
  </tbody> 

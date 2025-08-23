@@ -5,9 +5,9 @@ description: 您可以在方案设置面板中配置方案的特定设置。
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 273a07a28563a0eb3a3446937964e8dcef8a68d3
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -27,17 +27,17 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 计划</td> 
+   <td role="rowheader">Adobe Workfront计划</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新文档： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -45,16 +45,16 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包括[!UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">访问级别配置*</td> 
    <td> 
-     <p>您必须是组织的[!DNL Workfront Fusion]管理员。</p>
-     <p>您必须是团队的[!DNL Workfront Fusion]管理员。</p>
+     <p>您必须是组织的Workfront Fusion管理员。</p>
+     <p>您必须是团队的Workfront Fusion管理员。</p>
    </td> 
   </tr> 
    </td> 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 有关此表中信息的更多详细信息，请参阅Workfront文档中的[访问要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -119,15 +119,15 @@ ht-degree: 0%
 
 ### [!UICONTROL 允许存储未完成的执行]
 
-此选项确定在执行场景期间发生错误时[!DNL Adobe Workfront Fusion]如何进行。 启用此选项后，方案将暂停并移至不完整的执行文件夹。 这使您能够修复问题，并从场景停止的地方继续执行。 如果禁用此选项，则方案运行将停止，并且回滚阶段将启动。
+此选项可确定在执行场景期间发生错误时Adobe Workfront Fusion如何进行。 启用此选项后，方案将暂停并移至不完整的执行文件夹。 这使您能够修复问题，并从场景停止的地方继续执行。 如果禁用此选项，则方案运行将停止，并且回滚阶段将启动。
 
 有关未完成执行的详细信息，请参阅[查看并解决未完成的执行](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)。
 
 ### 启用数据丢失
 
-此选项与启用数据丢失有关，如果[!DNL Workfront Fusion]无法将捆绑包保存到未完成执行的队列（例如，由于缺少可用空间）。 启用此选项后，数据将丢失，以防止整个场景执行过程中的中断。 当最高优先级是连续执行并且传入的错误数据没有那么重要时，此选项非常有用。
+此选项与在Workfront Fusion无法将捆绑包保存到未完成执行的队列（例如，由于缺少可用空间）时启用数据丢失有关。 启用此选项后，数据将丢失，以防止整个场景执行过程中的中断。 当最高优先级是连续执行并且传入的错误数据没有那么重要时，此选项非常有用。
 
-除此之外，在执行场景时，模块有时可能会遇到大于最大允许大小的文件。 在这种情况下，[!DNL Workfront Fusion]按照[!UICONTROL 启用数据丢失]选项的设置继续进行，并显示一条警告消息。
+除此之外，在执行场景时，模块有时可能会遇到大于最大允许大小的文件。 在这种情况下，Workfront Fusion将按照[!UICONTROL 启用数据丢失]选项的设置继续操作，并显示一条警告消息。
 
 有关未完成执行的详细信息，请参阅[查看并解决未完成的执行](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)。
 
@@ -160,7 +160,7 @@ ht-degree: 0%
 
 >[!BEGINSHADEBOX]
 
-**示例：** [!DNL Workfront] > [!UICONTROL 监视记录]监视新出现的问题，并且[!DNL Workfront] >[!UICONTROL 转换对象]将新请求转换为项目并为其分配适当的模板。
+**示例：** Workfront > [!UICONTROL 监视记录]监视出现的新问题，Workfront >[!UICONTROL 转换对象]将新请求转换为项目并为其分配适当的模板。
 
 ![方案设置](assets/scenario-settings-ex-1-350x157.png)
 
@@ -171,7 +171,7 @@ ht-degree: 0%
 ![最大循环数](assets/max-number-cycles-1-350x201.png)
 
 Workfront >观察记录模块中的最大周期数设置为`10`。
-如果向[!DNL Workfront]提交了100个请求，且“最大循环数”字段设置为10，则运行一个方案后仍有90个文件未处理。 在下次计划场景执行中处理接下来的10个文件。
+如果将向Workfront提交100个请求，并且最大周期数字段设置为10，则运行一个方案后仍有90个文件未处理。 在下次计划场景执行中处理接下来的10个文件。
 
 #### 最大循环数设置为10
 

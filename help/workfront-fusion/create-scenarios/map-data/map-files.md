@@ -4,9 +4,9 @@ description: 某些模块具有处理文件的功能。 这些模块可以返回
 author: Becky
 feature: Workfront Fusion
 exl-id: 25c632f4-169e-4d3c-989a-f57b398bd3f0
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '458'
 ht-degree: 1%
 
 ---
@@ -26,17 +26,17 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+   <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -44,16 +44,16 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">访问级别配置*</td> 
    <td> 
-     <p>您必须是组织的[!DNL Workfront Fusion]管理员。</p>
-     <p>您必须是团队的[!DNL Workfront Fusion]管理员。</p>
+     <p>您必须是组织的Workfront Fusion管理员。</p>
+     <p>您必须是团队的Workfront Fusion管理员。</p>
    </td> 
   </tr> 
    </td> 
@@ -61,9 +61,9 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -86,7 +86,7 @@ ht-degree: 1%
 
 要映射文件，请执行以下操作：
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要映射文件的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
 1. 在要映射到的目标模块中，找到&#x200B;**Source文件**&#x200B;区域。

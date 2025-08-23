@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion映射面板中提供了以下字符串函数
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 0%
+source-wordcount: '619'
+ht-degree: 4%
 
 ---
 
 # 字符串函数
 
-## [!UICONTROL length (text or buffer)]
+## [!UICONTROL 长度（文本或缓冲区）]
 
 返回文本字符串的长度（字符数）或二进制缓冲区的长度（缓冲区大小，以字节为单位）。
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL lower (text)]
+## [!UICONTROL 下移（文本）]
 
 将文本字符串中的所有字母字符转换为小写。
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL capitalize (text)]
+## [!UICONTROL 大写（文本）]
 
 将文本字符串中的第一个字符转换为大写。
 
@@ -51,11 +51,11 @@ ht-degree: 0%
 
 `capitalize( workfront )`
 
-返回： [!DNL Workfront]
+返回：Workfront
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL startcase (text)]
+## [!UICONTROL startcase（文本）]
 
 每个单词的首字母使用大写，其他字母使用小写。
 
@@ -64,11 +64,11 @@ ht-degree: 0%
 **示例：**
 `startcase( hello WORLD )`
 
-返回： [!UICONTROL Hello World]
+返回：[!UICONTROL Hello World]
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL ascii (text; [remove diacritics])]
+## [!UICONTROL ascii （文本；[删除变音符]）]
 
 从文本字符串中删除所有非ascii字符。
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 * `ascii(` `Wěošrčkřfžrýoáníté` `)`
 
-返回： [!DNL Workfront]
+返回：Workfront
 
 * `ascii(` `ěščřž` `;` `true` `)`
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL replace (text;search string; replacement string)]
+## [!UICONTROL 替换（文本；搜索字符串；替换字符串）]
 
 将搜索字符串替换为新的字符串。
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 `replace( Hello World ; Hello ; Hi )`
 
-返回： [!UICONTROL Hi World]
+返回：[!UICONTROL World]
 
 >[!ENDSHADEBOX]
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 **示例：**
 
-![替换](assets/replace---1-350x31.png)
+![Replace](assets/replace---1-350x31.png)
 
 所有这些数字X X X X X都替换为X
 
@@ -138,11 +138,11 @@ ht-degree: 0%
 
 有关正则表达式的详细信息，请参阅[文本分析器](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)。
 
-## [!UICONTROL trim (text)]
+## [!UICONTROL 修剪（文本）]
 
 删除文本开头或结尾的空格字符。
 
-## [!UICONTROL upper (text)]
+## [!UICONTROL upper（文本）]
 
 将文本字符串中的所有字母字符转换为大写。
 
@@ -156,7 +156,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL substring (text; start;end)]
+## [!UICONTROL 子字符串（文本；开始；结束）]
 
 返回文本字符串在“开始”位置和“结束”位置之间的部分。
 
@@ -196,7 +196,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL toBinary (value)]
+## [!UICONTROL toBinary （值）]
 
 将任意值转换为二进制数据。
 
@@ -216,15 +216,15 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL toString (value)]
+## [!UICONTROL toString （值）]
 
 将任意值转换为字符串。
 
-## [!UICONTROL encodeURL (text)]
+## [!UICONTROL encodeURL （文本）]
 
 将某些文本中的特殊字符编码为有效的URL地址。
 
-## [!UICONTROL decodeURL (text)]
+## [!UICONTROL decodeURL （文本）]
 
 将URL中的特殊字符解码为文本。
 
@@ -233,13 +233,13 @@ ht-degree: 0%
 **示例：**
 `decodeURL( Automate%20your%20workflow )`
 
-返回： [!UICONTROL Automate your workflow]
+返回： [!UICONTROL 自动执行工作流]
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL escapeHTML (text)]
+## [!UICONTROL escapeHTML（文本）]
 
-转义文本中的所有HTML标签。
+转义文本中的所有HTML标记。
 
 >[!BEGINSHADEBOX]
 
@@ -247,11 +247,11 @@ ht-degree: 0%
 
 `escapeHTML( <b>Hello</b> )`
 
-返回： `&lt;b&gt;Hello&lt;/b&gt;`
+返回：`&lt;b&gt;Hello&lt;/b&gt;`
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL escapeMarkdown(text)]
+## [!UICONTROL escapeMarkdown（文本）]
 
 转义文本中的所有Markdown标记。
 
@@ -261,13 +261,13 @@ ht-degree: 0%
 
 `escapeMarkdown( # Header )`
 
-返回： `&#35; Header`
+返回：`&#35; Header`
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL stripHTML (text)]
+## [!UICONTROL stripHTML（文本）]
 
-从文本中删除所有HTML标签。
+从文本中删除所有HTML标记。
 
 >[!BEGINSHADEBOX]
 
@@ -297,7 +297,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL split (text; separator)]
+## [!UICONTROL 拆分（文本；分隔符）]
 
 通过将字符串拆分为子字符串，将字符串拆分为字符串数组。
 
@@ -309,7 +309,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL md5 (text)]
+## [!UICONTROL md5（文本）]
 
 计算字符串的md5哈希值。
 
@@ -319,11 +319,11 @@ ht-degree: 0%
 
 `md5( Workfront )`
 
-返回： `1448bbbeaa7a9b8091d426999f1f666b`
+返回：`1448bbbeaa7a9b8091d426999f1f666b`
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL sha1 (text; [encoding]; [key])]
+## [!UICONTROL sha1 （文本；[编码]；[密钥]）]
 
 计算字符串的sha1哈希。 如果指定了键参数，则返回sha1 HMAC哈希。 支持的编码：“hex”（默认）、“base64”或“latin1”。
 
@@ -337,7 +337,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL sha256 (text; [encoding]; [key])]
+## [!UICONTROL sha256 （文本；[编码]；[密钥]）]
 
 计算字符串的sha256哈希。 如果指定了键参数，则返回sha256 HMAC哈希。 支持的编码：“hex”（默认）、“base64”或“latin1”。>
 
@@ -351,21 +351,21 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL sha512 (text; [output encoding]; [key]; [key encoding])]
+## [!UICONTROL sha512 （文本；[输出编码]；[密钥]；[密钥编码]）]
 
 计算字符串的sha512哈希。 如果指定了键参数，则返回sha512 HMAC哈希。
 
 支持的编码：
 
 * &quot;[!UICONTROL hex]&quot; （默认）
-* &quot;[!UICONTROL base64]&quot;
+* [!UICONTROL base64]
 * &quot;[!UICONTROL latin1]&quot;
 
 支持的密钥编码：
 
-* &quot;[!UICONTROL text]&quot; （默认）
-* &quot;[!UICONTROL hex]&quot;
-* &quot;[!UICONTROL base64]&quot;或&quot;[!UICONTROL binary]&quot;
+* “[!UICONTROL 文本]”（默认）
+* &quot;[!UICONTROL 十六进制]&quot;
+* [!UICONTROL base64]”或[!UICONTROL binary]
 
 使用“[!UICONTROL binary]”密钥编码时，密钥必须是缓冲区，而不是字符串。
 
@@ -379,7 +379,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## [!UICONTROL base64 (text)]
+## [!UICONTROL base64 （文本）]
 
 将文本转换为base64。
 

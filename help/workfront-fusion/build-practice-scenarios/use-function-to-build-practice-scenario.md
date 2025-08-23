@@ -7,9 +7,9 @@ description: 了解如何添加函数以更新Workfront中的工作项。
 author: Becky
 feature: Workfront Fusion
 exl-id: aa082ac8-48e8-4569-880e-024dd77feaa1
-source-git-commit: 8884aef2237ad358c774110b81ac17b9efb386d4
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '609'
 ht-degree: 1%
 
 ---
@@ -33,17 +33,17 @@ Fusion包括多种类型的函数，可用于转换数据并对数据执行条�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+   <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -51,17 +51,17 @@ Fusion包括多种类型的函数，可用于转换数据并对数据执行条�
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -74,8 +74,8 @@ Fusion包括多种类型的函数，可用于转换数据并对数据执行条�
 ### 将“更新记录”模块添加到方案
 
 1. 在方案编辑器中打开方案。
-1. 将鼠标悬停在第二个模块右侧的部分圆上，然后单击&#x200B;**[!UICONTROL Add another module]**。
-1. 从应用程序列表中选择[!DNL Adobe Workfront]，然后选择模块&#x200B;**[!UICONTROL Update Record]**。
+1. 将鼠标悬停在第二个模块右侧的部分圆圈上，然后单击“**[!UICONTROL 添加另一个模块]**”。
+1. 从应用程序列表中选择Adobe Workfront，然后选择模块&#x200B;**[!UICONTROL 更新记录]**。
 1. 在ID字段中，选择Convert对象模块下的ID块。 这是该模块输出的项目的ID。
 
    转换对象中的![ID](assets/id-convert-object.png)
@@ -117,7 +117,7 @@ Fusion包括多种类型的函数，可用于转换数据并对数据执行条�
 1. 如果您满意方案按预期工作，请单击屏幕左下角的&#x200B;**计划**&#x200B;切换开关至&#x200B;**开启**。
 
    这将激活方案。 活动场景根据触发器模块中设置的计划运行。
-1. 在[!DNL Workfront Fusion]中，单击左下角附近的&#x200B;**[!UICONTROL Save]**&#x200B;以保存方案进度。
+1. 在Workfront Fusion中，单击左下角附近的&#x200B;**[!UICONTROL 保存]**&#x200B;以保存场景进度。
 
    >[!IMPORTANT]
    >

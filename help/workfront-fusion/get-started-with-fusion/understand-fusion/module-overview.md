@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion区分了五种类型的模块：操作模块
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c8fe028-8425-426d-a006-f0c66871b3cd
-source-git-commit: 190bfe5992fb21b789a7246c4ae732a5dc7672fa
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 0%
+source-wordcount: '917'
+ht-degree: 1%
 
 ---
 
@@ -35,8 +35,8 @@ Adobe Workfront Fusion将模块分为五种类型：
 
 **示例：**
 
-* **[!DNL Workfront]>[!UICONTROL Upload a file]**&#x200B;向[!DNL Workfront]发送文件并返回其标识符。
-* **[!UICONTROL Image]>[!UICONTROL Resize]**&#x200B;接收图像，将其大小调整为指定尺寸，然后将调整大小的图像传递到下一个操作。
+* **Workfront > [!UICONTROL 上传文件]**&#x200B;将文件发送到Workfront并返回其标识符。
+* **[!UICONTROL 图像] > [!UICONTROL 调整大小]**&#x200B;接收图像，将其大小调整为指定的尺寸，然后将调整大小的图像传递到下一个操作。
 
 >[!ENDSHADEBOX]
 
@@ -80,7 +80,7 @@ Update子类型包含以下三个操作：
 
 **示例：**
 
-**[!DNL Workfront]>[!UICONTROL Read Related Records]**&#x200B;读取在特定父对象中与指定的搜索查询匹配的记录。
+**Workfront > [!UICONTROL 读取相关记录]**&#x200B;读取在特定父对象中与指定的搜索查询匹配的记录。
 
 >[!ENDSHADEBOX]
 
@@ -94,7 +94,7 @@ Update子类型包含以下三个操作：
 
 每个方案只能包含一个触发器。
 
-[!DNL Workfront Fusion]使用两种类型的触发器：轮询触发器和即时触发器。
+Workfront Fusion使用两种类型的触发器：轮询触发器和即时触发器。
 
 ### 轮询触发器
 
@@ -110,15 +110,15 @@ Update子类型包含以下三个操作：
 
 **示例：**
 
-* **[!DNL Workfront]>[!UICONTROL Watch records]**&#x200B;返回上次运行方案后新添加的记录。
+* **Workfront > [!UICONTROL 监视记录]**&#x200B;返回上次运行方案后新添加的记录。
 
-* **[!DNL Google Sheets]>[!UICONTROL Watch Rows]**&#x200B;返回上次运行方案后添加的新行。
+* **[!DNL Google Sheets]> [!UICONTROL 观察行]**&#x200B;返回上次运行方案后添加的新行。
 
 >[!ENDSHADEBOX]
 
 ### 即时触发器
 
-即时触发器使服务能够在更改发生后立即通知[!DNL Workfront Fusion]。 我们建议您安排一个包含即时触发器的方案立即运行。
+即时触发器允许服务在发生更改后立即通知Workfront Fusion。 我们建议您安排一个包含即时触发器的方案立即运行。
 
 有关说明，请参阅[计划方案](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)。
 
@@ -128,8 +128,8 @@ Update子类型包含以下三个操作：
 
 **示例：**
 
-* 在Workfront中发生特定类型的事件（如创建任务）时，**[!DNL Workfront]>[!UICONTROL Watch Events]**&#x200B;会返回信息。
-* 更新单元格时，**[!DNL Google Sheets]>[!UICONTROL Watch Changes]**&#x200B;会返回信息。
+* **Workfront > [!UICONTROL 当在Workfront中发生特定类型的事件（如创建任务）时，]**&#x200B;将返回信息。
+* 每当更新单元格时，**[!DNL Google Sheets]> [!UICONTROL 监视更改]**&#x200B;将返回信息。
 
 >[!ENDSHADEBOX]
 
@@ -147,9 +147,9 @@ Update子类型包含以下三个操作：
 
 **示例：**
 
-* **[!UICONTROL Archive]>[!UICONTROL Create an archive]**&#x200B;将多个文件压缩为zip存档。
-* **[!UICONTROL CSV]>[!UICONTROL Aggregate to CSV]**&#x200B;将CSV文件中的多个字符串合并到一行中。
-* **[!UICONTROL Tools]>[!UICONTROL Text aggregator]**&#x200B;将多个字符串组合为一个字符串。
+* **[!UICONTROL 存档] > [!UICONTROL 创建存档]**&#x200B;将多个文件压缩为zip存档。
+* **[!UICONTROL CSV] > [!UICONTROL 聚合到CSV]**&#x200B;将CSV文件中的多个字符串合并到一行。
+* **[!UICONTROL 工具] > [!UICONTROL 文本聚合器]**&#x200B;将多个字符串组合为单个字符串。
 
 >[!ENDSHADEBOX]
 
@@ -169,7 +169,7 @@ Update子类型包含以下三个操作：
 
 **示例：**
 
-**[!UICONTROL Email]>[!UICONTROL Retrieve attachments]**&#x200B;将附件数组分解为单独的包。
+**[!UICONTROL 电子邮件] > [!UICONTROL 检索附件]**&#x200B;将附件数组分成单独的包。
 
 >[!ENDSHADEBOX]
 

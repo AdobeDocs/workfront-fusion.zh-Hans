@@ -5,9 +5,9 @@ description: 有时，在执行场景期间可能会出错。 如果由于无法
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-source-git-commit: d618d5c4b2306a3b940af7e402f93ced988095a3
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1235'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 有时，在执行场景期间可能会出错。 如果由于无法连接到服务而导致服务不可用，或者如果验证失败，则通常会发生这种情况。
 
-[!DNL Adobe Workfront Fusion]可区分几种基本错误类型。 错误的类型决定了Fusion场景的后续操作。
+Adobe Workfront Fusion可区分多种基本错误类型。 错误的类型决定了Fusion场景的后续操作。
 
 ## 访问要求
 
@@ -29,17 +29,17 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+    <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
    <td> 新增：标准<p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] 许可证</td> 
+   <td role="rowheader">[！UICONTROL Adobe Workfront Fusion]许可证</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -47,18 +47,18 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+要了解您拥有的计划、许可证类型或访问权限，请联系您的Workfront管理员。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -68,13 +68,13 @@ ht-degree: 1%
 
 连接错误是最常见的错误之一。 它们通常是由于多种原因（如过载、维护或中断）导致第三方服务不可用。 此错误的默认处理方式取决于遇到错误的模块。
 
-* 如果第一个模块发生错误，则场景的执行将终止，并显示警告消息。 然后，[!DNL Workfront Fusion]反复尝试以递增的时间间隔重新运行该方案。 如果所有尝试都失败，[!DNL Workfront Fusion]将停用该方案。
+* 如果第一个模块发生错误，则场景的执行将终止，并显示警告消息。 然后，Workfront Fusion会不断尝试以递增的时间间隔重新运行场景。 如果所有尝试都失败，Workfront Fusion将停用场景。
 * 如果连接错误发生在第一个模块以外的其他模块上，则后续步骤取决于场景高级设置中的“允许存储不完整的执行”选项：
 
-   * 如果启用此选项，则方案的执行将移至[!UICONTROL Incomplete executions]文件夹，其中[!DNL Workfront Fusion]反复尝试以递增的时间间隔重新运行方案。 如果所有尝试都失败，执行将保留在“未完成执行”文件夹中，等待用户手动解析。
+   * 如果启用此选项，则方案的执行将移到[!UICONTROL 未完成执行]文件夹，Workfront Fusion会反复尝试以递增的时间间隔重新运行该方案。 如果所有尝试都失败，执行将保留在“未完成执行”文件夹中，等待用户手动解析。
 
      有关未完成执行的详细信息，请参阅[查看并解决未完成的执行](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)。
-   * 如果禁用了此选项，则场景的执行将结束并返回错误，然后进入回滚阶段。 然后，[!DNL Workfront Fusion]反复尝试以递增的时间间隔重新运行该方案。 如果所有尝试都失败，[!DNL Workfront Fusion]将停用该方案。
+   * 如果禁用了此选项，则场景的执行将结束并返回错误，然后进入回滚阶段。 然后，Workfront Fusion会不断尝试以递增的时间间隔重新运行场景。 如果所有尝试都失败，Workfront Fusion将停用场景。
 
   有关“允许存储未完成的执行”设置的详细信息，请参阅配置场景设置一文中的[允许存储未完成的执行](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions)。
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 
 当出现错误时，增加两次尝试之间时间间隔的算法称为指数回退。 增加的时间间隔设置如下：
 
-1. 10分钟
+1. 10 分钟
 1. 1 小时
 1. 3 小时
 1. 12 小时
@@ -94,7 +94,7 @@ ht-degree: 1%
 
 **示例：**
 
-方案包含[!DNL Google Sheets]触发器[!UICONTROL Watch Rows]。 由于在[!DNL Workfront Fusion]启动方案时进行了维护，[!DNL Google Sheets]在30分钟内不可用，因此无法检索新行。 场景将停止并在10分钟后重试。 由于[!DNL Google Sheets]仍然不可用，[!DNL Workfront Fusion]仍无法获取有关新行的信息。 方案的下次运行安排在1小时内。 [!DNL Google Sheets]此时再次可用，并且方案成功运行。
+方案包含[!DNL Google Sheets]触发器[!UICONTROL 监视行]。 由于在Workfront Fusion启动场景时进行了维护，[!DNL Google Sheets]在30分钟内不可用，因此无法检索新行。 场景将停止并在10分钟后重试。 由于[!DNL Google Sheets]仍不可用，因此Workfront Fusion仍无法获取有关新行的信息。 方案的下次运行安排在1小时内。 [!DNL Google Sheets]此时再次可用，并且方案成功运行。
 
 >[!ENDSHADEBOX]
 
@@ -102,17 +102,17 @@ ht-degree: 1%
 
 `DataError`
 
-如果项目未正确映射，并且未通过在[!DNL Workfront Fusion]端或第三方服务端执行的验证，则会生成数据错误。
+当项目未正确映射并且未通过在Workfront Fusion端或第三方服务端执行的验证时，会生成数据错误。
 
 如果发生此错误，则将场景（直到模块失败）移至未完成执行文件夹，您可以在其中解决问题。 但是，场景不会停止，而是会按照其计划继续运行。 要在出现数据错误时停止方案的执行，请启用方案设置面板中的顺序处理选项。
 
-如果尚未在方案设置中启用[!UICONTROL Allow storing incomplete executions]选项，则方案的执行会因错误而终止，并且会执行回滚。
+如果尚未在方案设置中启用[!UICONTROL 允许存储不完整的执行]选项，则方案的执行会因错误而终止，并执行回滚。
 
 ## 重复数据错误
 
 `DuplicateDataError`
 
-如果[!DNL Workfront Fusion]尝试将同一捆绑包两次插入到不允许重复数据的服务中，则会生成重复数据错误。 如果发生此错误，[!DNL Workfront Fusion]将以与处理数据错误相同的方式进行。
+如果Workfront Fusion尝试将同一捆绑包两次插入到不允许重复数据的服务中，则会生成重复数据错误。 如果发生此错误，Workfront Fusion将以与处理数据错误相同的方式进行。
 
 有关详细信息，请参阅本文中的[数据错误](#data-error)。
 
@@ -121,7 +121,7 @@ ht-degree: 1%
 
 `InvalidAccessTokenError`
 
-当[!DNL Workfront Fusion]无法访问您在第三方服务中注册的帐户时，会发生访问令牌无效错误。 这通常发生在您在管理给定服务时撤消[!DNL Workfront Fusion]的访问权限时，但使用该服务的方案继续按计划运行。
+当Workfront Fusion无法访问您在第三方服务中注册的帐户时，会发生访问令牌无效错误。 通常，当您在管理给定服务时撤销Workfront Fusion的访问权限时，会发生这种情况，但使用该服务的场景会按照计划继续运行。
 
 如果发生此错误，则场景执行将立即停止。 从发生错误的模块开始的场景的其余部分移至未完成执行文件夹。
 
@@ -129,7 +129,7 @@ ht-degree: 1%
 
 `RateLimitError`
 
-如果超过给定服务设置的限制，则会生成速率限制错误。 如果发生此错误，[!DNL Workfront Fusion]将以与处理连接错误相同的方式进行。
+如果超过给定服务设置的限制，则会生成速率限制错误。 如果发生此错误，Workfront Fusion会像处理连接错误一样进行下一步。
 
 有关详细信息，请参阅本文中的[连接错误](#connection-error)。
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 只有触发器出现不完整数据错误。 如果触发器无法从给定服务下载所需数据，则会生成此错误。
 
-如果方案以`IncompleteDataError`终止，则其进一步的行为将取决于其[!UICONTROL Max number of consecutive errors]的设置。
+如果方案以`IncompleteDataError`终止，则其进一步的行为将取决于其设置[!UICONTROL 最大连续错误数]。
 
 有关详细信息，请参阅配置方案设置一文中的[连续错误数](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors)。
 
@@ -147,7 +147,7 @@ ht-degree: 1%
 
 **示例：**
 
-方案将[!DNL Workfront]触发器[!UICONTROL Watch Record]设置为监视文档。 场景在上传大文档（如长视频）时执行。 由于[!UICONTROL Workfront Fusion]尝试在视频仍上传到Workfront时下载视频，因此场景因`IncompleteDataError`而终止。
+场景将Workfront触发器[!UICONTROL 监视记录]设置为监视文档。 场景在上传大文档（如长视频）时执行。 由于[!UICONTROL Workfront Fusion]尝试在视频仍上传到Workfront时下载视频，因此场景将通过`IncompleteDataError`终止。
 
 >[!ENDSHADEBOX]
 
@@ -157,15 +157,15 @@ ht-degree: 1%
 
 在场景执行期间出现且不属于这些错误类型之一的任何错误均报告为`RunTimeError`。
 
-如果方案以`RuntimeError`终止，则其进一步的行为取决于[!UICONTROL Max number of consecutive errors]设置。
+如果方案以`RuntimeError`终止，则其进一步的行为取决于[!UICONTROL 最大连续错误数]设置。
 
 有关详细信息，请参阅配置方案设置一文中的[连续错误数](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors)。
 
 
 >[!NOTE]
 >
->如果方案以即时触发器启动并遇到此错误，则忽略[!UICONTROL Max number of consecutive errors]的设置，并立即停用方案。
->有关详细信息，请参阅“模块概述”一文中的[即时触发器](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)。
+>如果方案以即时触发器开始并遇到此错误，将忽略[!UICONTROL 最大连续错误数]的设置，并立即停用该方案。
+>>有关详细信息，请参阅“模块概述”一文中的[即时触发器](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)。
 
 ## 不一致性错误
 
@@ -179,7 +179,7 @@ ht-degree: 1%
 
 在执行场景时，您可能会收到一则警告消息，向您通知问题。 警告不会阻止方案成功完成。
 
-例如，当超出允许的最大文件大小且禁用[!UICONTROL Enable data loss]选项时，可能会显示警告。
+例如，如果超过允许的最大文件大小，并且禁用了[!UICONTROL 启用数据丢失]选项，则会显示警告。
 
 ## 资源
 

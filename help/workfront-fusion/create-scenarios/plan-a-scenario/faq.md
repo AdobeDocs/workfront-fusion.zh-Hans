@@ -4,9 +4,9 @@ description: 当您开始在Workfront Fusion中创建场景时，本文中的信
 author: Becky
 feature: Workfront Fusion
 exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '552'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 有关模块的更多信息，请参阅[模块概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)。
 
-## [!DNL Workfront Fusion]可以使用文件吗？
+## Workfront Fusion能否处理文件？
 
 ### 答案
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 ### 答案
 
-连接是指您的[!DNL Workfront Fusion]帐户与要使用的第三方服务之间的链接。 可在编辑场景时创建连接。
+连接是指您的Workfront Fusion帐户与要使用的第三方服务之间的链接。 可在编辑场景时创建连接。
 
 有关详细信息，请参阅[连接概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)。
 
@@ -77,12 +77,12 @@ ht-degree: 1%
 
 ### 答案
 
-[!UICONTROL Aggregator]将数据合并到一个集合中。 例如，将文件压缩为zip存档并作为电子邮件附件发送。
+[!UICONTROL 聚合器]将数据合并到一个集合中。 例如，将文件压缩为zip存档并作为电子邮件附件发送。
 
-有关详细信息，请参阅[[!UICONTROL Aggregator]模块](/help/workfront-fusion/references/modules/aggregator-module.md)。
+有关详细信息，请参阅[[!UICONTROL 汇总]模块](/help/workfront-fusion/references/modules/aggregator-module.md)。
 
-## 如果我允许[!DNL Workfront Fusion]处理包含多个附件的电子邮件，会发生什么情况？
+## 如果允许Workfront Fusion处理包含多个附件的电子邮件，会发生什么情况？
 
 ### 答案
 
-如果您使用[!UICONTROL Email]模块[!UICONTROL Retrieve attachments]，则每个附件都将通过场景中的其余模块单独发送。 类似的模块也可用于同时接收多个文件的其他应用程序。
+如果您使用[!UICONTROL 电子邮件]模块[!UICONTROL 检索附件]，则每个附件都将通过场景中的其余模块单独发送。 类似的模块也可用于同时接收多个文件的其他应用程序。

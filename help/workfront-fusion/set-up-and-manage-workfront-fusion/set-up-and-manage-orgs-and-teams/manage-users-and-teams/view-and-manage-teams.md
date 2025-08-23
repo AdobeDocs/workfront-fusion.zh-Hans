@@ -3,9 +3,10 @@ title: 查看和管理团队
 description: 您可以查看组织的团队列表并编辑团队名称。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
+exl-id: 80899745-de1e-4fa8-a398-e5e8e35aa6f4
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '329'
 ht-degree: 3%
 
 ---
@@ -37,17 +38,17 @@ ht-degree: 3%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+   <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新文档： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -55,16 +56,16 @@ ht-degree: 3%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包含[!UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">访问级别配置*</td> 
    <td> 
-     <p>您必须是组织的[!DNL Workfront Fusion]管理员。</p>
-     <p>您必须是团队的[!DNL Workfront Fusion]管理员。</p>
+     <p>您必须是组织的Workfront Fusion管理员。</p>
+     <p>您必须是团队的Workfront Fusion管理员。</p>
    </td> 
   </tr> 
    </td> 
@@ -74,7 +75,7 @@ ht-degree: 3%
 
 有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -89,6 +90,3 @@ ht-degree: 3%
 1. （可选）要隐藏或显示列，请单击列表右上角附近的&#x200B;**列**&#x200B;图标![列图标](assets/columns-icon.png)，然后启用或禁用列。
 1. （可选）要筛选列表，请在搜索栏中开始输入。 列表筛选器以仅包含包含您的搜索词的团队。
 1. （可选）要重命名团队，请单击该团队行中的&#x200B;**编辑**，然后输入新的团队名称并单击&#x200B;**保存**。
-
-
-

@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: dafecd8b-96e5-46da-9ab6-15f0bc9b52a4
-source-git-commit: 23e9f383b25c7b3789c413e557b94418e48a636b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 1%
+source-wordcount: '524'
+ht-degree: 0%
 
 ---
 
@@ -32,17 +32,17 @@ Adobe Workfront Fusion模板是预建方案，旨在自动化和简化各种工�
   <col>
   <tbody>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront] 计划</td>
+      <td role="rowheader">Adobe Workfront计划</td>
       <td><p>任何</p></td>
     </tr>
     <tr data-mc-conditions="">
-      <td role="rowheader">[!DNL Adobe Workfront] 许可证</td>
-      <td><p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p></td>
+      <td role="rowheader">Adobe Workfront许可证</td>
+      <td><p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p></td>
     </tr>
     <tr>
-      <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td>
+      <td role="rowheader">Adobe Workfront Fusion许可证**</td>
       <td>
-        <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+        <p>当前：无Workfront Fusion许可证要求。</p>
         <p>或</p>
         <p>旧版：任意</p>
       </td>
@@ -50,13 +50,13 @@ Adobe Workfront Fusion模板是预建方案，旨在自动化和简化各种工�
     <tr>
       <td role="rowheader">产品</td>
       <td>
-        <p>新增：</p>
+        <p>新：</p>
         <ul>
-          <li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li>
-          <li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li>
+          <li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li>
+          <li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li>
         </ul>
         <p>或</p>
-        <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+        <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
       </td>
     </tr>
   </tbody>
@@ -65,20 +65,20 @@ Adobe Workfront Fusion模板是预建方案，旨在自动化和简化各种工�
 <!--
 For more detail about the information in this table, see [Access requirements in Workfront documentation](/help/quicksilver/administration-and-setup/add-users/access-levels-and-object-permissions/access-level-requirements-in-documentation.md). 
 
-For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Workfront Fusion] licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
+For information on Adobe Workfront Fusion licenses, see [Adobe Workfront Fusion licenses](../../workfront-fusion/get-started/license-automation-vs-integration.md).-->
 
 +++
 
-## 批准或不批准[!DNL Workfront Fusion]模板
+## 批准或不批准Workfront Fusion模板
 
-批准模板后，该模板将显示在[!UICONTROL Public templates]选项卡中，并可供所有用户使用。
+批准模板可使其在[!UICONTROL 公共模板]选项卡中可见并对所有用户可用。
 
-不批准模板会将其从[!UICONTROL Public templates]选项卡中删除，并仅将其提供给创建该模板的团队。
+不批准模板会将其从[!UICONTROL 公共模板]选项卡中删除，并使其仅对创建该模板的团队可用。
 
-1. 单击左侧导航面板中的&#x200B;**[!UICONTROL Administration]**&#x200B;以打开[!UICONTROL Administration]区域。
-1. 在左侧导航面板中单击&#x200B;**[!UICONTROL Templates]**。
-1. 如果要批准模板，请单击模板右侧的&#x200B;**[!UICONTROL Approve]**。
-1. 如果要取消批准模板，请单击模板右侧的&#x200B;**[!UICONTROL Disapprove]**。
+1. 在左侧导航面板中单击&#x200B;**[!UICONTROL 管理]**&#x200B;以打开[!UICONTROL 管理]区域。
+1. 在左侧导航面板中单击&#x200B;**[!UICONTROL 模板]**。
+1. 如果要批准模板，请单击模板右侧的&#x200B;**[!UICONTROL 批准]**。
+1. 如果要取消批准模板，请单击模板右侧的&#x200B;**[!UICONTROL 取消批准]**。
 
 >[!NOTE]
 >
@@ -91,17 +91,17 @@ For information on [!DNL Adobe Workfront Fusion] licenses, see [[!DNL Adobe Work
 
 可以使用以下状态：
 
-* **[!UICONTROL Private]**：此模板仅对模板作者及其团队可见。
-* **[!UICONTROL Published]**：此模板仅对模板作者及其团队可见。 发布后，您可以根据需要发送模板以供审批。 您还可以复制可共享链接。
-* **[!UICONTROL Approved]**：此模板对[!UICONTROL Public templates]选项卡中的所有Workfront Fusion用户可见。 您还可以通过单击屏幕右上角的[!UICONTROL Options]来复制可共享链接。
+* **[!UICONTROL 私有]**：此模板仅对模板作者及其团队可见。
+* **[!UICONTROL 已发布]**：此模板仅对模板作者及其团队可见。 发布后，您可以根据需要发送模板以供审批。 您还可以复制可共享链接。
+* **[!UICONTROL 已批准]**：此模板在[!UICONTROL 公共模板]选项卡中对所有Workfront Fusion用户可见。 您还可以通过单击屏幕右上角的[!UICONTROL 选项]来复制可共享链接。
 
-您还可以从[!UICONTROL Team templates]选项卡检查状态。 如果模板已发布，则模板名称的右侧将显示一个图标。
+您还可以从[!UICONTROL 团队模板]选项卡中检查状态。 如果模板已发布，则模板名称的右侧将显示一个图标。
 
 * **眼睛图标**：模板已发布；该模板仅对团队可见；未发送审批请求。
 * **黄色复选标记图标**：模板已发布；该模板仅对团队可见；它正在等待批准以添加到“公共模板”选项卡中。
-* **绿色复选标记图标**：该模板在“公共模板”选项卡中可用，并且对于任何Workfront Fusion用户均可见。 它仍显示在[!UICONTROL Team templates]选项卡中。 模板作者或其团队成员仍可以编辑它。
+* **绿色复选标记图标**：该模板在“公共模板”选项卡中可用，并且对于任何Workfront Fusion用户均可见。 它还在[!UICONTROL 团队模板]选项卡中可见。 模板作者或其团队成员仍可以编辑它。
 
-没有图标的模板具有[!UICONTROL Private]状态。 它们未发布，仅对团队可见。
+没有图标的模板具有[!UICONTROL 私有]状态。 它们未发布，仅对团队可见。
 
 
 <!--

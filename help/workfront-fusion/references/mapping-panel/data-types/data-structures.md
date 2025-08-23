@@ -4,16 +4,16 @@ description: 数据结构是一个文档，它详细描述了要传输到Adobe W
 author: Becky
 feature: Workfront Fusion
 exl-id: 93abf8a5-a3a1-448e-834b-1cc81b88036b
-source-git-commit: 2a81e013845f8a0e2720292984c451501e6011a0
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '242'
 ht-degree: 1%
 
 ---
 
 # 数据结构
 
-数据结构是一种文档或模式，它详细描述在[!DNL Adobe Workfront Fusion]中处理的数据的格式。 根据此文档，场景编辑器能够确定哪个模块返回或接收哪种类型的数据。 数据结构文档最常用于序列化/解析数据格式，如JSON、XML、CSV等。
+数据结构是一种文档或模式，用于详细描述Adobe Workfront Fusion中正在处理的数据的格式。 根据此文档，场景编辑器能够确定哪个模块返回或接收哪种类型的数据。 数据结构文档最常用于序列化/解析数据格式，如JSON、XML、CSV等。
 
 通过在[!UICONTROL 数据结构概述]部分或需要数据结构规范的模块的设置中单击[!UICONTROL 创建新数据结构]按钮，可以创建数据结构。
 

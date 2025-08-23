@@ -4,9 +4,9 @@ description: 除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
-source-git-commit: cca7aa6e15df0fd313e9d4ca391994a8ef4c974a
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '184'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->除[!DNL Adobe Workfront license]外，[!DNL Adobe Workfront Fusion]还需要[!DNL Adobe Workfront Fusion]许可证。
+>除了[!DNL Adobe Workfront license]之外，Adobe Workfront Fusion还需要Adobe Workfront Fusion许可证。
 
 HTTP应用程序为基于超文本传输协议(HTTP)协议的通信提供各种模块。 HTTP是万维网数据通信的基础。 您可以使用这些模块下载网页和文件、调用Webhook和API端点等。
 
@@ -29,10 +29,10 @@ HTTP应用程序为基于超文本传输协议(HTTP)协议的通信提供各种�
 
 有关特定模块说明，请参阅以下文章：
 
-* [http > [!UICONTROL Make a request]模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Basic Authorization request]模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-basic-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an OAuth 2.0 request]模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-an-oauth-2-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make a Client Certificate Authorization request]模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-client-cert-auth-request.md)
-* [[!UICONTROL HTTP] > [!UICONTROL Make an API Key Authorization request]](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-an-api-key-auth-request.md)
+* [http > [!UICONTROL 发出请求]模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 发出基本授权请求]模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-basic-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 发出OAuth 2.0请求]模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-an-oauth-2-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 发出客户端证书授权请求]模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-a-client-cert-auth-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 发出API密钥授权请求]](/help/workfront-fusion/references/apps-and-modules/http-modules/http-module-make-an-api-key-auth-request.md)
 * [[!UICONTROL HTTP] >其他模块](/help/workfront-fusion/references/apps-and-modules/http-modules/http-modules.md)
-* [在 [!DNL Adobe Workfront Fusion]中的HTTP模块中使用双向TLS](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
+* [在Adobe Workfront Fusion的HTTP模块中使用双向TLS](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)

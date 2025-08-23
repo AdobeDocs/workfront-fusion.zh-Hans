@@ -1,19 +1,19 @@
 ---
 title: 创建连接
-description: 连接必须遵循它所连接的应用程序或Web服务的API所设置的要求。 因此，设置连接的说明因应用程序或Web服务而异。 本文可帮助您识别并查找有关将 [!DNL Adobe Workfront Fusion] 连接到您选择的应用程序或Web服务的说明。
+description: 连接必须遵循它所连接的应用程序或Web服务的API所设置的要求。 因此，设置连接的说明因应用程序或Web服务而异。 本文可帮助您识别和查找有关将Adobe Workfront Fusion连接到所选应用程序或Web服务的说明。
 author: Becky
 feature: Workfront Fusion
 exl-id: 281403a6-6f88-4976-8a10-1d0848ef9b35
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
 
 # 创建连接
 
-连接必须遵循它所连接的应用程序或Web服务的API所设置的要求。 因此，设置连接的说明因应用程序或Web服务而异。 本文可帮助您识别并查找有关将[!DNL Adobe Workfront Fusion]连接到您选择的应用程序或Web服务的说明。
+连接必须遵循它所连接的应用程序或Web服务的API所设置的要求。 因此，设置连接的说明因应用程序或Web服务而异。 本文可帮助您识别和查找有关将Adobe Workfront Fusion连接到所选应用程序或Web服务的说明。
 
 ## 访问要求
 
@@ -44,7 +44,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront计划：包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront计划：包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -52,7 +52,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
 有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 ## 连接到不需要配置的应用程序或Web服务
 
-在大多数情况下，您可以使用模块创建几乎没有或没有额外信息的连接。 [!DNL Workfront Fusion]自动处理身份验证。
+在大多数情况下，您可以使用模块创建几乎没有或没有额外信息的连接。 Workfront Fusion会自动处理身份验证。
 
 有关创建无特殊注意事项的连接的说明，请参阅[创建连接 — 基本说明](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)。
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 ## 连接到[!DNL Microsoft]应用或Web服务
 
-[!DNL Workfront Fusion]中的大多数[!DNL Microsoft]应用允许您创建无额外信息的连接。
+Workfront Fusion中的大多数[!DNL Microsoft]应用都允许您创建无额外信息的连接。
 
 以下情况需要在创建连接时执行额外的步骤：
 
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 ## 连接到[!DNL Google]应用或Web服务
 
-根据您使用的[!DNL Google]帐户类型，连接到[!DNL Google]应用的进程可能会有所不同。 此外，当您连接到[!DNL Workfront Fusion]时，[!DNL Google]安全措施可能需要额外的配置。
+根据您使用的[!DNL Google]帐户类型，连接到[!DNL Google]应用的进程可能会有所不同。 此外，在连接到Workfront Fusion时，[!DNL Google]安全措施可能需要额外的配置。
 
 有关更多信息，请参阅：
 
@@ -97,6 +97,6 @@ ht-degree: 0%
 
 ## 需要其他配置的其他应用程序
 
-某些应用和服务不遵循[!DNL Workfront Fusion]连接的基本配置。 您可以在文章中找到有关连接这些应用程序的说明。
+某些应用程序和服务不遵循Workfront Fusion连接的基本配置。 您可以在文章中找到有关连接这些应用程序的说明。
 
 有关具体说明，请参阅连接器的[文章](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#connectors-for-third-party-applications)。

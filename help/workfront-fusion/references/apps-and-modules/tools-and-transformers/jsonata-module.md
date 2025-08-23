@@ -4,16 +4,16 @@ description: Adobe Workfront Fusion JSONata连接器提供了一个用于处理J
 author: Becky
 feature: Workfront Fusion
 exl-id: 8c117ecb-3c05-47d4-a629-18dbc546e2a2
-source-git-commit: da3bf98f8254228598372fed8c06d6318718721f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '352'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL JSONata]模块
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL JSONata]连接器允许您查询JSON对象。 此模块不需要连接。
+Adobe Workfront Fusion [!UICONTROL JSONata]连接器允许您查询JSON对象。 此模块不需要连接。
 
 ## 访问要求
 
@@ -26,17 +26,17 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+   <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新文档： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -44,17 +44,17 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>已包含[!UICONTROL Ultimate] [!DNL Workfront]计划： [!DNL Workfront Fusion]。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -69,15 +69,15 @@ ht-degree: 1%
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 表达式]</td> 
+   <td role="rowheader">[！UICONTROL表达式]</td> 
    <td>输入要用于计算JSON对象的表达式。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 数据] </td> 
+   <td role="rowheader">[！UICONTROL数据] </td> 
    <td> 输入要计算的JSON对象。  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringify输出] </td> 
+   <td role="rowheader">[！UICONTROL Stringify输出] </td> 
    <td> 启用此选项可将输出转换为字符串。  </td> 
   </tr> 
   </tbody>
@@ -120,15 +120,15 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
    <td> <p>选择用于连接到要用于此模块的大型语言模型(LLM)的连接。</p> <p>目前，仅支持Anthropic API密钥。</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入架构]</td> 
+   <td role="rowheader">[！UICONTROL输入架构]</td> 
    <td> <p>输入或映射要用于此表达式的输入架构。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输出架构]</td> 
+   <td role="rowheader">[！UICONTROL输出架构]</td> 
    <td> <p>输入或映射要用于此表达式的输出架构。</p> </td> 
   </tr> 
  </tbody> 

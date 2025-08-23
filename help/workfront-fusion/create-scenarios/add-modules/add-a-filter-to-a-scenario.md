@@ -4,9 +4,9 @@ description: 在某些情况下，您只需要使用满足特定条件的包。 
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '627'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 在某些情况下，您只需要使用满足特定条件的包。 您可以使用过滤器选择这些包。
 
-例如，您可以为[!DNL Workfront]创建具有[!UICONTROL Watch records]触发器的方案，以仅捕获分配给特定用户的任务。
+例如，您可以为Workfront创建一个具有[!UICONTROL 监视记录]触发器的方案，以便仅捕获分配给特定用户的任务。
 
 可以在两个模块之间添加过滤器，并检查从上述模块接收的捆绑包是否满足特定的过滤器条件：
 
@@ -33,17 +33,17 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+   <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -51,17 +51,17 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -71,12 +71,12 @@ ht-degree: 1%
 
 ## 在两个模块之间添加过滤器：
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要添加过滤器的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
 1. 在要添加过滤器的模块之间单击扳手图标![扳手图标](assets/wrench-icon.png)，然后选择&#x200B;**设置过滤器**。
-1. 在显示的框中，输入筛选器的&#x200B;**[!UICONTROL Label]**。
-1. 定义筛选器&#x200B;**[!UICONTROL Condition]**。
+1. 在显示的框中，输入筛选器的&#x200B;**[!UICONTROL 标签]**。
+1. 定义筛选器&#x200B;**[!UICONTROL 条件]**。
 
    在第一个字段中输入要作为筛选依据的字段、运算符，以及（如有必要）要与字段比较的值。
 
@@ -85,7 +85,7 @@ ht-degree: 1%
    >您可以从映射面板在筛选器字段中输入值
    >有关映射的详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
-   例如，如果您希望过滤器以XML结尾的[!DNL Adobe Workfront]传递文件，则应在第一个框中输入&#x200B;**[!UICONTROL File name]**&#x200B;并输入。第二个框中的&#x200B;**[!UICONTROL xml]**。 在它们之间的下拉菜单中，选择&#x200B;**[!UICONTROL Ends with (case insensitive)]**。 此过滤器将应用于来自第一个模块(Workfront)的传入包。 只有包含XML文件的包才会传递到下一个模块。
+   例如，如果您希望过滤器在Adobe Workfront中传递以XML结尾的文件，则应在和的第一个框中输入&#x200B;**[!UICONTROL File name]**。第二个框中的&#x200B;**[!UICONTROL xml]**。 在它们之间的下拉菜单中，选择&#x200B;**[!UICONTROL 结尾为（不区分大小写）]**。 此过滤器将应用于来自第一个模块(Workfront)的传入包。 只有包含XML文件的包才会传递到下一个模块。
 
    ![设置筛选器](assets/set-up-filter-box.png)
 
@@ -99,22 +99,22 @@ ht-degree: 1%
 >
 >如果复制过滤器两侧的模块，则也会复制过滤器。
 >
->有关复制模块的详细信息，请参阅[复制 [!DNL Adobe Workfront Fusion]](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)中的模块或方案。
+>有关复制模块的详细信息，请参阅[在Adobe Workfront Fusion中复制模块或方案](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)。
 
 要复制筛选器而不复制模块，可以使用Fusion DevTool
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要添加过滤器的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
 1. 单击屏幕底部附近的DevTool图标![DevTool图标](assets/debugger-icon.png)以打开Fusion DevTool。
 
    如果您没有看到DevTool图标，请参阅[调试方案](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)以获取有关打开DevTool的说明。
 
-1. 单击左侧栏中的&#x200B;**[!UICONTROL Tools]**&#x200B;图标![DevTool tools](assets/devtools-tools-icon.png)。
+1. 单击左侧栏中的&#x200B;**[!UICONTROL 工具]**&#x200B;图标![DevTool工具](assets/devtools-tools-icon.png)。
 
-1. 单击&#x200B;**[!UICONTROL Copy Filter]**，然后在右侧面板中配置&#x200B;**[!UICONTROL Copy Filter]**&#x200B;工具：
+1. 单击&#x200B;**[!UICONTROL 复制筛选器]**，然后在右侧面板中配置&#x200B;**[!UICONTROL 复制筛选器]**&#x200B;工具：
 
-   1. 在要复制的筛选器后直接将&#x200B;**[!UICONTROL Source Module]**&#x200B;设置为模块。
-   1. 将&#x200B;**[!UICONTROL Target Module]**&#x200B;设置为要直接在其后面放置过滤器的模块。
+   1. 在要复制的筛选器之后直接将&#x200B;**[!UICONTROL Source模块]**&#x200B;设置为模块。
+   1. 将&#x200B;**[!UICONTROL Target模块]**&#x200B;设置为要在其后直接放置过滤器的模块。
 
-1. 单击 **[!UICONTROL Run]**。
+1. 单击&#x200B;**[!UICONTROL 运行]**。

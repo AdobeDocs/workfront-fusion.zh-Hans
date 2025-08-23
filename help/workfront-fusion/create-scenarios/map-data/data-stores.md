@@ -1,12 +1,12 @@
 ---
-title: 数据存储在 [!DNL Adobe Workfront Fusion]中
+title: Adobe Workfront Fusion中的数据存储
 description: 数据存储类似于数据库或简单表，可以存储场景中的数据，从而可以在单独的场景或场景运行之间传输数据。 在同步过程中，您可以使用数据存储来存储来自不同系统的新数据。
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1344'
 ht-degree: 1%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 数据存储类似于数据库或简单表，可以存储场景中的数据，从而可以在单独的场景或场景运行之间传输数据。 在同步过程中，您可以使用数据存储来存储来自不同系统的新数据。
 
-数据存储模块允许您对[!DNL Adobe Workfront Fusion]数据存储中的记录执行以下操作：
+通过数据存储模块，您可以对Adobe Workfront Fusion数据存储中的记录执行以下操作：
 
-* 添加
+* Add
 * 替换
 * 更新
 * Retrieve
@@ -25,7 +25,7 @@ ht-degree: 1%
 * 搜索
 * 计数
 
-有关使用数据存储模块的信息，请参阅[[!UICONTROL Data store]模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)。
+有关使用数据存储模块的信息，请参阅[[!UICONTROL 数据存储]模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/data-store-modules.md)。
 
 有关Workfront Fusion中数据存储的视频介绍，请参阅：
 
@@ -42,17 +42,17 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+   <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -60,17 +60,17 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -87,7 +87,7 @@ Ultimate包上的Fusion实例将接收：
 
 ### 选择和Prime计划
 
-Select或Prime包上的Fusion实例将接收：—>
+Select或Prime包上的Fusion实例将接收:-->
 
 * 第一个500K操作为100 MB。
 
@@ -97,42 +97,42 @@ Select或Prime包上的Fusion实例将接收：—>
 
 您的组织最多可以拥有50个数据存储。 这些数据存储的组合大小不能超过贵组织的数据存储总大小。
 
-## 在[!DNL Workfront Fusion]中创建数据存储
+## 在Workfront Fusion中创建数据存储
 
 * [设置数据存储](#set-up-the-data-store)
 * [设置数据结构](#set-up-the-data-structure)
 
 ### 设置数据存储
 
-在模块中使用数据存储之前，必须在[!DNL Workfront Fusion]中创建数据存储。
+在模块中使用数据存储之前，必须在Workfront Fusion中创建数据存储。
 
 >[!NOTE]
 >
->您的组织的可用数据存储数量有限。 如果尝试创建的数据存储区多于可用存储区，[!DNL Workfront]将返回[!UICONTROL Maximum stores reached]错误。
+>您的组织的可用数据存储数量有限。 如果尝试创建的数据存储区数超过可用存储区数，Workfront将返回[!UICONTROL 已达到最大存储区]错误。
 >
 >有关详细信息，请参阅本文中的[最大存储达到错误](#maximum-stores-reached-error)。
 
-1. 登录到您的[!DNL Workfront Fusion]帐户。
-1. 在左侧导航面板中单击&#x200B;**[!UICONTROL Data stores]**。
-1. 单击屏幕右上角的&#x200B;**[!UICONTROL Add data store]**。
+1. 登录到您的Workfront Fusion帐户。
+1. 单击左侧导航面板中的&#x200B;**[!UICONTROL 数据存储]**。
+1. 单击屏幕右上角的&#x200B;**[!UICONTROL 添加数据存储]**。
 1. 输入新数据存储的设置。
 
-   [!DNL Workfront Fusion]模块中字段的粗体标题表示必需的设置。
+   Workfront Fusion模块中字段的粗体标题表示必需的设置。
 
    <table style="table-layout:auto">
     <col> 
     <col> 
     <tbody> 
      <tr> 
-      <td>[!UICONTROL Data store name] </td> 
+      <td>[！UICONTROL数据存储名称] </td> 
       <td> <p>输入数据存储的名称。 </p> </td> 
      </tr> 
      <tr> 
-      <td> <p>[!UICONTROL Data Structure]</p> </td> 
+      <td> <p>[！UICONTROL Data Structure]</p> </td> 
       <td> <p>数据结构是表的列的列表。 此列表指示列名和数据类型。</p> <p>执行下列操作之一：</p> 
        <ul> 
         <li><b>选择已创建的数据结构</b></li> 
-        <li><b>添加新数据结构</b> <p>单击<strong>[!UICONTROL Add]</strong>以创建新的数据结构。</p> <p>有关详细信息，请参阅本文中的<a href="#set-up-the-data-structure" class="MCXref xref">设置数据结构</a>部分。</p> </li> 
+        <li><b>添加新数据结构</b> <p>单击<strong>[！UICONTROL添加]</strong>以创建新的数据结构。</p> <p>有关详细信息，请参阅本文中的<a href="#set-up-the-data-structure" class="MCXref xref">设置数据结构</a>部分。</p> </li> 
         <li style="font-weight: bold;"> <p>将此字段留空</p> <p style="font-weight: normal;">如果不选择或添加数据结构，则数据库将仅包含主键。 如果您只想保存密钥，并且只想知道数据库中是否存在特定密钥，则此类数据库类型很有用。</p> </li> 
        </ul> </td> 
      </tr> 
@@ -145,23 +145,23 @@ Select或Prime包上的Fusion实例将接收：—>
 
 ### 设置数据结构
 
-1. 创建或编辑数据存储时，单击&#x200B;**[!UICONTROL Add]**。
-1. 在显示的&#x200B;**[!UICONTROL Add data structure]**&#x200B;框中，配置以下字段：
+1. 创建或编辑数据存储时，单击&#x200B;**[!UICONTROL 添加]**。
+1. 在显示的&#x200B;**[!UICONTROL 添加数据结构]**&#x200B;框中，配置以下字段：
 
    <table style="table-layout:auto">
     <col> 
     <col> 
     <tbody> 
      <tr> 
-      <td>[!UICONTROL Data structure name]</td> 
+      <td>[！UICONTROL数据结构名称]</td> 
       <td> <p> 输入新数据结构的名称。</p> </td> 
      </tr> 
      <tr> 
-      <td> <p>[!UICONTROL Specification]</p> </td> 
+      <td> <p>[！UICONTROL规范]</p> </td> 
       <td> <p>执行以下操作之一来设置数据存储列。</p> 
        <ul> 
-        <li> <p>单击<strong>[!UICONTROL Add item]</strong>以手动指定一列的属性。</p> <p>输入数据存储列的<strong>[!UICONTROL Name]</strong>和<strong>[!UICONTROL Type]</strong>并定义相应的属性。</p> </li> 
-        <li> <p>单击<strong>[!UICONTROL Generator]</strong>以根据您提供的示例数据确定列。</p> 
+        <li> <p>单击<strong>[！UICONTROL添加项]</strong>以手动指定一列的属性。</p> <p>输入数据存储列的<strong>[！UICONTROL名称]</strong>和<strong>[！UICONTROL类型]</strong>并定义相应的属性。</p> </li> 
+        <li> <p>单击<strong>[！UICONTROL Generator]</strong>以根据您提供的示例数据确定列。</p> 
          <div class="example" data-mc-autonum="<b>Example: </b>">
           <span class="autonumber"><span><b>示例： </b></span></span> 
           <p>例如，以下JSON示例数据创建三列：姓名、年龄和电话号码。 电话号码是手机和固定电话号码的集合。</p> 
@@ -175,12 +175,12 @@ Select或Prime包上的Fusion实例将接收：—>
           <p><code>&rbrace;</code> </p> 
           <p>数据存储视图中的空列：</p> 
           <p> <img src="assets/empty-columns-350x132.png" style="width: 350;height: 132;"> </p> 
-          <p>您可以手动或使用[!DNL Workfront Fusion]数据存储模块向数据存储添加值。</p> 
+          <p>您可以手动或使用Workfront Fusion数据存储模块向数据存储添加值。</p> 
          </div> </li> 
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL Strict] </td> 
+      <td>[！UICONTROL严格] </td> 
       <td> <p>启用此选项以确保有效负载与数据结构匹配。 包含未在数据结构中指定的额外项的有效负载将被拒绝。</p> </td> 
      </tr> 
     </tbody> 
@@ -188,7 +188,7 @@ Select或Prime包上的Fusion实例将接收：—>
 
 ## 编辑现有数据存储
 
-您可以在[!DNL Workfront Fusion]的[!UICONTROL Data stores]区域中编辑现有数据存储的属性和内容。
+您可以在Workfront Fusion的[!UICONTROL 数据存储]区域中编辑现有数据存储的属性和内容。
 
 * [编辑数据存储的属性](#edit-the-properties-of-a-data-store)
 * [编辑数据存储的内容](#edit-the-contents-of-a-data-store)
@@ -197,25 +197,25 @@ Select或Prime包上的Fusion实例将接收：—>
 
 数据存储的属性包括数据存储使用的数据结构以及数据存储的大小。
 
-1. 单击左侧导航面板中的&#x200B;**[!UICONTROL Data stores]** ![数据存储图标](assets/data-store-icon.png)以打开[!UICONTROL Data stores]区域。
-1. 单击要编辑的数据存储旁边的&#x200B;**[!UICONTROL Edit]** ![编辑数据存储](assets/data-store-edit.png)。
-1. （可选）如果要将此数据存储使用的数据结构更改为其他现有数据结构，请从&#x200B;**[!UICONTROL Data structure]**&#x200B;下拉列表中选择它。
+1. 单击左侧导航面板中的&#x200B;**[!UICONTROL 数据存储]** ![数据存储图标](assets/data-store-icon.png)以打开[!UICONTROL 数据存储]区域。
+1. 单击要编辑的数据存储旁边的&#x200B;**[!UICONTROL 编辑]** ![编辑数据存储](assets/data-store-edit.png)。
+1. （可选）如果要将此数据存储使用的数据结构更改为其他现有数据结构，请从&#x200B;**[!UICONTROL 数据结构]**&#x200B;下拉列表中选择它。
 
    或
 
    （可选）如果要将此数据存储使用的数据结构更改为全新的数据结构，请参阅本文中的[设置数据结构](#set-up-the-data-structure)。
 
-1. （可选）通过在&#x200B;**[!UICONTROL Data storage size in MB]**&#x200B;字段中输入新大小来更改数据存储的大小。
-1. 单击 **[!UICONTROL Save]**。
+1. （可选）通过在&#x200B;**[!UICONTROL 数据存储大小（以MB]**&#x200B;为单位）字段中输入新大小来更改数据存储的大小。
+1. 单击&#x200B;**[!UICONTROL 保存]**。
 
 ### 编辑数据存储的内容
 
-1. 单击左侧导航面板中的&#x200B;**[!UICONTROL Data Store]**&#x200B;图标![数据存储图标](assets/data-store-icon.png)以打开[!UICONTROL Data Store]区域。
-1. 单击要编辑的数据存储旁边的&#x200B;**[!UICONTROL Browse]**。
+1. 单击左侧导航面板中的&#x200B;**[!UICONTROL 数据存储]**&#x200B;图标![数据存储图标](assets/data-store-icon.png)以打开[!UICONTROL 数据存储]区域。
+1. 单击要编辑的数据存储旁边的&#x200B;**[!UICONTROL 浏览]**。
 1. （可选）通过将列拖动到所需位置来重新排列列。
-1. （可选）单击单个单元格中的&#x200B;**[!UICONTROL Edit]**&#x200B;图标，然后输入所需的值，从而对该单元格执行[!UICONTROL Edit]操作。
-1. （可选）通过单击&#x200B;**[!UICONTROL Add]**&#x200B;向数据存储添加新项，然后输入新项的信息。
-1. 单击 **[!UICONTROL Save]**。
+1. （可选） [!UICONTROL 编辑]单个单元格，方法是单击该单元格中的&#x200B;**[!UICONTROL 编辑]**&#x200B;图标，然后输入所需的值。
+1. （可选）通过单击&#x200B;**[!UICONTROL 添加]**，然后输入新项的信息来向数据存储添加新项。
+1. 单击&#x200B;**[!UICONTROL 保存]**。
 
 ## 故障排除
 
@@ -238,9 +238,9 @@ Select或Prime包上的Fusion实例将接收：—>
 
    有关将数据插入数据存储的信息，请参阅本文中的[编辑数据存储的内容](#edit-the-contents-of-a-data-store)。
 
-### [!UICONTROL Out of space]错误
+### [!UICONTROL 空间不足]错误
 
-发生[!UICONTROL Out of Space]错误，因为先前创建的数据存储已分配给您分配的数据存储存储。
+发生[!UICONTROL 空间不足]错误，因为已经为以前创建的数据存储分配了分配的数据存储存储。
 
 #### 解决方法
 
@@ -252,9 +252,9 @@ Select或Prime包上的Fusion实例将接收：—>
 >
 >我们建议您不要将所有空间分配给单个数据存储，除非您确定不需要更多数据存储。
 
-### [!UICONTROL Maximum stores reached]错误
+### [!UICONTROL 已达到最大存储数]错误
 
-发生[!UICONTROL Maximum stores reached]错误，因为您的组织已使用其所有可用数据存储。
+出现[!UICONTROL 最大存储达到]错误，因为您的组织已使用其所有可用数据存储。
 
 #### 解决方法
 

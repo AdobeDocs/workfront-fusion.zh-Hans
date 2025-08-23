@@ -1,19 +1,19 @@
 ---
 title: JWT模块
-description: ' [!DNL Adobe Workfront Fusion] [!UICONTROL JWT]应用程序提供了一个模块，该模块根据提供的算法创建JWT令牌。'
+description: Adobe Workfront Fusion [!UICONTROL JWT]应用程序提供了一个根据提供的算法创建JWT令牌的模块。
 author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL JWT]模块
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL JWT]应用程序提供了一个模块，该模块基于提供的算法创建JWT令牌。
+Adobe Workfront Fusion [!UICONTROL JWT]应用程序提供了一个根据提供的算法创建JWT令牌的模块。
 
 ## 访问要求
 
@@ -42,7 +42,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -50,9 +50,9 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -82,7 +82,7 @@ JWT连接器使用以下内容：
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 算法]</td> 
+   <td role="rowheader">[！UICONTROL算法]</td> 
    <td> <p>选择要生成JWT的算法。</p> <ul>
    <li><b>HS256</b>：使用SHA-256哈希算法的HMAC</li>
    <li><b>HS384</b>：使用SHA-384哈希算法的HMAC</li>
@@ -99,11 +99,11 @@ JWT连接器使用以下内容：
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 有效负载] </td> 
+   <td role="rowheader">[！UICONTROL有效负载] </td> 
    <td> <p>对于每个要添加的有效负荷项，单击<b>添加项</b>并输入该项的键和值。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Options] </td> 
+   <td role="rowheader">[！UICONTROL Options] </td> 
    <td> <p>对于要添加的每个选项项，单击<b>添加项</b>并输入该项的键和值。</p> <p>可以使用以下键：
    <ul>
    <li><b>算法</b>： （默认值： RS256）</li>

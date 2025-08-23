@@ -1,19 +1,19 @@
 ---
 title: HTTP >其他模块
-description: ' [!DNL Adobe Workfront Fusion] HTTP应用为基于超文本传输协议(HTTP)协议的通信提供了各种模块。 HTTP是万维网数据通信的基础。 您可以使用这些模块下载网页和文件、调用Webhook和API端点等。'
+description: Adobe Workfront Fusion HTTP应用程序为基于超文本传输协议(HTTP)协议的通信提供各种模块。 HTTP是万维网数据通信的基础。 您可以使用这些模块下载网页和文件、调用Webhook和API端点等。
 author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
 
 # HTTP >其他模块
 
-[!DNL Adobe Workfront Fusion] [!UICONTROL HTTP]应用为基于超文本传输协议(HTTP)协议的通信提供了各种模块。 HTTP是万维网数据通信的基础。 您可以使用这些模块下载网页和文件、调用Webhook和API端点等。
+Adobe Workfront Fusion [!UICONTROL HTTP]应用程序为基于超文本传输协议(HTTP)协议的通信提供各种模块。 HTTP是万维网数据通信的基础。 您可以使用这些模块下载网页和文件、调用Webhook和API端点等。
 
 模块的正确选择取决于您要访问的资源所采用的身份验证/授权机制。 以下是模块示例
 
@@ -58,7 +58,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -66,9 +66,9 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -96,15 +96,15 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 将所有状态计算为错误（2xx和3xx除外）] </td> 
-   <td> <p>使用此选项可设置错误处理。</p> <p>有关详细信息，请参阅[!DNL Adobe Workfront Fusion]</a>中的<a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">错误处理。</p> </td> 
+   <td role="rowheader">[！UICONTROL将所有状态计算为错误（2xx和3xx除外）] </td> 
+   <td> <p>使用此选项可设置错误处理。</p> <p>有关详细信息，请参阅Adobe Workfront Fusion中的<a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">错误处理</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL URL] </td> 
+   <td role="rowheader">[！UICONTROL URL] </td> 
    <td> <p>输入或映射要下载的文件的URL。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 与其他HTTP模块共享Cookie] </td> 
+   <td role="rowheader">[！UICONTROL与其他HTTP模块共享Cookie] </td> 
    <td> <p>如果您希望此站点的Cookie对其他模块可用，请启用此选项。 </p> </td> 
   </tr> 
  </tbody> 
@@ -119,12 +119,12 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL URL] </td> 
+   <td role="rowheader">[！UICONTROL URL] </td> 
    <td> <p>输入或映射要解析的URL，如[!DNL bit.ly] URL。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 方法] </td> 
-   <td> <p>选择您要使用[!UICONTROL HEAD]方法还是[!UICONTROL GET]方法。</p> </td> 
+   <td role="rowheader">[！UICONTROL方法] </td> 
+   <td> <p>选择您要使用[！UICONTROL HEAD]方法还是[！UICONTROL GET]方法。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -140,7 +140,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Module]</td> 
+   <td role="rowheader">[！UICONTROL Source Module]</td> 
    <td> <p> 选择要从中检索标头的模块。</p> </td> 
   </tr> 
  </tbody> 

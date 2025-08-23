@@ -1,19 +1,19 @@
 ---
 title: Gmail模块
-description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行使用Gmail的工作流，并将其连接到多个第三方应用程序和服务。
+description: 在Adobe Workfront Fusion场景中，您可以自动使用Gmail的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion
 exl-id: 62269eca-c3cf-42fe-a866-fb66d2363b8d
-source-git-commit: e14f49dbb7b57a7247a62a27205df1b6da11a259
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1852'
 ht-degree: 0%
 
 ---
 
 # [!DNL Gmail]模块
 
-在[!DNL Adobe Workfront Fusion]方案中，您可以自动使用[!DNL Gmail]的工作流，并将其连接到多个第三方应用程序和服务。
+在Adobe Workfront Fusion场景中，您可以自动使用[!DNL Gmail]的工作流，并将其连接到多个第三方应用程序和服务。
 
 有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。 有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -54,9 +54,9 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -64,16 +64,16 @@ ht-degree: 0%
 
 要使用[!DNL Gmail]模块，您必须具有[!DNL Gmail]帐户。
 
-## 将[!DNL Gmail]连接到[!DNL Workfront Fusion] {#connect-gmail-to-workfront-fusion}
+## 将[!DNL Gmail]连接到Workfront Fusion {#connect-gmail-to-workfront-fusion}
 
-* [使用 [!DNL Google Workspace]连接 [!DNL Gmail] 到 [!DNL Workfront Fusion] ](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
-* [使用 [!DNL gmail.com] 或 [!DNL googlemail].com连接 [!DNL Gmail] 到 [!DNL Workfront Fusion] ](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
+* [使用 [!DNL Gmail] 连接 [!DNL Google Workspace]到Workfront Fusion](#connect-gmail-to-workfront-fusion-usinggoogle-workspace)
+* [使用 [!DNL Gmail] 或 [!DNL gmail.com] .com连接 [!DNL googlemail]到Workfront Fusion](#connect-gmail-to-workfront-fusion-using-gmailcom-or-googlemailcom)
 
-### 使用[!DNL &#x200B; Google Workspace]将[!DNL Gmail]连接到[!DNL Workfront Fusion]
+### 使用[!DNL Gmail]将[!DNL  Google Workspace]连接到Workfront Fusion
 
 有关将[!DNL Google Workspace]帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅[创建连接 — 基本说明](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)。
 
-### 使用[!DNL gmail.com]或[!DNL googlemail].com连接[!DNL Gmail]到[!DNL Workfront Fusion]
+### 使用[!DNL Gmail]或[!DNL gmail.com].com将[!DNL googlemail]连接到Workfront Fusion
 
 如果您是[!DNL @gmail.com]或[!DNL @googlemail.com]用户，则必须在[the [!DNL Google Cloud Platform]](https://console.developers.google.com/projectselector2/apis/dashboard?supportedpurview=project)上创建OAuth客户端，以获取[!UICONTROL 客户端ID]和[!UICONTROL 客户端密钥]。
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 ## [!DNL Gmail]模块及其字段
 
-配置[!DNL Gmail]模块时，[!DNL Workfront Fusion]显示下面列出的字段。 除此以外，可能还会显示其他[!DNL Gmail]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在配置[!DNL Gmail]模块时，Workfront Fusion将显示以下列出的字段。 除此以外，可能还会显示其他[!DNL Gmail]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
 
 如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
@@ -106,44 +106,44 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Gmail]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td>[！UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Gmail]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件夹] </td> 
+   <td>[！UICONTROL文件夹] </td> 
    <td> <p>选择要监视的电子邮件文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 筛选器类型] </td> 
+   <td>[！UICONTROL筛选器类型] </td> 
    <td> <p>选择要用于观看电子邮件的过滤器类型</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 简单筛选器]</strong> </p> <p>填写[!UICONTROL 标准]、[!UICONTROL Sender Email Address]、[!UICONTROL Subject]和[!UICONTROL Search Phrase]字段</p> </li> 
-     <li> <p> <strong>[!UICONTROL Gmail筛选器]</strong> </p> <p>在[!UICONTROL Query]字段中，输入要用于筛选电子邮件的查询。</p> <p>有关[!DNL Gmail]筛选器的详细信息，请参阅[!DNL Gmail]文档中的<a href="https://support.google.com/mail/answer/7190">优化搜索</a>。</p> </li> 
+     <li> <p><strong>[！UICONTROL简单筛选器]</strong> </p> <p>填写[！UICONTROL标准]、[！UICONTROL Sender Email Address]、[！UICONTROL Subject]和[！UICONTROL Search Phrase]字段</p> </li> 
+     <li> <p> <strong>[！UICONTROL Gmail筛选器]</strong> </p> <p>在[！UICONTROL Query]字段中，输入要用于筛选电子邮件的查询。</p> <p>有关[!DNL Gmail]筛选器的详细信息，请参阅<a href="https://support.google.com/mail/answer/7190">文档中的</a>优化搜索[!DNL Gmail]。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 标准]</td> 
-   <td>选择是要观看[!UICONTROL 所有电子邮件]、[!UICONTROL 仅读取电子邮件]还是[!UICONTROL 仅读取未读取]电子邮件。</td> 
+   <td>[！UICONTROL标准]</td> 
+   <td>选择是要观看[！UICONTROL所有电子邮件]、[！UICONTROL仅读取电子邮件]还是[！UICONTROL仅读取未读取]电子邮件。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 发件人电子邮件地址]</td> 
+   <td>[！UICONTROL发件人电子邮件地址]</td> 
    <td> <p> 输入电子邮件地址，以便仅监视从该地址发送的电子邮件。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 主题]</td> 
+   <td>[！UICONTROL主题]</td> 
    <td>输入一个文本字符串，以仅观看主题中带有该文本字符串的电子邮件。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 搜索短语]</td> 
+   <td>[！UICONTROL搜索短语]</td> 
    <td>输入一个文本字符串，以仅查看电子邮件中任何位置具有该文本字符串的电子邮件。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 在获取时将电子邮件标记为已读]</td> 
+   <td>[！UICONTROL在获取时将电子邮件标记为已读]</td> 
    <td> <p> 启用此选项可将检索到的电子邮件标记为已读。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 最大结果数]</td> 
-   <td> <p> 设置[!DNL Workfront Fusion]在一个周期内可处理的最大结果数。</p> </td> 
+   <td>[！UICONTROL最大结果数]</td> 
+   <td> <p> 设置Workfront Fusion在一个周期内处理的最大结果数。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -177,19 +177,19 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Gmail]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td>[！UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Gmail]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件夹] </td> 
+   <td>[！UICONTROL文件夹] </td> 
    <td> <p>选择包含要复制的电子邮件的[!DNL Gmail]源文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 目标文件夹]</td> 
+   <td>[！UICONTROL目标文件夹]</td> 
    <td> <p>选择要将电子邮件复制到其中的[!DNL Gmail]目标文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 电子邮件ID (UID)]</td> 
+   <td>[！UICONTROL电子邮件ID (UID)]</td> 
    <td> <p>输入或映射要复制的电子邮件的电子邮件ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -210,36 +210,36 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Gmail]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td>[！UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Gmail]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件夹] </td> 
+   <td>[！UICONTROL文件夹] </td> 
    <td> <p>选择要在其中创建草稿的[!DNL Gmail]文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 至] </td> 
-   <td> <p>单击<strong>[!UICONTROL 添加]</strong>，然后输入或映射每个收件人的电子邮件地址。</p> </td> 
+   <td>[！UICONTROL至] </td> 
+   <td> <p>单击<strong>[！UICONTROL添加]</strong>，然后输入或映射每个收件人的电子邮件地址。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 主题] </td> 
+   <td>[！UICONTROL主题] </td> 
    <td> <p>输入或映射电子邮件主题。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 内容] </td> 
+   <td>[！UICONTROL内容] </td> 
    <td> <p>输入或映射电子邮件内容（邮件正文）。 允许使用HTML标记。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 附件] </td> 
-   <td> <p>单击<strong>[!UICONTROL Add]</strong>添加附件。 您可以从以前的模块映射文件。</p> </td> 
+   <td>[！UICONTROL附件] </td> 
+   <td> <p>单击<strong>[！UICONTROL Add]</strong>添加附件。 您可以从以前的模块映射文件。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 复制收件人]</td> 
-   <td> <p> 单击<strong>[!UICONTROL 添加]</strong>，然后输入或映射每个副本收件人的电子邮件地址。</p> </td> 
+   <td>[！UICONTROL复制收件人]</td> 
+   <td> <p> 单击<strong>[！UICONTROL添加]</strong>，然后输入或映射每个副本收件人的电子邮件地址。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 盲文复制收件人]</td> 
-   <td> <p> 单击<strong>[!UICONTROL 添加]</strong>，然后输入或映射每个密件副本收件人的电子邮件地址。</p> </td> 
+   <td>[！UICONTROL盲文复制收件人]</td> 
+   <td> <p> 单击<strong>[！UICONTROL添加]</strong>，然后输入或映射每个密件副本收件人的电子邮件地址。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -257,15 +257,15 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Gmail]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td>[！UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Gmail]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL [!DNL Gmail]消息ID]</p> </td> 
+   <td> <p>[！UICONTROL [!DNL Gmail]消息ID]</p> </td> 
    <td> <p>输入或映射要删除的电子邮件的电子邮件ID。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 永久] </td> 
+   <td>[！UICONTROL永久] </td> 
    <td> <p>启用此选项可允许模块永久删除电子邮件，而不是将其移至垃圾桶文件夹。</p> </td> 
   </tr> 
  </tbody> 
@@ -288,15 +288,15 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Gmail]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td>[！UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Gmail]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件夹] </td> 
+   <td>[！UICONTROL文件夹] </td> 
    <td> <p>选择包含电子邮件的[!DNL Gmail]文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 电子邮件ID (UID)]</td> 
+   <td>[！UICONTROL电子邮件ID (UID)]</td> 
    <td> <p> 输入或映射电子邮件ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -315,15 +315,15 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Gmail]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td>[！UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Gmail]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件夹] </td> 
+   <td>[！UICONTROL文件夹] </td> 
    <td> <p>选择包含电子邮件的[!DNL Gmail]文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 电子邮件ID (UID)] </td> 
+   <td>[！UICONTROL电子邮件ID (UID)] </td> 
    <td> <p>输入或映射要标记为未读的电子邮件的电子邮件ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -342,19 +342,19 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Gmail]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td>[！UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Gmail]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL [!DNL Gmail]消息ID]</td> 
+   <td>[！UICONTROL [!DNL Gmail]消息ID]</td> 
    <td> <p> 输入或映射要删除的电子邮件的电子邮件ID。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>要添加的[!UICONTROL 标签]</p> </td> 
+   <td> <p>要添加的[！UICONTROL标签]</p> </td> 
    <td> <p>选择或映射要添加到所选电子邮件的标签。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 要删除的标签]</td> 
+   <td>[！UICONTROL要删除的标签]</td> 
    <td> <p> 选择或映射要从所选电子邮件中删除的标签。</p> </td> 
   </tr> 
  </tbody> 
@@ -377,19 +377,19 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Gmail]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td>[！UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Gmail]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件夹] </td> 
+   <td>[！UICONTROL文件夹] </td> 
    <td> <p>选择包含要移动的电子邮件的[!DNL Gmail]源文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 目标文件夹]</td> 
+   <td>[！UICONTROL目标文件夹]</td> 
    <td> <p> 选择要将电子邮件移动到的[!DNL Gmail]目标文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 电子邮件ID (UID)]</td> 
+   <td>[！UICONTROL电子邮件ID (UID)]</td> 
    <td> <p> 输入或映射要移动的电子邮件的电子邮件ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -410,36 +410,36 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Gmail]帐户连接到[!DNL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到[!DNL Workfront Fusion]</a>。</p> </td> 
+   <td>[！UICONTROL Connection] </td> 
+   <td> <p>有关将[!DNL Gmail]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-gmail-to-workfront-fusion" class="MCXref xref">将[!DNL Gmail]连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL From]</td> 
+   <td>[！UICONTROL From]</td> 
    <td> <p>输入或映射发件人电子邮件地址。</p> <p>注意：如果输入的电子邮件地址不正确，则在发送邮件时可能会发生错误，因为您的帐户可能无权从不同于您自己的地址发送电子邮件。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 至] </td> 
-   <td> <p>单击<strong>[!UICONTROL 添加]</strong>，然后输入或映射每个收件人的电子邮件地址。</p> </td> 
+   <td>[！UICONTROL至] </td> 
+   <td> <p>单击<strong>[！UICONTROL添加]</strong>，然后输入或映射每个收件人的电子邮件地址。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 主题] </td> 
+   <td>[！UICONTROL主题] </td> 
    <td> <p>输入或映射电子邮件主题。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 内容] </td> 
+   <td>[！UICONTROL内容] </td> 
    <td> <p>输入或映射电子邮件内容（邮件正文）。 允许使用HTML标记。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 附件] </td> 
-   <td> <p>单击<strong>[!UICONTROL Add]</strong>添加附件。 您可以从以前的模块映射文件。</p> </td> 
+   <td>[！UICONTROL附件] </td> 
+   <td> <p>单击<strong>[！UICONTROL Add]</strong>添加附件。 您可以从以前的模块映射文件。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 复制收件人]</td> 
-   <td> <p> 单击<strong>[!UICONTROL 添加]</strong>，然后输入或映射每个副本收件人的电子邮件地址。</p> </td> 
+   <td>[！UICONTROL复制收件人]</td> 
+   <td> <p> 单击<strong>[！UICONTROL添加]</strong>，然后输入或映射每个副本收件人的电子邮件地址。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 盲文复制收件人]</td> 
-   <td> <p> 单击<strong>[!UICONTROL 添加]</strong>，然后输入或映射每个密件副本收件人的电子邮件地址。</p> </td> 
+   <td>[！UICONTROL盲文复制收件人]</td> 
+   <td> <p> 单击<strong>[！UICONTROL添加]</strong>，然后输入或映射每个密件副本收件人的电子邮件地址。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -457,7 +457,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Source module] </td> 
+   <td>[！UICONTROL Source module] </td> 
    <td> <p>选择要从中迭代处理附件的模块。 </p> </td> 
   </tr> 
  </tbody> 

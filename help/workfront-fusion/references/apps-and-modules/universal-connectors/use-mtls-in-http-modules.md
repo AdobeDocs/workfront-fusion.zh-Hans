@@ -4,14 +4,14 @@ description: 您可以在Adobe Workfront Fusion HTTP模块中使用双方TLS，�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 89017451c8e0b821616adda861222127e100a08d
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
 
-# 在[!DNL Adobe Workfront Fusion]的HTTP模块中使用双向TLS
+# 在Adobe Workfront Fusion的HTTP模块中使用双向TLS
 
 ## 双向TLS概述
 
@@ -58,7 +58,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -66,17 +66,17 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
-## 提供您的[!DNL Workfront Fusion]公共证书
+## 提供您的Workfront Fusion公共证书
 
-当您使用HTTP请求连接到Web服务时，Web服务通常需要[!DNL Workfront Fusion]公共证书才能进行验证。 这允许Web服务将HTTP请求中提供的证书与文件上的证书进行比较，以确保证书位于Web服务的允许列表上。
+当您使用HTTP请求连接到Web服务时，Web服务通常需要Workfront Fusion公共证书来进行验证。 这允许Web服务将HTTP请求中提供的证书与文件上的证书进行比较，以确保证书位于Web服务的允许列表上。
 
-有关将[!DNL Adobe Workfront Fusion]公共证书上载到Web服务的说明，请参阅Web服务的文档。
+有关将Adobe Workfront Fusion公共证书上传到Web服务的说明，请参阅Web服务的文档。
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->* 这些[!DNL Workfront Fusion]公共证书将在&#x200B;**2026年4月4日**（美国和EU）或&#x200B;**2025年11月25日**(Azure)过期。 您的证书过期后，您需要向Web服务上传新证书。 我们建议您：
+>* 这些Workfront Fusion公共证书将在&#x200B;**2026年4月4日**（美国和EU）或&#x200B;**2025年11月25日**(Azure)过期。 您的证书过期后，您需要向Web服务上传新证书。 我们建议您：
 >
 >   * 记下过期日期，并设置一个提醒，提醒您自己将证书上传到您的Web服务。
 >   * 将此页加入书签以轻松查找新证书。
@@ -97,9 +97,9 @@ ht-degree: 0%
 
 | 数据中心 | 下载链接 | 日期有效 |
 |---|---|---|
-| 美国数据中心 | [下载 [!DNL Workfront Fusion] 美国证书2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | 2025年3月3日至2026年4月4日 |
-| 欧盟数据中心 | [下载 [!DNL Workfront Fusion] EU证书2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 2025年3月3日至2026年4月4日 |
-| Azure群集 | [下载 [!DNL Workfront Fusion] Azure证书2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 2024年10月24日至2025年11月25日 |
+| 美国数据中心 | [下载Workfront Fusion US证书2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | 2025年3月3日至2026年4月4日 |
+| 欧盟数据中心 | [下载Workfront Fusion EU证书2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 2025年3月3日至2026年4月4日 |
+| Azure群集 | [下载Workfront Fusion Azure证书2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 2024年10月24日至2025年11月25日 |
 
 <!--
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >* We recommend installing the certificates for 2025, available above.
->* These [!DNL Workfront Fusion] public certificates expire on **May 7, 2025**. After yours expires you will need to upload a new certificate to the web service. We recommend that you:
+>* These Workfront Fusion public certificates expire on **May 7, 2025**. After yours expires you will need to upload a new certificate to the web service. We recommend that you:
 >
 >   * Make note of the expiration date and set a reminder for yourself to upload the certificate to your web service.
 >   * Bookmark this page to easily find the new certificates.
@@ -117,14 +117,14 @@ ht-degree: 0%
 
 | Datacenter | Download link | Dates valid |
 |---|---|---|
-| US Datacenter | [Download [!DNL Workfront Fusion] Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
-| EU Datacenter | [Download [!DNL Workfront Fusion] EU Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
+| US Datacenter | [Download Workfront Fusion Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-us-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
+| EU Datacenter | [Download Workfront Fusion EU Certificate 2024](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/fusion-prod-eu-mtls-certificate.pem) | April 5, 2024 to May 7, 2025 |
 
 -->
 
-## 在[!DNL Workfront Fusion] HTTP模块中启用双向TLS
+## 在Workfront Fusion HTTP模块中启用双向TLS
 
-所有[!DNL Workfront Fusion] [!UICONTROL HTTP]请求模块都可以选择启用双向TLS。
+所有Workfront Fusion [!UICONTROL HTTP]请求模块都可以选择启用双向TLS。
 
 要在[!UICONTROL HTTP]请求模块中启用双向TLS，请执行以下操作：
 

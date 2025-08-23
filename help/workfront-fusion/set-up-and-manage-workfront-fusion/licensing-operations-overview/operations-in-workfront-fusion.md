@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion中的操作是由模块执行的任务。 �
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-source-git-commit: 3470f7a9658ac4e6214c27f94f5b41821f2f8665
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
+source-wordcount: '355'
+ht-degree: 1%
 
 ---
 
@@ -29,9 +29,9 @@ Adobe Workfront Fusion中的操作是由模块执行的任务。 出于跟踪目
 
 ## 操作限制
 
-您的组织可能具有每月运营限制。 此计划基于贵组织购买的[!DNL Workfront]计划。 [!UICONTROL Ultimate] [!DNL Workfront]计划提供了无限量的操作。
+您的组织可能具有每月运营限制。 这是基于您的组织购买的Workfront计划。 [!UICONTROL Ultimate] Workfront计划提供无限量的操作。
 
-如果贵组织有每月限额，则当贵组织接近限额时会通知您。 如果贵组织超过限制，[!DNL Workfront]将联系贵组织，以确保您的计划满足您的需求。
+如果贵组织有每月限额，则当贵组织接近限额时会通知您。 如果贵组织超过限额，Workfront将联系贵组织，确保您的计划满足您的需求。
 
 当您的组织达到组织每月限制的以下百分比时，Workfront Fusion会发送通知：
 

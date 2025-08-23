@@ -4,9 +4,9 @@ description: 许多服务都提供Webhook，以便在服务发生特定更改时
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ![计划设置](assets/schedule-setting.png)
 
-选择`Immediately`以在[!DNL Workfront Fusion]收到来自服务的新事件时立即运行方案。 这些事件会立即发送到队列中，然后在场景中按接收数据的顺序一次处理一个。
+选择`Immediately`以在Workfront Fusion收到来自服务的新事件时立即运行方案。 这些事件会立即发送到队列中，然后在场景中按接收数据的顺序一次处理一个。
 
 当场景执行时，计算队列中等待的挂起事件的总数，场景执行的周期与挂起事件的数量相同，每个周期处理一个事件。
 
@@ -60,10 +60,10 @@ ht-degree: 0%
 >
 
 
-如果您使用[!UICONTROL Immediately]以外的任何其他计划设置，则方案将以您指定的时间间隔执行。 由于在该间隔内队列中可以收集到多个Webhook，因此我们建议将[!UICONTROL Maximum number of cycles]选项设置为比默认值1更高的值，以便在一次方案运行中处理多个Webhook：
+如果您使用[!UICONTROL 立即]以外的任何其他计划设置，则方案将以您指定的时间间隔执行。 由于在该间隔内队列中可以收集到多个Webhook，因此我们建议将[!UICONTROL 最大循环数]选项设置为比默认值1更高的值，以便在一次方案运行中处理多个Webhook：
 
-1. 单击方案底部的[!UICONTROL Scenario settings]图标![方案设置图标](assets/scenario-settings-icon.png)。
-1. 在显示的&#x200B;**[!UICONTROL Scenario settings]**&#x200B;面板中，在&#x200B;**[!UICONTROL Max number of cycles]**&#x200B;字段中输入一个数字，以指示每次执行方案时要运行的队列中的事件数。
+1. 单击方案底部的[!UICONTROL 方案设置]图标![方案设置图标](assets/scenario-settings-icon.png)。
+1. 在显示的&#x200B;**[!UICONTROL 方案设置]**&#x200B;面板中，在&#x200B;**[!UICONTROL 最大循环数]**&#x200B;字段中输入一个数字，以指示每次执行方案时要运行的队列中的事件数。
 
 下次运行场景时，将处理队列中剩余的事件，最大处理次数为在“最大循环数”字段中设置的数量。
 
@@ -81,20 +81,20 @@ ht-degree: 0%
 
 ### Webhook负载
 
-[!DNL Workfront Fusion]存储webhook负载30天。 创建webhook有效负载超过30天后对其进行访问会导致错误[!UICONTROL `Failed to read file from storage.`]
+Workfront Fusion会存储webhook负载30天。 创建webhook有效负载超过30天后对其进行访问会导致错误[!UICONTROL `Failed to read file from storage.`]
 
 ### 错误处理
 
 当使用即时触发器的方案中存在错误时，该方案：
 
-* 当方案设置为运行[!UICONTROL Immediately]时立即停止。
+* 当方案设置为立即运行[!UICONTROL 立即]时立即停止。
 * 当场景设置为按计划运行时，在3次不成功尝试（3个错误）后停止。
 
 如果在场景执行期间发生错误，则事件将在即时触发器的回滚阶段重新放入队列。 在这种情况下，您可以修复场景并再次运行。
 
 有关详细信息，请参阅方案执行、循环和阶段一文中的[回滚](/help/workfront-fusion/references/scenarios/scenario-execution-cycles-phases.md#rollback)。
 
-如果您的场景中存在Webhook响应模块，则将错误发送到Webhook响应。 Webhook响应模块始终在最后执行（当Scenario设置中的[!UICONTROL Auto commit]选项未启用时）。
+如果您的场景中存在Webhook响应模块，则将错误发送到Webhook响应。 Webhook响应模块始终在最后执行（当Scenario设置中的[!UICONTROL 自动提交]选项未启用时）。
 
 有关详细信息，请参阅Webhooks一文中的[响应Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md#responding-to-webhooks)。
 

@@ -4,9 +4,9 @@ description: 您可以将一个数组或单个数组元素映射到Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **示例：**
 
-* **复杂数组**： [!UICONTROL Watch emails]模块为每个电子邮件返回一个附件数组。 每个附件表示一个集合，该集合可能包含名称、内容、大小等。
+* **复杂数组**： [!UICONTROL 查看电子邮件]模块为每个电子邮件返回一个附件数组。 每个附件表示一个集合，该集合可能包含名称、内容、大小等。
 
 >[!ENDSHADEBOX]
 
@@ -37,17 +37,17 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+   <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -55,34 +55,34 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
 ## 映射整个数组
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要映射数组的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
 1. 在要将数组映射到的模块中，单击要在其中映射数组的字段。 这是数组映射到的字段。
 
 1. 在显示的框中，映射项目。
 
-   利用面板，可使用与映射任何其他类型项目相同的方式映射字段。 如果您不想单独填写每个项，但希望将另一个数组映射到目标字段，请使用[!UICONTROL Map]按钮。 在这种情况下，请确保两个阵列（源阵列和目标阵列）具有相同的结构。
+   利用面板，可使用与映射任何其他类型项目相同的方式映射字段。 如果您不想单独填写每个项，但希望将另一个数组映射到目标字段，请使用[!UICONTROL 映射]按钮。 在这种情况下，请确保两个阵列（源阵列和目标阵列）具有相同的结构。
 
    可以将任意数量的项添加到数组。
 
-您可以使用迭代器将数组划分为单独的包。 有关详细信息，请参阅 [!DNL Adobe Workfront Fusion][&#128279;](/help/workfront-fusion/references/modules/iterator-module.md)中的[!UICONTROL Iterator]模块。
+您可以使用迭代器将数组划分为单独的包。 有关详细信息，请参阅Adobe Workfront Fusion[[!UICONTROL 中的]迭代器](/help/workfront-fusion/references/modules/iterator-module.md)模块。
 
 ## 将项目映射到新数组
 
@@ -151,7 +151,7 @@ Workfront Fusion中的某些字段允许您将元素映射到数组中。 例如
 * `map`
 
    1. `map()`函数的第一个参数是整个数组项。
-   1. 第二个参数是值项的原始名称。 要获取原始名称，请将鼠标悬停在[!UICONTROL mapping]面板中的该项上：
+   1. 第二个参数是值项的原始名称。 要获取原始名称，请将鼠标悬停在[!UICONTROL 映射]面板中的项上：
 
       ![获取原始名称](assets/obtain-raw-name-350x124.png)
 
@@ -185,6 +185,6 @@ Jira模块的![输出](assets/output-from-jira-350x261.png)
 
 ## 将数组元素转换为一系列包
 
-可以使用[!UICONTROL Iterator]模块将数组转换为一系列包。 有关详细信息，请参阅[[!UICONTROL Iterator]模块](/help/workfront-fusion/references/modules/iterator-module.md)。
+可以使用[!UICONTROL 迭代器]模块将数组转换为一系列包。 有关详细信息，请参阅[[!UICONTROL 迭代器]模块](/help/workfront-fusion/references/modules/iterator-module.md)。
 
 ![包系列](assets/series-of-bundles.png)

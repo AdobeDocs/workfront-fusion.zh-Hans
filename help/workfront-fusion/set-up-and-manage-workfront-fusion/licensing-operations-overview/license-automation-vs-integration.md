@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion提供两种不同的许可证，确定您可
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
@@ -40,9 +40,9 @@ Workfront Fusion有两种许可模型，一种是新的基于操作的模型，�
 
 #### 用于工作自动化的Workfront Fusion的优势
 
-Workfront Fusion for Work Automation许可证允许您自动执行[!DNL Workfront]工作流。 通过使用Workfront Fusion for Work Automation，您可以创建场景以自动化组织的独特工作流程。
+使用Workfront Fusion for Work Automation许可证，可自动执行Workfront工作流。 通过使用Workfront Fusion for Work Automation，您可以创建场景以自动化组织的独特工作流程。
 
-自动化[!DNL Workfront]流程的优点包括：
+Workfront流程自动化的优势包括：
 
 * 自动化速度更快，不易出错。
 * 不需要任何决策或具有决策的工作流基于简单的逻辑，例如if/then，是理想的自动化候选项。
@@ -53,7 +53,7 @@ Workfront Fusion for Work Automation许可证允许您自动执行[!DNL Workfron
 使用Workfront Fusion for Work Automation许可证，您可以访问以下内容：
 
 * Adobe Workfront
-* Workfront 验证
+* Workfront 校样
 * Webhook
 * 工具和转换器模块，例如：
 
@@ -98,15 +98,15 @@ Workfront Fusion for Work Automation and Integration许可证的优点包括：
 
 >[!IMPORTANT]
 >
->Workfront Fusion可以连接到几乎任何Web服务。 如果要使用的应用没有专用连接器，则可以使用[!UICONTROL HTTP]、[!UICONTROL SFTP]或[!UICONTROL JSON]连接器直接连接到Web服务。
+>Workfront Fusion可以连接到几乎任何Web服务。 如果要使用的应用程序没有专用连接器，则可以使用[!UICONTROL HTTP]、[!UICONTROL SFTP]或[!UICONTROL JSON]连接器直接连接到Web服务。
 
 #### 用于工作自动化和集成的Workfront Fusion示例
 
 以下示例显示了一个具有以下功能的工作流：
 
 1. 监视新用户的电子表格
-1. 检查该用户是否存在于[!DNL Workfront]中
-1. 如果用户不存在，则在[!DNL Workfront]中创建用户
-1. 将[!DNL Workfront]用户ID上传回电子表格。
+1. 检查该用户是否存在于Workfront中
+1. 如果用户不存在，则在Workfront中创建用户
+1. 将Workfront用户ID上传回电子表格。
 
 ![自动化方案示例](assets/fusion-integration-example.png)

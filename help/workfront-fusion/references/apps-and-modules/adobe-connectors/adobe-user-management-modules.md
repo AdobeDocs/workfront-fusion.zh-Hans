@@ -4,20 +4,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Adobe用户管理模块
-description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动执行在Adobe帐户中管理用户的工作流。
+description: 在Adobe Workfront Fusion场景中，您可以自动执行在Adobe帐户中管理用户的工作流。
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: 4f97980dce7c8df47ab73d51537d4700ac34dedf
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2417'
 ht-degree: 2%
 
 ---
 
 # Adobe用户管理模块
 
-在[!DNL Adobe Workfront Fusion]方案中，您可以自动执行在Adobe帐户中管理用户的工作流。
+在Adobe Workfront Fusion场景中，您可以自动执行在Adobe帐户中管理用户的工作流。
 
 如果需要有关创建方案的说明，请参阅[创建方案：项目索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
 
@@ -34,35 +34,35 @@ ht-degree: 2%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 计划*</td>
-  <td> <p>[!UICONTROL Pro]或更高版本</p> </td>
+   <td role="rowheader">Adobe Workfront计划*</td>
+  <td> <p>[！UICONTROL Pro]或更高版本</p> </td>
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证*</td>
-   <td> <p>[!UICONTROL 计划]，[!UICONTROL 工作]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证*</td>
+   <td> <p>[！UICONTROL计划]，[！UICONTROL工作]</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前许可证要求：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前许可证要求：无Workfront Fusion许可证要求。</p>
    <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL [!DNL Workfront Fusion] for Work Automation and Integration]，[!UICONTROL [!DNL Workfront Fusion] for Work Automation]</p>
+   <p>旧版许可证要求：[！UICONTROL Workfront Fusion for Work Automation and Integration]、[！UICONTROL Workfront Fusion for Work Automation]</p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] [!DNL Adobe Workfront]计划，则贵组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]才能使用本文中描述的功能。 [!DNL Workfront Fusion]包含在[!UICONTROL Ultimate] [!DNL Workfront]计划中。</p>
+   <p>当前产品要求：如果您有[！UICONTROL Select]或[！UICONTROL Prime] Adobe Workfront计划，则贵组织必须购买Adobe Workfront Fusion以及Adobe Workfront，才能使用本文中所述的功能。 Workfront Fusion包含在[！UICONTROL Ultimate] Workfront计划中。</p>
    <p>或</p>
-   <p>旧版产品要求：您的组织必须购买[!DNL Adobe Workfront Fusion]和[!DNL Adobe Workfront]，才能使用本文中介绍的功能。</p>
+   <p>旧版产品要求：您的组织必须购买Adobe Workfront Fusion和Adobe Workfront，才能使用本文中所述的功能。</p>
    </td> 
   </tr> 
  </tbody> 
 </table>
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+要了解您拥有的计划、许可证类型或访问权限，请联系您的Workfront管理员。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -81,33 +81,33 @@ ht-degree: 2%
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL 连接名称]</td>
+        <td role="rowheader">[！UICONTROL连接名称]</td>
         <td>
           <p>输入此连接的名称。</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 环境]</td>
+        <td role="rowheader">[！UICONTROL环境]</td>
         <td>选择您要连接到生产环境还是非生产环境。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 类型]</td>
+        <td role="rowheader">[！UICONTROL类型]</td>
         <td>选择您是要连接到服务帐户还是个人帐户。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 客户端ID]</td>
-        <td>输入您的[!UICONTROL Adobe] [!UICONTROL 客户端ID]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[！UICONTROL客户端ID]</td>
+        <td>输入您的[！UICONTROL Adobe] [！UICONTROL客户端ID]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[！UICONTROL客户端密钥]</td>
+        <td>输入您的[!DNL Adobe] [！UICONTROL客户端密钥]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL IMS组织ID]</td>
+        <td role="rowheader">[！UICONTROL IMS组织ID]</td>
         <td>输入您的[!DNL Adobe] IMS凭据。 组织的唯一标识符。 这是一个格式为A495E53@AdobeOrg的字符串，其中@的前缀为十六进制数字。 您可以在Admin Console或adobe.io控制台中，将此值作为组织的URL路径的一部分来查找，以便进行用户管理集成。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 其他作用域]</td>
+        <td role="rowheader">[！UICONTROL其他作用域]</td>
         <td>对于要添加的每个其他范围，单击<b>添加项</b>并输入该范围。</td>
         </tr>
       </tbody>
@@ -565,7 +565,7 @@ ht-degree: 2%
       <td>
         <p>以标准JSON对象的形式添加请求的标头。</p>
         <p>例如， <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 自动添加授权标头和x-api-key标头。</p>
+        <p>Workfront Fusion会自动添加授权标头和x-api-key标头。</p>
       </td>
     </tr>
     <tr>
@@ -576,7 +576,7 @@ ht-degree: 2%
     </tr>
     <tr>
       <td role="rowheader">正文</td>
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注意：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>

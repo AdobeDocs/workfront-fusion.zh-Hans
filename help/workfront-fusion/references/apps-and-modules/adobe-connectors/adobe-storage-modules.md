@@ -4,20 +4,20 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
 title: Adobe存储模块
-description: 在 [!DNL Adobe Workfront Fusion] 方案中，要在Adobe Admin Console中创建和管理项目。
+description: 在Adobe Workfront Fusion场景中，您可以在Adobe Admin Console中创建和管理项目。
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1386'
-ht-degree: 2%
+source-wordcount: '1400'
+ht-degree: 3%
 
 ---
 
 # Adobe存储模块
 
-在[!DNL Adobe Workfront Fusion]方案中，您可以在Adobe Admin Console中创建和管理项目。
+在Adobe Workfront Fusion场景中，您可以在Adobe Admin Console中创建和管理项目。
 
 如果需要有关创建方案的说明，请参阅[创建方案：项目索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
 
@@ -52,7 +52,7 @@ ht-degree: 2%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -60,9 +60,9 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -117,24 +117,24 @@ ht-degree: 2%
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL 连接类型]</td>
+        <td role="rowheader">[！UICONTROL连接类型]</td>
         <td>选择 <code>Server to server</code>。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 连接名称]</td>
+        <td role="rowheader">[！UICONTROL连接名称]</td>
         <td>
           <p>输入此连接的名称。</p>
         </td>
         </tr>
-        <td role="rowheader">[!UICONTROL 客户端ID]</td>
-        <td>输入您的[!UICONTROL Adobe] [!UICONTROL 客户端ID]。 这可以在[!DNL Adobe Developer Console]中项目的[!UICONTROL 凭据详细信息]部分找到。</td>
+        <td role="rowheader">[！UICONTROL客户端ID]</td>
+        <td>输入您的[！UICONTROL Adobe] [！UICONTROL客户端ID]。 这可以在[!DNL Adobe Developer Console]中项目的[！UICONTROL凭据详细信息]部分找到。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 这可以在[!DNL Adobe Developer Console]中项目的[!UICONTROL 凭据详细信息]部分找到。</td>
+        <td role="rowheader">[！UICONTROL客户端密钥]</td>
+        <td>输入您的[!DNL Adobe] [！UICONTROL客户端密钥]。 这可以在[!DNL Adobe Developer Console]中项目的[！UICONTROL凭据详细信息]部分找到。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL IMS组织ID]</td>
+        <td role="rowheader">[！UICONTROL IMS组织ID]</td>
         <td>输入或映射您的Adobe IMS组织ID。 这是一个格式为<code> 123abc@AdobeOrg</code>的字符串，其中@之前的部分是一个十六进制数字。 您可以在Adobe Admin Console或用户管理集成的Adobe.IO控制台中，将此值作为组织的URL路径的一部分找到。</td>
         </tr>
       </tbody>
@@ -256,7 +256,7 @@ ht-degree: 2%
    <td>输入或映射要邀请其加入商店的用户的电子邮件地址。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">资产ID</td> 
+   <td role="rowheader">资产 ID</td> 
    <td>输入或映射要邀请用户访问的资源的ID。</td> 
   </tr> 
   <tr> 
@@ -343,7 +343,7 @@ ht-degree: 2%
       <td>
         <p>以标准JSON对象的形式添加请求的标头。</p>
         <p>例如， <code>{"Content-type":"application/json"}</code></p>
-        <p>[!DNL Workfront Fusion] 自动添加授权标头和x-api-key标头。</p>
+        <p>Workfront Fusion会自动添加授权标头和x-api-key标头。</p>
       </td>
     </tr>
     <tr>
@@ -354,7 +354,7 @@ ht-degree: 2%
     </tr>
     <tr>
       <td role="rowheader">正文</td>
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注意：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>

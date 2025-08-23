@@ -1,19 +1,19 @@
 ---
 title: Draft.js模块
-description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以使用Draft.js模块将Draft.js转换为HTML，将HTML转换为Draft.js。
+description: 在Adobe Workfront Fusion场景中，您可以使用Draft.js模块将Draft.js转换为HTML，将HTML转换为Draft.js。
 author: Becky
 feature: Workfront Fusion
 exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: d8c40e310931e5901a5c5a2be2357b5021452bc2
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '256'
 ht-degree: 1%
 
 ---
 
 # [!UICONTROL Draft.js]模块
 
-在[!DNL Adobe Workfront Fusion]方案中，您可以使用[!UICONTROL Draft.js]模块将Draft.js转换为HTML，将HTML转换为Draft.js。 您可以将其与Workfront模块结合使用，以向Workfront字段添加富文本或从中读取富文本。
+在Adobe Workfront Fusion场景中，您可以使用[!UICONTROL Draft.js]模块将Draft.js转换为HTML，将HTML转换为Draft.js。 您可以将其与Workfront模块结合使用，以向Workfront字段添加富文本或从中读取富文本。
 
 有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
 
@@ -46,7 +46,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -71,7 +71,7 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Draft.js]</td> 
+   <td role="rowheader">[！UICONTROL Draft.js]</td> 
    <td> <p>输入或映射要转换为HTML的Draft.js文本。</p> </td> 
   </tr> 
  </tbody> 
@@ -86,7 +86,7 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL HTML]</td> 
+   <td role="rowheader">[！UICONTROL HTML]</td> 
    <td> <p>输入或映射要转换为Draft.js的HTML代码。</p> </td> 
   </tr> 
  </tbody> 

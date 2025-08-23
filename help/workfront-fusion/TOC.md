@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: ef41c85010b53bbc80c5b44ba8a622027c9e4911
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1855'
 ht-degree: 3%
 
 ---
@@ -254,7 +254,7 @@ ht-degree: 3%
    * [查看、编辑和删除模板](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [发布和共享模板](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [当前可用的Adobe Workfront Fusion模板](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
-   * [[!DNL Adobe Workfront Fusion]模板常见问题解答](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
+   * [Adobe Workfront Fusion模板常见问题解答](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * 引用 {#references}
    * [引用](/help/workfront-fusion/references/references-toc.md)
    * 许可证和角色 {#licenses-and-roles}
@@ -311,7 +311,7 @@ ht-degree: 3%
          * [FTP模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/ftp-modules.md)
          * [SFTP模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/sftp.md)
          * [Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
-         * [在 [!DNL Adobe Workfront Fusion]中的HTTP模块中使用双向TLS](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
+         * [在Adobe Workfront Fusion的HTTP模块中使用双向TLS](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
       * Adobe连接器 {#adobe-connectors}
          * [Adobe Acrobat Sign模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
          * [Adobe Authenticator模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)

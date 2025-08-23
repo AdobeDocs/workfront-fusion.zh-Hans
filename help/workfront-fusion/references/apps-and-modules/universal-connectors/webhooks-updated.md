@@ -4,9 +4,9 @@ description: webhook是由事件触发的HTTP调用。 您可以使用Webhook激
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -56,19 +56,19 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
-## 在[!DNL Workfront Fusion]中使用webhook
+## 在Workfront Fusion中使用webhook
 
 >[!NOTE]
 >
 >要调用第三方webhook（传出webhook），请使用其中一个HTTP模块。 有关详细信息，请参阅[HTTP模块](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)。
 
-要使用webhook将应用程序连接到[!DNL Workfront Fusion]，请执行以下操作：
+要使用webhook将应用程序连接到Workfront Fusion，请执行以下操作：
 
 1. 将&#x200B;**[!UICONTROL Webhook]** >**[!UICONTROL 自定义Webhook]**&#x200B;即时触发器模块添加到您的方案中。
 
@@ -85,7 +85,7 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 
 ### 配置webhook的数据结构 {#configure-the-webhook-s-data-structure}
 
-为了识别传入有效负载的数据结构，[!DNL Workfront Fusion]将解析您发送到所显示地址的示例数据。 您可以通过在服务或应用程序中进行更改来提供示例数据，该服务或应用程序会将该服务或应用程序调用webhook。 例如，您可以删除文件。
+为了识别传入有效负载的数据结构，Workfront Fusion会解析您发送到所显示地址的示例数据。 您可以通过在服务或应用程序中进行更改来提供示例数据，该服务或应用程序会将该服务或应用程序调用webhook。 例如，您可以删除文件。
 
 或者，您可以通过[!UICONTROL HTTP] > [!UICONTROL 发出请求]模块发送示例数据：
 
@@ -98,23 +98,23 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader"><p>[!UICONTROL URL] </p></td> 
-      <td>输入webhook的URL。 您可以在用于设置webhook的[!UICONTROL Webhooks]模块中找到此URL。</td> 
+      <td role="rowheader"><p>[！UICONTROL URL] </p></td> 
+      <td>输入webhook的URL。 您可以在用于设置webhook的[！UICONTROL Webhooks]模块中找到此URL。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 方法] </td> 
-      <td><p>[!UICONTROL POST]</p></td> 
+      <td role="rowheader">[！UICONTROL方法] </td> 
+      <td><p>[！UICONTROL POST]</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 主体类型]</td> 
-      <td><p> [!UICONTROL Raw]</p></td> 
+      <td role="rowheader">[！UICONTROL主体类型]</td> 
+      <td><p> [！UICONTROL Raw]</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 内容类型]</td> 
+      <td role="rowheader">[！UICONTROL内容类型]</td> 
       <td><p> JSON (application/json)</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 请求内容]</td> 
+      <td role="rowheader">[！UICONTROL请求内容]</td> 
       <td><p>webhook中需要原始JSON</p></td> 
      </tr> 
     </tbody> 
@@ -148,11 +148,11 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 
 ## 支持的传入数据格式
 
-[!DNL Workfront Fusion]支持3种传入数据格式：[!UICONTROL 查询字符串]、[!UICONTROL 表单数据]和[!UICONTROL JSON]。
+Workfront Fusion支持3种传入数据格式：[!UICONTROL 查询字符串]、[!UICONTROL 表单数据]和[!UICONTROL JSON]。
 
-[!DNL Workfront Fusion]根据所选的数据结构验证所有传入数据。 然后，根据方案的设置，数据会存储在队列中以供处理，或者会立即进行处理。
+Workfront Fusion会根据选定的数据结构验证所有传入数据。 然后，根据方案的设置，数据会存储在队列中以供处理，或者会立即进行处理。
 
-如果数据的任何部分未通过验证，[!DNL Workfront Fusion]将返回400 HTTP状态代码，并在HTTP响应的正文中指定传入数据未通过验证检查的原因。 如果传入数据验证成功，Workfront Fusion将返回“[!UICONTROL 200 Accepted]”状态。
+如果数据的任何部分未通过验证，则Workfront Fusion会返回400 HTTP状态代码，并在HTTP响应的正文中指定传入数据未通过验证检查的原因。 如果传入数据验证成功，Workfront Fusion将返回“[!UICONTROL 200 Accepted]”状态。
 
 * [[!UICONTROL 查询字符串]](#query-string)
 * [[!UICONTROL 表单数据]](#form-data)
@@ -202,7 +202,7 @@ Workfront Fusion
 ---generatedboundary
 ```
 
-为了接收使用`multipart/form-data`编码的文件，您必须使用包含嵌套字段`name`、`mime`和`data`的`collection`类型字段配置数据结构。 字段`name`是`text`类型，包含上载文件的名称。 `mime`是`text`类型并包含MIME格式的文件。 字段`data`是`buffer`类型，包含要传输文件的二进制数据。
+为了接收使用`multipart/form-data`编码的文件，您必须使用包含嵌套字段`collection`、`name`和`mime`的`data`类型字段配置数据结构。 字段`name`是`text`类型，包含上载文件的名称。 `mime`是`text`类型并包含MIME格式的文件。 字段`data`是`buffer`类型，包含要传输文件的二进制数据。
 
 有关MIME格式的详细信息，请参阅[MIME模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)。
 
@@ -239,7 +239,7 @@ Content-Type: application/json
 >
 >**示例：**
 >
->以下示例显示了一个从`Headers[]`数组提取`authorization`标头值的公式。 该公式用在过滤器中，该过滤器将提取的值与给定文本进行比较，以仅在存在匹配项时传递Webhook。
+>以下示例显示了一个从`authorization`数组提取`Headers[]`标头值的公式。 该公式用在过滤器中，该过滤器将提取的值与给定文本进行比较，以仅在存在匹配项时传递Webhook。
 >
 >![设置筛选器](/help/workfront-fusion/references/apps-and-modules/assets/set-up-a-filter-350x169.png)
 >
@@ -289,27 +289,27 @@ Content-Type: application/json
 >按如下方式配置[!UICONTROL Webhook响应]模块：
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL 状态] </td> 
->&gt;   <td> <p>2xx成功HTTP状态代码，例如200</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>HTML代码</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>键</strong>： Content-type</li> 
->&gt;     <li><strong>值</strong>： text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[！UICONTROL状态] </td> 
+&gt;   <td> <p>2xx成功HTTP状态代码，例如200</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[！UICONTROL Body] </td> 
+&gt;   <td> <p>HTML代码</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[！UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>键</strong>： Content-type</li> 
+&gt;     <li><strong>值</strong>： text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![自定义标头](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -324,23 +324,23 @@ Content-Type: application/json
 >**示例：**&#x200B;按如下方式配置[!UICONTROL Webhook响应]模块：
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL 状态] </td> 
->&gt;   <td> <p>3xx重定向HTTP状态代码，例如303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL 键]</strong>：位置</li> 
->&gt;     <li><strong>[!UICONTROL 值]</strong>：要重定向到的URL。</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[！UICONTROL状态] </td> 
+&gt;   <td> <p>3xx重定向HTTP状态代码，例如303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[！UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[！UICONTROL键]</strong>：位置</li> 
+&gt;     <li><strong>[！UICONTROL值]</strong>：要重定向到的URL。</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Webhook响应](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 

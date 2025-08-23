@@ -4,10 +4,10 @@ description: 映射项时，可以使用函数创建简单或复杂的公式。
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 0%
+source-wordcount: '673'
+ht-degree: 1%
 
 ---
 
@@ -29,17 +29,17 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+   <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前： [!UICONTROL Work]或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -47,16 +47,16 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
    <td role="rowheader">访问级别配置*</td> 
    <td> 
-     <p>您必须是组织的[!DNL Workfront Fusion]管理员。</p>
-     <p>您必须是团队的[!DNL Workfront Fusion]管理员。</p>
+     <p>您必须是组织的Workfront Fusion管理员。</p>
+     <p>您必须是团队的Workfront Fusion管理员。</p>
    </td> 
   </tr> 
    </td> 
@@ -64,9 +64,9 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 要将函数插入到字段中，请执行以下操作：
 
-1. 单击左侧面板中的&#x200B;**[!UICONTROL Scenarios]**&#x200B;选项卡。
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要映射数据的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
 1. 单击要插入函数的字段。
@@ -137,22 +137,22 @@ ht-degree: 0%
 
 ## 使用[!DNL Google Sheets]函数
 
-如果[!DNL Workfront Fusion]不提供您要使用的函数，但它由[!DNL Google Sheets]提供，您可以按照以下步骤使用它：
+如果Workfront Fusion不提供您要使用的功能，但它由[!DNL Google Sheets]提供，您可以按照以下步骤使用它：
 
 1. 在[!DNL Google Sheets]中，创建一个新的空电子表格。
-1. 在[!DNL Workfront Fusion]中，打开您的方案。
-1. 将&#x200B;**[!DNL Google Sheets]** >**[!UICONTROL Update a cell]**&#x200B;模块添加到方案。
+1. 在Workfront Fusion中，打开您的场景。
+1. 将&#x200B;**[!DNL Google Sheets]** >**[!UICONTROL 更新单元格]**&#x200B;模块添加到方案。
 
 1. 配置模块：
 
-   1. 在&#x200B;**[!UICONTROL Spreadsheet]**&#x200B;字段中选择新创建的电子表格。
-   1. 将包含[!DNL Google Sheets]函数的公式插入到&#x200B;**[!UICONTROL Value]**&#x200B;字段中。
+   1. 在&#x200B;**[!UICONTROL 电子表格]**&#x200B;字段中选择新创建的电子表格。
+   1. 将包含[!DNL Google Sheets]函数的公式插入到&#x200B;**[!UICONTROL 值]**&#x200B;字段中。
 
       您可以像往常一样使用前面的模块的输出。
 
       ![使用Google工作表功能](assets/exploit-google-sheet-functions-350x218.png)
 
-1. 插入&#x200B;**[!UICONTROL Google Sheets]>[!UICONTROL Get a cell]**&#x200B;模块以获取计算结果。
+1. 插入&#x200B;**[!UICONTROL Google工作表] >[!UICONTROL 获取单元格]**&#x200B;模块以获取计算结果。
 1. 使用在步骤4中使用的相同单元格ID配置模块。
 
    ![使用Google工作表功能](assets/exploit-google-sheet-functions-2-350x187.png)

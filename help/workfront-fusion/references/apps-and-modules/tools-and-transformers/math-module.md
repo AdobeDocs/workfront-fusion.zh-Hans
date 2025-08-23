@@ -4,9 +4,9 @@ description: 在Adobe Workfront Fusion场景中，您可以使用数学模块计
 author: Becky
 feature: Workfront Fusion
 exl-id: ebbe74ea-d274-481d-8584-a71ddb1d959b
-source-git-commit: 8a4e54a4c1783e4bc679778c6fcf21dcb4d3d537
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '176'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 2%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -50,9 +50,9 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -65,7 +65,7 @@ ht-degree: 2%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 表达式]</td> 
+   <td role="rowheader">[！UICONTROL表达式]</td> 
    <td> <p>输入您希望模块计算的表达式。 </p> <p> </p> <p>有关如何编写数学表达式的信息，请参阅mathjs.org上的<a href="https://mathjs.org/docs/expressions/syntax.html">表达式语法</a>。</p> </td> 
   </tr> 
  </tbody> 

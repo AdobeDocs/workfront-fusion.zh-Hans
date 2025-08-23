@@ -4,16 +4,16 @@ description: 通过Adobe Workfront Fusion的“组织”和“团队”功能，
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: d76f199b766d6f18e371f2ce1107a96529afbfd1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '529'
 ht-degree: 1%
 
 ---
 
-# [!DNL Adobe Workfront Fusion]组织和团队概述
+# Adobe Workfront Fusion组织和团队概述
 
-通过[!DNL Adobe Workfront Fusion]的“组织”和“团队”功能，企业可以控制对Fusion中场景和其他功能的访问。
+通过Adobe Workfront Fusion的“组织”和“团队”功能，企业可以控制对Fusion中场景和其他功能的访问。
 
 组织是Adobe Workfront Fusion中的最大实体。 例如，您的Fusion组织可能代表您整个公司的Fusion帐户。
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## 组织
 
-[!DNL Workfront Fusion]用户属于某个组织。
+Workfront Fusion用户属于一个组织。
 
 在将用户添加到团队之前，必须先将用户添加到组织。
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 * **[!UICONTROL 所有者]**：所有者拥有组织中可用的所有权限。
 * **[!UICONTROL 管理员]**：管理员可以为组织创建和管理团队和用户，还可以批准模板。
-* **[!UICONTROL 成员]**：成员可以使用[!DNL Workfront Fusion]，但无法进行组织更改。
+* **[!UICONTROL 成员]**：成员可以使用Workfront Fusion，但无法进行组织更改。
 * **[!UICONTROL 会计师]**：会计师可以在组织仪表板上查看许可证信息，但无法执行任何操作。
 * **[!UICONTROL 应用程序开发人员]**：此角色的功能当前不可用，并且将在不久的将来可用。 我们建议目前不要将用户分配给此角色。
 
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->由于团队共享资源，因此有时一个团队仅有一个成员会很有用。 例如，培训用户可能会创建与其个人[!DNL Workfront]帐户的连接。 任何团队成员也将能够连接到单个[!DNL Workfront]帐户。 在这种情况下，我们建议用户成为培训团队的唯一成员。
+>由于团队共享资源，因此有时一个团队仅有一个成员会很有用。 例如，培训用户可创建与其个人Workfront帐户的连接。 任何团队成员也将能够连接到个人Workfront帐户。 在这种情况下，我们建议用户成为培训团队的唯一成员。
 
 组织可以拥有所需数量的团队，并且用户可能属于一个或多个团队。
 

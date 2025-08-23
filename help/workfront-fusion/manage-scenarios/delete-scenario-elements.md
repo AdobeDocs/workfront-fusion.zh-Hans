@@ -4,16 +4,16 @@ description: 您可以在“连接”区域查看和管理团队连接。
 author: Becky
 feature: Workfront Fusion
 exl-id: 7bedf002-061b-40fc-a0f8-c12d2930bcf9
-source-git-commit: ec2388ab509e89aec71278210bc4ab6f55ed38fd
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 1%
+source-wordcount: '227'
+ht-degree: 2%
 
 ---
 
 # 删除方案元素
 
-您可以在[!DNL Adobe Workfront Fusion]帐户中存储和删除以下区域中的方案元素：
+您可以在Adobe Workfront Fusion帐户中存储和删除以下区域中的方案元素：
 
 * [!UICONTROL 方案]
 * [!UICONTROL 连接]
@@ -53,7 +53,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront计划：包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront计划：包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 

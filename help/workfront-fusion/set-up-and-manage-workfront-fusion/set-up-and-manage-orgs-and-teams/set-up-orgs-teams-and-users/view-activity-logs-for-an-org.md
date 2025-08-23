@@ -4,9 +4,9 @@ description: 您可以查看组织的活动日志，如场景创建或激活。
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: edeed099b26dae635889fd35de61d66a1ea1ffc1
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -26,17 +26,17 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront] 计划</td>
+   <td role="rowheader">Adobe Workfront计划</td>
    <td> <p>新增功能：Ultimate</p> <p>或</p> <p>当前：不可用</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
-   <td> <p>新增： [!UICONTROL Standard]</p><p>或</p><p>当前：不可用</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前：不可用</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!DNL Adobe Workfront Fusion] 许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -48,7 +48,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>此功能仅适用于具有Ultimate Workfront计划（包括[!DNL Workfront Fusion]）的组织。 无需购买其他产品。</p>
+   <p>此功能仅适用于具有Ultimate Workfront计划(包括Workfront Fusion)的组织。 无需购买其他产品。</p>
    </td> 
   </tr>
  </tbody> 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 有关此表中信息的更多详细信息，请参阅Workfront文档中的[访问要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 1. 在左侧导航面板中，单击&#x200B;**组织概述** ![组织概述图标](assets/org-overview-icon.png)。
 1. 如果您当前不在要查看其活动日志的组织中，请单击屏幕右上角的组织名称，然后从下拉列表中选择组织。
-1. 单击屏幕顶部附近的&#x200B;**[!UICONTROL Activity Logs]**&#x200B;选项卡。
+1. 单击屏幕顶部附近的&#x200B;**[!UICONTROL 活动日志]**&#x200B;选项卡。
 
    此时将打开“活动日志”页面。
 1. （可选）筛选活动日志，以按您指定的标准限制结果。
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 1. 在左侧导航面板中，单击&#x200B;**组织概述** ![组织概述图标](assets/org-overview-icon.png)。
 1. 如果您当前不在要查看其活动日志的组织中，请单击屏幕右上角的组织名称，然后从下拉列表中选择组织。
-1. 单击屏幕顶部附近的&#x200B;**[!UICONTROL Activity Logs]**&#x200B;选项卡。
+1. 单击屏幕顶部附近的&#x200B;**[!UICONTROL 活动日志]**&#x200B;选项卡。
 
    此时将打开“活动日志”页面。
 1. 单击&#x200B;**筛选器** ![筛选器图标](assets/filter-activity-log.png)。
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 1. 在左侧导航面板中，单击&#x200B;**组织概述** ![组织概述图标](assets/org-overview-icon.png)。
 1. 如果您当前不在要查看其活动日志的组织中，请单击屏幕右上角的组织名称，然后从下拉列表中选择组织。
-1. 单击屏幕顶部附近的&#x200B;**[!UICONTROL Activity Logs]**&#x200B;选项卡。
+1. 单击屏幕顶部附近的&#x200B;**[!UICONTROL 活动日志]**&#x200B;选项卡。
 
    此时将打开“活动日志”页面。
 1. 从日历中选择日期范围，然后（可选）输入时间。

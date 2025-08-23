@@ -1,14 +1,14 @@
 ---
 content-type: reference
 title: 用于错误处理的指令
-description: 本文介绍了可用于在 [!DNL Adobe Workfront Fusion] 方案中处理错误的指令。
+description: 本文介绍了可用于在Adobe Workfront Fusion场景中处理错误的指令。
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 16%
+source-wordcount: '589'
+ht-degree: 15%
 
 ---
 
@@ -27,17 +27,17 @@ ht-degree: 16%
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">[!DNL Adobe Workfront] 包</td> 
+    <td role="rowheader">Adobe Workfront包</td> 
    <td> <p>任何</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!DNL Adobe Workfront] 许可证</td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
    <td> 新增：标准<p>或</p><p>当前：工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion] 许可证</td> 
+   <td role="rowheader">[！UICONTROL Adobe Workfront Fusion]许可证</td> 
    <td>
-   <p>当前：无[!DNL Workfront Fusion]许可证要求。</p>
+   <p>当前：无Workfront Fusion许可证要求。</p>
    <p>或</p>
    <p>旧版：任意 </p>
    </td> 
@@ -45,18 +45,18 @@ ht-degree: 16%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>[!UICONTROL Select] 或[!UICONTROL Prime] [!DNL Workfront]计划：您的组织必须购买[!DNL Adobe Workfront Fusion]。</li><li>[!UICONTROL Ultimate] [!DNL Workfront] 计划： [!DNL Workfront Fusion]已包括在内。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
-   <p>当前：您的组织必须购买[!DNL Adobe Workfront Fusion]。</p>
+   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 
-要了解您拥有什么计划、许可证类型或访问权限，请与[!DNL Workfront]管理员联系。
+要了解您拥有的计划、许可证类型或访问权限，请联系您的Workfront管理员。
 
-有关[!DNL Adobe Workfront Fusion]的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)，了解有关Adobe Workfront Fusion许可证的信息。
+有关Adobe Workfront Adobe Workfront Fusion的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -70,7 +70,7 @@ Workfront Fusion中提供了以下错误处理指令。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>回滚</p> <p> <img src="assets/rollback.png"> </p> </td> 
-   <td> <ul><li><p>场景执行立即停止。</li><li>将在所有模块上启动回滚阶段，以尝试将所有模块恢复到其初始状态。 </li><li>不处理后续模块。</p></li><li> <p>在大多数情况下，在场景设置下指定的连续错误数后，将停用场景。 有关详细信息，请参阅<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">连续错误数</a>。</p> </li><li><p>场景执行状态被标记为“错误”。</p></li></ul> <p><b>注意</b>：如果未将错误处理程序路由附加到模块，并且未选中<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">允许存储不完整的执行</a>允许存储[!UICONTROL Scenario settings]下的不完整的执行设置，则这是默认行为。</p> </td> 
+   <td> <ul><li><p>场景执行立即停止。</li><li>将在所有模块上启动回滚阶段，以尝试将所有模块恢复到其初始状态。 </li><li>不处理后续模块。</p></li><li> <p>在大多数情况下，在场景设置下指定的连续错误数后，将停用场景。 有关详细信息，请参阅<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">连续错误数</a>。</p> </li><li><p>场景执行状态被标记为“错误”。</p></li></ul> <p><b>注意</b>：如果未将错误处理程序路由附加到模块，并且未选中[！UICONTROL场景设置]下的<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">允许存储不完整的执行</a>允许存储不完整的执行设置，则这是默认行为。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>提交</p> <p> <img src="assets/commit.png"> </p> </td> 
@@ -86,7 +86,7 @@ Workfront Fusion中提供了以下错误处理指令。
   </tr> 
   <tr> 
    <td role="rowheader"> <p>间断</p> <p> <img src="assets/break.png"> </p> </td> 
-   <td><ul><li> <p>场景执行的状态存储在未完成执行的队列中，在该队列中可以手动解决错误。有关详细信息，请参阅<a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">查看并解决未完成的执行</a>。</p> <p>不过，也有一些例外。 有关详细信息，请参阅配置场景设置</a>一文中的<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">允许存储不完整的执行</a>。</p></li><li> <p>不处理后续模块。</p></li><li> <p>如果存在未处理的捆绑包，则场景执行会正常继续进行。</p> </li><li><p>禁用[!UICONTROL Automatically complete execution]选项时，方案执行状态标记为“警告”。</p></li></ul> <p>有关详细信息，请参阅本文中的<a href="#break" class="MCXref xref">[!UICONTROL Break]</a>部分</p> </td> 
+   <td><ul><li> <p>场景执行的状态存储在未完成执行的队列中，在该队列中可以手动解决错误。有关详细信息，请参阅<a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">查看并解决未完成的执行</a>。</p> <p>不过，也有一些例外。 有关详细信息，请参阅配置场景设置<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">一文中的</a>允许存储不完整的执行</a>。</p></li><li> <p>不处理后续模块。</p></li><li> <p>如果存在未处理的捆绑包，则场景执行会正常继续进行。</p> </li><li><p>禁用[！UICONTROL自动完成执行]选项后，场景执行状态将标记为“警告”。</p></li></ul> <p>有关详细信息，请参阅本文中的<a href="#break" class="MCXref xref">[！UICONTROL Break]</a>部分</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>重试</p> <p> <img src="assets/retry.png"> </p> </td> 
@@ -98,7 +98,7 @@ Workfront Fusion中提供了以下错误处理指令。
 >[!NOTE]
 >
 >* 错误处理指令不能在错误处理路由之外使用。
->* [!DNL Workfront Fusion]目前不提供使您能够轻松有条件地生成（丢弃）错误的Throw模块，尽管可以使用解决方法来模拟其功能。
+>* Workfront Fusion目前不提供使您能够轻松有条件地生成（抛出）错误的Throw模块，不过可以采取替代措施来模拟其功能。
 >
 >  有关详细信息，请参阅[配置`throw`错误解决方法](/help/workfront-fusion/create-scenarios/config-error-handling/throw.md)。
 

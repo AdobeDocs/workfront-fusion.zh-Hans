@@ -5,9 +5,9 @@ description: 本文介绍了场景的执行方式以及数据流通过场景的�
 author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
-source-git-commit: 0ef6dde9566ca3b97c1c52d6055f0ce44f575cee
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 如果捆绑包在所有模块中正确处理，则在“方案详细信息”页面中将该方案标记为成功。
 
-### 示例：工作自动化的[!DNL Workfront Fusion]
+### 示例：[!UICONTROL 用于工作自动化的Workfront Fusion]
 
 >[!BEGINSHADEBOX]
 
-**示例：**&#x200B;在此场景中，在[!DNL Workfront]中监视传入请求，然后将其转换为[!DNL Workfront]项目，数据将按如下方式流动：
+**示例：**&#x200B;在这种情况下，在Workfront中监视传入请求，然后将它们转换为Workfront项目，数据将按如下方式流动：
 
 场景的第一步由第一个模块执行，即监视请求。 找到的每个请求都视为一个捆绑包。 如果模块运行时未找到任何捆绑包，则场景将在第一个模块后结束。
 
@@ -42,11 +42,11 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-### 示例： [!UICONTROL [!DNL Workfront Fusion]工作自动化和集成]
+### 示例： [!UICONTROL 用于工作自动化和集成的Workfront Fusion]
 
 >[!BEGINSHADEBOX]
 
-**示例：**&#x200B;在这种从[!DNL Adobe Workfront]下载文档并将它们发送到[!DNL Dropbox]中的文件夹的情况中，数据将按如下方式流动：
+**示例：**&#x200B;在这种从Adobe Workfront下载文档并将文档发送到[!DNL Dropbox]中的文件夹的情况中，数据将按如下方式流动：
 
 场景的第一步由第一个模块执行，即在Workfront中查看文档。 找到的每个文档都被视为一个捆绑包。 如果模块运行时未找到任何捆绑包，则场景将在第一个模块后结束。
 

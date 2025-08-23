@@ -4,10 +4,10 @@ description: 通过Adobe I/O Events模块，您可以基于Adobe应用程序中�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-source-git-commit: ef55cc62a0e0de70662440bc38d3eabbfe5e3c13
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 1%
+source-wordcount: '1085'
+ht-degree: 2%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -52,9 +52,9 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关[!DNL Adobe Workfront Fusion]许可证的信息，请参阅[[!DNL Adobe Workfront Fusion] 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -73,7 +73,7 @@ Adobe I/O Events连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">基本URL</td> 
+   <td role="rowheader">基本 URL</td> 
    <td>https://api.adobe.io/events</td> 
   </tr>
   <tr> 
@@ -155,7 +155,7 @@ Adobe I/O Events连接器使用以下对象：
 
 ## Adobe I/O Events模块及其字段
 
-配置[!DNL Adobe I/O Events]模块时，[!DNL Workfront Fusion]显示下面列出的字段。 除此以外，可能还会显示其他[!DNL Adobe I/O Events]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在配置[!DNL Adobe I/O Events]模块时，Workfront Fusion将显示以下列出的字段。 除此以外，可能还会显示其他[!DNL Adobe I/O Events]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
 
 如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
@@ -183,16 +183,16 @@ Adobe I/O Events连接器使用以下对象：
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL Webhook名称]</td>
+         <td role="rowheader">[！UICONTROL Webhook名称]</td>
         <td>输入此webhook的名称。</td>
        </tr>
        <tr>
-         <td role="rowheader">[!UICONTROL Connection]</td>
+         <td role="rowheader">[！UICONTROL Connection]</td>
         <td>有关创建与[!DNL Adobe I/O Events]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >创建与[!DNL Adobe I/O Events]</a>的连接。</td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Webhook说明]
+           [！UICONTROL Webhook说明]
          </td>
          <td>
            输入此webhook的说明。
@@ -200,7 +200,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 事件提供程序]
+           [！UICONTROL事件提供程序]
          </td>
          <td>
            选择要从中创建事件的产品或帐户。
@@ -208,7 +208,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 事件类型]
+           [！UICONTROL事件类型]
          </td>
          <td>
            选择您希望webhook观看的事件。 当这些事件发生时，将触发该方案。
@@ -233,12 +233,12 @@ Adobe I/O Events连接器使用以下对象：
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL Connection]</td>
+         <td role="rowheader">[！UICONTROL Connection]</td>
         <td>有关创建与[!DNL Adobe I/O Events]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >创建与[!DNL Adobe I/O Events]</a>的连接。</td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 事件提供程序]
+           [！UICONTROL事件提供程序]
          </td>
          <td>
            选择要为其检索ID的提供程序。
@@ -246,7 +246,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 事件类型]
+           [！UICONTROL事件类型]
          </td>
          <td>
               选择要为其提供ID的事件。 根据事件提供程序，事件将可用。 
@@ -265,12 +265,12 @@ Adobe I/O Events连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-     <td role="rowheader">[!UICONTROL Connection]</td>
+     <td role="rowheader">[！UICONTROL Connection]</td>
         <td>有关创建与[!DNL Adobe I/O Events]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >创建与[!DNL Adobe I/O Events]</a>的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 路径]</p>
+        <p>[！UICONTROL路径]</p>
       </td>
       <td>
         <p>输入相对路径 <code>https://api.adobe.io/events</code></p>
@@ -278,14 +278,14 @@ Adobe I/O Events连接器使用以下对象：
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 方法]</p>
+        <p>[！UICONTROL方法]</p>
       </td>
       <td>
   <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p>  
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td role="rowheader">[！UICONTROL Headers]</td>
       <td>
         <p>以标准JSON对象的形式添加请求的标头。</p>
         <p>例如， <code>{"Content-type":"application/json"}</code></p>
@@ -293,14 +293,14 @@ Adobe I/O Events连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 查询字符串]  </td>
+      <td role="rowheader">[！UICONTROL查询字符串]  </td>
       <td>
         <p>输入请求查询字符串。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注意：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+      <td role="rowheader">[！UICONTROL Body]</td>
+   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -318,12 +318,12 @@ Adobe I/O Events连接器使用以下对象：
      <col/>
      <tbody>
        <tr>
-         <td role="rowheader">[!UICONTROL Connection]</td>
+         <td role="rowheader">[！UICONTROL Connection]</td>
         <td>有关创建与[!DNL Adobe I/O Events]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-io-events" class="MCXref xref" >创建与[!DNL Adobe I/O Events]</a>的连接。</td>
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 注册ID]
+           [！UICONTROL注册ID]
          </td>
          <td>
            选择要检索事件的注册。
@@ -331,7 +331,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 返回的最大事件数]
+           [！UICONTROL返回的最大事件数]
          </td>
          <td>
               输入或映射您希望模块在每个方案执行周期内返回的最大记录数。 
@@ -339,7 +339,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 返回在]之后发生的事件
+           [！UICONTROL返回在]之后发生的事件
          </td>
          <td>输入或映射日期。 模块返回在此日期之后发生的事件。
          </td>
@@ -353,7 +353,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>-->
        <tr>
          <td role="rowheader">
-           [!UICONTROL 最新]
+           [！UICONTROL最新]
          </td>
          <td>
          启用此选项可返回最新的事件。
@@ -378,4 +378,4 @@ Adobe I/O Events连接器使用以下对象：
    </tbody> 
 </table>
 
-—>
+-->

@@ -1,24 +1,24 @@
 ---
 title: 创建连接 — 基本说明
-description: 许多 [!DNL Adobe Workfront Fusion] 连接器在创建连接时不需要自定义配置。 本文介绍了默认连接创建过程。
+description: 许多Adobe Workfront Fusion连接器在创建连接时不需要自定义配置。 本文介绍了默认连接创建过程。
 author: Becky
 feature: Workfront Fusion
 exl-id: e47ab4d9-6612-4d9a-a024-da508a8bbfb2
-source-git-commit: 6aec65919e79a9e9d950a11de53bfbb1051ca20b
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 0%
+source-wordcount: '546'
+ht-degree: 1%
 
 ---
 
 # 创建连接 — 基本说明
 
-许多[!DNL Adobe Workfront Fusion]连接器在创建连接时不需要自定义配置。 本文介绍了默认连接创建过程。
+许多Adobe Workfront Fusion连接器在创建连接时不需要自定义配置。 本文介绍了默认连接创建过程。
 
 >[!NOTE]
 >
 >
->如果Adobe Workfront Fusion不为您要在场景中使用的Web服务提供应用程序，则可使用[!DNL Workfront Fusion] HTTP和Webhooks模块连接到Web服务，如以下文章所述：
+>如果Adobe Workfront Fusion不为您要在场景中使用的Web服务提供应用程序，则可使用Workfront Fusion HTTP和Webhooks模块连接到Web服务，如以下文章所述：
 >
 >* [将Adobe Workfront Fusion连接到使用API令牌授权的Web服务](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-wf-web-service-uses-api-token-auth.md)
 >* [为没有连接器的Web服务配置webhook](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
@@ -52,7 +52,7 @@ ht-degree: 0%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront计划：包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront计划：包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -60,7 +60,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[&#128279;](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)中的访问要求。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
 有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -70,9 +70,9 @@ ht-degree: 0%
 
 要创建与给定应用程序的连接，您必须处于该应用程序的模块中。 例如，要创建与Workfront的连接，您必须在Workfront模块中。
 
-要在[!DNL Workfront Fusion]模块内创建连接，请执行以下操作：
+要在Workfront Fusion模块中创建连接，请执行以下操作：
 
-1. 在给定应用程序的任意模块中，单击[!UICONTROL 连接]框旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;以打开&#x200B;**[!UICONTROL 创建连接]**&#x200B;面板。
+1. 在给定应用程序的任意模块中，单击&#x200B;**[!UICONTROL 连接]**&#x200B;框旁边的[!UICONTROL 添加]以打开&#x200B;**[!UICONTROL 创建连接]**&#x200B;面板。
 1. （可选）更改默认&#x200B;**[!UICONTROL 连接名称]**。
 1. 在环境字段中，选择是生产环境还是非生产环境。
 1. 在“类型”字段中，选择此帐户是服务帐户还是个人帐户。
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**[!UICONTROL 继续]**。
 1. 在显示的登录窗口中，输入您的凭据以登录应用程序（如果尚未登录）。
-1. （视情况而定）如果显示&#x200B;**[!UICONTROL 允许]**&#x200B;按钮，请检查连接器能够执行的操作，然后单击按钮以将应用程序连接到[!DNL Workfront Fusion]。
+1. （视情况而定）如果显示&#x200B;**[!UICONTROL 允许]**&#x200B;按钮，请检查连接器能够执行的操作，然后单击按钮以将应用程序连接到Workfront Fusion。
 
    >[!NOTE]
    >

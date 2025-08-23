@@ -1,25 +1,25 @@
 ---
 title: 存档模块
-description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以将存档文件（如压缩文件）连接到多个第三方应用程序和服务。 例如，您可以配置一个方案，该方案
+description: 在Adobe Workfront Fusion场景中，您可以将存档（例如压缩文件）连接到多个第三方应用程序和服务。 例如，您可以配置一个方案，该方案
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 640aae1f4b7563545d7f9aa3f801671aa3d45fca
+source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
 
 # [!UICONTROL 存档]模块
 
-在[!DNL Adobe Workfront Fusion]方案中，您可以在方案中使用存档，如压缩文件，从而允许您在自动化或集成中使用它。
+在Adobe Workfront Fusion场景中，您可以在场景中使用档案，例如压缩文件，从而允许您在自动化或集成中使用它。
 
 有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。 有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
 
 ## [!UICONTROL 存档]模块及其字段
 
-配置[!UICONTROL 存档]模块时，[!DNL Workfront Fusion]显示下面列出的字段。 此外，还可能会显示其他[!UICONTROL 存档]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在配置[!UICONTROL 存档]模块时，Workfront Fusion显示以下列出的字段。 此外，还可能会显示其他[!UICONTROL 存档]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
 
 如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[！UICONTROL Source file]</td> 
    <td> <p>  <p>从上一个模块中选择源文件，或映射源数据。</p></p>  </td> 
   </tr> 
  </tbody> 
@@ -69,31 +69,31 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Source module]</td> 
+   <td>[！UICONTROL Source module]</td> 
    <td> <p> 选择要从中检索文件的模块。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 类型] </td> 
-   <td> <p>选择是将文件添加到[!UICONTROL ZIP]、GZIP还是[!UICONTROL TAR]存档。</p> </td> 
+   <td>[！UICONTROL类型] </td> 
+   <td> <p>选择是将文件添加到[！UICONTROL ZIP]、GZIP还是[！UICONTROL TAR]存档。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Comment]</td> 
+   <td>[！UICONTROL Comment]</td> 
    <td>输入要添加到存档中的注释。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 分组依据]</td> 
+   <td>[！UICONTROL分组依据]</td> 
    <td> <p>定义要按其分组聚合输出的表达式。 此表达式可以包含一个或多个映射项。 随后，将使用此表达式的值将聚合的数据分成不同的组。 每个组输出为一个单独的捆绑，其中包含一个键（经过计算的表达式）和一个值（聚合文本）。 在后续模块中，您可以将该键用作过滤器。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 在出现空聚合后停止处理]</td> 
+   <td>[！UICONTROL在出现空聚合后停止处理]</td> 
    <td>选择此选项可在没有结果时停止方案。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 存档名称]</td> 
+   <td>[！UICONTROL存档名称]</td> 
    <td> <p> 输入已创建存档的名称。 请勿添加扩展。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[！UICONTROL Source file]</td> 
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </td> 
   </tr> 
  </tbody> 
@@ -121,7 +121,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据] </td> 
+   <td>[！UICONTROL数据] </td> 
    <td> <p>使用deflate函数输入或映射要压缩的数据。</p> </td> 
   </tr> 
  </tbody> 
@@ -136,7 +136,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据] </td> 
+   <td>[！UICONTROL数据] </td> 
    <td> <p>使用膨胀函数输入或映射要解压缩的数据。</p> </td> 
   </tr> 
  </tbody> 
