@@ -9,9 +9,9 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: 679a4f5c91625dfecf32e10904700bf75ea7a7cf
+source-git-commit: 71bd96915f21922d637433010acea9321ed476d5
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '987'
 ht-degree: 16%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 16%
 Adobe Workfront Fusion 可将您的应用程序和网络服务无缝连接起来，这样您就可以集中精力处理新任务，而不是一再重复相同的任务。
 
 ## Fusion 2025年发行版
+
+### 9 月 2025 日
+
+* [Workfront Fusion发布活动： 2025年9月15日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-9-15.md)
 
 ### 2025 年 8 月
 
