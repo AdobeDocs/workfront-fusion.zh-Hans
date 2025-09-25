@@ -7,9 +7,9 @@ description: 了解如何使用Adobe Workfront Fusion创建简单的自动化场
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '1416'
+source-wordcount: '1426'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Adobe Workfront Fusion的职责是自动化您的流程，以使您能够专注�
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
@@ -49,7 +49,7 @@ Adobe Workfront Fusion的职责是自动化您的流程，以使您能够专注�
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[!UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -191,9 +191,9 @@ Adobe Workfront Fusion的职责是自动化您的流程，以使您能够专注�
 >
 >1. 关闭&#x200B;**[!UICONTROL 注释]**&#x200B;区域。
 >
->     向方案添加注释后，在方案编辑器底部的&#x200B;**[!UICONTROL 注释]**&#x200B;图标![注释图标上显示一个橙色点，其中点为](assets/notes-icon-w-dot.png)。
+>     将注释添加到方案后，在方案编辑器底部的&#x200B;**[!UICONTROL 注释]**&#x200B;图标![注释图标上会显示一个点](assets/notes-icon-w-dot.png)。
 >
->1. 单击&#x200B;**[!UICONTROL 注释]**&#x200B;图标![带点的注释图标](assets/notes-icon-w-dot.png)以查看您的注释。
+>1. 单击&#x200B;**[!UICONTROL 注释]**&#x200B;图标![带点的注释图标](assets/notes-icon-w-dot.png)以查看您的注释。 当注释打开时，会在“注释”图标周围出现一个圆圈。
 >
 
 ## 激活方案

@@ -5,9 +5,9 @@ description: 我们建议您选择添加有关每个模块的注释这一有用�
 author: Becky
 feature: Workfront Fusion
 exl-id: 754601fa-b572-42c2-96a3-3c36a8ed2c56
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 7f4709920e52f6b8660370af83de1f11eecbf092
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,7 @@ ht-degree: 0%
    向方案添加注释后，方案编辑器底部的&#x200B;**[!UICONTROL 注释]**&#x200B;图标![注释图标上会显示一个蓝色圆点，圆点为](assets/notes-icon-w-dot.png)。
 
 1. 要查看或隐藏所有注释，请单击&#x200B;**[!UICONTROL 注释]**&#x200B;图标![带点的注释图标](assets/notes-icon-w-dot.png)。
+
+   当注释打开时，会在“注释”图标周围出现一个圆圈。
+
+   ![带圆圈的注释图标](assets/notes-icon-with-circle.png)
