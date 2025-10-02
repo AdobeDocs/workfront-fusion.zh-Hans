@@ -7,9 +7,9 @@ description: 对于大多数应用程序，必须创建一个连接，Adobe Work
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
+source-git-commit: bc1b025af534addf032519142148f6285f481784
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '562'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 1%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
@@ -51,7 +51,7 @@ ht-degree: 1%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[!UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -83,7 +83,7 @@ ht-degree: 1%
 1. （可选）要重新授权连接，请选中连接旁边的复选框，然后单击屏幕底部附近的&#x200B;**重新授权**。
 1. （可选）要删除连接，请选中该连接旁边的复选框，单击屏幕底部附近的&#x200B;**删除**，然后单击&#x200B;**确定吗？**。
 1. （可选）要验证是否成功建立了与服务的连接，请选中连接旁边的复选框，然后单击屏幕底部附近的&#x200B;**验证**。
-1. 要查看使用此连接的活动方案，请选中连接旁边的复选框，然后单击&#x200B;**获取活动方案**。 然后，您可以单击活动方案列表中的方案以转到该方案。
+1. （可选）要查看使用此连接的活动方案，请选中连接旁边的复选框，然后单击&#x200B;**获取活动方案**。 然后，您可以单击活动方案列表中的方案以转到该方案。
 
 ## 续订连接
 
