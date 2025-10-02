@@ -4,9 +4,9 @@ description: Fusion使用元数据来标识连接的重要属性。
 author: Becky
 feature: Workfront Fusion
 exl-id: b41fbe8c-30fa-49d0-8a24-3535642b97ae
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '282'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,11 @@ Fusion使用元数据来标识连接的重要属性。
 
 ![连接元数据](assets/connection-metadata-setup.png)
 
-Fusion用户可以从“连接”区域查看和编辑连接。
+Fusion用户可以从“连接”区域查看和编辑连接。 单击左侧导航中的“连接” ，即可访问“连接”区域。
 
-连接区域中的![连接元数据](assets/connections-area-metadata.png)
+左侧导航中的![连接区域](assets/connections-in-left-nav.png)
+
+<!--![Connection metadata in Connections area](assets/connections-area-metadata.png)-->
 
 ## 环境类型
 
@@ -35,7 +37,7 @@ Fusion连接可用于服务帐户和个人帐户。 当场景自动变为Fusion�
 
 与其他连接元数据一样，身份验证类型仅用于提供信息。 用户负责准确地设置此属性，并在场景中使用正确的连接类型。
 
-有关身份验证类型的详细信息，请参阅Adobe身份验证指南中的[身份验证](https://developer.adobe.com/developer-console/docs/guides/authentication/)。
+有关身份验证类型的详细信息，请参阅Adobe的身份验证指南中的[身份验证](https://developer.adobe.com/developer-console/docs/guides/authentication/)。
 
 ## 资源
 

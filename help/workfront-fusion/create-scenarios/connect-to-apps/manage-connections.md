@@ -7,10 +7,10 @@ description: 对于大多数应用程序，必须创建一个连接，Adobe Work
 author: Becky
 feature: Workfront Fusion
 exl-id: 26d7caad-8e12-4f04-ac7c-f71686c90ee6
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: d13312031955a697e10ddfcdc2e64dfe198b3dac
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 2%
+source-wordcount: '561'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 2%
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
+   <td> <p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
@@ -51,7 +51,7 @@ ht-degree: 2%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[!UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -80,9 +80,10 @@ ht-degree: 2%
 1. （可选）通过单击&#x200B;**环境**&#x200B;和&#x200B;**类型**&#x200B;下拉列表并选择一个选项来分配环境和连接类型。
 1. （可选）要查看为Workfront Fusion提供的连接权限，请单击“查看”图标![查看该连接的连接权限](assets/view-connection-permissions.png)。
 1. （可选）要重命名连接，请突出显示连接名称并键入新名称。
-1. （可选）要重新授权连接，请单击&#x200B;**重新授权**。
-1. （可选）要删除连接，请单击&#x200B;**删除**，然后单击&#x200B;**确定吗？**。
-1. （可选）要验证与服务的连接是否已成功建立，请单击&#x200B;**验证**。
+1. （可选）要重新授权连接，请选中连接旁边的复选框，然后单击屏幕底部附近的&#x200B;**重新授权**。
+1. （可选）要删除连接，请选中该连接旁边的复选框，单击屏幕底部附近的&#x200B;**删除**，然后单击&#x200B;**确定吗？**。
+1. （可选）要验证是否成功建立了与服务的连接，请选中连接旁边的复选框，然后单击屏幕底部附近的&#x200B;**验证**。
+1. 要查看使用此连接的活动方案，请选中连接旁边的复选框，然后单击&#x200B;**获取活动方案**。 然后，您可以单击活动方案列表中的方案以转到该方案。
 
 ## 续订连接
 
@@ -92,7 +93,7 @@ Workfront Fusion通常可以在无限制的时间内获得对给定服务的访�
 
 1. 要打开“连接”区域，请在左侧导航中单击&#x200B;**连接** ![连接图标](assets/connections-icon.png)。
 1. 找到要续订的连接。
-1. 在该连接的行中，单击&#x200B;**[!UICONTROL 连接]**&#x200B;区域中的&#x200B;**[!UICONTROL 重新授权]**&#x200B;按钮。
+1. 在该连接的行中，选中该连接旁边的复选框，然后单击屏幕底部附近的&#x200B;**重新授权**。
 
 ## 资源
 
