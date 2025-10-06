@@ -4,9 +4,9 @@ description: 您可以使用SOAP模块连接到Adobe Workfront Fusion中的SOAP 
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 95d52f8227c8a40c0db165eea9d2877e60446de9
+source-git-commit: 29f9595d063e89e9cd393fecba07194d2e9008aa
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 1%
 
 ---
@@ -87,19 +87,19 @@ SOAP连接器仅包含一个模块：执行SOAP操作
  </col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL WSDL]</td> 
+   <td>[！UICONTROL WSDL]</td> 
    <td> 选择您希望模块使用的WSDL。 要创建WSDL，请单击字段旁边的<b>添加</b>并填写这些字段。 </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL HTTP标头]</td> 
+   <td>[！UICONTROL HTTP标头]</td> 
    <td> 对于每个要添加的HTTP标头，单击<b>添加项</b>并输入标头的名称和值。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL SOAP headers]</td> 
+   <td>[！UICONTROL SOAP headers]</td> 
    <td> 对于每个要添加的SOAP标头，单击<b>添加项</b>并输入标头的名称、值、命名空间和XMLNS。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Force SOAP headers]</td> 
+   <td>[！UICONTROL Force SOAP headers]</td> 
    <td> 启用此选项以配置SOAP 1.2的标头。 </td> 
   </tr> 
   </tbody> 
@@ -154,20 +154,20 @@ SOAP连接器仅包含一个模块：执行SOAP操作
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 方法]</td> 
-      <td> <p>[!UICONTROL POST]</p> </td> 
+      <td role="rowheader">[！UICONTROL方法]</td> 
+      <td> <p>[！UICONTROL POST]</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
-      <td role="rowheader">[!UICONTROL 主体类型]</td> 
-      <td> <p>[!UICONTROL Raw]</p> </td>
+      <td role="rowheader">[！UICONTROL主体类型]</td> 
+      <td> <p>[！UICONTROL Raw]</p> </td>
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 内容类型]</td> 
-      <td> <p>[!UICONTROL XML (application/xml)]</p> </td> 
+      <td role="rowheader">[！UICONTROL内容类型]</td> 
+      <td> <p>[！UICONTROL XML (application/xml)]</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 解析响应]</td> 
-      <td>[!UICONTROL 已启用]</td> 
+      <td role="rowheader">[！UICONTROL解析响应]</td> 
+      <td>[！UICONTROL已启用]</td> 
      </tr> 
     </tbody> 
    </table>
@@ -185,7 +185,7 @@ SOAP连接器仅包含一个模块：执行SOAP操作
    <!--![Service](/help/workfront-fusion/references/apps-and-modules/assets/service-350x65.png)-->
 
 1. 找到后，从`location`属性复制URL。
-1. 在Workfront Fusion中，将URL粘贴到HTTP模块的“URL”字段中。
+1. 在Workfront Fusion中，将URL粘贴到HTTP模块的&#x200B;**请求内容**&#x200B;字段中。
 1. 通过将问号替换为实际值来为所选参数提供值。
 
    >[!NOTE]
