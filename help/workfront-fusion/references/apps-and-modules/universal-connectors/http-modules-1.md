@@ -1,21 +1,17 @@
 ---
 title: HTTP 模块
-description: 除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需要Adobe Workfront Fusion许可证。
+description: HTTP连接器为基于超文本传输协议(HTTP)协议的通信提供各种模块。 HTTP是万维网数据通信的基础。 您可以使用这些模块下载网页和文件、调用Webhook和API端点等。
 author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 34dad92019ca855f40698d3f3795788698c1cece
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 2%
+source-wordcount: '201'
+ht-degree: 1%
 
 ---
 
 # HTTP 模块
-
->[!NOTE]
->
->除了[!DNL Adobe Workfront license]之外，Adobe Workfront Fusion还需要Adobe Workfront Fusion许可证。
 
 HTTP应用程序为基于超文本传输协议(HTTP)协议的通信提供各种模块。 HTTP是万维网数据通信的基础。 您可以使用这些模块下载网页和文件、调用Webhook和API端点等。
 

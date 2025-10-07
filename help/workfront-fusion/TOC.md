@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: a5dbbec63e0871037e6cc3a88255a84b36be85c7
+source-git-commit: f827b299fa8ffd3b0bf3393d5e22b7eb94be78f2
 workflow-type: tm+mt
-source-wordcount: '1886'
+source-wordcount: '1891'
 ht-degree: 3%
 
 ---
@@ -145,6 +145,7 @@ ht-degree: 3%
       * [模块概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md)
       * [映射概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/mapping-overview.md)
       * [函数概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)
+      * [Fusion中的API概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md)
    * 在Workfront Fusion中导航 {#navigate-workfront-fusion}
       * [导航Workfront Fusion：文章索引](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-fusion-toc.md)
       * [在Adobe Workfront Fusion中导航](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/navigate-workfront-fusion.md)

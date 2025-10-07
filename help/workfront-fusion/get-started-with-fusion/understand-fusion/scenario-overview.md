@@ -4,9 +4,9 @@ description: 除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 34dad92019ca855f40698d3f3795788698c1cece
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Workfront Fusion可以连接到其他应用程序和Web服务。 您可以从其
 
 >[!IMPORTANT]
 >
->Adobe Workfront Fusion可以连接到几乎任何Web服务。 如果要使用的应用程序没有专用的Workfront Fusion连接器，则使用通用连接器连接到该应用程序或服务。
+>Adobe Workfront Fusion可以连接到几乎任何Web服务。 如果要使用的应用程序没有专用的Workfront Fusion连接器，则可以使用通用连接器连接到该应用程序或服务。
 >
 >有关通用连接器的列表，请参阅[通用连接器](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)
 
