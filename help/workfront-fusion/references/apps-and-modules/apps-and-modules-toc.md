@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: f5d60e10dd500b97b0be8c54be1add495dc452fa
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -116,6 +116,7 @@ Fusion为许多第三方应用程序提供了连接器。
 * [Slack模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
 * [Split.io模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
 * [网格模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
+* [Veeva Vault模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)
 * [加宽模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
 * [Workday模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
 

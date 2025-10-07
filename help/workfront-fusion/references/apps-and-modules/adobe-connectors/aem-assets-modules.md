@@ -4,7 +4,7 @@ description: 借助适用于Adobe Workfront Fusion的Adobe Experience Manager As
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: d62a8bd4675c034581f6cf5f3a1e61c177de5ebc
+source-git-commit: 190c35629f1fc1e07eef4110f3f4f771af1065fb
 workflow-type: tm+mt
 source-wordcount: '3727'
 ht-degree: 2%
@@ -48,7 +48,7 @@ ht-degree: 2%
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新增：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
+   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
    <p>或</p>
    <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
    </td> 
@@ -67,10 +67,10 @@ ht-degree: 2%
 * 您必须拥有Adobe Experience Manager Assets帐户才能使用这些模块。
 * 您必须在Adobe Developer控制台中设置服务器到服务器流程。
 
-  有关在Adobe Developer控制台中设置服务器到服务器流的说明，请参阅[为服务器端API生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hans#the-server-to-server-flow)。
+  有关在Adobe Developer控制台中设置服务器到服务器流的说明，请参阅[为服务器端API生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)。
 * 您的Adobe Experience Manager技术帐户必须具有写入权限。
 
-  有关向Adobe Experience Manager技术帐户添加写入权限的说明，请参阅Adobe Experience Manager文档中的[服务凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
+  有关向Adobe Experience Manager技术帐户添加写入权限的说明，请参阅Adobe Experience Manager文档中的[服务凭据](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 ## Adobe Experience Manager Assets API信息
 
@@ -118,11 +118,11 @@ Adobe Experience Manager Assets连接器使用以下对象：
 >
 >* 这些字段的信息是在Adobe Developer Console中设置服务器到服务器流时生成的。 您可以在作为该设置的一部分生成的服务凭据JSON文件中找到这些值。
 >
->   有关在Adobe Developer Console上设置服务器到服务器流的说明，请参阅[为服务器端API生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hans#the-server-to-server-flow)。
+>   有关在Adobe Developer Console上设置服务器到服务器流的说明，请参阅[为服务器端API生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)。
 >
 >* 您的Adobe Experience Manager技术帐户必须具有写入权限。
 >
->   有关向Adobe Experience Manager技术帐户添加写入权限的说明，请参阅Adobe Experience Manager文档中的[服务凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
+>   有关向Adobe Experience Manager技术帐户添加写入权限的说明，请参阅Adobe Experience Manager文档中的[服务凭据](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 
 <table style="table-layout:auto"> 
@@ -164,8 +164,8 @@ Adobe Experience Manager Assets连接器使用以下对象：
                   <td class="">如果人工输入详细信息，请输入组织的ID。 这是客户端凭据JSON文件中的“org”字段。</td>
               </tr>
               <tr>
-                  <td role="rowheader">元范围</td>
-                  <td>输入在服务器到服务器设置中生成的元范围。</td>
+                  <td role="rowheader">Meta范围</td>
+                  <td>输入在服务器到服务器设置中生成的Meta范围。</td>
               </tr>
               <tr>
                   <td role="rowheader">私钥</td>
@@ -280,7 +280,7 @@ Adobe Experience Manager Assets连接器使用以下对象：
    <td> <p>选择是要按资产路径还是按其ID查找资产。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">资产</td> 
+   <td role="rowheader">资源</td> 
    <td>选择资源的路径。</td> 
   </tr> 
   <tr> 
@@ -443,7 +443,7 @@ Adobe Experience Manager Assets连接器使用以下对象：
    <td> <p>选择您要删除文件夹、资源还是演绎版。</p> 
     <ul> 
      <li> <p>文件夹</p> <p>通过选择路径中的文件夹来选择要删除的文件夹。</p> </li> 
-     <li> <p>资产</p> <p>选择资源的方法是选择其路径中的文件夹，然后选择要删除的资源。</p> </li> 
+     <li> <p>资源</p> <p>选择资源的方法是选择其路径中的文件夹，然后选择要删除的资源。</p> </li> 
      <li> <p>节目</p> <p>通过选择格式副本路径中的文件夹来选择格式副本。</p> <p>输入或映射演绎版的名称。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -499,7 +499,7 @@ Adobe Experience Manager Assets连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">正文</td> 
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注意：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -591,7 +591,7 @@ Adobe Experience Manager Assets连接器使用以下对象：
    <td> <p>有关将Adobe Experience Manager Assets帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">将Adobe Experience Manager Assets连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">资产ID</td> 
+   <td role="rowheader">资产 ID</td> 
    <td> <p>输入或映射要删除的资产ID。</p> </td> 
   </tr> 
   <tr> 
@@ -669,7 +669,7 @@ Adobe Experience Manager Assets连接器使用以下对象：
    <td> <p>有关将Adobe Experience Manager Assets帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">将Adobe Experience Manager Assets连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">资产ID</td> 
+   <td role="rowheader">资产 ID</td> 
    <td> <p>输入或映射要为其获取元数据的资源的ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -688,7 +688,7 @@ Adobe Experience Manager Assets连接器使用以下对象：
    <td> <p>有关将Adobe Experience Manager Assets帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">将Adobe Experience Manager Assets连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">资产ID</td> 
+   <td role="rowheader">资产 ID</td> 
    <td> <p>输入或映射要为其更新元数据的资源的ID。</p> </td> 
   </tr> 
   <tr> 
@@ -773,7 +773,7 @@ Adobe Experience Manager Assets连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">过期日期</td> 
-   <td> <p>输入或映射资源的体验日期。</p><p>有关支持的日期和时间格式的列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">类型强制</a>。</p> </td> 
+   <td> <p>输入或映射资源的到期日期。</p><p>有关支持的日期和时间格式的列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">类型强制</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">自定义元数据</td> 
@@ -814,7 +814,7 @@ Adobe Experience Manager Assets连接器使用以下对象：
    <td> <p>有关将Adobe Experience Manager Assets帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">将Adobe Experience Manager Assets连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">资产ID</td> 
+   <td role="rowheader">资产 ID</td> 
    <td> <p>输入或映射要将其他资源与之关联的ID资源。</p> </td> 
   </tr> 
   <tr> 
@@ -837,7 +837,7 @@ Adobe Experience Manager Assets连接器使用以下对象：
    <td> <p>有关将Adobe Experience Manager Assets帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">将Adobe Experience Manager Assets连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">资产ID</td> 
+   <td role="rowheader">资产 ID</td> 
    <td> <p>输入或映射要从其中删除关系的ID资源。</p> </td> 
   </tr> 
   <tr> 
@@ -869,7 +869,7 @@ Adobe Experience Manager Assets连接器使用以下对象：
    <td> <p>有关将Adobe Experience Manager Assets帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">将Adobe Experience Manager Assets连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">资产ID</td> 
+   <td role="rowheader">资产 ID</td> 
    <td> <p>输入或映射要为其列出关系类型的ID资源。</p> </td> 
   </tr> 
  </tbody> 
@@ -888,7 +888,7 @@ Adobe Experience Manager Assets连接器使用以下对象：
    <td> <p>有关将Adobe Experience Manager Assets帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-adobe-experience-manager-assets-to-workfront-fusion" class="MCXref xref">将Adobe Experience Manager Assets连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">资产ID</td> 
+   <td role="rowheader">资产 ID</td> 
    <td> <p>输入或映射要为其列出关系的ID资源。</p> </td> 
   </tr> 
   <tr> 

@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 45b595cb8e3bf74e552e68714460a919e7e1ded6
+source-git-commit: 3832299db48566c07d2031d75237846bc3568631
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1879'
 ht-degree: 3%
 
 ---
@@ -391,6 +391,7 @@ ht-degree: 3%
          * [Split.io模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [网格模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [加宽模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
+         * [Veeva Vault模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/veeva-vault-modules.md)
          * [Workday模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/workday-modules.md)
       * 工具和转换器 {#tools-and-transformers}
          * [存档模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/archive-modules.md)
