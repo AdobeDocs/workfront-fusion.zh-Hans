@@ -3,9 +3,9 @@ title: API概述
 description: 应用程序编程接口(API)是应用程序和服务相互通信的一种方式。 Fusion使用API与您连接的应用程序进行通信。 每个应用程序都有一个单独的API。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 1ee32ad1faa8c105142f85e83f1b522548fc7f93
+source-git-commit: f5dcb5207581fb68d0f3048d23214d08a28f2f22
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -38,8 +38,8 @@ API由其所有者而非Fusion定义这一事实引出了一些重要的注意�
 由于您的Fusion方案是使用特定数据配置的，因此您可能需要更新方案。
 
 * 如果更改与身份验证或授权相关，则可能需要更新该应用程序的连接。
-* 如果更改与API中的特定操作（端点）相关，您可能需要将与该操作相关的模块更新为模块的新版本。
-* 如果弃用Fusion使用的整个API版本，则可能需要将该连接器的所有模块更新为新版本的连接器。
+* 如果更改与API中的特定操作（端点）相关，您可能需要将与该操作相关的任何模块更新为模块的新版本。
+* 如果弃用Fusion使用的整个API版本，则可能需要将该连接器的所有模块更新为连接器的新版本。
 
 在许多情况下，您可以升级到模块的新版本，而无需重新配置该模块。
 
