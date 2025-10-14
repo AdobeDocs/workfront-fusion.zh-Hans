@@ -93,7 +93,7 @@ Google驱动器连接器使用以下对象：
 
 如果您使用[!DNL @gmail.com]或[!DNL @googlemail.com]用户，则必须在[!DNL Google Cloud Platform]上创建OAuth客户端以获取您的[!UICONTROL 客户端ID]和[!UICONTROL 客户端密钥]。
 
-有关如何创建OAuth客户端（并获取[!UICONTROL 客户端ID]和[!UICONTROL 客户端密钥]）的分步说明，请参阅[使用自定义OAuth客户端将Adobe Workfront Fusion连接到 [!DNL Google Services] ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)。
+有关如何创建OAuth客户端（并获取[!UICONTROL 客户端ID]和[!UICONTROL 客户端密钥]）的分步说明，请参阅[使用自定义OAuth客户端将Adobe Workfront Fusion连接到 [!DNL Google Services] &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)。
 
 有关将[!DNL Google Drive]帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅[创建与[!UICONTROL Adobe Workfront Fusion]的连接 — 基本说明](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 

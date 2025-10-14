@@ -108,9 +108,9 @@ Frame.io连接器使用以下对象：
 
 您可以使用API令牌或使用OAuth 2.0连接到[!DNL Frame.io]。
 
-[使用API令牌连接到 [!DNL Frame.io] ](#connect-to-frameio-using-an-api-token)
+[使用API令牌连接到 [!DNL Frame.io] &#x200B;](#connect-to-frameio-using-an-api-token)
 
-[使用OAuth 2.0 PKCE连接到 [!DNL Frame.io] ](#connect-to-frameio-using-oauth-20-pkce)
+[使用OAuth 2.0 PKCE连接到 [!DNL Frame.io] &#x200B;](#connect-to-frameio-using-oauth-20-pkce)
 
 ### 使用API令牌连接到[!DNL Frame.io]
 
@@ -130,8 +130,8 @@ Frame.io连接器使用以下对象：
 
 您可以使用带有可选客户端ID的OAuth 2.0 PKCE创建与[!DNL Frame.io]的连接。 如果要在连接中包含客户端ID，则必须在[!DNL Frame.io]帐户中创建OAuth 2.0应用程序。
 
-* [使用OAuth 2.0 PKCE（不含客户端ID）连接到 [!DNL Frame.io] ](#connect-to-frameio-using-using-oauth-20-pkce-without-client-id)
-* [使用OAuth 2.0 PKCE（带有客户端ID）连接到 [!DNL Frame.io] ](#connect-to-frameio-using-using-oauth-20-pkce-with-client-id)
+* [使用OAuth 2.0 PKCE（不含客户端ID）连接到 [!DNL Frame.io] &#x200B;](#connect-to-frameio-using-using-oauth-20-pkce-without-client-id)
+* [使用OAuth 2.0 PKCE（带有客户端ID）连接到 [!DNL Frame.io] &#x200B;](#connect-to-frameio-using-using-oauth-20-pkce-with-client-id)
 
 #### 使用OAuth 2.0 PKCE（不带客户端ID）连接到[!DNL Frame.io]
 
