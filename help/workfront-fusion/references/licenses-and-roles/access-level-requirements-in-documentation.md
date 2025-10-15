@@ -34,7 +34,7 @@ Adobe Workfront Fusion文档操作方法文章包含一个表，其中说明了�
    <td role="rowheader">Adobe Workfront包 
    <td> Adobe Workfront包是指您的组织已购买的一组功能。 大多数Fusion功能在所有计划中均可用，但有一些例外情况仅适用于具有Ultimate Workfront包的组织。 
    <ul><li>要了解贵组织使用哪个Adobe Workfront包（包括贵组织使用的是新包模型还是当前包模型），请与Workfront管理员联系。</li>
-   <li>有关Workfront管理员如何找到您组织的Workfront包的说明，请参阅Workfront文档中的<a href="https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">查看您组织的群集和Workfront计划</a>。</li><li>有关新的Workfront包的更多信息，请参阅<a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront定价和打包</a>。</li></ul> </td> 
+   <li>有关Workfront管理员如何找到您组织的Workfront包的说明，请参阅Workfront文档中的<a href="https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-plan">查看您组织的群集和Workfront计划</a>。</li><li>有关新的Workfront包的更多信息，请参阅<a href="https://business.adobe.com/cn/products/workfront/pricing.html">Adobe Workfront定价和打包</a>。</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront许可证</td> 
