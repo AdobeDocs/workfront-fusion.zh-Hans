@@ -4,9 +4,9 @@ description: 工作自动化要求快速处理，因此Adobe Workfront Fusion专
 author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
-source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
+source-git-commit: 3a05e5df36bf9b1aacd0611fdad0240c8c52368d
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ ht-degree: 0%
    * webhook仅用于非活动场景，这些场景已非活动超过30天。
 
 * 如果停用的Webhook未连接到任何场景并且已处于停用状态超过30天，则会自动删除和取消注册它们。
+* webhook响应的超时为5分钟。
 
 ## 执行历史记录
 
