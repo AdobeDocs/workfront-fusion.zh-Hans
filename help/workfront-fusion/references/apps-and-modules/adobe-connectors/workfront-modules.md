@@ -283,7 +283,7 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
 
 创建webhook后，您可以查看事件所发往的端点地址。
 
-有关详细信息，请参阅Workfront文档事件订阅API一文中的[事件负载示例](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads)部分。
+有关详细信息，请参阅Workfront文档事件订阅API一文中的[事件负载示例](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads)部分。
 
 查看可在每个Workfront模块[可用的](#workfront-object-types-available-for-each-workfront-module)Workfront对象类型中使用此模块的Workfront对象类型列表。
 
@@ -516,7 +516,7 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
 >
 >   要解决批量添加的用户，可以直接将批量用户添加到Adobe Admin Console。
 >
->   有关说明，请参阅[管理多个用户 | 在Adobe文档中批量CSV上传](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html)。
+>   有关说明，请参阅[管理多个用户 | 在Adobe文档中批量CSV上传](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html)。
 
 +++
 
@@ -769,7 +769,7 @@ See a list of the Workfront object types for which you can use this module in [W
       </ul> <p>对于所有其他记录类型，请选择<b>[!UICONTROL Other objects and endpoints]</b>，然后在按字母顺序排序的页面上查找该记录类型。</p> </li> 
      <li value="2"> <p>在相应记录类型的页面上，搜索操作（Ctrl-F或Cmd-F）。</p> </li> 
      <li value="3"> <p>查看所选操作下可用字段的描述。</p> </li> 
-    </ol> <p>注释：  <p>通过Workfront [!UICONTROL 杂项操作]模块创建验证时，最佳实践为创建不包含任何高级选项的验证，然后使用[!DNL Workfront Proof] SOAP API更新验证。</p><p>有关使用Workfront API（此模块使用它）创建验证的更多信息，请参阅<a href="https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">通过Adobe Workfront API创建验证时添加高级验证选项</a></p> </p> </td> 
+    </ol> <p>注释：  <p>通过Workfront [!UICONTROL 杂项操作]模块创建验证时，最佳实践为创建不包含任何高级选项的验证，然后使用[!DNL Workfront Proof] SOAP API更新验证。</p><p>有关使用Workfront API（此模块使用它）创建验证的更多信息，请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">通过Adobe Workfront API创建验证时添加高级验证选项</a></p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
@@ -1047,7 +1047,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 Workfront最近发布了其事件订阅服务的新版本。 新版本不是对Workfront API的更改，而是对事件订阅功能的更改。 此操作模块会更新用于此方案的事件有效负载版本。
 
-有关新的事件订阅版本的详细信息，请参阅Workfront文档中的[事件订阅版本控制](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
+有关新的事件订阅版本的详细信息，请参阅Workfront文档中的[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
 
 有关在事件订阅升级期间保留Workfront Fusion方案的资源（包括网络研讨会录像），请参阅[在事件订阅V2升级期间保留Fusion方案](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)。
 
@@ -2375,7 +2375,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >* Workfront最近发布了其事件订阅服务的新版本。 新版本不是对Workfront API的更改，而是对事件订阅功能的更改。 此操作模块会更新用于此方案的事件有效负载版本。
 >
->   有关新的事件订阅版本的详细信息，请参阅Workfront文档中的[事件订阅版本控制](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
+>   有关新的事件订阅版本的详细信息，请参阅Workfront文档中的[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
 >
 >   有关在事件订阅升级期间保留Workfront Fusion方案的资源（包括网络研讨会录像），请参阅[在事件订阅V2升级期间保留Fusion方案(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)]。
 
@@ -2427,7 +2427,7 @@ Workfront [!UICONTROL 观看活动]模块根据在Workfront API中创建活动�
 >
 >如果一天内创建100个问题，但只有两个问题分配给Ana，则该场景将执行100次。 98个执行将在过滤器处停止，但触发器模块仍在使用数据并对所有执行执行执行操作。
 
-有关Workfront活动订阅的详细信息，请参阅[常见问题解答 — 活动订阅](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq)。
+有关Workfront活动订阅的详细信息，请参阅[常见问题解答 — 活动订阅](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq)。
 
 有关Webhook的详细信息，请参阅Adobe Workfront Fusion中的[即时触发器(Webhook)](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
