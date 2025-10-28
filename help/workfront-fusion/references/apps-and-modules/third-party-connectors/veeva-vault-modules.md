@@ -3,9 +3,9 @@ title: Veeva Vault模块
 description: 在Adobe Workfront Fusion场景中，您可以自动使用Veeva Vault的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 6e7125bee77526caa93edc17f05b75bdfd7d7ac4
+source-git-commit: 4f5a4cf8691e5bb47eec6f6b2842369c5c6fbad8
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1516'
 ht-degree: 3%
 
 ---
@@ -318,7 +318,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
-   <td> <p>选择您要创建文档、活页夹还是模板。</p> </td> 
+   <td> <p>选择是要创建文档、文档版本、绑定器还是模板。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>ID/名称</p> </td> 
