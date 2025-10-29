@@ -4,9 +4,9 @@ description: Adobe Workfront Fusion映射面板中提供了以下数组函数。
 author: Becky
 feature: Workfront Fusion
 exl-id: 16c3915c-add1-4aab-a0e1-75fc590c42a6
-source-git-commit: d141738a7e013ed817cb657b883fc5e1061e2165
+source-git-commit: 9b61a3b18df1f755cc7ccc28889564e4bcb6cda0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -57,9 +57,9 @@ ht-degree: 0%
 
   返回带有电子邮件的原始数组
 
-* `map(Emails[];email;label;work;home)`
+* `map(Emails[];email;label;work)`
 
-  返回带有标签等于工作或主页的原始数组
+  返回带有标签等于工作的电子邮件的原始数组
 
 >[!ENDSHADEBOX]
 
@@ -200,7 +200,7 @@ ht-degree: 0%
 
 为`mode`参数输入以下值之一。
 
-* `classic`：返回一个新数组，该数组包含`array2`中不存在的`array1`的所有元素。
+* `classic`：返回一个新数组，该数组包含`array1`中不存在的`array2`的所有元素。
 
 * `symmetric`：返回两个数组不共用的元素数组。
 
