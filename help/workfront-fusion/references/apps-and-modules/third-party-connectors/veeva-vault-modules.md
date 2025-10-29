@@ -3,9 +3,9 @@ title: Veeva Vault模块
 description: 在Adobe Workfront Fusion场景中，您可以自动使用Veeva Vault的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 4f5a4cf8691e5bb47eec6f6b2842369c5c6fbad8
+source-git-commit: 37cb18a2e13a494c4174514539c0c7e43cdee011
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1661'
 ht-degree: 3%
 
 ---
@@ -59,6 +59,56 @@ ht-degree: 3%
 ## 先决条件
 
 要使用Veeva Vault模块，您必须具有Veeva Vault帐户。
+
+## 将Veeva Vault连接到Workfront Fusion
+
+您可以直接从Veeva Vault模块内创建与Veeva Vault帐户的连接。
+
+1. 在任何Veeva保险库模块中，单击“连接”字段旁边的&#x200B;**添加**。
+1. 填写以下字段。
+
+   <table style="table-layout:auto"> 
+     <col> 
+     <col> 
+     <tbody> 
+      <tr> 
+       <td role="rowheader">连接名称</td> 
+       <td> <p>输入连接的名称。</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">环境</td>
+        <td>
+          <p>选择是连接到生产环境还是非生产环境。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">类型</td>
+        <td>
+          <p>选择您是要连接到服务帐户还是个人帐户。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">用户名</td>
+        <td>
+          <p>输入Veeva保险库帐户的用户名。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">密码</td>
+        <td>
+          <p>输入Veeva Vault帐户的密码。</p>
+        </td>
+      </tr>
+      <tr> 
+       <td role="rowheader">保险库DNS</td> 
+       <td>输入您的Veeva Vault DNS（域名）。</p><p>要找到Veeva Vault DNS，请检查用于访问Veeva Vault的URL。</p>例如，在URL <code>https://my-dns.veevavault.com</code>中，DNS是<code>my-dns</code>。 您无需输入整个URL。</td> 
+      </tr> 
+     </tbody> 
+    </table>
+
+1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;以创建连接并返回模块。
+
+
 
 ## Veeva Vault模块及其字段
 
