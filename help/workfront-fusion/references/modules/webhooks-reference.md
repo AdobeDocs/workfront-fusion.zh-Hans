@@ -4,9 +4,9 @@ description: 许多服务都提供Webhook，以便在服务发生特定更改时
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: e0cfe4e6af0c6d1fe8f44fd72e13f9e9d5e6a73f
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '1064'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,25 @@ ht-degree: 0%
 
 * [Webhook简介](https://video.tv.adobe.com/v/3427025/){target=_blank}
 * [中间Webhook](https://video.tv.adobe.com/v/3427030/){target=_blank}
+
+## 查看webhook详细信息
+
+您可以在Webhooks区域中查看Webhooks的列表。
+
+1. 要打开Webhooks区域，请单击左侧导航中的Webhooks图标![Webhooks](assets/webhooks-icon.png)。
+
+   在这里，您可以看到Webhook的列表。
+
+   ![Webhook列表](assets/list-of-webhooks.png)
+
+1. 要搜索特定的webhook，请在“搜索”框中输入搜索词。
+1. 要复制webhook，请单击该webhook的行中URL附近的复制图标![复制webhook图标](assets/copy-webhook-icon.png)。
+1. 要禁用或启用webhook，请在该webhook的行的“状态”列中禁用或启用切换。
+1. 要查看webhooks队列是否已满，请检查“队列已满”列。 此列中的数字是队列中的当前项目数。
+1. 要查看由webhook处理的操作，请单击该webhook的“完整队列”列中的&#x200B;**操作**。
+1. 要查看使用webhook的场景，请单击该webhook的“场景”列中的&#x200B;**场景**&#x200B;按钮。
+1. 要查看用于此webhook的连接，请单击该webhook“连接”列中的&#x200B;**连接**&#x200B;按钮。
+1. 要隐藏列或显示以前隐藏的列，请单击&#x200B;**列**&#x200B;图标![列图标](assets/glist-column.png)并选中或取消选中列名。
 
 ## 计划即时触发器
 
