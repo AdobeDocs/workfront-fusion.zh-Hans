@@ -4,9 +4,9 @@ description: 许多服务都提供Webhook，以便在服务发生特定更改时
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: e0cfe4e6af0c6d1fe8f44fd72e13f9e9d5e6a73f
+source-git-commit: 3746ba1cd213a19a042da1a30b0d57bd1140907c
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 0%
 1. 要禁用或启用webhook，请在该webhook的行的“状态”列中禁用或启用切换。
 1. 要查看webhooks队列是否已满，请检查“队列已满”列。 此列中的数字是队列中的当前项目数。
 1. 要查看由webhook处理的操作，请单击该webhook的“完整队列”列中的&#x200B;**操作**。
+1. 要查看webhook是否已过期，请检查“过期”列。 过期的Webhook未附加到任何场景，或者120小时内未收到任何事件。
 1. 要查看使用webhook的场景，请单击该webhook的“场景”列中的&#x200B;**场景**&#x200B;按钮。
 1. 要查看用于此webhook的连接，请单击该webhook“连接”列中的&#x200B;**连接**&#x200B;按钮。
 1. 要隐藏列或显示以前隐藏的列，请单击&#x200B;**列**&#x200B;图标![列图标](assets/glist-column.png)并选中或取消选中列名。
