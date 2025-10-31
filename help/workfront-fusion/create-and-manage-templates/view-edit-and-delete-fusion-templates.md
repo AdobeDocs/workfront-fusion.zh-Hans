@@ -7,9 +7,9 @@ description: 除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '879'
 ht-degree: 0%
 
 ---
@@ -24,42 +24,28 @@ Workfront Fusion模板功能允许您创建并使用现有模板作为Workfront 
 
 +++ 展开以查看本文中各项功能的访问要求。
 
-您必须具有以下权限才能使用本文中的功能：
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何</p> </td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
-   <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
-   <p>或</p>
-   <p>旧版：任意 </p>
-   </td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[!UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
-   <p>或</p>
-   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
-
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -81,11 +67,11 @@ Workfront Fusion模板功能允许您创建并使用现有模板作为Workfront 
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 公共模板]</td> 
+      <td role="rowheader">[！UICONTROL公共模板]</td> 
       <td> <p> 已发布然后由管理员批准的所有模板。 在模板磁贴上，您可以看到模板的名称、其预览以及带有数字的套接字图标，该数字表示迄今为止已使用该模板的次数。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 团队模板]</td> 
+      <td role="rowheader">[！UICONTROL团队模板]</td> 
       <td> <p>您的团队成员创建的所有模板，包括管理员已公开的那些模板。 在模板图块上，您可以看到模板的名称、本文档的“发布和共享模板”部分中详述的状态图标以及“删除”按钮。</p> <b>注意：</b>如果在“团队模板”选项卡下看不到预期的模板，请检查左侧导航或标题以确保您当前查看的团队正确。</td> 
      </tr> 
     </tbody> 

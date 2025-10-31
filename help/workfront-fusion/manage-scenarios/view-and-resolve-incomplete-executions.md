@@ -4,9 +4,9 @@ description: '[!UICONTROL 未完成的执行]文件夹存储由于错误未成�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8891b4d7-a39a-4f14-8521-8c2ca186ca6e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 42be02d6a59a5d7b8faccdcfe40e8b967153c6eb
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '580'
 ht-degree: 5%
 
 ---
@@ -21,59 +21,9 @@ ht-degree: 5%
 >
 >有关方案设置的详细信息，请参阅[配置方案设置](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)。
 
-## 访问要求
+## 整篇文章的突出显示的预览 {#highlighted-preview-article-level}
 
-+++ 展开以查看本文中各项功能的访问要求。
-
-您必须具有以下权限才能使用本文中的功能：
-
-<table style="table-layout:auto">
- <col> 
- <col> 
- <tbody> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何</p> </td> 
-  </tr> 
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
-   <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
-   <p>或</p>
-   <p>旧版：任意 </p>
-   </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">产品</td> 
-   <td>
-   <p>新：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[!UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
-   <p>或</p>
-   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
-   </td> 
-  </tr>
-  <tr data-mc-conditions=""> 
-   <td role="rowheader">访问级别配置*</td> 
-   <td> 
-     <p>您必须是组织的Workfront Fusion管理员。</p>
-     <p>您必须是团队的Workfront Fusion管理员。</p>
-   </td> 
-  </tr> 
-   </td> 
-  </tr> 
- </tbody> 
-</table>
-
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
-
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
-
-+++
-
-## 查看未完成的执行
+<span class="preview">此页面上的信息引用了尚未公开的功能。 它仅在预览Sandbox环境中可用。</span>##查看未完成的执行
 
 如果模块在操作过程中遇到错误，则会将新的未完成执行添加到“未完成执行”文件夹。 每个不完整的执行都包含场景的Blueprint以及可以映射到失败模块的所有捆绑包。 通过单击场景详细信息页面上的[!UICONTROL 未完成的执行]选项卡，可以打开未完成的执行列表。
 

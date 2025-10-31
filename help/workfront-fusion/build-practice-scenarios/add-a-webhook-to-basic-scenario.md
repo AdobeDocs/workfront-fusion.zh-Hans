@@ -7,9 +7,9 @@ description: Webhook（也称为即时触发器）是一种特定的触发器模
 author: Becky
 feature: Workfront Fusion
 exl-id: 28ecca1f-a9c3-4b3d-95f5-73cb9a5dc4b9
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 3a977d805c10fda7209b0634c6e32e818a980691
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -32,26 +32,22 @@ Webhook（也称为即时触发器）是一种特定的触发器模块，它可�
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何包含Workfront自动化和集成的包</p> </td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
-   <td>
-   <p>无Workfront Fusion许可证要求。</p>
-   </td> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>您必须拥有用于使用Workfront Fusion连接的任何应用程序或服务的帐户。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
 有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
-
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
