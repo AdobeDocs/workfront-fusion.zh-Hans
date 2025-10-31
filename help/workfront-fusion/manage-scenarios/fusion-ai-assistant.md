@@ -48,7 +48,7 @@ AI Assistant可以从Workfront文档中找到信息，从而无需访问Adobe Ex
 
 Adobe必须有一个已签署的Adobe Gen AI协议文件。
 
-有关签署协议的更多信息，请参阅Adobe文档中的AI Assistant概述一文中的[签署Workfront Gen AI协议](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)。
+有关签署协议的更多信息，请参阅Adobe文档中的AI Assistant概述一文中的[签署Workfront Gen AI协议](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)。
 
 ## 从AI助手获取信息
 
