@@ -4,9 +4,9 @@ description: 使用Adobe Workfront Fusion的 [!DNL Adobe Experience Manager Form
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e0d7a655-1353-4d24-83d4-7da73d859a63
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '599'
 ht-degree: 1%
 
 ---
@@ -19,42 +19,41 @@ ht-degree: 1%
 
 ## 访问要求
 
-您必须具有以下权限才能使用本文中的功能：
++++ 展开以查看本文中各项功能的访问要求。
 
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront计划*</td>
-  <td> <p>[!UICONTROL Pro]或更高版本</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证*</td>
-   <td> <p>[!UICONTROL 计划]，[!UICONTROL 工作]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
    <td>
-   <p>当前许可证要求：无Workfront Fusion许可证要求。</p>
-   <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
+   <p>基于操作：不需要Workfront Fusion许可证</p>
+   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] Adobe Workfront计划，则贵组织必须购买Adobe Workfront Fusion和Adobe Workfront，才能使用本文中所述的功能。 Workfront Fusion包含在[!UICONTROL Ultimate] Workfront计划中。</p>
-   <p>或</p>
-   <p>旧版产品要求：您的组织必须购买Adobe Workfront Fusion和Adobe Workfront，才能使用本文中所述的功能。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-要了解您拥有的计划、许可证类型或访问权限，请联系您的Workfront管理员。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
 有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 先决条件
 
@@ -90,63 +89,63 @@ Adobe Experience Manager Assets连接器使用以下对象：
     </col>
     <tbody>
       <tr>
-        <td role="rowheader">[!UICONTROL 连接名称]</td>
+        <td role="rowheader">[！UICONTROL连接名称]</td>
         <td>
           <p>输入此连接的名称。</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 环境]</td>
+        <td role="rowheader">[！UICONTROL环境]</td>
         <td>
           <p>选择此连接是连接到生产环境还是非生产环境。</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 类型]</td>
+        <td role="rowheader">[！UICONTROL类型]</td>
         <td>
           <p>选择此帐户是服务帐户还是个人帐户。</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 实例URL，不带尾随斜杠]</td>
+        <td role="rowheader">[！UICONTROL实例URL，不带尾随斜杠]</td>
         <td>
           <p>输入用于访问帐户的URL，不带最后一个斜杠。</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL IMS端点]</td>
+        <td role="rowheader">[！UICONTROL IMS端点]</td>
         <td>
           <p><code>https://ims-na1.adobelogin.com</code></p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 客户端ID]</td>
-        <td>输入您的[!DNL Adobe]客户端ID。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL 凭据详细信息]部分找到。
+        <td role="rowheader">[！UICONTROL客户端ID]</td>
+        <td>输入您的[!DNL Adobe]客户端ID。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的[!DNL Adobe]客户端密钥。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL 凭据详细信息]部分找到。
+        <td role="rowheader">[！UICONTROL客户端密钥]</td>
+        <td>输入您的[!DNL Adobe]客户端密钥。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 组织ID]</td>
-        <td>输入您的[!DNL Adobe]组织ID。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL 凭据详细信息]部分找到。
+        <td role="rowheader">[！UICONTROL组织ID]</td>
+        <td>输入您的[!DNL Adobe]组织ID。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 技术帐户ID]</td>
-        <td>输入您的[!DNL Adobe]技术帐户ID。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL 凭据详细信息]部分找到。
+        <td role="rowheader">[！UICONTROL技术帐户ID]</td>
+        <td>输入您的[!DNL Adobe]技术帐户ID。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 元范围]</td>
+        <td role="rowheader">[！UICONTROL Meta Scopes]</td>
         <td>输入任何适当的元范围       </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 私钥]</td>
+        <td role="rowheader">[！UICONTROL私钥]</td>
         <td>
           <p>输入在[!DNL Adobe Developer Console]中创建凭据时生成的私钥。 </p>
           <p>要提取您的私钥或证书，请执行以下操作：</p>
           <ol>
             <li value="1">
-              <p>单击<b>[!UICONTROL 提取]</b>。</p>
+              <p>单击<b>[！UICONTROL提取]</b>。</p>
             </li>
             <li value="2">
               <p>选择要提取的文件类型。</p>
@@ -158,7 +157,7 @@ Adobe Experience Manager Assets连接器使用以下对象：
               <p>输入文件的密码。</p>
             </li>
             <li value="5">
-              <p>单击<b>[!UICONTROL 保存]</b>以提取文件并返回到连接设置。</p>
+              <p>单击<b>[！UICONTROL保存]</b>以提取文件并返回到连接设置。</p>
             </li>
           </ol>
         </td>
@@ -187,11 +186,11 @@ Adobe Experience Manager Assets连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Webhook名称]</td> 
+   <td role="rowheader">[！UICONTROL Webhook名称]</td> 
    <td> <p>输入webhook的名称</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
    <td> <p>有关将[!DNL Adobe Experience Manager]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md#create-a-connection-to-adobe-experience-manager-forms" class="MCXref xref">创建与[!DNL Adobe Experience Manager Forms]</a>的连接</p> </td> 
   </tr>
 

@@ -4,9 +4,9 @@ description: 在Adobe Workfront Fusion场景中，您可以自动使用Cvent的�
 author: Becky
 feature: Workfront Fusion
 exl-id: b7e16180-1db8-4aff-bb7b-69ca98194b00
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1129'
 ht-degree: 1%
 
 ---
@@ -21,42 +21,41 @@ ht-degree: 1%
 
 ## 访问要求
 
-您必须具有以下权限才能使用本文中的功能：
++++ 展开以查看本文中各项功能的访问要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront计划*</td>
-  <td> <p>[!UICONTROL Pro]或更高版本</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证*</td>
-   <td> <p>[!UICONTROL 计划]，[!UICONTROL 工作]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
    <td>
-   <p>当前许可证要求：无Workfront Fusion许可证要求。</p>
-   <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL Workfront Fusion for Work Automation and Integration] </p>
+   <p>基于操作：不需要Workfront Fusion许可证</p>
+   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] Adobe Workfront计划，则贵组织必须购买Adobe Workfront Fusion和Adobe Workfront，才能使用本文中所述的功能。 Workfront Fusion包含在[!UICONTROL Ultimate] Workfront计划中。</p>
-   <p>或</p>
-   <p>旧版产品要求：您的组织必须购买Adobe Workfront Fusion和Adobe Workfront，才能使用本文中所述的功能。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-要了解您拥有的计划、许可证类型或访问权限，请联系您的Workfront管理员。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
 有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+
++++
 
 ## 先决条件
 
@@ -138,7 +137,7 @@ Cvent连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL Connection]</p> </td> 
    <td> <p>有关将[!DNL Cvent]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">将[!DNL Cvent]连接到Adobe Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -161,19 +160,19 @@ Cvent连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL Connection]</p> </td> 
    <td> <p>有关将[!DNL Cvent]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">将[!DNL Cvent]连接到Adobe Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 记录类型]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL记录类型]</p> </td> 
    <td>选择要读取的记录的项目类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 联系人] / [!UICONTROL 事件] / [!UICONTROL 邀请者ID]</td> 
+   <td role="rowheader">[！UICONTROL联系人] / [！UICONTROL事件] / [！UICONTROL邀请者ID]</td> 
    <td> <p>输入或映射要读取的项目的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输出]</td> 
+   <td role="rowheader">[！UICONTROL输出]</td> 
    <td> <p>选择要包含在模块输出中的字段。 根据您选择的项目类型，字段可用。</p> </td> 
   </tr> 
  </tbody> 
@@ -188,7 +187,7 @@ Cvent连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL Connection]</p> </td> 
    <td> <p>有关将[!DNL Cvent]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">将[!DNL Cvent]连接到Adobe Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -211,15 +210,15 @@ Cvent连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL Connection]</p> </td> 
    <td> <p>有关将[!DNL Cvent]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">将[!DNL Cvent]连接到Adobe Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 联系人ID]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL联系人ID]</p> </td> 
    <td> <p>输入或映射要添加到事件的联系人ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 事件ID]</td> 
+   <td role="rowheader">[！UICONTROL事件ID]</td> 
    <td> <p>输入或映射您要将联系人添加到的事件的ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -234,11 +233,11 @@ Cvent连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL Connection]</p> </td> 
    <td> <p>有关将[!DNL Cvent]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">将[!DNL Cvent]连接到Adobe Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 联系人ID]</td> 
+   <td role="rowheader">[！UICONTROL联系人ID]</td> 
    <td> <p>输入或映射要删除的联系人的ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -253,19 +252,19 @@ Cvent连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL Connection]</p> </td> 
    <td> <p>有关将[!DNL Cvent]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">将[!DNL Cvent]连接到Adobe Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 联系人ID]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL联系人ID]</p> </td> 
    <td> <p>输入或映射要更新的联系人ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 字段]</td> 
+   <td role="rowheader">[！UICONTROL字段]</td> 
    <td> <p>选择要为其输入信息的字段，然后为这些字段填写所需的值。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 自定义字段]</td> 
+   <td role="rowheader">[！UICONTROL自定义字段]</td> 
    <td> <p>选择要为其输入信息的字段，然后为这些字段填写所需的值。</p> </td> 
   </tr> 
  </tbody> 
@@ -280,23 +279,23 @@ Cvent连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL Connection]</p> </td> 
    <td> <p>有关将[!DNL Cvent]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">将[!DNL Cvent]连接到Adobe Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 表单ID]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL表单ID]</p> </td> 
    <td> <p>输入或映射要用于创建新会议请求的表单ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 会议请求字段]</td> 
+   <td role="rowheader">[！UICONTROL会议请求字段]</td> 
    <td> <p>选择要为其输入信息的会议请求字段，然后填写这些字段的所需值。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 事件请求字段]</td> 
+   <td role="rowheader">[！UICONTROL事件请求字段]</td> 
    <td> <p>选择您要为其输入信息的事件请求字段，然后填写这些字段的所需值。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL RFP请求字段]</td> 
+   <td role="rowheader">[！UICONTROL RFP请求字段]</td> 
    <td> <p>选择要为其输入信息的建议请求字段，然后填写这些字段的所需值。</p> </td> 
   </tr> 
  </tbody> 
@@ -313,11 +312,11 @@ Cvent连接器使用以下功能：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL Connection]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL Connection]</p> </td> 
    <td> <p>有关将[!DNL Cvent]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-cvent-to-adobe-workfront-fusion" class="MCXref xref">将[!DNL Cvent]连接到Adobe Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 记录类型]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL记录类型]</p> </td> 
    <td> <p>选择要列出的记录类型。</p> 
     <ul> 
      <li> <p>[!DNL Cvent]帐户中的所有事件</p> </li> 
@@ -326,7 +325,7 @@ Cvent连接器使用以下功能：
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 事件ID]</td> 
+   <td role="rowheader">[！UICONTROL事件ID]</td> 
    <td> <p>如果您要列出被邀请者或会话，请输入或映射与这些被邀请者或会话关联的事件ID。</p> </td> 
   </tr> 
  </tbody> 

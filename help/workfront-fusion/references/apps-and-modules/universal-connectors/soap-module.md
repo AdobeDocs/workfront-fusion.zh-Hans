@@ -4,10 +4,10 @@ description: 您可以使用SOAP模块连接到Adobe Workfront Fusion中的SOAP 
 author: Becky
 feature: Workfront Fusion
 exl-id: dbcc04f8-8306-4a81-aed8-1ce0798e145f
-source-git-commit: 29f9595d063e89e9cd393fecba07194d2e9008aa
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 1%
+source-wordcount: '645'
+ht-degree: 0%
 
 ---
 
@@ -29,34 +29,29 @@ SOAP连接器仅包含一个模块：执行SOAP操作
 
 +++ 展开以查看本文中各项功能的访问要求。
 
-您必须具有以下权限才能使用本文中的功能：
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何</p> </td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求</p>
-   <p>或</p>
-   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
+   <p>基于操作：不需要Workfront Fusion许可证</p>
+   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
-   <p>或</p>
-   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -87,19 +82,19 @@ SOAP连接器仅包含一个模块：执行SOAP操作
  </col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL WSDL]</td> 
+   <td>[！UICONTROL WSDL]</td> 
    <td> 选择您希望模块使用的WSDL。 要创建WSDL，请单击字段旁边的<b>添加</b>并填写这些字段。 </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL HTTP标头]</td> 
+   <td>[！UICONTROL HTTP标头]</td> 
    <td> 对于每个要添加的HTTP标头，单击<b>添加项</b>并输入标头的名称和值。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL SOAP headers]</td> 
+   <td>[！UICONTROL SOAP headers]</td> 
    <td> 对于每个要添加的SOAP标头，单击<b>添加项</b>并输入标头的名称、值、命名空间和XMLNS。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Force SOAP headers]</td> 
+   <td>[！UICONTROL Force SOAP headers]</td> 
    <td> 启用此选项以配置SOAP 1.2的标头。 </td> 
   </tr> 
   </tbody> 
@@ -154,20 +149,20 @@ SOAP连接器仅包含一个模块：执行SOAP操作
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 方法]</td> 
-      <td> <p>[!UICONTROL POST]</p> </td> 
+      <td role="rowheader">[！UICONTROL方法]</td> 
+      <td> <p>[！UICONTROL POST]</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
-      <td role="rowheader">[!UICONTROL 主体类型]</td> 
-      <td> <p>[!UICONTROL Raw]</p> </td>
+      <td role="rowheader">[！UICONTROL主体类型]</td> 
+      <td> <p>[！UICONTROL Raw]</p> </td>
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 内容类型]</td> 
-      <td> <p>[!UICONTROL XML (application/xml)]</p> </td> 
+      <td role="rowheader">[！UICONTROL内容类型]</td> 
+      <td> <p>[！UICONTROL XML (application/xml)]</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 解析响应]</td> 
-      <td>[!UICONTROL 已启用]</td> 
+      <td role="rowheader">[！UICONTROL解析响应]</td> 
+      <td>[！UICONTROL已启用]</td> 
      </tr> 
     </tbody> 
    </table>

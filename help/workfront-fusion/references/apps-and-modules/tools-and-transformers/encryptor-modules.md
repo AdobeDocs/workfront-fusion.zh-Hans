@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion Encryptor模块允许您加密任何文本�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 1%
+source-wordcount: '861'
+ht-degree: 0%
 
 ---
 
@@ -21,32 +21,22 @@ Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文�
 
 +++ 展开以查看本文中各项功能的访问要求。
 
-您必须具有以下权限才能使用本文中的功能：
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何</p> </td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
-   <td>
-   <p>无Workfront Fusion许可证要求</p>
-   </td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
-   <p>或</p>
-   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -54,9 +44,9 @@ Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文�
 
 有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
-
 +++
+
+
 
 ## 使用PGP进行消息加密和解密
 
@@ -74,7 +64,7 @@ Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文�
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Key]</td>
+        <td>[！UICONTROL Key]</td>
         <td>选择您希望模块使用的键。 要创建密钥，请单击<b>添加</b>并输入密钥的名称、密钥和编码类型。</td>
     </tr>
     <tr>
@@ -142,7 +132,7 @@ Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文�
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Key]</td>
+        <td>[！UICONTROL Key]</td>
         <td>选择您希望模块使用的键。 要创建密钥，请单击<b>添加</b>并输入密钥的名称、密钥和编码类型。</td>
     </tr>
    <tr>
@@ -179,7 +169,7 @@ Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文�
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Key]</td>
+        <td>[！UICONTROL Key]</td>
         <td>选择您希望模块使用的键。 要创建密钥，请单击<b>添加</b>并输入密钥的名称、密钥和编码类型。</td>
     </tr>
     <tr>
@@ -236,7 +226,7 @@ Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文�
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Key]</td>
+        <td>[！UICONTROL Key]</td>
         <td>选择您希望模块使用的键。 要创建密钥，请单击<b>添加</b>并输入密钥的名称、密钥和编码类型。</td>
     </tr>
    <tr>
@@ -276,7 +266,7 @@ Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文�
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL 私钥]</td>
+        <td>[！UICONTROL私钥]</td>
         <td>选择要用于此签名的私钥。 要添加私钥，请单击<b>添加</b>并输入密钥的名称、密钥文本和密码。</td>
     </tr>
     <tr>
@@ -314,15 +304,15 @@ Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文�
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL 私钥]</td>
+        <td>[！UICONTROL私钥]</td>
         <td>选择要用于此邮件的收件人私钥。 要添加私钥，请单击<b>添加</b>并输入密钥的名称、密钥文本和密码。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 公钥]</td>
+        <td>[！UICONTROL公钥]</td>
         <td>输入发件人的公钥。 这可以对发件人的身份进行身份验证。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Message]</td>
+        <td>[！UICONTROL Message]</td>
         <td>映射要解密的消息。</td>
     </tr>
 </table>
@@ -333,15 +323,15 @@ Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文�
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL 私钥]</td>
+        <td>[！UICONTROL私钥]</td>
         <td>输入发件人的私钥。 这可以对发件人的身份进行身份验证。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 公钥]</td>
+        <td>[！UICONTROL公钥]</td>
         <td>输入收件人的公钥。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Message]</td>
+        <td>[！UICONTROL Message]</td>
         <td>输入要加密的消息。</td>
     </tr>
     </table>

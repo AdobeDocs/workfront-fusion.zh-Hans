@@ -4,10 +4,10 @@ description: 在Adobe Workfront Fusion场景中，您可以使用Draft.js模块�
 author: Becky
 feature: Workfront Fusion
 exl-id: 0116e379-cef8-4036-875b-46ca79a9e94d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 1%
+source-wordcount: '241'
+ht-degree: 0%
 
 ---
 
@@ -23,32 +23,22 @@ ht-degree: 1%
 
 +++ 展开以查看本文中各项功能的访问要求。
 
-您必须具有以下权限才能使用本文中的功能：
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何</p> </td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
-   <td>
-   <p>无Workfront Fusion许可证要求</p>
-   </td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
-   <p>或</p>
-   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -56,9 +46,9 @@ ht-degree: 1%
 
 有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
-
 +++
+
+
 
 ## [!UICONTROL Draft.js到HTML]
 
@@ -71,7 +61,7 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Draft.js]</td> 
+   <td role="rowheader">[！UICONTROL Draft.js]</td> 
    <td> <p>输入或映射要转换为HTML的Draft.js文本。</p> </td> 
   </tr> 
  </tbody> 
@@ -86,7 +76,7 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL HTML]</td> 
+   <td role="rowheader">[！UICONTROL HTML]</td> 
    <td> <p>输入或映射要转换为Draft.js的HTML代码。</p> </td> 
   </tr> 
  </tbody> 

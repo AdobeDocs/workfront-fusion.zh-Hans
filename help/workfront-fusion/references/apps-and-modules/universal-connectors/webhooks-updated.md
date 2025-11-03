@@ -4,9 +4,9 @@ description: webhook是由事件触发的HTTP调用。 您可以使用Webhook激
 author: Becky
 feature: Workfront Fusion
 exl-id: 8e415378-e9c1-4b49-874b-6d38aba0c303
-source-git-commit: f4d3c64b1cf7f34ca71f8882a8f65c11afe674f5
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '1522'
+source-wordcount: '1528'
 ht-degree: 0%
 
 ---
@@ -23,34 +23,29 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 
 +++ 展开以查看本文中各项功能的访问要求。
 
-您必须具有以下权限才能使用本文中的功能：
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何</p> </td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求</p>
-   <p>或</p>
-   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
+   <p>基于操作：不需要Workfront Fusion许可证</p>
+   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
-   <p>或</p>
-   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -103,23 +98,23 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader"><p>[!UICONTROL URL] </p></td> 
-      <td>输入webhook的URL。 您可以在用于设置webhook的[!UICONTROL Webhooks]模块中找到此URL。</td> 
+      <td role="rowheader"><p>[！UICONTROL URL] </p></td> 
+      <td>输入webhook的URL。 您可以在用于设置webhook的[！UICONTROL Webhooks]模块中找到此URL。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 方法] </td> 
-      <td><p>[!UICONTROL POST]</p></td> 
+      <td role="rowheader">[！UICONTROL方法] </td> 
+      <td><p>[！UICONTROL POST]</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 主体类型]</td> 
-      <td><p> [!UICONTROL Raw]</p></td> 
+      <td role="rowheader">[！UICONTROL主体类型]</td> 
+      <td><p> [！UICONTROL Raw]</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 内容类型]</td> 
+      <td role="rowheader">[！UICONTROL内容类型]</td> 
       <td><p> JSON (application/json)</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 请求内容]</td> 
+      <td role="rowheader">[！UICONTROL请求内容]</td> 
       <td><p>webhook中需要原始JSON</p></td> 
      </tr> 
     </tbody> 
@@ -294,27 +289,27 @@ Content-Type: application/json
 >按如下方式配置[!UICONTROL Webhook响应]模块：
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL 状态] </td> 
->&gt;   <td> <p>2xx成功HTTP状态代码，例如200</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL Body] </td> 
->&gt;   <td> <p>HTML代码</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>键</strong>： Content-type</li> 
->&gt;     <li><strong>值</strong>： text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[！UICONTROL状态] </td> 
+&gt;   <td> <p>2xx成功HTTP状态代码，例如200</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[！UICONTROL Body] </td> 
+&gt;   <td> <p>HTML代码</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[！UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>键</strong>： Content-type</li> 
+&gt;     <li><strong>值</strong>： text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![自定义标头](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -329,23 +324,23 @@ Content-Type: application/json
 >**示例：**&#x200B;按如下方式配置[!UICONTROL Webhook响应]模块：
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL 状态] </td> 
->&gt;   <td> <p>3xx重定向HTTP状态代码，例如303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL 键]</strong>：位置</li> 
->&gt;     <li><strong>[!UICONTROL 值]</strong>：要重定向到的URL。</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[！UICONTROL状态] </td> 
+&gt;   <td> <p>3xx重定向HTTP状态代码，例如303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[！UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[！UICONTROL键]</strong>：位置</li> 
+&gt;     <li><strong>[！UICONTROL值]</strong>：要重定向到的URL。</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Webhook响应](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 

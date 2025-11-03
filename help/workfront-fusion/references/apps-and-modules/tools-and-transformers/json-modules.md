@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion JSON应用程序提供了用于处理JSON格
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 1%
+source-wordcount: '1229'
+ht-degree: 0%
 
 ---
 
@@ -19,34 +19,22 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
 
 +++ 展开以查看本文中各项功能的访问要求。
 
-您必须具有以下权限才能使用本文中的功能：
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何</p> </td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
-   <td>
-   <p>当前：无Workfront Fusion许可证要求</p>
-   <p>或</p>
-   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
-   </td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
-   <p>或</p>
-   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -54,9 +42,9 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
 
 有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
-
 +++
+
+
 
 ## 解析JSON时的注意事项
 
@@ -143,23 +131,23 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source module] </td> 
+   <td role="rowheader">[！UICONTROL Source module] </td> 
    <td> <p>选择用于输出要汇总到JSON的数据的模块。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data structure]</td> 
+   <td role="rowheader">[！UICONTROL Data structure]</td> 
    <td> <p>选择要用于创建JSON的数据结构。 数据结构决定了此模块中可用的其他字段。 有关详细信息，请参阅本文中的<a href="#data-structure" class="MCXref xref">数据结构</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 缩进]</td> 
+   <td role="rowheader">[！UICONTROL缩进]</td> 
    <td> <p> 选择是要使用制表符、两个空格还是四个空格缩进JSON。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 分组依据]</td> 
+   <td role="rowheader">[！UICONTROL分组依据]</td> 
    <td>定义要按其分组聚合输出的表达式。 此表达式可以包含一个或多个映射项。 然后，使用此表达式的值将聚合的数据分成不同的组。 每个组输出为一个单独的捆绑，其中包含一个键（经过计算的表达式）和一个值（聚合文本）。 在后续模块中，您可以将该键用作过滤器。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 在出现空聚合后停止处理]</td> 
+   <td role="rowheader">[！UICONTROL在出现空聚合后停止处理]</td> 
    <td>启用此选项可在没有结果时停止方案。</td> 
   </tr> 
  </tbody> 
@@ -181,7 +169,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL JSON string] </td> 
+   <td role="rowheader">[！UICONTROL JSON string] </td> 
    <td> <p>输入或映射要转换为XML的JSON。</p> </td> 
   </tr> 
  </tbody> 
@@ -215,11 +203,11 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data structure]</td> 
+   <td role="rowheader">[！UICONTROL Data structure]</td> 
    <td> <p>选择要用于创建JSON的数据结构。 有关详细信息，请参阅本文中的<a href="#data-structure" class="MCXref xref">数据结构</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL JSON string] </td> 
+   <td role="rowheader">[！UICONTROL JSON string] </td> 
    <td> <p>输入或映射要解析的JSON。</p> </td> 
   </tr> 
  </tbody> 
@@ -238,7 +226,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
    <td> <p>选择要用于此JSON的缩进。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 对象]</td> 
+   <td role="rowheader">[！UICONTROL对象]</td> 
    <td> <p>输入或映射要转换为JSON的对象。</p> </td> 
   </tr> 
  </tbody> 

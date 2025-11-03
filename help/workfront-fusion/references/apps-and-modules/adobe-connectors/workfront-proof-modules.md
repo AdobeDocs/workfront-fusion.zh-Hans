@@ -4,9 +4,9 @@ description: 在Adobe Workfront Fusion方案中，您可以自动使用 [!DNL Wo
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '3131'
+source-wordcount: '3106'
 ht-degree: 0%
 
 ---
@@ -27,34 +27,22 @@ ht-degree: 0%
 
 +++ 展开以查看本文中各项功能的访问要求。
 
-您必须具有以下权限才能使用本文中的功能：
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何</p> </td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
-   <td>
-   <p>当前：无Workfront Fusion许可证要求</p>
-   <p>或</p>
-   <p>旧版：Workfront Fusion for Work Automation and Integration </p>
-   </td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
-   <p>或</p>
-   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -62,11 +50,7 @@ ht-degree: 0%
 
 有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
-
-+++
-
-## Workfront Proof信息
++++## Workfront Proof信息
 
 Workfront Proof连接器使用以下对象：
 
@@ -99,36 +83,36 @@ Workfront Proof连接器使用以下对象：
         <tbody>
             <tr>
                 <td role="rowheader">
-                    <p role="rowheader">[!UICONTROL 连接名称]</p>
+                    <p role="rowheader">[！UICONTROL连接名称]</p>
                 </td>
                 <td>输入连接的名称。</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL 环境]</td>
+                <td  role="rowheader">[！UICONTROL环境]</td>
                 <td>选择此环境是生产环境，还是非生产环境，如预览或沙盒。</td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL 类型]</td>
+                <td role="rowheader">[！UICONTROL类型]</td>
                 <td>选择这是服务帐户还是个人帐户。</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL 电子邮件/用户名]</td>
+                <td  role="rowheader">[！UICONTROL电子邮件/用户名]</td>
                 <td>输入[!DNL Workfront Proof]帐户的用户名。</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL 密码]</td>
+                <td  role="rowheader">[！UICONTROL密码]</td>
                 <td>输入[!DNL Workfront Proof]帐户的密码。</td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL 租户ID]</td>
+                <td  role="rowheader">[！UICONTROL租户ID]</td>
                 <td><strong>注意</strong>：不使用BYOK的客户必须将此字段留空。 <p>输入此帐户的租户ID。 如果您在查找租户ID时需要帮助，请联系Workfront客户支持。</p></td>
             </tr>
             <tr>
-                <td role="rowheader">[!UICONTROL 域扩展]</td>
+                <td role="rowheader">[！UICONTROL域扩展]</td>
                 <td>输入用于访问帐户的URL的扩展名。 <p>示例： <code>com</code>或 <code>eu</code></p></td>
             </tr>
             <tr>
-                <td  role="rowheader">[!UICONTROL Production， Preview或Custom Environment]</td>
+                <td  role="rowheader">[！UICONTROL Production， Preview或Custom Environment]</td>
                 <td>要连接的生产、预览或自定义环境。</td>
             </tr>
         </tbody>
@@ -170,7 +154,7 @@ Workfront Proof连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Webhook名称]</td> 
+   <td>[！UICONTROL Webhook名称]</td> 
    <td>输入或映射新webhook的名称</td> 
   </tr> 
   <tr> 
@@ -197,11 +181,11 @@ Workfront Proof连接器使用以下对象：
    <td> <p>有关将[!DNL Workfront Proof]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 活动类型]</td> 
+   <td>[！UICONTROL活动类型]</td> 
    <td>选择您是要观看任何新决策（包括验证状态更改），还是只观看整体验证状态更改。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 限制]</td> 
+   <td>[！UICONTROL限制]</td> 
    <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td> 
   </tr> 
  </tbody> 
@@ -224,7 +208,7 @@ Workfront Proof连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
    <td> <p>有关将[!DNL Workfront Proof]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -273,35 +257,35 @@ Workfront Proof连接器使用以下对象：
    <td> <p>有关将[!DNL Workfront Proof]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 校对类型]</td> 
-   <td> <p>指定您希望创建的验证具有基本工作流还是[!UICONTROL 自动工作流]。</p> <p>然后，填写为您选择的验证类型显示的字段。 例如，如果选择[!UICONTROL 自动工作流]，请填写<strong>[!UICONTROL 工作流暂存]</strong>字段以配置暂存。</p></td> 
+   <td>[！UICONTROL校对类型]</td> 
+   <td> <p>指定您希望创建的验证具有基本工作流还是[！UICONTROL自动工作流]。</p> <p>然后，填写为您选择的验证类型显示的字段。 例如，如果选择[！UICONTROL自动工作流]，请填写<strong>[！UICONTROL工作流暂存]</strong>字段以配置暂存。</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 允许下载原始文件]</td> 
+   <td>[！UICONTROL允许下载原始文件]</td> 
    <td>选择是否允许下载从中创建校对的原始文件。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 经典校对查看器]</td> 
+   <td>[！UICONTROL经典校对查看器]</td> 
    <td>选择是否使用经典校样查看器。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 将所有文件合并为单个校对]</td> 
+   <td>[！UICONTROL将所有文件合并为单个校对]</td> 
    <td>启用此选项可将所有文件合并到单个多页验证中。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 创建新验证版本]</td> 
-   <td>如果希望模块创建现有校对的新版本，请选择此选项。 然后，在显示的<strong>[!UICONTROL 现有校对ID]</strong>字段中，映射或输入校对的唯一ID。</td> 
+   <td>[！UICONTROL创建新验证版本]</td> 
+   <td>如果希望模块创建现有校对的新版本，请选择此选项。 然后，在显示的<strong>[！UICONTROL现有校对ID]</strong>字段中，映射或输入校对的唯一ID。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 自定义链接标签]</td> 
+   <td>[！UICONTROL自定义链接标签]</td> 
    <td>输入或映射自定义验证链接的标签。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 自定义链接URL]</td> 
+   <td>[！UICONTROL自定义链接URL]</td> 
    <td>输入或映射自定义链接的URL。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 订阅者的默认电子邮件通知]</td> 
+   <td>[！UICONTROL订阅者的默认电子邮件通知]</td> 
    <td>键入以下数字之一，以指示要将以下哪些默认电子邮件通知设置用于已创建的验证。
     <ul>
      <li><strong>1</strong> — 所有新评论和回复</li>
@@ -313,91 +297,91 @@ Workfront Proof连接器使用以下对象：
     </ul></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 禁用Excel摘要]</td> 
+   <td>[！UICONTROL禁用Excel摘要]</td> 
    <td>选择是否要禁用将验证评论下载到Excel文件的功能。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 禁用PDF摘要]</td> 
+   <td>[！UICONTROL禁用PDF摘要]</td> 
    <td>选择是否要禁用将验证评论下载到PDF文件的功能。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 禁用订阅电子邮件]</td> 
+   <td>[！UICONTROL禁用订阅电子邮件]</td> 
    <td>选择是否要为此验证禁用订阅电子邮件。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 启用嵌入播放器]</td> 
+   <td>[！UICONTROL启用嵌入播放器]</td> 
    <td>选择是否要为此验证启用嵌入的播放器。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 启用订阅]</td> 
+   <td>[！UICONTROL启用订阅]</td> 
    <td>选择是否允许非参与者订阅验证。<br>如果选择此选项，还可以为订阅者选择“默认角色”，如本表所述。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 启用订阅验证]</td> 
+   <td>[！UICONTROL启用订阅验证]</td> 
    <td>选择是否要启用订阅电子邮件验证。 如果启用此项，订阅者必须单击电子邮件中的链接才能访问验证。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 启用团队URL]</td> 
+   <td>[！UICONTROL启用团队URL]</td> 
    <td>选择您希望创建的校对隐藏还是显示团队URL。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 文件哈希] <span style="font-weight: normal;">或</span> [!UICONTROL 文件哈希]</td> 
+   <td>[！UICONTROL文件哈希] <span style="font-weight: normal;">或</span> [！UICONTROL文件哈希]</td> 
    <td>添加要从中创建验证的一个或多个文件的ID。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 文件名]</td> 
+   <td>[！UICONTROL文件名]</td> 
    <td>为创建的验证添加一个或多个文件名这是必填字段。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 完成所有必需的决策时锁定校对]</td> 
+   <td>[！UICONTROL完成所有必需的决策时锁定校对]</td> 
    <td>指定您是否希望在做出所有必需的决策后锁定创建的验证。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 将此证明通知收件人]</td> 
+   <td>[！UICONTROL将此证明通知收件人]</td> 
    <td>选择一个选项，以指示您是否希望在创建验证时通知收件人。&gt;</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 校对名称]</td> 
+   <td>[！UICONTROL校对名称]</td> 
    <td>为创建的验证键入名称。这是必填字段。 使用管道符号(|)为多个校样分隔名称。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 校对所有者ID]</td> 
+   <td>[！UICONTROL校对所有者ID]</td> 
    <td>输入或映射验证所有者的ID。 如果此字段留空，则验证所有者将设置为当前用户。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 引用ID]</td> 
+   <td>[！UICONTROL引用ID]</td> 
    <td>输入验证的参考ID。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 需要电子签名]</td> 
+   <td>[！UICONTROL需要电子签名]</td> 
    <td>选择您是否希望要求决定证明的任何人提交电子签名。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 需要登录]</td> 
+   <td>[！UICONTROL需要登录]</td> 
    <td> <p>指定您是否希望创建的验证需要登录。 </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 分辨率ID]</td> 
+   <td>[！UICONTROL分辨率ID]</td> 
    <td>输入要用于校对的分辨率ID。 有关分辨率ID的列表，请参阅[!DNL Workfront Proof] <a href="https://api.proofhq.com/home/objects/soapworkflowproofobject.html">API文档</a>。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL SWF]</td> 
+   <td>[！UICONTROL SWF]</td> 
    <td>输入SWF验证的类型。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Show] [item]</td> 
+   <td>[！UICONTROL Show] [item]</td> 
    <td>对于每个项目，选择是否要将其显示在验证中。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Workspace ID]</td> 
+   <td>[！UICONTROL Workspace ID]</td> 
    <td>输入要在其中创建验证的工作区的ID。 </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 收件人]</td> 
+   <td>[！UICONTROL收件人]</td> 
    <td>为创建的验证添加所需收件人的电子邮件地址。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 截止日期]</td> 
+   <td>[！UICONTROL截止日期]</td> 
    <td> <p>指定您希望创建的验证的截止日期。 使用以下日期格式：</p> <p><code>YYYY-MM-DD hh:mm</code></p> </td> 
   </tr> 
  </tbody> 
@@ -422,11 +406,11 @@ Workfront Proof连接器使用以下对象：
    <td> <p>有关将[!DNL Workfront Proof]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 方法]</td> 
+   <td>[！UICONTROL方法]</td> 
    <td>为API调用设置操作。 有关可用操作，请参阅<a href="https://api.proofhq.com/">验证API文档</a>。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 正文(XML)]</td> 
+   <td>[！UICONTROL正文(XML)]</td> 
    <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -462,8 +446,8 @@ Workfront Proof连接器使用以下对象：
    <td> <p>有关将[!DNL Workfront Proof]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 校对ID]</td> 
-   <td> <p>键入在[!UICONTROL 验证详细信息]页面上找到的验证的唯一ID。  </td> 
+   <td>[！UICONTROL校对ID]</td> 
+   <td> <p>键入在[！UICONTROL验证详细信息]页面上找到的验证的唯一ID。  </td> 
   </tr> 
  </tbody> 
 </table>
@@ -489,15 +473,15 @@ Workfront Proof连接器使用以下对象：
    <td> <p>有关将[!DNL Workfront Proof]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 记录类型]</td> 
+   <td>[！UICONTROL记录类型]</td> 
    <td>选择您要读取校样、校样评论还是校样审阅者。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 输出]</td> 
+   <td>[！UICONTROL输出]</td> 
    <td> <p>选择要包含在此模块的输出捆绑包中的信息。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL ID]</td> 
+   <td>[！UICONTROL ID]</td> 
    <td>输入或映射您希望模块读取的记录的唯一[!DNL Workfront Proof] ID。</td> 
   </tr> 
  </tbody> 
@@ -524,11 +508,11 @@ Workfront Proof连接器使用以下对象：
    <td> <p>有关将[!DNL Workfront Proof]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 校对ID]</td> 
+   <td>[！UICONTROL校对ID]</td> 
    <td> <p>输入您要为其请求PDF摘要的验证的唯一[!DNL Workfront Proof] ID。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 回调URL]</td> 
+   <td>[！UICONTROL回调URL]</td> 
    <td>输入或映射要将PDF摘要发送到的URL。</td> 
   </tr> 
  </tbody> 
@@ -560,71 +544,71 @@ Workfront Proof连接器使用以下对象：
    <td> <p>有关将[!DNL Workfront Proof]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 校对ID]</td> 
-   <td> <p>键入在[!UICONTROL 验证详细信息]页面上找到的验证的唯一ID。 </td> 
+   <td>[！UICONTROL校对ID]</td> 
+   <td> <p>键入在[！UICONTROL验证详细信息]页面上找到的验证的唯一ID。 </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 截止日期]</td> 
+   <td>[！UICONTROL截止日期]</td> 
    <td> <p>指定您希望创建的验证的截止日期。 使用日期格式<code>YYYY-MM-DD hh:mm</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 订阅者的默认电子邮件通知]</td> 
+   <td>[！UICONTROL订阅者的默认电子邮件通知]</td> 
    <td>选择您希望为创建的验证使用的以下默认电子邮件通知设置之一。
     <ul>
-     <li> [!UICONTROL 所有新评论和回复]</li>
-     <li>[!UICONTROL 回复我的评论]</li>
-     <li>[!UICONTROL 每日摘要]</li>
-     <li> [!UICONTROL 小时摘要]</li>
-     <li> [!UICONTROL 仅决策]</li>
-     <li> [!UICONTROL 已禁用]</li>
+     <li> [！UICONTROL所有新评论和回复]</li>
+     <li>[！UICONTROL回复我的评论]</li>
+     <li>[！UICONTROL每日摘要]</li>
+     <li> [！UICONTROL小时摘要]</li>
+     <li> [！UICONTROL仅决策]</li>
+     <li> [！UICONTROL已禁用]</li>
     </ul></td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 默认角色]</td> 
+   <td>[！UICONTROL默认角色]</td> 
    <td>选择验证的默认角色。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 禁用订阅电子邮件]</td> 
+   <td>[！UICONTROL禁用订阅电子邮件]</td> 
    <td>选择是否要为此验证禁用订阅电子邮件。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 启用订阅]</td> 
-   <td>选择是否允许非参与者订阅验证。<br>如果选择此选项，还可以在[!UICONTROL 默认角色]字段中选择选项。</td> 
+   <td>[！UICONTROL启用订阅]</td> 
+   <td>选择是否允许非参与者订阅验证。<br>如果选择此选项，还可以在[！UICONTROL默认角色]字段中选择选项。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 启用订阅验证]</td> 
+   <td>[！UICONTROL启用订阅验证]</td> 
    <td>选择是否要启用订阅电子邮件验证。 如果启用此项，订阅者必须单击电子邮件中的链接才能访问验证。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 启用团队URL]</td> 
+   <td>[！UICONTROL启用团队URL]</td> 
    <td>选择您希望创建的校对隐藏还是显示团队URL。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 完成所有必需的决策时锁定校对]</td> 
+   <td>[！UICONTROL完成所有必需的决策时锁定校对]</td> 
    <td>指定您是否希望在做出所有必需的决策后锁定创建的验证。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Message]</td> 
+   <td>[！UICONTROL Message]</td> 
    <td>输入或映射要与校样一起显示的消息。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 校对ID] </td> 
+   <td>[！UICONTROL校对ID] </td> 
    <td>输入或映射要更新的校对ID。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 校对名称]</td> 
+   <td>[！UICONTROL校对名称]</td> 
    <td>输入或映射要更新的校对的名称。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 需要登录]</td> 
+   <td>[！UICONTROL需要登录]</td> 
    <td> <p>指定您是否希望创建的验证需要登录。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 显示类似版本]</td> 
+   <td>[！UICONTROL显示类似版本]</td> 
    <td>选择是否要显示此校对的其他版本的链接。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 主题]</td> 
+   <td>[！UICONTROL主题]</td> 
    <td>输入或映射验证的主题</td> 
   </tr> 
  </tbody> 
@@ -647,7 +631,7 @@ Workfront Proof连接器使用以下对象：
    <td> <p>有关将[!DNL Workfront Proof]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[！UICONTROL Source file]</td> 
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </td> 
   </tr> 
  </tbody> 
@@ -671,11 +655,11 @@ Workfront Proof连接器使用以下对象：
    <td> <p>有关将[!DNL Workfront Proof]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 输出]</td> 
+   <td>[！UICONTROL输出]</td> 
    <td> <p>选择要包含在此模块的输出捆绑包中的信息。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 限制]</td> 
+   <td>[！UICONTROL限制]</td> 
    <td> <p>输入或映射每个方案执行周期中您希望模块返回的最大模板数。</p> </td> 
   </tr> 
  </tbody> 
@@ -700,23 +684,23 @@ Workfront Proof连接器使用以下对象：
    <td> <p>有关将[!DNL Workfront Proof]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 搜索]</td> 
+   <td>[！UICONTROL搜索]</td> 
    <td> <p>选择要模块搜索的记录类型。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 校对]</strong> </p> <p>输入要搜索的校对的校对名称。</p> </li> 
-     <li> <p><strong>[!UICONTROL 收件人]</strong> </p> <p>输入要搜索的收件人的电子邮件地址。</p> </li> 
+     <li> <p><strong>[！UICONTROL校对]</strong> </p> <p>输入要搜索的校对的校对名称。</p> </li> 
+     <li> <p><strong>[！UICONTROL收件人]</strong> </p> <p>输入要搜索的收件人的电子邮件地址。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 结果集]</td> 
-   <td>指示模块将搜索<strong>[!UICONTROL 所有匹配记录]</strong>还是仅搜索<strong>[!UICONTROL 第一个匹配记录]</strong>。</td> 
+   <td>[！UICONTROL结果集]</td> 
+   <td>指示模块将搜索<strong>[！UICONTROL所有匹配记录]</strong>还是仅搜索<strong>[！UICONTROL第一个匹配记录]</strong>。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 排序方式]</td> 
+   <td>[！UICONTROL排序方式]</td> 
    <td>选择要作为结果排序依据的字段。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 排序方向]</td> 
+   <td>[！UICONTROL排序方向]</td> 
    <td> <p>选择要按升序或降序对结果进行排序。</p> </td> 
   </tr> 
  </tbody> 

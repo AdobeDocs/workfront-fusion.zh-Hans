@@ -8,9 +8,9 @@ description: 在Adobe Workfront Fusion场景中，您可以自动执行在Adobe�
 author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2373'
 ht-degree: 2%
 
 ---
@@ -27,40 +27,35 @@ ht-degree: 2%
 
 +++ 展开以查看本文中各项功能的访问要求。
 
-您必须具有以下权限才能使用本文中的功能：
-
-<table style="table-layout:auto"> 
+<table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront计划*</td>
-  <td> <p>[!UICONTROL Pro]或更高版本</p> </td>
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证*</td>
-   <td> <p>[!UICONTROL 计划]，[!UICONTROL 工作]</p> </td> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
    <td>
-   <p>当前许可证要求：无Workfront Fusion许可证要求。</p>
-   <p>或</p>
-   <p>旧版许可证要求：[!UICONTROL Workfront Fusion for Work Automation and Integration]、[!UICONTROL Workfront Fusion for Work Automation]</p>
+   <p>基于操作：不需要Workfront Fusion许可证</p>
+   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>当前产品要求：如果您有[!UICONTROL Select]或[!UICONTROL Prime] Adobe Workfront计划，则贵组织必须购买Adobe Workfront Fusion以及Adobe Workfront，才能使用本文中所述的功能。 Workfront Fusion包含在[!UICONTROL Ultimate] Workfront计划中。</p>
-   <p>或</p>
-   <p>旧版产品要求：您的组织必须购买Adobe Workfront Fusion和Adobe Workfront，才能使用本文中所述的功能。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
-  </tr> 
+  </tr>
  </tbody> 
 </table>
 
-要了解您拥有的计划、许可证类型或访问权限，请联系您的Workfront管理员。
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
 有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
@@ -81,33 +76,33 @@ ht-degree: 2%
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[!UICONTROL 连接名称]</td>
+        <td role="rowheader">[！UICONTROL连接名称]</td>
         <td>
           <p>输入此连接的名称。</p>
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 环境]</td>
+        <td role="rowheader">[！UICONTROL环境]</td>
         <td>选择您要连接到生产环境还是非生产环境。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 类型]</td>
+        <td role="rowheader">[！UICONTROL类型]</td>
         <td>选择您是要连接到服务帐户还是个人帐户。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 客户端ID]</td>
-        <td>输入您的[!UICONTROL Adobe] [!UICONTROL 客户端ID]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[！UICONTROL客户端ID]</td>
+        <td>输入您的[！UICONTROL Adobe] [！UICONTROL客户端ID]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[！UICONTROL客户端密钥]</td>
+        <td>输入您的[!DNL Adobe] [！UICONTROL客户端密钥]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL IMS组织ID]</td>
+        <td role="rowheader">[！UICONTROL IMS组织ID]</td>
         <td>输入您的[!DNL Adobe] IMS凭据。 组织的唯一标识符。 这是一个格式为A495E53@AdobeOrg的字符串，其中@的前缀为十六进制数字。 您可以在Admin Console或adobe.io控制台中，将此值作为组织的URL路径的一部分来查找，以便进行用户管理集成。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 其他作用域]</td>
+        <td role="rowheader">[！UICONTROL其他作用域]</td>
         <td>对于要添加的每个其他范围，单击<b>添加项</b>并输入该范围。</td>
         </tr>
       </tbody>

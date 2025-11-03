@@ -5,9 +5,9 @@ description: 有时，在执行场景期间可能会出错。 如果由于无法
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 99621f57da1eb294834a0eacfe527dcf017408e9
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1211'
 ht-degree: 1%
 
 ---
@@ -22,47 +22,30 @@ Adobe Workfront Fusion可区分多种基本错误类型。 错误的类型决定
 
 +++ 展开以查看本文中各项功能的访问要求。
 
-您必须具有以下权限才能使用本文中的功能：
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何</p> </td> 
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> 新增：标准<p>或</p><p>当前：工作或更高</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">[!UICONTROL Adobe Workfront Fusion]许可证</td> 
-   <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
-   <p>或</p>
-   <p>旧版：任意 </p>
-   </td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[!UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
-   <p>或</p>
-   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-要了解您拥有的计划、许可证类型或访问权限，请联系您的Workfront管理员。
-
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
-
-+++
-
-## 连接错误
++++##连接错误 
 
 `ConnectionError`
 
@@ -165,7 +148,7 @@ Adobe Workfront Fusion可区分多种基本错误类型。 错误的类型决定
 >[!NOTE]
 >
 >如果方案以即时触发器开始并遇到此错误，将忽略[!UICONTROL 最大连续错误数]的设置，并立即停用该方案。
->&#x200B;>有关详细信息，请参阅“模块概述”一文中的[即时触发器](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)。
+>>有关详细信息，请参阅“模块概述”一文中的[即时触发器](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)。
 
 ## 不一致性错误
 

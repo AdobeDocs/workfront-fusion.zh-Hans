@@ -4,9 +4,9 @@ description: ' [!DNL Adobe Workfront Fusion Tools] 部分包含几个可增强�
 author: Becky
 feature: Workfront Fusion
 exl-id: d9425f5b-4f4a-42da-9aca-1c1783be5fa7
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '2292'
+source-wordcount: '2277'
 ht-degree: 0%
 
 ---
@@ -21,32 +21,22 @@ ht-degree: 0%
 
 +++ 展开以查看本文中各项功能的访问要求。
 
-您必须具有以下权限才能使用本文中的功能：
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何</p> </td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
-   <td>
-   <p>无Workfront Fusion许可证要求</p>
-   </td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
-   <p>或</p>
-   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -54,9 +44,9 @@ ht-degree: 0%
 
 有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
-
 +++
+
+
 
 ## [!UICONTROL 工具]及其字段
 
@@ -78,7 +68,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 包]</td> 
+   <td role="rowheader">[！UICONTROL包]</td> 
    <td> <p>通过添加数组项创建自定义包。 对于要添加到捆绑包中的每个项目，单击<b>添加项目</b>并输入项目的名称和值。</p> </td> 
   </tr> 
  </tbody> 
@@ -101,7 +91,7 @@ ht-degree: 0%
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Variables]</td>
+        <td>[！UICONTROL Variables]</td>
         <td>对于您希望模块获取的每个变量，单击<b>添加项</b>并输入变量的名称。</td>
     </tr>
 </table>
@@ -127,7 +117,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 变量名称]</td> 
+   <td role="rowheader">[！UICONTROL变量名称]</td> 
    <td> <p>映射您希望模块获取的变量的名称。</p> </td> 
   </tr> 
  </tbody> 
@@ -142,12 +132,12 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 重置值]</td> 
+   <td role="rowheader">[！UICONTROL重置值]</td> 
    <td> <p>选择您希望模块重置值的时间。 当您希望值从第一个值开始时。</p> 
     <ul> 
-     <li>[!UICONTROL After One cycle]</li> 
-     <li>[!UICONTROL After one scenario run]</li> 
-     <li>[!UICONTROL 从不]</li> 
+     <li>[！UICONTROL After One cycle]</li> 
+     <li>[！UICONTROL After one scenario run]</li> 
+     <li>[！UICONTROL从不]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -187,15 +177,15 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Variables]</td> 
+   <td>[！UICONTROL Variables]</td> 
    <td>对于要添加的每个变量，单击<b>添加项</b>并输入变量的名称和值。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 变量生命周期] </td> 
+   <td>[！UICONTROL变量生命周期] </td> 
    <td> <p>选择您希望变量保持有效的时长（保持相同的值）。</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>：变量对一个周期有效。 当在一个场景运行中收到多个Webhook时，这非常有用，因为更多Webhook会创建更多周期。 </li> 
-     <li><strong>[!UICONTROL One执行]</strong>：变量对一个方案执行有效。 一个执行可以包含一个或多个周期。</li> 
+     <li><strong>[！UICONTROL One cycle]</strong>：变量对一个周期有效。 当在一个场景运行中收到多个Webhook时，这非常有用，因为更多Webhook会创建更多周期。 </li> 
+     <li><strong>[！UICONTROL One执行]</strong>：变量对一个方案执行有效。 一个执行可以包含一个或多个周期。</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -210,19 +200,19 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 变量名称] </td> 
+   <td>[！UICONTROL变量名称] </td> 
    <td>输入变量名称。 在其他模块中映射变量时，将显示此名称。 </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 变量生命周期] </td> 
+   <td>[！UICONTROL变量生命周期] </td> 
    <td> <p>选择您希望变量保持有效的时长（保持相同的值）。</p> 
     <ul> 
-     <li><strong>[!UICONTROL One cycle]</strong>：变量对一个周期有效。 在收到一个场景运行中的多个Webhook时（更多Webhook =更多周期）非常有用。 </li> 
-     <li><strong>[!UICONTROL One执行]</strong>：变量对一个方案执行有效。 一个执行可以包含一个或多个周期。</li> 
+     <li><strong>[！UICONTROL One cycle]</strong>：变量对一个周期有效。 在收到一个场景运行中的多个Webhook时（更多Webhook =更多周期）非常有用。 </li> 
+     <li><strong>[！UICONTROL One执行]</strong>：变量对一个方案执行有效。 一个执行可以包含一个或多个周期。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 变量值] </td> 
+   <td>[！UICONTROL变量值] </td> 
    <td>输入或映射变量的值。 </td> 
   </tr> 
  </tbody> 
@@ -239,7 +229,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL 延迟]</p> </td> 
+   <td> <p>[！UICONTROL延迟]</p> </td> 
    <td> <p>输入方案将暂停的秒数。</p> </td> 
   </tr> 
  </tbody> 
@@ -273,23 +263,23 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL Source module]</p> </td> 
+   <td> <p>[！UICONTROL Source module]</p> </td> 
    <td> <p>选择要从中聚合字段的模块。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 聚合函数]</p> </td> 
+   <td> <p>[！UICONTROL聚合函数]</p> </td> 
    <td> <p>选择要用于聚合值的函数。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 分组依据]</p> </td> 
+   <td> <p>[！UICONTROL分组依据]</p> </td> 
    <td> <p>定义要按其分组聚合输出的表达式。 此表达式可以包含一个或多个映射项。 然后，使用此表达式的值将聚合的数据分成不同的组。 每个组输出为一个单独的捆绑，其中包含一个键（经过计算的表达式）和一个值（聚合值）。 在后续模块中，您可以将该键用作过滤器。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 在出现空聚合后停止处理]</td> 
+   <td>[！UICONTROL在出现空聚合后停止处理]</td> 
    <td>启用此选项可在没有结果时停止方案。</td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 值]</p> </td> 
+   <td> <p>[！UICONTROL值]</p> </td> 
    <td> <p>输入或映射要聚合的值。</p> </td> 
   </tr> 
  </tbody> 
@@ -304,27 +294,27 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL Source module]</p> </td> 
+   <td> <p>[！UICONTROL Source module]</p> </td> 
    <td> <p>选择要从中聚合字段的模块。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 聚合字段]</td> 
+   <td>[！UICONTROL聚合字段]</td> 
    <td> <p> 从上面选择的模块中选择包含要聚合到一个捆绑包中的值的字段。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 列分隔符]</p> </td> 
-   <td> <p>选择或输入分隔符类型，该分隔符将分隔结果捆绑中的字段值列。 如果选择[!UICONTROL 其他]，请在分隔符字段中输入要将值分隔的字符。</p> </td> 
+   <td> <p>[！UICONTROL列分隔符]</p> </td> 
+   <td> <p>选择或输入分隔符类型，该分隔符将分隔结果捆绑中的字段值列。 如果选择[！UICONTROL其他]，请在分隔符字段中输入要将值分隔的字符。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 行分隔符]</p> </td> 
-   <td> <p>选择或输入分隔符类型，该分隔符将分隔结果捆绑中的字段值行。 如果选择[!UICONTROL 其他]，请在分隔符字段中输入要将值分隔的字符。</p> </td> 
+   <td> <p>[！UICONTROL行分隔符]</p> </td> 
+   <td> <p>选择或输入分隔符类型，该分隔符将分隔结果捆绑中的字段值行。 如果选择[！UICONTROL其他]，请在分隔符字段中输入要将值分隔的字符。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 分组依据]</p> </td> 
+   <td> <p>[！UICONTROL分组依据]</p> </td> 
    <td> <p>定义要按其分组聚合输出的表达式。 此表达式可以包含一个或多个映射项。 随后，将使用此表达式的值将聚合的数据分成不同的组。 每个组输出为一个单独的捆绑，其中包含一个键（经过计算的表达式）和一个值（聚合值）。 在后续模块中，您可以将该键用作过滤器。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 在出现空聚合后停止处理]</td> 
+   <td>[！UICONTROL在出现空聚合后停止处理]</td> 
    <td>选择此选项可在没有结果时停止方案。</td> 
   </tr> 
  </tbody> 
@@ -339,23 +329,23 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL Source module]</p> </td> 
+   <td> <p>[！UICONTROL Source module]</p> </td> 
    <td> <p>选择要从中聚合字段的模块。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 行分隔符]</p> </td> 
-   <td> <p>选择或输入分隔符类型，该分隔符将分隔结果捆绑中的字段值行。 如果选择[!UICONTROL 其他]，请在分隔符字段中输入要将值分隔的字符。</p> </td> 
+   <td> <p>[！UICONTROL行分隔符]</p> </td> 
+   <td> <p>选择或输入分隔符类型，该分隔符将分隔结果捆绑中的字段值行。 如果选择[！UICONTROL其他]，请在分隔符字段中输入要将值分隔的字符。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 分组依据]</p> </td> 
+   <td> <p>[！UICONTROL分组依据]</p> </td> 
    <td> <p>定义包含一个或多个映射项的表达式。 聚合的数据用同一表达式的值在“组”下分隔。 每个组输出为一个单独的包，其中包含带有已计算表达式的键和聚合文本。 这样，您就可以在后续模块中将键用作过滤器。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 在出现空聚合后停止处理]</td> 
+   <td>[！UICONTROL在出现空聚合后停止处理]</td> 
    <td>选择此选项可在没有结果时停止方案。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Text]</td> 
+   <td>[！UICONTROL Text]</td> 
    <td> <p> 输入或映射您希望模块聚合的文本。</p> </td> 
   </tr> 
  </tbody> 
@@ -382,7 +372,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Text]</td> 
+   <td role="rowheader">[！UICONTROL Text]</td> 
    <td> <p>输入或映射要转换为文本的数据。</p> </td> 
   </tr> 
  </tbody> 
@@ -397,15 +387,15 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL 输入数据]</p> </td> 
+   <td> <p>[！UICONTROL输入数据]</p> </td> 
    <td> <p>输入或映射要转换的内容。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 输入数据代码页]</td> 
+   <td>[！UICONTROL输入数据代码页]</td> 
    <td> <p>选择输入数据的编码类型。 </p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 输出数据代码页]</p> </td> 
+   <td> <p>[！UICONTROL输出数据代码页]</p> </td> 
    <td> <p>选择目标（输出）数据的编码类型。</p> </td> 
   </tr> 
  </tbody> 
@@ -420,11 +410,11 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td> <p>[!UICONTROL 输入]</p> </td> 
+   <td> <p>[！UICONTROL输入]</p> </td> 
    <td> <p>输入要计算的表达式。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 使用正则表达式进行匹配]</td> 
+   <td>[！UICONTROL使用正则表达式进行匹配]</td> 
    <td> <p>启用此选项可使用正则表达式。 模块根据正则表达式而不是精确匹配来确定案例。</p> 
     <div> 
      <p>正则表达式是一系列字符，其中每个字符要么是具有特殊意义的元字符，要么是具有字面含义的常规字符。 这些字符和元字符标识了可用于搜索文本的模式。 例如，如果要搜索名称，可设置正则表达式以搜索由两个以大写字母开头的连续单词组成的模式。 正则表达式是用于搜索和处理文本的强大工具。</p> 
@@ -437,15 +427,15 @@ ht-degree: 0%
     </div> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 用例] </td> 
-   <td> 对于要添加的每个案例，单击<b>添加项目</b>并输入项目的模式和输出。 <p>如果输入包含输入到[!UICONTROL 模式]字段的值，则会返回输入到[!UICONTROL 输出]字段的值。</p> <p>如果输入与您在[!UICONTROL 模式]字段中设置的任何值都不匹配，则会出现以下情况之一：</p> 
+   <td>[！UICONTROL用例] </td> 
+   <td> 对于要添加的每个案例，单击<b>添加项目</b>并输入项目的模式和输出。 <p>如果输入包含输入到[！UICONTROL模式]字段的值，则会返回输入到[！UICONTROL输出]字段的值。</p> <p>如果输入与您在[！UICONTROL模式]字段中设置的任何值都不匹配，则会出现以下情况之一：</p> 
     <ul> 
-     <li>返回[!UICONTROL Else]字段中的值</li> 
-     <li>如果[!UICONTROL Else]字段中没有值，则不会返回任何输出。</li> 
+     <li>返回[！UICONTROL Else]字段中的值</li> 
+     <li>如果[！UICONTROL Else]字段中没有值，则不会返回任何输出。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Else]</p> </td> 
+   <td> <p>[！UICONTROL Else]</p> </td> 
    <td> <p>输入当不符合案例字段中设置的标准时返回的值。 </p> </td> 
   </tr> 
  </tbody> 

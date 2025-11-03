@@ -4,9 +4,9 @@ description: 许多服务都提供Webhook，以便在服务发生特定更改时
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 3746ba1cd213a19a042da1a30b0d57bd1140907c
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,35 @@ ht-degree: 0%
 * [Webhook简介](https://video.tv.adobe.com/v/3427025/){target=_blank}
 * [中间Webhook](https://video.tv.adobe.com/v/3427030/){target=_blank}
 
+## 访问要求
+
++++ 展开以查看本文中各项功能的访问要求。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront包</td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">产品</td> 
+   <td>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+
++++
+
 ## 查看webhook详细信息
 
 您可以在Webhooks区域中查看Webhooks的列表。
@@ -54,6 +83,7 @@ ht-degree: 0%
 1. 要查看使用webhook的场景，请单击该webhook的“场景”列中的&#x200B;**场景**&#x200B;按钮。
 1. 要查看用于此webhook的连接，请单击该webhook“连接”列中的&#x200B;**连接**&#x200B;按钮。
 1. 要隐藏列或显示以前隐藏的列，请单击&#x200B;**列**&#x200B;图标![列图标](assets/glist-column.png)并选中或取消选中列名。
+
 
 ## 计划即时触发器
 

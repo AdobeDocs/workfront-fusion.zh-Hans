@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion JSONata连接器提供了一个用于处理J
 author: Becky
 feature: Workfront Fusion
 exl-id: 8c117ecb-3c05-47d4-a629-18dbc546e2a2
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 1%
+source-wordcount: '329'
+ht-degree: 0%
 
 ---
 
@@ -19,34 +19,22 @@ Adobe Workfront Fusion [!UICONTROL JSONata]连接器允许您查询JSON对象。
 
 +++ 展开以查看本文中各项功能的访问要求。
 
-您必须具有以下权限才能使用本文中的功能：
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何</p> </td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p> </td> 
-  </tr> 
-  <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
-   <td>
-   <p>当前：无Workfront Fusion许可证要求。</p>
-   <p>或</p>
-   <p>旧版：任意 </p>
-   </td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>[!UICONTROL Select]或[!UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li><li>[!UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li></ul>
-   <p>或</p>
-   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -54,9 +42,9 @@ Adobe Workfront Fusion [!UICONTROL JSONata]连接器允许您查询JSON对象。
 
 有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
-
 +++
+
+
 
 ## JSONata模块及其字段
 
@@ -69,15 +57,15 @@ Adobe Workfront Fusion [!UICONTROL JSONata]连接器允许您查询JSON对象。
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 表达式]</td> 
+   <td role="rowheader">[！UICONTROL表达式]</td> 
    <td>输入要用于计算JSON对象的表达式。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 数据] </td> 
+   <td role="rowheader">[！UICONTROL数据] </td> 
    <td> 输入要计算的JSON对象。  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringify输出] </td> 
+   <td role="rowheader">[！UICONTROL Stringify输出] </td> 
    <td> 启用此选项可将输出转换为字符串。  </td> 
   </tr> 
   </tbody>
@@ -120,15 +108,15 @@ Adobe Workfront Fusion [!UICONTROL JSONata]连接器允许您查询JSON对象。
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[！UICONTROL Connection]</td> 
    <td> <p>选择用于连接到要用于此模块的大型语言模型(LLM)的连接。</p> <p>目前，仅支持Anthropic API密钥。</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入架构]</td> 
+   <td role="rowheader">[！UICONTROL输入架构]</td> 
    <td> <p>输入或映射要用于此表达式的输入架构。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输出架构]</td> 
+   <td role="rowheader">[！UICONTROL输出架构]</td> 
    <td> <p>输入或映射要用于此表达式的输出架构。</p> </td> 
   </tr> 
  </tbody> 

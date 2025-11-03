@@ -4,9 +4,9 @@ description: 借助适用于Adobe Workfront Fusion的Adobe Experience Manager As
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-source-git-commit: 190c35629f1fc1e07eef4110f3f4f771af1065fb
+source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
 workflow-type: tm+mt
-source-wordcount: '3727'
+source-wordcount: '3734'
 ht-degree: 2%
 
 ---
@@ -23,34 +23,29 @@ ht-degree: 2%
 
 +++ 展开以查看本文中各项功能的访问要求。
 
-您必须具有以下权限才能使用本文中的功能：
-
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
    <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何</p> </td> 
+   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>新增：标准</p><p>或</p><p>当前：工作或更高</p> </td> 
+   <td> <p>标准</p><p>工作或更高</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证**</td> 
+   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
    <td>
-   <p>当前：无Workfront Fusion许可证要求</p>
-   <p>或</p>
-   <p>旧版：用于自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要Workfront Fusion许可证</p>
+   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>新：</p> <ul><li>选择或Prime Workfront包：您的组织必须购买Adobe Workfront Fusion。</li><li>Ultimate Workfront包：其中包含Workfront Fusion。</li></ul>
-   <p>或</p>
-   <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>
+   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
@@ -67,10 +62,10 @@ ht-degree: 2%
 * 您必须拥有Adobe Experience Manager Assets帐户才能使用这些模块。
 * 您必须在Adobe Developer控制台中设置服务器到服务器流程。
 
-  有关在Adobe Developer控制台中设置服务器到服务器流的说明，请参阅[为服务器端API生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hans#the-server-to-server-flow)。
+  有关在Adobe Developer控制台中设置服务器到服务器流的说明，请参阅[为服务器端API生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)。
 * 您的Adobe Experience Manager技术帐户必须具有写入权限。
 
-  有关向Adobe Experience Manager技术帐户添加写入权限的说明，请参阅Adobe Experience Manager文档中的[服务凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
+  有关向Adobe Experience Manager技术帐户添加写入权限的说明，请参阅Adobe Experience Manager文档中的[服务凭据](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 ## Adobe Experience Manager Assets API信息
 
@@ -118,11 +113,11 @@ Adobe Experience Manager Assets连接器使用以下对象：
 >
 >* 这些字段的信息是在Adobe Developer Console中设置服务器到服务器流时生成的。 您可以在作为该设置的一部分生成的服务凭据JSON文件中找到这些值。
 >
->   有关在Adobe Developer Console上设置服务器到服务器流的说明，请参阅[为服务器端API生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hans#the-server-to-server-flow)。
+>   有关在Adobe Developer Console上设置服务器到服务器流的说明，请参阅[为服务器端API生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)。
 >
 >* 您的Adobe Experience Manager技术帐户必须具有写入权限。
 >
->   有关向Adobe Experience Manager技术帐户添加写入权限的说明，请参阅Adobe Experience Manager文档中的[服务凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
+>   有关向Adobe Experience Manager技术帐户添加写入权限的说明，请参阅Adobe Experience Manager文档中的[服务凭据](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 
 <table style="table-layout:auto"> 
