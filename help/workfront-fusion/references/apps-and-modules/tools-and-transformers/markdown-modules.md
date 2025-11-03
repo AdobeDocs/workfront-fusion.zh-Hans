@@ -59,7 +59,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Markdown]</td> 
+   <td role="rowheader">[!UICONTROL Markdown]</td> 
    <td> <p>输入要转换为Markdown的HTML代码。</p> </td> 
   </tr> 
   <tr> 
@@ -80,7 +80,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Markdown]</td> 
+   <td role="rowheader">[!UICONTROL Markdown]</td> 
    <td> <p>输入Markdown格式纯文本。</p> </td> 
   </tr> 
   <tr> 
@@ -88,7 +88,7 @@ ht-degree: 0%
    <td> <p>启用此选项可将GitHub Flavored Markdown转换为HTML。</p> <p>有关详细信息，请参阅[!DNL GitHub]文档中的Markdown备忘单。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Sanitize]</td> 
+   <td role="rowheader">[!UICONTROL Sanitize]</td> 
    <td>选择一个选项以指示您是要从文本中剥离HTML标签还是要转义HTML。</td> 
   </tr> 
  </tbody> 

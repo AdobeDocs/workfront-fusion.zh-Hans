@@ -112,24 +112,24 @@ ht-degree: 3%
       </col>
       <tbody>
         <tr>
-        <td role="rowheader">[！UICONTROL连接类型]</td>
+        <td role="rowheader">[!UICONTROL 连接类型]</td>
         <td>选择 <code>Server to server</code>。</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL连接名称]</td>
+        <td role="rowheader">[!UICONTROL 连接名称]</td>
         <td>
           <p>输入此连接的名称。</p>
         </td>
         </tr>
-        <td role="rowheader">[！UICONTROL客户端ID]</td>
-        <td>输入您的[！UICONTROL Adobe] [！UICONTROL客户端ID]。 这可以在[!DNL Adobe Developer Console]中项目的[！UICONTROL凭据详细信息]部分找到。</td>
+        <td role="rowheader">[!UICONTROL 客户端ID]</td>
+        <td>输入您的[!UICONTROL Adobe] [!UICONTROL 客户端ID]。 这可以在[!DNL Adobe Developer Console]中项目的[!UICONTROL 凭据详细信息]部分找到。</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL客户端密钥]</td>
-        <td>输入您的[!DNL Adobe] [！UICONTROL客户端密钥]。 这可以在[!DNL Adobe Developer Console]中项目的[！UICONTROL凭据详细信息]部分找到。</td>
+        <td role="rowheader">[!UICONTROL 客户端密钥]</td>
+        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 这可以在[!DNL Adobe Developer Console]中项目的[!UICONTROL 凭据详细信息]部分找到。</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL IMS组织ID]</td>
+        <td role="rowheader">[!UICONTROL IMS组织ID]</td>
         <td>输入或映射您的Adobe IMS组织ID。 这是一个格式为<code> 123abc@AdobeOrg</code>的字符串，其中@之前的部分是一个十六进制数字。 您可以在Adobe Admin Console或用户管理集成的Adobe.IO控制台中，将此值作为组织的URL路径的一部分找到。</td>
         </tr>
       </tbody>

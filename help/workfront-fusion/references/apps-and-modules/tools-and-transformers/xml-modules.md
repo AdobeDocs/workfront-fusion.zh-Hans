@@ -55,31 +55,31 @@ ht-degree: 2%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Data structure]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Data structure]</p> </td> 
    <td> <p>数据结构描述生成的XML的结构。 如果要创建的XML示例，可以使用该示例生成数据结构：</p> 
     <ol> 
-     <li value="1">单击<strong>[！UICONTROL Add]</strong>按钮。</li> 
-     <li value="2">单击<strong>[！UICONTROL生成器]</strong>按钮。</li> 
+     <li value="1">单击<strong>[!UICONTROL Add]</strong>按钮。</li> 
+     <li value="2">单击<strong>[!UICONTROL 生成器]</strong>按钮。</li> 
      <li value="3">将XML示例复制并粘贴到示例数据字段中。</li> 
-     <li value="4">单击<strong>[！UICONTROL保存]</strong>按钮。</li> 
+     <li value="4">单击<strong>[!UICONTROL 保存]</strong>按钮。</li> 
      <li value="5">验证是否已成功生成数据结构。</li> 
-     <li value="6">单击<strong>[！UICONTROL保存]</strong>以保存数据结构。</li> 
+     <li value="6">单击<strong>[!UICONTROL 保存]</strong>以保存数据结构。</li> 
     </ol> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL根元素名称]</td> 
+   <td role="rowheader">[!UICONTROL 根元素名称]</td> 
    <td>输入XML根元素的名称。 默认值为 <code>root</code>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Doctype系统ID]</td> 
+   <td role="rowheader">[!UICONTROL Doctype系统ID]</td> 
    <td>输入要在<code>!DOCTYPE SYSTEM</code>声明中使用的文件名</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Doctype公共ID]</td> 
+   <td role="rowheader">[!UICONTROL Doctype公共ID]</td> 
    <td>输入要在<code>!DOCTYPE PUBLIC</code>声明中使用的文件名</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL带Xml声明]</td> 
+   <td role="rowheader">[!UICONTROL 带Xml声明]</td> 
    <td>启用此选项可删除XML声明<code>&lt;?xml ... ?&gt;</code>和<code>&lt;!DOCTYPE ... &gt;</code>，并仅保留XML根元素及其内容。</td> 
   </tr> 
  </tbody> 
@@ -157,24 +157,24 @@ ht-degree: 2%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Data structure]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Data structure]</p> </td> 
    <td> <p>数据结构描述了XML的结构，以使模块的输出在映射面板中可用于以下模块。</p> <p>如果要解析的XML的示例，可以使用该示例生成数据结构：</p> 
     <ol> 
-     <li value="1">单击<strong>[！UICONTROL Add]</strong>按钮。</li> 
-     <li value="2">单击<strong>[！UICONTROL生成器]</strong>按钮。</li> 
-     <li value="3">将XML示例复制并粘贴到<strong>[！UICONTROL示例数据]</strong>字段中。</li> 
-     <li value="4">单击<strong>[！UICONTROL保存]</strong>。</li> 
+     <li value="1">单击<strong>[!UICONTROL Add]</strong>按钮。</li> 
+     <li value="2">单击<strong>[!UICONTROL 生成器]</strong>按钮。</li> 
+     <li value="3">将XML示例复制并粘贴到<strong>[!UICONTROL 示例数据]</strong>字段中。</li> 
+     <li value="4">单击<strong>[!UICONTROL 保存]</strong>。</li> 
      <li value="5">验证是否已成功生成数据结构。</li> 
-     <li value="6"> <p>单击<strong>[！UICONTROL Save]</strong>按钮以保存数据结构。</p> <p>可跳过步骤2-5以提供空的数据结构。 如果数据结构为空，则在至少执行一次模块后，映射面板中才会提供模块的输出。</p> </li> 
+     <li value="6"> <p>单击<strong>[!UICONTROL Save]</strong>按钮以保存数据结构。</p> <p>可跳过步骤2-5以提供空的数据结构。 如果数据结构为空，则在至少执行一次模块后，映射面板中才会提供模块的输出。</p> </li> 
     </ol> <p>有关详细信息，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md" class="MCXref xref">数据结构</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL保留数字为文本]</td> 
+   <td role="rowheader">[!UICONTROL 保留数字为文本]</td> 
    <td>启用此选项以确保数字保持为文本（字符串）值。 否则，数字将转换为数字值。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL XML]</p> </td> 
-   <td> <p>输入或映射要解析的XML格式文本。</p> <p>如果使用公式，请确保其结果值类型是（或可以自动强制到）[！UICONTROL Text]数据类型。 </p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/if-you-use-a-formula-350x164.png" style="width: 350;height: 164;"> </p> <p>如果结果值类型为[！UICONTROL Buffer] （二进制数据），则使用<code>toString()</code>函数将其转换为Text数据类型。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">类型强制</a>和<a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">项目数据类型</a>。</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL XML]</p> </td> 
+   <td> <p>输入或映射要解析的XML格式文本。</p> <p>如果使用公式，请确保其结果值类型是（或可以自动强制到）[!UICONTROL Text]数据类型。 </p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/if-you-use-a-formula-350x164.png" style="width: 350;height: 164;"> </p> <p>如果结果值类型为[!UICONTROL Buffer] （二进制数据），则使用<code>toString()</code>函数将其转换为Text数据类型。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">类型强制</a>和<a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">项目数据类型</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -201,24 +201,24 @@ ht-degree: 2%
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[！UICONTROL Data structure]</td> 
+      <td role="rowheader">[!UICONTROL Data structure]</td> 
       <td> 
        <ol> 
-        <li value="1">单击<strong>[！UICONTROL Add]</strong>按钮。</li> 
-        <li value="2">单击<strong>[！UICONTROL生成器]</strong>按钮。</li> 
+        <li value="1">单击<strong>[!UICONTROL Add]</strong>按钮。</li> 
+        <li value="2">单击<strong>[!UICONTROL 生成器]</strong>按钮。</li> 
         <li value="3">在Web浏览器中，打开新的选项卡或窗口。</li> 
         <li value="4">将第三步中使用的URL放入地址栏并获取XML文件。</li> 
         <li value="5">选择所有XML文本并将其复制到剪贴板中。</li> 
         <li value="6">关闭选项卡或窗口并返回方案。</li> 
         <li value="7">将复制的XML文本粘贴到示例数据字段中。</li> 
-        <li value="8">单击<strong>[！UICONTROL保存]</strong>。</li> 
+        <li value="8">单击<strong>[!UICONTROL 保存]</strong>。</li> 
         <li value="9">验证是否已成功生成数据结构。</li> 
-        <li value="10">单击<strong>[！UICONTROL保存]</strong>以保存数据结构。</li> 
+        <li value="10">单击<strong>[!UICONTROL 保存]</strong>以保存数据结构。</li> 
        </ol> <p>可跳过步骤2至9以提供空的数据结构。 如果数据结构为空，则在至少执行一次模块后，映射面板中才会提供模块的输出。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL XML]</td> 
-      <td> <p>将[！UICONTROL HTTP] &gt; [！UICONTROL Get a file]模块输出中的<code>Data </code>项映射到字段中。 使用<code>toString()</code>函数将其值从[！UICONTROL Buffer] (binary data)类型转换为[！UICONTROL Text]数据类型。</p> <p>您可以将公式的代码复制并粘贴到字段中： <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>有关Buffer和Text数据类型的详细信息，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">项数据类型</a>。</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/paste-formula-code-350x99.png"> </p> </td> 
+      <td role="rowheader">[!UICONTROL XML]</td> 
+      <td> <p>将[!UICONTROL HTTP] &gt; [!UICONTROL Get a file]模块输出中的<code>Data </code>项映射到字段中。 使用<code>toString()</code>函数将其值从[!UICONTROL Buffer] (binary data)类型转换为[!UICONTROL Text]数据类型。</p> <p>您可以将公式的代码复制并粘贴到字段中： <code>&#123;&#123;toString(1.data)&#125;&#125;</code></p> <p>有关Buffer和Text数据类型的详细信息，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">项数据类型</a>。</p> <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/paste-formula-code-350x99.png"> </p> </td> 
      </tr> 
     </tbody> 
    </table>

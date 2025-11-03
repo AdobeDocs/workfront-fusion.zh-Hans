@@ -53,15 +53,15 @@ ht-degree: 1%
 
 <table>
     <tr>
-        <td>[！UICONTROL初始值]</td>
+        <td>[!UICONTROL 初始值]</td>
         <td>输入或映射您希望模块在第一迭代中的值。 默认值为 1。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL重复]</td>
+        <td>[!UICONTROL 重复]</td>
         <td>输入或映射您希望模块重复执行的次数。 此数字必须大于或等于0，并且小于或等于10,000。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL步骤]</td>
+        <td>[!UICONTROL 步骤]</td>
         <td>这是模块增加值所依据的数字。 默认值为 1。</td>
     </tr>
 </table>

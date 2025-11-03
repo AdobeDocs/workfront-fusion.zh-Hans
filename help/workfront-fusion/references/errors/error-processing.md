@@ -148,7 +148,7 @@ Adobe Workfront Fusion可区分多种基本错误类型。 错误的类型决定
 >[!NOTE]
 >
 >如果方案以即时触发器开始并遇到此错误，将忽略[!UICONTROL 最大连续错误数]的设置，并立即停用该方案。
->>有关详细信息，请参阅“模块概述”一文中的[即时触发器](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)。
+>&#x200B;>有关详细信息，请参阅“模块概述”一文中的[即时触发器](/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md#instant-triggers)。
 
 ## 不一致性错误
 

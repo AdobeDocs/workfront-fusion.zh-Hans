@@ -57,15 +57,15 @@ Adobe Workfront Fusion [!UICONTROL JSONata]连接器允许您查询JSON对象。
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL表达式]</td> 
+   <td role="rowheader">[!UICONTROL 表达式]</td> 
    <td>输入要用于计算JSON对象的表达式。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL数据] </td> 
+   <td role="rowheader">[!UICONTROL 数据] </td> 
    <td> 输入要计算的JSON对象。  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Stringify输出] </td> 
+   <td role="rowheader">[!UICONTROL Stringify输出] </td> 
    <td> 启用此选项可将输出转换为字符串。  </td> 
   </tr> 
   </tbody>
@@ -108,15 +108,15 @@ Adobe Workfront Fusion [!UICONTROL JSONata]连接器允许您查询JSON对象。
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>选择用于连接到要用于此模块的大型语言模型(LLM)的连接。</p> <p>目前，仅支持Anthropic API密钥。</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输入架构]</td> 
+   <td role="rowheader">[!UICONTROL 输入架构]</td> 
    <td> <p>输入或映射要用于此表达式的输入架构。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输出架构]</td> 
+   <td role="rowheader">[!UICONTROL 输出架构]</td> 
    <td> <p>输入或映射要用于此表达式的输出架构。</p> </td> 
   </tr> 
  </tbody> 

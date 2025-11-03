@@ -114,23 +114,23 @@ Widen连接器使用以下方法：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Widen]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">将[!DNL Widen]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL事件类型]</td> 
+   <td role="rowheader">[!UICONTROL 事件类型]</td> 
    <td> <p>选择您要监视新资源还是更新的资源。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL展开]</td> 
+   <td role="rowheader">[!UICONTROL 展开]</td> 
    <td> <p>除了资源字段之外，还选择要包含在模块输出中的属性。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输出]</td> 
+   <td role="rowheader">[!UICONTROL 输出]</td> 
    <td>选择要包含在模块输出中的字段。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL限制]</td> 
+   <td role="rowheader">[!UICONTROL 限制]</td> 
    <td> <p>输入或映射每个方案执行周期中您希望模块使用的最大资源数。</p> </td> 
   </tr> 
  </tbody> 
@@ -155,21 +155,21 @@ Widen连接器使用以下方法：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Widen]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">将[!DNL Widen]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL收藏集ID]</td> 
-   <td>对于要将资产添加到的每个收藏集，单击<strong>[收藏集ID]</strong>并输入或映射[！UICONTROL收藏集ID]。</li> 
+   <td role="rowheader">[!UICONTROL 收藏集ID]</td> 
+   <td>对于要将资产添加到的每个收藏集，单击<strong>[收藏集ID]</strong>并输入或映射[!UICONTROL 收藏集ID]。</li> 
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Assets ID]</td> 
-   <td> 对于要添加到收藏集的每个资源，单击<strong>[！UICONTROL Assets ID]</strong>并输入或映射该资源ID。</p> </li> 
+   <td role="rowheader">[!UICONTROL Assets ID]</td> 
+   <td> 对于要添加到收藏集的每个资源，单击<strong>[!UICONTROL Assets ID]</strong>并输入或映射该资源ID。</p> </li> 
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL限制]</td> 
+   <td role="rowheader">[!UICONTROL 限制]</td> 
    <td> <p>输入或映射每个方案执行周期中您希望模块使用的最大资源数。</p> </td> 
   </tr> 
  </tbody> 
@@ -186,31 +186,31 @@ Widen连接器使用以下方法：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>有关将[!DNL Widen]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">将[!DNL Widen]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL API版本]</td> 
+   <td role="rowheader">[!UICONTROL API版本]</td> 
    <td>选择您要使用最新版本的[!DNL Widen] API，还是版本1.0</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL URL]</td> 
+   <td role="rowheader">[!UICONTROL URL]</td> 
    <td>输入或映射API调用的URL。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL方法]</td> 
+   <td role="rowheader">[!UICONTROL 方法]</td> 
    <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Headers]</td> 
-   <td> <p>以标准JSON对象的形式添加请求的标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> <p>[！UICONTROL Workfront Fusion]会为您添加授权标头。</p> </td> 
+   <td role="rowheader">[!UICONTROL Headers]</td> 
+   <td> <p>以标准JSON对象的形式添加请求的标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> <p>[!UICONTROL Workfront Fusion]会为您添加授权标头。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL查询字符串]</td> 
+   <td role="rowheader">[!UICONTROL 查询字符串]</td> 
    <td> <p>以标准JSON对象的形式添加API调用的查询。</p> <p>例如： <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Body]</td> 
+   <td role="rowheader">[!UICONTROL Body]</td> 
    <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
@@ -228,11 +228,11 @@ Widen连接器使用以下方法：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Widen]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">将[!DNL Widen]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资产ID]</td> 
+   <td role="rowheader">[!UICONTROL 资产ID]</td> 
    <td> <p>输入或映射要下载的资源的ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -247,19 +247,19 @@ Widen连接器使用以下方法：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Widen]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">将[!DNL Widen]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资产ID]</td> 
+   <td role="rowheader">[!UICONTROL 资产ID]</td> 
    <td> <p>输入或映射要为其读取信息的资源的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL展开]</td> 
+   <td role="rowheader">[!UICONTROL 展开]</td> 
    <td> <p>除了资源字段之外，还选择要包含在模块输出中的属性。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输出]</td> 
+   <td role="rowheader">[!UICONTROL 输出]</td> 
    <td>选择要包含在模块输出中的字段。</td> 
   </tr> 
  </tbody> 
@@ -274,22 +274,22 @@ Widen连接器使用以下方法：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Widen]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">将[!DNL Widen]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL收藏集ID]</td> 
-   <td>对于要删除资产的每个收藏集，单击<strong>[收藏集ID]</strong>，然后输入或映射[！UICONTROL收藏集ID]。</li> 
+   <td role="rowheader">[!UICONTROL 收藏集ID]</td> 
+   <td>对于要删除资产的每个收藏集，单击<strong>[收藏集ID]</strong>，然后输入或映射[!UICONTROL 收藏集ID]。</li> 
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Assets ID]</td> 
-   <td> 对于要从收藏集中删除的每个资源，单击<strong>[！UICONTROL Assets ID]</strong>并输入或映射该资源ID。</p> </li> 
+   <td role="rowheader">[!UICONTROL Assets ID]</td> 
+   <td> 对于要从收藏集中删除的每个资源，单击<strong>[!UICONTROL Assets ID]</strong>并输入或映射该资源ID。</p> </li> 
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL限制]</td> 
+   <td role="rowheader">[!UICONTROL 限制]</td> 
    <td> <p>输入或映射每个方案执行周期中您希望模块使用的最大资源数。</p> </td> 
   </tr> 
  </tbody> 
@@ -304,23 +304,23 @@ Widen连接器使用以下方法：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Widen]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">将[!DNL Widen]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资产ID]</td> 
+   <td role="rowheader">[!UICONTROL 资产ID]</td> 
    <td> <p>输入或映射要更新元数据的资源的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL元数据类型]</td> 
+   <td role="rowheader">[!UICONTROL 元数据类型]</td> 
    <td> <p>为要更新的元数据选择元数据类型。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL元数据]</td> 
+   <td role="rowheader">[!UICONTROL 元数据]</td> 
    <td>选择要更新的元数据字段。 对于每个字段，输入该字段的新值。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL限制]</td> 
+   <td role="rowheader">[!UICONTROL 限制]</td> 
    <td> <p>输入或映射每个方案执行周期中您希望模块使用的最大资源数。</p> </td> 
   </tr> 
  </tbody> 
@@ -335,32 +335,32 @@ Widen连接器使用以下方法：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Widen]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">将[!DNL Widen]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL上传配置文件]</td> 
+   <td role="rowheader">[!UICONTROL 上传配置文件]</td> 
    <td> <p>选择您希望模块使用的上载配置文件。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL上载方法]</td> 
+   <td role="rowheader">[!UICONTROL 上载方法]</td> 
    <td> <p>选择上载文件的方式。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL，来自文件]</strong> </p> <p>从上一个模块中选择或映射源文件。</p> </li> 
-     <li> <p><strong>[！UICONTROL，按URL]</strong> </p> <p>输入或映射要上载的文件的URL。</p> </li> 
+     <li> <p><strong>[!UICONTROL ，来自文件]</strong> </p> <p>从上一个模块中选择或映射源文件。</p> </li> 
+     <li> <p><strong>[!UICONTROL ，按URL]</strong> </p> <p>输入或映射要上载的文件的URL。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL文件名]</td> 
+   <td role="rowheader">[!UICONTROL 文件名]</td> 
    <td>输入或映射上载文件的名称。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL元数据类型]</td> 
+   <td role="rowheader">[!UICONTROL 元数据类型]</td> 
    <td>为要上载的文件选择元数据类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL元数据]</td> 
-   <td>选择要包含在文件上载中的元数据字段。 对于每个字段，输入该字段的[！UICONTROL值]。</td> 
+   <td role="rowheader">[!UICONTROL 元数据]</td> 
+   <td>选择要包含在文件上载中的元数据字段。 对于每个字段，输入该字段的[!UICONTROL 值]。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -379,31 +379,31 @@ Widen连接器使用以下方法：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Widen]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">将[!DNL Widen]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL收藏集ID]</td> 
+   <td role="rowheader">[!UICONTROL 收藏集ID]</td> 
    <td> <p>输入或映射包含要读取的资产的收藏集的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL开始]</td> 
+   <td role="rowheader">[!UICONTROL 开始]</td> 
    <td>输入或映射要列出的第一个项目的编号。 这是对记录进行分页的一种方式。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Max]</td> 
+   <td role="rowheader">[!UICONTROL Max]</td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL排序方式]</td> 
+   <td role="rowheader">[!UICONTROL 排序方式]</td> 
    <td> <p>选择要对资源进行排序的属性。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL顺序]</td> 
+   <td role="rowheader">[!UICONTROL 顺序]</td> 
    <td>选择您希望对资源进行升序排序还是降序排序。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输出]</td> 
+   <td role="rowheader">[!UICONTROL 输出]</td> 
    <td>选择要包含在模块输出中的字段。</td> 
   </tr> 
  </tbody> 
@@ -418,51 +418,51 @@ Widen连接器使用以下方法：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL Connection]</td> 
   <td> <p>有关将[!DNL Widen]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-widen-to-workfront-fusion" class="MCXref xref">将[!DNL Widen]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL搜索查询]</td> 
+   <td role="rowheader">[!UICONTROL 搜索查询]</td> 
    <td> <p>输入搜索资产时所依据的标准。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL排序方式]</td> 
+   <td role="rowheader">[!UICONTROL 排序方式]</td> 
    <td> <p>选择您希望对资源排序的方式。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL顺序]</td> 
+   <td role="rowheader">[!UICONTROL 顺序]</td> 
    <td>选择您希望对资源进行升序排序还是降序排序。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Include已删除]</td> 
+   <td role="rowheader">[!UICONTROL Include已删除]</td> 
    <td>启用此选项以在搜索中包含已删除的资源。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL包含已存档]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 包含已存档]</p> </td> 
    <td> <p>启用此选项以在搜索中包含已存档的资产。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL搜索文档文本]</td> 
+   <td role="rowheader">[!UICONTROL 搜索文档文本]</td> 
    <td>启用此选项可在搜索中包含文档文本，或设置为false以仅包含标题与搜索条件匹配的资产。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL限制]</td> 
+   <td role="rowheader">[!UICONTROL 限制]</td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL偏移]</td> 
+   <td role="rowheader">[!UICONTROL 偏移]</td> 
    <td>输入或映射要检索其详细信息的第一个项目的编号。 这是对记录进行分页的一种方式。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Scroll]</td> 
+   <td role="rowheader">[!UICONTROL Scroll]</td> 
    <td>启用此选项以允许滚动。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL展开]</td> 
+   <td role="rowheader">[!UICONTROL 展开]</td> 
    <td> <p>除了资源字段之外，还选择要包含在模块输出中的属性。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输出]</td> 
+   <td role="rowheader">[!UICONTROL 输出]</td> 
    <td>选择要包含在模块输出中的字段。</td> 
   </tr> 
  </tbody> 

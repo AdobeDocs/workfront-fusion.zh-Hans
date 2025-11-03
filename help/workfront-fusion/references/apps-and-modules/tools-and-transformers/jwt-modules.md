@@ -72,7 +72,7 @@ JWT连接器使用以下内容：
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL算法]</td> 
+   <td role="rowheader">[!UICONTROL 算法]</td> 
    <td> <p>选择要生成JWT的算法。</p> <ul>
    <li><b>HS256</b>：使用SHA-256哈希算法的HMAC</li>
    <li><b>HS384</b>：使用SHA-384哈希算法的HMAC</li>
@@ -89,11 +89,11 @@ JWT连接器使用以下内容：
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL有效负载] </td> 
+   <td role="rowheader">[!UICONTROL 有效负载] </td> 
    <td> <p>对于每个要添加的有效负荷项，单击<b>添加项</b>并输入该项的键和值。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Options] </td> 
+   <td role="rowheader">[!UICONTROL Options] </td> 
    <td> <p>对于要添加的每个选项项，单击<b>添加项</b>并输入该项的键和值。</p> <p>可以使用以下键：
    <ul>
    <li><b>算法</b>： （默认值： RS256）</li>

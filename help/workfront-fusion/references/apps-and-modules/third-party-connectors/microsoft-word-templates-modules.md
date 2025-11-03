@@ -168,27 +168,27 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL要替换的文本的起始分隔符]</td> 
+   <td role="rowheader">[!UICONTROL 要替换的文本的起始分隔符]</td> 
    <td> <p>输入要标记替换文本开头的字符。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例：</b></span></span>输入<code>&#91;&#91;</code>以替换<code>[[replace_me]]</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL要替换的文本的结束分隔符]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 要替换的文本的结束分隔符]</p> </td> 
    <td> <p>输入要标记替换文本结尾的字符。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例：</b></span></span>输入要替换的<code>&#93;&#93;</code> <code>[[replace_me]]</code></p>。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p> 从上一个模块中选择源文件，或映射源文件的数据。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL已填写文件的名称]</td> 
+   <td role="rowheader">[!UICONTROL 已填写文件的名称]</td> 
    <td>为目标输出文件输入文件名（包括扩展名）。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL数据源]</td> 
+   <td role="rowheader">[!UICONTROL 数据源]</td> 
    <td> <p>选择一个选项以指示您正在使用的数据是来自表单还是原始数据收集（未处理的计算机数据）。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Values]</td> 
+   <td role="rowheader">[!UICONTROL Values]</td> 
    <td> <p>这必须是集合数组，其中：</p> 
     <ul> 
      <li>每个收藏集对应于一个数据条目并包含一个项目 <code>entry</code></li> 
@@ -198,7 +198,7 @@ ht-degree: 0%
     </ul> 
     <p>要添加条目，请执行以下操作：</p>
     <ol> 
-     <li> 单击<b>[！UICONTROL添加项]</b>。 </li> 
+     <li> 单击<b>[!UICONTROL 添加项]</b>。 </li> 
      <li>选择条目的值类型。</li> 
      <li>添加名称和值。 有关更多信息，请参阅本文所选值类型的示例。 
       <ul> 
@@ -226,35 +226,35 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Source Module]</td> 
+   <td role="rowheader">[!UICONTROL Source Module]</td> 
    <td>选择作为文本源的模块。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL要替换的文本的起始分隔符]</td> 
+   <td role="rowheader">[!UICONTROL 要替换的文本的起始分隔符]</td> 
    <td> <p>输入要标记替换文本开头的字符。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例：</b></span></span>输入<code>&#91;&#91;</code>以替换<code>[[replace_me]]</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL要替换的文本的结束分隔符]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 要替换的文本的结束分隔符]</p> </td> 
    <td> <p>输入要标记替换文本结尾的字符。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例：</b></span></span>输入<code>&#93;&#93;</code>以替换<code>[[replace_me]]</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL分组依据]</td> 
+   <td role="rowheader">[!UICONTROL 分组依据]</td> 
    <td> 定义包含一个或多个映射项的表达式。 聚合的数据用同一表达式的值在“组”下分隔。 每个组输出为一个单独的包，其中包含带有已计算表达式的键和聚合文本。 这样，您就可以在后续模块中将键用作过滤器。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL在出现空聚合后停止处理]</td> 
+   <td role="rowheader">[!UICONTROL 在出现空聚合后停止处理]</td> 
    <td>启用此选项可在聚合不包含任何捆绑包时停止处理。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL Source file]</td> 
    <td> <p> 从上一个模块中选择源文件，或映射源文件的数据。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL已填写文件的名称]</td> 
+   <td role="rowheader">[!UICONTROL 已填写文件的名称]</td> 
    <td>为目标输出文件输入文件名（包括扩展名）。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Values]</td> 
+   <td role="rowheader">[!UICONTROL Values]</td> 
    <td> <p>这必须是集合数组，其中：</p> 
     <ul> 
      <li>每个收藏集对应于一个数据条目并包含一个项目 <code>entry</code></li> 
@@ -264,7 +264,7 @@ ht-degree: 0%
     </ul> 
     <p>要添加条目，请执行以下操作：</p>
     <ol> 
-     <li> 单击<b>[！UICONTROL添加项]</b>。 </li> 
+     <li> 单击<b>[!UICONTROL 添加项]</b>。 </li> 
      <li>选择条目的值类型。</li> 
      <li>添加名称和值。 有关更多信息，请参阅本文所选值类型的示例。 
       <ul> 

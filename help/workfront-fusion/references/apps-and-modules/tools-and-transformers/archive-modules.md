@@ -73,7 +73,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Source file]</td> 
+   <td>[!UICONTROL Source file]</td> 
    <td> <p>  <p>从上一个模块中选择源文件，或映射源数据。</p></p>  </td> 
   </tr> 
  </tbody> 
@@ -100,31 +100,31 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Source module]</td> 
+   <td>[!UICONTROL Source module]</td> 
    <td> <p> 选择要从中检索文件的模块。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL类型] </td> 
-   <td> <p>选择是将文件添加到[！UICONTROL ZIP]、GZIP还是[！UICONTROL TAR]存档。</p> </td> 
+   <td>[!UICONTROL 类型] </td> 
+   <td> <p>选择是将文件添加到[!UICONTROL ZIP]、GZIP还是[!UICONTROL TAR]存档。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Comment]</td> 
+   <td>[!UICONTROL Comment]</td> 
    <td>输入要添加到存档中的注释。</td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL分组依据]</td> 
+   <td>[!UICONTROL 分组依据]</td> 
    <td> <p>定义要按其分组聚合输出的表达式。 此表达式可以包含一个或多个映射项。 随后，将使用此表达式的值将聚合的数据分成不同的组。 每个组输出为一个单独的捆绑，其中包含一个键（经过计算的表达式）和一个值（聚合文本）。 在后续模块中，您可以将该键用作过滤器。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL在出现空聚合后停止处理]</td> 
+   <td>[!UICONTROL 在出现空聚合后停止处理]</td> 
    <td>选择此选项可在没有结果时停止方案。</td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL存档名称]</td> 
+   <td>[!UICONTROL 存档名称]</td> 
    <td> <p> 输入已创建存档的名称。 请勿添加扩展。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Source file]</td> 
+   <td>[!UICONTROL Source file]</td> 
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </td> 
   </tr> 
  </tbody> 
@@ -152,7 +152,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL数据] </td> 
+   <td>[!UICONTROL 数据] </td> 
    <td> <p>使用deflate函数输入或映射要压缩的数据。</p> </td> 
   </tr> 
  </tbody> 
@@ -167,7 +167,7 @@ ht-degree: 0%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL数据] </td> 
+   <td>[!UICONTROL 数据] </td> 
    <td> <p>使用膨胀函数输入或映射要解压缩的数据。</p> </td> 
   </tr> 
  </tbody> 

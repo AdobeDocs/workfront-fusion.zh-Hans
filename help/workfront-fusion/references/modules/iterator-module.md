@@ -98,7 +98,7 @@ ht-degree: 0%
 >要阻止运行整个方案，您可以：
 >
 >* 在[!UICONTROL JSON] > [!UICONTROL 解析JSON]模块后取消模块链接，以防止流进一步继续。
->  >   或
+>  &#x200B;>   或
 >* 右键单击[!UICONTROL JSON] > [!UICONTROL 分析JSON]模块，然后从上下文菜单中选择&#x200B;**[!UICONTROL 仅运行此模块]**&#x200B;以仅执行[!UICONTROL JSON] > [!UICONTROL 分析JSON]模块。
 
 执行[!UICONTROL JSON] > [!UICONTROL 解析JSON]后，它可以向所有后续模块（包括迭代器模块）提供有关其输出的信息。 然后，迭代器设置中的映射面板会显示以下项目：
