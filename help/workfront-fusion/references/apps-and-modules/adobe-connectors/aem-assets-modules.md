@@ -62,10 +62,10 @@ ht-degree: 2%
 * 您必须拥有Adobe Experience Manager Assets帐户才能使用这些模块。
 * 您必须在Adobe Developer控制台中设置服务器到服务器流程。
 
-  有关在Adobe Developer控制台中设置服务器到服务器流的说明，请参阅[为服务器端API生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)。
+  有关在Adobe Developer控制台中设置服务器到服务器流的说明，请参阅[为服务器端API生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hans#the-server-to-server-flow)。
 * 您的Adobe Experience Manager技术帐户必须具有写入权限。
 
-  有关向Adobe Experience Manager技术帐户添加写入权限的说明，请参阅Adobe Experience Manager文档中的[服务凭据](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
+  有关向Adobe Experience Manager技术帐户添加写入权限的说明，请参阅Adobe Experience Manager文档中的[服务凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 ## Adobe Experience Manager Assets API信息
 
@@ -113,11 +113,11 @@ Adobe Experience Manager Assets连接器使用以下对象：
 >
 >* 这些字段的信息是在Adobe Developer Console中设置服务器到服务器流时生成的。 您可以在作为该设置的一部分生成的服务凭据JSON文件中找到这些值。
 >
->   有关在Adobe Developer Console上设置服务器到服务器流的说明，请参阅[为服务器端API生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)。
+>   有关在Adobe Developer Console上设置服务器到服务器流的说明，请参阅[为服务器端API生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hans#the-server-to-server-flow)。
 >
 >* 您的Adobe Experience Manager技术帐户必须具有写入权限。
 >
->   有关向Adobe Experience Manager技术帐户添加写入权限的说明，请参阅Adobe Experience Manager文档中的[服务凭据](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
+>   有关向Adobe Experience Manager技术帐户添加写入权限的说明，请参阅Adobe Experience Manager文档中的[服务凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
 
 
 <table style="table-layout:auto"> 
