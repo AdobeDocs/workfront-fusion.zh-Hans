@@ -3,10 +3,10 @@ title: Veeva Vault模块
 description: 在Adobe Workfront Fusion场景中，您可以自动使用Veeva Vault的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 37cb18a2e13a494c4174514539c0c7e43cdee011
+source-git-commit: 4ba05a5f400ba1bdfb97586500baf741b555cd20
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 3%
+source-wordcount: '2325'
+ht-degree: 2%
 
 ---
 
@@ -118,18 +118,23 @@ ht-degree: 3%
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [文档](#document)
+* [对象](#object)
+* [其他](#other)
+
 ### 文档
 
 * [创建单个文档](#create-a-single-document)
 * [创建多个文档](#create-multiple-documents)
 * [删除单个文档](#delete-a-single-document)
+* [下载文件](#download-file)
 * [导出文档](#export-documents)
 * [获取单个文档](#get-a-single-document)
 * [启动用户操作](#initiate-user-action)
 * [列出文档](#list-documents)
 * [检索文档导出结果](#retrieve-document-export-results)
-* [更新多个文档](#update-multiple-documents)
 * [更新单个文档](#update-a-single-document)
+* [更新多个文档](#update-multiple-documents)
 
 #### 创建单个文档
 
@@ -196,6 +201,41 @@ ht-degree: 3%
   <tr> 
    <td role="rowheader"><p>文档ID/绑定器ID/模板名称</p> </td> 
    <td> <p>选择要删除的字段。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 下载文件
+
+此模块从Veeva Vault下载文档、文档版本或模板。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>类型</p> </td> 
+   <td> <p>选择您要下载文档还是模板。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>下载类型</p> </td> 
+   <td> <p>选择您要下载文档还是文档版本。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>文档ID/模板名称</p> </td> 
+   <td> <p>输入或映射文档的ID或要下载的模板的名称。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>签出文档</p> </td> 
+   <td> <p>如果您正在下载文档，请启用此选项，以在下载文档之前签出该文档。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>版本</p> </td> 
+   <td> <p>如果您正在下载文档版本，请选择要下载的版本。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -387,9 +427,106 @@ ht-degree: 3%
 
 ### 对象
 
+* [创建单个对象记录](#create-a-single-object-record)
+* [删除单个对象记录](#delete-a-single-object-record)
+* [获取单个对象](#get-a-single-object)
+* [列出对象记录](#list-objects-records)
+* [更新单个对象记录](#update-a-single-object-record)
 
+#### 创建单个对象记录
 
-#### 列出对象
+此模块创建、复制或深层复制单个对象记录。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>类型</p> </td> 
+   <td> <p>选择是创建或复制记录，还是深度复制记录。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">迁移模式</td> 
+   <td>如果创建或复制记录，请启用此选项以创建或更新处于非初始状态且验证最少的对象记录，创建非活动记录，并设置标准和系统管理的字段，如<code>createdby_v</code>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">无触发器</td> 
+   <td>如果设置为true并启用迁移模式，则模块将绕过所有系统、标准、自定义SDK触发器和操作触发器。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">对象名称</td> 
+   <td>输入或映射对象名称__v字段值，如<code>product__v</code>、<code>country__v</code>或<code>custom_object__c</code>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">记录Id</td> 
+   <td>如果要深度复制记录，请选择要复制的记录。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">记录字段</td> 
+   <td>如果要深度复制记录，请选择要为其提供值的字段，然后提供这些值。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 删除单个对象记录
+
+此模块删除或级联删除单个对象记录。 级联删除记录会删除该记录及其所有子对象。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>类型</p> </td> 
+   <td> <p>选择是删除记录，还是级联删除记录。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">对象名称</td> 
+   <td>选择要删除的对象。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">记录Id</td> 
+   <td>选择要删除的记录的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">外部 ID</td> 
+   <td>您可以使用此用户定义的文档外部ID，而不是记录ID。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 获取单个对象
+
+此模块可检索在存储库中的特定对象记录上配置的元数据。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">对象名称</td> 
+   <td>选择要为其检索元数据的对象。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">记录Id</td> 
+   <td>选择要为其检索元数据的记录的ID。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 列出对象记录
 
 此模块检索已验证的存储库中的所有存储库对象。
 
@@ -408,6 +545,55 @@ ht-degree: 3%
   <tr> 
    <td role="rowheader">返回结果的最大数目</td> 
    <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+<!--#### Update a single object record-->
+
+此模块更新现有对象记录中的字段。
+
+此模块创建、复制或深层复制单个对象记录。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>类型</p> </td> 
+   <td> <p>选择是创建或复制记录，还是深度复制记录。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">迁移模式</td> 
+   <td>启用此选项可以在非初始状态下以最少的验证创建或更新对象记录，创建非活动记录，并设置标准和系统管理的字段，如<code>createdby_v</code>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">无触发器</td> 
+   <td>如果启用了迁移模式，则可以启用此选项以绕过所有系统、标准、自定义SDK触发器和操作触发器。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">对象名称</td> 
+   <td>输入或映射对象名称__v字段值，如<code>product__v</code>、<code>country__v</code>或<code>custom_object__c</code>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">记录Id</td> 
+   <td>选择要更新的记录的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">State</td> 
+   <td>指定将<code>X-VaultAPI-MigrationMode</code>设置为true时记录的生命周期状态。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">状态标签</td> 
+   <td>在<code>X-VaultAPI-MigrationMode</code>设置为true时指定记录的生命周期状态类型。 使用格式<code>base:object_lifecycle:</code>，后跟对象状态类型。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">记录字段</td> 
+   <td>如果要深度复制记录，请选择要为其提供值的字段，然后提供这些值。</td> 
   </tr> 
  </tbody> 
 </table>
