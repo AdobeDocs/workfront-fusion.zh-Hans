@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 43b4c261859074c01759c0a0f924233c18401072
+source-git-commit: 4648fd66281e3771bd1859969f7aa7627b1d3434
 workflow-type: tm+mt
-source-wordcount: '1926'
+source-wordcount: '1929'
 ht-degree: 3%
 
 ---
@@ -394,7 +394,8 @@ ht-degree: 3%
          * [Salesforce模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/salesforce-modules.md)
          * [SDL托管翻译模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sdl-managed-translation-modules.md)
          * [ServiceNow模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/servicenow-modules.md)
-         * [Slack模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
+         * [Slack模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules-new.md)
+         * [Slack模块（旧版）](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/slack-modules.md)
          * [Split.io模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/split-io-modules.md)
          * [网格模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/trello-modules.md)
          * [加宽模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/widen-modules.md)
