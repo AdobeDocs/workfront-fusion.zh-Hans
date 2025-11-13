@@ -3,17 +3,19 @@ title: 链模块
 description: 使用这些模块，您可以将场景链接在一起，使一个调用另一个。
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '625'
 ht-degree: 1%
 
 ---
 
 # 链模块
+
+>[!NOTE]
+>
+>此功能当前位于Beta中。
 
 使用“链”模块，可以将一个方案连接到另一个方案。
 

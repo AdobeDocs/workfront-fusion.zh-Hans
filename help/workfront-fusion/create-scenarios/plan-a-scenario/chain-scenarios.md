@@ -3,17 +3,19 @@ title: 将多个方案链接在一起
 description: 您可以将方案链接在一起，允许一个方案触发另一个方案，并将第二个方案的数据输出返回到第一个方案。
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: b41f7795273d35dc4e0c019c568f8939926b875a
+exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
+source-git-commit: 7f73007e219714c38dd0cf29d2a1e3a4c8f6f3cc
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1247'
 ht-degree: 0%
 
 ---
 
-
 # 将多个方案链接在一起
+
+>[!NOTE]
+>
+>此功能当前位于Beta中。
 
 您可以将方案链接在一起，允许一个方案触发另一个方案，并将第二个方案的数据输出返回到第一个方案。 这允许创建更多模块化方案，您无需在多个方案中复制方案部分。
 
