@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 4648fd66281e3771bd1859969f7aa7627b1d3434
+source-git-commit: 9c5a73e284026cea03296e9a536958f4630fd81c
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1936'
 ht-degree: 3%
 
 ---
@@ -16,8 +16,9 @@ ht-degree: 3%
 * 融合释放活动 {#fusion-release-activity}
    * [Adobe Workfront Fusion发布活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion版本 — 2025 {#fusion-releases-2025}
-      * [Workfront Fusion发行活动： 2025年11月3日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
+      * [Workfront Fusion发行活动： 2025年11月17日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
       * [Workfront Fusion发行活动： 2025年11月10日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
+      * [Workfront Fusion发行活动： 2025年11月3日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
       * [Workfront Fusion发行活动： 2025年10月20日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-20.md)
       * [Workfront Fusion发行活动： 2025年10月27日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-27.md)
       * [Workfront Fusion发行活动： 2025年10月13日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-13.md)
