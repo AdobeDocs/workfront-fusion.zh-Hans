@@ -4,10 +4,10 @@ description: 使用Adobe Workfront Fusion Figma模块，您可以检索注释、
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 545bc38a619c44dd39bb746d751775f63e7aa16d
 workflow-type: tm+mt
-source-wordcount: '2600'
-ht-degree: 0%
+source-wordcount: '2638'
+ht-degree: 14%
 
 ---
 
@@ -19,41 +19,41 @@ ht-degree: 0%
 
 有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：用于工作自动化和集成的 Workfront Fusion </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -70,21 +70,26 @@ Figma连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">基本 URL</td> 
+   <td role="rowheader">基础 URL</td> 
    <td> https://api.figma.com/v1</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API版本</td> 
+   <td role="rowheader">API 版本</td> 
    <td> v1 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API标记</td> 
+   <td role="rowheader">API 标记</td> 
    <td>v1.8.25</td> 
   </tr>
  </tbody> 
  </table>
 
 ## 创建与Figma的连接
+
+>[!IMPORTANT]
+>
+>* Figma于2025年1月更改了身份验证要求。 `Figma`连接类型符合新要求。 `Figma (Legacy)`连接类型已弃用，不久将会删除。
+>* 如果您使用的是重定向URL，请使用`https://oauth.app.workfrontfusion.com/oauth/cb/figma3`。
 
 要为您的Figma模块创建连接：
 
@@ -101,7 +106,7 @@ Figma连接器使用以下对象：
         <tr>
         <td role="rowheader">[!UICONTROL 连接类型]</td>
         <td>
-          <p> 对于新连接，选择<code>Figma</code>而不使用旧标记。 </p><p>Figma于2025年1月更改了身份验证要求。 <code>Figma</code>连接类型符合新要求。 未来将删除<code>Figma (Legacy)</code>连接类型。</p>
+          <p> 选择<code>Figma</code>而不选择旧标记。 </p><p>Figma于2025年1月更改了身份验证要求。 <code>Figma</code>连接类型符合新要求。 <code>Figma (Legacy)</code>连接类型已被弃用，将来将被删除。</p>
         </td>
         </tr>
         <tr>
@@ -111,12 +116,12 @@ Figma连接器使用以下对象：
         </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 客户端ID]</td>
-        <td>输入您的[!UICONTROL 数字] [!UICONTROL 客户端ID]。</td>
+        <td role="rowheader">[!UICONTROL 客户端 ID]</td>
+        <td>输入您的[！UICONTROL图片] [！UICONTROL客户端ID]。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的Figma [!UICONTROL 客户端密钥]。</td>
+        <td>输入您的Figma [！UICONTROL客户端密钥]。</td>
         </tr>
         <tr>
         <td role="rowheader">自定义范围</td>
@@ -129,15 +134,15 @@ Figma连接器使用以下对象：
       </tbody>
     </table>
 
-1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
+1. 点击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
 
 
 
-## [!DNL Figma]模块及其字段
+## [!DNL Figma] 模块及其字段
 
-在配置[!DNL Figma]模块时，Workfront Fusion将显示以下列出的字段。 除此以外，可能还会显示其他[!DNL Figma]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在您配置 [!DNL Figma] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Figma] 字段。模块中的加粗标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -168,16 +173,16 @@ Figma连接器使用以下对象：
   <col />
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
       <td> <p>有关将[!DNL Figma]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">创建与Figma的连接</a>。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 文件ID]</td>
+      <td role="rowheader">[！UICONTROL文件ID]</td>
       <td>输入或映射要添加或删除注释的文件的文件ID。 </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 注释ID]</td>
+      <td role="rowheader">[!UICONTROL 评论 ID]</td>
       <td>输入要删除的注释的文本。</td>
     </tr>
   </tbody>
@@ -192,26 +197,26 @@ Figma连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
       <td> <p>有关将[!DNL Figma]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">创建与Figma的连接</a>。</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 文件ID]</td>
+      <td role="rowheader">[！UICONTROL文件ID]</td>
       <td>
         <p>输入或映射要为其检索注释的文件的文件ID。 </p>
         <ul>
           <li>
-            <p>如果您不知道该ID，请单击<b>[!UICONTROL 查找文件]</b>，然后输入或映射与该文件关联的项目的ID，然后选择该文件。</p>
+            <p>如果您不知道该ID，请单击<b>[！UICONTROL查找文件]</b>，然后输入或映射与该文件关联的项目的ID，然后选择该文件。</p>
           </li>
           <li>
-            <p>如果您不知道项目的ID，请单击<b>[!UICONTROL 查找项目]</b>，然后输入或映射拥有该文件所关联项目的团队的ID，然后选择该项目，然后选择该文件。</p>
+            <p>如果您不知道项目的ID，请单击<b>[！UICONTROL查找项目]</b>，然后输入或映射拥有该文件所关联项目的团队的ID，然后选择该项目，然后选择该文件。</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 返回的最大评论数]</td>
-      <td>输入或映射您希望模块在每个方案执行周期中返回的最大注释数。</td>
+      <td role="rowheader">[!UICONTROL 返回评论的最大数量]</td>
+      <td>输入或映射该模块在每次场景执行周期内应返回的评论最大数量。</td>
     </tr>
   </tbody>
 </table>
@@ -226,25 +231,25 @@ Figma连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
       <td> <p>有关将[!DNL Figma]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">创建与Figma的连接</a>。</p>
     </tr>
     <tr>
-      <td  role="rowheader">[!UICONTROL 文件ID]</td>
+      <td  role="rowheader">[！UICONTROL文件ID]</td>
       <td>
         <p>输入或映射要向其发布注释的文件的文件ID。 </p>
         <ul>
           <li>
-            <p>如果您不知道文件的ID，请单击<b>[!UICONTROL 查找文件]</b>，然后输入或映射与文件关联的项目的ID，然后选择该文件。</p>
+            <p>如果您不知道文件的ID，请单击<b>[！UICONTROL查找文件]</b>，然后输入或映射与文件关联的项目的ID，然后选择该文件。</p>
           </li>
           <li>
-            <p>如果您尝试查找文件的ID但不知道项目的ID，请单击<b>[!UICONTROL 查找项目]</b>，然后输入或映射拥有该文件关联的项目的团队的ID。 选择项目，然后选择文件。</p>
+            <p>如果您尝试查找文件的ID但不知道项目的ID，请单击<b>[！UICONTROL查找项目]</b>，然后输入或映射拥有该文件关联的项目的团队的ID。 选择项目，然后选择文件。</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Comment]</td>
+      <td role="rowheader">[！UICONTROL Comment]</td>
       <td>输入注释的文本。</td>
     </tr>
   </tbody>
@@ -259,7 +264,7 @@ Figma连接器使用以下对象：
 
 * [列出项目文件](#list-project-files)
 
-* [列出项目](#list-projects)
+* [列出项目 ](#list-projects)
 
 
 #### [!UICONTROL 获取文件或图像]
@@ -271,37 +276,37 @@ Figma连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
       <td> <p>有关将[!DNL Figma]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">创建与Figma的连接</a>。</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 对象类型]</td>
+      <td role="rowheader">[！UICONTROL对象类型]</td>
       <td>
         <p>选择要检索的对象类型。</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL 文件]</b>
+            <p><b>[！UICONTROL文件]</b>
             </p>
-            <p>模块会返回由[!UICONTROL Key]引用的文档作为JSON对象。 可以从任何Figma文件URL解析文件密钥。</p>
-            <p>有关字段，请参阅<a href="#get-a-file-or-image-file" class="MCXref xref" >[!UICONTROL 获取文件或图像：文件]</a>。</p>
+            <p>模块会返回由[！UICONTROL Key]引用的文档作为JSON对象。 可以从任何Figma文件URL解析文件密钥。</p>
+            <p>有关字段，请参阅<a href="#get-a-file-or-image-file" class="MCXref xref" >[！UICONTROL获取文件或图像：文件]</a>。</p>
           </li>
           <li>
-            <p><b>[!UICONTROL 文件节点]</b>
+            <p><b>[！UICONTROL文件节点]</b>
             </p>
-            <p>将ID引用的节点作为JSON对象返回。 从[!UICONTROL Key]引用的[!DNL Figma]文件中检索节点。</p>
-            <p>有关字段，请参阅<a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[!UICONTROL 获取文件或图像：文件节点]</a>。</p>
+            <p>将ID引用的节点作为JSON对象返回。 从[！UICONTROL Key]引用的[!DNL Figma]文件中检索节点。</p>
+            <p>有关字段，请参阅<a href="#get-a-file-or-image-file-nodes" class="MCXref xref" >[！UICONTROL获取文件或图像：文件节点]</a>。</p>
           </li>
           <li>
-            <p><b>[!UICONTROL 图像]</b>
+            <p><b>[！UICONTROL图像]</b>
             </p>
             <p>模块从文件渲染图像。</p>
-            <p>有关字段，请参阅<a href="#get-a-file-or-image-image" class="MCXref xref" >[!UICONTROL 获取文件或图像：图像]</a>。</p>
+            <p>有关字段，请参阅<a href="#get-a-file-or-image-image" class="MCXref xref" >[！UICONTROL获取文件或图像：图像]</a>。</p>
           </li>
           <li>
-            <p><b>[!UICONTROL 图像填充]</b>
+            <p><b>[！UICONTROL图像填充]</b>
             </p>
             <p>模块会返回文档图像填充中存在的所有图像的下载链接。 图像填充是[!DNL Figma]表示任何用户提供的图像的方式。 将图像拖入[!DNL Figma]中时，[!DNL Figma]会创建一个矩形，其中只有一个填充代表图像，用户能够转换矩形（和填充上的属性）。</p>
-            <p>有关字段，请参阅<a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[!UICONTROL 获取文件或图像：图像填充]</a>。</p>
+            <p>有关字段，请参阅<a href="#get-a-file-or-image-image-fills" class="MCXref xref" >[！UICONTROL获取文件或图像：图像填充]</a>。</p>
           </li>
         </ul>
       </td>
@@ -317,22 +322,22 @@ Figma连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL 文件键]</td>
+      <td role="rowheader">[！UICONTROL文件键]</td>
       <td>选择要从中返回JSON的文件。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 版本ID]</td>
+      <td role="rowheader">[！UICONTROL版本ID]</td>
       <td>输入或映射您希望模块返回的文件版本。 对于当前模块，请将此字段留空。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 节点ID]</td>
+      <td role="rowheader">[！UICONTROL节点ID]</td>
       <td>
         <p>要仅返回文档的子集，请输入您希望模块返回的节点。 该模块会返回列出的节点、它们的子节点以及根节点与列出的节点之间的任何内容。</p>
-        <p>对于每个要返回的节点，单击<b>[!UICONTROL 添加]</b>并输入节点的文本。</p>
+        <p>对于每个要返回的节点，单击<b>[！UICONTROL添加]</b>并输入节点的文本。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 深度]</td>
+      <td role="rowheader">[！UICONTROL深度]</td>
       <td>
         <p>输入或映射一个整数，该整数表示在文档树中要返回结果的深度。 </p>
         <div class="example"><span class="autonumber"><span><b>示例： </b></span></span>
@@ -349,15 +354,15 @@ Figma连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Geometry]</td>
+      <td role="rowheader">[！UICONTROL Geometry]</td>
       <td>若要返回矢量数据，请输入<code>paths</code>。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 插件数据]</td>
-      <td>插件ID和/或字符串“[!UICONTROL shared]”的逗号分隔列表。 由这些插件编写的文档中存在的任何数据都将包含在<code>pluginData</code>和<code>sharedPluginData</code>属性的结果中。</td>
+      <td role="rowheader">[！UICONTROL插件数据]</td>
+      <td>插件ID和/或字符串“[！UICONTROL shared]”的逗号分隔列表。 由这些插件编写的文档中存在的任何数据都将包含在<code>pluginData</code>和<code>sharedPluginData</code>属性的结果中。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 分支数据]</td>
+      <td role="rowheader">[！UICONTROL分支数据]</td>
       <td>启用此选项可返回所请求文件的分支元数据。 如果文件是分支，则主文件的密钥包含在返回的响应中。 如果文件具有分支，则其元数据将包含在返回的响应中。 默认值： <code>false</code>。</td>
     </tr>
   </tbody>
@@ -370,22 +375,22 @@ Figma连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL 文件键]</td>
+      <td role="rowheader">[！UICONTROL文件键]</td>
       <td>选择要从中返回JSON的文件。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 节点ID]</td>
+      <td role="rowheader">[！UICONTROL节点ID]</td>
       <td>
         <p>输入您希望模块返回并转换的节点</p>
-        <p>对于每个要返回的节点，单击<b>[!UICONTROL 添加]</b>并输入节点的文本。</p>
+        <p>对于每个要返回的节点，单击<b>[！UICONTROL添加]</b>并输入节点的文本。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 版本ID]</td>
+      <td role="rowheader">[！UICONTROL版本ID]</td>
       <td>输入或映射您希望模块返回的文件版本。 对于当前模块，请将此字段留空。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 深度]</td>
+      <td role="rowheader">[！UICONTROL深度]</td>
       <td>
         <p>输入或映射一个整数，该整数表示在文档树中要返回结果的深度。 </p>
         <div class="example"><span class="autonumber"><span><b>示例： </b></span></span>
@@ -402,11 +407,11 @@ Figma连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Geometry]</td>
+      <td role="rowheader">[！UICONTROL Geometry]</td>
       <td>若要返回矢量数据，请输入<code>paths</code>。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 插件数据]</td>
+      <td role="rowheader">[！UICONTROL插件数据]</td>
       <td>插件ID和/或字符串“shared”的逗号分隔列表。 由这些插件编写的文档中存在的任何数据都将包含在pluginData和sharedPluginData属性的结果中。</td>
     </tr>
   </tbody>
@@ -420,22 +425,22 @@ Figma连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL 文件键]</td>
+      <td role="rowheader">[！UICONTROL文件键]</td>
       <td>选择要从中返回JSON的文件。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 节点ID]</td>
+      <td role="rowheader">[！UICONTROL节点ID]</td>
       <td>
         <p>输入您希望模块呈现的节点。</p>
-        <p>对于要渲染的每个节点，单击<b>[!UICONTROL 添加]</b>并输入节点的文本。</p>
+        <p>对于要渲染的每个节点，单击<b>[！UICONTROL添加]</b>并输入节点的文本。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 缩放]</td>
+      <td role="rowheader">[！UICONTROL缩放]</td>
       <td>要缩放图像，请输入或映射缩放因子。 此数字必须介于0.01和4之间。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 格式]</td>
+      <td role="rowheader">[！UICONTROL格式]</td>
       <td>
         <p>选择图像输出的格式。</p>
         <ul>
@@ -455,19 +460,19 @@ Figma连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL SVG — 包含ID]</td>
-      <td>启用此选项可包含所有SVG元素的ID属性。 默认值： [!UICONTROL false]。</td>
+      <td role="rowheader">[！UICONTROL SVG — 包含ID]</td>
+      <td>启用此选项可包含所有SVG元素的ID属性。 默认值： [！UICONTROL false]。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL SVG — 简化描边]</td>
-      <td>启用此选项可简化内/外描边并使用描边属性（如果可能）而不是&lt;mask&gt;。 默认值： [!UICONTROL true]。</td>
+      <td role="rowheader">[！UICONTROL SVG — 简化描边]</td>
+      <td>启用此选项可简化内/外描边并使用描边属性（如果可能）而不是&lt;mask&gt;。 默认值： [！UICONTROL true]。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 使用绝对边界]</td>
-      <td>启用此选项可使用节点的完整尺寸，无论是否裁剪节点或节点周围的空间为空。 使用此项导出文本节点而不进行裁剪。 默认值： [!UICONTROL false]。</td>
+      <td role="rowheader">[！UICONTROL使用绝对边界]</td>
+      <td>启用此选项可使用节点的完整尺寸，无论是否裁剪节点或节点周围的空间为空。 使用此项导出文本节点而不进行裁剪。 默认值： [！UICONTROL false]。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 版本]</td>
+      <td role="rowheader">[！UICONTROL版本]</td>
       <td>输入或映射您希望模块返回的文件版本。 对于当前模块，请将此字段留空。</td>
     </tr>
   </tbody>
@@ -480,7 +485,7 @@ Figma连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL 文件键]</td>
+      <td role="rowheader">[！UICONTROL文件键]</td>
       <td>选择要从中返回JSON的文件。</td>
     </tr>
   </tbody>
@@ -494,24 +499,24 @@ Figma连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
       <td> <p>有关将[!DNL Figma]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">创建与Figma的连接</a>。</p>
     <tr>
-      <td role="rowheader">[!UICONTROL 文件ID]</td>
+      <td role="rowheader">[！UICONTROL文件ID]</td>
       <td>
         <p>输入或映射要检索其版本历史记录的文件的文件ID。 </p>
         <ul>
           <li>
-            <p>如果您不知道文件的ID，请单击<b>[!UICONTROL 查找文件]</b>，然后输入或映射与文件关联的项目的ID，然后选择该文件。</p>
+            <p>如果您不知道文件的ID，请单击<b>[！UICONTROL查找文件]</b>，然后输入或映射与文件关联的项目的ID，然后选择该文件。</p>
           </li>
           <li>
-            <p>如果您尝试查找文件的ID但不知道项目的ID，请单击<b>[!UICONTROL 查找项目]</b>，然后输入或映射拥有该文件关联的项目的团队的ID。 选择项目，然后选择文件。</p>
+            <p>如果您尝试查找文件的ID但不知道项目的ID，请单击<b>[！UICONTROL查找项目]</b>，然后输入或映射拥有该文件关联的项目的团队的ID。 选择项目，然后选择文件。</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 返回的最大文件数]</td>
+      <td role="rowheader">[！UICONTROL返回的最大文件数]</td>
       <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td>
     </tr>
   </tbody>
@@ -526,22 +531,22 @@ Figma连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
       <td> <p>有关将[!DNL Figma]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">创建与Figma的连接</a>。</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 文件ID]</td>
+      <td role="rowheader">[！UICONTROL文件ID]</td>
       <td>
         <p>输入或映射要为其检索文件的项目的项目ID。 </p>
         <ul>
           <li>
-            <p>如果您不知道项目的ID，请单击<b>[!UICONTROL 查找项目]</b>，然后输入或映射与项目关联的团队的ID，然后选择该项目。</p>
+            <p>如果您不知道项目的ID，请单击<b>[！UICONTROL查找项目]</b>，然后输入或映射与项目关联的团队的ID，然后选择该项目。</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 返回的最大文件数]</td>
+      <td role="rowheader">[！UICONTROL返回的最大文件数]</td>
       <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td>
     </tr>
   </tbody>
@@ -556,15 +561,15 @@ Figma连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
       <td> <p>有关将[!DNL Figma]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">创建与Figma的连接</a>。</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 团队ID]</td>
+      <td role="rowheader">[！UICONTROL团队ID]</td>
       <td>输入或映射要检索其文件的项目的项目ID。 团队ID可在Figma中的团队页面URL中找到</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 返回的最大项目数]</td>
+      <td role="rowheader">[!UICONTROL 返回项目的最大数量]</td>
       <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td>
     </tr>
   </tbody>
@@ -582,7 +587,7 @@ Figma连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
       <td> <p>有关将[!DNL Figma]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">创建与Figma的连接</a>。</p>
     </tr>
     <tr>
@@ -590,31 +595,31 @@ Figma连接器使用以下对象：
       <td>选择要检索的对象类型。</td>
     </tr>
     <tr>
-      <td role="rowheader">&lt;[!UICONTROL Object&gt;键]</td>
+      <td role="rowheader">&lt;[！UICONTROL Object&gt;键]</td>
       <td>输入要检索的对象的键（唯一标识符）。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 团队ID]</td>
+      <td role="rowheader">[！UICONTROL团队ID]</td>
       <td>如果检索团队组件或团队组件集，请输入或映射与记录关联的团队的ID。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 页面大小]</td>
+      <td role="rowheader">[！UICONTROL页面大小]</td>
       <td>如果检索团队组件或团队组件集，请输入或映射每页要返回的数量或结果。 默认值：30。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL After]</td>
+      <td role="rowheader">[！UICONTROL After]</td>
       <td>
-        <p>如果检索团队组件或团队组件集，请输入或映射结果编号，之后将开始检索结果。 可以与[!UICONTROL Page Size]字段结合使用来对结果进行分页。</p>
+        <p>如果检索团队组件或团队组件集，请输入或映射结果编号，之后将开始检索结果。 可以与[！UICONTROL Page Size]字段结合使用来对结果进行分页。</p>
         <p>此值未与对象ID相对应。</p>
-        <p>此字段不能与[!UICONTROL Before]字段结合使用。</p>
+        <p>此字段不能与[！UICONTROL Before]字段结合使用。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Before]</td>
+      <td role="rowheader">[！UICONTROL Before]</td>
       <td>
-        <p>如果检索团队组件或团队组件集，请输入或映射要开始检索结果的结果数量。 可以与[!UICONTROL Page Size]字段结合使用来对结果进行分页。</p>
+        <p>如果检索团队组件或团队组件集，请输入或映射要开始检索结果的结果数量。 可以与[！UICONTROL Page Size]字段结合使用来对结果进行分页。</p>
         <p>此值未与对象ID相对应。</p>
-        <p>此字段不能与[!UICONTROL After]字段结合使用。</p>
+        <p>此字段不能与[！UICONTROL After]字段结合使用。</p>
       </td>
     </tr>
   </tbody>
@@ -637,7 +642,7 @@ Figma连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
       <td> <p>有关将[!DNL Figma]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">创建与Figma的连接</a>。</p>
     </tr>
     <tr>
@@ -649,26 +654,26 @@ Figma连接器使用以下对象：
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 方法]</td>
-      <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td>
+      <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td role="rowheader">[!UICONTROL 标头]</td>
       <td>
-        <p>以标准JSON对象的形式添加请求的标头。</p>
+        <p>以标准 JSON 对象的形式添加请求标头。</p>
         <p>例如， <code>{"Content-type":"application/json"}</code></p>
         <p>Workfront Fusion会为您添加授权标头。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 查询字符串]</td>
+      <td role="rowheader">[！UICONTROL查询字符串]</td>
       <td>
         <p>以标准JSON对象的形式添加API调用的查询。</p>
         <p>例如： <code>{"name":"something-urgent"}</code></p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+      <td role="rowheader">[!UICONTROL 正文]</td>
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注释：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -694,19 +699,19 @@ Figma连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Webhook]</td>
+      <td role="rowheader">[！UICONTROL Webhook]</td>
       <td>
         <p>选择模块监视的webhook。</p>
         <p>要添加新的webhook，请执行以下操作：</p>
         <ol>
           <li>
-            <p>单击[!UICONTROL Webhook]字段旁边的<b>[!UICONTROL Add]</b>。</p>
+            <p>单击[！UICONTROL Webhook]字段旁边的<b>[！UICONTROL Add]</b>。</p>
           </li>
           <li>
             <p>输入webhook的名称。</p>
           </li>
           <li>
-            <p>选择要用于此webhook的连接。 有关将[!DNL Figma]帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[!UICONTROL Adobe Workfront Fusion]的连接 — 基本说明。</a></p>
+            <p>选择要用于此webhook的连接。 有关将[!DNL Figma]帐户连接到[！UICONTROL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与[！UICONTROL Adobe Workfront Fusion]的连接 — 基本说明。</a></p>
           </li>
           <li>
             <p>选择您希望模块监视的事件类型。</p>
@@ -721,7 +726,7 @@ Figma连接器使用以下对象：
             <p>输入webhook的说明。</p>
           </li>
           <li>
-            <p>单击<b>[!UICONTROL 保存]</b>以保存webhook并返回模块。</p>
+            <p>单击<b>[！UICONTROL保存]</b>以保存webhook并返回模块。</p>
           </li>
         </ol>
       </td>
