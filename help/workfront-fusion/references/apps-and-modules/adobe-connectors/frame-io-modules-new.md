@@ -360,7 +360,7 @@ Frame.io 连接器使用以下内容：
    <td> <p>如果从远程文件创建资产，请输入要上传的文件的URL。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Source file]</td> 
+   <td>[!UICONTROL Source file]</td> 
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称。</p> </td> 
   </tr> 
 <!--  <tr> 
@@ -806,7 +806,7 @@ Frame.io 连接器使用以下内容：
 
 * [创建项目](#create-a-project)
 * [邀请用户加入 Frame.io 项目](#invite-users-to-frameio-project)
-* [列出项目 ](#list-projects)
+* [列出项目 &#x200B;](#list-projects)
 
 #### 创建项目
 
@@ -867,7 +867,7 @@ Frame.io 连接器使用以下内容：
  </tbody> 
 </table>
 
-#### [!UICONTROL 列出项目 ]
+#### [!UICONTROL 列出项目 &#x200B;]
 
 此搜索模块会检索指定团队的所有项目。
 
@@ -1129,7 +1129,7 @@ Frame.io 连接器使用以下内容：
    <td> <p>选择或映射要从中列出字段的帐户。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回的最大协议数]</td> 
+   <td role="rowheader">[!UICONTROL 返回的最大协议数]</td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期中返回的最大字段数。</p> </td> 
   </tr> 
  </tbody> 
@@ -1192,11 +1192,11 @@ Frame.io 连接器使用以下内容：
    <td> <p>选择您要在其中创建资源的项目，或映射该项目 ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL文件ID] </td> 
+   <td role="rowheader">[!UICONTROL 文件ID] </td> 
    <td> <p>对于每个要更新元数据的文件，单击<b>添加项</b>并输入或映射文件的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Values] </td> 
+   <td role="rowheader">[!UICONTROL Values] </td> 
    <td> <p>对于要更新元数据的每个字段，单击<b>添加项</b>，然后输入或映射字段定义的ID以及要放入该字段中的值。 在“文件ID”字段中指定的所有文件都将使用此字段值更新。</p> </td> 
   </tr> 
  </tbody> 
