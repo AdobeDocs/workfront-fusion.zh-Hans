@@ -4,10 +4,10 @@ description: 您可以查看组织的活动日志，如场景创建或激活。
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 2ffb7676067720a5b9daa51b560389396f4a665f
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 0%
+source-wordcount: '500'
+ht-degree: 7%
 
 ---
 
@@ -15,20 +15,22 @@ ht-degree: 0%
 
 您可以查看组织的活动日志，如创建方案或邀请用户。
 
-## 访问要求
+活动日志显示三个月的数据。 可导出超过3个月的数据。
 
-+++ 展开以查看本文中各项功能的访问要求。
+## 访问权限要求
+
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
    <td> <p>Adobe Workfront工作流程Ultimate和Adobe Workfront自动化与集成Ultimate</p><p>Workfront Ultimate</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
    <td> <p>标准</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -41,7 +43,7 @@ ht-degree: 0%
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
 +++
 
