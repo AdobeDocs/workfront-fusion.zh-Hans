@@ -2,7 +2,7 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 7eadd6f39db2fe7e0c7ec46e0e5b3fc998f528e9
+source-git-commit: 1a3865325fed3ebb0862f05641cdeb28d9e6c9f3
 workflow-type: tm+mt
 source-wordcount: '1943'
 ht-degree: 3%
@@ -176,7 +176,7 @@ ht-degree: 3%
          * [将用户添加到团队](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/add-a-user-to-a-team.md)
          * [设置团队通知选项](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)
          * [查看组织的活动日志](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-activity-logs-for-an-org.md)
-         * [查看组织的绩效仪表板](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-performace-dashboard.md)
+         * [查看组织的绩效仪表板](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/view-performance-dashboard.md)
       * 管理用户和团队 {#manage-users-and-teams}
          * [管理用户和团队：文章索引](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/manage-users-and-teams.md)
          * [查看组织中的用户](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-users-in-an-org.md)
