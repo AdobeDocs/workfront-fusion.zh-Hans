@@ -1,17 +1,17 @@
 ---
-title: 使用大文件
+title: 处理大型文件
 description: Workfront和HTTP连接器当前支持大文件。
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-source-git-commit: 80cb3736d96d4b7c3226d78149842a80077e3551
+source-git-commit: a68de976258d17631459f0951d28657fd0e0dcf6
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 2%
+source-wordcount: '1048'
+ht-degree: 6%
 
 ---
 
-# 使用大文件
+# 处理大型文件
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ Workfront Fusion中现在提供了增强的数据传输功能，支持在场景�
 
 >[!NOTE]
 >
->* 如果使用支持大文件的模块下载文件，然后将该文件传递到不支持大文件的模块，则该模块无法成功处理该文件。 在整个工作流中，大型文件必须以受支持的模块专门进行处理。
+>* 如果使用支持大文件的模块下载文件后，再将其传递给不支持大文件的模块，该模块将无法成功处理文件。整个工作流中，大文件必须始终使用支持大文件的模块处理。
 >* 不支持大文件的模块可以处理大小最大为200 MB的文件。
 
 * Workfront
@@ -40,6 +40,8 @@ Workfront Fusion中现在提供了增强的数据传输功能，支持在场景�
    * 下载校对
 * Adobe Authenticator
    * 进行自定义API调用
+* Adobe Photoshop
+   * 应用PSD编辑
 * SharePoint
    * 创建文件
    * 获取文件
