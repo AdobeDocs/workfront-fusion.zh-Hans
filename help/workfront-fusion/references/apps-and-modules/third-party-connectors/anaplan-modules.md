@@ -1,58 +1,59 @@
 ---
+title: Anaplan模块
 description: 在Adobe Workfront Fusion场景中，您可以自动使用Anaplan的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 81c9b141-4e40-430f-99f1-c44b7a833bcd
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
 workflow-type: tm+mt
-source-wordcount: '2029'
-ht-degree: 1%
+source-wordcount: '2031'
+ht-degree: 25%
 
 ---
 
 # [!DNL Anaplan]模块
 
-在Adobe Workfront Fusion场景中，您可以自动使用[!DNL Anaplan]的工作流，并将其连接到多个第三方应用程序和服务。
+在 Adobe Workfront Fusion 场景中，您可以自动化使用 [!DNL Anaplan] 的工作流，并将其连接到多个第三方应用程序和服务。
 
-有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
+有关创建场景的说明，请参阅[创建场景：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)中的相关文章。
 
-有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
+有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的相关文章。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -77,18 +78,18 @@ Anaplan连接器使用以下对象：
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API版本</td> 
+   <td role="rowheader">API 版本</td> 
    <td> v2 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API标记</td> 
+   <td role="rowheader">API 标记</td> 
    <td>v1.11.5</td> 
  </tbody> 
 </table>
 
-## 将[!DNL Anaplan]连接到Workfront Fusion {#connect-anaplan-to-workfront-fusion}
+## 将 [!DNL Anaplan] 连接到 Workfront Fusion {#connect-anaplan-to-workfront-fusion}
 
-要为您的[!DNL Anaplan]模块创建连接：
+要为您的 [!DNL Anaplan] 模块创建连接：
 
 1. 单击&#x200B;**[!UICONTROL 连接]**&#x200B;框旁边的[!UICONTROL 添加]。
 1. 填写以下字段：
@@ -108,17 +109,17 @@ Anaplan连接器使用以下对象：
       <tr>
         <td role="rowheader">[!UICONTROL 环境]</td>
         <td>
-          <p>选择是连接到生产环境还是非生产环境。</p>
+          <p>选择要连接生产环境还是非生产环境。</p>
         </td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 类型]</td>
         <td>
-          <p>选择您是要连接到服务帐户还是个人帐户。</p>
+          <p>选择连接服务帐户还是个人帐户。</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 电子邮件]</td>
+        <td role="rowheader">[！UICONTROL电子邮件]</td>
         <td>
           <p>输入此Anaplan帐户的电子邮件地址</p>
         </td>
@@ -130,7 +131,7 @@ Anaplan连接器使用以下对象：
      </tbody>
     </table>
 
-1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
+1. 点击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
 
 <!--1. Click **[!UICONTROL Add]** next to the [!UICONTROL Connection] box.
 1. Select the connection type.
@@ -152,11 +153,11 @@ Anaplan连接器使用以下对象：
 
 1. Click **[!UICONTROL Continue]** to save the connection and return to the module.-->
 
-## [!DNL Anaplan]模块及其字段
+## [!DNL Anaplan] 模块及其字段
 
-在配置[!DNL Anaplan]模块时，Workfront Fusion将显示以下列出的字段。 除此以外，可能还会显示其他[!DNL Anaplan]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在您配置 [!DNL Anaplan] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Anaplan] 字段。模块中的加粗标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -179,7 +180,7 @@ Anaplan连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
    <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到Workfront Fusion</a>。</td> 
   </tr> 
   <tr> 
@@ -192,7 +193,7 @@ Anaplan连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">限制</td> 
-   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
+   <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -215,19 +216,19 @@ Anaplan连接器使用以下对象：
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Connection]</td>
+        <td>[!UICONTROL 连接]</td>
         <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到Workfront Fusion</a>。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Workspace ID]</td>
+        <td>[!UICONTROL 工作区 ID]</td>
         <td>选择或映射包含要添加项目的列表的Anaplan Workspace的ID。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 模型ID]</td>
+        <td>[！UICONTROL模型ID]</td>
         <td>选择或映射包含要添加项目的列表的模型的ID。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 列表ID]</td>
+        <td>[!UICONTROL 列表 ID]</td>
         <td>选择或映射要在其中创建项目的列表的ID。</td>
     </tr>
     <tr>
@@ -235,19 +236,19 @@ Anaplan连接器使用以下对象：
         <td>输入新项目的名称。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 代码]</td>
+        <td>[！UICONTROL代码]</td>
         <td>输入新项目的代码。 代码是用户生成的代码，可用于区分具有相同名称的行项目。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Parent]</td>
+        <td>[！UICONTROL Parent]</td>
         <td>输入要在其下创建新项目的父项目的名称。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 属性]</td>
+        <td>[！UICONTROL属性]</td>
         <td>如果要将项目添加到的列表具有自定义属性，请选择要为其添加值的属性，然后添加值。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 子集]</td>
+        <td>[！UICONTROL子集]</td>
         <td>如果要将项目添加到的列表具有自定义子集，请选择要将该项目添加到的子集。</td>
     </tr>
 </table>
@@ -261,15 +262,15 @@ Anaplan连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
    <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到Workfront Fusion</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td role="rowheader">[!UICONTROL 工作区 ID]</td> 
    <td>选择或映射包含要删除对象的Anaplan Workspace的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 模型ID]</td> 
+   <td role="rowheader">[！UICONTROL模型ID]</td> 
    <td>输入或映射包含要删除对象的模型的ID。</td> 
   </tr> 
   <tr> 
@@ -278,7 +279,7 @@ Anaplan连接器使用以下对象：
     <ul> 
      <li> <p><b>操作</b> </p> <p>选择或映射要删除的操作。</p> </li> 
      <li> <p><b>列表项</b> </p> <p>选择要从中删除项目的列表，然后输入或映射要删除项目的ID或代码</p>  </li> 
-     <li> <p><b>[!UICONTROL 文件]</b> </p> <p>选择或映射要删除的文件。</p> </li> 
+     <li> <p><b>[！UICONTROL文件]</b> </p> <p>选择或映射要删除的文件。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -295,15 +296,15 @@ Anaplan连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
    <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到Workfront Fusion</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td role="rowheader">[!UICONTROL 工作区 ID]</td> 
    <td>选择或映射包含要导出数据的Anaplan Workspace的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 模型ID]</td> 
+   <td role="rowheader">[！UICONTROL模型ID]</td> 
    <td>输入或映射包含要导出数据的模型的ID。</td> 
   </tr> 
   <tr> 
@@ -323,15 +324,15 @@ Anaplan连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
    <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到Workfront Fusion</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Workspace ID]</td> 
+   <td role="rowheader">[!UICONTROL 工作区 ID]</td> 
    <td>选择或映射要从中导入数据的Anaplan Workspace的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 模型ID]</td> 
+   <td role="rowheader">[！UICONTROL模型ID]</td> 
    <td>输入或映射要导入数据的模型的ID。</td> 
   </tr> 
   <tr> 
@@ -351,7 +352,7 @@ Anaplan连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
    <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到Workfront Fusion</a>。</td> 
   </tr> 
   <tr> 
@@ -360,19 +361,19 @@ Anaplan连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 方法]</p> </td> 
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP请求方法</a>。</p> </td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>以标准JSON对象的形式添加请求的标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion会自动添加授权标头。</p> </td> 
+   <td role="rowheader">[!UICONTROL 标头]</td> 
+   <td> <p>以标准 JSON 对象的形式添加请求标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion 会自动添加授权标头。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 查询字符串] </td> 
    <td> <p>输入请求查询字符串。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+   <td role="rowheader">[!UICONTROL 正文]</td> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注释：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -389,7 +390,7 @@ Anaplan连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
    <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到Workfront Fusion</a>。</td> 
   </tr> 
   <tr> 
@@ -397,7 +398,7 @@ Anaplan连接器使用以下对象：
    <td> <p>选择要读取的记录类型。</p> 
     <ul> 
      <li> <p><b>模型</b> </p> <p>选择或映射要读取的模型的ID</p> </li> 
-     <li> <p><b>模型列表</b> </p> <p>选择或映射包含要读取的列表的Workspace和模型的ID，然后选择列表。 在[!UICONTROL 数据类型]字段中，选择要读取数据还是元数据。</p> </li> 
+     <li> <p><b>模型列表</b> </p> <p>选择或映射包含要读取的列表的Workspace和模型的ID，然后选择列表。 在[！UICONTROL数据类型]字段中，选择要读取数据还是元数据。</p> </li> 
      <li> <p><b>模型版本</b> </p> <p>选择或映射要读取的模型的ID。</p> </li> 
      <li> <p><b>用户</b> </p> <p>选择您是要返回有关正在使用的帐户的所有者的数据，还是要返回其他用户的数据。 如果选择另一个用户，请选择该用户的名称。</p> </li> 
      <li> <p><b>Workspace</b> </p> <p>选择或映射您要读取的Workspace的ID。</p> </li> 
@@ -416,19 +417,19 @@ Anaplan连接器使用以下对象：
      <col/>
      <tbody>
       <tr>
-        <td role="rowheader">[!UICONTROL Connection]</td>
-        <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#Connect" class="MCXref xref" >[!UICONTROL Connect Anaplan to Workfront Fusion]</a>。</td>
+        <td role="rowheader">[!UICONTROL 连接]</td>
+        <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#Connect" class="MCXref xref" >[！UICONTROL Connect Anaplan to Workfront Fusion]</a>。</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Workspace ID]</td>
+        <td role="rowheader">[!UICONTROL 工作区 ID]</td>
         <td>选择或映射要执行操作的[!DNL Anaplan] Workspace的ID</td>
       </tr>
       <tr >
-        <td role="rowheader">[!UICONTROL 模型ID]</td>
+        <td role="rowheader">[！UICONTROL模型ID]</td>
         <td>选择或映射要执行操作的模型的ID。</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 操作类型]</td>
+        <td role="rowheader">[！UICONTROL操作类型]</td>
         <td>
           <p>选择要执行的操作</p>
             <ul>
@@ -438,7 +439,7 @@ Anaplan连接器使用以下对象：
                 <p>输入或映射要删除的操作的ID。</p>
               </li>
               <li>
-                <p><b>[!UICONTROL 导出]</b>
+                <p><b>[！UICONTROL导出]</b>
                 </p>
                 <p>输入或映射要使用的导出定义的ID。 可导出为以下文件格式：</p>
                   <ul>
@@ -454,12 +455,12 @@ Anaplan连接器使用以下对象：
                   </ul>
                 </li>
                 <li>
-                  <p><b>[!UICONTROL 导入] </b>
+                  <p><b>[！UICONTROL导入] </b>
                   </p>
                   <p style="font-weight: normal;">输入或映射要使用的导入定义的ID。</p>
                 </li>
                 <li>
-                 <p><b>[!UICONTROL 进程]</b>
+                 <p><b>[！UICONTROL进程]</b>
                  </p>
                   <p>输入或映射要使用的进程的ID。 </p>
                 </li>
@@ -479,20 +480,20 @@ Anaplan连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
    <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到Workfront Fusion</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择要更新的记录类型。</p> 
     <ul> 
-     <li> <p><b>[!UICONTROL 列表项]</b> </p> <p>有关字段，请参阅本文中的<a href="#create-a-list-item" class="MCXref xref">创建列表项</a>。</p> </li> 
-     <li> <p><b>[!UICONTROL 模块单元格数据]</b> </p> <p>更新单元格数据时，使用该数据的所有下游计算也会更新。</p> <p>填写以下字段：</p> 
+     <li> <p><b>[！UICONTROL列表项]</b> </p> <p>有关字段，请参阅本文中的<a href="#create-a-list-item" class="MCXref xref">创建列表项</a>。</p> </li> 
+     <li> <p><b>[！UICONTROL模块单元格数据]</b> </p> <p>更新单元格数据时，使用该数据的所有下游计算也会更新。</p> <p>填写以下字段：</p> 
       <ul> 
-       <li> <p><b>[!UICONTROL 模型ID]</b> </p> <p>选择或映射包含要更新的单元格的模型。</p> </li> 
-       <li> <p><b>[!UICONTROL 模块ID]</b> </p> <p>选择或映射包含要更新的单元格的模块</p> </li> 
-       <li> <p><b>[!UICONTROL 行项名称]</b> </p> <p>选择或映射要更新的单元格的行项</p> </li> 
-       <li> <p style="font-weight: bold;">[!UICONTROL Dimension ID]</p> <p>选择或映射行项目上的维度。</p> 
+       <li> <p><b>[！UICONTROL模型ID]</b> </p> <p>选择或映射包含要更新的单元格的模型。</p> </li> 
+       <li> <p><b>[！UICONTROL模块ID]</b> </p> <p>选择或映射包含要更新的单元格的模块</p> </li> 
+       <li> <p><b>[！UICONTROL行项名称]</b> </p> <p>选择或映射要更新的单元格的行项</p> </li> 
+       <li> <p style="font-weight: bold;">[！UICONTROL Dimension ID]</p> <p>选择或映射行项目上的维度。</p> 
        <p><b>注释：</b> 
        <ul>
        <li> Dimension键（值）必须为<code>dimensionName</code> （下一个）或<code>dimensionId</code> (ID)。</li>
@@ -501,9 +502,9 @@ Anaplan连接器使用以下对象：
        </ul>
         </p> 
         <p>有关维度的信息，请在[!DNL Anaplan Anapedia]中搜索维度。</p> </li> 
-       <li> <p><b>[!UICONTROL 值]</b> </p> <p>输入或映射单元格的新值。</p> </li> 
+       <li> <p><b>[！UICONTROL值]</b> </p> <p>输入或映射单元格的新值。</p> </li> 
       </ul> </li> 
-     <li> <p><b>[!UICONTROL 模型当前会计年度]</b> </p> <p>输入要更新其会计年度的模型的Workspace ID和模型ID，然后为模型输入或映射新年度。</p> </li> 
+     <li> <p><b>[！UICONTROL模型当前会计年度]</b> </p> <p>输入要更新其会计年度的模型的Workspace ID和模型ID，然后为模型输入或映射新年度。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -517,19 +518,19 @@ Anaplan连接器使用以下对象：
 <col>
 <tbody>
 <tr>
-<td role="rowheader">[!UICONTROL Connection]</td>
+<td role="rowheader">[!UICONTROL 连接]</td>
 <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到Workfront Fusion</a>。</td>
 </tr>
 <tr>
-<td role="rowheader">[!UICONTROL Workspace ID]</td>
+<td role="rowheader">[!UICONTROL 工作区 ID]</td>
 <td>选择或映射要上传文件的[!DNL Anaplan] Workspace的ID。</td>
 </tr>
 <tr>
-<td role="rowheader">[!UICONTROL 模型ID]</td>
+<td role="rowheader">[！UICONTROL模型ID]</td>
 <td>选择或映射要上传文件的模型的ID。</td>
 </tr>
 <tr>
-<td role="rowheader">[!UICONTROL 文件ID]</td>
+<td role="rowheader">[!UICONTROL 文件 ID]</td>
 <td>选择或映射要上传的文件的ID。</td>
 </tr>
 </tbody>
@@ -547,27 +548,27 @@ Anaplan连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
    <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到Workfront Fusion</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 记录类型]</td> 
+   <td role="rowheader">[！UICONTROL记录类型]</td> 
    <td> <p>选择要检索的记录类型。</p> 
       <ul> 
-       <li> <p><b>[!UICONTROL 工作区]</b> </p> </li> 
-       <li> <p><b>[!UICONTROL 模型]</b> </p> </li> 
-       <li> <p><b>[!UICONTROL 行项目]</b> </p> <p>选择或映射包含要检索的[!DNL line]项的模型的ID。</p> </li> 
-       <li> <p><b>[!UICONTROL 模型列表]</b> </p> <p>选择或映射包含要检索的模型列表的Workspace ID和模型ID。</p> </li> 
-       <li> <p><b>[!UICONTROL 模型日历]</b> </p> <p>选择或映射包含要检索的模型日历的Workspace的ID。</p> </li> 
-       <li> <p><b>[!UICONTROL 模型版本]</b> </p> </li> 
+       <li> <p><b>[！UICONTROL工作区]</b> </p> </li> 
+       <li> <p><b>[！UICONTROL模型]</b> </p> </li> 
+       <li> <p><b>[！UICONTROL行项目]</b> </p> <p>选择或映射包含要检索的[!DNL line]项的模型的ID。</p> </li> 
+       <li> <p><b>[！UICONTROL模型列表]</b> </p> <p>选择或映射包含要检索的模型列表的Workspace ID和模型ID。</p> </li> 
+       <li> <p><b>[！UICONTROL模型日历]</b> </p> <p>选择或映射包含要检索的模型日历的Workspace的ID。</p> </li> 
+       <li> <p><b>[！UICONTROL模型版本]</b> </p> </li> 
        <li> <p>选择或映射包含要检索的模型版本的模型ID。</p> </li> 
-       <li> <p><b>[!UICONTROL 用户]</b> </p> </li> 
-       <li> <p><b>[!UICONTROL 视图]</b> </p> <p>选择是要按模块还是按模型选择视图，然后选择或映射包含要检索的视图的模块或模型的ID。</p> </li> 
+       <li> <p><b>[！UICONTROL用户]</b> </p> </li> 
+       <li> <p><b>[！UICONTROL视图]</b> </p> <p>选择是要按模块还是按模型选择视图，然后选择或映射包含要检索的视图的模块或模型的ID。</p> </li> 
       </ul> 
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 返回工作区大小]</td> 
+   <td role="rowheader">[！UICONTROL返回工作区大小]</td> 
    <td>启用此选项可返回工作区的当前大小的估计值。 此估算基于工作区中包含的所有模块的大小。</td> 
   </tr> 
  </tbody> 
