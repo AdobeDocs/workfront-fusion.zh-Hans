@@ -119,7 +119,7 @@ Anaplan连接器使用以下对象：
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL电子邮件]</td>
+        <td role="rowheader">[!UICONTROL 电子邮件]</td>
         <td>
           <p>输入此Anaplan帐户的电子邮件地址</p>
         </td>
@@ -224,7 +224,7 @@ Anaplan连接器使用以下对象：
         <td>选择或映射包含要添加项目的列表的Anaplan Workspace的ID。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL模型ID]</td>
+        <td>[!UICONTROL 模型ID]</td>
         <td>选择或映射包含要添加项目的列表的模型的ID。</td>
     </tr>
     <tr>
@@ -236,19 +236,19 @@ Anaplan连接器使用以下对象：
         <td>输入新项目的名称。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL代码]</td>
+        <td>[!UICONTROL 代码]</td>
         <td>输入新项目的代码。 代码是用户生成的代码，可用于区分具有相同名称的行项目。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL Parent]</td>
+        <td>[!UICONTROL Parent]</td>
         <td>输入要在其下创建新项目的父项目的名称。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL属性]</td>
+        <td>[!UICONTROL 属性]</td>
         <td>如果要将项目添加到的列表具有自定义属性，请选择要为其添加值的属性，然后添加值。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL子集]</td>
+        <td>[!UICONTROL 子集]</td>
         <td>如果要将项目添加到的列表具有自定义子集，请选择要将该项目添加到的子集。</td>
     </tr>
 </table>
@@ -270,7 +270,7 @@ Anaplan连接器使用以下对象：
    <td>选择或映射包含要删除对象的Anaplan Workspace的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL模型ID]</td> 
+   <td role="rowheader">[!UICONTROL 模型ID]</td> 
    <td>输入或映射包含要删除对象的模型的ID。</td> 
   </tr> 
   <tr> 
@@ -279,7 +279,7 @@ Anaplan连接器使用以下对象：
     <ul> 
      <li> <p><b>操作</b> </p> <p>选择或映射要删除的操作。</p> </li> 
      <li> <p><b>列表项</b> </p> <p>选择要从中删除项目的列表，然后输入或映射要删除项目的ID或代码</p>  </li> 
-     <li> <p><b>[！UICONTROL文件]</b> </p> <p>选择或映射要删除的文件。</p> </li> 
+     <li> <p><b>[!UICONTROL 文件]</b> </p> <p>选择或映射要删除的文件。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -304,7 +304,7 @@ Anaplan连接器使用以下对象：
    <td>选择或映射包含要导出数据的Anaplan Workspace的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL模型ID]</td> 
+   <td role="rowheader">[!UICONTROL 模型ID]</td> 
    <td>输入或映射包含要导出数据的模型的ID。</td> 
   </tr> 
   <tr> 
@@ -332,7 +332,7 @@ Anaplan连接器使用以下对象：
    <td>选择或映射要从中导入数据的Anaplan Workspace的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL模型ID]</td> 
+   <td role="rowheader">[!UICONTROL 模型ID]</td> 
    <td>输入或映射要导入数据的模型的ID。</td> 
   </tr> 
   <tr> 
@@ -398,7 +398,7 @@ Anaplan连接器使用以下对象：
    <td> <p>选择要读取的记录类型。</p> 
     <ul> 
      <li> <p><b>模型</b> </p> <p>选择或映射要读取的模型的ID</p> </li> 
-     <li> <p><b>模型列表</b> </p> <p>选择或映射包含要读取的列表的Workspace和模型的ID，然后选择列表。 在[！UICONTROL数据类型]字段中，选择要读取数据还是元数据。</p> </li> 
+     <li> <p><b>模型列表</b> </p> <p>选择或映射包含要读取的列表的Workspace和模型的ID，然后选择列表。 在[!UICONTROL 数据类型]字段中，选择要读取数据还是元数据。</p> </li> 
      <li> <p><b>模型版本</b> </p> <p>选择或映射要读取的模型的ID。</p> </li> 
      <li> <p><b>用户</b> </p> <p>选择您是要返回有关正在使用的帐户的所有者的数据，还是要返回其他用户的数据。 如果选择另一个用户，请选择该用户的名称。</p> </li> 
      <li> <p><b>Workspace</b> </p> <p>选择或映射您要读取的Workspace的ID。</p> </li> 
@@ -418,18 +418,18 @@ Anaplan连接器使用以下对象：
      <tbody>
       <tr>
         <td role="rowheader">[!UICONTROL 连接]</td>
-        <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#Connect" class="MCXref xref" >[！UICONTROL Connect Anaplan to Workfront Fusion]</a>。</td>
+        <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#Connect" class="MCXref xref" >[!UICONTROL Connect Anaplan to Workfront Fusion]</a>。</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 工作区 ID]</td>
         <td>选择或映射要执行操作的[!DNL Anaplan] Workspace的ID</td>
       </tr>
       <tr >
-        <td role="rowheader">[！UICONTROL模型ID]</td>
+        <td role="rowheader">[!UICONTROL 模型ID]</td>
         <td>选择或映射要执行操作的模型的ID。</td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL操作类型]</td>
+        <td role="rowheader">[!UICONTROL 操作类型]</td>
         <td>
           <p>选择要执行的操作</p>
             <ul>
@@ -439,7 +439,7 @@ Anaplan连接器使用以下对象：
                 <p>输入或映射要删除的操作的ID。</p>
               </li>
               <li>
-                <p><b>[！UICONTROL导出]</b>
+                <p><b>[!UICONTROL 导出]</b>
                 </p>
                 <p>输入或映射要使用的导出定义的ID。 可导出为以下文件格式：</p>
                   <ul>
@@ -455,12 +455,12 @@ Anaplan连接器使用以下对象：
                   </ul>
                 </li>
                 <li>
-                  <p><b>[！UICONTROL导入] </b>
+                  <p><b>[!UICONTROL 导入] </b>
                   </p>
                   <p style="font-weight: normal;">输入或映射要使用的导入定义的ID。</p>
                 </li>
                 <li>
-                 <p><b>[！UICONTROL进程]</b>
+                 <p><b>[!UICONTROL 进程]</b>
                  </p>
                   <p>输入或映射要使用的进程的ID。 </p>
                 </li>
@@ -487,13 +487,13 @@ Anaplan连接器使用以下对象：
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择要更新的记录类型。</p> 
     <ul> 
-     <li> <p><b>[！UICONTROL列表项]</b> </p> <p>有关字段，请参阅本文中的<a href="#create-a-list-item" class="MCXref xref">创建列表项</a>。</p> </li> 
-     <li> <p><b>[！UICONTROL模块单元格数据]</b> </p> <p>更新单元格数据时，使用该数据的所有下游计算也会更新。</p> <p>填写以下字段：</p> 
+     <li> <p><b>[!UICONTROL 列表项]</b> </p> <p>有关字段，请参阅本文中的<a href="#create-a-list-item" class="MCXref xref">创建列表项</a>。</p> </li> 
+     <li> <p><b>[!UICONTROL 模块单元格数据]</b> </p> <p>更新单元格数据时，使用该数据的所有下游计算也会更新。</p> <p>填写以下字段：</p> 
       <ul> 
-       <li> <p><b>[！UICONTROL模型ID]</b> </p> <p>选择或映射包含要更新的单元格的模型。</p> </li> 
-       <li> <p><b>[！UICONTROL模块ID]</b> </p> <p>选择或映射包含要更新的单元格的模块</p> </li> 
-       <li> <p><b>[！UICONTROL行项名称]</b> </p> <p>选择或映射要更新的单元格的行项</p> </li> 
-       <li> <p style="font-weight: bold;">[！UICONTROL Dimension ID]</p> <p>选择或映射行项目上的维度。</p> 
+       <li> <p><b>[!UICONTROL 模型ID]</b> </p> <p>选择或映射包含要更新的单元格的模型。</p> </li> 
+       <li> <p><b>[!UICONTROL 模块ID]</b> </p> <p>选择或映射包含要更新的单元格的模块</p> </li> 
+       <li> <p><b>[!UICONTROL 行项名称]</b> </p> <p>选择或映射要更新的单元格的行项</p> </li> 
+       <li> <p style="font-weight: bold;">[!UICONTROL Dimension ID]</p> <p>选择或映射行项目上的维度。</p> 
        <p><b>注释：</b> 
        <ul>
        <li> Dimension键（值）必须为<code>dimensionName</code> （下一个）或<code>dimensionId</code> (ID)。</li>
@@ -502,9 +502,9 @@ Anaplan连接器使用以下对象：
        </ul>
         </p> 
         <p>有关维度的信息，请在[!DNL Anaplan Anapedia]中搜索维度。</p> </li> 
-       <li> <p><b>[！UICONTROL值]</b> </p> <p>输入或映射单元格的新值。</p> </li> 
+       <li> <p><b>[!UICONTROL 值]</b> </p> <p>输入或映射单元格的新值。</p> </li> 
       </ul> </li> 
-     <li> <p><b>[！UICONTROL模型当前会计年度]</b> </p> <p>输入要更新其会计年度的模型的Workspace ID和模型ID，然后为模型输入或映射新年度。</p> </li> 
+     <li> <p><b>[!UICONTROL 模型当前会计年度]</b> </p> <p>输入要更新其会计年度的模型的Workspace ID和模型ID，然后为模型输入或映射新年度。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -526,7 +526,7 @@ Anaplan连接器使用以下对象：
 <td>选择或映射要上传文件的[!DNL Anaplan] Workspace的ID。</td>
 </tr>
 <tr>
-<td role="rowheader">[！UICONTROL模型ID]</td>
+<td role="rowheader">[!UICONTROL 模型ID]</td>
 <td>选择或映射要上传文件的模型的ID。</td>
 </tr>
 <tr>
@@ -552,23 +552,23 @@ Anaplan连接器使用以下对象：
    <td>有关创建与[!DNL Anaplan]的连接的说明，请参阅本文中的<a href="#connect-anaplan-to-workfront-fusion" class="MCXref xref">将[!DNL Anaplan]连接到Workfront Fusion</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL记录类型]</td> 
+   <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择要检索的记录类型。</p> 
       <ul> 
-       <li> <p><b>[！UICONTROL工作区]</b> </p> </li> 
-       <li> <p><b>[！UICONTROL模型]</b> </p> </li> 
-       <li> <p><b>[！UICONTROL行项目]</b> </p> <p>选择或映射包含要检索的[!DNL line]项的模型的ID。</p> </li> 
-       <li> <p><b>[！UICONTROL模型列表]</b> </p> <p>选择或映射包含要检索的模型列表的Workspace ID和模型ID。</p> </li> 
-       <li> <p><b>[！UICONTROL模型日历]</b> </p> <p>选择或映射包含要检索的模型日历的Workspace的ID。</p> </li> 
-       <li> <p><b>[！UICONTROL模型版本]</b> </p> </li> 
+       <li> <p><b>[!UICONTROL 工作区]</b> </p> </li> 
+       <li> <p><b>[!UICONTROL 模型]</b> </p> </li> 
+       <li> <p><b>[!UICONTROL 行项目]</b> </p> <p>选择或映射包含要检索的[!DNL line]项的模型的ID。</p> </li> 
+       <li> <p><b>[!UICONTROL 模型列表]</b> </p> <p>选择或映射包含要检索的模型列表的Workspace ID和模型ID。</p> </li> 
+       <li> <p><b>[!UICONTROL 模型日历]</b> </p> <p>选择或映射包含要检索的模型日历的Workspace的ID。</p> </li> 
+       <li> <p><b>[!UICONTROL 模型版本]</b> </p> </li> 
        <li> <p>选择或映射包含要检索的模型版本的模型ID。</p> </li> 
-       <li> <p><b>[！UICONTROL用户]</b> </p> </li> 
-       <li> <p><b>[！UICONTROL视图]</b> </p> <p>选择是要按模块还是按模型选择视图，然后选择或映射包含要检索的视图的模块或模型的ID。</p> </li> 
+       <li> <p><b>[!UICONTROL 用户]</b> </p> </li> 
+       <li> <p><b>[!UICONTROL 视图]</b> </p> <p>选择是要按模块还是按模型选择视图，然后选择或映射包含要检索的视图的模块或模型的ID。</p> </li> 
       </ul> 
    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回工作区大小]</td> 
+   <td role="rowheader">[!UICONTROL 返回工作区大小]</td> 
    <td>启用此选项可返回工作区的当前大小的估计值。 此估算基于工作区中包含的所有模块的大小。</td> 
   </tr> 
  </tbody> 
