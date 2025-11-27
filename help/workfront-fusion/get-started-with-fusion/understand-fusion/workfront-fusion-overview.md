@@ -1,41 +1,41 @@
 ---
-title: Adobe Workfront Fusion概述
-description: Adobe Workfront Fusion的职责是自动化您的流程，以使您能够专注于新任务，而不是一遍又一遍地重复相同的任务。 它的工作方式是，关联应用程序和服务内外的操作，从而创建一个自动传输和转换数据的方案。 您创建的方案会监视应用程序或服务中的数据，并对这些数据进行处理以提供您想要的结果。
+title: Adobe Workfront Fusion 概述
+description: Adobe Workfront Fusion 的作用是自动化您的流程，让您能够专注于新的工作任务，而无需一遍又一遍地重复相同的任务。它通过连接应用程序和服务内部或之间的操作，构建可自动传输并转换数据的场景。您创建的场景会监控某个应用程序或服务中的数据，并对这些数据进行处理，以生成您所需的结果。
 author: Becky
 feature: Workfront Fusion
 exl-id: 49df566f-59e9-469c-9123-27d1e15069e4
 source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '369'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Adobe Workfront Fusion概述
+# Adobe Workfront Fusion 概述
 
-Adobe Workfront Fusion的职责是自动化您的流程，这样您的用户就不需要在例行任务上花费太多时间。 它的工作方式是，关联应用程序和服务内外的操作，从而创建一个自动传输和转换数据的方案。 您创建的方案会监视应用程序或服务中的数据，并对这些数据进行处理以提供您想要的结果。
+Adobe Workfront Fusion 的作用是自动化您的业务流程，使用户无需将大量时间花在日常重复性任务上。它通过连接应用程序和服务内部或之间的操作，构建可自动传输并转换数据的场景。您创建的场景会监控某个应用程序或服务中的数据，并对这些数据进行处理，以生成您所需的结果。
 
-Workfront Fusion中的场景表示特定工作流。 例如，在非常简单的场景中，可以观察特定的Workfront请求队列中的请求，然后使用模板自动将这些请求转化为项目。
+Workfront Fusion 中的场景表示一个特定的工作流程。例如，一个非常简单的场景可以监控某个 Workfront 请求队列，并在出现新请求时，自动使用模板将这些请求转换为项目。
 
-可以构建方案以满足非常特定的情形和用例。 您可以使用筛选器根据数据字段或属性更改操作、循环访问文件或数据、将数据保存到数据存储并在另一个方案运行中使用它，或以多种其他方式配置方案。
+场景可以根据非常具体的情况和使用场景进行构建。您可以使用筛选条件基于数据字段或属性调整操作，遍历文件或数据，将数据保存到数据存储并在其他场景运行中使用，或通过多种方式配置您的场景。
 
-您还可以将Workfront以外的应用程序添加到方案中。 Fusion包括用于外部应用程序的许多专用连接器，包括Adobe、Google、Microsoft和许多其他应用程序的应用程序。 如果应用程序没有专用连接器，则Fusion包括使用公共API连接到任何服务的方法。
+您还可以将 Workfront 以外的应用程序添加到场景中。Fusion 提供多个专用连接器，可连接 Adobe、Google、Microsoft 等在内的各种外部应用程序。如果某个应用程序没有专用连接器，Fusion 仍可通过公共 API 的方式连接到任何服务。
 
-Workfront Fusion还提供支持场景的功能，例如场景创建模板、执行历史记录和调试。
+Workfront Fusion 还提供多项支持场景构建的功能，包括场景创建模板、执行历史记录以及调试工具。
 
 >[!NOTE]
 >
->Workfront Fusion仅支持基于Chrome的浏览器。
+>Workfront Fusion 仅支持基于 Chrome 的浏览器。
 
 ## 资源
 
-在开始使用Workfront Fusion时，您可能会发现以下资源非常有用：
+开始使用 Workfront Fusion 时，以下资源可能会对您有所帮助：
 
-* 有关Workfront Fusion培训资源，请参阅[Workfront Fusion培训概述](https://experienceleague.adobe.com/zh-hans/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy)。
+* 有关 Workfront Fusion 培训资源，请参阅 [Workfront Fusion 培训概述](https://experienceleague.adobe.com/zh-hans/docs/workfront-learn/tutorials-workfront/fusion/welcome-to-workfront-fusion/introduction-and-tech-strategy)。
 
 
-* 有关方案的详细信息，请参阅[方案概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)。
+* 有关场景的更多信息，请参阅[场景概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)。
 
-* 有关Fusion其他区域的概述，请参阅[了解Fusion：文章索引](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)下的文章。
+* 如需了解 Fusion 其他部分的概述，请查看[了解 Fusion：文章索引](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)中的文章。
 
-* 要开始创建实践方案，请参阅[构建实践方案：文章索引](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)。
+* 如需开始创建练习场景，请参阅[构建练习场景：文章索引](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)。

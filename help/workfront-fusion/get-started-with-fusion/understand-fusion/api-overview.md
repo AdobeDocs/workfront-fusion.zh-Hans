@@ -1,46 +1,46 @@
 ---
-title: API概述
-description: 应用程序编程接口(API)是应用程序和服务相互通信的一种方式。 Fusion使用API与您连接的应用程序进行通信。 每个应用程序都有一个单独的API。
+title: API 概述
+description: 应用程序编程接口（API）是一种使应用程序与服务之间能够相互通信的方式。Fusion 通过 API 与您要连接的应用程序进行通信。每个应用程序都有各自独立的 API。
 author: Becky
 feature: Workfront Fusion
 source-git-commit: b30aac8040cc0b6bcad92914b1c0997a8ddebdd5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '431'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Fusion中的API概述
+# Fusion 中的 API 概述
 
 <!--Add me to TOCs-->
 
-应用程序编程接口(API)是应用程序和服务相互通信的一种方式。 Fusion使用API与您连接的应用程序进行通信。
+应用程序编程接口（API）是一种使应用程序与服务之间能够相互通信的方式。Fusion 依靠 API 与您所连接的应用程序进行交互。
 
-API由应用程序的所有者创建并控制。 例如，Workfront API归Adobe的Workfront团队所有，而Microsoft Graph API归Microsoft所有。 API的所有者定义可通过API执行的操作。
+API 由应用程序的所有者创建并维护。例如，Workfront API 由 Adobe 的 Workfront 团队维护，而 Microsoft Graph API 则由 Microsoft 负责。API 的所有者决定 API 可提供哪些操作。
 
 ## 注意事项
 
-API由其所有者而非Fusion定义这一事实引出了一些重要的注意事项：
+由于 API 由其所有者而非 Fusion 定义，因此需要注意以下重要事项：
 
-* **您可以使用Fusion连接到任何具有公共API的应用或服务**，无论Fusion是否提供到该应用或服务的专用连接器。 您可以使用Fusion的通用连接器将这些应用程序或服务引入您的方案中。
+* **只要某个应用程序或服务提供公共 API，您就可以使用 Fusion 将其连接起来**，无论 Fusion 是否为其提供专用连接器。您可以使用 Fusion 的通用连接器将这些应用程序或服务纳入您的场景中。
 
   有关通用连接器的列表，请参阅[通用连接器](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)。
 
-* **所有者对应用程序API所做的更改可能会影响Fusion功能。**&#x200B;如果更改足够严重，Fusion可能需要更新模块或连接类型，或者在极端情况下可能为应用程序创建新的连接器。
+* **应用程序所有者对其 API 所做的更改可能会影响 Fusion 的功能。**&#x200B;如果更改幅度较大，Fusion 可能需要更新模块或连接类型；在极端情况下，甚至可能需要为该应用程序创建新的连接器。
 
-  有关这些称为“重大更改”的极端情况的详细信息，请参阅本文中的[重大更改](#breaking-changes)。
+  有关这类极端情况（称为“重大变更”）的详细信息，请参阅本文中的[重大变更](#breaking-changes)。
 
 
-## 重大更改
+## 重大变更
 
-在API所有者从可用性中删除部分或全部API时，发生重大更改的常见原因是弃用。 发生这种情况时，Fusion团队会尽一切努力快速将Fusion功能与应用程序的API的新版本重新调整。 这通常采用新模块、连接类型或连接器的形式。
+导致重大变更的常见原因是弃用，即 API 所有者停止提供 API 的部分或全部功能。发生这种情况时，Fusion 团队会尽力使 Fusion 的功能尽快与应用程序 API 的新版本保持一致。这通常会通过新增模块、更新连接类型或创建新的连接器来实现。
 
-由于您的Fusion方案是使用特定数据配置的，因此您可能需要更新方案。
+由于您的 Fusion 场景基于您的特定数据进行配置，因此您可能需要更新这些场景。
 
-* 如果更改与身份验证或授权相关，则可能需要更新该应用程序的连接。
-* 如果更改与API中的特定操作（端点）相关，您可能需要将与该操作相关的任何模块更新为模块的新版本。
-* 如果弃用Fusion使用的整个API版本，则可能需要将该连接器的所有模块更新为连接器的新版本。
+* 如果变更与身份验证或授权相关，您可能需要更新该应用程序的连接设置。
+* 如果变更涉及 API 中的某个具体操作（端点），您可能需要将与该操作相关的模块更新为新版本。
+* 如果 Fusion 所使用的整个 API 版本已弃用，您可能需要将该连接器的所有模块更新到新的连接器版本。
 
-在许多情况下，您可以升级到模块的新版本，而无需重新配置该模块。
+在许多情况下，您可以在无需重新配置模块的前提下，将其升级到新版本。
 
-有关升级模块的信息和说明，请参阅[将模块升级到新版本](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)。
+有关升级模块的详细信息和操作步骤，请参阅[将模块升级到新版本](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)。

@@ -1,78 +1,78 @@
 ---
-title: Adobe Workfront模块
-description: 您可以使用Adobe Workfront Fusion Adobe Workfront连接器在Workfront中自动执行流程。 如果您拥有Workfront Fusion for Work Automation and Integration许可证，则还可以使用它连接到第三方应用程序和服务。
+title: Adobe Workfront 模块
+description: 您可以使用 Adobe Workfront Fusion 的 Adobe Workfront 连接器，在 Workfront 中自动化各类流程。如果您拥有 Workfront Fusion for Work Automation and Integration 许可证，还可以使用该连接器将 Workfront 与第三方应用程序和服务连接起来。
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 source-git-commit: 6e2593c0f171bae278e86fed53492b8f64ae3d7e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7323'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
-# Adobe Workfront模块
+# Adobe Workfront 模块
 
 >[!IMPORTANT]
 >
->本文包含有关2025年10月22日发布的Workfront连接器新版本的说明。 此新连接器反映了对Workfront API所做的更改。
+>本文介绍的是新版 Workfront 连接器的使用说明，该版本于 2025 年 10 月 22 日发布。此新版连接器反映了 Workfront API 的最新更新。
 >
->新连接器将标记为“Workfront”，之前可用的连接器将标记为“Workfront（旧版）”。
+>新版连接器标记为“Workfront”，而原有版本则标记为“Workfront（旧版）”。
 >
 >我们建议：
 >
->* 在创建或更新场景时使用新连接器。
->* 将现有模块升级到新连接器。
+>* 在创建或更新场景时使用新版连接器。
+>* 将现有模块升级为新版连接器。
 >
->旧版Workfront连接器使用Workfront API版本20，该版本计划在28.4版本（2028年4月）中弃用。 在此时间之前，旧版连接器中的模块将继续工作。
+>旧版 Workfront 连接器使用 Workfront API 版本 20，该版本计划在 28.4 版本（2028 年 4 月）中停用。旧版连接器中的模块将在此之前继续正常运行。
 >
->有关升级现有模块的说明，请参阅将模块升级到新版本一文中的[将Workfront模块升级到新版本](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)。
+>如需了解如何升级现有模块，请参阅文章《升级模块到新版本》中的[升级 Workfront 模块到新版本](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)部分。
 >
->有关为何有时需要新连接器的信息，请参阅[Fusion中的API概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md)。
+>如需了解为何有时需要推出新版连接器，请参阅 [Fusion 中的 API 概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/api-overview.md)。
 
-您可以使用Adobe Workfront Fusion Adobe Workfront连接器在Workfront中自动执行流程。 您还可以将Workfront连接到其他应用程序和服务。
+您可以使用 Adobe Workfront Fusion 的 Adobe Workfront 连接器，在 Workfront 中自动化各类流程。您也可以将 Workfront 与其他应用程序和服务连接。
 
-有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。 有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
+有关创建场景的说明，请参阅[创建场景：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)中的相关文章。有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的相关文章。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-+++##将Workfront连接到Workfront Fusion 
++++## 将 Workfront 连接到 Workfront Fusion 
 
-Workfront连接器使用OAuth 2.0连接到Workfront。
+Workfront 连接器使用 OAuth 2.0 与 Workfront 建立连接。
 
-您可以直接在Workfront Fusion模块内创建与Workfront帐户的连接。
+您可以在 Workfront Fusion 模块内直接创建到您 Workfront 帐户的连接。
 
-* [使用客户端ID和客户端密钥连接到Workfront](#connect-to-workfront-using-client-id-and-client-secret)
-* [使用服务器到服务器连接连接到Workfront](#connect-to-workfront-using-a-server-to-server-connection)
+* [使用客户端 ID 和客户端密钥连接到 Workfront](#connect-to-workfront-using-client-id-and-client-secret)
+* [使用服务器到服务器连接方式连接到 Workfront](#connect-to-workfront-using-a-server-to-server-connection)
 
-### 使用客户端ID和客户端密钥连接到Workfront
+### 使用客户端 ID 和客户端密钥连接到 Workfront
 
-1. 在任意Adobe Workfront模块中，单击连接字段旁边的&#x200B;**添加**。
+1. 在任意 Adobe Workfront 模块中，点击“连接”字段旁的&#x200B;**添加**。
 1. 填写以下字段：
 
    <table style="table-layout:auto"> 
@@ -84,7 +84,7 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
       <tr>
         <td role="rowheader">[!UICONTROL 连接类型]</td>
         <td>
-          <p>选择<b>Adobe Workfront身份验证连接</b>。</p>
+          <p>选择 <b>Adobe Workfront 身份验证连接</b>。</p>
         </td>
       </tr>
       <tr>
@@ -94,36 +94,36 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 客户端ID]</td>
-        <td>输入您的Workfront客户端ID。 您可以在Workfront中“设置”区域的“OAuth2应用程序”区域找到此代码。 打开要连接的特定应用程序以查看客户端ID。</td>
+        <td role="rowheader">[!UICONTROL 客户端 ID]</td>
+        <td>请输入您的 Workfront 客户端 ID。您可以在 Workfront 的“设置”区域中 OAuth2 应用程序部分找到此信息。打开您要连接的特定应用程序即可查看客户端 ID。</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的Workfront客户端密码。 您可以在Workfront中“设置”区域的“OAuth2应用程序”区域找到此代码。 如果您的Workfront中的OAuth2应用程序没有客户端密钥，则可以生成另一个密钥。 有关说明，请参阅Workfront文档。</td>
+        <td>输入您的 Workfront 客户端密钥。 您可以在 Workfront 的“设置”区域中 OAuth2 应用程序部分找到此信息。如果您的 Workfront OAuth2 应用程序没有客户端密钥，您可以重新生成一个。有关操作说明，请参阅 Workfront 文档。</td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 身份验证URL]</td>
-        <td>此值可保留为默认值，也可以输入Workfront实例的URL，后跟<code>/integrations/oauth2</code>。 <p>示例： <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
+        <td role="rowheader">[!UICONTROL 身份验证 URL]</td>
+        <td>此项可保持默认值，或输入您 Workfront 实例的 URL，并在后面添加 <code>/integrations/oauth2</code>。 <p>示例： <code>https://mydomain.my.workfront.com/integrations/oauth2</code></p></td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 主机前缀]</td>
-        <td>在大多数情况下，此值应为<code>origin</code>。
+        <td>在大多数情况下，此值应为 <code>origin</code>。
       </tr>
     </tbody>
     </table>
 
-1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
+1. 点击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
 
-   如果您未登录Workfront，则会引导您进入登录屏幕。 登录后，您可以允许连接。
+   如果您尚未登录 Workfront，系统会将您引导至登录界面。登录后，您即可允许该连接。
 
 >[!NOTE]
 >
->* 到Workfront API的OAuth 2.0连接不再依赖API密钥。
->* 要创建与Workfront沙盒环境的连接，您必须在该环境中创建一个OAuth2应用程序，然后在您的连接中使用由该应用程序生成的客户端ID和客户端密钥。
+>* 通过 OAuth 2.0 连接到 Workfront API 不再依赖 API 密钥。
+>* 要连接到 Workfront 沙盒环境，您必须在该环境中创建 OAuth2 应用程序，然后使用该应用程序生成的客户端 ID 和客户端密钥建立连接。
 
-### 使用服务器到服务器连接连接到Workfront
+### 使用服务器到服务器连接方式连接到 Workfront
 
-1. 在任意Adobe Workfront模块中，单击连接字段旁边的&#x200B;**添加**。
+1. 在任意 Adobe Workfront 模块中，点击“连接”字段旁的&#x200B;**添加**。
 1. 填写以下字段：
 
    <table style="table-layout:auto"> 
@@ -135,7 +135,7 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
       <tr>
         <td role="rowheader">[!UICONTROL 连接类型]</td>
         <td>
-          <p>选择<b>Adobe Workfront服务器到服务器连接</b>。</p>
+          <p>选择 <b>Adobe Workfront 服务器到服务器连接</b>。</p>
         </td>
       </tr>
       <tr>
@@ -147,56 +147,56 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
       <tr>
         <td role="rowheader">[!UICONTROL 实例名称]</td>
         <td>
-          <p>输入实例的名称，也称为域。</p><p>示例：如果您的URL是<code>https://example.my.workfront.com</code>，请输入<code>example</code>。</p>
+          <p>输入您的实例名称，即您的域。</p><p>示例：如果您的 URL 为 <code>https://example.my.workfront.com</code>，请输入 <code>example</code>。</p>
         </td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 实例通道]</td>
         <td>
-          <p>输入此连接将连接的环境类型。</p><p>示例：如果您的URL是<code>https://example.my.workfront.com</code>，请输入<code>my</code>。</p>
+          <p>输入此连接要访问的环境类型。</p><p>示例：如果您的 URL 为 <code>https://example.my.workfront.com</code>，请输入 <code>my</code>。</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 客户端ID]</td>
-        <td>输入您的Workfront客户端ID。 您可以在Workfront中“设置”区域的“OAuth2应用程序”区域找到此代码。 打开要连接的特定应用程序以查看客户端ID。</td>
+        <td role="rowheader">[!UICONTROL 客户端 ID]</td>
+        <td>请输入您的 Workfront 客户端 ID。您可以在 Workfront 的“设置”区域中 OAuth2 应用程序部分找到此信息。打开您要连接的特定应用程序即可查看客户端 ID。</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的Workfront客户端密码。 您可以在Workfront中“设置”区域的“OAuth2应用程序”区域找到此代码。 如果您的Workfront中的OAuth2应用程序没有客户端密钥，则可以生成另一个密钥。 有关说明，请参阅Workfront文档。</td>
+        <td>输入您的 Workfront 客户端密钥。 您可以在 Workfront 的“设置”区域中 OAuth2 应用程序部分找到此信息。如果您的 Workfront OAuth2 应用程序没有客户端密钥，您可以重新生成一个。有关操作说明，请参阅 Workfront 文档。</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 范围]</td>
-        <td>输入此连接的任何适用范围。</td>
+        <td>输入此连接所需的相关范围。</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 主机前缀]</td>
-        <td>在大多数情况下，此值应为<code>origin</code>。
+        <td>在大多数情况下，此值应为 <code>origin</code>。
       </tr>
     </tbody>
     </table>
 
-1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
+1. 点击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
 
-   如果您未登录Workfront，则会引导您进入登录屏幕。 登录后，您可以允许连接。
+   如果您尚未登录 Workfront，系统会将您引导至登录界面。登录后，您即可允许该连接。
 
 >[!NOTE]
 >
->* 到Workfront API的OAuth 2.0连接不再依赖API密钥。
->* 要创建与Workfront沙盒环境的连接，您必须在该环境中创建一个OAuth2应用程序，然后在您的连接中使用由该应用程序生成的客户端ID和客户端密钥。
+>* 通过 OAuth 2.0 连接到 Workfront API 不再依赖 API 密钥。
+>* 要连接到 Workfront 沙盒环境，您必须在该环境中创建 OAuth2 应用程序，然后使用该应用程序生成的客户端 ID 和客户端密钥建立连接。
 
-## Workfront模块及其字段
+## Workfront 模块及其字段
 
-配置Workfront模块时，Workfront Fusion会显示以下列出的字段。 除此以外，还可能会显示其他Workfront字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在您配置 Workfront 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 Workfront 字段。模块中的加粗标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 >[!NOTE]
 >
->* 如果您在Workfront模块中未看到最新字段，这可能是因为缓存问题。 等待一小时，然后重试。
->* 来自Adobe Workfront的HTTP 429状态代码不应导致停用，而是会在场景中触发短暂的执行暂停。
+>* 如果您在 Workfront 模块中未看到最新字段，可能是由于缓存问题所致。请等待一小时后再试。
+>* 来自 Adobe Workfront 的 HTTP 429 状态码不会导致停用，而是会使场景短暂暂停执行。
 
 * [触发器](#triggers)
 * [操作](#actions)
@@ -210,49 +210,49 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
 * [Watch Field](#watch-field)
 -->
 
-+++ **[!UICONTROL 观看活动]**
++++ **[!UICONTROL 监控事件]**
 
-在Workfront中添加、更新或删除特定类型的对象时，此触发器模块会实时执行场景
+当新增、更新或删除 Workfront 中某一类型的对象时，此触发器模块会实时执行场景。
 
-该模块会返回与记录关联的任何标准字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-1. 单击&#x200B;**[!UICONTROL Webhook]**&#x200B;框右侧的&#x200B;**添加**。
+1. 单击 **Webhook** 框右侧的&#x200B;**[!UICONTROL 添加]**。
 
-1. 在显示的&#x200B;**[!UICONTROL 添加挂接]**&#x200B;框中配置webhook。
+1. 在显示的&#x200B;**[!UICONTROL 添加挂钩]**&#x200B;框中配置该 Webhook。
 
    <table style="table-layout:auto"> 
     <col> 
     <col> 
     <tbody> 
      <tr> 
-      <td>[!UICONTROL Webhook名称]</td> 
-      <td>输入webhook的名称</td> 
+      <td>[!UICONTROL Webhook 名称]</td> 
+      <td>输入 Webhook 的名称</td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL Connection]</td> 
-      <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+      <td>[!UICONTROL 连接]</td> 
+      <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL 记录类型]</td> 
-      <td>选择要模块观看的Workfront记录类型。</td> 
+      <td>选择您希望该模块监控的 Workfront 记录类型。</td> 
      </tr> 
      <tr> 
       <td>[!UICONTROL 状态]</td> 
-      <td>选择您要观察旧状态还是新状态。<ul><li><p><b>[!UICONTROL 新状态]</b></p><p>当记录将<b>更改为</b>给定值时触发方案。</p><p>例如，如果状态设置为[!UICONTROL New State]，而过滤器设置为[!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress]，则webhook会在[!UICONTROL Status]更改为[!UICONTROL In Progress]时触发场景，而不管状态之前是什么。 </p></li><li><p><b>[!UICONTROL 旧状态]</b></p><p>当记录从<b>更改</b>给定值时触发方案。</p><p>例如，如果状态设置为[!UICONTROL Old State]，而过滤器设置为[!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress]，则当[!UICONTROL Status]当前为[!UICONTROL In Progress]的状态更改为其他状态时，webhook会触发一个场景。 </p></li></ul></td> 
+      <td>选择您希望关注旧状态还是新状态。<ul><li><p><b>[!UICONTROL 新状态]</b></p><p>当记录状态更改<b>为</b>指定值时触发场景。</p><p>例如，如果状态设置为 [!UICONTROL New State]，并且筛选条件设置为 [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress]，则当 [!UICONTROL Status] 更改为 [!UICONTROL In Progress] 时，Webhook 会触发场景，而不论之前的状态是什么。 </p></li><li><p><b>[!UICONTROL 旧状态]</b></p><p>当记录状态<b>从</b>指定值发生变化时触发场景。</p><p>例如，如果状态设置为 [!UICONTROL Old State]，并且筛选条件设置为 [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress]，则当当前 [!UICONTROL In Progress] 状态的记录更改为其他状态时，Webhook 会触发场景。 </p></li></ul></td> 
      </tr> 
      <tr data-mc-conditions=""> 
-      <td> <p>[!UICONTROL 事件过滤器]</p> </td> 
-      <td> <p>您可以设置过滤器，以仅监视符合您选择标准的记录。</p> <p>对于每个筛选器，输入希望筛选器计算的字段、运算符以及希望筛选器允许的值。 通过添加AND规则，您可以使用多个过滤器。</p> <p><b>注意</b>：您无法编辑现有Workfront Webhook中的筛选器。 要为Workfront活动订阅设置其他筛选器，请删除当前webhook并创建一个新筛选器。</p> <p>有关事件过滤器的详细信息，请参阅本文中的Workfront &gt; [!UICONTROL 监视事件]模块中的<a href="#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">事件订阅过滤器</a>。</p> </td> 
+      <td> <p>[!UICONTROL 事件筛选条件]</p> </td> 
+      <td> <p>您可以设置筛选条件，仅观看符合您所选条件的记录。</p> <p>对于每个筛选条件，请输入要评估的字段、运算符以及筛选条件应允许的值。您可以通过添加 AND 规则来使用多个筛选条件。</p> <p><b>注意</b>：您无法编辑现有 Workfront Webhook 中的筛选条件。如需为 Workfront 事件订阅设置不同的筛选条件，请删除当前 Webhook 并创建一个新的。</p> <p>有关事件筛选条件的详细信息，请参阅本文中的 <a href="#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">Workfront 中的时间订阅筛选条件 &gt; [!UICONTROL 监控事件]模块</a>。</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
-      <td>排除由此连接产生的事件</td> 
-      <td>启用此选项可排除使用此触发器模块使用的同一连接器创建或更新的事件。 这可以防止场景触发自身，导致其在无休止循环中重复的情况。<p><b>注意</b>： Assignment记录类型不包括此选项。</p></td> 
+      <td>排除由此连接创建的事件</td> 
+      <td>启用此选项可排除通过与此触发器模块相同的连接器创建或更新的事件。这可防止场景因自我触发而不断循环执行。<p><b>注意</b>：任务记录类型不包括此选项。</p></td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL 记录源]</td> 
+      <td>[!UICONTROL 记录来源]</td> 
       <td>
-       <p>选择您希望方案仅观看[!UICONTROL 新记录]、[!UICONTROL 仅更新记录]、[!UICONTROL 新记录和更新记录]还是[!DNL Deleted Records Only]。</p>
-       <p><b>注意</b>：如果您选择[!UICONTROL 新建和更新的记录]，webhook创建将创建2个事件订阅（针对同一webhook地址）。</p>
+       <p>选择是否要让场景监控 [!UICONTROL New Records Only]、[!UICONTROL Updated Records Only]、[!UICONTROL New and Updated Records] 或 [!DNL Deleted Records Only]。</p>
+       <p><b>注意</b>：如果您选择 [!UICONTROL New and Updated Records]，在创建 Webhook 时会生成两个事件订阅（使用相同的 Webhook 地址）。</p>
        </td> 
      </tr> 
     </tbody> 
@@ -262,101 +262,101 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
 
    <!--Markdown 0032 placeholder-->
 
-创建webhook后，您可以查看事件所发往的端点地址。
+Webhook 创建完成后，您可以查看事件发送到的端点地址。
 
-有关详细信息，请参阅Workfront文档事件订阅API一文中的[事件负载示例](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads)部分。
+如需了解更多信息，请参阅 Workfront 文档中事件订阅 API 一文的[事件负载示例](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads)部分。
 
-查看可在每个Workfront模块[可用的](#workfront-object-types-available-for-each-workfront-module)Workfront对象类型中使用此模块的Workfront对象类型列表。
+有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
 +++
 
-+++ **[!UICONTROL 监视字段]**
++++ **[!UICONTROL 监控字段]**
 
-当您指定的字段更新时，此触发器模块会执行场景。 该模块会返回指定字段的旧值和新值。 您可以在场景的后续模块中映射此信息。
+当更新指定字段时，此触发器模块会执行场景。该模块会返回所指定字段的旧值和新值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td>[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 记录类型]</td> 
-   <td> <p>选择要模块观看的Workfront记录类型。</p> <p>例如，如果希望每次更新任务中的记录字段时都开始执行方案，请选择[!UICONTROL Task]。</p> </td> 
+   <td> <p>选择您希望该模块监控的 Workfront 记录类型。</p> <p>例如，如果您希望每次在任务的记录字段更新时开始执行场景，请选择 [!UICONTROL Task]。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 字段]</td> 
-   <td>选择您希望模块关注更新的字段。 这些字段反映了Workfront管理员为跟踪而设置的字段。</td> 
+   <td>选择您希望该模块监控其更新的字段。这些字段反映了您的 Workfront 管理员已启用用于跟踪的字段。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 输出]</td> 
-   <td>选择要包含在此模块的输出捆绑包中的对象字段。</td> 
+   <td>选择您希望包含在此模块输出捆绑包中的对象字段。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 限制]</td> 
-   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
+   <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-查看可在每个Workfront模块[可用的](#workfront-object-types-available-for-each-workfront-module)Workfront对象类型中使用此模块的Workfront对象类型列表。
+有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
 +++
 
-+++ **[!UICONTROL 观看记录]**
++++ **[!UICONTROL 监控记录]**
 
-此触发器模块执行特定类型的对象添加、更新或同时添加和更新的方案。 该模块返回与一个或多个记录关联的所有标准字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+当新增、更新某一类型的对象或同时发生这两种情况时，此触发器模块会执行场景。该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-在输出中，模块指示每个记录是新的还是更新的。
+在输出中，模块会指明每条记录是新增的还是更新的。
 
-自上次运行场景以来添加和更新的记录将作为新记录返回。
+自上次运行场景以来既被新增又被更新的记录会作为新增记录返回。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 筛选器]</td> 
-   <td> <p>选择您希望方案仅观看[!UICONTROL 新记录]、[!UICONTROL 仅更新记录]还是[!UICONTROL 新记录和更新记录]。</p> </td> 
+   <td role="rowheader">[!UICONTROL 筛选条件]</td> 
+   <td> <p>选择是否要让场景监控 [!UICONTROL New Records Only]、[!UICONTROL Updated Records Only] 或 [!UICONTROL New and Updated Records]。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
-   <td> <p>选择要模块观看的Workfront记录类型。</p> <p>例如，如果您要在每次创建新项目时启动方案，请选择[!UICONTROL 项目]</p> </td> 
+   <td> <p>选择您希望该模块监控的 Workfront 记录类型。</p> <p>例如，如果您希望在每次创建新项目时启动该场景，请选择 [!UICONTROL Project]。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 输出]</td> 
-   <td> <p>选择要包含在此模块的输出捆绑包中的字段。</p> </td> 
+   <td> <p>选择您希望包含在此模块输出捆绑包中的字段。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 参考]</td> 
-   <td> <p>选择要包含在此模块的输出捆绑包中的引用字段。</p> </td> 
+   <td role="rowheader">[!UICONTROL 引用]</td> 
+   <td> <p>选择您希望包含在此模块输出捆绑包中的引用字段。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 输出]</td> 
-   <td> <p>选择要包含在此模块的输出捆绑包中的集合字段。</p> </td> 
+   <td> <p>选择您希望包含在此模块输出捆绑包中的收藏集字段。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 可选过滤器]</td> 
-   <td> <p>（高级）键入API代码字符串以定义任何其他将细化标准的参数或代码。 </p> </td> 
+   <td role="rowheader">[!UICONTROL 可选筛选条件]</td> 
+   <td> <p>（高级）输入 API 代码字符串，以定义可进一步细化筛选条件的其他参数或代码。 </p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 限制]</td> 
-   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
+   <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-查看可在每个Workfront模块[可用的](#workfront-object-types-available-for-each-workfront-module)Workfront对象类型中使用此模块的Workfront对象类型列表。
+有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
 +++
 
@@ -376,57 +376,57 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
 * [Upload Document](#upload-document)
 -->
 
-+++ **[!UICONTROL 转换对象]**
++++ **[!UICONTROL 转化对象]**
 
-此操作模块进行以下转换之一：
+此操作模块可执行以下任一转化：
 
 * 将问题转化为项目
 * 将问题转化为任务
-* 将任务转换为项目
+* 将任务转化为项目
 
 >[!NOTE]
 >
->自2024年7月起，转化对象时可包含自定义表单。
+>从 2024 年 7 月起，转化对象时可以包含自定义表单。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td>[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 对象类型]</td> 
-   <td> <p>选择要转换的对象类型。 这是转换之前对象的类型。</p> </td> 
+   <td> <p>选择您希望转化的对象类型。这是对象在转化前的类型。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 转换为]</td> 
-   <td>选择要将其转换为的对象。 这是转换后对象的类型。</td> 
+   <td>[!UICONTROL 转化为]</td> 
+   <td>选择您希望将其转化成的对象类型。这是对象在转化后的类型。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL &lt;对象&gt; ID]</td> 
-   <td> <p>输入对象的ID。 </p> <p>注意：输入对象的ID时，可以开始键入对象的名称，然后从列表中选择该对象。 然后，模块在字段中输入相应的ID。</p> </td> 
+   <td>[!UICONTROL &lt;Object&gt; ID]</td> 
+   <td> <p>输入对象的 ID。 </p> <p>注意：输入对象 ID 时，您可以先输入对象名称，然后从列表中选择。然后，模块会自动将相应的 ID 填入字段。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 模板ID]</td> 
-   <td> <p>如果要转换为项目，请选择要用于项目的模板ID。</p> <p>注意：输入对象的ID时，可以开始键入对象的名称，然后从列表中选择该对象。 然后，模块在字段中输入相应的ID。</p> </td> 
+   <td>[!UICONTROL 模板 ID]</td> 
+   <td> <p>如果您正在转化为项目，请选择要用于该项目的模板 ID。</p> <p>注意：输入对象 ID 时，您可以先输入对象名称，然后从列表中选择。然后，模块会自动将相应的 ID 填入字段。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 自定义表单]</td> 
-   <td>选择要添加到新转换的对象中的任何自定义表单，然后输入自定义表单字段的值。</td> 
+   <td>选择您希望添加到新转换对象的任何自定义表单，并为表单字段输入相应的值。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL Options]</td> 
-   <td> <p>在转换对象时启用所需的任意选项。 选项是否可用取决于您要转换到的对象或从哪个对象转换。</p> </td> 
+   <td>[!UICONTROL 选项]</td> 
+   <td> <p>在转化对象时启用您所需的任何选项。可用选项取决于转化的源对象和目标对象类型。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 复制本机字段]</td> 
-   <td> <p>启用此选项可将任何本地字段从原始对象复制到新对象。</p> </td> 
+   <td>[!UICONTROL 复制原生字段]</td> 
+   <td> <p>启用此选项可将原始对象中的原生字段复制到新对象。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 复制自定义表单]</td> 
-   <td> <p>启用此选项可将任何本地字段从原始对象复制到新对象。</p> </td> 
+   <td> <p>启用此选项可将原始对象中的原生字段复制到新对象。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -435,15 +435,15 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
 
 +++ **[!UICONTROL 创建记录]** 
 
-此操作模块可在Workfront中创建对象，如项目、任务或问题，并允许您向新对象添加自定义表单。 利用模块，可选择模块中可用的对象字段。
+此操作模块会在 Workfront 中创建一个对象（例如项目、任务或问题），并允许您为新对象添加自定义表单。该模块允许您选择对象的哪些字段可在模块中使用。
 
-您指定记录的ID。
+您需要指定记录的 ID。
 
-该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回记录的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-确保提供最小数量的输入字段。 例如，如果您要创建问题，则需要在“项目ID”字段中提供有效的父项目ID，以指示问题应存在于Workfront中的位置。 您可以使用映射面板从场景中的其他模块映射此信息，也可以通过键入名称，然后从列表中选择该名称来手动输入该信息。
+请确保您提供了所需的最少输入字段。例如，如果您要创建问题，则必须在项目 ID 字段中提供有效的父项目 ID，以指明该问题在 Workfront 中归属的位置。您可以使用映射面板从场景中的其他模块映射此信息，也可以通过输入名称并从列表中选择的方式手动输入。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
@@ -452,52 +452,52 @@ Workfront连接器使用OAuth 2.0连接到Workfront。
  </col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td>[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 记录类型]</td> 
-   <td> <p>选择您希望模块创建的Workfront记录类型。</p> <p>例如，如果要创建项目，请从下拉列表中选择[!UICONTROL 项目] 。</p> </td> 
+   <td> <p>选择您希望该模块创建的 Workfront 记录类型。</p> <p>例如，如果您要创建项目，请从下拉列表中选择 [!UICONTROL Project]。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 选择要映射的字段]</td> 
-   <td> <p>选择可用于数据输入的字段。 这样，您就无需滚动浏览不需要的字段即可使用这些字段。 然后，您可以在这些字段中输入或映射数据。</p> <p>对于自定义表单中的字段，请使用<b>[!UICONTROL 附加自定义表单]</b>字段。</p> </td> 
+   <td> <p>选择您希望用于数据输入的字段。这样您无需浏览不需要的字段，就能直接使用这些字段。随后您可以向这些字段输入或映射数据。</p> <p>对于自定义表单中的字段，请使用<b>[!UICONTROL 附上自定义表单]</b>字段。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 附加自定义表单]</td> 
-   <td>选择要添加到新对象的任何自定义表单，选择要为其输入值的字段，然后输入或映射这些字段的值。</td> 
+   <td>[!UICONTROL 附上自定义表单]</td> 
+   <td>选择您希望添加到新对象的自定义表单，勾选您要输入值的字段，然后为这些字段输入或映射相应的值。</td> 
   </tr> 
  </tbody> 
 </table>
 
-查看可在每个Workfront模块[可用的](#workfront-object-types-available-for-each-workfront-module)Workfront对象类型中使用此模块的Workfront对象类型列表。
+有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
 >[!NOTE]
 >
->* 输入对象的ID时，可以开始键入对象的名称，然后从列表中选择该对象。 然后，模块在字段中输入相应的ID。
->* 输入自定义字段或[!UICONTROL Note]对象的文本（注释或回复）时，您可以使用[!UICONTROL 注释文本]字段中的HTML标记创建富文本，如粗体或斜体文本。
+>* 输入对象 ID 时，您可以先输入对象名称，然后从列表中选择。然后，模块会自动将相应的 ID 填入字段。
+>* 在为自定义字段或[!UICONTROL 注释]对象（评论或回复）输入文本时，您可以在[!UICONTROL 注释文本]字段中使用 HTML 标记来创建富文本，例如粗体或斜体。
 >
 
 
 
 >[!NOTE]
 >
->创建的用户处于停用和待审批状态。 如果您的组织已迁移到Adobe Admin Console，并且在几分钟内未删除未决批准徽章，则可以批准该用户。
+>用户会以“停用”和“待审批”状态创建。如果您的组织已迁移到 Adobe Admin Console，并且“待审批”标记在几分钟内未移除，您可以手动批准该用户。
 >
->* **解析单个用户**
+>* **解决单个用户**
 >
->      您可以解析“用户”列表中的单个用户。
+>      您可以在“用户”列表中解决单个用户。
 >
 >      1. 在“用户”列表中选择一个或多个用户。
->      1. 单击列表标题中的三个圆点菜单。
+>      1. 点击列表标题中的三点菜单。
 >      1. 选择&#x200B;**批准**。
->      1. 几分钟后，刷新页面。
+>      1. 几分钟后刷新页面。
 >
->* **解析在大型批次中添加的用户**
+>* **解决批量新增的用户**
 >
->   要解决批量添加的用户，可以直接将批量用户添加到Adobe Admin Console。
+>   要解决批量新增用户的问题，您可以直接将这批用户添加到 Adobe Admin Console 中。
 >
->   有关说明，请参阅[管理多个用户 | 在Adobe文档中批量CSV上传](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html)。
+>   有关操作说明，请参阅 Adobe 文档中的[管理多个用户 | 批量上传 CSV](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html)。
 
 +++
 
@@ -554,54 +554,54 @@ See a list of the Workfront object types for which you can use this module in [W
 
 -->
 
-+++ **[!UICONTROL 自定义API调用]**
++++ **[!UICONTROL 自定义 API 调用]**
 
-通过此操作模块，您可以对Workfront API进行经过身份验证的自定义调用。 这样，您可以创建其他Workfront模块无法实现的数据流自动化。
+此操作模块允许您向 Workfront API 发起自定义的已经过身份认证的调用。通过这种方式，您可以构建其他 Workfront 模块无法实现的数据流自动化。
 
-模块返回以下信息：
+该模块会返回以下信息：
 
-* **[!UICONTROL 状态代码]** （数字）：这表示HTTP请求是成功还是失败。 这些是标准代码，您可以在互联网上查找。
-* **[!UICONTROL 标头]** （对象）：与输出正文无关的响应/状态代码的更详细的上下文。 并非响应标头中显示的所有标头都是响应标头，因此某些标头可能对您没什么用。
+* **[!UICONTROL 状态代码]**（数字）：指示 HTTP 请求是成功还是失败。这些是标准状态码，您可以在网上查阅其含义。
+* **[!UICONTROL 标头]**（对象）：提供与输出正文无关的响应/状态码的详细上下文信息。并非所有出现在响应标头中的字段都是有用的响应标头，因此部分信息可能对您不重要。
 
-  响应标头取决于您在配置模块时选择的HTTP请求。
+  响应标头的内容取决于您在配置模块时选择的 HTTP 请求类型。
 
-* **[!UICONTROL Body]**（对象）：根据您在配置模块时选择的HTTP请求，您可能会收到一些返回的数据。 该数据(例如来自GET请求的数据)包含在此对象中。
+* **[!UICONTROL 正文]**（对象）：根据您在配置模块时选择的 HTTP 请求类型，您可能会收到返回的数据。例如 GET 请求返回的数据，这些内容都会包含在此对象中。
 
-您可以在场景的后续模块中映射此信息。
+您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td> <p>输入相对于<code> https://&lt;WORKFRONT_DOMAIN&gt;/attask/api/&lt;API_VERSION&gt;/</code>的路径。</p> </td> 
+   <td> <p>输入相对于 <code> https://&lt;WORKFRONT_DOMAIN&gt;/attask/api/&lt;API_VERSION&gt;/</code> 的路径。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL API版本]</td> 
-   <td>选择您希望模块使用的Workfront API的版本。</td> 
+   <td role="rowheader">[!UICONTROL API 版本]</td> 
+   <td>选择您希望模块使用的 Workfront API 版本。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 方法]</td> 
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅Adobe Workfront Fusion中的<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。如需了解详情，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">Adobe Workfront Fusion 中的 HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>以标准JSON对象的形式添加请求的标头。 这会确定请求的内容类型。</p> <p>例如，<code> {"Content-type":"application/json"}</code></p> <p>注意：如果您收到错误并且难以确定其来源，请考虑根据Workfront文档修改标头。 如果自定义API调用返回422 HTTP请求错误，请尝试使用<code>"Content-Type":"text/plain"</code>标头。</p> </td> 
+   <td role="rowheader">[!UICONTROL 标头]</td> 
+   <td> <p>以标准 JSON 对象的形式添加请求标头。这将决定请求的内容类型。</p> <p>例如，<code> {"Content-type":"application/json"}</code></p> <p>注意：如果出现错误且难以确定来源，请根据 Workfront 文档修改请求标头。如果您的自定义 API 调用返回 422 HTTP 请求错误，请尝试使用 <code>"Content-Type":"text/plain"</code> 标头。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 查询字符串]</td> 
-   <td> <p>以标准JSON对象的形式添加API调用的查询。</p> <p>例如： <code>{"name":"something-urgent"}</code></p> <p>提示：我们建议您通过JSON正文而不是查询参数发送信息。</p> </td> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的查询。</p> <p>例如： <code>{"name":"something-urgent"}</code></p> <p>提示：建议通过 JSON 正文传递信息，而不是作为查询参数。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+   <td role="rowheader">[!UICONTROL 正文]</td> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注意：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -609,157 +609,157 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-查看可在每个Workfront模块[可用的](#workfront-object-types-available-for-each-workfront-module)Workfront对象类型中使用此模块的Workfront对象类型列表。
+有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
 +++
 
 +++ **[!UICONTROL 删除记录]**
 
-此操作模块可删除对象，如Workfront中的项目、任务或问题。
+此操作模块会在 Workfront 中删除对象，例如项目、任务或问题。
 
-您指定记录的ID。
+您需要指定记录的 ID。
 
-该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回记录的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td>[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 强制删除]</td> 
-   <td>启用此选项以确保删除记录，即使Workfront UI会请求确认删除。</td> 
+   <td>启用此选项可确保记录删除，即使 Workfront UI 需要删除确认。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 异步删除]</td> 
-   <td>启用此选项以允许异步删除模块。</td> 
+   <td>启用此选项可允许模块异步删除。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>ID</td> 
-   <td> <p>输入您希望模块删除的记录的唯一Workfront ID。</p> <p>要获取ID，请在浏览器中打开Workfront对象，并复制URL末尾处“ID=”后的文本。 例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>输入您希望模块删除的记录的唯一 Workfront ID。</p> <p>要获取 ID，请在浏览器中打开此 Workfront 对象，并复制 URL 中 “ID=” 后面的文本。例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 记录类型]</td> 
-   <td>选择要让模块删除的Workfront记录类型。</td> 
+   <td>选择您希望该模块删除的 Workfront 记录类型。</td> 
   </tr> 
  </tbody> 
 </table>
 
-查看可在每个Workfront模块[可用的](#workfront-object-types-available-for-each-workfront-module)Workfront对象类型中使用此模块的Workfront对象类型列表。
+有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
 >[!NOTE]
 >
->我们建议采用以下方案配置，以避免因异步操作而无法删除记录。
+>为避免因异步操作导致记录未成功删除，建议采用以下场景配置。
 >
 >1. 同步删除记录。
->1. 将错误处理添加到删除记录模块以忽略由40秒超时导致的错误。
+>1. 在“删除记录”模块中添加错误处理规则，以忽略因 40 秒超时导致的错误。
 
 
 +++
 
 +++ **[!UICONTROL 下载文档]**
 
-此操作模块可从Workfront下载文档。
+此操作模块会从 Workfront 下载文档。
 
-您指定记录的ID。
+您需要指定记录的 ID。
 
-该模块返回文档的内容、文件名、文件扩展名和文件大小。 您可以在场景的后续模块中映射此信息。
+该模块会返回文档的内容、文件名、文件扩展名以及文件大小。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td>[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文档ID]</td> 
-   <td> <p>映射或手动输入您希望模块下载的文档的唯一Workfront ID。</p> <p>要获取ID，请在浏览器中打开Workfront对象，并复制URL末尾处“ID=”后的文本。 例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td>[!UICONTROL 文档 ID]</td> 
+   <td> <p>映射或手动输入您希望模块下载的文档的唯一 Workfront ID。</p> <p>要获取 ID，请在浏览器中打开此 Workfront 对象，并复制 URL 中 “ID=” 后面的文本。例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-查看可在每个Workfront模块[可用的](#workfront-object-types-available-for-each-workfront-module)Workfront对象类型中使用此模块的Workfront对象类型列表。
+有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
 +++
 
-### **获取预签名文件URL**
+### **获取预签名文件 URL**
 
-此操作模块获取预签名的文件URL，以后可由其他API使用。
+此操作模块获取预签名的文件 URL，以供其他 API 使用。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td>[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文档ID]</td> 
-   <td> <p>映射或手动输入您要为其获取预签名URL的文档的唯一Workfront ID。</p> <p>要获取ID，请在浏览器中打开Workfront对象，并复制URL末尾处“ID=”后的文本。 例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td>[!UICONTROL 文档 ID]</td> 
+   <td> <p>映射或手动输入您希望获取预签名 URL 的文档的唯一 Workfront ID。</p> <p>要获取 ID，请在浏览器中打开此 Workfront 对象，并复制 URL 中 “ID=” 后面的文本。例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL URL过期时间]</td> 
-   <td> <p>输入或映射此URL过期前存在的分钟数。 默认值为1分钟。</p><p>要更改此值，必须由Workfront Fusion团队启用此参数。 如果未启用，则无论您输入的数字如何，该值都将保持1分钟。</p> </td> 
+   <td>[!UICONTROL URL 到期时间]</td> 
+   <td> <p>输入或映射此 URL 过期前可存在的分钟数。默认值为 1 分钟。</p><p>要更改此值，必须由 Workfront Fusion 团队启用该参数。如果未启用，无论您输入什么数字，该值都会保持 1 分钟。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 +++ **[!UICONTROL 其他操作]**
 
-通过此操作模块，您可以对API执行操作。
+此操作模块允许您对 API 执行操作。
 
 >[!NOTE]
 >
->自2024年7月起，`convertToProject`操作包括字段`copyCategories`。 当设置为`TRUE`时，所有自定义表单都将包含在问题所转换到的项目中。
+>自 2024 年 7 月起，`convertToProject` 操作新增字段 `copyCategories`。 当设置为 `TRUE` 时，所有自定义表单都会包含在该问题转化后的项目中。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td>[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 记录类型]</td> 
-   <td> <p>选择您希望模块与之交互的Workfront记录类型。</p> </td> 
+   <td> <p>选择此模块需要交互的 Workfront 记录类型。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 操作]</td> 
-   <td> <p>选择要模块执行的操作。</p> <p>根据您选择的[!UICONTROL 记录类型]和[!UICONTROL 操作]，您可能需要填写其他字段。 这两个设置的某些组合可能只需要记录ID，而其他设置（如<strong>[!UICONTROL 记录类型的Project]</strong>和<strong>[!UICONTROL 操作]</strong>的[!UICONTROL 附加模板]）需要其他信息（如对象ID和模板ID）。</p><p>有关某些操作可用的选项，请参阅本文中的<a href="#misc-action-options" class="MCXref xref">其他操作选项</a>。</p> <p>有关各个字段的详细信息，请参阅<a href="http://developer.workfront.com/">Workfront开发人员文档</a>。 <p><strong>注意</strong>：开发人员文档网站仅包含通过API版本14传递的信息，但仍包含可供API调用使用的有用信息。 </p> 
+   <td> <p>选择您希望该模块执行的操作。</p> <p>根据您选择的[!UICONTROL 记录类型]和[!UICONTROL 操作]，可能需要填写其他字段。某些设置组合可能仅需提供记录 ID，而其他组合（例如将<strong>[!UICONTROL 记录类型]</strong>设为“项目”，将<strong>[!UICONTROL 操作]</strong>设为[!UICONTROL 附加模板]）则需要额外信息（例如对象 ID 和模板 ID）。</p><p>若要查看某些操作可用的选项，请参阅本文中的<a href="#misc-action-options" class="MCXref xref">其他操作选项</a>。</p> <p>有关各字段的详细说明，请参阅 <a href="http://developer.workfront.com/">Workfront 开发人员文档</a>。 <p><strong>注意</strong>：开发人员文档网站仅涵盖至 API 版本 14，但其中内容仍对 API 调用具有参考价值。 </p> 
     <ol> 
-     <li value="1"> <p>从Workfront开发人员文档页面的左侧导航中选择记录类型。 以下类型有自己的页面：</p> 
+     <li value="1"> <p>在 Workfront 开发人员文档页面中，从左侧导航中选择记录类型。以下类型各自拥有独立的页面：</p> 
       <ul> 
        <li> <p>[!UICONTROL 项目]</p> </li> 
        <li> <p>[!UICONTROL 任务]</p> </li> 
-       <li> <p>[!UICONTROL Issues]</p> </li> 
+       <li> <p>[!UICONTROL 问题]</p> </li> 
        <li> <p>[!UICONTROL 用户]</p> </li> 
        <li> <p>[!UICONTROL 文档]</p> </li> 
-      </ul> <p>对于所有其他记录类型，请选择<b>[!UICONTROL Other objects and endpoints]</b>，然后在按字母顺序排序的页面上查找该记录类型。</p> </li> 
-     <li value="2"> <p>在相应记录类型的页面上，搜索操作（Ctrl-F或Cmd-F）。</p> </li> 
-     <li value="3"> <p>查看所选操作下可用字段的描述。</p> </li> 
-    </ol> <p>注释：  <p>通过Workfront [!UICONTROL 杂项操作]模块创建验证时，最佳实践为创建不包含任何高级选项的验证，然后使用[!DNL Workfront Proof] SOAP API更新验证。</p><p>有关使用Workfront API（此模块使用它）创建验证的更多信息，请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">通过Adobe Workfront API创建验证时添加高级验证选项</a></p> </p> </td> 
+      </ul> <p>对于其他记录类型，选择<b>[!UICONTROL 其他对象和端点]</b>，并在按字母顺序排列的页面中查找相应的记录类型。</p> </li> 
+     <li value="2"> <p>在相应记录类型的页面中，使用搜索功能（Ctrl-F 或 Cmd-F）查找所需的操作。</p> </li> 
+     <li value="3"> <p>查看所选操作下可用字段的说明。</p> </li> 
+    </ol> <p>注意：  <p>通过 Workfront [!UICONTROL 其他操作]模块创建校样时，最佳做法是先创建一个不带任何高级选项的校样，然后再使用 [!DNL Workfront Proof] SOAP API 更新校样。</p><p>如需了解使用 Workfront API（此模块所使用的 API）创建校样的更多信息，请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/tips-troubleshooting-apis/api-create-proof-options-json" class="MCXref xref">通过 Adobe Workfront API 创建校样时添加高级校对选项</a>。</p> </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
-   <td>输入或映射您希望模块与之交互的记录的唯一Workfront ID。<p>要获取ID，请在浏览器中打开Workfront对象，并复制URL末尾处“ID=”后的文本。 例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p></td> 
+   <td>输入或映射该模块要交互的记录的唯一 Workfront ID。<p>要获取 ID，请在浏览器中打开此 Workfront 对象，并复制 URL 中 “ID=” 后面的文本。例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p></td> 
   </tr> 
  </tbody> 
 </table>
 
-查看可在每个Workfront模块[可用的](#workfront-object-types-available-for-each-workfront-module)Workfront对象类型中使用此模块的Workfront对象类型列表。
+有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
 #### 其他操作选项
 
@@ -778,13 +778,13 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>
    <ul>
    <li>clearApprovers</li>
-   <li>clearAssignations</li>
+   <li>clearAssignments</li>
    <li>clearConstraints</li>
    <li>clearCustomData</li>
    <li>clearDocuments</li>
    <li>clearExpenses</li>
    <li>clearFinancials<p>清除财务数据</p></li>
-   <li>clearpermissions</li>
+   <li>clearPermissions</li>
    <li>clearPredecessors</li>
    <li>clearProgress</li>
    <li>clearTimedNotifications<p>清除提醒通知</p></li>
@@ -796,12 +796,12 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>
    <ul>
    <li>clearApprovers</li>
-   <li>clearAssignations</li>
+   <li>clearAssignments</li>
    <li>clearDocuments</li>
    <li>clearConstraints</li>
    <li>clearExpenses</li>
    <li>clearFinancials<p>清除财务数据</p></li>
-   <li>clearpermissions</li>
+   <li>clearPermissions</li>
    <li>clearPredecessors</li>
    <li>clearProgress</li>
    <li>clearTimedNotifications<p>清除提醒通知</p></li>
@@ -826,29 +826,29 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>
    <ul>
    <li>clearApprovers</li>
-   <li>clearAssignations</li>
+   <li>clearAssignments</li>
    <li>clearCustomData</li>
    <li>clearDocuments</li>
-   <li>clearpermissions</li>
+   <li>clearPermissions</li>
    <li>clearProgress</li>
    </ul>
    </td> 
   </tr> 
   <tr> 
-   <td>转换为任务</td> 
+   <td>转化为任务</td> 
    <td>
    <ul>
-   <li>preserveIssue<p>保留原来的问题，并将其解决方案与此任务绑定</p></li>
+   <li>preserveIssue<p>保持原有问题，并将其解决方案关联到此任务</p></li>
    <li>preservePrimaryContact<p>允许问题的主要联系人访问此任务</p></li>
-   <li>preserveCompletionDate<p>保留问题的计划完成日期</p></li>
+   <li>preserveCompletionDate<p>保留问题的规划完成日期</p></li>
    </ul>
    </td> 
   </tr> 
   <tr> 
-   <td>转换至项目</td> 
+   <td>转化为项目</td> 
    <td>
    <ul>
-   <li>preserveIssue<p>保留原来的问题，并将其解决方案与此任务绑定</p></li>
+   <li>preserveIssue<p>保持原有问题，并将其解决方案关联到此任务</p></li>
    <li>preservePrimaryContact<p>允许问题的主要联系人访问此任务</p></li>
    </ul>
    </td> 
@@ -873,12 +873,12 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>
    <ul>
    <li>clearApprovers</li>
-   <li>clearAssignations</li>
+   <li>clearAssignments</li>
    <li>clearCustomData</li>
    <li>clearDocuments</li>
    <li>clearExpenses</li>
    <li>clearFinancials<p>清除财务数据</p></li>
-   <li>clearpermissions</li>
+   <li>clearPermissions</li>
    <li>clearPredecessors</li>
    <li>clearProgress</li>
    <li>clearTimedNotifications<p>清除提醒通知</p></li>
@@ -886,21 +886,21 @@ See a list of the Workfront object types for which you can use this module in [W
    </td> 
   </tr> 
   <tr> 
-   <td>附加模板/另存为模板</td> 
+   <td>附加模板 / 另存为模板</td> 
    <td>
    <ul>
    <li>clearApprovers</li>
-   <li>clearAssignations</li>
+   <li>clearAssignments</li>
    <li>clearBillingRates</li>
    <li>clearConstraints</li>
-   <li>clearDeliverable<p>清除目标</p></li>
+   <li>clearDeliverables<p>清除目标</p></li>
    <li>clearDocuments</li>
    <li>clearExpenses</li>
    <li>clearFinancials<p>清除财务数据</p></li>
    <li>clearHourTypes</li>
-   <li>Clearisssetup<p>清除队列属性和问题设置</p></li>
+   <li>clearIssueSetup<p>清除队列属性和问题设置</p></li>
    <li>clearPredecessors</li>
-   <li>clearrisks</li>
+   <li>clearRisks</li>
    <li>clearSharingOptions</li>
    <li>clearTimedNotifications<p>清除提醒通知</p></li>
    </ul>
@@ -917,52 +917,52 @@ See a list of the Workfront object types for which you can use this module in [W
 
 此操作模块从单个记录中检索数据。
 
-您指定记录的ID。 您还可以指定希望模块读取哪些相关记录。
+您需指定记录的 ID。您还可以指定要让模块读取的关联记录。
 
-例如，如果模块正在读取的记录是项目，则可以指定希望读取项目的任务。
+例如，如果模块正在读取的记录是项目，您可以指定读取该项目的任务。
 
-模块会从您指定的输出字段中返回一个数据数组。
+模块会根据您选择的输出字段返回一个数据数组。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL Connection]</td>
-    <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+    <td>[!UICONTROL 连接]</td>
+    <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL 记录类型]</td>
 
-<td>选择要让模块读取的Workfront对象类型。</td> 
+<td>选择您希望模块读取的 Workfront 对象类型。</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL 输出]</td>
 
-<td> <p>选择要包含在此模块的输出捆绑包中的信息。</p> </td> 
+<td> <p>选择要包含在此模块输出捆绑包中的信息。</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL 输出自定义表单]</td>
-     <td> <p>选择要包含在此模块输出捆绑包中的自定义表单，然后从要包含在输出中的自定义表单中选择特定字段。</p> </td> 
+     <td> <p>选择要在此模块的输出捆绑包中包含的自定义表单，然后从这些自定义表单中选择需要包含在输出中的具体字段。</p> </td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL 引用]</td>
-   <td>选择要包含在输出中的任何引用字段。</td> 
+   <td>选择您希望包含在输出中的任何引用字段。</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL 收藏集]</td>
-   <td>选择要包含在输出中的任何引用字段。</td> 
+   <td>选择您希望包含在输出中的任何引用字段。</td> 
   </tr> 
   <tr> 
     <td>[!UICONTROL ID]</td>
-   <td> <p>输入您希望模块读取的记录的唯一Workfront ID。</p> <p>要获取ID，请在浏览器中打开Workfront对象，并复制URL末尾处“ID=”后的文本。 例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>输入您希望模块读取的记录的唯一 Workfront ID。</p> <p>要获取 ID，请在浏览器中打开此 Workfront 对象，并复制 URL 中 “ID=” 后面的文本。例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-查看可在每个Workfront模块[可用的](#workfront-object-types-available-for-each-workfront-module)Workfront对象类型中使用此模块的Workfront对象类型列表。
+有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
 +++
 
@@ -1024,25 +1024,25 @@ See a list of the Workfront object types for which you can use this module in [W
 
 -->
 
-+++ **更新事件有效负载版本**
++++ **更新事件负载版本**
 
-Workfront最近发布了其事件订阅服务的新版本。 新版本不是对Workfront API的更改，而是对事件订阅功能的更改。 此操作模块会更新用于此方案的事件有效负载版本。
+Workfront 最近发布了新版事件订阅服务。该新版并未更改 Workfront API，而是更新了事件订阅功能。此操作模块用于更新该场景中使用的事件负载版本。
 
-有关新的事件订阅版本的详细信息，请参阅Workfront文档中的[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
+有关新版事件订阅的更多信息，请参阅 Workfront 文档中[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
 
-有关在事件订阅升级期间保留Workfront Fusion方案的资源（包括网络研讨会录像），请参阅[在事件订阅V2升级期间保留Fusion方案](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)。
+如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td>[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 版本]</td> 
-   <td> 选择要用于此有效负载的事件订阅的版本。 </td> 
+   <td> 选择要用于此负载的事件订阅版本。 </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1053,13 +1053,13 @@ Workfront最近发布了其事件订阅服务的新版本。 新版本不是对W
 +++ **更新记录**
 
 
-此操作模块可更新对象，如项目、任务或问题。 利用模块，可选择模块中可用的对象字段。
+此操作模块用于更新对象，例如项目、任务或问题。该模块允许您选择对象的哪些字段可在模块中使用。
 
-您指定记录的ID。
+您需要指定记录的 ID。
 
-模块会返回对象的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回对象的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
@@ -1068,33 +1068,33 @@ Workfront最近发布了其事件订阅服务的新版本。 新版本不是对W
  </col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td>[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL ID]</td> 
-   <td> <p>输入您希望模块更新的记录的唯一Workfront ID。</p> <p>要获取ID，请在浏览器中打开Workfront对象，并复制URL末尾处“ID=”后的文本。 例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td> <p>输入您希望模块更新的记录的唯一 Workfront ID。</p> <p>要获取 ID，请在浏览器中打开此 Workfront 对象，并复制 URL 中 “ID=” 后面的文本。例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Record Type]</td> 
-   <td> <p>选择要更新模块的Workfront记录类型。</p> </td> 
+   <td> <p>选择您希望该模块更新的 Workfront 记录类型。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Select fields to map]</td> 
-   <td>选择可用于数据输入的字段。 这样，您就无需滚动浏览不需要的字段即可使用这些字段。 然后，您可以在这些字段中输入或映射数据。</td> 
+   <td>选择您希望用于数据输入的字段。这样您无需浏览不需要的字段，就能直接使用这些字段。随后您可以向这些字段输入或映射数据。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!DNL Attach Custom Form]</td> 
-   <td>选择您想在新记录上提供字段值的自定义表单。 选择表单后，为该表单上的字段输入数据。<p> 要为要在此模块中附加的表单提供字段值，请在要映射的字段部分中包含自定义表单ID 。</td> 
+   <td>选择要为新记录提供字段值的自定义表单。选择表单后，为该表单中的字段输入数据。<p> 若要为此模块中附加的表单提供字段值，请在要映射的字段区域中包含自定义表单 ID。</td> 
   </tr> 
  </tbody> 
 </table>
 
-查看可在每个Workfront模块[可用的](#workfront-object-types-available-for-each-workfront-module)Workfront对象类型中使用此模块的Workfront对象类型列表。
+有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
 >[!NOTE]
 >
-> 输入自定义字段或[!UICONTROL Note]对象的文本（注释或回复）时，您可以使用[!UICONTROL 注释文本]字段中的HTML标记创建富文本，如粗体或斜体文本。
+> 在为自定义字段或[!UICONTROL 注释]对象（评论或回复）输入文本时，您可以在[!UICONTROL 注释文本]字段中使用 HTML 标记来创建富文本，例如粗体或斜体。
 
 
 +++
@@ -1152,46 +1152,46 @@ See a list of the Workfront object types for which you can use this module in [W
 
 -->
 
-+++ **[!UICONTROL 上载文档]**
++++ **[!UICONTROL 上传文档]**
 
-此操作模块可将文档上传到Workfront对象，如项目、任务或问题。 此模块会以块形式上传文档，从而使Workfront的上传过程更加顺畅。
+此操作模块会将文档上传到某个 Workfront 对象，例如项目、任务或问题。该模块以分块方式上传文档，从而让 Workfront 更顺畅地处理上传过程。
 
-此模块可以处理比旧版模块更大的文件，是使用Ultimate Workfront包分阶段向组织推出的一部分。
+此模块能够处理比旧版模块更大的文件，并正在逐步向拥有 Ultimate Workfront 套餐的组织转出。
 
-您可以指定文档的位置、要上传的文件以及文件的新名称（可选）。
+您需要指定文档的存放位置、要上传的文件，以及可选的文件新名称。
 
-模块会返回文档的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回文档的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td>[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 相关记录ID]</td> 
-   <td>输入要将文档上传到的记录的唯一Workfront ID。</td> 
+   <td>[!UICONTROL 相关记录 ID]</td> 
+   <td>请输入要上传文档的记录的唯一 Workfront ID。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 相关记录类型]</td> 
-   <td>选择您希望模块上传文档的Workfront记录类型。</td> 
+   <td>选择要让该模块上传文档的 Workfront 记录类型。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件夹ID]</td> 
-   <td>根据相关记录的类型，您可能需要输入或映射文件夹ID。</td> 
+   <td>[!UICONTROL 文件夹 ID]</td> 
+   <td>根据关联记录的类型，您可能需要填写或映射文件夹 ID。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL 源文件]</td> 
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-查看可在每个Workfront模块[可用的](#workfront-object-types-available-for-each-workfront-module)Workfront对象类型中使用此模块的Workfront对象类型列表。
+有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
 +++
 
@@ -1247,37 +1247,37 @@ See a list of the Workfront object types for which you can use this module in [W
 * [Search](#search)
 -->
 
-+++ **[!UICONTROL 读取相关记录]**
++++ **[!UICONTROL 读取关联记录]**
 
-此搜索模块读取与指定的搜索查询相匹配的记录（在特定父对象中）。
+此搜索模块会从指定的父对象中读取与您设定的搜索查询匹配的记录。
 
-您可以指定要包含在输出中的字段。 您可以在场景的后续模块中映射此信息。
+您可以指定需要在输出中包含的字段。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td>[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 记录类型]</td> 
-   <td> <p>选择要读取其关联记录的父记录(Workfront对象)的类型。</p> <p>请参阅本文中每个Workfront模块<a href="#object-types-available-for-each-workfront-search-module" class="MCXref xref">可用的</a>Workfront对象类型中，可使用此模块的Workfront对象类型列表。</p> </td> 
+   <td> <p>选择您要读取其关联记录的父记录类型（Workfront 对象）。</p> <p>有关可与此模块一起使用的 Workfront 对象类型列表，请参阅本文中的<a href="#object-types-available-for-each-workfront-search-module" class="MCXref xref">每个 Workfront 模块可用的 Workfront 对象类型</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[!UICONTROL 父记录ID]</td> 
-   <td> <p>输入或映射要读取其关联记录的父记录的ID。</p> <p>要获取ID，请在浏览器中打开Workfront对象，并复制URL末尾处“ID=”后的文本。 例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
+   <td>[!UICONTROL 父记录 ID]</td> 
+   <td> <p>输入或映射要读取其关联记录的父记录 ID。</p> <p>要获取 ID，请在浏览器中打开此 Workfront 对象，并复制 URL 中 “ID=” 后面的文本。例如：https://my.workfront.com/project/view?ID=<i>5e43010c03286a2a555e1d0a75d6a86e</i></p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 收藏集]</td> 
-   <td>选择或映射您希望模块读取的子记录类型。</td> 
+   <td>选择或映射要由模块读取的子记录类型。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 输出]</td> 
-   <td> <p>选择要包含在此模块的输出捆绑包中的信息。</p> </td> 
+   <td> <p>选择要包含在此模块输出捆绑包中的信息。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1286,43 +1286,43 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++ **[!UICONTROL 搜索]**
 
-此搜索模块在Workfront中查找与您指定的搜索查询匹配的对象中的记录。
+此搜索模块会在 Workfront 中的对象内查找与您指定的搜索查询匹配的记录。
 
-您可以在场景的后续模块中映射此信息。
+您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td>[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 记录类型]</td> 
-   <td> <p>选择要模块搜索的Workfront记录类型。</p> </td> 
+   <td> <p>选择您希望模块搜索的 Workfront 记录类型。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 自定义表单列表]</td> 
-   <td> <p>至少选择一个自定义表单。 这些自定义表单中的字段可用于搜索查询。</p> </td> 
+   <td> <p>请选择至少一个自定义表单。这些自定义表单中的字段将可用于搜索查询。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 结果集]</td> 
-   <td>选择一个选项，以指定您希望模块获得符合您的搜索条件的第一个结果还是所有符合该条件的结果。</td> 
+   <td>选择一个选项，以指定模块是仅获取符合搜索条件的首条结果，还是获取所有匹配结果。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 最大]</td> 
-   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
+   <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 搜索条件字段]</td> 
-   <td> <p>选择要用于搜索条件的字段。 随后，这些字段将显示在搜索条件下拉列表中。</p></td> 
+   <td> <p>选择要用于搜索条件的字段。这些字段随后将显示在“搜索条件”下拉菜单中。</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 搜索条件]</td> 
-   <td> <p>输入搜索依据的字段、要在查询中使用的运算符以及要在字段中搜索的值。</p> <p>注意：请勿在您的搜索条件中使用<code>username </code>。 若在Workfront的API查询中包含<code>username </code>，则会将用户记录到Workfront中，搜索将不会成功。</p> <p>注意： <code>In</code>和<code>NotIn</code>使用数组。 输入的格式应为数组。</p></td> 
+   <td> <p>输入要搜索的字段、查询中要使用的运算符，以及该字段中要搜索的值。</p> <p>注意：请勿在搜索条件中使用 <code>username </code>。 在对 Workfront 的 API 查询中包含 <code>username </code> 会导致用户登录到 Workfront，从而无法成功搜索。</p> <p>注意：<code>In</code> 和 <code>NotIn</code> 适用于数组。输入必须使用数组格式。</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 输出]</td> 
@@ -1330,11 +1330,11 @@ See a list of the Workfront object types for which you can use this module in [W
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 引用]</td> 
-   <td>选择要包含在搜索中的任何引用字段。</td> 
+   <td>选择您希望包含在搜索中的任何引用字段。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 收藏集]</td> 
-   <td>选择要添加到搜索的任何收藏集。</td> 
+   <td>选择要添加到搜索中的任何收藏集。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -1345,42 +1345,42 @@ See a list of the Workfront object types for which you can use this module in [W
 
 >[!IMPORTANT]
 >
->此模块已替换为搜索记录模块。 我们建议在新场景中使用该模块。
->&#x200B;>使用此模块的现有方案将继续按预期运行。 此模块将于2025年5月从模块选择器中移除。
+>此模块已由“搜索记录”模块取代。我们建议在新场景中使用该模块。
+>使用此模块的现有场景仍将按预期运行。该模块将于 2025 年 5 月从模块选择器中移除。
 
-此搜索模块在Workfront中查找与您指定的搜索查询匹配的对象中的记录。
+此搜索模块会在 Workfront 中的对象内查找与您指定的搜索查询匹配的记录。
 
-您可以在场景的后续模块中映射此信息。
+您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection]</td> 
-   <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将Workfront连接到Workfront Fusion</a>。</p> </td> 
+   <td>[!UICONTROL 连接]</td> 
+   <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 记录类型]</td> 
-   <td> <p>选择要模块搜索的Workfront记录类型。</p> </td> 
+   <td> <p>选择您希望模块搜索的 Workfront 记录类型。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 结果集]</td> 
-   <td>选择一个选项，以指定您希望模块获得符合您的搜索条件的第一个结果还是所有符合该条件的结果。</td> 
+   <td>选择一个选项，以指定模块是仅获取符合搜索条件的首条结果，还是获取所有匹配结果。</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 最大]</td> 
-   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
+   <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 搜索条件字段]</td> 
-   <td> <p>选择要用于搜索条件的字段。 随后，这些字段将显示在搜索条件下拉列表中。</p></td> 
+   <td> <p>选择要用于搜索条件的字段。这些字段随后将显示在“搜索条件”下拉菜单中。</p></td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 搜索条件]</td> 
-   <td> <p>输入搜索依据的字段、要在查询中使用的运算符以及要在字段中搜索的值。</p> <p>注意：请勿在您的搜索条件中使用<code>username </code>。 若在Workfront的API查询中包含<code>username </code>，则会将用户记录到Workfront中，搜索将不会成功。</p> <p>注意： <code>In</code>和<code>NotIn</code>使用数组。 输入的格式应为数组。</p></td> 
+   <td> <p>输入要搜索的字段、查询中要使用的运算符，以及该字段中要搜索的值。</p> <p>注意：请勿在搜索条件中使用 <code>username </code>。 在对 Workfront 的 API 查询中包含 <code>username </code> 会导致用户登录到 Workfront，从而无法成功搜索。</p> <p>注意：<code>In</code> 和 <code>NotIn</code> 适用于数组。输入必须使用数组格式。</p></td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 输出]</td> 
@@ -1388,11 +1388,11 @@ See a list of the Workfront object types for which you can use this module in [W
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 引用]</td> 
-   <td>选择要包含在搜索中的任何引用字段。</td> 
+   <td>选择您希望包含在搜索中的任何引用字段。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 收藏集]</td> 
-   <td>选择要添加到搜索的任何收藏集。</td> 
+   <td>选择要添加到搜索中的任何收藏集。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -1452,13 +1452,13 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++-->
 
-## 适用于每个Workfront模块的Workfront对象类型
+## 每个 Workfront 模块可用的 Workfront 对象类型
 
 <!-- [Object types available for each Workfront trigger module](#object-types-available-for-each-workfront-trigger-module) 
 * [Object types available for each Workfront action module](#object-types-available-for-each-workfront-action-module) 
 * [Object types available for each Workfront search module](#object-types-available-for-each-workfront-search-module)-->
 
-+++**每个Workfront触发器模块可用的对象类型**
++++**各 Workfront 触发器模块支持的对象类型**
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1467,9 +1467,9 @@ See a list of the Workfront object types for which you can use this module in [W
  <thead> 
   <tr> 
    <th> </th> 
-   <th>[!UICONTROL 监视记录]</th> 
-   <th>[!UICONTROL 监视字段]</th> 
-   <th>[!UICONTROL 监视活动]</th> 
+   <th>[!UICONTROL 监控记录]</th> 
+   <th>[!UICONTROL 监控字段]</th> 
+   <th>[!UICONTROL 监控事件]</th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -1480,7 +1480,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>任务分配</td> 
+   <td>任务</td> 
    <td> </td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1510,7 +1510,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>功能板</td> 
+   <td>仪表板</td> 
    <td> </td> 
    <td> </td> 
    <td>✓</td> 
@@ -1558,7 +1558,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>Hour</td> 
+   <td>小时</td> 
    <td> </td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1588,7 +1588,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>日志条目</td> 
+   <td>日记帐条目</td> 
    <td>✓</td> 
    <td> </td> 
    <td> </td> 
@@ -1618,7 +1618,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>组合</td> 
+   <td>项目组合</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1654,7 +1654,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>报表</td> 
+   <td>报告</td> 
    <td> </td> 
    <td> </td> 
    <td>✓</td> 
@@ -1724,11 +1724,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
-+++**每个Workfront操作模块可用的对象类型**
++++**各个 Workfront 操作模块支持的对象类型**
 
 >[!NOTE]
 >
->[!UICONTROL 下载文档]模块未包含在此表中，因为Workfront对象类型不是其配置的一部分。
+>本表未包含[!UICONTROL 下载文档]模块，因为该模块的配置不涉及 Workfront 对象类型。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1747,8 +1747,8 @@ See a list of the Workfront object types for which you can use this module in [W
    <th>[!UICONTROL 删除记录]</th> 
    <th>[!UICONTROL 上传文档]</th> 
    <th>[!UICONTROL 读取记录]</th> 
-   <th>[!UICONTROL 自定义API调用]</th> 
-   <th>[!UICONTROL 杂项操作]</th> 
+   <th>[!UICONTROL 自定义 API 调用]</th> 
+   <th>[!UICONTROL 其他操作]</th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -1763,7 +1763,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>任务分配</td> 
+   <td>任务</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1893,7 +1893,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Hour</td> 
+   <td>小时</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1943,7 +1943,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>日志条目</td> 
+   <td>日记帐条目</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -1993,7 +1993,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>组合</td> 
+   <td>项目组合</td> 
    <td>✓</td> 
    <td>✓</td> 
    <td>✓</td> 
@@ -2147,7 +2147,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 +++
 
-+++**每个Workfront搜索模块可用的对象类型**
++++**各个 Workfront 搜索模块支持的对象类型**
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2167,7 +2167,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>任务分配</td> 
+   <td>任务</td> 
    <td>✓</td> 
    <td>✓</td> 
   </tr> 
@@ -2217,7 +2217,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>✓</td> 
   </tr> 
   <tr> 
-   <td>Hour</td> 
+   <td>小时</td> 
    <td>✓</td> 
    <td> </td> 
   </tr> 
@@ -2242,7 +2242,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>日志条目</td> 
+   <td>日记帐条目</td> 
    <td>✓</td> 
    <td> </td> 
   </tr> 
@@ -2267,7 +2267,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td> </td> 
   </tr> 
   <tr> 
-   <td>组合</td> 
+   <td>项目组合</td> 
    <td>✓</td> 
    <td>✓</td> 
   </tr> 
@@ -2344,29 +2344,29 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-我们建议您仔细检查，以确保它按您预期的方式运行。
+我们建议您再次确认，以确保其行为符合您的预期。
 
 +++
 
-## Workfront > [!UICONTROL 观看活动]模块中的活动订阅筛选器
+## Workfront > [!UICONTROL 监控事件]模块中的事件订阅筛选条件
 
 >[!NOTE]
 >
->* 我们强烈建议在您的[!UICONTROL 观看活动]模块中使用活动订阅过滤器。
+>* 我们强烈建议您在[!UICONTROL 监控事件]模块中使用事件订阅筛选条件。
 >
->* Workfront最近发布了其事件订阅服务的新版本。 新版本不是对Workfront API的更改，而是对事件订阅功能的更改。 此操作模块会更新用于此方案的事件有效负载版本。
+>* Workfront 最近发布了新版事件订阅服务。该新版并未更改 Workfront API，而是更新了事件订阅功能。此操作模块用于更新该场景中使用的事件负载版本。
 >
->   有关新的事件订阅版本的详细信息，请参阅Workfront文档中的[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
+>   有关新版事件订阅的更多信息，请参阅 Workfront 文档中[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
 >
->   有关在事件订阅升级期间保留Workfront Fusion方案的资源（包括网络研讨会录像），请参阅[在事件订阅V2升级期间保留Fusion方案(https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)]。
+>   如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182）]。
 
-Workfront [!UICONTROL 观看活动]模块根据在Workfront API中创建活动订阅的webhook触发场景。 事件订阅是一组数据，用于确定哪些事件发送到webhook。 例如，如果您设置了[!UICONTROL 监视事件]模块来监视问题，则事件订阅仅发送与问题相关的事件。
+Workfront 的[!UICONTROL 监控事件]模块会根据一个在 Workfront API 中创建事件订阅的 Webhook 来触发场景。事件订阅是一组数据，用于确定哪些事件会发送至该 Webhook。例如，如果您设置一个监控问题的[!UICONTROL 监控事件]模块，则该事件订阅只会将与问题相关的事件发送过来。
 
-通过使用事件订阅过滤器，Fusion用户可以创建更适合其用例的事件订阅。 例如，您可以在Workfront API中设置事件订阅，以便仅将特定项目中的问题发送到webhook，从而确保[!UICONTROL 关注事件]模块将仅触发该项目中的问题。 创建更窄触发器的功能通过减少无关触发器的数量而改进了方案设计。
+通过使用事件订阅筛选条件，Fusion 用户可以创建更符合其使用场景的事件订阅。例如，您可以在 Workfront API 中设置事件订阅，使其仅将某个项目下的问题发送到 Webhook，从而确保[!UICONTROL 监控事件]模块只会在该项目的问题上触发。创建更精确的触发条件有助于减少无关触发，从而优化场景设计。
 
-这与在Workfront Fusion场景中设置过滤器不同。 如果没有事件订阅过滤器，您的webhook将接收与您选择的对象类型相关的所有事件。 这些事件中的大多数与方案无关，必须先将其过滤掉，方案才能继续。
+这与在 Workfront Fusion 场景中设置筛选条件不同。如果未配置事件订阅筛选条件，Webhook 将接收与所选对象类型相关的所有事件。其中大多数事件与场景无关，因此必须在场景继续执行前进行过滤。
 
-在Workfront >关注事件过滤器中可以使用以下运算符：
+Workfront > “监控事件”筛选条件支持以下运算符：
 
 * 等于
 * 不等于
@@ -2376,40 +2376,40 @@ Workfront [!UICONTROL 观看活动]模块根据在Workfront API中创建活动�
 * 小于或等于
 * 包含
 * 已存在
-   * 此运算符不需要值，并且值字段不存在。
+   * 此运算符不需要指定值，因此不会显示“值”字段。
 * 不存在
-   * 此运算符不需要值，并且值字段不存在。
+   * 此运算符不需要指定值，因此不会显示“值”字段。
 * 已更改
-   * 此运算符不需要值，并且值字段不存在。
-   * 此运算符忽略状态字段。
-   * 使用`Changed`时，在&#x200B;**记录来源**&#x200B;字段中选择&#x200B;**仅更新事件**。
+   * 此运算符不需要指定值，因此不会显示“值”字段。
+   * 此运算符会忽略“状态”字段。
+   * 使用 `Changed` 时，请在&#x200B;**记录来源**&#x200B;字段中选择&#x200B;**仅更新事件**。
 
 >[!IMPORTANT]
 >
->您无法编辑现有Workfront Webhook中的筛选器。 要为Workfront活动订阅设置其他筛选器，请删除当前webhook并创建一个新筛选器。
+>您无法编辑现有 Workfront Webhook 中的筛选条件。如需为 Workfront 事件订阅设置不同的筛选条件，请删除当前 Webhook 并创建一个新的。
 
 >[!INFO]
 >
->**示例：**&#x200B;考虑处理分配给特定用户Ana的新问题的方案。
+>**示例：**&#x200B;假设一个场景需要处理分配给特定用户 Ana 的新问题。
 >
->### 使用事件订阅过滤器过滤事件（推荐）
+>### 使用事件订阅筛选条件进行事件筛选（推荐）
 >
->使用事件过滤器，您可以设置webhook以在创建问题时将问题分配给Ana时触发场景。 Ana具有userID b378489d8f7cd3cee0539260720a84b7。
+>通过事件筛选条件，可将 Webhook 配置为在新建问题并将其分配给 Ana 时触发场景。Ana 的用户 ID 为 b378489d8f7cd3cee0539260720a84b7。
 >
->![事件筛选器](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
+>![事件筛选条件](/help/workfront-fusion/references/apps-and-modules/assets/event-filter-watch-events-350x277.png)
 >
->如果一天内创建100个问题，但只有两个问题分配给Ana，则该场景将执行两次。
+>如果当天创建了 100 个问题，但只有 2 个分配给 Ana，则场景仅会执行两次。
 >
->### 筛选场景中的事件（不推荐）
+>### 在场景内部筛选事件（不推荐）
 >
->要筛选事件以便仅处理分配给Ana的问题，您可以在[!UICONTROL 关注事件]模块之后创建筛选器。
+>若要筛选事件，仅处理分配给 Ana 的问题，可在[!UICONTROL 监控事件]模块之后创建一个筛选条件。
 >
->![没有事件筛选器](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
+>![没有事件筛选条件](/help/workfront-fusion/references/apps-and-modules/assets/watch-events-non-event-filter-350x206.png)
 >
->如果一天内创建100个问题，但只有两个问题分配给Ana，则该场景将执行100次。 98个执行将在过滤器处停止，但触发器模块仍在使用数据并对所有执行执行执行操作。
+>如果当天创建了 100 个问题，但只有 2 个分配给 Ana，则场景将执行 100 次。尽管其中 98 次执行会在筛选条件处停止，但触发器模块仍需在每次执行中消耗数据并执行操作。
 
-有关Workfront活动订阅的详细信息，请参阅[常见问题解答 — 活动订阅](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq)。
+有关 Workfront 事件订阅的更多信息，请参阅 [FAQs - 事件订阅](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-faq)。
 
-有关Webhook的详细信息，请参阅Adobe Workfront Fusion中的[即时触发器(Webhook)](/help/workfront-fusion/references/modules/webhooks-reference.md)
+有关 Webhook 的更多信息，请参阅 [Adobe Workfront Fusion 中的即时触发器（Webhook）](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
-有关场景中过滤器的详细信息，请参阅[将过滤器添加到场景](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)。
+有关在场景中添加筛选条件的更多信息，请参阅[向场景添加筛选条件](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)。
