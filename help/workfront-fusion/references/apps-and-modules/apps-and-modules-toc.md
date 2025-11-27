@@ -17,7 +17,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->Adobe Workfront Fusion 几乎可以连接到任何 Web 服务。它并不局限于此列表中的应用程序。如果您要使用的应用不在此列表中，可使用通用连接器之一与该应用程序或 Web 服务建立连接。
+>Adobe Workfront Fusion 几乎可以连接到任何 Web 服务。它并不局限于此列表中的应用程序。如果您要使用的应用程序不在此列表中，可使用通用连接器之一与该应用程序或 Web 服务建立连接。
 
 ## 通用连接器
 
@@ -59,7 +59,7 @@ Fusion 为 Adobe 的众多产品和服务提供连接器。
 * [Adobe User Management 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-user-management-modules.md)
 * [Adobe Workfront 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md)
 * [Adobe Workfront 规划模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-planning-modules.md)
-* [Workfront 灵感板模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
+* [Workfront Boards 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-boards-modules.md)
 * [Workfront Proof 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-proof-modules.md)
 
 ## 第三方应用程序连接器
@@ -84,13 +84,13 @@ Fusion 为众多第三方应用程序提供连接器。
 * [GitHub 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/github.md)
 * [GitLab 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gitlab-modules.md)
 * [Gmail 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/gmail-modules.md)
-* [Google Calendar 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-calendar-modules.md)
-* [Google Docs 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-docs-modules.md)
-* [Google Drive 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-drive-modules.md)
-* [Google Forms 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-forms-modules.md)
-* [Google Sheets 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-sheets-modules.md)
-* [Google Slides 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
-* [Google Team Drive 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
+* [Google 日历模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-calendar-modules.md)
+* [Google 文档模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-docs-modules.md)
+* [Google 云端硬盘模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-drive-modules.md)
+* [Google 表单模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-forms-modules.md)
+* [Google 表格模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-sheets-modules.md)
+* [Google 幻灯片模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-slides-modules.md)
+* [Google 共享云端硬盘模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/google-team-drive-modules.md)
 * [Hubspot CRM 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/hubspot-crm-modules.md)
 * [Jira 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md)
 * [Jira 软件模块（旧版）](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-software-modules.md)
@@ -99,13 +99,13 @@ Fusion 为众多第三方应用程序提供连接器。
 * [Microsoft 356 电子邮件模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-email-modules.md)
 * [Microsoft 365 Excel 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-365-excel-modules.md)
 * [Microsoft Dynamics 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-dynamics-365-modules.md)
-* [Microsoft Dynamics Finance and Operations 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
+* [Microsoft Dynamics 财务和运营模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/dynamics-finance-operations-modules.md)
 * [Microsoft OneDrive 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-modules.md)
 * [Microsoft OneDrive for Business 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-onedrive-for-business-modules.md)
 * [Microsoft SharePoint Online 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/sharepoint-modules.md)
 * [Microsoft SQL Server 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-sql-server-modules.md)
 * [Microsoft Teams 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-teams-modules.md)
-* [Microsoft Word Template 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
+* [Microsoft Word 模板模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/microsoft-word-templates-modules.md)
 * [NetSuite 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/netsuite.md)
 * [OpenAI (ChatGPT &amp; DALL-E) 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/openai-chatgpt-modules.md)
 * [PowerBI 模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/powerbi-modules.md)
