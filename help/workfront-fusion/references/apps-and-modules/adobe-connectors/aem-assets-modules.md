@@ -62,7 +62,7 @@ ht-degree: 100%
 * 要使用这些模块，您必须拥有 Adobe Experience Manager Assets 帐户。
 * 您必须在 Adobe Developer Console 中设置服务器到服务器流程。
 
-  有关在 Adobe Developer Console 中设置服务器到服务器流程的说明，请参阅[为服务器端 API 生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)。
+  有关在 Adobe Developer Console 中设置服务器到服务器流程的说明，请参阅[为服务器端 API 生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hans#the-server-to-server-flow)。
 * 您的 Adobe Experience Manager 技术帐户必须具备写入权限。
 
   有关为 Adobe Experience Manager 技术帐户添加写入权限的说明，请参阅 Adobe Experience Manager 文档中的[服务凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
@@ -113,7 +113,7 @@ Adobe Experience Manager Assets 连接器使用以下内容：
 >
 >* 这些字段所需的信息是在 Adobe Developer Console 设置服务器到服务器流程时生成的。您可以在该设置流程生成的服务凭据 JSON 文件中找到这些值。
 >
->   有关在 Adobe Developer Console 上设置服务器到服务器流程的说明，请参阅[为服务器端 API 生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)。
+>   有关在 Adobe Developer Console 上设置服务器到服务器流程的说明，请参阅[为服务器端 API 生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hans#the-server-to-server-flow)。
 >
 >* 您的 Adobe Experience Manager 技术帐户必须具备写入权限。
 >
