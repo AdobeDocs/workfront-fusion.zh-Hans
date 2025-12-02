@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: e254122177cffb69eb34ebc2459239ebc9e055a7
+source-git-commit: ec4fec0fc66fd89afad4cfe85a0fb41fc1786925
 workflow-type: tm+mt
-source-wordcount: '1946'
-ht-degree: 98%
+source-wordcount: '1953'
+ht-degree: 97%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 98%
    * [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion 版本 - 2025 {#fusion-releases-2025}
       * [Workfront Fusion发行活动： 2025年11月17日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+      * [Workfront Fusion发行活动： 2025年12月1日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
       * [Workfront Fusion发行活动： 2025年11月10日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
       * [Workfront Fusion发行活动： 2025年11月3日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
       * [Workfront Fusion 发行活动：2025 年 10 月 20 日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-10-20.md)
@@ -143,7 +144,7 @@ ht-degree: 98%
 * 开始使用 Workfront Fusion {#get-started-with-fusion}
    * [开始使用 Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
    * 了解 Workfront Fusion  {#understand-workfront-fusion}
-      * [了解 Workfront Fusion &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
+      * [了解 Workfront Fusion ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
       * [Adobe Workfront Fusion 概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
       * [Adobe Workfront Fusion 术语表](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
       * [场景概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)
