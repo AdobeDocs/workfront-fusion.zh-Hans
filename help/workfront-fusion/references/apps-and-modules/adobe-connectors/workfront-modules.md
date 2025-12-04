@@ -4,10 +4,10 @@ description: 您可以使用 Adobe Workfront Fusion 的 Adobe Workfront 连接�
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
-source-git-commit: 6e2593c0f171bae278e86fed53492b8f64ae3d7e
-workflow-type: ht
-source-wordcount: '7323'
-ht-degree: 100%
+source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+workflow-type: tm+mt
+source-wordcount: '7366'
+ht-degree: 99%
 
 ---
 
@@ -212,7 +212,9 @@ Workfront 连接器使用 OAuth 2.0 与 Workfront 建立连接。
 
 +++ **[!UICONTROL 监控事件]**
 
-当新增、更新或删除 Workfront 中某一类型的对象时，此触发器模块会实时执行场景。
+在Workfront中添加、更新或删除特定类型的对象时，此触发器模块会实时执行场景。
+
+模块会显示与webhook相关的所有事件预订。 这包括通过Fusion创建的事件订阅以及直接通过API创建的事件订阅。 此事件订阅视图在旧版Watch Events模块中不可用。
 
 该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
