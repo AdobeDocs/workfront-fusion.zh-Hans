@@ -1,17 +1,17 @@
 ---
-title: 用于创建方案的工作流
+title: 创建场景的工作流程
 description: 按照此常规工作流创建方案
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 0%
+source-wordcount: '816'
+ht-degree: 3%
 
 ---
 
-# 用于创建方案的工作流
+# 创建场景的工作流程
 
 根据贵组织的需求构建方案，并使用应用程序和模块满足您的用例要求。 但是，无论使用案例如何，创建场景时都会遵循相同的基本工作流。 本文介绍了创建场景的基本过程。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 * [在模块之间映射数据](#map-data-between-modules)
 * [配置路由](#configure-routing)
 * [配置错误处理](#configure-error-handling)
-* [配置方案设置](#onfigure-scenario-settings)
+* [配置场景设置](#onfigure-scenario-settings)
 * [测试和修订](#test-and-revise)
 * [激活方案](#activate-the-scenario)
 * [Workfront Fusion场景键盘快捷键](#workfront-fusion-scenario-keyboard-shortcuts)
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 有关说明，请参阅[添加错误处理](/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md)。
 
-## 配置方案设置
+## 配置场景设置
 
 您可以为整个方案配置设置，例如计划方案、进行注释或确定数据存储方式。
 
@@ -138,34 +138,39 @@ ht-degree: 0%
  </thead> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 保存] </td> 
+   <td role="rowheader">[！UICONTROL保存] </td> 
    <td>Ctrl+Shift+S</td> 
    <td>Cmd+Shift+S</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 运行一次]</td> 
+   <td role="rowheader">[！UICONTROL运行一次]</td> 
    <td>Ctrl+Shift+Enter</td> 
    <td>Cmd+Shift+Enter</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 打开DevTool]</td> 
+   <td role="rowheader">[！UICONTROL打开DevTool]</td> 
    <td>F12</td> 
    <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 选择多个模块]</td> 
+   <td role="rowheader">[！UICONTROL选择多个模块]</td> 
    <td>Shift +拖动</td> 
    <td>Shift +拖动</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 副本]</td> 
+   <td role="rowheader">[！UICONTROL副本]</td> 
    <td>Ctrl+C</td> 
    <td>Cmd+C</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 粘贴]</td> 
+   <td role="rowheader">[！UICONTROL粘贴]</td> 
    <td>Ctrl+V</td> 
    <td>Cmd+V</span> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[！UICONTROL搜索模块]</td> 
+   <td>Ctrl+K</td> 
+   <td>Cmd+K</span> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">将cURL粘贴到场景中以创建HTTP模块</td> 

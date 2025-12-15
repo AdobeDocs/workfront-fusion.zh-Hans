@@ -4,9 +4,9 @@ description: 许多服务都提供Webhook，以便在服务发生特定更改时
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: 45efeecd1758e302f57498bab842594800a84c1d
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1272'
 ht-degree: 10%
 
 ---
@@ -76,6 +76,9 @@ ht-degree: 10%
 
 1. 要搜索特定的webhook，请在“搜索”框中输入搜索词。
 1. 要复制webhook，请单击该webhook的行中URL附近的复制图标![复制webhook图标](assets/copy-webhook-icon.png)。
+1. 要设置webhook的优先级，请单击“优先级”列中的下拉菜单，然后选择新优先级。
+
+   具有较高优先级的Webhook将首先处理，如果工作池中有许多自动操作在争夺资源，则处理该操作可能会很有用。
 1. 要禁用或启用webhook，请在该webhook的行的“状态”列中禁用或启用切换。
 1. 要查看webhooks队列是否已满，请检查“队列已满”列。 此列中的数字是队列中的当前项目数。
 1. 要查看由webhook处理的操作，请单击该webhook的“完整队列”列中的&#x200B;**操作**。
