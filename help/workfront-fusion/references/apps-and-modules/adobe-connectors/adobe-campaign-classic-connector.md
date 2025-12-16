@@ -104,11 +104,11 @@ Adobe Campaign连接器使用以下对象：
           </td>
         </tr>
         <tr>
-          <td role="rowheader">[！UICONTROL基本URL]</td>
+          <td role="rowheader">[!UICONTROL 基本URL]</td>
           <td>输入用于连接到[!DNL Adobe Campaign]实例的基本URL。</td>
         </tr>
         <tr>
-          <td role="rowheader">[！UICONTROL用户名]</td>
+          <td role="rowheader">[!UICONTROL 用户名]</td>
           <td>如果要创建基本连接，请输入您的Adobe Campaign用户名。</td>
         </tr>
         <tr>
@@ -117,11 +117,11 @@ Adobe Campaign连接器使用以下对象：
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 客户端 ID]</td>
-          <td>如果要创建服务器到服务器连接，请输入您的[!DNL Adobe] [！UICONTROL客户端ID]。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。</td>
+          <td>如果要创建服务器到服务器连接，请输入您的[!DNL Adobe] [!UICONTROL 客户端ID]。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-          <td>如果要创建服务器到服务器连接，请输入您的[!DNL Adobe] [！UICONTROL客户端密钥]。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
+          <td>如果要创建服务器到服务器连接，请输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
         </tr>
      </tbody>
     </table>
@@ -200,16 +200,16 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>有关创建与 [!DNL Adobe Campaign] 的连接的说明，请参阅本文中的<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >创建与 [!DNL Adobe Campaign]</a> 的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资源]</td> 
-   <td>选择要创建的[!DNL Adobe Campaign]记录的类型，或选择**自定义资源**并输入资源详细信息。</td> 
+   <td role="rowheader">[!UICONTROL 资源]</td> 
+   <td>选择要创建的[!DNL Adobe Campaign]记录的类型，或选择&#x200B;**自定义资源**&#x200B;并输入资源详细信息。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 字段] </td> 
    <td>选择创建记录时要为其设置值的字段，然后填写这些字段的值。 字段因您选择的记录类型而异。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL自定义字段]</td> 
-   <td> 对于要添加到新记录的每个自定义字段，单击<b>[！UICONTROL添加项]</b>并输入或映射字段的名称和值。 </td> 
+   <td role="rowheader">[!UICONTROL 自定义字段]</td> 
+   <td> 对于要添加到新记录的每个自定义字段，单击<b>[!UICONTROL 添加项]</b>并输入或映射字段的名称和值。 </td> 
   </tr> 
  </tbody> 
 </table>
@@ -227,8 +227,8 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>有关创建与 [!DNL Adobe Campaign] 的连接的说明，请参阅本文中的<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >创建与 [!DNL Adobe Campaign]</a> 的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资源]</td> 
-   <td>选择要删除的资源类型，或选择**自定义资源**并输入资源详细信息。</td> 
+   <td role="rowheader">[!UICONTROL 资源]</td> 
+   <td>选择要删除的资源类型，或选择&#x200B;**自定义资源**&#x200B;并输入资源详细信息。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -252,11 +252,11 @@ This scheduled trigger module starts a scenario when a record changes.
     <tr>
       <td role="rowheader">[!UICONTROL 操作]</td>
       <td><p>选择您希望API调用执行的操作。</p>
-      <p>[！UICONTROL执行查询]</p>
-      <p>[！UICONTROL写入]</p>
-      <p>[！UICONTROL Get entity if more recent]</p>
-      <p>[！UICONTROL全选]</p>
-      <p>[！UICONTROL推送事件]</p>
+      <p>[!UICONTROL 执行查询]</p>
+      <p>[!UICONTROL 写入]</p>
+      <p>[!UICONTROL Get entity if more recent]</p>
+      <p>[!UICONTROL 全选]</p>
+      <p>[!UICONTROL 推送事件]</p>
     </td>
     </tr>
     <tr>
@@ -264,11 +264,11 @@ This scheduled trigger module starts a scenario when a record changes.
       <td>
         <p>以标准 JSON 对象的形式添加请求标头。</p>
         <p>例如， <code>{"Content-type":"application/json"}</code></p>
-        <p>Workfront Fusion会自动添加[！UICONTROL x-security]令牌标头。</p>
+        <p>Workfront Fusion会自动添加[!UICONTROL x-security]令牌标头。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL XML Body]</td>
+      <td role="rowheader">[!UICONTROL XML Body]</td>
    <td> <p>以XML形式为API调用添加正文内容，而不添加会话元素。 </td>     </tr>
   </tbody>
 </table>
@@ -289,18 +289,18 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>有关创建与 [!DNL Adobe Campaign] 的连接的说明，请参阅本文中的<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >创建与 [!DNL Adobe Campaign]</a> 的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资源]</td> 
-   <td>选择要对其执行操作的资源类型，或选择**自定义资源**并输入资源详细信息。</td> 
+   <td role="rowheader">[!UICONTROL 资源]</td> 
+   <td>选择要对其执行操作的资源类型，或选择&#x200B;**自定义资源**&#x200B;并输入资源详细信息。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 操作]</td> 
    <td><p>选择要对对象执行的操作。</p>
    <ul>
-   <li><p><b>[!DNL List]</b></p><p> 有关可用字段，请参阅本文中的<a href="#search" class="MCXref xref" >[！UICONTROL搜索]</a>。 </p></li>
-     <li><p><b>[！UICONTROL Get]</b></p><p> 有关可用字段，请参阅本文中的<a href="#search" class="MCXref xref" >[！UICONTROL搜索]</a>。 </p></li> 
-   <li><p><b>[！UICONTROL创建]</b></p><p> 有关可用字段，请参阅本文中的<a href="#create-a-record" class="MCXref xref" >[！UICONTROL创建记录]</a>。 </p></li>
-   <li><p><b>[！UICONTROL更新]</b></p><p> 有关可用字段，请参阅本文中的<a href="#update-record" class="MCXref xref" >[！UICONTROL更新记录]</a>。 </p></li>
-   <li><p><b>[！UICONTROL Delete]</b></p><p> 有关可用字段，请参阅本文中的<a href="#delete-record" class="MCXref xref" >[！UICONTROL删除记录]</a>。 </p></li>
+   <li><p><b>[!DNL List]</b></p><p> 有关可用字段，请参阅本文中的<a href="#search" class="MCXref xref" >[!UICONTROL 搜索]</a>。 </p></li>
+     <li><p><b>[!UICONTROL Get]</b></p><p> 有关可用字段，请参阅本文中的<a href="#search" class="MCXref xref" >[!UICONTROL 搜索]</a>。 </p></li> 
+   <li><p><b>[!UICONTROL 创建]</b></p><p> 有关可用字段，请参阅本文中的<a href="#create-a-record" class="MCXref xref" >[!UICONTROL 创建记录]</a>。 </p></li>
+   <li><p><b>[!UICONTROL 更新]</b></p><p> 有关可用字段，请参阅本文中的<a href="#update-record" class="MCXref xref" >[!UICONTROL 更新记录]</a>。 </p></li>
+   <li><p><b>[!UICONTROL Delete]</b></p><p> 有关可用字段，请参阅本文中的<a href="#delete-record" class="MCXref xref" >[!UICONTROL 删除记录]</a>。 </p></li>
    </ul>
    </td>
   </tr> 
@@ -320,20 +320,20 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>有关创建与 [!DNL Adobe Campaign] 的连接的说明，请参阅本文中的<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >创建与 [!DNL Adobe Campaign]</a> 的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资源]</td> 
-   <td>选择要读取的[!DNL Adobe Campaign]记录的类型，或选择**自定义资源**并输入资源详细信息。</td> 
+   <td role="rowheader">[!UICONTROL 资源]</td> 
+   <td>选择要读取的[!DNL Adobe Campaign]记录的类型，或选择&#x200B;**自定义资源**&#x200B;并输入资源详细信息。</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
    <td>在映射中输入要读取的记录的ID。</td> 
   </tr> 
  <tr> 
-   <td role="rowheader">要包含在输出中的[！UICONTROL字段] </td> 
+   <td role="rowheader">要包含在输出中的[!UICONTROL 字段] </td> 
    <td>选择要包含在模块输出中的字段。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL要包含在输出中的自定义字段]</td> 
-   <td>对于要包含在输出中的每个自定义字段，请单击<b>[！UICONTROL添加]</b>并输入自定义字段的名称。</td> 
+   <td role="rowheader">[!UICONTROL 要包含在输出中的自定义字段]</td> 
+   <td>对于要包含在输出中的每个自定义字段，请单击<b>[!UICONTROL 添加]</b>并输入自定义字段的名称。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -352,15 +352,15 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>有关创建与 [!DNL Adobe Campaign] 的连接的说明，请参阅本文中的<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >创建与 [!DNL Adobe Campaign]</a> 的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL订阅或取消订阅]</td> 
+   <td role="rowheader">[!UICONTROL 订阅或取消订阅]</td> 
    <td>选择您要订阅还是取消订阅信息服务。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL服务名称]</td> 
+   <td role="rowheader">[!UICONTROL 服务名称]</td> 
    <td>选择要订阅或取消订阅的服务。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL收件人电子邮件地址] </td> 
+   <td role="rowheader">[!UICONTROL 收件人电子邮件地址] </td> 
    <td>输入或映射要订阅或取消订阅信息服务的用户的电子邮件地址。</td> 
   </tr> 
  </tbody> 
@@ -379,8 +379,8 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>有关创建与 [!DNL Adobe Campaign] 的连接的说明，请参阅本文中的<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >创建与 [!DNL Adobe Campaign]</a> 的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资源]</td> 
-   <td>选择要更新的[!DNL Adobe Campaign]记录的类型，或选择**自定义资源**并输入资源详细信息。</td> 
+   <td role="rowheader">[!UICONTROL 资源]</td> 
+   <td>选择要更新的[!DNL Adobe Campaign]记录的类型，或选择&#x200B;**自定义资源**&#x200B;并输入资源详细信息。</td> 
   </tr> 
     <tr> 
    <td role="rowheader">[!UICONTROL ID] </td> 
@@ -391,8 +391,8 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>选择要更新其值的字段，然后填写这些字段的值。 字段因您选择的记录类型而异。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL自定义字段]</td> 
-   <td> 对于每个要更新的自定义字段，请单击<b>[！UICONTROL添加项]</b>并输入或映射该字段的名称和值。 </td> 
+   <td role="rowheader">[!UICONTROL 自定义字段]</td> 
+   <td> 对于每个要更新的自定义字段，请单击<b>[!UICONTROL 添加项]</b>并输入或映射该字段的名称和值。 </td> 
   </tr> 
  </tbody> 
 </table>
@@ -412,8 +412,8 @@ This scheduled trigger module starts a scenario when a record changes.
    <td>有关创建与 [!DNL Adobe Campaign] 的连接的说明，请参阅本文中的<a href="#connect-adobe-campaign-to-adobe-workfront-fusion" class="MCXref xref" >创建与 [!DNL Adobe Campaign]</a> 的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资源]</td> 
-   <td>选择要返回的[!DNL Adobe Campaign]记录的类型，或选择**自定义资源**并输入资源详细信息。</td> 
+   <td role="rowheader">[!UICONTROL 资源]</td> 
+   <td>选择要返回的[!DNL Adobe Campaign]记录的类型，或选择&#x200B;**自定义资源**&#x200B;并输入资源详细信息。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 搜索条件]</td> 
