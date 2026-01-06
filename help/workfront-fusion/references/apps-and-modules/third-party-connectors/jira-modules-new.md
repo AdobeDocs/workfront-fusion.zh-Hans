@@ -4,7 +4,7 @@ description: 在Adobe Workfront Fusion场景中，您可以自动使用Jira软�
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: 017341e045a703f5d6e933a6df860f4fc8c0649d
+source-git-commit: e65d868dc2165cbe800600f271f6b03d0a906cb4
 workflow-type: tm+mt
 source-wordcount: '2348'
 ht-degree: 20%
@@ -80,7 +80,7 @@ Jira连接器可用于Jira云和Jira数据服务器。
 要创建与Jira的OAuth2连接，必须先在Jira中创建应用程序，然后才能在Fusion中配置连接。
 
 * [在Jira中创建OAuth2应用程序](#create-an-oauth2-application-in-jira)
-* [在Fusion中配置Outt2连接](#configure-the-oauth2-connection-in-fusion)
+* [在Fusion中配置Oauth2连接](#configure-the-oauth2-connection-in-fusion)
 
 #### 在Jira中创建OAuth2应用程序
 
