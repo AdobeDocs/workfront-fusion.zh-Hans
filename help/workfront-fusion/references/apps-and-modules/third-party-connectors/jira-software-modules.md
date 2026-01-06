@@ -4,62 +4,62 @@ description: 在Adobe Workfront Fusion方案中，您可以自动使用 [!DNL Ji
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: 017341e045a703f5d6e933a6df860f4fc8c0649d
 workflow-type: tm+mt
 source-wordcount: '2466'
-ht-degree: 1%
+ht-degree: 37%
 
 ---
 
-# [!DNL Jira Software]模块
+# [!DNL Jira Software] 模块
 
 >[!NOTE]
 >
 >这些说明适用于旧版Jira云和Jira服务器连接器。 有关新版本的Jira连接器（仅标记为Jira）的说明，请参阅[Jira模块](/help/workfront-fusion/references/apps-and-modules/third-party-connectors/jira-modules-new.md)。
 
-在Adobe Workfront Fusion场景中，您可以自动使用[!DNL Jira Software]的工作流，并将其连接到多个第三方应用程序和服务。
+在 Adobe Workfront Fusion 场景中，您可以自动化使用 [!DNL Jira Software] 的工作流，并将其连接到多个第三方应用程序和服务。
 
 这些说明适用于Jira Cloud和Jira服务器模块。
 
-有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
+有关创建场景的说明，请参阅[创建场景：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)中的相关文章。
 
-有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
+有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)中的相关文章。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -91,23 +91,23 @@ Jira连接器使用以下对象：
    <td> 1.0</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API标记</td> 
+   <td role="rowheader">API 标记</td> 
    <td>1.7.29</td> 
    <td>1.0.19</td> 
   </tr>
  </tbody> 
  </table>
 
-## 将[!DNL Jira Software]连接到Workfront Fusion
+## 将 [!DNL Jira Software] 连接到 Workfront Fusion
 
 您的连接方法基于您使用的是[!DNL Jira Cloud]还是[!DNL Jira Server]。
 
 * [连接 [!DNL Jira Cloud] 到Workfront Fusion](#connect-jira-cloud-to-workfront-fusion)
 * [连接 [!DNL Jira Server] 到Workfront Fusion](#connect-jira-server-to-workfront-fusion)
 
-### 将[!DNL Jira Cloud]连接到Workfront Fusion
+### 将 [!DNL Jira Cloud] 连接到 Workfront Fusion
 
-将[!DNL Jira Cloud]连接到Workfront Fusion
+将 [!DNL Jira Cloud] 连接到 Workfront Fusion
 
 要将[!DNL Jira Software]连接到Workfront Fusion，您必须创建一个API令牌，并将其与您的服务URL和用户名一起插入到Workfront Fusion中的[!UICONTROL 创建连接]字段中。
 
@@ -137,7 +137,7 @@ Jira连接器使用以下对象：
 
 1. 单击[!UICONTROL 继续]以创建连接并返回模块。
 
-### 将[!DNL Jira Server]连接到Workfront Fusion
+### 将 [!DNL Jira Server] 连接到 Workfront Fusion
 
 要授权Workfront Fusion与[!DNL Jira Server]之间的连接，您需要消费者密钥、私钥和服务URL。 您可能需要联系[!DNL Jira]管理员以获取此信息。
 
@@ -204,7 +204,7 @@ Jira连接器使用以下对象：
 1. 按如下方式填写URL字段：
 
    | 字段 | 描述 |
-   |---|---|
+   | --- | --- |
    | [!UICONTROL 请求令牌URL] | `<Jira base url>/plugins/servlet/oauth/request-token` |
    | [!UICONTROL 授权URL] | `<Jira base url>/plugins/servlet/oauth/authorize` |
    | [!UICONTROL 访问令牌URL] | `<Jira base url>/plugins/servlet/oauth/access-token` |
@@ -218,15 +218,15 @@ Jira连接器使用以下对象：
     <col data-mc-conditions=""> 
     <tbody> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 使用者密钥]</p> </td> 
+      <td role="rowheader"> <p>[！UICONTROL使用者密钥]</p> </td> 
       <td> 将您复制的使用者密钥粘贴到安全位置。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 使用者名称]</td> 
+      <td role="rowheader">[！UICONTROL使用者名称]</td> 
       <td>输入您选择的名称。 此名称供您参考。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 公钥]</td> 
+      <td role="rowheader">[！UICONTROL公钥]</td> 
       <td>从<code>[!DNL jira_publickey.pem]</code>文件中粘贴公钥。</td> 
      </tr> 
     </tbody> 
@@ -250,7 +250,7 @@ Jira连接器使用以下对象：
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL 连接名称]</p> </td> 
-      <td> <p>输入连接的名称。</p> </td> 
+      <td> <p>输入连接名称。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader"> <p>[!UICONTROL 环境]</p> </td> 
@@ -261,7 +261,7 @@ Jira连接器使用以下对象：
       <td> <p>选择您使用的是服务帐户还是个人帐户。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 使用者密钥]</td> 
+      <td role="rowheader">[！UICONTROL使用者密钥]</td> 
       <td>将您复制的使用者密钥粘贴到<a href="#configure-the-client-app-as-a-consumer-in-jira" class="MCXref xref">中的安全位置在[!DNL Jira]</a>中将客户端应用程序配置为使用者</td> 
      </tr> 
      <tr> 
@@ -277,11 +277,11 @@ Jira连接器使用以下对象：
 
 1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;以创建连接并返回模块。
 
-## [!DNL Jira Software]模块及其字段
+## [!DNL Jira Software] 模块及其字段
 
-在配置[!DNL Jira Software]模块时，Workfront Fusion将显示以下列出的字段。 除此以外，可能还会显示其他[!DNL Jira Software]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在您配置 [!DNL Jira Software] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Jira Software] 字段。模块中的加粗标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -303,15 +303,15 @@ Jira连接器使用以下对象：
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>选择要用于监视记录的webhook。 </p> <p>要添加新的webhook，请执行以下操作：</p> 
     <ol> 
-     <li value="1">单击<strong>[!UICONTROL 添加]</strong></li> 
+     <li value="1">单击<strong>[！UICONTROL添加]</strong></li> 
      <li value="2">输入webhook的名称。</li> 
-     <li value="3"> <p>选择要用于webhook的连接。 </p> <p>有关将[!DNL Jira Software]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将[!DNL Jira Software]连接到Workfront Fusion</a>。</p> </li> 
+     <li value="3"> <p>选择要用于webhook的连接。 </p> <p>有关将 [!DNL Jira Software] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将 [!DNL Jira Software] 连接到 Workfront Fusion</a>。</p> </li> 
      <li value="4"> <p>选择要软件监视的记录类型：</p> 
       <ul> 
-       <li>[!UICONTROL Comment] </li> 
-       <li>[!UICONTROL 问题]</li> 
-       <li>[!UICONTROL 项目] </li> 
-       <li>[!UICONTROL Sprint]</li> 
+       <li>[！UICONTROL Comment] </li> 
+       <li>[！UICONTROL问题]</li> 
+       <li>[！UICONTROL项目] </li> 
+       <li>[！UICONTROL Sprint]</li> 
       </ul> </li> 
     </ol> </td> 
   </tr> 
@@ -322,7 +322,7 @@ Jira连接器使用以下对象：
 
 * [[!UICONTROL 将问题添加到冲刺]](#add-issue-to-sprint)
 * [[!UICONTROL 创建记录]](#create-a-record)
-* [[!UICONTROL 自定义API调用]](#custom-api-call)
+* [[!UICONTROL 自定义 API 调用]](#custom-api-call)
 * [[!UICONTROL 删除记录]](#delete-a-record)
 * [[!UICONTROL 下载附件]](#download-an-attachment)
 * [[!UICONTROL 读取记录]](#read-a-record)
@@ -332,23 +332,23 @@ Jira连接器使用以下对象：
 
 此操作模块向冲刺添加一个或多个问题。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Jira Software]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将[!DNL Jira Software]连接到Workfront Fusion</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将 [!DNL Jira Software] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将 [!DNL Jira Software] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Sprint ID]</td> 
+   <td role="rowheader">[！UICONTROL Sprint ID]</td> 
    <td>输入或映射要添加问题的冲刺(sprint)的Sprint ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 问题ID或密钥]</td> 
-   <td>对于要查看体验的每个问题或密钥，单击<b>[!UICONTROL 添加项]</b>并输入问题ID或密钥。 在一个模块中最多可输入50个。</td> 
+   <td role="rowheader">[！UICONTROL问题ID或密钥]</td> 
+   <td>对于要查看体验的每个问题或密钥，单击<b>[！UICONTROL添加项]</b>并输入问题ID或密钥。 在一个模块中最多可输入50个。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -357,46 +357,46 @@ Jira连接器使用以下对象：
 
 此操作模块在Jira中创建新记录。
 
-该模块会返回与记录关联的任何标准字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Jira Software]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将[!DNL Jira Software]连接到Workfront Fusion</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将 [!DNL Jira Software] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将 [!DNL Jira Software] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择您希望模块创建的记录类型，然后填写特定于此记录类型的其他字段显示在模块中。</p> 
     <ul> 
-     <li>[!UICONTROL 附件]</li> 
-     <li>[!UICONTROL Comment]</li> 
-     <li>[!UICONTROL 问题]</li> 
-     <li>[!UICONTROL 项目]</li> 
-     <li>[!UICONTROL Sprint] </li> 
-     <li>[!UICONTROL Worklog]</li> 
+     <li>[！UICONTROL附件]</li> 
+     <li>[！UICONTROL Comment]</li> 
+     <li>[！UICONTROL问题]</li> 
+     <li>[！UICONTROL项目]</li> 
+     <li>[！UICONTROL Sprint] </li> 
+     <li>[！UICONTROL Worklog]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL 自定义API调用]
+#### [!UICONTROL 自定义 API 调用]
 
-此操作模块允许您对[!DNL Jira Software] API进行经过身份验证的自定义调用。 使用此模块创建其他[!DNL Jira Software]模块无法实现的数据流自动化。
+此操作模块允许您向 [!DNL Jira Software] API 发起自定义的已经过身份认证的调用。使用此模块创建其他[!DNL Jira Software]模块无法实现的数据流自动化。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Jira Software]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将[!DNL Jira Software]连接到Workfront Fusion</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将 [!DNL Jira Software] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将 [!DNL Jira Software] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
@@ -404,19 +404,19 @@ Jira连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 方法]</td> 
-   td&gt; <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
+   td&gt; <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Headers]</td> 
-   <td> <p>以标准JSON对象的形式添加请求的标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion会为您添加授权标头。</p> </td> 
+   <td role="rowheader">[!UICONTROL 标头]</td> 
+   <td> <p>以标准 JSON 对象的形式添加请求标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion会为您添加授权标头。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 查询字符串]</td> 
-   <td> <p>以标准JSON对象的形式添加API调用的查询。</p> <p>例如： <code>{"name":"something-urgent"}</code></p> </td> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的查询。</p> <p>例如： <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Body]</td> 
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+   <td role="rowheader">[!UICONTROL 正文]</td> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注意：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png">  </td> 
   </tr> 
  </tbody> 
@@ -426,33 +426,33 @@ Jira连接器使用以下对象：
 
 此操作模块删除指定的记录。
 
-您指定记录的ID。
+您需要指定记录的 ID。
 
-该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回记录的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Jira Software]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将[!DNL Jira Software]连接到Workfront Fusion</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将 [!DNL Jira Software] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将 [!DNL Jira Software] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择要模块删除的记录类型。 </p> 
     <ul> 
-     <li>[!UICONTROL 附件]</li> 
-     <li>[!UICONTROL Comment]</li> 
-     <li>[!UICONTROL 问题]</li> 
-     <li>[!UICONTROL 项目]</li> 
-     <li>[!UICONTROL Sprint] </li> 
+     <li>[！UICONTROL附件]</li> 
+     <li>[！UICONTROL Comment]</li> 
+     <li>[！UICONTROL问题]</li> 
+     <li>[！UICONTROL项目]</li> 
+     <li>[！UICONTROL Sprint] </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID或密钥]</td> 
+   <td role="rowheader">[！UICONTROL ID或密钥]</td> 
    <td>输入或映射要删除的记录的ID或键。</td> 
   </tr> 
  </tbody> 
@@ -462,15 +462,15 @@ Jira连接器使用以下对象：
 
 此操作模块下载特定附件。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Jira Software]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将[!DNL Jira Software]连接到Workfront Fusion</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将 [!DNL Jira Software] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将 [!DNL Jira Software] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -483,34 +483,34 @@ Jira连接器使用以下对象：
 
 此操作模块从[!DNL Jira Software]中的单个记录读取数据。
 
-您指定记录的ID。
+您需要指定记录的 ID。
 
-该模块会返回与记录关联的任何标准字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Jira Software]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将[!DNL Jira Software]连接到Workfront Fusion</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将 [!DNL Jira Software] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将 [!DNL Jira Software] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择要模块读取的[!DNL Jira]记录的类型。</p> 
     <ul> 
-     <li>[!UICONTROL 附件]</li> 
-     <li>[!UICONTROL 问题]</li> 
-     <li>[!UICONTROL 项目]</li> 
-     <li>[!UICONTROL Sprint] </li> 
-     <li>[!UICONTROL 用户]</li> 
+     <li>[！UICONTROL附件]</li> 
+     <li>[！UICONTROL问题]</li> 
+     <li>[！UICONTROL项目]</li> 
+     <li>[！UICONTROL Sprint] </li> 
+     <li>[！UICONTROL用户]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 输出]</td> 
-   <td>选择要接收的输出。 根据“[!UICONTROL 记录类型]”字段中选择的记录类型，输出选项可用。</td> 
+   <td>选择要接收的输出。 根据“[！UICONTROL记录类型]”字段中选择的记录类型，输出选项可用。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -523,33 +523,33 @@ Jira连接器使用以下对象：
 
 此操作模块更新现有记录，如问题或项目。
 
-您指定记录的ID。
+您需要指定记录的 ID。
 
-该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回记录的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Jira Software]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将[!DNL Jira Software]连接到Workfront Fusion</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将 [!DNL Jira Software] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将 [!DNL Jira Software] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择您希望模块更新的记录类型。 选择记录类型后，该记录类型特有的其他字段将显示在模块中。</p> 
     <ul> 
-     <li>[!UICONTROL Comment]</li> 
-     <li>[!UICONTROL 问题]</li> 
-     <li>[!UICONTROL 项目]</li> 
-     <li>[!UICONTROL Sprint] </li> 
-     <li>[!UICONTROL 过渡问题]</li> 
+     <li>[！UICONTROL Comment]</li> 
+     <li>[！UICONTROL问题]</li> 
+     <li>[！UICONTROL项目]</li> 
+     <li>[！UICONTROL Sprint] </li> 
+     <li>[！UICONTROL过渡问题]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL ID或密钥]</td> 
+   <td role="rowheader">[！UICONTROL ID或密钥]</td> 
    <td>输入或映射要更新的记录的ID或键，然后填写特定于该记录类型的其他字段显示在模块中。</td> 
   </tr> 
  </tbody> 
@@ -582,31 +582,31 @@ Jira连接器使用以下对象：
 
 此搜索模块可检索与您的搜索查询匹配的特定类型的所有项目
 
-您可以在场景的后续模块中映射此信息。
+您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Jira Software]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将[!DNL Jira Software]连接到Workfront Fusion</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将 [!DNL Jira Software] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将 [!DNL Jira Software] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择您希望模块列出的记录类型。 选择记录类型后，该记录类型特有的其他字段将显示在模块中。</p> 
     <ul> 
-     <li>[!UICONTROL Comment]</li> 
-     <li>[!UICONTROL 问题]</li> 
-     <li>[!UICONTROL 项目]</li> 
-     <li>[!UICONTROL Sprint问题]</li> 
-     <li>[!UICONTROL Worklog]</li> 
+     <li>[！UICONTROL Comment]</li> 
+     <li>[！UICONTROL问题]</li> 
+     <li>[！UICONTROL项目]</li> 
+     <li>[！UICONTROL Sprint问题]</li> 
+     <li>[！UICONTROL Worklog]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 最大结果]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL最大结果]</p> </td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期中检索的最大记录数。</p> </td> 
   </tr> <!--
    <tr> 
@@ -621,27 +621,27 @@ Jira连接器使用以下对象：
 
 此搜索模块在[!DNL Jira Software]中查找与您指定的搜索查询匹配的对象中的记录。
 
-您可以在场景的后续模块中映射此信息。
+您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td> <p>有关将[!DNL Jira Software]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将[!DNL Jira Software]连接到Workfront Fusion</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将 [!DNL Jira Software] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将 [!DNL Jira Software] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择要模块搜索的记录类型。 选择记录类型后，该记录类型特有的其他字段将显示在模块中。</p> 
     <ul> 
-     <li>[!UICONTROL Issues]</li> 
-     <li> <p>[!UICONTROL Issues by JQL （Jira查询语言）] </p> <p>有关JQL的详细信息，请参阅Atlassian帮助网站上的<a href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14#:~:text=JQLstandsforJiraQuery,projectmanagers%2Candbusinessusers.">JQL</a>。 </p> </li> 
-     <li>[!UICONTROL 项目]</li> 
-     <li>&lbrack;！UICONTROL项目（按问题）</li> 
-     <li>[!UICONTROL 用户]</li> 
+     <li>[!UICONTROL 问题]</li> 
+     <li> <p>[！UICONTROL Issues by JQL （Jira查询语言）] </p> <p>有关JQL的详细信息，请参阅Atlassian帮助网站上的<a href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14#:~:text=JQLstandsforJiraQuery,projectmanagers%2Candbusinessusers.">JQL</a>。 </p> </li> 
+     <li>[！UICONTROL项目]</li> 
+     <li>[！UICONTROL项目（按问题）</li> 
+     <li>[！UICONTROL用户]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 

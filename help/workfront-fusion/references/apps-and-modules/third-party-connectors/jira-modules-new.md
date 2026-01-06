@@ -1,17 +1,17 @@
 ---
-title: Jira模块
+title: Jira 模块
 description: 在Adobe Workfront Fusion场景中，您可以自动使用Jira软件的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
-source-git-commit: d4bdc4005a3b7b22d64adc8ca1d20bcf534ddfd1
+source-git-commit: 017341e045a703f5d6e933a6df860f4fc8c0649d
 workflow-type: tm+mt
-source-wordcount: '1750'
-ht-degree: 5%
+source-wordcount: '2348'
+ht-degree: 20%
 
 ---
 
-# Jira模块
+# Jira 模块
 
 >[!NOTE]
 >
@@ -21,98 +21,162 @@ ht-degree: 5%
 
 Jira连接器可用于Jira云和Jira数据服务器。
 
-有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
+有关创建场景的说明，请参阅[创建场景：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)中的相关文章。
 
-有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
+有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)中的相关文章。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
 ## 先决条件
 
-要使用Jira模块，您必须具有Jira帐户。
+* 要使用Jira模块，您必须具有Jira帐户。
+* 您必须有权访问Jira Developer Console才能在Jira中创建OAuth2应用程序。
 
 ## 将Jira连接到Workfront Fusion
 
-### 创建所需的凭据
+创建与Jira的连接过程因您创建的是基本连接还是OAuth2连接而异。
 
-要创建与Jira的连接，您将需要以下各项：
+* [创建与Jira的OAuth2连接](#create-an-oauth2-connection-to-jira)
+* [创建与Jira的基本连接](#create-a-basic-connection-to-jira)
 
-| 连接类型 | 帐户类型 | 需要凭据 |
-|---|---|---|
-| OAuth 2 | 任何 | 客户端ID和客户端密码 |
-| 基本 | Jira Cloud | Jira API令牌 |
-| 基本 | Jira数据中心 | Jira个人访问令牌(PAT) |
+### 创建与Jira的OAuth2连接
 
-有关创建其中任何内容的说明，请参阅Jira文档。
+要创建与Jira的OAuth2连接，必须先在Jira中创建应用程序，然后才能在Fusion中配置连接。
 
-创建这些凭据时，您将需要以下信息：
+* [在Jira中创建OAuth2应用程序](#create-an-oauth2-application-in-jira)
+* [在Fusion中配置Outt2连接](#configure-the-oauth2-connection-in-fusion)
 
-* 对于OAuth 2：
+#### 在Jira中创建OAuth2应用程序
 
-  | 融合数据中心 | 重定向 URL |
-  |---|---|
-  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
-  | 欧盟 | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
-  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
+>[!IMPORTANT]
+>
+>您必须有权访问Jira Developer Console，才能为Jira连接创建和配置OAuth2应用程序。
 
+1. 转到[Jira Developer Console](https://developer.atlassian.com/console.myapps/)。
+1. 在“我的应用程序”区域中，单击&#x200B;**创建**，然后选择&#x200B;**OAuth 2.0集成**。
+1. 输入集成的名称，同意开发人员条款，然后单击&#x200B;**创建**。
 
+   此时将创建应用程序，并转到应用程序配置区域。
+1. 在左侧导航面板中单击&#x200B;**权限**。
+1. 在“权限”区域中，找到&#x200B;**Jira API**&#x200B;行。
+1. 单击Jira API行中的&#x200B;**添加**，然后单击同一行中的&#x200B;**继续**。
+1. 启用以下范围：
 
-* 对于个人访问令牌(PAT)：
+   * 查看Jira问题数据(`read:jira-work`)
+   * 查看用户配置文件(`read:jira-user`)
+   * 创建和管理问题(`write:jira-work`)
 
-  | 融合数据中心 | 重定向 URL |
-  |---|---|
-  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
-  | 欧盟 | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
-  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
+1. 在左侧导航中，单击&#x200B;**授权**。
+1. 在OAuth 2.0授权的行中单击&#x200B;**添加**。
+1. 在&#x200B;**回调URL**&#x200B;字段中，根据您的Workfront Fusion数据中心，输入以下URL之一：
 
-  >[!IMPORTANT]
-  >
-  >要使用PAT，必须在文件`jira/bin/WEB-INF/classes`的文件`jira-config.properties`中启用以下内容：
-  >
-  >* `jira.rest.auth.allow.basic = true`
-  >* `jira.rest.csrf.disabled = true`
-  >
-  >如果此文件不存在，则必须创建它。
+   | 融合数据中心 | 回调 URL |
+   |---|---|
+   | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira2` |
+   | 欧盟 | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira2` |
+   | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira2` |
 
-### 在Workfront Fusion中创建与Jira的连接
+1. 在左侧导航中，单击&#x200B;**设置**。
+1. （可选）在“描述”字段中输入描述，然后单击该字段下的&#x200B;**保存更改**。
+1. 将客户端ID和客户端密钥从设置区域复制到安全位置，或者在Fusion中配置连接时保持此页面打开。
+1. 继续[在Fusion](#configure-the-oauth2-connection-in-fusion)中配置OAutt2连接
 
-要在Workfront Fusion中创建连接，请执行以下操作：
+#### 在Fusion中配置Oauth2连接
+
+1. 在任意Jira模块中，单击“连接”字段旁边的&#x200B;**添加**。
+1. 配置以下字段：
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>连接类型</p> </td> 
+      <td> <p>选择<b>OAuth 2</b>。</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>连接名称</p> </td> 
+      <td> <p>输入新连接的名称。</p> </td> 
+     </tr> 
+     <tr>
+      <td role="rowheader">服务URL</td>
+      <td>输入您的Jira实例URL。 这是您用于访问Jira的URL。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">Jira帐户类型</td>
+       <td>选择您是连接到Jira云还是Jira数据中心。</td>
+     </tr>
+     <tr> 
+      <td role="rowheader">客户端 ID</td> 
+      <td> <p>输入您在<a href="#create-an-oauth2-application-in-jira" class="MCXref xref" data-mc-variable-override="">中创建的Jira应用程序的客户端ID在Jira</a>中创建OAuth2应用程序。</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">客户端密钥</td> 
+      <td> <p>输入您在<a href="#create-an-oauth2-application-in-jira" class="MCXref xref" data-mc-variable-override="">中创建的Jira应用程序的客户端密钥。在Jira</a>中创建OAuth2应用程序。</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">其他范围</td> 
+      <td>输入要添加到此连接的任何其他范围。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">API 版本</td> 
+      <td>选择您希望此连接连接到的Jira API版本。</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;以创建连接并返回模块。
+
+### 创建与Jira的基本连接
+
+创建与Jira的基本连接有所不同，具体取决于您是创建与Jira云还是Jira数据中心的连接。
+
+* [创建与Jira Cloud的基本连接](#create-a-basic-connection-to-jira-cloud)
+* [创建与Jira数据中心的基本连接](#create-a-basic-connection-to-jira-data-center)
+
+#### 创建与Jira Cloud的基本连接
+
+>[!IMPORTANT]
+>
+> 要创建与Jira云的基本连接，您必须具有Jira API令牌。
+>有关获取Jira API令牌的说明，请参阅Atlassian文档中的[管理Atlassian帐户的API令牌](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account)。
+
 
 1. 在任意Jira模块中，单击“连接”字段旁边的&#x200B;**添加**。
 1. 配置以下字段：
@@ -138,27 +202,15 @@ Jira连接器可用于Jira云和Jira数据服务器。
        <td>选择您是连接到Jira云还是Jira数据中心。</td>
      </tr>
      <tr> 
-      <td role="rowheader">客户端 ID</td> 
-      <td> <p>如果要创建OAuth 2连接，请输入您的Jira客户端ID</p> </td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">客户端密码</td> 
-      <td> <p>如果要创建OAuth 2连接，请输入您的Jira客户端密钥</p> </td> 
-     </tr> 
-     <tr> 
       <td role="rowheader">电子邮件</td> 
-      <td>如果您正在创建与Jira Cloud的基本连接，请输入您的电子邮件地址。</td> 
+      <td>输入您的电子邮件地址。</td> 
      </tr> 
      <tr> 
       <td role="rowheader">api令牌</td> 
-      <td>如果您正在创建与Jira Cloud的基本连接，请输入您的API令牌。</td> 
+      <td>输入您的API令牌。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">个人访问令牌</td> 
-      <td>如果您正在创建与Jira数据中心的基本连接，请输入您的个人访问令牌。</td> 
-     </tr> 
-     <tr> 
-      <td role="rowheader">API版本</td> 
+      <td role="rowheader">API 版本</td> 
       <td>选择您希望此连接连接到的Jira API版本。</td> 
      </tr> 
     </tbody> 
@@ -166,12 +218,80 @@ Jira连接器可用于Jira云和Jira数据服务器。
 
 1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;以创建连接并返回模块。
 
+#### 创建与Jira数据中心的基本连接
+
+>[!IMPORTANT]
+>
+> 要创建与Jira数据中心的基本连接，您必须具有Jira个人访问令牌(PAT)。
+>有关获取Jira个人访问令牌的说明，请参阅Atlassian文档中的[管理Atlassian帐户的API令牌](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html)。
+>有关创建PAT时的注意事项，请参阅本文中的[配置PAT](#configure-your-pat)。
+
+1. 在任意Jira模块中，单击“连接”字段旁边的&#x200B;**添加**。
+1. 配置以下字段：
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader"> <p>连接类型</p> </td> 
+      <td> <p>选择是创建基本连接还是OAuth 2连接。</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader"> <p>连接名称</p> </td> 
+      <td> <p>输入新连接的名称。</p> </td> 
+     </tr> 
+     <tr>
+      <td role="rowheader">服务URL</td>
+      <td>输入您的Jira实例URL。 这是您用于访问Jira的URL。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">Jira帐户类型</td>
+       <td>选择您是连接到Jira云还是Jira数据中心。</td>
+     </tr>
+     <tr> 
+      <td role="rowheader">PAT（个人访问令牌）</td> 
+      <td>输入您的Jira个人访问令牌。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">API 版本</td> 
+      <td>选择您希望此连接连接到的Jira API版本。</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;以创建连接并返回模块。
+
+##### 配置您的PAT
+
+要创建与Jira数据中心的基本连接，您必须具有Jira个人访问令牌(PAT)。
+
+有关获取Jira个人访问令牌的说明，请参阅Atlassian文档中的[管理Atlassian帐户的API令牌](https://confluence.atlassian.com/enterprise/using-personal-access-tokens-1026032365.html)。
+
+配置PAT时，可能需要以下信息
+
+* 重定向URL
+
+  | 融合数据中心 | 重定向 URL |
+  |---|---|
+  | US | `https://app.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | 欧盟 | `https://app-eu.workfrontfusion.com/oauth/cb/workfront-jira` |
+  | Azure | `https://app-az.workfrontfusion.com/oauth/cb/workfront-jira` |
+
+* 文件配置
+
+要使用PAT，必须在文件`jira/bin/WEB-INF/classes`的文件`jira-config.properties`中启用以下内容：
+
+* `jira.rest.auth.allow.basic = true`
+* `jira.rest.csrf.disabled = true`
+
+如果此文件不存在，则必须创建它。
 
 ## Jira模块及其字段
 
-配置Jira模块时，Workfront Fusion会显示以下列出的字段。 除此以外，还可能会显示其他Jira字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+配置Jira模块时，Workfront Fusion会显示以下列出的字段。 除此以外，还可能会显示其他Jira字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的加粗标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -191,7 +311,7 @@ Jira连接器可用于Jira云和Jira数据服务器。
  <tbody> 
   <tr> 
    <td role="rowheader">Webhook</td> 
-   <td> <p>选择要用于监视记录的webhook，或创建新的webhook。 </p> <p>要创建新的webhook，请执行以下操作：</p> 
+   <td> <p>选择要用于监视记录的webhook，或创建新的webhook。 </p> <p>要创建新的 Webhook：</p> 
     <ol> 
      <li>单击<strong>添加</strong></li> 
      <li>输入webhook的名称。</li> 
@@ -199,7 +319,7 @@ Jira连接器可用于Jira云和Jira数据服务器。
      <li> <p>选择要软件监视的记录类型：</p> 
       <ul> 
        <li>问题</li> 
-       <li>评论 </li> 
+       <li>注释 </li> 
        <li>工作日志 </li> 
        <li>项目 </li> 
        <li>Sprint</li> 
@@ -263,7 +383,7 @@ Jira连接器可用于Jira云和Jira数据服务器。
    <td> <p>选择要模块创建的记录类型。</p> 
     <ul> 
      <li>附件</li> 
-     <li>评论</li> 
+     <li>注释</li> 
      <li>问题</li> 
      <li>项目</li> 
      <li>Sprint </li> 
@@ -299,19 +419,19 @@ Jira连接器可用于Jira云和Jira数据服务器。
   </tr> 
   <tr> 
    <td role="rowheader">方法</td> 
-   td&gt; <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
+   td&gt; <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">标头</td> 
-   <td> <p>以标准JSON对象的形式添加请求的标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> <p> Workfront Fusion会为您添加授权标头。</p> </td> 
+   <td> <p>以标准 JSON 对象的形式添加请求标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> <p> Workfront Fusion会为您添加授权标头。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">查询字符串</td> 
-   <td> <p>以标准JSON对象的形式添加API调用的查询。</p> <p>例如： <code>{"name":"something-urgent"}</code></p> </td> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的查询。</p> <p>例如： <code>{"name":"something-urgent"}</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">正文</td> 
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注意：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png">  </td> 
   </tr> 
  </tbody> 
@@ -333,7 +453,7 @@ Jira连接器可用于Jira云和Jira数据服务器。
    <td role="rowheader">记录类型</td> 
    <td> <p>选择要模块删除的记录类型。 </p> 
     <ul> 
-     <li>评论</li> 
+     <li>注释</li> 
      <li>问题</li> 
      <li>项目</li> 
      <li>Sprint </li> 
@@ -387,7 +507,7 @@ Jira连接器可用于Jira云和Jira数据服务器。
    <td> <p>选择您希望模块读取的Jira记录的类型。</p> 
     <ul> 
      <li>附件</li> 
-     <li>评论</li> 
+     <li>注释</li> 
      <li>问题</li> 
      <li>项目</li> 
      <li>Sprint </li> 
@@ -425,7 +545,7 @@ Jira连接器可用于Jira云和Jira数据服务器。
    <td role="rowheader">记录类型</td> 
    <td> <p>选择您希望模块更新的记录类型。 选择记录类型后，该记录类型特有的其他字段将显示在模块中。</p> 
     <ul> 
-     <li>评论</li> 
+     <li>注释</li> 
      <li>问题</li> 
      <li>项目</li> 
      <li>Sprint </li> 
@@ -468,9 +588,9 @@ Jira连接器可用于Jira云和Jira数据服务器。
 
 此搜索模块在Jira中查找与您指定的搜索查询匹配的对象中的记录。
 
-您可以在场景的后续模块中映射此信息。
+您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -490,7 +610,7 @@ Jira连接器可用于Jira云和Jira数据服务器。
      <li>Sprint</li> 
      <li>展示板</li> 
      <li>工作日志</li> 
-     <li>评论</li> 
+     <li>注释</li> 
      <li>过渡问题</li> 
      <li>类别</li> 
     </ul> </td> 
