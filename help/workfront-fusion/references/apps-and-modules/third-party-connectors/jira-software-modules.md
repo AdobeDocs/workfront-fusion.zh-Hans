@@ -218,15 +218,15 @@ Jira连接器使用以下对象：
     <col data-mc-conditions=""> 
     <tbody> 
      <tr> 
-      <td role="rowheader"> <p>[！UICONTROL使用者密钥]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL 使用者密钥]</p> </td> 
       <td> 将您复制的使用者密钥粘贴到安全位置。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL使用者名称]</td> 
+      <td role="rowheader">[!UICONTROL 使用者名称]</td> 
       <td>输入您选择的名称。 此名称供您参考。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL公钥]</td> 
+      <td role="rowheader">[!UICONTROL 公钥]</td> 
       <td>从<code>[!DNL jira_publickey.pem]</code>文件中粘贴公钥。</td> 
      </tr> 
     </tbody> 
@@ -261,7 +261,7 @@ Jira连接器使用以下对象：
       <td> <p>选择您使用的是服务帐户还是个人帐户。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL使用者密钥]</td> 
+      <td role="rowheader">[!UICONTROL 使用者密钥]</td> 
       <td>将您复制的使用者密钥粘贴到<a href="#configure-the-client-app-as-a-consumer-in-jira" class="MCXref xref">中的安全位置在[!DNL Jira]</a>中将客户端应用程序配置为使用者</td> 
      </tr> 
      <tr> 
@@ -303,15 +303,15 @@ Jira连接器使用以下对象：
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>选择要用于监视记录的webhook。 </p> <p>要添加新的webhook，请执行以下操作：</p> 
     <ol> 
-     <li value="1">单击<strong>[！UICONTROL添加]</strong></li> 
+     <li value="1">单击<strong>[!UICONTROL 添加]</strong></li> 
      <li value="2">输入webhook的名称。</li> 
      <li value="3"> <p>选择要用于webhook的连接。 </p> <p>有关将 [!DNL Jira Software] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将 [!DNL Jira Software] 连接到 Workfront Fusion</a>。</p> </li> 
      <li value="4"> <p>选择要软件监视的记录类型：</p> 
       <ul> 
-       <li>[！UICONTROL Comment] </li> 
-       <li>[！UICONTROL问题]</li> 
-       <li>[！UICONTROL项目] </li> 
-       <li>[！UICONTROL Sprint]</li> 
+       <li>[!UICONTROL Comment] </li> 
+       <li>[!UICONTROL 问题]</li> 
+       <li>[!UICONTROL 项目] </li> 
+       <li>[!UICONTROL Sprint]</li> 
       </ul> </li> 
     </ol> </td> 
   </tr> 
@@ -343,12 +343,12 @@ Jira连接器使用以下对象：
    <td> <p>有关将 [!DNL Jira Software] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-jira-software-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将 [!DNL Jira Software] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Sprint ID]</td> 
+   <td role="rowheader">[!UICONTROL Sprint ID]</td> 
    <td>输入或映射要添加问题的冲刺(sprint)的Sprint ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL问题ID或密钥]</td> 
-   <td>对于要查看体验的每个问题或密钥，单击<b>[！UICONTROL添加项]</b>并输入问题ID或密钥。 在一个模块中最多可输入50个。</td> 
+   <td role="rowheader">[!UICONTROL 问题ID或密钥]</td> 
+   <td>对于要查看体验的每个问题或密钥，单击<b>[!UICONTROL 添加项]</b>并输入问题ID或密钥。 在一个模块中最多可输入50个。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -373,12 +373,12 @@ Jira连接器使用以下对象：
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择您希望模块创建的记录类型，然后填写特定于此记录类型的其他字段显示在模块中。</p> 
     <ul> 
-     <li>[！UICONTROL附件]</li> 
-     <li>[！UICONTROL Comment]</li> 
-     <li>[！UICONTROL问题]</li> 
-     <li>[！UICONTROL项目]</li> 
-     <li>[！UICONTROL Sprint] </li> 
-     <li>[！UICONTROL Worklog]</li> 
+     <li>[!UICONTROL 附件]</li> 
+     <li>[!UICONTROL Comment]</li> 
+     <li>[!UICONTROL 问题]</li> 
+     <li>[!UICONTROL 项目]</li> 
+     <li>[!UICONTROL Sprint] </li> 
+     <li>[!UICONTROL Worklog]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -444,15 +444,15 @@ Jira连接器使用以下对象：
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择要模块删除的记录类型。 </p> 
     <ul> 
-     <li>[！UICONTROL附件]</li> 
-     <li>[！UICONTROL Comment]</li> 
-     <li>[！UICONTROL问题]</li> 
-     <li>[！UICONTROL项目]</li> 
-     <li>[！UICONTROL Sprint] </li> 
+     <li>[!UICONTROL 附件]</li> 
+     <li>[!UICONTROL Comment]</li> 
+     <li>[!UICONTROL 问题]</li> 
+     <li>[!UICONTROL 项目]</li> 
+     <li>[!UICONTROL Sprint] </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL ID或密钥]</td> 
+   <td role="rowheader">[!UICONTROL ID或密钥]</td> 
    <td>输入或映射要删除的记录的ID或键。</td> 
   </tr> 
  </tbody> 
@@ -501,16 +501,16 @@ Jira连接器使用以下对象：
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择要模块读取的[!DNL Jira]记录的类型。</p> 
     <ul> 
-     <li>[！UICONTROL附件]</li> 
-     <li>[！UICONTROL问题]</li> 
-     <li>[！UICONTROL项目]</li> 
-     <li>[！UICONTROL Sprint] </li> 
-     <li>[！UICONTROL用户]</li> 
+     <li>[!UICONTROL 附件]</li> 
+     <li>[!UICONTROL 问题]</li> 
+     <li>[!UICONTROL 项目]</li> 
+     <li>[!UICONTROL Sprint] </li> 
+     <li>[!UICONTROL 用户]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 输出]</td> 
-   <td>选择要接收的输出。 根据“[！UICONTROL记录类型]”字段中选择的记录类型，输出选项可用。</td> 
+   <td>选择要接收的输出。 根据“[!UICONTROL 记录类型]”字段中选择的记录类型，输出选项可用。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -541,15 +541,15 @@ Jira连接器使用以下对象：
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择您希望模块更新的记录类型。 选择记录类型后，该记录类型特有的其他字段将显示在模块中。</p> 
     <ul> 
-     <li>[！UICONTROL Comment]</li> 
-     <li>[！UICONTROL问题]</li> 
-     <li>[！UICONTROL项目]</li> 
-     <li>[！UICONTROL Sprint] </li> 
-     <li>[！UICONTROL过渡问题]</li> 
+     <li>[!UICONTROL Comment]</li> 
+     <li>[!UICONTROL 问题]</li> 
+     <li>[!UICONTROL 项目]</li> 
+     <li>[!UICONTROL Sprint] </li> 
+     <li>[!UICONTROL 过渡问题]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL ID或密钥]</td> 
+   <td role="rowheader">[!UICONTROL ID或密钥]</td> 
    <td>输入或映射要更新的记录的ID或键，然后填写特定于该记录类型的其他字段显示在模块中。</td> 
   </tr> 
  </tbody> 
@@ -598,15 +598,15 @@ Jira连接器使用以下对象：
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择您希望模块列出的记录类型。 选择记录类型后，该记录类型特有的其他字段将显示在模块中。</p> 
     <ul> 
-     <li>[！UICONTROL Comment]</li> 
-     <li>[！UICONTROL问题]</li> 
-     <li>[！UICONTROL项目]</li> 
-     <li>[！UICONTROL Sprint问题]</li> 
-     <li>[！UICONTROL Worklog]</li> 
+     <li>[!UICONTROL Comment]</li> 
+     <li>[!UICONTROL 问题]</li> 
+     <li>[!UICONTROL 项目]</li> 
+     <li>[!UICONTROL Sprint问题]</li> 
+     <li>[!UICONTROL Worklog]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL最大结果]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 最大结果]</p> </td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期中检索的最大记录数。</p> </td> 
   </tr> <!--
    <tr> 
@@ -638,10 +638,10 @@ Jira连接器使用以下对象：
    <td> <p>选择要模块搜索的记录类型。 选择记录类型后，该记录类型特有的其他字段将显示在模块中。</p> 
     <ul> 
      <li>[!UICONTROL 问题]</li> 
-     <li> <p>[！UICONTROL Issues by JQL （Jira查询语言）] </p> <p>有关JQL的详细信息，请参阅Atlassian帮助网站上的<a href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14#:~:text=JQLstandsforJiraQuery,projectmanagers%2Candbusinessusers.">JQL</a>。 </p> </li> 
-     <li>[！UICONTROL项目]</li> 
-     <li>[！UICONTROL项目（按问题）</li> 
-     <li>[！UICONTROL用户]</li> 
+     <li> <p>[!UICONTROL Issues by JQL （Jira查询语言）] </p> <p>有关JQL的详细信息，请参阅Atlassian帮助网站上的<a href="https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14#:~:text=JQLstandsforJiraQuery,projectmanagers%2Candbusinessusers.">JQL</a>。 </p> </li> 
+     <li>[!UICONTROL 项目]</li> 
+     <li>&lbrack;！UICONTROL项目（按问题）</li> 
+     <li>[!UICONTROL 用户]</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
