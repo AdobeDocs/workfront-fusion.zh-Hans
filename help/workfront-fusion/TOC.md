@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: fc0b3b7ca4ec999c7a121d0564d36abff6f2d620
+source-git-commit: aa3bdd7d14c86085c36e3859f6d53c0cadb28920
 workflow-type: tm+mt
-source-wordcount: '1970'
-ht-degree: 97%
+source-wordcount: '1979'
+ht-degree: 96%
 
 ---
 
@@ -146,7 +146,7 @@ ht-degree: 97%
 * 开始使用 Workfront Fusion {#get-started-with-fusion}
    * [开始使用 Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
    * 了解 Workfront Fusion  {#understand-workfront-fusion}
-      * [了解 Workfront Fusion &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
+      * [了解 Workfront Fusion ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
       * [Adobe Workfront Fusion 概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
       * [Adobe Workfront Fusion 术语表](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
       * [场景概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)
@@ -269,6 +269,7 @@ ht-degree: 97%
    * [查看、编辑和删除模板](/help/workfront-fusion/create-and-manage-templates/view-edit-and-delete-fusion-templates.md)
    * [发布和共享模板](/help/workfront-fusion/create-and-manage-templates/publish-and-share-fusion-templates.md)
    * [当前可用的 Adobe Workfront Fusion 模板](/help/workfront-fusion/create-and-manage-templates/currently-available-fusion-templates.md)
+   * [使用模板连接Adobe Workfront Fusion和Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)
    * [Adobe Workfront Fusion 模板常见问题解答](/help/workfront-fusion/create-and-manage-templates/fusion-templates-faqs.md)
 * 参考 {#references}
    * [参考](/help/workfront-fusion/references/references-toc.md)
