@@ -323,7 +323,7 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
 #### 将模板模块连接到Workfront和Jira（模块2）
 
 1. 在&#x200B;**每个** Workfront模块的连接字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**&#x200B;保存与该模块的连接。
-1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**保存与该模块的连接。
+1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**&#x200B;保存与该模块的连接。
    <!--#### Map custom fields-->
 
 +++
