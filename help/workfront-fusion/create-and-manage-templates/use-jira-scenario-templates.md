@@ -8,9 +8,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: aa3bdd7d14c86085c36e3859f6d53c0cadb28920
+source-git-commit: c3d1abb898eec6fc84dc1de0fb7799d13d9e3571
 workflow-type: tm+mt
-source-wordcount: '4075'
+source-wordcount: '4171'
 ht-degree: 3%
 
 ---
@@ -61,7 +61,7 @@ Adobe Workfront Fusion提供了可自动执行Fusion和Jira之间常用工作流
   有关信息和说明，请参阅Adobe文档中的[技术帐户设置](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup)。
 * 您必须在Adobe Admin Console产品配置文件区域将系统管理员权限应用到技术帐户。
 
-  有关信息和说明，请参阅[使用Adobe Admin Console在Workfront中创建系统管理员](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  有关信息和说明，请参阅[使用Adobe Admin Console在Workfront中创建系统管理员](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -156,13 +156,13 @@ When configuring this application, you will need the following scopes:
 
 1. 在Workfront中，创建系统集成用户。 此用户仅由Workfront Fusion使用，不代表人类用户。 分配给此用户的任务将触发将Workfront与Jira同步的方案。
 
-   有关说明，请参阅Workfront文档中的[添加用户](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)。
+   有关说明，请参阅Workfront文档中的[添加用户](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)。
 
 #### 在Workfront中创建自定义表单
 
 1. 在Workfront中，开始创建自定义表单。
 
-   有关说明，请参阅Workfront文档中的[创建自定义表单](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)。
+   有关说明，请参阅Workfront文档中的[创建自定义表单](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)。
 1. 将表单命名为“**JIRA字段**”。
 1. 在自定义表单中包含以下字段：
 
@@ -179,7 +179,7 @@ When configuring this application, you will need the following scopes:
 >
 >我们建议限制其他用户编辑此表单。 为此，您可以确保添加到自定义表单的任何用户仅具有查看权限。
 >
->有关说明，请参阅Workfront文档中的[共享自定义表单](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)。
+>有关说明，请参阅Workfront文档中的[共享自定义表单](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)。
 
 ### 在Workfront Fusion中配置连接
 
@@ -204,11 +204,11 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
 * **[Workfront到Jira：从Workfront任务或问题分配创建JIRA问题](#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)**
 * [JIRA到Workfront： JIRA到Workfront：将问题和评论的更新从Jira发送回Workfront](#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
 * [Workfront到Jira：将Workfront任务更改为JIRA问题](#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
-* Workfront到Jira：将Workfront问题更改为JIRA问题
-* Workfront到Jira：在有关Workfront任务或问题的新注释时在JIRA中创建评论
-* Workfront到Jira：在JIRA中创建Workfront任务或问题已删除注释的评论
-* 从Workfront到Jira：新建有关Workfront任务或问题的文档时，在JIRA中创建评论
-* 从Workfront到Jira：在JIRA中创建Workfront任务或问题上已删除文档的评论
+* [Workfront到Jira：将Workfront问题更改为JIRA问题](#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
+* [Workfront到Jira：在有关Workfront任务或问题的新注释时在JIRA中创建评论](#scenario-5-workfront-to-jira-create-comment-in-jira-when-new-note-on-workfront-task-or-issue)
+* [Workfront到Jira：在JIRA中创建Workfront任务或问题已删除注释的评论](#scenario-6-workfront-to-jira-create-comment-in-jira-on-deleted-note-on-workfront-task-or-issue)
+* [从Workfront到Jira：新建有关Workfront任务或问题的文档时，在JIRA中创建评论](#scenario-7-workfront-to-jira-create-comment-in-jira-when-new-document-on-workfront-task-or-issue)
+* [从Workfront到Jira：在JIRA中创建Workfront任务或问题上已删除文档的评论](#scenario-8-workfront-to-jira-create-comment-in-jira-on-deleted-document-on-workfront-task-or-issue)
 
 ### 常规参数
 
@@ -269,14 +269,14 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
    | 变量名称 | 变量值 |
    |---|---|
    | defaultJiraReporterID | 当Jira中不存在创建者用户时，输入默认用户的ID。 您可以通过单击用户配置文件并检查浏览器的URL来查找此用户ID。 示例：`https://myjira.atlassian.net/jira/people/<JiraUserID>` |
-   | JiraBaseURL | 输入您连接到的基本Jira帐户URL。 |
+   | JiraBaseURL | 输入您要连接的Jira帐户的基本URL。 |
    | wfBaseURL | 输入您要连接的Workfront帐户的基本URL。 |
 
 1. 继续[映射Jira中的自定义字段](#map-custom-fields-in-jira)
 
-#### 在Jira中映射自定义字段。
+<!--#### Map custom fields in Jira. 
 
-<!--Awaiting feedback-->
+Awaiting feedback-->
 
 +++
 
@@ -323,7 +323,7 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
 #### 将模板模块连接到Workfront和Jira（模块2）
 
 1. 在&#x200B;**每个** Workfront模块的连接字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**&#x200B;保存与该模块的连接。
-1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**&#x200B;保存与该模块的连接。
+1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**保存与该模块的连接。
    <!--#### Map custom fields-->
 
 +++
@@ -355,7 +355,7 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
 1. 启用&#x200B;**排除此连接所做的更新**&#x200B;选项。
 1. 在&#x200B;**记录来源**&#x200B;字段中，选择`Updated record only`。
 1. 单击&#x200B;**保存**&#x200B;以保存webhook，然后单击&#x200B;**确定**&#x200B;以保存触发器模块。
-1. 在第二个模块中，设置以下变量，然后单击&#x200B;**确定**&#x200B;保存该模块。
+1. 在&#x200B;**设置JIRA变量**&#x200B;模块中，设置以下变量，然后单击&#x200B;**确定**&#x200B;保存该模块。
 
    | 变量名称 | 变量值 |
    |---|---|
@@ -366,16 +366,13 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
 1. 在&#x200B;**each** Workfront模块的“连接”字段中，选择使用系统集成凭据的Workfront连接，然后单击&#x200B;**确定**&#x200B;以保存该模块。
 1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择使用系统集成凭据的Jira连接，然后单击&#x200B;**确定**&#x200B;保存模块。
 
-
 +++
-
-
 
 ### 场景4：将Workfront更改为Jira：将Workfront问题更改为JIRA问题
 
 此方案会将Workfront问题中的更新发送到之前连接的JIRA问题。
 
-+++**展开以查看有关配置方案4： WF到Jira更改（问题）的说明**
++++**展开以查看有关配置场景4：将Workfront更改为Jira：将Workfront问题更改为JIRA问题**&#x200B;的说明
 
 1. 单击左侧导航面板中的&#x200B;**模板**&#x200B;选项卡![模板图标](assets/templates-icon.png)。
 1. 使用屏幕左上角附近的搜索栏搜索模板。 您可以按模板名称或包含的应用程序进行搜索。
@@ -387,20 +384,20 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
 1. 选择将拥有此方案的组织和团队。
 1. 在第一个模块中，开始添加webhook。
 1. 在连接字段中，选择使用系统集成凭据的Workfront连接。
-1. 在&#x200B;**记录类型**&#x200B;字段中，选择`??`。
+1. 在&#x200B;**记录类型**&#x200B;字段中，选择`Issues`。
 1. 在&#x200B;**状态**&#x200B;字段中，选择`New state`。
 1. 使用&#x200B;**And**&#x200B;选项通过以下操作配置筛选器：
 
    | 字段 | 操作员 | 值 |
    |---|---|---|
-   | （有关问题的更新） |  |  |
    | assignedToID | 等于 | 输入系统集成用户的Workfront ID |
    | projectID | 等于 | 输入希望webhook监视的一个或多个项目的ID。 |
-   | WF ID | 已存在 |  |
+   | DE： Jira键 | 已存在 |  |
 
 1. 启用&#x200B;**排除此连接所做的更新**&#x200B;选项。
+1. 在&#x200B;**记录来源**&#x200B;字段中，选择`Updated record only`。
 1. 单击&#x200B;**保存**&#x200B;以保存webhook，然后单击&#x200B;**确定**&#x200B;以保存触发器模块。
-1. 在第二个模块中，设置以下变量，然后单击&#x200B;**确定**&#x200B;保存该模块。
+1. 在&#x200B;**设置JIRA变量**&#x200B;模块中，设置以下变量，然后单击&#x200B;**确定**&#x200B;保存该模块。
 
    | 变量名称 | 变量值 |
    |---|---|
@@ -411,14 +408,11 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
 1. 在&#x200B;**each** Workfront模块的“连接”字段中，选择使用系统集成凭据的Workfront连接，然后单击&#x200B;**确定**&#x200B;以保存该模块。
 1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择使用系统集成凭据的Jira连接，然后单击&#x200B;**确定**&#x200B;保存模块。
 
-
 +++
 
+### 场景5：从Workfront到Jira：在有关Workfront任务或问题的新注释时在JIRA中创建评论
 
-
-### 情景5：WF-to-Jira新说明（任务和问题）
-
-+++**展开以查看有关配置场景5： WF-to-Jira新说明（任务和问题）的说明**
++++**展开以查看有关配置场景5：将Workfront配置为Jira：在有关Workfront任务或问题的新注释时在JIRA中创建注释**
 
 1. 单击左侧导航面板中的&#x200B;**模板**&#x200B;选项卡![模板图标](assets/templates-icon.png)。
 1. 使用屏幕左上角附近的搜索栏搜索模板。 您可以按模板名称或包含的应用程序进行搜索。
@@ -427,19 +421,20 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
    此时将打开模板视图，显示信息以及数据流动画。
 1. 在第一个模块中，开始添加webhook。
 1. 在连接字段中，选择使用系统集成凭据的Workfront连接。
-1. 在&#x200B;**记录类型**&#x200B;字段中，选择`??`。
+1. 在&#x200B;**记录类型**&#x200B;字段中，选择`Note`。
 1. 在&#x200B;**状态**&#x200B;字段中，选择`New state`。
-1. 使用&#x200B;**And**&#x200B;选项通过以下操作配置筛选器：
+1. 使用以下操作配置过滤器：
 
    | 字段 | 操作员 | 值 |
    |---|---|---|
-   | （创建和更新注释。） |  |  |
-   | assignedToID | 等于 | 输入系统集成用户的Workfront ID |
-   | projectID | 等于 | 输入希望webhook监视的一个或多个项目的ID。 |
+   | projectID<br>和<br>任务ID | 等于<br><br>存在 | 输入希望webhook监视的一个或多个项目的ID。 |
+   | 或者 |  |  |
+   | projectID<br>和<br>OpTaskID | 等于<br><br>存在 | 输入希望webhook监视的一个或多个项目的ID。 |
 
 1. 启用&#x200B;**排除此连接所做的更新**&#x200B;选项。
+1. 在&#x200B;**记录来源**&#x200B;字段中，选择`New record only`。
 1. 单击&#x200B;**保存**&#x200B;以保存webhook，然后单击&#x200B;**确定**&#x200B;以保存触发器模块。
-1. 在第二个模块中，设置以下变量，然后单击&#x200B;**确定**&#x200B;保存该模块。
+1. 在&#x200B;**设置变量**&#x200B;模块中设置以下变量，然后单击&#x200B;**确定**&#x200B;保存该模块。
 
    | 变量名称 | 变量值 |
    |---|---|
@@ -447,20 +442,14 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
    | JiraBaseURL | 要连接的Jira帐户的基本URL。 |
    | wfBaseURL | 要连接的Workfront帐户的基本URL。 |
 
-1. 启用&#x200B;**排除此连接所做的更新**&#x200B;选项。
-1. 单击&#x200B;**保存**&#x200B;以保存webhook，然后单击&#x200B;**确定**&#x200B;以保存触发器模块。
 1. 在&#x200B;**each** Workfront模块的“连接”字段中，选择使用系统集成凭据的Workfront连接，然后单击&#x200B;**确定**&#x200B;以保存该模块。
 1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择使用系统集成凭据的Jira连接，然后单击&#x200B;**确定**&#x200B;保存模块。
 
-
 +++
 
+### 情景6：Workfront到Jira：在JIRA中创建Workfront任务或问题已删除注释的评论
 
-
-
-### 情景6：WF-to-Jira删除注释（任务和问题）
-
-+++**展开以查看配置方案6:WF-to-Jira删除注释（任务和问题）**&#x200B;的说明
++++**展开以查看有关配置方案6：从Workfront到Jira：在JIRA中创建有关Workfront任务或问题的已删除注释的注释**
 
 1. 单击左侧导航面板中的&#x200B;**模板**&#x200B;选项卡![模板图标](assets/templates-icon.png)。
 1. 使用屏幕左上角附近的搜索栏搜索模板。 您可以按模板名称或包含的应用程序进行搜索。
@@ -469,18 +458,18 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
    此时将打开模板视图，显示信息以及数据流动画。
 1. 在第一个模块中，开始添加webhook。
 1. 在连接字段中，选择使用系统集成凭据的Workfront连接。
-1. 在&#x200B;**记录类型**&#x200B;字段中，选择`??`。
+1. 在&#x200B;**记录类型**&#x200B;字段中，选择`Note`。
 1. 在&#x200B;**状态**&#x200B;字段中，选择`New state`。
-1. 使用&#x200B;**And**&#x200B;选项通过以下操作配置筛选器：
+1. 使用以下操作配置过滤器：
 
    | 字段 | 操作员 | 值 |
    |---|---|---|
-   | （在注释中删除。） |  |  |
-   | assignedToID | 等于 | 输入系统集成用户的Workfront ID |
-   | projectID | 等于 | 输入希望webhook监视的一个或多个项目的ID。 |
-   | WF ID | 已存在 |  |
+   | projectID<br>和<br>任务ID | 等于<br><br>存在 | 输入希望webhook监视的一个或多个项目的ID。 |
+   | 或者 |  |  |
+   | projectID<br>和<br>OpTaskID | 等于<br><br>存在 | 输入希望webhook监视的一个或多个项目的ID。 |
 
 1. 启用&#x200B;**排除此连接所做的更新**&#x200B;选项。
+1. 在&#x200B;**记录来源**&#x200B;字段中，选择`Deleted record only`。
 1. 单击&#x200B;**保存**&#x200B;以保存webhook，然后单击&#x200B;**确定**&#x200B;以保存触发器模块。
 1. 在第二个模块中，设置以下变量，然后单击&#x200B;**确定**&#x200B;保存该模块。
 
@@ -493,14 +482,11 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
 1. 在&#x200B;**each** Workfront模块的“连接”字段中，选择使用系统集成凭据的Workfront连接，然后单击&#x200B;**确定**&#x200B;以保存该模块。
 1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择使用系统集成凭据的Jira连接，然后单击&#x200B;**确定**&#x200B;保存模块。
 
-
 +++
 
+### 场景7：从Workfront到Jira：新增有关Workfront任务或问题的文档时，在JIRA中创建评论
 
-
-### 情景7：WF-to-Jira新附件（任务和问题）
-
-+++**展开以查看有关配置Scenario 7： WF-to-Jira新附件（任务和问题）的说明**
++++**展开以查看有关配置场景7：将Workfront配置为Jira：当有关Workfront任务或问题的新文档时，在JIRA中创建评论**
 
 1. 单击左侧导航面板中的&#x200B;**模板**&#x200B;选项卡![模板图标](assets/templates-icon.png)。
 1. 使用屏幕左上角附近的搜索栏搜索模板。 您可以按模板名称或包含的应用程序进行搜索。
@@ -509,13 +495,12 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
    此时将打开模板视图，显示信息以及数据流动画。
 1. 在第一个模块中，开始添加webhook。
 1. 在连接字段中，选择使用系统集成凭据的Workfront连接。
-1. 在&#x200B;**记录类型**&#x200B;字段中，选择`??`。
+1. 在&#x200B;**记录类型**&#x200B;字段中，选择`Document`。
 1. 在&#x200B;**状态**&#x200B;字段中，选择`New state`。
 1. 使用&#x200B;**And**&#x200B;选项通过以下操作配置筛选器：
 
    | 字段 | 操作员 | 值 |
    |---|---|---|
-   | （在文档上创建。） |  |  |
    | assignedToID | 等于 | 输入系统集成用户的Workfront ID |
    | projectID | 等于 | 输入希望webhook监视的一个或多个项目的ID。 |
 
@@ -528,18 +513,16 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
    | wfBaseURL | 要连接的Workfront帐户的基本URL。 |
 
 1. 启用&#x200B;**排除此连接所做的更新**&#x200B;选项。
+1. 在&#x200B;**记录来源**&#x200B;字段中，选择`New record only`。
 1. 单击&#x200B;**保存**&#x200B;以保存webhook，然后单击&#x200B;**确定**&#x200B;以保存触发器模块。
 1. 在&#x200B;**each** Workfront模块的“连接”字段中，选择使用系统集成凭据的Workfront连接，然后单击&#x200B;**确定**&#x200B;以保存该模块。
 1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择使用系统集成凭据的Jira连接，然后单击&#x200B;**确定**&#x200B;保存模块。
 
-
 +++
 
+### 情景8：Workfront到Jira：在JIRA中创建Workfront任务或问题上的已删除文档的评论
 
-
-### 情景8：WF-to-Jira删除附件（任务和问题）
-
-+++**展开以查看有关配置场景8：WF到Jira删除附件（任务和问题）的说明**
++++**展开以查看有关配置场景8：将Workfront配置为Jira：在JIRA中创建Workfront任务或问题上已删除文档的注释**
 
 1. 单击左侧导航面板中的&#x200B;**模板**&#x200B;选项卡![模板图标](assets/templates-icon.png)。
 1. 使用屏幕左上角附近的搜索栏搜索模板。 您可以按模板名称或包含的应用程序进行搜索。
@@ -548,17 +531,17 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
    此时将打开模板视图，显示信息以及数据流动画。
 1. 在第一个模块中，开始添加webhook。
 1. 在连接字段中，选择使用系统集成凭据的Workfront连接。
-1. 在&#x200B;**记录类型**&#x200B;字段中，选择`??`。
+1. 在&#x200B;**记录类型**&#x200B;字段中，选择`Document`。
 1. 在&#x200B;**状态**&#x200B;字段中，选择`New state`。
-1. 使用&#x200B;**And**&#x200B;选项通过以下操作配置筛选器：
+1. 使用以下操作配置过滤器：
 
    | 字段 | 操作员 | 值 |
    |---|---|---|
-   | （在文档上删除） |  |  |
-   | assignedToID | 等于 | 输入系统集成用户的Workfront ID |
-   | projectID | 等于 | 输入希望webhook监视的一个或多个项目的ID。 |
+   | projectID<br>和<br>任务ID | 等于<br><br>存在 | 输入希望webhook监视的一个或多个项目的ID。 |
+   | 或者 |  |  |
+   | projectID<br>和<br>OpTaskID | 等于<br><br>存在 | 输入希望webhook监视的一个或多个项目的ID。 |
 
-1. 在第二个模块中，设置以下变量。
+1. 在&#x200B;**Set variables**&#x200B;模块中设置以下变量。
 
    | 变量名称 | 变量值 |
    |---|---|
@@ -567,6 +550,7 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
    | wfBaseURL | 要连接的Workfront帐户的基本URL。 |
 
 1. 启用&#x200B;**排除此连接所做的更新**&#x200B;选项。
+1. 在&#x200B;**记录来源**&#x200B;字段中，选择`Deleted record only`。
 1. 单击&#x200B;**保存**&#x200B;以保存webhook，然后单击&#x200B;**确定**&#x200B;以保存触发器模块。
 1. 在&#x200B;**each** Workfront模块的“连接”字段中，选择使用系统集成凭据的Workfront连接，然后单击&#x200B;**确定**&#x200B;以保存该模块。
 1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择使用系统集成凭据的Jira连接，然后单击&#x200B;**确定**&#x200B;保存模块。
