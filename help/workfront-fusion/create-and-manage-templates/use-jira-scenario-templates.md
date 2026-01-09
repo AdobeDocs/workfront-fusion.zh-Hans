@@ -61,7 +61,7 @@ Adobe Workfront Fusion提供了可自动执行Fusion和Jira之间常用工作流
   有关信息和说明，请参阅Adobe文档中的[技术帐户设置](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup)。
 * 您必须在Adobe Admin Console产品配置文件区域将系统管理员权限应用到技术帐户。
 
-  有关信息和说明，请参阅[使用Adobe Admin Console在Workfront中创建系统管理员](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  有关信息和说明，请参阅[使用Adobe Admin Console在Workfront中创建系统管理员](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -156,13 +156,13 @@ When configuring this application, you will need the following scopes:
 
 1. 在Workfront中，创建系统集成用户。 此用户仅由Workfront Fusion使用，不代表人类用户。 分配给此用户的任务将触发将Workfront与Jira同步的方案。
 
-   有关说明，请参阅Workfront文档中的[添加用户](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)。
+   有关说明，请参阅Workfront文档中的[添加用户](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)。
 
 #### 在Workfront中创建自定义表单
 
 1. 在Workfront中，开始创建自定义表单。
 
-   有关说明，请参阅Workfront文档中的[创建自定义表单](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)。
+   有关说明，请参阅Workfront文档中的[创建自定义表单](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)。
 1. 将表单命名为“**JIRA字段**”。
 1. 在自定义表单中包含以下字段：
 
@@ -179,7 +179,7 @@ When configuring this application, you will need the following scopes:
 >
 >我们建议限制其他用户编辑此表单。 为此，您可以确保添加到自定义表单的任何用户仅具有查看权限。
 >
->有关说明，请参阅Workfront文档中的[共享自定义表单](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)。
+>有关说明，请参阅Workfront文档中的[共享自定义表单](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)。
 
 ### 在Workfront Fusion中配置连接
 
