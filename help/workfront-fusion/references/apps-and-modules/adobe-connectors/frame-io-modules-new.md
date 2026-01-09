@@ -4,10 +4,10 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 52dbf75ebb65a1de1a7a86619af4c7633e0cbe03
+source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
 workflow-type: tm+mt
-source-wordcount: '4399'
-ht-degree: 87%
+source-wordcount: '4539'
+ht-degree: 85%
 
 ---
 
@@ -55,7 +55,7 @@ Adobe Workfront Fusion 的 [!DNL Frame.io] 模块可用于在您的 [!DNL Frame.
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
    <p>基于操作：不需要 Workfront Fusion 许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的 Workfront Fusion </p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
@@ -86,7 +86,7 @@ Frame.io 连接器使用以下内容：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">基础 URL</td> 
+   <td role="rowheader">基本 URL</td> 
    <td> https://api.frame.io/v4</td> 
   </tr> 
   <tr> 
@@ -206,7 +206,7 @@ Frame.io 连接器使用以下内容：
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-          <td>输入您的 [!DNL Adobe] [!UICONTROL 客户端密钥]。该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。<p>有关创建凭据的说明，请参阅本文中的<a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">在 Adobe Developer Console 中创建用户凭据</a>。</p>
+          <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。<p>有关创建凭据的说明，请参阅本文中的<a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">在 Adobe Developer Console 中创建用户凭据</a>。</p>
         </tr>
        </tbody>
     </table>
@@ -238,7 +238,7 @@ Frame.io 连接器使用以下内容：
 1. 在打开的页面中找到并点击 **Frame.io API**。
 1. 在“选择身份验证类型”页面，选择&#x200B;**服务器到服务器身份验证**，然后点击&#x200B;**下一步**。
 1. 输入此凭据的名称。此名称将用于在 Adobe Admin Console 的 API 凭据区域中识别该凭据。
-1. 点击&#x200B;**下一步**。
+1. 单击&#x200B;**下一步**。
 1. 在“选择产品轮廓”页面，选择包含您要连接的 Frame.io 帐户的产品轮廓。
 1. 单击&#x200B;**保存配置的 API**。
 1. 在产品页面，点击刚创建的凭据卡片。
@@ -280,7 +280,7 @@ Frame.io 连接器使用以下内容：
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-          <td>输入您的 [!DNL Adobe] [!UICONTROL 客户端密钥]。该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。<p>有关创建凭据的说明，请参阅本文中的<a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">在 Adobe Developer Console 中创建服务器到服务器凭据</a>。</p>
+          <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。<p>有关创建凭据的说明，请参阅本文中的<a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">在 Adobe Developer Console 中创建服务器到服务器凭据</a>。</p>
         </tr>
        </tbody>
     </table>
@@ -312,8 +312,8 @@ Frame.io 连接器使用以下内容：
 * [[!UICONTROL 删除资源]](#delete-an-asset)
 * [[!UICONTROL 获取资源]](#get-an-asset)
 * [[!UICONTROL 列出资源]](#list-assets)
-* [查看已删除的资源](#watch-asset-deleted)
-* [查看新资源](#watch-new-asset)
+* [监控已删除的资源](#watch-asset-deleted)
+* [监控新资源](#watch-new-asset)
 
 #### [!UICONTROL 创建资源] <!--different for v4-->
 
@@ -360,7 +360,7 @@ Frame.io 连接器使用以下内容：
    <td> <p>如果从远程文件创建资产，请输入要上传的文件的URL。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL 源文件]</td> 
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称。</p> </td> 
   </tr> 
 <!--  <tr> 
@@ -488,11 +488,11 @@ Frame.io 连接器使用以下内容：
  </tbody> 
 </table>
 
-#### 查看已删除的资源
+#### 监控已删除的资源
 
 当删除资源时，此触发器模块会启动一个场景。
 
-选择要用于此模块的 webhook，或点击 Webhook 字段旁的“添加”并输入以下信息：
+选择要用于此模块的 Webhook，或点击 Webhook 字段旁的“添加”并输入以下信息：
 
 <table style="table-layout:auto"> 
  <col> 
@@ -502,7 +502,7 @@ Frame.io 连接器使用以下内容：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook 名称] </td> 
-   <td> <p>输入新 webhook 的名称。</p> </td> 
+   <td> <p>输入新 Webhook 的名称。</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL 连接] </td> 
@@ -510,16 +510,16 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 帐户 ID] </td> 
-   <td> <p>选择或映射您希望查看其资源删除事件的帐户 ID。</p> </td> 
+   <td> <p>选择或映射您希望关注其资源删除事件的帐户 ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### 查看新资源
+#### 监控新资源
 
 当创建新资源时，此触发器模块会启动一个场景。
 
-选择要用于此模块的 webhook，或点击 Webhook 字段旁的“添加”并输入以下信息：
+选择要用于此模块的 Webhook，或点击 Webhook 字段旁的“添加”并输入以下信息：
 
 <table style="table-layout:auto"> 
  <col> 
@@ -529,7 +529,7 @@ Frame.io 连接器使用以下内容：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook 名称] </td> 
-   <td> <p>输入新 webhook 的名称。</p> </td> 
+   <td> <p>输入新 Webhook 的名称。</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL 连接] </td> 
@@ -537,7 +537,7 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 帐户 ID] </td> 
-   <td> <p>选择或映射您希望查看其新资源创建事件的帐户 ID。</p> </td> 
+   <td> <p>选择或映射您希望关注其新资源创建事件的帐户 ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -549,8 +549,8 @@ Frame.io 连接器使用以下内容：
 * [[!UICONTROL 获取评论]](#get-a-comment)
 * [[!UICONTROL 列出评论]](#list-comments)
 * [[!UICONTROL 更新评论]](#update-a-comment)
-* [查看更新的评论](#watch-comment-updated)
-* [查看新评论](#watch-new-comment)
+* [监控更新的评论](#watch-comment-updated)
+* [监控新评论](#watch-new-comment)
 
 #### [!UICONTROL 创建评论]
 
@@ -632,7 +632,7 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 帐户 ID] </td> 
-   <td> <p>选择包含您要检索评论详细信息的评论所在帐户，或映射该帐户 ID。</p> </td> 
+   <td> <p>选择包含您要检索详细信息的评论所在帐户，或映射该帐户 ID。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 评论 ID] </td> 
@@ -711,11 +711,11 @@ Frame.io 连接器使用以下内容：
  </tbody> 
 </table>
 
-#### 查看更新的评论
+#### 监控更新的评论
 
 当更新评论时，此触发器模块会启动一个场景。
 
-选择要用于此模块的 webhook，或点击 Webhook 字段旁的“添加”并输入以下信息：
+选择要用于此模块的 Webhook，或点击 Webhook 字段旁的“添加”并输入以下信息：
 
 <table style="table-layout:auto"> 
  <col> 
@@ -725,7 +725,7 @@ Frame.io 连接器使用以下内容：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook 名称] </td> 
-   <td> <p>输入新 webhook 的名称。</p> </td> 
+   <td> <p>输入新 Webhook 的名称。</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL 连接] </td> 
@@ -733,16 +733,16 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 帐户 ID] </td> 
-   <td> <p>选择您想要查看更新评论的帐户，或映射该帐户的 ID。</p> </td> 
+   <td> <p>选择您想要关注更新评论的帐户，或映射该帐户的 ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### 查看新评论
+#### 监控新评论
 
 当创建评论时，此触发器模块会启动一个场景。
 
-选择要用于此模块的 webhook，或点击 Webhook 字段旁的“添加”并输入以下信息：
+选择要用于此模块的 Webhook，或点击 Webhook 字段旁的“添加”并输入以下信息：
 
 <table style="table-layout:auto"> 
  <col> 
@@ -752,7 +752,7 @@ Frame.io 连接器使用以下内容：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook 名称] </td> 
-   <td> <p>输入新 webhook 的名称。</p> </td> 
+   <td> <p>输入新 Webhook 的名称。</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL 连接] </td> 
@@ -760,7 +760,7 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 帐户 ID] </td> 
-   <td> <p>选择或映射您希望查看其新评论的帐户 ID。</p> </td> 
+   <td> <p>选择或映射您希望关注其新评论的帐户 ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -806,7 +806,7 @@ Frame.io 连接器使用以下内容：
 
 * [创建项目](#create-a-project)
 * [邀请用户加入 Frame.io 项目](#invite-users-to-frameio-project)
-* [列出项目 &#x200B;](#list-projects)
+* [列出项目 ](#list-projects)
 
 #### 创建项目
 
@@ -867,7 +867,7 @@ Frame.io 连接器使用以下内容：
  </tbody> 
 </table>
 
-#### [!UICONTROL 列出项目 &#x200B;]
+#### [!UICONTROL 列出项目 ]
 
 此搜索模块会检索指定团队的所有项目。
 
@@ -889,7 +889,7 @@ Frame.io 连接器使用以下内容：
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL 返回项目的最大数量] </td> 
-   <td> <p>输入或映射模块在每次场景执行周期中应返回的项目最大数量。</p> </td> 
+   <td> <p>输入或映射模块在每次场景执行周期中应返回的最大项目数量。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1129,7 +1129,7 @@ Frame.io 连接器使用以下内容：
    <td> <p>选择或映射要从中列出字段的帐户。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 返回的最大协议数]</td> 
+   <td role="rowheader">[！UICONTROL返回的最大协议数]</td> 
    <td> <p>输入或映射您希望模块在每个方案执行周期中返回的最大字段数。</p> </td> 
   </tr> 
  </tbody> 
@@ -1192,11 +1192,11 @@ Frame.io 连接器使用以下内容：
    <td> <p>选择您要在其中创建资源的项目，或映射该项目 ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 文件ID] </td> 
+   <td role="rowheader">[！UICONTROL文件ID] </td> 
    <td> <p>对于每个要更新元数据的文件，单击<b>添加项</b>并输入或映射文件的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values] </td> 
+   <td role="rowheader">[！UICONTROL Values] </td> 
    <td> <p>对于要更新元数据的每个字段，单击<b>添加项</b>，然后输入或映射字段定义的ID以及要放入该字段中的值。 在“文件ID”字段中指定的所有文件都将使用此字段值更新。</p> </td> 
   </tr> 
  </tbody> 
@@ -1205,7 +1205,8 @@ Frame.io 连接器使用以下内容：
 ### 其他
 
 * [发起自定义 API 调用](#make-a-custom-api-call)
-* [查看更新的元数据值](#watch-metadata-value-updated)
+* [观看活动](#watch-events)
+* [监控更新的元数据值](#watch-metadata-value-updated)
 
 
 #### [!UICONTROL 发起自定义 API 调用]
@@ -1238,7 +1239,7 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 正文]</td> 
-   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注释：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注意：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
@@ -1246,11 +1247,53 @@ Frame.io 连接器使用以下内容：
  </tbody> 
 </table>
 
-#### 查看更新的元数据值
+#### 观看活动
+
+此即时触发器模块会在Frame.io中发生选定事件时启动方案。
+
+您可以使用现有的webhook，也可以创建一个新的webhook。
+
+要创建新的 Webhook：
+
+1. 单击 Webhook 字段旁边的&#x200B;**添加**。
+1. 填写以下信息：
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+     <td role="rowheader">Webhook名称 </td> 
+      <td> <p>输入新 Webhook 的名称。</p> </td> 
+     </tr> 
+     <tr> 
+       <td role="rowheader">[!UICONTROL 连接] </td> 
+       <td>有关创建与 [!DNL Frame.io] 的连接的说明，请参阅本文中的<a href="#connect-frameio-to-adobe-workfront-fusion" class="MCXref xref">将 [!DNL Frame.io] 连接到 Adobe Workfront Fusion</a>。</td> 
+     </tr> 
+     <tr> 
+     <td role="rowheader">[!UICONTROL 帐户 ID] </td> 
+      <td> <p>选择或映射包含要监视事件的工作区的帐户。</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL 工作区 ID]</td> 
+      <td> <p>输入要监视活动的工作区的ID。</p> </td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[！UICONTROL事件]</td> 
+      <td> <p>选择要触发此模块的事件</p> </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. 单击&#x200B;**保存**&#x200B;以保存webhook并返回模块。
+1. 在“监视事件”模块中单击&#x200B;**确定**&#x200B;以保存配置。
+
+
+#### 监控更新的元数据值
 
 当更新评论时，此触发器模块会启动一个场景。
 
-选择要用于此模块的 webhook，或点击 Webhook 字段旁的“添加”并输入以下信息：
+选择要用于此模块的 Webhook，或点击 Webhook 字段旁的“添加”并输入以下信息：
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1260,7 +1303,7 @@ Frame.io 连接器使用以下内容：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook 名称] </td> 
-   <td> <p>输入新 webhook 的名称。</p> </td> 
+   <td> <p>输入新 Webhook 的名称。</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader">[!UICONTROL 连接] </td> 
@@ -1268,7 +1311,7 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 帐户 ID] </td> 
-   <td> <p>选择您想要查看元数据值更新的帐户，或映射该帐户的 ID。</p> </td> 
+   <td> <p>选择您想要关注元数据值更新的帐户，或映射该帐户的 ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
