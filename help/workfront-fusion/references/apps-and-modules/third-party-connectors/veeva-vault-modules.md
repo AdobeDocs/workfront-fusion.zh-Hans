@@ -3,9 +3,9 @@ title: Veeva Vault 模块
 description: 在Adobe Workfront Fusion场景中，您可以自动使用Veeva Vault的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 881e5ba39d1730b641085cf0d02137d18e443135
+source-git-commit: b57ae36cf9225705c7f4923d7302b1749aa04d94
 workflow-type: tm+mt
-source-wordcount: '2485'
+source-wordcount: '2539'
 ht-degree: 19%
 
 ---
@@ -115,6 +115,26 @@ ht-degree: 19%
        <td role="rowheader">连接名称</td> 
        <td> <p>输入连接名称。</p> </td> 
       </tr> 
+      <tr> 
+       <td role="rowheader">授权服务器提供程序</td> 
+       <td> <p>选择要用于此身份验证的提供程序。</p> </td> 
+      </tr> 
+      <tr> 
+       <td role="rowheader">Ping主机</td> 
+       <td> <p>如果使用的是PingFederate，请输入Ping主机。</p> </td> 
+      </tr> 
+      <tr>
+        <td role="rowheader">范围</td>
+        <td>
+          <p>输入此连接的范围。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">租户ID</td>
+        <td>
+          <p>如果您正在将Azure AD/Microsoft Entra ID用于授权服务器提供程序，请输入此连接的租户ID。</p>
+        </td>
+      </tr>
       <tr>
         <td role="rowheader">客户端 ID</td>
         <td>
@@ -128,18 +148,6 @@ ht-degree: 19%
         </td>
       </tr>
       <tr>
-        <td role="rowheader">范围</td>
-        <td>
-          <p>输入此连接的范围。</p>
-        </td>
-      </tr>
-      <tr>
-        <td role="rowheader">租户ID</td>
-        <td>
-          <p>输入此连接的租户ID。</p>
-        </td>
-      </tr>
-      <tr>
         <td role="rowheader">配置文件ID</td>
         <td>
           <p>输入OAuth2 / Copen ID Connect配置文件的ID。</p>
@@ -149,6 +157,12 @@ ht-degree: 19%
        <td role="rowheader">保险库DNS</td> 
        <td>输入您的Veeva Vault DNS（域名）。</p><p>要找到Veeva Vault DNS，请检查用于访问Veeva Vault的URL。</p>例如，在URL <code>https://my-dns.veevavault.com</code>中，DNS是<code>my-dns</code>。 您无需输入整个URL。</td> 
       </tr> 
+      <tr>
+        <td role="rowheader">会话过期时间（分钟）</td>
+        <td>
+          <p>输入会话的过期时间（分钟）。</p>
+        </td>
+      </tr>
      </tbody> 
     </table>
 
