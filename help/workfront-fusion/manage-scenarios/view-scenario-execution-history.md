@@ -1,17 +1,17 @@
 ---
-title: 查看方案的执行历史记录
+title: 查看场景的执行历史
 description: 您可以显示有关场景的事件或执行的信息，也可以搜索场景的所有执行以获取特定数据。
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-source-git-commit: 93d06cb917680f9cabc1bad6be0f9cd843449d07
+source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 1%
+source-wordcount: '911'
+ht-degree: 12%
 
 ---
 
-# 查看方案的执行历史记录
+# 查看场景的执行历史
 
 您可以显示有关场景的事件或执行的信息，也可以搜索场景的所有执行以获取特定数据。
 
@@ -23,32 +23,32 @@ ht-degree: 1%
 >
 >方案的历史记录显示方案在过去30天内的所有执行。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
 +++
 
@@ -58,6 +58,10 @@ ht-degree: 1%
 ### 在“历史记录”选项卡上查看方案历史记录
 
 [!UICONTROL 历史记录]选项卡显示的详细信息比[!UICONTROL 方案详细信息]页面上提供的多。 您还可以对[!UICONTROL 历史记录]选项卡上的执行进行过滤和排序。
+
+>[!NOTE]
+>
+>如果在方案历史记录仍在运行时查看它，Fusion将显示一条注释，通知您数据仍在处理中，在处理完成之前，只显示部分方案历史记录。
 
 1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡，然后单击方案。
 
@@ -70,7 +74,7 @@ ht-degree: 1%
 
    针对方案的每次执行都列出了以下详细信息：
 
-   * 运行开始日期&#x200B;**&#x200B;**
+   * 运行开始日期&#x200B;****
    * 执行Id
    * **[!UICONTROL 状态]** （成功或失败）
    * 运行&#x200B;**[!UICONTROL 持续时间]**
@@ -154,7 +158,7 @@ You can sort the scenario execution history.
    >
    >* 执行仅可用于之前的30天。
    >
-   >* Workfront Fusion会存储webhook负载30天。 创建webhook有效负载超过30天后对其进行访问会导致错误“[!UICONTROL 无法从存储中读取文件。]”
+   >* Workfront Fusion 会将 Webhook 的负载存储 30 天。创建webhook有效负载超过30天后对其进行访问会导致错误“[!UICONTROL 无法从存储中读取文件。]”
 
 
 1. （可选）要按状态限制搜索，请在&#x200B;**[!UICONTROL 按状态]**&#x200B;下拉列表中选择所需的状态。
