@@ -9,10 +9,10 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: e6c6e33135f5367c626f83405a0b1e5fbb8f028a
+source-git-commit: 3ae274720ea2d7e4ee823a8467b750ad6f4d0c52
 workflow-type: tm+mt
-source-wordcount: '1091'
-ht-degree: 95%
+source-wordcount: '1098'
+ht-degree: 98%
 
 ---
 
@@ -22,6 +22,7 @@ Adobe Workfront Fusion 可将您的应用程序和网络服务无缝连接，让
 
 ## 2026 年 Fusion 发行版本
 
+* [Workfront Fusion发行活动： 2026年1月19日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
 * [Workfront Fusion发行活动： 2026年1月12日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
 
 
@@ -31,15 +32,15 @@ Adobe Workfront Fusion 可将您的应用程序和网络服务无缝连接，让
 
 ### 2025 年 12 月
 
-* [Workfront Fusion发布活动： 2025年12月15日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
-* [Workfront Fusion发布活动： 2025年12月8日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
-* [Workfront Fusion发行活动： 2025年12月1日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
+* [Workfront Fusion 发行活动：2025 年 12 月 15 日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-15.md)
+* [Workfront Fusion 发行活动：2025 年 12 月 8 日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-8.md)
+* [Workfront Fusion 发行活动：2025 年 12 月 1 日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-12-1.md)
 
 ### 2025 年 11 月
 
-* [Workfront Fusion发行活动： 2025年11月17日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
-* [Workfront Fusion发行活动： 2025年11月10日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
-* [Workfront Fusion发行活动： 2025年11月3日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
+* [Workfront Fusion 发行活动：2025 年 11 月 17 日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
+* [Workfront Fusion 发行活动：2025 年 11 月 10 日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-10.md)
+* [Workfront Fusion 发行活动：2025 年 11 月 3 日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-3.md)
 
 ### 2025 年 10 月
 
