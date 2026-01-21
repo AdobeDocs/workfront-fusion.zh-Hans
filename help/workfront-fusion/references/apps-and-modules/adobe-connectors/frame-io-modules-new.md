@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
 source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4539'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -317,7 +317,7 @@ Frame.io 连接器使用以下内容：
 
 #### [!UICONTROL 创建资源] <!--different for v4-->
 
-此操作模块将创建新资源。 您可以上传本地文件，也可以提供从中创建资产的远程文件的URL。
+此操作模块用于创建一个新的资产。您可以上传本地文件，或提供远程文件的 URL 来创建该资产。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -349,15 +349,15 @@ Frame.io 连接器使用以下内容：
   </tr> -->
     <tr> 
     <td role="rowheader">上传类型 </td> 
-    <td> <p>选择是从本地文件还是从远程生命周期创建资产。</p> </td> 
+    <td> <p>选择是从本地文件还是从远程文件创建资产。</p> </td> 
    </tr>
     <tr> 
     <td role="rowheader">文件大小 </td> 
-    <td> <p>如果要上载本地文件，请输入或映射文件大小（以字节为单位）。</p> </td> 
+    <td> <p>如果您上传的是本地文件，请输入或映射文件大小（以字节为单位）。</p> </td> 
    </tr>
   <tr> 
    <td role="rowheader">[!UICONTROL 源 URL] </td> 
-   <td> <p>如果从远程文件创建资产，请输入要上传的文件的URL。</p> </td> 
+   <td> <p>如果从远程文件创建资产，请输入要上传文件的 URL。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 源文件]</td> 
@@ -372,7 +372,7 @@ Frame.io 连接器使用以下内容：
 
 #### [!UICONTROL 创建资产（旧版）] <!--different for v4-->
 
-此操作模块用于创建新资源。
+此操作模块用于创建一个新的资产。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -407,7 +407,7 @@ Frame.io 连接器使用以下内容：
     <td> <p>输入或映射文件大小（以字节为单位）。</p> </td> 
    </tr>
   <tr> 
-   <td role="rowheader">[!UICONTROL 源 URL] </td> 
+   <td role="rowheader">[!UICONTROL 来源 URL] </td> 
    <td> <p>如果要创建文件，请输入您要上传的文件 URL。</p> </td> 
   </tr> 
   <tr> 
@@ -806,7 +806,7 @@ Frame.io 连接器使用以下内容：
 
 * [创建项目](#create-a-project)
 * [邀请用户加入 Frame.io 项目](#invite-users-to-frameio-project)
-* [列出项目 &#x200B;](#list-projects)
+* [列出项目 ](#list-projects)
 
 #### 创建项目
 
@@ -867,7 +867,7 @@ Frame.io 连接器使用以下内容：
  </tbody> 
 </table>
 
-#### [!UICONTROL 列出项目 &#x200B;]
+#### [!UICONTROL 列出项目 ]
 
 此搜索模块会检索指定团队的所有项目。
 
@@ -1027,16 +1027,16 @@ Frame.io 连接器使用以下内容：
 
 ### 元数据
 
-* [创建帐户级别字段](#create-an-account-level-field)
-* [删除帐户级别字段](#delete-an-account-level-field)
+* [创建帐户级字段](#create-an-account-level-field)
+* [删除帐户级字段](#delete-an-account-level-field)
 * [获取元数据](#get-metadata)
-* [列出帐户级别字段](#list-account-level-fields)
-* [更新帐户级别字段定义](#update-an-account-level-field-definition)
+* [列出帐户级字段](#list-account-level-fields)
+* [更新帐户级字段定义](#update-an-account-level-field-definition)
 * [跨多个文件更新元数据](#update-metadata-across-multiple-files)
 
-#### 创建帐户级别字段
+#### 创建帐户级字段
 
-此操作模块会创建并配置新的帐户级别元数据字段。
+此操作模块用于创建并配置一个新的帐户级元数据字段。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1048,11 +1048,11 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 帐户 ID] </td> 
-   <td> <p>选择或映射要在其中创建元数据的帐户。</p> </td> 
+   <td> <p>选择或映射要创建元数据的帐户。</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">字段类型 </td> 
-   <td> <p>选择要创建的元数据字段类型，然后配置该字段的选项。</p> </td> 
+   <td> <p>选择要创建的元数据字段类型，并配置该字段的相关选项。</p> </td> 
   </tr> 
   </tr> 
    <tr> 
@@ -1062,9 +1062,9 @@ Frame.io 连接器使用以下内容：
  </tbody> 
 </table>
 
-#### 删除帐户级别字段
+#### 删除帐户级字段
 
-此操作模块会删除单个帐户级别的元数据字段。
+此操作模块用于删除单个帐户级元数据字段。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1076,18 +1076,18 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 帐户 ID] </td> 
-   <td> <p>选择或映射包含要删除的元数据字段的帐户。</p> </td> 
+   <td> <p>选择或映射包含要删除元数据字段的帐户。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">字段定义Id </td> 
-   <td> <p>输入或映射要删除的字段的ID。 您可以使用列表帐户级别字段模块查找字段ID。</p> </td> 
+   <td role="rowheader">字段定义 ID </td> 
+   <td> <p>输入或映射要删除字段的 ID。您可以通过“列出帐户级字段”模块查找字段 ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 #### 获取元数据
 
-此操作模块检索Frame.io中文件的元数据。
+此操作模块用于获取 Frame.io 中文件的元数据。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1102,19 +1102,19 @@ Frame.io 连接器使用以下内容：
    <td> <p>选择或映射包含要检索元数据的文件的帐户。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">文件Id </td> 
-   <td> <p>输入或映射要为其检索元数据的文件的ID。</p> </td> 
+   <td role="rowheader">文件 ID </td> 
+   <td> <p>输入或映射要检索元数据的文件 ID。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">显示null </td> 
-   <td> <p>启用此选项以在输出中包含值为null的字段。</p> </td> 
+   <td role="rowheader">显示 null 值 </td> 
+   <td> <p>启用此选项可在输出中包含值为 null 的字段。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### 列出帐户级别字段
+#### 列出帐户级字段
 
-此模块检索指定帐户的帐户级别元数据字段列表。
+此模块用于检索指定帐户的帐户级元数据字段列表。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1126,18 +1126,18 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 帐户 ID] </td> 
-   <td> <p>选择或映射要从中列出字段的帐户。</p> </td> 
+   <td> <p>选择或映射要列出字段的帐户。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 返回的最大协议数]</td> 
-   <td> <p>输入或映射您希望模块在每个方案执行周期中返回的最大字段数。</p> </td> 
+   <td role="rowheader">[!UICONTROL 返回协议的最大数量]</td> 
+   <td> <p>输入或映射模块在每个场景执行周期中返回的最大字段数量。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### 更新帐户级别字段定义
+#### 更新帐户级字段定义
 
-此模块更新单个现有元数据字段的定义。
+此模块用于更新单个现有元数据字段的定义。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1149,15 +1149,15 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 帐户 ID] </td> 
-   <td> <p>选择或映射要在其中创建元数据的帐户。</p> </td> 
+   <td> <p>选择或映射要创建元数据的帐户。</p> </td> 
   </tr> 
    <tr> 
-   <td role="rowheader">字段定义Id </td> 
-   <td> <p>输入或映射要更新的字段的ID。 您可以使用列表帐户级别字段模块查找字段ID。</p> </td> 
+   <td role="rowheader">字段定义 ID </td> 
+   <td> <p>输入或映射要更新字段的 ID。您可以通过“列出帐户级字段”模块查找字段 ID。</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">字段类型 </td> 
-   <td> <p>如果要更改字段的字段类型，请选择要创建的元数据字段类型，然后配置该字段的选项。</p> </td> 
+   <td> <p>如果要更改字段类型，请选择要创建的元数据字段类型，并配置该字段的相关选项。</p> </td> 
   </tr> 
   </tr> 
    <tr> 
@@ -1169,7 +1169,7 @@ Frame.io 连接器使用以下内容：
 
 #### 跨多个文件更新元数据
 
-此模块使用您指定的值更新一个或多个文件上的元数据字段。
+此模块用于将指定的值更新到一个或多个文件的元数据字段中。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1181,7 +1181,7 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 帐户 ID] </td> 
-   <td> <p>选择或映射包含要为其更新元数据的文件的帐户。</p> </td> 
+   <td> <p>选择或映射包含要更新元数据文件的帐户。</p> </td> 
   </tr> 
  <tr> 
    <td role="rowheader">[!UICONTROL 工作区 ID] </td> 
@@ -1192,12 +1192,12 @@ Frame.io 连接器使用以下内容：
    <td> <p>选择您要在其中创建资源的项目，或映射该项目 ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 文件ID] </td> 
-   <td> <p>对于每个要更新元数据的文件，单击<b>添加项</b>并输入或映射文件的ID。</p> </td> 
+   <td role="rowheader">[!UICONTROL 文件 ID] </td> 
+   <td> <p>对于每个要更新元数据的文件，点击<b>添加项目</b>，然后输入或映射文件的 ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values] </td> 
-   <td> <p>对于要更新元数据的每个字段，单击<b>添加项</b>，然后输入或映射字段定义的ID以及要放入该字段中的值。 在“文件ID”字段中指定的所有文件都将使用此字段值更新。</p> </td> 
+   <td role="rowheader">[!UICONTROL 值] </td> 
+   <td> <p>对于每个要更新的元数据字段，点击<b>添加项目</b>，并输入或映射字段定义的 ID 以及要写入该字段的值。“文件 ID”字段中指定的所有文件都会更新为该字段值。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1205,7 +1205,7 @@ Frame.io 连接器使用以下内容：
 ### 其他
 
 * [发起自定义 API 调用](#make-a-custom-api-call)
-* [观看活动](#watch-events)
+* [监控事件](#watch-events)
 * [监控更新的元数据值](#watch-metadata-value-updated)
 
 
@@ -1247,11 +1247,11 @@ Frame.io 连接器使用以下内容：
  </tbody> 
 </table>
 
-#### 观看活动
+#### 监控事件
 
-此即时触发器模块会在Frame.io中发生选定事件时启动方案。
+当 Frame.io 中发生所选事件时，此即时触发器模块会启动一个场景。
 
-您可以使用现有的webhook，也可以创建一个新的webhook。
+您可以使用现有的 Webhook，或创建一个新的 Webhook。
 
 要创建新的 Webhook：
 
@@ -1263,7 +1263,7 @@ Frame.io 连接器使用以下内容：
     <col> 
     <tbody> 
      <tr> 
-     <td role="rowheader">Webhook名称 </td> 
+     <td role="rowheader">Webhook 名称 </td> 
       <td> <p>输入新 Webhook 的名称。</p> </td> 
      </tr> 
      <tr> 
@@ -1272,11 +1272,11 @@ Frame.io 连接器使用以下内容：
      </tr> 
      <tr> 
      <td role="rowheader">[!UICONTROL 帐户 ID] </td> 
-      <td> <p>选择或映射包含要监视事件的工作区的帐户。</p> </td> 
+      <td> <p>选择或映射包含要监控事件的工作区的帐户。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 工作区 ID]</td> 
-      <td> <p>输入要监视活动的工作区的ID。</p> </td> 
+      <td> <p>输入要监控事件的工作区 ID。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 事件]</td> 
@@ -1285,8 +1285,8 @@ Frame.io 连接器使用以下内容：
     </tbody> 
    </table>
 
-1. 单击&#x200B;**保存**&#x200B;以保存webhook并返回模块。
-1. 在“监视事件”模块中单击&#x200B;**确定**&#x200B;以保存配置。
+1. 点击&#x200B;**保存**&#x200B;以保存 Webhook 并返回模块。
+1. 在监控事件模块中点击&#x200B;**确定**&#x200B;以保存配置。
 
 
 #### 监控更新的元数据值
