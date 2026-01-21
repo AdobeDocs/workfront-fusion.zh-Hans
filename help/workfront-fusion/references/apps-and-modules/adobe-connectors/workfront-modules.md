@@ -214,9 +214,9 @@ Workfront 连接器使用 OAuth 2.0 与 Workfront 建立连接。
 
 +++ **[!UICONTROL 监控事件]**
 
-在Workfront中添加、更新或删除特定类型的对象时，此触发器模块会实时执行场景。
+当在 Workfront 中创建、更新或删除特定类型的对象时，此触发器模块会实时执行一个场景。
 
-模块会显示与webhook相关的所有事件预订。 这包括通过Fusion创建的事件订阅以及直接通过API创建的事件订阅。 此事件订阅视图在旧版Watch Events模块中不可用。
+该模块会显示与该 Webhook 相关的所有事件订阅。这包括通过 Fusion 创建的事件订阅，以及直接通过 API 创建的事件订阅。旧版监控事件模块中不提供此事件订阅视图。
 
 该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
@@ -1189,7 +1189,7 @@ See a list of the Workfront object types for which you can use this module in [W
    <td>根据关联记录的类型，您可能需要填写或映射文件夹 ID。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 源文件]</td> 
+   <td>[!UICONTROL 来源文件]</td> 
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </td> 
   </tr> 
  </tbody> 
