@@ -1,17 +1,17 @@
 ---
-title: 使用AI生成场景区段
+title: 使用 AI 生成场景区段
 description: 您可以使用AI输入文本提示，描述需要场景区段执行的操作。 然后，Fusion将生成一个或多个执行这些操作的模块，您可以在场景中使用这些模块。
 author: Becky
 feature: Workfront Fusion
 exl-id: d231e33a-6033-4e3c-b1d4-7034797c45a5
-source-git-commit: c83070a7c2d1d048000a4eace4aaede73c7ec49d
+source-git-commit: 2bec2607d55e4ba2ffd6ddcae6daa51071b204c4
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 1%
+ht-degree: 19%
 
 ---
 
-# 使用AI生成场景区段
+# 使用 AI 生成场景区段
 
 <!--DO NOT DELETE - linked through CSH-->
 
@@ -25,41 +25,43 @@ ht-degree: 1%
 
 与从AI生成的任何内容一样，我们建议您仔细检查并测试生成的模块，以确保它们按预期执行。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-+++##先决条件
++++
+
+## 先决条件
 
 您的组织必须满足以下先决条件才能使用此功能：
 
 * 贵组织必须已参与Workfront AI助理Beta计划。
 * Adobe必须为贵组织记录在案的Adobe Gen AI协议。
 
-  有关签署协议的更多信息，请参阅Adobe文档中的AI Assistant概述一文中的[签署Workfront Gen AI协议](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)。
+  有关签署协议的更多信息，请参阅Adobe文档中的AI Assistant概述一文中的[签署Workfront Gen AI协议](https://experienceleague.adobe.com/en/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)。
 
 ## 当前支持的AI模块应用程序
 
@@ -68,9 +70,9 @@ Fusion AI当前可以生成连接到以下应用程序的模块：
 * Adobe Firefly
 * Azure OpenAI
 * Microsoft Graph
-* Adobe Workfront规划
+* Adobe Workfront 规划
 * Adobe Analytics
-* Adobe PDF服务
+* Adobe PDF Services
 * Adobe Marketo
 * Adobe Frame.io
 * Dropbox
