@@ -59,4 +59,4 @@ ht-degree: 100%
 
 ### 在社区论坛中查找答案
 
-* **提出问题**：如果文档未能解答您的问题，可前往 [Workfront Fusion 社区论坛](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2)发帖，其他用户和专家会提供帮助。
+* **提出问题**：如果文档未能解答您的问题，可前往 [Workfront Fusion 社区论坛](https://experienceleaguecommunities.adobe.com/t5/workfront-fusion/ct-p/workfront-fusion-2?profile.language=zh-Hans)发帖，其他用户和专家会提供帮助。
