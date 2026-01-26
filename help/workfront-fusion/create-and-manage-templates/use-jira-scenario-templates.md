@@ -2,20 +2,18 @@
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: scenarios
-title: 使用模板连接Adobe Workfront Fusion和Jira
+title: 使用模板连接 Adobe Workfront Fusion 和 Jira
 description: 使用这些模板可自动执行Adobe Workfront Fusion和Jira之间的工作流。
 author: Becky
 feature: Workfront Fusion
-hide: true
-hidefromtoc: true
-source-git-commit: c3d1abb898eec6fc84dc1de0fb7799d13d9e3571
+source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
 workflow-type: tm+mt
 source-wordcount: '4171'
 ht-degree: 3%
 
 ---
 
-# 使用模板连接Adobe Workfront Fusion和Jira
+# 使用模板连接 Adobe Workfront Fusion 和 Jira
 
 Adobe Workfront Fusion提供了可自动执行Fusion和Jira之间常用工作流的模板。
 
@@ -61,7 +59,7 @@ Adobe Workfront Fusion提供了可自动执行Fusion和Jira之间常用工作流
   有关信息和说明，请参阅Adobe文档中的[技术帐户设置](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup)。
 * 您必须在Adobe Admin Console产品配置文件区域将系统管理员权限应用到技术帐户。
 
-  有关信息和说明，请参阅[使用Adobe Admin Console在Workfront中创建系统管理员](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  有关信息和说明，请参阅[使用Adobe Admin Console在Workfront中创建系统管理员](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -156,13 +154,13 @@ When configuring this application, you will need the following scopes:
 
 1. 在Workfront中，创建系统集成用户。 此用户仅由Workfront Fusion使用，不代表人类用户。 分配给此用户的任务将触发将Workfront与Jira同步的方案。
 
-   有关说明，请参阅Workfront文档中的[添加用户](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)。
+   有关说明，请参阅Workfront文档中的[添加用户](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)。
 
 #### 在Workfront中创建自定义表单
 
 1. 在Workfront中，开始创建自定义表单。
 
-   有关说明，请参阅Workfront文档中的[创建自定义表单](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)。
+   有关说明，请参阅Workfront文档中的[创建自定义表单](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)。
 1. 将表单命名为“**JIRA字段**”。
 1. 在自定义表单中包含以下字段：
 
@@ -179,7 +177,7 @@ When configuring this application, you will need the following scopes:
 >
 >我们建议限制其他用户编辑此表单。 为此，您可以确保添加到自定义表单的任何用户仅具有查看权限。
 >
->有关说明，请参阅Workfront文档中的[共享自定义表单](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)。
+>有关说明，请参阅Workfront文档中的[共享自定义表单](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)。
 
 ### 在Workfront Fusion中配置连接
 
@@ -323,7 +321,7 @@ Awaiting feedback-->
 #### 将模板模块连接到Workfront和Jira（模块2）
 
 1. 在&#x200B;**每个** Workfront模块的连接字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**&#x200B;保存与该模块的连接。
-1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**&#x200B;保存与该模块的连接。
+1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**保存与该模块的连接。
    <!--#### Map custom fields-->
 
 +++

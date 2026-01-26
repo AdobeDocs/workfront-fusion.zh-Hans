@@ -1,17 +1,17 @@
 ---
-title: 当前可用的Adobe Workfront Fusion模板
+title: 当前可用的 Adobe Workfront Fusion 模板
 description: Adobe Workfront Fusion中当前提供以下公共模板。
 author: Becky
 feature: Workfront Fusion
 exl-id: b14bed4d-3503-42cf-a8c3-618d3b2448b4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 4ede5c7a75725a6540d6a8ff9cd056e6147d5c55
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1660'
 ht-degree: 0%
 
 ---
 
-# 当前可用的Adobe Workfront Fusion模板
+# 当前可用的 Adobe Workfront Fusion 模板
 
 Adobe Workfront Fusion中当前提供以下公共模板。
 
@@ -23,7 +23,7 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 这些模板可自动化Workfront流程和工作流。
 
-### [!BADGE 新建！ &#x200B;]{type=Informative} Workfront — 当任务提早完成时，自动调整项目时间表
+### Workfront — 当任务提早完成时，自动调整项目时间线
 
 <!--New June 10, 2025-->
 
@@ -33,13 +33,13 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 此Fusion模板可自动完成该过程。 当任务提早完成时，所有依赖（后续）任务都会自动重新计划以更快地开始，从而帮助您的团队更快地行动并保持敏捷。
 
-### [!BADGE 新建！ &#x200B;]{type=Informative} HTTP>CSV>WF — 按域和层创建事件子列表并导出到CSV
+### [!BADGE 新建！ ]{type=Informative} HTTP>CSV>WF — 按域和层创建事件子列表并导出到CSV
 
 下载事件订阅信息，创建CSV文件，然后将该文件上传到Workfront。
 
 <!--New August 8, 2025-->
 
-### [!BADGE 新建！ &#x200B;]{type=Informative}个Workfront展示板 — 从指定列中删除已存档的卡片（按需）
+### Workfront展示板 — 从指定列删除存档的信息卡（按需）
 
 <!--New March 12, 2025-->
 
@@ -117,7 +117,7 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 这些模板可自动执行将Workfront与Workfront Proof相结合的工作流。
 
-### [!BADGE 新建！ &#x200B;]{type=Informative} Workfront > Workfront Proof — 将验证用户角色更改为只读并在项目关闭时锁定验证
+### Workfront > Workfront Proof — 将验证用户角色更改为只读，并在项目关闭时锁定验证
 
 <!--New March 12, 2025-->
 
@@ -184,7 +184,7 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 这些模板支持Workfront-Anaplan集成，并期待在Workfront中的Anaplan中进行特定配置。 有关这些模板及其所需配置的信息，请参阅各个模板的文章。
 
-有关Workfront-Anaplan集成的详细信息，请参阅Workfront文档中的[Adobe Workfront与Anaplan](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)。
+有关Workfront-Anaplan集成的详细信息，请参阅Workfront文档中的[Adobe Workfront与Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)。
 
 >[!NOTE]
 >
@@ -192,19 +192,34 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 ### 支出优化工作流
 
-* [将Adobe Workfront项目更新发送到 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [将Adobe Workfront费用发送到 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [向 [!DNL Anaplan] 列表项发送Adobe Workfront实际小时数更新](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [将Adobe Workfront项目更新发送到 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [将Adobe Workfront费用发送到 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [向 [!DNL Anaplan] 列表项发送Adobe Workfront实际小时数更新](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### 用于链接预算请求的工作流
 
-* [根据Adobe Workfront预算请求创建 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [将 [!DNL Anaplan] 预算分配应用于Adobe Workfront项目](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [根据Adobe Workfront预算请求创建 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [将 [!DNL Anaplan] 预算分配应用于Adobe Workfront项目](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### 用于链接营销活动请求的工作流
 
-* [根据Adobe Workfront营销活动请求创建 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [将 [!DNL Anaplan] 预算分配应用于Adobe Workfront营销活动请求或营销活动项目](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [根据Adobe Workfront营销活动请求创建 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [将 [!DNL Anaplan] 预算分配应用于Adobe Workfront营销活动请求或营销活动项目](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+
+## Workfront - Jira模板
+
+这些模板代表Workfront和Jira之间的通用工作流。
+
+有关这些模板的详细信息，请参阅[使用模板连接Adobe Workfront Fusion和Jira](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md)。
+
+* [Workfront到Jira：从Workfront任务或问题分配创建JIRA问题](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-1-workfront-to-jira-create-jira-issue-from-workfront-task-or-issue-assignment)
+* [JIRA到Workfront： JIRA到Workfront：将问题和评论的更新从Jira发送回Workfront](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-2-jira-to-workfront-send-updates-on-issues-and-comments-back-to-workfront-from-jira)
+* [Workfront到Jira：将Workfront任务更改为JIRA问题](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-3-workfront-to-jira-changes-to-workfront-task-to-jira-issue)
+* [Workfront到Jira：将Workfront问题更改为JIRA问题](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-4-workfront-to-jira-changes-to-workfront-issue-to-jira-issue)
+* [Workfront到Jira：在有关Workfront任务或问题的新注释时在JIRA中创建评论](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-5-workfront-to-jira-create-comment-in-jira-when-new-note-on-workfront-task-or-issue)
+* [Workfront到Jira：在JIRA中创建Workfront任务或问题已删除注释的评论](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-6-workfront-to-jira-create-comment-in-jira-on-deleted-note-on-workfront-task-or-issue)
+* [从Workfront到Jira：新建有关Workfront任务或问题的文档时，在JIRA中创建评论](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-7-workfront-to-jira-create-comment-in-jira-when-new-document-on-workfront-task-or-issue)
+* [从Workfront到Jira：在JIRA中创建Workfront任务或问题上已删除文档的评论](/help/workfront-fusion/create-and-manage-templates/use-jira-scenario-templates.md#scenario-8-workfront-to-jira-create-comment-in-jira-on-deleted-document-on-workfront-task-or-issue)
 
 
 <!--[!BADGE New!]{type=Informative} -->
