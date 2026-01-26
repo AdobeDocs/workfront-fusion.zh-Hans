@@ -33,7 +33,7 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 此Fusion模板可自动完成该过程。 当任务提早完成时，所有依赖（后续）任务都会自动重新计划以更快地开始，从而帮助您的团队更快地行动并保持敏捷。
 
-### [!BADGE 新建！ ]{type=Informative} HTTP>CSV>WF — 按域和层创建事件子列表并导出到CSV
+### [!BADGE 新建！ &#x200B;]{type=Informative} HTTP>CSV>WF — 按域和层创建事件子列表并导出到CSV
 
 下载事件订阅信息，创建CSV文件，然后将该文件上传到Workfront。
 
