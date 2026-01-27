@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 source-git-commit: ab12dbf0dbad25a8300eb1201fa3e0fde9148acc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7366'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 99%
 
 +++
 
-## 将Workfront连接到Workfront Fusion
+## 将 Workfront 连接到 Workfront Fusion
 
 Workfront 连接器使用 OAuth 2.0 与 Workfront 建立连接。
 
@@ -1034,7 +1034,7 @@ Workfront 最近发布了新版事件订阅服务。该新版并未更改 Workfr
 
 有关新版事件订阅的更多信息，请参阅 Workfront 文档中[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
 
-如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=zh-Hans)。
+如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)。
 
 <table style="table-layout:auto">
  <col> 
@@ -2362,7 +2362,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   有关新版事件订阅的更多信息，请参阅 Workfront 文档中[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
 >
->   如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=zh-Hans）]。
+>   如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182）]。
 
 Workfront 的[!UICONTROL 监控事件]模块会根据一个在 Workfront API 中创建事件订阅的 Webhook 来触发场景。事件订阅是一组数据，用于确定哪些事件会发送至该 Webhook。例如，如果您设置一个监控问题的[!UICONTROL 监控事件]模块，则该事件订阅只会将与问题相关的事件发送过来。
 
