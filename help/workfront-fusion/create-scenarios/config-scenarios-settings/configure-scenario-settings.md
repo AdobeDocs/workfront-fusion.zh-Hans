@@ -1,47 +1,47 @@
 ---
 content-type: reference
-title: 配置方案设置
+title: 配置场景设置
 description: 您可以在方案设置面板中配置方案的特定设置。
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
 workflow-type: tm+mt
-source-wordcount: '1279'
-ht-degree: 0%
+source-wordcount: '1293'
+ht-degree: 7%
 
 ---
 
-# 配置方案设置
+# 配置场景设置
 
 您可以在方案设置面板中配置方案的特定设置。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
 +++
 
@@ -186,3 +186,7 @@ Workfront >观察记录模块中的最大周期数设置为`10`。
 >* 多个工作线程池与您的组织相关联。
 
 此设置会将方案分配给与您的组织关联的特定工作人员池，从而允许您将资源专用于高优先级方案。
+
+>[!NOTE]
+>
+>组织可以请求额外配置一个工作线程池（共2个）。
