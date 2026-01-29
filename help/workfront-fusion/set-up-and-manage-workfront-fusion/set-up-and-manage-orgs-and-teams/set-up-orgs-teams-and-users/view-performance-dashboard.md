@@ -5,9 +5,9 @@ author: Becky
 feature: Workfront Fusion
 hide: true
 hidefromtoc: true
-source-git-commit: 0b9f972a0d051db6771f5a54d8af57cdee8b0ce6
+source-git-commit: 85b7a5e07ef7d3169b31f91bc54d4cb246199443
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '534'
 ht-degree: 9%
 
 ---
@@ -51,9 +51,13 @@ Fusion Performance Dashboard允许您快速查看哪些场景运行得最多、�
 >
 >指标按工作线程池显示。 要查看其他工作线程池，请单击仪表板左上角附近的池字段，然后选择要查看其指标的池。
 
+<!--
+
 >[!NOTE]
 >
->组织可以请求配置一个额外的工作程序池（共2个）。
+>Organizations can request provisioning for one additional worker pool (for a total of 2).
+
+-->
 
 在Fusion性能仪表板中，您可以看到以下量度。
 
