@@ -3,10 +3,10 @@ title: API 概述
 description: 应用程序编程接口（API）是一种使应用程序与服务之间能够相互通信的方式。Fusion 通过 API 与您要连接的应用程序进行通信。每个应用程序都有各自独立的 API。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: b30aac8040cc0b6bcad92914b1c0997a8ddebdd5
-workflow-type: ht
-source-wordcount: '431'
-ht-degree: 100%
+source-git-commit: 74308a6a43418296b29739f03683f23357d545bc
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 87%
 
 ---
 
@@ -17,6 +17,12 @@ ht-degree: 100%
 应用程序编程接口（API）是一种使应用程序与服务之间能够相互通信的方式。Fusion 依靠 API 与您所连接的应用程序进行交互。
 
 API 由应用程序的所有者创建并维护。例如，Workfront API 由 Adobe 的 Workfront 团队维护，而 Microsoft Graph API 则由 Microsoft 负责。API 的所有者决定 API 可提供哪些操作。
+
+>[!NOTE]
+>
+>Workfront Fusion具有自己的API，您可以使用它在Fusion中自动执行操作。
+>这些API正在逐步发布，目前标记为试验性的。 Fusion团队正在积极开发和扩展API，并且随着新功能的推出，将发布更新。
+>有关Workfront Fusion API的文档，请参阅[Workfront Fusion API](https://developer.adobe.com/workfront-fusion-apis/)。
 
 ## 注意事项
 
