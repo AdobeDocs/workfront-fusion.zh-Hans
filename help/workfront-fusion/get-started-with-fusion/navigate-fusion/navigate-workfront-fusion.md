@@ -4,8 +4,8 @@ description: 打开 Fusion 后，您可以选择执行多种操作。本文将�
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-source-git-commit: b54a2ae43efb44ebd002357d7b2269f40523bc9f
-workflow-type: ht
+source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 本文将介绍这些区域，并提供指向各区域详细信息的链接。
 
 | 区域 | 描述 | 有关更多信息，请参阅 |
-|---|---|---|
+| --- | --- | --- |
 | 组织概述<br> ![组织图标](assets/org-icon.png) | 在此，您可以查看 Fusion 组织的相关信息。您可以查看此组织中各个场景执行的操作次数，以及正在运行的场景列表。您还可以查看该组织的团队、用户和环境列表。<br>当前选定的组织会显示在此图标上方。 | [组织和团队](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | 团队概述 <br> ![团队图标](assets/team-icon.png) | 在此，您可以查看 Fusion 团队的相关信息，例如该团队中场景执行的操作次数和正在运行的场景列表。您还可以查看并管理此团队中的用户。在查看团队时，您可以通过页面顶部的下拉菜单切换到其他团队。<br>当前选定的团队会显示在此图标上方。<br>在查看团队概述或本文列出的团队相关区域之前，您可能需要先创建一个团队。 | [组织和团队](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/org-and-team-overview.md) |
 | 场景  <br> ![场景图标](assets/scenarios-icon.png) | Fusion 中的场景代表一个自动化工作流。例如，一个场景可能会监控传入的 Workfront 请求并将其转换为项目；另一个场景可能会生成图像、将其上传到文档提供商，并在 Workfront 中添加审核任务。您在 Fusion 中的大部分工作都是配置和管理场景。在“场景”区域，您可以查看和整理团队的场景列表，选择单个场景进行查看或修改，或开始创建一个新场景。 | [场景概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md) |
