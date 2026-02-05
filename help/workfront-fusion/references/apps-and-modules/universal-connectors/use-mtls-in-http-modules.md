@@ -4,7 +4,7 @@ description: 您可以在Adobe Workfront Fusion HTTP模块中使用双方TLS，�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: b48b7ad0954208ae80e99501e9297a3adaede228
+source-git-commit: e0b25da3d0c7a2cab454adafc7525f14c4f0b4eb
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 16%
@@ -79,7 +79,7 @@ ht-degree: 16%
 
 您可以使用以下链接下载Workfront Fusion公共证书。 列入允许列表要查找数据中心，请参阅组织的“为Fusion配置IP地址”一文中的[识别数据中心](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-up-ip-addresses-for-fusion.md)。
 
-### 2025年证书
+### 2026年证书
 
 >[!IMPORTANT]
 >
