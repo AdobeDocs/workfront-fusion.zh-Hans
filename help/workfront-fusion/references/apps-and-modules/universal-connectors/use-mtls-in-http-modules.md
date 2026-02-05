@@ -4,9 +4,9 @@ description: 您可以在Adobe Workfront Fusion HTTP模块中使用双方TLS，�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: e0b25da3d0c7a2cab454adafc7525f14c4f0b4eb
+source-git-commit: 6a4bf090e7804f0b2b9ca6eefbb7490d1c35b6ce
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '866'
 ht-degree: 16%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 16%
 
 >[!IMPORTANT]
 >
->* 这些Workfront Fusion公共证书将在&#x200B;**2027年3月2日**（美国和EU）或&#x200B;**2027年3月8日**(Azure)过期。 您的证书过期后，您需要向Web服务上传新证书。 我们建议您：
+>* 这些Workfront Fusion公共证书的过期日期各不相同，具体取决于您的集群。 请查看下图以查看您的过期时间。 过期后，您需要向Web服务上传新证书。 我们建议您：
 >
 >   * 记下过期日期，并设置一个提醒，提醒您自己将证书上传到您的Web服务。
 >   * 将此页加入书签以轻松查找新证书。
@@ -92,9 +92,10 @@ ht-degree: 16%
 
 | 数据中心 | 下载链接 | 日期有效 |
 | --- | --- | --- |
-| 美国数据中心 | [下载Workfront Fusion US证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | 2026年1月29日至2027年3月2日 |
-| 欧盟数据中心 | [下载Workfront Fusion EU证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 2026年1月29日至2027年3月2日 |
-| Azure群集 | [下载Workfront Fusion Azure证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 2026年2月4日至2027年3月8日 |
+| 美国AWS数据中心 | [下载Workfront Fusion US证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | 2026年1月29日至2027年3月2日 |
+| US Azure群集 | [下载Workfront Fusion US Azure证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | 2025年9月21日至2026年10月23日 |
+| 欧盟AWS数据中心 | [下载Workfront Fusion EU证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 2026年1月29日至2027年3月2日 |
+| EU Azure群集 | [下载Workfront Fusion EU Azure证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 2026年2月4日至2027年3月8日 |
 
 
 ### 2025年证书
