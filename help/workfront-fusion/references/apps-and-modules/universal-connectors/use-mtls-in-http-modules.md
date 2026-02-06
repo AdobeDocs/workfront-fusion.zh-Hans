@@ -4,7 +4,7 @@ description: 您可以在Adobe Workfront Fusion HTTP模块中使用双方TLS，�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
-source-git-commit: 6a4bf090e7804f0b2b9ca6eefbb7490d1c35b6ce
+source-git-commit: 47600e6e07ea07336557338cbb3037c3bffe9321
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 16%
@@ -96,7 +96,6 @@ ht-degree: 16%
 | US Azure群集 | [下载Workfront Fusion US Azure证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | 2025年9月21日至2026年10月23日 |
 | 欧盟AWS数据中心 | [下载Workfront Fusion EU证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 2026年1月29日至2027年3月2日 |
 | EU Azure群集 | [下载Workfront Fusion EU Azure证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 2026年2月4日至2027年3月8日 |
-
 
 ### 2025年证书
 
