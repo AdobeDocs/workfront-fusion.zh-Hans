@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 0c91cd108c7350a9e2d790ca71e6d4edbd4a461b
+source-git-commit: 84deef6c58e18d526788727611932d7fe10d3210
 workflow-type: tm+mt
-source-wordcount: '2015'
-ht-degree: 98%
+source-wordcount: '2032'
+ht-degree: 97%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 98%
 * Fusion 发行活动 {#fusion-release-activity}
    * [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion 版本 - 2025 {#fusion-releases-2025}
+      * [Workfront Fusion发行活动： 2026年2月9日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
       * [Workfront Fusion发行活动： 2026年2月2日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
       * [Workfront Fusion发行活动： 2026年1月26日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
       * [Workfront Fusion 发行活动：2026 年 1 月 19 日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
@@ -150,7 +151,7 @@ ht-degree: 98%
 * 开始使用 Workfront Fusion {#get-started-with-fusion}
    * [开始使用 Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
    * 了解 Workfront Fusion  {#understand-workfront-fusion}
-      * [了解 Workfront Fusion &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
+      * [了解 Workfront Fusion ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
       * [Adobe Workfront Fusion 概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
       * [Adobe Workfront Fusion 术语表](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
       * [场景概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)
@@ -219,7 +220,8 @@ ht-degree: 98%
    * 映射数据 {#map-data}
       * [映射数据](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
       * [将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)
-      * [使用函数映射项目](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+      * [使用内置函数映射项](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md)
+      * [使用自定义函数映射数据](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)
       * [映射数组及数组元素](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)
       * [在模块之间映射文件](/help/workfront-fusion/create-scenarios/map-data/map-files.md)
       * [数据存储](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)
@@ -335,6 +337,7 @@ ht-degree: 98%
          * [Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
          * [在 Adobe Workfront Fusion 的 HTTP 模块中使用双向 TLS](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
       * Adobe 连接器 {#adobe-connectors}
+         * [Adobe App Builder模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md)
          * [Adobe Acrobat Sign 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
          * [Adobe Authenticator 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
          * [Adobe Campaign 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
