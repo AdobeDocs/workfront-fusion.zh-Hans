@@ -68,7 +68,7 @@ ht-degree: 31%
    <td>选择要运行的自定义函数。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL参数] </td> 
+   <td role="rowheader">[!UICONTROL 参数] </td> 
    <td>输入函数参数的值。 可用参数基于创建函数时配置的参数。<p>如果某个参数具有默认值，则您将不会在字段中看到该默认值，但可以通过在字段中输入或映射值来覆盖该默认值。</p></td> 
   </tr> 
    </tbody> 
