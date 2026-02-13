@@ -1,53 +1,61 @@
 ---
-title: 使用函数映射项
-description: 映射项时，可以使用函数创建简单或复杂的公式。
+title: 使用内置函数映射项
+description: 在映射项目时，您可以使用函数创建简单或复杂的公式。
 author: Becky
 feature: Workfront Fusion
 exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 3c726c1df589785719c0f141fbd5bc17194cc218
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 0%
+source-wordcount: '711'
+ht-degree: 24%
 
 ---
 
-# 使用函数映射项
+# 使用内置函数映射项
 
-映射项时，可以使用函数创建简单或复杂的公式。 可用的函数类似于Excel中的函数以及某些编程语言中的函数：
+Workfront Fusion包含内置函数，可让您创建简单或复杂的公式。 这些函数涵盖了各种用例，包括用于数组、字符串、数字和来自之前模块的数据的函数。
 
-* 它们评估一般逻辑、数学、文本、日期和数组。
-* 它们允许您执行条件逻辑和项值的转换，例如将文本转换为大写、修剪文本、将日期转换为不同格式等。
+此外，您可以创建自定义函数，然后场景可以使用这些函数转换和处理数据。
 
-## 访问要求
+有关自定义函数的信息和说明，请参阅[使用自定义函数映射数据](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)。
 
-+++ 展开以查看本文中各项功能的访问要求。
+## 访问权限要求
+
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p><ul><li>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li><li>您必须拥有Adobe App Builder许可证才能使用自定义函数。</ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
 +++
 
-## 在字段中插入函数
+## 使用内置函数映射数据
+
+在映射项目时，您可以使用函数创建简单或复杂的公式。可用的函数与 Excel 以及某些编程语言中的函数类似：
+
+* 它们可用于处理通用逻辑、数学、文本、日期和数组。
+* 它们允许您对项目值执行条件逻辑和转换，例如将文本转换为大写、裁剪文本、将日期转换为其他格式等。
+
+### 在字段中插入函数
 
 要将函数插入到字段中，请执行以下操作：
 
@@ -86,7 +94,7 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## 嵌套函数
+### 嵌套函数
 
 可以将函数相互嵌套。
 
@@ -112,7 +120,7 @@ ht-degree: 0%
 1. 根据需要继续配置函数。
 1. 继续配置模块，或单击&#x200B;**确定**。
 
-## 使用[!DNL Google Sheets]函数
+### 使用[!DNL Google Sheets]函数
 
 如果Workfront Fusion不提供您要使用的功能，但它由[!DNL Google Sheets]提供，您可以按照以下步骤使用它：
 
