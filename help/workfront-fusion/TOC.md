@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 84deef6c58e18d526788727611932d7fe10d3210
+source-git-commit: 5e7a879ee69bea03aed5a936fe0962acdd3a3014
 workflow-type: tm+mt
-source-wordcount: '2032'
+source-wordcount: '2039'
 ht-degree: 97%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 97%
 * Fusion 发行活动 {#fusion-release-activity}
    * [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion 版本 - 2025 {#fusion-releases-2025}
+      * [Workfront Fusion发行活动： 2026年2月16日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-16.md)
       * [Workfront Fusion发行活动： 2026年2月9日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
       * [Workfront Fusion发行活动： 2026年2月2日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
       * [Workfront Fusion发行活动： 2026年1月26日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
@@ -151,7 +152,7 @@ ht-degree: 97%
 * 开始使用 Workfront Fusion {#get-started-with-fusion}
    * [开始使用 Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
    * 了解 Workfront Fusion  {#understand-workfront-fusion}
-      * [了解 Workfront Fusion &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
+      * [了解 Workfront Fusion ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
       * [Adobe Workfront Fusion 概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
       * [Adobe Workfront Fusion 术语表](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
       * [场景概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)
