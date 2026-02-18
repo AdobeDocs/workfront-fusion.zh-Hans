@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 5e7a879ee69bea03aed5a936fe0962acdd3a3014
+source-git-commit: bd8e770765ac535fd8c11e6f58620e1e4cadfc3d
 workflow-type: tm+mt
-source-wordcount: '2039'
+source-wordcount: '2046'
 ht-degree: 97%
 
 ---
@@ -152,7 +152,7 @@ ht-degree: 97%
 * 开始使用 Workfront Fusion {#get-started-with-fusion}
    * [开始使用 Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
    * 了解 Workfront Fusion  {#understand-workfront-fusion}
-      * [了解 Workfront Fusion &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
+      * [了解 Workfront Fusion ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
       * [Adobe Workfront Fusion 概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
       * [Adobe Workfront Fusion 术语表](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
       * [场景概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)
@@ -210,6 +210,7 @@ ht-degree: 97%
       * [添加模块](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
       * [将模块添加到场景中](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
       * [配置模块](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
+      * [向场景添加AI提示](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
       * [使用 AI 生成场景区段](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
       * [复制模块或场景](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
       * [使用 Adobe Workfront Fusion 模板创建场景](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)

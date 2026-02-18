@@ -6,14 +6,14 @@ feature: Workfront Fusion
 hide: true
 hidefromtoc: true
 exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
-source-git-commit: 5dfca593b17a234c80c807470026a7b192cbf7fa
+source-git-commit: 97abe6bf0ff7b10a139268f02f8a1a24f3e31b47
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 23%
+source-wordcount: '488'
+ht-degree: 18%
 
 ---
 
-# 模型上下文协议（MCP）模块
+# MCP代理模块
 
 <!--SET UP REDIRECTS-->
 
@@ -22,6 +22,8 @@ ht-degree: 23%
 例如，您可以配置MCP服务器将AI模型与Gmail连接。 当您发送提示“Give my last 5 emails from Gmail”时，它可以访问您的Gmail并返回电子邮件。
 
 模型上下文协议(MCP)模块允许您使用语言模型和MCP服务器处理用户提示。
+
+有关Fusion场景中MCP的详细信息，请参阅[向场景添加AI提示](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)。
 
 ## 访问权限要求
 
@@ -52,17 +54,20 @@ ht-degree: 23%
 
 +++
 
+## 先决条件
 
-
-
+* 您必须已配置要连接的任何MCP服务器。
+* 必须具有指向所选LLM（大语言模型）的LLM密钥。
 
 ## 模型上下文协议模块及其字段
-
-配置MCP模块时，Adobe Workfront Fusion会显示以下列出的字段。 模块中的加粗标题表示必填字段。
 
 ### 进程用户提示
 
 该操作模块使用您指定的语言模型和MCP服务器来处理提示。
+
+>[!NOTE]
+>
+>此模块必须返回对象。 它不会返回字符串或数字等输出。
 
 <table style="table-layout:auto"> 
  <col> 
