@@ -3,10 +3,11 @@ title: Veeva Vault 模块
 description: 在Adobe Workfront Fusion场景中，您可以自动使用Veeva Vault的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: b57ae36cf9225705c7f4923d7302b1749aa04d94
+exl-id: 2ef967b6-0a69-4801-8574-5f17c9ce991d
+source-git-commit: 323e7d10795991bbcb6c1439db0af90e4331e687
 workflow-type: tm+mt
-source-wordcount: '2539'
-ht-degree: 19%
+source-wordcount: '3683'
+ht-degree: 14%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 19%
 
 有关创建场景的说明，请参阅[创建场景：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)中的相关文章。
 
-有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)中的相关文章。
+有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的相关文章。
 
 ## 访问权限要求
 
@@ -117,7 +118,9 @@ ht-degree: 19%
       </tr> 
       <tr> 
        <td role="rowheader">授权服务器提供程序</td> 
-       <td> <p>选择要用于此身份验证的提供程序。</p> </td> 
+       <td> <p>选择要用于此身份验证的提供程序。</p> 
+       <p><b>注意：</b>选择Azure作为授权服务器提供程序时，Veeva Vault使用Azure AD客户端凭据。</p>
+       </td> 
       </tr> 
       <tr> 
        <td role="rowheader">Ping主机</td> 
@@ -126,13 +129,13 @@ ht-degree: 19%
       <tr>
         <td role="rowheader">范围</td>
         <td>
-          <p>输入此连接的范围。</p>
+          <p>输入此连接的范围。 范围必须格式化为<code>{Application ID URI}/.default</code>。 应用程序ID URI必须属于公开权限的资源或应用程序。</p>
         </td>
       </tr>
       <tr>
         <td role="rowheader">租户ID</td>
         <td>
-          <p>如果您正在将Azure AD/Microsoft Entra ID用于授权服务器提供程序，请输入此连接的租户ID。</p>
+          <p>如果您正在将Azure AD/Microsoft Entra ID用于授权服务器提供商，请输入此连接的租户ID。</p>
         </td>
       </tr>
       <tr>
@@ -150,12 +153,12 @@ ht-degree: 19%
       <tr>
         <td role="rowheader">配置文件ID</td>
         <td>
-          <p>输入OAuth2 / Copen ID Connect配置文件的ID。</p>
+          <p>输入OAuth2 /打开ID连接配置文件的ID。</p>
         </td>
       </tr>
       <tr> 
        <td role="rowheader">保险库DNS</td> 
-       <td>输入您的Veeva Vault DNS（域名）。</p><p>要找到Veeva Vault DNS，请检查用于访问Veeva Vault的URL。</p>例如，在URL <code>https://my-dns.veevavault.com</code>中，DNS是<code>my-dns</code>。 您无需输入整个URL。</td> 
+       <td>输入您的Veeva Vault DNS（域名）。</p><p>要找到Veeva Vault DNS，请检查用于访问Veeva Vault的URL。</p>例如，在URL <code>https://my-dns.veevavault.com</code>中，DNS是<code>my-dns.veevavault.com</code>。 </td> 
       </tr> 
       <tr>
         <td role="rowheader">会话过期时间（分钟）</td>
@@ -184,15 +187,24 @@ ht-degree: 19%
 ### 文档
 
 * [创建单个文档](#create-a-single-document)
+* [创建单个文档关系](#create-a-single-document-relationship)
+* [创建多个注释](#create-multiple-annotations)
 * [创建多个文档](#create-multiple-documents)
+* [创建多个文档关系](#create-multiple-document-relationships)
 * [删除单个文档](#delete-a-single-document)
+* [删除单个文档关系](#delete-a-single-document-relationship)
+* [删除多个批注](#delete-multiple-annotations)
+* [删除多个文档关系](#delete-multiple-document-relationships)
 * [下载文件](#download-file)
 * [导出文档](#export-documents)
 * [获取单个文档](#get-a-single-document)
+* [获取文档批注](#get-document-annotations)
+* [获取文档关系](#get-document-relationships)
 * [启动用户操作](#initiate-user-action)
 * [列出文档](#list-documents)
 * [检索文档导出结果](#retrieve-document-export-results)
 * [更新单个文档](#update-a-single-document)
+* [更新多个批注](#update-multiple-annotations)
 * [更新多个文档](#update-multiple-documents)
 
 #### 创建单个文档
@@ -205,7 +217,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
@@ -218,6 +230,114 @@ ht-degree: 19%
  </tbody> 
 </table>
 
+#### 创建单个文档关系
+
+此操作模块创建两个文档之间的关系
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>文档 ID</p> </td> 
+   <td> <p>输入或映射关系要源自的文档ID。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>版本</p> </td> 
+   <td> <p>选择或映射要为其创建关系的版本的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>目标文档Id</p> </td> 
+   <td> <p>输入关系指向的文档ID。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>目标主要版本</p> </td> 
+   <td> <p>输入目标文档的主要版本。 这是该点之前的数字。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>目标次要版本</p> </td> 
+   <td> <p>输入目标文档的主要版本。 这是该点后面的数字。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>关系类型</p> </td> 
+   <td> <p>输入或映射要创建的关系类型。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 创建多个注释
+
+通过此操作模块，最多可创建500个注释。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>注释</p> </td> 
+   <td> <p>对于要添加的每个注释，单击<b>添加项</b>并填写本文中<a href="#annotation-fields" class="MCXref xref">注释字段</a>中描述的数据。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+##### 注释字段
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">注释类型 </td> 
+   <td> <p>选择要创建的注释类型。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>类型</p> </td> 
+   <td> <p>输入或映射要用于此批注的占位符类型。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>页码</p> </td> 
+   <td> <p>输入或映射您希望此注释显示的页码。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>X坐标</p> </td> 
+   <td> <p>输入或映射位置标记的X坐标。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>Y坐标</p> </td> 
+   <td> <p>输入或映射占位符的Y坐标。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>宽度</p> </td> 
+   <td> <p>输入或映射占位符的宽度。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>高度</p> </td> 
+   <td> <p>输入或映射占位符的高度。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>样式</p> </td> 
+   <td> <p>输入或映射占位符的样式。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>参考</p> </td> 
+   <td> <p>引用允许注释引用外部源。 对于要添加到注释的每个引用，单击<b>添加项</b>并输入引用的类型、文档版本ID和注释。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>选择字段</p> </td> 
+   <td> <p>选择要为其提供值的字段，然后在每个字段中输入值。 可用字段取决于注释类型。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
 #### 创建多个文档
 
 此模块使用CSV文件创建多个文档或模板。
@@ -228,15 +348,79 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
-   <td> <p>选择您要创建模板还是文档</p> </td> 
+   <td> <p>选择要创建模板还是文档。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">  <p>文件数据</p> </td> 
    <td> <p>映射将用于创建文档的CSV文件。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 创建多个文档关系
+
+此操作模块配置多个文档关系。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>输入类型</p> </td> 
+   <td> <p>选择您提供的输入类型以创建这些关系。</p> <ul><li>CSV</li><li>JSON</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>文件数据</p> </td> 
+   <td> <p>如果您使用的是CSV文件，请输入或映射CSV文件数据。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>关系数据</p> </td> 
+   <td> <p>如果您使用的是JSON，则对于每个要添加的关系，单击<b>添加项</b>并填写本文中<a href="#relationship-fields" class="MCXref xref">关系字段</a>中描述的数据。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+##### 关系字段
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Source文档ID </td> 
+   <td> <p>输入或映射关系要源自的文档ID。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Source主要版本</p> </td> 
+   <td> <p>输入原始凭证的主要版本。 这是该点之前的数字。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>Source次要版本</p> </td> 
+   <td> <p>输入原始凭证的主要版本。 这是该点后面的数字。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>目标文档Id</p> </td> 
+   <td> <p>输入关系指向的文档ID。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>目标主要版本</p> </td> 
+   <td> <p>输入目标文档的主要版本。 这是该点之前的数字。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>目标次要版本</p> </td> 
+   <td> <p>输入目标文档的主要版本。 这是该点后面的数字。</p> </td> 
+  </tr> 
+   <tr> 
+   <td role="rowheader"> <p>关系类型</p> </td> 
+   <td> <p>输入或映射要创建的关系类型。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,7 +435,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
@@ -259,7 +443,88 @@ ht-degree: 19%
   </tr> 
   <tr> 
    <td role="rowheader"><p>文档ID/绑定器ID/模板名称</p> </td> 
-   <td> <p>选择要删除的字段。</td> 
+   <td> <p>选择要删除的项目。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 删除单个文档关系
+
+此操作模块从文档删除关系
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>文档 ID</p> </td> 
+   <td> <p>为要删除的关系输入或映射源文档的ID。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>版本</p> </td> 
+   <td> <p>选择或映射要删除其关系的版本的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>关系ID</p> </td> 
+   <td> <p>输入或映射要删除的关系的ID。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 删除多个批注
+
+此操作模块删除注释。 用户必须有权删除Veeva Vault中的注释。 您最多可以删除500个注释。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>注释</p> </td> 
+   <td> <p>对于每个要删除的注释，单击<b>添加项</b>并输入以下字段。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>ID</p> </td> 
+   <td> <p>输入或映射要删除的批注的ID。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>文档版本Id</p> </td> 
+   <td> <p>输入或映射包含要删除的注释的文档的版本号。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 删除多个文档关系
+
+此操作模块从多个文档删除关系
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>输入类型</p> </td> 
+   <td> <p>选择您提供的用于删除这些关系的输入类型。</p> <ul><li>CSV</li><li>JSON</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>文件数据</p> </td> 
+   <td> <p>如果您使用的是CSV文件，请输入或映射CSV文件数据。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>关系数据</p> </td> 
+   <td> <p>如果您使用的是JSON，则对于每个要添加的关系，单击<b>添加项</b>并输入关系ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -274,7 +539,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
@@ -309,7 +574,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
@@ -344,7 +609,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
@@ -353,6 +618,60 @@ ht-degree: 19%
   <tr> 
    <td role="rowheader"><p>文档ID/绑定器ID/模板名称</p> </td> 
    <td> <p>选择要为其检索数据的字段。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 获取文档批注
+
+此模块从特定文档版本检索注释。 可检索所有注释或选择仅检索某些注释类型。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>文档 ID</p> </td> 
+   <td> <p>选择或映射要检索注释的文档。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>版本</p> </td> 
+   <td> <p>选择或映射要为其检索注释的版本的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">返回注释的最大数量</td> 
+   <td>输入或映射您希望模块在每个方案执行周期中返回的最大批注数。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 获取文档关系
+
+此模块检索文档的所有关系。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>文档 ID</p> </td> 
+   <td> <p>选择或映射要检索其关系的文档。 </p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"><p>版本</p> </td> 
+   <td> <p>选择或映射要检索其关系的版本的ID。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">返回关系的最大数量</td> 
+   <td>输入或映射每个方案执行周期中您希望模块返回的最大关系数。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -367,7 +686,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
@@ -398,7 +717,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
@@ -421,11 +740,30 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>作业 ID</p> </td> 
    <td> <p>输入或映射要为其返回结果的作业的ID。 </p> </td> 
+  </tr> 
+  </tbody> 
+</table>
+
+#### 更新多个批注
+
+此操作模块最多可更新500个注释。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>注释</p> </td> 
+   <td> <p>对于要更新的每个注释，单击<b>添加项</b>并填写本文中<a href="#annotation-fields" class="MCXref xref">注释字段</a>中描述的数据。</p> </td> 
   </tr> 
   </tbody> 
 </table>
@@ -440,7 +778,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
@@ -463,7 +801,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
@@ -502,7 +840,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
@@ -521,7 +859,7 @@ ht-degree: 19%
    <td>输入或映射对象名称__v字段值，如<code>product__v</code>、<code>country__v</code>或<code>custom_object__c</code>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">记录Id</td> 
+   <td role="rowheader">记录 ID</td> 
    <td>如果要深度复制记录，请选择要复制的记录。</td> 
   </tr> 
   <tr> 
@@ -541,7 +879,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
@@ -552,7 +890,7 @@ ht-degree: 19%
    <td>选择要删除的对象。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">记录Id</td> 
+   <td role="rowheader">记录 ID</td> 
    <td>选择要删除的记录的ID。</td> 
   </tr> 
   <tr> 
@@ -572,14 +910,14 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">对象名称</td> 
    <td>选择要为其检索元数据的对象。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">记录Id</td> 
+   <td role="rowheader">记录 ID</td> 
    <td>选择要为其检索元数据的记录的ID。</td> 
   </tr> 
  </tbody> 
@@ -595,7 +933,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>检索本地化的标签</p> </td> 
@@ -620,7 +958,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
@@ -639,7 +977,7 @@ ht-degree: 19%
    <td>输入或映射对象名称__v字段值，如<code>product__v</code>、<code>country__v</code>或<code>custom_object__c</code>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">记录Id</td> 
+   <td role="rowheader">记录 ID</td> 
    <td>选择要更新的记录的ID。</td> 
   </tr> 
   <tr> 
@@ -673,11 +1011,11 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接</td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td>输入相对于<code>baseurl/api/v</code>的路径。  例如： <code>/objects/documents</code>。 不包括<code>baseurl/api/v/</code>，因为它已包括在内。</td> 
+   <td>输入相对于<code>baseurl/api/v</code>的路径。  例如：<code>/objects/documents</code>。不包括<code>baseurl/api/v/</code>，因为它已包括在内。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">方法</td> 
@@ -711,7 +1049,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>类型</p> </td> 
@@ -734,7 +1072,7 @@ ht-degree: 19%
  <tbody> 
   <tr> 
    <td role="rowheader">连接 </td> 
-   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>审核类型</p> </td> 
@@ -758,5 +1096,3 @@ ht-degree: 19%
   </tr> 
  </tbody> 
 </table>
-
-
