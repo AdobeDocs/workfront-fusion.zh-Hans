@@ -4,10 +4,10 @@ description: 通过Adobe Workfront Fusion的“组织”和“团队”功能，
 author: Becky
 feature: Workfront Fusion
 exl-id: 44e6de2a-b2d3-410d-abc3-10facd258495
-source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
+source-git-commit: 9cb630b713f5fac90acff54fa2034e9d65dd1611
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 1%
+source-wordcount: '612'
+ht-degree: 2%
 
 ---
 
@@ -27,6 +27,18 @@ Workfront Fusion用户属于一个组织。
 
 在将用户添加到团队之前，必须先将用户添加到组织。
 
+### 组织资源
+
+以下资源影响整个Fusion组织，因此由组织级别拥有和处理：
+
+* **辅助进程池：**：辅助进程池是专用于特定组织的Workfront Fusion处理资源的数量。
+
+  有关详细信息，请参阅[辅助进程池](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)。
+
+* **操作**： Adobe Workfront Fusion中的操作是由模块执行的任务。
+
+  有关更多信息，请参阅[操作](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)。
+
 ### 组织角色
 
 用户在组织中具有以下角色之一：
@@ -43,10 +55,10 @@ Workfront Fusion用户属于一个组织。
 
 团队是共享对特定资源的访问权限的用户组。 这些资源可能包括：
 
-* 方案
+* 场景
 * 连接
 * Webhook
-* 键
+* 密钥
 * 数据存储
 * 数据结构
 * 电子邮件通知设置
