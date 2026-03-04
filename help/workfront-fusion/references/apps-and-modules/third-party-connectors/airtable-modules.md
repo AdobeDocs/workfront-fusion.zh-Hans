@@ -1,56 +1,56 @@
 ---
-title: 可飞行模块
-description: 除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需要Adobe Workfront Fusion许可证。
+title: Airtable 模块
+description: 使用 Adobe Workfront Fusion 需要在拥有 Adobe Workfront 许可的基础上另行购买 Workfront Fusion 许可。
 author: Becky
 feature: Workfront Fusion
 exl-id: 3b445b50-5812-4ded-9788-f467991e0b52
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: a5a1f8f596b55b2f1eca9d7874b5885e435b2489
 workflow-type: tm+mt
-source-wordcount: '1923'
-ht-degree: 2%
+source-wordcount: '1957'
+ht-degree: 26%
 
 ---
 
-# 可飞行模块
+# Airtable 模块
 
 
 使用Adobe Workfront Fusion的[!DNL Airtable]连接器，您可以基于[!DNL Airtable]帐户中的事件启动方案，创建、上载和更新记录、搜索记录以及对Airtable API进行自定义API调用。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -75,7 +75,7 @@ ht-degree: 2%
    <td>https://api.airtable.com/v0</td> 
   </tr>
   <tr> 
-   <td role="rowheader">API标记</td> 
+   <td role="rowheader">API 标记</td> 
    <td>v3.3.28</td> 
   </tr>
  </tbody> 
@@ -89,8 +89,10 @@ ht-degree: 2%
 1. Open your account overview and generate the API key.
 -->
 1. 打开Workfront Fusion，然后打开所需模块的&#x200B;**创建连接**&#x200B;对话框。
-1. 输入连接的名称。
-1. （可选）单击“显示高级设置”，然后输入您的Airtable客户端ID和客户端密钥。
+1. 选择您使用的是个人访问令牌还是OAuth 2授权。
+1. 输入连接名称。
+1. （视情况而定）如果使用个人访问令牌，请单击显示高级设置，然后输入您的个人访问令牌。
+1. （视情况而定）如果使用OAuth 2，请单击显示高级设置，然后输入您的Airtable客户端ID和客户端密钥。
 1. 单击&#x200B;**继续**&#x200B;按钮以创建连接并返回模块。
 
 ## 可飞行模块及其领域
@@ -113,9 +115,9 @@ ht-degree: 2%
 
 您可以指定要在记录中存储的数据以及存储位置。
 
-该模块会返回与记录关联的任何标准字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -173,9 +175,9 @@ ht-degree: 2%
 
 您可以指定记录的ID和位置。
 
-该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回记录的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -194,7 +196,7 @@ ht-degree: 2%
    <td> <p>选择包含要删除的记录的表。</p> </td> 
   </tr> 
   <tr> 
-   <td>记录Id</td> 
+   <td>记录 ID</td> 
    <td> <p>输入或映射您希望模块删除的记录的唯一可通风性ID。 例如，您可以使用搜索记录模块检索ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -221,7 +223,7 @@ ht-degree: 2%
    <td> <p> 选择包含要检索其详细信息的记录的表。</p> </td> 
   </tr> 
   <tr> 
-   <td>记录Id</td> 
+   <td>记录 ID</td> 
    <td> <p> 输入或映射要检索其详细信息的记录ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -231,9 +233,9 @@ ht-degree: 2%
 
 此搜索模块在Airtable中查找与您指定的搜索查询匹配的对象中的记录。
 
-您可以在场景的后续模块中映射此信息。
+您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -265,7 +267,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td>限制</td> 
-   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
+   <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -276,9 +278,9 @@ ht-degree: 2%
 
 您可以指定记录的ID以及要包含的新数据。
 
-该模块会返回与记录关联的任何标准字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -297,7 +299,7 @@ ht-degree: 2%
    <td> <p>选择包含要更新的记录的表。</p> </td> 
   </tr> 
   <tr> 
-   <td>记录Id </td> 
+   <td>记录 ID </td> 
    <td> <p>输入或映射您希望模块更新的记录的唯一Airtable ID。 例如，您可以使用搜索记录模块检索ID。</p> </td> 
   </tr> 
   <tr> 
@@ -340,9 +342,9 @@ ht-degree: 2%
 
 您可以指定记录的ID以及要包含的新数据。
 
-该模块会返回与记录关联的任何标准字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -361,7 +363,7 @@ ht-degree: 2%
    <td> <p>选择包含要更新的记录的表。</p> </td> 
   </tr> 
   <tr> 
-   <td>记录Id </td> 
+   <td>记录 ID </td> 
    <td> <p>如果要更新记录，请输入或映射要模块更新的记录的唯一Airtable ID。 例如，您可以使用搜索记录模块检索ID。</p> </td> 
   </tr> 
   <tr> 
@@ -473,11 +475,11 @@ webhook URL需要在Workfront Fusion中生成，然后添加到Airtable中的表
 
 #### 自定义API调用
 
-此操作模块允许您对[!DNL Airtable] API进行经过身份验证的自定义调用。 这样，您可以创建其他[!DNL Airtable]模块无法实现的数据流自动化。
+此操作模块允许您向 [!DNL Airtable] API 发起自定义的已经过身份认证的调用。通过这种方式，您可以构建其他 [!DNL Airtable] 模块无法实现的数据流自动化。
 
 该操作基于您指定的图元类型（Allocadia对象类型）。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
@@ -489,15 +491,15 @@ webhook URL需要在Workfront Fusion中生成，然后添加到Airtable中的表
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td>输入相对于<code>https://api.airtable.com/</code>的路径。 示例：<code>v0/{base}/{table}</code> </td> 
+   <td>输入相对于 <code>https://api.airtable.com/</code> 的路径。示例：<code>v0/{base}/{table}</code> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">方法</td> 
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">标头</td> 
-   <td> <p>以标准JSON对象的形式添加请求的标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion会为您添加授权标头。</p> </td> 
+   <td> <p>以标准 JSON 对象的形式添加请求标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion会为您添加授权标头。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">查询字符串</td> 
@@ -505,7 +507,7 @@ webhook URL需要在Workfront Fusion中生成，然后添加到Airtable中的表
   </tr> 
   <tr> 
    <td role="rowheader">正文</td> 
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注意：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 
