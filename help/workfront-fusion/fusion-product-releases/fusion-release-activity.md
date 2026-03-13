@@ -9,10 +9,10 @@ author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: c37aea95-7cc3-4939-a4d7-9a6a75557b85
-source-git-commit: 2aeb9750ea3d6bd2b2e8ff5c502720ad8eff4e44
+source-git-commit: 3e999de9127d6ce320e313f26bf143bf13637ad1
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 96%
+source-wordcount: '1153'
+ht-degree: 95%
 
 ---
 
@@ -24,20 +24,21 @@ Adobe Workfront Fusion 可将您的应用程序和网络服务无缝连接，让
 
 ### 2026 年 3 月
 
-* [Workfront Fusion发行活动：2026年3月2日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-2.md)
+* [Workfront Fusion版本活动：2026年3月9日开始的这一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-9.md)
+* [Workfront Fusion版本活动：2026年3月2日开始的这一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-2.md)
 
 
 ### 2026 年 2 月
 
-* [Workfront Fusion发行活动： 2026年2月23日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-23.md)
-* [Workfront Fusion发行活动： 2026年2月16日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-16.md)
-* [Workfront Fusion发行活动： 2026年2月9日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
-* [Workfront Fusion发行活动： 2026年2月2日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
+* [Workfront Fusion版本活动：2026年2月23日开始的这一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-23.md)
+* [Workfront Fusion版本活动：2026年2月16日开始的这一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-16.md)
+* [Workfront Fusion版本活动：2026年2月9日开始的这一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
+* [Workfront Fusion版本活动：2026年2月2日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
 
 
 ### 2026 年 1 月
 
-* [Workfront Fusion发行活动： 2026年1月26日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
+* [Workfront Fusion版本活动：2026年1月26日开始的这一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
 * [Workfront Fusion 发行活动：2026 年 1 月 19 日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
 * [Workfront Fusion 发行活动：2026 年 1 月 12 日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
 

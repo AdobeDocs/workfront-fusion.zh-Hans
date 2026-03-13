@@ -4,10 +4,10 @@ description: 管理组织中的Adobe Workfront Fusion用户
 author: Becky
 feature: Workfront Fusion
 exl-id: 32c221fa-856b-4921-9fa6-5e60f2aa08cd
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 88d7a92a4b117d10ab114e32ab5e61f03bc5a846
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 0%
+ht-degree: 24%
 
 ---
 
@@ -20,26 +20,26 @@ Adobe Workfront Fusion管理员可以管理Workfront Fusion中的用户角色。
 >
 >如果贵组织当前正在迁移到Adobe Admin Console，则您无法在Workfront中管理用户（添加或删除用户）。 迁移完成后，您可以在Adobe Admin Console中执行这些操作。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -52,7 +52,7 @@ Adobe Workfront Fusion管理员可以管理Workfront Fusion中的用户角色。
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
 +++
 
@@ -63,6 +63,24 @@ Adobe Workfront Fusion管理员可以查看和更新组织的用户角色。
 1. 以Workfront Fusion管理员身份登录时，在左侧导航中选择&#x200B;**[!UICONTROL 所有用户]**。
 1. 在要查看的用户行中单击&#x200B;**[!UICONTROL 详细信息]**。
 1. （可选）要更新组织中用户的角色，请在要更改用户角色的组织行中单击&#x200B;**[!DNL Role]**&#x200B;列中的下拉菜单，然后选择新角色。
+
+<!--
+
+### Considerations when adding or changing organization Owners
+
+Your organization can have more than one Owner. 
+
+When assigning a user to or from an Owner role, consider the following. 
+
+* Only an Owner can assign the Owner role, or assign another role to a current Owner.
+* Only Admins can be upgraded to Owner.
+* If there is only one Owner, that Owner role cannot be changed or removed.
+* If there is only one Owner, that Owner cannot be deleted if there are other users in the organization.
+* When an Admin is assigned an Owner role, they automatically become Admin in all teams within the org.
+* When an Owner is assigned to another role, that user automatically becomes a Team Member in all teams.
+* When a new team is created, all Owners are automatically assigned as Team Admins.
+
+-->
 
 ## 查看或编辑团队的用户角色
 
