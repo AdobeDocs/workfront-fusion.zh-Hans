@@ -124,82 +124,82 @@ Microsoft Office 365日历连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL主题]</td> 
+   <td role="rowheader">[!UICONTROL 主题]</td> 
    <td> <p>为创建的事件输入或映射标题。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL开始日期]</td> 
+   <td role="rowheader">[!UICONTROL 开始日期]</td> 
    <td> 输入事件以组合日期和时间表示形式开始时的单一时间点。 使用格式<code>{date}T{time}</code>；例如，<code>2017-08-29T04:00:00.0000000</code>。 有关支持的日期和时间格式列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">类型强制转换</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL结束日期]</td> 
+   <td role="rowheader">[!UICONTROL 结束日期]</td> 
    <td> 输入事件以组合日期和时间表示结束时的单一时间点。 使用格式<code>{date}T{time}</code>；例如，<code>2017-08-29T04:00:00.0000000</code>。 有关支持的日期和时间格式列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">类型强制转换</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL提醒时间]</td> 
+   <td role="rowheader">[!UICONTROL 提醒时间]</td> 
    <td>选择是否要激活此事件的提醒。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL提醒]</td> 
+   <td role="rowheader">[!UICONTROL 提醒]</td> 
    <td>输入或映射提醒应触发的事件开始之前的分钟数。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL重要性]</td> 
+   <td role="rowheader">[!UICONTROL 重要性]</td> 
    <td> <p>选择此事件的重要性。</p> 
     <ul> 
-     <li>[！UICONTROL低]</li> 
-     <li>[！UICONTROL Medium]</li> 
-     <li>[！UICONTROL高]</li> 
+     <li>[!UICONTROL 低]</li> 
+     <li>[!UICONTROL Medium]</li> 
+     <li>[!UICONTROL 高]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL敏感度] </td> 
+   <td role="rowheader">[!UICONTROL 敏感度] </td> 
    <td> <p>选择此事件的敏感度。</p> 
     <ul> 
-     <li><strong>[！UICONTROL Normal]</strong> </li> 
-     <li> <p><strong>[！UICONTROL Personal]</strong> </p> <p>收件人看到“[！UICONTROL请将其视为个人]”消息。</p> </li> 
-     <li> <p><strong>[！UICONTROL Private]</strong> </p> <p>收件人看到“[！UICONTROL Please this as Private]”消息。 收件人的收件箱规则不会转发或重定向此事件。</p> </li> 
-     <li> <p><strong>[！UICONTROL机密]</strong> </p> <p>收件人看到“[！UICONTROL Please this as Confidential]”消息。 </p> </li> 
+     <li><strong>[!UICONTROL Normal]</strong> </li> 
+     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>收件人看到“[!UICONTROL 请将其视为个人]”消息。</p> </li> 
+     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>收件人看到“[!UICONTROL Please this as Private]”消息。 收件人的收件箱规则不会转发或重定向此事件。</p> </li> 
+     <li> <p><strong>[!UICONTROL 机密]</strong> </p> <p>收件人看到“[!UICONTROL Please this as Confidential]”消息。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL正文内容类型]</td> 
+   <td role="rowheader">[!UICONTROL 正文内容类型]</td> 
    <td>选择正文内容是纯文本还是HTML。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL正文内容]</td> 
-   <td>输入或映射与事件关联的消息正文。 它可以采用HTML或文本格式（如上面[！UICONTROL正文内容类型]字段中所指定）。</td> 
+   <td role="rowheader">[!UICONTROL 正文内容]</td> 
+   <td>输入或映射与事件关联的消息正文。 它可以采用HTML或文本格式（如上面[!UICONTROL 正文内容类型]字段中所指定）。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL位置]</td> 
+   <td role="rowheader">[!UICONTROL 位置]</td> 
    <td> <p>输入或映射事件位置详细信息。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">已请求[！UICONTROL响应]</td> 
-   <td>选择<strong>[！UICONTROL是]</strong>以请求被邀请者发送对活动邀请的响应。</td> 
+   <td role="rowheader">已请求[!UICONTROL 响应]</td> 
+   <td>选择<strong>[!UICONTROL 是]</strong>以请求被邀请者发送对活动邀请的响应。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL显示为]</td> 
+   <td role="rowheader">[!UICONTROL 显示为]</td> 
    <td> <p>选择您希望向查看您的日历的人员显示事件的方式。</p> 
     <ul> 
-     <li>[！UICONTROL自由]</li> 
-     <li>[！UICONTROL暂定]</li> 
-     <li>[！UICONTROL忙]</li> 
-     <li>[！UICONTROL外出]</li> 
-     <li>[！UICONTROL在其他位置工作]</li> 
-     <li>[！UICONTROL未知]</li> 
+     <li>[!UICONTROL 自由]</li> 
+     <li>[!UICONTROL 暂定]</li> 
+     <li>[!UICONTROL 忙]</li> 
+     <li>[!UICONTROL 外出]</li> 
+     <li>[!UICONTROL 在其他位置工作]</li> 
+     <li>[!UICONTROL 未知]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL与会者]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 与会者]</p> </td> 
    <td> <p>对于每个要邀请的与会者，单击“<b>添加项目</b>”并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入或映射与会者的姓名。</p> </li> 
-     <li> <p><strong>[！UICONTROL电子邮件]</strong> </p> <p>输入或映射与会者的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入或映射与会者的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件]</strong> </p> <p>输入或映射与会者的电子邮件地址。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Categories]</td> 
+   <td role="rowheader">[!UICONTROL Categories]</td> 
    <td>对于您希望事件在日历中显示为的每个类别，单击<b>添加项</b>，然后输入或映射该类别。</td> 
   </tr> 
  </tbody> 
@@ -218,7 +218,7 @@ Microsoft Office 365日历连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL事件ID]</td> 
+   <td role="rowheader">[!UICONTROL 事件ID]</td> 
    <td> <p>输入或映射要删除的事件的ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -237,7 +237,7 @@ Microsoft Office 365日历连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL事件ID]</td> 
+   <td role="rowheader">[!UICONTROL 事件ID]</td> 
    <td> <p>输入或映射要检索其相关详细信息的事件ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -256,31 +256,31 @@ Microsoft Office 365日历连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL日历组ID]</td> 
-   <td>选择包含要监视其活动的日历的[！UICONTROL日历组]。</td> 
+   <td role="rowheader">[!UICONTROL 日历组ID]</td> 
+   <td>选择包含要监视其活动的日历的[!UICONTROL 日历组]。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL日历]</td> 
+   <td role="rowheader">[!UICONTROL 日历]</td> 
    <td> <p>选择要监视的特定日历。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 筛选条件]</td> 
    <td> <p>设置筛选条件以筛选结果。 您可以按以下属性进行筛选：</p> 
     <ul> 
-     <li>[！UICONTROL主题]</li> 
-     <li>[！UICONTROL事件ID]</li> 
-     <li>[！UICONTROL创建日期时间]</li> 
-     <li>[！UICONTROL上次修改日期时间]</li> 
-     <li>[！UICONTROL正文预览]</li> 
+     <li>[!UICONTROL 主题]</li> 
+     <li>[!UICONTROL 事件ID]</li> 
+     <li>[!UICONTROL 创建日期时间]</li> 
+     <li>[!UICONTROL 上次修改日期时间]</li> 
+     <li>[!UICONTROL 正文预览]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Order by]</td> 
+   <td role="rowheader">[!UICONTROL Order by]</td> 
    <td> <p>选择要如何排序结果。</p> 
     <ul> 
-     <li><strong>[！UICONTROL主题]</strong>，升序或降序</li> 
-     <li><strong>[！UICONTROL创建日期时间]</strong>，升序或降序</li> 
-     <li><strong>[！UICONTROL上次修改日期时间]</strong>，升序或降序</li> 
+     <li><strong>[!UICONTROL 主题]</strong>，升序或降序</li> 
+     <li><strong>[!UICONTROL 创建日期时间]</strong>，升序或降序</li> 
+     <li><strong>[!UICONTROL 上次修改日期时间]</strong>，升序或降序</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -303,86 +303,86 @@ Microsoft Office 365日历连接器使用以下内容：
    <td> <p>有关将您的[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建到Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL事件ID]</td> 
+   <td role="rowheader">[!UICONTROL 事件ID]</td> 
    <td>输入、映射或选择要更新的事件ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL主题]</td> 
+   <td role="rowheader">[!UICONTROL 主题]</td> 
    <td> <p>输入或映射事件的新标题。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL开始日期]</td> 
+   <td role="rowheader">[!UICONTROL 开始日期]</td> 
    <td> 输入事件在合并日期和时间表示法中开始时的单个时间点。 使用格式<code>{date}T{time}</code>；例如，<code>2017-08-29T04:00:00.0000000</code>。 有关支持的日期和时间格式列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">类型强制转换</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL结束日期]</td> 
+   <td role="rowheader">[!UICONTROL 结束日期]</td> 
    <td> 输入事件以组合日期和时间表示结束时的单一时间点。 使用格式<code>({date}T{time}</code>；例如，<code>2017-08-29T04:00:00.0000000</code>。 有关支持的日期和时间格式列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">类型强制转换</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL提醒时间]</td> 
+   <td role="rowheader">[!UICONTROL 提醒时间]</td> 
    <td>选择是否要激活此事件的提醒。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL提醒]</td> 
+   <td role="rowheader">[!UICONTROL 提醒]</td> 
    <td>输入或映射提醒触发时事件开始前的分钟数。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL重要性]</td> 
+   <td role="rowheader">[!UICONTROL 重要性]</td> 
    <td> <p>选择此事件的重要性。</p> 
     <ul> 
-     <li>[！UICONTROL低]</li> 
-     <li>[！UICONTROL Medium]</li> 
-     <li>[！UICONTROL High]</li> 
+     <li>[!UICONTROL 低]</li> 
+     <li>[!UICONTROL Medium]</li> 
+     <li>[!UICONTROL High]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Sensitivity] </td> 
+   <td role="rowheader">[!UICONTROL Sensitivity] </td> 
    <td> <p>选择此事件的敏感度。</p> 
     <ul> 
-     <li><strong>[！UICONTROL Normal]</strong> </li> 
-     <li> <p><strong>[！UICONTROL Personal]</strong> </p> <p>收件人看到“[！UICONTROL请将其视为个人]”消息。</p> </li> 
-     <li> <p><strong>[！UICONTROL Private]</strong> </p> <p>收件人看到“[！UICONTROL请将其视为私人]”消息。 收件人的收件箱规则不会转发或重定向此事件。</p> </li> 
-     <li> <p><strong>[！UICONTROL机密]</strong> </p> <p>收件人看到“[！UICONTROL请将其视为机密]”消息。 </p> </li> 
+     <li><strong>[!UICONTROL Normal]</strong> </li> 
+     <li> <p><strong>[!UICONTROL Personal]</strong> </p> <p>收件人看到“[!UICONTROL 请将其视为个人]”消息。</p> </li> 
+     <li> <p><strong>[!UICONTROL Private]</strong> </p> <p>收件人看到“[!UICONTROL 请将其视为私人]”消息。 收件人的收件箱规则不会转发或重定向此事件。</p> </li> 
+     <li> <p><strong>[!UICONTROL 机密]</strong> </p> <p>收件人看到“[!UICONTROL 请将其视为机密]”消息。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL正文内容类型]</td> 
+   <td role="rowheader">[!UICONTROL 正文内容类型]</td> 
    <td>选择与事件关联的消息正文内容是纯文本还是HTML。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL正文内容]</td> 
-   <td>输入或映射与事件关联的消息正文。 它可以采用HTML或文本格式（如上面[！UICONTROL正文内容类型]字段中所指定）。</td> 
+   <td role="rowheader">[!UICONTROL 正文内容]</td> 
+   <td>输入或映射与事件关联的消息正文。 它可以采用HTML或文本格式（如上面[!UICONTROL 正文内容类型]字段中所指定）。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Location]</td> 
+   <td role="rowheader">[!UICONTROL Location]</td> 
    <td> <p>输入事件位置详细信息。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL响应请求]</td> 
-   <td>选择<strong>[！UICONTROL是]</strong>以请求被邀请者发送对活动邀请的响应。</td> 
+   <td role="rowheader">[!UICONTROL 响应请求]</td> 
+   <td>选择<strong>[!UICONTROL 是]</strong>以请求被邀请者发送对活动邀请的响应。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL显示为]</td> 
+   <td role="rowheader">[!UICONTROL 显示为]</td> 
    <td> <p>选择您希望向查看您的日历的人员显示事件的方式。</p> 
     <ul> 
-     <li>[！UICONTROL自由]</li> 
-     <li>[！UICONTROL暂定]</li> 
-     <li>[！UICONTROL Busy]</li> 
-     <li>[！UICONTROL外出]</li> 
-     <li>[！UICONTROL Working Otherels]</li> 
+     <li>[!UICONTROL 自由]</li> 
+     <li>[!UICONTROL 暂定]</li> 
+     <li>[!UICONTROL Busy]</li> 
+     <li>[!UICONTROL 外出]</li> 
+     <li>[!UICONTROL Working Otherels]</li> 
      <li>[!DNL Unknown]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL与会者]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 与会者]</p> </td> 
    <td> <p>添加活动参与者。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入与会者的姓名。</p> </li> 
-     <li> <p><strong>[！UICONTROL电子邮件]</strong> </p> <p>输入与会者的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入与会者的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件]</strong> </p> <p>输入与会者的电子邮件地址。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL类别]</td> 
+   <td role="rowheader">[!UICONTROL 类别]</td> 
    <td>输入或映射您希望事件在日历中显示为的类别。</td> 
   </tr> 
  </tbody> 
@@ -406,19 +406,19 @@ Microsoft Office 365日历连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL监视事件]</td> 
+   <td role="rowheader">[!UICONTROL 监视事件]</td> 
    <td> <p>选择您希望如何观看活动。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL，按创建时间]</strong> </p> <p>留意新活动。</p> </li> 
-     <li> <p><strong>[！UICONTROL，按更新时间]</strong> </p> <p>观看更新的活动。</p> </li> 
+     <li> <p><strong>[!UICONTROL ，按创建时间]</strong> </p> <p>留意新活动。</p> </li> 
+     <li> <p><strong>[!UICONTROL ，按更新时间]</strong> </p> <p>观看更新的活动。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL日历组ID]</td> 
-   <td>选择包含要监视其活动的日历的[！UICONTROL日历组]。</td> 
+   <td role="rowheader">[!UICONTROL 日历组ID]</td> 
+   <td>选择包含要监视其活动的日历的[!UICONTROL 日历组]。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL日历]</td> 
+   <td role="rowheader">[!UICONTROL 日历]</td> 
    <td> <p>选择要监视的特定日历。</p> </td> 
   </tr> 
   <tr> 
@@ -455,7 +455,7 @@ Microsoft Office 365日历连接器使用以下内容：
    <td> <p>有关将您的[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建到Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL日历名称]</td> 
+   <td role="rowheader">[!UICONTROL 日历名称]</td> 
    <td> <p>输入新日历的名称。</p> </td> 
   </tr> 
  </tbody> 
@@ -474,8 +474,8 @@ Microsoft Office 365日历连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL日历ID]</td> 
-   <td>输入要删除的日历的[！UICONTROL日历] ID。</td> 
+   <td role="rowheader">[!UICONTROL 日历ID]</td> 
+   <td>输入要删除的日历的[!UICONTROL 日历] ID。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -493,7 +493,7 @@ Microsoft Office 365日历连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL日历ID]</td> 
+   <td role="rowheader">[!UICONTROL 日历ID]</td> 
    <td> <p>输入或映射您要检索其详细信息的日历的ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -512,8 +512,8 @@ Microsoft Office 365日历连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL日历组ID]</td> 
-   <td>选择包含要列出的日历的[！UICONTROL日历组]。</td> 
+   <td role="rowheader">[!UICONTROL 日历组ID]</td> 
+   <td>选择包含要列出的日历的[!UICONTROL 日历组]。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 限制]</td> 
@@ -535,11 +535,11 @@ Microsoft Office 365日历连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL日历ID]</td> 
-   <td>输入要更新的日历的[！UICONTROL日历ID]。 </td> 
+   <td role="rowheader">[!UICONTROL 日历ID]</td> 
+   <td>输入要更新的日历的[!UICONTROL 日历ID]。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL新日历名称]</td> 
+   <td role="rowheader">[!UICONTROL 新日历名称]</td> 
    <td> <p>输入日历的新名称。</p> </td> 
   </tr> 
  </tbody> 
