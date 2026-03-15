@@ -4,10 +4,10 @@ description: 在某些情况下，您只需要使用满足特定条件的包。 
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 17%
+source-wordcount: '525'
+ht-degree: 19%
 
 ---
 
@@ -79,28 +79,46 @@ ht-degree: 17%
 
 ## 复制筛选器
 
-目前，场景编辑器不包括复制过滤器的功能。
-
->[!NOTE]
->
->如果复制过滤器两侧的模块，则也会复制过滤器。
->
->有关复制模块的详细信息，请参阅[在Adobe Workfront Fusion中复制模块或方案](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)。
-
-要复制筛选器而不复制模块，可以使用Fusion DevTool
+您可以复制现有筛选器并将其粘贴到场景中的其他位置。
 
 1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要添加过滤器的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
-1. 单击屏幕底部附近的DevTool图标![DevTool图标](assets/debugger-icon.png)以打开Fusion DevTool。
+1. 右键单击过滤器所在的模块之间的连接点。
+1. 选择&#x200B;**复制筛选器**。
+1. 右键单击要粘贴过滤器的模块之间的连接点。
+1. 选择**粘贴筛选器
+1. （可选）要调整筛选器，请单击筛选器图标或标签，然后输入值，如本文中的[在两个模块之间添加筛选器](#add-a-filter-between-two-modules)中所述。
 
-   如果您没有看到DevTool图标，请参阅[调试方案](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)以获取有关打开DevTool的说明。
 
-1. 单击左侧栏中的&#x200B;**[!UICONTROL 工具]**&#x200B;图标![DevTool工具](assets/devtools-tools-icon.png)。
 
-1. 单击&#x200B;**[!UICONTROL 复制筛选器]**，然后在右侧面板中配置&#x200B;**[!UICONTROL 复制筛选器]**&#x200B;工具：
 
-   1. 在要复制的筛选器之后直接将&#x200B;**[!UICONTROL Source模块]**&#x200B;设置为模块。
-   1. 将&#x200B;**[!UICONTROL Target模块]**&#x200B;设置为要在其后直接放置过滤器的模块。
+<!--
 
-1. 单击&#x200B;**[!UICONTROL 运行]**。
+Currently, the scenario editor does include a feature for copying a filter.
+
+>[!NOTE]
+>
+>If you copy the modules on either side of the filter, the filter is also copied.
+>
+>For more information on copying modules, see [Copy modules or scenarios in Adobe Workfront Fusion](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md).
+
+To copy a filter without copying modules, you can use the Fusion DevTool
+
+1. Click the **[!UICONTROL Scenarios]** tab in the left panel.
+1. Select the scenario where you want to add a filter.
+1. Click anywhere on the scenario to enter the Scenario editor.
+1. Open the Fusion DevTool by clicking on the DevTool icon ![DevTool icon](assets/debugger-icon.png) near the bottom of the screen.
+   
+   If you do not see the DevTool icon, see [Debug a scenario](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md) for instructions on opening the DevTool.
+   
+1. Click the **[!UICONTROL Tools]** icon ![DevTool tools](assets/devtools-tools-icon.png) in the left side bar.
+
+1. Click **[!UICONTROL Copy Filter]**, then configure the **[!UICONTROL Copy Filter]** tool in the right side panel:
+
+   1. Set the **[!UICONTROL Source Module]** as the module directly after the filter you want to copy.
+   1. Set the **[!UICONTROL Target Module]** as the module that you want to place the filter directly after.
+
+1. Click **[!UICONTROL Run]**.
+
+-->
