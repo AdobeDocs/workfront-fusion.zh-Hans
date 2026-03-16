@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 3e999de9127d6ce320e313f26bf143bf13637ad1
+source-git-commit: ce4ae2c9e05a4d4885c336e6bc3af785e51e8e22
 workflow-type: tm+mt
-source-wordcount: '2070'
-ht-degree: 96%
+source-wordcount: '2077'
+ht-degree: 95%
 
 ---
 
@@ -16,14 +16,15 @@ ht-degree: 96%
 * Fusion 发行活动 {#fusion-release-activity}
    * [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion 版本 - 2026 {#fusion-releases-2026}
-      * [Workfront Fusion版本活动：2026年3月9日开始的这一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-9.md)
-      * [Workfront Fusion版本活动：2026年3月2日开始的这一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-2.md)
-      * [Workfront Fusion版本活动：2026年2月23日开始的这一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-23.md)
+      * [Workfront Fusion发布活动：2026年3月16日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
+      * [Workfront Fusion发布活动： 2026年3月9日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-9.md)
+      * [Workfront Fusion发行活动：2026年3月2日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-2.md)
+      * [Workfront Fusion发行活动： 2026年2月23日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-23.md)
    * Fusion 版本 - 2025 {#fusion-releases-2025}
-      * [Workfront Fusion版本活动：2026年2月16日开始的这一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-16.md)
-      * [Workfront Fusion版本活动：2026年2月9日开始的这一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
-      * [Workfront Fusion版本活动：2026年2月2日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
-      * [Workfront Fusion版本活动：2026年1月26日开始的这一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
+      * [Workfront Fusion发行活动： 2026年2月16日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-16.md)
+      * [Workfront Fusion发行活动： 2026年2月9日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-9.md)
+      * [Workfront Fusion发行活动： 2026年2月2日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-2-2.md)
+      * [Workfront Fusion发行活动： 2026年1月26日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-26.md)
       * [Workfront Fusion 发行活动：2026 年 1 月 19 日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-19.md)
       * [Workfront Fusion 发行活动：2026 年 1 月 12 日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-1-12.md)
       * [Workfront Fusion 发行活动：2025 年 11 月 17 日当周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2025/fusion-2025-11-17.md)
@@ -156,7 +157,7 @@ ht-degree: 96%
 * 开始使用 Workfront Fusion {#get-started-with-fusion}
    * [开始使用 Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
    * 了解 Workfront Fusion  {#understand-workfront-fusion}
-      * [了解 Workfront Fusion &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
+      * [了解 Workfront Fusion ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
       * [Adobe Workfront Fusion 概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
       * [Adobe Workfront Fusion 术语表](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
       * [场景概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)
@@ -178,7 +179,7 @@ ht-degree: 96%
       * [许可与运营概述](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/licensing-operations-overviews.md)
       * [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)
       * [操作](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/operations-in-workfront-fusion.md)
-        [工作池](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
+        [辅助进程池](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/worker-pools.md)
    * 设置和管理组织与团队 {#set-up-and-manage-orgs-and-teams}
       * [设置和管理组织与团队：文章索引](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-and-manage-orgs-and-teams.md)
       * 设置组织和团队 {#set-up-orgs-teams-and-users}
@@ -214,7 +215,7 @@ ht-degree: 96%
       * [添加模块](/help/workfront-fusion/create-scenarios/add-modules/add-modules-toc.md)
       * [将模块添加到场景中](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-basic.md)
       * [配置模块](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
-      * [向方案添加AI提示](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
+      * [向场景添加AI提示](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
       * [使用 AI 生成场景区段](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
       * [复制模块或场景](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
       * [使用 Adobe Workfront Fusion 模板创建场景](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
@@ -268,7 +269,7 @@ ht-degree: 96%
    * [Workfront Fusion 中的 AI 助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
    * [运行场景评分专家](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
    * [删除场景元素](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
-   * [管理方案区域中的方案](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
+   * [从方案区域管理方案](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
 * 构建练习场景 {#build-practice-scenarios}
    * [构建练习场景](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [创建基本场景](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
@@ -343,7 +344,7 @@ ht-degree: 96%
          * [Webhook](/help/workfront-fusion/references/apps-and-modules/universal-connectors/webhooks-updated.md)
          * [在 Adobe Workfront Fusion 的 HTTP 模块中使用双向 TLS](/help/workfront-fusion/references/apps-and-modules/universal-connectors/use-mtls-in-http-modules.md)
       * Adobe 连接器 {#adobe-connectors}
-         * [Adobe应用程序生成器模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md)
+         * [Adobe App Builder模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-app-builder.md)
          * [Adobe Acrobat Sign 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-sign-modules.md)
          * [Adobe Authenticator 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-authenticator-modules.md)
          * [Adobe Campaign 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)

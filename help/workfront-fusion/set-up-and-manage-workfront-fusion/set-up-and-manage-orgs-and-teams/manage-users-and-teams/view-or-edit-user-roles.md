@@ -4,10 +4,10 @@ description: 管理组织中的Adobe Workfront Fusion用户
 author: Becky
 feature: Workfront Fusion
 exl-id: 32c221fa-856b-4921-9fa6-5e60f2aa08cd
-source-git-commit: 88d7a92a4b117d10ab114e32ab5e61f03bc5a846
+source-git-commit: 3f9390d8947ef2666336c1a4cc6eab8d174849d5
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 24%
+source-wordcount: '516'
+ht-degree: 18%
 
 ---
 
@@ -64,23 +64,19 @@ Adobe Workfront Fusion管理员可以查看和更新组织的用户角色。
 1. 在要查看的用户行中单击&#x200B;**[!UICONTROL 详细信息]**。
 1. （可选）要更新组织中用户的角色，请在要更改用户角色的组织行中单击&#x200B;**[!DNL Role]**&#x200B;列中的下拉菜单，然后选择新角色。
 
-<!--
+### 添加或更改组织所有者时的注意事项
 
-### Considerations when adding or changing organization Owners
+您的组织可以有多个所有者。
 
-Your organization can have more than one Owner. 
+将用户分配给所有者角色或从所有者角色分配用户时，请考虑以下事项。
 
-When assigning a user to or from an Owner role, consider the following. 
-
-* Only an Owner can assign the Owner role, or assign another role to a current Owner.
-* Only Admins can be upgraded to Owner.
-* If there is only one Owner, that Owner role cannot be changed or removed.
-* If there is only one Owner, that Owner cannot be deleted if there are other users in the organization.
-* When an Admin is assigned an Owner role, they automatically become Admin in all teams within the org.
-* When an Owner is assigned to another role, that user automatically becomes a Team Member in all teams.
-* When a new team is created, all Owners are automatically assigned as Team Admins.
-
--->
+* 只有责任人才能分配责任人角色，或将另一个角色分配给当前责任人。
+* 只有管理员可以升级到所有者。
+* 如果只有一个所有者，则无法更改或删除该所有者角色。
+* 如果只有一个“所有者”，则在组织中有其他用户时，无法删除该“所有者”。
+* 为管理员分配所有者角色后，他们会自动成为组织内所有团队的管理员。
+* 当所有者被分配给另一个角色时，该用户会自动成为所有团队中的团队成员。
+* 创建新团队后，所有所有者都会被自动分配为团队管理员。
 
 ## 查看或编辑团队的用户角色
 
