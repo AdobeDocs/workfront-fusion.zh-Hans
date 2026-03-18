@@ -5,10 +5,10 @@ description: 本文介绍了可用于在Adobe Workfront Fusion场景中处理错
 author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+source-git-commit: bf2e689f7015b08a0cf773e990077a53144263b6
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 32%
+source-wordcount: '583'
+ht-degree: 31%
 
 ---
 
@@ -55,7 +55,7 @@ Workfront Fusion中提供了以下错误处理指令。
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>回滚</p> <p> <img src="assets/rollback.png"> </p> </td> 
-   <td> <ul><li><p>场景执行立即停止。</li><li>将在所有模块上启动回滚阶段，以尝试将所有模块恢复到其初始状态。 </li><li>不处理后续模块。</p></li><li> <p>在大多数情况下，在场景设置下指定的连续错误数后，将停用场景。 有关详细信息，请参阅<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">连续错误数</a>。</p> </li><li><p>场景执行状态被标记为“错误”。</p></li></ul> <p><b>注意</b>：如果未将错误处理程序路由附加到模块，并且未选中[!UICONTROL 场景设置]下的<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">允许存储不完整的执行</a>允许存储不完整的执行设置，则这是默认行为。</p> </td> 
+   <td> <ul><li><p>场景执行立即停止。</li><li>将在所有模块上启动回滚阶段，以尝试将所有模块恢复到其初始状态。 </li><li>不处理后续模块。</p></li><li> <p>在大多数情况下，在场景设置下指定的连续错误数后，将停用场景。 有关详细信息，请参阅<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#number-of-consecutive-errors" class="MCXref xref">连续错误数</a>。</p> </li><li><p>场景执行状态被标记为“错误”。</p></li></ul> <p><b>注意</b>：如果未将错误处理程序路由附加到模块且未选中<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions" class="MCXref xref">允许存储不完整的执行</a>方案设置，则这是默认行为。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>提交</p> <p> <img src="assets/commit.png"> </p> </td> 
@@ -63,15 +63,15 @@ Workfront Fusion中提供了以下错误处理指令。
   </tr> 
   <tr> 
    <td role="rowheader"> <p>恢复</p> <p> <img src="assets/resume.png"> </p> </td> 
-   <td> <ul><li><p>指定替代输出并将其提供给遇到错误的模块。</p> </li><li><p>随后处理模块。</p></li><li> <p>场景执行状态标记为“成功”。</p></li></ul> </td> 
+   <td> <ul><li><p>指定替代输出并将其提供给遇到错误的模块。</p> </li><li><p>随后处理模块。</p></li>如果错误处理程序位于路由器上，则该场景将按预期通过路由。<li></li><li> <p>场景执行状态标记为“成功”。</p></li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>忽略</p> <p> <img src="assets/ignore.png"> </p> </td> 
-   <td><ul><li> <p>该错误被忽略。</li><li> 不处理后续模块。</p> </li><li><p>如果存在未处理的捆绑包，则场景执行会正常继续进行。</p> </li><li><p>场景执行状态标记为“成功”。</p> </li></ul></td> 
+   <td><ul><li> <p>该错误被忽略。</li><li> 不处理后续模块。</p> </li><li><p>如果存在未处理的捆绑包，则场景执行会正常继续进行。</p> </li><li>如果错误处理程序位于路由器上，则会跳过来自该路由器的后续路由。</li><li><p>场景执行状态标记为“成功”。</p> </li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>间断</p> <p> <img src="assets/break.png"> </p> </td> 
-   <td><ul><li> <p>场景执行的状态存储在未完成执行的队列中，在该队列中可以手动解决错误。有关详细信息，请参阅<a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">查看并解决未完成的执行</a>。</p> <p>不过，也有一些例外。 有关详细信息，请参阅配置场景设置<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">一文中的</a>允许存储不完整的执行</a>。</p></li><li> <p>不处理后续模块。</p></li><li> <p>如果存在未处理的捆绑包，则场景执行会正常继续进行。</p> </li><li><p>禁用[!UICONTROL 自动完成执行]选项后，场景执行状态将标记为“警告”。</p></li></ul> <p>有关详细信息，请参阅本文中的<a href="#break" class="MCXref xref">[!UICONTROL Break]</a>部分</p> </td> 
+   <td><ul><li> <p>场景执行的状态存储在未完成执行的队列中，在该队列中可以手动解决错误。有关详细信息，请参阅<a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">查看并解决未完成的执行</a>。</p> <p>不过，也有一些例外。 有关详细信息，请参阅配置场景设置<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">一文中的</a>允许存储不完整的执行</a>。</p></li><li> <p>不处理后续模块。</p></li><li> <p>如果存在未处理的捆绑包，则场景执行会正常继续进行。</p> </li><li><p>禁用[！UICONTROL自动完成执行]选项后，场景执行状态将标记为“警告”。</p></li></ul> <p>有关详细信息，请参阅本文中的<a href="#break" class="MCXref xref">[！UICONTROL Break]</a>部分</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>重试</p> <p> <img src="assets/retry.png"> </p> </td> 
