@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: ac19f04af9ce80912e3dd9d63dc2ca414080c0c1
+source-git-commit: 6885e29b3b14d97bebcb046d86e204bd2fdfbace
 workflow-type: tm+mt
-source-wordcount: '2091'
-ht-degree: 95%
+source-wordcount: '2104'
+ht-degree: 94%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 95%
 * Fusion 发行活动 {#fusion-release-activity}
    * [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion 版本 - 2026 {#fusion-releases-2026}
+      * [Workfront Fusion发布活动： 2026年4月13日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-4-13.md)
       * [Workfront Fusion发布活动：2026年3月30日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-30.md)
       * [Workfront Fusion发布活动：2026年3月23日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-23.md)
       * [Workfront Fusion发布活动：2026年3月16日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-3-16.md)
@@ -159,7 +160,7 @@ ht-degree: 95%
 * 开始使用 Workfront Fusion {#get-started-with-fusion}
    * [开始使用 Workfront Fusion](/help/workfront-fusion/get-started-with-fusion/get-started-fusion-toc.md)
    * 了解 Workfront Fusion  {#understand-workfront-fusion}
-      * [了解 Workfront Fusion &#x200B;](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
+      * [了解 Workfront Fusion ](/help/workfront-fusion/get-started-with-fusion/understand-fusion/understand-fusion-toc.md)
       * [Adobe Workfront Fusion 概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/workfront-fusion-overview.md)
       * [Adobe Workfront Fusion 术语表](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)
       * [场景概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)
@@ -266,6 +267,7 @@ ht-degree: 95%
    * [查看并解决未完成的执行](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)
    * [查看场景的执行历史](/help/workfront-fusion/manage-scenarios/view-scenario-execution-history.md)
    * [查看特定场景的执行](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
+   * [查看和管理链接方案关系](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
    * [查看运行中场景的数据流](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
    * [查看 Webhook 队列](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
    * [Workfront Fusion 中的 AI 助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)

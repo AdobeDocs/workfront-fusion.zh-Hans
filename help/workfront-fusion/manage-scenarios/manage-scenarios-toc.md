@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
-source-git-commit: 05c75c0e125a4f3f657049d7e57bbc94cc5e4d67
+source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 66%
+source-wordcount: '93'
+ht-degree: 63%
 
 ---
 
@@ -26,6 +26,7 @@ ht-degree: 66%
 * [查看特定场景的执行](/help/workfront-fusion/manage-scenarios/view-a-specific-scenario-execution.md)
 * [查看webhook的队列](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * [查看运行中场景的数据流](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
+* [查看链接方案关系](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
 * [Workfront Fusion 中的 AI 助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * [运行场景评分专家](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [删除场景元素](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
