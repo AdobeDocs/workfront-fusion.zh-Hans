@@ -3,9 +3,10 @@ title: 向场景添加AI提示
 description: 您可以在场景中包含一个AI提示，该提示会连接到
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 09e8ca28c12990a699816671d07f85288d973bc7
+exl-id: d0ac0d0b-e3a0-46de-801d-e53c1c4d63ff
+source-git-commit: 3d957c219cdc5fed4fdf9b0649cab724fae21871
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -13,12 +14,6 @@ ht-degree: 0%
 # 向场景添加AI提示
 
 您可以使用与大型语言模型(LLM)结合使用的模型上下文协议(MCP)在场景中包含AI提示。 通过在MCP代理模块中配置这些工作流，您可以使用人工智能来设置高效、安全和灵活的工作流。
-
->[!NOTE]
->
->此功能与使用AI将模块添加到场景的功能不同。
->
->有关使用AI添加模块的信息，请参阅[使用AI生成场景区段](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)。
 
 ## 模型上下文协议概述
 
