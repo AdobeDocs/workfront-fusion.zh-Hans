@@ -4,10 +4,10 @@ description: 以下日期和时间函数在Adobe Workfront Fusion映射面板中
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: 42bf7b0ac6eb414312573b32b93677a5c9650fa8
 workflow-type: tm+mt
 source-wordcount: '1879'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 以Unix时间戳形式获取当前时间。
 
-## 功能
+## 函数
 
 ### [!UICONTROL addSeconds（日期；数字）]
 
@@ -63,7 +63,7 @@ ht-degree: 1%
 
 ### [!UICONTROL addHours （日期；数字）] {#addhours-date-number}
 
-将给定小时数添加到日期后返回新日期。 要减去小时数，请输入负数。
+Returns a new date as a result of adding a given number of hours to a date. To subtract hours, enter a negative number.
 
 >[!BEGINSHADEBOX]
 
@@ -71,17 +71,17 @@ ht-degree: 1%
 
 * `addHours(2016-12-08T15:55:57.536Z; 2)`
 
-  返回2016-12-08T17:55:57.536Z
+  Returns 2016-12-08T17:55:57.536Z
 
 * `addHours(2016-12-08T15:55:57.536Z;-2)`
 
-  返回2016-12-08T13:55:57.536Z
+  Returns 2016-12-08T13:55:57.536Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addDays （日期；数字）] {#adddays-date-number}
+### [!UICONTROL addDays (date; number)] {#adddays-date-number}
 
-将给定天数添加到日期后返回新日期。 要减去天数，请输入一个负数。
+Returns a new date as a result of adding a given number of days to a date. To subtract days, enter a negative number.
 
 >[!BEGINSHADEBOX]
 
@@ -89,15 +89,15 @@ ht-degree: 1%
 
 * `addDays(2016-12-08T15:55:57.536Z;2)`
 
-  返回2016-12-10T15:55:57.536Z
+  Returns 2016-12-10T15:55:57.536Z
 
 * `addDays(2016-12-08T15:55:57.536Z;-2)`
 
-  返回2016-12-6T15:55:57.536Z
+  Returns 2016-12-6T15:55:57.536Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMonths（日期；数字）]
+### [!UICONTROL addMonths (date; number)]
 
 向日期添加指定月份数后，返回新日期。 要减去月份，请输入负数。
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 指定从0到59的数字。 如果数字超出该范围，则函数返回前一分钟（对于负数）或后续分钟（对于正数）的秒数。
 
-如果您需要指定超出范围的数字，我们建议您使用[!UICONTROL &#x200B; addSeconds]，如上文[addSeconds (date； number)](#addseconds-date-number)部分所述。
+如果您需要指定超出范围的数字，我们建议您使用[!UICONTROL  addSeconds]，如上文[addSeconds (date； number)](#addseconds-date-number)部分所述。
 
 >[!BEGINSHADEBOX]
 
@@ -249,7 +249,7 @@ ht-degree: 1%
 
 此函数使用参数中指定的月份返回一个新日期。
 
-指定从1到12的数字。 如果数字超出此范围，此函数返回上一年（对于负数）或后续年（对于正数）中的月。
+Specify a number from 1 to 12. If the number is outside of this range, the function returns the month in the previous year (for a negative number) or subsequent year (for a positive number).
 
 >[!BEGINSHADEBOX]
 
@@ -257,21 +257,21 @@ ht-degree: 1%
 
 * `setMonth(2015-08-07T11:36:39.138Z;5)`
 
-  返回2015-05-07T11:36:39.138Z
+  Returns 2015-05-07T11:36:39.138Z
 
 * `setMonth(2015-08-07T11:36:39.138Z;17)`
 
-  返回2016-05-07T11:36:39.138Z
+  Returns 2016-05-07T11:36:39.138Z
 
 * `setMonth(2015-08-07T11:36:39.138Z;january)`
 
-  返回2015-01-07T12:36:39.138Z
+  Returns 2015-01-07T12:36:39.138Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setYear（日期；数字）]
+### [!UICONTROL setYear (date; number)]
 
-返回具有参数中指定的年份的新日期。
+Returns a new date with the year specified in parameters.
 
 >[!BEGINSHADEBOX]
 
@@ -279,11 +279,11 @@ ht-degree: 1%
 
 * `setYear(2015-08-07T11:36:39.138Z;2017)`
 
-  返回2017-08-07T11:36:39.138Z
+  Returns 2017-08-07T11:36:39.138Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL formatDate （日期；格式；[时区]）]
+### [!UICONTROL formatDate (date; format; [timezone])]
 
 当您有日期值（如`12-10-2021 20:30`）且要将其格式化为文本值（如`Dec 10, 2021 8:30 PM`）时，请使用此函数。
 
@@ -306,17 +306,17 @@ ht-degree: 1%
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 日期] </td> 
+   <td>[！UICONTROL日期] </td> 
    <td>日期 </td> 
    <td> <p>将日期值转换为文本值。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 格式] </td> 
+   <td>[！UICONTROL格式] </td> 
    <td>文本 </td> 
    <td> <p>允许您使用日期/时间格式令牌指定格式。 有关详细信息，请参阅日期和时间格式的<a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">令牌</a>。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 时区] </td> 
+   <td>[！UICONTROL时区] </td> 
    <td>文本 </td> 
    <td> <p>（可选）用于指定用于转换的时区。 </p> <p>有关可识别时区的列表，请参阅Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> tz数据库时区列表</a>中的“TZ数据库名称”列。 函数仅将此列中列出的值识别为有效时区。 将忽略任何其他值，并改为使用配置文件中指定的方案时区。 </p> <p>如果忽略此参数，将应用用户档案设置中指定的方案时区。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>Europe/Prague</code>， <code>UTC</code></p> </td> 
   </tr> 
@@ -333,7 +333,7 @@ ht-degree: 1%
 
 **示例：**&#x200B;在这些示例中，方案和Web时区都设置为`Europe/Prague`。
 
-![日期时间函数示例](assets/date&time-functions-examples-350x61.png)
+![日期时间函数示例](assets/date-time-functions-examples-350x61.png)
 
 * `formatDate(1. Date created;MM/DD/YYYY)`
 
@@ -374,19 +374,19 @@ ht-degree: 1%
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 文本] </td> 
+   <td>[！UICONTROL文本] </td> 
    <td>文本 </td> 
    <td> <p>将日期值转换为文本值。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 格式] </td> 
+   <td>[！UICONTROL格式] </td> 
    <td>文本 </td> 
    <td> <p>允许您使用日期/时间格式令牌指定格式。 有关详细信息，请参阅日期和时间格式的<a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">令牌</a>。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 时区] </td> 
+   <td>[！UICONTROL时区] </td> 
    <td>文本 </td> 
-   <td> <p>（可选）用于指定用于转换的时区。 </p> <p>有关可识别时区的列表，请参阅Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> tz数据库时区列表</a>中的“TZ数据库名称”列。 函数仅将此列中列出的值识别为有效时区。 将忽略任何其他值，并改为使用配置文件中指定的方案时区。 </p> <p>如果忽略此参数，将应用用户档案设置中指定的方案时区。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>Europe/Prague</code>， <code>UTC</code></p> </td> 
+   <td> <p>(Optional) Lets you specify the timezone used for the conversion. </p> <p>For the list of recognized timezones, see the "TZ database name" column in the Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">List of tz database time zones</a>. Only the values listed in this column are recognized by the function as a valid timezone. Any other value is ignored and the Scenarios timezone specified in your Profile is used instead. </p> <p>If you omit this parameter, the Scenarios timezone specified in your Profile settings is applied.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span><code>Europe/Prague</code>, <code>UTC</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -395,31 +395,31 @@ ht-degree: 1%
 
 #### 返回值和类型
 
-此函数根据指定的格式和时区将文本字符串转换为日期。 值的数据类型是Date。
+This function converts a text string to a date, according to the format and timezone that you specify. The data type of the value is Date.
 
 >[!BEGINSHADEBOX]
 
-**示例：**&#x200B;在以下示例中，返回的Date值是根据ISO 8601表示的，但结果的数据类型为Date。
+**Examples:** In the following examples, the returned Date value is expressed according to ISO 8601, but the data type of the result is Date.
 
 * `parseDate(2016-12-28;YYYY-MM-DD)`
 
-  返回2016-12-28T00:00:00.000Z
+  Returns 2016-12-28T00:00:00.000Z
 
 * `parseDate(2016-12-28 16:03;YYYY-MM-DD HH:mm)`
 
-  返回2016-12-28T16:03:00.000Z
+  Returns 2016-12-28T16:03:00.000Z
 
 * `parseDate(2016-12-28 04:03 pm; YYYY-MM-DD hh:mm a)`
 
-  返回2016-12-28T16:03:06.000Z
+  Returns 2016-12-28T16:03:06.000Z
 
 * `parseDate(1482940986;X)`
 
-  返回2016-12-28T16:03:06.000Z
+  Returns 2016-12-28T16:03:06.000Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL dateDifference (Date1； Date2； Unit)]
+### [!UICONTROL dateDifference (Date1; Date2; Unit)]
 
 返回表示两个日期之差的数字，以指定的单位表示。
 
@@ -463,7 +463,7 @@ ht-degree: 1%
 
 如果您需要计算与每月第n天对应的日期（例如，第一个星期二、第三个星期五等），可以使用以下公式：
 
-![第n天计算](assets/date&time-functions-calc-nth-day-350x31.png)
+![第n天计算](assets/date-time-functions-calc-nth-day-350x31.png)
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -533,33 +533,33 @@ ht-degree: 1%
 >
 >* `round()`函数用于日期之一在夏令时时间段内，而另一个日期不在夏令时时间段内的情况。 在这些情况下，小时数差等于或少于一小时。 对于非整数结果，可以将其除以24。 你损失了一个小时的夏令时。 将其扁平化以便没有百分比
 
-#### 如何计算每月的最后一天/毫秒
+#### How to calculate last day/millisecond of month
 
-例如，当您在搜索模块中指定日期范围时，如果该范围跨越整个前一个月为一个关闭间隔（该间隔包含其两个限制点），则需要计算当月的最后一天。
+When you specify a date range, for example in a search module, if the range spans the whole previous month as a closed interval (the interval that includes both its limit points), you need to calculate the last day of the month.
 
 2019-09-01 ≤ D ≤ 2019-09-30
 
-下面的公式显示了一种计算上个月最后一天的方法：
+The formula below shows one way how to calculate last day of the previous month:
 
-![上个月的最后一天](assets/last-day-prev-month.png)
+![Last day of previous month](assets/last-day-prev-month.png)
 
 ```
 {{addDays(setDate(now; 1); -1)}}
 ```
 
-在某些情况下，您不仅需要计算每月的最后一天，还需要计算每月的最后一毫秒：
+In some cases, you need to calculate not only the last day of month, but literally its last millisecond:
 
 2019-09-01T00:00:00.000Z ≤ D ≤ 2019-09-30T23:59:59.999Z
 
-此公式显示了一种计算上个月最后一毫秒的方法：
+This formula shows one way how to calculate last millisecond of the previous month:
 
-![上个月的上一毫秒](assets/last-millisecond-prev-month-350x45.png)
+![Last millisecond of previous month](assets/last-millisecond-prev-month-350x45.png)
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
 ```
 
-如果需要结果以使用时区设置，请忽略UTC参数：
+If you need the result to use your timezone setting, omit the UTC argument:
 
 ![省略UTC](assets/omit-utc-argument-350x45.png)
 

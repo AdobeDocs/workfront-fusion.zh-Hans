@@ -1,19 +1,19 @@
 ---
-title: GitLab模块
-description: 除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需要Adobe Workfront Fusion许可证。
+title: GitLab 模块
+description: 使用 Adobe Workfront Fusion 需要在拥有 Adobe Workfront 许可的基础上另行购买 Workfront Fusion 许可。
 author: Becky
 feature: Workfront Fusion
 exl-id: fabbadce-5669-4363-834e-6d7428520f62
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
-source-wordcount: '4095'
-ht-degree: 1%
+source-wordcount: '4099'
+ht-degree: 10%
 
 ---
 
 # [!UICONTROL GitLab]模块
 
-除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需要Adobe Workfront Fusion许可证。
+使用 Adobe Workfront Fusion 需要在拥有 Adobe Workfront 许可的基础上另行购买 Workfront Fusion 许可。
 
 在Adobe Workfront Fusion方案中，您可以自动使用[!UICONTROL GitLab]的工作流，并将其连接到多个第三方应用程序和服务。
 
@@ -21,49 +21,49 @@ ht-degree: 1%
 >
 >本文期望读者对API文档以及一般的[!DNL GitLab]功能有一定的了解。
 
-有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
+有关创建场景的说明，请参阅[创建场景：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)中的相关文章。
 
-有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
+有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的相关文章。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
-## 将[!DNL GitLab]连接到Workfront Fusion {#connect-gitlab-to-workfront-fusion}
+## 将 [!DNL GitLab] 连接到 Workfront Fusion {#connect-gitlab-to-workfront-fusion}
 
 1. 在任意Workfront Fusion [!DNL Gitlab]模块中，单击连接字段旁边的&#x200B;**[!UICONTROL 添加]**。
 1. 配置以下字段：
@@ -74,15 +74,15 @@ ht-degree: 1%
     <tbody> 
      <tr> 
       <td role="rowheader">[!UICONTROL 连接名称]</td> 
-      <td> <p>输入连接的名称。</p> </td> 
+      <td> <p>输入连接名称。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL [!DNL GitLab] URL]</td> 
+      <td role="rowheader">[！UICONTROL [!DNL GitLab] URL]</td> 
       <td>输入[!DNL GitLab]实例的URL。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 访问令牌]</td> 
-      <td><p>输入您的[!UICONTROL 专用令牌]或[!UICONTROL 个人访问令牌]。</p><p>有关在[!DNL GitLab]中查找或创建个人访问令牌的信息，请参阅<a href="https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html">文档中的</a>个人访问令牌[!DNL GitLab]中的“创建个人访问令牌”。</p></td> 
+      <td role="rowheader">[！UICONTROL访问令牌]</td> 
+      <td><p>输入您的[！UICONTROL专用令牌]或[！UICONTROL个人访问令牌]。</p><p>有关在[!DNL GitLab]中查找或创建个人访问令牌的信息，请参阅<a href="https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html">文档中的</a>个人访问令牌[!DNL GitLab]中的“创建个人访问令牌”。</p></td> 
      </tr> 
     </tbody> 
    </table>
@@ -91,11 +91,11 @@ ht-degree: 1%
 1. 单击&#x200B;**[!UICONTROL 继续]**。
 1. 单击&#x200B;**[!UICONTROL 授权]**&#x200B;以创建连接并返回模块。
 
-## [!DNL GitLab]模块及其字段
+## [!DNL GitLab] 模块及其字段
 
-在配置[!DNL GitLab]模块时，Workfront Fusion将显示以下列出的字段。 除此以外，可能还会显示其他[!DNL GitLab]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在您配置 [!DNL GitLab] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL GitLab] 字段。模块中的加粗标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -111,7 +111,7 @@ ht-degree: 1%
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[!UICONTROL webhook]字段旁边的<b>[!UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视生成状态更改的项目</li></ul></li><li>单击<b>[!UICONTROL 保存]</b>以保存webhook并返回模块。 </td> 
+   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[！UICONTROL webhook]字段旁边的<b>[！UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视生成状态更改的项目</li></ul></li><li>单击<b>[！UICONTROL保存]</b>以保存webhook并返回模块。 </td> 
    </tr> 
    </tbody> 
 </table>
@@ -128,7 +128,7 @@ ht-degree: 1%
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[!UICONTROL webhook]字段旁边的<b>[!UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视其注释的项目</li></ul></li><li>单击<b>[!UICONTROL 保存]</b>以保存webhook并返回模块。 </td> 
+   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[！UICONTROL webhook]字段旁边的<b>[！UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视其注释的项目</li></ul></li><li>单击<b>[！UICONTROL保存]</b>以保存webhook并返回模块。 </td> 
    </tr> 
    </tbody> 
 </table>
@@ -145,7 +145,7 @@ ht-degree: 1%
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[!UICONTROL webhook]字段旁边的<b>[!UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视提交的项目</li></ul></li><li>单击<b>[!UICONTROL 保存]</b>以保存webhook并返回模块。 </td> 
+   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[！UICONTROL webhook]字段旁边的<b>[！UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视提交的项目</li></ul></li><li>单击<b>[！UICONTROL保存]</b>以保存webhook并返回模块。 </td> 
    </tr> 
    </tbody> 
 </table>
@@ -162,7 +162,7 @@ ht-degree: 1%
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[!UICONTROL webhook]字段旁边的<b>[!UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook关注的问题评论</li></ul></li><li>单击<b>[!UICONTROL 保存]</b>以保存webhook并返回模块。 </td> 
+   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[！UICONTROL webhook]字段旁边的<b>[！UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook关注的问题评论</li></ul></li><li>单击<b>[！UICONTROL保存]</b>以保存webhook并返回模块。 </td> 
    </tr> 
    </tbody> 
 </table>
@@ -179,7 +179,7 @@ ht-degree: 1%
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[!UICONTROL webhook]字段旁边的<b>[!UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook关注的问题项目</li></ul></li><li>单击<b>[!UICONTROL 保存]</b>以保存webhook并返回模块。 </td> 
+   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[！UICONTROL webhook]字段旁边的<b>[！UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook关注的问题项目</li></ul></li><li>单击<b>[！UICONTROL保存]</b>以保存webhook并返回模块。 </td> 
    </tr> 
    </tbody> 
 </table>
@@ -201,7 +201,7 @@ ht-degree: 1%
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[!UICONTROL webhook]字段旁边的<b>[!UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视合并请求的项目</li></ul></li><li>单击<b>[!UICONTROL 保存]</b>以保存webhook并返回模块。 </td> 
+   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[！UICONTROL webhook]字段旁边的<b>[！UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视合并请求的项目</li></ul></li><li>单击<b>[！UICONTROL保存]</b>以保存webhook并返回模块。 </td> 
    </tr> 
    </tbody> 
 </table>
@@ -218,7 +218,7 @@ ht-degree: 1%
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[!UICONTROL webhook]字段旁边的<b>[!UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>希望webhook监视合并请求注释的项目</li></ul></li><li>单击<b>[!UICONTROL 保存]</b>以保存webhook并返回模块。 </td> 
+   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[！UICONTROL webhook]字段旁边的<b>[！UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>希望webhook监视合并请求注释的项目</li></ul></li><li>单击<b>[！UICONTROL保存]</b>以保存webhook并返回模块。 </td> 
    </tr> 
    </tbody> 
 </table>
@@ -235,7 +235,7 @@ ht-degree: 1%
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[!UICONTROL webhook]字段旁边的<b>[!UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视管道状态更改的项目</li></ul></li><li>单击<b>[!UICONTROL 保存]</b>以保存webhook并返回模块。 </td> 
+   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[！UICONTROL webhook]字段旁边的<b>[！UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视管道状态更改的项目</li></ul></li><li>单击<b>[！UICONTROL保存]</b>以保存webhook并返回模块。 </td> 
    </tr> 
    </tbody> 
 </table>
@@ -251,8 +251,8 @@ ht-degree: 1%
    <col> 
    <tbody> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>有关将[!DNL GitLab]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">将[!DNL GitLab]连接到Workfront Fusion</a>。</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>有关将 [!DNL GitLab] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">将 [!DNL GitLab] 连接到 Workfront Fusion</a>。</td> 
    </tr> 
    <tr> 
    <td role="rowheader">最大结果</td> 
@@ -272,8 +272,8 @@ ht-degree: 1%
    <col> 
    <tbody> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>有关将[!DNL GitLab]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">将[!DNL GitLab]连接到Workfront Fusion</a>。</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>有关将 [!DNL GitLab] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">将 [!DNL GitLab] 连接到 Workfront Fusion</a>。</td> 
    </tr> 
    <tr> 
    <td role="rowheader">最大结果</td> 
@@ -294,7 +294,7 @@ ht-degree: 1%
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[!UICONTROL webhook]字段旁边的<b>[!UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视标记的项目</li></ul></li><li>单击<b>[!UICONTROL 保存]</b>以保存webhook并返回模块。 </td> 
+   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[！UICONTROL webhook]字段旁边的<b>[！UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视标记的项目</li></ul></li><li>单击<b>[！UICONTROL保存]</b>以保存webhook并返回模块。 </td> 
    </tr> 
    </tbody> 
 </table>
@@ -311,7 +311,7 @@ ht-degree: 1%
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[!UICONTROL webhook]字段旁边的<b>[!UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视其注释的项目</li></ul></li><li>单击<b>[!UICONTROL 保存]</b>以保存webhook并返回模块。 </td> 
+   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[！UICONTROL webhook]字段旁边的<b>[！UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望webhook监视其注释的项目</li></ul></li><li>单击<b>[！UICONTROL保存]</b>以保存webhook并返回模块。 </td> 
    </tr> 
    </tbody> 
 </table>
@@ -336,7 +336,7 @@ ht-degree: 1%
    <tbody> 
    <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[!UICONTROL webhook]字段旁边的<b>[!UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望Webhook关注Wiki页面的项目</li></ul></li><li>单击<b>[!UICONTROL 保存]</b>以保存webhook并返回模块。 </td> 
+   <td><p>选择要用于此触发器的webhook，或添加新的webhook。 </p><p>要添加新的webhook， <ol><li>单击[！UICONTROL webhook]字段旁边的<b>[！UICONTROL Add]</b>。</li><li>输入以下内容： <ul><li>webhook的名称</li><li>要用于此webhook的连接</li><li>您希望Webhook关注Wiki页面的项目</li></ul></li><li>单击<b>[！UICONTROL保存]</b>以保存webhook并返回模块。 </td> 
    </tr> 
    </tbody> 
 </table>
@@ -362,32 +362,32 @@ ht-degree: 1%
    <col> 
    <tbody> 
    <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>有关将[!DNL GitLab]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">将[!DNL GitLab]连接到Workfront Fusion</a>。</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>有关将 [!DNL GitLab] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-gitlab-to-workfront-fusion-connect-gitlab-to-workfront-fusion" class="MCXref xref">将 [!DNL GitLab] 连接到 Workfront Fusion</a>。</td> 
    </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 项目ID]</td> 
+   <td role="rowheader">[!UICONTROL 项目 ID]</td> 
    <td> <p>选择或映射包含要取消的生成的项目。</p> </td> 
    </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 内部版本ID]</td> 
+   <td role="rowheader">[！UICONTROL内部版本ID]</td> 
    <td>选择或映射要取消的生成。</td> 
    </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 合并提交消息]</td> 
+   <td role="rowheader">[！UICONTROL合并提交消息]</td> 
    <td> 输入或映射合并的提交消息。
     </td> 
    </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 应删除源分支]</td> 
+   <td role="rowheader">[！UICONTROL应删除源分支]</td> 
    <td>选择合并完成时是否要删除源分支。</td> 
    </tr> 
    <tr> 
-   <td role="rowheader">构建成功时进行[!UICONTROL 合并]</td> 
+   <td role="rowheader">构建成功时进行[！UICONTROL合并]</td> 
    <td>选择是否在构建完成后立即合并合并合并请求。</td> 
    </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL SHA]</td> 
+   <td role="rowheader">[！UICONTROL SHA]</td> 
    <td>如果存在，则此SHA必须与源分支的HEAD匹配。 如果不匹配，合并将失败。</td> 
    </tr> 
    </tbody> 
@@ -643,15 +643,15 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>要创建新连接，请参阅本文中的<a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL 将[!DNL GitLab]连接到Workfront Fusion]</a>。</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>要创建新连接，请参阅本文中的<a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[！UICONTROL将[!DNL GitLab]连接到Workfront Fusion]</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 项目]</td> 
+   <td role="rowheader">[！UICONTROL项目]</td> 
    <td> <p>选择包含您要检索其详细信息的问题的项目。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 问题ID]</td> 
+   <td role="rowheader">[！UICONTROL问题ID]</td> 
    <td> <p>输入或映射您要检索其详细信息的问题的名称。</p> </td> 
   </tr> 
  </tbody> 
@@ -767,7 +767,7 @@ ht-degree: 1%
 
 此模块获取单个代码片段的所有注释列表。 代码片段注释是用户可以在代码片段中发布的评论。
 
-有关字段的信息，请参阅[🔗文档中的](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes) [!DNL GitLab]。
+有关字段的信息，请参阅[文档中的](https://docs.gitlab.com/ee/api/notes.html#list-all-snippet-notes)列出所有代码片段注释[!DNL GitLab]。
 
 +++
 
@@ -780,15 +780,15 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>要创建新连接，请参阅本文中的<a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL 将[!DNL GitLab]连接到Workfront Fusion]</a>。</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>要创建新连接，请参阅本文中的<a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[！UICONTROL将[!DNL GitLab]连接到Workfront Fusion]</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 项目ID]</td> 
+   <td role="rowheader">[!UICONTROL 项目 ID]</td> 
    <td> <p>选择包含要为其列出内部版本的提交的项目。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 作用域]</td> 
+   <td role="rowheader">[！UICONTROL作用域]</td> 
    <td> 要将搜索限制为以特定状态构建，请选择状态。 将此字段留空将返回提交的所有生成。  </td> 
   </tr> 
  </tbody> 
@@ -1013,15 +1013,15 @@ ht-degree: 1%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>要创建新连接，请参阅本文中的<a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[!UICONTROL 将[!DNL GitLab]连接到Workfront Fusion]</a>。</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>要创建新连接，请参阅本文中的<a href="#connect-gitlab-to-workfront-fusion" class="MCXref xref">[！UICONTROL将[!DNL GitLab]连接到Workfront Fusion]</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 项目ID]</td> 
+   <td role="rowheader">[!UICONTROL 项目 ID]</td> 
    <td> <p>选择包含要重试的生成的项目。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 内部版本ID]</td> 
+   <td role="rowheader">[！UICONTROL内部版本ID]</td> 
    <td> 选择要重试的生成。 </td> 
   </tr> 
  </tbody> 
@@ -1029,7 +1029,7 @@ ht-degree: 1%
 
 +++
 
-+++重试管道中失败的作业&#x200B;**&#x200B;**
++++重试管道中失败的作业&#x200B;****
 
 此操作模块重试管道中失败的生成。
 

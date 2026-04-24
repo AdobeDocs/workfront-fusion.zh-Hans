@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion JSON应用程序提供了用于处理JSON格
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '1229'
-ht-degree: 0%
+ht-degree: 14%
 
 ---
 
@@ -15,32 +15,32 @@ ht-degree: 0%
 
 Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格式的数据的模块，以便Adobe Workfront Fusion可以进一步处理数据内容或创建新的JSON内容。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
 +++
 
@@ -109,9 +109,9 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
 
 ## [!UICONTROL JSON]模块及其字段
 
-在配置[!DNL JSON]模块时，Workfront Fusion将显示以下列出的字段。 除了这些以外，还可能会显示其他JSON字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在您配置 [!DNL JSON] 模块时，Workfront Fusion 会显示以下字段。除了这些以外，还可能会显示其他JSON字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的加粗标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -120,7 +120,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
 * [创建JSON](#create-json)
 * [转换JSON](#transform-json)
 
-### 汇总
+### 聚合器
 
 #### [!UICONTROL 聚合到JSON]
 
@@ -131,23 +131,23 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source module] </td> 
+   <td role="rowheader">[！UICONTROL Source module] </td> 
    <td> <p>选择用于输出要汇总到JSON的数据的模块。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data structure]</td> 
+   <td role="rowheader">[！UICONTROL Data structure]</td> 
    <td> <p>选择要用于创建JSON的数据结构。 数据结构决定了此模块中可用的其他字段。 有关详细信息，请参阅本文中的<a href="#data-structure" class="MCXref xref">数据结构</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 缩进]</td> 
+   <td role="rowheader">[！UICONTROL缩进]</td> 
    <td> <p> 选择是要使用制表符、两个空格还是四个空格缩进JSON。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 分组依据]</td> 
+   <td role="rowheader">[！UICONTROL分组依据]</td> 
    <td>定义要按其分组聚合输出的表达式。 此表达式可以包含一个或多个映射项。 然后，使用此表达式的值将聚合的数据分成不同的组。 每个组输出为一个单独的捆绑，其中包含一个键（经过计算的表达式）和一个值（聚合文本）。 在后续模块中，您可以将该键用作过滤器。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 在出现空聚合后停止处理]</td> 
+   <td role="rowheader">[！UICONTROL在出现空聚合后停止处理]</td> 
    <td>启用此选项可在没有结果时停止方案。</td> 
   </tr> 
  </tbody> 
@@ -169,7 +169,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL JSON string] </td> 
+   <td role="rowheader">[！UICONTROL JSON string] </td> 
    <td> <p>输入或映射要转换为XML的JSON。</p> </td> 
   </tr> 
  </tbody> 
@@ -203,11 +203,11 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data structure]</td> 
+   <td role="rowheader">[！UICONTROL Data structure]</td> 
    <td> <p>选择要用于创建JSON的数据结构。 有关详细信息，请参阅本文中的<a href="#data-structure" class="MCXref xref">数据结构</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL JSON string] </td> 
+   <td role="rowheader">[！UICONTROL JSON string] </td> 
    <td> <p>输入或映射要解析的JSON。</p> </td> 
   </tr> 
  </tbody> 
@@ -226,7 +226,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
    <td> <p>选择要用于此JSON的缩进。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 对象]</td> 
+   <td role="rowheader">[！UICONTROL对象]</td> 
    <td> <p>输入或映射要转换为JSON的对象。</p> </td> 
   </tr> 
  </tbody> 
@@ -238,7 +238,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
 
 **示例：**&#x200B;以下示例说明如何将数据记录从[!DNL Google Sheets]转换为JSON格式：
 
-1. 将[!DNL Google Sheets] > [!UICONTROL 选择方案中的行]模块以获取数据。 设置模块以从[!DNL Google]电子表格中检索行。 将&#x200B;**[!UICONTROL 返回的最大行数]**&#x200B;设置为一个较小的数字，但大于一个以用于测试目的（例如，3）。 执行[!DNL Google Sheets]模块，方法是右键单击该模块并选择“**[!UICONTROL 仅运行此模块]**”。 验证模块的输出。
+1. 将[!DNL Google Sheets] > [!UICONTROL 选择方案中的行]模块以获取数据。 设置模块以从[!DNL Google]电子表格中检索行。 将&#x200B;**[!UICONTROL 返回的最大行数]**&#x200B;设置为一个较小的数字，但大于一个以用于测试目的（例如，三个）。 执行[!DNL Google Sheets]模块，方法是右键单击该模块并选择“**[!UICONTROL 仅运行此模块]**”。 验证模块的输出。
 
 1. 在[!UICONTROL 模块之后连接]数组汇总[!DNL Google Sheets]模块。 在模块设置的[!DNL Google Sheets]Source节点&#x200B;**[!UICONTROL 字段中选择]**&#x200B;模块。 请暂时保留其他字段。
 
@@ -285,7 +285,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
 
 ### 在JSON中使用条件语句时，模块失败
 
-在JSON中使用条件语句（如`if`）时，请将引号放在条件语句之外。
+在 JSON 中使用 `if` 等条件语句时，需将引号置于条件语句外部。
 
 >[!BEGINSHADEBOX]
 

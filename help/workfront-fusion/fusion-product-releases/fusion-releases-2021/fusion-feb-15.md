@@ -1,27 +1,27 @@
 ---
-title: Workfront Fusion发行活动：&amp；nbsp；2021年2月15日起一周
-description: Workfront Fusion发行活动：&amp；nbsp；2021年2月15日起一周
+title: Workfront Fusion 发行活动：2021 年 2 月 15 日当周
+description: Workfront Fusion 发行活动：2021 年 2 月 15 日当周
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 9c726ca7-ceb4-49ec-b581-4ed610294402
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 15%
+source-wordcount: '242'
+ht-degree: 24%
 
 ---
 
-# Workfront Fusion发行活动： 2021年2月15日开始的周
+# Workfront Fusion 发行活动：2021 年 2 月 15 日当周
 
 本页介绍了2021年2月15日这一周在Adobe Workfront Fusion中所做的所有增强。
 
 如需查看所有近期更改的完整列表，请参阅 [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
 
-如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=zh-Hans)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
+如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
 
-此版本还包括一个或多个维护更新。 有关Workfront Fusion 2.0维护更新的信息，请参阅[Workfront维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=zh-Hans)。
+此版本还包括一个或多个维护更新。 有关Workfront Fusion 2.0维护更新的信息，请参阅[Workfront维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html)。
 
 ## 团队现在共享电子邮件通知设置
 

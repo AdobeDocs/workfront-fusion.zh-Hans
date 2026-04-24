@@ -1,15 +1,15 @@
 ---
-title: Workfront Fusion发行活动：&amp；nbsp；2021年11月15日起一周
-description: Workfront Fusion发行活动：&amp；nbsp；2021年11月15日起一周
+title: Workfront Fusion发行活动： 2021年11月15日开始的周
+description: Workfront Fusion发行活动： 2021年11月15日开始的周
 author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: f523c1eb-682a-45af-8945-a1815422fbea
-source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
+source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 22%
+source-wordcount: '168'
+ht-degree: 23%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 22%
 
 如需查看所有近期更改的完整列表，请参阅 [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
 
-如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=zh-Hans)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
+如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
 
 ## Adobe Workfront Fusion的新外观
 

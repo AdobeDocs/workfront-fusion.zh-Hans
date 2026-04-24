@@ -4,7 +4,7 @@ description: 您可以查看组织的活动日志，如场景创建或激活。
 author: Becky
 feature: Workfront Fusion
 exl-id: 3cf851e3-50a1-4baa-8318-a24e1f467134
-source-git-commit: 2ffb7676067720a5b9daa51b560389396f4a665f
+source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 7%
@@ -66,7 +66,7 @@ ht-degree: 7%
 ## 筛选活动日志
 
 1. 在左侧导航面板中，单击&#x200B;**组织概述** ![组织概述图标](assets/org-overview-icon.png)。
-1. 如果您当前不在要查看其活动日志的组织中，请单击屏幕右上角的组织名称，然后从下拉列表中选择组织。
+1. 如果您当前不在要查看活动日志的组织中，请单击屏幕右上角的组织名称，然后从下拉列表中选择组织。
 1. 单击屏幕顶部附近的&#x200B;**[!UICONTROL 活动日志]**&#x200B;选项卡。
 
    此时将打开“活动日志”页面。
