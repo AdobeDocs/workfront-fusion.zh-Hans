@@ -122,17 +122,17 @@ Dropbox连接器使用以下对象：
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 客户端 ID]</td>
-        <td>输入您的[！UICONTROL Dropbox] [！UICONTROL客户端ID]。 </tr>
+        <td>输入您的[!UICONTROL Dropbox] [!UICONTROL 客户端ID]。 </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的[!DNL Dropbox] [！UICONTROL客户端密钥]。 </td>
+        <td>输入您的[!DNL Dropbox] [!UICONTROL 客户端密钥]。 </td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL帐户类型]</td>
+        <td role="rowheader">[!UICONTROL 帐户类型]</td>
         <td>选择您是连接到个人Dropbox帐户还是企业(Dropbox Business)帐户。</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL排除dropbox-api-path-root标头]</td>
+        <td role="rowheader">[!UICONTROL 排除dropbox-api-path-root标头]</td>
         <td>启用此选项以排除具有应用程序文件夹访问权限的Dropbox应用程序的dropbox-api-path-root标头</td>
         </tr>
       </tbody>
@@ -172,7 +172,7 @@ Dropbox连接器使用以下对象：
    <td> <p>选择要监视更改的文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Watch also subfolders]</td> 
+   <td>[!UICONTROL Watch also subfolders]</td> 
    <td> <p> 启用此选项还可以监视所选文件夹中用于修改文件的子文件夹。</p> </td> 
   </tr> 
   <tr> 
@@ -388,7 +388,7 @@ Dropbox连接器使用以下对象：
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL文件夹名称] </td> 
+   <td>[!UICONTROL 文件夹名称] </td> 
    <td> <p>输入新文件夹的名称。</p> </td> 
   </tr> 
   <tr> 
@@ -396,7 +396,7 @@ Dropbox连接器使用以下对象：
    <td> <p>输入或映射要创建新文件夹的路径。</p> <p>注意：   <p>如果您使用[!DNL Dropbox Business]帐户（包含团队空间），则必须删除斜杠<code>/</code>，或者不要单击<strong>单击此处选择文件夹</strong>以在根目录中创建团队文件夹。</p> <p>如果未删除斜杠，则会返回错误<code>[409] path/malformed_path/..</code>。</p> </p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL自动重命名]</td> 
+   <td>[!UICONTROL 自动重命名]</td> 
    <td> <p> 启用此选项可重命名新文件夹（如果目标位置中已存在同名文件夹）。</p> </td> 
   </tr> 
  </tbody> 
@@ -419,7 +419,7 @@ Dropbox连接器使用以下对象：
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL选择至]</td> 
+   <td>[!UICONTROL 选择至]</td> 
    <td> <p> 选择是要创建或覆盖DOC文件。</p><ul><li><b>创建</b></p>选择要创建文件的文件夹。</li><li><b>覆盖</b><p>选择要如何选择要覆盖的文件，然后映射文件路径或选择文件。 </td> 
   </tr> 
   <tr> 
@@ -448,24 +448,24 @@ Dropbox连接器使用以下对象：
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL选择文件的方法]</td> 
+   <td>[!UICONTROL 选择文件的方法]</td> 
    <td> <p> 选择是要映射还是输入文件路径，或者手动选择文件。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL文件路径/文件]</p> </td> 
-   <td> <p style="font-weight: bold;">[！UICONTROL文件路径]</p> <p>输入或映射目标文件的路径。</p> <p style="font-weight: bold;">[！UICONTROL文件]</p> <p>选择目标文件。</p> </td> 
+   <td> <p>[!UICONTROL 文件路径/文件]</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL 文件路径]</p> <p>输入或映射目标文件的路径。</p> <p style="font-weight: bold;">[!UICONTROL 文件]</p> <p>选择目标文件。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL请求的可见性]</p> </td> 
-   <td> <p>选择链接是公共链接、团队链接还是密码受限链接。</p> <p><b>注意：</b></p><p> [！UICONTROL团队]仅适用于Dropbox商业帐户。 [！UICONTROL密码访问]仅适用于[!DNL Dropbox Pro]或Dropbox商业帐户。</p> </td> 
+   <td> <p>[!UICONTROL 请求的可见性]</p> </td> 
+   <td> <p>选择链接是公共链接、团队链接还是密码受限链接。</p> <p><b>注意：</b></p><p> [!UICONTROL 团队]仅适用于Dropbox商业帐户。 [!UICONTROL 密码访问]仅适用于[!DNL Dropbox Pro]或Dropbox商业帐户。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL链接的到期日期]</td> 
+   <td>[!UICONTROL 链接的到期日期]</td> 
    <td> <p> 输入链接到期且无法再访问的日期和时间。 如果此字段留空，链接将不会过期。 有关支持的日期和时间格式列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">类型强制转换</a>。</p>  </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL Link的访问级别]</p> </td> 
-   <td> <p>设置链接收件人的权限。</p> <ul><li><strong>[！UICONTROL查看器]</strong> <p>使用该链接的用户可以查看和评论内容。</p> </li><li><strong>[！UICONTROL编辑器]</strong><p> 使用该链接的用户可以编辑、查看和评论内容。 此访问级别仅适用于基于云的文档。</p> </li><li><strong>[！UICONTROL Max]</strong> <p>使用该链接的用户将获得您可以设置该链接的最大访问级别。</p></li><ul> </td> 
+   <td> <p>[!UICONTROL Link的访问级别]</p> </td> 
+   <td> <p>设置链接收件人的权限。</p> <ul><li><strong>[!UICONTROL 查看器]</strong> <p>使用该链接的用户可以查看和评论内容。</p> </li><li><strong>[!UICONTROL 编辑器]</strong><p> 使用该链接的用户可以编辑、查看和评论内容。 此访问级别仅适用于基于云的文档。</p> </li><li><strong>[!UICONTROL Max]</strong> <p>使用该链接的用户将获得您可以设置该链接的最大访问级别。</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -490,12 +490,12 @@ Dropbox连接器使用以下对象：
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL选择文件的方法]</td> 
+   <td>[!UICONTROL 选择文件的方法]</td> 
    <td> <p> 选择是要映射还是输入文件路径，或者手动选择文件。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL文件或文件夹路径] / [！UICONTROL文件或文件夹]</p> </td> 
-   <td> <p style="font-weight: bold;">[！UICONTROL文件/文件夹路径]</p> <p>输入目标路径或将目标路径映射到文件或文件夹。</p> <p style="font-weight: bold;">[！UICONTROL文件/文件夹]</p> <p>从菜单中选择文件或文件夹。</p> </td> 
+   <td> <p>[!UICONTROL 文件或文件夹路径] / [!UICONTROL 文件或文件夹]</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL 文件/文件夹路径]</p> <p>输入目标路径或将目标路径映射到文件或文件夹。</p> <p style="font-weight: bold;">[!UICONTROL 文件/文件夹]</p> <p>从菜单中选择文件或文件夹。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -519,27 +519,27 @@ Dropbox连接器使用以下对象：
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL选择文件/文件夹的方法] </td> 
+   <td>[!UICONTROL 选择文件/文件夹的方法] </td> 
    <td> <p>选择是要映射还是输入文件或文件夹路径，或者手动选择文件或文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL文件/文件夹路径] /</p> </td> 
-   <td> <p style="font-weight: bold;">[！UICONTROL文件/文件夹路径]</p> <p>输入目标路径或将目标路径映射到文件或文件夹。</p> <p style="font-weight: bold;">[！UICONTROL文件/文件夹]</p> <p>选择是要移动文件或文件夹，然后选择文件或文件夹。</p> </td> 
+   <td> <p>[!UICONTROL 文件/文件夹路径] /</p> </td> 
+   <td> <p style="font-weight: bold;">[!UICONTROL 文件/文件夹路径]</p> <p>输入目标路径或将目标路径映射到文件或文件夹。</p> <p style="font-weight: bold;">[!UICONTROL 文件/文件夹]</p> <p>选择是要移动文件或文件夹，然后选择文件或文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL到文件夹]</p> </td> 
+   <td> <p>[!UICONTROL 到文件夹]</p> </td> 
    <td> <p>输入或映射文件或文件夹的目标位置。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL新名称]</p> </td> 
+   <td> <p>[!UICONTROL 新名称]</p> </td> 
    <td> <p>在新位置输入文件或文件夹的新名称。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL自动重命名]</p> </td> 
-   <td> <p>启用此选项以确保如果存在同名的文件或文件夹，模块会重命名新的文件或文件夹，方法是在文件或文件夹名称后添加([！UICONTROL NUMBER])。 否则，将覆盖目标位置中的文件或文件夹。</p> </td> 
+   <td> <p>[!UICONTROL 自动重命名]</p> </td> 
+   <td> <p>启用此选项以确保如果存在同名的文件或文件夹，模块会重命名新的文件或文件夹，方法是在文件或文件夹名称后添加([!UICONTROL NUMBER])。 否则，将覆盖目标位置中的文件或文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL允许所有权转让]</p> </td> 
+   <td> <p>[!UICONTROL 允许所有权转让]</p> </td> 
    <td> <p>启用此选项可允许所有者移动，即使这会导致所移动内容的所有权转移。</p> </td> 
   </tr> 
  </tbody> 
@@ -598,15 +598,15 @@ Dropbox连接器使用以下对象：
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL选择文件的方法]</td> 
+   <td>[!UICONTROL 选择文件的方法]</td> 
    <td> <p> 选择是要映射还是输入文件路径，或者手动选择文件。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL文件路径] / [！UICONTROL文件]</p> </td> 
-   <td> <p><strong>[！UICONTROL文件路径]</strong> </p> <p>输入或映射目标路径到文件。</p> <p><strong>[！UICONTROL文件]</strong> </p> <p>从菜单中选择文件。</p> </td> 
+   <td> <p>[!UICONTROL 文件路径] / [!UICONTROL 文件]</p> </td> 
+   <td> <p><strong>[!UICONTROL 文件路径]</strong> </p> <p>输入或映射目标路径到文件。</p> <p><strong>[!UICONTROL 文件]</strong> </p> <p>从菜单中选择文件。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[！UICONTROL修订版]</p> </td> 
+   <td> <p>[!UICONTROL 修订版]</p> </td> 
    <td> <p>输入或映射要恢复的修订版本的修订号。</p> </td> 
   </tr> 
  </tbody> 
@@ -639,7 +639,7 @@ Dropbox连接器使用以下对象：
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> <p><b>注意：</b></p><p> 上传文件的最大大小为150 MB。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL覆盖现有文件]</td> 
+   <td>[!UICONTROL 覆盖现有文件]</td> 
    <td> <p> 启用此选项可使用新文件替换现有文件。 如果将此选项保留为禁用，则将重命名上传的文件。</p> </td> 
   </tr> 
  </tbody> 

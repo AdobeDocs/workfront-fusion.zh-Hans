@@ -111,7 +111,7 @@ Box连接器使用下列方法：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>选择要用于监视传出消息的webhook，或添加webhook。 </p><p>要添加webhook，请单击<strong>[！UICONTROL添加]</strong>并输入webhook的名称和连接、要监视的文件以及要监视的触发器。</p> <p> 有关将您的[！UICONTROL Box]帐户连接到[！UICONTROL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">连接到服务 — 基本说明</a>。</p> </td> 
+   <td> <p>选择要用于监视传出消息的webhook，或添加webhook。 </p><p>要添加webhook，请单击<strong>[!UICONTROL 添加]</strong>并输入webhook的名称和连接、要监视的文件以及要监视的触发器。</p> <p> 有关将您的[!UICONTROL Box]帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">连接到服务 — 基本说明</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -126,7 +126,7 @@ Box连接器使用下列方法：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
-   <td> <p>选择要用于监视传出消息的webhook，或添加webhook。 </p><p>要添加webhook，请单击<strong>[！UICONTROL添加]</strong>并输入webhook的名称和连接、要监视的文件夹以及要监视的触发器。</p> <p> 有关将您的[！UICONTROL Box]帐户连接到[！UICONTROL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">连接到服务 — 基本说明</a>。</p> </td> 
+   <td> <p>选择要用于监视传出消息的webhook，或添加webhook。 </p><p>要添加webhook，请单击<strong>[!UICONTROL 添加]</strong>并输入webhook的名称和连接、要监视的文件夹以及要监视的触发器。</p> <p> 有关将您的[!UICONTROL Box]帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">连接到服务 — 基本说明</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -293,15 +293,15 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>输入或映射新文件夹的名称。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL父文件夹]</td> 
+   <td role="rowheader">[!UICONTROL 父文件夹]</td> 
    <td> <p>选择要创建新文件夹的文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL文件夹上传电子邮件访问权限]</td> 
+   <td role="rowheader">[!UICONTROL 文件夹上传电子邮件访问权限]</td> 
    <td> <p>设置此参数后，用户可以通过电子邮件将文件发送到为此文件夹自动创建的电子邮件地址。 协作者选项只允许协作者使用注册的电子邮件。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL同步状态]</td> 
+   <td role="rowheader">[!UICONTROL 同步状态]</td> 
    <td> <p>指定是否应将文件夹同步到用户设备。 Box Sync（已停用）使用，Box Drive不使用。</p> </td> 
   </tr> 
  </tbody> 
@@ -339,7 +339,7 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>有关将[!DNL Box]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL作用域]</td> 
+   <td role="rowheader">[!UICONTROL 作用域]</td> 
    <td> <p>选择要用于此元数据检索的范围。</p> </td> 
   </tr> 
   <tr> 
@@ -402,7 +402,7 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>有关将[!DNL Box]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL作用域]</td> 
+   <td role="rowheader">[!UICONTROL 作用域]</td> 
    <td> <p>选择要用于此元数据更新的范围。</p> </td> 
   </tr> 
   <tr> 
@@ -428,11 +428,11 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>有关将[!DNL Box]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Query]</td> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
    <td> <p>输入或映射要搜索的字符串。 此查询根据项目名称、说明、文件的文本内容以及不同项目类型的各种其他字段进行匹配。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL作用域]</td> 
+   <td role="rowheader">[!UICONTROL 作用域]</td> 
    <td> <p>选择是搜索与用户相关的内容，该用户的凭据用于此模块中使用的连接，还是搜索与整个企业相关的内容。</p> </td> 
   </tr> 
   <tr> 
@@ -440,31 +440,31 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>选择是要搜索文件、文件夹还是Web链接。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL排序]</td> 
+   <td role="rowheader">[!UICONTROL 排序]</td> 
    <td> <p>选择您要按相关性还是按修改日期排序。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL垃圾桶内容]</td> 
+   <td role="rowheader">[!UICONTROL 垃圾桶内容]</td> 
    <td> <p>选择是要搜索置入垃圾桶的内容还是尚未置入垃圾桶的内容。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL父文件夹ID]</td> 
+   <td role="rowheader">[!UICONTROL 父文件夹ID]</td> 
    <td> <p>若要在特定文件夹中搜索，请针对要搜索的每个文件夹，单击“添加项目”<b></b>并输入文件夹的ID。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL创建自]</td> 
+   <td role="rowheader">[!UICONTROL 创建自]</td> 
    <td> <p>要搜索在特定日期范围内创建的资产，请输入该范围内的最早日期。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL已创建到]</td> 
+   <td role="rowheader">[!UICONTROL 已创建到]</td> 
    <td> <p>要搜索在特定日期范围内创建的资产，请输入该范围内的最新日期。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL更新自]</td> 
+   <td role="rowheader">[!UICONTROL 更新自]</td> 
    <td> <p>要搜索在特定日期范围内更新的资产，请输入该范围内的最早日期。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL已更新至]</td> 
+   <td role="rowheader">[!UICONTROL 已更新至]</td> 
    <td> <p>要搜索在特定日期范围内更新的资产，请输入该范围内的最新日期。</p> </td> 
   </tr> 
   <tr> 
@@ -472,19 +472,19 @@ You specify the file. You can also provide a new filename for the file.
    <td> <p>对于要在模块的响应中返回的每个属性，单击<b>添加项</b>并输入字段。</p><p>这可用于请求标准响应中通常不返回的字段。 请注意，指定此参数将导致响应中不会返回任何标准字段，除非明确指定。 </p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL文件扩展名]</td> 
+   <td role="rowheader">[!UICONTROL 文件扩展名]</td> 
    <td> <p>要将搜索限制到特定的文件扩展名，请输入以逗号分隔的文件扩展名列表。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL大小自]</td> 
+   <td role="rowheader">[!UICONTROL 大小自]</td> 
    <td> <p>要搜索特定大小范围内的资源，请输入该范围的小端（字节）。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL大小为]</td> 
+   <td role="rowheader">[!UICONTROL 大小为]</td> 
    <td> <p>要搜索特定大小范围内的资源，请输入该范围的大端（以字节为单位）。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL所有者用户ID]</td> 
+   <td role="rowheader">[!UICONTROL 所有者用户ID]</td> 
    <td> <p>要搜索特定用户拥有的资产，请输入以逗号分隔的所有者ID列表。</p> </td> 
   </tr> 
   <tr> 
