@@ -4,22 +4,21 @@ description: Workfront Fusion发布活动周，2022年12月12日
 author: Becky
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: aa71be54-f956-438d-a84b-a6e80f6a1431
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 0%
+ht-degree: 29%
 
 ---
 
-# Workfront Fusion发布活动： 2022年12月12日开始的周
+# Workfront Fusion 发行活动：2022 年 12 月 12 日当周
 
 本页介绍了2022年12月12日这一周在Adobe Workfront Fusion中所做的所有增强功能。
 
-有关所有最近更改的列表，请参阅[Adobe Workfront Fusion发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
+如需查看所有近期更改的完整列表，请参阅 [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
 
-有关Workfront Fusion中最近的错误修复列表，请参阅[Workfront维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=zh-Hans)页面，并检查任何标记为Workfront Fusion维护更新的更新。
+如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
 
 ## 针对未来增长的Fusion增强
 
@@ -28,6 +27,6 @@ ht-degree: 0%
 
 我们当前正在处理：
 
-* 继续使用AdobeIdentity Management System (IMS)进行将来的Workfront Fusion身份验证。
+* 继续使用Adobe Identity Management System (IMS)进行将来的Workfront Fusion身份验证。
 * 更改Workfront Fusion处理未使用的Webhook的方式，以防止它们在Fusion扩展时影响性能。
 * 其他基础架构增强功能。

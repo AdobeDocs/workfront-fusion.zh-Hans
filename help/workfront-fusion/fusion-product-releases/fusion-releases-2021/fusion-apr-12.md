@@ -3,11 +3,10 @@ title: Workfront Fusion发行活动：&amp；nbsp；2021年4月12日起一周
 description: Workfront Fusion发行活动：&amp；nbsp；2021年4月12日起一周
 author: Luke
 draft: Probably
-hidefromtoc: true
-source-git-commit: 0e75b7e21b5d933d5845726dedf56042beec041e
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '115'
-ht-degree: 0%
+ht-degree: 33%
 
 ---
 
@@ -15,9 +14,9 @@ ht-degree: 0%
 
 本页介绍了2021年4月12日这一周在Adobe Workfront Fusion中所做的所有增强。
 
-有关所有最近更改的列表，请参阅[Adobe Workfront Fusion发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
+如需查看所有近期更改的完整列表，请参阅 [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
 
-有关Workfront Fusion中最近的错误修复列表，请参阅[Workfront维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=zh-Hans)页面，并检查任何标记为Workfront Fusion维护更新的更新。
+如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
 
 ## NetSuite应用程序和模块现已可用
 

@@ -4,8 +4,8 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 3cb613c11500dfc94774783ee0b38e6f1768de20
-workflow-type: ht
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+workflow-type: tm+mt
 source-wordcount: '4539'
 ht-degree: 100%
 
@@ -343,10 +343,12 @@ Frame.io 连接器使用以下内容：
    <td role="rowheader">[!UICONTROL 路径] </td> 
    <td> <p>选择要创建资源的路径。</p> </td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader">[!UICONTROL File Name] </td> 
    <td> <p>Enter the name of the file that you want to use for this asset.</p> </td> 
-  </tr> -->
+  </tr>
+  -->
     <tr> 
     <td role="rowheader">上传类型 </td> 
     <td> <p>选择是从本地文件还是从远程文件创建资产。</p> </td> 
@@ -363,10 +365,12 @@ Frame.io 连接器使用以下内容：
    <td>[!UICONTROL 源文件]</td> 
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称。</p> </td> 
   </tr> 
-<!--  <tr> 
-   <td role="rowheader">[!UICONTROL Media type] </td> 
-   <td> <p>Select the media type for this asset.</p> </td> 
-  </tr> -->
+  <!--
+  <tr>
+    <td role="rowheader">[!UICONTROL Media type] </td> 
+    <td> <p>Select the media type for this asset.</p> </td> 
+    </tr>
+  -->
   </tbody> 
 </table>
 
@@ -1317,7 +1321,7 @@ Frame.io 连接器使用以下内容：
 </table>
 
 
-<!-- 
+<!--
 **Example:** The following API call returns all teams and its details in your [!DNL Frame.io] account:
 
 URL: `/v2/teams`

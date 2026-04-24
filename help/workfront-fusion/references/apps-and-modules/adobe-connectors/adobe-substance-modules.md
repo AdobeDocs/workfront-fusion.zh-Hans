@@ -1,9 +1,10 @@
 ---
-title: Adobe Substance模块
+title: Adobe Substance 模块
 description: 在 Adobe Workfront Fusion 场景中，您可以自动化使用  [!DNL Adobe Substance] 的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 2e44c89d487100b3245b40f6927185a0ff12ef2f
+exl-id: 85e2e832-0347-4270-b360-4a07224f2bcc
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 32%
@@ -94,7 +95,8 @@ ht-degree: 32%
    <td role="rowheader">其他字段</td> 
    <td>根据需要配置其他字段。 有关字段的详细信息，请参阅<a href="https://s3d.adobe.io/docs#/operations/v1/composites/compose">Adobe Substance API文档</a>。</td> 
   </tr> 
-<!--  <tr> 
+  <!--
+  <tr>
    <td role="rowheader">Camera name</td> 
    <td>Enter or map the name of an existing camera that has been previously defined in the source 3D file.</td> 
   </tr> 
@@ -105,7 +107,8 @@ ht-degree: 32%
   <tr> 
    <td role="rowheader">Enable ground plane</td> 
    <td>Enable this to enable the auto-generated ground plane under the hero asset. This is useful if the 3D scene contains only a hero asset, without additional elements.</td> 
-  </tr> -->
+  </tr>
+  -->
  </tbody> 
 </table>
 

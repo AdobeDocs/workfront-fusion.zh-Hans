@@ -1,61 +1,61 @@
 ---
-title: Google驱动器模块
+title: Google 云端硬盘模块
 description: 通过 [!DNL Adobe Workfront Fusion Google Drive] 模块，您可以监视、搜索、创建、更新、删除和管理 [!DNL Google Drive]中的文件、文件夹或共享驱动器。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 788f4e1b-d774-45ad-a8be-b16922c1d5dc
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '2102'
-ht-degree: 0%
+ht-degree: 15%
 
 ---
 
-# [!DNL Google Drive]模块
+# [!DNL Google Drive] 模块
 
 Adobe Workfront Fusion [!DNL Google Drive]模块允许您监视、搜索、创建、更新、删除和管理[!DNL Google Drive]中的文件、文件夹或共享驱动器。
 
 在Adobe Workfront Fusion方案中，您可以将[!DNL Google Drive]帐户连接到多个第三方应用程序和服务。
 
-有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
+有关创建场景的说明，请参阅[创建场景：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)中的相关文章。
 
-有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
+有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的相关文章。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -72,11 +72,11 @@ Google驱动器连接器使用以下对象：
    <td> https://www.googleapis.com/drive/v3</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API版本</td> 
+   <td role="rowheader">API 版本</td> 
    <td> v3 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API标记</td> 
+   <td role="rowheader">API 标记</td> 
    <td>v4.1.22</td> 
   </tr>
  </tbody> 
@@ -88,15 +88,15 @@ Google驱动器连接器使用以下对象：
 
 如果您使用[!DNL @gmail.com]或[!DNL @googlemail.com]用户，则必须在[!DNL Google Cloud Platform]上创建OAuth客户端以获取您的[!UICONTROL 客户端ID]和[!UICONTROL 客户端密钥]。
 
-有关如何创建OAuth客户端（并获取[!UICONTROL 客户端ID]和[!UICONTROL 客户端密钥]）的分步说明，请参阅[使用自定义OAuth客户端将Adobe Workfront Fusion连接到 [!DNL Google Services] &#x200B;](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)。
+有关如何创建OAuth客户端（并获取[!UICONTROL 客户端ID]和[!UICONTROL 客户端密钥]）的分步说明，请参阅[使用自定义OAuth客户端将Adobe Workfront Fusion连接到 [!DNL Google Services] ](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)。
 
 有关将[!DNL Google Drive]帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅[创建与[!UICONTROL Adobe Workfront Fusion]的连接 — 基本说明](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 
-## [!DNL Google Drive]模块及其字段
+## [!DNL Google Drive] 模块及其字段
 
-在配置[!DNL Google Drive]模块时，Workfront Fusion将显示以下列出的字段。 除此以外，可能还会显示其他[!DNL Google Drive]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在您配置 [!DNL Google Drive] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Google Drive] 字段。模块中的加粗标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -121,14 +121,14 @@ Google驱动器连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td>[!UICONTROL 连接] </td> 
+   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[！UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 要查看的文件]</td> 
+   <td>[！UICONTROL要查看的文件]</td> 
    <td> <p>选择要监视的文件类型。</p> 
     <ul> 
-     <li>[!UICONTROL All]</li> 
+     <li>[！UICONTROL All]</li> 
      <li>[!DNL Google Documents]</li> 
      <li>[!DNL Google Spreadsheets]</li> 
      <li>[!DNL Google Slides]</li> 
@@ -136,27 +136,27 @@ Google驱动器连接器使用以下对象：
     </ul> </td> 
   </tr> 
   <tr> 
-    <td >[!UICONTROL 将[!DNL Google Documents]文件转换为格式]</td>
+    <td >[！UICONTROL将[!DNL Google Documents]文件转换为格式]</td>
     <td>选择要将[!DNL Google Documents]转换为的文件格式。</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL 将[!DNL Google Spreadsheets]文件转换为格式]</td>
+    <td>[！UICONTROL将[!DNL Google Spreadsheets]文件转换为格式]</td>
     <td>选择要将[!DNL Google Spreadsheets]转换为的文件格式。</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL 将[!DNL Google Slides]文件转换为格式]</td>
+    <td>[！UICONTROL将[!DNL Google Slides]文件转换为格式]</td>
     <td>选择要将[!DNL Google Slides]转换为的文件格式。</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL 将[!DNL Google Drawings]文件转换为格式]</td>
+    <td>[！UICONTROL将[!DNL Google Drawings]文件转换为格式]</td>
     <td>选择要将[!DNL Google Drawings]转换为的文件格式。</td>
   </tr>  
   <tr> 
-   <td>[!UICONTROL 监视]</td> 
+   <td>[！UICONTROL监视]</td> 
    <td>选择是要监视新文件和所有更改，还是只监视新文件。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 最大下载文件数]</td> 
+   <td>[！UICONTROL最大下载文件数]</td> 
    <td>设置Workfront Fusion在一个周期内下载的最大结果数（每个方案运行的重复次数）。</td> 
   </tr> 
  </tbody> 
@@ -171,19 +171,19 @@ Google驱动器连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td>[!UICONTROL 连接] </td> 
+   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[！UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件]</td> 
+   <td>[！UICONTROL文件]</td> 
    <td>选择要监视其注释的文件。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 监视]</td> 
+   <td>[！UICONTROL监视]</td> 
    <td>选择要监视所有更改还是仅监视新注释</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 返回的最大评论数]</td> 
+   <td>[!UICONTROL 返回评论的最大数量]</td> 
    <td>设置Workfront Fusion在一个周期内返回的最大评论数（每个方案运行的重复次数）。</td> 
   </tr> 
  </tbody> 
@@ -198,18 +198,18 @@ Google驱动器连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-    <td>[!UICONTROL Connection] </td>
-   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[!UICONTROL Workfront Fusion]</a></p> </td> 
+    <td>[!UICONTROL 连接] </td>
+   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[！UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr>
-    <td>[!UICONTROL 选择要监视的文件夹]</td>
+    <td>[！UICONTROL选择要监视的文件夹]</td>
     <td >选择驱动器上要监视文件的文件夹。</td>
   </tr> 
   <tr> 
-    <td>[!UICONTROL 要查看的文件]</td>
+    <td>[！UICONTROL要查看的文件]</td>
    <td> <p>选择要监视的文件类型。</p> 
     <ul> 
-     <li>[!UICONTROL All]</li> 
+     <li>[！UICONTROL All]</li> 
      <li>[!DNL Google Documents]</li> 
      <li>[!DNL Google Spreadsheets]</li> 
      <li>[!DNL Google Slides]</li> 
@@ -217,27 +217,27 @@ Google驱动器连接器使用以下对象：
     </ul> </td> 
   </tr> 
   <tr> 
-    <td >[!UICONTROL 将[!DNL Google Documents]文件转换为格式]</td>
+    <td >[！UICONTROL将[!DNL Google Documents]文件转换为格式]</td>
     <td>选择要将[!DNL Google Documents]转换为的文件格式。</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL 将[!DNL Google Spreadsheets]文件转换为格式]</td>
+    <td>[！UICONTROL将[!DNL Google Spreadsheets]文件转换为格式]</td>
     <td>选择要将[!DNL Google Spreadsheets]转换为的文件格式。</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL 将[!DNL Google Slides]文件转换为格式]</td>
+    <td>[！UICONTROL将[!DNL Google Slides]文件转换为格式]</td>
     <td>选择要将[!DNL Google Slides]转换为的文件格式。</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL 将[!DNL Google Drawings]文件转换为格式]</td>
+    <td>[！UICONTROL将[!DNL Google Drawings]文件转换为格式]</td>
     <td>选择要将[!DNL Google Drawings]转换为的文件格式。</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL 监视]</td>
+    <td>[！UICONTROL监视]</td>
     <td>选择是要监视新文件和所有更改，还是只监视新文件。</td>
   </tr> 
   <tr> 
-    <td>[!UICONTROL 最大下载文件数]</td>
+    <td>[！UICONTROL最大下载文件数]</td>
     <td>设置Workfront Fusion在一个周期内下载的最大结果数（每个方案运行的重复次数）。</td>
   </tr> 
  </tbody> 
@@ -252,18 +252,18 @@ Google驱动器连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td>[!UICONTROL 连接] </td> 
+   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[！UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 选择要监视的文件夹]</td> 
+   <td>[！UICONTROL选择要监视的文件夹]</td> 
    <td>选择要监视文件的共享文件夹。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 要查看的文件]</td> 
+   <td>[！UICONTROL要查看的文件]</td> 
    <td> <p>选择要监视的文件类型。</p> 
     <ul> 
-     <li>[!UICONTROL All]</li> 
+     <li>[！UICONTROL All]</li> 
      <li>[!DNL Google Documents]</li> 
      <li>[!DNL Google Spreadsheets]</li> 
      <li>[!DNL Google Slides]</li> 
@@ -271,27 +271,27 @@ Google驱动器连接器使用以下对象：
     </ul> </td> 
   </tr> 
   <tr> 
-    <td >[!UICONTROL 将[!DNL Google Documents]文件转换为格式]</td>
+    <td >[！UICONTROL将[!DNL Google Documents]文件转换为格式]</td>
     <td>选择要将[!DNL Google Documents]转换为的文件格式。</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL 将[!DNL Google Spreadsheets]文件转换为格式]</td>
+    <td>[！UICONTROL将[!DNL Google Spreadsheets]文件转换为格式]</td>
     <td>选择要将[!DNL Google Spreadsheets]转换为的文件格式。</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL 将[!DNL Google Slides]文件转换为格式]</td>
+    <td>[！UICONTROL将[!DNL Google Slides]文件转换为格式]</td>
     <td>选择要将[!DNL Google Slides]转换为的文件格式。</td>
   </tr> 
   <tr>
-    <td>[!UICONTROL 将[!DNL Google Drawings]文件转换为格式]</td>
+    <td>[！UICONTROL将[!DNL Google Drawings]文件转换为格式]</td>
     <td>选择要将[!DNL Google Drawings]转换为的文件格式。</td>
   </tr> 
   <tr> 
-   <td>[!UICONTROL 监视]</td> 
+   <td>[！UICONTROL监视]</td> 
    <td>选择是要监视新文件和所有更改，还是只监视新文件。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 最大下载文件数]</td> 
+   <td>[！UICONTROL最大下载文件数]</td> 
    <td>设置Workfront Fusion在一个周期内下载的最大结果数（每个方案运行的重复次数）。</td> 
   </tr> 
  </tbody> 
@@ -307,7 +307,7 @@ Google驱动器连接器使用以下对象：
 * [[!UICONTROL 将文件移动到垃圾桶]](#move-a-filefolder-to-trash)
 * [[!UICONTROL 搜索文件/文件夹]](#search-for-filesfolders)
 * [[!UICONTROL 更新文件]](#update-a-file)
-* [[!UICONTROL 上载文件]](#upload-a-file)
+* [[!UICONTROL 上传文件]](#upload-a-file)
 
 #### [!UICONTROL 复制文件]
 
@@ -318,27 +318,27 @@ Google驱动器连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td>[!UICONTROL 连接] </td> 
+   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[！UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 目标]</td> 
+   <td>[！UICONTROL目标]</td> 
    <td> <p>选择要将文件复制到的目标。</p> 
     <ul> 
-     <li>[!UICONTROL 我的驱动器]</li> 
-     <li>[!UICONTROL 与我共享]</li> 
+     <li>[！UICONTROL我的驱动器]</li> 
+     <li>[！UICONTROL与我共享]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 目标文件夹]</td> 
+   <td>[！UICONTROL目标文件夹]</td> 
    <td>选择包含要复制文件的文件夹。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件ID]</td> 
+   <td>[!UICONTROL 文件 ID]</td> 
    <td>映射要复制的文件的ID。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 副本的名称]</td> 
+   <td>[！UICONTROL副本的名称]</td> 
    <td>输入新文件的标题。 如果不想更改原始文件名，请将此字段留空。</td> 
   </tr> 
  </tbody> 
@@ -353,28 +353,28 @@ Google驱动器连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td>[!UICONTROL 连接] </td> 
+   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[！UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 目标]</td> 
+   <td>[！UICONTROL目标]</td> 
    <td> <p>选择要创建文件夹的目标。</p> 
     <ul> 
-     <li>[!UICONTROL 我的驱动器]</li> 
-     <li>[!UICONTROL 与我共享]</li> 
+     <li>[！UICONTROL我的驱动器]</li> 
+     <li>[！UICONTROL与我共享]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 新建文件夹位置]</td> 
+   <td>[！UICONTROL新建文件夹位置]</td> 
    <td>导航到要创建新文件夹的位置。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 新文件夹的名称]</td> 
+   <td>[！UICONTROL新文件夹的名称]</td> 
    <td>输入正在创建的文件夹的名称。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 共享文件夹]</td> 
-   <td>如果要与具有[!UICONTROL 共享]链接的任何用户共享文件夹，请选择此选项。 否则，共享链接仅供所有者使用。</td> 
+   <td>[！UICONTROL共享文件夹]</td> 
+   <td>如果要与具有[！UICONTROL共享]链接的任何用户共享文件夹，请选择此选项。 否则，共享链接仅供所有者使用。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -388,11 +388,11 @@ Google驱动器连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td>[!UICONTROL 连接] </td> 
+   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[！UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件ID]</td> 
+   <td>[!UICONTROL 文件 ID]</td> 
    <td>映射要删除的文件的ID。</td> 
   </tr> 
  </tbody> 
@@ -407,27 +407,27 @@ Google驱动器连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td>[!UICONTROL 连接] </td> 
+   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[！UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 将[!DNL Google Documents]文件转换为格式]</td> 
+   <td>[！UICONTROL将[!DNL Google Documents]文件转换为格式]</td> 
    <td>选择要将[!DNL Google Documents]转换为的文件格式。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 将[!DNL Google Spreadsheets]文件转换为格式]</td> 
+   <td>[！UICONTROL将[!DNL Google Spreadsheets]文件转换为格式]</td> 
    <td>选择要将[!DNL Google Spreadsheets]转换为的文件格式。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 将[!DNL Google Slides]文件转换为格式]</td> 
+   <td>[！UICONTROL将[!DNL Google Slides]文件转换为格式]</td> 
    <td>选择要将[!DNL Google Slides]转换为的文件格式。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 将[!DNL Google Drawings]文件转换为格式]</td> 
+   <td>[！UICONTROL将[!DNL Google Drawings]文件转换为格式]</td> 
    <td>选择要将[!DNL Google Drawings]转换为的文件格式。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件ID]</td> 
+   <td>[!UICONTROL 文件 ID]</td> 
    <td>映射要检索的文件的ID。</td> 
   </tr> 
  </tbody> 
@@ -442,11 +442,11 @@ Google驱动器连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td>[!UICONTROL 连接] </td> 
+   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[！UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件ID]</td> 
+   <td>[!UICONTROL 文件 ID]</td> 
    <td>映射要获取共享链接的文件的ID。</td> 
   </tr> 
  </tbody> 
@@ -461,11 +461,11 @@ Google驱动器连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td>[!UICONTROL 连接] </td> 
+   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[！UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件ID]</td> 
+   <td>[!UICONTROL 文件 ID]</td> 
    <td>将您要移动的文件的ID映射到垃圾桶。</td> 
   </tr> 
  </tbody> 
@@ -480,51 +480,51 @@ Google驱动器连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td>[!UICONTROL 连接] </td> 
+   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[！UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 目标]</td> 
+   <td>[！UICONTROL目标]</td> 
    <td> <p>选择要搜索的目标驱动器。</p> 
     <ul> 
-     <li>[!UICONTROL 我的驱动器]</li> 
-     <li>[!UICONTROL 与我共享]</li> 
+     <li>[！UICONTROL我的驱动器]</li> 
+     <li>[！UICONTROL与我共享]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 列出文件夹]</td> 
+   <td>[！UICONTROL列出文件夹]</td> 
    <td>导航到要搜索文件或文件夹的文件夹。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Retrieve]</td> 
+   <td>[！UICONTROL Retrieve]</td> 
    <td> <p> 选择是要搜索文件、文件夹，还是同时搜索两者。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 搜索]</p> </td> 
    <td> <p>选择要执行的搜索类型。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 在文件/文件夹名称内搜索]</strong> </p> 
+     <li> <p><strong>[！UICONTROL在文件/文件夹名称内搜索]</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL 查询]</strong> </p> <p>输入要搜索的文件名的一部分或完整文件名（包括后缀）。</p> </li> 
-       <li> <p><strong>[!UICONTROL 搜索选项]</strong> </p> <p>选择是要搜索确切的搜索词，还是要搜索包含该搜索词的名称。</p> </li> 
+       <li> <p><strong>[！UICONTROL查询]</strong> </p> <p>输入要搜索的文件名的一部分或完整文件名（包括后缀）。</p> </li> 
+       <li> <p><strong>[！UICONTROL搜索选项]</strong> </p> <p>选择是要搜索确切的搜索词，还是要搜索包含该搜索词的名称。</p> </li> 
       </ul> </li> 
-     <li> <p><strong>[!UICONTROL Fulltext]搜索</strong> </p> 
+     <li> <p><strong>[！UICONTROL Fulltext]搜索</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL 查询]</strong> </p> <p>输入要在[!DNL Google Drive]中搜索的任何搜索词。</p> </li> 
+       <li> <p><strong>[！UICONTROL查询]</strong> </p> <p>输入要在[!DNL Google Drive]中搜索的任何搜索词。</p> </li> 
       </ul> </li> 
      <li> <p><strong>输入自定义搜索查询</strong> </p> 
       <ul> 
-       <li> <p><strong>[!UICONTROL 查询]</strong> </p> <p>输入自定义搜索查询。 有关更多详细信息，请参阅本文的[!UICONTROL 搜索文件]部分。</p> </li> 
+       <li> <p><strong>[！UICONTROL查询]</strong> </p> <p>输入自定义搜索查询。 有关更多详细信息，请参阅本文的[！UICONTROL搜索文件]部分。</p> </li> 
        <li> <p><strong>将上面选择的文件夹添加到查询</strong> </p> <p>在父收藏集中搜索文件夹。 这会查找直接位于上面所选文件夹中的所有文件和文件夹。</p> </li> 
       </ul> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 返回结果的最大数目]</td> 
+   <td>[！UICONTROL返回结果的最大数目]</td> 
    <td>设置Workfront Fusion在一个执行周期内返回的文件或文件夹的最大数量。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 即使模块未返回任何结果，仍继续执行路由]</td> 
+   <td>[！UICONTROL即使模块未返回任何结果，仍继续执行路由]</td> 
    <td>启用此选项以确保在模块未返回任何结果时不会停止该方案。</td> 
   </tr> 
  </tbody> 
@@ -539,45 +539,45 @@ Google驱动器连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td>[!UICONTROL 连接] </td> 
+   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[！UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 目标]</td> 
+   <td>[！UICONTROL目标]</td> 
    <td> <p>选择包含要更新的文件的目标。</p> 
     <ul> 
-     <li>[!UICONTROL 我的驱动器]</li> 
-     <li>[!UICONTROL 与我共享]</li> 
+     <li>[！UICONTROL我的驱动器]</li> 
+     <li>[！UICONTROL与我共享]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 移至文件夹]</td> 
+   <td>[！UICONTROL移至文件夹]</td> 
    <td>如果要将文件移动到特定文件夹，请选择要将文件移动到其中的文件夹。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件ID]</td> 
+   <td>[!UICONTROL 文件 ID]</td> 
    <td>映射要更新的文件的ID。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 标题]</td> 
+   <td>[！UICONTROL标题]</td> 
    <td>输入更新文件的标题。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 更改文件内容]</td> 
+   <td>[！UICONTROL更改文件内容]</td> 
    <td>选择是否要替换文件的内容。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL 来源文件]</td> 
    <td>如果要替换内容，请从以前的模块中选择源文件，或映射源文件的名称和数据。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Conver a file]</td> 
+   <td>[！UICONTROL Conver a file]</td> 
    <td>启用此选项以将文件转换为相应的Google文件格式。</td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL 上载文件]
+#### [!UICONTROL 上传文件]
 
 将文件上传到您的[!DNL Google Drive]。
 
@@ -586,8 +586,8 @@ Google驱动器连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
-   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[!UICONTROL Workfront Fusion]</a></p> </td> 
+   <td>[!UICONTROL 连接] </td> 
+   <td> <p>有关将[!DNL Google Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="#connecting-google-drive-to-workfront-fusion" class="MCXref xref">将[!DNL Google Drive]连接到[！UICONTROL Workfront Fusion]</a></p> </td> 
   </tr> 
   <tr> 
    <td>[!DNL Destination]</td> 
@@ -598,19 +598,19 @@ Google驱动器连接器使用以下对象：
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 目标文件夹]</td> 
+   <td>[！UICONTROL目标文件夹]</td> 
    <td>选择要将文件上传到的文件夹。 </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL 来源文件]</td> 
    <td>从上一个模块中选择源文件，或映射源文件的名称和数据。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 标题]</td> 
+   <td>[！UICONTROL标题]</td> 
    <td>输入新文件的标题。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 转换文件]</td> 
+   <td>[！UICONTROL转换文件]</td> 
    <td>启用此选项将允许模块将文件转换为相应的[!DNL Google]格式。</td> 
   </tr> 
  </tbody> 
@@ -625,7 +625,8 @@ Google驱动器连接器使用以下对象：
 * 上传的文件太大，超过了您的[!DNL Google Drive]计划允许的最大文件大小限制，或者您已超过[!DNL Google Drive]存储限制。 您可以升级存储计划，也可以从[!DNL Google Drive]服务中删除现有文件。
 * 要将文件上载到的所选文件夹不再存在。 在这种情况下，场景将停止，您必须在该模块中选择不同的目标文件夹。
 
-<!-- Not present February 2025
+<!--
+Not present February 2025
 
 ## Search for files
 

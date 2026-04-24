@@ -4,10 +4,10 @@ description: 以下数学变量在 [!DNL Adobe Workfront Fusion mapping] 面板�
 author: Becky
 feature: Workfront Fusion
 exl-id: b309f035-4d46-473b-b915-6938587b0bcf
-source-git-commit: 3aa896867bd143c67157fb886fafa37eaee2bc00
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 0%
+source-wordcount: '51'
+ht-degree: 11%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 使用以下公式生成范围[`min`，`max`]中的整数伪随机数（包括`min`和`max`）：
 
-![随机](assets/math-variable-random-350x61.png)
+![Random](assets/math-variable-random-350x61.png)
 
 ```
 floor(random * (1.max - 1.min + 1)) + 1.min

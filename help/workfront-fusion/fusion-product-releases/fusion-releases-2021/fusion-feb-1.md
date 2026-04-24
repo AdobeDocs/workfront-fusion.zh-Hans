@@ -8,12 +8,11 @@ description: 本页介绍了2021年2月1日这一周在Adobe Workfront Fusion中
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: ce0c1c62-d012-4bc2-8d73-69893c1be8da
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '185'
-ht-degree: 0%
+ht-degree: 23%
 
 ---
 
@@ -21,9 +20,9 @@ ht-degree: 0%
 
 本页介绍了2021年2月1日这一周在Adobe Workfront Fusion中所做的所有增强。
 
-有关所有最近更改的列表，请参阅[Adobe Workfront Fusion发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
+如需查看所有近期更改的完整列表，请参阅 [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
 
-有关Workfront Fusion中最近的错误修复列表，请参阅[Workfront维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=zh-Hans)页面，并检查任何标记为Workfront Fusion维护更新的更新。
+如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
 
 
 ## MariaDB连接器和模块现已推出
@@ -45,4 +44,4 @@ ht-degree: 0%
 * 在列表中添加潜在客户或从列表中删除潜在客户
 * 计划活动
 * 复制项目
-* 进行自定义API调用
+* 发起自定义 API 调用

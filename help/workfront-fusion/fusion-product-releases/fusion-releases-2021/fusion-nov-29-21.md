@@ -5,12 +5,11 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 87ad4b2a-b052-4e5d-a540-6c53eba61c66
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '234'
-ht-degree: 0%
+ht-degree: 16%
 
 ---
 
@@ -18,9 +17,9 @@ ht-degree: 0%
 
 本页介绍了2021年11月29日这一周在Adobe Workfront Fusion中所做的所有增强功能。
 
-有关所有最近更改的列表，请参阅[Adobe Workfront Fusion发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
+如需查看所有近期更改的完整列表，请参阅 [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
 
-有关Workfront Fusion中最近的错误修复列表，请参阅[Workfront维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=zh-Hans)页面，并检查任何标记为Workfront Fusion维护更新的更新。
+如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
 
 ## Workfront Fusion中现在提供了Adobe PDF服务
 
@@ -30,12 +29,12 @@ ht-degree: 0%
 
 * 根据您提供的数据生成PDF
 * 从PDF提取数据
-* 从图像、PDF或HTML文件创建文档
+* 从图像、文档或HTML文件创建PDF
 * 将PDF转换为图像或文档
-* 将PDF文件合并到一个较大的PDF文件中
+* 将PDF文件合并到一个更大的PDF文件中
 * 使用密码保护PDF文件，或从PDF中删除密码保护
-* 压缩PDF文件以使用较少的内存或带宽
+* 压缩PDF文件以使用更少的内存或带宽
 * 将PDF文件线性化，以便在下载整个文件之前可以逐页读取
 * 在文件上使用光学字符识别(OCR)
-* 通过删除或旋转某些PDF来修改页面
+* 通过删除或旋转某些页面来修改PDF
 * 获取PDF文件属性，如页数、版本或加密

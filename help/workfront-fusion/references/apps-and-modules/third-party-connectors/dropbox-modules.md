@@ -1,73 +1,73 @@
 ---
-title: Dropbox模块
+title: Dropbox 模块
 description: 在Adobe Workfront Fusion场景中，您可以自动执行使用Dropbox的工作流，并将其连接到多个第三方应用程序和服务。这允许您在Dropbox中自动执行各种活动，例如监控、搜索、检索、列出、创建和编辑文件和文件夹。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
 workflow-type: tm+mt
 source-wordcount: '3292'
-ht-degree: 0%
+ht-degree: 26%
 
 ---
 
-# [!DNL Dropbox]模块
+# [!DNL Dropbox] 模块
 
 在Adobe Workfront Fusion方案中，您可以自动使用[!UICONTROL Dropbox]或[!DNL Dropbox Business]的工作流，还可以将其连接到多个第三方应用程序和服务。这允许您自动执行[!UICONTROL Dropbox]中的文件和文件夹等活动。
 
-有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
+有关创建场景的说明，请参阅[创建场景：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)中的相关文章。
 
-有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
+有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的相关文章。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
 ## 先决条件
 
-* 要使用[!DNL Dropbox]模块，您必须具有[!DNL Dropbox]帐户。
+* 要使用 [!DNL Dropbox] 模块，您必须拥有一个 [!DNL Dropbox] 帐户。
 
 >[!IMPORTANT]
 >
 >* 要使用Dropbox连接器，您必须首先在Dropbox中创建应用程序。
->  &#x200B;>   有关更多信息，请在Dropbox开发人员指南中搜索“创建应用程序”。
+>   有关更多信息，请在Dropbox开发人员指南中搜索“创建应用程序”。
 >* 创建应用程序时，请使用以下重定向URI： `https://app.workfrontfusion.com/oauth/cb/dropbox`
 >* Dropbox必须批准用户数超过50的应用程序。
->  &#x200B;>   有关更多信息，请在Dropbox开发人员指南中搜索“生产批准”。
+>   有关更多信息，请在Dropbox开发人员指南中搜索“生产批准”。
 
 ## Dropbox API信息
 
@@ -82,20 +82,20 @@ Dropbox连接器使用以下对象：
    <td> https://api.dropboxapi.com/2    </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API版本</td> 
+   <td role="rowheader">API 版本</td> 
    <td> 2 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API标记</td> 
+   <td role="rowheader">API 标记</td> 
    <td><ul><li><p>Dropbox</p><p>v5.3.9</p></li><li><p>Dropbox业务</p><p>v1.0.12</p></li></ul></td> 
   </tr>
  </tbody> 
  </table>
 
 
-## 创建与[!DNL Dropbox]的连接
+## 创建与 [!DNL Dropbox] 的连接
 
-要为您的[!DNL Dropbox]模块创建连接：
+要为您的 [!DNL Dropbox] 模块创建连接：
 
 1. 在任意模块中，单击“连接”框旁边的&#x200B;**[!UICONTROL 添加]**。
 
@@ -118,33 +118,33 @@ Dropbox连接器使用以下对象：
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 类型]</td>
-        <td>选择您是要连接到服务帐户还是个人帐户。</td>
+        <td>选择连接服务帐户还是个人帐户。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 客户端ID]</td>
-        <td>输入您的[!UICONTROL Dropbox] [!UICONTROL 客户端ID]。 </tr>
+        <td role="rowheader">[!UICONTROL 客户端 ID]</td>
+        <td>输入您的[！UICONTROL Dropbox] [！UICONTROL客户端ID]。 </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的[!DNL Dropbox] [!UICONTROL 客户端密钥]。 </td>
+        <td>输入您的[!DNL Dropbox] [！UICONTROL客户端密钥]。 </td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 帐户类型]</td>
+        <td role="rowheader">[！UICONTROL帐户类型]</td>
         <td>选择您是连接到个人Dropbox帐户还是企业(Dropbox Business)帐户。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 排除dropbox-api-path-root标头]</td>
+        <td role="rowheader">[！UICONTROL排除dropbox-api-path-root标头]</td>
         <td>启用此选项以排除具有应用程序文件夹访问权限的Dropbox应用程序的dropbox-api-path-root标头</td>
         </tr>
       </tbody>
     </table>
 
-1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。## [!DNL Dropbox]模块及其字段
+1. 点击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。## [!DNL Dropbox]模块及其字段
 
-## [!DNL Dropbox]模块及其字段
+## [!DNL Dropbox] 模块及其字段
 
-在配置[!DNL Dropbox]模块时，Workfront Fusion将显示以下列出的字段。 除此以外，可能还会显示其他[!DNL Dropbox]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在您配置 [!DNL Dropbox] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Dropbox] 字段。模块中的加粗标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -164,7 +164,7 @@ Dropbox连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
@@ -172,12 +172,12 @@ Dropbox连接器使用以下对象：
    <td> <p>选择要监视更改的文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Watch also subfolders]</td> 
+   <td>[！UICONTROL Watch also subfolders]</td> 
    <td> <p> 启用此选项还可以监视所选文件夹中用于修改文件的子文件夹。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 限制] </td> 
-   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
+   <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -196,20 +196,20 @@ Dropbox连接器使用以下对象：
 
 指定文件及其位置。
 
-模块会返回文件的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+模块会返回文件的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景后续的模块中映射这些信息。
 
 >[!NOTE]
 >
 >此模块在向后续模块提供文件时非常有用。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
@@ -229,16 +229,16 @@ Dropbox连接器使用以下对象：
 
 指定文件夹的ID。
 
-该模块会返回文件夹ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回文件夹ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
@@ -254,16 +254,16 @@ Dropbox连接器使用以下对象：
 
 指定文件夹的ID。
 
-该模块返回文件或文件夹的ID以及任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块返回文件或文件夹的ID以及任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
@@ -272,7 +272,7 @@ Dropbox连接器使用以下对象：
   </tr> 
   <tr> 
    <td>仅显示可下载的文件</td> 
-   <td> <p> 启用此选项可仅返回可下载的文件。 某些类型的文件(如Google Docs)不可下载。</p> </td> 
+   <td> <p> 启用此选项可仅返回可下载的文件。 某些类型的文件（如Google Docs）不可下载。</p> </td> 
   </tr> 
   <tr> 
    <td>文件夹 </td> 
@@ -290,16 +290,16 @@ Dropbox连接器使用以下对象：
 此操作模块可检索特定文件的所有文件修订版本（版本历史记录）。\
 指定文件的ID。
 
-该模块会返回与记录关联的任何标准字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
@@ -321,14 +321,14 @@ Dropbox连接器使用以下对象：
 
 此搜索模块在[!DNL Dropbox]中查找与您指定的搜索查询匹配的对象中的记录。
 
-您可以在场景的后续模块中映射此信息。
+您可以在场景后续的模块中映射这些信息。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
@@ -353,7 +353,7 @@ Dropbox连接器使用以下对象：
   </tr> 
   <tr> 
    <td>限制 </td> 
-   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p> </td> 
+   <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -375,28 +375,28 @@ Dropbox连接器使用以下对象：
 
 指定文件夹的路径和名称。
 
-该模块会返回文件夹ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回文件夹ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件夹名称] </td> 
+   <td>[！UICONTROL文件夹名称] </td> 
    <td> <p>输入新文件夹的名称。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 文件夹]</p> </td> 
-   <td> <p>输入或映射要创建新文件夹的路径。</p> <p>注释：   <p>如果您使用[!DNL Dropbox Business]帐户（包含团队空间），则必须删除斜杠<code>/</code>，或者不要单击<strong>单击此处选择文件夹</strong>以在根目录中创建团队文件夹。</p> <p>如果未删除斜杠，则会返回错误<code>[409] path/malformed_path/..</code>。</p> </p> </td> 
+   <td> <p>输入或映射要创建新文件夹的路径。</p> <p>注意：   <p>如果您使用[!DNL Dropbox Business]帐户（包含团队空间），则必须删除斜杠<code>/</code>，或者不要单击<strong>单击此处选择文件夹</strong>以在根目录中创建团队文件夹。</p> <p>如果未删除斜杠，则会返回错误<code>[409] path/malformed_path/..</code>。</p> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 自动重命名]</td> 
+   <td>[！UICONTROL自动重命名]</td> 
    <td> <p> 启用此选项可重命名新文件夹（如果目标位置中已存在同名文件夹）。</p> </td> 
   </tr> 
  </tbody> 
@@ -408,22 +408,22 @@ Dropbox连接器使用以下对象：
 
 指定源文件和文件夹。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 选择至]</td> 
+   <td>[！UICONTROL选择至]</td> 
    <td> <p> 选择是要创建或覆盖DOC文件。</p><ul><li><b>创建</b></p>选择要创建文件的文件夹。</li><li><b>覆盖</b><p>选择要如何选择要覆盖的文件，然后映射文件路径或选择文件。 </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
+   <td> <p>[!UICONTROL 源文件]</p> </td> 
    <td> <p>从上一个模块中选择源文件，或映射源文件的内容。 </p> <p>如果要创建文件，请选择<b>空</b>。</p> </td> 
   </tr> 
  </tbody> 
@@ -435,37 +435,37 @@ Dropbox连接器使用以下对象：
 
 指定文件以及有关链接的信息。
 
-模块会返回链接的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+模块会返回链接的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 选择文件的方法]</td> 
+   <td>[！UICONTROL选择文件的方法]</td> 
    <td> <p> 选择是要映射还是输入文件路径，或者手动选择文件。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 文件路径/文件]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL 文件路径]</p> <p>输入或映射目标文件的路径。</p> <p style="font-weight: bold;">[!UICONTROL 文件]</p> <p>选择目标文件。</p> </td> 
+   <td> <p>[！UICONTROL文件路径/文件]</p> </td> 
+   <td> <p style="font-weight: bold;">[！UICONTROL文件路径]</p> <p>输入或映射目标文件的路径。</p> <p style="font-weight: bold;">[！UICONTROL文件]</p> <p>选择目标文件。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 请求的可见性]</p> </td> 
-   <td> <p>选择链接是公共链接、团队链接还是密码受限链接。</p> <p><b>注释：</b></p><p> [!UICONTROL 团队]仅适用于Dropbox商业帐户。 [!UICONTROL 密码访问]仅适用于[!DNL Dropbox Pro]或Dropbox商业帐户。</p> </td> 
+   <td> <p>[！UICONTROL请求的可见性]</p> </td> 
+   <td> <p>选择链接是公共链接、团队链接还是密码受限链接。</p> <p><b>注意：</b></p><p> [！UICONTROL团队]仅适用于Dropbox商业帐户。 [！UICONTROL密码访问]仅适用于[!DNL Dropbox Pro]或Dropbox商业帐户。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 链接的到期日期]</td> 
-   <td> <p> 输入链接到期且无法再访问的日期和时间。 如果此字段留空，链接将不会过期。 有关支持的日期和时间格式的列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">类型强制</a>。</p>  </td> 
+   <td>[！UICONTROL链接的到期日期]</td> 
+   <td> <p> 输入链接到期且无法再访问的日期和时间。 如果此字段留空，链接将不会过期。 有关支持的日期和时间格式列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref" data-mc-variable-override="">类型强制转换</a>。</p>  </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Link的访问级别]</p> </td> 
-   <td> <p>设置链接收件人的权限。</p> <ul><li><strong>[!UICONTROL 查看器]</strong> <p>使用该链接的用户可以查看和评论内容。</p> </li><li><strong>[!UICONTROL 编辑器]</strong><p> 使用该链接的用户可以编辑、查看和评论内容。 此访问级别仅适用于基于云的文档。</p> </li><li><strong>[!UICONTROL Max]</strong> <p>使用该链接的用户将获得您可以设置该链接的最大访问级别。</p></li><ul> </td> 
+   <td> <p>[！UICONTROL Link的访问级别]</p> </td> 
+   <td> <p>设置链接收件人的权限。</p> <ul><li><strong>[！UICONTROL查看器]</strong> <p>使用该链接的用户可以查看和评论内容。</p> </li><li><strong>[！UICONTROL编辑器]</strong><p> 使用该链接的用户可以编辑、查看和评论内容。 此访问级别仅适用于基于云的文档。</p> </li><li><strong>[！UICONTROL Max]</strong> <p>使用该链接的用户将获得您可以设置该链接的最大访问级别。</p></li><ul> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -477,25 +477,25 @@ Dropbox连接器使用以下对象：
 
 指定文件或文件夹。
 
-该模块返回记录ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回记录的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 选择文件的方法]</td> 
+   <td>[！UICONTROL选择文件的方法]</td> 
    <td> <p> 选择是要映射还是输入文件路径，或者手动选择文件。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 文件或文件夹路径] / [!UICONTROL 文件或文件夹]</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL 文件/文件夹路径]</p> <p>输入目标路径或将目标路径映射到文件或文件夹。</p> <p style="font-weight: bold;">[!UICONTROL 文件/文件夹]</p> <p>从菜单中选择文件或文件夹。</p> </td> 
+   <td> <p>[！UICONTROL文件或文件夹路径] / [！UICONTROL文件或文件夹]</p> </td> 
+   <td> <p style="font-weight: bold;">[！UICONTROL文件/文件夹路径]</p> <p>输入目标路径或将目标路径映射到文件或文件夹。</p> <p style="font-weight: bold;">[！UICONTROL文件/文件夹]</p> <p>从菜单中选择文件或文件夹。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -506,40 +506,40 @@ Dropbox连接器使用以下对象：
 
 您可以指定文件或文件夹，以及移动它的方法和位置。
 
-该模块会返回文件或文件夹的ID以及任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回文件或文件夹的ID以及任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 选择文件/文件夹的方法] </td> 
+   <td>[！UICONTROL选择文件/文件夹的方法] </td> 
    <td> <p>选择是要映射还是输入文件或文件夹路径，或者手动选择文件或文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 文件/文件夹路径] /</p> </td> 
-   <td> <p style="font-weight: bold;">[!UICONTROL 文件/文件夹路径]</p> <p>输入目标路径或将目标路径映射到文件或文件夹。</p> <p style="font-weight: bold;">[!UICONTROL 文件/文件夹]</p> <p>选择是要移动文件或文件夹，然后选择文件或文件夹。</p> </td> 
+   <td> <p>[！UICONTROL文件/文件夹路径] /</p> </td> 
+   <td> <p style="font-weight: bold;">[！UICONTROL文件/文件夹路径]</p> <p>输入目标路径或将目标路径映射到文件或文件夹。</p> <p style="font-weight: bold;">[！UICONTROL文件/文件夹]</p> <p>选择是要移动文件或文件夹，然后选择文件或文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 到文件夹]</p> </td> 
+   <td> <p>[！UICONTROL到文件夹]</p> </td> 
    <td> <p>输入或映射文件或文件夹的目标位置。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 新名称]</p> </td> 
+   <td> <p>[！UICONTROL新名称]</p> </td> 
    <td> <p>在新位置输入文件或文件夹的新名称。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 自动重命名]</p> </td> 
-   <td> <p>启用此选项以确保如果存在同名的文件或文件夹，模块会重命名新的文件或文件夹，方法是在文件或文件夹名称后添加([!UICONTROL NUMBER])。 否则，将覆盖目标位置中的文件或文件夹。</p> </td> 
+   <td> <p>[！UICONTROL自动重命名]</p> </td> 
+   <td> <p>启用此选项以确保如果存在同名的文件或文件夹，模块会重命名新的文件或文件夹，方法是在文件或文件夹名称后添加([！UICONTROL NUMBER])。 否则，将覆盖目标位置中的文件或文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 允许所有权转让]</p> </td> 
+   <td> <p>[！UICONTROL允许所有权转让]</p> </td> 
    <td> <p>启用此选项可允许所有者移动，即使这会导致所移动内容的所有权转移。</p> </td> 
   </tr> 
  </tbody> 
@@ -551,16 +551,16 @@ Dropbox连接器使用以下对象：
 
 指定文件或文件夹以及新名称。
 
-该模块会返回文件或文件夹的ID以及任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+该模块会返回文件或文件夹的ID以及任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
@@ -585,49 +585,49 @@ Dropbox连接器使用以下对象：
 
 指定所需的文件和修订版本号。
 
-模块会返回版本ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+模块会返回版本ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 选择文件的方法]</td> 
+   <td>[！UICONTROL选择文件的方法]</td> 
    <td> <p> 选择是要映射还是输入文件路径，或者手动选择文件。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 文件路径] / [!UICONTROL 文件]</p> </td> 
-   <td> <p><strong>[!UICONTROL 文件路径]</strong> </p> <p>输入或映射目标路径到文件。</p> <p><strong>[!UICONTROL 文件]</strong> </p> <p>从菜单中选择文件。</p> </td> 
+   <td> <p>[！UICONTROL文件路径] / [！UICONTROL文件]</p> </td> 
+   <td> <p><strong>[！UICONTROL文件路径]</strong> </p> <p>输入或映射目标路径到文件。</p> <p><strong>[！UICONTROL文件]</strong> </p> <p>从菜单中选择文件。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 修订版]</p> </td> 
+   <td> <p>[！UICONTROL修订版]</p> </td> 
    <td> <p>输入或映射要恢复的修订版本的修订号。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-#### [!UICONTROL 上载文件]
+#### [!UICONTROL 上传文件]
 
 此操作模块将文件上传到文件夹。
 
 您可以指定信息，例如文件的位置、要上传的文件以及文件的可选新名称。
 
-模块会返回文件的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+模块会返回文件的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景后续的模块中映射这些信息。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
@@ -635,11 +635,11 @@ Dropbox连接器使用以下对象：
    <td> <p> 选择要将文件上传到的[!DNL Dropbox]的文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
-   <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> <p><b>注释：</b></p><p> 上传文件的最大大小为150 MB。</p> </td> 
+   <td> <p>[!UICONTROL 源文件]</p> </td> 
+   <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> <p><b>注意：</b></p><p> 上传文件的最大大小为150 MB。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 覆盖现有文件]</td> 
+   <td>[！UICONTROL覆盖现有文件]</td> 
    <td> <p> 启用此选项可使用新文件替换现有文件。 如果将此选项保留为禁用，则将重命名上传的文件。</p> </td> 
   </tr> 
  </tbody> 
@@ -650,16 +650,16 @@ Dropbox连接器使用以下对象：
 
 #### [!UICONTROL 进行API调用]
 
-此操作模块允许您对[!DNL Dropbox] API进行经过身份验证的自定义调用。 这样，您可以创建其他[!DNL Dropbox]模块无法实现的数据流自动化。
+此操作模块允许您向 [!DNL Dropbox] API 发起自定义的已经过身份认证的调用。通过这种方式，您可以构建其他 [!DNL Dropbox] 模块无法实现的数据流自动化。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Dropbox]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-dropbox" class="MCXref xref">创建与[!DNL Dropbox]</a>的连接。</p> </td> 
   </tr> 
   <tr> 
@@ -668,19 +668,19 @@ Dropbox连接器使用以下对象：
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 方法]</p> </td> 
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Headers] </td> 
-   <td> <p>输入所需的请求标头。 Workfront Fusion会自动添加授权标头。</p> </td> 
+   <td>[!UICONTROL 标头] </td> 
+   <td> <p>输入所需的请求标头。 Workfront Fusion 会自动添加授权标头。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 查询字符串]</td> 
    <td> <p> 输入请求查询字符串。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Body] </td> 
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：   <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+   <td>[!UICONTROL 正文] </td> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注意：   <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>">  
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

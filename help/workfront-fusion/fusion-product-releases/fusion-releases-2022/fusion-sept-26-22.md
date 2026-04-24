@@ -3,21 +3,20 @@ product-previous: workfront-fusion
 content-type: release-notes
 product-area: workfront-integrations
 navigation-topic: fusion-release-activity
-title: Workfront Fusion发布活动： 2022年9月26日开始的周
+title: Workfront Fusion 发行活动：2022 年 9 月 26 日当周
 description: 本页介绍了2022年9月19日这一周在Adobe Workfront Fusion中所做的所有增强。
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
-hidefromtoc: true
 exl-id: 779bac51-1fae-43ba-b2cf-32524e935b8c
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+source-git-commit: 80f2d078cd624424f23bd007e852f49643fec7f3
 workflow-type: tm+mt
 source-wordcount: '117'
-ht-degree: 0%
+ht-degree: 11%
 
 ---
 
-# Workfront Fusion发布活动： 2022年9月26日开始的周
+# Workfront Fusion 发行活动：2022 年 9 月 26 日当周
 
 ## GitLab连接器和模块现已可用
 
