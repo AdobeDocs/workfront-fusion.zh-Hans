@@ -8,11 +8,12 @@ description: 本页介绍了2021年3月8日这一周在Adobe Workfront Fusion中
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: c543ac10-840f-497a-a511-9afefc417a3b
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 40%
+source-wordcount: '146'
+ht-degree: 39%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 40%
 
 如需查看所有近期更改的完整列表，请参阅 [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
 
-如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=zh-Hans)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
+如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
 
 ## 在映射面板中搜索项目
 

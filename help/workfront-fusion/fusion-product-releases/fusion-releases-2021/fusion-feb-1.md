@@ -8,11 +8,12 @@ description: 本页介绍了2021年2月1日这一周在Adobe Workfront Fusion中
 author: Luke
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: ce0c1c62-d012-4bc2-8d73-69893c1be8da
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 23%
+source-wordcount: '201'
+ht-degree: 21%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 23%
 
 如需查看所有近期更改的完整列表，请参阅 [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
 
-如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=zh-Hans)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
+如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
 
 
 ## MariaDB连接器和模块现已推出

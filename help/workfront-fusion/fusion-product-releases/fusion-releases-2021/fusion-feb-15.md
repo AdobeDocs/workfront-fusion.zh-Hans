@@ -5,10 +5,11 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: 9c726ca7-ceb4-49ec-b581-4ed610294402
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '266'
 ht-degree: 24%
 
 ---
@@ -19,9 +20,9 @@ ht-degree: 24%
 
 如需查看所有近期更改的完整列表，请参阅 [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
 
-如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=zh-Hans)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
+如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
 
-此版本还包括一个或多个维护更新。 有关Workfront Fusion 2.0维护更新的信息，请参阅[Workfront维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=zh-Hans)。
+此版本还包括一个或多个维护更新。 有关Workfront Fusion 2.0维护更新的信息，请参阅[Workfront维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html)。
 
 ## 团队现在共享电子邮件通知设置
 

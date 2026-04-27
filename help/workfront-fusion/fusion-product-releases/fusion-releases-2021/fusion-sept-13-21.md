@@ -5,11 +5,12 @@ author: Luke
 draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
+hidefromtoc: true
 exl-id: bc72bb8b-25d9-488f-a1f0-89d4f41a7e76
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+source-git-commit: 0e8f73afb2ab60bb1b601abf3c4f3d611e97d125
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 13%
+source-wordcount: '464'
+ht-degree: 14%
 
 ---
 
@@ -19,7 +20,7 @@ ht-degree: 13%
 
 如需查看所有近期更改的完整列表，请参阅 [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)。
 
-如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=zh-Hans)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
+如需查看 Workfront Fusion 的近期错误修复，请访问 [Workfront 维护更新](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html)页面，并查找标记为“Workfront Fusion 维护更新”的更新内容。
 
 ## 对Workfront Fusion场景执行历史记录进行过滤和排序
 
