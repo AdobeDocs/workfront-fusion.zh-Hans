@@ -1,55 +1,55 @@
 ---
-title: 使用更新的安全措施将Adobe Workfront Fusion连接到Google服务
+title: 在更新的安全措施下，将 Adobe Workfront Fusion 连接到 Google 服务
 description: Google对用户使用其API的方式引入了限制。 本文介绍了如何将Adobe Workfront Fusion连接到Google，并说明了这些更新安全措施。
 author: Becky
 feature: Workfront Fusion
 exl-id: eac7ba26-664e-464c-b05c-8c2ebf407fb3
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: bbd1ec27e52127c8814188612a1e8d5cfab0cd25
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 0%
+source-wordcount: '804'
+ht-degree: 18%
 
 ---
 
-# 使用更新的安全措施将Adobe Workfront Fusion连接到Google服务
+# 在更新的安全措施下，将 Adobe Workfront Fusion 连接到 Google 服务
 
 Google对用户使用其API的方式引入了限制。 本文介绍了如何将Adobe Workfront Fusion连接到Google，并说明了这些更新安全措施。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -61,7 +61,7 @@ Google对用户使用其API的方式引入了限制。 本文介绍了如何将A
 
 有关这些限制的详细信息，请参阅[Google API服务用户数据策略](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes)中的“特定API范围的其他要求”
 
-要访问受限范围，连接的服务(Adobe Workfront Fusion或通过API访问用户数据的任何其他服务)必须经过验证，并且必须拥有评估书来证明服务在使用数据方面的安全性和透明度。 Workfront Fusion符合Google对访问受限作用域的所有要求。 但是，Workfront Fusion中的大多数第三方连接服务没有评估书，因此不符合Google条款。 因此，Workfront Fusion不允许将数据发送到这些服务。
+要访问受限范围，连接的服务（Adobe Workfront Fusion或通过API访问用户数据的任何其他服务）必须经过验证，并且必须拥有评估书来证明服务在使用数据方面的安全性和透明度。 Workfront Fusion符合Google对访问受限作用域的所有要求。 但是，Workfront Fusion中的大多数第三方连接服务没有评估书，因此不符合Google条款。 因此，Workfront Fusion不允许将数据发送到这些服务。
 
 ## Google服务限制的例外
 
@@ -83,7 +83,7 @@ Workfront Fusion使用域范围的安装异常。 全域安装适用于Google Wo
 
 通过@gmail.com或@googlemail.com访问Google服务的用户可以通过个人使用方法连接到Google服务。 此选项适用于高级用户。 有关说明，请参阅[使用自定义OAuth客户端将Adobe Workfront Fusion连接到Google服务](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-fusion-to-google-using-oauth.md)。
 
-## 常见问题解答
+## 常见问题
 
 * [Adobe Workfront Fusion中的哪些应用程序会受到影响？](#what-apps-in-adobe-workfront-fusion-are-affected)
 * [我是否拥有Google Workspace帐户？](#do-i-have-a-g-suite-account)
@@ -96,13 +96,13 @@ Google Drive、Gmail和Email（已连接到Gmail帐户）。
 
 ### 我是否拥有Google Workspace帐户？ {#do-i-have-a-g-suite-account}
 
-如果您的电子邮件地址以@gmail.com或@googlemail.com结尾，则您的帐户不是Google Workspace帐户。 如果您的Google帐户以自定义域(如@my-company.com)结尾，则它是Google Workspace帐户。
+如果您的电子邮件地址以@gmail.com或@googlemail.com结尾，则您的帐户不是Google Workspace帐户。 如果您的Google帐户以自定义域（如@my-company.com）结尾，则它是Google Workspace帐户。
 
 ### 如果我是@gmail.com或@googlemail.com用户，该怎么办？ {#what-should-i-do-if-im-gmailcom-or-googlemailcom-user}
 
 这些新限制仅适用于集成Google Drive或Gmail的情况。 如果要连接到Google Drive或Gmail，您可以
 
-* 切换到Google Workspace
+* 切换到Google Workspace。
 
   或
 
@@ -114,4 +114,4 @@ Google Drive、Gmail和Email（已连接到Gmail帐户）。
 
 ### 如果我是Google Workspace用户，该怎么办？ {#what-should-i-do-if-im-a-g-suite-user}
 
-无需执行任何操作。
+There is no required action.

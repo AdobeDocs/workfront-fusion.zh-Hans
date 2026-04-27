@@ -3,44 +3,44 @@ content-type: reference
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
-title: 通过Adobe Admin Console将用户添加到Adobe Workfront Fusion
-description: 您可以将用户添加到Adobe Admin Console并将其分配给Adobe Workfront Fusion，或将Adobe Admin Console中的现有用户分配给Workfront Fusion。
+title: 通过 Adobe Admin Console 向 Adobe Workfront Fusion 添加用户
+description: You can add a user to the Adobe Admin Console and assign them to Adobe Workfront Fusion, or assign an existing user in the Adobe Admin Console to Workfront Fusion.
 author: Becky
 feature: Workfront Fusion
 exl-id: 7cb1c1a7-3c7a-459a-818f-d9cefcb9988b
-source-git-commit: f7c1d5b1de74cc0c59e3a00938bed14b489500db
+source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 1%
+source-wordcount: '607'
+ht-degree: 20%
 
 ---
 
-# 通过Adobe Admin Console将用户添加到Adobe Workfront Fusion
+# 通过 Adobe Admin Console 向 Adobe Workfront Fusion 添加用户
 
-您可以将用户添加到[!DNL Adobe Admin Console]并将他们分配给Adobe Workfront Fusion，或将[!DNL Adobe Admin Console]中的现有用户分配给Workfront Fusion。
+You can add a user to the [!DNL Adobe Admin Console] and assign them to Adobe Workfront Fusion, or assign an existing user in the [!DNL Adobe Admin Console] to Workfront Fusion.
 
-有关描述[!DNL Adobe Admin Console]中的Workfront Fusion的视频（包括如何添加用户），请参阅Adobe IMS[[!DNL Fusion] 上的](https://video.tv.adobe.com/v/3412464/){target=_blank}。
+For a video describing Workfront Fusion in the [!DNL Adobe Admin Console], including how to add users, see [[!DNL Fusion] on Adobe IMS](https://video.tv.adobe.com/v/3412464/){target=_blank}.
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
   <tr data-mc-conditions=""> 
@@ -53,12 +53,12 @@ ht-degree: 1%
   </tr>
    <tr> 
    <td role="rowheader">访问级别配置</td> 
-   <td>您必须是贵组织的Adobe产品的产品配置管理员。</td> 
+   <td>You must be a Product Configuration Administrator of Adobe products for your organization.</td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
 +++
 
@@ -66,45 +66,45 @@ ht-degree: 1%
 
 ## 先决条件
 
-在使用[!DNL Admin Console] for Workfront之前，您应该会收到一封邀请您加入控制台的电子邮件。
+Before using the [!DNL Admin Console] for Workfront, you should receive a receive an email inviting you to the console.
 
-1. 如果您是[!DNL Adobe]的新用户，并且已收到一封电子邮件，告知您现在拥有管理贵组织的[!DNL Adobe]软件和服务的管理权限，请单击电子邮件中的按钮以创建[!DNL Adobe]帐户并打开[!DNL Admin Console]。
+* If you are new to [!DNL Adobe] and you have received an email telling you that you now have administer rights to manage [!DNL Adobe] software and services for your organization, click the button in the email to create an [!DNL Adobe] account and open the [!DNL Admin Console].
 
-   或
+  或
 
-   如果您已经拥有Adobe帐户，请转到[[!DNL Adobe Admin Console] 页面](https://adminconsole.adobe.com)。
+  If you already have an Adobe account, go to the [[!DNL Adobe Admin Console] page](https://adminconsole.adobe.com).
 
 
-## 向[!DNL Adobe Admin Console]和Workfront Fusion添加新用户
+## Add a new user to the [!DNL Adobe Admin Console] and Workfront Fusion
 
-1. 从[[!DNL Adobe Admin Console] 页面](https://adminconsole.adobe.com/)中，选择顶部导航栏中的&#x200B;**[!UICONTROL 产品]**&#x200B;选项卡，然后选择&#x200B;**Workfront Fusion**&#x200B;产品拼贴。
+1. From the [[!DNL Adobe Admin Console] page](https://adminconsole.adobe.com/), select the **[!UICONTROL Products]** tab in the top navigation bar, and then select the **Workfront Fusion** product tile.
 
-   Admin Console中的![Fusion](assets/fusion-product-admin-console.png)
+   ![Fusion in Admin Console](assets/fusion-product-admin-console.png)
 
-1. 在显示的列表中，选择要添加用户的组织。
+1. In the list that displays, select the organization where you want to add a user.
 
-   Admin Console中的![Fusion实例](assets/fusion-instances-admin-console.png)
+   ![Fusion instance in Admin Console](assets/fusion-instances-admin-console.png)
 
-1. 在显示的列表中，选择&#x200B;**[!UICONTROL 产品配置文件]**&#x200B;选项卡，单击Workfront Fusion [!UICONTROL 产品配置文件]链接的名称。
+1. In the list that displays, with the **[!UICONTROL Product Profiles]** tab selected, click the name of the Workfront Fusion [!UICONTROL Product Profile] link.
 
    >[!IMPORTANT]
    >
-   > 不要对[!UICONTROL 产品配置文件]本身进行任何更改。
+   > Do not make any changes to the [!UICONTROL Product Profile] itself.
 
-1. 在列表上方选择&#x200B;**[!UICONTROL 用户]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL 添加用户]**。
+1. With the **[!UICONTROL Users]** tab selected above the list, click **[!UICONTROL Add User]**.
 
-1. 在&#x200B;**[!UICONTROL 将用户添加到此产品配置文件]**&#x200B;框中，输入要添加的用户的电子邮件地址或名称，然后在显示的列表中选择该用户。
+1. In the **[!UICONTROL Add users to this product profile]** box, enter the email address or name of a user you want to add, then select the user in the list that appears.
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
-   将在Workfront Fusion中创建用户。
+   The user is created in Workfront Fusion.
 
-1. （可选）继续在Workfront Fusion中[更改用户的访问级别](#change-a-users-access-level-in-workfront-fusion)
+1. (Optional) Continue to [Change a user&#39;s access level in Workfront Fusion](#change-a-users-access-level-in-workfront-fusion).
 
-## 在Workfront Fusion中更改用户的访问级别
+## Change a user&#39;s access level in Workfront Fusion
 
-* [将用户的角色更改为管理员](#change-a-users-role-to-admin)
-* [将用户的角色更改为成员、会计或应用程序开发人员](#change-a-users-role-to-member-accountant-or-app-developer)
+* [Change a user&#39;s role to Admin](#change-a-users-role-to-admin)
+* [Change a user&#39;s role to Member, Accountant, or App Developer](#change-a-users-role-to-member-accountant-or-app-developer)
 
 ### 将用户的角色更改为管理员
 

@@ -1,50 +1,50 @@
 ---
 title: 将信息从一个模块映射到另一个模块
-description: 映射是将模块的输出（按项目结构）分配给其他模块的输入字段的过程。
+description: 映射是将模块输出（由项目构成）分配到另一个模块输入字段的过程。
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '774'
-ht-degree: 0%
+source-wordcount: '777'
+ht-degree: 17%
 
 ---
 
 # 将信息从一个模块映射到另一个模块
 
-映射是将模块的输出分配给其他模块的输入字段的过程。
+映射是将一个模块的输出分配到另一个模块的输入字段的过程。
 
 单击某个字段时，将显示映射面板，您可以在该字段中插入从场景中的上一个模块输出的值。
 
 您还可以使用映射面板中的函数和映射项的任意组合以及键入的静态文本来创建公式。 这些元素可以相互嵌套。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
 +++
 
@@ -78,49 +78,49 @@ ht-degree: 0%
 
 ### 问题：映射面板中缺少项目
 
-映射面板显示以前模块的输出项。 有时，此面板中可能缺少某些项目。 您可以在场景编辑器中运行缺少输出的模块，然后映射面板可以在后面的模块中包含这些项。 确切的过程因模块的类型而异
+映射面板显示以前模块的输出项。 有时，此面板中可能缺少某些项目。 您可以在场景编辑器中运行缺少输出的模块，然后映射面板可以在后面的模块中包含这些项。 确切的过程因模块的类型而异。
 
 * [即时触发](#instant-trigger)
-* [轮询触发器](#polling-trigger)
+* [Polling trigger](#polling-trigger)
 * [其他模块](#other-modules)
 
 #### 即时触发
 
-1. 右键单击该模块，然后在显示的菜单中单击&#x200B;**[!UICONTROL 仅运行此模块]**。
+1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays.
 
-   由于这是一个即时触发器，因此它会开始观察事件。
+   Because this is an instant trigger, it begins watching for events.
 
-1. 创建模块正在监视的事件。
+1. Create the event that the module is watching.
 
-   例如，如果模块是监视任务分配的Workfront >监视事件模块，请登录Workfront（作为非Fusion连接正在使用的用户）并分配任务。
+   For example, if the module is a Workfront > Watch Events module that is watching for task assignments, log into Workfront (as a user that is not the one that the Fusion connection is using) and assign a task.
 
-1. 当模块完成运行时，单击模块上方的气泡以浏览其完整输出。
+1. When the module finishes running, click the bubble above the module to explore its full output.
 
-   以后模块的映射面板现在包含模块输出中的所有项。
+   The mapping panel for later modules now contains all of the items in the module&#39;s output.
 
-#### 轮询触发器
+#### Polling trigger
 
-1. 右键单击该模块，然后在显示的菜单中单击&#x200B;**[!UICONTROL 仅运行此模块]**。
-1. 如果没有输出，请单击&#x200B;**[!UICONTROL 选择开始位置]**&#x200B;并调整设置。
-1. （视情况而定）如果没有要处理的事件，请创建模块要监视的事件，并重复步骤2。
+1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays.
+1. If there is no output, click **[!UICONTROL Choose where to start]** and adjust the settings.
+1. (Conditional) If there is no event to be processed, create the event that the module watches for and repeat step 2.
 
-   例如，如果模块是监视任务分配的Workfront >观察记录模块，请登录Workfront（作为非Fusion连接正在使用的用户）并分配任务，然后再次运行模块。
+   For example, if the module is a Workfront > Watch records module that is watching for task assignments, log into Workfront (as a user that is not the one that the Fusion connection is using) and assign a task, then run the module again.
 
-1. 当模块完成运行时，单击模块上方的气泡以浏览其完整输出。
+1. When the module finishes running, click the bubble above the module to explore its full output.
 
-   以后模块的映射面板现在包含模块输出中的所有项。
+   The mapping panel for later modules now contains all of the items in the module&#39;s output.
 
 #### 其他模块
 
-您可以选择执行：
+You may choose to execute:
 
-* 整个场景（或仅包含模块的部分）
-* 单个模块
+* The whole scenario (or just the part containing the module)
+* The single module
 
-要执行单个模块，请执行以下操作：
+To execute the single module:
 
-1. 右键单击该模块，然后在显示的菜单中单击&#x200B;**[!UICONTROL 仅运行此模块]**。
-1. 提供输入项的示例值，然后单击&#x200B;**[!UICONTROL 确定]** 。
-1. 当模块完成运行时，单击模块上方的气泡以浏览其完整输出。
+1. Right-click the module, then click **[!UICONTROL Run this module only]** in the menu that displays..
+1. Provide sample values for the input items, then click **[!UICONTROL OK]** .
+1. When the module finishes running, click the bubble above the module to explore its full output.
 
-   以后模块的映射面板现在包含模块输出中的所有项。
+   The mapping panel for later modules now contains all of the items in the module&#39;s output.

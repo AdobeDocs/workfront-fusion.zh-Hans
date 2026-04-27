@@ -4,9 +4,9 @@ description: 在某些情况下，您只需要使用满足特定条件的包。 
 author: Becky
 feature: Workfront Fusion
 exl-id: b507dca0-0e85-4ab7-8310-b6e6bcb7ae12
-source-git-commit: bec838423e13c3efe4f3d002f824c203cad6ecf8
+source-git-commit: 8de3e365ff7ff91f4b29fb8a298f3b846de0a980
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '528'
 ht-degree: 19%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 19%
    >您可以从映射面板在筛选器字段中输入值
    >有关映射的详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
-   例如，如果您希望过滤器在Adobe Workfront中传递以XML结尾的文件，则应在和的第一个框中输入&#x200B;**[!UICONTROL File name]**。第二个框中的&#x200B;**[!UICONTROL xml]**。 在它们之间的下拉菜单中，选择&#x200B;**[!UICONTROL 结尾为（不区分大小写）]**。 此过滤器将应用于来自第一个模块(Workfront)的传入包。 只有包含XML文件的包才会传递到下一个模块。
+   例如，如果您希望过滤器在Adobe Workfront中传递以XML结尾的文件，则应在第一个框中输入&#x200B;**[!UICONTROL File name]**，在第二个框中输入。**[!UICONTROL xml]**。 在它们之间的下拉菜单中，选择&#x200B;**[!UICONTROL 结尾为（不区分大小写）]**。 此过滤器将应用于来自第一个模块(Workfront)的传入包。 只有包含XML文件的包才会传递到下一个模块。
 
    ![设置筛选器](assets/set-up-filter-box.png)
 
@@ -87,7 +87,7 @@ ht-degree: 19%
 1. 右键单击过滤器所在的模块之间的连接点。
 1. 选择&#x200B;**复制筛选器**。
 1. 右键单击要粘贴过滤器的模块之间的连接点。
-1. 选择**粘贴筛选器
+1. 选择&#x200B;**粘贴**&#x200B;筛选器
 1. （可选）要调整筛选器，请单击筛选器图标或标签，然后输入值，如本文中的[在两个模块之间添加筛选器](#add-a-filter-between-two-modules)中所述。
 
 
