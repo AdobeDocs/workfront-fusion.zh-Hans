@@ -4,10 +4,10 @@ description: 在Adobe Workfront Fusion场景中，您可以自动使用Veeva Vau
 author: Becky
 feature: Workfront Fusion
 exl-id: 2ef967b6-0a69-4801-8574-5f17c9ce991d
-source-git-commit: 323e7d10795991bbcb6c1439db0af90e4331e687
+source-git-commit: d64d894cfb0e1905c135cdf5ea39f11cd7a6e5f2
 workflow-type: tm+mt
-source-wordcount: '3683'
-ht-degree: 14%
+source-wordcount: '4125'
+ht-degree: 13%
 
 ---
 
@@ -176,12 +176,15 @@ ht-degree: 14%
 
 配置Veeva Vault模块时，Workfront Fusion会显示以下列出的字段。 除此之外，可能还会显示其他Veeva Vault字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [文档](#document)
 * [对象](#object)
+* [多文件提取](#multi-file-extract)
+* [多文件加载](#multi-file-load)
+* [文件暂存](#file-staging)
 * [其他](#other)
 
 ### 文档
@@ -581,7 +584,7 @@ ht-degree: 14%
    <td> <p>选择您要删除文档、活页夹还是模板。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"><p>来源</p> </td> 
+   <td role="rowheader"><p>源</p> </td> 
    <td> <p>启用此选项以在导出中包括源文件。</p></td> 
   </tr> 
   <tr> 
@@ -995,6 +998,148 @@ ht-degree: 14%
  </tbody> 
 </table>
 
+### 多文件提取
+
+* [提取多个文件](#extract-multiple-files)
+* [检索提取结果](#retrieve-extract-results)
+
+#### 提取多个文件
+
+此操作模块会创建加载器作业以提取一个或多个数据文件。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">数据文件</td> 
+   <td>对于每个要提取的文件，单击<b>添加项</b>并输入以下内容：
+   <ul>
+   <li>对象类型</li>
+   <li>VQL标准（可选）：要筛选数据集以仅包含符合特定标准的文件，请在Vault查询语言(VQL)中输入标准。</li>
+   </ul>
+    </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 检索提取结果
+
+此操作模块检索指定提取请求的结果。
+
+
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>作业 ID</p> </td> 
+   <td> <p>输入或映射要检索结果的作业。 您可以从提取数据文件模块映射此内容。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">任务 ID</td> 
+   <td> <p>输入或映射要为其检索结果的任务。 您可以从提取数据文件模块映射此内容。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### 多文件加载
+
+* [加载多个文件](#load-multiple-files)
+* [检索日志结果](#retrieve-log-results)
+
+#### 加载多个文件
+
+此模块创建一个加载器作业并加载一组数据文件。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">文件</td> 
+   <td>输入文件路径或将文件路径映射到此作业将使用的CSV文件。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">订购</td> 
+   <td>输入或映射文件列表的顺序。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">无触发器</td> 
+   <td>选择“是”以绕过记录或文档触发器。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 检索日志结果
+
+此操作模块检索加载器作业结果的日志。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader"> <p>作业 ID</p> </td> 
+   <td> <p>输入或映射要检索结果的作业。 您可以从加载数据文件模块映射此数据。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">任务 ID</td> 
+   <td> <p>输入或映射要为其检索结果的任务。 您可以从加载数据文件模块映射此数据。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">类型</td> 
+   <td> <p>选择要检索成功的作业还是失败的作业。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+### 文件暂存
+
+#### 在路径处列出项目
+
+此模块返回指定路径的文件和文件夹列表。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接 </td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">选择主目录</td> 
+   <td>选择要从中列出项目的主目录。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">订购</td> 
+   <td>输入或映射文件列表的顺序。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">无触发器</td> 
+   <td>选择“是”以绕过记录或文档触发器。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
 ### 其他
 
 * [发起自定义 API 调用](#make-a-custom-api-call)
@@ -1015,11 +1160,11 @@ ht-degree: 14%
   </tr> 
   <tr> 
    <td role="rowheader">URL</td> 
-   <td>输入相对于<code>baseurl/api/v</code>的路径。  例如：<code>/objects/documents</code>。不包括<code>baseurl/api/v/</code>，因为它已包括在内。</td> 
+   <td>输入相对于 <code>baseurl/api/v</code> 的路径。  例如：<code>/objects/documents</code>。 不包括<code>baseurl/api/v/</code>，因为它已包括在内。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">方法</td> 
-   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 请求方法</a>。</p> </td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">标头</td> 
