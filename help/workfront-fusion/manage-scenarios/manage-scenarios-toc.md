@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
-source-git-commit: 34f24f26675fbdf0dd84223cbe8e2d1c3b1aa8cf
+source-git-commit: 3b3131516a920d16edf2ebce74235a90a2701864
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 63%
+source-wordcount: '95'
+ht-degree: 62%
 
 ---
 
@@ -31,3 +31,4 @@ ht-degree: 63%
 * [运行场景评分专家](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [删除场景元素](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
 * [从方案区域管理方案](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
+* [编辑Webhook](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
