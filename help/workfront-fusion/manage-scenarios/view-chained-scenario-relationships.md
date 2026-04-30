@@ -3,10 +3,11 @@ title: 查看链接方案关系
 description: 您可以映射父方案和子方案之间的关系。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: e7b12ec51474440990cc28996bc70fd97688b082
+exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
+source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 20%
+source-wordcount: '485'
+ht-degree: 18%
 
 ---
 
@@ -88,5 +89,6 @@ ht-degree: 20%
 
    * 如果只查看地图的一部分，则该部分在简化图上较暗。
    * 在简化的地图上，当前方案以蓝色标记。
+1. 要查看链的执行历史记录，请单击视图顶部附近的“历史记录”选项卡。
 
-
+   您可以单击历史记录以查看链接方案之间传递的特定数据。
