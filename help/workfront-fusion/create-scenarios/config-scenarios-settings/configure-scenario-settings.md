@@ -5,9 +5,9 @@ description: 您可以在方案设置面板中配置方案的特定设置。
 author: Becky
 feature: Workfront Fusion
 exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
-source-git-commit: 3e999de9127d6ce320e313f26bf143bf13637ad1
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1306'
 ht-degree: 7%
 
 ---
@@ -59,6 +59,10 @@ ht-degree: 7%
 
 ## 方案设置选项
 
+### 描述
+
+在这里，您可以输入方案的说明，该说明将显示在方案列表中。 说明长度限制为240个字符。
+
 ### [!UICONTROL 连续处理]
 
 此选项强制按顺序执行所有执行，并且主要与Webhook和未完成执行相关。
@@ -76,13 +80,13 @@ ht-degree: 7%
 * 如果序列处理选项为&#x200B;**已启用**，Workfront Fusion将停止处理预先存在的序列，直到解决所有未完成的执行。
 * 如果顺序处理选项为&#x200B;**已禁用**，则场景将根据其计划继续运行，同时会重复尝试重新运行未完成的执行。
 
-  For more information on incomplete executions, see [View and resolve incomplete executions](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md).
+  有关未完成执行的详细信息，请参阅[查看并解决未完成的执行](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)。
 
   >[!NOTE]
   >
-  >Sequential processing may cause a delay in the execution of a scenario. If there are incomplete executions still in the queue when an instant scenario triggers or a scheduled scenario is set to execute, that scenario will execute after all of the executions before it in the queue are complete.
+  >顺序处理可能会导致场景执行延迟。 当即时场景触发或计划场景设置为执行时，如果队列中仍存在未完成的执行，则该场景将在队列中的所有执行完成后执行，然后才在队列中执行。
   >
-  >If the use case for your scenarios does not require sequential processing, we recommend disabling the sequential processing option.
+  >如果您的方案用例不需要顺序处理，我们建议禁用顺序处理选项。
 
   有关计划的详细信息，请参阅[计划方案](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)。
 
@@ -108,9 +112,9 @@ ht-degree: 7%
 
 有关未完成执行的详细信息，请参阅[查看并解决未完成的执行](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)。
 
-For more information about maximum file size, see [Fusion performance guardrails](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#files).
+有关最大文件大小的详细信息，请参阅[Fusion性能护栏](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#files)。
 
-For more information on warnings, see [Error types](/help/workfront-fusion/references/errors/error-processing.md).
+有关警告的详细信息，请参阅[错误类型](/help/workfront-fusion/references/errors/error-processing.md)。
 
 ### [!UICONTROL 自动提交]
 
@@ -152,9 +156,9 @@ Workfront >观察记录模块中的最大周期数设置为`10`。
 
 #### 最大循环数设置为10
 
-The Max number of cycles in the Workfront > Watch records module is set to `10`.
+Workfront >观察记录模块中的最大周期数设置为`10`。
 
-If 100 files are added to the Dropbox folder and the Max number of cycles option is set to 10, then 10 files are processed during the first cycle, the next 10 files in the second cycle, the next 10 files in the third cycle and so on, until all files are processed.
+如果向Dropbox文件夹添加了100个文件，且“最大循环数”选项设置为10，则会在第一个循环中处理10个文件，在第二个循环中处理下一个10个文件，在第三个循环中处理下一个10个文件，以此类推，直到处理完所有文件为止。
 
 所有文件都在1个场景运行内处理。
 

@@ -4,10 +4,11 @@ title: 从方案区域管理方案
 description: 本节包含与管理Adobe Workfront Fusion中的场景相关的文章。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8801b8c175b3cf6ed7b0dc98a8b3d269ca2bbd2b
+exl-id: 4e2f1bbb-fcd6-4724-bd0f-c028f3ea8d69
+source-git-commit: e63ec5927f2844f94fd0c7cd3f9890b7d236aede
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 21%
+source-wordcount: '463'
+ht-degree: 19%
 
 ---
 
@@ -54,6 +55,9 @@ ht-degree: 21%
 1. 要搜索特定方案，请在搜索栏中开始键入。 方案会在您键入时进行过滤。
 1. 要激活或停用方案，请在列表中找到该方案，然后在该方案的&#x200B;**状态**&#x200B;列中切换切换开关。
 1. 要直接转到方案的详细信息页面，请在列表中找到该方案，然后单击该方案行中的&#x200B;**打开**。
+1. 要向方案添加说明，请单击该方案的说明列，然后输入说明。
+
+   说明最多可包含240个字符。
 1. 要克隆方案，请单击该方案行中的复选框，然后从屏幕底部的栏中选择&#x200B;**克隆**。
 
    有关克隆方案的详细信息，请参阅复制模块或方案一文中的[通过克隆复制方案](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md#copy-a-scenario-by-cloning)。
@@ -61,4 +65,3 @@ ht-degree: 21%
 1. 要将一个或多个方案分配给工作线程池，请单击要分配给池的每个方案旁边的复选框，然后单击屏幕底部栏中的&#x200B;**分配给工作线程池**。 选择要为其分配方案的工作进程池。
 1. 要删除某个方案，请单击要删除的方案旁边的复选框，然后单击页面底部栏中的&#x200B;**删除**。
 1. 要隐藏列表列，请单击&#x200B;**列**&#x200B;图标![列图标](assets/glist-column.png)，然后选中或取消选中列名旁边的复选框。
-
