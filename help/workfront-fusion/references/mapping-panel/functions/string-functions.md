@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion映射面板中提供了以下字符串函数
 author: Becky
 feature: Workfront Fusion
 exl-id: d3e49fce-85bc-4ee6-9a94-497a306e0c74
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 4%
+source-wordcount: '778'
+ht-degree: 5%
 
 ---
 
@@ -392,3 +392,144 @@ ht-degree: 4%
 返回：d29ya2Zyb250==
 
 >[!ENDSHADEBOX]
+
+
+### [!UICONTROL concat（string1；分隔符；string2； ...）]
+
+[!BADGE 新！]{type=Informative}
+
+用分隔符连接字符串。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `concat("Hello"; " "; "World")`
+
+  返回Hello World
+* `concat("a"; "-"; "b"; "c")`
+
+  返回a-b-c
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL left(string； length)]
+
+[!BADGE 新！]{type=Informative}
+
+从字符串的左侧返回指定的字符数。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `left("Hello"; 3)`
+
+  返回帮助
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL right(string； length)]
+
+[!BADGE 新！]{type=Informative}
+
+从字符串的右侧返回指定的字符数。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `right("Hello"; 3)`
+
+  返回llo
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL removeAccents(string)]
+
+[!BADGE 新！]{type=Informative}
+
+从重音字符中删除变音标记（重音符号）。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `removeAccents("Héllo wörld")`
+
+  返回Hello世界
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL replacePattern(string； pattern； replacement)]
+
+[!BADGE 新！]{type=Informative}
+
+将正则表达式模式的所有匹配项替换为
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `replacePattern("foo123bar"; "\\d+"; "\_")`
+
+  返回foo\_bar
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL sortAscString(string1； string2； ...)]
+
+[!BADGE 新！]{type=Informative}
+
+返回提供的按升序（按字母）排序的字符串。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `sortAscString("banana"; "apple"; "cherry")`
+
+  返回\[“apple”、“banana”、“cherry”]
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL sortDescString(string1； string2； ...)]
+
+[!BADGE 新！]{type=Informative}
+
+返回提供的按降序（反向字母顺序）排序的字符串。
+
+**语法：**`sortDescString(string1; string2; ...)`
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `sortDescString("banana"; "apple"; "cherry")`
+
+  返回\[“cherry”、“banana”、“apple”]
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL pascal（字符串）]
+
+[!BADGE 新！]{type=Informative}
+
+通过大写每个单词的第一个字母并删除空格将字符串转换为PascalCase。
+
+**语法：**`pascal(string)`
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `pascal("hello world")`
+
+  返回HelloWorld
+* `pascal("foo bar baz")`
+
+  返回FooBarBaz
+
+>[!ENDSHADEBOX]
+
+

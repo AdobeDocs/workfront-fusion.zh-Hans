@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion映射面板中提供了以下常规函数。
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: f968b9141173725160cea36575ad4e02a09a5e3f
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 3%
+source-wordcount: '471'
+ht-degree: 7%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 3%
 
 * `executionID`：此方案执行的ID
 * `triggerTimestamp`：触发此执行的时间
-* `scenarioID`：当前打开方案的ID
-* `operationsConsumed`：在方案中的该点使用的操作数。
+* `scenarioID`：当前打开的场景的 ID
+* `operationsConsumed`：场景在该点已使用的操作次数
 
 ## [!UICONTROL get （对象或数组；路径）]
 
@@ -73,15 +73,15 @@ ht-degree: 3%
 
 **示例：**
 
-* `ifempty(` `A` `;` `B`
+* `ifempty(` `A` `;` `B` )
 
   返回
 
-* `ifempty(` `unknown` `;` `B`
+* `ifempty(` `unknown` `;` `B` )
 
   返回B
 
-* `ifempty(` `""` `;` `B`
+* `ifempty(` `""` `;` `B` )
 
   返回B
 
@@ -142,3 +142,102 @@ ht-degree: 3%
 ## mergeCollections(collection1； collection2)
 
 通过组合键值对合并两个收藏集。 如果两个收藏集包含相同的键，则来自第二个收藏集的值将覆盖来自第一个收藏集的值。
+
+### [!UICONTROL isBlank(value)]
+
+如果值为`null`或空字符串，则返回`true`，否则返回`false`。 与`ifEmpty`不同，此函数不将数字`0`或仅包含空格的字符串视为空白。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `isBlank("")     `
+
+  返回true
+* `isBlank(null)   `
+
+  返回true
+* `isBlank("Hello")`
+
+  返回false
+* `isBlank(0)      `
+
+  返回false
+* `isBlank(" ")    `
+
+  返回false
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL in(value； value1； value2； ...)]
+
+如果值与提供的值之一（严格相等，无类型强制）相等，则返回`true`。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `in("B"; "A"; "B"; "C")`
+
+  返回true
+* `in("D"; "A"; "B"; "C")`
+
+  返回false
+* `in(2; 1; 2; 3)        `
+
+  返回true
+* `in("2"; 1; 2; 3)      `
+
+  返回false
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL ifin(value； value1； value2； ...； trueExpression； falseExpression)]
+
+如果值与提供的任何匹配值匹配，则返回`trueExpression`，否则返回`falseExpression`。 至少需要3个参数（值、一个匹配值以及trueExpression + falseExpression）。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `ifin("B"; "A"; "B"; "yes"; "no")`
+
+  返回yes
+* `ifin("D"; "A"; "B"; "yes"; "no")`
+
+  返回否
+* `ifin("X"; "X"; "found"; "not found")`
+
+  找到退货
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL case(indexNumber； value1； value2； ...)]
+
+返回由索引号（从1开始）指定的位置的值。 如果索引超出范围或为0，则返回`null`。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `case(1; "Sun"; "Mon"; "Tue")`
+
+  返回Sun
+* `case(2; "Sun"; "Mon"; "Tue")`
+
+  返回星期一
+* `case(3; "Sun"; "Mon"; "Tue")`
+
+  返回星期二
+* `case(5; "a"; "b")           `
+
+  返回空值
+
+>[!NOTE]
+>
+>我们建议使用此项来获取日期的日期名称：
+>`case(dayOfWeek(date); "Sun"; "Mon"; "Tue"; "Wed"; "Thu"; "Fri"; "Sat")`
+
+>[!ENDSHADEBOX]
+
