@@ -6,9 +6,9 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 5f2f7cf0a21fd9fb8792c93833668e7fb45547e6
+source-git-commit: e6c0e85d110bef2c09bcbdf0e9a291b607afa6d1
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '502'
 ht-degree: 96%
 
 ---
@@ -47,6 +47,7 @@ Fusion 为 Adobe 的众多产品和服务提供连接器。
 * [Adobe Experience Manager Forms 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
 * [Adobe Firefly音频和视频模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
 * [Adobe Firefly 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
+* [Adobe Firefly Lightroom模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
 * [Adobe Frame.io Beta (V4) 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe Frame.io 旧版 (V3) 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe I/O Events 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-io-events-modules.md)
