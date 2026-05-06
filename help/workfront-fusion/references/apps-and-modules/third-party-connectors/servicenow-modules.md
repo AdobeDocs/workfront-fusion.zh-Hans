@@ -104,7 +104,7 @@ ServiceNow连接器使用以下对象：
       <td>选择连接服务帐户还是个人帐户。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[！UICONTROL用户名]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL 用户名]</p> </td> 
       <td>输入您的[!DNL ServiceNow]用户名。</td> 
      </tr> 
      <tr> 
@@ -112,7 +112,7 @@ ServiceNow连接器使用以下对象：
       <td>输入您的ServiceNow密码。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[！UICONTROL实例]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL 实例]</p> </td> 
       <td> <p>输入您的[!DNL ServiceNow]帐户的地址，但不输入<code>https://</code>（通常为<code>&lt;company>.service-now.com</code>）。</p> </td> 
      </tr> 
     </tbody> 
@@ -148,10 +148,10 @@ ServiceNow连接器使用以下对象：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td> 
-   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL表类型]</td> 
+   <td role="rowheader">[!UICONTROL 表类型]</td> 
    <td>选择要监视的表是自定义表还是标准表。</td> 
   </tr> 
   <tr> 
@@ -159,7 +159,7 @@ ServiceNow连接器使用以下对象：
    <td>选择要监视的记录类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL显示]</td> 
+   <td role="rowheader">[!UICONTROL 显示]</td> 
    <td>选择要显示的值的类型。</td> 
   </tr> 
   <tr> 
@@ -200,10 +200,10 @@ ServiceNow连接器使用以下对象：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td> 
-   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL表类型]</td> 
+   <td role="rowheader">[!UICONTROL 表类型]</td> 
    <td>选择要在自定义表还是标准表中创建记录。</td> 
   </tr> 
   <tr> 
@@ -225,10 +225,10 @@ ServiceNow连接器使用以下对象：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td> 
-   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL相对URL]</td> 
+   <td role="rowheader">[!UICONTROL 相对URL]</td> 
    <td> 输入相对于 <code>https://&ltinstance_url&gt/api/</code> 的路径。 </td> 
   </tr> 
   <tr> 
@@ -263,10 +263,10 @@ ServiceNow连接器使用以下对象：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td> 
-   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL用户系统ID]</td> 
+   <td role="rowheader">[!UICONTROL 用户系统ID]</td> 
    <td> 输入或映射要取消激活模块的用户的唯一[!DNL ServiceNow] ID。</td> 
   </tr> 
  </tbody> 
@@ -284,14 +284,14 @@ ServiceNow连接器使用以下对象：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td> 
-   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td>选择您要删除事件还是用户。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL系统ID]</td> 
+   <td role="rowheader">[!UICONTROL 系统ID]</td> 
    <td>输入或映射您希望模块删除的记录的唯一[!DNL ServiceNow] ID。</td> 
   </tr> 
  </tbody> 
@@ -307,10 +307,10 @@ ServiceNow连接器使用以下对象：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td> 
-   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL附件系统ID]</td> 
+   <td role="rowheader">[!UICONTROL 附件系统ID]</td> 
    <td> 输入或映射您希望模块下载的附件的唯一[!DNL ServiceNow] ID。</td> 
   </tr> 
  </tbody> 
@@ -330,14 +330,14 @@ ServiceNow连接器使用以下对象：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td> 
-   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL记录系统ID]</td> 
+   <td role="rowheader">[!UICONTROL 记录系统ID]</td> 
    <td>输入或映射您希望模块读取的记录的唯一[!DNL ServiceNow] ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL表类型]</td> 
+   <td role="rowheader">[!UICONTROL 表类型]</td> 
    <td>选择您要读取的记录是在自定义表中还是在标准表中。</td> 
   </tr> 
   <tr> 
@@ -345,7 +345,7 @@ ServiceNow连接器使用以下对象：
    <td>选择您希望模块读取的[!DNL ServiceNow]记录的类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL显示]</td> 
+   <td role="rowheader">[!UICONTROL 显示]</td> 
    <td>选择要显示的值的类型。</td> 
   </tr> 
   <tr> 
@@ -367,14 +367,14 @@ ServiceNow连接器使用以下对象：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td> 
-   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL记录系统ID]</td> 
+   <td role="rowheader">[!UICONTROL 记录系统ID]</td> 
    <td>输入或映射您希望模块更新的记录的唯一[!DNL ServiceNow] ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL表类型]</td> 
+   <td role="rowheader">[!UICONTROL 表类型]</td> 
    <td>选择要更新的记录是在自定义表中还是在标准表中。</td> 
   </tr> 
   <tr> 
@@ -394,14 +394,14 @@ ServiceNow连接器使用以下对象：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td> 
-   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL表名称]</td> 
+   <td role="rowheader">[!UICONTROL 表名称]</td> 
    <td>输入或映射要上载附件的表的名称。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL系统ID]</td> 
+   <td role="rowheader">[!UICONTROL 系统ID]</td> 
    <td>输入或映射要上载附件的项目的唯一[!DNL ServiceNow] ID。</td> 
   </tr> 
   <tr> 
@@ -425,10 +425,10 @@ ServiceNow连接器使用以下对象：
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td> 
-   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td> <p>有关将ServiceNow帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-servicenow-to-workfront-fusion" class="MCXref xref">将[!DNL ServiceNow]连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL表类型]</td> 
+   <td role="rowheader">[!UICONTROL 表类型]</td> 
    <td>选择要搜索的表是自定义表还是标准表。</td> 
   </tr> 
   <tr> 
@@ -436,30 +436,30 @@ ServiceNow连接器使用以下对象：
    <td>选择要搜索的记录类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL结果集]</td> 
+   <td role="rowheader">[!UICONTROL 结果集]</td> 
    <td>选择您希望模块返回符合条件的所有记录，还是只返回第一个符合条件的记录。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL最大记录数]</td> 
+   <td role="rowheader">[!UICONTROL 最大记录数]</td> 
    <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL搜索类型]</td> 
+   <td role="rowheader">[!UICONTROL 搜索类型]</td> 
    <td> <p>选择您希望模块执行的搜索类型</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL高级查询]</strong> </p> 
+     <li> <p><strong>[!UICONTROL 高级查询]</strong> </p> 
       <ul> 
-       <li> <p>[！UICONTROL搜索查询]</p> <p>输入自定义搜索查询。 有关[!DNL ServiceNow]自定义搜索查询的信息，请参阅<a href="https://docs.servicenow.com/bundle/orlando-platform-user-interface/page/use/common-ui-elements/reference/r_OpAvailableFiltersQueries.html">ServiceNow查询文档</a>。</p> </li> 
+       <li> <p>[!UICONTROL 搜索查询]</p> <p>输入自定义搜索查询。 有关[!DNL ServiceNow]自定义搜索查询的信息，请参阅<a href="https://docs.servicenow.com/bundle/orlando-platform-user-interface/page/use/common-ui-elements/reference/r_OpAvailableFiltersQueries.html">ServiceNow查询文档</a>。</p> </li> 
       </ul> </li> 
-     <li> <p><strong>[！UICONTROL Simple]</strong> </p> 
+     <li> <p><strong>[!UICONTROL Simple]</strong> </p> 
       <ul> 
-       <li> <p>[！UICONTROL搜索条件]</p> <p>输入您希望模块搜索的条件。 </li> 
-       <li> <p>[！UICONTROL排序方式]</p> <p>指示您希望模块按哪个字段对结果进行排序，以及应按升序还是降序对结果进行排序。</p> </li> 
+       <li> <p>[!UICONTROL 搜索条件]</p> <p>输入您希望模块搜索的条件。 </li> 
+       <li> <p>[!UICONTROL 排序方式]</p> <p>指示您希望模块按哪个字段对结果进行排序，以及应按升序还是降序对结果进行排序。</p> </li> 
       </ul> </li> 
     </ul> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL显示]</td> 
+   <td role="rowheader">[!UICONTROL 显示]</td> 
    <td>选择要显示的值的类型。</td> 
   </tr> 
   <tr> 

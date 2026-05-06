@@ -100,11 +100,11 @@ Qualtrics连接器使用以下对象：
       <td> <p>输入新连接的名称。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL数据中心ID] </td> 
+      <td role="rowheader">[!UICONTROL 数据中心ID] </td> 
       <td>使用格式<code>&lt;Data Center ID>.qualtrics.com</code>。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL API Key]</td> 
+      <td role="rowheader">[!UICONTROL API Key]</td> 
       <td>要查找API密钥，请参阅[!DNL Qualtrics]文档。</td> 
      </tr> 
     </tbody> 
