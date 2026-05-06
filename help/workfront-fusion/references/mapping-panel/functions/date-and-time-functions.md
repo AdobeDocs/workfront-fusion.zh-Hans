@@ -4,9 +4,9 @@ description: 以下日期和时间函数在Adobe Workfront Fusion映射面板中
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: fc7f98c128f73a60d75750c6bd57ec8ddc31954c
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2375'
 ht-degree: 2%
 
 ---
@@ -294,6 +294,31 @@ ht-degree: 2%
 >[!ENDSHADEBOX]
 
 
+### [!UICONTROL endOfMonth（日期）]
+
+[!BADGE 新！]{type=Informative}
+
+返回给定日期所在月份的最后一个时刻 — 最后一天的最后一个毫秒数(23:59:59.999)。 自动计入月内的天数，包括闰年。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `endOfMonth("2016-06-15T12:30:00.000Z")`
+
+  返回2016-06-30T23:59:59.999Z
+
+* `endOfMonth("2016-01-01T00:00:00.000Z")`
+
+  返回2016-01-31T23:59:59.999Z
+
+* `endOfMonth("2016-02-01T00:00:00.000Z")`
+
+  返回2016-02-29T23:59:59.999Z
+
+>[!ENDSHADEBOX]
+
+
 ### [!UICONTROL 小时（日期）]
 
 [!BADGE 新！]{type=Informative}
@@ -310,6 +335,35 @@ ht-degree: 2%
 * `hour("2016-12-08T00:00:00.000Z")`
 
   返回0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL isWeekend（日期）]
+
+[!BADGE 新！]{type=Informative}
+
+如果日期为星期六或星期日，则返回`true`，如果为其他任何日期，则返回`false`。 结果按场景配置的时区确定。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `isWeekend("2016-12-10T00:00:00.000Z")`
+
+  返回true（星期六）
+
+* `isWeekend("2016-12-11T00:00:00.000Z")`
+
+  返回true（星期日）
+
+* `isWeekend("2016-12-12T00:00:00.000Z")`
+
+  返回false（星期一）
+
+* `isWeekend("2016-12-09T00:00:00.000Z")`
+
+  返回false（星期五）
 
 >[!ENDSHADEBOX]
 
@@ -370,6 +424,27 @@ ht-degree: 2%
 * `second("2016-12-08T15:55:00.000Z")`
 
   返回0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL startOfMonth（日期）]
+
+[!BADGE 新！]{type=Informative}
+
+返回给定日期所在月份的第一时刻 — 第1天的午夜(00:00:00.000)。 其结果是时区感知的。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `startOfMonth("2016-06-15T12:30:00.000Z")`
+
+  返回2016-06-01T00:00:00.000Z
+
+* `startOfMonth("2024-02-14T08:00:00.000Z")`
+
+  返回2024-02-01T00:00:00.000Z
 
 >[!ENDSHADEBOX]
 
@@ -439,7 +514,7 @@ ht-degree: 2%
 
 指定从0到59的数字。 如果数字超出该范围，则函数返回前一分钟（对于负数）或后续分钟（对于正数）的秒数。
 
-如果您需要指定超出范围的数字，我们建议您使用[!UICONTROL &#x200B; addSeconds]，如上文[addSeconds (date； number)](#addseconds-date-number)部分所述。
+如果您需要指定超出范围的数字，我们建议您使用[!UICONTROL  addSeconds]，如上文[addSeconds (date； number)](#addseconds-date-number)部分所述。
 
 >[!BEGINSHADEBOX]
 
@@ -606,17 +681,17 @@ ht-degree: 2%
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 日期] </td> 
+   <td>[！UICONTROL日期] </td> 
    <td>日期 </td> 
    <td> <p>将日期值转换为文本值。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 格式] </td> 
+   <td>[！UICONTROL格式] </td> 
    <td>文本 </td> 
    <td> <p>允许您使用日期/时间格式令牌指定格式。 有关详细信息，请参阅日期和时间格式的<a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">令牌</a>。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 时区] </td> 
+   <td>[！UICONTROL时区] </td> 
    <td>文本 </td> 
    <td> <p>（可选）用于指定用于转换的时区。 </p> <p>有关可识别时区的列表，请参阅Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> tz数据库时区列表</a>中的“TZ数据库名称”列。 函数仅将此列中列出的值识别为有效时区。 将忽略任何其他值，并改为使用配置文件中指定的方案时区。 </p> <p>如果忽略此参数，将应用用户档案设置中指定的方案时区。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>Europe/Prague</code>， <code>UTC</code></p> </td> 
   </tr> 
@@ -674,17 +749,17 @@ ht-degree: 2%
  </thead> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 文本] </td> 
+   <td>[！UICONTROL文本] </td> 
    <td>文本 </td> 
    <td> <p>将日期值转换为文本值。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 格式] </td> 
+   <td>[！UICONTROL格式] </td> 
    <td>文本 </td> 
    <td> <p>允许您使用日期/时间格式令牌指定格式。 有关详细信息，请参阅日期和时间格式的<a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">令牌</a>。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 时区] </td> 
+   <td>[！UICONTROL时区] </td> 
    <td>文本 </td> 
    <td> <p>（可选）用于指定用于转换的时区。 </p> <p>有关可识别时区的列表，请参阅Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> tz数据库时区列表</a>中的“TZ数据库名称”列。 函数仅将此列中列出的值识别为有效时区。 将忽略任何其他值，并改为使用配置文件中指定的方案时区。 </p> <p>如果忽略此参数，将应用用户档案设置中指定的方案时区。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>Europe/Prague</code>， <code>UTC</code></p> </td> 
   </tr> 
