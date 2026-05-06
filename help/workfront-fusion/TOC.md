@@ -2,9 +2,9 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 1752b97d5902c9f9b2ec3a8c0bd01f9dbab93d0a
+source-git-commit: 532c5003b1f2e5e333eb59824743f88ed54449ef
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2403'
 ht-degree: 55%
 
 ---
@@ -358,6 +358,7 @@ ht-degree: 55%
          * [Adobe Creative Cloud Libraries 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
          * [Adobe Experience Manager Assets 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
          * [Adobe Experience Manager Forms 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
+         * [Adobe Firefly音频和视频模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
          * [Adobe Firefly 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
          * [Adobe Frame.io Beta (V4) 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules-new.md)
          * [Adobe Frame.io 旧版 (V3) 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
