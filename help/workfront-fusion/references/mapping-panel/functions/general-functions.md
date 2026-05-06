@@ -4,10 +4,10 @@ description: Adobe Workfront Fusion映射面板中提供了以下常规函数。
 author: Becky
 feature: Workfront Fusion
 exl-id: 6d4b8801-aa7e-47d4-80b3-aceac10c073f
-source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
+source-git-commit: 5709c9c0f8efd2c29ff7dbc0391a5b496a467c6a
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 7%
+source-wordcount: '478'
+ht-degree: 6%
 
 ---
 
@@ -20,6 +20,7 @@ ht-degree: 7%
 * `executionID`：此方案执行的ID
 * `triggerTimestamp`：触发此执行的时间
 * `scenarioID`：当前打开的场景的 ID
+* `scenarioName`：当前正在运行的方案的名称
 * `operationsConsumed`：场景在该点已使用的操作次数
 
 ## [!UICONTROL get （对象或数组；路径）]
