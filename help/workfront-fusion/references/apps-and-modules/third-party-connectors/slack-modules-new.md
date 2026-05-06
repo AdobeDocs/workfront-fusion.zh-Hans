@@ -4,9 +4,9 @@ description: 在 [!DNL Adobe Workfront Fusion] 方案中，您可以自动使用
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c14fa36-8333-40d6-bd0a-fc6b0d9f4410
-source-git-commit: 88147d0305595e1d0d388f510ed43fc5beaa4b64
+source-git-commit: 42b5b5729b68bf8cea9940fb261a15293db52be1
 workflow-type: tm+mt
-source-wordcount: '4581'
+source-wordcount: '4621'
 ht-degree: 12%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 12%
 ## 先决条件
 
 * 要使用 [!DNL Slack] 模块，您必须拥有一个 [!DNL Slack] 帐户。
-* 列入允许列表如果您正在创建OAuth@连接，则必须将以下URL添加到组织的中：
+* 如果您正在创建OAuth@连接，则必须将以下URL添加到组织的中：
    * 机器人令牌： `https://oauth.app.workfrontfusion.com/oauth/cb/slack3`
    * 用户令牌：` https://oauth.app.workfrontfusion.com/oauth/cb/slack2`
 
@@ -80,7 +80,7 @@ Slack连接器使用以下对象：
  <tbody> 
   <tr> 
    <td role="rowheader">基本 URL</td> 
-   <td>{{ifempty(parameters.domain， 'https://slack.com/api/')}}</td> 
+   <td><pre><code>&#123;&#123;ifempty(parameters.domain, 'https://slack.com/api/')&#125;&#125;</code></pre></td> 
   </tr>
   <tr> 
    <td role="rowheader">API 标记</td> 
@@ -91,9 +91,9 @@ Slack连接器使用以下对象：
 
 ## [!DNL Slack] 模块及其字段
 
-配置[!DNL Slack]模块时，[!DNL Workfront Fusion]显示下面列出的字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Slack] 字段。模块中的加粗标题表示必填字段。
+配置[!DNL Slack]模块时，[!DNL Workfront Fusion]显示下面列出的字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Slack] 字段。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -134,11 +134,11 @@ Slack连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 文本]</p> </td> 
-   <td> <p>输入要创建的消息的文本内容。</p> <p>注意：有关文本格式化的详细信息，请参阅<a href="https://api.slack.com/reference/surfaces/formatting">文档中的</a>设置应用程序表面文本的格式[!DNL Slack]。</p> </td> 
+   <td> <p>输入要创建的消息的文本内容。</p> <p>注意：有关文本格式化的详细信息，请参阅[!DNL Slack]文档中的<a href="https://api.slack.com/reference/surfaces/formatting">设置应用程序表面文本的格式</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 块]</td> 
-   <td>块是可重用组件，可用于自定义和组织消息。 有关块的详细信息，请参阅<a href="https://api.slack.com/block-kit">文档中的</a>块套件[!DNL Slack]。</td> 
+   <td>块是可重用组件，可用于自定义和组织消息。 有关块的详细信息，请参阅[!DNL Slack]文档中的<a href="https://api.slack.com/block-kit">块套件</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 线程消息ID （时间戳）]</td> 
@@ -154,11 +154,11 @@ Slack连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 链接名称]</p> </td> 
-   <td> <p>启用此选项以允许名称和渠道使用<code>@username</code>或<code>#channel</code>格式。 </p> <p>有关详细信息，请参阅<a href="https://api.slack.com/docs/formatting">文档中的</a>设置应用程序表面文本格式[!DNL Slack]。</p> </td> 
+   <td> <p>启用此选项以允许名称和渠道使用<code>@username</code>或<code>#channel</code>格式。 </p> <p>有关详细信息，请参阅[!DNL Slack]文档中的<a href="https://api.slack.com/docs/formatting">设置应用程序表面文本格式</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 解析消息文本]</p> </td> 
-   <td> <p>启用此选项以允许自动分析。 </p> <p>有关详细信息，请参阅<a href="https://api.slack.com/docs/formatting">文档中的</a>设置应用程序表面文本格式[!DNL Slack]。</p> <p>注意：如果您在原始消息中使用了[!UICONTROL 链接名称]或[!UICONTROL 解析消息文本]选项，则您还应在运行[!UICONTROL 更新消息]模块时指定这些选项。</p> </td> 
+   <td> <p>启用此选项以允许自动分析。 </p> <p>有关详细信息，请参阅[!DNL Slack]文档中的<a href="https://api.slack.com/docs/formatting">设置应用程序表面文本格式</a>。</p> <p>注意：如果您在原始消息中使用了[!UICONTROL 链接名称]或[!UICONTROL 解析消息文本]选项，则您还应在运行[!UICONTROL 更新消息]模块时指定这些选项。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 使用Markdown]</p> </td> 
@@ -166,11 +166,11 @@ Slack连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 主要展开基于文本的内容]</p> </td> 
-   <td> <p>启用此选项以允许展开主要基于文本的内容。 </p> <p>有关[!DNL Slack]中展开的详细信息，请参阅<a href="https://api.slack.com/reference/messaging/link-unfurling">文档中的</a>消息中的展开链接[!DNL Slack]。</p> </td> 
+   <td> <p>启用此选项以允许展开主要基于文本的内容。 </p> <p>有关[!DNL Slack]中展开的详细信息，请参阅[!DNL Slack]文档中的<a href="https://api.slack.com/reference/messaging/link-unfurling">消息中的展开链接</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 展开媒体内容]</p> </td> 
-   <td> <p>启用此选项以允许展开媒体内容。 </p> <p>有关[!DNL Slack]中展开的详细信息，请参阅<a href="https://api.slack.com/reference/messaging/link-unfurling">文档中的</a>消息中的展开链接[!DNL Slack]。</p> </td> 
+   <td> <p>启用此选项以允许展开媒体内容。 </p> <p>有关[!DNL Slack]中展开的详细信息，请参阅[!DNL Slack]文档中的<a href="https://api.slack.com/reference/messaging/link-unfurling">消息中的展开链接</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -330,25 +330,25 @@ Slack连接器使用以下对象：
    <td role="rowheader"> <p>[!UICONTROL 输入渠道ID或名称]</p> </td> 
    <td> <p>选择您希望如何选择要发送的消息。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在<strong>[!UICONTROL 渠道ID或名称]</strong>字段中，输入或映射包含该消息的渠道ID，然后输入该消息的<strong>[!UICONTROL 时间戳（消息ID）]</strong>。.</p> <p>注意：可以使用[!UICONTROL List Channels]模块检索渠道ID。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在<strong>[!UICONTROL 渠道ID或名称]</strong>字段中，输入或映射包含该消息的渠道ID，然后输入该消息的<strong>[!UICONTROL 时间戳（消息ID）]</strong>。 .</p> <p>注意：可以使用[!UICONTROL List Channels]模块检索渠道ID。</p> </li> 
      <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择渠道类型，然后选择渠道，最后选择消息。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 文本]</p> </td> 
-   <td> <p>输入要更新的消息的新文本内容。</p> <p>有关详细信息，请参阅<a href="https://api.slack.com/docs/formatting">文档中的</a>设置应用程序表面文本格式[!DNL Slack]。</p> </td> 
+   <td> <p>输入要更新的消息的新文本内容。</p> <p>有关详细信息，请参阅[!DNL Slack]文档中的<a href="https://api.slack.com/docs/formatting">设置应用程序表面文本格式</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 块]</td> 
-   <td>块是可重用组件，可用于自定义和组织消息。 有关块的详细信息，请参阅<a href="https://api.slack.com/block-kit">文档中的</a>块套件[!DNL Slack]。</td> 
+   <td>块是可重用组件，可用于自定义和组织消息。 有关块的详细信息，请参阅[!DNL Slack]文档中的<a href="https://api.slack.com/block-kit">块套件</a>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 链接名称]</p> </td> 
-   <td> <p>启用此选项以允许名称和渠道使用<code>@username</code>或<code>#channel</code>格式。 </p> <p>有关详细信息，请参阅<a href="https://api.slack.com/docs/formatting">文档中的</a>设置应用程序表面文本格式[!DNL Slack]。</p> </td> 
+   <td> <p>启用此选项以允许名称和渠道使用<code>@username</code>或<code>#channel</code>格式。 </p> <p>有关详细信息，请参阅[!DNL Slack]文档中的<a href="https://api.slack.com/docs/formatting">设置应用程序表面文本格式</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 解析消息文本]</p> </td> 
-   <td> <p>启用此选项以允许自动分析。 </p> <p> 有关详细信息，请参阅<a href="https://api.slack.com/docs/formatting">文档中的</a>设置应用程序表面文本格式[!DNL Slack]。</p> <p>注意：如果您在原始消息中使用了[!UICONTROL 链接名称]或[!UICONTROL 解析消息文本]选项，则您还应在运行更新消息模块时指定这些选项。</p> </td> 
+   <td> <p>启用此选项以允许自动分析。 </p> <p> 有关详细信息，请参阅[!DNL Slack]文档中的<a href="https://api.slack.com/docs/formatting">设置应用程序表面文本格式</a>。</p> <p>注意：如果您在原始消息中使用了[!UICONTROL 链接名称]或[!UICONTROL 解析消息文本]选项，则您还应在运行更新消息模块时指定这些选项。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1478,7 +1478,7 @@ This action module deletes a specific reminder.
 
 +++ **[!UICONTROL 进行API调用]**
 
-此操作模块允许您向 [!DNL Slack] API 发起自定义的已经过身份认证的调用。通过这种方式，您可以构建其他 [!DNL Slack] 模块无法实现的数据流自动化。
+此操作模块允许您向 [!DNL Slack] API 发起自定义的已经过身份认证的调用。 通过这种方式，您可以构建其他 [!DNL Slack] 模块无法实现的数据流自动化。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1490,11 +1490,11 @@ This action module deletes a specific reminder.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>输入相对于 <code>https://slack.com/api/</code> 的路径。示例：<code>/users/identity</code>。</td> 
+   <td>输入相对于 <code>https://slack.com/api/</code> 的路径。 示例：<code>/users/identity</code>。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 方法]</td> 
-   td&gt; <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
+   td&gt; <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 标头]</td> 
@@ -1528,4 +1528,4 @@ This action module deletes a specific reminder.
 * **即时消息**： [!UICONTROL 即时消息]
 * **专用频道**：以前为[!UICONTROL 组]
 * **直接消息**：以前为[!UICONTROL IM]
-* **频道**： API文档中的[!UICONTROL 对话]，[!UICONTROL 应用程序中的]频道[!DNL Slack]。
+* **频道**： API文档中的[!UICONTROL 对话]，[!DNL Slack]应用程序中的[!UICONTROL 频道]。

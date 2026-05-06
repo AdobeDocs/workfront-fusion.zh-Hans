@@ -4,9 +4,9 @@ description: 以下日期和时间函数在Adobe Workfront Fusion映射面板中
 author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
-source-git-commit: 42bf7b0ac6eb414312573b32b93677a5c9650fa8
+source-git-commit: e11e581c092ebba343a0f2d6943ecbe4d0fe4c87
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '2253'
 ht-degree: 2%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 2%
 
 ### [!UICONTROL addHours （日期；数字）] {#addhours-date-number}
 
-Returns a new date as a result of adding a given number of hours to a date. To subtract hours, enter a negative number.
+将给定小时数添加到日期后返回新日期。 要减去小时数，请输入负数。
 
 >[!BEGINSHADEBOX]
 
@@ -71,17 +71,17 @@ Returns a new date as a result of adding a given number of hours to a date. To s
 
 * `addHours(2016-12-08T15:55:57.536Z; 2)`
 
-  Returns 2016-12-08T17:55:57.536Z
+  返回2016-12-08T17:55:57.536Z
 
 * `addHours(2016-12-08T15:55:57.536Z;-2)`
 
-  Returns 2016-12-08T13:55:57.536Z
+  返回2016-12-08T13:55:57.536Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addDays (date; number)] {#adddays-date-number}
+### [!UICONTROL addDays （日期；数字）] {#adddays-date-number}
 
-Returns a new date as a result of adding a given number of days to a date. To subtract days, enter a negative number.
+将给定天数添加到日期后返回新日期。 要减去天数，请输入一个负数。
 
 >[!BEGINSHADEBOX]
 
@@ -89,15 +89,34 @@ Returns a new date as a result of adding a given number of days to a date. To su
 
 * `addDays(2016-12-08T15:55:57.536Z;2)`
 
-  Returns 2016-12-10T15:55:57.536Z
+  返回2016-12-10T15:55:57.536Z
 
 * `addDays(2016-12-08T15:55:57.536Z;-2)`
 
-  Returns 2016-12-6T15:55:57.536Z
+  返回2016-12-6T15:55:57.536Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL addMonths (date; number)]
+### [!UICONTROL addWeekDays（日期；数字）]
+
+[!BADGE 新！]{type=Informative}
+
+将工作日数添加到日期。 只添加整整数值（小数值会向下舍入）。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+`addWeekDays("2016-12-08T15:55:57.536Z"; 2)`
+
+返回2016-12-12T15:55:57.536Z
+`addWeekDays("2016-12-08T15:55:57.536Z"; -2)`
+返回2016-12-06T15:55:57.536Z
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL addMonths（日期；数字）]
 
 向日期添加指定月份数后，返回新日期。 要减去月份，请输入负数。
 
@@ -130,6 +149,287 @@ Returns a new date as a result of adding a given number of days to a date. To su
 * `addYears(2016-12-08T15:55:57.536Z; -2)`
 
   返回2014-08-08T15:55:57.536Z
+
+>[!ENDSHADEBOX]
+
+### [!UICONTROL dayOfMonth（日期）]
+
+[!BADGE 新！]{type=Informative}
+
+按介于1和31之间的数字返回日期的月中日。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `dayOfMonth("2016-12-28T16:03:06.372Z")`
+
+  返回28
+* `dayOfMonth("2015-01-05T11:36:39.138Z")`
+
+  返回5
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dayOfWeek（日期）]
+
+[!BADGE 新！]{type=Informative}
+
+按数值返回日期在一周中的哪一天为1 （星期日）和7 （星期六）之间。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `dayOfWeek("2016-12-28T16:03:06.372Z")`
+
+  返回4
+* `dayOfWeek("2016-12-25T16:03:06.372Z")`
+
+  返回1
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInMonth（日期）]
+
+[!BADGE 新！]{type=Informative}
+
+返回给定日期所在月份的总天数。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `daysInMonth("2016-01-01T00:00:00.000Z")`
+
+  返回31
+* `daysInMonth("2016-02-01T00:00:00.000Z")`
+
+  返回29
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInSplitWeek（日期）]
+
+[!BADGE 新！]{type=Informative}
+
+返回日期与周末或月末（无论何者先到）之间的工作日总数。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `daysInSplitWeek("2016-12-28T16:03:06.372Z")`
+
+  返回3
+* `daysInSplitWeek("2016-01-25T16:03:06.372Z")`
+
+  返回5
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL daysInYear（日期）]
+
+[!BADGE 新！]{type=Informative}
+
+返回给定日期一年中的总天数（常规年为365，闰年为366）。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `daysInYear("2016-06-01T00:00:00.000Z")`
+
+  返回366
+* `daysInYear("2015-06-01T00:00:00.000Z")`
+
+  返回365
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMax(date1； date2； ...)]
+
+[!BADGE 新！]{type=Informative}
+
+返回列表中的最新（最新）日期。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `dateMax("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z") `
+
+  返回2016-12-01T00:00:00.000Z
+
+* `dateMax("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z")`
+
+  返回2016-06-15T00:00:00.000Z
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL dateMin(date1； date2； ...)]
+
+[!BADGE 新！]{type=Informative}
+
+返回列表中最早的日期。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `dateMin("2016-06-01T00:00:00.000Z"; "2016-12-01T00:00:00.000Z")`
+
+  返回2016-06-01T00:00:00.000Z
+
+* `dateMin("2015-01-01T00:00:00.000Z"; "2016-06-15T00:00:00.000Z"; "2014-03-20T00:00:00.000Z") `
+
+  返回2014-03-20T00:00:00.000Z
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL 小时（日期）]
+
+[!BADGE 新！]{type=Informative}
+
+以0到23之间的数字返回日期的小时数。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `hour("2016-12-08T15:55:57.536Z")`
+
+  返回15
+* `hour("2016-12-08T00:00:00.000Z")`
+
+  返回0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL 分钟（日期）]
+
+[!BADGE 新！]{type=Informative}
+
+以0到59之间的数字返回日期的分钟数。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `minute("2016-12-08T15:55:57.536Z")`
+
+  返回55
+* `minute("2016-12-08T15:00:00.000Z")`
+
+  返回0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL 月（日期）]
+
+[!BADGE 新！]{type=Informative}
+
+以1到12之间的数字返回日期的月份。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `month("2016-12-08T15:55:57.536Z")`
+
+  返回12
+* `month("2016-01-08T15:55:57.536Z")`
+
+  返回1
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL 秒（日期）]
+
+[!BADGE 新！]{type=Informative}
+
+以0到59之间的数字返回日期的秒数。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `second("2016-12-08T15:55:57.536Z")`
+
+  返回57
+* `second("2016-12-08T15:55:00.000Z")`
+
+  返回0
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL weekDayDiff(date2； date1)]
+
+[!BADGE 新！]{type=Informative}
+
+返回两个日期之间的工作日数，其中考虑了这些日期的时间戳。 例如，如果开始时间为下午3点，则开始日期将不会计为全天。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `weekDayDiff("2016-12-07T12:00:00.000Z"; "2016-12-05T00:00:00.000Z")`
+
+  返回2.5
+* `weekDayDiff("2016-12-09T15:00:00.000Z"; "2016-12-05T15:00:00.000Z")`
+
+  返回4
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL workMinutesDiff(date1； date2)]
+
+[!BADGE 新！]{type=Informative}
+
+返回两个日期之间的计划工作分钟数（基于标准星期一至星期五的上午9点至下午5点的计划）。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-05T17:00:00.000Z")`
+
+  返回480
+* `workMinutesDiff("2016-12-05T09:00:00.000Z"; "2016-12-06T17:00:00.000Z")`
+
+  返回960
+
+>[!ENDSHADEBOX]
+
+
+### [!UICONTROL 年（日期）]
+
+[!BADGE 新！]{type=Informative}
+
+以4位数字返回日期的年份。
+
+>[!BEGINSHADEBOX]
+
+**示例：**
+
+* `year("2016-12-08T15:55:57.536Z")`
+
+  返回2016
+* `year("2000-01-01T00:00:00.000Z")`
+
+  返回2000
 
 >[!ENDSHADEBOX]
 
@@ -249,7 +549,7 @@ Returns a new date as a result of adding a given number of days to a date. To su
 
 此函数使用参数中指定的月份返回一个新日期。
 
-Specify a number from 1 to 12. If the number is outside of this range, the function returns the month in the previous year (for a negative number) or subsequent year (for a positive number).
+指定从1到12的数字。 如果数字超出此范围，此函数返回上一年（对于负数）或后续年（对于正数）中的月。
 
 >[!BEGINSHADEBOX]
 
@@ -257,21 +557,21 @@ Specify a number from 1 to 12. If the number is outside of this range, the funct
 
 * `setMonth(2015-08-07T11:36:39.138Z;5)`
 
-  Returns 2015-05-07T11:36:39.138Z
+  返回2015-05-07T11:36:39.138Z
 
 * `setMonth(2015-08-07T11:36:39.138Z;17)`
 
-  Returns 2016-05-07T11:36:39.138Z
+  返回2016-05-07T11:36:39.138Z
 
 * `setMonth(2015-08-07T11:36:39.138Z;january)`
 
-  Returns 2015-01-07T12:36:39.138Z
+  返回2015-01-07T12:36:39.138Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL setYear (date; number)]
+### [!UICONTROL setYear（日期；数字）]
 
-Returns a new date with the year specified in parameters.
+返回具有参数中指定的年份的新日期。
 
 >[!BEGINSHADEBOX]
 
@@ -279,11 +579,11 @@ Returns a new date with the year specified in parameters.
 
 * `setYear(2015-08-07T11:36:39.138Z;2017)`
 
-  Returns 2017-08-07T11:36:39.138Z
+  返回2017-08-07T11:36:39.138Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL formatDate (date; format; [timezone])]
+### [!UICONTROL formatDate （日期；格式；[时区]）]
 
 当您有日期值（如`12-10-2021 20:30`）且要将其格式化为文本值（如`Dec 10, 2021 8:30 PM`）时，请使用此函数。
 
@@ -386,7 +686,7 @@ Returns a new date with the year specified in parameters.
   <tr> 
    <td>[!UICONTROL 时区] </td> 
    <td>文本 </td> 
-   <td> <p>(Optional) Lets you specify the timezone used for the conversion. </p> <p>For the list of recognized timezones, see the "TZ database name" column in the Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">List of tz database time zones</a>. Only the values listed in this column are recognized by the function as a valid timezone. Any other value is ignored and the Scenarios timezone specified in your Profile is used instead. </p> <p>If you omit this parameter, the Scenarios timezone specified in your Profile settings is applied.</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>Example: </b></span></span><code>Europe/Prague</code>, <code>UTC</code></p> </td> 
+   <td> <p>（可选）用于指定用于转换的时区。 </p> <p>有关可识别时区的列表，请参阅Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> tz数据库时区列表</a>中的“TZ数据库名称”列。 函数仅将此列中列出的值识别为有效时区。 将忽略任何其他值，并改为使用配置文件中指定的方案时区。 </p> <p>如果忽略此参数，将应用用户档案设置中指定的方案时区。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>Europe/Prague</code>， <code>UTC</code></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -395,31 +695,31 @@ Returns a new date with the year specified in parameters.
 
 #### 返回值和类型
 
-This function converts a text string to a date, according to the format and timezone that you specify. The data type of the value is Date.
+此函数根据指定的格式和时区将文本字符串转换为日期。 值的数据类型是Date。
 
 >[!BEGINSHADEBOX]
 
-**Examples:** In the following examples, the returned Date value is expressed according to ISO 8601, but the data type of the result is Date.
+**示例：**&#x200B;在以下示例中，返回的Date值是根据ISO 8601表示的，但结果的数据类型为Date。
 
 * `parseDate(2016-12-28;YYYY-MM-DD)`
 
-  Returns 2016-12-28T00:00:00.000Z
+  返回2016-12-28T00:00:00.000Z
 
 * `parseDate(2016-12-28 16:03;YYYY-MM-DD HH:mm)`
 
-  Returns 2016-12-28T16:03:00.000Z
+  返回2016-12-28T16:03:00.000Z
 
 * `parseDate(2016-12-28 04:03 pm; YYYY-MM-DD hh:mm a)`
 
-  Returns 2016-12-28T16:03:06.000Z
+  返回2016-12-28T16:03:06.000Z
 
 * `parseDate(1482940986;X)`
 
-  Returns 2016-12-28T16:03:06.000Z
+  返回2016-12-28T16:03:06.000Z
 
 >[!ENDSHADEBOX]
 
-### [!UICONTROL dateDifference (Date1; Date2; Unit)]
+### [!UICONTROL dateDifference (Date1； Date2； Unit)]
 
 返回表示两个日期之差的数字，以指定的单位表示。
 
@@ -464,6 +764,7 @@ This function converts a text string to a date, according to the format and time
 如果您需要计算与每月第n天对应的日期（例如，第一个星期二、第三个星期五等），可以使用以下公式：
 
 ![第n天计算](assets/date-time-functions-calc-nth-day-350x31.png)
+
 
 ```
 {{addDays(setDate(1.date; 1); 1.n * 7 - formatDate(addDays(setDate(1.date; 1); "-" + 1.dow); "E"))}}
@@ -523,6 +824,7 @@ This function converts a text string to a date, according to the format and time
 
 ![计算日期之间的天数](assets/calculate-days-between-dates-350x68.png)
 
+
 ```
 {{round((2.value - 1.value) / 1000 / 60 / 60 / 24)}}
 ```
@@ -533,33 +835,35 @@ This function converts a text string to a date, according to the format and time
 >
 >* `round()`函数用于日期之一在夏令时时间段内，而另一个日期不在夏令时时间段内的情况。 在这些情况下，小时数差等于或少于一小时。 对于非整数结果，可以将其除以24。 你损失了一个小时的夏令时。 将其扁平化以便没有百分比
 
-#### How to calculate last day/millisecond of month
+#### 如何计算每月的最后一天/毫秒
 
-When you specify a date range, for example in a search module, if the range spans the whole previous month as a closed interval (the interval that includes both its limit points), you need to calculate the last day of the month.
+例如，当您在搜索模块中指定日期范围时，如果该范围跨越整个前一个月为一个关闭间隔（该间隔包含其两个限制点），则需要计算当月的最后一天。
 
 2019-09-01 ≤ D ≤ 2019-09-30
 
-The formula below shows one way how to calculate last day of the previous month:
+下面的公式显示了一种计算上个月最后一天的方法：
 
-![Last day of previous month](assets/last-day-prev-month.png)
+![上个月的最后一天](assets/last-day-prev-month.png)
+
 
 ```
 {{addDays(setDate(now; 1); -1)}}
 ```
 
-In some cases, you need to calculate not only the last day of month, but literally its last millisecond:
+在某些情况下，您不仅需要计算每月的最后一天，还需要计算每月的最后一毫秒：
 
 2019-09-01T00:00:00.000Z ≤ D ≤ 2019-09-30T23:59:59.999Z
 
-This formula shows one way how to calculate last millisecond of the previous month:
+此公式显示了一种计算上个月最后一毫秒的方法：
 
-![Last millisecond of previous month](assets/last-millisecond-prev-month-350x45.png)
+![上个月的上一毫秒](assets/last-millisecond-prev-month-350x45.png)
+
 
 ```
 {{parseDate(parseDate(formatDate(now; "YYYYMM01"); "YYYYMMDD"; "UTC") - 1; "x")}}
 ```
 
-If you need the result to use your timezone setting, omit the UTC argument:
+如果需要结果以使用时区设置，请忽略UTC参数：
 
 ![省略UTC](assets/omit-utc-argument-350x45.png)
 
