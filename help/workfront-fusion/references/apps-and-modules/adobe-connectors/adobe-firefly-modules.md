@@ -1,59 +1,59 @@
 ---
-title: Adobe Firefly模块
-description: 在Adobe Workfront Fusion方案中，您可以自动使用 [!DNL Adobe Firefly]的工作流，并将其连接到多个第三方应用程序和服务。
+title: Adobe Firefly 模块
+description: 在 Adobe Workfront Fusion 场景中，您可以自动化使用  [!DNL Adobe Firefly] 的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+source-git-commit: a766080defca64b4ce5d8ecd8b19fdfc3ff26470
 workflow-type: tm+mt
-source-wordcount: '2488'
-ht-degree: 0%
+source-wordcount: '2519'
+ht-degree: 21%
 
 ---
 
-# [!DNL Adobe Firefly]模块
+# [!DNL Adobe Firefly] 模块
 
-在Adobe Workfront Fusion场景中，您可以自动使用[!DNL Adobe Firefly]的工作流，并将其连接到多个第三方应用程序和服务。
+在 Adobe Workfront Fusion 场景中，您可以自动化使用 [!DNL Adobe Firefly] 的工作流，并将其连接到多个第三方应用程序和服务。
 
 如果需要有关创建方案的说明，请参阅[创建方案：项目索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
 
-有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
+有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的相关文章。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -72,15 +72,15 @@ Adobe Firefly连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">API标记</td> 
+   <td role="rowheader">API 标记</td> 
    <td>v1.4.24</td> 
   </tr>
  </tbody> 
  </table>
 
-## 创建与[!DNL Adobe Firefly]的连接
+## 创建与 [!DNL Adobe Firefly] 的连接
 
-要为您的[!DNL Adobe Firefly]模块创建连接：
+要为您的 [!DNL Adobe Firefly] 模块创建连接：
 
 1. 在任意模块中，单击“连接”框旁边的&#x200B;**[!UICONTROL 添加]**。
 
@@ -104,26 +104,26 @@ Adobe Firefly连接器使用以下对象：
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 类型]</td>
-        <td>选择您是要连接到服务帐户还是个人帐户。</td>
+        <td>选择连接服务帐户还是个人帐户。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 客户端ID]</td>
-        <td>输入您的[!UICONTROL Adobe] [!UICONTROL 客户端ID]。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL Credentials]详细信息部分找到。</td>
+        <td role="rowheader">[!UICONTROL 客户端 ID]</td>
+        <td>输入您的[！UICONTROL Adobe] [！UICONTROL客户端ID]。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL Credentials]详细信息部分找到。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL Credentials]详细信息部分找到。</td>
+        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL Credentials]详细信息部分找到。</td>
         </tr>
       </tbody>
     </table>
 
-1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
+1. 点击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
 
-## [!DNL Adobe Firefly]模块及其字段
+## [!DNL Adobe Firefly] 模块及其字段
 
-在配置[!DNL Adobe Firefly]模块时，Workfront Fusion将显示以下列出的字段。 除此以外，可能还会显示其他[!DNL Adobe Firefly]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在您配置 [!DNL Adobe Firefly] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Adobe Firefly] 字段。 模块中的加粗标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -138,27 +138,27 @@ Adobe Firefly连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>有关创建与[!DNL Adobe Campaign]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与[!DNL Adobe Firefly]</a>的连接。</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>有关创建与 [!DNL Adobe Firefly] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与 [!DNL Adobe Firefly]</a> 的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td role="rowheader">[！UICONTROL Prompt]</td> 
    <td>输入或映射要用于展开图像的内容的提示。 如果未提供任何提示，则图像将展开，并且内容与原始图像匹配。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 变量数]</td> 
+   <td role="rowheader">[！UICONTROL变量数]</td> 
    <td>输入一个介于1-4之间的数字。 模块将生成此数量的扩展图像变体。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source]</td> 
+   <td role="rowheader">[！UICONTROL Source]</td> 
    <td>选择提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 扩展图像格式]</td> 
+   <td role="rowheader">[！UICONTROL扩展图像格式]</td> 
    <td>选择将保存扩展图像的文件格式。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 展开方式]</td> 
+   <td role="rowheader">[！UICONTROL展开方式]</td> 
    <td>  <p>选择要通过使用图像放置还是使用蒙版来展开图像。</p> 
    <ul>
    <li><b>投放</b><p>输入水平和垂直对齐方式，以及置入的图像从边缘的插入。</p></li>
@@ -168,11 +168,11 @@ Adobe Firefly连接器使用以下对象：
 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 大小]</td> 
+   <td role="rowheader">[！UICONTROL大小]</td> 
    <td>选择希望扩展图像达到的高度和宽度。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 种子]</td> 
+   <td role="rowheader">[！UICONTROL种子]</td> 
    <td>对于模块将生成的每个图像，单击<b>添加项</b>并输入或映射整数。 您可以在另一个扩展图像模块中使用此相同的种子，以生成具有不同样式的相似图像。 添加的种子数必须等于变体数字段。</td> 
   </tr> 
  </tbody> 
@@ -193,40 +193,40 @@ Adobe Firefly连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>有关创建与[!DNL Adobe Campaign]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与[!DNL Adobe Firefly]</a>的连接。</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>有关创建与 [!DNL Adobe Firefly] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与 [!DNL Adobe Firefly]</a> 的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 图像&gt; Source]</td> 
+   <td role="rowheader">[！UICONTROL图像&gt; Source]</td> 
    <td>选择提供图像源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 蒙版&gt; Source]</td> 
+   <td role="rowheader">[！UICONTROL蒙版&gt; Source]</td> 
    <td>选择提供掩码源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td role="rowheader">[！UICONTROL Prompt]</td> 
    <td>输入或映射要用于填充图像的内容的提示。 如果未提供任何提示，则图像将填充与原始图像匹配的内容。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 变量数]</td> 
+   <td role="rowheader">[！UICONTROL变量数]</td> 
    <td>输入一个介于1-4之间的数字。 模块将生成此数量的已填充图像变体。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 填充图像格式]</td> 
+   <td role="rowheader">[！UICONTROL填充图像格式]</td> 
    <td>选择将保存已填充图像的文件格式。</td> 
   </tr> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 种子]</td> 
+   <td role="rowheader">[！UICONTROL种子]</td> 
    <td>对于模块将生成的每个图像，单击<b>添加项</b>并输入或映射整数。 您可以在另一个扩展图像模块中使用此相同的种子，以生成具有不同样式的相似图像。 添加的种子数必须等于变体数字段。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 大小]</td> 
+   <td role="rowheader">[！UICONTROL大小]</td> 
    <td>选择希望填充图像的大小。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 区域设置]</td> 
+   <td role="rowheader">[！UICONTROL区域设置]</td> 
    <td>如果提供了区域设置，则模块会生成与指定区域设置更相关的内容。 <p>必须以ISO 639-1语言代码和ISO 3166-1区域提供区域设置。</p><p> 示例： <code>en-US</code></p></td> 
   </tr> 
  </tbody> 
@@ -247,71 +247,71 @@ Adobe Firefly连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>有关创建与[!DNL Adobe Campaign]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与[!DNL Adobe Firefly]</a>的连接。</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>有关创建与 [!DNL Adobe Firefly] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与 [!DNL Adobe Firefly]</a> 的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td role="rowheader">[！UICONTROL Prompt]</td> 
    <td>为要生成的图像输入或映射提示。 在提示中显示更多详细信息，将允许您更好地控制映像中显示的内容。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 模型版本]</td> 
+   <td role="rowheader">[！UICONTROL模型版本]</td> 
    <td>选择要用于生成图像的Firefly模型版本。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 变量数]</td> 
+   <td role="rowheader">[！UICONTROL变量数]</td> 
    <td>输入一个介于1-4之间的数字。 模块将生成此数量的图像变体。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 生成的图像格式]</td> 
+   <td role="rowheader">[！UICONTROL生成的图像格式]</td> 
    <td>选择将保存扩展图像的文件格式。 如果选择“默认”，则在未提供参考图像的情况下，文件格式将为JPEG。 如果提供了参考图像，则生成的图像的文件格式将与参考图像相同。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Structure &gt; Image reference]</td> 
+   <td role="rowheader">[！UICONTROL Structure &gt; Image reference]</td> 
     <td>选择为新图像结构提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 结构&gt;强度]</td> 
+   <td role="rowheader">[！UICONTROL结构&gt;强度]</td> 
     <td>输入一个介于0和100之间的数字，以控制Firefly遵循源图像结构的严格程度。 数字越大，表示Firefly越严格地遵循图像。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 样式&gt;图像引用]</td> 
+   <td role="rowheader">[！UICONTROL样式&gt;图像引用]</td> 
     <td>选择为新图像的样式提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 结构&gt;强度]</td> 
+   <td role="rowheader">[！UICONTROL结构&gt;强度]</td> 
     <td>输入一个介于0和100之间的数字，以控制Firefly遵循源图像样式的严格程度。 数字越大，表示Firefly越严格地遵循图像。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 样式&gt;预设]</td> 
+   <td role="rowheader">[！UICONTROL样式&gt;预设]</td> 
    <td>如果要使用预设样式，请单击“添加项目”，然后输入或映射要使用的样式。<p>有关预设样式的列表，请参阅Adobe开发人员文档中的<a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >图像模型样式</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 负提示]</td> 
+   <td role="rowheader">[！UICONTROL负提示]</td> 
    <td>在生成的内容中输入或映射要避免使用的单词。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 内容类]</td> 
+   <td role="rowheader">[！UICONTROL内容类]</td> 
    <td>选择您希望生成的图像更类似于照片，还是更类似于创建的图片。 <ul><li><b>照片</b><p>输入“光圈”、“快门速度”（以秒为单位）和“视场”（以毫米为单位）的值。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Seed]</td> 
+   <td role="rowheader">[！UICONTROL Seed]</td> 
    <td>对于模块将生成的每个图像，单击<b>添加项</b>并输入或映射整数。 您可以在另一个扩展图像模块中使用此相同的种子，以生成具有不同样式的相似图像。 添加的种子数必须等于变体数字段。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 大小]</td> 
+   <td role="rowheader">[！UICONTROL大小]</td> 
    <td>选择希望生成的图像的大小。</td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 视觉强度]</td> 
+   <td role="rowheader">[！UICONTROL视觉强度]</td> 
    <td>输入或映射一个整数，该整数表示照片现有视觉特征的整体强度。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 区域设置]</td> 
+   <td role="rowheader">[！UICONTROL区域设置]</td> 
    <td>如果提供了区域设置，则模块会生成与指定区域设置更相关的内容。 <p>必须以ISO 639-1语言代码和ISO 3166-1区域提供区域设置。</p><p> 示例： <code>en-US</code></p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 可拼贴]</td> 
+   <td role="rowheader">[！UICONTROL可拼贴]</td> 
    <td>启用此选项可生成可在每个方向无限重复的图像。</td> 
   </tr> 
  </tbody> 
@@ -330,43 +330,43 @@ Adobe Firefly连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>有关创建与[!DNL Adobe Campaign]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与[!DNL Adobe Firefly]</a>的连接。</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>有关创建与 [!DNL Adobe Firefly] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与 [!DNL Adobe Firefly]</a> 的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td role="rowheader">[！UICONTROL Prompt]</td> 
    <td>为要生成的图像输入或映射提示。 在提示中显示更多详细信息，将允许您更好地控制映像中显示的内容。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 变量数]</td> 
+   <td role="rowheader">[！UICONTROL变量数]</td> 
    <td>输入一个介于1-4之间的数字。 模块将生成此数量的图像变体。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 内容类]</td> 
+   <td role="rowheader">[！UICONTROL内容类]</td> 
    <td>选择您希望生成的图像更类似于照片还是图像。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 图像&gt; Source]</td> 
+   <td role="rowheader">[！UICONTROL图像&gt; Source]</td> 
     <td>选择为新图像结构提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 生成的图像格式]</td> 
+   <td role="rowheader">[！UICONTROL生成的图像格式]</td> 
    <td>选择将保存扩展图像的文件格式。 如果选择“默认”，则在未提供参考图像的情况下，文件格式将为JPEG。 如果提供了参考图像，则生成的图像的文件格式将与参考图像相同。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 样式&gt;图像引用]</td> 
+   <td role="rowheader">[！UICONTROL样式&gt;图像引用]</td> 
     <td>选择为新图像的样式提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 结构&gt;强度]</td> 
+   <td role="rowheader">[！UICONTROL结构&gt;强度]</td> 
     <td>输入一个介于0和100之间的数字，以控制Firefly遵循源图像样式的严格程度。 数字越大，表示Firefly越严格地遵循图像。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 样式&gt;预设]</td> 
+   <td role="rowheader">[！UICONTROL样式&gt;预设]</td> 
    <td>如果要使用预设样式，请单击“添加项目”，然后输入或映射要使用的样式。<p>有关预设样式的列表，请参阅Adobe开发人员文档中的<a href="https://developer.adobe.com/firefly-services/docs/firefly-api/guides/concepts/style-presets//" >图像模型样式</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 大小]</td> 
+   <td role="rowheader">[！UICONTROL大小]</td> 
    <td>选择要生成的复合的大小。 </td> 
   </tr> 
  </tbody> 
@@ -381,46 +381,46 @@ Adobe Firefly连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Connection]</td> 
-   <td>有关创建与[!DNL Adobe Campaign]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与[!DNL Adobe Firefly]</a>的连接。</td> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>有关创建与 [!DNL Adobe Firefly] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与 [!DNL Adobe Firefly]</a> 的连接。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 变量数]</td> 
+   <td role="rowheader">[！UICONTROL变量数]</td> 
    <td>输入一个介于1-4之间的数字。 模块将生成此数量的图像变体。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 模型版本]</td> 
+   <td role="rowheader">[！UICONTROL模型版本]</td> 
    <td>选择要用于生成图像的Firefly模型版本。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 生成的图像格式]</td> 
+   <td role="rowheader">[！UICONTROL生成的图像格式]</td> 
    <td>选择将保存扩展图像的文件格式。 如果选择“默认”，则在未提供参考图像的情况下，文件格式将为JPEG。 如果提供了参考图像，则生成的图像的文件格式将与参考图像相同。</td> 
   </tr> 
    <tr> 
-   <td role="rowheader">[!UICONTROL 图像&gt; Source]</td> 
+   <td role="rowheader">[！UICONTROL图像&gt; Source]</td> 
     <td>选择为新图像结构提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 样式&gt;图像引用]</td> 
+   <td role="rowheader">[！UICONTROL样式&gt;图像引用]</td> 
     <td>选择为新图像的样式提供源文件的方式：<ul><li><p><b>文件</b></p><p>从上一个模块中选择一个源文件，或映射源文件的参考图像文件名和参考图像文件。</p></li><li><p><b>预签名URL</b></p><p>输入或映射源图像的URL。</p></li></ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 大小]</td> 
+   <td role="rowheader">[！UICONTROL大小]</td> 
    <td>选择要生成的复合的大小。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 种子]</td> 
+   <td role="rowheader">[！UICONTROL种子]</td> 
    <td>对于模块将生成的每个图像，单击<b>添加项</b>并输入或映射整数。 您可以在另一个扩展图像模块中使用此相同的种子，以生成具有不同样式的相似图像。 添加的种子数必须等于变体数字段。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 可拼贴]</td> 
+   <td role="rowheader">[！UICONTROL可拼贴]</td> 
    <td>启用此选项可生成可在每个方向无限重复的图像。</td> 
   </tr> 
  </tbody> 
 </table>
 
 
-### 进行自定义API调用
+### 发起自定义 API 调用
 
 此操作模块对Firefly API进行自定义调用。
 
@@ -431,32 +431,32 @@ Adobe Firefly连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Firefly]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与[!DNL Adobe Firefly]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Firefly] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与 [!DNL Adobe Firefly]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
       <td>
-        <p>输入相对于<code>https://firefly-api.adobe.io/</code>的路径。</p>
+        <p>输入相对于 <code>https://firefly-api.adobe.io/</code> 的路径。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
         <p>[!UICONTROL 方法]</p>
       </td>
-   <td> <p>选择配置API调用所需的HTTP请求方法。 有关详细信息，请参阅<a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP请求方法</a>。</p> </td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td role="rowheader">[!UICONTROL 标头]</td>
       <td>
-        <p>以标准JSON对象的形式添加请求的标头。</p>
+        <p>以标准 JSON 对象的形式添加请求标头。</p>
         <p>例如， <code>{"Content-type":"application/json"}</code></p>
-        <p>Workfront Fusion会自动添加授权标头。</p>
+        <p>Workfront Fusion 会自动添加授权标头。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+      <td role="rowheader">[!UICONTROL 正文]</td>
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注意：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>

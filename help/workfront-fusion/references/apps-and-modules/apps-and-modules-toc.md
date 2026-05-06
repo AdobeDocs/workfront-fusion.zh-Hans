@@ -6,10 +6,10 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
-source-git-commit: 6e483986a4297a18e34f8481aa2105f9474fb290
+source-git-commit: 5f2f7cf0a21fd9fb8792c93833668e7fb45547e6
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 98%
+source-wordcount: '498'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->Adobe Workfront Fusion 几乎可以连接到任何 Web 服务。它并不局限于此列表中的应用程序。如果您要使用的应用程序不在此列表中，可使用通用连接器之一与该应用程序或 Web 服务建立连接。
+>Adobe Workfront Fusion 几乎可以连接到任何 Web 服务。 它并不局限于此列表中的应用程序。 如果您要使用的应用程序不在此列表中，可使用通用连接器之一与该应用程序或 Web 服务建立连接。
 
 ## 通用连接器
 
@@ -45,6 +45,7 @@ Fusion 为 Adobe 的众多产品和服务提供连接器。
 * [Adobe Creative Cloud Libraries 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
 * [Adobe Experience Manager Assets 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
 * [Adobe Experience Manager Forms 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
+* [Adobe Firefly音频和视频模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
 * [Adobe Firefly 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
 * [Adobe Frame.io Beta (V4) 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
 * [Adobe Frame.io 旧版 (V3) 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)
