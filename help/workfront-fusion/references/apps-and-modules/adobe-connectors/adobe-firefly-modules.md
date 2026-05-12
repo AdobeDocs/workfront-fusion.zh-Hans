@@ -4,10 +4,10 @@ description: 在 Adobe Workfront Fusion 场景中，您可以自动化使用  [!
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3b29ba3d-a769-4e97-b2c2-0b4eeed5b029
-source-git-commit: a766080defca64b4ce5d8ecd8b19fdfc3ff26470
+source-git-commit: 4e432e277c84f95b3792cb7c295cba41a5563244
 workflow-type: tm+mt
-source-wordcount: '2519'
-ht-degree: 21%
+source-wordcount: '3886'
+ht-degree: 15%
 
 ---
 
@@ -236,6 +236,63 @@ Adobe Firefly连接器使用以下对象：
 
 此模块已弃用，不久将会删除。 请改用“填充图像”模块。
 
+### 生成自适应复合
+
+该动作模块将主题图像无缝地组合到被遮罩位置的背景图像中。 您可以控制应用阴影的强度、对象光照和颜色与背景的协调方式，以及是否将原始背景细节保留在蒙版区域中。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>有关创建与 [!DNL Adobe Firefly] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与 [!DNL Adobe Firefly]</a> 的连接。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 背景&gt;图像&gt; Source]</td> 
+   <td>选择提供背景图像的方式。 背景图像是将合成对象的目标场景。<ul><li><p><b>上传图像</b></p><p>上传背景图像，或从上一个模块映射图像文件。</p></li><li><p><b>图像URL</b></p><p>输入或映射背景图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 背景&gt;填充区域蒙版&gt; Source]</td> 
+   <td>选择如何提供填充区域蒙版。 填充区域蒙版指示将放置对象的背景区域。<ul><li><p><b>上传图像</b></p><p>上载填充区域蒙版图像，或从上一个模块映射图像文件。</p></li><li><p><b>图像URL</b></p><p>输入或映射填充区域蒙版图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 对象&gt;图像&gt; Source]</td> 
+   <td>选择如何提供对象图像。 对象图像是复合到背景中的对象的源图像。<ul><li><p><b>上传图像</b></p><p>上传对象图像，或从上一个模块映射图像文件。</p></li><li><p><b>图像URL</b></p><p>输入或映射对象图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 对象&gt;蒙版&gt; Source]</td> 
+   <td>选择提供对象蒙版的方式。 对象蒙版是对象的分段蒙版。<ul><li><p><b>上传图像</b></p><p>上载对象蒙版图像，或从上一个模块映射图像文件。</p></li><li><p><b>图像URL</b></p><p>输入或映射对象蒙版图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 变量数]</td> 
+   <td>输入一个介于1和3之间的数字。 模块生成此数量的复合变体。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 种子]*</td> 
+   <td>单击<b>添加项</b>以添加种子值，然后输入或映射整数。 每个变体使用一个种子。 如果同时提供了种子值和变体数，则种子值的计数必须与[!UICONTROL Number of Variations]值匹配。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 协调]*</td> 
+   <td>输入一个介于0和1之间的数字，以控制调整对象的颜色和光照以匹配背景的程度。 <code>0.0</code>应用最小协调，<code>1.0</code>应用最大协调。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 阴影强度]*</td> 
+   <td>输入一个介于0和1之间的数字，以控制合成结果中的阴影强度。 较低的值会减少阴影。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 保留背景]*</td> 
+   <td>选择在合成过程中是否将原始背景细节保留在被遮罩的区域中。 <ul><li><b>是</b><p>在合成期间，会保留被遮罩区域中的原始背景细节。</p></li><li><b>否</b><p>在合成期间，被遮罩区域中的原始背景细节不会被保留。</p></li><li><b>未定义</b><p>对此选项使用默认行为。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output &gt; Media Type]*</td> 
+   <td>选择生成的复合将另存为的文件格式。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* 这些字段是高级字段，除非选择&#x200B;**[!UICONTROL 显示高级设置]**，否则不会显示这些字段。
+
 ### 生成图像
 
 该操作模块会根据您提供的提示生成和图像。 您还可以提供一个可选的参考图像，生成的图像将与参考图像的样式匹配。
@@ -372,6 +429,108 @@ Adobe Firefly连接器使用以下对象：
  </tbody> 
 </table>
 
+### 使用图像5生成图像
+
+此操作模块使用[!DNL Adobe Firefly] Image5模型生成图像。 提供文本提示和（可选）参考图像来指导生成。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>有关创建与 [!DNL Adobe Firefly] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与 [!DNL Adobe Firefly]</a> 的连接。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td>输入或映射要生成的图像的描述。 提示必须介于1和1500个字符之间。 提示中的更多详细信息允许您更好地控制映像中显示的内容。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 长宽比]</td> 
+   <td>选择所生成图像的形状。 如果提供了参考图像，请选择<b>自动</b>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 分辨率]</td> 
+   <td>选择所生成图像的分辨率。 生成更高分辨率需要更长的时间。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 参考图像]</td> 
+   <td>可选地提供一个参考图像来指导生成。 单击<b>添加项</b>并提供图像。 使用参考图像时，将[!UICONTROL 长宽比]设置为<b>自动</b>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 种子]*</td> 
+   <td>单击<b>添加项</b>并输入或映射一个整数以重现特定的生成结果。 留空将生成随机结果。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 提示推理]*</td> 
+   <td>选择生成过程中使用的提示推理策略。<ul><li><p><b>质量 — 生成图像描述</b></p><p>在模块的输出中生成图像描述。</p></li><li><p><b>速度 — 更快的生成，无说明</b></p><p>更快地生成图像，但图像描述留空。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 区域设置]*</td> 
+   <td>输入或映射语言和区域代码以根据特定的国家/地区和语言定制生成的内容。 <p>必须以ISO 639-1语言代码和ISO 3166-1区域提供区域设置。</p><p>示例： <code>en-US</code></p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 变量数]*</td> 
+   <td>输入每个请求要生成的图像数。 当前仅支持1个。 要生成多个图像，请发送单独的请求。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 模型]*</td> 
+   <td>选择要用于生成图像的[!DNL Firefly]模型。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 限制]</td> 
+   <td>输入或映射您希望模块在一个执行周期内使用的最大结果数。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+*这些字段是高级字段，除非选择&#x200B;**[!UICONTROL 显示高级设置]**，否则不会显示这些字段。
+
+### 生成精确复合
+
+此动作模块将主题放置在背景图像的蒙版区域中，并应用生成协调，以便主题与背景自然混合。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>有关创建与 [!DNL Adobe Firefly] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与 [!DNL Adobe Firefly]</a> 的连接。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 背景&gt;图像&gt; Source]</td> 
+   <td>选择提供背景图像的方式。 背景图像是将合成对象的目标场景。<ul><li><p><b>上传图像</b></p><p>上传背景图像，或从上一个模块映射图像文件。</p></li><li><p><b>图像URL</b></p><p>输入或映射背景图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 背景&gt;填充区域蒙版&gt; Source]</td> 
+   <td>选择如何提供填充区域蒙版。 填充区域蒙版指示将放置对象的背景区域。<ul><li><p><b>上传图像</b></p><p>上载填充区域蒙版图像，或从上一个模块映射图像文件。</p></li><li><p><b>图像URL</b></p><p>输入或映射填充区域蒙版图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 对象&gt;图像&gt; Source]</td> 
+   <td>选择如何提供对象图像。 对象图像是复合到背景中的对象的源图像。<ul><li><p><b>上传图像</b></p><p>上传对象图像，或从上一个模块映射图像文件。</p></li><li><p><b>图像URL</b></p><p>输入或映射对象图像的URL。</p></li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 变量数]</td> 
+   <td>输入一个介于1和3之间的数字。 模块生成此数量的复合变体。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 种子]*</td> 
+   <td>单击<b>添加项</b>以添加种子值，然后输入或映射整数。 每个变体使用一个种子。 如果同时提供了种子值和变体数，则种子值的计数必须与[!UICONTROL Number of Variations]值匹配。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Blend]*</td> 
+   <td>输入介于0和1之间的数字，以控制对象的协调外观与原始外观之间的混合。 <code>0.0</code>应用完全协调，而<code>1.0</code>保留原始对象的外观。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Output &gt; Media Type]*</td> 
+   <td>选择生成的复合将另存为的文件格式。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* 这些字段是高级字段，除非选择&#x200B;**[!UICONTROL 显示高级设置]**，否则不会显示这些字段。
+
 ### 生成类似图像
 
 此操作模块生成的图像与指定的源图像类似。
@@ -419,6 +578,59 @@ Adobe Firefly连接器使用以下对象：
  </tbody> 
 </table>
 
+
+### 生成视频
+
+此操作模块从文本提示生成视频。 您还可以提供一个或多个参考图像来指导视频生成。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td>有关创建与 [!DNL Adobe Firefly] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-firefly" class="MCXref xref" >创建与 [!DNL Adobe Firefly]</a> 的连接。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL Prompt]</td> 
+   <td>输入或映射要生成的视频的说明。 提示中的更多详细信息允许您更好地控制视频中显示的内容。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 图像&gt;条件]</td> 
+   <td>可选地提供一个或多个参考图像以引导视频生成。 为每个参考图像单击<b>添加项</b>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 大小]</td> 
+   <td>单击<b>添加项</b>，然后输入或映射所生成视频的尺寸。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 比特率因子]*</td> 
+   <td>输入一个介于0和63之间的数字，以指定所生成视频的比特率因子。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 视频设置&gt;相机动态]*</td> 
+   <td>选择要在生成的视频中使用的相机动画。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 视频设置&gt;提示样式]*</td> 
+   <td>选择要用于所生成视频的提示样式。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 视频设置&gt;拍摄角度]*</td> 
+   <td>选择要在生成的视频中使用的拍摄角度。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 视频设置&gt;拍摄大小]*</td> 
+   <td>选择要在生成的视频中使用的拍摄大小。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 限制]</td> 
+   <td>输入或映射您希望模块在一个执行周期内使用的最大结果数。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+* 这些字段是高级字段，除非选择&#x200B;**[!UICONTROL 显示高级设置]**，否则不会显示这些字段。
 
 ### 发起自定义 API 调用
 
