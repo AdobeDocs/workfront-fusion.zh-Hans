@@ -100,6 +100,7 @@ ht-degree: 0%
    ```
    [!UICONTROL Background > Image > Source]
    ```
+
 2. 阅读屏幕快照中字段下方的帮助程序文本（灰色/黄色描述）。 将其用作说明的基础。
 3. 交叉引用步骤3a中的API上下文以确定字段表示的内容（例如，`background.fillAreaMask`是“将放置对象的背景区域”）。
 4. 通过将&#x200B;**什么字段**（来自API）与&#x200B;**如何提供该字段**（来自UI帮助程序文本和字段类型）组合来编写描述。
@@ -110,7 +111,7 @@ ht-degree: 0%
 
 #### 3d 获取高级视图屏幕截图
 
-询问： *&quot;现在，请与`Show advanced settings`**选中**共享模块配置面板的屏幕快照。 如果模块没有高级字段，请说，我们将跳过这一步。”*
+询问： *&quot;现在，请与`Show advanced settings`**选中**&#x200B;共享模块配置面板的屏幕快照。 如果模块没有高级字段，请说，我们将跳过这一步。”*
 
 #### 3e. 记录高级字段
 
@@ -123,6 +124,7 @@ ht-degree: 0%
    ```html
    <td role="rowheader">[!UICONTROL Seeds]*</td>
    ```
+
 4. 在结束`</table>`后，在其自己的行中添加此脚注：
 
    ```markdown
