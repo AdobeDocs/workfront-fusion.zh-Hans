@@ -1,55 +1,63 @@
 ---
-title: 使用自定义OAuth客户端将Adobe Workfront Fusion连接到Google Services
+title: 使用自定义 OAuth 客户端将 Adobe Workfront Fusion 连接到 Google 服务
 description: 您可以使用Adobe Workfront Fusion通过自定义OAuth客户端连接到Google服务。 此过程需要现有的Google帐户。
 author: Becky
 feature: Workfront Fusion
 exl-id: 2f0bc289-4ecf-4a31-9d7b-641bbca6fc95
-source-git-commit: b2ca63ca5af26ee79758798118817b55113b3bd0
+TQID: https://experienceleague.adobe.com/Y-cRr-lDvYKc83iwzPoB2Rs9gKD9LCZQFfiBgefal7I
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 1%
+source-wordcount: 1022
+ht-degree: 15%
 
 ---
 
-# 使用自定义OAuth客户端将Adobe Workfront Fusion连接到Google Services
+# 使用自定义 OAuth 客户端将 Adobe Workfront Fusion 连接到 Google 服务
 
 您可以使用Adobe Workfront Fusion通过自定义OAuth客户端连接到Google服务。 此过程需要现有的Google帐户。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -66,7 +74,7 @@ ht-degree: 1%
 >此过程适用于：
 >
 >* 个人使用（`@gmail.com`和`@googlemail.com`用户）
->* 内部使用(更喜欢使用自定义OAuth客户端的Google Workspace用户)
+>* 内部使用（更喜欢使用自定义OAuth客户端的Google Workspace用户）
 
 * [在Google Cloud Platform上创建项目](#create-a-project-on-google-cloud-platform)
 * [配置OAuth同意设置](#configure-oauth-consent-settings)
@@ -80,7 +88,7 @@ ht-degree: 1%
 1. 开始在Google Cloud Platform上创建项目。
 
    有关说明，请参阅Google文档中的[创建Google云项目](https://developers.google.com/workspace/guides/create-project)。
-1. 启用API时，必须启用Google驱动器API以及要使用的所有Google应用程序的API(例如Google Sheets API)。
+1. 启用API时，必须启用Google驱动器API以及要使用的所有Google应用程序的API（例如Google Sheets API）。
 1. 完成创建项目。
 1. 继续阅读本文中的[配置OAuth同意设置](#configure-oauth-consent-settings)部分。
 
@@ -159,7 +167,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >如果这不是您启用的第一个API或服务(Gmail或Google Drive)，则无需创建新凭据。
+   >如果这不是您启用的第一个API或服务（Gmail或Google Drive），则无需创建新凭据。
 
 1. 按如下方式填写必填字段：
 
@@ -193,7 +201,7 @@ ht-degree: 1%
 
 ### 连接到Workfront Fusion中的Google
 
-创建与Google连接的过程有所不同，具体取决于您是使用Google服务(例如Google Sheets或Google Docs)中的模块，还是通过HTTP >创建OAuth2.0请求模块连接到Google。
+创建与Google连接的过程有所不同，具体取决于您是使用Google服务（例如Google Sheets或Google Docs）中的模块，还是通过HTTP >创建OAuth2.0请求模块连接到Google。
 
 * [在Google服务中连接到Google](#connect-to-google-in-a-google-service)
 * [在HTTP >创建OAuth2.0请求模块中连接到Google](#connect-to-google-in-the-http--make-an-oauth20-request-module)

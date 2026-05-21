@@ -7,16 +7,21 @@ description: 了解如何使用Adobe Workfront Fusion创建简单的自动化场
 author: Becky
 feature: Workfront Fusion
 exl-id: 5284dee1-e890-4357-a28d-29e09ac02822
-source-git-commit: 6269db7454a63e80de3d770ab1012162d5080565
+TQID: https://experienceleague.adobe.com/4SeGiWeAsMRQbbk15I5IoL8-ZYe5WLeF6z9URFpTQQI
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: 1426
 ht-degree: 12%
 
 ---
 
 # 创建基本场景
 
-Adobe Workfront Fusion 的作用是自动化您的流程，让您能够专注于新的工作任务，而无需一遍又一遍地重复相同的任务。它通过连接应用程序和服务内部或之间的操作，构建可自动传输并转换数据的场景。您创建的场景会监控某个应用程序或服务中的数据，并对这些数据进行处理，以生成您所需的结果。
+Adobe Workfront Fusion 的作用是自动化您的流程，让您能够专注于新的工作任务，而无需一遍又一遍地重复相同的任务。 它通过连接应用程序和服务内部或之间的操作，构建可自动传输并转换数据的场景。 您创建的场景会监控某个应用程序或服务中的数据，并对这些数据进行处理，以生成您所需的结果。
 
 此示例引导您完成以下过程：创建在Workfront中搜索请求并将其转换为项目的方案。
 
@@ -81,7 +86,7 @@ Adobe Workfront Fusion 的作用是自动化您的流程，让您能够专注于
    如果没有Workfront连接，请参阅[创建连接](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
 1. 在[!UICONTROL 记录类型]框中，选择&#x200B;**[!UICONTROL 问题]**。 这会将模块设置为仅搜索问题，包括请求。
 
-   如果您开始输入“**[!UICONTROL 问题]**”，则可以在列表中找到[!UICONTROL 问题]。
+   如果您开始输入“[!UICONTROL 问题]”，则可以在列表中找到&#x200B;**[!UICONTROL 问题]**。
 
 1. 在&#x200B;**[!UICONTROL 结果集]**&#x200B;框中，选择&#x200B;**[!UICONTROL 第一个匹配记录]**。
 
@@ -90,7 +95,7 @@ Adobe Workfront Fusion 的作用是自动化您的流程，让您能够专注于
 
    1. 在[!UICONTROL 搜索条件]下的第一个框中，选择要包含在搜索中的字段。 对于此示例，请选择&#x200B;**[!UICONTROL 名称]**。
 
-      如果您开始输入“**[!UICONTROL name]**”，可以在列表中找到[!UICONTROL Name]。
+      如果您开始输入“[!UICONTROL name]”，可以在列表中找到&#x200B;**[!UICONTROL Name]**。
    1. 对于运算符，单击&#x200B;**存在**&#x200B;旁边的下拉箭头，并将其更改为&#x200B;[!UICONTROL **包含（不区分大小写）**]。
 
       这允许模块查找名称中包含您选定字词的项目，即使您未输入完整名称或输入大小写不正确（例如全部大写）的名称，也是如此。

@@ -1,12 +1,18 @@
 ---
 title: XML
-description: 利用XML应用程序，可通过XML &amp；解析XML模块解析XML格式文本，并将其转换为捆绑包，以便其他模块可以使用该数据。 您还可以通过XML &amp；gt；创建XML模块将捆绑包转换为XML格式文本
+description: XML应用程序允许您通过XML &gt；解析XML模块解析XML格式文本，并将其转换为捆绑包，以便其他模块可以使用该数据。 您还可以通过XML &gt；创建XML模块将捆绑包转换为XML格式文本
 author: Becky
 feature: Workfront Fusion
 exl-id: ab323361-cd04-4dcc-ab02-0fb468334fdb
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/WAXpNvb43E4nAZ8lD4Ch55gwqdgRbG3bhPmZDSvnFx4
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: 1433
 ht-degree: 8%
 
 ---
@@ -92,7 +98,7 @@ ht-degree: 8%
 典型用例是将数据从[!DNL Google] >电子表格转换为XML。
 
 1. 将[!DNL Google Sheets] > [!UICONTROL 选择方案中的行]模块以获取数据。 设置模块以从[!DNL Google]电子表格中检索行。 将&#x200B;**[!UICONTROL 返回的最大行数]**&#x200B;设置为一个较小的数字，但大于一个以用于测试目的（例如，三个）。 执行[!DNL Google Sheets]模块，方法是右键单击该模块并选择“**[!UICONTROL 仅运行此模块]**”。 验证模块的输出。
-1. 在[!UICONTROL 模块之后连接]数组汇总[!DNL Google Sheets]模块。 在模块设置的[!DNL Google Sheets]Source节点&#x200B;**[!UICONTROL 字段中选择]**&#x200B;模块。 请暂时保留其他字段。
+1. 在[!DNL Google Sheets]模块之后连接[!UICONTROL 数组汇总]模块。 在模块设置的&#x200B;**[!UICONTROL Source节点]**&#x200B;字段中选择[!DNL Google Sheets]模块。 请暂时保留其他字段。
 1. 在[!UICONTROL 数组聚合器]模块之后连接[!UICONTROL XML] > [!UICONTROL 创建XML]模块。
 
    模块的设置需要一个描述XML输出结构的数据结构。 单击&#x200B;**[!UICONTROL 添加]**&#x200B;按钮以打开数据结构设置。 创建此数据结构的最简单方法是从XML示例中自动生成此数据结构。
@@ -107,9 +113,9 @@ ht-degree: 8%
 1. 将数据结构的名称更改为更具体的名称，然后单击&#x200B;**[!UICONTROL 保存]**。
 
    与root数组属性对应的字段在JSON模块的设置中显示为可映射字段。
-1. 单击该字段旁边的&#x200B;**[!UICONTROL 映射]**&#x200B;按钮，并将`Array[]`数组汇总[!UICONTROL 输出中的]项映射到它：
+1. 单击该字段旁边的&#x200B;**[!UICONTROL 映射]**&#x200B;按钮，并将[!UICONTROL 数组汇总]输出中的`Array[]`项映射到它：
 1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭XML模块的设置。
-1. 打开[!UICONTROL 数组汇总]模块的设置。 将&#x200B;**[!UICONTROL 目标结构]**&#x200B;从“自定义”更改为与父XML元素对应的XML模块字段。将[!DNL Google Sheets]模块中的项映射到相应的字段。
+1. 打开[!UICONTROL 数组汇总]模块的设置。 将&#x200B;**[!UICONTROL 目标结构]**&#x200B;从“自定义”更改为与父XML元素对应的XML模块的字段。将[!DNL Google Sheets]模块中的项映射到相应的字段。
 1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;关闭阵列聚合器模块的设置。
 1. 运行方案。
 
@@ -185,7 +191,7 @@ ht-degree: 8%
 
 要从URL下载XML文件并解析其内容，请执行以下操作：
 
-1. 创建新方案。
+1. 创建新场景。
 1. 添加[!UICONTROL HTTP] > [!UICONTROL 获取文件]模块
 1. 打开模块的配置，并按照以下方式对其进行配置：
 

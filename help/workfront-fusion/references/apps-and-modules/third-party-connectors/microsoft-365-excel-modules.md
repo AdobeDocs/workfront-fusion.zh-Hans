@@ -4,9 +4,15 @@ description: 在Adobe Workfront Fusion场景中，您可以自动使用Microsoft
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
-source-git-commit: 03f4556d7f903689c85cba966ad875973037a2ba
+TQID: https://experienceleague.adobe.com/SZwX0GVZYFlIudwirqN6ne-W8mEoXHC-WKI8JFnbzrA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2699'
+source-wordcount: 2707
 ht-degree: 18%
 
 ---
@@ -98,9 +104,9 @@ Microsoft Office 365 Excel连接器使用以下内容：
 
 ## [!DNL Microsoft Office 365 Excel] 模块及其字段
 
-在您配置 [!DNL Microsoft 365 Excel] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Microsoft 365 Excel] 字段。模块中的加粗标题表示必填字段。
+在您配置 [!DNL Microsoft 365 Excel] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Microsoft 365 Excel] 字段。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -128,8 +134,8 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Download a workbook]</td> 
-   <td> <p>Select how you want to identify the workbook for the module to download.</p> 
+   <td role="rowheader">[!UICONTROL 下载工作簿]</td> 
+   <td> <p>选择您希望如何标识要下载的模块的工作簿。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL ，通过手动输入ID]</strong> </p> <p>在[!UICONTROL 工作簿ID]字段中，输入或映射您希望模块下载的特定工作簿的ID。</p> </li> 
      <li> <p>通过从路径中选择<strong></strong> </p> <p>在[!UICONTROL 工作簿]字段中，选择要让模块下载的工作簿，包括不在根文件夹中的路径。</p> </li> 
@@ -156,7 +162,7 @@ Microsoft Office 365 Excel连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 筛选条件]</p> </td> 
-   <td> <p>您可以设置过滤器，以仅搜索符合您选择标准的工作簿。</p> <p>对于每个筛选条件，请输入要评估的字段、运算符以及筛选条件应允许的值。您可以通过添加AND或OR规则来使用多个过滤器。</p> </td> 
+   <td> <p>您可以设置过滤器，以仅搜索符合您选择标准的工作簿。</p> <p>对于每个筛选条件，请输入要评估的字段、运算符以及筛选条件应允许的值。 您可以通过添加AND或OR规则来使用多个过滤器。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 限制]</td> 
@@ -184,7 +190,7 @@ Microsoft Office 365 Excel连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 筛选条件]</p> </td> 
-   <td> <p>您可以将过滤器设置为仅监视符合所选条件的工作簿。</p> <p>对于每个筛选条件，请输入要评估的字段、运算符以及筛选条件应允许的值。您可以通过添加AND或OR规则来使用多个过滤器。</p> </td> 
+   <td> <p>您可以将过滤器设置为仅监视符合所选条件的工作簿。</p> <p>对于每个筛选条件，请输入要评估的字段、运算符以及筛选条件应允许的值。 您可以通过添加AND或OR规则来使用多个过滤器。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 限制]</td> 
@@ -228,7 +234,7 @@ Microsoft Office 365 Excel连接器使用以下内容：
 
 #### [!UICONTROL 添加工作表行]
 
-This action module adds a new row to the selected worksheet.
+此操作模块向所选工作表添加一个新行。
 
 <table style="table-layout:auto"> 
  <col data-mc-conditions=""> 
@@ -251,7 +257,7 @@ This action module adds a new row to the selected worksheet.
    <td> <p>选择要输入工作表的值的类型。 </p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 公式]</strong> </p> <p> Excel尝试计算指定的表达式。 公式中的函数名称为英文。 示例： <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
-     <li> <p><strong>[!UICONTROL 公式本地]</strong> </p> <p>Excel尝试计算指定的表达式。 The function names are in the language of your Excel application. Example: <code>=SUM(A1, 1.5)</code> vs <code>=SUMME(A1; 1,5)</code></p> </li> 
+     <li> <p><strong>[!UICONTROL 公式本地]</strong> </p> <p>Excel尝试计算指定的表达式。 函数名称使用Excel应用程序的语言。 示例：<code>=SUM(A1, 1.5)</code>与 <code>=SUMME(A1; 1,5)</code></p> </li> 
      <li> <p><strong>[!UICONTROL 值]</strong> </p> <p>Excel不计算该值。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -364,7 +370,7 @@ This action module adds a new row to the selected worksheet.
    <td> <p>选择要输入工作表的值的类型。 </p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 公式]</strong> </p> <p> Excel尝试计算指定的表达式。 公式中的函数名称为英文。 示例： <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
-     <li> <p><strong>[!UICONTROL 公式本地]</strong> </p> <p>Excel tries to evaluate the specified expression. The function names are in the language of your Excel application. Example: <code>=SUM(A1, 1.5)</code> vs <code>=SUMME(A1; 1,5)</code></p> </li> 
+     <li> <p><strong>[!UICONTROL 公式本地]</strong> </p> <p>Excel尝试计算指定的表达式。 函数名称使用Excel应用程序的语言。 示例：<code>=SUM(A1, 1.5)</code>与 <code>=SUMME(A1; 1,5)</code></p> </li> 
      <li> <p><strong>[!UICONTROL 值]</strong> </p> <p>Excel不计算该值。 </p> </li> 
     </ul> </td> 
   </tr> 
@@ -393,11 +399,11 @@ This action module adds a new row to the selected worksheet.
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL 工作簿] </td>
-   <td> <p>Select the workbook that contains the worksheet you want to watch for new rows.</p> </td> 
+   <td> <p>选择包含您要监视新行的工作表的工作簿。</p> </td> 
   </tr> 
   <tr>
     <td role="rowheader" >[!UICONTROL 工作表] </td>
-   <td> <p>Select the Excel sheet that you want to watch for new rows.</p> </td> 
+   <td> <p>选择要监视新行的Excel工作表。</p> </td> 
   </tr> 
   <tr>
     <td role="rowheader" >[!UICONTROL 跳过空行] </td>
@@ -466,7 +472,7 @@ This action module adds a new row to the selected worksheet.
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL 工作簿] </td>
-   <td> <p>Select the workbook that contains the table where you want to add a row.</p> </td> 
+   <td> <p>选择包含要添加行的表的工作簿。</p> </td> 
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL 工作表] </td>
@@ -500,10 +506,10 @@ This action module adds a new row to the selected worksheet.
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Delete a table]</td> 
-   <td> <p>Select how you want to identify the table that you want to delete.</p> 
+   <td role="rowheader">[!UICONTROL 删除表]</td> 
+   <td> <p>选择您希望如何标识要删除的表。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>Enter or map the ID of the workbook that contains the table you want to delete, then enter or map the ID of the worksheet that contains the table.</p> <p>在[!UICONTROL 表名称]字段中，输入或映射要删除的表的名称。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射包含要删除表的工作簿的ID，然后输入或映射包含该表的工作表的ID。</p> <p>在[!UICONTROL 表名称]字段中，输入或映射要删除的表的名称。</p> </li> 
      <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要删除表的工作簿和工作表，然后选择该表。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -528,9 +534,9 @@ This action module adds a new row to the selected worksheet.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 获取表]</td> 
-   <td> <p>Select how you want to identify the table that you want to retrieve.</p> 
+   <td> <p>选择您希望如何标识要检索的表。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>Enter or map the ID of the workbook that contains the table you want to retrieve, then enter or map the ID of the worksheet that contains the table.</p> <p>In the [!UICONTROL Table Name] field, enter or map the name of the table you want to retrieve.</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射包含要检索的表的工作簿的ID，然后输入或映射包含该表的工作表的ID。</p> <p>在[!UICONTROL 表名称]字段中，输入或映射要检索的表的名称。</p> </li> 
      <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要检索的表的工作簿和工作表，然后选择该表。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -608,10 +614,10 @@ This action module adds a new row to the selected worksheet.
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Update a table]</td> 
-   <td> <p>Select how you want to identify the table that you want to update.</p> 
+   <td role="rowheader">[!UICONTROL 更新表]</td> 
+   <td> <p>选择您希望如何标识要更新的表。</p> 
     <ul> 
-     <li> <p><strong>Enter manually</strong> </p> <p>In the [!UICONTROL Workbook ID] field, enter or map the ID of the workbook that contains the table you want to update.</p> <p>在[!UICONTROL 表名]字段中，输入或映射要更新的表名。</p> </li> 
+     <li> <p><strong>手动输入</strong> </p> <p>在[!UICONTROL 工作簿ID]字段中，输入或映射包含要更新的表的工作簿ID。</p> <p>在[!UICONTROL 表名]字段中，输入或映射要更新的表名。</p> </li> 
      <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要更新的表的工作簿和工作表，然后选择该表。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -640,9 +646,9 @@ This action module adds a new row to the selected worksheet.
 
 >[!NOTE]
 >
->The table here refers to the embedded table element in the Workbook. Not the entire table (workbook/sheet).
+>此处的表引用工作簿中嵌入的表元素。 不是整个表（工作簿/工作表）。
 
-![Embedded table](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
+![嵌入表](/help/workfront-fusion/references/apps-and-modules/assets/embedded-table-350x420.png)
 
 <table style="table-layout:auto"> 
  <col> 
@@ -666,7 +672,7 @@ This action module adds a new row to the selected worksheet.
   </tr> 
   <tr> 
     <td role="rowheader" >[!UICONTROL 限制]</td>
-   <td> <p>Enter or map the maximum number of rows you want the module to return during each scenario execution cycle.</p> </td> 
+   <td> <p>输入或映射您希望模块在每个方案执行周期内返回的最大行数。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -690,11 +696,11 @@ This action module adds a new row to the selected worksheet.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL URL]</td> 
-   <td>输入相对于 <code>https://graph.microsoft.com</code> 的路径。示例：<code> /v1.0/me/drive/root/children</code></td> 
+   <td>输入相对于 <code>https://graph.microsoft.com</code> 的路径。 示例：<code> /v1.0/me/drive/root/children</code></td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 方法]</td> 
-   td&gt; <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
+   td&gt; <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 标头]</td> 
@@ -732,11 +738,11 @@ This action module adds a new row to the selected worksheet.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 工作表] </td> 
-   <td> <p>Select the worksheet that contains the data you want to retrieve.</p> </td> 
+   <td> <p>选择包含要检索的数据的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Range] </td> 
-   <td> <p>Specify the area of the sheet you want to retrieve data from by indicating the top left and bottom right cells. 示例： <code>A1:D10</code></p> </td> 
+   <td role="rowheader">[!UICONTROL 范围] </td> 
+   <td> <p>通过指定左上单元格和右下单元格，指定要从中检索数据的工作表区域。 示例： <code>A1:D10</code></p> </td> 
   </tr> 
  </tbody> 
 </table>

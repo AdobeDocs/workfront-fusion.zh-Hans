@@ -1,59 +1,68 @@
 ---
-title: Adobe Lightroom模块
+title: Adobe Lightroom 模块
 description: 通过Adobe Lightroom模块，您可以根据Adobe Lightroom帐户中的事件启动Adobe Workfront Fusion方案。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 3f29ab35-7a90-4afb-a283-4faaacec5b15
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
+TQID: https://experienceleague.adobe.com/mpTM66zk6PRthMvpk302CQ6MkOs5qEqPODNcvv-Qauo
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3206'
-ht-degree: 0%
+source-wordcount: 3230
+ht-degree: 19%
 
 ---
 
-# [!DNL Adobe Lightroom]模块
+# [!DNL Adobe Lightroom] 模块
 
-在Adobe Workfront Fusion场景中，您可以自动使用[!DNL Adobe Lightroom]的工作流，并将其连接到多个第三方应用程序和服务。
+在 Adobe Workfront Fusion 场景中，您可以自动化使用 [!DNL Adobe Lightroom] 的工作流，并将其连接到多个第三方应用程序和服务。
 
 如果需要有关创建方案的说明，请参阅[创建方案：项目索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
 
-有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
+有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的相关文章。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -77,7 +86,7 @@ Adobe Lightroom连接器使用以下对象：
    <td>https://lr.adobe.io</td> 
   </tr>
   <tr> 
-   <td role="rowheader">API标记</td> 
+   <td role="rowheader">API 标记</td> 
    <td>v1.17.128</td> 
   </tr>
  </tbody> 
@@ -119,7 +128,7 @@ Adobe Lightroom连接器使用以下对象：
         <td><code>https://app.workfrontfusion.com/oauth/cb/adobe-lightroom5</code></td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 重定向URI模式]</td>
+        <td role="rowheader">[!UICONTROL 重定向 URI 模式]</td>
         <td><code>https://app\.workfrontfusion\.com/oauth/cb/adobe-lightroom5</code></td>
         </tr>
       </tbody>
@@ -127,7 +136,7 @@ Adobe Lightroom连接器使用以下对象：
 
 ### 从Workfront Fusion创建与Adobe Lightroom的连接
 
-要为您的[!DNL Adobe Lightroom]模块创建连接：
+要为您的 [!DNL Adobe Lightroom] 模块创建连接：
 
 1. 在任意Adobe Lightroom模块中，单击“连接”框旁边的&#x200B;**[!UICONTROL 添加]**。
 
@@ -151,10 +160,10 @@ Adobe Lightroom连接器使用以下对象：
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 类型]</td>
-        <td>选择您是要连接到服务帐户还是个人帐户。</td>
+        <td>选择连接服务帐户还是个人帐户。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 客户端ID]</td>
+        <td role="rowheader">[!UICONTROL 客户端 ID]</td>
         <td>输入您的[!UICONTROL Adobe] [!UICONTROL 客户端ID]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
@@ -164,14 +173,14 @@ Adobe Lightroom连接器使用以下对象：
       </tbody>
     </table>
 
-1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
+1. 点击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。
 
 
 ## Adobe Lightroom模块及其字段
 
-在配置[!DNL Adobe Lightroom]模块时，Workfront Fusion将显示以下列出的字段。 除此以外，可能还会显示其他[!DNL Adobe Lightroom]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在您配置 [!DNL Adobe Lightroom] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Adobe Lightroom] 字段。 模块中的加粗标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -193,8 +202,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 凭据]</td>
@@ -214,8 +223,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 凭据]</td>
@@ -246,8 +255,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 目录ID]</td>
@@ -256,7 +265,7 @@ Adobe Lightroom连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 资产ID]</td>
+      <td role="rowheader">[!UICONTROL 资源 ID]</td>
       <td>
         <p>输入或映射要为其创建和上传文件的资源的ID。</p>
       </td>
@@ -291,8 +300,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 目录ID]</td>
@@ -301,7 +310,7 @@ Adobe Lightroom连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 资产ID]</td>
+      <td role="rowheader">[!UICONTROL 资源 ID]</td>
       <td>
         <p>输入或映射新资源的ID。</p>
       </td>
@@ -366,8 +375,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 内容长度（字节）]</td>
@@ -388,7 +397,7 @@ Adobe Lightroom连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 资产ID]</td>
+      <td role="rowheader">[!UICONTROL 资源 ID]</td>
       <td>
         <p>输入或映射要上传或复制文件的目标资产ID。</p>
       </td>
@@ -411,8 +420,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 演绎版类型（以分号分隔）]</td>
@@ -433,7 +442,7 @@ Adobe Lightroom连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 资产ID]</td>
+      <td role="rowheader">[!UICONTROL 资源 ID]</td>
       <td>
         <p>输入或映射要为其创建文件演绎版的资源的ID。</p>
       </td>
@@ -450,8 +459,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 目录ID]</td>
@@ -460,7 +469,7 @@ Adobe Lightroom连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 资产ID]</td>
+      <td role="rowheader">[!UICONTROL 资源 ID]</td>
       <td>
         <p>输入或映射要为其检索信息的资源的ID。</p>
       </td>
@@ -478,8 +487,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 目录ID]</td>
@@ -488,7 +497,7 @@ Adobe Lightroom连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 资产ID]</td>
+      <td role="rowheader">[!UICONTROL 资源 ID]</td>
       <td>
         <p>输入或映射与XMP开发设置文件关联的资源的ID。</p>
       </td>
@@ -505,8 +514,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 目录ID]</td>
@@ -515,7 +524,7 @@ Adobe Lightroom连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 资产ID]</td>
+      <td role="rowheader">[!UICONTROL 资源 ID]</td>
       <td>
         <p>输入或映射要为其检索演绎版的资源的ID。</p>
       </td>
@@ -538,8 +547,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 目录ID]</td>
@@ -566,7 +575,7 @@ Adobe Lightroom连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 返回的最大资产数]</td>
+      <td role="rowheader">[!UICONTROL 返回资源的最大数量]</td>
       <td>
         <p>输入您希望模块在每个方案执行周期内返回的最大记录数。</p>
       </td>
@@ -641,8 +650,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 目录ID]</td>
@@ -662,7 +671,7 @@ Adobe Lightroom连接器使用以下对象：
         <p>对于要添加到相册的每个资源，单击<b>添加项</b>并输入以下字段。</p>
       </td>
     <tr>
-      <td role="rowheader">[!UICONTROL 资产ID]</td>
+      <td role="rowheader">[!UICONTROL 资源 ID]</td>
       <td>
         <p>输入或映射要添加到相册的资源的ID</p>
       </td>
@@ -699,8 +708,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 目录ID]</td>
@@ -809,8 +818,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 目录ID]</td>
@@ -842,8 +851,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 目录ID]</td>
@@ -869,8 +878,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 目录ID]</td>
@@ -968,8 +977,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 目录ID]</td>
@@ -1009,8 +1018,8 @@ Adobe Lightroom连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
-      <td>有关创建与[!DNL Adobe Lightroom]的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与[!DNL Adobe Lightroom]</a>的连接。</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Lightroom] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-lightroom" class="MCXref xref" >创建与 [!DNL Adobe Lightroom]</a> 的连接。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 目录ID]</td>

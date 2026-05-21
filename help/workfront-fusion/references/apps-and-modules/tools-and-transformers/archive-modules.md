@@ -1,13 +1,18 @@
 ---
-title: 存档模块
+title: Archive 模块
 description: 在Adobe Workfront Fusion场景中，您可以将存档（例如压缩文件）连接到多个第三方应用程序和服务。 例如，您可以配置一个方案，该方案
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b5ff3d5-601c-4119-ad70-3612ad5ba1ab
-source-git-commit: 4697ea1449f77ddb8648658990098b3b4bc58ad2
+TQID: https://experienceleague.adobe.com/hcfjBqNDF3zEVJMLmekD-O8lmzMLyKk6Xp9JKTXcVWc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 0%
+source-wordcount: 651
+ht-degree: 32%
 
 ---
 
@@ -15,34 +20,34 @@ ht-degree: 0%
 
 在Adobe Workfront Fusion场景中，您可以在场景中使用档案，例如压缩文件，从而允许您在自动化或集成中使用它。
 
-有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。 有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
+有关创建场景的说明，请参阅[创建场景：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)中的相关文章。 有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的相关文章。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
 +++
 
@@ -50,14 +55,14 @@ ht-degree: 0%
 
 ## [!UICONTROL 存档]模块及其字段
 
-在配置[!UICONTROL 存档]模块时，Workfront Fusion显示以下列出的字段。 此外，还可能会显示其他[!UICONTROL 存档]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在配置[!UICONTROL 存档]模块时，Workfront Fusion显示以下列出的字段。 此外，还可能会显示其他[!UICONTROL 存档]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的加粗标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
 * [操作](#actions)
-* [汇总](#aggregators)
+* [聚合器](#aggregators)
 * [变压器](#transformers)
 
 ## 操作
@@ -66,14 +71,14 @@ ht-degree: 0%
 
 此操作模块会从存档中提取您标识的文件。
 
-模块会返回文件的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景的后续模块中映射此信息。
+模块会返回文件的ID和任何关联字段，以及连接访问的任何自定义字段和值。 您可以在场景后续的模块中映射这些信息。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL 来源文件]</td> 
    <td> <p>  <p>从上一个模块中选择源文件，或映射源数据。</p></p>  </td> 
   </tr> 
  </tbody> 
@@ -87,13 +92,13 @@ ht-degree: 0%
 
 >[!ENDSHADEBOX]
 
-## 汇总
+## 聚合器
 
 ### [!UICONTROL 创建存档]
 
 此聚合器模块将所需文件添加到[!UICONTROL ZIP]、GZIP或[!UICONTROL TAR]存档。
 
-配置此模块时，会显示以下字段。
+在配置此模块时，会显示以下字段。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -124,7 +129,7 @@ ht-degree: 0%
    <td> <p> 输入已创建存档的名称。 请勿添加扩展。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Source file]</td> 
+   <td>[!UICONTROL 来源文件]</td> 
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </td> 
   </tr> 
  </tbody> 

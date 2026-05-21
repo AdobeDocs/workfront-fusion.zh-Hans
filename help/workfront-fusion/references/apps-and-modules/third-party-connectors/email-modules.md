@@ -1,19 +1,24 @@
 ---
 title: 电子邮件模块
-description: 在Adobe Workfront Fusion场景中，您可以将电子邮件帐户连接到多个第三方应用程序和服务。这使您能够通过IMAP下载电子邮件、通过SMTP发送电子邮件、创建新草稿、将电子邮件从一个文件夹移动和复制到另一个文件夹、将电子邮件标记为已读或未读以及删除电子邮件。
+description: 在Adobe Workfront Fusion场景中，您可以将电子邮件帐户连接到多个第三方应用程序和服务。这允许您通过IMAP下载电子邮件、通过SMTP发送电子邮件、创建新草稿、将电子邮件从一个文件夹移动和复制到另一个文件夹、将电子邮件标记为已读或未读，以及删除电子邮件。
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: 2507
 ht-degree: 11%
 
 ---
 
 # 电子邮件模块
 
-在Adobe Workfront Fusion场景中，您可以将电子邮件帐户连接到多个第三方应用程序和服务。这使您能够通过IMAP下载电子邮件、通过SMTP发送电子邮件、创建新草稿、将电子邮件从一个文件夹移动和复制到另一个文件夹、将电子邮件标记为已读或未读以及删除电子邮件。
+在Adobe Workfront Fusion场景中，您可以将电子邮件帐户连接到多个第三方应用程序和服务。这允许您通过IMAP下载电子邮件、通过SMTP发送电子邮件、创建新草稿、将电子邮件从一个文件夹移动和复制到另一个文件夹、将电子邮件标记为已读或未读，以及删除电子邮件。
 
 ## 访问权限要求
 
@@ -64,7 +69,7 @@ ht-degree: 11%
 
 您可以在电子邮件模块中直接创建与[!DNL Google]帐户的连接。
 
-1. 在任何电子邮件模块中，单击&#x200B;**[!UICONTROL 连接]**&#x200B;字段旁边的[!UICONTROL 添加]。
+1. 在任何电子邮件模块中，单击[!UICONTROL 连接]字段旁边的&#x200B;**[!UICONTROL 添加]**。
 1. 选择&#x200B;**[!DNL Google]**&#x200B;作为连接类型。
 1. 输入连接名称。
 1. （可选）输入您的[!UICONTROL [!DNL Google]客户端ID]和[!UICONTROL 客户端密钥]。
@@ -74,7 +79,7 @@ ht-degree: 11%
 
 IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 大多数电子邮件模块都使用IMAP连接。
 
-1. 在任何电子邮件模块中，单击&#x200B;**[!UICONTROL 连接]**&#x200B;字段旁边的[!UICONTROL 添加]。
+1. 在任何电子邮件模块中，单击[!UICONTROL 连接]字段旁边的&#x200B;**[!UICONTROL 添加]**。
 1. 选择&#x200B;**[!UICONTROL 其他(SMTP)]**&#x200B;作为连接类型。
 1. 输入连接的&#x200B;**[!UICONTROL 名称]**。
 1. 从列表中选择您的&#x200B;**[!UICONTROL 电子邮件提供商]**。 如果您的电子邮件提供商不在列表中，请选择“其他”。
@@ -95,11 +100,11 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
 
 ## [!UICONTROL 电子邮件]模块及其字段
 
-在配置[!UICONTROL 电子邮件]模块时，Workfront Fusion将显示以下列出的字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多字段。模块中的加粗标题表示必填字段。
+在配置[!UICONTROL 电子邮件]模块时，Workfront Fusion将显示以下列出的字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多字段。 模块中的加粗标题表示必填字段。
 
 某些电子邮件字段可能包含数据，因为您在场景的其他模块中使用了这些数据。 如需有关这些受众的信息，请参阅电子邮件帮助文档。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -542,7 +547,7 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
   </tr> 
 <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>输入或映射电子邮件的[!UICONTROL 发件人]字段中显示的电子邮件地址（和名称，如果需要）。 </p> <p>重要：使用正确的语法： <code>name@email.com</code>或<code>"Name" name@email.com</code>。</p> <p>注意：通常，Workfront Fusion会将您在创建连接时输入的电子邮件地址用作发件人地址。 如果输入任何其他电子邮件地址，则在发送邮件时可能会发生错误，因为您的帐户可能无权从不同于您自己的地址发送电子邮件。 如<code>test@mail.com</code>或“<code>John Bush" test@email.com</code>”。</p> </td> 
+   <td> <p>输入或映射电子邮件的[!UICONTROL 发件人]字段中显示的电子邮件地址（和名称，如果需要）。 </p> <p>重要：使用正确的语法： <code>name@email.com</code>或<code>"Name" name@email.com</code>。</p> <p>注意：通常，Workfront Fusion会将您在创建连接时输入的电子邮件地址用作发件人地址。 如果输入任何其他电子邮件地址，则在发送邮件时可能会发生错误，因为您的帐户可能无权从不同于您自己的地址发送电子邮件。 E.g. <code>test@mail.com</code>或“<code>John Bush" test@email.com</code>”。</p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -4,9 +4,16 @@ description: 您可以使用Adobe Workfront展示板连接器自动执行Workfro
 author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/0yHy2mMpsOxPH-cphARzE3LmIlAmYLNQTpXxFgb6dvo
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: 2906
 ht-degree: 15%
 
 ---
@@ -105,11 +112,11 @@ Adobe Workfront主板连接器使用以下内容：
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 客户端 ID]<p>（可选）</p></td>
-          <td>输入您的 [!DNL Adobe] [!UICONTROL 客户端 ID]。该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。</td>
+          <td>输入您的 [!DNL Adobe] [!UICONTROL 客户端 ID]。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 客户端密钥]<p>（可选）</p></td>
-          <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
+          <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 身份验证 URL]<p>（可选）</p></td>
@@ -127,7 +134,7 @@ Adobe Workfront主板连接器使用以下内容：
 
 配置Workfront展示板模块时，Workfront Fusion显示以下列出的字段。 除了这些以外，还可能会显示其他Workfront展示板字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -583,11 +590,11 @@ Adobe Workfront主板连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 方法]</td> 
-   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p><p>对于大多数展示板调用，该方法为POST。 </td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p><p>对于大多数展示板调用，该方法为POST。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 标头]</td> 
-   <td> <p>以标准 JSON 对象的形式添加请求标头。这将决定请求的内容类型。</p> <p>例如，<code> { "Content-type":"application/json-stringify()"}</code></p>  </td> 
+   <td> <p>以标准 JSON 对象的形式添加请求标头。 这将决定请求的内容类型。</p> <p>例如，<code> { "Content-type":"application/json-stringify()"}</code></p>  </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 查询字符串]</td> 

@@ -4,22 +4,27 @@ product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: get-started-with-workfront-fusion-2-0
 title: 通过 Adobe Admin Console 向 Adobe Workfront Fusion 添加用户
-description: You can add a user to the Adobe Admin Console and assign them to Adobe Workfront Fusion, or assign an existing user in the Adobe Admin Console to Workfront Fusion.
+description: 您可以将用户添加到Adobe Admin Console并将其分配给Adobe Workfront Fusion，或将Adobe Admin Console中的现有用户分配给Workfront Fusion。
 author: Becky
 feature: Workfront Fusion
 exl-id: 7cb1c1a7-3c7a-459a-818f-d9cefcb9988b
-source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
+TQID: https://experienceleague.adobe.com/jo9dNX5czLlg7Wi4iFBR6FlOM-fmM-i3zoEhh5sgsqc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: 607
 ht-degree: 20%
 
 ---
 
 # 通过 Adobe Admin Console 向 Adobe Workfront Fusion 添加用户
 
-You can add a user to the [!DNL Adobe Admin Console] and assign them to Adobe Workfront Fusion, or assign an existing user in the [!DNL Adobe Admin Console] to Workfront Fusion.
+您可以将用户添加到[!DNL Adobe Admin Console]并将他们分配给Adobe Workfront Fusion，或将[!DNL Adobe Admin Console]中的现有用户分配给Workfront Fusion。
 
-For a video describing Workfront Fusion in the [!DNL Adobe Admin Console], including how to add users, see [[!DNL Fusion] on Adobe IMS](https://video.tv.adobe.com/v/3412464/){target=_blank}.
+有关描述[!DNL Adobe Admin Console]中的Workfront Fusion的视频（包括如何添加用户），请参阅Adobe IMS[&#128279;](https://video.tv.adobe.com/v/3412464/){target=_blank}上的[!DNL Fusion] 。
 
 ## 访问权限要求
 
@@ -53,7 +58,7 @@ For a video describing Workfront Fusion in the [!DNL Adobe Admin Console], inclu
   </tr>
    <tr> 
    <td role="rowheader">访问级别配置</td> 
-   <td>You must be a Product Configuration Administrator of Adobe products for your organization.</td> 
+   <td>您必须是贵组织的Adobe产品的产品配置管理员。</td> 
   </tr>
  </tbody> 
 </table>
@@ -66,45 +71,45 @@ For a video describing Workfront Fusion in the [!DNL Adobe Admin Console], inclu
 
 ## 先决条件
 
-Before using the [!DNL Admin Console] for Workfront, you should receive a receive an email inviting you to the console.
+在使用[!DNL Admin Console] for Workfront之前，您应该会收到一封邀请您加入控制台的电子邮件。
 
-* If you are new to [!DNL Adobe] and you have received an email telling you that you now have administer rights to manage [!DNL Adobe] software and services for your organization, click the button in the email to create an [!DNL Adobe] account and open the [!DNL Admin Console].
+* 如果您是[!DNL Adobe]的新用户，并且已收到一封电子邮件，告知您现在拥有管理贵组织的[!DNL Adobe]软件和服务的管理权限，请单击电子邮件中的按钮以创建[!DNL Adobe]帐户并打开[!DNL Admin Console]。
 
   或
 
-  If you already have an Adobe account, go to the [[!DNL Adobe Admin Console] page](https://adminconsole.adobe.com).
+  如果您已经拥有Adobe帐户，请转到[[!DNL Adobe Admin Console] 页面](https://adminconsole.adobe.com)。
 
 
-## Add a new user to the [!DNL Adobe Admin Console] and Workfront Fusion
+## 向[!DNL Adobe Admin Console]和Workfront Fusion添加新用户
 
-1. From the [[!DNL Adobe Admin Console] page](https://adminconsole.adobe.com/), select the **[!UICONTROL Products]** tab in the top navigation bar, and then select the **Workfront Fusion** product tile.
+1. 从[[!DNL Adobe Admin Console] 页面](https://adminconsole.adobe.com/)中，选择顶部导航栏中的&#x200B;**[!UICONTROL 产品]**&#x200B;选项卡，然后选择&#x200B;**Workfront Fusion**&#x200B;产品拼贴。
 
-   ![Fusion in Admin Console](assets/fusion-product-admin-console.png)
+   Admin Console中的![Fusion](assets/fusion-product-admin-console.png)
 
-1. In the list that displays, select the organization where you want to add a user.
+1. 在显示的列表中，选择要添加用户的组织。
 
-   ![Fusion instance in Admin Console](assets/fusion-instances-admin-console.png)
+   Admin Console中的![Fusion实例](assets/fusion-instances-admin-console.png)
 
-1. In the list that displays, with the **[!UICONTROL Product Profiles]** tab selected, click the name of the Workfront Fusion [!UICONTROL Product Profile] link.
+1. 在显示的列表中，选择&#x200B;**[!UICONTROL 产品配置文件]**&#x200B;选项卡，单击Workfront Fusion [!UICONTROL 产品配置文件]链接的名称。
 
    >[!IMPORTANT]
    >
-   > Do not make any changes to the [!UICONTROL Product Profile] itself.
+   > 不要对[!UICONTROL 产品配置文件]本身进行任何更改。
 
-1. With the **[!UICONTROL Users]** tab selected above the list, click **[!UICONTROL Add User]**.
+1. 在列表上方选择&#x200B;**[!UICONTROL 用户]**&#x200B;选项卡，单击&#x200B;**[!UICONTROL 添加用户]**。
 
-1. In the **[!UICONTROL Add users to this product profile]** box, enter the email address or name of a user you want to add, then select the user in the list that appears.
+1. 在&#x200B;**[!UICONTROL 将用户添加到此产品配置文件]**&#x200B;框中，输入要添加的用户的电子邮件地址或名称，然后在显示的列表中选择该用户。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
-   The user is created in Workfront Fusion.
+   将在Workfront Fusion中创建用户。
 
-1. (Optional) Continue to [Change a user&#39;s access level in Workfront Fusion](#change-a-users-access-level-in-workfront-fusion).
+1. （可选）继续在Workfront Fusion[&#128279;](#change-a-users-access-level-in-workfront-fusion)中更改用户的访问级别。
 
-## Change a user&#39;s access level in Workfront Fusion
+## 在Workfront Fusion中更改用户的访问级别
 
-* [Change a user&#39;s role to Admin](#change-a-users-role-to-admin)
-* [Change a user&#39;s role to Member, Accountant, or App Developer](#change-a-users-role-to-member-accountant-or-app-developer)
+* [将用户的角色更改为管理员](#change-a-users-role-to-admin)
+* [将用户的角色更改为成员、会计或应用程序开发人员](#change-a-users-role-to-member-accountant-or-app-developer)
 
 ### 将用户的角色更改为管理员
 

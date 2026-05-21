@@ -4,10 +4,16 @@ description: 通过Adobe Workfront Fusion HubSpot CRM模块，您可以监视 [!
 author: Becky
 feature: Workfront Fusion
 exl-id: b8a1bbcd-337e-4c92-a1a6-d6d4bab1f440
-source-git-commit: 27ff7374e5e2d6765a1bcbfae9d10fb8a8f77521
+TQID: https://experienceleague.adobe.com/F-jLL4aF0bSUiFpDjJr-DVBU8ZnbqNHKiFzjEjmalxw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '7314'
-ht-degree: 9%
+source-wordcount: 7326
+ht-degree: 10%
 
 ---
 
@@ -86,9 +92,9 @@ HubSpot CRM连接器使用以下对象：
 
 ## [!DNL HubSpot CRM] 模块及其字段
 
-在您配置 [!DNL Hubspot CRM] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Hubspot CRM] 字段。模块中的加粗标题表示必填字段。
+在您配置 [!DNL Hubspot CRM] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Hubspot CRM] 字段。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -1618,7 +1624,7 @@ HubSpot CRM连接器使用以下对象：
 
 
 
-&lt;!—####观察表单提交情况 — 需要找到有效连接>—>
+&lt;！—####关注表单提交工作 — 需要找到有效连接>—>
 
 ### 社交媒体（广播）
 
@@ -2125,11 +2131,11 @@ This action module associates two CRM objects.
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 查询字符串]</td> 
-   <td> <p> 输入请求查询字符串。</p> </td> 
+   <td> <p> 输入请求的查询字符串。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 正文]</td> 
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。<img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"></p> </td> 
   </tr> 
  </tbody> 
 </table>

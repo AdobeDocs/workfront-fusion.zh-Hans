@@ -4,16 +4,22 @@ description: 在Adobe Workfront Fusion方案中，您可以自动执行使用 [!
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: f23a089565c2cfb7d2d1321a7bf67ae14e336af3
+TQID: https://experienceleague.adobe.com/WIVzoQxjp0cEeUgQPWN49Vp-cNreFyaBdQM8yPOvqsM
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2275'
-ht-degree: 30%
+source-wordcount: 2368
+ht-degree: 31%
 
 ---
 
 # [!DNL Adobe Target]模块
 
-在Adobe Workfront Fusion场景中，您可以自动使用[!DNL Adobe Target]的工作流，并将其连接到多个第三方应用程序和服务。 [!DNL Adobe Target]模块允许您创建、读取、更新或删除记录，列出给定类型的所有记录，根据您指定的条件搜索记录，或对[!DNL Adobe Target] API执行自定义API调用。
+在 Adobe Workfront Fusion 场景中，您可以自动化使用 [!DNL Adobe Target] 的工作流，并将其连接到多个第三方应用程序和服务。 [!DNL Adobe Target]模块允许您创建、读取、更新或删除记录，列出给定类型的所有记录，根据您指定的条件搜索记录，或对[!DNL Adobe Target] API执行自定义API调用。
 
 
 如果需要有关创建方案的说明，请参阅[创建方案：项目索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
@@ -179,9 +185,9 @@ Adobe Target连接器使用以下对象：
 
 ## [!DNL Adobe Target] 模块及其字段
 
-在您配置 [!DNL Adobe Target] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Adobe Target] 字段。模块中的加粗标题表示必填字段。
+在您配置 [!DNL Adobe Target] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Adobe Target] 字段。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -771,7 +777,7 @@ Adobe Target连接器使用以下对象：
       <td role="rowheader">
         <p>[!UICONTROL 方法]</p>
       </td>
-   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 标头]</td>
@@ -784,12 +790,12 @@ Adobe Target连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL 查询字符串]  </td>
       <td>
-        <p>输入请求查询字符串。</p>
+        <p>输入请求的查询字符串。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 正文]</td>
-   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注释：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注意：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -947,7 +953,7 @@ Adobe Target连接器使用以下对象：
   <tr>
     <td role="rowheader">[!UICONTROL 限制]</td>
     <td>
-      <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。 将此字段与[!UICONTROL Offset]字段结合使用可将响应分页。</p>
+      <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。 将此字段与[!UICONTROL Offset]字段结合使用可将响应分页。</p>
       <p>例如，要查看响应的第三页，当每个页面有十个响应时，请将[!UICONTROL Offset]设置为20，将[!UICONTROL Maximum number of returned]结果设置为10。</p>
     </td>
   </tr>

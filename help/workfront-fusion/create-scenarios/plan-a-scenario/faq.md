@@ -1,17 +1,20 @@
 ---
-title: 方案规划常见问题解答
+title: 场景规划常见问题解答
 description: 当您开始在Workfront Fusion中创建场景时，本文中的信息可能会很有用。
 author: Becky
 feature: Workfront Fusion
 exl-id: 6a1d672d-0bd7-4a3a-b96d-6d8b4c97522d
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/PQablbYLDlXlY5mc7qMAXMrXnUeeHA6sSc-aMVHa6HY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 1%
+source-wordcount: 554
+ht-degree: 5%
 
 ---
 
-# 方案规划常见问题解答
+# 场景规划常见问题解答
 
 当您开始在Workfront Fusion中创建场景时，本文中的信息可能会很有用。
 
@@ -21,7 +24,7 @@ ht-degree: 1%
 
 场景定义了Adobe Workfront Fusion要执行的一系列步骤。 对于每个方案，您可以指定数据源、要使用的数据以及如何处理数据。 通过Fusion，您可以创建简单或复杂的场景，以便符合组织的用例。
 
-有关方案的详细信息，请参阅[方案概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)。
+有关场景的更多信息，请参阅[场景概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md)。
 
 ## 在一个场景中可以使用多少个模块？
 
@@ -37,7 +40,7 @@ ht-degree: 1%
 
 ### 答案
 
-可以。Workfront Fusion可以接收、保存、转换、转换和加密文件。 Fusion还提供了范围广泛的内置功能，旨在使用户能够有效、创造性地处理文件中包含的数据。
+可以。 Workfront Fusion可以接收、保存、转换、转换和加密文件。 Fusion还提供了范围广泛的内置功能，旨在使用户能够有效、创造性地处理文件中包含的数据。
 
 有关在Fusion中使用文件的详细信息，请参阅[在模块之间映射文件](/help/workfront-fusion/create-scenarios/map-data/map-files.md)。
 
@@ -71,7 +74,7 @@ ht-degree: 1%
 
 连接是指您的Workfront Fusion帐户与要使用的第三方服务之间的链接。 可在编辑场景时创建连接。
 
-有关详细信息，请参阅[连接概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)。
+有关更多信息，请参阅[连接概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)。
 
 ## 什么是聚合？
 

@@ -4,9 +4,14 @@ description: 在Adobe Workfront Fusion方案中，您可以自动使用 [!DNL Ji
 author: Becky
 feature: Workfront Fusion
 exl-id: 92cac080-d8f6-4770-a6a6-8934538c978b
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+TQID: https://experienceleague.adobe.com/MFz4BA1p4lfDWSft169C3GEMRY9vtO2TrkUcg35LPYE
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2466'
+source-wordcount: 2479
 ht-degree: 42%
 
 ---
@@ -122,11 +127,11 @@ Jira连接器使用以下对象：
    >
    >关闭此对话框后，无法再次查看令牌。
 1. 将生成的令牌存储在安全位置。
-1. 继续[在Workfront Fusion [!DNL Jira] 中配置](#configure-the-jira-api-token-in-workfront-fusion)API令牌。
+1. 继续[在Workfront Fusion](#configure-the-jira-api-token-in-workfront-fusion)中配置 [!DNL Jira] API令牌。
 
 #### 在Workfront Fusion中配置[!DNL Jira] API令牌
 
-1. 在Workfront Fusion的任何[!DNL Jira Cloud]模块中，单击&#x200B;**[!UICONTROL 连接]**&#x200B;字段旁边的[!UICONTROL 添加]。
+1. 在Workfront Fusion的任何[!DNL Jira Cloud]模块中，单击[!UICONTROL 连接]字段旁边的&#x200B;**[!UICONTROL 添加]**。
 1. 指定以下信息：
 
    * **环境**
@@ -233,7 +238,7 @@ Jira连接器使用以下对象：
    </table>
 
 1. 单击&#x200B;**[!UICONTROL 继续]**。
-1. 继续[在Workfront Fusion [!DNL Jira Server] 中创建与 [!DNL Jira Data Center] 或](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)的连接
+1. 继续[在Workfront Fusion](#create-a-connection-to-jira-server-or-jira-data-center-in-workfront-fusion)中创建与 [!DNL Jira Server] 或 [!DNL Jira Data Center] 的连接
 
 #### 在Workfront Fusion中创建与[!DNL Jira Server]或[!DNL Jira Data Center]的连接
 
@@ -241,7 +246,7 @@ Jira连接器使用以下对象：
 >
 >使用[!DNL Jira Server]应用连接到[!DNL Jira Server]或[!DNL Jira Data Center]。
 
-1. 在Workfront Fusion的任何[!DNL Jira Server]模块中，单击&#x200B;**[!UICONTROL 连接]**&#x200B;字段旁边的[!UICONTROL 添加]。
+1. 在Workfront Fusion的任何[!DNL Jira Server]模块中，单击[!UICONTROL 连接]字段旁边的&#x200B;**[!UICONTROL 添加]**。
 1. 在[!UICONTROL 创建连接]面板中，填写以下字段：
 
    <table style="table-layout:auto"> 
@@ -266,7 +271,7 @@ Jira连接器使用以下对象：
      </tr> 
      <tr> 
       <td role="rowheader">[!DNL Private Key]</td> 
-      <td>粘贴您在<code>[!DNL jira_privatekey.pcks8]</code>中为<a href="#generate-public-and-private-keys-for-your-jira-connection" class="MCXref xref">连接[!DNL Jira]生成公钥和私钥的</a>文件中的私钥。</td> 
+      <td>粘贴您在<a href="#generate-public-and-private-keys-for-your-jira-connection" class="MCXref xref">中为[!DNL Jira]连接</a>生成公钥和私钥的<code>[!DNL jira_privatekey.pcks8]</code>文件中的私钥。</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!DNL Service URL]</td> 
@@ -279,9 +284,9 @@ Jira连接器使用以下对象：
 
 ## [!DNL Jira Software] 模块及其字段
 
-在您配置 [!DNL Jira Software] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Jira Software] 字段。模块中的加粗标题表示必填字段。
+在您配置 [!DNL Jira Software] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Jira Software] 字段。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -357,7 +362,7 @@ Jira连接器使用以下对象：
 
 此操作模块在Jira中创建新记录。
 
-该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
+该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。 您可以在场景后续的模块中映射这些信息。
 
 在配置此模块时，会显示以下字段。
 
@@ -386,7 +391,7 @@ Jira连接器使用以下对象：
 
 #### [!UICONTROL 自定义 API 调用]
 
-此操作模块允许您向 [!DNL Jira Software] API 发起自定义的已经过身份认证的调用。使用此模块创建其他[!DNL Jira Software]模块无法实现的数据流自动化。
+此操作模块允许您向 [!DNL Jira Software] API 发起自定义的已经过身份认证的调用。 使用此模块创建其他[!DNL Jira Software]模块无法实现的数据流自动化。
 
 在配置此模块时，会显示以下字段。
 
@@ -404,7 +409,7 @@ Jira连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 方法]</td> 
-   td&gt; <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
+   td&gt; <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 标头]</td> 
@@ -428,7 +433,7 @@ Jira连接器使用以下对象：
 
 您需要指定记录的 ID。
 
-该模块会返回记录的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
+该模块会返回记录的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。 您可以在场景后续的模块中映射这些信息。
 
 在配置此模块时，会显示以下字段。
 
@@ -485,7 +490,7 @@ Jira连接器使用以下对象：
 
 您需要指定记录的 ID。
 
-该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
+该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。 您可以在场景后续的模块中映射这些信息。
 
 在配置此模块时，会显示以下字段。
 
@@ -525,7 +530,7 @@ Jira连接器使用以下对象：
 
 您需要指定记录的 ID。
 
-该模块会返回记录的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
+该模块会返回记录的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。 您可以在场景后续的模块中映射这些信息。
 
 在配置此模块时，会显示以下字段。
 
@@ -568,15 +573,15 @@ Jira连接器使用以下对象：
 >
 >这是由于 Jira 端弃用了相关功能导致的。
 >
->如果遇到此错误，可将旧版 Jira 连接器的搜索模块替换为新版连接器的搜索模块。请注意，新版连接器允许您选择所使用的 API 版本。创建连接时请务必选择V3。
+>如果遇到此错误，可将旧版 Jira 连接器的搜索模块替换为新版连接器的搜索模块。 请注意，新版连接器允许您选择所使用的 API 版本。 创建连接时请务必选择V3。
 >
 > 新Jira连接器中的![API版本选项](/help/workfront-fusion/references/apps-and-modules/assets/jira-version-option.png)
 >
 >注意：
 >
->* 仅搜索模块受到影响。目前，Fusion 连接器使用的其他 Jira API 端点不受此弃用影响。
+>* 仅搜索模块受到影响。 目前，Fusion 连接器使用的其他 Jira API 端点不受此弃用影响。
 >
->* 按地区分阶段发布可能会导致行为不一致。Atlassian 正在按地区逐步推出此更改，这意味着部分 Jira Cloud 实例可能仍会暂时支持旧端点。这可能会导致不同环境中的行为不一致。
+>* 按地区分阶段发布可能会导致行为不一致。 Atlassian 正在按地区逐步推出此更改，这意味着部分 Jira Cloud 实例可能仍会暂时支持旧端点。 这可能会导致不同环境中的行为不一致。
 
 #### [!UICONTROL 列出记录]
 

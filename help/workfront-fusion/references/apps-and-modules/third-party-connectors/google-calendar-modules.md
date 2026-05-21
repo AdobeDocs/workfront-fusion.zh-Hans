@@ -4,9 +4,16 @@ description: 在Adobe Workfront Fusion场景中，您可以自动使用Google Ca
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e514204-cd8e-4f30-bbbb-b8fbe48fc670
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/Odm53LiZwpv6l-WOLmsvwAdCG1WeyN3CAJfI38o4lXc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: 2717
 ht-degree: 15%
 
 ---
@@ -86,9 +93,9 @@ Google Calendar连接器使用以下对象：
 
 ## [!DNL Google Calendar] 模块及其字段
 
-在您配置 [!DNL Google Calendar] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Google Calendar] 字段。模块中的加粗标题表示必填字段。
+在您配置 [!DNL Google Calendar] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Google Calendar] 字段。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -104,7 +111,7 @@ Google Calendar连接器使用以下对象：
 
 #### 监控事件
 
-此触发器模块执行在您指定的日历中添加、更新、删除、启动或结束新事件的场景。 该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
+此触发器模块执行在您指定的日历中添加、更新、删除、启动或结束新事件的场景。 该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。 您可以在场景后续的模块中映射这些信息。
 
 在配置此模块时，会显示以下字段。
 
@@ -529,4 +536,4 @@ Google Calendar连接器使用以下对象：
 
    *模式*： `<meta itemprop="eventId/googleCalendar" content="(?<evenitID>.*?)"/>`
 
-   *文本*：从`HTML content`Webhook[!UICONTROL &#x200B; >]自定义mailhook[!UICONTROL 模块输出的]项目。
+   *文本*：从[!UICONTROL Webhook] >[!UICONTROL 自定义mailhook]模块输出的`HTML content`项目。

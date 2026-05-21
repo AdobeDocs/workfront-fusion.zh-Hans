@@ -1,19 +1,25 @@
 ---
 title: Dropbox 模块
-description: 在Adobe Workfront Fusion场景中，您可以自动执行使用Dropbox的工作流，并将其连接到多个第三方应用程序和服务。这允许您在Dropbox中自动执行各种活动，例如监控、搜索、检索、列出、创建和编辑文件和文件夹。
+description: 在Adobe Workfront Fusion场景中，您可以自动使用Dropbox的工作流，并将其连接到多个第三方应用程序和服务。这样，您就可以自动执行各种活动，例如在Dropbox中监控、搜索、检索、列出、创建和编辑文件和文件夹。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 29ce5940-4d71-4719-ab5e-f03c44b28c8c
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/O5O0hXjHDhY2Av6eXrujFgXNF7K--iU55gy38ao770Q
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3292'
+source-wordcount: 3307
 ht-degree: 26%
 
 ---
 
 # [!DNL Dropbox] 模块
 
-在Adobe Workfront Fusion方案中，您可以自动使用[!UICONTROL Dropbox]或[!DNL Dropbox Business]的工作流，还可以将其连接到多个第三方应用程序和服务。这允许您自动执行[!UICONTROL Dropbox]中的文件和文件夹等活动。
+在Adobe Workfront Fusion方案中，您可以自动使用[!UICONTROL Dropbox]或[!DNL Dropbox Business]的工作流，并将其连接到多个第三方应用程序和服务。这样，您就可以在[!UICONTROL Dropbox]中自动执行各种活动，如监视、搜索、检索、列出、创建和编辑文件和文件夹。
 
 有关创建场景的说明，请参阅[创建场景：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)中的相关文章。
 
@@ -87,7 +93,7 @@ Dropbox连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">API 标记</td> 
-   <td><ul><li><p>Dropbox</p><p>v5.3.9</p></li><li><p>Dropbox业务</p><p>v1.0.12</p></li></ul></td> 
+   <td><ul><li><p>Dropbox</p><p>v5.3.9</p></li><li><p>Dropbox Business</p><p>v1.0.12</p></li></ul></td> 
   </tr>
  </tbody> 
  </table>
@@ -138,13 +144,13 @@ Dropbox连接器使用以下对象：
       </tbody>
     </table>
 
-1. 点击&#x200B;**[!UICONTROL 继续]**&#x200B;保存连接并返回模块。## [!DNL Dropbox]模块及其字段
+1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;以保存连接并返回模块。## [!DNL Dropbox]模块及其字段
 
 ## [!DNL Dropbox] 模块及其字段
 
-在您配置 [!DNL Dropbox] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Dropbox] 字段。模块中的加粗标题表示必填字段。
+在您配置 [!DNL Dropbox] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Dropbox] 字段。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -290,7 +296,7 @@ Dropbox连接器使用以下对象：
 此操作模块可检索特定文件的所有文件修订版本（版本历史记录）。\
 指定文件的ID。
 
-该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
+该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。 您可以在场景后续的模块中映射这些信息。
 
 在配置此模块时，会显示以下字段。
 
@@ -477,7 +483,7 @@ Dropbox连接器使用以下对象：
 
 指定文件或文件夹。
 
-该模块会返回记录的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
+该模块会返回记录的 ID 及其关联字段，以及连接可访问的任何自定义字段及其值。 您可以在场景后续的模块中映射这些信息。
 
 在配置此模块时，会显示以下字段。
 
@@ -650,7 +656,7 @@ Dropbox连接器使用以下对象：
 
 #### [!UICONTROL 进行API调用]
 
-此操作模块允许您向 [!DNL Dropbox] API 发起自定义的已经过身份认证的调用。通过这种方式，您可以构建其他 [!DNL Dropbox] 模块无法实现的数据流自动化。
+此操作模块允许您向 [!DNL Dropbox] API 发起自定义的已经过身份认证的调用。 通过这种方式，您可以构建其他 [!DNL Dropbox] 模块无法实现的数据流自动化。
 
 在配置此模块时，会显示以下字段。
 
@@ -668,7 +674,7 @@ Dropbox连接器使用以下对象：
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 方法]</p> </td> 
-   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 标头] </td> 
@@ -676,7 +682,7 @@ Dropbox连接器使用以下对象：
   </tr> 
   <tr> 
    <td>[!UICONTROL 查询字符串]</td> 
-   <td> <p> 输入请求查询字符串。</p> </td> 
+   <td> <p> 输入请求的查询字符串。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 正文] </td> 
@@ -692,7 +698,7 @@ Dropbox连接器使用以下对象：
 
 **示例：**
 
-以下API调用从[!DNL /Text files]帐户的[!DNL Dropbox]文件夹中返回前10个文件：
+以下API调用从[!DNL Dropbox]帐户的[!DNL /Text files]文件夹中返回前10个文件：
 
 URL： `/2/files/list_folder`
 

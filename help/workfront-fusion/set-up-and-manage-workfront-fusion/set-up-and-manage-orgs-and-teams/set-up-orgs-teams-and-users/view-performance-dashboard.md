@@ -1,19 +1,22 @@
 ---
 title: 查看组织的绩效仪表板
-description: Fusion administrators can view a dashboard that shows execution metrics for an organization.
+description: Fusion管理员可以查看显示组织执行度量的功能板。
 author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
-source-git-commit: 6762806f17a0fc55531b647a84901b8ca572a997
+TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: 694
 ht-degree: 7%
 
 ---
 
 # 查看组织的绩效仪表板
 
-The Fusion Performance Dashboard allows you to quickly see which scenarios are running the most, where delays are occurring, and how effectively your worker pools are operating. This provides real-time visibility into execution volumes, queue depth, pool utilization, and scenario-level performance.
+Fusion Performance Dashboard允许您快速查看哪些场景运行得最多、发生延迟以及工作人员池的运行效率。 这提供了执行卷、队列深度、池利用率和方案级性能的实时可见性。
 
 ## 访问权限要求
 
@@ -44,11 +47,11 @@ The Fusion Performance Dashboard allows you to quickly see which scenarios are r
 
 +++
 
-## Performance dashboard components
+## 性能仪表板组件
 
 >[!NOTE]
 >
->Metrics are shown by worker pool. To view a different worker pool, click the Pool field near the upper-left corner of the dashboard, then select the pool you want to view metrics for.
+>指标按工作线程池显示。 要查看其他工作线程池，请单击仪表板左上角附近的池字段，然后选择要查看其指标的池。
 
 <!--
 
@@ -58,18 +61,18 @@ The Fusion Performance Dashboard allows you to quickly see which scenarios are r
 
 -->
 
-In the Fusion performance dashboard, you can see the following metrics.
+在Fusion性能仪表板中，您可以看到以下量度。
 
-* **Executions waiting to be processed**
-This chart shows the number of executions waiting to be processed (also known as the execution backlog) at a given point in time.
+* **个等待处理的执行**
+此图表显示在给定时间点等待处理的执行（也称为执行积压）的数量。
 
-  A high number of executions waiting to be processed may affect performance in your Fusion instance. You will receive a notification if your execution backlog reaches 5000 executions. We recommend identifying responsible scenarios and modifying or disabling them. If the high execution backlog persists, the Fusion team will protect the performance of your Fusion instance by disabling the responsible scenarios.
-* **Pool Utilization**
-This chart shows worker pool utilization over time. If this chart routinely shows worker pool utilization, you may want to assign some scenarios to another pool.
+  等待处理的大量执行可能会影响Fusion实例中的性能。 如果您的执行积压达到5000次执行，您将收到通知。 我们建议确定负责任的方案，并修改或禁用它们。 如果高执行积压持续存在，Fusion团队将通过禁用负责的场景来保护Fusion实例的性能。
+* **池利用率**
+此图表显示一段时间内的工作线程池利用率。 如果此图表定期显示工作线程池的利用率，则您可能希望将某些方案分配给另一个池。
 
-  If a pool is nearing 100% utilization, other resources that use the same pool may be delayed or disrupted. If this occurs, we recommend reassigning a high-usage scenario to another worker pool, or modifying existing scenarios to be less resource intensive.
-* **Executions per scenario**
-This chart displays executions per scenario. Different colors represent different scenarios. When you hover over the chart, a window appears that shows which color is which scenario.
+  如果池的利用率接近100%，则使用同一池的其他资源可能会延迟或中断。 如果出现这种情况，我们建议将高使用率方案重新分配给另一个工作线程池，或者修改现有方案以降低资源密集程度。
+* 每个场景&#x200B;**个执行**
+此图表显示每个方案的执行次数。 不同的颜色代表不同的场景。 当您将鼠标悬停在图表上时，会出现一个窗口，显示哪种颜色是哪种方案。
 
   您可以使用此图表来确定哪些方案可能会导致执行积压或工作线程池利用率高。
 * **执行持续时间**

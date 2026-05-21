@@ -1,59 +1,65 @@
 ---
-title: Microsoft Word Template模块
+title: Microsoft Word 模板模块
 description: 在Adobe Workfront Fusion场景中，您可以自动使用Microsoft Word模板的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion
 exl-id: a5ba5634-226b-4886-a4f1-3a14948c1605
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/oP6roNkIFZJ3kCdRiE1MtmYuNQFRrcNJRPMESXP-2Sw
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 0%
+source-wordcount: 1363
+ht-degree: 13%
 
 ---
 
-# [!DNL Microsoft Word Template]模块
+# [!DNL Microsoft Word Template] 模块
 
-在Adobe Workfront Fusion场景中，您可以自动使用[!DNL Microsoft Word Templates]的工作流，并将其连接到多个第三方应用程序和服务。
+在 Adobe Workfront Fusion 场景中，您可以自动化使用 [!DNL Microsoft Word Templates] 的工作流，并将其连接到多个第三方应用程序和服务。
 
-有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
+有关创建场景的说明，请参阅[创建场景：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)中的相关文章。
 
-有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
+有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的相关文章。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -79,7 +85,7 @@ ht-degree: 0%
 
 例如，您可以使用此[!DNL Microsoft Word]模板：
 
-![之前的](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)Word模板
+![&#128279;](/help/workfront-fusion/references/apps-and-modules/assets/word-template-before-filled-350x62.png)之前的Word模板
 
 要创建此文档，请执行以下操作：
 
@@ -152,7 +158,7 @@ ht-degree: 0%
 > Eduard Salo, 4445552345
 ```
 
-## [!DNL Microsoft Word Template]模块
+## [!DNL Microsoft Word Template] 模块
 
 这些模块不需要连接。
 
@@ -173,10 +179,10 @@ ht-degree: 0%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 要替换的文本的结束分隔符]</p> </td> 
-   <td> <p>输入要标记替换文本结尾的字符。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例：</b></span></span>输入要替换的<code>&#93;&#93;</code> <code>[[replace_me]]</code></p>。 </td> 
+   <td> <p>输入要标记替换文本结尾的字符。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例：</b></span></span>输入要替换的<code>&#93;&#93;</code> <code>[[replace_me]]</code></p>. </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL 来源文件]</td> 
    <td> <p> 从上一个模块中选择源文件，或映射源文件的数据。</p> </td> 
   </tr> 
   <tr> 
@@ -188,7 +194,7 @@ ht-degree: 0%
    <td> <p>选择一个选项以指示您正在使用的数据是来自表单还是原始数据收集（未处理的计算机数据）。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
+   <td role="rowheader">[!UICONTROL 值]</td> 
    <td> <p>这必须是集合数组，其中：</p> 
     <ul> 
      <li>每个收藏集对应于一个数据条目并包含一个项目 <code>entry</code></li> 
@@ -246,7 +252,7 @@ ht-degree: 0%
    <td>启用此选项可在聚合不包含任何捆绑包时停止处理。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source file]</td> 
+   <td role="rowheader">[!UICONTROL 来源文件]</td> 
    <td> <p> 从上一个模块中选择源文件，或映射源文件的数据。</p> </td> 
   </tr> 
   <tr> 
@@ -254,7 +260,7 @@ ht-degree: 0%
    <td>为目标输出文件输入文件名（包括扩展名）。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Values]</td> 
+   <td role="rowheader">[!UICONTROL 值]</td> 
    <td> <p>这必须是集合数组，其中：</p> 
     <ul> 
      <li>每个收藏集对应于一个数据条目并包含一个项目 <code>entry</code></li> 

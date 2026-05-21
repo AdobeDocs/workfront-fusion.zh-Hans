@@ -4,9 +4,14 @@ description: 在 Adobe Workfront Fusion 场景中，您可以自动化使用  [!
 author: Becky
 feature: Workfront Fusion
 exl-id: da417ac7-e532-45f7-86d9-3643b5f9f203
-source-git-commit: 1929bf897e9263ec551e93df776b96f419436715
-workflow-type: ht
-source-wordcount: '2237'
+TQID: https://experienceleague.adobe.com/7slKvK8YZmGtubvR-n5D2jx7EDqh07td3Ow9n01PXo8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 2255
 ht-degree: 100%
 
 ---
@@ -21,7 +26,7 @@ ht-degree: 100%
 
 有关创建场景的说明，请参阅[创建场景：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)中的相关文章。
 
-有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)中的相关文章。
+有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的相关文章。
 
 ## 访问权限要求
 
@@ -118,16 +123,16 @@ Marketo 连接器使用以下内容：
       <tr>
         <td role="rowheader">[!UICONTROL 帐户 / Munchkin ID]</td>
         <td>
-          <p>输入您的 [!DNL Marketo] 帐户或 [!DNL Marketo] [!UICONTROL Munchkin] ID。这是分配给您的帐户的基本 URL 或端点中的唯一部分，您将通过该部分使用 [!UICONTROL REST] API 访问 [!DNL Marketo]。有关如何查找此部分的说明，请参阅 [!DNL Marketo] 文档中的[基本 URL](https://developers.marketo.com/rest-api/base-url/)。</p>
+          <p>输入您的 [!DNL Marketo] 帐户或 [!DNL Marketo] [!UICONTROL Munchkin] ID。 这是分配给您的帐户的基本 URL 或端点中的唯一部分，您将通过该部分使用 [!UICONTROL REST] API 访问 [!DNL Marketo]。 有关如何查找此部分的说明，请参阅 [!DNL Marketo] 文档中的[基本 URL](https://developers.marketo.com/rest-api/base-url/)。</p>
         </td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 客户端 ID]</td>
-        <td>输入您的 Marketo 客户端 ID。有关如何查找此部分的说明，请参阅 [!DNL Marketo] 文档中的[身份验证](https://developers.marketo.com/rest-api/authentication/)。</td>
+        <td>输入您的 Marketo 客户端 ID。 有关如何查找此部分的说明，请参阅 [!DNL Marketo] 文档中的[身份验证](https://developers.marketo.com/rest-api/authentication/)。</td>
       </tr>
       <tr>
         <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的 Marketo 客户端密钥。有关如何查找这些信息的说明，请参阅 [!DNL Marketo] 文档中的[身份验证](https://developers.marketo.com/rest-api/authentication/)。</td>
+        <td>输入您的 Marketo 客户端密钥。 有关如何查找这些信息的说明，请参阅 [!DNL Marketo] 文档中的[身份验证](https://developers.marketo.com/rest-api/authentication/)。</td>
       </tr>
      </tbody>
     </table>
@@ -136,9 +141,9 @@ Marketo 连接器使用以下内容：
 
 ## [!DNL Marketo] 模块及其字段
 
-在您配置 [!DNL Marketo] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Marketo] 字段。模块中的加粗标题表示必填字段。
+在您配置 [!DNL Marketo] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Marketo] 字段。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -187,7 +192,7 @@ Marketo 连接器使用以下内容：
    <td> <p>选择要创建的记录类型。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 活动]</strong> </p> <p>选择您想关注的活动类型。 </p> <p>该模块仅监控新增活动。<br></p> </li> 
-     <li> <p><strong>[!UICONTROL 商机]</strong> </p> <p>在<b>事件类型</b>字段中，选择是否要监控新增记录、更新记录、同时监控新增和更新记录，或监控特定字段更新。如果选择监控特定字段更新，请选择您希望模块监控的字段。</p> </li> 
+     <li> <p><strong>[!UICONTROL 商机]</strong> </p> <p>在<b>事件类型</b>字段中，选择是否要监控新增记录、更新记录、同时监控新增和更新记录，或监控特定字段更新。 如果选择监控特定字段更新，请选择您希望模块监控的字段。</p> </li> 
      <li> <p><strong>[!UICONTROL 项目群]</strong> </p> <p>在<b>事件类型</b>字段中，选择是否要监控新增记录、更新记录或同时监控新增和更新记录。</p> </li> 
     </ul> </td> 
   </tr> 
@@ -217,7 +222,7 @@ Marketo 连接器使用以下内容：
 
 #### [!UICONTROL 在列表中添加商机]
 
-此操作模块会根据商机 ID，将一个或多个商机添加到列表中。您一次最多可以添加 300 个商机。
+此操作模块会根据商机 ID，将一个或多个商机添加到列表中。 您一次最多可以添加 300 个商机。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -233,7 +238,7 @@ Marketo 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 商机 ID]</td> 
-   <td> <p>对于每个要添加到列表中的商机，点击<b>[!UICONTROL 添加]</b>，然后输入或映射该商机的 ID。您最多可以添加 300 个商机，让模块将其加入列表。</p> <p>点击映射切换开关，将您希望添加到列表的现有商机集合进行映射。</p> </td> 
+   <td> <p>对于每个要添加到列表中的商机，点击<b>[!UICONTROL 添加]</b>，然后输入或映射该商机的 ID。 您最多可以添加 300 个商机，让模块将其加入列表。</p> <p>点击映射切换开关，将您希望添加到列表的现有商机集合进行映射。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -324,7 +329,7 @@ Marketo 连接器使用以下内容：
 
 #### [!UICONTROL 自定义 API 调用]
 
-此操作模块允许您向 [!DNL Marketo] API 发起自定义的已经过身份认证的调用。通过这种方式，您可以构建其他 [!DNL Marketo] 模块无法实现的数据流自动化。
+此操作模块允许您向 [!DNL Marketo] API 发起自定义的已经过身份认证的调用。 通过这种方式，您可以构建其他 [!DNL Marketo] 模块无法实现的数据流自动化。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -340,7 +345,7 @@ Marketo 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 方法]</td> 
-   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 请求方法</a>。</p> </td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 标头]</td> 
@@ -401,7 +406,7 @@ Marketo 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 输出]</td> 
-   <td>选择要包含在此模块输出捆绑包中的信息。可用字段取决于您选择的[!UICONTROL 记录类型]。</td> 
+   <td>选择要包含在此模块输出捆绑包中的信息。 可用字段取决于您选择的[!UICONTROL 记录类型]。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL &lt;Object&gt; ID]</td> 
@@ -412,7 +417,7 @@ Marketo 连接器使用以下内容：
 
 #### [!UICONTROL 从列表中移除商机]
 
-此操作模块会根据商机 ID 将一个或多个商机从列表中移除。您一次最多可以移除 300 个商机。
+此操作模块会根据商机 ID 将一个或多个商机从列表中移除。 您一次最多可以移除 300 个商机。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -428,7 +433,7 @@ Marketo 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 商机 ID]</td> 
-   <td> <p>对于每个要从列表中移除的商机，点击<b>[!UICONTROL 添加项目]</b>，然后输入或映射要移除的商机 ID。您最多可以添加 300 个商机以供模块从列表中移除。 </p> <p>点击映射切换开关，将您希望从列表中移除的现有商机集合映射到此字段。</p> </td> 
+   <td> <p>对于每个要从列表中移除的商机，点击<b>[!UICONTROL 添加项目]</b>，然后输入或映射要移除的商机 ID。 您最多可以添加 300 个商机以供模块从列表中移除。 </p> <p>点击映射切换开关，将您希望从列表中移除的现有商机集合映射到此字段。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -451,7 +456,7 @@ Marketo 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 计划日期]</p> </td> 
-   <td>选择您希望该营销活动运行的日期。如果该字段留空，营销活动将在场景开始后五分钟运行。</td> 
+   <td>选择您希望该营销活动运行的日期。 如果该字段留空，营销活动将在场景开始后五分钟运行。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -525,7 +530,7 @@ Marketo 连接器使用以下内容：
    <td> <p>有关将 [!DNL Marketo] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">将 [!DNL Marketo] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 源文件]</td> 
+   <td role="rowheader">[!UICONTROL 来源文件]</td> 
    <td>从上一个模块中选择源文件，或映射源文件的名称和数据。</td> 
   </tr> 
   <tr> 
@@ -571,7 +576,7 @@ Marketo 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 输出]</td> 
-   <td>选择要包含在此模块输出捆绑包中的信息。可用字段取决于您选择的[!UICONTROL 记录类型]。</td> 
+   <td>选择要包含在此模块输出捆绑包中的信息。 可用字段取决于您选择的[!UICONTROL 记录类型]。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 限制]</td> 
@@ -607,7 +612,7 @@ Marketo 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 值]</td> 
-   <td>输入您要搜索的字段值。如果该字段允许搜索多个值，请对每个要搜索的值点击<b>[!UICONTROL 添加项目]</b>，并输入该值。</td> 
+   <td>输入您要搜索的字段值。 如果该字段允许搜索多个值，请对每个要搜索的值点击<b>[!UICONTROL 添加项目]</b>，并输入该值。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 输出]</td> 

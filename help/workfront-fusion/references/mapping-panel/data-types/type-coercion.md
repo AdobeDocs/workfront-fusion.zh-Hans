@@ -1,21 +1,24 @@
 ---
-title: 强制键入
+title: 类型强制转换
 description: 本文档介绍Adobe Workfront Fusion在收到预期和意外数据格式的值时的行为方式。
 author: Becky
 feature: Workfront Fusion
 exl-id: a8bdd36d-c01f-4019-a3ea-fb185101500e
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/rqDQTI-IuOW95TbguHt-F2-4lugdaOfJf-7dcwXk5ZE
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '709'
-ht-degree: 5%
+source-wordcount: 709
+ht-degree: 9%
 
 ---
 
-# 强制键入
+# 类型强制转换
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 您必须具有以下权限才能使用本文中的功能：
 
@@ -56,7 +59,7 @@ ht-degree: 5%
 
 +++
 
-### 强制键入
+### 类型强制转换
 
 本文档介绍Adobe Workfront Fusion在收到预期和意外数据格式的值时的行为方式。
 

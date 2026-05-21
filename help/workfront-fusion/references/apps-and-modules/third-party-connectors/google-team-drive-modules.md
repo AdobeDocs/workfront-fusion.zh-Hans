@@ -1,63 +1,68 @@
 ---
-title: Google Team Drive模块
+title: Google 共享云端硬盘模块
 description: 通过 [!DNL Adobe Workfront Fusion Google Team Drive] 模块，您可以在 [!DNL Google Shared] 驱动器中监视、上传、更新、复制、删除或检索文件和创建文件夹。
 author: Becky
 feature: Workfront Fusion
 exl-id: 95dd9d23-1df9-40da-8fd0-646cc697bfc8
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/NRXOXLNBdwj3Xxf1SiHHyQ-6-DkqYGFexJnyoseVjpk
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 0%
+source-wordcount: 1382
+ht-degree: 24%
 
 ---
 
-# [!DNL Google Team Drive]模块
+# [!DNL Google Team Drive] 模块
 
 Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Shared Drive]中监视、上传、更新、复制、删除或检索文件以及创建文件夹。
 
-要将[!DNL Google Team Drive]与Adobe Workfront Fusion结合使用，必须具有[!DNL Google Workspace]帐户。 如果您没有帐户，则可以在[!DNL Google Workspace]注册站点[[!DNL Google Workspace] 创建一个](https://workspace.google.com/business/signup/welcome)帐户。
+要将[!DNL Google Team Drive]与Adobe Workfront Fusion结合使用，必须具有[!DNL Google Workspace]帐户。 如果您没有帐户，则可以在[[!DNL Google Workspace] 注册站点](https://workspace.google.com/business/signup/welcome)创建一个[!DNL Google Workspace]帐户。
 
-在Adobe Workfront Fusion场景中，您可以自动使用[!DNL Google Team Drive]的工作流，并将其连接到多个第三方应用程序和服务。
+在 Adobe Workfront Fusion 场景中，您可以自动化使用 [!DNL Google Team Drive] 的工作流，并将其连接到多个第三方应用程序和服务。
 
-有关创建方案的说明，请参阅[创建方案：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
+有关创建场景的说明，请参阅[创建场景：文章索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)中的相关文章。
 
-有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
+有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的相关文章。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -65,13 +70,13 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
 
 要使用[!DNL Google Team Drive]模块，您必须具有[!DNL Google Team Drive]。
 
-## [!DNL Google Team Drive]模块及其字段
+## [!DNL Google Team Drive] 模块及其字段
 
-在配置[!DNL Google Team Drive]模块时，Workfront Fusion将显示以下列出的字段。 除此以外，可能还会显示其他[!DNL Google Team Drive]字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在您配置 [!DNL Google Team Drive] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Google Team Drive] 字段。 模块中的加粗标题表示必填字段。
 
-以&#x200B;**bold**&#x200B;显示的模块对话框字段(在Workfront Fusion方案中，此文档文章中为&#x200B;**not**)是必填字段。
+以&#x200B;**bold**&#x200B;显示的模块对话框字段（在Workfront Fusion方案中，此文档文章中为&#x200B;**not**）是必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -86,7 +91,7 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Google Team Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -130,7 +135,7 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
 
 ### 操作
 
-* [[!UICONTROL 上载文件]](#upload-a-file)
+* [[!UICONTROL 上传文件]](#upload-a-file)
 * [[!UICONTROL 更新文件]](#update-a-file)
 * [[!UICONTROL 复制文件]](#copy-a-file)
 * [[!UICONTROL 删除文件]](#delete-a-file)
@@ -139,7 +144,7 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
 * [[!UICONTROL 获取文件列表]](#get-a-file-list)
 * [[!UICONTROL 创建文件夹]](#create-a-folder)
 
-#### [!UICONTROL 上载文件]
+#### [!UICONTROL 上传文件]
 
 将文件上载到指定的共享驱动器。
 
@@ -148,7 +153,7 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Google Team Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -160,7 +165,7 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
    <td> <p>选择共享驱动器中的文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
+   <td> <p>[!UICONTROL 源文件]</p> </td> 
    <td> <p>指定要上载到共享驱动器的文件。</p> <p>映射您要从上一个模块上传的文件(例如，[!UICONTROL HTTP] &gt; [!UICONTROL 获取文件]或[!UICONTROL Dropbox] &gt;[!UICONTROL 获取文件)]，或手动输入文件名和文件数据。</p> </td> 
   </tr> 
   <tr> 
@@ -183,7 +188,7 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Google Team Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -195,11 +200,11 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
    <td> <p>选择共享驱动器中的文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件ID]</td> 
+   <td>[!UICONTROL 文件 ID]</td> 
    <td> <p> 输入（映射）要更新的文件ID。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL Source File]</p> </td> 
+   <td> <p>[!UICONTROL 源文件]</p> </td> 
    <td>从上一个模块中选择源文件，或映射源文件的名称和数据。</td> 
   </tr> 
   <tr> 
@@ -222,7 +227,7 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Google Team Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -234,7 +239,7 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
    <td> <p>选择要将文件复制到的目标文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件ID]</td> 
+   <td>[!UICONTROL 文件 ID]</td> 
    <td> <p> 输入（映射）要复制的文件的ID。</p> </td> 
   </tr> 
   <tr> 
@@ -253,11 +258,11 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Google Team Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件ID]</td> 
+   <td>[!UICONTROL 文件 ID]</td> 
    <td> <p> 输入或映射要删除文件的ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -272,11 +277,11 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Google Team Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件ID]</td> 
+   <td>[!UICONTROL 文件 ID]</td> 
    <td> <p> 输入要移动到垃圾桶的文件的ID，或将其映射到垃圾桶。</p> </td> 
   </tr> 
  </tbody> 
@@ -291,7 +296,7 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Google Team Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -311,7 +316,7 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
    <td> <p>选择您希望将[!DNL Google Drawings]文件转换为的格式。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件ID]</td> 
+   <td>[!UICONTROL 文件 ID]</td> 
    <td> <p> 输入或映射要检索的文件的ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -326,7 +331,7 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Google Team Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -370,7 +375,7 @@ Adobe Workfront Fusion [!DNL Google Team Drive]模块允许您在[!DNL Google Sh
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Connection] </td> 
+   <td>[!UICONTROL 连接] </td> 
    <td> <p>有关将[!DNL Google Team Drive]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 

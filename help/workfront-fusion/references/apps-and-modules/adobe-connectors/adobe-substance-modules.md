@@ -4,10 +4,15 @@ description: 在 Adobe Workfront Fusion 场景中，您可以自动化使用  [!
 author: Becky
 feature: Workfront Fusion
 exl-id: 85e2e832-0347-4270-b360-4a07224f2bcc
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/TpqnvObLgYeYWDIMW8ufHLTculqL9wgLrWhrgHakGyc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 32%
+source-wordcount: 859
+ht-degree: 31%
 
 ---
 
@@ -67,9 +72,9 @@ ht-degree: 32%
 
 ## [!DNL Adobe Substance] 模块及其字段
 
-在您配置 [!DNL Adobe Substance] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Adobe Substance] 字段。模块中字段名称旁边的星号表示必填字段。
+在您配置 [!DNL Adobe Substance] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Adobe Substance] 字段。 模块中字段名称旁边的星号表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 

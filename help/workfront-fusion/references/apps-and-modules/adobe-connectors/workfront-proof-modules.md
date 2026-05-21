@@ -4,10 +4,15 @@ description: 在 Adobe Workfront Fusion 场景中，您可以自动化使用  [!
 author: Becky
 feature: Workfront Fusion, Workfront Proof, Digital Content and Documents
 exl-id: 9e556ae5-e672-4872-9c40-8c8e5f0305be
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/PE6mgMsKjoQLz5JeXx6EN-xYsm-x1DpaIrtHBnRE1PY
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '3106'
-ht-degree: 22%
+source-wordcount: 3117
+ht-degree: 23%
 
 ---
 
@@ -75,7 +80,7 @@ Workfront Proof连接器使用以下对象：
 
 您可以在Workfront Fusion模块内直接创建与[!DNL Workfront Proof]帐户的连接。
 
-1. 在任意Workfront Fusion模块中，单击&#x200B;[!UICONTROL **连接**]&#x200B;字段旁边的[!UICONTROL 添加]
+1. 在任意Workfront Fusion模块中，单击[!UICONTROL 连接]字段旁边的&#x200B;[!UICONTROL **添加**]
 
 2. 填写以下字段：
 
@@ -125,9 +130,9 @@ Workfront Proof连接器使用以下对象：
 
 ## [!DNL Workfront Proof] 模块及其字段
 
-在您配置 [!DNL Workfront Proof] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Workfront Proof] 字段。模块中的加粗标题表示必填字段。
+在您配置 [!DNL Workfront Proof] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Workfront Proof] 字段。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -340,7 +345,7 @@ Workfront Proof连接器使用以下对象：
   </tr> 
   <tr data-mc-conditions=""> 
    <td>[!UICONTROL 将此证明通知收件人]</td> 
-   <td>选择一个选项，以指示您是否希望在创建验证时通知收件人。&gt;</td> 
+   <td>选择一个选项以指示您是否希望在创建验证时通知收件人。&gt;</td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 校对名称]</td> 
@@ -393,7 +398,7 @@ Workfront Proof连接器使用以下对象：
 
 #### [!UICONTROL 自定义 API 调用]
 
-此操作模块允许您向 [!DNL Workfront Proof] API 发起自定义的已经过身份认证的调用。通过这种方式，您可以构建其他 [!DNL Workfront Proof] 模块无法实现的数据流自动化。
+此操作模块允许您向 [!DNL Workfront Proof] API 发起自定义的已经过身份认证的调用。 通过这种方式，您可以构建其他 [!DNL Workfront Proof] 模块无法实现的数据流自动化。
 
 模块会返回状态代码、标题和正文。 您可以在场景后续的模块中映射这些信息。
 
@@ -433,7 +438,7 @@ Workfront Proof连接器使用以下对象：
 
 您指定校样的ID。
 
-模块会返回用于创建验证的源文件的内容。您可以在场景的后续模块中映射此信息。
+模块会返回用于创建验证的源文件的内容。您可以在场景后续的模块中映射这些信息。
 
 您必须具有足够的权限才能访问[!DNL Workfront Proof]中的记录以检索此信息。
 
@@ -531,7 +536,7 @@ Workfront Proof连接器使用以下对象：
 
 您可以指定校样的ID和记录类型以及要包含在输出中的字段。
 
-该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。您可以在场景后续的模块中映射这些信息。
+该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。 您可以在场景后续的模块中映射这些信息。
 
 您必须具有足够的权限才能访问[!DNL Workfront Proof]中的记录以检索此信息。
 
@@ -618,7 +623,7 @@ Workfront Proof连接器使用以下对象：
 
 #### [!UICONTROL 上载文件]
 
-此操作模块上传文件以便与[!UICONTROL 中的]创建校对[!DNL Workfront Proof]模块一起使用。
+此操作模块上传文件以便与[!DNL Workfront Proof]中的[!UICONTROL 创建校对]模块一起使用。
 
 模块会返回已上传文件的哈希ID。 您可以在场景后续的模块中映射这些信息。
 
@@ -671,7 +676,7 @@ Workfront Proof连接器使用以下对象：
 
 此搜索模块在[!DNL Workfront Proof]中查找与您指定的搜索查询匹配的对象中的记录。
 
-如果正在搜索验证，模块将返回验证的ID。 如果正在搜索收件人，则它会返回收件人的用户ID、电子邮件、名称、位置和电子邮件别名。您可以将此信息映射到场景中的后续模块。
+如果正在搜索验证，模块将返回验证的ID。 或者，如果在搜索收件人，它会返回收件人的用户ID、电子邮件、名称、位置和电子邮件别名。您可以在场景后续的模块中映射这些信息。
 
 您必须具有足够的权限才能访问[!DNL Workfront Proof]中的记录以检索此信息。
 

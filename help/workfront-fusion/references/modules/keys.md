@@ -4,16 +4,19 @@ description: Adobe Workfront Fusion中的密钥链将帮助您管理公钥和私
 author: Becky
 feature: Workfront Fusion
 exl-id: b92e54ed-fa03-4af7-be7b-436907b2bff9
-source-git-commit: 3ae274720ea2d7e4ee823a8467b750ad6f4d0c52
+TQID: https://experienceleague.adobe.com/EV5p7TwCCWVwujv8x2r5MxTc1sZMEhTJey8Xodp5HTA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: 324
 ht-degree: 49%
 
 ---
 
 # 密钥
 
-公钥和私钥用于加密和解密数据。公钥可以公开分发，任何拥有公钥的人都可以对数据进行加密，但只有私钥才能解密这些数据。同样，拥有私钥的用户也可以加密数据，而任何拥有公钥的人都可以解密。在“密钥”区域，您可以查看并管理团队拥有的密钥。
+公钥和私钥用于加密和解密数据。 公钥可以公开分发，任何拥有公钥的人都可以对数据进行加密，但只有私钥才能解密这些数据。 同样，拥有私钥的用户也可以加密数据，而任何拥有公钥的人都可以解密。 在“密钥”区域，您可以查看并管理团队拥有的密钥。
 
 ## 访问权限要求
 

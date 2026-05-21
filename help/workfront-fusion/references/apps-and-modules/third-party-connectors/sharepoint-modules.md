@@ -4,9 +4,17 @@ description: 在Adobe Workfront Fusion场景中，您可以自动使用Microsoft
 author: Becky
 feature: Workfront Fusion
 exl-id: 1a09aa86-5e0e-4347-b4cf-2b0a95e5b049
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/WmECfdPt-a3l2-WT9LMX2HB-7-p-BLIO4F2i3OAc7D0
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4276'
+source-wordcount: 4303
 ht-degree: 13%
 
 ---
@@ -200,7 +208,7 @@ SharePoint连接器使用以下对象：
 
 配置Microsoft SharePoint Online模块时，Workfront Fusion会显示以下列出的字段。 除了这些以外，还可能会显示其他Microsoft SharePoint Online字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -339,7 +347,7 @@ SharePoint连接器使用以下对象：
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点、驱动器和文件                ID]</td> 
+   <td role="rowheader">[!UICONTROL 输入站点、驱动器和文件ID]</td> 
    <td> <p>选择您希望如何标识要获取的文件位置。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>为要检索的文件夹输入或映射<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 列表ID]</strong>和<strong>[!UICONTROL 文件夹路径]</strong>。</p> </li> 
@@ -362,7 +370,7 @@ SharePoint连接器使用以下对象：
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点、驱动器和文件                ID]</td> 
+   <td role="rowheader">[!UICONTROL 输入站点、驱动器和文件ID]</td> 
    <td> <p>选择您希望如何标识要获取的文件位置。</p> 
     <ul> 
      <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>为要检索的文件夹或文件输入或映射<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 列表ID]</strong>和<strong>[!UICONTROL 文件夹或项ID]</strong>。</p> </li> 
@@ -782,7 +790,7 @@ SharePoint连接器使用以下对象：
 
 >[!NOTE]
 >
->`beta`中[!DNL Microsoft Graph]版本的API可能会发生更改。 不支持在生产应用程序中使用这些API。
+>[!DNL Microsoft Graph]中`beta`版本的API可能会发生更改。 不支持在生产应用程序中使用这些API。
 
 * [获取页面](#get-a-page)
 * [列表页面](#list-pages)
@@ -987,15 +995,15 @@ SharePoint连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>输入相对于 <code>https://graph.microsoft.com</code> 的路径。示例：<code> /beta/sites</code></p> </td> 
+   <td> <p>输入相对于 <code>https://graph.microsoft.com</code> 的路径。 示例：<code> /beta/sites</code></p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 方法]</p> </td> 
-   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 标头]</td> 
-   <td> <p>以标准 JSON 对象的形式添加请求标头。例如：<code>{"Content-type":"application/json"}</code>。Workfront Fusion会为您添加授权标头。</p> </td> 
+   <td> <p>以标准 JSON 对象的形式添加请求标头。 例如：<code>{"Content-type":"application/json"}</code>。 Workfront Fusion会为您添加授权标头。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 查询字符串]</td> 

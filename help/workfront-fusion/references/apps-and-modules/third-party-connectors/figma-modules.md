@@ -1,13 +1,19 @@
 ---
-title: 图形模块
+title: Figma 模块
 description: 使用Adobe Workfront Fusion Figma模块，您可以检索注释、文件、文件版本或项目的列表。 您还可以向Figma API发布评论或进行调用。
 author: Becky
 feature: Workfront Fusion
 exl-id: 1220460b-1957-4dfc-b7c1-4c97b36ea061
-source-git-commit: 545bc38a619c44dd39bb746d751775f63e7aa16d
+TQID: https://experienceleague.adobe.com/sr5gzukvb4qLZHn0lszB15dVogIfa-VrLwqEAWd69oA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2638'
-ht-degree: 14%
+source-wordcount: 2643
+ht-degree: 19%
 
 ---
 
@@ -17,7 +23,7 @@ ht-degree: 14%
 
 如果需要有关创建方案的说明，请参阅[创建方案：项目索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
 
-有关模块的信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的文章。
+有关模块的详细信息，请参阅[模块：文章索引](/help/workfront-fusion/references/modules/modules-toc.md)下的相关文章。
 
 ## 访问权限要求
 
@@ -39,7 +45,7 @@ ht-degree: 14%
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
    <p>基于操作：不需要 Workfront Fusion 许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的 Workfront Fusion </p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
@@ -59,7 +65,7 @@ ht-degree: 14%
 
 ## 先决条件
 
-要使用[!DNL Figma]模块，您必须具有[!DNL Figma]帐户。
+要使用 [!DNL Figma] 模块，您必须拥有一个 [!DNL Figma] 帐户。
 
 ## 图API信息
 
@@ -70,7 +76,7 @@ Figma连接器使用以下对象：
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">基础 URL</td> 
+   <td role="rowheader">基本 URL</td> 
    <td> https://api.figma.com/v1</td> 
   </tr> 
   <tr> 
@@ -140,9 +146,9 @@ Figma连接器使用以下对象：
 
 ## [!DNL Figma] 模块及其字段
 
-在您配置 [!DNL Figma] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Figma] 字段。模块中的加粗标题表示必填字段。
+在您配置 [!DNL Figma] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Figma] 字段。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -178,7 +184,7 @@ Figma连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 文件ID]</td>
+      <td role="rowheader">[!UICONTROL 文件 ID]</td>
       <td>输入或映射要添加或删除注释的文件的文件ID。 </td>
     </tr>
     <tr>
@@ -201,7 +207,7 @@ Figma连接器使用以下对象：
       <td> <p>有关将[!DNL Figma]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">创建与Figma的连接</a>。</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 文件ID]</td>
+      <td role="rowheader">[!UICONTROL 文件 ID]</td>
       <td>
         <p>输入或映射要为其检索注释的文件的文件ID。 </p>
         <ul>
@@ -235,7 +241,7 @@ Figma连接器使用以下对象：
       <td> <p>有关将[!DNL Figma]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">创建与Figma的连接</a>。</p>
     </tr>
     <tr>
-      <td  role="rowheader">[!UICONTROL 文件ID]</td>
+      <td  role="rowheader">[!UICONTROL 文件 ID]</td>
       <td>
         <p>输入或映射要向其发布注释的文件的文件ID。 </p>
         <ul>
@@ -250,7 +256,7 @@ Figma连接器使用以下对象：
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL Comment]</td>
-      <td>输入注释的文本。</td>
+      <td>输入注释文本。</td>
     </tr>
   </tbody>
 </table>
@@ -264,7 +270,7 @@ Figma连接器使用以下对象：
 
 * [列出项目文件](#list-project-files)
 
-* [列出项目 &#x200B;](#list-projects)
+* [列出项目](#list-projects)
 
 
 #### [!UICONTROL 获取文件或图像]
@@ -502,7 +508,7 @@ Figma连接器使用以下对象：
       <td role="rowheader">[!UICONTROL 连接]</td>
       <td> <p>有关将[!DNL Figma]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">创建与Figma的连接</a>。</p>
     <tr>
-      <td role="rowheader">[!UICONTROL 文件ID]</td>
+      <td role="rowheader">[!UICONTROL 文件 ID]</td>
       <td>
         <p>输入或映射要检索其版本历史记录的文件的文件ID。 </p>
         <ul>
@@ -517,7 +523,7 @@ Figma连接器使用以下对象：
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 返回的最大文件数]</td>
-      <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td>
+      <td>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</td>
     </tr>
   </tbody>
 </table>
@@ -535,7 +541,7 @@ Figma连接器使用以下对象：
       <td> <p>有关将[!DNL Figma]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-figma" class="MCXref xref" data-mc-variable-override="">创建与Figma的连接</a>。</p>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 文件ID]</td>
+      <td role="rowheader">[!UICONTROL 文件 ID]</td>
       <td>
         <p>输入或映射要为其检索文件的项目的项目ID。 </p>
         <ul>
@@ -547,7 +553,7 @@ Figma连接器使用以下对象：
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 返回的最大文件数]</td>
-      <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td>
+      <td>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</td>
     </tr>
   </tbody>
 </table>
@@ -570,7 +576,7 @@ Figma连接器使用以下对象：
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 返回项目的最大数量]</td>
-      <td>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</td>
+      <td>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</td>
     </tr>
   </tbody>
 </table>
@@ -630,7 +636,7 @@ Figma连接器使用以下对象：
 
 * [进行API调用](#make-an-api-call)
 
-* [观看活动](#watch-events)
+* [监控事件](#watch-events)
 
 
 #### [!UICONTROL 进行API调用]
@@ -648,13 +654,13 @@ Figma连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL URL]</td>
       <td>
-        <p>输入相对于<code>https://api.figma.com/v1/</code>的路径。</p>
+        <p>输入相对于 <code>https://api.figma.com/v1/</code> 的路径。</p>
         <p>例如： <code>[!DNL files/7179110/comments]</code></p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 方法]</td>
-      <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td>
+      <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 标头]</td>
@@ -667,13 +673,13 @@ Figma连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL 查询字符串]</td>
       <td>
-        <p>以标准JSON对象的形式添加API调用的查询。</p>
+        <p>以标准 JSON 对象的形式添加 API 调用的查询。</p>
         <p>例如： <code>{"name":"something-urgent"}</code></p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 正文]</td>
-   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注释：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注意：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>

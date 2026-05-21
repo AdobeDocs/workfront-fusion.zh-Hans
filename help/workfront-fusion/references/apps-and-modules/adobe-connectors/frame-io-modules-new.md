@@ -4,10 +4,16 @@ description: ' [!DNL Adobe Workfront Fusion Frame].io modules enable you to moni
 author: Becky
 feature: Workfront Fusion
 exl-id: 16d32ebd-1807-495e-8aaf-27346056ec71
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/aqE-HRALPymeQ8S3v6W1DGXOKmWIBCCWETigPp232jA
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '4539'
-ht-degree: 100%
+source-wordcount: 4588
+ht-degree: 99%
 
 ---
 
@@ -15,7 +21,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->本文介绍新版 Frame.io 连接器。此连接器用于连接到 Frame.io 版本 4。
+>本文介绍新版 Frame.io 连接器。 此连接器用于连接到 Frame.io 版本 4。
 >
 >有关旧版 Frame.io 连接器的使用说明，请参阅 [Frame.io 旧版连接器](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)。
 
@@ -138,7 +144,7 @@ Frame.io 连接器使用以下内容：
 
    或
 
-   在 Adobe Developer Console 中创建新项目。有关操作步骤，请参阅[创建空白项目](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty)。
+   在 Adobe Developer Console 中创建新项目。 有关操作步骤，请参阅[创建空白项目](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty)。
 
 1. 在“项目”概述页面或“开始使用”新项目页面，点击&#x200B;**添加 API**。
 1. 在打开的页面中找到并点击 **Frame.io API**。
@@ -172,7 +178,7 @@ Frame.io 连接器使用以下内容：
 
 >[!NOTE]
 >
-> 建议在开始在 Adobe Workfront Fusion 中配置连接时保持此窗口打开。您可以从此页面复制客户端 ID，并获取并复制客户端密钥，然后粘贴到连接字段中。
+> 建议在开始在 Adobe Workfront Fusion 中配置连接时保持此窗口打开。 您可以从此页面复制客户端 ID，并获取并复制客户端密钥，然后粘贴到连接字段中。
 
 
 #### 配置用户身份验证连接
@@ -202,11 +208,11 @@ Frame.io 连接器使用以下内容：
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 客户端 ID]</td>
-          <td>输入您的 [!DNL Adobe] [!UICONTROL 客户端 ID]。该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。<p>有关创建凭据的说明，请参阅本文中的<a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">在 Adobe Developer Console 中创建用户凭据</a>。</p></td>
+          <td>输入您的 [!DNL Adobe] [!UICONTROL 客户端 ID]。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。<p>有关创建凭据的说明，请参阅本文中的<a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">在 Adobe Developer Console 中创建用户凭据</a>。</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-          <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。<p>有关创建凭据的说明，请参阅本文中的<a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">在 Adobe Developer Console 中创建用户凭据</a>。</p>
+          <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。<p>有关创建凭据的说明，请参阅本文中的<a href="#create-user-credentials-in-the-adobe-developer-console" class="MCXref xref">在 Adobe Developer Console 中创建用户凭据</a>。</p>
         </tr>
        </tbody>
     </table>
@@ -232,12 +238,12 @@ Frame.io 连接器使用以下内容：
 
    或
 
-   在 Adobe Developer Console 中创建新项目。有关操作步骤，请参阅[创建空白项目](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty)。
+   在 Adobe Developer Console 中创建新项目。 有关操作步骤，请参阅[创建空白项目](https://developer.adobe.com/developer-console/docs/guides/projects/projects-empty)。
 
 1. 在“项目”概述页面或“开始使用”新项目页面，点击&#x200B;**添加 API**。
 1. 在打开的页面中找到并点击 **Frame.io API**。
 1. 在“选择身份验证类型”页面，选择&#x200B;**服务器到服务器身份验证**，然后点击&#x200B;**下一步**。
-1. 输入此凭据的名称。此名称将用于在 Adobe Admin Console 的 API 凭据区域中识别该凭据。
+1. 输入此凭据的名称。 此名称将用于在 Adobe Admin Console 的 API 凭据区域中识别该凭据。
 1. 单击&#x200B;**下一步**。
 1. 在“选择产品轮廓”页面，选择包含您要连接的 Frame.io 帐户的产品轮廓。
 1. 单击&#x200B;**保存配置的 API**。
@@ -247,7 +253,7 @@ Frame.io 连接器使用以下内容：
 
 >[!NOTE]
 >
-> 建议在开始在 Adobe Workfront Fusion 中配置连接时保持此窗口打开。您可以从此页面复制客户端 ID，并获取并复制客户端密钥，然后粘贴到连接字段中。
+> 建议在开始在 Adobe Workfront Fusion 中配置连接时保持此窗口打开。 您可以从此页面复制客户端 ID，并获取并复制客户端密钥，然后粘贴到连接字段中。
 
 
 #### 配置服务器到服务器连接
@@ -276,11 +282,11 @@ Frame.io 连接器使用以下内容：
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 客户端 ID]</td>
-          <td>输入您的 [!DNL Adobe] [!UICONTROL 客户端 ID]。该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。<p>有关创建凭据的说明，请参阅本文中的<a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">在 Adobe Developer Console 中创建服务器到服务器凭据</a>。</p></td>
+          <td>输入您的 [!DNL Adobe] [!UICONTROL 客户端 ID]。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。<p>有关创建凭据的说明，请参阅本文中的<a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">在 Adobe Developer Console 中创建服务器到服务器凭据</a>。</p></td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-          <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。<p>有关创建凭据的说明，请参阅本文中的<a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">在 Adobe Developer Console 中创建服务器到服务器凭据</a>。</p>
+          <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。<p>有关创建凭据的说明，请参阅本文中的<a href="#create-server-to-server-credentials-in-the-adobe-developer-console" class="MCXref xref">在 Adobe Developer Console 中创建服务器到服务器凭据</a>。</p>
         </tr>
        </tbody>
     </table>
@@ -291,9 +297,9 @@ Frame.io 连接器使用以下内容：
 
 ## [!DNL Frame.io] 模块及其字段
 
-在您配置 [!DNL Frame.io] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Frame.io] 字段。模块中的加粗标题表示必填字段。
+在您配置 [!DNL Frame.io] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Frame.io] 字段。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -317,7 +323,7 @@ Frame.io 连接器使用以下内容：
 
 #### [!UICONTROL 创建资源] <!--different for v4-->
 
-此操作模块用于创建一个新的资产。您可以上传本地文件，或提供远程文件的 URL 来创建该资产。
+此操作模块用于创建一个新的资产。 您可以上传本地文件，或提供远程文件的 URL 来创建该资产。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -362,7 +368,7 @@ Frame.io 连接器使用以下内容：
    <td> <p>如果从远程文件创建资产，请输入要上传文件的 URL。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 源文件]</td> 
+   <td>[!UICONTROL 来源文件]</td> 
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称。</p> </td> 
   </tr> 
   <!--
@@ -810,7 +816,7 @@ Frame.io 连接器使用以下内容：
 
 * [创建项目](#create-a-project)
 * [邀请用户加入 Frame.io 项目](#invite-users-to-frameio-project)
-* [列出项目 ](#list-projects)
+* [列出项目](#list-projects)
 
 #### 创建项目
 
@@ -871,7 +877,7 @@ Frame.io 连接器使用以下内容：
  </tbody> 
 </table>
 
-#### [!UICONTROL 列出项目 ]
+#### [!UICONTROL 列出项目 &#x200B;]
 
 此搜索模块会检索指定团队的所有项目。
 
@@ -893,7 +899,8 @@ Frame.io 连接器使用以下内容：
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL 返回项目的最大数量] </td> 
-   <td> <p>输入或映射模块在每次场景执行周期中应返回的最大项目数量。</p> </td> 
+   <td> <p>输入或映射最大项目数
+   您希望模块在每个场景执行周期中返回。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1024,7 +1031,8 @@ Frame.io 连接器使用以下内容：
   </tr> 
    <tr> 
    <td role="rowheader">[!UICONTROL 返回工作区的最大数量] </td> 
-   <td> <p>输入或映射模块在每次场景执行周期中应返回的工作区最大数量。</p> </td> 
+   <td> <p>输入或映射最大工作区数
+   您希望模块在每个场景执行周期中返回。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1084,7 +1092,7 @@ Frame.io 连接器使用以下内容：
   </tr> 
    <tr> 
    <td role="rowheader">字段定义 ID </td> 
-   <td> <p>输入或映射要删除字段的 ID。您可以通过“列出帐户级字段”模块查找字段 ID。</p> </td> 
+   <td> <p>输入或映射要删除字段的 ID。 您可以通过“列出帐户级字段”模块查找字段 ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1157,7 +1165,7 @@ Frame.io 连接器使用以下内容：
   </tr> 
    <tr> 
    <td role="rowheader">字段定义 ID </td> 
-   <td> <p>输入或映射要更新字段的 ID。您可以通过“列出帐户级字段”模块查找字段 ID。</p> </td> 
+   <td> <p>输入或映射要更新字段的 ID。 您可以通过“列出帐户级字段”模块查找字段 ID。</p> </td> 
   </tr> 
    <tr> 
    <td role="rowheader">字段类型 </td> 
@@ -1201,7 +1209,7 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 值] </td> 
-   <td> <p>对于每个要更新的元数据字段，点击<b>添加项目</b>，并输入或映射字段定义的 ID 以及要写入该字段的值。“文件 ID”字段中指定的所有文件都会更新为该字段值。</p> </td> 
+   <td> <p>对于每个要更新的元数据字段，点击<b>添加项目</b>，并输入或映射字段定义的 ID 以及要写入该字段的值。 “文件 ID”字段中指定的所有文件都会更新为该字段值。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -1227,11 +1235,11 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL URL]</p> </td> 
-   <td> <p>输入相对于 <code>https://api.frame.io</code> 的路径。示例： <code> /v4/me</code></p> <p>注意：有关可用端点列表，请参阅 [!DNL Frame.io] API 参考文档。</p> </td> 
+   <td> <p>输入相对于 <code>https://api.frame.io</code> 的路径。 示例： <code> /v4/me</code></p> <p>注意：有关可用端点列表，请参阅 [!DNL Frame.io] API 参考文档。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 方法]</p> </td> 
-   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 请求方法</a>。</p> </td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 请求方法</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 标头]</td> 
@@ -1239,7 +1247,7 @@ Frame.io 连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 查询字符串] </td> 
-   <td> <p>输入请求的查询字符串。对于向查询字符串中添加的每一个参数，点击<b>[!UICONTROL 添加项目]</b>并输入字段名称和对应的值。</p> </td> 
+   <td> <p>输入请求的查询字符串。 对于向查询字符串中添加的每一个参数，点击<b>[!UICONTROL 添加项目]</b>并输入字段名称和对应的值。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 正文]</td> 

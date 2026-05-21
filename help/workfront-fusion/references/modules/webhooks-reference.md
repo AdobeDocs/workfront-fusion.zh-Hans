@@ -4,9 +4,12 @@ description: 许多服务都提供Webhook，以便在服务发生特定更改时
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-source-git-commit: 45efeecd1758e302f57498bab842594800a84c1d
+TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: 1272
 ht-degree: 10%
 
 ---
@@ -32,7 +35,7 @@ ht-degree: 10%
 
 有关Workfront Fusion中Webhook的视频介绍，请参阅：
 
-* [Webhook简介](https://video.tv.adobe.com/v/3427025/){target=_blank}
+* [Webhooks简介](https://video.tv.adobe.com/v/3427025/){target=_blank}
 * [中间Webhook](https://video.tv.adobe.com/v/3427030/){target=_blank}
 
 ## 访问权限要求
@@ -139,7 +142,7 @@ ht-degree: 10%
 
 ### Webhook负载
 
-Workfront Fusion 会将 Webhook 的负载存储 30 天。创建webhook有效负载超过30天后对其进行访问会导致错误[!UICONTROL `Failed to read file from storage.`]
+Workfront Fusion 会将 Webhook 的负载存储 30 天。 创建webhook有效负载超过30天后对其进行访问会导致错误[!UICONTROL `Failed to read file from storage.`]
 
 ### 错误处理
 
