@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 570a09fc-01a9-4952-8a2b-8bfdd86d0bd8
 TQID: https://experienceleague.adobe.com/-HytP4gfrhiiSn-dg5ndg1YC6NTMC-NURYzSFgO5kIo
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 309
@@ -70,15 +71,15 @@ ht-degree: 31%
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">'[！UICONTROL Warning in scenario run]'</td> 
+      <td role="rowheader">'[!UICONTROL Warning in scenario run]'</td> 
       <td> <p>在场景运行中出现警告时收到电子邮件</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL场景运行错误]</td> 
+      <td role="rowheader">[!UICONTROL 场景运行错误]</td> 
       <td>在场景运行中发生错误时收到电子邮件。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[！UICONTROL方案停用]</p> </td> 
+      <td role="rowheader"> <p>[!UICONTROL 方案停用]</p> </td> 
       <td><p>在场景停用时收到电子邮件。</p><p>在某些情况下，场景可能会被Workfront Fusion工程团队停用，因为场景会导致性能或其他问题。 在这些情况下，您不会在Workfront Fusion中收到通知。 </p></td>
 
 </tr>

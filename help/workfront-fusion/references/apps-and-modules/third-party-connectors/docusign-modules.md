@@ -6,8 +6,10 @@ draft: Probably
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 94a823a6-3c70-42a1-b6cf-298591dbca15
 TQID: https://experienceleague.adobe.com/uzyMYKqpIGORM1QDNEkkPUumYtLdgTVD7s04At0fNzM
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2252
@@ -104,7 +106,7 @@ DocuSign连接器使用以下内容：
       <td>选择连接服务帐户还是个人帐户。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL帐户类型]</td> 
+      <td role="rowheader">[!UICONTROL 帐户类型]</td> 
       <td>选择要连接的帐户是生产帐户还是演示帐户。</td> 
      </tr> 
     </tbody> 
@@ -138,18 +140,18 @@ DocuSign连接器使用以下内容：
    <td> <p>有关将[!DNL DocuSign]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">将Docusign连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL帐户] </td> 
+   <td role="rowheader">[!UICONTROL 帐户] </td> 
    <td> <p>选择包含要监视的记录的帐户。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL事件类型]</td> 
+   <td role="rowheader">[!UICONTROL 事件类型]</td> 
    <td> <p> 选择要监视的事件类型。</p> 
     <ul> 
-     <li>[！UICONTROL文档已完成]</li> 
-     <li>[！UICONTROL文档已拒绝]</li> 
-     <li>[！UICONTROL文档已发送]</li> 
-     <li>[！UICONTROL文档已签名]</li> 
-     <li>[！UICONTROL收件箱中的新文档]</li> 
+     <li>[!UICONTROL 文档已完成]</li> 
+     <li>[!UICONTROL 文档已拒绝]</li> 
+     <li>[!UICONTROL 文档已发送]</li> 
+     <li>[!UICONTROL 文档已签名]</li> 
+     <li>[!UICONTROL 收件箱中的新文档]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -188,23 +190,23 @@ DocuSign连接器使用以下内容：
    <td> <p>有关将 [!DNL DocuSign] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">将 [!DNL DocuSign] 连接到 Workfront Fusion</a>。</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL帐户] </td> 
+   <td role="rowheader">[!UICONTROL 帐户] </td> 
    <td> <p>选择包含要添加自定义字段的文档的帐户。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL信封ID]</td> 
+   <td role="rowheader">[!UICONTROL 信封ID]</td> 
    <td> <p> 输入或映射包含要添加自定义字段的文档的信封的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL字段名称]</td> 
+   <td role="rowheader">[!UICONTROL 字段名称]</td> 
    <td>为要添加的新字段输入或映射名称。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL必填]</td> 
+   <td role="rowheader">[!UICONTROL 必填]</td> 
    <td>如果您希望添加的字段为必填字段，请启用此选项。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL显示字段]</td> 
+   <td role="rowheader">[!UICONTROL 显示字段]</td> 
    <td>如果您希望字段可见，请启用此选项。</td> 
   </tr> 
   <tr> 
@@ -227,27 +229,27 @@ DocuSign连接器使用以下内容：
    <td> <p>有关将DocuSign帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions="">
-    <td>[！UICONTROL帐户] </td>
+    <td>[!UICONTROL 帐户] </td>
    <td> <p>选择包含要添加收件人的信封的帐户。</p> </td> 
   </tr> 
   <tr> 
-    <td>[！UICONTROL信封ID]</td>
+    <td>[!UICONTROL 信封ID]</td>
     <td>选择或映射要添加收件人的信封的ID。</td>
   </tr> 
   <tr data-mc-conditions="">
-    <td role="rowheader">[！UICONTROL收件人类型]</td>
+    <td role="rowheader">[!UICONTROL 收件人类型]</td>
    <td> <p> 选择要添加到信封中的收件人类型。</p> 
     <ul> 
-     <li> <p>[！UICONTROL Agent]</p> </li> 
-     <li> <p>[！UICONTROL Carbon copy]</p> </li> 
-     <li> <p>[！UICONTROL认证交付]</p> </li> 
-     <li> <p>[！UICONTROL现场签名者]</p> </li> 
-     <li> <p>[！UICONTROL Intermediate]</p> </li> 
-     <li> <p>[！UICONTROL签名者]</p> </li> 
+     <li> <p>[!UICONTROL Agent]</p> </li> 
+     <li> <p>[!UICONTROL Carbon copy]</p> </li> 
+     <li> <p>[!UICONTROL 认证交付]</p> </li> 
+     <li> <p>[!UICONTROL 现场签名者]</p> </li> 
+     <li> <p>[!UICONTROL Intermediate]</p> </li> 
+     <li> <p>[!UICONTROL 签名者]</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-    <td>[！UICONTROL电子邮件]</td>
+    <td>[!UICONTROL 电子邮件]</td>
    <td> <p>输入或映射要添加到信封的收件人的电子邮件地址。</p> </td> 
   </tr> 
   <tr> 
@@ -255,28 +257,28 @@ DocuSign连接器使用以下内容：
    <td>输入或映射要添加到信封的收件人名称。</td> 
   </tr> 
   <tr>
-    <td>[！UICONTROL路由顺序]</td>
+    <td>[!UICONTROL 路由顺序]</td>
    <td> <p>输入或映射收件人的路由编号。 路由号码确定收件人接收和签署文档的顺序。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader">[！UICONTROL电子邮件正文]</td>
+    <td role="rowheader">[!UICONTROL 电子邮件正文]</td>
    <td>输入或映射发送给收件人的电子邮件的正文（内容）。</td> 
   </tr> 
   <tr>
-    <td role="rowheader">[！UICONTROL电子邮件主题]</td>
+    <td role="rowheader">[!UICONTROL 电子邮件主题]</td>
    <td>输入或映射发送给收件人的电子邮件的主题。</td> 
   </tr> 
-    <td role="rowheader">[！UICONTROL私人消息]</td>
+    <td role="rowheader">[!UICONTROL 私人消息]</td>
    <td> 如果要向收件人发送私人邮件，请输入或映射邮件的文本。 <p>只有选定的收件人会看到该私人邮件以及常规邮件。 私密消息长度限制为1000个字符。</p>  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Authentication]</td> 
+   <td role="rowheader">[!UICONTROL Authentication]</td> 
    <td> <p>选择要用于确认收件人身份的身份验证方法。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL无]</strong> </p> </li> 
-     <li> <p><strong>[！UICONTROL访问代码]</strong> </p> <p>输入或映射访问代码。</p> </li> 
-     <li> <p><strong>[！UICONTROL Phone]</strong> </p> <p>输入或映射电话号码。</p> </li> 
-     <li> <p><strong>[！UICONTROL短信]</strong> </p> <p>输入或映射电话号码。</p> </li> 
+     <li> <p><strong>[!UICONTROL 无]</strong> </p> </li> 
+     <li> <p><strong>[!UICONTROL 访问代码]</strong> </p> <p>输入或映射访问代码。</p> </li> 
+     <li> <p><strong>[!UICONTROL Phone]</strong> </p> <p>输入或映射电话号码。</p> </li> 
+     <li> <p><strong>[!UICONTROL 短信]</strong> </p> <p>输入或映射电话号码。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -296,21 +298,21 @@ DocuSign连接器使用以下内容：
 <td> <p>有关将DocuSign帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>下的文章。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader">[！UICONTROL帐户] </td>
+    <td role="rowheader">[!UICONTROL 帐户] </td>
    <td> <p>选择包含要上载文件的信封的帐户。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL模板]</td>
-   <td> <p> 选择要从中创建新信封的模板。 根据您选择的[！UICONTROL帐户]，可以使用模板。</p> </td> 
+    <td role="rowheader" >[!UICONTROL 模板]</td>
+   <td> <p> 选择要从中创建新信封的模板。 根据您选择的[!UICONTROL 帐户]，可以使用模板。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
-     [！UICONTROL创建后]
+     [!UICONTROL 创建后]
    </td> 
    <td> <p>选择是将信封另存为草稿还是发送信封以供签名。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL模板收件人]</td>
+    <td role="rowheader" >[!UICONTROL 模板收件人]</td>
     <td>对于要添加到此信封的每个收件人，单击<b>添加项</b>并输入以下详细信息：
     <ul>
     <li><b>访问代码</b><p>输入或映射收件人用于访问信封的代码。<p></li>
@@ -323,49 +325,49 @@ DocuSign连接器使用以下内容：
     </tr>
   <tr> 
    <td role="rowheader">
-     [！UICONTROL Allow Print and Sign]
+     [!UICONTROL Allow Print and Sign]
    </td> 
    <td> <p>启用此选项可允许收件人打印文档并签署纸张。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
-     [！UICONTROL允许重新分配]
+     [!UICONTROL 允许重新分配]
    </td> 
    <td> <p>如果希望收件人能够将文档重新分配给其他用户，请启用此选项。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
-     [！UICONTROL允许收件人递归]
+     [!UICONTROL 允许收件人递归]
    </td> 
    <td> <p>启用此选项以允许收件人递归。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
-     [！UICONTROL权威副本]
+     [!UICONTROL 权威副本]
    </td> 
    <td> <p>启用此选项可将此信封中的文档标记为授权副本。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
-     [！UICONTROL自动导航]
+     [!UICONTROL 自动导航]
    </td> 
    <td> <p>启用此选项可设置收件人的自动导航。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
-     [！UICONTROL品牌ID]
+     [!UICONTROL 品牌ID]
    </td> 
    <td> <p>输入或映射品牌的ID。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
-     [！UICONTROL标记已启用]
+     [!UICONTROL 标记已启用]
    </td> 
    <td> <p>启用此选项以启用文档标记。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">
-     [！UICONTROL过期已启用]
+     [!UICONTROL 过期已启用]
    </td> 
    <td> <p>启用此选项可设置此信封的过期时间。 如果启用此选项，请填写以下字段：<ul><li><b>过期时间</b><p>输入或映射此信封过期的天数。</p></li><li><b>过期警告</b><p>输入或映射向收件人发送提醒电子邮件之前的天数。</p> </td> 
   </tr> 
@@ -377,7 +379,7 @@ DocuSign连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">
-     [！UICONTROL主题]
+     [!UICONTROL 主题]
    </td> 
    <td> <p>输入或映射此信封随附的电子邮件的主题。</p> </td> 
   </tr> 
@@ -397,7 +399,7 @@ DocuSign连接器使用以下内容：
    <td> <p>有关将 [!DNL DocuSign] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">将 [!DNL DocuSign] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL帐户]</td> 
+   <td>[!UICONTROL 帐户]</td> 
    <td>输入或映射要用于访问[!DNL DocuSign] API的帐户。</td> 
   </tr> 
   <tr> 
@@ -471,11 +473,11 @@ DocuSign连接器使用以下内容：
    <td> <p>有关将 [!DNL DocuSign] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">将 [!DNL DocuSign] 连接到 Workfront Fusion</a>。</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL帐户] </td> 
+   <td role="rowheader">[!UICONTROL 帐户] </td> 
    <td> <p>选择包含要下载的文档的帐户。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL信封ID]</td> 
+   <td role="rowheader">[!UICONTROL 信封ID]</td> 
    <td> <p> 输入或映射要下载的信封ID。</p> </td> 
   </tr> 
   <tr> 
@@ -483,15 +485,15 @@ DocuSign连接器使用以下内容：
    <td> <p>输入或映射要下载的文档的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL证书]</td> 
+   <td role="rowheader">[!UICONTROL 证书]</td> 
    <td>启用此选项以在下载中包含信封签名证书。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL文档（按用户ID）</td> 
+   <td role="rowheader">&lbrack;！UICONTROL文档（按用户ID）</td> 
    <td>启用此选项可允许收件人按用户ID检索文档。 例如，如果将用户包括在具有不同可见性的两个不同的工艺路线订单中，则使用此选项将返回来自两个工艺路线的所有单据。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL加密]</td> 
+   <td role="rowheader">[!UICONTROL 加密]</td> 
    <td>如果希望为[!DNL DocuSign]帐户上配置的所有密钥管理器加密响应中返回的PDF字节，请启用此选项。</td> 
   </tr> 
   <tr> 
@@ -499,11 +501,11 @@ DocuSign连接器使用以下内容：
    <td>选择语言。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL显示更改]</td> 
+   <td role="rowheader">[!UICONTROL 显示更改]</td> 
    <td>启用此选项以突出显示返回的PDF的任何更改字段，并以黄色突出显示可选签名或缩写符号。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL水印]</td> 
+   <td role="rowheader">[!UICONTROL 水印]</td> 
    <td> <p>启用此选项可启用水印功能。 </td> 
   </tr> 
  </tbody> 
@@ -522,27 +524,27 @@ DocuSign连接器使用以下内容：
    <td> <p>有关将 [!DNL DocuSign] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">将 [!DNL DocuSign] 连接到 Workfront Fusion</a>。</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL帐户] </td> 
+   <td role="rowheader">[!UICONTROL 帐户] </td> 
    <td> <p>选择包含要修改自定义字段的文档的帐户。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL信封ID]</td> 
+   <td role="rowheader">[!UICONTROL 信封ID]</td> 
    <td> <p> 输入或映射包含要修改自定义字段的文档的信封的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL字段ID]</td> 
+   <td role="rowheader">[!UICONTROL 字段ID]</td> 
    <td>输入或映射要修改的字段的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL字段名称]</td> 
+   <td role="rowheader">[!UICONTROL 字段名称]</td> 
    <td>输入或映射要修改的字段的名称。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL必填]</td> 
+   <td role="rowheader">[!UICONTROL 必填]</td> 
    <td>如果希望修改的字段为必填字段，则启用此选项。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL显示字段]</td> 
+   <td role="rowheader">[!UICONTROL 显示字段]</td> 
    <td>如果您希望字段可见，请启用此选项。</td> 
   </tr> 
   <tr> 
@@ -565,11 +567,11 @@ DocuSign连接器使用以下内容：
    <td> <p>有关将 [!DNL DocuSign] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">将 [!DNL DocuSign] 连接到 Workfront Fusion</a>。</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL帐户] </td> 
+   <td role="rowheader">[!UICONTROL 帐户] </td> 
    <td> <p>选择包含要从中读取信息的文档的帐户。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL信封ID]</td> 
+   <td role="rowheader">[!UICONTROL 信封ID]</td> 
    <td> <p> 输入或映射包含要从中读取信息的文档的信封的ID。</p> </td> 
   </tr> 
   <tr> 
@@ -592,11 +594,11 @@ DocuSign连接器使用以下内容：
    <td> <p>有关将 [!DNL DocuSign] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">将 [!DNL DocuSign] 连接到 Workfront Fusion</a>。</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL帐户] </td> 
+   <td role="rowheader">[!UICONTROL 帐户] </td> 
    <td> <p>选择包含要发送给其收件人的草稿信封的帐户。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL信封ID]</td> 
+   <td role="rowheader">[!UICONTROL 信封ID]</td> 
    <td> <p> 输入或映射要发送给其收件人的草稿信封的ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -615,11 +617,11 @@ DocuSign连接器使用以下内容：
    <td> <p>有关将 [!DNL DocuSign] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-docusign-to-workfront-fusion" class="MCXref xref">将 [!DNL DocuSign] 连接到 Workfront Fusion</a>。</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL帐户] </td> 
+   <td role="rowheader">[!UICONTROL 帐户] </td> 
    <td> <p>选择包含要上载文件的信封的帐户。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL信封ID]</td> 
+   <td role="rowheader">[!UICONTROL 信封ID]</td> 
    <td> <p> 输入或映射要上载文件的信封的ID。</p> </td> 
   </tr> 
   <tr> 

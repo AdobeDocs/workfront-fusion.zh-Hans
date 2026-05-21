@@ -5,8 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 5d4072ba-c598-4347-a42f-c59c7add0a1b
 TQID: https://experienceleague.adobe.com/w1Mx5-fbOF8JlvmgHd0P-ARF20jBLM0Bm3BnZZy6YsY
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2976
@@ -130,59 +133,59 @@ Microsoft Office 365电子邮件连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL主题]</td> 
+   <td role="rowheader">[!UICONTROL 主题]</td> 
    <td> <p>输入或映射消息的主题行。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL正文内容]</td> 
+   <td role="rowheader">[!UICONTROL 正文内容]</td> 
    <td> <p>输入或映射电子邮件的邮件正文文本。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL重要性]</td> 
+   <td role="rowheader">[!UICONTROL 重要性]</td> 
    <td> <p>选择电子邮件的重要性</p> 
     <ul> 
-     <li>[！UICONTROL低]</li> 
-     <li>[！UICONTROL正常]</li> 
-     <li>[！UICONTROL高]</li> 
+     <li>[!UICONTROL 低]</li> 
+     <li>[!UICONTROL 正常]</li> 
+     <li>[!UICONTROL 高]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL到收件人]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 到收件人]</p> </td> 
    <td> <p>对于要向其发送电子邮件的每个收件人，单击<b>添加项</b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL CC收件人]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL CC收件人]</p> </td> 
    <td> <p><p>对于要向其发送电子邮件副本的每个收件人，单击“添加项目”<b></b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL密件抄送收件人]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 密件抄送收件人]</p> </td> 
    <td> <p>对于要向其发送电子邮件副本的每个收件人（不允许其他收件人查看其姓名或电子邮件地址），单击“<b>添加项目</b>”并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL附件]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 附件]</p> </td> 
    <td> <p>对于要添加到电子邮件的每个附件，单击<b>添加项</b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL Source文件]</strong> </p> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </li> 
+     <li> <p><strong>[!UICONTROL Source文件]</strong> </p> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Internet邮件头]</td> 
+   <td role="rowheader">[!UICONTROL Internet邮件头]</td> 
    <td> <p>对于要添加到电子邮件的每个标头，单击<b>添加项</b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入标题的名称</p> </li> 
-     <li> <p><strong>[！UICONTROL值]</strong> </p> <p>输入题头值。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入标题的名称</p> </li> 
+     <li> <p><strong>[!UICONTROL 值]</strong> </p> <p>输入题头值。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -201,10 +204,10 @@ Microsoft Office 365电子邮件连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL From e-mail address]</td> 
+   <td role="rowheader">[!UICONTROL From e-mail address]</td> 
    <td> <p> 要使用共享的电子邮件地址，请在此处输入地址。 其凭据用于此模块的连接中的用户必须有权访问共享文件夹。<p>将此字段留空将使用连接所有者自己的电子邮件地址。</p></p> </td> 
   </tr> 
-   <td role="rowheader">[！UICONTROL消息ID]</td> 
+   <td role="rowheader">[!UICONTROL 消息ID]</td> 
    <td> <p> 选择或映射要删除的消息的ID。</p> </td> 
   </tr> 
   </tr> 
@@ -224,16 +227,16 @@ Microsoft Office 365电子邮件连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL From e-mail address]</td> 
+   <td role="rowheader">[!UICONTROL From e-mail address]</td> 
    <td> <p> 要使用共享的电子邮件地址，请在此处输入地址。 其凭据用于此模块的连接中的用户必须有权访问共享文件夹。<p>将此字段留空将使用连接所有者自己的电子邮件地址。</p></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL消息ID]</td> 
+   <td role="rowheader">[!UICONTROL 消息ID]</td> 
    <td> <p> 选择或映射要为其检索元数据的消息的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL获取MIME内容]</td> 
-   <td>启用此选项以检索有关消息的MIME内容的数据。 [！UICONTROL MIME]内容可能包括图像、音频、视频或其他类型的文件。</td> 
+   <td role="rowheader">[!UICONTROL 获取MIME内容]</td> 
+   <td>启用此选项以检索有关消息的MIME内容的数据。 [!UICONTROL MIME]内容可能包括图像、音频、视频或其他类型的文件。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -251,11 +254,11 @@ Microsoft Office 365电子邮件连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL消息ID]</td> 
+   <td role="rowheader">[!UICONTROL 消息ID]</td> 
    <td> <p> 选择或映射要移动到其他文件夹的邮件ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL邮件文件夹] </td> 
+   <td role="rowheader">[!UICONTROL 邮件文件夹] </td> 
    <td> <p>选择或映射要将邮件移动到的文件夹的ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -274,25 +277,25 @@ Microsoft Office 365电子邮件连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
     <tr> 
-   <td role="rowheader">[！UICONTROL From e-mail address]</td> 
+   <td role="rowheader">[!UICONTROL From e-mail address]</td> 
    <td> <p> 要使用共享的电子邮件地址，请在此处输入地址。 其凭据用于此模块的连接中的用户必须有权访问共享文件夹。<p>将此字段留空将使用连接所有者自己的电子邮件地址。</p></p> </td> 
   </tr> 
 <tr> 
-   <td role="rowheader">[！UICONTROL邮件文件夹]</td> 
+   <td role="rowheader">[!UICONTROL 邮件文件夹]</td> 
    <td> <p>选择包含要搜索邮件的文件夹。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 搜索]</td> 
-   <td>输入您的搜索查询。 有关如何编写搜索查询的信息，请参阅[!DNL Microsoft]支持文章<a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">在[!DNL Outlook.com]</a>中搜索邮件和人员。</td> 
+   <td>输入您的搜索查询。 有关如何编写搜索查询的信息，请参阅[!DNL Microsoft]支持文章<a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">在[!DNL Outlook.com]</a>中搜索邮件和人员。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Order by]</td> 
+   <td role="rowheader">[!UICONTROL Order by]</td> 
    <td> <p>选择要对结果进行排序的方式：</p> 
     <ul> 
-     <li>[！UICONTROL主题（升序或降序）]</li> 
-     <li>[！UICONTROL创建日期时间（升序或降序）]</li> 
-     <li>[！UICONTROL上次修改日期时间（升序或降序）]</li> 
-     <li>[！UICONTROL收到日期时间（升序或降序）]</li> 
+     <li>[!UICONTROL 主题（升序或降序）]</li> 
+     <li>[!UICONTROL 创建日期时间（升序或降序）]</li> 
+     <li>[!UICONTROL 上次修改日期时间（升序或降序）]</li> 
+     <li>[!UICONTROL 收到日期时间（升序或降序）]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -315,21 +318,21 @@ Microsoft Office 365电子邮件连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL监视消息]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 监视消息]</p> </td> 
    <td> <p>选择要监视的消息：</p> 
     <ul> 
-     <li>[！UICONTROL Only Unread]</li> 
-     <li>[！UICONTROL只读read]</li> 
-     <li>[！UICONTROL All]</li> 
+     <li>[!UICONTROL Only Unread]</li> 
+     <li>[!UICONTROL 只读read]</li> 
+     <li>[!UICONTROL All]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL邮件文件夹]</td> 
+   <td role="rowheader">[!UICONTROL 邮件文件夹]</td> 
    <td> <p>选择包含要监视的邮件的文件夹。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 搜索]</td> 
-   <td>输入您的搜索查询。 模块会返回与此查询匹配的消息。 有关如何编写搜索查询的信息，请参阅[!DNL Microsoft]支持文章<a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&amp;rs=en-us&amp;ad=us">在[!DNL Outlook.com]</a>中搜索邮件和人员。</td> 
+   <td>输入您的搜索查询。 模块会返回与此查询匹配的消息。 有关如何编写搜索查询的信息，请参阅[!DNL Microsoft]支持文章<a href="https://support.microsoft.com/en-us/office/search-mail-and-people-in-outlook-com-88108edf-028e-4306-b87e-7400bbb40aa7?ui=en-us&rs=en-us&ad=us">在[!DNL Outlook.com]</a>中搜索邮件和人员。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 限制] </td> 
@@ -357,59 +360,59 @@ Microsoft Office 365电子邮件连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL主题]</td> 
+   <td role="rowheader">[!UICONTROL 主题]</td> 
    <td> <p>输入消息的主题行。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL正文内容类型]</td> 
+   <td role="rowheader">[!UICONTROL 正文内容类型]</td> 
    <td>选择消息正文内容是HTML还是文本。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL正文内容]</td> 
+   <td role="rowheader">[!UICONTROL 正文内容]</td> 
    <td> <p>输入或映射电子邮件的邮件正文文本。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL重要性]</td> 
+   <td role="rowheader">[!UICONTROL 重要性]</td> 
    <td> <p>选择电子邮件的重要性</p> 
     <ul> 
-     <li>[！UICONTROL低]</li> 
-     <li>[！UICONTROL正常]</li> 
-     <li>[！UICONTROL高]</li> 
+     <li>[!UICONTROL 低]</li> 
+     <li>[!UICONTROL 正常]</li> 
+     <li>[!UICONTROL 高]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL到收件人]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 到收件人]</p> </td> 
    <td> <p>对于要向其发送电子邮件的每个收件人，单击<b>添加项</b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL CC收件人]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL CC收件人]</p> </td> 
    <td> <p><p>对于要向其发送电子邮件副本的每个收件人，单击“添加项目”<b></b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL密件抄送收件人]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 密件抄送收件人]</p> </td> 
    <td> <p>对于要向其发送电子邮件副本的每个收件人（不允许其他收件人查看其姓名或电子邮件地址），单击“<b>添加项目</b>”并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL附件]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 附件]</p> </td> 
    <td> <p>对于要添加到电子邮件的每个附件，单击<b>添加项</b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL Source文件]</strong> </p> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </li> 
+     <li> <p><strong>[!UICONTROL Source文件]</strong> </p> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL From e-mail address]</td> 
+   <td role="rowheader">[!UICONTROL From e-mail address]</td> 
    <td> <p> 要使用共享的电子邮件地址，请在此处输入地址。 其凭据用于此模块的连接中的用户必须有权访问共享文件夹。<p>将此字段留空将使用连接所有者自己的电子邮件地址。</p></p> </td> 
   </tr> 
  </tbody> 
@@ -428,11 +431,11 @@ Microsoft Office 365电子邮件连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL From e-mail address]</td> 
+   <td role="rowheader">[!UICONTROL From e-mail address]</td> 
    <td> <p> 要使用共享的电子邮件地址，请在此处输入地址。 其凭据用于此模块的连接中的用户必须有权访问共享文件夹。<p>将此字段留空将使用连接所有者自己的电子邮件地址。</p></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL草稿消息ID]</td> 
+   <td role="rowheader">[!UICONTROL 草稿消息ID]</td> 
    <td> <p> 选择或映射要发送的草稿的消息ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -451,67 +454,67 @@ Microsoft Office 365电子邮件连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL From e-mail address]</td> 
+   <td role="rowheader">[!UICONTROL From e-mail address]</td> 
    <td> <p> 要使用共享的电子邮件地址，请在此处输入地址。 其凭据用于此模块的连接中的用户必须有权访问共享文件夹。<p>将此字段留空将使用连接所有者自己的电子邮件地址。</p></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输入消息ID]</td> 
+   <td role="rowheader">[!UICONTROL 输入消息ID]</td> 
    <td> <p>选择要如何标识要更新的消息：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射消息ID。</p> </li> 
-     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要更新的邮件的文件夹，然后选择邮件</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射消息ID。</p> </li> 
+     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要更新的邮件的文件夹，然后选择邮件</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL主题]</td> 
+   <td role="rowheader">[!UICONTROL 主题]</td> 
    <td> <p>输入消息的主题行。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL正文内容]</td> 
+   <td role="rowheader">[!UICONTROL 正文内容]</td> 
    <td> <p>输入电子邮件的邮件正文文本。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL重要性]</td> 
+   <td role="rowheader">[!UICONTROL 重要性]</td> 
    <td> <p>选择电子邮件的重要性</p> 
     <ul> 
-     <li>[！UICONTROL低]</li> 
-     <li>[！UICONTROL正常]</li> 
-     <li>[！UICONTROL高]</li> 
+     <li>[!UICONTROL 低]</li> 
+     <li>[!UICONTROL 正常]</li> 
+     <li>[!UICONTROL 高]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL到收件人]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 到收件人]</p> </td> 
    <td> <p>对于要向其发送电子邮件的每个收件人，单击<b>添加项</b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL CC收件人]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL CC收件人]</p> </td> 
    <td> <p><p>对于要向其发送电子邮件副本的每个收件人，单击“添加项目”<b></b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL密件抄送收件人]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 密件抄送收件人]</p> </td> 
    <td> <p>对于要向其发送电子邮件副本的每个收件人（不允许其他收件人查看其姓名或电子邮件地址），单击“<b>添加项目</b>”并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL附件]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 附件]</p> </td> 
    <td> <p>对于要添加到电子邮件的每个附件，单击<b>添加项</b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL Source文件]</strong> </p> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </li> 
+     <li> <p><strong>[!UICONTROL Source文件]</strong> </p> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL将其标记为已读]</td> 
+   <td role="rowheader">[!UICONTROL 将其标记为已读]</td> 
    <td>启用此选项可将更新的邮件标记为已读。</td> 
   </tr> 
  </tbody> 
@@ -536,14 +539,14 @@ Microsoft Office 365电子邮件连接器使用以下内容：
   </tr> 
   <tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL From e-mail address]</td> 
+   <td role="rowheader">[!UICONTROL From e-mail address]</td> 
    <td> <p> 要使用共享的电子邮件地址，请在此处输入地址。 其凭据用于此模块的连接中的用户必须有权访问共享文件夹。<p>将此字段留空将使用连接所有者自己的电子邮件地址。</p></p> </td> 
   </tr> 
-   <td role="rowheader">[！UICONTROL消息ID]</td> 
+   <td role="rowheader">[!UICONTROL 消息ID]</td> 
    <td> <p> 选择或映射包含要下载附件的邮件的ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL附件ID]</td> 
+   <td role="rowheader">[!UICONTROL 附件ID]</td> 
    <td> <p>输入或映射要下载的附件的ID。 您可以使用“列出附件”模块找到此想法。</p> </td> 
   </tr> 
  </tbody> 
@@ -562,11 +565,11 @@ Microsoft Office 365电子邮件连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL From e-mail address]</td> 
+   <td role="rowheader">[!UICONTROL From e-mail address]</td> 
    <td> <p> 要使用共享的电子邮件地址，请在此处输入地址。 其凭据用于此模块的连接中的用户必须有权访问共享文件夹。<p>将此字段留空将使用连接所有者自己的电子邮件地址。</p></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL消息ID]</td> 
+   <td role="rowheader">[!UICONTROL 消息ID]</td> 
    <td> <p> 选择或映射要从中检索附件的邮件的ID。</p> </td> 
   </tr> 
   <tr> 
@@ -595,11 +598,11 @@ Microsoft Office 365电子邮件连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL From e-mail address]</td> 
+   <td role="rowheader">[!UICONTROL From e-mail address]</td> 
    <td> <p> 要使用共享的电子邮件地址，请在此处输入地址。 其凭据用于此模块的连接中的用户必须有权访问共享文件夹。<p>将此字段留空将使用连接所有者自己的电子邮件地址。</p></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL消息ID]</td> 
+   <td role="rowheader">[!UICONTROL 消息ID]</td> 
    <td> <p> 选择或映射要添加附件的邮件的ID。</p> </td> 
   </tr> 
   <tr> 
@@ -622,61 +625,61 @@ Microsoft Office 365电子邮件连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL主题]</td> 
+   <td role="rowheader">[!UICONTROL 主题]</td> 
    <td> <p>输入或映射消息的主题行。</p> </td> 
   </tr> 
-   <td role="rowheader">[！UICONTROL正文内容]</td> 
+   <td role="rowheader">[!UICONTROL 正文内容]</td> 
    <td> <p>输入或映射电子邮件的邮件正文文本。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL重要性]</td> 
+   <td role="rowheader">[!UICONTROL 重要性]</td> 
    <td> <p>选择电子邮件的重要性</p> 
     <ul> 
-     <li>[！UICONTROL低]</li> 
-     <li>[！UICONTROL正常]</li> 
-     <li>[！UICONTROL高]</li> 
+     <li>[!UICONTROL 低]</li> 
+     <li>[!UICONTROL 正常]</li> 
+     <li>[!UICONTROL 高]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL到收件人]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 到收件人]</p> </td> 
    <td> <p>对于要向其发送电子邮件的每个收件人，单击<b>添加项</b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL CC收件人]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL CC收件人]</p> </td> 
    <td> <p><p>对于要向其发送电子邮件副本的每个收件人，单击“添加项目”<b></b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL密件抄送收件人]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 密件抄送收件人]</p> </td> 
    <td> <p>对于要向其发送电子邮件副本的每个收件人（不允许其他收件人查看其姓名或电子邮件地址），单击“<b>添加项目</b>”并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件地址]</strong> </p> <p>输入联系人的电子邮件地址。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入联系人的姓名。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL附件]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 附件]</p> </td> 
    <td> <p>对于要添加到电子邮件的每个附件，单击<b>添加项</b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL Source文件]</strong> </p> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </li> 
+     <li> <p><strong>[!UICONTROL Source文件]</strong> </p> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Internet邮件头]</td> 
+   <td role="rowheader">[!UICONTROL Internet邮件头]</td> 
    <td> <p>添加电子邮件的邮件头。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL名称]</strong> </p> <p>输入标题的名称</p> </li> 
-     <li> <p><strong>[！UICONTROL电子邮件地址]</strong> </p> <p>输入题头值。</p> </li> 
+     <li> <p><strong>[!UICONTROL 名称]</strong> </p> <p>输入标题的名称</p> </li> 
+     <li> <p><strong>[!UICONTROL 电子邮件地址]</strong> </p> <p>输入题头值。</p> </li> 
     </ul> </td> 
   </tr> 
-   <td role="rowheader">[！UICONTROL From e-mail address]</td> 
+   <td role="rowheader">[!UICONTROL From e-mail address]</td> 
    <td> <p> 要使用共享的电子邮件地址，请在此处输入地址。 其凭据用于此模块的连接中的用户必须有权访问共享文件夹。<p>将此字段留空将使用连接所有者自己的电子邮件地址。</p></p> </td> 
   </tr> 
    <td role="rowheader">[!UICONTROL 限制]</td> 

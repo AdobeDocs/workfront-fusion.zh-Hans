@@ -5,8 +5,11 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 059bc82b-f1bc-4b92-a44b-51c1daf14f08
 TQID: https://experienceleague.adobe.com/SZwX0GVZYFlIudwirqN6ne-W8mEoXHC-WKI8JFnbzrA
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2707
@@ -131,11 +134,11 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL下载工作簿]</td> 
+   <td role="rowheader">[!UICONTROL 下载工作簿]</td> 
    <td> <p>选择您希望如何标识要下载的模块的工作簿。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL，通过手动输入ID]</strong> </p> <p>在[！UICONTROL工作簿ID]字段中，输入或映射您希望模块下载的特定工作簿的ID。</p> </li> 
-     <li> <p>通过从路径中选择<strong>[！UICONTROL]</strong> </p> <p>在[！UICONTROL工作簿]字段中，选择要让模块下载的工作簿，包括不在根文件夹中的路径。</p> </li> 
+     <li> <p><strong>[!UICONTROL ，通过手动输入ID]</strong> </p> <p>在[!UICONTROL 工作簿ID]字段中，输入或映射您希望模块下载的特定工作簿的ID。</p> </li> 
+     <li> <p>通过从路径中选择<strong></strong> </p> <p>在[!UICONTROL 工作簿]字段中，选择要让模块下载的工作簿，包括不在根文件夹中的路径。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -219,7 +222,7 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[！UICONTROL工作簿] </td>
+    <td role="rowheader" >[!UICONTROL 工作簿] </td>
    <td> <p>选择要添加工作表的工作簿，包括工作簿不在根目录中的路径。</p> </td> 
   </tr> 
   <tr> 
@@ -242,24 +245,24 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作簿] </td>
+    <td role="rowheader" >[!UICONTROL 工作簿] </td>
    <td> <p>选择包含要添加行的工作表的工作簿，包括路径（如果工作簿不在根目录中）。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作表] </td>
+    <td role="rowheader" >[!UICONTROL 工作表] </td>
    <td> <p>选择要添加行的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL要输入的值的类型]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 要输入的值的类型]</p> </td> 
    <td> <p>选择要输入工作表的值的类型。 </p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL公式]</strong> </p> <p> Excel尝试计算指定的表达式。 公式中的函数名称为英文。 示例： <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
-     <li> <p><strong>[！UICONTROL公式本地]</strong> </p> <p>Excel尝试计算指定的表达式。 函数名称使用Excel应用程序的语言。 示例：<code>=SUM(A1, 1.5)</code>与 <code>=SUMME(A1; 1,5)</code></p> </li> 
-     <li> <p><strong>[！UICONTROL值]</strong> </p> <p>Excel不计算该值。 </p> </li> 
+     <li> <p><strong>[!UICONTROL 公式]</strong> </p> <p> Excel尝试计算指定的表达式。 公式中的函数名称为英文。 示例： <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
+     <li> <p><strong>[!UICONTROL 公式本地]</strong> </p> <p>Excel尝试计算指定的表达式。 函数名称使用Excel应用程序的语言。 示例：<code>=SUM(A1, 1.5)</code>与 <code>=SUMME(A1; 1,5)</code></p> </li> 
+     <li> <p><strong>[!UICONTROL 值]</strong> </p> <p>Excel不计算该值。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL Row]</td>
+    <td role="rowheader" >[!UICONTROL Row]</td>
     <td>对于每个列，输入您希望该列在新行中的值。</td>
   </tr> 
  </tbody> 
@@ -278,15 +281,15 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作簿] </td>
+    <td role="rowheader" >[!UICONTROL 工作簿] </td>
    <td> <p>选择包含您要删除的行的工作表的工作簿。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作表]</td>
+    <td role="rowheader" >[!UICONTROL 工作表]</td>
    <td> <p> 选择包含要删除的行的工作表。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL行ID]</td>
+    <td role="rowheader" >[!UICONTROL 行ID]</td>
    <td>输入或映射要删除的行的ID。</td> 
   </tr> 
  </tbody> 
@@ -305,11 +308,11 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[！UICONTROL工作簿] </td>
+    <td role="rowheader" >[!UICONTROL 工作簿] </td>
    <td> <p>选择包含工作表的工作簿，该工作表包含您要列出的行，如果工作簿不在根目录中，请包含路径。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作表] </td>
+    <td role="rowheader" >[!UICONTROL 工作表] </td>
    <td> <p>选择包含要列出的行的工作表。</p> </td> 
   </tr> 
   <tr> 
@@ -332,7 +335,7 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作簿] </td>
+    <td role="rowheader" >[!UICONTROL 工作簿] </td>
    <td> <p>选择包含您希望模块列出的工作表的工作簿。</p> </td> 
   </tr> 
   <tr> 
@@ -355,28 +358,28 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作簿] </td>
+    <td role="rowheader" >[!UICONTROL 工作簿] </td>
    <td> <p>选择包含要更新的行的工作表的工作簿。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作表] </td>
+    <td role="rowheader" >[!UICONTROL 工作表] </td>
    <td> <p>选择包含要更新的行的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL要输入的值的类型]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 要输入的值的类型]</p> </td> 
    <td> <p>选择要输入工作表的值的类型。 </p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL公式]</strong> </p> <p> Excel尝试计算指定的表达式。 公式中的函数名称为英文。 示例： <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
-     <li> <p><strong>[！UICONTROL公式本地]</strong> </p> <p>Excel尝试计算指定的表达式。 函数名称使用Excel应用程序的语言。 示例：<code>=SUM(A1, 1.5)</code>与 <code>=SUMME(A1; 1,5)</code></p> </li> 
-     <li> <p><strong>[！UICONTROL值]</strong> </p> <p>Excel不计算该值。 </p> </li> 
+     <li> <p><strong>[!UICONTROL 公式]</strong> </p> <p> Excel尝试计算指定的表达式。 公式中的函数名称为英文。 示例： <code>[!DNL =SUM(A1:A10)]</code></p> </li> 
+     <li> <p><strong>[!UICONTROL 公式本地]</strong> </p> <p>Excel尝试计算指定的表达式。 函数名称使用Excel应用程序的语言。 示例：<code>=SUM(A1, 1.5)</code>与 <code>=SUMME(A1; 1,5)</code></p> </li> 
+     <li> <p><strong>[!UICONTROL 值]</strong> </p> <p>Excel不计算该值。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL行ID]</td> 
+   <td role="rowheader">[!UICONTROL 行ID]</td> 
    <td>选择要更新的行的编号。</td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL Row]</td>
+    <td role="rowheader" >[!UICONTROL Row]</td>
     <td>对于每个列，输入您希望该列在新行中的值。</td>
     </tr> 
  </tbody> 
@@ -395,15 +398,15 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作簿] </td>
+    <td role="rowheader" >[!UICONTROL 工作簿] </td>
    <td> <p>选择包含您要监视新行的工作表的工作簿。</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[！UICONTROL工作表] </td>
+    <td role="rowheader" >[!UICONTROL 工作表] </td>
    <td> <p>选择要监视新行的Excel工作表。</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[！UICONTROL跳过空行] </td>
+    <td role="rowheader" >[!UICONTROL 跳过空行] </td>
    <td> <p>启用此选项不会返回工作表中空行的包。</p> </td> 
   </tr> 
   <tr> 
@@ -437,19 +440,19 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL工作簿] </td> 
+   <td role="rowheader">[!UICONTROL 工作簿] </td> 
    <td> <p>选择包含要添加表的工作表的工作簿。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL工作表] </td> 
+   <td role="rowheader">[!UICONTROL 工作表] </td> 
    <td> <p>选择要添加表的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Has headers]</td> 
+   <td role="rowheader">[!UICONTROL Has headers]</td> 
    <td> <p>启用此选项可将第一行定义为表标题。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL地址]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 地址]</p> </td> 
    <td> <p>通过指示左上单元格和右下单元格来设置表的大小。 示例： <code>A1:C10</code>创建了一个包含3列和10行的表。</p> </td> 
   </tr> 
  </tbody> 
@@ -468,23 +471,23 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作簿] </td>
+    <td role="rowheader" >[!UICONTROL 工作簿] </td>
    <td> <p>选择包含要添加行的表的工作簿。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作表] </td>
+    <td role="rowheader" >[!UICONTROL 工作表] </td>
    <td> <p>选择包含要添加行的表的工作表。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL表]</td>
+    <td role="rowheader" >[!UICONTROL 表]</td>
    <td>选择要添加行的表。</td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[！UICONTROL Row]</td>
+    <td role="rowheader" >[!UICONTROL Row]</td>
     <td>对于每个列，输入您希望该列在新行中的值。</td>
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL行ID]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 行ID]</p> </td> 
    <td> <p>要在表格上的特定位置添加行，请输入或映射行号。 模块在此行之后插入新行。</p> </td> 
   </tr> 
  </tbody> 
@@ -503,11 +506,11 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL删除表]</td> 
+   <td role="rowheader">[!UICONTROL 删除表]</td> 
    <td> <p>选择您希望如何标识要删除的表。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射包含要删除表的工作簿的ID，然后输入或映射包含该表的工作表的ID。</p> <p>在[！UICONTROL表名称]字段中，输入或映射要删除的表的名称。</p> </li> 
-     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要删除表的工作簿和工作表，然后选择该表。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射包含要删除表的工作簿的ID，然后输入或映射包含该表的工作表的ID。</p> <p>在[!UICONTROL 表名称]字段中，输入或映射要删除的表的名称。</p> </li> 
+     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要删除表的工作簿和工作表，然后选择该表。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -530,11 +533,11 @@ Microsoft Office 365 Excel连接器使用以下内容：
      </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL获取表]</td> 
+   <td role="rowheader">[!UICONTROL 获取表]</td> 
    <td> <p>选择您希望如何标识要检索的表。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射包含要检索的表的工作簿的ID，然后输入或映射包含该表的工作表的ID。</p> <p>在[！UICONTROL表名称]字段中，输入或映射要检索的表的名称。</p> </li> 
-     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要检索的表的工作簿和工作表，然后选择该表。</p> </li> 
+     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射包含要检索的表的工作簿的ID，然后输入或映射包含该表的工作表的ID。</p> <p>在[!UICONTROL 表名称]字段中，输入或映射要检索的表的名称。</p> </li> 
+     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要检索的表的工作簿和工作表，然后选择该表。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -553,15 +556,15 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作簿] </td>
+    <td role="rowheader" >[!UICONTROL 工作簿] </td>
    <td> <p>选择包含要列出行的表的工作簿。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作表] </td>
+    <td role="rowheader" >[!UICONTROL 工作表] </td>
    <td> <p>选择包含要列出行的表的工作表</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL表] </td>
+    <td role="rowheader" >[!UICONTROL 表] </td>
    <td> <p>选择包含要列出的行的表。</p> </td> 
   </tr> 
   <tr> 
@@ -584,11 +587,11 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr>
-    <td role="rowheader" >[！UICONTROL工作簿] </td>
+    <td role="rowheader" >[!UICONTROL 工作簿] </td>
    <td> <p>选择包含要列出的表的工作簿。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作表] </td>
+    <td role="rowheader" >[!UICONTROL 工作表] </td>
    <td> <p>选择包含要列出的表的工作表</p> </td> 
   </tr> 
   <tr> 
@@ -611,11 +614,11 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL更新表]</td> 
+   <td role="rowheader">[!UICONTROL 更新表]</td> 
    <td> <p>选择您希望如何标识要更新的表。</p> 
     <ul> 
-     <li> <p><strong>手动输入</strong> </p> <p>在[！UICONTROL工作簿ID]字段中，输入或映射包含要更新的表的工作簿ID。</p> <p>在[！UICONTROL表名]字段中，输入或映射要更新的表名。</p> </li> 
-     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要更新的表的工作簿和工作表，然后选择该表。</p> </li> 
+     <li> <p><strong>手动输入</strong> </p> <p>在[!UICONTROL 工作簿ID]字段中，输入或映射包含要更新的表的工作簿ID。</p> <p>在[!UICONTROL 表名]字段中，输入或映射要更新的表名。</p> </li> 
+     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要更新的表的工作簿和工作表，然后选择该表。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -623,15 +626,15 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>如果要重命名表，请输入或映射表的新名称。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Show Headers]</td> 
+   <td role="rowheader">[!UICONTROL Show Headers]</td> 
    <td> <p>启用此选项以显示更新表的标头。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL显示总计]</td> 
+   <td role="rowheader">[!UICONTROL 显示总计]</td> 
    <td>启用此选项以显示表的总值。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL样式]</td> 
+   <td role="rowheader">[!UICONTROL 样式]</td> 
    <td>为新表选择样式。</td> 
   </tr> 
  </tbody> 
@@ -656,15 +659,15 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL工作簿]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 工作簿]</p> </td> 
    <td> <p>选择包含要监视的表的工作簿。</p> </td> 
   </tr> 
   <tr> 
-    <td role="rowheader" >[！UICONTROL工作表] </td>
+    <td role="rowheader" >[!UICONTROL 工作表] </td>
    <td> <p> 选择包含要监视的表的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL表]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL 表]</p> </td> 
    <td> <p>选择要监视的表。</p> </td> 
   </tr> 
   <tr> 
@@ -730,15 +733,15 @@ Microsoft Office 365 Excel连接器使用以下内容：
    <td> <p>有关将[!DNL Office 365]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref">创建连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL工作簿] </td> 
+   <td role="rowheader">[!UICONTROL 工作簿] </td> 
    <td> <p>选择包含要检索的数据的工作簿。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL工作表] </td> 
+   <td role="rowheader">[!UICONTROL 工作表] </td> 
    <td> <p>选择包含要检索的数据的工作表。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL范围] </td> 
+   <td role="rowheader">[!UICONTROL 范围] </td> 
    <td> <p>通过指定左上单元格和右下单元格，指定要从中检索数据的工作表区域。 示例： <code>A1:D10</code></p> </td> 
   </tr> 
  </tbody> 

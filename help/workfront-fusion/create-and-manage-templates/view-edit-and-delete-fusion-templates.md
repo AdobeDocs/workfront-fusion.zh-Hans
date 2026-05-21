@@ -8,8 +8,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
 TQID: https://experienceleague.adobe.com/OHwMJdhw3YevvWt3K-20ly90b2S0EfQ-gUz-U9J807U
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 880
@@ -70,11 +72,11 @@ Workfront Fusion模板功能允许您创建并使用现有模板作为Workfront 
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[！UICONTROL公共模板]</td> 
+      <td role="rowheader">[!UICONTROL 公共模板]</td> 
       <td> <p> 已发布然后由管理员批准的所有模板。 在模板磁贴上，您可以看到模板的名称、其预览以及带有数字的套接字图标，该数字表示迄今为止已使用该模板的次数。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL团队模板]</td> 
+      <td role="rowheader">[!UICONTROL 团队模板]</td> 
       <td> <p>您的团队成员创建的所有模板，包括管理员已公开的那些模板。 在模板图块上，您可以看到模板的名称、本文档的“发布和共享模板”部分中详述的状态图标以及“删除”按钮。</p> <b>注意：</b>如果在“团队模板”选项卡下看不到预期的模板，请检查左侧导航或标题以确保您当前查看的团队正确。</td> 
      </tr> 
     </tbody> 

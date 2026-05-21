@@ -8,10 +8,16 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
 TQID: https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: d968a1bc-9a90-4926-a531-bcf272c32aadid: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-subfeature_v2: id: d87de1f9-8e24-4c4d-aa4c-a403075091a1
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2:
+  - id: d87de1f9-8e24-4c4d-aa4c-a403075091a1
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 4277
@@ -329,7 +335,7 @@ Awaiting feedback
 #### 将模板模块连接到Workfront和Jira（模块2）
 
 1. 在&#x200B;**每个** Workfront模块的连接字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**&#x200B;保存与该模块的连接。
-1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**保存与该模块的连接。
+1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**&#x200B;保存与该模块的连接。
    <!--#### Map custom fields-->
 
 +++

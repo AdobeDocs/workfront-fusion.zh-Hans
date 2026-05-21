@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 96f8d4f1-f97b-4da8-8d82-83cccb54ec68
 TQID: https://experienceleague.adobe.com/MSvJMXg8hyI8piqHpn1OnEPEoCcP1Tn-za1veFtHeIo
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1147
@@ -98,14 +100,14 @@ ht-degree: 39%
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 客户端 ID]</td>
-        <td>输入您的Dynamics Finance and Operations [！UICONTROL客户端ID]。</td>
+        <td>输入您的Dynamics Finance and Operations [!UICONTROL 客户端ID]。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的Dynamics Finance and Operations [！UICONTROL客户端密钥]。 </td>
+        <td>输入您的Dynamics Finance and Operations [!UICONTROL 客户端密钥]。 </td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL租户ID]</td>
+        <td role="rowheader">[!UICONTROL 租户ID]</td>
         <td>输入您的Dynamics Finance and Operations租户ID。</td>
         </tr>
         <tr>
@@ -144,7 +146,7 @@ ht-degree: 39%
     <td> <p>有关将Microsoft Dynamics 365 Finance and Operations连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection" class="MCXref xref">创建连接</a>。</p> </td> 
   </tr> 
   <tr> 
-    <td>[！UICONTROL实体]</td>
+    <td>[!UICONTROL 实体]</td>
      <td>输入或映射要创建的Dynamics Finance and Operations实体类型。</td> 
   </tr> 
   <tr> 
@@ -169,11 +171,11 @@ ht-degree: 39%
     <td> <p>有关将Microsoft Dynamics 365 Finance and Operations连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection" class="MCXref xref">创建连接</a>。</p> </td> 
   </tr> 
   <tr> 
-    <td>[！UICONTROL实体]</td>
+    <td>[!UICONTROL 实体]</td>
      <td>输入或映射要删除的Dynamics Finance and Operations实体类型。</td> 
   </tr> 
   <tr> 
-    <td>[！UICONTROL主键字段]</td>
+    <td>[!UICONTROL 主键字段]</td>
      <td> 主键字段标识项目。 对于要提供的每个主键字段，单击<b>添加项</b>，然后输入或映射标识该项的唯一键和值。 </td> 
   </tr> 
  </tbody> 
@@ -232,11 +234,11 @@ ht-degree: 39%
     <td> <p>有关将Microsoft Dynamics 365 Finance and Operations连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection" class="MCXref xref">创建连接</a>。</p> </td> 
   </tr> 
   <tr> 
-    <td>[！UICONTROL实体]</td>
+    <td>[!UICONTROL 实体]</td>
      <td>输入或映射要读取的Dynamics Finance and Operations实体类型。</td> 
   </tr> 
   <tr> 
-    <td>[！UICONTROL主键字段]</td>
+    <td>[!UICONTROL 主键字段]</td>
      <td> 主键字段标识项目。 对于要提供的每个主键字段，单击<b>添加项</b>，然后输入或映射标识该项的唯一键和值。 </td> 
   </tr> 
  </tbody> 
@@ -253,11 +255,11 @@ ht-degree: 39%
     <td> <p>有关将Microsoft Dynamics 365 Finance and Operations连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection" class="MCXref xref">创建连接</a>。</p> </td> 
   </tr> 
   <tr> 
-    <td>[！UICONTROL实体]</td>
+    <td>[!UICONTROL 实体]</td>
      <td>输入或映射要更新的Dynamics Finance and Operations实体类型。</td> 
   </tr>  
   <tr> 
-    <td>[！UICONTROL主键字段]</td>
+    <td>[!UICONTROL 主键字段]</td>
      <td> 主键字段标识项目。 对于要提供的每个主键字段，单击<b>添加项</b>，然后输入或映射标识该项的唯一键和值。 </td> 
   </tr> 
   <tr> 
@@ -280,7 +282,7 @@ ht-degree: 39%
    <td> <p>有关将 Workfront 应用程序连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-workfront-to-workfront-fusion" class="MCXref xref">将 Workfront 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL实体]</td> 
+   <td>[!UICONTROL 实体]</td> 
    <td>输入或映射要搜索的Dynamics Finance and Operations实体类型。</td> 
   </tr> 
   <tr> 
@@ -292,7 +294,7 @@ ht-degree: 39%
    <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td>[！UICONTROL排序方式]</td> 
+   <td>[!UICONTROL 排序方式]</td> 
    <td> <p>输入或映射要作为结果排序依据的字段。</p> </td> 
   </tr> 
  </tbody> 

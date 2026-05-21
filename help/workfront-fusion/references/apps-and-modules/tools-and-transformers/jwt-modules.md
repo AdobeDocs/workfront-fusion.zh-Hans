@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 380f60db-b2ec-411a-86ee-0d5699f19b41
 TQID: https://experienceleague.adobe.com/90zhDiLzi34ES2MPE-hg26mmSHZ-XQIgZJIFeW4vwy4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 528
@@ -74,7 +75,7 @@ JWT连接器使用以下内容：
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL算法]</td> 
+   <td role="rowheader">[!UICONTROL 算法]</td> 
    <td> <p>选择要生成JWT的算法。</p> <ul>
    <li><b>HS256</b>：使用SHA-256哈希算法的HMAC</li>
    <li><b>HS384</b>：使用SHA-384哈希算法的HMAC</li>
@@ -91,7 +92,7 @@ JWT连接器使用以下内容：
    </ul></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL有效负载] </td> 
+   <td role="rowheader">[!UICONTROL 有效负载] </td> 
    <td> <p>对于每个要添加的有效负荷项，单击<b>添加项</b>并输入该项的键和值。</p> </td> 
   </tr> 
   <tr> 

@@ -6,8 +6,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d7b0141f-d99d-4ab7-a60f-ed552a76f05d
 TQID: https://experienceleague.adobe.com/4vL9oj7UXeRWQuSzDZP7GJU30oHUg1m75gWGVUkfCfA
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 584
@@ -74,7 +76,7 @@ Workfront Fusion中提供了以下错误处理指令。
   </tr> 
   <tr> 
    <td role="rowheader"> <p>间断</p> <p> <img src="assets/break.png"> </p> </td> 
-   <td><ul><li> <p>场景执行的状态存储在未完成执行的队列中，在该队列中可以手动解决错误。 有关详细信息，请参阅<a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">查看并解决未完成的执行</a>。</p> <p>不过，也有一些例外。 有关详细信息，请参阅配置场景设置</a>一文中的<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">允许存储不完整的执行</a>。</p></li><li> <p>不处理后续模块。</p></li><li> <p>如果存在未处理的捆绑包，则场景执行会正常继续进行。</p> </li><li><p>禁用[！UICONTROL自动完成执行]选项后，场景执行状态将标记为“警告”。</p></li></ul> <p>有关详细信息，请参阅本文中的<a href="#break" class="MCXref xref">[！UICONTROL Break]</a>部分</p> </td> 
+   <td><ul><li> <p>场景执行的状态存储在未完成执行的队列中，在该队列中可以手动解决错误。 有关详细信息，请参阅<a href="/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md" class="MCXref xref">查看并解决未完成的执行</a>。</p> <p>不过，也有一些例外。 有关详细信息，请参阅配置场景设置</a>一文中的<a href="/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow" class="MCXref xref">允许存储不完整的执行</a>。</p></li><li> <p>不处理后续模块。</p></li><li> <p>如果存在未处理的捆绑包，则场景执行会正常继续进行。</p> </li><li><p>禁用[!UICONTROL 自动完成执行]选项后，场景执行状态将标记为“警告”。</p></li></ul> <p>有关详细信息，请参阅本文中的<a href="#break" class="MCXref xref">[!UICONTROL Break]</a>部分</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>重试</p> <p> <img src="assets/retry.png"> </p> </td> 

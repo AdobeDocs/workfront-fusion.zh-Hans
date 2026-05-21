@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 08e19a1a-7ca9-4c79-a165-f200048a5cda
 TQID: https://experienceleague.adobe.com/r1SIrrx4tb8p7urdzHacKlFTlYCv47tlsj7c5jT-k3w
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 740
@@ -52,7 +53,7 @@ Adobe Workfront Fusion当前不提供`retry`错误处理指令，但有两种变
 
 Workfront Fusion当前不提供`retry`错误处理指令。 使用以下变通方法之一来模拟重试功能。
 
-有关说明，请参阅错误处理](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的[指令。
+有关说明，请参阅错误处理[&#128279;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的指令。
 
 * [使用Break指令](#use-the-break-directive)
 * [使用中继器模块](#use-the-repeater-module)

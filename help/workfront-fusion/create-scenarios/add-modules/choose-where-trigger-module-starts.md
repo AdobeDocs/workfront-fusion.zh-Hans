@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 83628fa5-82e2-4f67-bfed-70a4c3c19f7f
 TQID: https://experienceleague.adobe.com/Lbl9yIbiWEhwajpe-9EEp513IN9ASXE3PZHP1gAktx4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 330
@@ -72,19 +73,19 @@ ht-degree: 33%
     <col> 
     <tbody>
     <tr>
-    <td>[！UICONTROL从现在开始]（默认）</td>
+    <td>[!UICONTROL 从现在开始]（默认）</td>
     <td>在选择此选项后检索添加或更新的所有包（取决于设置）</td>
     </tr>
      <tr>
-    <td>[！UICONTROL自特定日期起]</td>
+    <td>[!UICONTROL 自特定日期起]</td>
     <td>检索在指定日期和时间之后添加或更新的所有包（取决于设置）</td>
       </tr>
       <tr>
-    <td>[！UICONTROL All]</td>
+    <td>[!UICONTROL All]</td>
     <td>检索所有可用的包</td>
      </tr>
       <tr>
-    <td>[！UICONTROL手动选择]</td>
+    <td>[!UICONTROL 手动选择]</td>
     <td>允许您选择从中开始检索包的第一个包</td>
      </tr>
      </tbody>

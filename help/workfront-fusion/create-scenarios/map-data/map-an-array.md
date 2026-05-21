@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
 TQID: https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 898
@@ -71,7 +73,7 @@ ht-degree: 10%
 
    可以将任意数量的项添加到数组。
 
-您可以使用迭代器将数组划分为单独的包。 有关详细信息，请参阅Adobe Workfront Fusion](/help/workfront-fusion/references/modules/iterator-module.md)中的[[!UICONTROL 迭代器]模块。
+您可以使用迭代器将数组划分为单独的包。 有关详细信息，请参阅Adobe Workfront Fusion[&#128279;](/help/workfront-fusion/references/modules/iterator-module.md)中的[!UICONTROL 迭代器]模块。
 
 ## 将项目映射到新数组
 

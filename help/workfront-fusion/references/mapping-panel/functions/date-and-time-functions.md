@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 92813dac-4bf0-4681-9b71-7bd2e92a89a4
 TQID: https://experienceleague.adobe.com/E77KZbLpHtYJ-D7haukgux3AnmhfkIh-xqh0j6NbNiU
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2375
@@ -517,7 +519,7 @@ ht-degree: 2%
 
 指定从0到59的数字。 如果数字超出该范围，则函数返回前一分钟（对于负数）或后续分钟（对于正数）的秒数。
 
-如果您需要指定超出范围的数字，我们建议您使用[!UICONTROL  addSeconds]，如上文[addSeconds (date； number)](#addseconds-date-number)部分所述。
+如果您需要指定超出范围的数字，我们建议您使用[!UICONTROL &#x200B; addSeconds]，如上文[addSeconds (date； number)](#addseconds-date-number)部分所述。
 
 >[!BEGINSHADEBOX]
 
@@ -684,17 +686,17 @@ ht-degree: 2%
  </thead> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL日期] </td> 
+   <td>[!UICONTROL 日期] </td> 
    <td>日期 </td> 
    <td> <p>将日期值转换为文本值。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL格式] </td> 
+   <td>[!UICONTROL 格式] </td> 
    <td>文本 </td> 
    <td> <p>允许您使用日期/时间格式令牌指定格式。 有关详细信息，请参阅日期和时间格式的<a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">令牌</a>。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL时区] </td> 
+   <td>[!UICONTROL 时区] </td> 
    <td>文本 </td> 
    <td> <p>（可选）用于指定用于转换的时区。 </p> <p>有关可识别时区的列表，请参阅Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> tz数据库时区列表</a>中的“TZ数据库名称”列。 函数仅将此列中列出的值识别为有效时区。 将忽略任何其他值，并改为使用配置文件中指定的方案时区。 </p> <p>如果忽略此参数，将应用用户档案设置中指定的方案时区。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>Europe/Prague</code>， <code>UTC</code></p> </td> 
   </tr> 
@@ -752,17 +754,17 @@ ht-degree: 2%
  </thead> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL文本] </td> 
+   <td>[!UICONTROL 文本] </td> 
    <td>文本 </td> 
    <td> <p>将日期值转换为文本值。 </p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL格式] </td> 
+   <td>[!UICONTROL 格式] </td> 
    <td>文本 </td> 
    <td> <p>允许您使用日期/时间格式令牌指定格式。 有关详细信息，请参阅日期和时间格式的<a href="/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md" class="MCXref xref">令牌</a>。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>DD.MM.YYYY HH:mm</code> </p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL时区] </td> 
+   <td>[!UICONTROL 时区] </td> 
    <td>文本 </td> 
    <td> <p>（可选）用于指定用于转换的时区。 </p> <p>有关可识别时区的列表，请参阅Wikipedia <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> tz数据库时区列表</a>中的“TZ数据库名称”列。 函数仅将此列中列出的值识别为有效时区。 将忽略任何其他值，并改为使用配置文件中指定的方案时区。 </p> <p>如果忽略此参数，将应用用户档案设置中指定的方案时区。</p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span><code>Europe/Prague</code>， <code>UTC</code></p> </td> 
   </tr> 

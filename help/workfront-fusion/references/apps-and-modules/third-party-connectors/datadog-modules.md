@@ -5,9 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: c8c5f2e3-5af1-4957-bb6f-6c19c35102c5
 TQID: https://experienceleague.adobe.com/DM-90ye4UKybFarHch-ubk4vOt4Ofh69EBXTmAO-Hmw
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 959
@@ -107,7 +111,7 @@ Datadog连接器使用以下对象：
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[！UICONTROL连接名称]</td> 
+      <td role="rowheader">[!UICONTROL 连接名称]</td> 
       <td> <p> 输入连接名称。</p> </td> 
      </tr> 
         <tr>
@@ -119,15 +123,15 @@ Datadog连接器使用以下对象：
         <td>选择连接服务帐户还是个人帐户。</td>
         </tr>
      <tr> 
-      <td role="rowheader">[！UICONTROL域] </td> 
+      <td role="rowheader">[!UICONTROL 域] </td> 
       <td> <p>选择要连接的域（美国或欧盟）。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL API密钥位置] </td> 
+      <td role="rowheader">[!UICONTROL API密钥位置] </td> 
       <td> <p>选择是在标头中还是在查询字符串中包含API密钥。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL API Key]</td> 
+      <td role="rowheader">[!UICONTROL API Key]</td> 
       <td> <p> 输入您的[!DNL Datadog] API密钥。 </p> <p>有关检索API密钥的说明，请参阅本文中的<a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">检索API密钥和应用程序密钥</a>。</p> </td> 
      </tr> 
     </tbody> 
@@ -161,7 +165,7 @@ Datadog连接器使用以下对象：
    <td> <p>有关将 [!DNL Datadog] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">将 [!DNL Datadog] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL使用专用域]</td> 
+   <td role="rowheader">[!UICONTROL 使用专用域]</td> 
    <td>一些需要大量传入流量的Datadog API端点在其专用域上运行。 选中此框以使用专用域进行API调用。</td> 
   </tr> 
   <tr> 
@@ -228,15 +232,15 @@ URL： `/v1/dashboard`
    </ul>
    </td> 
   <tr> 
-   <td role="rowheader">[！UICONTROL间隔]</td> 
+   <td role="rowheader">[!UICONTROL 间隔]</td> 
    <td> 如果度量的类型为“比率”或“计数”，则定义相应的时间间隔。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL点]</td> 
+   <td role="rowheader">[!UICONTROL 点]</td> 
    <td><p>添加与量度相关的点数。</p> <p>这是JSON点数组。 每个点的格式如下： <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>注意：  <p>时间戳必须以秒为单位。</p> <p>时间戳必须为最新。 当前被定义为将来不超过10分钟或过去不超过1小时。</p> <p> 数值格式应为浮点值。</p> </p> <p>此字段必须包含至少1个项目。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL主机]</td> 
+   <td role="rowheader">[!UICONTROL 主机]</td> 
    <td>输入生成度量的主机的名称。 </td> 
   </tr> 
   <tr> 

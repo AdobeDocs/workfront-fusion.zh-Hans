@@ -6,8 +6,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 77237a1b-2acd-4350-9cc0-ec43b8b08137
 TQID: https://experienceleague.adobe.com/b-RlvqOsRRrFZMh8JrPFAS2pigkQP-6ugZ5kZl8AdZ8
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1063
@@ -105,15 +107,15 @@ Workday连接器使用以下对象：
                 <td>输入连接名称。</td>
             </tr>
             <tr>
-                <td  role="rowheader">[！UICONTROL Workday host]</td>
+                <td  role="rowheader">[!UICONTROL Workday host]</td>
                 <td>输入不带<code>https://</code>的[!DNL Workday]主机的地址。 例如：<code>mycompany.workday.com</code>。</td>
             </tr>
             <tr>
-                <td role="rowheader">[！UICONTROL服务URL]</td>
+                <td role="rowheader">[!UICONTROL 服务URL]</td>
                 <td>输入您的[!DNL Workday] Web服务的地址，但不输入<code>https://</code>。 例如：<code>mycompany-services.workday.com</code>。</td>
             </tr>
             <tr>
-                <td  role="rowheader">[！UICONTROL租户名称]</td>
+                <td  role="rowheader">[!UICONTROL 租户名称]</td>
                 <td>输入此[!DNL Workday]帐户的租户。 您的租户是贵组织的标识符，可在您用于登录Workday的URL中看到。 示例：在地址<code>https://www.myworkday.com/mycompany</code>中，租户是<code>mycompany</code>。</td>
             </tr>
             <tr>
@@ -125,7 +127,7 @@ Workday连接器使用以下对象：
                 <td>输入此连接使用的[!DNL Workday]应用程序的客户端密钥。 您在[!DNL Workday]中创建应用程序时获取此内容。</td>
             </tr>
             <tr>
-                <td role="rowheader">[！UICONTROL会话超时（分钟）]</td>
+                <td role="rowheader">[!UICONTROL 会话超时（分钟）]</td>
                 <td >输入授权令牌过期的分钟数。</td>
             </tr>
         </tbody>
@@ -179,7 +181,7 @@ Workday连接器使用以下对象：
             <td>输入或映射要创建的记录的ID。</td>
         </tr>
         <tr>
-            <td role="rowheader">[！UICONTROL子资源ID]</td>
+            <td role="rowheader">[!UICONTROL 子资源ID]</td>
             <td >输入或映射要创建的子资源的ID。</td>
         </tr>
     </tbody>
@@ -204,11 +206,11 @@ Workday连接器使用以下对象：
             <td>选择要删除的记录类型。</td>
         </tr>
         <tr>
-            <td role="rowheader">[！UICONTROL特定记录类型]</td>
+            <td role="rowheader">[!UICONTROL 特定记录类型]</td>
             <td>选择要删除的特定记录类型。 这些基于您选择的记录类型。</td>
         </tr>
         <tr>
-            <td  role="rowheader">[！UICONTROL子资源ID]</td>
+            <td  role="rowheader">[!UICONTROL 子资源ID]</td>
             <td>输入或映射要删除的子资源的ID。</td>
         </tr>
         <tr>
@@ -271,7 +273,7 @@ Workday连接器使用以下对象：
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL 连接]</td>
-            <td>有关将[!DNL Workday]帐户连接到Workfront Fusion的说明，请参阅<a href="#Connect" class="MCXref xref" >[！UICONTROL将[!DNL Workday]连接到Workfront Fusion]</a></td>
+            <td>有关将[!DNL Workday]帐户连接到Workfront Fusion的说明，请参阅<a href="#Connect" class="MCXref xref" >[!UICONTROL 将[!DNL Workday]连接到Workfront Fusion]</a></td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL 记录类型]</td>
@@ -282,7 +284,7 @@ Workday连接器使用以下对象：
             <td>输入或映射您希望更新的记录 ID。</td>
         </tr>
         <tr>
-            <td role="rowheader">[！UICONTROL子资源ID]</td>
+            <td role="rowheader">[!UICONTROL 子资源ID]</td>
             <td >输入或映射要更新的子资源的ID。</td>
         </tr>
     </tbody>
@@ -307,14 +309,14 @@ Workday连接器使用以下对象：
     <tbody>
         <tr>
             <td role="rowheader">[!UICONTROL 连接]</td>
-            <td>有关将[!DNL Workday]帐户连接到Workfront Fusion的说明，请参阅<a href="#Connect" class="MCXref xref" >[！UICONTROL将[!DNL Workday]连接到Workfront Fusion]</a></td>
+            <td>有关将[!DNL Workday]帐户连接到Workfront Fusion的说明，请参阅<a href="#Connect" class="MCXref xref" >[!UICONTROL 将[!DNL Workday]连接到Workfront Fusion]</a></td>
         </tr>
         <tr>
             <td  role="rowheader">[!UICONTROL 记录类型]</td>
             <td>选择要删除的记录类型。</td>
         </tr>
         <tr>
-            <td role="rowheader">[！UICONTROL特定记录类型]</td>
+            <td role="rowheader">[!UICONTROL 特定记录类型]</td>
             <td>选择要读取的特定记录类型。 这些基于您选择的记录类型。</td>
         </tr>
         <tr>

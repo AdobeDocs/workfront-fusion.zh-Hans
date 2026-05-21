@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
 TQID: https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 915
@@ -76,7 +77,7 @@ ht-degree: 12%
 
    针对方案的每次执行都列出了以下详细信息：
 
-   * 运行开始日期&#x200B;****
+   * 运行开始日期&#x200B;**&#x200B;**
    * 执行Id
    * **[!UICONTROL 状态]** （成功或失败）
    * 运行&#x200B;**[!UICONTROL 持续时间]**
@@ -117,7 +118,7 @@ ht-degree: 12%
 
 您可以过滤执行历史记录以仅查看具有指定值的执行。
 
-1. 打开方案的全页历史记录，如本文中[!UICONTROL 历史记录]选项卡](#view-scenario-history-on-the-history-tab)上的[查看方案执行历史记录中所述。
+1. 打开方案的全页历史记录，如本文中[!UICONTROL 历史记录]选项卡[&#128279;](#view-scenario-history-on-the-history-tab)上的查看方案执行历史记录中所述。
 1. 单击要作为筛选依据的列标题中的[!UICONTROL 筛选器]图标![方案筛选器图标](assets/fusion-scenario-filter-icon.png)。
 1. 在[!UICONTROL 筛选器]对话框中，输入筛选依据的值。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
@@ -137,7 +138,7 @@ You can sort the scenario execution history.
 
 ## 搜索场景的所有执行
 
-1. 打开方案的全页历史记录，如本文中[!UICONTROL 历史记录]选项卡](#view-scenario-history-on-the-history-tab)上的[查看方案执行历史记录中所述。
+1. 打开方案的全页历史记录，如本文中[!UICONTROL 历史记录]选项卡[&#128279;](#view-scenario-history-on-the-history-tab)上的查看方案执行历史记录中所述。
 1. 单击执行列表顶部的&#x200B;**[!UICONTROL 全文搜索]**。
 
    或

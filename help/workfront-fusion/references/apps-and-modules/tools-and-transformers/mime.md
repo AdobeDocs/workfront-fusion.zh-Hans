@@ -5,7 +5,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 9259356b-5b42-4b6d-9854-fce9718d14e3
 TQID: https://experienceleague.adobe.com/65lJuH7aL35rZCYDowjJuxuQAh88LHNyL3XRQVDJoOY
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 358
@@ -62,7 +63,7 @@ ht-degree: 25%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL MIME类型]</td> 
+   <td role="rowheader">[!UICONTROL MIME类型]</td> 
    <td> <p>输入或映射要确定其文件扩展名的MIME类型。 </p> </td> 
   </tr> 
  </tbody> 
@@ -77,12 +78,12 @@ ht-degree: 25%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL文件]</td> 
+   <td role="rowheader">[!UICONTROL 文件]</td> 
    <td> <p>输入或映射要为其确定MIME类型的文件。 </p> <p>您可以使用以下方式输入文件：</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL文件路径]</strong> </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span>/file/image.jpeg</p> </li> 
-     <li><strong>[！UICONTROL文件名]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例：</b></span></span>image.jpeg</p> </li> 
-     <li><strong>[！UICONTROL文件扩展名]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例：</b></span></span>jpeg</p> </li> 
+     <li> <p><strong>[!UICONTROL 文件路径]</strong> </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span>/file/image.jpeg</p> </li> 
+     <li><strong>[!UICONTROL 文件名]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例：</b></span></span>image.jpeg</p> </li> 
+     <li><strong>[!UICONTROL 文件扩展名]</strong>  <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例：</b></span></span>jpeg</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

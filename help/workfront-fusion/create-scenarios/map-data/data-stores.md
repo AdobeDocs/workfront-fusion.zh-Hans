@@ -5,8 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
 TQID: https://experienceleague.adobe.com/pCDU9BMkWEcUJZ9r4XN0dxEA8L89rWJyGQSWk10TiDs
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1366
@@ -113,15 +116,15 @@ Select或Prime包上的Fusion实例将接收:-->
     <col> 
     <tbody> 
      <tr> 
-      <td>[！UICONTROL数据存储名称] </td> 
+      <td>[!UICONTROL 数据存储名称] </td> 
       <td> <p>输入数据存储的名称。 </p> </td> 
      </tr> 
      <tr> 
-      <td> <p>[！UICONTROL Data Structure]</p> </td> 
+      <td> <p>[!UICONTROL Data Structure]</p> </td> 
       <td> <p>数据结构是表的列的列表。 此列表指示列名和数据类型。</p> <p>执行下列操作之一：</p> 
        <ul> 
         <li><b>选择已创建的数据结构</b></li> 
-        <li><b>添加新数据结构</b> <p>单击<strong>[！UICONTROL添加]</strong>以创建新的数据结构。</p> <p>有关详细信息，请参阅本文中的<a href="#set-up-the-data-structure" class="MCXref xref">设置数据结构</a>部分。</p> </li> 
+        <li><b>添加新数据结构</b> <p>单击<strong>[!UICONTROL 添加]</strong>以创建新的数据结构。</p> <p>有关详细信息，请参阅本文中的<a href="#set-up-the-data-structure" class="MCXref xref">设置数据结构</a>部分。</p> </li> 
         <li style="font-weight: bold;"> <p>将此字段留空</p> <p style="font-weight: normal;">如果不选择或添加数据结构，则数据库将仅包含主键。 如果您只想保存密钥，并且只想知道数据库中是否存在特定密钥，则此类数据库类型很有用。</p> </li> 
        </ul> </td> 
      </tr> 
@@ -142,15 +145,15 @@ Select或Prime包上的Fusion实例将接收:-->
     <col> 
     <tbody> 
      <tr> 
-      <td>[！UICONTROL数据结构名称]</td> 
+      <td>[!UICONTROL 数据结构名称]</td> 
       <td> <p> 输入新数据结构的名称。</p> </td> 
      </tr> 
      <tr> 
-      <td> <p>[！UICONTROL规范]</p> </td> 
+      <td> <p>[!UICONTROL 规范]</p> </td> 
       <td> <p>执行以下操作之一来设置数据存储列。</p> 
        <ul> 
-        <li> <p>单击<strong>[！UICONTROL添加项]</strong>以手动指定一列的属性。</p> <p>输入数据存储列的<strong>[！UICONTROL名称]</strong>和<strong>[！UICONTROL类型]</strong>并定义相应的属性。</p> </li> 
-        <li> <p>单击<strong>[！UICONTROL Generator]</strong>以根据您提供的示例数据确定列。</p> 
+        <li> <p>单击<strong>[!UICONTROL 添加项]</strong>以手动指定一列的属性。</p> <p>输入数据存储列的<strong>[!UICONTROL 名称]</strong>和<strong>[!UICONTROL 类型]</strong>并定义相应的属性。</p> </li> 
+        <li> <p>单击<strong>[!UICONTROL Generator]</strong>以根据您提供的示例数据确定列。</p> 
          <div class="example" data-mc-autonum="<b>Example: </b>">
           <span class="autonumber"><span><b>示例： </b></span></span> 
           <p>例如，以下JSON示例数据创建三列：姓名、年龄和电话号码。 电话号码是手机和固定电话号码的集合。</p> 
@@ -169,7 +172,7 @@ Select或Prime包上的Fusion实例将接收:-->
        </ul> </td> 
      </tr> 
      <tr> 
-      <td>[！UICONTROL严格] </td> 
+      <td>[!UICONTROL 严格] </td> 
       <td> <p>启用此选项以确保有效负载与数据结构匹配。 包含未在数据结构中指定的额外项的有效负载将被拒绝。</p> </td> 
      </tr> 
     </tbody> 

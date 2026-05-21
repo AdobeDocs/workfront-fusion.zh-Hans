@@ -9,8 +9,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 7cb1c1a7-3c7a-459a-818f-d9cefcb9988b
 TQID: https://experienceleague.adobe.com/jo9dNX5czLlg7Wi4iFBR6FlOM-fmM-i3zoEhh5sgsqc
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 607
@@ -22,7 +24,7 @@ ht-degree: 20%
 
 您可以将用户添加到[!DNL Adobe Admin Console]并将他们分配给Adobe Workfront Fusion，或将[!DNL Adobe Admin Console]中的现有用户分配给Workfront Fusion。
 
-有关描述[!DNL Adobe Admin Console]中的Workfront Fusion的视频（包括如何添加用户），请参阅Adobe IMS](https://video.tv.adobe.com/v/3412464/){target=_blank}上的[[!DNL Fusion] 。
+有关描述[!DNL Adobe Admin Console]中的Workfront Fusion的视频（包括如何添加用户），请参阅Adobe IMS[&#128279;](https://video.tv.adobe.com/v/3412464/){target=_blank}上的[!DNL Fusion] 。
 
 ## 访问权限要求
 
@@ -102,7 +104,7 @@ ht-degree: 20%
 
    将在Workfront Fusion中创建用户。
 
-1. （可选）继续在Workfront Fusion](#change-a-users-access-level-in-workfront-fusion)中[更改用户的访问级别。
+1. （可选）继续在Workfront Fusion[&#128279;](#change-a-users-access-level-in-workfront-fusion)中更改用户的访问级别。
 
 ## 在Workfront Fusion中更改用户的访问级别
 

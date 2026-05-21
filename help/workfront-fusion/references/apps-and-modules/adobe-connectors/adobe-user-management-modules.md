@@ -9,9 +9,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e8fe8ec4-4b00-4c9a-81a5-acb2039b153b
 TQID: https://experienceleague.adobe.com/Z8KIPMacTfdO2BJtbczdW3Tsrbb-MTB1rgY60FdPgps
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2385
@@ -95,18 +98,18 @@ ht-degree: 18%
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 客户端 ID]</td>
-        <td>输入您的[！UICONTROL Adobe] [！UICONTROL客户端ID]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td>输入您的[!UICONTROL Adobe] [!UICONTROL 客户端ID]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL IMS组织ID]</td>
+        <td role="rowheader">[!UICONTROL IMS组织ID]</td>
         <td>输入您的[!DNL Adobe] IMS凭据。 组织的唯一标识符。 这是一个格式为A495E53@AdobeOrg的字符串，其中@的前缀为十六进制数字。 您可以在Admin Console或adobe.io控制台中，将此值作为组织的URL路径的一部分来查找，以便进行用户管理集成。</td>
         </tr>
         <tr>
-        <td role="rowheader">[！UICONTROL其他作用域]</td>
+        <td role="rowheader">[!UICONTROL 其他作用域]</td>
         <td>对于要添加的每个其他范围，单击<b>添加项</b>并输入该范围。</td>
         </tr>
       </tbody>

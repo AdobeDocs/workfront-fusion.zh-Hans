@@ -5,9 +5,12 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: dcc5044d-8fdf-4a74-b664-e965e714ce92
 TQID: https://experienceleague.adobe.com/0yHy2mMpsOxPH-cphARzE3LmIlAmYLNQTpXxFgb6dvo
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 2906
@@ -164,11 +167,11 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL卡ID]</td> 
+   <td>[!UICONTROL 卡ID]</td> 
    <td>输入或映射您要将清单项目添加到的卡的ID。<p>在Workfront中查看信息卡时，您可以在URL中找到该信息卡ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL清单项目]</td> 
+   <td>[!UICONTROL 清单项目]</td> 
    <td>对于要添加的每个清单项目，单击“添加项目”，输入清单项目的名称，然后选择该项目是否已完成。</p></td> 
   </tr> 
  </tbody> 
@@ -187,11 +190,11 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL父卡片ID]</td> 
+   <td>[!UICONTROL 父卡片ID]</td> 
    <td>输入或映射要添加子任务的卡的ID。<p>在Workfront中查看信息卡时，您可以在URL中找到该信息卡ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL展示板ID]</td> 
+   <td>[!UICONTROL 展示板ID]</td> 
    <td>输入或映射包含要向其添加子任务的卡片的展示板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
   </tr> 
   <tr> 
@@ -214,11 +217,11 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL展示板ID]</td> 
+   <td>[!UICONTROL 展示板ID]</td> 
    <td>输入或映射要将信息卡添加到的展示板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL列ID]</td> 
+   <td>[!UICONTROL 列ID]</td> 
    <td>输入或映射要添加子任务的列的ID。<p>您可以从读取展示板模块返回的信息中找到列ID。</p></td> 
   </tr> 
   <tr> 
@@ -241,19 +244,19 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL卡ID]</td> 
+   <td>[!UICONTROL 卡ID]</td> 
    <td>输入或映射要移动的卡的ID。<p>在Workfront中查看信息卡时，您可以在URL中找到该信息卡ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL展示板ID]</td> 
+   <td>[!UICONTROL 展示板ID]</td> 
    <td>输入或映射包含要移动的信息卡的主板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL目标列ID]</td> 
+   <td>[!UICONTROL 目标列ID]</td> 
    <td>输入或映射要将卡片移动到的列的ID。<p>您可以从读取展示板模块返回的信息中找到列ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL到索引]</td> 
+   <td>[!UICONTROL 到索引]</td> 
    <td>输入或映射您希望信息卡在新列中的位置。<p>索引0中列的顶部位置。</p></td> 
   </tr> 
  </tbody> 
@@ -272,11 +275,11 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL卡ID]</td> 
+   <td>[!UICONTROL 卡ID]</td> 
    <td>输入或映射要读取的信息卡的ID。<p>在Workfront中查看信息卡时，您可以在URL中找到该信息卡ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL卡ID]</td> 
+   <td>[!UICONTROL 卡ID]</td> 
    <td>输入或映射包含要读取的卡的主板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
   </tr> 
  </tbody> 
@@ -295,11 +298,11 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL卡ID]</td> 
+   <td>[!UICONTROL 卡ID]</td> 
    <td>输入或映射要更新的信息卡的ID。<p>在Workfront中查看信息卡时，您可以在URL中找到该信息卡ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL展示板ID]</td> 
+   <td>[!UICONTROL 展示板ID]</td> 
    <td>输入或映射包含要更新的卡的主板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
   </tr> 
   <tr> 
@@ -311,17 +314,17 @@ Adobe Workfront主板连接器使用以下内容：
    <td>输入或映射卡的新描述。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL估计]</td> 
+   <td>[!UICONTROL 估计]</td> 
    <td>输入或映射完成此信息卡所需时间的估计值。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL到期日期]</td> 
+   <td>[!UICONTROL 到期日期]</td> 
    <td>输入或映射此卡的到期日期。</p>
    <p>有关支持的日期和时间格式列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">类型强制转换</a>。</p>
    </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL状态]</td> 
+   <td>[!UICONTROL 状态]</td> 
    <td>为信息卡选择新状态。</p></td> 
   </tr> 
  </tbody> 
@@ -345,11 +348,11 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL展示板名称]</td> 
+   <td>[!UICONTROL 展示板名称]</td> 
    <td>输入或映射新讨论区的名称。</td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL模板]</td> 
+   <td>[!UICONTROL 模板]</td> 
    <td>为要创建的展示板类型选择模板。</td> 
   </tr> 
  </tbody> 
@@ -368,7 +371,7 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL展示板ID]</td> 
+   <td>[!UICONTROL 展示板ID]</td> 
    <td>输入或映射要检索其信息的展示板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
   </tr> 
  </tbody> 
@@ -393,15 +396,15 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL展示板ID]</td> 
+   <td>[!UICONTROL 展示板ID]</td> 
    <td>输入或映射要添加列的展示板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL列ID]</td> 
+   <td>[!UICONTROL 列ID]</td> 
    <td>输入或映射要更新的列的ID。<p>您可以从读取展示板模块返回的信息中找到列ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL列名称]</td> 
+   <td>[!UICONTROL 列名称]</td> 
    <td>输入或映射列的新名称。</td> 
   </tr> 
  </tbody> 
@@ -420,11 +423,11 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL展示板ID]</td> 
+   <td>[!UICONTROL 展示板ID]</td> 
    <td>输入或映射包含要检索的列的展示板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL列名称]</td> 
+   <td>[!UICONTROL 列名称]</td> 
    <td>输入或映射要检索的列的名称。</td> 
   </tr> 
  </tbody> 
@@ -443,15 +446,15 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL展示板ID]</td> 
+   <td>[!UICONTROL 展示板ID]</td> 
    <td>输入或映射包含要检索的列的展示板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL列名称]</td> 
+   <td>[!UICONTROL 列名称]</td> 
    <td>输入或映射要检索的列的名称。</td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL WIP限制]</td> 
+   <td>[!UICONTROL WIP限制]</td> 
    <td>输入或映射列的新WIP限制。</td> 
   </tr> 
  </tbody> 
@@ -475,15 +478,15 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL卡ID]</td> 
+   <td>[!UICONTROL 卡ID]</td> 
    <td>输入或映射要添加标记的卡的ID。<p>在Workfront中查看信息卡时，您可以在URL中找到该信息卡ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL展示板ID]</td> 
+   <td>[!UICONTROL 展示板ID]</td> 
    <td>输入或映射包含要将标记添加到的卡的展示板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL标记ID]</td> 
+   <td>[!UICONTROL 标记ID]</td> 
    <td>输入或映射要添加标记的ID。<p>您可以从读取展示板模块返回的信息中找到标记ID。</p></td> 
   </tr> 
  </tbody> 
@@ -502,15 +505,15 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL展示板ID]</td> 
+   <td>[!UICONTROL 展示板ID]</td> 
    <td>输入或映射要为其创建标记的展示板的ID。<p>在Workfront中查看展示板时，您可以在URL中找到展示板ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL标记名称]</td> 
+   <td>[!UICONTROL 标记名称]</td> 
    <td>输入或映射新标记的名称。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL标记颜色]</td> 
+   <td>[!UICONTROL 标记颜色]</td> 
    <td>选择此标记的颜色。</td> 
   </tr> 
  </tbody> 
@@ -534,11 +537,11 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL卡ID]</td> 
+   <td>[!UICONTROL 卡ID]</td> 
    <td>输入或映射要添加注释的卡的ID。<p>在Workfront中查看信息卡时，您可以在URL中找到该信息卡ID。</p></td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Comment]</td> 
+   <td>[!UICONTROL Comment]</td> 
    <td>输入或映射要添加注释的文本。</p></td> 
   </tr> 
  </tbody> 
@@ -557,7 +560,7 @@ Adobe Workfront主板连接器使用以下内容：
       <td> <p>您可以使用现有的Workfront连接连接到Workfront展示板，也可以使用特定的Workfront展示板连接。 </p><p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#create-a-connection-to-workfront-boards" class="MCXref xref">创建与Workfront讨论区的连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL卡ID]</td> 
+   <td>[!UICONTROL 卡ID]</td> 
    <td>输入或映射要为其检索注释的卡片ID。<p>在Workfront中查看信息卡时，您可以在URL中找到该信息卡ID。</p></td> 
   </tr> 
   <tr> 
@@ -625,19 +628,19 @@ Adobe Workfront主板连接器使用以下内容：
    <td> <p>选择此调用的方法。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Query]</td> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
    <td> <p>以标准 JSON 对象的形式添加 API 调用的查询。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL操作名称]</td> 
+   <td role="rowheader">[!UICONTROL 操作名称]</td> 
    <td> <p>输入此操作的名称。 这样可以更轻松地跟踪和调试调用。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Variables数据源]</td> 
+   <td role="rowheader">[!UICONTROL Variables数据源]</td> 
    <td> <p>选择变量是来自表单还是集合。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Variables]</td> 
+   <td role="rowheader">[!UICONTROL Variables]</td> 
    <td> <p>对于要添加的每个变量，单击<b>添加项</b>并输入变量的键和值。</p> </td> 
   </tr> 
   <tr> 

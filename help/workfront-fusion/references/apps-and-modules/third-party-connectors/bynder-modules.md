@@ -5,8 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 0a45f8a7-12cc-41cc-9135-92f4779afac0
 TQID: https://experienceleague.adobe.com/2NCbEM8bb0s7m30uCFTWK-wYdhCYKEZC-W01Zr21mRw
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1863
@@ -157,12 +160,12 @@ Bynder连接器使用以下对象：
    <td> <p>有关将[!DNL Bynder]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL标记ID]</td> 
+   <td role="rowheader">[!UICONTROL 标记ID]</td> 
    <td> <p>输入或映射要添加到资产的标记的ID。</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资产ID]</td> 
-   <td> <p>对于每个要标记的资产，单击<strong>[！UICONTROL添加项]</strong>，然后输入或映射该资产ID。</p> </td> 
+   <td role="rowheader">[!UICONTROL 资产ID]</td> 
+   <td> <p>对于每个要标记的资产，单击<strong>[!UICONTROL 添加项]</strong>，然后输入或映射该资产ID。</p> </td> 
   </tr> 
  </tbody> 
  </table>
@@ -180,12 +183,12 @@ Bynder连接器使用以下对象：
    <td> <p>有关将[!DNL Bynder]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL收藏集ID]</td> 
+   <td role="rowheader">[!UICONTROL 收藏集ID]</td> 
    <td> <p>输入或映射要添加资产的收藏集的ID。</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资产ID]</td> 
-   <td> <p>对于要添加到收藏集的每个资产，单击<strong>[！UICONTROL添加项]</strong>，然后输入或映射资产ID。</p> </td> 
+   <td role="rowheader">[!UICONTROL 资产ID]</td> 
+   <td> <p>对于要添加到收藏集的每个资产，单击<strong>[!UICONTROL 添加项]</strong>，然后输入或映射资产ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -249,7 +252,7 @@ Bynder连接器使用以下对象：
    <td>输入或映射要下载的资源的ID。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资产版本]</td> 
+   <td role="rowheader">[!UICONTROL 资产版本]</td> 
    <td> <p>输入或映射要下载的资源版本。 要下载最新版本的资源，请将字段留空。</p> </td> 
   </tr> 
  </tbody> 
@@ -291,12 +294,12 @@ Bynder连接器使用以下对象：
    <td> <p>有关将[!DNL Bynder]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL标记ID]</td> 
+   <td role="rowheader">[!UICONTROL 标记ID]</td> 
    <td> <p>输入或映射要从资产中删除的标记的ID。</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资产ID]</td> 
-   <td> <p>对于要从中删除标记的每个资源，单击<strong>[！UICONTROL添加项]</strong>，然后输入或映射该资源ID。</p> </td> 
+   <td role="rowheader">[!UICONTROL 资产ID]</td> 
+   <td> <p>对于要从中删除标记的每个资源，单击<strong>[!UICONTROL 添加项]</strong>，然后输入或映射该资源ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -314,12 +317,12 @@ Bynder连接器使用以下对象：
    <td> <p>有关将[!DNL Bynder]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL收藏集ID]</td> 
+   <td role="rowheader">[!UICONTROL 收藏集ID]</td> 
    <td> <p>输入或映射要删除资产的收藏集的ID。</p> <p> </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL资产ID]</td> 
-   <td> <p>对于要从收藏集中删除的每个资源，单击<strong>[！UICONTROL添加项]</strong>，然后输入或映射该资源ID。</p> </td> 
+   <td role="rowheader">[!UICONTROL 资产ID]</td> 
+   <td> <p>对于要从收藏集中删除的每个资源，单击<strong>[!UICONTROL 添加项]</strong>，然后输入或映射该资源ID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -345,7 +348,7 @@ Bynder连接器使用以下对象：
    <td> <p>选择要为其输入信息的字段，然后输入要更新元数据的信息或将其映射到这些字段中。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[！UICONTROL Metaproperties]</p> </td> 
+   <td role="rowheader"> <p>[!UICONTROL Metaproperties]</p> </td> 
    <td>选择要更新的选项，然后输入信息或将信息映射到这些属性。 元属性是指有关资产的信息，并不表示资产中的特定字段。</td> 
   </tr> 
  </tbody> 
@@ -364,11 +367,11 @@ Bynder连接器使用以下对象：
    <td> <p>有关将[!DNL Bynder]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-bynder-to-workfront-fusion" class="MCXref xref">将[!DNL Bynder]连接到Workfront Fusion </a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL另存为]</td> 
+   <td role="rowheader">[!UICONTROL 另存为]</td> 
    <td> <p>选择要如何保存要上传的文件。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL新资产]</strong> </p> <p>选择要为其输入信息的字段和元属性，然后在这些字段中输入信息。</p> <p>输入或映射要用于上传资源的品牌的ID。</p> </li> 
-     <li> <p><strong>[！UICONTROL新资产版本]</strong> </p> <p>输入要为其上传新版本的资产的ID。</p> </li> 
+     <li> <p><strong>[!UICONTROL 新资产]</strong> </p> <p>选择要为其输入信息的字段和元属性，然后在这些字段中输入信息。</p> <p>输入或映射要用于上传资源的品牌的ID。</p> </li> 
+     <li> <p><strong>[!UICONTROL 新资产版本]</strong> </p> <p>输入要为其上传新版本的资产的ID。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -376,7 +379,7 @@ Bynder连接器使用以下对象：
    <td>从上一个模块中选择源文件，或映射源文件的名称和数据。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL异步文件上传]</td> 
+   <td role="rowheader">[!UICONTROL 异步文件上传]</td> 
    <td>在上传大文件时启用此选项。 这样可以防止大型文件阻止场景执行。</td> 
   </tr> 
  </tbody> 
@@ -403,9 +406,9 @@ Bynder连接器使用以下对象：
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
    <td> <p>选择要列出的记录类型。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL读取所有收藏集]</strong> </p> </li> 
-     <li> <p><strong>[！UICONTROL读取有关所有标记的信息]</strong> </p> </li> 
-     <li> <p><strong>[！UICONTROL读取收藏集的所有资产]</strong> </p> <p>输入或映射要为其列出资产的收藏集的ID。</p> </li> 
+     <li> <p><strong>[!UICONTROL 读取所有收藏集]</strong> </p> </li> 
+     <li> <p><strong>[!UICONTROL 读取有关所有标记的信息]</strong> </p> </li> 
+     <li> <p><strong>[!UICONTROL 读取收藏集的所有资产]</strong> </p> <p>输入或映射要为其列出资产的收藏集的ID。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -435,21 +438,21 @@ Bynder连接器使用以下对象：
    <td role="rowheader">[!UICONTROL 搜索条件]</td> 
    <td> <p>输入搜索条件。 </p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL字段]</strong> </p> <p>选择要在搜索中使用的字段</p> </li> 
-     <li> <p><strong>[！UICONTROL逻辑运算符]</strong> </p> <p>选择要在搜索中使用的运算符。</p> </li> 
-     <li> <p><strong>[！UICONTROL值]</strong> </p> <p>在选定字段中输入或映射要查找的值。 值类型应与所选字段的数据类型相同。 </p> <p>有关数据类型的详细信息，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">项数据类型</a>。</p> </li> 
+     <li> <p><strong>[!UICONTROL 字段]</strong> </p> <p>选择要在搜索中使用的字段</p> </li> 
+     <li> <p><strong>[!UICONTROL 逻辑运算符]</strong> </p> <p>选择要在搜索中使用的运算符。</p> </li> 
+     <li> <p><strong>[!UICONTROL 值]</strong> </p> <p>在选定字段中输入或映射要查找的值。 值类型应与所选字段的数据类型相同。 </p> <p>有关数据类型的详细信息，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md" class="MCXref xref">项数据类型</a>。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL结果集]</td> 
+   <td role="rowheader">[!UICONTROL 结果集]</td> 
    <td>选择您要返回第一个匹配的资产还是所有匹配的资产。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL排序方式]</td> 
+   <td role="rowheader">[!UICONTROL 排序方式]</td> 
    <td> <p>选择要作为排序依据的字段。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL排序方向]</td> 
+   <td role="rowheader">[!UICONTROL 排序方向]</td> 
    <td> <p>选择是要升序排序还是降序排序。</p> </td> 
   </tr> 
   <tr> 

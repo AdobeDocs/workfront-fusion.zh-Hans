@@ -5,9 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 16ae173b-10ce-481d-8f6c-1df0e65f7c0e
 TQID: https://experienceleague.adobe.com/hugbkrxjvBcwIiPQMfM9VIcRby-zpFK6U5hRmrF38Lc
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2: id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2:
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1884
@@ -119,7 +123,7 @@ ht-degree: 44%
           <td>输入您的Workfront实例将用于对此连接进行身份验证的URL。 <p>默认值为 <code>https://oauth.my.workfront.com/integrations/oauth2</code>。</p>
         </tr>
         <tr>
-          <td role="rowheader">[！UICONTROL资源]</td>
+          <td role="rowheader">[!UICONTROL 资源]</td>
           <td>输入您的[!DNL Dynamics 365]帐户的地址，不包括<code>>https://</code>。</p>
         </tr>
       </tbody>
@@ -164,10 +168,10 @@ ht-degree: 44%
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>选择要用于此模块的webhook。 </p> <p>要添加新的webhook，请执行以下操作：</p> 
     <ol> 
-     <li value="1"> <p>单击Webhook字段右侧的<strong>[！UICONTROL Add]</strong></p> </li> 
-     <li value="2"> <p>在<strong>[！UICONTROL Webhook]</strong>名称字段中，为webhook键入一个描述性名称。</p> </li> 
-     <li value="3"> <p>在<strong>[！UICONTROL连接]</strong>字段中，选择要使用的连接</p> <p>有关将 [!DNL Microsoft Dynamics 365] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将 [!DNL Microsoft Dynamics 365] 连接到 Workfront Fusion</a>。 </p> </li> 
-     <li value="4"> <p>单击<strong>[！UICONTROL保存]</strong>以保存webhook并返回模块。</p> </li> 
+     <li value="1"> <p>单击Webhook字段右侧的<strong>[!UICONTROL Add]</strong></p> </li> 
+     <li value="2"> <p>在<strong>[!UICONTROL Webhook]</strong>名称字段中，为webhook键入一个描述性名称。</p> </li> 
+     <li value="3"> <p>在<strong>[!UICONTROL 连接]</strong>字段中，选择要使用的连接</p> <p>有关将 [!DNL Microsoft Dynamics 365] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将 [!DNL Microsoft Dynamics 365] 连接到 Workfront Fusion</a>。 </p> </li> 
+     <li value="4"> <p>单击<strong>[!UICONTROL 保存]</strong>以保存webhook并返回模块。</p> </li> 
     </ol> </td> 
   </tr> 
  </tbody> 
@@ -192,19 +196,19 @@ ht-degree: 44%
   <td> <p>有关将 [!DNL Microsoft Dynamics 365] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将 [!DNL Microsoft Dynamics 365] 连接到 Workfront Fusion</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Include]</td> 
-   <td>选择您希望模块仅观看<strong>[！UICONTROL新记录]</strong>、<strong>[！UICONTROL仅更新记录]</strong>还是<strong>[！UICONTROL新记录和更新记录]</strong>。</td> 
+   <td role="rowheader">[!UICONTROL Include]</td> 
+   <td>选择您希望模块仅观看<strong>[!UICONTROL 新记录]</strong>、<strong>[!UICONTROL 仅更新记录]</strong>还是<strong>[!UICONTROL 新记录和更新记录]</strong>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL实体类型]</td> 
-   <td>选择要让方案关注的[！UICONTROL Microsoft Dynamics 365]记录类型。</td> 
+   <td role="rowheader">[!UICONTROL 实体类型]</td> 
+   <td>选择要让方案关注的[!UICONTROL Microsoft Dynamics 365]记录类型。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 输出]</td> 
    <td> <p>选择要包含在此模块输出捆绑包中的信息。 基于所选实体类型，字段可用。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL最大记录数]</td> 
+   <td role="rowheader">[!UICONTROL 最大记录数]</td> 
    <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
  </tbody> 
@@ -238,15 +242,15 @@ ht-degree: 44%
    <td> <p>有关将 [!DNL Microsoft Dynamics 365] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将 [!DNL Microsoft Dynamics 365] 连接到 Workfront Fusion</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL实体类型]</td> 
+   <td role="rowheader">[!UICONTROL 实体类型]</td> 
    <td>选择您希望模块创建的实体类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择要映射的字段]</td> 
+   <td role="rowheader">[!UICONTROL 选择要映射的字段]</td> 
    <td>选择创建记录时要包含其值的字段。 可用字段取决于实体类型。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[！UICONTROL属性字段]</td> 
+   <td role="rowheader">[!UICONTROL 属性字段]</td> 
    <td> 这些是您选择的字段。 输入您希望记录具有的给定属性值。 </td> 
   </tr> 
  </tbody> 
@@ -271,7 +275,7 @@ ht-degree: 44%
   <td> <p>有关将 [!DNL Microsoft Dynamics 365] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将 [!DNL Microsoft Dynamics 365] 连接到 Workfront Fusion</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL实体类型]</td> 
+   <td role="rowheader">[!UICONTROL 实体类型]</td> 
    <td> <p>选择要让模块删除的实体类型。</p> </td> 
   </tr> 
   <tr> 
@@ -344,7 +348,7 @@ ht-degree: 44%
   <td> <p>有关将 [!DNL Microsoft Dynamics 365] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将 [!DNL Microsoft Dynamics 365] 连接到 Workfront Fusion</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL实体类型]</td> 
+   <td role="rowheader">[!UICONTROL 实体类型]</td> 
    <td>选择您希望模块读取的实体类型。</td> 
   </tr> 
   <tr> 
@@ -377,15 +381,15 @@ ht-degree: 44%
   <td> <p>有关将 [!DNL Microsoft Dynamics 365] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将 [!DNL Microsoft Dynamics 365] 连接到 Workfront Fusion</a>。 </p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[！UICONTROL实体类型]</td> 
+   <td role="rowheader">[!UICONTROL 实体类型]</td> 
    <td>选择要更新模块的实体类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL选择要映射的字段]</td> 
+   <td role="rowheader">[!UICONTROL 选择要映射的字段]</td> 
    <td>选择创建记录时要包含其值的字段。 可用字段取决于实体类型。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[！UICONTROL属性字段]</td> 
+   <td role="rowheader">[!UICONTROL 属性字段]</td> 
    <td>这些是您选择的字段。 输入您希望记录具有的给定属性值。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
@@ -412,27 +416,27 @@ ht-degree: 44%
   <td> <p>有关将 [!DNL Microsoft Dynamics 365] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-microsoft-dynamics-365-to-workfront-fusion" class="MCXref xref">将 [!DNL Microsoft Dynamics 365] 连接到 Workfront Fusion</a>。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL实体类型]</td> 
+   <td role="rowheader">[!UICONTROL 实体类型]</td> 
    <td>选择要更新模块的实体类型。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL过滤器]</td> 
+   <td role="rowheader">[!UICONTROL 过滤器]</td> 
    <td> <p>选择要用于此搜索的过滤器。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL标准筛选器]</strong> </p> <p>选择字段和运算符，然后输入或映射要搜索的值，从而设置过滤器。 您可以在过滤器中使用AND或OR规则。</p> </li> 
-     <li> <p><strong>[！UICONTROL查询函数]</strong> </p> <p>输入要用于搜索的[!DNL Dynamics 365] Web API查询函数。 </p> <p>有关查询函数的更多信息，请参阅[!DNL Microsoft]文档中的<a href="https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/queryfunctions?view=dynamics-ce-odata-9">Web API查询函数引用</a>。</p> </li> 
+     <li> <p><strong>[!UICONTROL 标准筛选器]</strong> </p> <p>选择字段和运算符，然后输入或映射要搜索的值，从而设置过滤器。 您可以在过滤器中使用AND或OR规则。</p> </li> 
+     <li> <p><strong>[!UICONTROL 查询函数]</strong> </p> <p>输入要用于搜索的[!DNL Dynamics 365] Web API查询函数。 </p> <p>有关查询函数的更多信息，请参阅[!DNL Microsoft]文档中的<a href="https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/queryfunctions?view=dynamics-ce-odata-9">Web API查询函数引用</a>。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL排序]</td> 
+   <td role="rowheader">[!UICONTROL 排序]</td> 
    <td> <p>指定项目的返回顺序。 您可以添加多个排序。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL字段]</strong> </p> <p>指定要作为结果排序依据的字段。</p> </li> 
-     <li> <p><strong>[！UICONTROL方向]</strong> </p> <p>指定排序方向（升序或降序）。</p> </li> 
+     <li> <p><strong>[!UICONTROL 字段]</strong> </p> <p>指定要作为结果排序依据的字段。</p> </li> 
+     <li> <p><strong>[!UICONTROL 方向]</strong> </p> <p>指定排序方向（升序或降序）。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL最大记录数]</td> 
+   <td role="rowheader">[!UICONTROL 最大记录数]</td> 
    <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
   <tr> 

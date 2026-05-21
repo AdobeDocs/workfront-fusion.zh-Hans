@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 85607e4e-538a-427f-8a99-a0ab65a75ac2
 TQID: https://experienceleague.adobe.com/uVGhNEE-KiHbnVa2ZbP5h2rsg5GO2b1uuAkfj8BIJRw
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1416
@@ -113,7 +115,7 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
 
 * [[!UICONTROL 上传元素]](#upload-an-element)
 
-* [！UICONTROL [查看库中的新元素]](#watch-new-element-in-library)
+* [[!UICONTROL [查看库中的新元素]]](#watch-new-element-in-library)
 
 * [[!UICONTROL 观看更新的元素]](#watch-updated-elements)
 
@@ -131,11 +133,11 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
       <td>选择现有Creative Cloud Libraries连接。 当前无法在Creative Cloud Libraries连接器中创建连接。 现有连接按预期工作。</td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL库ID]</td>
+      <td role="rowheader">[!UICONTROL 库ID]</td>
       <td >选择或映射包含要存档的元素的库。</td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL元素ID]</td>
+      <td role="rowheader">[!UICONTROL 元素ID]</td>
       <td>选择或映射要存档的元素。</td>
     </tr>
   </tbody>
@@ -154,30 +156,30 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
       <td>选择现有Creative Cloud Libraries连接。 当前无法在Creative Cloud Libraries连接器中创建连接。 现有连接按预期工作。</td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL库ID]</td>
+      <td role="rowheader">[!UICONTROL 库ID]</td>
       <td>选择或映射包含要检索的元素的库。</td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL元素ID]</td>
+      <td role="rowheader">[!UICONTROL 元素ID]</td>
       <td>输入或映射要检索的元素的ID。</td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL选择器]</td>
+      <td role="rowheader">[!UICONTROL 选择器]</td>
       <td>
         <p>选择模块返回的信息类型。 </p>
         <ul>
           <li>
-            <p><b>[！UICONTROL默认值]</b>
+            <p><b>[!UICONTROL 默认值]</b>
             </p>
             <p>基础数据</p>
           </li>
           <li>
-            <p><b>[！UICONTROL详细信息]</b>
+            <p><b>[!UICONTROL 详细信息]</b>
             </p>
             <p>所有可用数据</p>
           </li>
           <li>
-            <p><b>[！UICONTROL呈现]</b>
+            <p><b>[!UICONTROL 呈现]</b>
             </p>
             <p>与库元素关联的资源平面化列表</p>
           </li>
@@ -200,11 +202,11 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
       <td>选择现有Creative Cloud Libraries连接。 当前无法在Creative Cloud Libraries连接器中创建连接。 现有连接按预期工作。</td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL库ID]</td>
+      <td role="rowheader">[!UICONTROL 库ID]</td>
       <td >选择或映射要从中列出元素的库。</td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL Order by]</td>
+      <td role="rowheader">[!UICONTROL Order by]</td>
       <td>选择是要按名称对结果进行排序，还是要按上次修改元素的日期对结果进行排序。</td>
     </tr>
     <tr>
@@ -212,22 +214,22 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
       <td >输入或映射MIME类型以将结果限制为使用指定MIME类型标识的元素。 示例：<code>string</code>。</td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL选择器]</td>
+      <td role="rowheader">[!UICONTROL 选择器]</td>
       <td>
         <p>选择模块返回的信息类型。 </p>
         <ul>
           <li>
-            <p><b>[！UICONTROL默认值]</b>
+            <p><b>[!UICONTROL 默认值]</b>
             </p>
             <p>基础数据</p>
           </li>
           <li>
-            <p><b>[！UICONTROL详细信息]</b>
+            <p><b>[!UICONTROL 详细信息]</b>
             </p>
             <p>所有可用数据</p>
           </li>
           <li>
-            <p><b>[！UICONTROL呈现]</b>
+            <p><b>[!UICONTROL 呈现]</b>
             </p>
             <p>与库元素关联的资源平面化列表</p>
           </li>
@@ -254,7 +256,7 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
       <td>选择现有Creative Cloud Libraries连接。 当前无法在Creative Cloud Libraries连接器中创建连接。 现有连接按预期工作。</td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL库ID]</td>
+      <td role="rowheader">[!UICONTROL 库ID]</td>
       <td >选择要监视更新元素的库。</td>
     </tr>
     <tr>
@@ -278,7 +280,7 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
       <td>选择现有Creative Cloud Libraries连接。 当前无法在Creative Cloud Libraries连接器中创建连接。 现有连接按预期工作。</td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL库ID]</td>
+      <td role="rowheader">[!UICONTROL 库ID]</td>
       <td >选择要监视新元素的库。</td>
     </tr>
     <tr>
@@ -358,7 +360,7 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL API版本]</td>
+      <td role="rowheader">[!UICONTROL API版本]</td>
       <td>
         <p>选择要连接的[!DNL Adobe Analytics] API的版本。</p>
       </td>
@@ -388,7 +390,7 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
        <tr>
-      <td role="rowheader">[！UICONTROL上传临时文档]</td>
+      <td role="rowheader">[!UICONTROL 上传临时文档]</td>
       <td>
       <p>如果要上载临时文档，请输入要上载文档的源文件。</p>
       <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p>
@@ -411,37 +413,37 @@ Adobe Creative Cloud Libraries连接器使用以下对象：
       <td>选择现有Creative Cloud Libraries连接。 当前无法在Creative Cloud Libraries连接器中创建连接。 现有连接按预期工作。</td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL库ID]</td>
+      <td role="rowheader">[!UICONTROL 库ID]</td>
       <td >选择要将资产上传到的库。</td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL调用模式]</td>
+      <td role="rowheader">[!UICONTROL 调用模式]</td>
       <td>
         <p>选择要用于调用此请求进程的处理模式。</p>
         <ul>
           <li>
-            <p><b>[！UICONTROL同步]</b>
+            <p><b>[!UICONTROL 同步]</b>
             </p>
             <p>API调用会同步处理。 处理完成后会发送响应（除非调用超时）。</p>
           </li>
           <li>
-            <p><b>[！UICONTROL异步]</b>
+            <p><b>[!UICONTROL 异步]</b>
             </p>
             <p>将立即返回异步监视器响应，并异步进行请求处理。 调用负责轮询端点，直到完成。</p>
           </li>
           <li>
-            <p><b>[！UICONTROL sync，async]</b>（默认）</p>
+            <p><b>[!UICONTROL sync，async]</b>（默认）</p>
             <p>尝试同步处理请求。 当处理时间超过5000 ms时，将返回异步监视器响应。 应轮询监视器URL，直到请求完成。</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL元素类型]</td>
+      <td role="rowheader">[!UICONTROL 元素类型]</td>
       <td >选择要上载的元素类型</td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL文件类型]</td>
+      <td role="rowheader">[!UICONTROL 文件类型]</td>
       <td >输入或映射上载文件的MIME类型。</td>
     </tr>
     <tr>

@@ -6,8 +6,10 @@ draft: Probably
 feature: Workfront Fusion
 exl-id: 41179cfe-c0f9-4d18-ab7e-374670ac688b
 TQID: https://experienceleague.adobe.com/Dq7tbOvvEndH-6k3yX8AvH29kZxp748JeT1HW-zcDDQ
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 657
@@ -89,19 +91,19 @@ ht-degree: 60%
         <td>选择连接服务帐户还是个人帐户。</td>
         </tr>
      <tr> 
-      <td role="rowheader">[！UICONTROL主机]</td> 
+      <td role="rowheader">[!UICONTROL 主机]</td> 
       <td> <p>输入数据库实例的IP地址或主机名。 此主机必须可从网络外部访问。</p> <p>示例： <code>[!DNL mariadb.hwoh2j5h.us-east-1.rds.amazon.com]</code></p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL端口]</td> 
+      <td role="rowheader">[!UICONTROL 端口]</td> 
       <td>默认端口为3306。 如果您使用的是非标准端口，请将此号码设置为您的端口。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL数据库]</td> 
+      <td role="rowheader">[!UICONTROL 数据库]</td> 
       <td>输入要与之交互的数据库名称。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL用户]</td> 
+      <td role="rowheader">[!UICONTROL 用户]</td> 
       <td>输入您的用户名。</td> 
      </tr> 
      <tr> 
@@ -134,7 +136,7 @@ ht-degree: 60%
    <td>有关将 [!DNL MariaDB] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">将 [!DNL MariaDB] 连接到 Workfront Fusion</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Query]</td> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
    <td> <p>输入您希望模块用于检索数据的SQL查询。</p> <p>重要信息：查询中使用的变量不会经过清理。 确保正确清理变量以防止SQL注入。</p> </td> 
   </tr> 
  </tbody> 
@@ -153,7 +155,7 @@ ht-degree: 60%
    <td>有关将 [!DNL MariaDB] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-mariadb-to-workfront-fusion" class="MCXref xref">将 [!DNL MariaDB] 连接到 Workfront Fusion</a>。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL表]</td> 
+   <td role="rowheader">[!UICONTROL 表]</td> 
    <td> <p>选择包含要读取的记录的表。</p> </td> 
   </tr> 
   <tr> 
@@ -166,8 +168,8 @@ ht-degree: 60%
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL排序] </td> 
-   <td> <p>对于要作为结果排序依据的每个级别，单击<strong>[！UICONTROL添加项]</strong>，然后选择要作为结果排序依据的字段以及要按升序还是降序排序</p> </td> 
+   <td role="rowheader">[!UICONTROL 排序] </td> 
+   <td> <p>对于要作为结果排序依据的每个级别，单击<strong>[!UICONTROL 添加项]</strong>，然后选择要作为结果排序依据的字段以及要按升序还是降序排序</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 限制]</td> 

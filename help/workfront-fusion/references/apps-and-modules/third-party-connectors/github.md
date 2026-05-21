@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d9e6c26c-8770-40bc-a83a-8c05f86e4a3f
 TQID: https://experienceleague.adobe.com/oGM3EGtQVFeEvQ1PPJQEsu9BI4-blE73oz3BR51eUWs
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1976
@@ -96,19 +98,19 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存储库]</td> 
+   <td role="rowheader">[!UICONTROL 存储库]</td> 
    <td>选择要监视的存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL问题编号]</td> 
+   <td role="rowheader">[!UICONTROL 问题编号]</td> 
    <td>如果要通过仅搜索针对特定问题提出的新注释来限制搜索，请输入问题编号。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回的最大问题数]</td> 
+   <td role="rowheader">[!UICONTROL 返回的最大问题数]</td> 
    <td> <p> 设置Workfront Fusion在一个周期内返回的最大评论数。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL监视]</td> 
+   <td role="rowheader">[!UICONTROL 监视]</td> 
    <td>选择是要只查看新注释，还是要查看注释及所有更改。</td> 
   </tr> 
  </tbody> 
@@ -127,11 +129,11 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存储库]</td> 
+   <td role="rowheader">[!UICONTROL 存储库]</td> 
    <td>选择要监视分支的存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回的分叉最大数量]</td> 
+   <td role="rowheader">[!UICONTROL 返回的分叉最大数量]</td> 
     <td>输入或映射您希望模块在每个方案执行周期中返回的最大分支数。</td>
   </tr> 
  </tbody> 
@@ -150,30 +152,30 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL我要观看]</td> 
+   <td role="rowheader">[!UICONTROL 我要观看]</td> 
    <td>选择是要监视与此帐户关联的所有存储库，还是只监视一个存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存储库]</td> 
+   <td role="rowheader">[!UICONTROL 存储库]</td> 
    <td>如果您已选择仅在一个存储库中监视问题，请选择要监视的存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回的最大问题数]</td> 
+   <td role="rowheader">[!UICONTROL 返回的最大问题数]</td> 
    <td> <p> 设置Workfront Fusion在一个周期内返回的最大问题数。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL监视]</td> 
+   <td role="rowheader">[!UICONTROL 监视]</td> 
    <td>选择您是希望仅关注新问题，还是希望关注新问题和所有更改。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 筛选条件]</td> 
    <td> <p>您可以过滤要关注的问题，方法是通过您与它们的关联方式。</p> 
     <ul> 
-     <li>[！UICONTROL所有问题]</li> 
-     <li>[！UICONTROL仅分配给我的问题]</li> 
-     <li>[！UICONTROL Only Issues created by me]</li> 
-     <li>[！UICONTROL仅问题提及我]</li> 
-     <li>[！UICONTROL仅我订阅的更新问题]</li> 
+     <li>[!UICONTROL 所有问题]</li> 
+     <li>[!UICONTROL 仅分配给我的问题]</li> 
+     <li>[!UICONTROL Only Issues created by me]</li> 
+     <li>[!UICONTROL 仅问题提及我]</li> 
+     <li>[!UICONTROL 仅我订阅的更新问题]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -181,7 +183,7 @@ ht-degree: 13%
    <td>选择是只查看未完成的问题，还是只查看已关闭的问题。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL标签]</td> 
+   <td role="rowheader">[!UICONTROL 标签]</td> 
    <td>对于要添加的每个标记，单击<b>添加项</b>并输入标记。 模块会监视这些标记是否存在问题。</td> 
   </tr> 
  </tbody> 
@@ -200,19 +202,19 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存储库]</td> 
+   <td role="rowheader">[!UICONTROL 存储库]</td> 
    <td>选择要监视的存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回的最大拉取请求数]</td> 
+   <td role="rowheader">[!UICONTROL 返回的最大拉取请求数]</td> 
    <td> <p> 设置Workfront Fusion在一个周期内返回的最大拉取请求数。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 状态]</td> 
-   <td>选择是要监视[！UICONTROL仅打开拉取]请求，还是要监视[！UICONTROL仅关闭拉取]请求，还是要监视所有拉取请求。 </td> 
+   <td>选择是要监视[!UICONTROL 仅打开拉取]请求，还是要监视[!UICONTROL 仅关闭拉取]请求，还是要监视所有拉取请求。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL监视]</td> 
+   <td role="rowheader">[!UICONTROL 监视]</td> 
    <td>选择您是只关注新的拉取请求，还是只关注新的拉取请求和所有更改。</td> 
   </tr> 
  </tbody> 
@@ -231,11 +233,11 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回存储库的最大数量]</td> 
+   <td role="rowheader">[!UICONTROL 返回存储库的最大数量]</td> 
    <td> <p> 设置Workfront Fusion在一个周期内返回的最大存储库数。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL监视]</td> 
+   <td role="rowheader">[!UICONTROL 监视]</td> 
    <td>选择是要监视新存储库和所有更改，还是只监视新存储库。</td> 
   </tr> 
  </tbody> 
@@ -267,15 +269,15 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存储库]</td> 
+   <td role="rowheader">[!UICONTROL 存储库]</td> 
    <td>选择包含要添加被分配人的问题的存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL被分派人]</td> 
+   <td role="rowheader">[!UICONTROL 被分派人]</td> 
    <td>选择要分配给问题的人员。 可用的被分配者包括拥有存储库写入权限的任何人和拥有存储库读取权限的组织成员。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL编号]</td> 
+   <td role="rowheader">[!UICONTROL 编号]</td> 
    <td>输入或映射要添加被分配人的问题的问题编号。 </td> 
   </tr> 
  </tbody> 
@@ -294,15 +296,15 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存储库]</td> 
+   <td role="rowheader">[!UICONTROL 存储库]</td> 
    <td>选择包含您要向其添加标签的问题存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL标签]</td> 
+   <td role="rowheader">[!UICONTROL 标签]</td> 
    <td>选择要添加到问题的标签。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL编号]</td> 
+   <td role="rowheader">[!UICONTROL 编号]</td> 
    <td>输入或映射要添加标签的问题编号。</td> 
   </tr> 
  </tbody> 
@@ -321,11 +323,11 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存储库]</td> 
+   <td role="rowheader">[!UICONTROL 存储库]</td> 
    <td>选择包含您要为其创建评论的问题的存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL编号]</td> 
+   <td role="rowheader">[!UICONTROL 编号]</td> 
    <td>输入或映射您要创建评论的问题编号。</td> 
   </tr> 
   <tr> 
@@ -348,23 +350,23 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存储库]</td> 
+   <td role="rowheader">[!UICONTROL 存储库]</td> 
    <td>选择要在其中创建问题的存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL被分派人]</td> 
+   <td role="rowheader">[!UICONTROL 被分派人]</td> 
    <td>选择要分配给问题的人员。 可用的被分配者包括拥有存储库写入权限的任何人，以及拥有存储库读取权限的组织成员。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL里程碑]</td> 
+   <td role="rowheader">[!UICONTROL 里程碑]</td> 
    <td>选择要与新问题关联的里程碑。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL标签]</td> 
+   <td role="rowheader">[!UICONTROL 标签]</td> 
    <td>选择要应用于新问题的任何标签。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL标题]</td> 
+   <td role="rowheader">[!UICONTROL 标题]</td> 
    <td>输入或映射新问题的标题。</td> 
   </tr> 
   <tr> 
@@ -387,11 +389,11 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存储库]</td> 
+   <td role="rowheader">[!UICONTROL 存储库]</td> 
    <td>选择包含您要检索其详细信息的问题的存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL编号]</td> 
+   <td role="rowheader">[!UICONTROL 编号]</td> 
    <td>输入或映射要检索其详细信息的问题的问题编号。 </td> 
   </tr> 
  </tbody> 
@@ -410,15 +412,15 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存储库]</td> 
+   <td role="rowheader">[!UICONTROL 存储库]</td> 
    <td>选择包含您要从中列出注释的问题的存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL编号]</td> 
+   <td role="rowheader">[!UICONTROL 编号]</td> 
    <td>输入或映射要从中列出注释的问题编号。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL始自]</td> 
+   <td role="rowheader">[!UICONTROL 始自]</td> 
    <td>模块将返回在此日期之后创建的注释。 有关支持的日期格式的列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">类型强制</a>。</td> 
   </tr> 
   <tr> 
@@ -441,15 +443,15 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存储库]</td> 
+   <td role="rowheader">[!UICONTROL 存储库]</td> 
    <td>选择包含要从其中移除标签的问题存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL标签]</td> 
+   <td role="rowheader">[!UICONTROL 标签]</td> 
    <td>选择要从问题中删除的标签。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL编号]</td> 
+   <td role="rowheader">[!UICONTROL 编号]</td> 
    <td>输入或映射要从其中移除标签的问题编号。</td> 
   </tr> 
  </tbody> 
@@ -468,15 +470,15 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存储库]</td> 
+   <td role="rowheader">[!UICONTROL 存储库]</td> 
    <td>选择包含要从其中移除被分配人的问题的存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL被分派人]</td> 
+   <td role="rowheader">[!UICONTROL 被分派人]</td> 
    <td>选择要从问题中删除的人员。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL编号]</td> 
+   <td role="rowheader">[!UICONTROL 编号]</td> 
    <td>输入或映射要从其中移除被分配人的问题的问题编号。 </td> 
   </tr> 
  </tbody> 
@@ -495,25 +497,25 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL返回的最大问题数]</td> 
+   <td role="rowheader">[!UICONTROL 返回的最大问题数]</td> 
    <td> <p> 设置Workfront Fusion在一个周期内返回的最大问题数。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL排序方式]</td> 
+   <td role="rowheader">[!UICONTROL 排序方式]</td> 
    <td> <p>选择您希望对搜索结果进行排序的方式。</p> 
     <ul> 
-     <li> <p>[！UICONTROL最佳匹配] </p> </li> 
-     <li>[！UICONTROL创建日期]</li> 
-     <li>[！UICONTROL更新日期]</li> 
-     <li>[！UICONTROL评论数]</li> 
+     <li> <p>[!UICONTROL 最佳匹配] </p> </li> 
+     <li>[!UICONTROL 创建日期]</li> 
+     <li>[!UICONTROL 更新日期]</li> 
+     <li>[!UICONTROL 评论数]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL排序方向]</td> 
-   <td> <p>选择升序或降序。 </p> <p>对于日期，选择<strong>[！UICONTROL descending]</strong>将首先返回最近的日期。 </p> <p>对于[！UICONTROL评论数]，选择<strong>[！UICONTROL降序]</strong>将首先返回评论数最多的问题。</p> </td> 
+   <td role="rowheader">[!UICONTROL 排序方向]</td> 
+   <td> <p>选择升序或降序。 </p> <p>对于日期，选择<strong>[!UICONTROL descending]</strong>将首先返回最近的日期。 </p> <p>对于[!UICONTROL 评论数]，选择<strong>[!UICONTROL 降序]</strong>将首先返回评论数最多的问题。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL Query]</td> 
+   <td role="rowheader">[!UICONTROL Query]</td> 
    <td>输入或映射您的搜索查询。 有关搜索选项的详细说明，请参阅[!DNL GitHub]帮助网站上的<a href="https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests">搜索问题和拉取请求</a>。</td> 
   </tr> 
  </tbody> 
@@ -532,23 +534,23 @@ ht-degree: 13%
    <td> <p>有关将[!DNL GitHub]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL存储库]</td> 
+   <td role="rowheader">[!UICONTROL 存储库]</td> 
    <td>选择要更新问题的存储库。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL被分派人]</td> 
+   <td role="rowheader">[!UICONTROL 被分派人]</td> 
    <td>选择要分配给问题的人员。 可用的被分配者包括拥有存储库写入权限的任何人和拥有存储库读取权限的组织成员。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL里程碑]</td> 
+   <td role="rowheader">[!UICONTROL 里程碑]</td> 
    <td>选择要与问题关联的里程碑。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL标签]</td> 
+   <td role="rowheader">[!UICONTROL 标签]</td> 
    <td>选择要应用于问题的任何标签。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL编号]</td> 
+   <td role="rowheader">[!UICONTROL 编号]</td> 
    <td>输入或映射要更新的问题的问题编号。 </td> 
   </tr> 
   <tr> 
@@ -556,7 +558,7 @@ ht-degree: 13%
    <td>选择要将问题更新到的状态。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL标题]</td> 
+   <td role="rowheader">[!UICONTROL 标题]</td> 
    <td>输入或映射问题的新标题。</td> 
   </tr> 
   <tr> 

@@ -5,8 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 9a6fccd6-6eee-42dc-a678-c1f34280d139
 TQID: https://experienceleague.adobe.com/bCfkq5fzw21hmZWLrWztL27g2RAlBbyk9vPEQ-v6bBU
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
 source-wordcount: 1467
@@ -117,11 +119,11 @@ Allocadia连接器使用以下对象：
  <tbody> 
   <tr> 
    td role="rowheader"&gt; <p>[!UICONTROL 连接]</p> </td> 
-   <td> <p>有关将Allocadia帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">[！UICONTROL Connect Allocadia]到Workfront Fusion</a>。</p> </td> 
+   <td> <p>有关将Allocadia帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">[!UICONTROL Connect Allocadia]到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">筛选条件</td> 
-   <td> <p>选择您希望方案仅观看“新记录”、[！UICONTROL仅更新记录]还是“新记录和更新记录”。</p> </td> 
+   <td> <p>选择您希望方案仅观看“新记录”、[!UICONTROL 仅更新记录]还是“新记录和更新记录”。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">实体类型</td> 
@@ -207,12 +209,12 @@ Allocadia连接器使用以下对象：
    <td> <p>有关将 [!DNL Allocadia] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">将 [!DNL Allocadia] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL实体类型]</td> 
+   <td role="rowheader">[!UICONTROL 实体类型]</td> 
    <td>选择您希望模块读取的[!DNL Allocadia]记录的类型。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 输出]</td> 
-   <td> <p>选择要包含在模块输出中的字段。 可用字段取决于您选择的[！UICONTROL实体类型]。</p> </td> 
+   <td> <p>选择要包含在模块输出中的字段。 可用字段取决于您选择的[!UICONTROL 实体类型]。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID]</td> 
@@ -238,11 +240,11 @@ Allocadia连接器使用以下对象：
    <td> <p>有关将 [!DNL Allocadia] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">将 [!DNL Allocadia] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL实体类型]</td> 
+   <td role="rowheader">[!UICONTROL 实体类型]</td> 
    <td>选择是要基于联机项目还是列选项创建新的记录。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL预算]</td> 
+   <td role="rowheader">[!UICONTROL 预算]</td> 
    <td> <p>选择要创建记录的预算。</p> </td> 
   </tr> 
   <tr> 
@@ -275,12 +277,12 @@ Allocadia连接器使用以下对象：
    <td> <p>有关将 [!DNL Allocadia] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">将 [!DNL Allocadia] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL实体类型]</td> 
+   <td role="rowheader">[!UICONTROL 实体类型]</td> 
    <td> <p>选择要删除的实体类型。</p> 
     <ul> 
-     <li> <p><strong>[！UICONTROL行项]</strong> </p> <p>输入行项目标识</p> </li> 
-     <li> <p><strong>[！UICONTROL列选择]</strong> </p> <p>选择要从中删除记录的预算，然后输入列ID和选项ID。</p> </li> 
-     <li> <p><strong>[！UICONTROL预测标记]</strong> </p> <p>选择要从中删除记录的预算，然后输入标签ID。</p> </li> 
+     <li> <p><strong>[!UICONTROL 行项]</strong> </p> <p>输入行项目标识</p> </li> 
+     <li> <p><strong>[!UICONTROL 列选择]</strong> </p> <p>选择要从中删除记录的预算，然后输入列ID和选项ID。</p> </li> 
+     <li> <p><strong>[!UICONTROL 预测标记]</strong> </p> <p>选择要从中删除记录的预算，然后输入标签ID。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -302,14 +304,14 @@ Allocadia连接器使用以下对象：
  <tbody> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 连接]</p> </td> 
-   <td> <p>有关将您的[！UICONTROL Allocadia]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">将[!DNL Allocadia]连接到Workfront Fusion</a>。</p> </td> 
+   <td> <p>有关将您的[!UICONTROL Allocadia]帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">将[!DNL Allocadia]连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL实体类型]</td> 
+   <td role="rowheader">[!UICONTROL 实体类型]</td> 
    <td>选择要更新模块的[!DNL Allocadia]记录的类型。 根据您选择的实体类型，将显示其他字段。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL预算]</td> 
+   <td role="rowheader">[!UICONTROL 预算]</td> 
    <td> <p>选择要更新记录的预算。 </p> </td> 
   </tr> 
  </tbody> 
@@ -336,19 +338,19 @@ Allocadia连接器使用以下对象：
    <td> <p>有关将 [!DNL Allocadia] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-allocadia-to-workfront-fusion" class="MCXref xref">将 [!DNL Allocadia] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL实体类型]</td> 
+   <td role="rowheader">[!UICONTROL 实体类型]</td> 
    <td>选择要模块搜索的[!DNL Allocadia]记录的类型。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL预算]</td> 
+   <td role="rowheader">[!UICONTROL 预算]</td> 
    <td> <p>选择要搜索的预算。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL结果集]</td> 
+   <td role="rowheader">[!UICONTROL 结果集]</td> 
    <td>选择您希望模块返回所有匹配记录，还是仅返回第一个匹配记录。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL最大记录数]</td> 
+   <td role="rowheader">[!UICONTROL 最大记录数]</td> 
    <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
   <tr> 
