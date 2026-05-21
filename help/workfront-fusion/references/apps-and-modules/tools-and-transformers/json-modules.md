@@ -4,9 +4,12 @@ description: Adobe Workfront Fusion JSON应用程序提供了用于处理JSON格
 author: Becky
 feature: Workfront Fusion
 exl-id: f8b281c5-bb63-4412-98c5-d82f45f8eafc
-source-git-commit: 6aad13e81c083754d7aad53dec103715bd6b8807
+TQID: https://experienceleague.adobe.com/hyUiO-ocxPsI8Wz0A34ZZ2LyBNbJWGrY5CbquHVQvHI
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: 1230
 ht-degree: 14%
 
 ---
@@ -61,7 +64,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
 1. 手动运行方案。 这允许[!UICONTROL 解析JSON]模块从您提供的JSON中识别JSON结构。
 1. 您现在可以连接以下模块。 现在，可以映射解析JSON模块中的项目。
 
-有关详细信息，请参阅[Adobe Workfront Fusion[!UICONTROL 中的]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)数据结构。
+有关详细信息，请参阅[!UICONTROL Adobe Workfront Fusion]](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)中的[数据结构。
 
 ### 收藏集与数组
 
@@ -109,9 +112,9 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
 
 ## [!UICONTROL JSON]模块及其字段
 
-在您配置 [!DNL JSON] 模块时，Workfront Fusion 会显示以下字段。除了这些以外，还可能会显示其他JSON字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的加粗标题表示必填字段。
+在您配置 [!DNL JSON] 模块时，Workfront Fusion 会显示以下字段。 除了这些以外，还可能会显示其他JSON字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -131,23 +134,23 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source module] </td> 
+   <td role="rowheader">[！UICONTROL Source module] </td> 
    <td> <p>选择用于输出要汇总到JSON的数据的模块。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data structure]</td> 
+   <td role="rowheader">[！UICONTROL Data structure]</td> 
    <td> <p>选择要用于创建JSON的数据结构。 数据结构决定了此模块中可用的其他字段。 有关详细信息，请参阅本文中的<a href="#data-structure" class="MCXref xref">数据结构</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 缩进]</td> 
+   <td role="rowheader">[！UICONTROL缩进]</td> 
    <td> <p> 选择是要使用制表符、两个空格还是四个空格缩进JSON。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 分组依据]</td> 
+   <td role="rowheader">[！UICONTROL分组依据]</td> 
    <td>定义要按其分组聚合输出的表达式。 此表达式可以包含一个或多个映射项。 然后，使用此表达式的值将聚合的数据分成不同的组。 每个组输出为一个单独的捆绑，其中包含一个键（经过计算的表达式）和一个值（聚合文本）。 在后续模块中，您可以将该键用作过滤器。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 在出现空聚合后停止处理]</td> 
+   <td role="rowheader">[！UICONTROL在出现空聚合后停止处理]</td> 
    <td>启用此选项可在没有结果时停止方案。</td> 
   </tr> 
  </tbody> 
@@ -169,7 +172,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL JSON string] </td> 
+   <td role="rowheader">[！UICONTROL JSON string] </td> 
    <td> <p>输入或映射要转换为XML的JSON。</p> </td> 
   </tr> 
  </tbody> 
@@ -203,11 +206,11 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data structure]</td> 
+   <td role="rowheader">[！UICONTROL Data structure]</td> 
    <td> <p>选择要用于创建JSON的数据结构。 有关详细信息，请参阅本文中的<a href="#data-structure" class="MCXref xref">数据结构</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL JSON string] </td> 
+   <td role="rowheader">[！UICONTROL JSON string] </td> 
    <td> <p>输入或映射要解析的JSON。</p> </td> 
   </tr> 
  </tbody> 
@@ -226,7 +229,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
    <td> <p>选择要用于此JSON的缩进。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 对象]</td> 
+   <td role="rowheader">[！UICONTROL对象]</td> 
    <td> <p>输入或映射要转换为JSON的对象。</p> </td> 
   </tr> 
  </tbody> 
@@ -240,7 +243,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
 
 1. 将[!DNL Google Sheets] > [!UICONTROL 选择方案中的行]模块以获取数据。 设置模块以从[!DNL Google]电子表格中检索行。 将&#x200B;**[!UICONTROL 返回的最大行数]**&#x200B;设置为一个较小的数字，但大于一个以用于测试目的（例如，三个）。 执行[!DNL Google Sheets]模块，方法是右键单击该模块并选择“**[!UICONTROL 仅运行此模块]**”。 验证模块的输出。
 
-1. 在[!UICONTROL 模块之后连接]数组汇总[!DNL Google Sheets]模块。 在模块设置的[!DNL Google Sheets]Source节点&#x200B;**[!UICONTROL 字段中选择]**&#x200B;模块。 请暂时保留其他字段。
+1. 在[!DNL Google Sheets]模块之后连接[!UICONTROL 数组汇总]模块。 在模块设置的&#x200B;**[!UICONTROL Source节点]**&#x200B;字段中选择[!DNL Google Sheets]模块。 请暂时保留其他字段。
 
 1. 在[!UICONTROL 数组聚合器]模块之后连接[!UICONTROL JSON] > [!UICONTROL 创建JSON]模块。 模块设置需要一个描述JSON格式的数据结构。 单击&#x200B;**[!UICONTROL 添加]**&#x200B;以打开数据结构设置。 创建此数据结构的最简单方法是自动从JSON示例生成它。 单击&#x200B;**[!UICONTROL 生成器]**&#x200B;并将您的JSON示例粘贴到&#x200B;**[!UICONTROL 示例数据]**&#x200B;字段：
 
@@ -258,7 +261,7 @@ Adobe Workfront Fusion [!UICONTROL JSON]应用程序提供了用于处理JSON格
    }
    ```
 
-1. 单击 **[!UICONTROL Save]**。数据结构中的[!UICONTROL Specification]字段现在包含生成的结构。
+1. 单击 **[!UICONTROL Save]**。 数据结构中的[!UICONTROL Specification]字段现在包含生成的结构。
 1. 将数据结构的名称更改为更具体的名称，然后单击&#x200B;**[!UICONTROL 保存]**。 与root数组属性对应的字段在JSON模块的设置中显示为可映射字段。
 
 1. 单击该字段旁边的&#x200B;**[!UICONTROL 映射]**&#x200B;按钮，并将Array聚合器输出中的`Array[]`项映射到它。

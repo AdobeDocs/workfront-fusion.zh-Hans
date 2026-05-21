@@ -1,13 +1,16 @@
 ---
 title: Power BI模块
-description: 除了Adobe Workfront许可证之外，Adobe Workfront Fusion还需要Adobe Workfront Fusion许可证。
+description: 使用 Adobe Workfront Fusion 需要在拥有 Adobe Workfront 许可的基础上另行购买 Workfront Fusion 许可。
 author: Becky
 feature: Workfront Fusion
 exl-id: 73eb70e1-3f3d-419d-9cde-3ec3cda224f8
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/JYHqJHWDLrc6DDe6L8UwgKUCU0nxXib0ESCGYdMz4nQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2606'
-ht-degree: 0%
+source-wordcount: 2612
+ht-degree: 20%
 
 ---
 
@@ -20,41 +23,41 @@ ht-degree: 0%
 >Workfront Fusion不是数据源。 虽然Workfront Fusion可以创建和使用数据源，但它不会存储您的数据。
 
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -71,21 +74,21 @@ Microsoft Power BI连接器使用以下对象：
    <td> https://api.powerbi.com/v1.0</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API版本</td> 
+   <td role="rowheader">API 版本</td> 
    <td> v1.0 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">API标记</td> 
+   <td role="rowheader">API 标记</td> 
    <td>v1.0.2</td> 
   </tr>
  </tbody> 
  </table>
 
-## [!DNL Power BI]模块及其字段
+## [!DNL Power BI] 模块及其字段
 
-配置[!DNL Power BI]时，Workfront Fusion将显示以下列出的字段。 除此以外，还可能会显示其他字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的粗体标题表示必填字段。
+在您配置 [!DNL Power BI] 时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多字段。 模块中的加粗标题表示必填字段。
 
-如果看到字段或函数上方的映射按钮，则可以使用该按钮设置该字段的变量和函数。 有关详细信息，请参阅[在Adobe Workfront Fusion中将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[在Adobe Workfront Fusion中将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -112,7 +115,7 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
@@ -120,7 +123,7 @@ Microsoft Power BI连接器使用以下对象：
       <td>输入或映射功能板的名称。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>选择或映射将拥有新功能板的组的ID。</td>
     </tr>
   </tbody>
@@ -135,23 +138,23 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入功能板ID]</td>
+      <td role="rowheader">[！UICONTROL输入功能板ID]</td>
       <td>
         <p>选择或映射选项以选择要为其检索元数据的仪表板。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 功能板ID]</td>
+      <td role="rowheader">[！UICONTROL功能板ID]</td>
       <td>
         <p>输入或映射要为其检索元数据的仪表板的ID。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>选择或映射拥有您要为其检索元数据的功能板的组的ID。</td>
     </tr>
   </tbody>
@@ -166,27 +169,27 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入功能板ID]</td>
+      <td role="rowheader">[！UICONTROL输入功能板ID]</td>
       <td>
         <p>选择或映射选项以选择要检索的仪表板详细信息。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 功能板ID]</td>
+      <td role="rowheader">[！UICONTROL功能板ID]</td>
       <td>
         <p>输入或映射要检索其详细信息的仪表板的ID。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 拼贴ID]</td>
+      <td role="rowheader">[！UICONTROL拼贴ID]</td>
       <td>输入或映射要检索其详细信息的[!DNL Power BI]拼贴的ID。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>选择或映射拥有您要检索的拼贴的组的ID。</td>
     </tr>
   </tbody>
@@ -201,29 +204,29 @@ Microsoft Power BI连接器使用以下对象：
 <col/>
 <tbody>
   <tr>
-    <td role="rowheader">[!UICONTROL Connection]</td>
+    <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL 输入功能板ID]</td>
+    <td role="rowheader">[！UICONTROL输入功能板ID]</td>
     <td>
       <p>选择或映射选项以选择要列出其图块的仪表板。</p>
     </td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL 功能板ID]</td>
+    <td role="rowheader">[！UICONTROL功能板ID]</td>
     <td>
       <p>输入或映射包含要列出的图块的仪表板的ID。</p>
     </td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL 组ID]  </td>
+    <td role="rowheader">[！UICONTROL组ID]  </td>
     <td>选择或映射拥有包含要列出的图块的仪表板的组的ID。</td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL 限制]  </td>
     <td>
-      <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p>
+      <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p>
     </td>
   </tr>
 </tbody>
@@ -238,11 +241,11 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>
         <p>选择或映射拥有要列出的功能板的组的ID。</p>
       </td>
@@ -250,7 +253,7 @@ Microsoft Power BI连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL 限制]  </td>
       <td>
-        <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p>
+        <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p>
       </td>
     </tr>
   </tbody>
@@ -272,27 +275,27 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入报表ID]</td>
+      <td role="rowheader">[！UICONTROL输入报表ID]</td>
       <td>
         <p>选择或映射选项以选择要复制的报表。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 报表ID]</td>
+      <td role="rowheader">[！UICONTROL报表ID]</td>
       <td>
         <p>输入或映射要复制的报表的ID。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>选择或映射拥有要复制的报表的组的ID。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 新复制的报表名称]</td>
+      <td role="rowheader">[！UICONTROL新复制的报表名称]</td>
       <td>输入或映射新报表的名称。</td>
     </tr>
   </tbody>
@@ -307,23 +310,23 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入报表ID]</td>
+      <td role="rowheader">[！UICONTROL输入报表ID]</td>
       <td>
         <p>选择或映射选项以选择要删除的报表。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 报表ID]</td>
+      <td role="rowheader">[！UICONTROL报表ID]</td>
       <td>
         <p>输入或映射要删除的报表的ID。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>选择或映射拥有要删除的报表的组的ID。</td>
     </tr>
   </tbody>
@@ -338,23 +341,23 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入报表ID]</td>
+      <td role="rowheader">[！UICONTROL输入报表ID]</td>
       <td>
         <p>选择或映射选项以选择要为其检索元数据的报表。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 报表ID]</td>
+      <td role="rowheader">[！UICONTROL报表ID]</td>
       <td>
         <p>输入或映射要为其检索元数据的报表的ID。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>选择或映射拥有您要为其检索元数据的报表的组的ID。</td>
     </tr>
   </tbody>
@@ -369,11 +372,11 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>
         <p>选择或映射拥有要列出的报告的组的ID。</p>
       </td>
@@ -381,7 +384,7 @@ Microsoft Power BI连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL 限制]  </td>
       <td>
-        <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p>
+        <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p>
       </td>
     </tr>
   </tbody>
@@ -406,58 +409,58 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入表]</td>
+      <td role="rowheader">[！UICONTROL输入表]</td>
       <td>选择或映射选项以选择包含要调整的表的数据集。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 数据集ID]</td>
+      <td role="rowheader">[！UICONTROL数据集ID]</td>
       <td>输入或映射包含要添加或删除的行的数据集的ID。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 表名称]  </td>
+      <td role="rowheader">[！UICONTROL表名称]  </td>
       <td>
         <p>输入或映射包含要添加或删除的行的表的名称。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>输入或映射拥有数据集的组的ID。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 选择操作]</td>
+      <td role="rowheader">[！UICONTROL选择操作]</td>
       <td>
         <p>选择或映射要执行的操作。</p>
         <ul>
           <li>
-            <p>[!UICONTROL 添加行]</p>
+            <p>[！UICONTROL添加行]</p>
           </li>
           <li>
-            <p>[!UICONTROL Delete All Rows]</p>
+            <p>[！UICONTROL Delete All Rows]</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 行]</td>
+      <td role="rowheader">[！UICONTROL行]</td>
       <td>
         <p>添加行字段。</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL 键]</b>
+            <p><b>[！UICONTROL键]</b>
             </p>
             <p>输入或映射密钥名称。</p>
           </li>
           <li>
-            <p><b>[!UICONTROL 字段类型]</b>
+            <p><b>[！UICONTROL字段类型]</b>
             </p>
             <p>选择或映射字段类型：</p>
             <ul>
               <li>
-                <p>布尔型</p>
+                <p>布尔值</p>
               </li>
               <li>
                 <p>日期</p>
@@ -489,7 +492,7 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
@@ -497,19 +500,19 @@ Microsoft Power BI连接器使用以下对象：
       <td>输入或映射数据集的名称。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>选择或映射将拥有新数据集的组的ID。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 默认模式]</td>
+      <td role="rowheader">[！UICONTROL默认模式]</td>
       <td>
         <p>选择或映射数据集的默认模式：</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL As Azure]</b>：与有实时连接的数据集 [!DNL Azure Analysis Service]</p>
+            <p><b>[！UICONTROL As Azure]</b>：与有实时连接的数据集 [!DNL Azure Analysis Service]</p>
           </li>
           <li>
-            <p><b>[!UICONTROL As on Prem]</b>：与[!DNL On-premise Analysis]服务有实时连接的数据集</p>
+            <p><b>[！UICONTROL As on Prem]</b>：与[!DNL On-premise Analysis]服务有实时连接的数据集</p>
           </li>
           <li>
             <p><b>[!DNL Push]</b>：允许以编程方式访问将数据推入的数据集 [!DNL Power BI]</p>
@@ -524,7 +527,7 @@ Microsoft Power BI连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Tables]</td>
+      <td role="rowheader">[!UICONTROL 表]</td>
       <td>向数据集添加表。 有关字段，请参阅<a href="#Table" class="MCXref_0">表字段</a></td>
     </tr>
     <tr>
@@ -537,10 +540,10 @@ Microsoft Power BI连接器使用以下对象：
         <p>选择或映射数据集的有意策略：</p>
         <ul>
           <li>
-            <p>[!UICONTROL 无]</p>
+            <p>[！UICONTROL无]</p>
           </li>
           <li>
-            <p>[!UICONTROL 基本FIFO]</p>
+            <p>[！UICONTROL基本FIFO]</p>
           </li>
         </ul>
       </td>
@@ -561,36 +564,36 @@ Microsoft Power BI连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 列]</td>
+      <td role="rowheader">[！UICONTROL列]</td>
       <td>
         <p>添加列：</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL 名称]</b>
+            <p><b>[！UICONTROL名称]</b>
             </p>
             <p>输入（映射）列名。</p>
           </li>
           <li>
-            <p><b>[!UICONTROL 数据类型]</b>
+            <p><b>[！UICONTROL数据类型]</b>
             </p>
             <p>选择或映射数据类型：</p>
             <ul>
               <li>
-                <p>[!UICONTROL 字符串]</p>
+                <p>[！UICONTROL字符串]</p>
               </li>
               <li>
-                <p>[!UICONTROL 整数]</p>
+                <p>[！UICONTROL整数]</p>
               </li>
               <li>
-                <p>[!UICONTROL Boolean]</p>
+                <p>[！UICONTROL Boolean]</p>
               </li>
               <li>
-                <p>[!UICONTROL 日期时间]</p>
+                <p>[！UICONTROL日期时间]</p>
               </li>
             </ul>
           </li>
           <li>
-            <p><b>[!UICONTROL 格式字符串]</b>
+            <p><b>[！UICONTROL格式字符串]</b>
             </p>
             <p>输入（映射）格式字符串。</p>
           </li>
@@ -598,11 +601,11 @@ Microsoft Power BI连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 行]</td>
+      <td role="rowheader">[！UICONTROL行]</td>
       <td>输入或映射行详细信息。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Measures]</td>
+      <td role="rowheader">[！UICONTROL Measures]</td>
       <td>为表添加度量。</td>
     </tr>
   </tbody>
@@ -615,13 +618,13 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL 数据库]  </td>
+      <td role="rowheader">[！UICONTROL数据库]  </td>
       <td>
         <p>输入或映射要使用的数据库。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Server]  </td>
+      <td role="rowheader">[！UICONTROL Server]  </td>
       <td>
         <p>输入或映射要使用的服务器的名称。</p>
       </td>
@@ -633,19 +636,19 @@ Microsoft Power BI连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 数据源ID]</td>
+      <td role="rowheader">[！UICONTROL数据源ID]</td>
       <td>
         <p>  输入或映射数据源的ID。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 数据源类型]  </td>
+      <td role="rowheader">[！UICONTROL数据源类型]  </td>
       <td>
         <p>选择或映射数据源类型。 示例： SQL。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 网关ID]  </td>
+      <td role="rowheader">[！UICONTROL网关ID]  </td>
       <td>输入或映射要使用的网关ID。</td>
     </tr>
   </tbody>
@@ -660,23 +663,23 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入报表ID]</td>
+      <td role="rowheader">[！UICONTROL输入报表ID]</td>
       <td>
         <p>选择或映射选项以选择要删除的数据集。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 报表ID]</td>
+      <td role="rowheader">[！UICONTROL报表ID]</td>
       <td>
         <p>输入或映射要删除的数据集的ID。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>选择或映射拥有要删除的数据集的组的ID。</td>
     </tr>
   </tbody>
@@ -691,23 +694,23 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入报表ID]</td>
+      <td role="rowheader">[！UICONTROL输入报表ID]</td>
       <td>
         <p>选择或映射选项以选择要为其检索元数据的报表。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 报表ID]</td>
+      <td role="rowheader">[！UICONTROL报表ID]</td>
       <td>
         <p>输入或映射要为其检索元数据的数据集的ID。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>选择或映射拥有要为其检索元数据的数据集的组的ID。</td>
     </tr>
   </tbody>
@@ -722,17 +725,17 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>选择或映射拥有您要为其检索元数据的报表的组的ID。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 限制]</td>
       <td>
-        <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p>
+        <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p>
       </td>
     </tr>
   </tbody>
@@ -747,40 +750,40 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入数据集]</td>
+      <td role="rowheader">[！UICONTROL输入数据集]</td>
       <td>选择或映射选项以选择要刷新的数据集。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 数据集ID]</td>
+      <td role="rowheader">[！UICONTROL数据集ID]</td>
       <td>输入或映射要刷新的数据集的ID。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 表名称]  </td>
+      <td role="rowheader">[！UICONTROL表名称]  </td>
       <td>
         <p>输入或映射包含要添加或删除的行的表的名称。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 组ID]  </td>
+      <td role="rowheader">[！UICONTROL组ID]  </td>
       <td>输入或映射拥有数据集的组的ID。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Notify选项]  </td>
+      <td role="rowheader">[！UICONTROL Notify选项]  </td>
       <td>
         <p>选择或映射要通知的选项：</p>
         <ul>
           <li>
-            <p>[!UICONTROL Mail On Completion]</p>
+            <p>[！UICONTROL Mail On Completion]</p>
           </li>
           <li>
-            <p>[!UICONTROL 失败时发送邮件]</p>
+            <p>[！UICONTROL失败时发送邮件]</p>
           </li>
           <li>
-            <p>[!UICONTROL 无通知]</p>
+            <p>[！UICONTROL无通知]</p>
           </li>
         </ul>
       </td>
@@ -807,11 +810,11 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 应用程序ID]  </td>
+      <td role="rowheader">[！UICONTROL应用程序ID]  </td>
       <td>
         <p>选择或映射您要检索的应用程序的ID。</p>
       </td>
@@ -828,17 +831,17 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 应用程序ID]  </td>
+      <td role="rowheader">[！UICONTROL应用程序ID]  </td>
       <td>
         <p>选择或映射包含要检索的功能板的应用程序的ID。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 报表ID]</td>
+      <td role="rowheader">[！UICONTROL报表ID]</td>
       <td>
         <p>  选择或映射要检索的仪表板ID。</p>
       </td>
@@ -855,17 +858,17 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 应用程序ID]  </td>
+      <td role="rowheader">[！UICONTROL应用程序ID]  </td>
       <td>
         <p>选择或映射包含要检索的报表的应用程序ID。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 报表ID]</td>
+      <td role="rowheader">[！UICONTROL报表ID]</td>
       <td>
         <p>  选择或映射要检索的报表的ID。</p>
       </td>
@@ -882,13 +885,13 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 限制]  </td>
       <td>
-        <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p>
+        <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p>
       </td>
     </tr>
   </tbody>
@@ -903,17 +906,17 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 应用程序ID]</td>
+      <td role="rowheader">[！UICONTROL应用程序ID]</td>
       <td>选择或映射您要从中列出功能板的应用程序的ID。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 限制]  </td>
       <td>
-        <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p>
+        <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p>
       </td>
     </tr>
   </tbody>
@@ -928,17 +931,17 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 应用程序ID]</td>
+      <td role="rowheader">[！UICONTROL应用程序ID]</td>
       <td>选择或映射要从中列出报表的应用程序的ID。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 限制]  </td>
       <td>
-        <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p>
+        <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p>
       </td>
     </tr>
   </tbody>
@@ -953,13 +956,13 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 限制]  </td>
       <td>
-        <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。</p>
+        <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p>
       </td>
     </tr>
   </tbody>
@@ -976,7 +979,7 @@ Microsoft Power BI连接器使用以下对象：
   <col/>
   <tbody>
     <tr>
-      <td role="rowheader">[!UICONTROL Connection]</td>
+      <td role="rowheader">[!UICONTROL 连接]</td>
    <td> <p>有关将[!DNL Power BI]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a></p> </td> 
     </tr>
     <tr>
@@ -984,7 +987,7 @@ Microsoft Power BI连接器使用以下对象：
         <p>[!UICONTROL 路径]</p>
       </td>
       <td>
-        <p>输入相对于<code>https://api.powerbi.com</code>的路径。 示例：<code>/v1.0/myorg/datasets</code>。</p>
+        <p>输入相对于 <code>https://api.powerbi.com</code> 的路径。 示例：<code>/v1.0/myorg/datasets</code>。</p>
       </td>
     </tr>
     <tr>
@@ -992,13 +995,13 @@ Microsoft Power BI连接器使用以下对象：
         <p>[!UICONTROL 方法]</p>
       </td>
       <td>
-        <p>选择配置API调用所需的[!UICONTROL HTTP]请求方法。 有关更多信息，请参阅[!UICONTROL HTTP]请求方法。</p>
+        <p>选择配置API调用所需的[！UICONTROL HTTP]请求方法。 有关更多信息，请参阅[！UICONTROL HTTP]请求方法。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Headers]</td>
+      <td role="rowheader">[!UICONTROL 标头]</td>
       <td>
-        <p>以标准JSON对象的形式添加请求的标头。</p>
+        <p>以标准 JSON 对象的形式添加请求标头。</p>
         <p>例如， <code>{"Content-type":"application/json"}</code></p>
         <p>Workfront Fusion会自动添加授权标头和x-api-key标头。</p>
       </td>
@@ -1006,12 +1009,12 @@ Microsoft Power BI连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL 查询字符串]  </td>
       <td>
-        <p>输入请求查询字符串。</p>
+        <p>输入请求的查询字符串。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Body]</td>
-   <td> <p>以标准JSON对象的形式添加API调用的正文内容。</p> <p>注释：  <p>在JSON中使用条件语句（如<code>if</code>）时，请将引号放在条件语句之外。</p> 
+      <td role="rowheader">[!UICONTROL 正文]</td>
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注意：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>

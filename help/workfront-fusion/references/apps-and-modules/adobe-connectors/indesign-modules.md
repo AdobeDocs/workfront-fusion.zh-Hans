@@ -4,16 +4,20 @@ content-type: reference
 product-previous: workfront-fusion
 product-area: workfront-integrations
 navigation-topic: apps-and-their-modules
-title: Adobe InDesign模块
+title: Adobe InDesign 模块
 description: 在Adobe Workfront Fusion场景中，您可以自动使用Adobe InDesign的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
-source-git-commit: 30ddefa8519e6f2052308482137d0fa018676902
+exl-id: 8164487a-d114-4e31-9d1c-8404fc89a04b
+TQID: https://experienceleague.adobe.com/D2JdaOqvTA5SUsKm9U8Sjss6dJFMZv2Uo5RGk25QphQ
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 20%
+source-wordcount: 1702
+ht-degree: 22%
 
 ---
-
 
 # Adobe InDesign模块
 
@@ -113,7 +117,7 @@ ht-degree: 20%
 
 配置Adobe InDesign模块时，Workfront Fusion会显示以下列出的字段。 除此以外，还可能会显示其他Adobe InDesign字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -149,7 +153,7 @@ ht-degree: 20%
       <td role="rowheader">
         <p>资源</p>
       </td>
-      <td>对于要添加到演绎版的每个资源：<ol><li>单击<b>添加项</b>。</li><li>选择或映射资源的源。</li><li>输入目标。 目标是相对于下载资源的临时基目录（工作目录）的路径。 这可以在参数中标识资源。 它不能使用“……”上传 或“/”。 应存在有效的文件名。</td>
+      <td>对于要添加到演绎版的每个资源：<ol><li>单击<b>添加项</b>。</li><li>选择或映射资源的源。</li><li>输入目标。 目标是相对于下载资源的临时基目录（工作目录）的路径。 这可以在参数中标识资源。 它不能使用“……”或“/”上传。 应存在有效的文件名。</td>
     </tr>
     <tr>
       <td role="rowheader">目标文档</td>
@@ -198,7 +202,7 @@ ht-degree: 20%
       <td role="rowheader">
         <p>资源</p>
       </td>
-      <td>对于要添加到数据合并的每个资产：<ol><li>单击<b>添加项</b>。</li><li>选择或映射资源的源。</li><li>输入目标。 目标是相对于下载资源的临时基目录（工作目录）的路径。 这可以在参数中标识资源。 它不能使用“……”上传 或“/”。 应存在有效的文件名。</td>
+      <td>对于要添加到数据合并的每个资产：<ol><li>单击<b>添加项</b>。</li><li>选择或映射资源的源。</li><li>输入目标。 目标是相对于下载资源的临时基目录（工作目录）的路径。 这可以在参数中标识资源。 它不能使用“……”或“/”上传。 应存在有效的文件名。</td>
     </tr>
     <tr>
       <td role="rowheader">目标文档</td>
@@ -234,7 +238,7 @@ ht-degree: 20%
       <td role="rowheader">
         <p>资源</p>
       </td>
-      <td>对于要添加到模块的每个资源：<ol><li>单击<b>添加项</b>。</li><li>选择或映射资源的源。</li><li>输入目标。 目标是相对于下载资源的临时基目录（工作目录）的路径。 这可以在参数中标识资源。 它不能使用“……”上传 或“/”。 应存在有效的文件名。</td>
+      <td>对于要添加到模块的每个资源：<ol><li>单击<b>添加项</b>。</li><li>选择或映射资源的源。</li><li>输入目标。 目标是相对于下载资源的临时基目录（工作目录）的路径。 这可以在参数中标识资源。 它不能使用“……”或“/”上传。 应存在有效的文件名。</td>
     </tr>
     <tr>
       <td role="rowheader">目标文档</td>
@@ -272,7 +276,7 @@ ht-degree: 20%
       <td role="rowheader">
         <p>资源</p>
       </td>
-      <td>对于要为其提交执行请求的每个资产， <ol><li>单击<b>添加项</b>。</li><li>选择或映射资源的源。</li><li>输入目标。 目标是相对于下载资源的临时基目录（工作目录）的路径。 这可以在参数中标识资源。 它不能使用“……”上传 或“/”。 应存在有效的文件名。</td>
+      <td>对于要为其提交执行请求的每个资产， <ol><li>单击<b>添加项</b>。</li><li>选择或映射资源的源。</li><li>输入目标。 目标是相对于下载资源的临时基目录（工作目录）的路径。 这可以在参数中标识资源。 它不能使用“……”或“/”上传。 应存在有效的文件名。</td>
     </tr>
     <tr>
       <td role="rowheader">其他字段</td>
@@ -324,7 +328,7 @@ ht-degree: 20%
       <td role="rowheader">
         <p>资源</p>
       </td>
-      <td>对于要添加到模块的每个资源：<ol><li>单击<b>添加项</b>。</li><li>选择或映射资源的源。</li><li>输入目标。 目标是相对于下载资源的临时基目录（工作目录）的路径。 这可以在参数中标识资源。 它不能使用“……”上传 或“/”。 应存在有效的文件名。</td>
+      <td>对于要添加到模块的每个资源：<ol><li>单击<b>添加项</b>。</li><li>选择或映射资源的源。</li><li>输入目标。 目标是相对于下载资源的临时基目录（工作目录）的路径。 这可以在参数中标识资源。 它不能使用“……”或“/”上传。 应存在有效的文件名。</td>
     </tr>
     <tr>
       <td role="rowheader">目标文档</td>
@@ -356,7 +360,7 @@ ht-degree: 20%
       <td role="rowheader">
         <p>资源</p>
       </td>
-      <td>对于要添加到模块的每个资源：<ol><li>单击<b>添加项</b>。</li><li>选择或映射资源的源。</li><li>输入目标。 目标是相对于下载资源的临时基目录（工作目录）的路径。 这可以在参数中标识资源。 它不能使用“……”上传 或“/”。 应存在有效的文件名。</td>
+      <td>对于要添加到模块的每个资源：<ol><li>单击<b>添加项</b>。</li><li>选择或映射资源的源。</li><li>输入目标。 目标是相对于下载资源的临时基目录（工作目录）的路径。 这可以在参数中标识资源。 它不能使用“……”或“/”上传。 应存在有效的文件名。</td>
     </tr>
     <tr>
       <td role="rowheader">目标文档</td>
@@ -392,7 +396,7 @@ ht-degree: 20%
 </table>
 
 
-### 其他 
+### 其他
 
 #### 发起自定义 API 调用
 
@@ -419,7 +423,7 @@ ht-degree: 20%
         <p>方法</p>
       </td>
       <td>
-        <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅[HTTP请求方法](/help/workfront-fusion/references/modules/http-request-methods.md)。</p>
+        <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅[HTTP请求方法](/help/workfront-fusion/references/modules/http-request-methods.md)。</p>
       </td>
     </tr>
     <tr>
@@ -433,7 +437,7 @@ ht-degree: 20%
     <tr>
       <td role="rowheader">查询字符串  </td>
       <td>
-        <p>输入请求查询字符串。</p>
+        <p>输入请求的查询字符串。</p>
       </td>
     </tr>
   <tr> 

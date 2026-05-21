@@ -4,10 +4,12 @@ description: 本文包含有关 [!DNL Adobe] Workfront Fusion中角色的访问�
 author: Becky
 feature: Workfront Fusion
 exl-id: 92f3bb09-0b66-45cd-84ef-88b2aa246be1
-source-git-commit: 4cd97fe2924150b9e7be140a25215f135b2788da
+TQID: https://experienceleague.adobe.com/r2AIAgWN-yH4OMHGhjyURrg58H1gJg-o6-QfeIvax7s
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 2%
+source-wordcount: 286
+ht-degree: 5%
 
 ---
 
@@ -30,10 +32,10 @@ ht-degree: 2%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p>[!UICONTROL 所有者]</p> </th> 
-   <th> <p>[!UICONTROL 管理员]</p> </th> 
-   <th> <p>[!UICONTROL 成员]</p> </th> 
-   <th> <p>[!UICONTROL 会计师]</p> </th> 
+   <th> <p>[！UICONTROL所有者]</p> </th> 
+   <th> <p>[！UICONTROL管理员]</p> </th> 
+   <th> <p>[！UICONTROL成员]</p> </th> 
+   <th> <p>[！UICONTROL会计师]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -78,7 +80,7 @@ ht-degree: 2%
 
 ## 团队角色
 
-### 方案
+### 场景
 
 <table style="table-layout:auto"> 
  <col> 
@@ -89,10 +91,10 @@ ht-degree: 2%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -208,10 +210,10 @@ ht-degree: 2%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -257,10 +259,10 @@ ht-degree: 2%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -306,10 +308,10 @@ ht-degree: 2%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -362,10 +364,10 @@ ht-degree: 2%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -400,7 +402,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### 键
+### 密钥
 
 <table style="table-layout:auto">
  <col> 
@@ -411,10 +413,10 @@ ht-degree: 2%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -460,10 +462,10 @@ ht-degree: 2%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -516,10 +518,10 @@ ht-degree: 2%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
-   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
+   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 

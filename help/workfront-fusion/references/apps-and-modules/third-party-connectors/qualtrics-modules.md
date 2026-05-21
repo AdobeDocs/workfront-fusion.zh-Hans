@@ -4,9 +4,11 @@ description: 在Adobe Workfront Fusion场景中，您可以自动使用Qualtrics
 author: Becky
 feature: Workfront Fusion
 exl-id: 80b441b7-c808-4c4f-b9ff-d614650dbb73
-source-git-commit: b4353a0746f4f427c70d0a213e5dde36ff869ab8
+TQID: https://experienceleague.adobe.com/gbH5KTIEYyIAVMSjhmnAyuApEPu7i3eicmMvmJC-gi4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: 352
 ht-degree: 59%
 
 ---
@@ -100,11 +102,11 @@ Qualtrics连接器使用以下对象：
       <td> <p>输入新连接的名称。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 数据中心ID] </td> 
+      <td role="rowheader">[！UICONTROL数据中心ID] </td> 
       <td>使用格式<code>&lt;Data Center ID>.qualtrics.com</code>。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL API Key]</td> 
+      <td role="rowheader">[！UICONTROL API Key]</td> 
       <td>要查找API密钥，请参阅[!DNL Qualtrics]文档。</td> 
      </tr> 
     </tbody> 

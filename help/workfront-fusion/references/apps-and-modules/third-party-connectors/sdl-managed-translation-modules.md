@@ -1,55 +1,57 @@
 ---
-title: SDL托管翻译模块
+title: SDL Managed Translation 模块
 description: 在Adobe Workfront Fusion方案中，您可以将SDL Managed Translation帐户连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion
 exl-id: 41953b04-9011-4ddb-9f53-cdf11e807e04
-source-git-commit: 363df430b8cc3133961e77d3bd5934490440314c
+TQID: https://experienceleague.adobe.com/J6v5bxEi3MzcrkaiQQFOpToDzon0K-BhpmuJQe8sdgY
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 1%
+source-wordcount: 567
+ht-degree: 24%
 
 ---
 
-# [!DNL SDL Managed Translation]模块
+# [!DNL SDL Managed Translation] 模块
 
 在Adobe Workfront Fusion方案中，您可以将[!DNL SDL Managed Translation]帐户连接到多个第三方应用程序和服务。
 
-## 访问要求
+## 访问权限要求
 
-+++ 展开以查看本文中各项功能的访问要求。
++++ 展开可查看本文所述功能的访问权限要求。
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront包</td> 
-   <td> <p>任何Adobe Workfront Workflow包和任何Adobe Workfront自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime和Select包，以及额外购买的Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront许可证</td> 
-   <td> <p>标准</p><p>工作或更高</p> </td> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Adobe Workfront Fusion许可证</td> 
+   <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要Workfront Fusion许可证</p>
-   <p>基于连接器（旧版）：用于工作自动化和集成的Workfront Fusion </p>
+   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
   <tr> 
    <td role="rowheader">产品</td> 
    <td>
-   <p>如果贵组织具有不包含Workfront Automation and Integration的Select或Prime Workfront包，则贵组织必须购买Adobe Workfront Fusion。</li></ul>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细信息，请参阅文档[中的](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)访问要求。
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
 
-有关Adobe Workfront Fusion许可证的信息，请参阅[Adobe Workfront Fusion许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
+有关 Adobe Workfront Fusion 许可证的详细信息，请参阅 [Adobe Workfront Fusion 许可证](/help/workfront-fusion/set-up-and-manage-workfront-fusion/licensing-operations-overview/license-automation-vs-integration.md)。
 
 +++
 
@@ -66,7 +68,7 @@ SDL Managed Translation连接器使用以下内容：
    <td>https://languagecloud.sdl.com</td> 
   </tr>
   <tr> 
-   <td role="rowheader">API标记</td> 
+   <td role="rowheader">API 标记</td> 
    <td>v1.4.26</td> 
   </tr>
  </tbody> 
@@ -84,7 +86,7 @@ SDL Managed Translation连接器使用以下内容：
 
 此模块检索单个已翻译文件的内容，这些文件包含在指定的项目中。 如果请求的文件尚未处于Downland状态，则文件的内容可能尚未完全翻译。 如果文件处于下载状态，并且您已成功检索到它，请确保使用`Cancel or Complete File`方法将文件标记为完成。
 
-#### [!UICONTROL 上载文件]
+#### [!UICONTROL 上传文件]
 
 此模块允许上传要翻译或包含在翻译项目中作为参考材料的文件。 上载必须使用多部分/表单数据提交，并且可以包含多个文件。 您指定用于评估已上传文件的`ProjectOptionId`。 这会确定您上传的每个文件是翻译的可能候选项，还是必须作为参考材料处理。 对于存档（`zip `、`rar`、`7z`、`tar`个文件），应用程序将检查存档的内容，并指示存档是否可以整个翻译，或者存档是否包含可翻译和不可翻译的混合文件。
 

@@ -1,17 +1,19 @@
 ---
-title: Adobe Workfront Fusion许可证
+title: Adobe Workfront Fusion 许可证
 description: Adobe Workfront Fusion提供两种不同的许可证，确定您可以访问的功能。 您的组织在购买Workfront Fusion时选择了其中一个许可证。
 author: Becky
 feature: Workfront Fusion
 exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/t3FcOEcjniaGfX9Ag25kYrcU6-2LKwaIdnRojHRpI5Q
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 1%
+source-wordcount: 767
+ht-degree: 2%
 
 ---
 
-# Adobe Workfront Fusion许可证
+# Adobe Workfront Fusion 许可证
 
 Workfront Fusion有两种许可模型，一种是新的基于操作的模型，另一种是基于连接器的旧模型。
 

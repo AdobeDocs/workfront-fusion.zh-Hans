@@ -6,10 +6,12 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 433e0730-1955-4582-984a-94b98e8366b5
-source-git-commit: 77ec3c007ce7c49ff760145fafcd7f62b273a18f
+TQID: https://experienceleague.adobe.com/mdEuXi2Pwa4ARFyL9oWRU7S-SpchAbJV6Li6Lg-pajA
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 0%
+source-wordcount: 33
+ht-degree: 39%
 
 ---
 
@@ -19,4 +21,4 @@ ht-degree: 0%
 * [映射数据](/help/workfront-fusion/create-scenarios/map-data/map-data-toc.md)
 * [连接到应用程序](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-apps-toc.md)
 * [配置错误处理](/help/workfront-fusion/create-scenarios/config-error-handling/config-error-handling-toc.md)
-* [配置方案设置](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)
+* [配置场景设置](/help/workfront-fusion/create-scenarios/config-scenarios-settings/config-scenario-settings-toc.md)

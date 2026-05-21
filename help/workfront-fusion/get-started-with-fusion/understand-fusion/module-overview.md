@@ -1,12 +1,14 @@
 ---
 title: 模块概述
-description: Adobe Workfront Fusion 区分五种模块类型：操作模块、搜索模块、触发器模块、聚合器模块和迭代器模块。聚合器和迭代器模块适用于高级场景。
+description: Adobe Workfront Fusion 区分五种模块类型：操作模块、搜索模块、触发器模块、聚合器模块和迭代器模块。 聚合器和迭代器模块适用于高级场景。
 author: Becky
 feature: Workfront Fusion
 exl-id: 4c8fe028-8425-426d-a006-f0c66871b3cd
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
-workflow-type: ht
-source-wordcount: '917'
+TQID: https://experienceleague.adobe.com/68pDfEru4WzXlcAi8u3A2PEImixguNX-AqQgI9x1qVk
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+workflow-type: tm+mt
+source-wordcount: 917
 ht-degree: 100%
 
 ---
@@ -25,7 +27,7 @@ Adobe Workfront Fusion 区分以下五种模块类型：
 
 ## 操作模块
 
-操作模块是最常见的模块类型。典型的操作模块会执行某项操作并返回一个单一捆绑包，随后交由下一个模块继续处理。
+操作模块是最常见的模块类型。 典型的操作模块会执行某项操作并返回一个单一捆绑包，随后交由下一个模块继续处理。
 
 与触发器模块不同，操作模块可放置在场景的开头、中间或结尾。
 
@@ -49,7 +51,7 @@ Adobe Workfront Fusion 区分以下五种模块类型：
 
 “更新”子类型包含以下三种操作：
 
-* **擦除字段内容**。当字段内容解析为 `erase` 关键词时（不要与 `empty` 混淆），将执行此操作。
+* **擦除字段内容**。 当字段内容解析为 `erase` 关键词时（不要与 `empty` 混淆），将执行此操作。
 
   ![擦除关键词](assets/erase-content-of-field.png)
 
@@ -57,12 +59,12 @@ Adobe Workfront Fusion 区分以下五种模块类型：
 
   ![空捆绑包](assets/leave-content-field-unchanged.png)
 
-* **替换字段内容**。除上述两种情况外，所有其他情况均会执行此操作。
+* **替换字段内容**。 除上述两种情况外，所有其他情况均会执行此操作。
 
 >[!NOTE]
 >
 >* 如果在映射面板中未看到 `erase` 关键词，则说明该模块不是更新模块，或尚未更新至该应用的最新规范。
->* `Empty` 不会更改字段内容。如果需要清除字段内容，可以使用以下公式：
+>* `Empty` 不会更改字段内容。 如果需要清除字段内容，可以使用以下公式：
 >
 >   ![如果为空](assets/formula-ifempty-name-erase.png)
 >
@@ -98,11 +100,11 @@ Workfront Fusion 提供两种触发器模块：轮询触发器和即时触发器
 
 ### 轮询触发器
 
-轮询触发器会定期轮询指定服务，即使自上次场景运行后没有任何变更。我们建议为包含轮询触发器的场景设置定期运行计划。如果存在与触发器配置匹配的变更，触发器将返回包含该变更信息的捆绑包。如果没有与该配置相匹配的变更，则该触发器不会输出任何捆绑包。
+轮询触发器会定期轮询指定服务，即使自上次场景运行后没有任何变更。 我们建议为包含轮询触发器的场景设置定期运行计划。 如果存在与触发器配置匹配的变更，触发器将返回包含该变更信息的捆绑包。 如果没有与该配置相匹配的变更，则该触发器不会输出任何捆绑包。
 
 有关如何计划场景运行的说明，请参阅[计划场景](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)。
 
-轮询触发器会在您保存触发器或更改触发器设置后自动显示一个面板，您可以在其中选择要首先输出的条目。此选择仅影响模块的首次执行。模块首次运行后，后续执行只会监测最近一次执行之后发生的更改。
+轮询触发器会在您保存触发器或更改触发器设置后自动显示一个面板，您可以在其中选择要首先输出的条目。 此选择仅影响模块的首次执行。 模块首次运行后，后续执行只会监测最近一次执行之后发生的更改。
 
 如需了解更多信息，请参阅[选择触发器模块的起始位置](/help/workfront-fusion/create-scenarios/add-modules/choose-where-trigger-module-starts.md)。
 
@@ -118,7 +120,7 @@ Workfront Fusion 提供两种触发器模块：轮询触发器和即时触发器
 
 ### 即时触发器
 
-即时触发器可在服务发生更改后立即通知 Workfront Fusion。我们建议将包含即时触发器的场景设置为立即运行。
+即时触发器可在服务发生更改后立即通知 Workfront Fusion。 我们建议将包含即时触发器的场景设置为立即运行。
 
 有关操作步骤，请参阅[计划场景](/help/workfront-fusion/create-scenarios/config-scenarios-settings/schedule-a-scenario.md)。
 

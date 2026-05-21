@@ -4,16 +4,19 @@ description: 在Adobe Workfront Fusion方案中，您可以自动执行使用 [!
 author: Becky
 feature: Workfront Fusion
 exl-id: f3c1ed7b-b69b-478a-8240-1a2ab89e11e5
-source-git-commit: f23a089565c2cfb7d2d1321a7bf67ae14e336af3
+TQID: https://experienceleague.adobe.com/WIVzoQxjp0cEeUgQPWN49Vp-cNreFyaBdQM8yPOvqsM
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2275'
-ht-degree: 30%
+source-wordcount: 2368
+ht-degree: 31%
 
 ---
 
 # [!DNL Adobe Target]模块
 
-在Adobe Workfront Fusion场景中，您可以自动使用[!DNL Adobe Target]的工作流，并将其连接到多个第三方应用程序和服务。 [!DNL Adobe Target]模块允许您创建、读取、更新或删除记录，列出给定类型的所有记录，根据您指定的条件搜索记录，或对[!DNL Adobe Target] API执行自定义API调用。
+在 Adobe Workfront Fusion 场景中，您可以自动化使用 [!DNL Adobe Target] 的工作流，并将其连接到多个第三方应用程序和服务。 [!DNL Adobe Target]模块允许您创建、读取、更新或删除记录，列出给定类型的所有记录，根据您指定的条件搜索记录，或对[!DNL Adobe Target] API执行自定义API调用。
 
 
 如果需要有关创建方案的说明，请参阅[创建方案：项目索引](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)下的文章。
@@ -130,22 +133,22 @@ Adobe Target连接器使用以下对象：
         <td>输入您的[!DNL Adobe]客户端密钥。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 技术帐户ID]</td>
+        <td role="rowheader">[！UICONTROL技术帐户ID]</td>
         <td>输入您的[!DNL Adobe]技术帐户ID。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 组织ID]</td>
+        <td role="rowheader">[！UICONTROL组织ID]</td>
         <td>输入您的[!DNL Adobe]组织ID。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Tenant]</td>
+        <td role="rowheader">[！UICONTROL Tenant]</td>
         <td>
           <p> 要找到您的租户，请登录到[!DNL Adobe Experience Cloud]，打开[!DNL Target]，然后单击[!DNL Target]信息卡。 使用URL子域中所述的租户ID值。</p>
           <p>例如，如果您在登录到[!DNL Adobe Target]时的URL是<code>&lt;https://mycompany.experiencecloud.adobe.com/...></code>，则您的租户ID是“mycompany”。</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Meta Scopes]</td>
+        <td role="rowheader">[！UICONTROL Meta Scopes]</td>
         <td>输入<code>ent_marketing_sdk</code>       </td>
       </tr>
       <tr>
@@ -179,9 +182,9 @@ Adobe Target连接器使用以下对象：
 
 ## [!DNL Adobe Target] 模块及其字段
 
-在您配置 [!DNL Adobe Target] 模块时，Workfront Fusion 会显示以下字段。除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Adobe Target] 字段。模块中的加粗标题表示必填字段。
+在您配置 [!DNL Adobe Target] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL Adobe Target] 字段。 模块中的加粗标题表示必填字段。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -227,34 +230,34 @@ Adobe Target连接器使用以下对象：
         <b>优惠推荐</b><p>有关字段的详细信息，请参阅Adobe Target API文档中的<a href="https://developer.adobe.com/target/administer/admin-api/#tag/Offers/operation/createOffer">创建新的推荐选件</a>。</p>
         </li>
         <li>
-          <b>[!UICONTROL 选件JSON]</b>
+          <b>[！UICONTROL选件JSON]</b>
           <p>继续<a href="#offer-fields" class="MCXref xref" >优惠字段</a>。</p>
         </li>
         <li>
-          <b>[!UICONTROL 选件内容]</b>
+          <b>[！UICONTROL选件内容]</b>
           <p>继续<a href="#offer-fields" class="MCXref xref" >优惠字段</a>。</p>
         </li>
         <li>
         <b>环境</b><p>有关字段的详细信息，请参阅Adobe Target API文档中的<a href="https://developer.adobe.com/target/administer/admin-api/#tag/Environments/operation/createEnvironment">创建环境</a>。</p>
         </li>
         <li>
-          <b>[!UICONTROL 受众]</b>
+          <b>[！UICONTROL受众]</b>
           <p>有关字段的详细信息，请参阅Adobe Target API文档中的<a href="https://developer.adobe.com/target/administer/admin-api/#tag/Audiences/operation/createAudience_1_1">创建受众</a>。</p>
         </li>
         <li>
-          <b>[!UICONTROL AB活动]</b>
+          <b>[！UICONTROL AB活动]</b>
           <p>有关字段的详细信息，请参阅Adobe Target API文档中的<a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_4_1">创建AB活动</a>。</p>
         </li>
         <li>
-          <b>[!UICONTROL XT活动]</b>
+          <b>[！UICONTROL XT活动]</b>
           <p>继续<a href="#xt-activity-fields" class="MCXref xref" >XT活动字段</a>。</p>
         </li>
         <li>
-          <b>[!UICONTROL AP活动]</b>
+          <b>[！UICONTROL AP活动]</b>
           <p>有关字段的详细信息，请参阅Adobe Target API文档中的<a href="https://developer.adobe.com/target/administer/admin-api/#tag/Activities/operation/createActivity_2">创建AP活动</a>。</p>
         </li>
         <li>
-          <b>[!UICONTROL 响应令牌]</b>
+          <b>[！UICONTROL响应令牌]</b>
           <p>有关字段的详细信息，请参阅Adobe Target API文档中的<a href="https://developer.adobe.com/target/administer/admin-api/#tag/Response-tokens/operation/createResponseToken">创建响应令牌</a>。</p>
         </li>
       </ul>
@@ -479,20 +482,20 @@ Adobe Target连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL 选项]</td>
       <td>
-        <p>对于要添加到活动的每个选项，单击<b>[!UICONTROL 添加项]</b>并填写以下字段：</p>
+        <p>对于要添加到活动的每个选项，单击<b>[！UICONTROL添加项]</b>并填写以下字段：</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL 选项本地ID]</b>
+            <p><b>[！UICONTROL选项本地ID]</b>
             </p>
             <p>输入或映射用于跨API请求跟踪选项的字符串。</p>
           </li>
           <li>
-            <p><b>[!UICONTROL 名称]</b>
+            <p><b>[！UICONTROL名称]</b>
             </p>
             <p>输入或映射选项的名称。 名称不能超过250个字符。</p>
           </li>
           <li>
-            <p><b>[!UICONTROL 选件ID]</b>
+            <p><b>[！UICONTROL选件ID]</b>
             </p>
           </li>
           <li>
@@ -502,21 +505,21 @@ Adobe Target连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 位置]</td>
+      <td role="rowheader">[！UICONTROL位置]</td>
       <td>
-        <p>对于要添加到活动的每个Mbox，单击<b>[!UICONTROL 添加项]</b>并填写以下字段：</p>
+        <p>对于要添加到活动的每个Mbox，单击<b>[！UICONTROL添加项]</b>并填写以下字段：</p>
         <ul>
           <li>
-            <p>[!UICONTROL 受众ID]</p>
-            <p>对于要添加到Mbox的每个受众，单击<b>[!UICONTROL 添加项]</b>并选择受众ID。</p>
+            <p>[！UICONTROL受众ID]</p>
+            <p>对于要添加到Mbox的每个受众，单击<b>[！UICONTROL添加项]</b>并选择受众ID。</p>
           </li>
           <li>
-            <p><b>[!UICONTROL 位置本地ID]</b>
+            <p><b>[！UICONTROL位置本地ID]</b>
             </p>
             <p>输入或映射用于跨API请求跟踪位置的字符串。</p>
           </li>
           <li>
-            <p><b>[!UICONTROL 名称]</b>
+            <p><b>[！UICONTROL名称]</b>
             </p>
             <p>输入或映射“位置”的名称。 名称不能超过250个字符。</p>
           </li>
@@ -524,18 +527,18 @@ Adobe Target连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 体验]</td>
+      <td role="rowheader">[！UICONTROL体验]</td>
       <td>
         <p>页面上提供内容选件的位置的列表。 位置包含以下内容：
 </p>
         <ul>
           <li>
-            <p><b>[!UICONTROL 体验本地ID]</b>
+            <p><b>[！UICONTROL体验本地ID]</b>
             </p>
             <p>输入或映射体验的ID</p>
           </li>
           <li>
-            <p><b>[!UICONTROL 名称]</b>
+            <p><b>[！UICONTROL名称]</b>
             </p>
             <p>输入或映射体验的名称
 
@@ -544,12 +547,12 @@ Adobe Target连接器使用以下对象：
           <li>
             <p><b>[!DNL Audience IDs]</b>
             </p>
-            <p>对于要查看体验的每个受众，单击<b>[!UICONTROL 添加项]</b>并输入受众ID。
+            <p>对于要查看体验的每个受众，单击<b>[！UICONTROL添加项]</b>并输入受众ID。
 
 </p>
           </li>
           <li>
-            <p><b>[!UICONTROL 访客百分比]</b>
+            <p><b>[！UICONTROL访客百分比]</b>
             </p>
             <p>输入或映射分配给体验的访客百分比</p>
           </li>
@@ -557,19 +560,19 @@ Adobe Target连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 量度]</td>
+      <td role="rowheader">[！UICONTROL量度]</td>
       <td> </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 第三方ID]</td>
+      <td role="rowheader">[！UICONTROL第三方ID]</td>
       <td>输入或映射ID以标识此活动。 您可以选择此ID。 此ID不得与其他活动相同，并且不得超过250个字符。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 开始于]</td>
+      <td role="rowheader">[！UICONTROL开始于]</td>
       <td>以<code>YYYY-MM-DD hh:mm:ss.z</code>格式输入或映射启动活动的日期和时间。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 结束于]</td>
+      <td role="rowheader">[！UICONTROL结束于]</td>
       <td>以<code>YYYY-MM-DD hh:mm:ss.z</code>格式输入或映射结束活动的日期和时间。</td>
     </tr>
     <tr>
@@ -578,59 +581,59 @@ Adobe Target连接器使用以下对象：
         <p>输入或映射活动的状态。</p>
         <ul>
           <li>
-            <p>[!UICONTROL 已批准]</p>
+            <p>[！UICONTROL已批准]</p>
           </li>
           <li>
-            <p>[!UICONTROL 已停用]</p>
+            <p>[！UICONTROL已停用]</p>
           </li>
           <li>
-            <p>[!UICONTROL 已暂停]</p>
+            <p>[！UICONTROL已暂停]</p>
           </li>
           <li>
-            <p>[!UICONTROL 已保存] </p>
+            <p>[！UICONTROL已保存] </p>
           </li>
           <li>
-            <p>[!UICONTROL 已删除]</p>
+            <p>[！UICONTROL已删除]</p>
           </li>
         </ul>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 优先级]</td>
+      <td role="rowheader">[！UICONTROL优先级]</td>
       <td>输入一个用于定义活动优先级的数字。 数字越大，优先级越高。 此值必须介于0和999之间。 默认值为 5。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 自动分配流量]</td>
+      <td role="rowheader">[！UICONTROL自动分配流量]</td>
       <td>
         <p>启用此选项以自动分配流量。 自动分配会向更成功的体验发送更多流量。</p>
         <p>选择或映射用于判断哪些体验更成功的评估标准。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[！UICONTROL Workspace]</td>
       <td>输入或映射与活动关联的工作区</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 属性ID] </td>
-      <td>对于要添加到活动的每个属性，单击<b>[!UICONTROL 添加项]</b>并选择或映射属性的ID。</td>
+      <td role="rowheader">[！UICONTROL属性ID] </td>
+      <td>对于要添加到活动的每个属性，单击<b>[！UICONTROL添加项]</b>并选择或映射属性的ID。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 报表受众]</td>
+      <td role="rowheader">[！UICONTROL报表受众]</td>
       <td>
-        <p>对于要添加到活动的每个报表受众，单击[!UICONTROL 添加项目]并输入以下信息：</p>
+        <p>对于要添加到活动的每个报表受众，单击[！UICONTROL添加项目]并输入以下信息：</p>
         <ul>
           <li>
-            <p><b>[!UICONTROL 报告受众本地ID]</b>
+            <p><b>[！UICONTROL报告受众本地ID]</b>
             </p>
             <p>输入或映射用于跨API请求跟踪报表受众的字符串。</p>
           </li>
           <li>
-            <p><b>[!UICONTROL 受众ID]</b>
+            <p><b>[！UICONTROL受众ID]</b>
             </p>
             <p>输入或映射要在报表中使用的区段</p>
           </li>
           <li>
-            <p><b>[!UICONTROL 度量本地ID]</b>
+            <p><b>[！UICONTROL度量本地ID]</b>
             </p>
             <p>输入或映射用于跨API请求跟踪量度的字符串。</p>
           </li>
@@ -651,19 +654,19 @@ Adobe Target连接器使用以下对象：
       <td>输入或映射此活动的名称。 名称不能超过250个字符。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 内容]</td>
+      <td role="rowheader">[！UICONTROL内容]</td>
       <td>
         <p>输入或映射将向用户显示的选件内容。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[！UICONTROL Workspace]</td>
       <td>
         <p>输入或映射与选件关联的工作区的ID。 如果留空，选件将与帐户的默认工作区关联。 此功能仅适用于[!DNL Target] Premium帐户。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[！UICONTROL Workspace]</td>
       <td>
         <p>输入或映射修改此选件的日期和时间。</p>
       </td>
@@ -756,7 +759,7 @@ Adobe Target连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Target] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-target" class="MCXref xref" >创建与 [!DNL Adobe Target]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL [!DNL Target]基本URL]</td>
+      <td role="rowheader">[！UICONTROL [!DNL Target]基本URL]</td>
       <td>输入或映射您的[!DNL Target]基本URL。</td>
     </tr>
     <tr>
@@ -771,7 +774,7 @@ Adobe Target连接器使用以下对象：
       <td role="rowheader">
         <p>[!UICONTROL 方法]</p>
       </td>
-   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref" data-mc-variable-override="">HTTP 请求方法</a>。</p> </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 标头]</td>
@@ -784,12 +787,12 @@ Adobe Target连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL 查询字符串]  </td>
       <td>
-        <p>输入请求查询字符串。</p>
+        <p>输入请求的查询字符串。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 正文]</td>
-   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注释：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的正文内容。</p> <p>注意：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
@@ -813,7 +816,7 @@ Adobe Target连接器使用以下对象：
     <td>选择要删除的记录类型。</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL 记录ID]</td>
+    <td role="rowheader">[！UICONTROL记录ID]</td>
     <td>输入或映射要删除的记录的ID。</td>
   </tr>
 </tbody>
@@ -836,7 +839,7 @@ Adobe Target连接器使用以下对象：
     <td>选择要读取的记录类型。</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL 记录ID]</td>
+    <td role="rowheader">[！UICONTROL记录ID]</td>
     <td>输入或映射要读取的记录的ID。</td>
   </tr>
 </tbody>
@@ -861,7 +864,7 @@ Adobe Target连接器使用以下对象：
        </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 字段名称]</td>
+      <td role="rowheader">[！UICONTROL字段名称]</td>
       <td>选择要更新的字段。 这些字段显示在下方。
           <p>有关字段的详细信息，请参阅<a href="https://developer.adobe.com/target/administer/admin-api/">Adobe Target API文档</a>。</p>
       </td>
@@ -893,18 +896,18 @@ Adobe Target连接器使用以下对象：
       <td>选择要更新的记录类型。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 排序方式]</td>
-      <td>对于要作为排序依据的每个字段，单击<b>[!UICONTROL 添加项]</b>并选择该字段以及返回的结果应为升序还是降序。</td>
+      <td role="rowheader">[！UICONTROL排序方式]</td>
+      <td>对于要作为排序依据的每个字段，单击<b>[！UICONTROL添加项]</b>并选择该字段以及返回的结果应为升序还是降序。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 开始于]</td>
+      <td role="rowheader">[！UICONTROL开始于]</td>
       <td>
         <p>输入要检索记录的最早日期。 </p>
         <p>有关支持的日期和时间格式列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">类型强制转换</a>。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 结束于]</td>
+      <td role="rowheader">[！UICONTROL结束于]</td>
       <td>
         <p>输入要检索记录的最晚日期。 </p>
         <p>有关支持的日期和时间格式列表，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/type-coercion.md" class="MCXref xref">类型强制转换</a>。</p>
@@ -930,25 +933,25 @@ Adobe Target连接器使用以下对象：
     <td>选择要更新的记录类型。</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL 排序方式]</td>
-    <td>对于要作为排序依据的每个字段，单击<b>[!UICONTROL 添加项]</b>并选择该字段以及返回的结果应为升序还是降序。</td>
+    <td role="rowheader">[！UICONTROL排序方式]</td>
+    <td>对于要作为排序依据的每个字段，单击<b>[！UICONTROL添加项]</b>并选择该字段以及返回的结果应为升序还是降序。</td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL 搜索条件]</td>
-    <td>对于要设置的每个规则，选择字段、运算符和值。 单击<b>[!UICONTROL Add AND rule]</b>以创建其他规则。</td>
+    <td>对于要设置的每个规则，选择字段、运算符和值。 单击<b>[！UICONTROL Add AND rule]</b>以创建其他规则。</td>
   </tr>
   <tr>
-    <td role="rowheader">[!UICONTROL 偏移]</td>
+    <td role="rowheader">[！UICONTROL偏移]</td>
     <td>
-      <p>输入您希望模块返回的第一个响应的编号。 第一个返回的响应的偏移量为<code>0</code>。 将此字段与[!UICONTROL Maximum number of returned results]字段结合使用可将响应分页。</p>
-      <p>例如，要查看响应的第三页，当每个页面有十个响应时，请将[!UICONTROL Offset]设置为20，将[!UICONTROL Maximum number of returned]结果设置为10。</p>
+      <p>输入您希望模块返回的第一个响应的编号。 第一个返回的响应的偏移量为<code>0</code>。 将此字段与[！UICONTROL Maximum number of returned results]字段结合使用可将响应分页。</p>
+      <p>例如，要查看响应的第三页，当每个页面有十个响应时，请将[！UICONTROL Offset]设置为20，将[！UICONTROL Maximum number of returned]结果设置为10。</p>
     </td>
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL 限制]</td>
     <td>
-      <p>输入或映射您希望模块在每个方案执行周期内返回的最大记录数。 将此字段与[!UICONTROL Offset]字段结合使用可将响应分页。</p>
-      <p>例如，要查看响应的第三页，当每个页面有十个响应时，请将[!UICONTROL Offset]设置为20，将[!UICONTROL Maximum number of returned]结果设置为10。</p>
+      <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。 将此字段与[！UICONTROL Offset]字段结合使用可将响应分页。</p>
+      <p>例如，要查看响应的第三页，当每个页面有十个响应时，请将[！UICONTROL Offset]设置为20，将[！UICONTROL Maximum number of returned]结果设置为10。</p>
     </td>
   </tr>
 </tbody>

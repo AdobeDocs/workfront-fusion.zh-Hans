@@ -4,9 +4,11 @@ description: 按照此常规工作流创建方案
 author: Becky
 feature: Workfront Fusion
 exl-id: 49f8edd7-e29a-4ead-9134-a9f0d1cc244d
-source-git-commit: 0390bb875eb10278967d7d1c9cd61e5243e5f37e
+TQID: https://experienceleague.adobe.com/5j4My9ds8RdA3frEKdRHBFiWpQr-6fI0DfVyWSIgBPc
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: 782
 ht-degree: 3%
 
 ---
@@ -138,43 +140,43 @@ ht-degree: 3%
  </thead> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 保存] </td> 
+   <td role="rowheader">[！UICONTROL保存] </td> 
    <td>Ctrl+Shift+S</td> 
    <td>Cmd+Shift+S</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 运行一次]</td> 
+   <td role="rowheader">[！UICONTROL运行一次]</td> 
    <td>Ctrl+Shift+Enter</td> 
    <td>Cmd+Shift+Enter</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 打开DevTool]</td> 
+   <td role="rowheader">[！UICONTROL打开DevTool]</td> 
    <td>F12</td> 
    <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 选择多个模块]</td> 
+   <td role="rowheader">[！UICONTROL选择多个模块]</td> 
    <td>Shift +拖动</td> 
    <td>Shift +拖动</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 副本]</td> 
+   <td role="rowheader">[！UICONTROL副本]</td> 
    <td>Ctrl+C</td> 
    <td>Cmd+C</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Paste]</td> 
+   <td role="rowheader">[！UICONTROL粘贴]</td> 
    <td>Ctrl+V</td> 
    <td>Cmd+V</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Search for modules]</td> 
+   <td role="rowheader">[！UICONTROL搜索模块]</td> 
    <td>Ctrl+K</td> 
    <td>Cmd+K</span> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">Paste cURL into scenario to create HTTP module</td> 
-   <td colspan="2">Copy cURL, then paste anywhere in the scenario editor.<p>For more information, see <a href="/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md">Use cURL to add an HTTP module</a>.</td> 
+   <td role="rowheader">将cURL粘贴到场景中以创建HTTP模块</td> 
+   <td colspan="2">复制cURL，然后粘贴场景编辑器中的任意位置。<p>有关详细信息，请参阅<a href="/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md">使用cURL添加HTTP模块</a>。</td> 
   </tr> 
  </tbody> 
 </table>

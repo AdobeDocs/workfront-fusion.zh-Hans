@@ -4,9 +4,11 @@ description: 您必须为创建的每个模块配置设置。
 author: Becky
 feature: Workfront Fusion
 exl-id: ae82d1fe-31e1-424a-9c1a-42dc1a20b749
-source-git-commit: a871a130a1ac023dcb4ce8da7241918da2431d3a
+TQID: https://experienceleague.adobe.com/yDENFBx9N8X2hxJOmKJYYj2yqCkasYLgunIJwFf-JY4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: 301
 ht-degree: 32%
 
 ---
@@ -61,7 +63,7 @@ ht-degree: 32%
 
    单击要配置的模块。
 
-1. 如果模块需要，请按照&#x200B;**[!UICONTROL 连接概述]**&#x200B;中的说明，为该给定服务创建与您的注册用户帐户的[连接](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)。
+1. 如果模块需要，请按照[连接概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/connection-overview.md)中的说明，为该给定服务创建与您的注册用户帐户的&#x200B;**[!UICONTROL 连接]**。
 1. 在每个字段中，键入相应的文本。
 
    或

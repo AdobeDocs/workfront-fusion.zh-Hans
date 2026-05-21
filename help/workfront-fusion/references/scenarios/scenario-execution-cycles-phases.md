@@ -4,14 +4,16 @@ description: 本文介绍了在Adobe Workfront Fusion场景运行时发生的事
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-source-git-commit: e0d9d76ab2cbd8bd277514a4291974af4fceba73
+TQID: https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 1%
+source-wordcount: 482
+ht-degree: 2%
 
 ---
 
-# 场景执行、周期和阶段
+# 场景执行、周期与阶段
 
 每个场景执行从初始化阶段开始，以至少一个由操作和提交/回滚阶段组成的周期继续，并且以最终化阶段结束
 

@@ -1,19 +1,22 @@
 ---
 title: 电子邮件模块
-description: 在Adobe Workfront Fusion场景中，您可以将电子邮件帐户连接到多个第三方应用程序和服务。这使您能够通过IMAP下载电子邮件、通过SMTP发送电子邮件、创建新草稿、将电子邮件从一个文件夹移动和复制到另一个文件夹、将电子邮件标记为已读或未读以及删除电子邮件。
+description: 在Adobe Workfront Fusion场景中，您可以将电子邮件帐户连接到多个第三方应用程序和服务。这允许您通过IMAP下载电子邮件、通过SMTP发送电子邮件、创建新草稿、将电子邮件从一个文件夹移动和复制到另一个文件夹、将电子邮件标记为已读或未读，以及删除电子邮件。
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-source-git-commit: 72abd9b5aa73d54edd73dc16f7695d2b01cc8624
+TQID: https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
 workflow-type: tm+mt
-source-wordcount: '2491'
+source-wordcount: 2507
 ht-degree: 11%
 
 ---
 
 # 电子邮件模块
 
-在Adobe Workfront Fusion场景中，您可以将电子邮件帐户连接到多个第三方应用程序和服务。这使您能够通过IMAP下载电子邮件、通过SMTP发送电子邮件、创建新草稿、将电子邮件从一个文件夹移动和复制到另一个文件夹、将电子邮件标记为已读或未读以及删除电子邮件。
+在Adobe Workfront Fusion场景中，您可以将电子邮件帐户连接到多个第三方应用程序和服务。这允许您通过IMAP下载电子邮件、通过SMTP发送电子邮件、创建新草稿、将电子邮件从一个文件夹移动和复制到另一个文件夹、将电子邮件标记为已读或未读，以及删除电子邮件。
 
 ## 访问权限要求
 
@@ -64,7 +67,7 @@ ht-degree: 11%
 
 您可以在电子邮件模块中直接创建与[!DNL Google]帐户的连接。
 
-1. 在任何电子邮件模块中，单击&#x200B;**[!UICONTROL 连接]**&#x200B;字段旁边的[!UICONTROL 添加]。
+1. 在任何电子邮件模块中，单击[!UICONTROL 连接]字段旁边的&#x200B;**[!UICONTROL 添加]**。
 1. 选择&#x200B;**[!DNL Google]**&#x200B;作为连接类型。
 1. 输入连接名称。
 1. （可选）输入您的[!UICONTROL [!DNL Google]客户端ID]和[!UICONTROL 客户端密钥]。
@@ -74,7 +77,7 @@ ht-degree: 11%
 
 IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 大多数电子邮件模块都使用IMAP连接。
 
-1. 在任何电子邮件模块中，单击&#x200B;**[!UICONTROL 连接]**&#x200B;字段旁边的[!UICONTROL 添加]。
+1. 在任何电子邮件模块中，单击[!UICONTROL 连接]字段旁边的&#x200B;**[!UICONTROL 添加]**。
 1. 选择&#x200B;**[!UICONTROL 其他(SMTP)]**&#x200B;作为连接类型。
 1. 输入连接的&#x200B;**[!UICONTROL 名称]**。
 1. 从列表中选择您的&#x200B;**[!UICONTROL 电子邮件提供商]**。 如果您的电子邮件提供商不在列表中，请选择“其他”。
@@ -95,11 +98,11 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
 
 ## [!UICONTROL 电子邮件]模块及其字段
 
-在配置[!UICONTROL 电子邮件]模块时，Workfront Fusion将显示以下列出的字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多字段。模块中的加粗标题表示必填字段。
+在配置[!UICONTROL 电子邮件]模块时，Workfront Fusion将显示以下列出的字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多字段。 模块中的加粗标题表示必填字段。
 
 某些电子邮件字段可能包含数据，因为您在场景的其他模块中使用了这些数据。 如需有关这些受众的信息，请参阅电子邮件帮助文档。
 
-如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+如果您看到字段或功能上方的映射按钮，可使用它为该字段设置变量和函数。 有关详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
@@ -123,39 +126,39 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接] </td> 
-   <td> <p>有关将电子邮件帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td> <p>有关将电子邮件帐户连接到[！UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 文件夹] </td> 
    <td> <p>选择包含要监视的电子邮件的文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 标准]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL标准]</p> </td> 
    <td> <p>选择要按其监视电子邮件的标准：</p> 
     <ul> 
-     <li>[!UICONTROL 所有电子邮件]</li> 
-     <li>[!UICONTROL 仅读取电子邮件]</li> 
-     <li>[!UICONTROL Only未读电子邮件]</li> 
+     <li>[！UICONTROL所有电子邮件]</li> 
+     <li>[！UICONTROL仅读取电子邮件]</li> 
+     <li>[！UICONTROL Only未读电子邮件]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 发件人电子邮件地址] </td> 
+   <td role="rowheader">[！UICONTROL发件人电子邮件地址] </td> 
    <td> <p>输入要监视其电子邮件的发件人的电子邮件地址。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 主题] </td> 
+   <td role="rowheader">[！UICONTROL主题] </td> 
    <td> <p>输入要监视的电子邮件的主题。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 短语] </td> 
+   <td role="rowheader">[！UICONTROL短语] </td> 
    <td> <p>输入任意关键字以仅查看包含该关键字的电子邮件。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 在获取时将消息标记为已读]</td> 
+   <td role="rowheader">[！UICONTROL在获取时将消息标记为已读]</td> 
    <td> <p>启用此选项可在检索详细信息后将未读电子邮件标记为已读。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 最大结果数]</td> 
+   <td role="rowheader">[！UICONTROL最大结果数]</td> 
    <td> <p> 输入或映射Workfront Fusion在一个场景执行周期内应返回的最大电子邮件数。</p> </td> 
   </tr> 
  </tbody> 
@@ -182,19 +185,19 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接] </td> 
-   <td> <p>有关将电子邮件帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[!UICONTROL Workfront Fusion]</a>。</p> </td>
+   <td> <p>有关将电子邮件帐户连接到[！UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[！UICONTROL Workfront Fusion]</a>。</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source文件夹]</td> 
+   <td role="rowheader">[！UICONTROL Source文件夹]</td> 
    <td>选择要从中复制电子邮件的文件夹。 示例： Primary。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 目标文件夹]</td> 
+   <td role="rowheader">[！UICONTROL目标文件夹]</td> 
    <td> <p> 选择要将电子邮件复制到其中的文件夹。 示例：工作。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 电子邮件ID (UID)]</p> </td> 
-   <td> <p>输入要复制到目标文件夹的电子邮件的Email UID。</p> <p>可以使用[!UICONTROL Email] &gt; [!UICONTROL Watch Email]模块或[!UICONTROL Search Email]模块获取电子邮件的UID。</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL电子邮件ID (UID)]</p> </td> 
+   <td> <p>输入要复制到目标文件夹的电子邮件的Email UID。</p> <p>可以使用[！UICONTROL Email] &gt; [！UICONTROL Watch Email]模块或[！UICONTROL Search Email]模块获取电子邮件的UID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -209,39 +212,39 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接] </td> 
-   <td> <p>有关将电子邮件帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[!UICONTROL Workfront Fusion]</a>。</p> </td>
+   <td> <p>有关将电子邮件帐户连接到[！UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[！UICONTROL Workfront Fusion]</a>。</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 文件夹]</td> 
    <td>选择要创建草稿电子邮件的文件夹。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 至] </td> 
+   <td role="rowheader">[！UICONTROL至] </td> 
    <td> <p>输入或映射要向其发送电子邮件的电子邮件地址。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 主题] </td> 
+   <td role="rowheader">[！UICONTROL主题] </td> 
    <td> <p>输入或映射电子邮件的主题行。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 内容] </td> 
+   <td role="rowheader">[！UICONTROL内容] </td> 
    <td> <p>使用HTML标记以HTML格式或以纯文本输入或映射电子邮件内容。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 附件]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL附件]</p> </td> 
    <td> <p>对于要添加的每个附件，单击<b>添加项</b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 文件名]</strong> </p> <p>输入文件名，包括扩展名。 </p> </li> 
-     <li> <p><strong>[!UICONTROL 数据]</strong> </p> <p>输入要上载附件的文件夹的路径。</p> </li> 
-     <li> <p><strong>[!UICONTROL Content-ID]</strong> </p> <p>输入内容ID以在内容中插入附件（图像）。</p> </li> 
+     <li> <p><strong>[！UICONTROL文件名]</strong> </p> <p>输入文件名，包括扩展名。 </p> </li> 
+     <li> <p><strong>[！UICONTROL数据]</strong> </p> <p>输入要上载附件的文件夹的路径。</p> </li> 
+     <li> <p><strong>[！UICONTROL Content-ID]</strong> </p> <p>输入内容ID以在内容中插入附件（图像）。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 复制收件人] </td> 
+   <td role="rowheader">[！UICONTROL复制收件人] </td> 
    <td> <p>对于要向其发送此电子邮件副本的每个电子邮件地址，单击“添加项目”<b></b>并输入电子邮件地址。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 盲文复制收件人]</td> 
+   <td role="rowheader">[！UICONTROL盲文复制收件人]</td> 
    <td> <p> 对于要向其发送此电子邮件的副本而不在电子邮件中显示的所有电子邮件地址，单击“<b>添加项</b>”并输入电子邮件地址。</p> </td> 
   </tr> 
   <!--
@@ -296,19 +299,19 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接] </td> 
-   <td> <p>有关将电子邮件帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[!UICONTROL Workfront Fusion]</a>。</p> </td>
+   <td> <p>有关将电子邮件帐户连接到[！UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[！UICONTROL Workfront Fusion]</a>。</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 文件夹]</td> 
    <td>选择包含要删除的电子邮件的文件夹。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 电子邮件ID (UID)]</p> </td> 
-   <td> <p>输入要删除的电子邮件的电子邮件UID 。</p> <p>您可以使用“电子邮件”&gt;“监视电子邮件”模块或[!UICONTROL 搜索电子邮件]模块获取电子邮件的UID。</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL电子邮件ID (UID)]</p> </td> 
+   <td> <p>输入要删除的电子邮件的电子邮件UID 。</p> <p>您可以使用“电子邮件”&gt;“监视电子邮件”模块或[！UICONTROL搜索电子邮件]模块获取电子邮件的UID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 消除]</td> 
-   <td> <p>启用此选项可永久删除当前打开邮箱中标记为[!UICONTROL 已删除]的所有邮件。</p> <p>注意：在[!DNL Gmail]中，此行为由[!UICONTROL 设置] &gt;[!UICONTROL IMAP访问中的转发POP/IMAP]部分中的设置驱动。</p> </td> 
+   <td role="rowheader">[！UICONTROL消除]</td> 
+   <td> <p>启用此选项可永久删除当前打开邮箱中标记为[！UICONTROL已删除]的所有邮件。</p> <p>注意：在[!DNL Gmail]中，此行为由[！UICONTROL设置] &gt;[！UICONTROL IMAP访问中的转发POP/IMAP]部分中的设置驱动。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -323,59 +326,59 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接] </td> 
-   <td> <p>有关将电子邮件帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[!UICONTROL Workfront Fusion]</a>。</p> </td>
+   <td> <p>有关将电子邮件帐户连接到[！UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[！UICONTROL Workfront Fusion]</a>。</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 文件夹] </td> 
    <td> <p>选择包含要检索的电子邮件的文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 在获取时将消息标记为已读] </td> 
+   <td role="rowheader">[！UICONTROL在获取时将消息标记为已读] </td> 
    <td> <p>如果要在检索详细信息后将未读电子邮件标记为已读，请启用此选项。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 标准]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL标准]</p> </td> 
    <td> <p>选择要检索的电子邮件的条件：</p> 
     <ul> 
-     <li>[!UICONTROL 所有电子邮件]</li> 
-     <li>[!UICONTROL 仅读取电子邮件]</li> 
-     <li>[!UICONTROL Only未读电子邮件]</li> 
+     <li>[！UICONTROL所有电子邮件]</li> 
+     <li>[！UICONTROL仅读取电子邮件]</li> 
+     <li>[！UICONTROL Only未读电子邮件]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 发件人电子邮件地址] </td> 
+   <td role="rowheader">[！UICONTROL发件人电子邮件地址] </td> 
    <td> <p>输入或映射要检索其电子邮件的发件人的电子邮件地址。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL 收件人电子邮件]</td> 
+   <td role="rowheader">[！UICONTROL收件人电子邮件]</td> 
    <td> <p> 输入或映射要检索其电子邮件的收件人的电子邮件地址。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 起始日期] </td> 
+   <td role="rowheader">[！UICONTROL起始日期] </td> 
    <td> <p>输入或映射日期，以检索在指定日期或该日期之后处理的电子邮件。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Before Date]</td> 
+   <td role="rowheader">[！UICONTROL Before Date]</td> 
    <td> <p> 输入或映射日期，以检索在指定日期或之前处理的电子邮件。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 主题] </td> 
+   <td role="rowheader">[！UICONTROL主题] </td> 
    <td> <p>输入或映射要检索的电子邮件主题。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 短语] </td> 
+   <td role="rowheader">[！UICONTROL短语] </td> 
    <td> <p>输入或映射任何关键字以仅检索包含这些关键字的电子邮件。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 电子邮件ID (UID)]</td> 
-   <td> <p> 输入要检索其详细信息的电子邮件的电子邮件ID (UID)。</p> <p>您可以使用Workfront Fusion的[!UICONTROL Watch Email]模块或[!UICONTROL Search Email]模块获取电子邮件的UID。</p> </td> 
+   <td role="rowheader">[！UICONTROL电子邮件ID (UID)]</td> 
+   <td> <p> 输入要检索其详细信息的电子邮件的电子邮件ID (UID)。</p> <p>您可以使用Workfront Fusion的[！UICONTROL Watch Email]模块或[！UICONTROL Search Email]模块获取电子邮件的UID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 最大结果数]</td> 
+   <td role="rowheader">[！UICONTROL最大结果数]</td> 
    <td> <p> Workfront Fusion应在一个场景执行周期内返回的最大电子邮件数。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 即使模块未返回任何结果，仍继续执行路由]</td> 
+   <td role="rowheader">[！UICONTROL即使模块未返回任何结果，仍继续执行路由]</td> 
    <td> <p> 选择是否要在没有返回结果的情况下继续运行模块。</p> </td> 
   </tr> 
  </tbody> 
@@ -391,15 +394,15 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接] </td> 
-   <td> <p>有关将电子邮件帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[!UICONTROL Workfront Fusion]</a>。</p> </td>
+   <td> <p>有关将电子邮件帐户连接到[！UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[！UICONTROL Workfront Fusion]</a>。</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 文件夹]</td> 
    <td>选择包含要标记为已读电子邮件的文件夹。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 电子邮件ID (UID)]</p> </td> 
-   <td> <p>输入要标记为已读的电子邮件的电子邮件UID 。</p> <p>您可以使用“电子邮件”&gt;“监视电子邮件”模块或[!UICONTROL 搜索电子邮件]模块获取电子邮件的UID。</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL电子邮件ID (UID)]</p> </td> 
+   <td> <p>输入要标记为已读的电子邮件的电子邮件UID 。</p> <p>您可以使用“电子邮件”&gt;“监视电子邮件”模块或[！UICONTROL搜索电子邮件]模块获取电子邮件的UID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -414,15 +417,15 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接] </td> 
-   <td> <p>有关将电子邮件帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[!UICONTROL Workfront Fusion]</a>。</p> </td>
+   <td> <p>有关将电子邮件帐户连接到[！UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[！UICONTROL Workfront Fusion]</a>。</p> </td>
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 文件夹]</td> 
    <td>选择包含要标记为未读电子邮件的文件夹。 示例： Primary。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 电子邮件ID (UID)]</p> </td> 
-   <td> <p>输入要标记为未读的电子邮件的Email UID。</p> <p>您可以使用“电子邮件”&gt;“监视电子邮件”模块或[!UICONTROL 搜索电子邮件]模块获取电子邮件的UID。</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL电子邮件ID (UID)]</p> </td> 
+   <td> <p>输入要标记为未读的电子邮件的Email UID。</p> <p>您可以使用“电子邮件”&gt;“监视电子邮件”模块或[！UICONTROL搜索电子邮件]模块获取电子邮件的UID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -437,19 +440,19 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接] </td> 
-   <td> <p>有关将电子邮件帐户连接到[!UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[!UICONTROL Workfront Fusion]</a>。</p> </td>
+   <td> <p>有关将电子邮件帐户连接到[！UICONTROL Workfront Fusion]的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[！UICONTROL Workfront Fusion]</a>。</p> </td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source文件夹]</td> 
+   <td role="rowheader">[！UICONTROL Source文件夹]</td> 
    <td>选择包含要移动的电子邮件的文件夹。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 目标文件夹]</td> 
+   <td role="rowheader">[！UICONTROL目标文件夹]</td> 
    <td> <p> 选择要向其中添加电子邮件的文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 电子邮件ID (UID)]</p> </td> 
-   <td> <p>输入要移动到目标文件夹的电子邮件的Email UID。</p> <p>您可以使用“电子邮件”&gt;“监视电子邮件”模块或[!UICONTROL 搜索电子邮件]模块获取电子邮件的UID。</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL电子邮件ID (UID)]</p> </td> 
+   <td> <p>输入要移动到目标文件夹的电子邮件的Email UID。</p> <p>您可以使用“电子邮件”&gt;“监视电子邮件”模块或[！UICONTROL搜索电子邮件]模块获取电子邮件的UID。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -464,59 +467,59 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接] </td> 
-   <td> <p>有关将电子邮件帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[!UICONTROL Workfront Fusion]</a>。</p> </td> 
+   <td> <p>有关将电子邮件帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-your-email-to-workfront-fusion" class="MCXref xref">将电子邮件连接到[！UICONTROL Workfront Fusion]</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 发送后保存消息]</td> 
-   <td>发送电子邮件后，该邮件将保存在您的邮箱中。 如果要将使用Workfront Fusion发送的电子邮件保存到<i>[!UICONTROL 已发送邮件]</i>文件夹或邮箱中的其他文件夹，请启用此选项。 某些电子邮件服务（如[!DNL Gmail]）会自动保存已发送的邮件。</td> 
+   <td role="rowheader">[！UICONTROL发送后保存消息]</td> 
+   <td>发送电子邮件后，该邮件将保存在您的邮箱中。 如果要将使用Workfront Fusion发送的电子邮件保存到<i>[！UICONTROL已发送邮件]</i>文件夹或邮箱中的其他文件夹，请启用此选项。 某些电子邮件服务（如[!DNL Gmail]）会自动保存已发送的邮件。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 至] </td> 
+   <td role="rowheader">[！UICONTROL至] </td> 
    <td> <p>添加要向其发送电子邮件的电子邮件地址。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 主题] </td> 
+   <td role="rowheader">[！UICONTROL主题] </td> 
    <td> <p>输入或映射电子邮件的主题行。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 内容类型]</p> </td> 
-   <td> <p>选择电子邮件的[!UICONTROL content]类型：</p> 
+   <td role="rowheader"> <p>[！UICONTROL内容类型]</p> </td> 
+   <td> <p>选择电子邮件的[！UICONTROL content]类型：</p> 
     <ul> 
      <li>HTML</li> 
-     <li>[!UICONTROL 纯文本]</li> 
+     <li>[！UICONTROL纯文本]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 内容] </td> 
-   <td> <p>使用HTML标签以HTML格式或以纯文本输入或映射电子邮件内容，具体取决于您在[!UICONTROL 内容类型]字段中选择的内容。</p> </td> 
+   <td role="rowheader">[！UICONTROL内容] </td> 
+   <td> <p>使用HTML标签以HTML格式或以纯文本输入或映射电子邮件内容，具体取决于您在[！UICONTROL内容类型]字段中选择的内容。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 附件]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL附件]</p> </td> 
    <td> <p>对于要添加的每个附件，单击<b>添加项</b>并输入以下内容：</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 文件名]</strong> </p> <p>输入文件名，包括扩展名。 </p> </li> 
-     <li> <p><strong>[!UICONTROL 数据]</strong> </p> <p>输入要上载附件的文件夹的路径。</p> </li> 
-     <li> <p><strong>[!UICONTROL Content-ID]</strong> </p> <p>输入内容ID以在内容中插入附件（图像）。</p> </li> 
+     <li> <p><strong>[！UICONTROL文件名]</strong> </p> <p>输入文件名，包括扩展名。 </p> </li> 
+     <li> <p><strong>[！UICONTROL数据]</strong> </p> <p>输入要上载附件的文件夹的路径。</p> </li> 
+     <li> <p><strong>[！UICONTROL Content-ID]</strong> </p> <p>输入内容ID以在内容中插入附件（图像）。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 复制收件人] </td> 
+   <td role="rowheader">[！UICONTROL复制收件人] </td> 
    <td> <p>对于要向其发送此电子邮件副本的每个电子邮件地址，单击“添加项目”<b></b>并输入电子邮件地址。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 盲文复制收件人]</td> 
+   <td role="rowheader">[！UICONTROL盲文复制收件人]</td> 
    <td> <p> 对于要向其发送此电子邮件的副本而不在电子邮件中显示的所有电子邮件地址，单击“<b>添加项</b>”并输入电子邮件地址。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 发件人]</p> </td> 
-   <td> <p>输入或映射电子邮件的[!UICONTROL Sender]字段中显示的电子邮件地址。</p> <p>提示：如果您不确定是使用此字段还是从字段，我们建议您选择从字段。</p> <p>重要提示：使用正确的语法： <code>name@email.com</code>或 <code>"Name" name@email.com</code></p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL发件人]</p> </td> 
+   <td> <p>输入或映射电子邮件的[！UICONTROL Sender]字段中显示的电子邮件地址。</p> <p>提示：如果您不确定是使用此字段还是从字段，我们建议您选择从字段。</p> <p>重要提示：使用正确的语法： <code>name@email.com</code>或 <code>"Name" name@email.com</code></p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 回复]</td> 
+   <td role="rowheader">[！UICONTROL回复]</td> 
    <td> <p> 如果要将对此电子邮件的回复发送到与“发件人”地址不同的地址，请输入要用于对此电子邮件进行回复的电子邮件地址。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL In-Reply-To]</td> 
+   <td role="rowheader">[！UICONTROL In-Reply-To]</td> 
    <td> <p> 如果回复的是特定电子邮件，请输入或映射要回复的电子邮件的ID。</p> </td> 
   </tr> 
   <tr> 
@@ -524,25 +527,25 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
    <td> <p>输入线程中所有回复的消息ID。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 优先级]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL优先级]</p> </td> 
    <td> <p>选择电子邮件的优先级：</p> 
     <ul> 
-     <li>[!UICONTROL 高]</li> 
-     <li>[!UICONTROL 正常]</li> 
-     <li>[!UICONTROL 低]</li> 
+     <li>[！UICONTROL高]</li> 
+     <li>[！UICONTROL正常]</li> 
+     <li>[！UICONTROL低]</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>[!UICONTROL 标头]</p> </td> 
    <td> <p>添加标头：</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 键]</strong> </p> <p>添加键。 例如，[!UICONTROL Sender]、[!UICONTROL Date]、[!UICONTROL To]等。</p> </li> 
-     <li> <p><strong>[!UICONTROL 值]</strong> </p> <p>输入键的值。</p> </li> 
+     <li> <p><strong>[！UICONTROL键]</strong> </p> <p>添加键。 例如，[！UICONTROL Sender]、[！UICONTROL Date]、[！UICONTROL To]等。</p> </li> 
+     <li> <p><strong>[！UICONTROL值]</strong> </p> <p>输入键的值。</p> </li> 
     </ul> </td> 
   </tr> 
 <tr data-mc-conditions=""> 
-   <td role="rowheader">[!UICONTROL From] </td> 
-   <td> <p>输入或映射电子邮件的[!UICONTROL 发件人]字段中显示的电子邮件地址（和名称，如果需要）。 </p> <p>重要：使用正确的语法： <code>name@email.com</code>或<code>"Name" name@email.com</code>。</p> <p>注意：通常，Workfront Fusion会将您在创建连接时输入的电子邮件地址用作发件人地址。 如果输入任何其他电子邮件地址，则在发送邮件时可能会发生错误，因为您的帐户可能无权从不同于您自己的地址发送电子邮件。 如<code>test@mail.com</code>或“<code>John Bush" test@email.com</code>”。</p> </td> 
+   <td role="rowheader">[！UICONTROL From] </td> 
+   <td> <p>输入或映射电子邮件的[！UICONTROL发件人]字段中显示的电子邮件地址（和名称，如果需要）。 </p> <p>重要：使用正确的语法： <code>name@email.com</code>或<code>"Name" name@email.com</code>。</p> <p>注意：通常，Workfront Fusion会将您在创建连接时输入的电子邮件地址用作发件人地址。 如果输入任何其他电子邮件地址，则在发送邮件时可能会发生错误，因为您的帐户可能无权从不同于您自己的地址发送电子邮件。 E.g. <code>test@mail.com</code>或“<code>John Bush" test@email.com</code>”。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -560,7 +563,7 @@ IMAP连接允许您远程访问邮箱，并读取或处理邮箱中的邮件。 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source module]</td> 
+   <td role="rowheader">[！UICONTROL Source module]</td> 
    <td> <p>选择用于输出带有要对其进行迭代的附件的电子邮件的模块。</p> </td> 
   </tr> 
  </tbody> 
