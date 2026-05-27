@@ -7,10 +7,10 @@ exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
 TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 99a5a892469814f450832dbc4f137fb2c5aa71ee
 workflow-type: tm+mt
-source-wordcount: 1272
-ht-degree: 10%
+source-wordcount: 1300
+ht-degree: 9%
 
 ---
 
@@ -82,6 +82,10 @@ ht-degree: 10%
 1. 要设置webhook的优先级，请单击“优先级”列中的下拉菜单，然后选择新优先级。
 
    具有较高优先级的Webhook将首先处理，如果工作池中有许多自动操作在争夺资源，则处理该操作可能会很有用。
+
+   >[!NOTE]
+   >
+   >只有具有[!UICONTROL 团队管理员]角色或组织[!UICONTROL 管理员]或[!UICONTROL 所有者]角色的用户才能更改webhook的优先级。 对于其他用户，“优先级”下拉列表处于禁用状态。
 1. 要禁用或启用webhook，请在该webhook的行的“状态”列中禁用或启用切换。
 1. 要查看webhooks队列是否已满，请检查“队列已满”列。 此列中的数字是队列中的当前项目数。
 1. 要查看由webhook处理的操作，请单击该webhook的“完整队列”列中的&#x200B;**操作**。
