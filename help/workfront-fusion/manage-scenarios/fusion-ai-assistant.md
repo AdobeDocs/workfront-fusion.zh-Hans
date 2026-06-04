@@ -7,61 +7,68 @@ exl-id: 22f24c0e-4eb3-4ef7-b012-374ee5e8a844
 TQID: https://experienceleague.adobe.com/MeGV8WNtXy8HkizGkUutuhw2ctdmf3DFIkRWBRXPzA0
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+hide: true
+source-git-commit: b84dea9d44b4112a8d905b631720727e557351df
 workflow-type: tm+mt
-source-wordcount: 310
-ht-degree: 34%
+source-wordcount: 30
+ht-degree: 50%
 
 ---
 
 # Workfront Fusion 中的 AI 助手
 
-AI Assistant可以从Workfront文档中找到信息，从而无需访问Adobe Experience League即可获得所需的帮助。
+此功能已被弃用，本文将在不久的将来删除。
 
-## 访问权限要求
+<!--
 
-+++ 展开可查看本文所述功能的访问权限要求。
+AI Assistant can locate information from Workfront documentation, eliminating the need for you to visit Adobe Experience League to get the help you need. 
+
+## Access requirements
+
++++ Expand to view access requirements for the functionality in this article.
 
 <table style="table-layout:auto">
  <col> 
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">Adobe Workfront 包</td> 
-   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
+   <td role="rowheader">Adobe Workfront package</td> 
+   <td> <p>Any Adobe Workfront Workflow package and any Adobe Workfront Automation and Integration package</p><p>Workfront Ultimate</p><p>Workfront Prime and Select packages, with an additional purchase of Workfront Fusion.</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">Adobe Workfront 许可证</td> 
-   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
+   <td role="rowheader">Adobe Workfront licenses</td> 
+   <td> <p>Standard</p><p>Work or higher</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">产品</td> 
+   <td role="rowheader">Product</td> 
    <td>
-   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</li></ul>
+   <p>If your organization has a Select or Prime Workfront package that does not include Workfront Automation and Integration, your organization must purchase Adobe Workfront Fusion.</li></ul>
    </td> 
   </tr>
  </tbody> 
 </table>
 
-有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
+For more detail about the information in this table, see [Access requirements in documentation](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md).
 
 +++
 
-## 先决条件
+## Prerequisites
 
-Adobe必须有一个已签署的Adobe Gen AI协议文件。
+Adobe must have a signed Adobe Gen AI agreement on file.
 
-有关签署协议的更多信息，请参阅Adobe文档中的AI Assistant概述一文中的[签署Workfront Gen AI协议](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement)。
+For more information on signing the agreement, see [Sign the Adobe Gen AI agreement](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/basics/ai-assistant/ai-assistant-overview#sign-the-adobe-gen-ai-agreement) in the article AI Assistant overview in the Workfront documentation.
 
-## 从AI助手获取信息
+## Get information from AI Assistant
 
-要使用AI助手从Workfront Fusion文档获取信息或说明，请执行以下操作：
+To get information or instructions from the Workfront Fusion documentation using AI Assistant:
 
-1. 单击屏幕右上角附近的&#x200B;**AI助手**&#x200B;图标![AI助手图标](assets/ai-assistant-icon.png)。
-1. 在AI助手面板的底部附近的文本区域中，输入提示。
+1. Click the **AI Assistant** icon ![AI Assistant icon](assets/ai-assistant-icon.png) near the upper-right corner of the screen.
+1. In the AI Assistant panel, enter your prompt in the text area near the bottom of the panel.
 
-   根据提示的大小或复杂程度，AI Assistant可能需要一些时间来查找信息。 我们建议使用简单的提示。
+   AI Assistant may take a few moments to locate the information, depending on how large or complex the prompt is. We recommend simple prompts.
 
-1. 在AI助手面板中查看响应。
-1. （可选）如果响应不包含您需要的信息，请优化您的响应并重试。
-1. （可选且视情况而定）如果响应包含指向Adobe Experience League文章的链接，请单击该链接以在新窗口中打开文章。
+1. View the response in the AI Assistant panel.
+1. (Optional) If the response does not contain the information you need, refine your response and try again.
+1. (Optional and conditional) If the response includes a link to an Adobe Experience League article, click the link to open the article in a new window.
+
+-->
