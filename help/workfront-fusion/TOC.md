@@ -2,10 +2,10 @@
 user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
-source-git-commit: 207cda01f5207e0906ddfc20a5d1c50b75e689ea
+source-git-commit: 9c05aa1111fd571ea6f0ff86943b2849a39e4973
 workflow-type: tm+mt
-source-wordcount: '2425'
-ht-degree: 55%
+source-wordcount: '2445'
+ht-degree: 54%
 
 ---
 
@@ -16,6 +16,7 @@ ht-degree: 55%
 * Fusion 发行活动 {#fusion-release-activity}
    * [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
    * Fusion版本 — 2026 {#fusion-releases-2026}
+      * [Workfront Fusion发布活动： 2026年6月1日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-1.md)
       * [Workfront Fusion发布活动： 2026年5月25日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-25.md)
       * [Workfront Fusion发布活动： 2026年5月11日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-11.md)
       * [Workfront Fusion发布活动： 2026年5月4日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-5-4.md)
@@ -279,6 +280,8 @@ ht-degree: 55%
    * [删除场景元素](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
    * [从方案区域管理方案](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
    * [编辑Webhook](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)
+   * [重新触发场景执行](/help/workfront-fusion/manage-scenarios/retrigger-specific-execution.md)
+   * [使用运行一次以测试方案](/help/workfront-fusion/manage-scenarios/run-once.md)
 * 构建练习场景 {#build-practice-scenarios}
    * [构建练习场景](/help/workfront-fusion/build-practice-scenarios/build-practice-scenarios-toc.md)
    * [创建基本场景](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)
