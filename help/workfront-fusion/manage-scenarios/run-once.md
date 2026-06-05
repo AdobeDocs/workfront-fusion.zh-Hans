@@ -3,9 +3,8 @@ title: 使用运行一次以测试方案
 description: 通过使用“运行一次”按钮，您可以测试没有外部触发器的方案。
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 9c05aa1111fd571ea6f0ff86943b2849a39e4973
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
 workflow-type: tm+mt
 source-wordcount: 332
 ht-degree: 0%
@@ -53,3 +52,6 @@ ht-degree: 0%
    * **手动提供输入**：必须为方案输入提供webhook有效负载。 必须采用JSON格式。
 
      要提供输入，请在&#x200B;**Webhook有效负载**&#x200B;框中输入文本，然后单击&#x200B;**运行**。
+
+
+
