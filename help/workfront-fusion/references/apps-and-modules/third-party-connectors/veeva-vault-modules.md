@@ -10,7 +10,7 @@ product_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 4125
 ht-degree: 13%
@@ -590,7 +590,7 @@ ht-degree: 13%
    <td> <p>选择您要删除文档、活页夹还是模板。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"><p>源</p> </td> 
+   <td role="rowheader"><p>来源</p> </td> 
    <td> <p>启用此选项以在导出中包括源文件。</p></td> 
   </tr> 
   <tr> 

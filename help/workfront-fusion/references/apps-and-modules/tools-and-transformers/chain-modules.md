@@ -7,18 +7,22 @@ exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 625
-ht-degree: 15%
+source-wordcount: 883
+ht-degree: 10%
 
 ---
 
 # Chain 模块
 
->[!NOTE]
+>[!IMPORTANT]
 >
->此功能当前位于Beta中。
+>此功能位于Beta中，不建议用于任务关键型生产工作流。 作为Beta功能，行为可能会发生更改，并且可能无法完全处理边缘情况。
+>
+>对于稳定集成，请考虑使用HTTP请求模块通过webhook触发第二个场景，此模式使用完全支持的基元，并为每个场景提供独立的执行控制。
+>
+>如果选择使用链接方案，请查看[将多个方案链接在一起](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)以获取设计指南。
 
 使用“链”模块，可以将一个方案连接到另一个方案。
 
@@ -84,6 +88,16 @@ ht-degree: 15%
 
 此模块位于父方案中。 这些字段反映了在子方案中的“从父模块接收数据”中设置的数据结构。
 
+>[!IMPORTANT]
+>
+> 在生产场景中配置此模块之前，请查看以下内容：
+>
+> * **如果禁用“触发并忘记”，则不要在此方案上启用提交触发器最后一个(CTL)**。 CTL将在暂停等待子响应时重试该方案，从而创建无限制的重试循环。
+> * **将此模块放在迭代器内时请务必小心。** 为大型迭代器中的每个项目调度子方案会创建大量平台负载。 考虑内嵌子方案的逻辑或在迭代器之外预先计算共享查找。
+> * **触发并忘记**&#x200B;意味着父级无法查看子级是否运行或成功。 仅在独立监视子级故障时使用。
+>
+> 有关完整的设计指南，请参阅[将多个方案链接在一起](https://experienceleague.adobe.com/zh-hans/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)。
+
 >[!NOTE]
 >
 >* 您可以选择现有的子方案，也可以通过此模块创建新子方案。
@@ -112,7 +126,11 @@ ht-degree: 15%
 
 这是子方案中的，并将选定结构中的数据发送至父方案。 您可以在父方案的后续模块中映射此数据。
 
-如果您的子方案有多个路由，我们建议将此模块添加到始终在任何其他路由之后运行和执行的路由中。
+>[!IMPORTANT]
+>
+> 如果您的子方案有多个路由，则&#x200B;**必须**&#x200B;确保可以从每个执行路径访问返回至父模块的响应。 如果返回响应模块位于跳过或未执行的路由上，则父方案将无限期等待从未到达的响应。
+>
+> 将Return响应添加到路由器之后的父模块，该路由始终执行，而不考虑路由器的结果，或者添加错误处理以确保即使在发生错误时也始终返回响应。
 
 要配置添加响应程序模块，请执行以下操作：
 

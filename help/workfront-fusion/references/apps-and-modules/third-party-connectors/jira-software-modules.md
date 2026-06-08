@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 2479
+source-wordcount: 2478
 ht-degree: 42%
 
 ---
@@ -555,7 +555,7 @@ Jira连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL ID或密钥]</td> 
-   <td>输入或映射要更新的记录的ID或键，然后填写特定于该记录类型的其他字段显示在模块中。</td> 
+   <td>输入或映射要更新的记录的ID或键，然后填写特定于此记录类型的其他字段即会显示在模块中。</td> 
   </tr> 
  </tbody> 
 </table>
