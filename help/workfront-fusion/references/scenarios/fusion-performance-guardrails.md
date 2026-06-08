@@ -32,7 +32,7 @@ ht-degree: 77%
   >
   > 虽然链接允许工作流运行超过40分钟，但应将此视为设计风险信号，而不是支持的解决方法。 跨多个长期运行的子方案的父方案没有总超时边界。 如果子方案挂起或遇到平台问题，则父方案会无限期等待，而不会出现错误和自动恢复。
   >
-  > 如果您的方案设计需要链接以避免40分钟的限制，请在部署到生产环境之前查看您的体系结构。 有关设计指导，请参阅[将多个方案链接在一起](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)。
+  > 如果您的方案设计需要链接以避免40分钟的限制，请在部署到生产环境之前查看您的体系结构。 有关设计指导，请参阅[将多个方案链接在一起](https://experienceleague.adobe.com/zh-hans/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)。
 * 场景 Blueprint 的最大大小为 **5 MB**，但我们建议将其控制在 **3 MB**&#x200B;以内。
 
   包含大量字段的应用程序模块在创建或更新数据时可能导致 Blueprint 体积显著增大。
