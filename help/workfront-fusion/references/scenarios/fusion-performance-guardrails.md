@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: 1101
-ht-degree: 94%
+source-wordcount: 1351
+ht-degree: 77%
 
 ---
 
@@ -27,6 +26,12 @@ ht-degree: 94%
 * 场景默认执行超时时间为 **40 分钟**。 当执行达到此超时时间后，Workfront Fusion 会在下一个循环或操作完成后中断场景执行（取决于场景结构）。 这会使场景在达到 40 分钟上限后不久被强制停止
 
   串联调用的场景不计入场景的执行超时时间。 父级场景在等待子级场景执行期间不会累积执行时间。
+
+  >[!IMPORTANT]
+  >
+  > 虽然链接允许工作流运行超过40分钟，但应将此视为设计风险信号，而不是支持的解决方法。 跨多个长期运行的子方案的父方案没有总超时边界。 如果子方案挂起或遇到平台问题，则父方案会无限期等待，而不会出现错误和自动恢复。
+  >
+  > 如果您的方案设计需要链接以避免40分钟的限制，请在部署到生产环境之前查看您的体系结构。 有关设计指导，请参阅[将多个方案链接在一起](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)。
 * 场景 Blueprint 的最大大小为 **5 MB**，但我们建议将其控制在 **3 MB**&#x200B;以内。
 
   包含大量字段的应用程序模块在创建或更新数据时可能导致 Blueprint 体积显著增大。
@@ -35,6 +40,14 @@ ht-degree: 94%
    * 使用其他应用程序时，对于字段数量较多的记录类型，请使用自定义 API 模块进行交互。
 
 * 虽然场景中模块数量没有上限，但如果超过 150 个模块，会对 Workfront Fusion 系统性能产生负面影响。 因此，我们不建议创建包含超过 150 个模块的场景。
+
+## 链接方案
+
+* 场景链接功能位于Beta中，不建议用于任务关键型工作流。 作为Beta功能，行为可能会发生更改，并且可能无法完全处理边缘情况。
+
+  要获得稳定的集成，请考虑使用HTTP请求模块通过webhook触发第二个场景。 此模式使用完全支持的基元，并为每个场景提供独立的执行控制。
+
+  如果选择使用链接方案，请查看文章[将多个方案链接在一起](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)中的设计指导和约束。
 
 ## 运营
 
@@ -77,6 +90,8 @@ ht-degree: 94%
 * 执行历史记录日志的大小上限为 **100 MB**。 如果执行历史记录超过此大小，系统仅会显示前 100 MB 的内容。
 * 如果单个操作的输入或输出大于15 MB，则它不会出现在执行历史记录中。
 * 如果某个场景存在多个并发执行，场景详细信息页面的“执行”区域仅会显示 5 个执行记录。 即使实际运行的执行记录超过 5 个，也仍然只显示最多 5 个。
+* 如果某个场景是链接网络的一部分，则对该链中的每个场景单独维护执行历史记录。 没有跨父方案和子方案的统一跟踪视图。 要调查链接执行，请分别打开每个场景的执行历史记录。
+* 如果单个操作的输入或输出超过15 MB，则不会出现在执行历史记录中。 此限制适用于通过链模块在父方案和子方案之间传递的数据。
 
 ## 未完成的执行
 

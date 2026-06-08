@@ -5,11 +5,9 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1e3f7729-f48e-451e-a90b-d680c9e3bcbc
 TQID: https://experienceleague.adobe.com/wKSHupk1Gx2g7ydAOilpbfRnqu-TMY5W8zKEyKd8Slk
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 777
 ht-degree: 17%
@@ -125,7 +123,7 @@ ht-degree: 17%
 要执行单个模块，请执行以下操作：
 
 1. 右键单击该模块，然后在显示的菜单中单击&#x200B;**[!UICONTROL 仅运行此模块]**。
-1. 提供输入项的示例值，然后单击&#x200B;**[!UICONTROL 确定]** 。
+1. 提供输入项的示例值，然后单击&#x200B;**[!UICONTROL 确定]**。
 1. 当模块完成运行时，单击模块上方的气泡以浏览其完整输出。
 
    以后模块的映射面板现在包含模块输出中的所有项。

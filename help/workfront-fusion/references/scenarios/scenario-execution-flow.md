@@ -6,9 +6,8 @@ author: Becky
 feature: Workfront Fusion
 exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
 TQID: https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
 source-wordcount: 770
 ht-degree: 1%
@@ -51,7 +50,7 @@ ht-degree: 1%
 
 **示例：**&#x200B;在这种从Adobe Workfront下载文档并将文档发送到[!DNL Dropbox]中的文件夹的情况中，数据将按如下方式流动：
 
-场景的第一步由第一个模块执行，即在Workfront中查看文档。找到的每个文档都被视为一个捆绑包。 如果模块运行时未找到任何捆绑包，则场景将在第一个模块后结束。
+场景的第一步由第一个模块执行，即在Workfront中查看文档。 找到的每个文档都被视为一个捆绑包。 如果模块运行时未找到任何捆绑包，则场景将在第一个模块后结束。
 
 如果返回一个束，则该束将通过场景的其余部分。 在此示例中，方案的其余部分包含secondmodule，它将包上载到[!DNL Dropbox]文件夹。
 

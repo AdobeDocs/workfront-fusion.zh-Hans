@@ -4,14 +4,22 @@ description: 您可以映射父方案和子方案之间的关系。
 author: Becky
 feature: Workfront Fusion
 exl-id: 0782c6b1-42a5-48de-bfa0-3ced6ed2bf7f
-source-git-commit: aee2b35919e240cce5346df6d94a610c34b26e88
+source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 18%
+source-wordcount: '557'
+ht-degree: 16%
 
 ---
 
 # 查看和管理链接方案关系
+
+>[!IMPORTANT]
+>
+>此功能位于Beta中，不建议用于任务关键型生产工作流。 作为Beta功能，行为可能会发生更改，并且可能无法完全处理边缘情况。
+>
+>对于稳定集成，请考虑使用HTTP请求模块通过webhook触发第二个场景，此模式使用完全支持的基元，并为每个场景提供独立的执行控制。
+>
+>如果选择使用链接方案，请查看[将多个方案链接在一起](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)以获取设计指南。
 
 您可以映射父方案和子方案之间的关系。 您还可以使用映射跳转到链中的不同方案。
 
