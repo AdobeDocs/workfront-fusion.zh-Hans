@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
 TQID: https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 50a1b6a8f8e3ad09c8734e901f8f0dab36f79e2e
 workflow-type: tm+mt
-source-wordcount: 902
-ht-degree: 15%
+source-wordcount: 899
+ht-degree: 16%
 
 ---
 
@@ -93,12 +92,27 @@ ht-degree: 15%
 >
 >* 这些是非通配符mTLS证书。
 
+下载以下zip文件，将其解压缩，然后将PEM文件用于您的数据中心。
+
+[下载Workfront Fusion 2026证书](assets/2026-certs/fusion-prod-mtls-certificate-2026.zip)
+
 | 数据中心 | 下载链接 | 日期有效 |
 | --- | --- | --- |
-| 美国AWS数据中心 | [下载Workfront Fusion US证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | 2026年1月29日至2027年3月2日 |
-| 美国Azure群集 | [下载Workfront Fusion US Azure证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | 2025年9月21日至2026年10月23日 |
-| 欧盟AWS数据中心 | [下载Workfront Fusion EU证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | 2026年1月29日至2027年3月2日 |
-| 欧盟Azure集群 | [下载Workfront Fusion EU Azure证书2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | 2026年2月4日至2027年3月8日 |
+| 美国AWS数据中心 | `fusion-prod-us-mtls-certificate-2026.pem` | 2026年1月29日至2027年3月2日 |
+| 美国Azure群集 | `fusion-prod-az-mtls-certificate.pem` | 2025年9月21日至2026年10月23日 |
+| 欧盟AWS数据中心 | `fusion-prod-eu-mtls-certificate-2026.pem` | 2026年1月29日至2027年3月2日 |
+| 欧盟Azure集群 | `fusion-prod-eu-az-mtls-certificate-2026.pem` | 2026年2月4日至2027年3月8日 |
+
+<!--
+
+| Datacenter | Download link | Dates valid |
+| --- | --- | --- |
+| US AWS Datacenter | [Download Workfront Fusion US Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-us-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
+| US Azure Cluster | [Download Workfront Fusion US Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-az-mtls-certificate.pem) | September 21, 2025 to October 23, 2026 |
+| EU AWS Datacenter | [Download Workfront Fusion EU Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-mtls-certificate-2026.pem) | January 29, 2026 to March 2, 2027 |
+| EU Azure Cluster | [Download Workfront Fusion EU Azure Certificate 2026](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2026-certs/fusion-prod-eu-az-mtls-certificate-2026.pem) | February 4, 2026 to March 8, 2027 |
+
+-->
 
 ### 2025年证书
 
@@ -112,11 +126,26 @@ ht-degree: 15%
 >
 >* 这些是非通配符mTLS证书。
 
-| 数据中心 | 下载链接 | 日期有效 |
+下载以下zip文件，将其解压缩，然后将PEM文件用于您的数据中心。
+
+[下载Workfront Fusion 2025证书](assets/2025-certs/fusion-prod-mtls-certificate-2025.zip)
+
+| 数据中心 | 文件 | 日期有效 |
 | --- | --- | --- |
-| 美国数据中心 | [下载Workfront Fusion US证书2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | 2025年3月3日至2026年4月4日 |
-| 欧盟数据中心 | [下载Workfront Fusion EU证书2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | 2025年3月3日至2026年4月4日 |
-| Azure群集 | [下载Workfront Fusion Azure证书2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | 2024年10月24日至2025年11月25日 |
+| 美国数据中心 | `fusion-prod-us-mtls-certificate.pem` | 2025年3月3日至2026年4月4日 |
+| 欧盟数据中心 | `fusion-prod-eu-mtls-certificate.pem` | 2025年3月3日至2026年4月4日 |
+| Azure群集 | `fusion-prod-az-mtls-certificate.pem` | 2024年10月24日至2025年11月25日 |
+
+
+<!--
+
+| Datacenter | Download link | Dates valid |
+| --- | --- | --- |
+| US Datacenter | [Download Workfront Fusion US Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-us-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
+| EU Datacenter | [Download Workfront Fusion EU Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-eu-mtls-certificate.pem) | March 3, 2025 to April 4, 2026 |
+| Azure Cluster | [Download Workfront Fusion Azure Certificate 2025](/help/workfront-fusion/references/apps-and-modules/universal-connectors/assets/2025-certs/fusion-prod-az-mtls-certificate.pem) | October 24, 2024 to November 25, 2025 |
+
+-->
 
 <!--
 
@@ -152,3 +181,4 @@ ht-degree: 15%
 
 1. 在模块底部附近启用&#x200B;**[!UICONTROL 显示高级设置]**。
 1. 启用&#x200B;**[!UICONTROL 使用双向TLS]**。
+
