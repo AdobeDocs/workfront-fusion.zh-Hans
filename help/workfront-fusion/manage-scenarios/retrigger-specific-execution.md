@@ -3,9 +3,8 @@ title: 重新触发特定场景执行
 description: 您可以重新触发特定场景执行，以使用更新的场景Blueprint处理数据，或查看其数据流。
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 0c732add9c1ec75d7aed43bb7097bb1c95aa6408
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
 workflow-type: tm+mt
 source-wordcount: 523
 ht-degree: 18%
@@ -18,7 +17,7 @@ ht-degree: 18%
 
 例如，如果您更新方案以添加操作（如创建问题），则可以重新触发在更新之前发生的执行。 更新的方案将使用原始方案的触发事件运行，但将包含更新的操作。 在此示例中，场景会在新执行期间创建一个问题。
 
-重新触发适用于具有webhook触发器的方案和子方案。
+重新触发适用于具有webhook触发器的方案和链接方案。
 
 在重新触发使用webhook的场景时，可以再次使用原始webhook事件，因此无需重新创建事件来重新触发场景。
 
