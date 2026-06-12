@@ -7,10 +7,10 @@ exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
 workflow-type: tm+mt
-source-wordcount: 1351
-ht-degree: 77%
+source-wordcount: 1360
+ht-degree: 76%
 
 ---
 
@@ -41,6 +41,7 @@ ht-degree: 77%
    * 使用其他应用程序时，对于字段数量较多的记录类型，请使用自定义 API 模块进行交互。
 
 * 虽然场景中模块数量没有上限，但如果超过 150 个模块，会对 Workfront Fusion 系统性能产生负面影响。 因此，我们不建议创建包含超过 150 个模块的场景。
+* 方案名称不能超过120个字符。
 
 ## 链接方案
 
