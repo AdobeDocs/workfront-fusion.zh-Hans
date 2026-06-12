@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
 workflow-type: tm+mt
-source-wordcount: 1351
-ht-degree: 77%
+source-wordcount: 1360
+ht-degree: 76%
 
 ---
 
@@ -32,7 +31,7 @@ ht-degree: 77%
   >
   > 虽然链接允许工作流运行超过40分钟，但应将此视为设计风险信号，而不是支持的解决方法。 跨多个长期运行的子方案的父方案没有总超时边界。 如果子方案挂起或遇到平台问题，则父方案会无限期等待，而不会出现错误和自动恢复。
   >
-  > 如果您的方案设计需要链接以避免40分钟的限制，请在部署到生产环境之前查看您的体系结构。 有关设计指导，请参阅[将多个方案链接在一起](https://experienceleague.adobe.com/zh-hans/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)。
+  > 如果您的方案设计需要链接以避免40分钟的限制，请在部署到生产环境之前查看您的体系结构。 有关设计指导，请参阅[将多个方案链接在一起](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)。
 * 场景 Blueprint 的最大大小为 **5 MB**，但我们建议将其控制在 **3 MB**&#x200B;以内。
 
   包含大量字段的应用程序模块在创建或更新数据时可能导致 Blueprint 体积显著增大。
@@ -41,6 +40,7 @@ ht-degree: 77%
    * 使用其他应用程序时，对于字段数量较多的记录类型，请使用自定义 API 模块进行交互。
 
 * 虽然场景中模块数量没有上限，但如果超过 150 个模块，会对 Workfront Fusion 系统性能产生负面影响。 因此，我们不建议创建包含超过 150 个模块的场景。
+* 方案名称不能超过120个字符。
 
 ## 链接方案
 
