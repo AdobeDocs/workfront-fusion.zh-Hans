@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 9f736464e38e7885ff528ff114008175ff2db82e
 workflow-type: tm+mt
-source-wordcount: 2101
-ht-degree: 49%
+source-wordcount: 2236
+ht-degree: 46%
 
 ---
 
@@ -277,6 +277,8 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
       </tr>
   </tbody>
 </table>
+
+有关在此模块上使用高级逻辑的示例，请参阅监视事件模块中的[高级逻辑示例](#example-of-advanced-logic-in-the-watch-events-module)。
 
 ### 操作
 
@@ -571,3 +573,40 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
 
 有关使用JSONata模块的信息，请参阅[JSONata模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/jsonata-module.md)。
 
+## 监视事件模块中的高级逻辑示例
+
+这是使用Workfront规划>关注事件模块时，高级逻辑采用哪种格式的示例。
+
+```
+[
+  {
+    "fieldName": "recordTypeId",
+    "fieldValue": "Rt68c886502d4b5554ee80896b",
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "planning"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  },
+  {
+    "fieldName": "data",
+    "fieldValue": {
+      "F68c886502d4b5554ee808975": "active"
+    },
+    "comparison": "eq",
+    "state": "newState"
+  }
+]
+```
+
+在Watch Event模块中使用高级逻辑时，请考虑以下事项：
+
+* 第一个`"fieldvalue":`条目是从URL中提取的计划记录类型ID。 在此示例中，Planning记录类型ID为`Rt68c886502d4b5554ee80896b`。
+* Planning数据在名为`data `的数组中返回，该数组在此示例中显示为`"fieldName": "data"`。
+* 规划fieldNames作为以`F`开头的ID返回。
+* 由于此示例是针对`OR`筛选器连接器进行评估，因此该示例包含相同字段(`F68c886502d4b5554eec808975`)的两个条目。  模块正在筛选的两个下拉选项是`"planning"`和`"active"`。
