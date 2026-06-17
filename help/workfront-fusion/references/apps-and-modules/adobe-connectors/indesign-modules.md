@@ -15,10 +15,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 18401e01219383f86e1553e16b21057497d24cc0
 workflow-type: tm+mt
-source-wordcount: 1702
-ht-degree: 22%
+source-wordcount: 2240
+ht-degree: 17%
 
 ---
 
@@ -452,3 +452,121 @@ ht-degree: 22%
   </tr> 
   </tbody>
 </table>
+
+### 未分类
+
+#### 将PDF转化为InDesign
+
+此模块将PDF文档转换为可编辑的InDesign（INDD或IDML）格式。 输出是一个ZIP文件（默认名称为“output.zip”），其中包含以每个输入PDF命名的子文件夹，以及转换后的文档和关联的资源。 如果嵌入链接选项为false，则资产将在ZIP压缩文件的单独文件夹中提供。 如果为true，则所有链接都将嵌入到InDesign文件中。
+
+
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe InDesign的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">创建与Adobe InDesign的连接</a>。</td>
+      </tr>
+    <tr>
+      <td role="rowheader">输入资产</td>
+      <td>对于要转换的每个资产，单击<b>添加项</b>，然后输入资产的URL并分配本地文件名。 文件名将在模块后面引用。</td>
+    </tr>
+  <tr> 
+   <td>目标文档</td> 
+   <td>对于每个要转换的文档，单击<b>添加项</b>，然后从“输入资源”字段中输入分配的文件名。</td> 
+  </tr> 
+  <tr> 
+   <td>输出格式</td> 
+   <td>选择要将文件转换为INDD文件还是IDML文件。</td> 
+  </tr> 
+  <tr> 
+   <td>嵌入链接</td> 
+   <td>如果希望所有图像和资产链接都直接嵌入到INDD或IDML文件中，请选择“是”。 选择“否”将这些资源放置在ZIP文件的单独文件夹中。</td> 
+  </tr> 
+  <tr> 
+   <td>输出ZIP文件名</td> 
+   <td>输入或命名输出ZIP文件的名称。</td> 
+  </tr> 
+  <tr> 
+   <td>输出</td> 
+   <td>对于每个要输出的文件，选择存储类型并输入存储详细信息。</td> 
+  </tr> 
+  <tr> 
+   <td>返回结果的最大数目</td> 
+   <td>输入您希望模块在每个执行周期返回的最大结果数。</td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### 提交自定义脚本
+
+此模块会提交用于注册的自定义脚本包，并返回一个用于发布已注册脚本的执行请求的URL。
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe InDesign的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">创建与Adobe InDesign的连接</a>。</td>
+      </tr>
+    <tr>
+      <td role="rowheader">脚本包</td>
+      <td>从上一个模块（如下载文档模块）映射源文件。 这应该是一个ZIP文件。</td>
+    </tr>
+  <tr> 
+   <td>文件名</td> 
+   <td>输入或映射包含脚本包的上传文件的名称。</td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### 更新自定义脚本应用程序版本
+
+此模块可更新已注册的自定义脚本的InDesign应用程序版本配置。 这允许您指定版本策略，包括使用最新版本、修复主要版本或修复特定的主要版本和次要版本。
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe InDesign的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">创建与Adobe InDesign的连接</a>。</td>
+      </tr>
+    <tr>
+      <td role="rowheader">脚本名称</td>
+      <td>输入或映射要更新的自定义脚本的名称。 这是注册脚本时返回的<code>capability</code>值。</td>
+    </tr>
+  <tr> 
+   <td>应用程序版本策略</td> 
+   <td>选择要使用的应用程序版本策略。
+   <ul>
+   <li><b>始终使用最新版本</b></li>
+   <li><b>固定到主要版本</b><p>输入或映射要应用此项的主版本编号。</p></li>
+   <li><b>固定到主要和次要版本</b><p>输入要应用该设置的主版本和次版本。</p></li>
+   </ul></td> 
+  </tr> 
+  </tbody>
+</table>
+
+#### 获取当前应用程序版本
+
+此模块可检索有关所有可用InDesign应用程序版本的信息，包括主要版本、次要版本和每个注册应用程序版本的状态。
+
+<table>
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe InDesign的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-indesign" class="MCXref_0">创建与Adobe InDesign的连接</a>。</td>
+      </tr>
+  <tr> 
+   <td>返回结果的最大数目</td> 
+   <td>输入您希望模块在每个执行周期返回的最大结果数。</td> 
+  </tr> 
+  </tbody>
+</table>
+
