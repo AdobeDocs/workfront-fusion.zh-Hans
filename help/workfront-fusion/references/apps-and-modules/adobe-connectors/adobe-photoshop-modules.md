@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 0e41d1af-af69-4f9b-a5b3-479562254084
 TQID: https://experienceleague.adobe.com/RratZmko93V0LMxJ6qTy6cNvRqgPNvNgHTflRngE6BI
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 19cca2c98ca25a7aee5c5c067d7287ab98c8b79f
 workflow-type: tm+mt
-source-wordcount: 5506
-ht-degree: 14%
+source-wordcount: 6526
+ht-degree: 13%
 
 ---
 
@@ -118,19 +116,19 @@ Adobe Photoshop连接器使用以下对象：
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 客户端 ID]</td>
-        <td>输入您的[!UICONTROL Adobe] [!UICONTROL 客户端ID]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td>输入您的[！UICONTROL Adobe] [！UICONTROL客户端ID]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 技术帐户ID]</td>
-        <td>如果您使用的是JWT连接，请输入您的[!DNL Adobe] [!UICONTROL 技术帐户ID]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[！UICONTROL技术帐户ID]</td>
+        <td>如果您使用的是JWT连接，请输入您的[!DNL Adobe] [！UICONTROL技术帐户ID]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL 组织ID]</td>
-        <td>如果您使用的是JWT连接，请输入您的[!DNL Adobe] [!UICONTROL 组织ID]。 可在[!UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
+        <td role="rowheader">[！UICONTROL组织ID]</td>
+        <td>如果您使用的是JWT连接，请输入您的[!DNL Adobe] [！UICONTROL组织ID]。 可在[！UICONTROL Credentials]的 [!DNL Adobe Developer Console]</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 私钥]</td>
@@ -203,116 +201,116 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输入）存储]</td>
+      <td role="rowheader">[！UICONTROL（输入）存储]</td>
       <td>
         <p>选择存储要编辑文件的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输入）文件位置]</p>
+        <p>[！UICONTROL（输入）文件位置]</p>
       </td>
    <td> 输入或映射要编辑的文件的URL或路径。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （选项&gt;文档&gt;图像大小）高度]</p>
+        <p>[！UICONTROL （选项&gt;文档&gt;图像大小）高度]</p>
       </td>
       <td> 输入或映射图像的高度（像素）。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （选项&gt;文档&gt;图像大小）宽度]</p>
+        <p>[！UICONTROL （选项&gt;文档&gt;图像大小）宽度]</p>
       </td>
       <td> 输入或映射图像的宽度（像素）。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （选项&gt;文档&gt;画布大小）顶部]</p>
+        <p>[！UICONTROL （选项&gt;文档&gt;画布大小）顶部]</p>
       </td>
    <td> 输入或映射文档左上角的y坐标（像素）。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document &gt; Canvas size) Bottom]</p>
+        <p>[！UICONTROL (Options &gt; Document &gt; Canvas size) Bottom]</p>
       </td>
    <td> 输入或映射文档右下角的y坐标（像素）。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （选项&gt;文档&gt;画布大小）左侧]</p>
+        <p>[！UICONTROL （选项&gt;文档&gt;画布大小）左侧]</p>
       </td>
    <td> 输入或映射文档左上角的x坐标（像素）。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （选项&gt;文档&gt;画布大小） Right]</p>
+        <p>[！UICONTROL （选项&gt;文档&gt;画布大小） Right]</p>
       </td>
    <td> 输入或映射文档右下角的x坐标（像素）。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document) Trim]</p>
+        <p>[！UICONTROL (Options &gt; Document) Trim]</p>
       </td>
    <td> 选择“透明像素”以根据图像中的透明像素进行修剪。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （选项）默认字体]</p>
+        <p>[！UICONTROL（选项）默认字体]</p>
       </td>
    <td> 输入要用作文档全局默认字体的完整postscript名称。 此字体将用于缺少字体且没有专门为该图层提供其他字体的任何文本图层。 如果缺少此字体，则在“管理缺少的字体”中指定的选项将生效。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options) Fonts]</p>
+        <p>[！UICONTROL (Options) Fonts]</p>
       </td>
    <td> 对于文档所需的每种字体，单击“添加项目”并输入该字体的存储位置和文件位置。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options) Manage missing fonts]</p>
+        <p>[！UICONTROL (Options) Manage missing fonts]</p>
       </td>
    <td> 选择文档中存在一个或多个缺少的字体时要执行的操作。 <ul><li><code>fail</code>：作业将不会成功，并且状态将设置为“失败”，在状态的详细信息部分中提供了错误的详细信息。</li><li><code>useDefault</code>：作业将成功，所有缺失的字体将替换为ArialMT。</li></ul></td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （选项）图层]</p>
+        <p>[！UICONTROL（选项）图层]</p>
       </td>
    <td> 对于每个要添加图层，单击“添加项目”并填充图层详细信息。 <p>有关图层选项的详细信息，请参阅Adobe Photoshop文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/modifyDocumentAsync">应用PSD编辑</a>。  </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 输出]</td>
       <td>
-        <p>对于每个要创建的已编辑文件，单击“添加项目”，然后输入此表中所列的存储、位置和类型。</p>
+        <p>对于每个要创建的已编辑文件，单击“添加项目”，然后按列出的方式输入存储、位置和类型。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储新文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件位置]</p>
+        <p>[！UICONTROL（输出）文件位置]</p>
       </td>
    <td> 输入或映射将存储新文件的URL或路径。 仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）类型]</p>
+        <p>[！UICONTROL（输出）类型]</p>
       </td>
    <td>选择要将文件转换到的文件类型。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）覆盖]</td>
+      <td role="rowheader">[！UICONTROL（输出）覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。 这仅适用于Adobe存储中的文件。</p>
       </td>
     </tr>
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）裁剪到画布]</p>
+        <p>[！UICONTROL（输出）裁剪到画布]</p>
       </td>
    <td>选择演绎版是否必须为画布大小。 True会将演绎版修剪为“画布”大小，而False则使演绎版图层大小</td> 
     </tr>
@@ -332,37 +330,37 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输入）存储]</td>
+      <td role="rowheader">[！UICONTROL（输入）存储]</td>
       <td>
         <p>选择存储要校正颜色的文件所在的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输入）文件位置]</p>
+        <p>[！UICONTROL（输入）文件位置]</p>
       </td>
    <td> 输入或映射要用颜色校正的文件的URL或路径。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储新文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件位置]</p>
+        <p>[！UICONTROL（输出）文件位置]</p>
       </td>
    <td> 输入或映射将存储新文件的URL或路径。 仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）类型]</p>
+        <p>[！UICONTROL（输出）类型]</p>
       </td>
    <td>选择要将文件转换到的文件类型。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）覆盖]</td>
+      <td role="rowheader">[！UICONTROL（输出）覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。 这仅适用于Adobe存储中的文件。</p>
       </td>
@@ -383,43 +381,43 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输入）存储]</td>
+      <td role="rowheader">[！UICONTROL（输入）存储]</td>
       <td>
         <p>选择要从中删除背景的文件存储到的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输入）文件位置]</p>
+        <p>[！UICONTROL（输入）文件位置]</p>
       </td>
    <td> 输入或映射要删除背景的文件的URL或路径。 </td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 输出]</td>
       <td>
-        <p>对于每个要创建的转换文件，单击“添加项目”，然后输入此表中所列的存储、位置和类型。</p>
+        <p>对于每个要创建的转换文件，单击“添加项目”，然后按列出的方式输入存储、位置和类型。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储新文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件位置]</p>
+        <p>[！UICONTROL（输出）文件位置]</p>
       </td>
    <td> 输入或映射将存储新文件的URL或路径。 仅当尚未为输出存储选择Fusion内部存储时才需要此操作。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）类型]</p>
+        <p>[！UICONTROL（输出）类型]</p>
       </td>
    <td>选择要将文件转换到的文件类型。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）覆盖]</td>
+      <td role="rowheader">[！UICONTROL（输出）覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。 这仅适用于Adobe存储中的文件。</p>
       </td>
@@ -440,56 +438,56 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输入）存储]</td>
+      <td role="rowheader">[！UICONTROL（输入）存储]</td>
       <td>
         <p>选择要从中创建掩码的文件存储到的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输入）文件位置]</p>
+        <p>[！UICONTROL（输入）文件位置]</p>
       </td>
    <td> 输入或映射要从中创建蒙版的文件的URL或路径。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储掩码文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件位置]</p>
+        <p>[！UICONTROL（输出）文件位置]</p>
       </td>
    <td> 输入或映射将存储掩码文件的URL或路径。 仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 覆盖]</td>
+      <td role="rowheader">[！UICONTROL覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。 这仅适用于Adobe存储中的文件。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 颜色空间]</p>
+        <p>[！UICONTROL颜色空间]</p>
       </td>
    <td>选择输出图像是使用RGB还是RGBA颜色。 </td> 
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 蒙版格式]</p>
+        <p>[！UICONTROL蒙版格式]</p>
       </td>
    <td>选择蒙版是柔软（羽化）还是二进制。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 优化]</p>
+        <p>[！UICONTROL优化]</p>
       </td>
    <td>选择“性能”可优化速度，选择“批处理”可允许等待时间。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 后处理过程]</p>
+        <p>[！UICONTROL后处理过程]</p>
       </td>
    <td>选择是否启用后处理。</td> 
     </tr>
@@ -516,90 +514,90 @@ Adobe Photoshop连接器使用以下对象：
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （选项&gt;文档&gt;图像大小）高度]</p>
+        <p>[！UICONTROL （选项&gt;文档&gt;图像大小）高度]</p>
       </td>
       <td> 输入或映射图像的高度（像素）。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （选项&gt;文档&gt;图像大小）宽度]</p>
+        <p>[！UICONTROL （选项&gt;文档&gt;图像大小）宽度]</p>
       </td>
       <td> 输入或映射图像的宽度（像素）。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document)分辨率]</p>
+        <p>[！UICONTROL(Options &gt; Document)分辨率]</p>
       </td>
    <td> 输入或映射图像的分辨率（以像素/英寸为单位）。 该值必须介于72和300之间。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options &gt; Document)模式]</p>
+        <p>[！UICONTROL (Options &gt; Document)模式]</p>
       </td>
    <td> 选择图像的模式。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （选项&gt;文档）填充]</p>
+        <p>[！UICONTROL（选项&gt;文档）填充]</p>
       </td>
    <td> 选择您希望背景图层的填充是透明、白色还是图像的背景颜色。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （选项&gt;文档）深度]</p>
+        <p>[！UICONTROL（选项&gt;文档）深度]</p>
       </td>
    <td> 选择图像的位深度。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （选项）图层]</p>
+        <p>[！UICONTROL（选项）图层]</p>
       </td>
    <td> 对于每个要添加图层，单击“添加项目”并填充图层详细信息。 <p>有关图层选项的详细信息，请参阅Adobe Photoshop文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">创建PSD</a>。  </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options)全局字体]</p>
+        <p>[！UICONTROL (Options)全局字体]</p>
       </td>
    <td> 输入要用作文档全局默认字体的完整postscript名称。 此字体将用于缺少字体且没有专门为该图层提供其他字体的任何文本图层。 如果缺少此字体，则在“管理缺少的字体”中指定的选项将生效。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options) Fonts]</p>
+        <p>[！UICONTROL (Options) Fonts]</p>
       </td>
    <td> 对于文档所需的每种字体，单击“添加项目”并输入该字体的存储位置和文件位置。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options) Manage missing fonts]</p>
+        <p>[！UICONTROL (Options) Manage missing fonts]</p>
       </td>
    <td> 选择文档中存在一个或多个缺少的字体时要执行的操作。 <ul><li><code>fail</code>：作业将不会成功，并且状态将设置为“失败”，在状态的详细信息部分中提供了错误的详细信息。</li><li><code>useDefault</code>：作业将成功，所有缺失的字体将替换为ArialMT。</li></ul></td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 输出]</td>
       <td>
-        <p>对于要创建的每个文件，单击“添加项目”，然后输入此表中列出的存储、位置和类型。</p>
+        <p>对于每个要创建的文件，单击“添加项目”，然后按列出的方式输入存储、位置和类型。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储新文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件位置]</p>
+        <p>[！UICONTROL（输出）文件位置]</p>
       </td>
    <td> 输入或映射将存储新文件的URL或路径。 仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）类型]</p>
+        <p>[！UICONTROL（输出）类型]</p>
       </td>
    <td>选择要将文件转换到的文件类型。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）其他字段]</td>
+      <td role="rowheader">[！UICONTROL（输出）其他字段]</td>
       <td>
         <p><p>有关输出选项的详细信息，请参阅Adobe Photoshop文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/createDocumentAsync">创建PSD</a>。  </p>
       </td>
@@ -620,58 +618,58 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入文件存储]</td>
+      <td role="rowheader">[！UICONTROL输入文件存储]</td>
       <td>
         <p>选择存储要编辑文件的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 输入文件URL]</p>
+        <p>[！UICONTROL输入文件URL]</p>
       </td>
    <td> 输入或映射要编辑的文件的URL或路径。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Manage missing fonts]</td>
+      <td role="rowheader">[！UICONTROL Manage missing fonts]</td>
       <td>
         <p>选择文档中存在一个或多个缺少的字体时要执行的操作。 如果未提供该字体，模块将使用默认字体。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 默认字体]  </td>
+      <td role="rowheader">[！UICONTROL默认字体]  </td>
       <td>
         <p>输入要用作文档全局默认字体的完整postscript名称。 此字体将用于缺少字体且没有专门为该图层提供其他字体的任何文本图层。 如果缺少此字体，则在“管理缺少的字体”中指定的选项将生效。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options) Fonts]</p>
+        <p>[！UICONTROL (Options) Fonts]</p>
       </td>
    <td> 输入字体的存储位置和文件位置。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 层]</td>
+      <td role="rowheader">[！UICONTROL层]</td>
    <td> <p>对于每个要编辑的文本图层，单击<b>添加项</b>并输入图层选项。<p>有关图层选项的详细信息，请参阅Adobe Photoshop文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">编辑文本</a>。</p>  </td>     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储编辑文件的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件位置]</p>
+        <p>[！UICONTROL（输出）文件位置]</p>
       </td>
    <td> 输入或映射将存储编辑文件的URL或路径。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）类型]</p>
+        <p>[！UICONTROL（输出）类型]</p>
       </td>
    <td> 为编辑的文件选择文件类型。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）覆盖]</td>
+      <td role="rowheader">[！UICONTROL（输出）覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。</p>
       </td>
@@ -694,64 +692,64 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入文件存储]</td>
+      <td role="rowheader">[！UICONTROL输入文件存储]</td>
       <td>
         <p>选择存储要编辑文件的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 输入文件URL]</p>
+        <p>[！UICONTROL输入文件URL]</p>
       </td>
    <td> 输入或映射要编辑的文件的URL或路径。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Manage missing fonts]</td>
+      <td role="rowheader">[！UICONTROL Manage missing fonts]</td>
       <td>
         <p>选择文档中存在一个或多个缺少的字体时要执行的操作。 如果未提供该字体，模块将使用默认字体。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 默认字体]  </td>
+      <td role="rowheader">[！UICONTROL默认字体]  </td>
       <td>
         <p>输入要用作文档全局默认字体的完整postscript名称。 此字体将用于缺少字体且没有专门为该图层提供其他字体的任何文本图层。 如果缺少此字体，则在“管理缺少的字体”中指定的选项将生效。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL (Options) Fonts]</p>
+        <p>[！UICONTROL (Options) Fonts]</p>
       </td>
    <td> 输入字体的存储位置和文件位置。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 层]</td>
+      <td role="rowheader">[！UICONTROL层]</td>
    <td> <p>有关图层选项的详细信息，请参阅Adobe Photoshop文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/editTextLayerAsync">编辑文本图层</a>。</p>  </td>     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输出文件存储]</td>
+      <td role="rowheader">[！UICONTROL输出文件存储]</td>
       <td>
         <p>选择要存储编辑文件的文件服务。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储编辑文件的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件位置]</p>
+        <p>[！UICONTROL（输出）文件位置]</p>
       </td>
    <td> 输入或映射将存储编辑文件的URL或路径。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）类型]</p>
+        <p>[！UICONTROL（输出）类型]</p>
       </td>
    <td> 为编辑的文件选择文件类型。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）覆盖]</td>
+      <td role="rowheader">[！UICONTROL（输出）覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。</p>
       </td>
@@ -773,32 +771,32 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输入）存储]</td>
+      <td role="rowheader">[！UICONTROL（输入）存储]</td>
       <td>
         <p>选择存储要编辑文件的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输入）文件位置]</p>
+        <p>[！UICONTROL（输入）文件位置]</p>
       </td>
    <td> 输入或映射要编辑的文件的URL或路径。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 操作JSON]</td>
+      <td role="rowheader">[！UICONTROL操作JSON]</td>
       <td>
         <p>输入要执行的操作的JSON命令。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 字体/图案/画笔/其他图像]</td>
+      <td role="rowheader">[！UICONTROL字体/图案/画笔/其他图像]</td>
       <td>
         <p>对于要在此操作中使用的每种字体、图案、画笔或其他图像，单击“添加项目”并输入项目的存储和文件位置。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 字体/模式/画笔文件URL]</p>
+        <p>[！UICONTROL字体/模式/画笔文件URL]</p>
       </td>
    <td> 输入或映射要使用的文件的URL或路径。 </td> 
     </tr>
@@ -806,29 +804,29 @@ Adobe Photoshop连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL 输出]</td>
       <td>
-        <p>对于要创建的每个文件，单击“添加项目”并输入此表中所列的存储、位置、类型和覆盖选项。</p>
+        <p>对于要创建的每个文件，单击“添加项目”并输入所列的存储、位置、类型和覆盖选项。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储编辑文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件URL]</p>
+        <p>[！UICONTROL（输出）文件URL]</p>
       </td>
    <td> 输入或映射将存储编辑文件的URL或路径。  仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）类型]</p>
+        <p>[！UICONTROL（输出）类型]</p>
       </td>
    <td> 为编辑的文件选择文件类型。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）覆盖]</td>
+      <td role="rowheader">[！UICONTROL（输出）覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。</p>
       </td>
@@ -849,43 +847,43 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入文件存储]</td>
+      <td role="rowheader">[！UICONTROL输入文件存储]</td>
       <td>
         <p>选择存储要编辑文件的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 输入文件URL]</p>
+        <p>[！UICONTROL输入文件URL]</p>
       </td>
    <td> 输入或映射要编辑的文件的URL或路径。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储编辑文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件URL]</p>
+        <p>[！UICONTROL（输出）文件URL]</p>
       </td>
    <td> 输入或映射将存储编辑文件的URL或路径。  仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）类型]</p>
+        <p>[！UICONTROL（输出）类型]</p>
       </td>
    <td> 为编辑的文件选择文件类型。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）覆盖]</td>
+      <td role="rowheader">[！UICONTROL（输出）覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。</p>
       </td>
     </tr>
    <tr>
-      <td role="rowheader">[!UICONTROL 其他字段]</td>
+      <td role="rowheader">[！UICONTROL其他字段]</td>
       <td>
         <p>有关其他深度模糊选项的详细信息，请参阅Adobe Photoshop API文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">执行深度模糊</a>。</p>
       </td>
@@ -906,73 +904,73 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入文件存储]</td>
+      <td role="rowheader">[！UICONTROL输入文件存储]</td>
       <td>
         <p>选择存储要编辑文件的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 输入文件URL]</p>
+        <p>[！UICONTROL输入文件URL]</p>
       </td>
    <td> 输入或映射要编辑的文件的URL或路径。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Actions文件存储]</td>
+      <td role="rowheader">[！UICONTROL Actions文件存储]</td>
       <td>
         <p>选择存储操作文件的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 操作文件URL]</p>
+        <p>[！UICONTROL操作文件URL]</p>
       </td>
    <td> 输入或映射操作文件的URL或路径。 </td> 
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 操作名称]</p>
+        <p>[！UICONTROL操作名称]</p>
       </td>
    <td> 如果只想执行特定操作，则可以从ActionSet中指定要播放的操作。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 字体/图案/画笔存储]</td>
+      <td role="rowheader">[！UICONTROL字体/图案/画笔存储]</td>
       <td>
         <p>选择存储要使用的文件的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 字体/模式/画笔文件URL]</p>
+        <p>[！UICONTROL字体/模式/画笔文件URL]</p>
       </td>
    <td> 输入或映射要使用的文件的URL或路径。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储编辑文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件URL]</p>
+        <p>[！UICONTROL（输出）文件URL]</p>
       </td>
    <td> 输入或映射将存储编辑文件的URL或路径。  仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）类型]</p>
+        <p>[！UICONTROL（输出）类型]</p>
       </td>
    <td> 为编辑的文件选择文件类型。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）覆盖]</td>
+      <td role="rowheader">[！UICONTROL（输出）覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。</p>
       </td>
     </tr>
    <tr>
-      <td role="rowheader">[!UICONTROL 其他字段]</td>
+      <td role="rowheader">[！UICONTROL其他字段]</td>
       <td>
         <p>有关其他深度模糊选项的详细信息，请参阅Adobe Photoshop API文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">执行深度模糊</a>。</p>
       </td>
@@ -993,61 +991,61 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入文件存储]</td>
+      <td role="rowheader">[！UICONTROL输入文件存储]</td>
       <td>
         <p>选择存储要裁切文件的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 输入文件URL]</p>
+        <p>[！UICONTROL输入文件URL]</p>
       </td>
    <td> 输入或映射要裁切的文件的URL或路径。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 单元]</p>
+        <p>[！UICONTROL单元]</p>
       </td>
    <td> 选择您要以像素还是以百分比描述高度和宽度调整。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 宽度]</p>
+        <p>[！UICONTROL宽度]</p>
       </td>
    <td> 输入或映射要添加宽度边距的量。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Height]</p>
+        <p>[！UICONTROL Height]</p>
       </td>
    <td> 输入或映射要添加的高度边距量。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储编辑文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件URL]</p>
+        <p>[！UICONTROL（输出）文件URL]</p>
       </td>
    <td> 输入或映射将存储编辑文件的URL或路径。  仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）类型]</p>
+        <p>[！UICONTROL（输出）类型]</p>
       </td>
    <td> 为编辑的文件选择文件类型。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）覆盖]</td>
+      <td role="rowheader">[！UICONTROL（输出）覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。</p>
       </td>
     </tr>
    <tr>
-      <td role="rowheader">[!UICONTROL 其他字段]</td>
+      <td role="rowheader">[！UICONTROL其他字段]</td>
       <td>
         <p>有关其他深度模糊选项的详细信息，请参阅Adobe Photoshop API文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/applyDepthBlurAsync">执行深度模糊</a>。</p>
       </td>
@@ -1068,20 +1066,20 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 输入文件存储]</td>
+      <td role="rowheader">[！UICONTROL输入文件存储]</td>
       <td>
         <p>选择要从中检索层信息的文件的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 输入文件URL]</p>
+        <p>[！UICONTROL输入文件URL]</p>
       </td>
    <td> 输入或映射要从中检索图层信息的文件的URL或路径。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 缩略图]</p>
+        <p>[！UICONTROL缩略图]</p>
       </td>
    <td> 选择您希望缩略图成为的文件类型。 缩略图是任何可渲染图层的小型预览。</td> 
     </tr>
@@ -1148,56 +1146,56 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输入）存储]</td>
+      <td role="rowheader">[！UICONTROL（输入）存储]</td>
       <td>
         <p>选择要从中删除背景的文件存储到的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输入）文件位置]</p>
+        <p>[！UICONTROL（输入）文件位置]</p>
       </td>
    <td> 输入或映射要删除背景的文件的URL或路径。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储新文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件位置]</p>
+        <p>[！UICONTROL（输出）文件位置]</p>
       </td>
    <td> 输入或映射将存储新文件的URL或路径。  仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 覆盖]</td>
+      <td role="rowheader">[！UICONTROL覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。 这仅适用于Adobe存储中的文件。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 颜色空间]</p>
+        <p>[！UICONTROL颜色空间]</p>
       </td>
    <td>选择输出图像是使用RGB还是RGBA颜色。 </td> 
     </tr>
      <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 蒙版格式]</p>
+        <p>[！UICONTROL蒙版格式]</p>
       </td>
    <td>选择图像的边缘是柔和（羽化）还是二进制。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 优化]</p>
+        <p>[！UICONTROL优化]</p>
       </td>
    <td>选择“性能”可优化速度，选择“批处理”可允许等待时间。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 后处理过程]</p>
+        <p>[！UICONTROL后处理过程]</p>
       </td>
    <td>选择是否启用后处理。</td> 
     </tr>
@@ -1225,26 +1223,26 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输入）存储]</td>
+      <td role="rowheader">[！UICONTROL（输入）存储]</td>
       <td>
         <p>选择存储智能对象的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输入）文件位置]</p>
+        <p>[！UICONTROL（输入）文件位置]</p>
       </td>
    <td> 输入或映射智能对象的URL或路径。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 层]</p>
+        <p>[！UICONTROL层]</p>
       </td>
    <td>对于要添加到智能对象的每个图层，单击添加项目并输入对象的名称或ID、存储智能对象的文件服务以及图层的URL或路径。<p>有关此区域高级设置的说明，请参阅Photoshop API文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">替换智能对象</a> </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 在放置过程中调整图像大小]</p>
+        <p>[！UICONTROL在放置过程中调整图像大小]</p>
       </td>
    <td> 选择是否要调整图像大小。</td> 
     </tr>
@@ -1255,20 +1253,20 @@ Adobe Photoshop连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储新文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件位置]</p>
+        <p>[！UICONTROL（输出）文件位置]</p>
       </td>
    <td> 输入或映射将存储新文件的URL或路径。  仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）类型]</p>
+        <p>[！UICONTROL（输出）类型]</p>
       </td>
    <td> 为编辑的文件选择文件类型。 </td> 
     </tr>
@@ -1290,20 +1288,20 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输入）存储]</td>
+      <td role="rowheader">[！UICONTROL（输入）存储]</td>
       <td>
         <p>选择存储智能对象的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输入）文件位置]</p>
+        <p>[！UICONTROL（输入）文件位置]</p>
       </td>
    <td> 输入或映射智能对象的URL或路径。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 层]</p>
+        <p>[！UICONTROL层]</p>
       </td>
    <td>对于要添加到智能对象的每个图层，单击添加项目并输入对象的名称或ID、存储智能对象的文件服务以及图层的URL或路径。<p>有关此区域高级设置的说明，请参阅Photoshop API文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/#operation/replaceSmartObjectAsync">替换智能对象</a> </td> 
     </tr>
@@ -1314,25 +1312,25 @@ Adobe Photoshop连接器使用以下对象：
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储新文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件位置]</p>
+        <p>[！UICONTROL（输出）文件位置]</p>
       </td>
    <td> 输入或映射将存储新文件的URL或路径。  仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）宽度]</p>
+        <p>[！UICONTROL（输出）宽度]</p>
       </td>
    <td> 输出文件的宽度（像素）。 模块将保留原始纵横比。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）覆盖]</td>
+      <td role="rowheader">[！UICONTROL（输出）覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。 这仅适用于Adobe存储中的文件。</p>
       </td>
@@ -1352,57 +1350,57 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 存储]</td>
+      <td role="rowheader">[！UICONTROL存储]</td>
       <td>
         <p>选择存储要调整大小的文件所在的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 文件位置]</p>
+        <p>[！UICONTROL文件位置]</p>
       </td>
    <td> 输入或映射要调整大小的文件的URL或路径。  仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 输出]</td>
       <td>
-        <p>对于每个要创建的转换文件，单击“添加项目”并输入存储、位置和其他选项，如本表中所列。</p>
+        <p>对于每个要创建的转换文件，单击“添加项目”并输入存储、位置和其他选项。</p>
       </td>
     </tr>
     <tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 存储]</td>
+      <td role="rowheader">[！UICONTROL存储]</td>
       <td>
         <p>选择要存储新文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 文件位置]</p>
+        <p>[！UICONTROL文件位置]</p>
       </td>
    <td> 输入或映射将存储新文件的URL或路径。  仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 宽度]</p>
+        <p>[！UICONTROL宽度]</p>
       </td>
    <td> 输出文件的宽度（像素）。 模块将保留原始纵横比。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 最大宽度]</p>
+        <p>[！UICONTROL最大宽度]</p>
       </td>
    <td>当宽度为0时，可提供的最大和来获取大小。 最大宽度优先，因为它小于文档宽度。</td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 覆盖]</td>
+      <td role="rowheader">[！UICONTROL覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。 这仅适用于Adobe存储中的文件。</p>
       </td>
     </tr>
         <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Trim to canvas]</p>
+        <p>[！UICONTROL Trim to canvas]</p>
       </td>
    <td>选择“是”将格式副本修剪为“画布”大小，或选择“否”将格式副本设置为“图层大小”。</td> 
     </tr>
@@ -1422,80 +1420,423 @@ Adobe Photoshop连接器使用以下对象：
       <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （基本&gt;输入）存储]</td>
+      <td role="rowheader">[！UICONTROL （基本&gt;输入）存储]</td>
       <td>
         <p>选择要向其中添加水印的文件存储到的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （Base &gt;输入）文件位置]</p>
+        <p>[！UICONTROL （Base &gt;输入）文件位置]</p>
       </td>
    <td> 输入或映射要添加水印的文件的URL或路径。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （水印&gt;输入）存储]</td>
+      <td role="rowheader">[！UICONTROL （水印&gt;输入）存储]</td>
       <td>
         <p>选择存储要添加的水印的文件服务。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （水印&gt;输入）存储]</td>
+      <td role="rowheader">[！UICONTROL （水印&gt;输入）存储]</td>
       <td>
         <p>选择存储要添加的水印的文件服务。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （水印&gt;边界）高度]</p>
+        <p>[！UICONTROL （水印&gt;边界）高度]</p>
       </td>
    <td>输入或映射所需的水印高度（以像素为单位）。</td> 
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （水印&gt;边界）宽度]</p>
+        <p>[！UICONTROL （水印&gt;边界）宽度]</p>
       </td>
    <td> 输入或映射所需的水印宽度（像素）。 </td> 
     </tr>  
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （水印&gt;边界）左侧]</p>
+        <p>[！UICONTROL （水印&gt;边界）左侧]</p>
       </td>
    <td> 输入或映射以像素为单位的距离应该包含水印的图像。</td> 
     </tr>  
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （水印&gt;边界）顶部]</p>
+        <p>[！UICONTROL （水印&gt;边界）顶部]</p>
       </td>
    <td> 输入或映射以像素为单位的水印应该位于的图像顶部的距离。</td> 
     </tr>  
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）存储]</td>
+      <td role="rowheader">[！UICONTROL（输出）存储]</td>
       <td>
         <p>选择要存储带水印文件的文件服务。</p><p>选择Fusion内部存储可使文件可用于后续模块，但不会使文件在方案外部可用。</p>
       </td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）文件位置]</p>
+        <p>[！UICONTROL（输出）文件位置]</p>
       </td>
    <td> 输入或映射将存储带水印文件的URL或路径。 仅当尚未为输出存储选择Fusion内部存储时才需要此操作。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）类型]</p>
+        <p>[！UICONTROL（输出）类型]</p>
       </td>
    <td>选择要将文件转换到的文件类型。 </td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL （输出）宽度]</p>
+        <p>[！UICONTROL（输出）宽度]</p>
       </td>
    <td> 输出文件的宽度（像素）。 模块将保留原始纵横比。 </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL （输出）覆盖]</td>
+      <td role="rowheader">[！UICONTROL（输出）覆盖]</td>
       <td>
         <p>选择新编辑的文件是否会覆盖任何已存在的输出文件。 这仅适用于Adobe存储中的文件。</p>
       </td>
     </tbody>
 </table>
+
+
+### 创建画板
+
+此模块用于在Photoshop中创建新画板。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL Images]</td>
+      <td>
+        <p>对于要添加到此画板的每个图像，单击<b>添加项</b>并输入该图像的源类型和位置。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[！UICONTROL画板间距]</p>
+      </td>
+   <td>输入或映射每个画板之间的间距（以像素为单位）。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 输出]</td>
+      <td>
+        <p>对于每个要创建的转换文件，单击“添加项目”并输入存储、位置和其他选项。</p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+### 创建或编辑复合
+
+此模块在Photoshop中创建或编辑复合。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL Images]</td>
+      <td>
+        <p>对于要添加到此画板的每个图像，单击<b>添加项</b>并输入该图像的源类型和位置。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[！UICONTROL宽度]</p>
+      </td>
+   <td>如果要创建图像，请输入图像宽度（以像素为单位）。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL Height]</td>
+      <td>
+        <p>如果要创建图像，请输入图像高度（以像素为单位）。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL模式]</td>
+      <td>
+        <p>选择此图像的颜色模式。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL填充]</td>
+      <td>
+        <p>选择背景图层的填充类型。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 名称]</td>
+      <td>
+        <p>输入或映射新图像的名称。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL像素缩放因子]</td>
+      <td>
+        <p>输入或映射像素缩放因子。 此数字必须介于0.1和1之间。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL分辨率]</td>
+      <td>
+        <p>在<b>值</b>字段中，输入以密度单位（每英寸像素数）表示的分辨率值。 默认值为72。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL配置文件类型]</td>
+      <td>
+        <p>如果要覆盖默认颜色配置文件，请选择配置文件类型，然后按列出的方式输入详细信息。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL裁切&gt;上/左/下/右]</td>
+      <td>
+        <p>输入要裁切图像的边界。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL隐藏]</td>
+      <td>
+        <p>选择“是”可隐藏裁切边界之外的像素。 如果设置为false，则会删除裁切边界之外的像素。 默认值为false。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL调整大小&gt;宽度]</td>
+      <td>
+        <p>选择要用于宽度的单位，然后选择表示所需宽度的值。 </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL调整大小&gt;高度]</td>
+      <td>
+        <p>选择要用于高度的单位，然后选择表示所需高度的值。 </p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[！UICONTROL分辨率]</td>
+      <td>
+        <p>选择要用于分辨率的单位，然后选择代表所需分辨率的值。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[！UICONTROL重新取样]</td>
+      <td>
+        <p>选择调整大小时要使用的重新取样方法。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[！UICONTROL约束比例]</td>
+      <td>
+        <p>选择“是”以保持宽度和高度之间的纵横比。 选择“否”以允许单独调整宽度和高度。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[！UICONTROL栅格化]</td>
+      <td>
+        <p>选择是否要栅格化图像。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[！UICONTROL缩放样式]</td>
+      <td>
+        <p>选择在调整图像大小时是否将缩放应用于样式。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[！UICONTROL Trim on]</td>
+      <td>
+        <p>选择是否要根据透明像素进行修剪。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[！UICONTROL层]</td>
+      <td>
+        <p>对于以后要添加的每一个，单击<b>添加项</b>并输入图层详细信息。 </p><p>有关详细信息，请参阅Adobe文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">创建或编辑复合</a>。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[！UICONTROL默认字体PostScript名称]</td>
+      <td>
+        <p>输入或映射要使用的默认字体的PostScript名称。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[！UICONTROL缺少字体策略]</td>
+      <td>
+        <p>选择您希望创建或编辑失败，还是使用默认字体（如果字体不可用）。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[！UICONTROL其他字体]</td>
+      <td>
+        <p>对于要添加的每个字体，单击<b>添加项</b>并输入该字体的源URL。 </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 输出]</td>
+      <td>
+        <p>对于每个要创建的已编辑文件，单击“添加项目”并输入输出详细信息。 </p><p>有关详细信息，请参阅Adobe文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">创建或编辑复合</a>。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[！UICONTROL最大结果数]</td>
+      <td>
+        <p>输入或映射您希望模块在一个执行周期内使用的最大结果数。</p>
+      </td>
+      </tr>
+      </tbody>
+</table>
+
+### 通过各种调整编辑图像
+
+此模块对图像进行Lightroom样式的调整。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL Images]</td>
+      <td>
+        <p>输入或映射图像的源类型和位置。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[！UICONTROL其他字段]</p>
+      </td>
+   <td><p>有关详细信息，请参阅Adobe文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/edit">通过各种调整编辑图像</a>。</p></td> 
+    </tr>
+    </tbody>
+</table>
+
+### 执行Photoshop操作、脚本和转换
+
+本模块执行Firefly Photoshop API中可用的操作、脚本和转换。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL Images]</td>
+      <td>
+        <p>输入或映射图像的源类型和位置。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[！UICONTROL操作]</p>
+      </td>
+   <td><p>对于要添加的每个操作，单击<b>添加项</b>并输入操作的源、URL和名称。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[！UICONTROL UXP源]</p>
+      </td>
+   <td><p>如果您使用的是UXP脚本，请选择是提供URL还是内联内容，然后输入或映射URL或内容。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[！UICONTROL其他内容]</p>
+      </td>
+   <td><p>最多添加操作或UXP中引用的25个文件。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 输出]</td>
+      <td>
+        <p>对于每个要创建的已编辑文件，单击“添加项目”并输入格式、目标和输出模式。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[！UICONTROL最大结果数]</td>
+      <td>
+        <p>输入或映射您希望模块在一个执行周期内使用的最大结果数。</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
+### 生成清单
+
+此模块为给定的输入图像生成PSD清单。
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL Source]</td>
+      <td>
+        <p>输入或映射图像的源类型和位置。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 输出]</td>
+      <td>
+        <p>对于每个要创建的已编辑文件，单击“添加项目”并输入目标详细信息。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[！UICONTROL包含图层缩略图]</p>
+      </td>
+   <td><p>如果要让模块为清单中的每个层生成缩略图演绎版，请选择“是”。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[！UICONTROL最大缩略图深度]</p>
+      </td>
+   <td><p>输入或映射缩略图演绎版的最大深度。 对于没有最大深度，请输入<code>0</code>。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[！UICONTROL图层缩略图格式]</p>
+      </td>
+   <td><p>选择希望缩略图采用JPEG还是PNG格式。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL提取智能对象数据]</td>
+      <td>
+        <p>选择是否提取嵌入的智能对象并在清单中包含预签名URL。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL裁剪到透明度]</td>
+      <td>
+        <p>选择是否修剪每个图层缩略图以删除透明像素。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[！UICONTROL最大结果数]</td>
+      <td>
+        <p>输入或映射您希望模块在一个执行周期内使用的最大结果数。</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
