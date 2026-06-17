@@ -8,9 +8,9 @@ exl-id: bd4f05e2-df3c-4848-9a70-3df18ca4461b
 TQID: https://experienceleague.adobe.com/gze4-OOI8ekVaS71VgkFeT3Yef1xUoqumWYauC9Es2I
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 28b8a270f6cb0e7a42c81153493b983d5b9e428b
 workflow-type: tm+mt
-source-wordcount: 770
+source-wordcount: 771
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 场景的第一步由第一个模块执行，即在Workfront中查看文档。 找到的每个文档都被视为一个捆绑包。 如果模块运行时未找到任何捆绑包，则场景将在第一个模块后结束。
 
-如果返回一个束，则该束将通过场景的其余部分。 在此示例中，方案的其余部分包含secondmodule，它将包上载到[!DNL Dropbox]文件夹。
+如果返回一个束，则该束将通过场景的其余部分。 在此示例中，方案的其余部分由第二个模块组成，该模块将包上载到[!DNL Dropbox]文件夹。
 
 ![集成方案的执行流程](assets/example-execution-flow-wf-dropbox.png)
 
