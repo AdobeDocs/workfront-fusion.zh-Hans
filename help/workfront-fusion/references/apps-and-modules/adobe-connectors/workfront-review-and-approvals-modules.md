@@ -21,7 +21,7 @@ ht-degree: 15%
 
 使用Adobe Workfront统一审查和审批模块，您可以获取审批详细信息、做出资产决策、添加或删除审批参与者、添加或更新审批阶段、锁定或解锁阶段以及进行自定义API调用。
 
-有关Workfront统一审阅和批准的信息，请参阅Workfront文档中的[统一审阅和批准概述](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)。
+有关Workfront统一审阅和批准的信息，请参阅Workfront文档中的[统一审阅和批准概述](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/review-and-approve-work/document-approvals-overview)。
 
 ## 访问权限要求
 
