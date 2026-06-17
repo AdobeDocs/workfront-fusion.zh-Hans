@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 19cca2c98ca25a7aee5c5c067d7287ab98c8b79f
 workflow-type: tm+mt
-source-wordcount: 5506
-ht-degree: 14%
+source-wordcount: 6526
+ht-degree: 13%
 
 ---
 
@@ -283,7 +283,7 @@ Adobe Photoshop连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL 输出]</td>
       <td>
-        <p>对于每个要创建的已编辑文件，单击“添加项目”，然后输入此表中所列的存储、位置和类型。</p>
+        <p>对于每个要创建的已编辑文件，单击“添加项目”，然后按列出的方式输入存储、位置和类型。</p>
       </td>
     </tr>
     <tr>
@@ -397,7 +397,7 @@ Adobe Photoshop连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL 输出]</td>
       <td>
-        <p>对于每个要创建的转换文件，单击“添加项目”，然后输入此表中所列的存储、位置和类型。</p>
+        <p>对于每个要创建的转换文件，单击“添加项目”，然后按列出的方式输入存储、位置和类型。</p>
       </td>
     </tr>
     <tr>
@@ -577,7 +577,7 @@ Adobe Photoshop连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL 输出]</td>
       <td>
-        <p>对于要创建的每个文件，单击“添加项目”，然后输入此表中列出的存储、位置和类型。</p>
+        <p>对于每个要创建的文件，单击“添加项目”，然后按列出的方式输入存储、位置和类型。</p>
       </td>
     </tr>
     <tr>
@@ -806,7 +806,7 @@ Adobe Photoshop连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL 输出]</td>
       <td>
-        <p>对于要创建的每个文件，单击“添加项目”并输入此表中所列的存储、位置、类型和覆盖选项。</p>
+        <p>对于要创建的每个文件，单击“添加项目”并输入所列的存储、位置、类型和覆盖选项。</p>
       </td>
     </tr>
     <tr>
@@ -1366,7 +1366,7 @@ Adobe Photoshop连接器使用以下对象：
     <tr>
       <td role="rowheader">[!UICONTROL 输出]</td>
       <td>
-        <p>对于每个要创建的转换文件，单击“添加项目”并输入存储、位置和其他选项，如本表中所列。</p>
+        <p>对于每个要创建的转换文件，单击“添加项目”并输入存储、位置和其他选项。</p>
       </td>
     </tr>
     <tr>
@@ -1499,3 +1499,346 @@ Adobe Photoshop连接器使用以下对象：
       </td>
     </tbody>
 </table>
+
+
+### 创建画板
+
+此模块用于在Photoshop中创建新画板。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>对于要添加到此画板的每个图像，单击<b>添加项</b>并输入该图像的源类型和位置。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 画板间距]</p>
+      </td>
+   <td>输入或映射每个画板之间的间距（以像素为单位）。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 输出]</td>
+      <td>
+        <p>对于每个要创建的转换文件，单击“添加项目”并输入存储、位置和其他选项。</p>
+      </td>
+    </tr>
+    </tbody>
+</table>
+
+### 创建或编辑复合
+
+此模块在Photoshop中创建或编辑复合。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>对于要添加到此画板的每个图像，单击<b>添加项</b>并输入该图像的源类型和位置。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 宽度]</p>
+      </td>
+   <td>如果要创建图像，请输入图像宽度（以像素为单位）。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Height]</td>
+      <td>
+        <p>如果要创建图像，请输入图像高度（以像素为单位）。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 模式]</td>
+      <td>
+        <p>选择此图像的颜色模式。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 填充]</td>
+      <td>
+        <p>选择背景图层的填充类型。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 名称]</td>
+      <td>
+        <p>输入或映射新图像的名称。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 像素缩放因子]</td>
+      <td>
+        <p>输入或映射像素缩放因子。 此数字必须介于0.1和1之间。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 分辨率]</td>
+      <td>
+        <p>在<b>值</b>字段中，输入以密度单位（每英寸像素数）表示的分辨率值。 默认值为72。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 配置文件类型]</td>
+      <td>
+        <p>如果要覆盖默认颜色配置文件，请选择配置文件类型，然后按列出的方式输入详细信息。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 裁切&gt;上/左/下/右]</td>
+      <td>
+        <p>输入要裁切图像的边界。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 隐藏]</td>
+      <td>
+        <p>选择“是”可隐藏裁切边界之外的像素。 如果设置为false，则会删除裁切边界之外的像素。 默认值为false。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 调整大小&gt;宽度]</td>
+      <td>
+        <p>选择要用于宽度的单位，然后选择表示所需宽度的值。 </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 调整大小&gt;高度]</td>
+      <td>
+        <p>选择要用于高度的单位，然后选择表示所需高度的值。 </p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 分辨率]</td>
+      <td>
+        <p>选择要用于分辨率的单位，然后选择代表所需分辨率的值。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 重新取样]</td>
+      <td>
+        <p>选择调整大小时要使用的重新取样方法。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 约束比例]</td>
+      <td>
+        <p>选择“是”以保持宽度和高度之间的纵横比。 选择“否”以允许单独调整宽度和高度。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 栅格化]</td>
+      <td>
+        <p>选择是否要栅格化图像。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 缩放样式]</td>
+      <td>
+        <p>选择在调整图像大小时是否将缩放应用于样式。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL Trim on]</td>
+      <td>
+        <p>选择是否要根据透明像素进行修剪。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 层]</td>
+      <td>
+        <p>对于以后要添加的每一个，单击<b>添加项</b>并输入图层详细信息。 </p><p>有关详细信息，请参阅Adobe文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">创建或编辑复合</a>。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 默认字体PostScript名称]</td>
+      <td>
+        <p>输入或映射要使用的默认字体的PostScript名称。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 缺少字体策略]</td>
+      <td>
+        <p>选择您希望创建或编辑失败，还是使用默认字体（如果字体不可用）。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 其他字体]</td>
+      <td>
+        <p>对于要添加的每个字体，单击<b>添加项</b>并输入该字体的源URL。 </p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 输出]</td>
+      <td>
+        <p>对于每个要创建的已编辑文件，单击“添加项目”并输入输出详细信息。 </p><p>有关详细信息，请参阅Adobe文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/createComposite">创建或编辑复合</a>。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 最大结果数]</td>
+      <td>
+        <p>输入或映射您希望模块在一个执行周期内使用的最大结果数。</p>
+      </td>
+      </tr>
+      </tbody>
+</table>
+
+### 通过各种调整编辑图像
+
+此模块对图像进行Lightroom样式的调整。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>输入或映射图像的源类型和位置。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 其他字段]</p>
+      </td>
+   <td><p>有关详细信息，请参阅Adobe文档中的<a href="https://developer.adobe.com/firefly-services/docs/photoshop/api/photoshop-v2/#operation/edit">通过各种调整编辑图像</a>。</p></td> 
+    </tr>
+    </tbody>
+</table>
+
+### 执行Photoshop操作、脚本和转换
+
+本模块执行Firefly Photoshop API中可用的操作、脚本和转换。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Images]</td>
+      <td>
+        <p>输入或映射图像的源类型和位置。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 操作]</p>
+      </td>
+   <td><p>对于要添加的每个操作，单击<b>添加项</b>并输入操作的源、URL和名称。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL UXP源]</p>
+      </td>
+   <td><p>如果您使用的是UXP脚本，请选择是提供URL还是内联内容，然后输入或映射URL或内容。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 其他内容]</p>
+      </td>
+   <td><p>最多添加操作或UXP中引用的25个文件。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 输出]</td>
+      <td>
+        <p>对于每个要创建的已编辑文件，单击“添加项目”并输入格式、目标和输出模式。</p>
+      </td>
+    </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 最大结果数]</td>
+      <td>
+        <p>输入或映射您希望模块在一个执行周期内使用的最大结果数。</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
+### 生成清单
+
+此模块为给定的输入图像生成PSD清单。
+
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Photoshop] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-photoshop" class="MCXref xref" >创建与 [!DNL Adobe Photoshop]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL Source]</td>
+      <td>
+        <p>输入或映射图像的源类型和位置。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 输出]</td>
+      <td>
+        <p>对于每个要创建的已编辑文件，单击“添加项目”并输入目标详细信息。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 包含图层缩略图]</p>
+      </td>
+   <td><p>如果要让模块为清单中的每个层生成缩略图演绎版，请选择“是”。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 最大缩略图深度]</p>
+      </td>
+   <td><p>输入或映射缩略图演绎版的最大深度。 对于没有最大深度，请输入<code>0</code>。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 图层缩略图格式]</p>
+      </td>
+   <td><p>选择希望缩略图采用JPEG还是PNG格式。</p></td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 提取智能对象数据]</td>
+      <td>
+        <p>选择是否提取嵌入的智能对象并在清单中包含预签名URL。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 裁剪到透明度]</td>
+      <td>
+        <p>选择是否修剪每个图层缩略图以删除透明像素。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 最大结果数]</td>
+      <td>
+        <p>输入或映射您希望模块在一个执行周期内使用的最大结果数。</p>
+      </td>
+      </tr>
+    </tbody>
+</table>
+
