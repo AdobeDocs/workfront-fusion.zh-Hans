@@ -3,10 +3,11 @@ title: Adobe App Builder模块
 description: Adobe App Builder连接器允许您在场景中使用自定义函数。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 8250d4fdad8ed7ffe63cd003f6e0cb325cbbfa8d
+exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
+source-git-commit: 4392b9d13c49d3d64b2b694bf23cfc227ae36d02
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 31%
+source-wordcount: '365'
+ht-degree: 26%
 
 ---
 
@@ -47,13 +48,30 @@ ht-degree: 31%
 
 ## Adobe App Builder模块
 
-当前唯一可用的Adobe App Builder模块是执行操作，该模块允许您使用之前配置的自定义JavaScript函数。
+### 运行自定义代码块
+
+此模块允许您运行代码块。 您可以在设置模块时配置代码块，当模块在场景执行期间运行时，该代码块将运行。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 连接]</td>
+   <td>选择包含要运行的自定义函数的连接。 </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 代码块]</td> 
+   <td>输入您希望模块运行的代码块。<p>若要格式化代码以便于阅读，请单击<b>格式化代码</b>图标。</td> 
+  </tr> 
+   </tbody> 
+</table>
+
+### 运行自定义函数
+
+通过此模块，您可以使用存储在函数区域中的之前配置的自定义JavaScript函数。
 
 有关配置自定义函数的说明，请参阅[使用自定义函数映射数据](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)。
-
-### 执行操作
-
-此模块执行以前配置的自定义函数。
 
 <table style="table-layout:auto"> 
  <col> 
@@ -73,5 +91,3 @@ ht-degree: 31%
   </tr> 
    </tbody> 
 </table>
-
-
