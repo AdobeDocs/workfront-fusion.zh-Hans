@@ -61,7 +61,7 @@ ht-degree: 19%
    <td>选择包含要运行的自定义函数的连接。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL代码块]</td> 
+   <td role="rowheader">[!UICONTROL 代码块]</td> 
    <td>输入您希望模块运行的代码块。<p>若要格式化代码以便于阅读，请单击<b>格式化代码</b>图标。</td> 
   </tr> 
    </tbody> 
@@ -82,11 +82,11 @@ ht-degree: 19%
    <td>选择包含要运行的自定义函数的连接。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL包]</td> 
+   <td role="rowheader">[!UICONTROL 包]</td> 
    <td>选择包含要在场景中运行的函数的包。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL变量] </td> 
+   <td role="rowheader">[!UICONTROL 变量] </td> 
    <td>选择要在场景中运行的函数。</p></td> 
   </tr> 
    </tbody> 
@@ -107,11 +107,11 @@ ht-degree: 19%
    <td>选择包含要运行的自定义函数的连接。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL包]</td> 
+   <td role="rowheader">[!UICONTROL 包]</td> 
    <td>选择包含要纳入场景的变量的资源包。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL变量] </td> 
+   <td role="rowheader">[!UICONTROL 变量] </td> 
    <td>选择要纳入场景的变量。</p></td> 
   </tr> 
    </tbody> 
@@ -136,7 +136,7 @@ ht-degree: 19%
    <td>选择要运行的自定义函数。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL参数] </td> 
+   <td role="rowheader">[!UICONTROL 参数] </td> 
    <td>输入函数参数的值。 可用参数基于创建函数时配置的参数。<p>如果某个参数具有默认值，则您将不会在字段中看到该默认值，但可以通过在字段中输入或映射值来覆盖该默认值。</p></td> 
   </tr> 
    </tbody> 
