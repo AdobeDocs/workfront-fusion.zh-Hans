@@ -7,9 +7,9 @@ exl-id: b9d7643e-febf-42e2-9ddc-8ec8eba98e7a
 TQID: https://experienceleague.adobe.com/ObsbedalglAtYWQlx0w8vZbvsU7z0ttVIehf8STysvw
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 61b8118bed095b526e179c8fae798ece4e11d065
 workflow-type: tm+mt
-source-wordcount: 717
+source-wordcount: 731
 ht-degree: 23%
 
 ---
@@ -18,9 +18,11 @@ ht-degree: 23%
 
 Workfront Fusion包含内置函数，可让您创建简单或复杂的公式。 这些函数涵盖了各种用例，包括用于数组、字符串、数字和来自之前模块的数据的函数。
 
-此外，您可以创建自定义函数，然后场景可以使用这些函数转换和处理数据。
+此外，您可以创建自定义函数和包，然后场景可以将其用于转换和处理数据。
 
 有关自定义函数的信息和说明，请参阅[使用自定义函数映射数据](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)。
+
+有关函数包的信息和说明，请参阅[使用自定义函数包](/help/workfront-fusion/create-scenarios/map-data/use-custom-function-packages.md)。
 
 ## 访问权限要求
 
