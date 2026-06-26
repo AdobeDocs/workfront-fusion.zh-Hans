@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: ac7190293e7c4b3bb9bfd48d73cd59ad687690e6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
 workflow-type: tm+mt
-source-wordcount: 633
-ht-degree: 14%
+source-wordcount: 713
+ht-degree: 12%
 
 ---
 
@@ -73,14 +72,14 @@ Adobe Workfront Fusion会在每次场景更改时保存场景的一个版本。
 
 ## 比较方案版本
 
-&#x200B;AEM
+&#x200B;
 视图更改功能并排显示两个方案版本之间的差异，这样您可以在决定恢复旧版本之前查看确切的更改内容。
 
 1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]** ![方案图标](assets/scenarios-icon.png)，然后单击方案以将其打开。
 1. 单击屏幕底部的[!UICONTROL 更多]图标![更多图标](assets/more-icon.png)，然后单击&#x200B;**[!UICONTROL 以前的版本]**。
 
    此时将显示早期版本的列表。
-&#x200B;AEM
+&#x200B;
 1. 单击要查看的方案版本的&#x200B;**查看更改**。
 1. 将打开&#x200B;**查看更改**&#x200B;视图，并将该版本与当前方案进行比较。
 
@@ -102,7 +101,7 @@ Adobe Workfront Fusion会在每次场景更改时保存场景的一个版本。
 
 ### 检查更改
 
-&#x200B;AEM
+
 每个更改都显示在它所属的一侧，并以恢复操作所显示的内容着色
 执行：
 
@@ -110,9 +109,7 @@ Adobe Workfront Fusion会在每次场景更改时保存场景的一个版本。
 * 绿色（右）：此更改位于右侧的版本中，如果版本已恢复，则会添加此更改。
 
 如果某些内容发生了更改，该值会在左侧以红色显示，在右侧以绿色显示，而不是删除或添加。
-&#x200B;AEM
 更改将分组为多个部分：
-&#x200B;AEM
 
 * **方案**：名称、说明和类型。
 * **方案设置**：计划和处理选项。
@@ -121,9 +118,5 @@ Adobe Workfront Fusion会在每次场景更改时保存场景的一个版本。
 * **路由器路由**：路由及其内容。
 * **错误处理程序**：错误处理分支。
 * **孤立组**：画布上已断开连接的模块。
-&#x200B;AEM
 如果两个版本相同，视图将显示消息/ **未找到差异**。
-&#x200B;AEM
-
-
 
