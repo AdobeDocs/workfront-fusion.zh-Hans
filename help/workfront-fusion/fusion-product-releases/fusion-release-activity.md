@@ -14,7 +14,7 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 314c4535a5ef14794458f40002a53ee529c1a4b6
+source-git-commit: 2ba4baff4b7b34229303d43732ed44282ed88c2d
 workflow-type: tm+mt
 source-wordcount: 1520
 ht-degree: 89%
@@ -32,6 +32,7 @@ Adobe Workfront Fusion 可将您的应用程序和网络服务无缝连接，让
 * [Workfront Fusion发布活动：2026年6月22日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-22.md)
 * [Workfront Fusion发布活动：2026年6月15日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-15.md)
 * [Workfront Fusion发布活动： 2026年6月1日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-1.md)
+
 
 ### 2026年5月
 
