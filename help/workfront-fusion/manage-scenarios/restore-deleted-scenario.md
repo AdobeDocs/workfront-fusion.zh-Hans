@@ -5,18 +5,19 @@ author: Becky
 feature: Workfront Fusion
 exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 1f1dadc88dd6209cccbab9636e8de31fca3a3f24
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 6a176c74f45b17ed9fbf80b2d87cf45873067f74
 workflow-type: tm+mt
-source-wordcount: 201
-ht-degree: 45%
+source-wordcount: 217
+ht-degree: 42%
 
 ---
 
 # 恢复已删除的方案
 
 Workfront Fusion管理员可以恢复最近删除的场景。
+
+删除后，可以恢复7天内的场景。 之后，将无法恢复。
 
 ## 访问权限要求
 
