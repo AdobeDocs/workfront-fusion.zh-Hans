@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
 nudge: true
-source-git-commit: 5ed478882eb442ccb7c7a3983aa9187cc80e7ab5
+source-git-commit: dd2b97992f0754107a23102990d86a6913c75395
 workflow-type: tm+mt
-source-wordcount: '2487'
+source-wordcount: '2499'
 ht-degree: 53%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 53%
 * Fusion 发行活动 {#fusion-release-activity}
   * [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Fusion版本 — 2026 {#fusion-releases-2026}
+    * [Workfront Fusion发行活动： 2026年7月20日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-20.md)
     * [Workfront Fusion发行活动： 2026年7月13日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
     * [Workfront Fusion发布活动： 2026年6月22日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-22.md)
     * [Workfront Fusion发布活动： 2026年6月15日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-6-15.md)
@@ -280,7 +281,7 @@ ht-degree: 53%
   * [查看和管理链接方案关系](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
   * [查看运行中场景的数据流](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [查看 Webhook 队列](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront Fusion中的AI助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * Workfront Fusion中的{hide-from-toc}[AI助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [运行场景评分专家](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [删除场景元素](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [从方案区域管理方案](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -369,6 +370,7 @@ ht-degree: 53%
       * [Adobe Creative Cloud Libraries 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
       * [Adobe Experience Manager Assets 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
       * [Adobe Experience Manager Forms 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
+      * [Adobe Express模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-express-modules.md)
       * [Adobe Firefly音频和视频模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
       * [Adobe Firefly 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
       * [Adobe Firefly Lightroom模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
