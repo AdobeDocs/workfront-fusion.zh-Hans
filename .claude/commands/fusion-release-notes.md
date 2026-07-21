@@ -97,6 +97,7 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   
   {Regular description paragraph(s).}
   ```
+
 - 每个功能都应以“有关详细信息，请参阅[...]”结尾 相关帮助文章的链接。 验证链接目标是否存在于存储库中。
 
 ## 步骤4：将页面添加到概览索引
@@ -111,6 +112,7 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - 如果这是新年的第一个版本，请在上一年的标题上方添加新的`## Fusion releases in {YYYY}`标题，并将&#x200B;*previous*&#x200B;年的部分包装在`+++ **Click to open**` / `+++`可折叠块中（如果尚未包装）。
 
 ## 步骤5：将页面添加到目录
@@ -123,6 +125,7 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
+
 - 如果当前年份的标题尚不存在，请在上一年标题上方添加`* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}`。
 - **不要**&#x200B;将`{hide-from-toc}`前缀添加到新条目 — 仅用于旧条目过期后退出可见导航的条目（请参阅下面的已知不一致）。
 
