@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8af4c12773be538823d252f5022e1613e5629d2d
+source-git-commit: e8ba11636822fc7007e3a331002194f1a3effcbc
 workflow-type: tm+mt
-source-wordcount: 1909
-ht-degree: 10%
+source-wordcount: 2418
+ht-degree: 8%
 
 ---
 
@@ -68,10 +68,11 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 >
 >要调用第三方webhook（传出webhook），请使用其中一个HTTP模块。 有关详细信息，请参阅[HTTP模块](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)。
 
-要使用webhook将应用程序连接到Workfront Fusion，您可以设置webhook以使用客户端证书(mTLS)或基本身份验证进行身份验证。
+要使用webhook将应用程序连接到Workfront Fusion，您可以设置webhook以使用客户端证书(mTLS)、基本身份验证或Adobe Identity Management System (IMS)进行身份验证。
 
 * [将webhook与客户端证书(mTLS)一起使用](#use-a-webhook-with-a-client-certificate-mtls)
 * [将webhook用于基本身份验证](#use-a-webhook-with-basic-authentication)
+* [在Adobe Identity Management System (IMS)中使用webhook](#use-a-webhook-with-adobe-identity-management-system-ims)
 
 ### 将webhook与客户端证书(mTLS)一起使用
 
@@ -84,6 +85,13 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 1. 单击Webhook字段旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;并输入新webhook的名称。
 1. （可选）单击&#x200B;**[!UICONTROL 高级设置]**。
 1. 在&#x200B;**[!UICONTROL IP限制]**&#x200B;字段中，输入模块可以接受其数据的IP地址列表（以逗号分隔）。
+1. （可选）在&#x200B;**[!UICONTROL 源限制]**&#x200B;字段中，对于要允许调用此webhook的每个源，单击&#x200B;**添加项**&#x200B;并输入源模式。 如果要允许任何来源，请将此字段留空。
+
+   此字段接受以下模式：
+
+   * 确切的主机名： `app.example.com`
+   * 通配符子域： `*.example.com`
+   * 方案限定：` https://app.example.com`或`https://*.example.com`
 1. 如果要验证传入数据，请在&#x200B;**数据结构**&#x200B;字段中，选择或添加要使用的数据结构。
 
    有关数据结构的信息，请参阅[数据结构](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)。
@@ -118,11 +126,50 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 1. 单击Webhook字段旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;并输入新webhook的名称。
 1. （可选）单击&#x200B;**[!UICONTROL 高级设置]**。
 1. 在&#x200B;**[!UICONTROL IP限制]**&#x200B;字段中，输入模块可以接受其数据的IP地址列表（以逗号分隔）。
+1. （可选）在&#x200B;**[!UICONTROL 源限制]**&#x200B;字段中，对于要允许调用此webhook的每个源，单击&#x200B;**添加项**&#x200B;并输入源模式。 如果要允许任何来源，请将此字段留空。
+
+   此字段接受以下模式：
+
+   * 确切的主机名： `app.example.com`
+   * 通配符子域： `*.example.com`
+   * 方案限定：` https://app.example.com`或`https://*.example.com`
 1. 如果要验证传入数据，请在&#x200B;**数据结构**&#x200B;字段中，选择或添加要使用的数据结构。
 
    有关数据结构的信息，请参阅[数据结构](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)。
 1. 在&#x200B;**授权类型**&#x200B;字段中，选择&#x200B;**[!UICONTROL 基本身份验证]**。
 1. 在&#x200B;**凭据**&#x200B;字段中，输入要用于授权的凭据。 要输入凭据，请单击&#x200B;**添加**，然后输入基本身份验证的用户名和密码。
+1. 根据需要启用其他设置。
+1. 单击&#x200B;**[!UICONTROL 保存]**
+
+创建webhook后，将显示唯一的URL。 这是webhook发送数据的地址。 Workfront Fusion会验证发送到此地址的数据，然后传递它以在场景中处理。
+
+>[!NOTE]
+>
+>创建webhook后，您可以将其同时用于多个场景。
+
+### 在Adobe Identity Management System (IMS)中使用webhook
+
+Adobe Identity Management System (IMS)身份验证使用您组织的Adobe IMS凭据对您连接到的服务进行身份验证。
+
+1. 将&#x200B;**[!UICONTROL Webhook]** > **[!UICONTROL 自定义Webhook]**&#x200B;即时触发器模块添加到您的方案中。
+
+1. 单击Webhook字段旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;并输入新webhook的名称。
+1. （可选）单击&#x200B;**[!UICONTROL 高级设置]**。
+1. 在&#x200B;**[!UICONTROL IP限制]**&#x200B;字段中，输入模块可以接受其数据的IP地址列表（以逗号分隔）。
+1. （可选）在&#x200B;**[!UICONTROL 源限制]**&#x200B;字段中，对于要允许调用此webhook的每个源，单击&#x200B;**添加项**&#x200B;并输入源模式。 如果要允许任何来源，请将此字段留空。
+
+   此字段接受以下模式：
+
+   * 确切的主机名： `app.example.com`
+   * 通配符子域： `*.example.com`
+   * 方案限定：` https://app.example.com`或`https://*.example.com`
+1. 如果要验证传入数据，请在&#x200B;**数据结构**&#x200B;字段中，选择或添加要使用的数据结构。
+
+   有关数据结构的信息，请参阅[数据结构](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)。
+1. 在&#x200B;**授权类型**&#x200B;字段中，选择&#x200B;**Adobe IMS （授权标头中的持有者令牌）**。
+1. （可选）在&#x200B;**允许的客户端**&#x200B;字段中，输入允许调用此webhook的客户端ID的逗号分隔列表。 将此设置留空以接受其令牌由受信任的颁发者和受众有效签名的任何客户端。
+1. （可选）在&#x200B;**允许的用户**&#x200B;字段中，输入允许调用此webhook的用户ID的逗号分隔列表。 将此设置保留为空将允许任何用户。
+1. （可选）在&#x200B;**必需范围**&#x200B;字段中，输入以逗号分隔的范围列表，该列表必须出现在令牌的`scope`声明中。 留空将跳过范围检查。
 1. 根据需要启用其他设置。
 1. 单击&#x200B;**[!UICONTROL 保存]**
 
@@ -186,6 +233,10 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 1. 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以保存数据结构。
 
    webhook的项目现在位于“映射”面板中，可用于场景中的后续模块。
+
+## 允许的源/CORS
+
+在Fusion中创建或编辑自定义webhook时，通过允许的源字段，您可以限制允许哪些浏览器源（网站）直接从客户端JavaScript调用webhook端点，例如fetch/XHR。 这是一个CORS（跨源资源共享）控件，它独立于IP限制和授权类型（基本身份验证/客户端证书/Adobe IMS）。
 
 ## webhook队列
 
