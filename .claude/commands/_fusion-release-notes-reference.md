@@ -10,7 +10,7 @@ ht-degree: 0%
 `fusion-release-notes`技能的工作示例（基于中最近的实际页面）
 `help/workfront-fusion/fusion-product-releases/fusion-releases-2026/`.
 
----
+&#x200B;---
 
 ## 示例1：简单的多功能周
 
@@ -50,7 +50,7 @@ To make it easier to understand changes between scenario versions, we've added t
 For more information, see [View and manage scenario versions](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md).
 ```
 
----
+&#x200B;---
 
 ## 示例2：包含需要操作/弃用标注的周
 
@@ -96,7 +96,7 @@ To make it easier to identify routes, we've added labels. Now, routes are labele
 For more information on routes, see [Add a Router module and configure routes](/help/workfront-fusion/create-scenarios/add-modules/router-module.md).
 ```
 
----
+&#x200B;---
 
 ## 示例3：新连接器启动
 
@@ -118,7 +118,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
 
 对于此类连接器启动项，请始终询问（按照技能的第1步）用户是否想要为其设置重定向。
 
----
+&#x200B;---
 
 ## 概述页面(`fusion-release-activity.md`)更新模式
 
@@ -151,7 +151,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
 +++
 ```
 
----
+&#x200B;---
 
 ## TOC.md更新模式
 
@@ -166,7 +166,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
         ...
 ```
 
----
+&#x200B;---
 
 ## 重定向存储库引用（适用于步骤7）
 
@@ -181,7 +181,7 @@ For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/
 
 添加行后，仍需要在`redirects`存储库中引发并合并PR，然后才可启用（对于1:1重定向，合并后约5分钟）。 此技能仅在用户确认后才添加行 — 它不会提高PR。
 
----
+&#x200B;---
 
 ## 现有页面中的已知不一致（仅供参考 — 请勿将这些不一致复制到新页面中）
 
