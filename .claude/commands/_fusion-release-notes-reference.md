@@ -1,7 +1,7 @@
 ---
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 67301a4e3c16eaed28f92a1be7556c5574308429
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -98,6 +98,28 @@ For more information on routes, see [Add a Router module and configure routes](/
 
 &#x200B;---
 
+## 示例3：新连接器启动
+
+基于`fusion-2026-7-27.md`。
+
+```markdown
+## Adobe Content Tagger connector and modules now available
+
+You can now use Workfront Fusion to tag content in Adobe documents.
+
+With the Adobe Content Tagger modules, you can:
+
+* Tag colors in an image, returning the percentage covered by different pixel colors
+* Tag keywords or key phrases that best describe the subject of a document
+* Tag text in an image, indicating whether text is present and returning it if so
+
+For more information, see [Adobe Content Tagger modules](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md).
+```
+
+对于此类连接器启动项，请始终询问（按照技能的第1步）用户是否想要为其设置重定向。
+
+&#x200B;---
+
 ## 概述页面(`fusion-release-activity.md`)更新模式
 
 将2026年7月20日这一周添加到现有的2026年7月这一周部分：
@@ -143,6 +165,21 @@ For more information on routes, see [Add a Router module and configure routes](/
         * [Workfront Fusion release activity: Week of July 13 2026](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-7-13.md)
         ...
 ```
+
+&#x200B;---
+
+## 重定向存储库引用（适用于步骤7）
+
+同级`redirects`存储库(`Adobe-Enterprise-Docs/redirects`)在`redirects/`下的CSV文件中包含1:1重定向，每个环境一个： `redirects-dev.csv`、`redirects-stage.csv`、`redirects-prod.csv`。
+
+行规则（来自该存储库的自述文件）：
+
+- `source`必须以`/en`开头（自动创建语言变体）并且不包含空格。
+- `destination`可以是以`/en`开头的相对路径，也可以是以`https`开头的完整URL，并且不能包含空格。
+- 没有重复的`source`，也没有重复的`source`/`destination`对。
+- 重定向不得导致重定向循环。
+
+添加行后，仍需要在`redirects`存储库中引发并合并PR，然后才可启用（对于1:1重定向，合并后约5分钟）。 此技能仅在用户确认后才添加行 — 它不会提高PR。
 
 &#x200B;---
 

@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
 workflow-type: tm+mt
-source-wordcount: 7298
-ht-degree: 98%
+source-wordcount: 7518
+ht-degree: 95%
 
 ---
 
@@ -791,6 +791,10 @@ See a list of the Workfront object types for which you can use this module in [W
 
 #### 其他操作选项
 
+* [任务](#task)
+* [问题](#issue)
+* [项目](#project)
+
 ##### 任务
 
 <table style="table-layout:auto">
@@ -1373,8 +1377,8 @@ See a list of the Workfront object types for which you can use this module in [W
 
 >[!IMPORTANT]
 >
->此模块已由“搜索记录”模块取代。 我们建议在新场景中使用该模块。
->使用此模块的现有场景仍将按预期运行。 该模块将于 2025 年 5 月从模块选择器中移除。
+>此模块已替换为搜索记录模块。我们建议在新场景中使用该模块。
+>使用此模块的现有方案将继续按预期运行。此模块将于2025年5月从模块选择器中移除。
 
 此搜索模块会在 Workfront 中的对象内查找与您指定的搜索查询匹配的记录。
 
@@ -2382,6 +2386,13 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ## Workfront > [!UICONTROL 监控事件]模块中的事件订阅筛选条件
 
+事件订阅中的过滤器允许您确保仅在满足某些参数时运行方案。
+
+* [事件订阅过滤器最佳实践](#event-subscription-filter-best-practices)
+* [使用高级过滤器](#using-advanced-filters)
+
+### 事件订阅过滤器最佳实践
+
 >[!NOTE]
 >
 >* 我们强烈建议您在[!UICONTROL 监控事件]模块中使用事件订阅筛选条件。
@@ -2390,7 +2401,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   有关新版事件订阅的更多信息，请参阅 Workfront 文档中[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
 >
->   如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景（https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=zh-Hans）]。
+>   如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=zh-Hans)。
 
 Workfront 的[!UICONTROL 监控事件]模块会根据一个在 Workfront API 中创建事件订阅的 Webhook 来触发场景。 事件订阅是一组数据，用于确定哪些事件会发送至该 Webhook。 例如，如果您设置一个监控问题的[!UICONTROL 监控事件]模块，则该事件订阅只会将与问题相关的事件发送过来。
 
@@ -2408,13 +2419,13 @@ Workfront > “监控事件”筛选条件支持以下运算符：
 * 小于或等于
 * 包含
 * 已存在
-   * 此运算符不需要指定值，因此不会显示“值”字段。
+  * 此运算符不需要指定值，因此不会显示“值”字段。
 * 不存在
-   * 此运算符不需要指定值，因此不会显示“值”字段。
+  * 此运算符不需要指定值，因此不会显示“值”字段。
 * 已更改
-   * 此运算符不需要指定值，因此不会显示“值”字段。
-   * 此运算符会忽略“状态”字段。
-   * 使用 `Changed` 时，请在&#x200B;**记录来源**&#x200B;字段中选择&#x200B;**仅更新事件**。
+  * 此运算符不需要指定值，因此不会显示“值”字段。
+  * 此运算符会忽略“状态”字段。
+  * 使用 `Changed` 时，请在&#x200B;**记录来源**&#x200B;字段中选择&#x200B;**仅更新事件**。
 
 >[!IMPORTANT]
 >
@@ -2424,7 +2435,7 @@ Workfront > “监控事件”筛选条件支持以下运算符：
 >
 >**示例：**&#x200B;假设一个场景需要处理分配给特定用户 Ana 的新问题。
 >
->### 使用事件订阅筛选条件进行事件筛选（推荐）
+>#### 使用事件订阅筛选条件进行事件筛选（推荐）
 >
 >通过事件筛选条件，可将 Webhook 配置为在新建问题并将其分配给 Ana 时触发场景。 Ana 的用户 ID 为 b378489d8f7cd3cee0539260720a84b7。
 >
@@ -2432,7 +2443,7 @@ Workfront > “监控事件”筛选条件支持以下运算符：
 >
 >如果当天创建了 100 个问题，但只有 2 个分配给 Ana，则场景仅会执行两次。
 >
->### 在场景内部筛选事件（不推荐）
+>#### 在场景内部筛选事件（不推荐）
 >
 >若要筛选事件，仅处理分配给 Ana 的问题，可在[!UICONTROL 监控事件]模块之后创建一个筛选条件。
 >
@@ -2445,3 +2456,26 @@ Workfront > “监控事件”筛选条件支持以下运算符：
 有关 Webhook 的更多信息，请参阅 [Adobe Workfront Fusion 中的即时触发器（Webhook）](/help/workfront-fusion/references/modules/webhooks-reference.md)
 
 有关在场景中添加筛选条件的更多信息，请参阅[向场景添加筛选条件](/help/workfront-fusion/create-scenarios/add-modules/add-a-filter-to-a-scenario.md)。
+
+### 使用高级过滤器
+
+Workfront >关注事件模块提供两种类型的过滤器。
+
+* **简单**：此筛选器提供了一个界面，允许您选择字段、运算符和值以及AND和OR运算符来创建筛选器。
+* **高级**：此筛选器允许您上传代表您的筛选器的JSON。
+
+#### 简单与高级过滤器
+
+这两种类型的主要区别在于过滤器的状态。
+
+* **简单**：设置简单筛选器时，您可以选择是要根据字段的旧状态还是新状态进行筛选。 也就是说，您决定是要在字段从&#x200B;**更改给定值**&#x200B;时激活方案，还是要在字段从&#x200B;**更改为**&#x200B;给定值时激活。 通过使用AND和OR，您可以包含多个字段和值，但它们必须共享相同的状态。 您不能对某些字段使用旧状态，对另一些字段不能使用新状态。
+* **高级**：您可以在高级过滤器中配置JSON，以便在同一过滤器中同时指定新旧状态的值。 例如，您可以指定当项目从“计划”状态移动到“当前”状态时触发方案。 这将排除从“计划”移至“终止”或从“暂挂”移至“当前”的项目。
+
+<!--
+
+#### Advanced filter examples
+
+-->
+
+<!--CHECK ON EDITING FILTERS-->
+
