@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 7db97e6e-262d-4be2-823b-423f56a7d886
 TQID: https://experienceleague.adobe.com/OMMUuYStE-zaML4-bBkPQmq9jTprC-GKYx-yt3tiFzQ
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 631
-ht-degree: 25%
+source-wordcount: 633
+ht-degree: 24%
 
 ---
 
@@ -53,7 +51,7 @@ Adobe Workfront Fusion [!UICONTROL HTTP]应用程序为基于超文本传输协�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -96,7 +94,7 @@ Adobe Workfront Fusion [!UICONTROL HTTP]应用程序为基于超文本传输协�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 将所有状态计算为错误（2xx和3xx除外）] </td> 
+   <td role="rowheader">[！UICONTROL将所有状态计算为错误（2xx和3xx除外）] </td> 
    <td> <p>使用此选项可设置错误处理。</p> <p>有关详细信息，请参阅Adobe Workfront Fusion中的<a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">错误处理</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -104,7 +102,7 @@ Adobe Workfront Fusion [!UICONTROL HTTP]应用程序为基于超文本传输协�
    <td> <p>输入或映射要下载的文件的URL。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 与其他HTTP模块共享Cookie] </td> 
+   <td role="rowheader">[！UICONTROL与其他HTTP模块共享Cookie] </td> 
    <td> <p>如果您希望此站点的Cookie对其他模块可用，请启用此选项。 </p> </td> 
   </tr> 
  </tbody> 
@@ -124,7 +122,7 @@ Adobe Workfront Fusion [!UICONTROL HTTP]应用程序为基于超文本传输协�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 方法] </td> 
-   <td> <p>选择您要使用[!UICONTROL HEAD]方法还是[!UICONTROL GET]方法。</p> </td> 
+   <td> <p>选择您要使用[！UICONTROL HEAD]方法还是[！UICONTROL GET]方法。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -140,7 +138,7 @@ Adobe Workfront Fusion [!UICONTROL HTTP]应用程序为基于超文本传输协�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Module]</td> 
+   <td role="rowheader">[！UICONTROL Source Module]</td> 
    <td> <p> 选择要从中检索标头的模块。</p> </td> 
   </tr> 
  </tbody> 

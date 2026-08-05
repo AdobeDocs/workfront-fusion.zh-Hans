@@ -3,9 +3,9 @@ title: Adobe Express模块
 description: 在Adobe Workfront Fusion场景中，您可以自动执行使用Adobe Express的工作流。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
-source-git-commit: eab04db9a38020ed973f98d7f8f290ccd183251c
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1374'
 ht-degree: 17%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 17%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 

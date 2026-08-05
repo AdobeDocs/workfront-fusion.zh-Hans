@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: b74a3618-c4a1-4965-a88d-1643bfab12db
 TQID: https://experienceleague.adobe.com/fSi-9BIxl4qI-Vz7Yw9WJoqIX-GlmYDc5u-PGSh5mfc
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2399
-ht-degree: 25%
+source-wordcount: 2469
+ht-degree: 27%
 
 ---
 
@@ -49,7 +47,7 @@ Jira连接器可用于Jira云和Jira数据服务器。
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -211,7 +209,7 @@ Jira连接器可用于Jira云和Jira数据服务器。
       <td>输入您的电子邮件地址。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">api令牌</td> 
+      <td role="rowheader">API 令牌</td> 
       <td>输入您的API令牌。</td> 
      </tr> 
      <tr> 

@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: e0d7a655-1353-4d24-83d4-7da73d859a63
 TQID: https://experienceleague.adobe.com/LTNDa0pulA4RE5tG59Fui-5bPlKxqHoQHEsKOp485No
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 600
-ht-degree: 50%
+source-wordcount: 602
+ht-degree: 49%
 
 ---
 
@@ -41,7 +39,7 @@ ht-degree: 50%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -112,13 +110,13 @@ Adobe Experience Manager Assets 连接器使用以下内容：
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 实例URL，不带尾随斜杠]</td>
+        <td role="rowheader">[！UICONTROL实例URL，不带尾随斜杠]</td>
         <td>
           <p>输入用于访问帐户的URL，不带最后一个斜杠。</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL IMS端点]</td>
+        <td role="rowheader">[！UICONTROL IMS端点]</td>
         <td>
           <p><code>https://ims-na1.adobelogin.com</code></p>
         </td>
@@ -132,15 +130,15 @@ Adobe Experience Manager Assets 连接器使用以下内容：
         <td>输入您的[!DNL Adobe]客户端密钥。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 组织ID]</td>
+        <td role="rowheader">[！UICONTROL组织ID]</td>
         <td>输入您的[!DNL Adobe]组织ID。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 技术帐户ID]</td>
+        <td role="rowheader">[！UICONTROL技术帐户ID]</td>
         <td>输入您的[!DNL Adobe]技术帐户ID。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL Meta Scopes]</td>
+        <td role="rowheader">[！UICONTROL Meta Scopes]</td>
         <td>输入任何适当的元范围       </td>
       </tr>
       <tr>

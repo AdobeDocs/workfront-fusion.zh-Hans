@@ -3,9 +3,9 @@ title: Adobe Content Tagger模块
 description: 在Adobe Workfront Fusion场景中，您可以自动使用Adobe Content Tagger的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
-source-git-commit: 737e9b07237960d5833cd21e110ef573ddd0a72c
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1098'
 ht-degree: 20%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 20%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 

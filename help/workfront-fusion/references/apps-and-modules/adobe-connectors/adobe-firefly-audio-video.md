@@ -3,9 +3,9 @@ title: Adobe Firefly音频和视频模块
 description: 在Adobe Workfront Fusion场景中，您可以自动使用Adobe Firefly Audio and Video的工作流，并将其连接到多个第三方应用程序和服务。
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
-source-git-commit: f54338aa35b8453ac991c9e16974f2b61fd30168
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1620'
 ht-degree: 14%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 14%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 

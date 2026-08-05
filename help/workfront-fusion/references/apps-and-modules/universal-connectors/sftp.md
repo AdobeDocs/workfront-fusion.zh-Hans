@@ -5,14 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
 TQID: https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2238
-ht-degree: 14%
+source-wordcount: 2259
+ht-degree: 15%
 
 ---
 
@@ -39,7 +37,7 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -83,27 +81,27 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
     <td>选择您是要连接到服务帐户还是个人帐户。</td>
   </tr>
   <tr>
-   <td role="rowheader"> <p>[!UICONTROL 主机]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL主机]</p> </td> 
    <td> <p>输入要连接的SFTP服务器的主机名。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 端口] </td> 
+   <td role="rowheader">[！UICONTROL端口] </td> 
    <td> <p>输入SFTP服务器端口。 例如，22。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader"> <p>[!UICONTROL 身份验证类型]</p> </td> 
+   <td role="rowheader"> <p>[！UICONTROL身份验证类型]</p> </td> 
    <td> <p>选择要用于连接到SFTP服务器的授权方法。</p> 
     <ul> 
-     <li><strong>[!UICONTROL 用户名和密码]</strong>：输入您的凭据。</li> 
-     <li> <p><strong>[!UICONTROL 用户名和密钥]</strong>：输入您的用户名和私钥/证书</p> <p>如果要使用自签名证书的TLS，请上载私钥以使用客户端授权，或上载证书（P12或PFX文件）。 如果您使用的是客户端证书授权，可以在此处输入您的CA证书。</p> <p>Workfront Fusion不会保留或存储您在此处提供的任何数据（文件、密码）。 文件和密码仅用于提取私钥/证书。</p> </li> 
+     <li><strong>[！UICONTROL用户名和密码]</strong>：输入您的凭据。</li> 
+     <li> <p><strong>[！UICONTROL用户名和密钥]</strong>：输入您的用户名和私钥/证书</p> <p>如果要使用自签名证书的TLS，请上载私钥以使用客户端授权，或上载证书（P12或PFX文件）。 如果您使用的是客户端证书授权，可以在此处输入您的CA证书。</p> <p>Workfront Fusion不会保留或存储您在此处提供的任何数据（文件、密码）。 文件和密码仅用于提取私钥/证书。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 密钥交换算法] </td> 
+   <td role="rowheader">[！UICONTROL密钥交换算法] </td> 
    <td> <p>您可以输入一组密钥交换算法。 模块根据添加算法的顺序排列算法的优先级。 对于要添加的每个算法，单击<b>添加项</b>并选择算法。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 密码] </td> 
+   <td role="rowheader">[！UICONTROL密码] </td> 
    <td> <p>您可以输入一组密码进行密钥交换。 模块会根据密码添加的顺序为其设置优先级。 对于要添加的每个密码，单击<b>添加项</b>并选择密码。</p> </td> 
   </tr> 
  </tbody> 
@@ -187,7 +185,7 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
    <td> <p> 输入缓冲区大小（字节）。 该值定义从服务器传送的块的大小。 当值过高时，某些服务器可能会导致问题或文件损坏。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 返回的最大文件数]</td> 
+   <td>[！UICONTROL返回的最大文件数]</td> 
    <td> <p> 输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
  </tbody> 
@@ -210,7 +208,7 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
    <td> <p>输入或映射要监视的文件夹。 您可以指定绝对路径，如<code>/home/user/</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，例如 <code>./.</code></p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 返回的最大文件数]</td> 
+   <td>[！UICONTROL返回的最大文件数]</td> 
    <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
  </tbody> 
@@ -250,7 +248,7 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
    <td> <p>指定现有文件夹作为新文件夹的存储位置。 您可以指定绝对路径，如<code>/home/user/file.txt</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，如<code>./</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件夹名称]</td> 
+   <td>[！UICONTROL文件夹名称]</td> 
    <td> <p> 输入文件夹名称。</p> </td> 
   </tr> 
   <tr> 
@@ -271,7 +269,7 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
    <td> <p>有关将SFTP帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件路径]</td> 
+   <td>[！UICONTROL文件路径]</td> 
    <td> <p> 输入要删除的文件的路径。 您可以指定绝对路径，如<code>/home/user/file.txt</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，如<code>./file.txt</code>。</p> </td> 
   </tr> 
  </tbody> 
@@ -307,11 +305,11 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
    <td> <p>有关将SFTP帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 缓冲区大小[B]]</td> 
+   <td>[！UICONTROL缓冲区大小[B]]</td> 
    <td> <p> 输入缓冲区大小（字节）。 该值定义从服务器传送的块的大小。 当值过高时，某些服务器可能会导致问题或文件损坏。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件路径] </td> 
+   <td>[！UICONTROL文件路径] </td> 
    <td> <p>输入文件的路径。 您可以指定绝对路径，如<code>/home/user/file.txt</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，如<code>./file.txt</code>。</p> </td> 
   </tr> 
  </tbody> 
@@ -330,7 +328,7 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
    <td> <p>有关将SFTP帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 缓冲区大小[B]]</td> 
+   <td>[！UICONTROL缓冲区大小[B]]</td> 
    <td> <p> 输入缓冲区大小（字节）。 该值定义从服务器传送的块的大小。 当值过高时，某些服务器可能会导致问题或文件损坏。</p> </td> 
   </tr> 
   <tr> 
@@ -342,19 +340,19 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
    <td> <p>输入或映射搜索词。 例如，如果要搜索文件扩展名为.txt的文件，请输入<code>.txt</code>。您还可以输入或映射要搜索的文件名。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 排序方式]</td> 
+   <td>[！UICONTROL排序方式]</td> 
    <td> <p> 选择是否要按文件名、大小、上次访问日期或上次修改日期对结果进行排序。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 排序顺序]</td> 
+   <td>[！UICONTROL排序顺序]</td> 
    <td> <p> 选择应按升序还是降序返回结果。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 即使模块未返回任何结果，仍继续执行路由]</p> </td> 
+   <td> <p>[！UICONTROL即使模块未返回任何结果，仍继续执行路由]</p> </td> 
    <td>启用此选项以确保此模块在未返回任何结果时不会停止方案。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 返回结果的最大数目]</td> 
+   <td>[！UICONTROL返回结果的最大数目]</td> 
    <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
  </tbody> 
@@ -371,7 +369,7 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
    <td> <p>有关将SFTP帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Show] </td> 
+   <td>[！UICONTROL Show] </td> 
    <td> <p>选择是要检索文件、文件夹还是两者。</p> </td> 
   </tr> 
   <tr> 
@@ -383,19 +381,19 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
    <td> <p>输入或映射搜索词。 例如，如果要搜索文件扩展名为.txt的文件，请输入<code>.txt</code>。您还可以输入或映射要搜索的文件名。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 排序方式]</td> 
+   <td>[！UICONTROL排序方式]</td> 
    <td> <p> 选择是否要按文件名、大小、上次访问日期或上次修改日期对结果进行排序。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 排序顺序] </td> 
+   <td>[！UICONTROL排序顺序] </td> 
    <td> <p>选择应按升序还是降序返回结果。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 即使模块未返回任何结果，仍继续执行路由]</p> </td> 
+   <td> <p>[！UICONTROL即使模块未返回任何结果，仍继续执行路由]</p> </td> 
    <td>启用此选项以确保此模块在未返回任何结果时不会停止方案。</td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 返回结果的最大数目]</td> 
+   <td>[！UICONTROL返回结果的最大数目]</td> 
    <td> <p>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</p> </td> 
   </tr> 
  </tbody> 
@@ -412,11 +410,11 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
    <td> <p>有关将SFTP帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件路径]</td> 
+   <td>[！UICONTROL文件路径]</td> 
    <td> <p> 输入要移动文件的路径。 您可以指定绝对路径，如<code>/home/user/file.txt</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，如<code>./file.txt</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 新文件夹]</td> 
+   <td>[！UICONTROL新文件夹]</td> 
    <td> <p> 输入文件新位置的路径。 您可以指定绝对路径，如<code>/home/user/</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，例如 <code>./.</code></p> </td> 
   </tr> 
  </tbody> 
@@ -435,11 +433,11 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
    <td> <p>有关将SFTP帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件路径]</td> 
+   <td>[！UICONTROL文件路径]</td> 
    <td> <p> 输入要重命名的文件的路径。 您可以指定绝对路径，如<code>/home/user/file.txt</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，如<code>./file.txt</code>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 新文件名]</td> 
+   <td>[！UICONTROL新文件名]</td> 
    <td> <p> 输入文件的新名称，包括文件扩展名。</p> </td> 
   </tr> 
  </tbody> 
@@ -458,7 +456,7 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
    <td> <p>有关将SFTP帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-sftp-to-workfront-fusion" class="MCXref xref">将SFTP连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 文件路径]</td> 
+   <td>[！UICONTROL文件路径]</td> 
    <td> <p> 输入要移动文件的路径。 您可以指定绝对路径，如<code>/home/user/file.txt</code>。 或者，您可以指定指向登录用户的特定文件夹的相对路径，如<code>./file.txt</code>。</p> </td> 
   </tr> 
   <tr> 
@@ -493,7 +491,7 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
    <td> <p>为文件或文件夹设置所需的权限。 使用chmod参数。 例如，<code>777</code>或<code>-rwxrwxrwx</code>。</p> <p>这些权限必须匹配以下模式 <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>有关chmod的详细信息，请参阅<a href="https://ss64.com/bash/chmod.html">chmod文档</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 缓冲区大小(B)]</p> </td> 
+   <td> <p>[！UICONTROL缓冲区大小(B)]</p> </td> 
    <td> <p>在上传文件时设置每个块的大小（以字节为单位）。 这对于大型文件或服务器内存限制要求较小上载时非常有用。 如果未设置此值，则文件将通过单次操作写入。</p> </td> 
   </tr> 
  </tbody> 
