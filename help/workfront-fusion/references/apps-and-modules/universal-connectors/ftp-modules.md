@@ -5,8 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
 TQID: https://experienceleague.adobe.com/gEM0-dJD4FYvu9TFvxoDtriimtlk001zevih7KnhKJE
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
 source-wordcount: 1406
@@ -83,15 +87,15 @@ FTP模块允许您监视选定文件夹中的文件更改，将新文件上传�
       <td> <p>选择您使用的是服务帐户还是个人帐户。</p> </td> 
      </tr> 
      <tr> 
-      <td>[！UICONTROL主机] </td> 
+      <td>[!UICONTROL 主机] </td> 
       <td> <p>输入FTP服务器主机名。 示例： <code>myftp123.server.com</code></p> </td> 
      </tr> 
      <tr> 
-      <td>[！UICONTROL端口] </td> 
+      <td>[!UICONTROL 端口] </td> 
       <td> <p>输入FTP服务器端口号。 示例： <code>21</code></p> </td> 
      </tr> 
      <tr> 
-      <td>[！UICONTROL用户名] </td> 
+      <td>[!UICONTROL 用户名] </td> 
       <td> <p>输入您的FTP帐户用户名。</p> </td> 
      </tr> 
      <tr> 
@@ -100,20 +104,20 @@ FTP模块允许您监视选定文件夹中的文件更改，将新文件上传�
      </tr> 
      <tr> 
       <td> <p>使用安全连接(TLS)</p> </td> 
-      <td> <p>选择是否要使用安全连接。</p> <ul><li><p><b>[！UICONTROL否]</b></p> <p>连接不安全。</p></li><li> <p><b>显式加密</b>或<b>隐式加密</b></p> <p>使用SSL保护连接。</p> </td> 
+      <td> <p>选择是否要使用安全连接。</p> <ul><li><p><b>[!UICONTROL 否]</b></p> <p>连接不安全。</p></li><li> <p><b>显式加密</b>或<b>隐式加密</b></p> <p>使用SSL保护连接。</p> </td> 
      </tr> 
     <tr> 
-   <td> <p>[！UICONTROL拒绝未经授权的证书]</p> </td> 
+   <td> <p>[!UICONTROL 拒绝未经授权的证书]</p> </td> 
    <td> <p>启用此选项以验证FTP服务器证书。 如果验证失败，将不会创建连接。 要通过验证，证书必须满足以下条件之一：</p> 
     <ul> 
      <li>由根证书颁发机构签名</a></li> 
      <li>由中间证书颁发机构签名。 在这种情况下，所有中间证书都应安装在FTP服务器上。</li> 
-     <li>是[！UICONTROL Self-signed certificate]字段中提供的自签名证书（见下文）</li> </ul>
+     <li>是[!UICONTROL Self-signed certificate]字段中提供的自签名证书（见下文）</li> </ul>
      <p>如果禁用此选项，则不会验证FTP服务器证书。 我们强烈建议不要禁用此选项，因为它会导致连接不安全，并带来严重的安全风险。</p></td>
     </tr> 
     <tr> 
-     <td> <p>[！UICONTROL自签名证书]</p> </td> 
-     <td> <p>单击<b>[！UICONTROL Extract]</b>按钮以打开上载对话框。</p> <p>上载证书以将TLS与您的自签名证书一起使用。 Workfront Fusion不会保留或存储您提供的任何数据，例如文件和密码。 文件和密码仅用于提取证书。</p> </td> 
+     <td> <p>[!UICONTROL 自签名证书]</p> </td> 
+     <td> <p>单击<b>[!UICONTROL Extract]</b>按钮以打开上载对话框。</p> <p>上载证书以将TLS与您的自签名证书一起使用。 Workfront Fusion不会保留或存储您提供的任何数据，例如文件和密码。 文件和密码仅用于提取证书。</p> </td> 
     </tr> 
    </tbody> 
    </table>
@@ -137,14 +141,14 @@ FTP模块允许您监视选定文件夹中的文件更改，将新文件上传�
  <tbody> 
   <tr> 
    <td>[!UICONTROL 连接] </td> 
-   <td> <p>有关建立与FTP帐户的连接的说明，请参阅本文中的FTP模块</a>中的<a href="#create-a-connection" class="MCXref xref">[！UICONTROL创建连接]。</p> </td> 
+   <td> <p>有关建立与FTP帐户的连接的说明，请参阅本文中的FTP模块</a>中的<a href="#create-a-connection" class="MCXref xref">[!UICONTROL 创建连接]。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 文件夹]</p> </td> 
    <td> <p>选择要监视的文件夹。</p> <p><b>注意：</b>每个方案只允许一个文件夹。 子文件夹将被忽略。</p> <p><b>提示：</b>若要监视多个文件夹，请为每个文件夹创建单独的方案。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL返回的最大文件数] </td> 
+   <td>[!UICONTROL 返回的最大文件数] </td> 
    <td> <p>设置您希望模块在一个周期内使用的最大结果数。 如果该值设置得过高，则可能会中断FTP服务器端的连接。 Workfront Fusion对此没有任何影响。 我们建议您设置较低的值，并为最大循环数定义较高的值，或者更频繁地运行方案。</p> </td> 
   </tr> 
  </tbody> 
@@ -171,16 +175,16 @@ FTP模块允许您监视选定文件夹中的文件更改，将新文件上传�
    <tbody>
          <tr>
             <td>[!UICONTROL 连接]</td>
-            <td>有关建立与FTP帐户的连接的说明，请参阅本文中的FTP模块</a>中的<a href="#Create" class="MCXref xref" >[！UICONTROL创建连接]。</td>
+            <td>有关建立与FTP帐户的连接的说明，请参阅本文中的FTP模块</a>中的<a href="#Create" class="MCXref xref" >[!UICONTROL 创建连接]。</td>
          </tr>
          <tr>
-            <td>[！UICONTROL更改权限设置]</td>
+            <td>[!UICONTROL 更改权限设置]</td>
             <td>
                <p>选择是否要更改文件或文件夹的设置。</p>
             </td>
          </tr>
          <tr>
-            <td>[！UICONTROL文件路径]</td>
+            <td>[!UICONTROL 文件路径]</td>
             <td>输入或映射文件夹或文件的文件路径。</td>
          </tr>
          <tr>
@@ -203,14 +207,14 @@ FTP模块允许您监视选定文件夹中的文件更改，将新文件上传�
    <tbody>
          <tr>
             <td>[!UICONTROL 连接]</td>
-            <td>有关建立与FTP帐户的连接的说明，请参阅本文中的FTP模块</a>中的<a href="#Create" class="MCXref xref" >[！UICONTROL创建连接]。</td>
+            <td>有关建立与FTP帐户的连接的说明，请参阅本文中的FTP模块</a>中的<a href="#Create" class="MCXref xref" >[!UICONTROL 创建连接]。</td>
          </tr>
          <tr>
-            <td>[！UICONTROL文件夹路径]</td>
+            <td>[!UICONTROL 文件夹路径]</td>
             <td>输入或映射文件路径到新文件夹。</td>
          </tr>
          <tr>
-            <td>[！UICONTROL新文件夹名称]</td>
+            <td>[!UICONTROL 新文件夹名称]</td>
             <td>
                <p>输入或映射新文件夹的名称。</p>
             </td>
@@ -228,14 +232,14 @@ FTP模块允许您监视选定文件夹中的文件更改，将新文件上传�
  <tbody> 
   <tr> 
    <td>[!UICONTROL 连接] </td> 
-            <td>有关建立与FTP帐户的连接的说明，请参阅本文中的FTP模块</a>中的<a href="#Create" class="MCXref xref" >[！UICONTROL创建连接]。</td>
+            <td>有关建立与FTP帐户的连接的说明，请参阅本文中的FTP模块</a>中的<a href="#Create" class="MCXref xref" >[!UICONTROL 创建连接]。</td>
   </tr> 
   <tr> 
    <td>[!UICONTROL 文件夹] </td> 
    <td> <p>选择要从中删除文件的FTP文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL文件名]</td> 
+   <td>[!UICONTROL 文件名]</td> 
    <td> <p> 输入文件名，包括文件扩展名。 示例： <code>[!DNL image].png</code></p> </td> 
   </tr> 
  </tbody> 
@@ -251,7 +255,7 @@ FTP模块允许您监视选定文件夹中的文件更改，将新文件上传�
    <tbody>
          <tr>
             <td>[!UICONTROL 连接]</td>
-            <td>有关建立与FTP帐户的连接的说明，请参阅本文中的FTP模块</a>中的<a href="#Create" class="MCXref xref" >[！UICONTROL创建连接]。</td>
+            <td>有关建立与FTP帐户的连接的说明，请参阅本文中的FTP模块</a>中的<a href="#Create" class="MCXref xref" >[!UICONTROL 创建连接]。</td>
          </tr>
          <tr>
             <td>[!UICONTROL 文件夹]</td>
@@ -275,7 +279,7 @@ FTP模块允许您监视选定文件夹中的文件更改，将新文件上传�
    <td> <p>有关建立与FTP帐户的连接的说明，请参阅本文中的<a href="#creating-the-ftp-connection" class="MCXref xref">创建FTP连接</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL文件路径]</td> 
+   <td>[!UICONTROL 文件路径]</td> 
    <td> <p> 输入要获取的文件路径。</p> </td> 
   </tr> 
  </tbody> 
@@ -298,7 +302,7 @@ FTP模块允许您监视选定文件夹中的文件更改，将新文件上传�
    <td> <p>选择要搜索的FTP文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Show] </td> 
+   <td>[!UICONTROL Show] </td> 
    <td> <p>选择是要检索有关文件或文件夹的信息，还是同时检索两者。</p> </td> 
   </tr> 
   <tr> 
@@ -306,7 +310,7 @@ FTP模块允许您监视选定文件夹中的文件更改，将新文件上传�
    <td> <p>输入搜索词。 如果未输入搜索词，则将检索指定文件夹中的所有文件或文件夹。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL返回的最大文件数]</td> 
+   <td>[!UICONTROL 返回的最大文件数]</td> 
    <td> <p>输入或映射您希望模块在一个周期内使用的最大结果数。</p> </td> 
   </tr> 
  </tbody> 
@@ -322,16 +326,16 @@ FTP模块允许您监视选定文件夹中的文件更改，将新文件上传�
    <tbody>
          <tr>
             <td>[!UICONTROL 连接]</td>
-            <td>有关建立与FTP帐户的连接的说明，请参阅本文中的FTP模块</a>中的<a href="#Create" class="MCXref xref" >[！UICONTROL创建连接]。</td>
+            <td>有关建立与FTP帐户的连接的说明，请参阅本文中的FTP模块</a>中的<a href="#Create" class="MCXref xref" >[!UICONTROL 创建连接]。</td>
          </tr>
          <tr>
-            <td>[！UICONTROL旧文件路径]</td>
+            <td>[!UICONTROL 旧文件路径]</td>
             <td>
                <p>输入要从中移动文件的路径。 示例：<code>/folder1/document.txt</code>。</p>
             </td>
          </tr>
          <tr>
-            <td>[！UICONTROL新建文件路径]</td>
+            <td>[!UICONTROL 新建文件路径]</td>
             <td>
                <p>输入要移动文件的路径。 示例：<code>/folder2/document.txt</code>。</p>
             </td>
@@ -361,11 +365,11 @@ FTP模块允许您监视选定文件夹中的文件更改，将新文件上传�
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL附加到现有文件]</td> 
+   <td>[!UICONTROL 附加到现有文件]</td> 
    <td> <p>如果启用了此选项，并且FTP服务器上已存在文件，则文件的内容将附加到现有文件。 如果未启用此选项，则将覆盖文件的内容。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL创建文件夹（如果不存在）] </td> 
+   <td>[!UICONTROL 创建文件夹（如果不存在）] </td> 
    <td> <p>如果启用了此选项，并且FTP服务器上不存在您输入到“文件夹”字段的文件夹，则模块将创建该文件夹</p> </td> 
   </tr> 
  </tbody> 

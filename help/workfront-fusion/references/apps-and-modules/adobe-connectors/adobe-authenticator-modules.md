@@ -5,9 +5,13 @@ author: Becky
 feature: Workfront Fusion
 exl-id: af4da661-eeee-4033-a2bb-a2196e446a3d
 TQID: https://experienceleague.adobe.com/8yRmtq6RJPuw97tGe5lreoyUd85pd1BVvIFaZjmeof4
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2:
+  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
 source-wordcount: 1515
@@ -137,15 +141,15 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
         <td>如果您选择了OAuth连接，请输入此连接所需的范围。</td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL技术帐户ID]</td>
+        <td role="rowheader">[!UICONTROL 技术帐户ID]</td>
         <td>如果您选择了JWT连接，请输入您的[!DNL Adobe]技术帐户ID。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL组织ID]</td>
+        <td role="rowheader">[!UICONTROL 组织ID]</td>
         <td>如果您选择了JWT连接，请输入您的[!DNL Adobe]组织ID。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL Meta Scopes]</td>
+        <td role="rowheader">[!UICONTROL Meta Scopes]</td>
         <td>如果已选择JWT连接，请输入此连接所需的元范围。 </td>
       </tr>
       <tr>
@@ -173,7 +177,7 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL基本URL]</td>
+        <td role="rowheader">[!UICONTROL 基本URL]</td>
         <td>必须添加希望此验证器允许的基本URL。 在场景的后面部分使用进行自定义API调用模块时，您将添加选定URL的相对路径。 通过在此处输入URL，您可以控制发出自定义API调用模块可以连接到的内容，从而提高安全性。<p>对于要添加到验证器的每个基本URL，单击<b>添加项</b>并输入基本URL。</td>
       </tr>
       <tr>
@@ -207,7 +211,7 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[！UICONTROL基本URL]</p>
+        <p>[!UICONTROL 基本URL]</p>
       </td>
       <td>
         <p>输入要连接的API点的基本URL。</p>
@@ -241,7 +245,7 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL主体类型]</td>
+      <td role="rowheader">[!UICONTROL 主体类型]</td>
    <td> 选择此API请求的主体类型：
    <ul>
    <li>原始</li>
@@ -251,7 +255,7 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
       </td>
       </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL输出类型]  </td>
+      <td role="rowheader">[!UICONTROL 输出类型]  </td>
       <td>
         <p>选择您希望模块输出的数据类型。 如果不选择类型，模块将自动选择类型。</p>
       </td>
@@ -273,7 +277,7 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[！UICONTROL基本URL]</p>
+        <p>[!UICONTROL 基本URL]</p>
       </td>
       <td>
         <p>输入要连接的API点的基本URL。</p>
@@ -330,7 +334,7 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[！UICONTROL基本URL]</p>
+        <p>[!UICONTROL 基本URL]</p>
       </td>
       <td>
         <p>输入要连接的API点的基本URL。</p>
@@ -364,7 +368,7 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL主体类型]</td>
+      <td role="rowheader">[!UICONTROL 主体类型]</td>
    <td> 选择此API请求的主体类型：
    <ul>
    <li>原始</li>
@@ -374,25 +378,25 @@ Adobe Authenticator连接可连接到Adobe Developer Console上的单个项目�
       </td>
       </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL Repeat Until]  </td>
+      <td role="rowheader">[!UICONTROL Repeat Until]  </td>
       <td>
         <p>配置条件过滤器，以确定何时应停止轮询。 您可以使用点表示法（如<code>body.status</code>、<code>body.data.state</code>或<code>headers.status</code>）引用响应数据。 在每次执行后评估该条件，并且轮询将持续进行，直到条件的评估为<code>true</code>。 支持的运算符包括： <code>Equal to</code>、<code>Not equal to</code>、<code>Exists</code>、 <code>Does not exist</code></p><p>例如，您可以设置<code>body.status not equal completed</code>以持续轮询，直到API响应指示该过程完成。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL重复延迟]  </td>
+      <td role="rowheader">[!UICONTROL 重复延迟]  </td>
       <td>
         <p>输入或映射执行之间的延迟（以秒为单位）。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL重复限制]  </td>
+      <td role="rowheader">[!UICONTROL 重复限制]  </td>
       <td>
         <p>输入或映射您希望API调用执行的最大次数。</p>
       </td>
     </tr>
     <tr>
-      <td role="rowheader">[！UICONTROL输出类型]  </td>
+      <td role="rowheader">[!UICONTROL 输出类型]  </td>
       <td>
         <p>选择您希望模块输出的数据类型。 如果不选择类型，模块将自动选择类型。</p>
       </td>
