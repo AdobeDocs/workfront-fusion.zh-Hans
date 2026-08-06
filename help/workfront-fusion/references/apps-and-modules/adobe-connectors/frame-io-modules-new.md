@@ -10,10 +10,10 @@ product_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 4588
-ht-degree: 99%
+source-wordcount: 4590
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Adobe Workfront Fusion 的 [!DNL Frame.io] 模块可用于在您的 [!DNL Frame.
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -368,7 +368,7 @@ Frame.io 连接器使用以下内容：
    <td> <p>如果从远程文件创建资产，请输入要上传文件的 URL。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 来源文件]</td> 
+   <td>[!UICONTROL 源文件]</td> 
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称。</p> </td> 
   </tr> 
   <!--

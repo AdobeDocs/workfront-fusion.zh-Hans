@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: e8ba11636822fc7007e3a331002194f1a3effcbc
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 2418
+source-wordcount: 2420
 ht-degree: 8%
 
 ---
@@ -43,7 +43,7 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 

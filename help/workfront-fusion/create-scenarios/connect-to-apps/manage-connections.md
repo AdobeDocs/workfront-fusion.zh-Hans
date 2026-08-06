@@ -14,10 +14,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 586
-ht-degree: 28%
+source-wordcount: 588
+ht-degree: 27%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 28%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：要连接到Workfront产品系列之外的应用程序，您必须具有Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 

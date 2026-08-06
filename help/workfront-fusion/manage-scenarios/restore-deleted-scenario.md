@@ -7,7 +7,7 @@ exl-id: e7fd0351-b840-422c-b861-82ae110c703b
 TQID: https://experienceleague.adobe.com/xVihxZH-fwPCIkryQAQEOWgeShtPTMXth4jEl5OLdbo
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 6a176c74f45b17ed9fbf80b2d87cf45873067f74
+source-git-commit: d4cfac1293b7c0523cc0e45872013238a7bdb364
 workflow-type: tm+mt
 source-wordcount: 217
 ht-degree: 42%
@@ -55,7 +55,7 @@ Workfront Fusion管理员可以恢复最近删除的场景。
 
 ## 恢复已删除的方案
 
-1. 在左侧导航中，单击团队概述。
+1. 在左侧导航中，单击组织概述。
 1. 单击窗口顶部附近的&#x200B;**回收站**&#x200B;选项卡。
 1. （可选）通过在&#x200B;**搜索**&#x200B;栏中输入搜索词、在&#x200B;**删除介于**&#x200B;字段之间选择一个日期范围或从&#x200B;**团队**&#x200B;下拉列表中选择一个特定团队，筛选已删除方案的列表。
 1. 选择要还原的一个或多个方案，然后单击屏幕底部栏中的&#x200B;**还原**。

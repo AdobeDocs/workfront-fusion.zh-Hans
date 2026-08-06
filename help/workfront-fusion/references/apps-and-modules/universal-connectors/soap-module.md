@@ -11,10 +11,10 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 647
-ht-degree: 27%
+source-wordcount: 649
+ht-degree: 25%
 
 ---
 
@@ -51,7 +51,7 @@ SOAP连接器仅包含一个模块：执行SOAP操作
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 

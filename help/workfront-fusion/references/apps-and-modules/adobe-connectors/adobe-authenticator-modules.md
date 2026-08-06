@@ -12,10 +12,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 1513
-ht-degree: 34%
+source-wordcount: 1515
+ht-degree: 33%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe Authenticator模块允许您通过单个连接连接到任何Adobe API。 
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -71,10 +71,10 @@ Adobe Authenticator模块允许您通过单个连接连接到任何Adobe API。 
 * 您必须具有Adobe Developer Console的访问权限。
 * 您在Adobe Developer Console上必须有一个项目，该项目包含您希望模块连接到的API。 您可以：
 
-   * 使用API创建新项目。
+  * 使用API创建新项目。
 
-     或
-   * 将API添加到现有项目。
+    或
+  * 将API添加到现有项目。
 
   有关在Adobe Developer Console上创建API或将API添加到项目的信息，请参阅Adobe文档中的[创建项目](https://developer.adobe.com/dep/guides/dev-console/create-project/)。
 

@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: ce3fb5604ac4ed85af1bcc51143732499dfb0404
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 7285
-ht-degree: 12%
+source-wordcount: 7501
+ht-degree: 11%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 12%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -1170,7 +1170,7 @@ Adobe Photoshop连接器使用以下对象：
 >[!NOTE]
 >
 >此模块已弃用，在2026年7月30日后将不再可用。
->将此模块更新为[执行Photoshop操作、脚本和转换](#execute-photoshop-actions-scripts-and-transformations)模块。
+>将此模块更新到[执行Photoshop操作、脚本和转换](#execute-photoshop-actions-scripts-and-transformations)模块。
 
 此操作模块可编辑Photoshop文件中的文本图层。 可以在同一文件中为多个图层输入单独的编辑详细信息。
 
@@ -1247,7 +1247,7 @@ Adobe Photoshop连接器使用以下对象：
 >[!NOTE]
 >
 >此模块已弃用，在2026年7月30日后将不再可用。
->将此模块更新为[执行Photoshop操作、脚本和转换](#execute-photoshop-actions-scripts-and-transformations)模块。
+>将此模块更新到[执行Photoshop操作、脚本和转换](#execute-photoshop-actions-scripts-and-transformations)模块。
 
 此操作模块可编辑Photoshop文件上的文本层。
 
@@ -1333,7 +1333,7 @@ Adobe Photoshop连接器使用以下对象：
 >[!NOTE]
 >
 >此模块已弃用，在2026年7月30日后将不再可用。
->将此模块更新为[执行Photoshop操作、脚本和转换](#execute-photoshop-actions-scripts-and-transformations)模块。
+>将此模块更新到[执行Photoshop操作、脚本和转换](#execute-photoshop-actions-scripts-and-transformations)模块。
 
 此操作模块使用JSON命令执行Photoshop操作。
 
@@ -1475,7 +1475,7 @@ Adobe Photoshop连接器使用以下对象：
 >[!NOTE]
 >
 >此模块已弃用，在2026年7月30日后将不再可用。
->将此模块更新为[执行Photoshop操作、脚本和转换](#execute-photoshop-actions-scripts-and-transformations)模块。
+>将此模块更新到[执行Photoshop操作、脚本和转换](#execute-photoshop-actions-scripts-and-transformations)模块。
 
 此操作模块对所选图像执行Photoshop操作。
 
@@ -1567,7 +1567,7 @@ Adobe Photoshop连接器使用以下对象：
 >[!NOTE]
 >
 >此模块已弃用，在2026年7月30日后将不再可用。
->将此模块更新为[执行Photoshop操作、脚本和转换](#execute-photoshop-actions-scripts-and-transformations)模块。
+>将此模块更新到[执行Photoshop操作、脚本和转换](#execute-photoshop-actions-scripts-and-transformations)模块。
 
 此操作模块对所选图像执行产品裁切。
 

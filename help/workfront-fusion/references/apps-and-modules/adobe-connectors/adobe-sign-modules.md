@@ -12,9 +12,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
 workflow-type: tm+mt
-source-wordcount: 6796
+source-wordcount: 6798
 ht-degree: 11%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 11%
   <tr> 
    <td role="rowheader">Adobe Workfront Fusion 许可证</td> 
    <td>
-   <p>基于操作：不需要 Workfront Fusion 许可证</p>
+   <p>基于操作：适用于拥有基于操作的许可证的组织</p>
    <p>基于连接器（旧版）：Workfront Fusion for Work Automation and Integration </p>
    </td> 
   </tr> 
@@ -131,7 +131,7 @@ Adobe Acrobat Sign连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 查找文本]</td> 
-   <td> <p>输入要搜索的搜索词。 模块会返回包含这些术语作为字段值的记录。</p> <p>有关在[!DNL Adobe Acrobat Sign]中搜索字段的更多信息，请参阅<a href="https://helpx.adobe.com/cn/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign搜索中的“文本搜索的工作原理” — 其工作方式</a>。</p> </td> 
+   <td> <p>输入要搜索的搜索词。 模块会返回包含这些术语作为字段值的记录。</p> <p>有关在[!DNL Adobe Acrobat Sign]中搜索字段的更多信息，请参阅<a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">Adobe Sign搜索中的“文本搜索的工作原理” — 其工作方式</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 返回协议的最大数量]</td> 
@@ -980,7 +980,7 @@ Adobe Acrobat Sign连接器使用以下对象：
     <ul> 
      <li> <p><b>[!UICONTROL 查找文本]</b> </p> <p>输入要在协议元数据中查找的文本。 每个单词都被视为单独的文本项。 </p> </li> 
      <li> <p><b>[!UICONTROL 在]</b>中查找文本 </p> <p>选择要在其中查找文本的元数据字段。 如果未选择任何内容，则模块将搜索所有元数据。</p> </li> 
-    </ul> <p>模块会返回包含任何选定字段中所输入文本的任何协议。 示例：输入“Spring campaign”并选择“Title”和“Note”选项会返回在“Title”或“Note”中带有“Spring”或“Campaign”字样的任何协议。</p> <p>有关在[!DNL Adobe Acrobat Sign]中搜索字段的更多信息，请参阅<a href="https://helpx.adobe.com/cn/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign]搜索中的“文本搜索的工作方式” — 其工作方式</a>。</p> </td> 
+    </ul> <p>模块会返回包含任何选定字段中所输入文本的任何协议。 示例：输入“Spring campaign”并选择“Title”和“Note”选项会返回在“Title”或“Note”中带有“Spring”或“Campaign”字样的任何协议。</p> <p>有关在[!DNL Adobe Acrobat Sign]中搜索字段的更多信息，请参阅<a href="https://helpx.adobe.com/sign/using/adobesign-search-users-agreements.html#HowSearchWorks">[!DNL Adobe Sign]搜索中的“文本搜索的工作方式” — 其工作方式</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 创建日期]</td> 
