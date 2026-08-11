@@ -3,7 +3,7 @@ user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
 nudge: true
-source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
+source-git-commit: 79ead2c1fd03403e8e18ecfd7a346be3b1ff890f
 workflow-type: tm+mt
 source-wordcount: '2521'
 ht-degree: 52%
@@ -283,7 +283,7 @@ ht-degree: 52%
   * [查看和管理链接方案关系](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
   * [查看运行中场景的数据流](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [查看 Webhook 队列](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront Fusion中的AI助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * Workfront Fusion中的{hide-from-toc}[AI助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [运行场景评分专家](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [删除场景元素](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [从方案区域管理方案](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -467,7 +467,7 @@ ht-degree: 52%
       * [Markdown 模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
       * [数学模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
       * [MIME 模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
-      * [MCP代理（模型上下文协议）模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+      * {hide-from-toc}[MCP代理（模型上下文协议）模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
       * [文本解析器模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
       * [工具模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
       * [XML 模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/xml-modules.md)
