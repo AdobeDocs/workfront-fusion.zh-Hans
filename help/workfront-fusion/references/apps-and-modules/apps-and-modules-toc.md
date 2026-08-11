@@ -7,13 +7,11 @@ feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: ca7f1012-97c8-49e0-aeb0-b63677878ff4
 TQID: https://experienceleague.adobe.com/fz3CilAsruX0-J7Sm7Z21e7zGRBKdoqxREbC8I9YkNo
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 4d018e92863fa3461ea73defe6b83991a7e2083d
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 517
 ht-degree: 93%
 
 ---
@@ -153,7 +151,7 @@ Fusion 为众多第三方应用程序提供连接器。
 * [Lexical 模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/lexical-modules.md)
 * [Markdown 模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/markdown-modules.md)
 * [数学模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/math-module.md)
-* [MCP（模型上下文协议）模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
+* [MCP代理（模型上下文协议）模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)
 * [MIME 模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/mime.md)
 * [文本解析器模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/text-parser.md)
 * [工具模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/tools-modules.md)
