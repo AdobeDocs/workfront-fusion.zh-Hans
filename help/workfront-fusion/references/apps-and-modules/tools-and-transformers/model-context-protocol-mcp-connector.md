@@ -8,16 +8,14 @@ exl-id: 748055ad-d305-4513-9a5c-9c970b74a96e
 TQID: https://experienceleague.adobe.com/KC5YvcNC-EQG4bnPA5pOVbGWZHdqa0XKYHKPMLwY-24
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 4d8599c771c76ee9b6713fd7c8e1b2907fe9599f
 workflow-type: tm+mt
-source-wordcount: 488
+source-wordcount: 490
 ht-degree: 18%
 
 ---
 
 # MCP代理模块
-
-<!--SET UP REDIRECTS-->
 
 模型上下文协议(Model Context Protocol，MCP)是一种将AI语言模型与其他应用程序安全连接的方法。 您可以配置MCP服务器，以允许AI模型访问应用程序。 然后，您可以向AI模型发送提示，它可以从应用程序返回信息。
 
@@ -83,7 +81,7 @@ ht-degree: 18%
        <li><b>LLM</b>：选择与此键关联的大型语言模型。</li>
        <li><b>密钥</b>：输入或映射选定模型的API密钥。</li>
        <li><b>模型</b>：选择键将使用的LLM模型。</li>
-       <li><b>最大令牌数</b>：输入或映射LLM在其响应中可以生成的最大令牌数。<p>一个令牌通常等于四个字符，或者一个英文单词的0.75。 “Hello world”将等于两个令牌，“Authentication”将等于一到两个令牌。</li>
+       <li><b>最大令牌数量</b>：输入或映射LLM在其响应中可以生成的最大令牌数量。<p>一个令牌通常等于四个字符，或者一个英文单词的0.75。 “Hello world”将等于两个令牌，“Authentication”将等于一到两个令牌。</li>
       </ul>
     </td> 
   </tr> 

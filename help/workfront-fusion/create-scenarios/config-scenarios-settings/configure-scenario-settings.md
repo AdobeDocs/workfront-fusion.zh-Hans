@@ -8,9 +8,9 @@ exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
 TQID: https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 7c16e9411b334d32e63b88b18f538f69e494b360
 workflow-type: tm+mt
-source-wordcount: 1306
+source-wordcount: 1366
 ht-degree: 7%
 
 ---
@@ -182,6 +182,12 @@ Workfront >观察记录模块中的最大周期数设置为`10`。
 >[!NOTE]
 >
 >如果方案以即时触发器开始，则忽略设置，并在发生第一个错误后立即停用方案。
+
+### 警告时通知/出错时通知/方案禁用时通知
+
+要为通知类型设置方案级别覆盖，请选中或取消选中通知类型旁边的复选框。
+
+有关通知设置（包括方案级别的覆盖）的信息，请参阅[设置通知选项](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)。
 
 ### 工作线程池
 
