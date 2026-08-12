@@ -7,10 +7,10 @@ exl-id: 47ccecf0-751c-4026-96a9-329c33cb6801
 TQID: https://experienceleague.adobe.com/0NhWgeBcqYtVJ7XKqZ30O1lg3fKSs7YijEhhYBQ-jfg
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 93887116991b505676f5c51762b47829dae9bb7a
 workflow-type: tm+mt
-source-wordcount: 629
-ht-degree: 18%
+source-wordcount: 659
+ht-degree: 16%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 18%
 
 | 操作 | 详细信息 |
 | ---------- | ---------- |
-| 进行保存 <p>![保存图标](assets/save-icon.png)</p> | 保存场景后，三个点菜单下将显示一个新版本，以防您未来需要访问它。 之前保存的场景版本只能保留 60 天。 |
+| 进行保存 <p>![保存图标](assets/save-icon.png)</p> | <p>保存场景后，三个点菜单下将显示一个新版本，以防您未来需要访问它。 之前保存的方案版本将在创建下一个方案版本后的60天内可用。 </p><p>为了保留超过60天的方案版本历史记录以供审核之用，我们建议将方案的蓝图保存并存档到其他位置。</p> |
 | 方案设置 <p>![方案设置图标](assets/scenario-settings-icon.png)</p> | 方案设置面板包含方案的高级设置。 有关可用设置的详细信息，请参阅[配置方案设置](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)。 |
 | 注释  <p>![注释图标](assets/notes-icon.png)</p> | 记录方案。 其他用户可以在场景中查看这些注释。 |
 | 自动对齐 <p>![自动对齐图标](assets/auto-align-icon.png)</p> | 自动对齐场景中的模块。 |
