@@ -5,20 +5,14 @@ author: Becky
 feature: Workfront Fusion, Workfront Integrations and Apps
 exl-id: 93c27cf6-38b0-466c-87bb-926c4817eae7
 TQID: https://experienceleague.adobe.com/CjzJP-U4P5bVop8ktivUH3pPOjVVgamqqc--cUsLm8U
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-subfeature_v2:
-  - id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 86ecf8da00cbae38b4ae48f616ac37e759f84494
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+subfeature_v2: id: ec8965fc-2f75-47f6-a9bb-730e8c2725f3
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 997d5af3ff9fe9354976552bbd30edf530da3beb
 workflow-type: tm+mt
-source-wordcount: 7518
-ht-degree: 95%
+source-wordcount: 7626
+ht-degree: 94%
 
 ---
 
@@ -217,13 +211,11 @@ Workfront 连接器使用 OAuth 2.0 与 Workfront 建立连接。
 
 ### 触发器
 
-<!--
-* [Watch Events](#watch-events) 
-* [Watch Record](#watch-record) 
-* [Watch Field](#watch-field)
--->
+* [监控事件](#watch-events)
+* [观察字段](#watch-field)
+* [观看记录](#watch-record)
 
-+++ **[!UICONTROL 监控事件]**
+#### [!UICONTROL 监控事件]
 
 当在 Workfront 中创建、更新或删除特定类型的对象时，此触发器模块会实时执行一个场景。
 
@@ -294,9 +286,7 @@ Webhook 创建完成后，您可以查看事件发送到的端点地址。
 
 有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
-+++
-
-+++ **[!UICONTROL 监控字段]**
+#### [!UICONTROL 监控字段]
 
 当更新指定字段时，此触发器模块会执行场景。 该模块会返回所指定字段的旧值和新值。 您可以在场景后续的模块中映射这些信息。
 
@@ -331,9 +321,7 @@ Webhook 创建完成后，您可以查看事件发送到的端点地址。
 
 有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
-+++
-
-+++ **[!UICONTROL 监控记录]**
+#### [!UICONTROL 监控记录]
 
 当新增、更新某一类型的对象或同时发生这两种情况时，此触发器模块会执行场景。 该模块会返回与记录关联的所有标准字段，以及连接可访问的任何自定义字段及其值。 您可以在场景后续的模块中映射这些信息。
 
@@ -384,25 +372,21 @@ Webhook 创建完成后，您可以查看事件发送到的端点地址。
 
 有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
-+++
-
-
 ### 操作
 
-<!--
-* [Convert object](#convert-object) 
-* [Create a record (attaching custom forms)](#create-a-record-attaching-custom-forms) 
-* [Create a record](#create-a-record) 
-* [Custom API Call](#custom-api-call) 
-* [Delete Record](#delete-record) 
-* [Download Document](#download-document) 
-* [Misc Action](#misc-action) 
-* [Read a Record](#read-a-record) 
-* [Update Record](#update-record) 
-* [Upload Document](#upload-document)
--->
+* [转换对象](#convert-object)
+* [创建记录](#create-a-record)
+* [自定义API调用](#custom-api-call)
+* [删除记录](#delete-record)
+* [下载文档](#download-document)
+* [获取预签名文件URL](#get-a-presigned-file-url)
+* [其他操作](#misc-action)
+* [读取记录](#read-a-record)
+* [更新事件有效负载版本](#update-events-payload-version)
+* [更新记录](#update-a-record)
+* [上传文档](#upload-document)
 
-+++ **[!UICONTROL 转化对象]**
+#### [!UICONTROL 转化对象]
 
 此操作模块可执行以下任一转化：
 
@@ -457,9 +441,7 @@ Webhook 创建完成后，您可以查看事件发送到的端点地址。
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL 创建记录]** 
+#### [!UICONTROL 创建记录]
 
 此操作模块会在 Workfront 中创建一个对象（例如项目、任务或问题），并允许您为新对象添加自定义表单。 该模块允许您选择对象的哪些字段可在模块中使用。
 
@@ -525,8 +507,6 @@ Webhook 创建完成后，您可以查看事件发送到的端点地址。
 >
 >   有关操作说明，请参阅 Adobe 文档中的[管理多个用户 | 批量上传 CSV](https://helpx.adobe.com/cn/enterprise/using/bulk-upload-users.html)。
 
-+++
-
 <!--
 
 +++ **[!UICONTROL Create Record (Legacy)]**
@@ -580,7 +560,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 -->
 
-+++ **[!UICONTROL 自定义 API 调用]**
+#### [!UICONTROL 自定义 API 调用]
 
 此操作模块允许您向 Workfront API 发起自定义的已经过身份认证的调用。 通过这种方式，您可以构建其他 Workfront 模块无法实现的数据流自动化。
 
@@ -637,9 +617,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
-+++
-
-+++ **[!UICONTROL 删除记录]**
+#### [!UICONTROL 删除记录]
 
 此操作模块会在 Workfront 中删除对象，例如项目、任务或问题。
 
@@ -686,9 +664,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >1. 在“删除记录”模块中添加错误处理规则，以忽略因 40 秒超时导致的错误。
 
 
-+++
-
-+++ **[!UICONTROL 下载文档]**
+#### [!UICONTROL 下载文档]
 
 此操作模块会从 Workfront 下载文档。
 
@@ -715,9 +691,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
-+++
-
-+++ **获取预签名文件 URL**
+#### 获取预签名文件URL
 
 此操作模块获取预签名的文件 URL，以供其他 API 使用。
 
@@ -740,9 +714,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL 其他操作]**
+#### [!UICONTROL 其他操作]
 
 此操作模块允许您对 API 执行操作。
 
@@ -789,13 +761,13 @@ See a list of the Workfront object types for which you can use this module in [W
 
 有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
 
-#### 其他操作选项
+##### 其他操作选项
 
 * [任务](#task)
 * [问题](#issue)
 * [项目](#project)
 
-##### 任务
+###### 任务
 
 <table style="table-layout:auto">
  <col> 
@@ -843,7 +815,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-##### 问题
+###### 问题
 
 <table style="table-layout:auto">
  <col> 
@@ -890,7 +862,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 
 
-##### 项目
+###### 项目
 
 <table style="table-layout:auto">
  <col> 
@@ -943,9 +915,7 @@ See a list of the Workfront object types for which you can use this module in [W
 
 
 
-+++
-
-+++ **[!UICONTROL 读取记录]**
+#### [!UICONTROL 读取记录]
 
 此操作模块从单个记录中检索数据。
 
@@ -995,8 +965,6 @@ See a list of the Workfront object types for which you can use this module in [W
 </table>
 
 有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
-
-+++
 
 <!--
 
@@ -1052,17 +1020,15 @@ When you are configuring this module, the following fields display.
 
 See a list of the Workfront object types for which you can use this module in [Workfront object types available for each Workfront module](#workfront-object-types-available-for-each-workfront-module).
 
-+++
-
 -->
 
-+++ **更新事件负载版本**
+#### 更新事件有效负载版本
 
 Workfront 最近发布了新版事件订阅服务。 该新版并未更改 Workfront API，而是更新了事件订阅功能。 此操作模块用于更新该场景中使用的事件负载版本。
 
 有关新版事件订阅的更多信息，请参阅 Workfront 文档中[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
 
-如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=zh-Hans)。
+如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)。
 
 <table style="table-layout:auto">
  <col> 
@@ -1080,9 +1046,7 @@ Workfront 最近发布了新版事件订阅服务。 该新版并未更改 Workf
 </table>
 
 
-+++
-
-+++ **更新记录**
+#### 更新记录
 
 
 此操作模块用于更新对象，例如项目、任务或问题。 该模块允许您选择对象的哪些字段可在模块中使用。
@@ -1128,8 +1092,6 @@ Workfront 最近发布了新版事件订阅服务。 该新版并未更改 Workf
 >
 > 在为自定义字段或[!UICONTROL 注释]对象（评论或回复）输入文本时，您可以在[!UICONTROL 注释文本]字段中使用 HTML 标记来创建富文本，例如粗体或斜体。
 
-
-+++
 
 <!--
 
@@ -1180,11 +1142,9 @@ See a list of the Workfront object types for which you can use this module in [W
 >* When entering the ID of an object, you can begin typing the name of the object, then select it from the list. The module then enters the appropriate ID into the field.
 >* When entering the text for a custom field or a [!UICONTROL Note] object (Comment or reply), you can use HTML tags in the [!UICONTROL Note Text] field to create rich text, such as bold or italic text.
 
-+++
-
 -->
 
-+++ **[!UICONTROL 上传文档]**
+#### [!UICONTROL 上传文档]
 
 此操作模块会将文档上传到某个 Workfront 对象，例如项目、任务或问题。 该模块以分块方式上传文档，从而让 Workfront 更顺畅地处理上传过程。
 
@@ -1224,8 +1184,6 @@ See a list of the Workfront object types for which you can use this module in [W
 </table>
 
 有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
-
-+++
 
 <!--
 
@@ -1274,12 +1232,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ### 搜索
 
-<!--
-* [Read Related Records](#read-related-records) 
-* [Search](#search)
--->
+* [读取相关记录](#read-related-records)
+* [搜索](#search)
+* [搜索（旧版）](#search-legacy)
 
-+++ **[!UICONTROL 读取关联记录]**
+#### [!UICONTROL 读取关联记录]
 
 此搜索模块会从指定的父对象中读取与您设定的搜索查询匹配的记录。
 
@@ -1314,9 +1271,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL 搜索]**
+#### [!UICONTROL 搜索]
 
 此搜索模块会在 Workfront 中的对象内查找与您指定的搜索查询匹配的记录。
 
@@ -1371,14 +1326,12 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++ **[!UICONTROL 搜索（旧版）]**
+#### [!UICONTROL 搜索（旧版）]
 
 >[!IMPORTANT]
 >
->此模块已替换为搜索记录模块。我们建议在新场景中使用该模块。
->使用此模块的现有方案将继续按预期运行。此模块将于2025年5月从模块选择器中移除。
+>此模块已由“搜索记录”模块取代。 我们建议在新场景中使用该模块。
+>使用此模块的现有场景仍将按预期运行。 该模块将于 2025 年 5 月从模块选择器中移除。
 
 此搜索模块会在 Workfront 中的对象内查找与您指定的搜索查询匹配的记录。
 
@@ -1428,8 +1381,6 @@ See a list of the Workfront object types for which you can use this module in [W
   </tr> 
  </tbody> 
 </table>
-
-+++
 
 <!--
 not visible Jan 6, 2025
@@ -1488,13 +1439,11 @@ See a list of the Workfront object types for which you can use this module in [W
 
 ## 每个 Workfront 模块可用的 Workfront 对象类型
 
-<!--
-[Object types available for each Workfront trigger module](#object-types-available-for-each-workfront-trigger-module)
-* [Object types available for each Workfront action module](#object-types-available-for-each-workfront-action-module) 
-* [Object types available for each Workfront search module](#object-types-available-for-each-workfront-search-module)
--->
+* [每个Workfront trigger模块可用的对象类型](#object-types-available-for-each-workfront-trigger-module)
+* [每个Workfront操作模块可用的对象类型](#object-types-available-for-each-workfront-action-module)
+* [每个Workfront搜索模块可用的对象类型](#object-types-available-for-each-workfront-search-module)
 
-+++**各 Workfront 触发器模块支持的对象类型**
+### 每个Workfront trigger模块可用的对象类型
 
 <table style="table-layout:auto"> 
  <col> 
@@ -1758,9 +1707,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**各个 Workfront 操作模块支持的对象类型**
+### 每个Workfront操作模块可用的对象类型
 
 >[!NOTE]
 >
@@ -2181,9 +2128,7 @@ See a list of the Workfront object types for which you can use this module in [W
  </tbody> 
 </table>
 
-+++
-
-+++**各个 Workfront 搜索模块支持的对象类型**
+### 每个Workfront搜索模块可用的对象类型
 
 <table style="table-layout:auto"> 
  <col> 
@@ -2382,8 +2327,6 @@ See a list of the Workfront object types for which you can use this module in [W
 
 我们建议您再次确认，以确保其行为符合您的预期。
 
-+++
-
 ## Workfront > [!UICONTROL 监控事件]模块中的事件订阅筛选条件
 
 事件订阅中的过滤器允许您确保仅在满足某些参数时运行方案。
@@ -2401,7 +2344,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   有关新版事件订阅的更多信息，请参阅 Workfront 文档中[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
 >
->   如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=zh-Hans)。
+>   如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)。
 
 Workfront 的[!UICONTROL 监控事件]模块会根据一个在 Workfront API 中创建事件订阅的 Webhook 来触发场景。 事件订阅是一组数据，用于确定哪些事件会发送至该 Webhook。 例如，如果您设置一个监控问题的[!UICONTROL 监控事件]模块，则该事件订阅只会将与问题相关的事件发送过来。
 
