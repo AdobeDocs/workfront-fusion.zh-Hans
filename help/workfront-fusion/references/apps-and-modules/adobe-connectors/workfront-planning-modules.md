@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: f0e185778e01b71a91837531a082e88485e97ca2
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 6075
+source-wordcount: 6097
 ht-degree: 34%
 
 ---
@@ -206,7 +206,8 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
 
 >[!IMPORTANT]
 >
->此部分中的模块属于Workfront规划V2连接器。有关Workfront规划V1连接器中的模块，请参阅[[!DNL Adobe Workfront Planning] 版本1模块及其字段](#adobe-workfront-planning-version-1-modules-and-their-fields)。
+>此部分中的模块属于Workfront规划V2连接器。
+>有关Workfront规划V1连接器中的模块，请参阅[[!DNL Adobe Workfront Planning] 版本1模块及其字段](#adobe-workfront-planning-version-1-modules-and-their-fields)。
 
 配置Workfront Planning模块时，Workfront Fusion会显示以下列出的字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 Workfront 字段。 模块中的加粗标题表示必填字段。
 
@@ -1467,6 +1468,11 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
 >
 >有关编辑Webhook的详细信息，请参阅[编辑Webhook](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)。
 
+>[!NOTE]
+>
+>2026年8月23日之后，Fusion将默认对所有Workfront规划>观看活动模块（包括现有模块）启用基于authToken的安全性。
+
+
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1531,7 +1537,8 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
 
 >[!IMPORTANT]
 >
->此部分中的模块属于Workfront规划V1连接器。有关Workfront规划V2连接器中的模块，请参阅[[!DNL Adobe Workfront Planning] 版本2模块及其字段](#adobe-workfront-planning-version-2-modules-and-their-fields)。
+>此部分中的模块属于Workfront规划V1连接器。
+>有关Workfront规划V2连接器中的模块，请参阅[[!DNL Adobe Workfront Planning] 版本2模块及其字段](#adobe-workfront-planning-version-2-modules-and-their-fields)。
 
 配置Workfront Planning模块时，Workfront Fusion会显示以下列出的字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 Workfront 字段。 模块中的加粗标题表示必填字段。
 

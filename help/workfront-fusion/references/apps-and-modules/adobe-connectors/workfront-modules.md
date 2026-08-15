@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 997d5af3ff9fe9354976552bbd30edf530da3beb
+source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
 workflow-type: tm+mt
-source-wordcount: 7626
-ht-degree: 94%
+source-wordcount: 7689
+ht-degree: 93%
 
 ---
 
@@ -277,6 +277,13 @@ Workfront 连接器使用 OAuth 2.0 与 Workfront 建立连接。
       <td>
        <p>选择是否要让场景监控 [!UICONTROL New Records Only]、[!UICONTROL Updated Records Only]、[!UICONTROL New and Updated Records] 或 [!DNL Deleted Records Only]。</p>
        <p><b>注意</b>：如果您选择 [!UICONTROL New and Updated Records]，在创建 Webhook 时会生成两个事件订阅（使用相同的 Webhook 地址）。</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 启用安全挂钩]</td> 
+      <td>
+       <p>选择是否为此webhook启用基于authToken的安全性。</p><p>
+       <b>注意</b>： 2026年8月23日之后，Fusion将默认对所有Workfront &gt;关注事件模块（包括现有模块）启用基于authToken的安全性。 如果特定的Webhook中断或出于兼容性原因需要禁用此功能，则可以在2026年8月23日之前关闭“启用安全挂钩”选项。</p>
        </td> 
      </tr> 
     </tbody> 
