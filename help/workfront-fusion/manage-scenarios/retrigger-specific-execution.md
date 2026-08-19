@@ -3,12 +3,11 @@ title: 重新触发特定场景执行
 description: 您可以重新触发特定场景执行，以使用更新的场景Blueprint处理数据，或查看其数据流。
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: a078120f0c16d7c2f2084c95a6129844489cfdb6
 workflow-type: tm+mt
-source-wordcount: 523
-ht-degree: 18%
+source-wordcount: 561
+ht-degree: 17%
 
 ---
 
@@ -58,6 +57,10 @@ ht-degree: 18%
 +++
 
 ## 重新触发执行
+
+>[!NOTE]
+>
+>执行历史记录中最多只保留256 KB的数据。 因此，无法检索输入数据超过256 KB的执行。 任何重新触发此类执行的尝试均失败，并出现错误消息。
 
 您可以从方案的图表、方案的历史记录区域或特定方案执行的页面重新触发方案执行。
 
