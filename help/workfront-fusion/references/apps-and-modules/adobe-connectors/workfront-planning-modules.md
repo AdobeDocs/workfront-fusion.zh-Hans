@@ -11,10 +11,10 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: b7d7ae3c0a4ce47428ca993fd173f21994a58653
+source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
 workflow-type: tm+mt
-source-wordcount: 6097
-ht-degree: 34%
+source-wordcount: 6620
+ht-degree: 32%
 
 ---
 
@@ -642,17 +642,61 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
 
 ### 记录(V2)
 
-* [创建记录](#create-a-record-v2)
+* [创建记录(V2)](#create-a-record-v2)
+* [创建记录（旧版）](#create-a-record-legacy)
 * [删除记录](#delete-a-record-v2)
 * [获取记录](#get-a-record-v2)
 * [按记录类型获取记录](#get-records-by-record-type-v2)
 * [移动记录](#move-records-v2)
-* [搜索记录](#search-records-v2)
-* [更新记录](#update-a-record-v2)
+* [搜索记录(V2)](#search-records-v2)
+* [搜索记录（旧版）](#search-records-legacy)
+* [更新记录(V2)](#update-a-record-v2)
+* [更新记录（旧版）](#update-a-record-legacy)
 
 #### 创建记录(V2)
 
+此操作在Workfront Planning中创建单个记录。 此版本的模块允许您选择要提供值的字段，这会在创建记录时创建更小、更高效的有效负载。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Workfront Planning] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >创建与 [!DNL Adobe Workfront Planning]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>选择要创建记录的工作区。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 记录类型]</p>
+      </td>
+      <td>选择要创建的记录类型。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>选择要映射的字段</p>
+      </td>
+      <td>选择创建模块时要为其提供值的字段。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>其他字段</p>
+      </td>
+      <td>输入希望新记录具有的值。 这些字段基于您选择的记录类型和字段，并且对于您的Workfront Planning组织是唯一的。</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### 创建记录（旧版）
+
 此操作在Workfront Planning中创建单个记录。
+
+我们建议使用新的“创建记录”模块，该模块允许您选择要为其提供值的字段。 选择字段可在创建记录时创建更小、更有效的有效负载。
 
 <table style="table-layout:auto"> 
   <col/>
@@ -799,7 +843,48 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
 
 #### 搜索记录(V2)
 
+根据您指定的条件返回记录。此版本的模块允许您选择要提供值的字段，这会在搜索记录时创建更小、更高效的有效负载。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Workfront Planning] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >创建与 [!DNL Adobe Workfront Planning]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>选择包含要检索的记录的工作区。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 记录类型]</p>
+      </td>
+      <td>选择包含要检索的记录的记录类型。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>选择要映射的字段</p>
+      </td>
+      <td>选择您要更新其值的字段。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 其他字段]</p>
+      </td>
+      <td>对于要作为筛选依据的每个字段，输入该字段的运算符和值。 这些字段基于您选择的记录类型和字段，并且对于您的Workfront Planning组织是唯一的。</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### 搜索记录（旧版）
+
 根据您指定的条件返回记录
+
+我们建议使用新的“更新记录”模块，该模块允许您选择要为其提供值的字段。 选择字段可在更新记录时创建更小、更有效的有效负载。
 
 <table style="table-layout:auto"> 
   <col/>
@@ -832,8 +917,56 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
 
 #### 更新记录(V2)
 
+此模块更新指定的记录。 此版本的模块允许您选择要提供值的字段，这会在更新记录时创建更小、更高效的有效负载。
+
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Workfront Planning] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >创建与 [!DNL Adobe Workfront Planning]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL Workspace]</p>
+      </td>
+      <td>选择包含要更新的记录的工作区。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 记录类型ID]</p>
+      </td>
+      <td>选择要更新的记录类型。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 记录ID]</p>
+      </td>
+      <td>输入或映射要更新的记录ID。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>选择要映射的字段</p>
+      </td>
+      <td>选择您要更新其值的字段。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 其他字段]</p>
+      </td>
+      <td>输入其他字段的值。 可用字段取决于所选记录和字段。</td> 
+    </tr>
+  </tbody>
+</table>
+
+
+#### 更新记录（旧版）
+
 此模块更新指定的记录。
 
+我们建议使用新的“更新记录”模块，该模块允许您选择要为其提供值的字段。 选择字段可在更新记录时创建更小、更有效的有效负载。
 
 
 <table style="table-layout:auto"> 
@@ -870,7 +1003,6 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
   </tbody>
 </table>
-
 
 ### 字段(V2)
 
