@@ -3,12 +3,11 @@ title: 重新触发特定场景执行
 description: 您可以重新触发特定场景执行，以使用更新的场景Blueprint处理数据，或查看其数据流。
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: a078120f0c16d7c2f2084c95a6129844489cfdb6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: a7b9f754dfc987330e3a446830f37b004f7b2e4e
 workflow-type: tm+mt
-source-wordcount: 561
-ht-degree: 17%
+source-wordcount: 599
+ht-degree: 16%
 
 ---
 
@@ -27,6 +26,12 @@ ht-degree: 17%
 有关 Webhook 的更多信息，请参阅[即时触发器（Webhooks）](/help/workfront-fusion/references/modules/webhooks-reference.md)。
 
 有关链接方案的详细信息，请参阅[链接多个方案](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)。
+
+
+
+>[!NOTE]
+>
+>执行历史记录中最多只保留256 KB的数据。 因此，无法检索输入数据超过256 KB的执行。 任何重新触发此类执行的尝试均失败，并出现错误消息。
 
 ## 访问权限要求
 
