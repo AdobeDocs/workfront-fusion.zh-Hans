@@ -1,10 +1,10 @@
 ---
 name: fusion-release-notes
 description: 创建一个新的Workfront Fusion每周发行说明页面，并将其链接到发行活动概述页面和目录。 当用户想要编写、添加或草稿新的Fusion发行说明或每周发行页面，或者请求为发行记录新的Fusion功能时使用。 请勿在product-announcements/product-releases中使用Workfront (Quicksilver)发行说明 — 针对这些内容使用release-notes-formatter。
-source-git-commit: 59a8d8ee83906bc16fc627bd348accc4e588cf9b
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 1%
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 1%
 - 简单描述哪些内容发生了变化以及它为什么重要
 - 链接到的帮助文章（验证路径是否存在 — 请勿猜测）
 - 是需要用户/管理员操作还是弃用（需要`>[!IMPORTANT]`标注）
+- **是否为新的连接器启动项**（全新连接器/应用程序将可用，而不仅仅是添加到现有连接器的新模块）。 如果是，这会触发&#x200B;**步骤7** — 不要因为发行说明本身已完成，而跳过询问有关重定向的问题。
 
 ## 第2步：确定文件名和日期
 
@@ -68,7 +69,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/zh-hans/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## {Feature title}
 
@@ -97,7 +98,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   
   {Regular description paragraph(s).}
   ```
-
 - 每个功能都应以“有关详细信息，请参阅[...]”结尾 相关帮助文章的链接。 验证链接目标是否存在于存储库中。
 
 ## 步骤4：将页面添加到概览索引
@@ -112,7 +112,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - 如果这是新年的第一个版本，请在上一年的标题上方添加新的`## Fusion releases in {YYYY}`标题，并将&#x200B;*previous*&#x200B;年的部分包装在`+++ **Click to open**` / `+++`可折叠块中（如果尚未包装）。
 
 ## 步骤5：将页面添加到目录
@@ -125,7 +124,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - 如果当前年份的标题尚不存在，请在上一年标题上方添加`* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}`。
 - **不要**&#x200B;将`{hide-from-toc}`前缀添加到新条目 — 仅用于旧条目过期后退出可见导航的条目（请参阅下面的已知不一致）。
 
@@ -134,7 +132,23 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
 - 几个2026年初的目录条目错误地嵌套在`Fusion releases - 2025`标题下，即使页面本身是2026年版本。 添加新条目时，请始终仔细检查它是否落在与&#x200B;**它自己的年份**&#x200B;匹配的标题下，而不是在上一个条目所在的位置。
 - 一些较旧的页面标题/H1在年份之前省略逗号（`July 13 2026`而不是`July 13, 2026`）。 在新页面中始终使用逗号。
 
-## 步骤6：最终核对表
+## 步骤7：新连接器启动项 — 询问有关重定向的问题（请勿跳过）
+
+**只要步骤1识别出新的连接器启动项，此步骤即适用。** 很容易认为发行说明在步骤5之后“完成”并忘记这一点 — 将新的连接器功能视为不完整，直到以某种方式解决了此步骤为止。
+
+询问用户： *“是否要为新连接器文章设置重定向？”*
+
+- 如果&#x200B;**否**，请注意并继续 — 没有其他可执行的操作。
+- 如果&#x200B;**是**，请收集：
+  - **源路径**（必须以`/en`开头，无空格）
+  - **目标** — 以`/en`开头的相对路径，或完整的`https` URL（无空格）
+- 将行添加到同级`Adobe-Enterprise-Docs/redirects`存储库，在`redirects/`下，每个环境(`redirects-dev.csv`、`redirects-stage.csv`、`redirects-prod.csv`)一个文件。
+- 行规则（来自该存储库的自述文件）：
+  - 没有重复的`source`，也没有重复的`source`/`destination`对。
+  - 重定向不得导致重定向循环。
+- **该技能仅在用户确认CSV行后添加。** 在`redirects`存储库中提升PR是此技能没有执行的单独步骤 — 告知用户，在重定向开始之前，仍需要打开并合并PR（对于1:1重定向，合并后约5分钟）。
+
+## 步骤8：最终核对表
 
 - [ ]文件是在正确的路径创建的，且日期中没有前导零
 - [ ] Frontmatter使用`hidefromtoc: true`，不是虚构的`exl-id`/`TQID`
@@ -144,6 +158,7 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
 - [ ]新页面已添加为`fusion-release-activity.md`中的最新条目，位于正确的年/月下
 - [ ]新页面已添加为`TOC.md`中正确年份标题下的最新条目
 - [ ]根据需要创建的新年/月标题，前一年折叠在`fusion-release-activity.md`中
+- [ ] **如果有任何功能是新的连接器启动项：询问有关重定向的问题（步骤7），请设置或明确拒绝重定向**
 
 ## 其他资源
 
