@@ -3,11 +3,10 @@ title: Adobe Workfront MCP模块
 description: 使用Adobe Workfront MCP模块，您可以向Adobe Workfront的MCP服务器发送纯英语提示，并让AI模型执行该请求。
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
 workflow-type: tm+mt
-source-wordcount: 841
+source-wordcount: 871
 ht-degree: 17%
 
 ---
@@ -19,6 +18,8 @@ Adobe Workfront MCP连接器是Adobe Workfront自己的模型上下文协议(MCP
 例如，您可以输入提示“查找所有落后于计划的活动项目并总结其状态”，模块将返回合成答案，而不必将多个“获取”和“筛选”模块链接在一起。
 
 您可以限制允许AI执行哪些Workfront操作，以便即使无人参与场景也可以保证不会执行任何意外的破坏性操作。
+
+默认情况下，此模块使用Adobe Managed AI，后者使用`claude-sonnet-5`模型。 您可以使用提供的密钥和其他凭据将模块配置为使用其他LLM。
 
 有关Fusion场景中MCP的详细信息，请参阅[向场景添加AI提示](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)。
 
@@ -133,7 +134,7 @@ Adobe Workfront MCP连接器使用OAuth 2.0连接到Workfront。 与其他Workfr
   </tr>  </tbody> 
 </table>
 
-有关可以为只读工具和写入/删除工具字段选择的工具列表，请参阅Workfront文档中的[Adobe Workfront MCP服务器工具](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools)。
+有关可以为只读工具和写入/删除工具字段选择的工具列表，请参阅Workfront文档中的[Adobe Workfront MCP服务器工具](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools)。
 
 模块会返回以下信息，您可以在场景中的后续模块中映射这些信息：
 
