@@ -3,7 +3,8 @@ title: Adobe Workfront MCP模块
 description: 使用Adobe Workfront MCP模块，您可以向Adobe Workfront的MCP服务器发送纯英语提示，并让AI模型执行该请求。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 841
