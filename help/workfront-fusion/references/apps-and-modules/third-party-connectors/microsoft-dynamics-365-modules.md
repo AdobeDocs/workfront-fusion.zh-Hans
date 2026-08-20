@@ -12,10 +12,10 @@ feature_v2:
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 1886
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
@@ -108,7 +108,7 @@ ht-degree: 43%
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 类型]</td>
-          <td>选择您是要连接到服务帐户还是个人帐户。</td>
+          <td>选择连接服务帐户还是个人帐户。</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 客户端 ID]<p>（可选）</p></td>

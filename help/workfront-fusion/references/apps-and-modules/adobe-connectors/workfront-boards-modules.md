@@ -11,7 +11,7 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
 source-wordcount: 2906
 ht-degree: 15%
@@ -108,7 +108,7 @@ Adobe Workfront主板连接器使用以下内容：
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 类型]</td>
-          <td>选择您是要连接到服务帐户还是个人帐户。</td>
+          <td>选择连接服务帐户还是个人帐户。</td>
         </tr>
         <tr>
           <td role="rowheader">[!UICONTROL 客户端 ID]<p>（可选）</p></td>
@@ -602,7 +602,7 @@ Adobe Workfront主板连接器使用以下内容：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 正文]</td> 
-   <td> <p>以JSON嵌入Graphql的形式添加API调用的正文内容 </p> <p>示例：</p><p>此示例更新列名。 您可以将<code>boardId</code>和<code>columnId</code>作为硬编码的GUID或从以前的模块映射的GUID包含在内。<p><pre>{<br> "query"： "mutation { updateColumn(boardId： \"\"， columnId： \"\"， updateColumnInput： { name： \"\" }) { id name }}"<br>}</pre><p>注意：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
+   <td> <p>以JSON嵌入Graphql的形式添加API调用的正文内容 </p> <p>示例：</p><p>此示例更新列名。 您可以将<code>boardId</code>和<code>columnId</code>作为硬编码的GUID或从以前的模块映射的GUID包含在内。<p><pre>{<br> "query"： "mutation { updateColumn(boardId： \"\"， columnId： \"\"， updateColumnInput： { name： \"\" }) { id name }&#x200B;}"<br>}</pre><p>注意：  <p>在 JSON 中使用 <code>if</code> 等条件语句时，需将引号置于条件语句外部。</p> 
      <div class="example" data-mc-autonum="<b>Example: </b>"> 
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td> 

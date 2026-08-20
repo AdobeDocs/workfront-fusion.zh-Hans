@@ -9,9 +9,9 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
 workflow-type: tm+mt
-source-wordcount: 2259
+source-wordcount: 2240
 ht-degree: 15%
 
 ---
@@ -80,7 +80,7 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
   </tr>
   <tr>
     <td role="rowheader">[!UICONTROL 类型]</td>
-    <td>选择您是要连接到服务帐户还是个人帐户。</td>
+    <td>选择连接服务帐户还是个人帐户。</td>
   </tr>
   <tr>
    <td role="rowheader"> <p>[!UICONTROL 主机]</p> </td> 
@@ -255,7 +255,7 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 权限]</p> </td> 
-   <td> <p>设置所需的文件夹权限。 使用chmod参数。 例如，<code>777</code>或<code>-rwxrwxrwx</code>。</p> <p>这些权限必须匹配以下模式 <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>有关chmod的详细信息，请参阅<a href="https://ss64.com/bash/chmod.html">chmod文档</a>。</p> </td> 
+   <td> <p>设置所需的文件夹权限。 使用chmod参数。 例如，<code>777</code>或<code>-rwxrwxrwx</code>。</p> <p>这些权限必须匹配以下模式 <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>有关chmod的详细信息，请参阅<a href="https://ss64.com/bash/chmod.html">chmod文档</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -463,7 +463,7 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 权限]</p> </td> 
-   <td> <p>设置所需的文件权限。 使用chmod参数。 例如，<code>777</code>或<code>-rwxrwxrwx</code>。</p> <p>这些权限必须匹配以下模式 <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>有关chmod的详细信息，请参阅<a href="https://ss64.com/bash/chmod.html">chmod文档</a>。</p> </td> 
+   <td> <p>设置所需的文件权限。 使用chmod参数。 例如，<code>777</code>或<code>-rwxrwxrwx</code>。</p> <p>这些权限必须匹配以下模式 <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>有关chmod的详细信息，请参阅<a href="https://ss64.com/bash/chmod.html">chmod文档</a>。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -490,7 +490,7 @@ Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中�
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 权限]</p> </td> 
-   <td> <p>为文件或文件夹设置所需的权限。 使用chmod参数。 例如，<code>777</code>或<code>-rwxrwxrwx</code>。</p> <p>这些权限必须匹配以下模式 <code>/(.?([r-][w-][x-]){3})|[0-7]{3}/.</code></p> <p>有关chmod的详细信息，请参阅<a href="https://ss64.com/bash/chmod.html">chmod文档</a>。</p> </td> 
+   <td> <p>为文件或文件夹设置所需的权限。 使用chmod参数。 例如，<code>777</code>或<code>-rwxrwxrwx</code>。</p> <p>这些权限必须匹配以下模式 <code>/(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3}/.</code></p> <p>有关chmod的详细信息，请参阅<a href="https://ss64.com/bash/chmod.html">chmod文档</a>。</p> </td> 
   </tr> 
   <tr> 
    <td> <p>[!UICONTROL 缓冲区大小(B)]</p> </td> 
