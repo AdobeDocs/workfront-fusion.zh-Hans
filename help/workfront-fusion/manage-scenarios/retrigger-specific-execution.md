@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 5859bbef4f45fd4741d89ba1795df8a67fa5beaa
+source-git-commit: a7b9f754dfc987330e3a446830f37b004f7b2e4e
 workflow-type: tm+mt
-source-wordcount: 523
-ht-degree: 18%
+source-wordcount: 599
+ht-degree: 16%
 
 ---
 
@@ -27,6 +27,12 @@ ht-degree: 18%
 有关 Webhook 的更多信息，请参阅[即时触发器（Webhooks）](/help/workfront-fusion/references/modules/webhooks-reference.md)。
 
 有关链接方案的详细信息，请参阅[链接多个方案](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)。
+
+
+
+>[!NOTE]
+>
+>执行历史记录中最多只保留256 KB的数据。 因此，无法检索输入数据超过256 KB的执行。 任何重新触发此类执行的尝试均失败，并出现错误消息。
 
 ## 访问权限要求
 
@@ -58,6 +64,10 @@ ht-degree: 18%
 +++
 
 ## 重新触发执行
+
+>[!NOTE]
+>
+>执行历史记录中最多只保留256 KB的数据。 因此，无法检索输入数据超过256 KB的执行。 任何重新触发此类执行的尝试均失败，并出现错误消息。
 
 您可以从方案的图表、方案的历史记录区域或特定方案执行的页面重新触发方案执行。
 
