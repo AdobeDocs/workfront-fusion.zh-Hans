@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 6a90d388cc362b24cc9313a000aa5170f015cbf8
+source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
 workflow-type: tm+mt
-source-wordcount: 6620
+source-wordcount: 6660
 ht-degree: 32%
 
 ---
@@ -1600,11 +1600,6 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
 >
 >有关编辑Webhook的详细信息，请参阅[编辑Webhook](/help/workfront-fusion/manage-scenarios/edit-webhooks.md)。
 
->[!NOTE]
->
->2026年8月23日之后，Fusion将默认对所有Workfront规划>观看活动模块（包括现有模块）启用基于authToken的安全性。
-
-
 <table style="table-layout:auto"> 
   <col/>
   <col/>
@@ -1654,6 +1649,13 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
         <p>[!UICONTROL 排除此连接所做的更新]</p>
       </td>
       <td>启用此选项可防止在此模块使用的连接进行更改时触发场景。 如果场景执行触发操作，这将阻止触发场景的另一个实例。</td> 
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 启用安全挂钩]</td>
+      <td>
+       <p>选择是否要为此webhook启用基于authToken的安全性。</p><p>
+       <b>注意</b>：自2026年8月23日起，Fusion将默认对所有Workfront计划&gt;观看活动模块（包括现有模块）启用基于authToken的安全性。 如果特定的webhook中断或出于兼容性原因需要禁用此选项，则可以关闭“启用安全挂钩”选项。</p>
+      </td>
     </tr>
   </tbody>
 </table>
