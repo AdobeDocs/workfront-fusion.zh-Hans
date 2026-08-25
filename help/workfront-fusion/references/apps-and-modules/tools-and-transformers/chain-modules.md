@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 883
+source-wordcount: 913
 ht-degree: 10%
 
 ---
@@ -29,6 +28,10 @@ ht-degree: 10%
 <!--This article will be about the specific module configuration-->
 
 有关计划链接方案的说明，请参阅[将多个方案链接在一起](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)。
+
+>[!NOTE]
+>
+>您可以选择方案中的现有模块并将它们移动到新的子方案中，而不是手动配置这些模块。 有关说明，请参阅[将模块移动到链](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)。
 
 
 ## 访问权限要求
@@ -96,7 +99,7 @@ ht-degree: 10%
 > * **将此模块放在迭代器内时请务必小心。** 为大型迭代器中的每个项目调度子方案会创建大量平台负载。 考虑内嵌子方案的逻辑或在迭代器之外预先计算共享查找。
 > * **触发并忘记**&#x200B;意味着父级无法查看子级是否运行或成功。 仅在独立监视子级故障时使用。
 >
-> 有关完整的设计指南，请参阅[将多个方案链接在一起](https://experienceleague.adobe.com/zh-hans/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)。
+> 有关完整的设计指南，请参阅[将多个方案链接在一起](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)。
 
 >[!NOTE]
 >
