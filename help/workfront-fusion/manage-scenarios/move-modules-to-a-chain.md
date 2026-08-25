@@ -3,7 +3,8 @@ title: 将模块移动到链
 description: 您可以选择方案中的一组模块并将它们移动到新的链接方案中，而无需手动重新创建映射或数据结构。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: f1a80f64edc410ae76bfbba1280df7232e2d09c5
 workflow-type: tm+mt
 source-wordcount: 513

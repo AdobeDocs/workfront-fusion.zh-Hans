@@ -297,7 +297,7 @@ ht-degree: 50%
   * [将模块移动到链](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [查看运行中场景的数据流](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [查看 Webhook 队列](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * Workfront Fusion中的{hide-from-toc}[AI助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * {hide-from-toc}[Workfront Fusion中的AI助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [运行场景评分专家](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [删除场景元素](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [从方案区域管理方案](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
