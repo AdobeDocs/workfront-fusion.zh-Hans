@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 71573ee33f852111d4541ee61567a51b137c7df5
+source-git-commit: 88515edc81bafe2d1a81df627fd51dd4ed674c02
 workflow-type: tm+mt
-source-wordcount: 871
-ht-degree: 17%
+source-wordcount: 884
+ht-degree: 16%
 
 ---
 
@@ -21,6 +21,10 @@ Adobe Workfront MCP连接器是Adobe Workfront自己的模型上下文协议(MCP
 您可以限制允许AI执行哪些Workfront操作，以便即使无人参与场景也可以保证不会执行任何意外的破坏性操作。
 
 默认情况下，此模块使用Adobe Managed AI，后者使用`claude-sonnet-5`模型。 您可以使用提供的密钥和其他凭据将模块配置为使用其他LLM。
+
+>[!NOTE]
+>
+>Adobe Managed AI的使用限制为每个组织每月25美元。
 
 有关Fusion场景中MCP的详细信息，请参阅[向场景添加AI提示](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)。
 

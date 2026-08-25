@@ -12,10 +12,10 @@ feature_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 0b7298ce53bf59695ce52cb46cb8d25b6ede5fc8
 workflow-type: tm+mt
-source-wordcount: 4305
-ht-degree: 13%
+source-wordcount: 4846
+ht-degree: 12%
 
 ---
 
@@ -97,6 +97,7 @@ SharePoint连接器使用以下对象：
 * [使用 [!DNL Microsoft] 帐户将Microsoft SharePoint Online连接到Workfront Fusion](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-microsoft-account)
 * [使用高级设置将Microsoft SharePoint Online连接到Workfront Fusion](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-advanced-settings)
 * [使用证书授权将Microsoft SharePoint Online连接到Workfront Fusion](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-certificate-authorization)
+* [使用服务主体将Microsoft SharePoint Online连接到Workfront Fusion](#connect-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
 
 ### 使用[!DNL Microsoft]帐户将Microsoft SharePoint Online连接到Workfront Fusion
 
@@ -204,6 +205,97 @@ SharePoint连接器使用以下对象：
 
 1. 点击&#x200B;**继续**&#x200B;保存连接并返回模块。
 
+### 使用服务主体将Microsoft SharePoint Online连接到Workfront Fusion
+
+您可以创建使用服务主体（应用程序API连接）而不是个人帐户的连接。 如果您希望连接作为应用程序或服务身份而不是特定人员运行（例如，这样当该人员离开公司或更改其密码时，集成不会中断），则此功能非常有用。
+
+>[!IMPORTANT]
+>
+>此连接类型仅适用于[进行API调用](#make-an-api-call)模块。 其他SharePoint模块需要本文中介绍的其他连接类型之一。
+
+* [使用服务主体将Microsoft SharePoint Online连接到Workfront Fusion的先决条件](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-service-principal)
+* [在Microsoft Entra ID中创建应用程序注册](#create-the-app-registration-in-microsoft-entra-id)
+* [创建客户端密码](#create-a-client-secret)
+* [授予API权限](#grant-api-permissions)
+* [收集您的连接详细信息](#collect-your-connection-details)
+* [创建连接](#create-the-connection)
+
+#### 使用服务主体将Microsoft SharePoint Online连接到Workfront Fusion的先决条件
+
+您需要在Microsoft Entra ID中拥有&#x200B;**全局管理员**、**应用程序管理员**&#x200B;或&#x200B;**特权角色管理员**&#x200B;访问权限才能注册应用程序并授予其权限。 如果您没有此访问权限，请让您的IT或身份团队中的某人为您完成这些步骤。
+
+继续[在Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id)中创建应用程序注册。
+
+#### 在Microsoft Entra ID中创建应用程序注册
+
+1. 登录到[!DNL Microsoft Entra]管理中心。
+1. 转到&#x200B;**[!UICONTROL 应用注册]** > **[!UICONTROL 新注册]**。
+1. 为应用程序提供一个清晰且可识别的名称。 例如：`Make - SharePoint Integration`。
+1. 将&#x200B;**[!UICONTROL 重定向URI]**&#x200B;保留为空。 此连接不涉及通过浏览器登录的任何人。
+1. 选择&#x200B;**[!UICONTROL 注册]**。
+1. 继续[创建客户端密钥](#create-a-client-secret)。
+
+#### 创建客户端密码
+
+1. 在新应用注册中，转到&#x200B;**[!UICONTROL 证书和密钥]**。
+1. 选择&#x200B;**[!UICONTROL 新客户端密钥]**，添加说明，并选择有效期。
+1. 选择&#x200B;**[!UICONTROL 添加]**。
+1. 立即复制密码的&#x200B;**[!UICONTROL 值]**。 它只显示一次。 如果您在复制它之前导航离开，则必须创建一个新路径。
+1. 继续[授予API权限](#grant-api-permissions)。
+
+#### 授予API权限
+
+>[!IMPORTANT]
+>
+>BECKY检查我：与Azure DevOps不同，Microsoft Graph在此步骤中直接支持应用程序权限。 在发布此部分之前，请确认进行API调用模块所需的确切权限（例如，网站权限范围），并相应地更新以下步骤。
+
+1. 在应用程序注册中，转到&#x200B;**[!UICONTROL API权限]**。
+1. 选择&#x200B;**[!UICONTROL 添加权限]**，然后选择&#x200B;**[!UICONTROL Microsoft图形]**。
+1. 选择&#x200B;**[!UICONTROL 应用程序权限]**。
+1. 选择API调用所需的权限，然后选择&#x200B;**[!UICONTROL 添加权限]**。
+1. 选择&#x200B;**[!UICONTROL 为您的组织]**&#x200B;授予管理员同意，然后确认。
+1. 继续[收集您的连接详细信息](#collect-your-connection-details)。
+
+#### 收集您的连接详细信息
+
+在应用程序注册的&#x200B;**[!UICONTROL 概述]**&#x200B;页面中，注意以下值。 在模块中创建连接时输入这些参数。
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">[!UICONTROL 租户ID]</td>
+   <td>在概述页面上，标记为<b>目录（租户） ID</b>。</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL 客户端 ID]</td>
+   <td>在概述页面上，标记为<b>应用程序（客户端） ID</b>。</td>
+  </tr>
+  <tr>
+   <td role="rowheader">[!UICONTROL 客户端密钥]</td>
+   <td>您在<a href="#create-a-client-secret" class="MCXref xref">中创建客户端密钥</a>中复制的值。</td>
+  </tr>
+ </tbody>
+</table>
+
+继续[创建连接](#create-the-connection)。
+
+#### 创建连接
+
+1. 在[!UICONTROL 进行API调用]模块中，单击“连接”字段附近的&#x200B;**[!UICONTROL 添加]**&#x200B;以打开&#x200B;**[!UICONTROL 创建连接]**&#x200B;框。
+1. 单击&#x200B;**[!UICONTROL 显示高级设置]**。
+1. 在[!UICONTROL 连接类型]字段中，选择&#x200B;**[!UICONTROL 服务主体]**。
+1. 输入以下内容：
+
+   * [!UICONTROL 租户ID]
+   * [!UICONTROL 客户端ID]
+   * [!UICONTROL 客户端密码]
+
+1. 点击&#x200B;**继续**&#x200B;保存连接并返回模块。
+
+   如果一切设置正确，连接验证成功。
+
 ## Microsoft SharePoint模块及其字段
 
 配置Microsoft SharePoint Online模块时，Workfront Fusion会显示以下列出的字段。 除了这些以外，还可能会显示其他Microsoft SharePoint Online字段，具体取决于应用程序或服务中的访问级别等因素。 模块中的加粗标题表示必填字段。
@@ -222,6 +314,7 @@ SharePoint连接器使用以下对象：
 ### 驱动器项目
 
 * [创建文件](#create-a-file)
+* [创建文件（旧版）](#create-a-file-legacy)
 * [创建文件夹](#create-a-folder)
 * [获取文件](#get-a-file)
 * [获取文件夹](#get-a-folder)

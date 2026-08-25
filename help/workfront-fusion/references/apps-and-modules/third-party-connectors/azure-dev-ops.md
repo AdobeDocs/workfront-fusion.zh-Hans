@@ -11,10 +11,10 @@ feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 0b7298ce53bf59695ce52cb46cb8d25b6ede5fc8
 workflow-type: tm+mt
-source-wordcount: 1899
-ht-degree: 32%
+source-wordcount: 2646
+ht-degree: 23%
 
 ---
 
@@ -89,6 +89,11 @@ Azure DevOps连接器使用以下对象：
 
 ## 将 [!DNL Azure DevOps] 连接到 Workfront Fusion {#connect-azure-devops-to-workfront-fusion}
 
+* [使用EntraApp将Azure DevOps连接到Workfront Fusion](#connect-azure-devops-to-workfront-fusion-using-entraapp)
+* [使用服务主体将Azure DevOps连接到Workfront Fusion](#connect-azure-devops-to-workfront-fusion-using-a-service-principal)
+
+### 使用EntraApp将Azure DevOps连接到Workfront Fusion
+
 1. 将[!DNL Azure DevOps]模块添加到您的方案。
 1. 单击[!UICONTROL 连接]字段旁边的&#x200B;**[!UICONTROL 添加]**。
 1. 在[!UICONTROL 连接类型]字段中，选择要使用的连接类型。
@@ -124,6 +129,112 @@ Azure DevOps连接器使用以下对象：
 
 1. 要输入Azure DevOps应用程序ID或客户端密钥，请单击<b>显示高级设置</b>，然后在打开的字段中输入它们。
 1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;完成连接设置并继续创建方案。
+
+### 使用服务主体将Azure DevOps连接到Workfront Fusion
+
+您可以创建使用服务主体（应用程序API连接）而不是个人帐户的连接。 当您希望连接作为应用程序或服务标识而不是作为特定人员运行时，这将很有用。 例如，如果某人离开公司或更改密码，则集成不会中断，这可能会很有用。
+
+此连接类型适用于所有Azure DevOps模块。
+
+>[!NOTE]
+>
+>服务主体身份验证不支持每个Azure DevOps功能。 少数管理员级别的操作（如管理用户许可证）仍需要个人帐户连接。 如果仅对工作项、展示板、存储库或管道需要此身份验证，请使用服务主体身份验证。
+
+* [使用服务主体将Azure DevOps连接到Workfront Fusion的先决条件](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-service-principal)
+* [在Microsoft Entra ID中创建应用程序注册](#create-the-app-registration-in-microsoft-entra-id)
+* [创建客户端密码](#create-a-client-secret)
+* [收集您的连接详细信息](#collect-your-connection-details)
+* [将服务主体添加到您的Azure DevOps组织](#add-the-service-principal-to-your-azure-devops-organization)
+* [创建连接](#create-the-connection)
+
+#### 使用服务主体将Azure DevOps连接到Workfront Fusion的先决条件
+
+要创建此连接，您需要满足以下条件：
+
+* 在Microsoft Entra ID中&#x200B;**全局管理员**&#x200B;或&#x200B;**应用程序管理员**&#x200B;访问权限，以注册应用程序。 如果您没有此访问权限，请让您的IT或身份团队中的某人为您完成该步骤。
+* 在您的Azure DevOps组织中&#x200B;**项目集合管理员**&#x200B;访问权限，以将服务主体添加为成员。 此人通常与管理Microsoft Entra ID的人不同。
+* Azure DevOps组织的名称。 您可以在Azure DevOps URL中找到此项： `dev.azure.com/<your organization name>`。
+
+#### 在Microsoft Entra ID中创建应用程序注册
+
+1. 登录到[!DNL Microsoft Entra]管理中心。
+1. 转到&#x200B;**[!UICONTROL 应用注册]** > **[!UICONTROL 新注册]**。
+1. 为应用程序提供一个清晰且可识别的名称。 例如：`Workfront Fusion Azure DevOps Integration`。
+1. 将&#x200B;**[!UICONTROL 重定向URI]**&#x200B;保留为空。 此连接不涉及通过浏览器登录。
+1. 选择&#x200B;**[!UICONTROL 注册]**。
+1. 继续[创建客户端密钥](#create-a-client-secret)。
+
+#### 创建客户端密码
+
+1. 在新应用注册中，转到&#x200B;**[!UICONTROL 证书和密钥]**。
+1. 选择&#x200B;**[!UICONTROL 新客户端密钥]**，添加说明，并选择有效期。
+1. 选择&#x200B;**[!UICONTROL 添加]**。
+1. 立即复制密码的&#x200B;**[!UICONTROL 值]**。 它只显示一次。 如果您在复制它之前导航离开，则必须创建一个新路径。
+1. 继续[收集您的连接详细信息](#collect-your-connection-details)。
+
+#### 收集您的连接详细信息
+
+1. 在应用程序注册的&#x200B;**[!UICONTROL 概述]**&#x200B;页面中，注意以下值。 在模块中创建连接时输入这些参数。
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL 租户ID]</td>
+      <td>在概述页面上，标记为<b>目录（租户） ID</b>。</td>
+      </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 客户端 ID]</td>
+      <td>在概述页面上，标记为<b>应用程序（客户端） ID</b>。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 客户端密钥]</td>
+      <td>您在<a href="#create-a-client-secret" class="MCXref xref">中创建客户端密钥</a>中复制的值。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 组织]</td>
+      <td>您的Azure DevOps组织名称。 例如，如果URL是<code>dev.azure.com/yourorg</code>，请输入<code>yourorg</code>。</td>
+     </tr>
+    </tbody>
+   </table>
+
+   >[!NOTE]
+   >
+   >您可以跳过应用程序注册的&#x200B;**API权限**&#x200B;区域。 如果在此处添加Azure DevOps，则只有&#x200B;**委派权限**&#x200B;可用。 **应用程序权限**&#x200B;显示为灰色。 这是正常情况，因为Azure DevOps不支持以这种方式授予访问权限。 相反，在下一部分中，访问权限将直接在Azure DevOps中授予。
+
+1. 继续[将服务主体添加到您的Azure DevOps组织](#add-the-service-principal-to-your-azure-devops-organization)。
+
+#### 将服务主体添加到您的Azure DevOps组织
+
+在Microsoft Entra ID中注册应用程序只会创建其标识。 它尚未授予应用程序访问Azure DevOps数据的任何权限。 此过程授予该访问权限。
+
+1. 登录到Azure DevOps组织，网址为`dev.azure.com/<your organization name>`。
+1. 选择左下角的&#x200B;**[!UICONTROL 组织设置]**，然后选择&#x200B;**[!UICONTROL 用户]**。
+1. 选择&#x200B;**[!UICONTROL 添加用户]**。
+1. 在搜索框中，按应用程序的显示名称（您在注册应用程序时为其提供的名称）进行搜索。 请勿按客户端ID进行搜索。
+1. 选择访问级别：
+
+   * **[!UICONTROL Basic]**&#x200B;通常足以读写工作项、展示板和存储库。
+   * 如果您的工作流需要在设置过程中浏览可用进程，例如Agile、Scrum或自定义模板，请改为将服务主体添加到&#x200B;**[!UICONTROL 项目集合管理员]**&#x200B;组。 这是更高级别的访问权限，因此仅在您需要此功能时才授予此访问权限。
+
+1. 按照贵组织的常规访问惯例，将服务主体分配给所需的一个或多个特定项目。
+1. 选择&#x200B;**[!UICONTROL 添加]**。
+1. 继续[创建连接](#create-the-connection)。
+
+#### 创建连接
+
+1. 在模块的连接设置屏幕中，选择&#x200B;**[!UICONTROL 服务主体]**&#x200B;连接类型。
+1. 输入以下内容：
+
+   * [!UICONTROL 租户ID]
+   * [!UICONTROL 客户端ID]
+   * [!UICONTROL 客户端密码]
+   * [!UICONTROL 组织]
+
+1. 保存连接。
+
+   如果一切设置正确，连接验证成功。
 
 ## [!UICONTROL Azure DevOps]模块及其字段
 
