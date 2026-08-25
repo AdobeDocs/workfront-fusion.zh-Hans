@@ -9,10 +9,10 @@ exl-id: b2e48618-cc55-429e-9bed-c62ba60a6249
 TQID: https://experienceleague.adobe.com/EUSuZIyMovl2W3PlmmGaJ6rivpwQWZIJMKbZ4VGJDgw
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 336cdb956b69b996b2eaa7f08508e2efaae56a0e
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 110
-ht-degree: 53%
+source-wordcount: 115
+ht-degree: 51%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 53%
 * [查看webhook的队列](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
 * [查看运行中场景的数据流](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
 * [查看链接方案关系](/help/workfront-fusion/manage-scenarios/view-chained-scenario-relationships.md)
+* [将模块移动到链](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
 * [Workfront Fusion 中的 AI 助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
 * [运行场景评分专家](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
 * [删除场景元素](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)

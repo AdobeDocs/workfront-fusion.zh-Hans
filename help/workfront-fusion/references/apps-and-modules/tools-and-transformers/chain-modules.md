@@ -7,9 +7,9 @@ exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
 TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 883
+source-wordcount: 913
 ht-degree: 10%
 
 ---
@@ -29,6 +29,10 @@ ht-degree: 10%
 <!--This article will be about the specific module configuration-->
 
 有关计划链接方案的说明，请参阅[将多个方案链接在一起](/help/workfront-fusion/create-scenarios/plan-a-scenario/chain-scenarios.md)。
+
+>[!NOTE]
+>
+>您可以选择方案中的现有模块并将它们移动到新的子方案中，而不是手动配置这些模块。 有关说明，请参阅[将模块移动到链](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)。
 
 
 ## 访问权限要求

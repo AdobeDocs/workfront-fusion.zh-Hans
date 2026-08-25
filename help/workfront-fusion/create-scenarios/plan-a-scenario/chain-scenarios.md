@@ -7,10 +7,10 @@ exl-id: def8d4c1-fc20-4b93-b1fd-be2f60300464
 TQID: https://experienceleague.adobe.com/ypbKUSaT72N2r75oYX9tZsJaj6H39cUCumApjMw69j0
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 81d1dfcdb5c15f6a93e2793f9a0e41821b65c7e3
+source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
 workflow-type: tm+mt
-source-wordcount: 1705
-ht-degree: 9%
+source-wordcount: 1744
+ht-degree: 8%
 
 ---
 
@@ -33,6 +33,8 @@ ht-degree: 9%
 有关Fusion性能护栏（包括超时）的详细信息，请参阅[Fusion性能护栏](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md)。
 
 有关配置链模块的说明，请参阅[链模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/chain-modules.md)。
+
+有关选择方案中的现有模块并将其移动到新的子方案中的说明，请参阅[将模块移动到链](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)。
 
 ## 父方案和子方案
 
