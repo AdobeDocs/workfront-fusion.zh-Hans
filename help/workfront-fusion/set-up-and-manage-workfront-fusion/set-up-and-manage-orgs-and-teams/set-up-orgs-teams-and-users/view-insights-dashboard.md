@@ -1,5 +1,5 @@
 ---
-title: 查看组织的绩效仪表板
+title: 查看组织的分析仪表板
 description: Fusion管理员可以查看显示组织执行度量的功能板。
 author: Becky
 feature: Workfront Fusion
@@ -7,16 +7,16 @@ exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
 workflow-type: tm+mt
 source-wordcount: 694
-ht-degree: 7%
+ht-degree: 5%
 
 ---
 
-# 查看组织的绩效仪表板
+# 查看组织的分析仪表板
 
-Fusion Performance Dashboard允许您快速查看哪些场景运行得最多、发生延迟以及工作人员池的运行效率。 这提供了执行卷、队列深度、池利用率和方案级性能的实时可见性。
+Fusion Insights仪表板允许您快速查看哪些场景运行得最多、发生延迟的位置以及工作人员池的运行效率。 这提供了执行卷、队列深度、池利用率和方案级性能的实时可见性。
 
 ## 访问权限要求
 
@@ -47,7 +47,7 @@ Fusion Performance Dashboard允许您快速查看哪些场景运行得最多、�
 
 +++
 
-## 性能仪表板组件
+## 分析仪表板组件
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Fusion Performance Dashboard允许您快速查看哪些场景运行得最多、�
 
 -->
 
-在Fusion性能仪表板中，您可以看到以下量度。
+在Fusion Insights仪表板中，您可以看到以下量度。
 
 * **个等待处理的执行**
 此图表显示在给定时间点等待处理的执行（也称为执行积压）的数量。
@@ -80,9 +80,9 @@ Fusion Performance Dashboard允许您快速查看哪些场景运行得最多、�
 
   您可以使用此图表识别耗时超过正常时间的方案，包括受连接的应用程序或服务问题影响的方案。
 
-## 查看Fusion性能仪表板
+## 查看Fusion分析功能板
 
-1. 在Fusion中，单击左侧导航栏中的&#x200B;**性能**。
+1. 在Fusion中，单击左侧导航栏中的&#x200B;**分析**。
 
    “操控板”打开。
 
