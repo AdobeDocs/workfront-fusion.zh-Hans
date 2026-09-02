@@ -3,7 +3,8 @@ title: 从存储创建方案
 description: 存储与Fusion的方案生成器集成，因此您可以直接从“存储”页面创建预配置的方案以下载或上传文件。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: aef1685cb25c0cdcb0dcdf9b0c73fb482d392e5f
 workflow-type: tm+mt
 source-wordcount: 272

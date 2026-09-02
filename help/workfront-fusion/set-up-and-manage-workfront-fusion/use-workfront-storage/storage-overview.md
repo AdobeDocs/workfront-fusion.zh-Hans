@@ -3,7 +3,8 @@ title: 存储概述
 description: “存储”是Workfront Fusion中的一个页面，通过该页面，团队可以直接访问其Adobe Enterprise Storage Management (ESM)存储库，从而让用户可以浏览文件夹、上载和下载文件、查看版本历史记录以及创建自动化方案。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: d5568479d43bd5518adae5b66b132b4075e7f356
 workflow-type: tm+mt
 source-wordcount: 279

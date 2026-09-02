@@ -3,7 +3,8 @@ title: 初始化存储
 description: 当用户首次导航到Storage时，他们会看到一个初始化屏幕，该屏幕会代表团队创建到Adobe Storage的安全连接。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: a2632cb3184cd555555136288e78ab1e05e4ea9d
 workflow-type: tm+mt
 source-wordcount: 216
