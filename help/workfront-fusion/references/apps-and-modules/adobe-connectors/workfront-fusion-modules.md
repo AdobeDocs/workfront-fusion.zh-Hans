@@ -3,7 +3,8 @@ title: Workfront Fusion模块
 description: 使用Workfront Fusion连接器，您可以从场景中管理自己的Fusion组织，包括记录、挂钩、场景和连接。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 05cd734c1bc65f58d60c2668f91e065342290341
 workflow-type: tm+mt
 source-wordcount: 1363
@@ -67,18 +68,18 @@ ht-degree: 21%
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 客户端 ID]</td> 
-      <td>输入您的 [!DNL Adobe] [!UICONTROL 客户端 ID]。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL Credentials]详细信息部分找到。</td> 
+      <td>输入您的 [!DNL Adobe] [!UICONTROL 客户端 ID]。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL Credentials]详细信息部分找到。</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 客户端密钥]</td> 
-      <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL Credentials]详细信息部分找到。</td> 
+      <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL Credentials]详细信息部分找到。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL组织ID]</td> 
+      <td role="rowheader">[!UICONTROL 组织ID]</td> 
       <td>输入您的[!DNL Adobe] IMS组织ID。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL区域]</td> 
+      <td role="rowheader">[!UICONTROL 区域]</td> 
       <td>选择此连接的Fusion区域。</td> 
      </tr> 
     </tbody> 
