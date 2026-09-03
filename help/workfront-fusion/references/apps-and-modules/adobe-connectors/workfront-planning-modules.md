@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
 workflow-type: tm+mt
-source-wordcount: 6660
+source-wordcount: 6739
 ht-degree: 32%
 
 ---
@@ -408,6 +408,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
 * [获取全局记录类型](#get-global-record-types-v2)
 * [获取记录类型](#get-a-record-type-v2)
 * [获取记录类型](#get-record-types-v2)
+* [重新创建记录类型配置](#recast-record-type-configuration-v2)
 * [更新记录类型](#update-a-record-type-v2)
 
 #### 创建记录类型(V2)
@@ -553,6 +554,27 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
         <p>[!UICONTROL 返回的最大记录类型数]</p>
       </td>
       <td>输入或映射模块在一个执行周期内返回的最大记录类型数。</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### 重新创建记录类型配置(V2)
+
+此模块检索工作区中所有记录类型（按其部分分组），以及每个记录类型的字段和每个字段的选择选项。 输出将结构化为section > record type > fields。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Workfront Planning] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >创建与 [!DNL Adobe Workfront Planning]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 工作区 ID]</p>
+      </td>
+      <td>输入或映射要为其检索记录类型配置的工作区的ID。</td> 
     </tr>
   </tbody>
 </table>
