@@ -5,15 +5,12 @@ author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
 TQID: https://experienceleague.adobe.com/QHOFWDOT-18-c0b3wLXsRV5cjGVxlcyLhvZdkev3GFg
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 39436d53fd350158b8ee95061b7b9b49ae8f6d63
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
 workflow-type: tm+mt
-source-wordcount: 6660
+source-wordcount: 6739
 ht-degree: 32%
 
 ---
@@ -243,7 +240,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace名称]</p>
+        <p>[！UICONTROL Workspace名称]</p>
       </td>
       <td>输入或映射新工作区的名称。</td> 
     </tr>
@@ -351,13 +348,13 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择要更新的工作区。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace名称]</p>
+        <p>[！UICONTROL Workspace名称]</p>
       </td>
       <td>输入或映射新工作区的名称。</td> 
     </tr>
@@ -408,6 +405,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
 * [获取全局记录类型](#get-global-record-types-v2)
 * [获取记录类型](#get-a-record-type-v2)
 * [获取记录类型](#get-record-types-v2)
+* [重新创建记录类型配置](#recast-record-type-configuration-v2)
 * [更新记录类型](#update-a-record-type-v2)
 
 #### 创建记录类型(V2)
@@ -424,7 +422,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择要创建记录类型的工作区。</td> 
     </tr>
@@ -475,7 +473,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 记录类型ID]</p>
+        <p>[！UICONTROL记录类型ID]</p>
       </td>
       <td>输入或映射要删除的记录类型的ID。</td> 
     </tr>
@@ -496,13 +494,13 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择工作区。 模块将返回可添加到此工作区的全局记录类型。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 返回的最大记录类型数]</p>
+        <p>[！UICONTROL返回的最大记录类型数]</p>
       </td>
       <td>输入或映射模块在一个执行周期内返回的最大记录类型数。</td> 
     </tr>
@@ -523,7 +521,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 记录类型ID]</p>
+        <p>[！UICONTROL记录类型ID]</p>
       </td>
       <td>输入或映射要检索的记录类型的ID。</td> 
     </tr>
@@ -544,15 +542,36 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择要检索其记录类型的工作区。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 返回的最大记录类型数]</p>
+        <p>[！UICONTROL返回的最大记录类型数]</p>
       </td>
       <td>输入或映射模块在一个执行周期内返回的最大记录类型数。</td> 
+    </tr>
+  </tbody>
+</table>
+
+#### 重新创建记录类型配置(V2)
+
+此模块检索工作区中所有记录类型（按其部分分组），以及每个记录类型的字段和每个字段的选择选项。 输出将结构化为section > record type > fields。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">[!UICONTROL 连接]</td>
+      <td>有关创建与 [!DNL Adobe Workfront Planning] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >创建与 [!DNL Adobe Workfront Planning]</a> 的连接。</td>
+    </tr>
+    <tr>
+      <td role="rowheader">
+        <p>[!UICONTROL 工作区 ID]</p>
+      </td>
+      <td>输入或映射要为其检索记录类型配置的工作区的ID。</td> 
     </tr>
   </tbody>
 </table>
@@ -571,7 +590,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择要更新记录类型的工作区。</td> 
     </tr>
@@ -667,7 +686,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择要创建记录的工作区。</td> 
     </tr>
@@ -708,7 +727,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择要创建记录的工作区。</td> 
     </tr>
@@ -741,7 +760,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 记录ID]</p>
+        <p>[！UICONTROL记录ID]</p>
       </td>
       <td>输入或映射要删除的记录的ID。</td> 
     </tr>
@@ -783,7 +802,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择包含要检索的记录的工作区。</td> 
     </tr>
@@ -795,7 +814,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 返回的最大记录数]</p>
+        <p>[！UICONTROL返回的最大记录数]</p>
       </td>
       <td>输入或映射模块在一个执行周期内返回的最大记录数。</td> 
     </tr>
@@ -816,7 +835,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择包含要移动记录的工作区。</td> 
     </tr>
@@ -828,13 +847,13 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择包含要移动记录的工作区。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择包含要移动记录的工作区。</td> 
     </tr>
@@ -855,7 +874,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择包含要检索的记录的工作区。</td> 
     </tr>
@@ -873,7 +892,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 其他字段]</p>
+        <p>[！UICONTROL其他字段]</p>
       </td>
       <td>对于要作为筛选依据的每个字段，输入该字段的运算符和值。 这些字段基于您选择的记录类型和字段，并且对于您的Workfront Planning组织是唯一的。</td> 
     </tr>
@@ -896,7 +915,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择包含要检索的记录的工作区。</td> 
     </tr>
@@ -908,7 +927,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 其他字段]</p>
+        <p>[！UICONTROL其他字段]</p>
       </td>
       <td>对于要作为筛选依据的每个字段，输入该字段的运算符和值。 这些字段基于您选择的记录类型，并且对于您的Workfront Planning组织是唯一的。</td> 
     </tr>
@@ -930,19 +949,19 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择包含要更新的记录的工作区。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 记录类型ID]</p>
+        <p>[！UICONTROL记录类型ID]</p>
       </td>
       <td>选择要更新的记录类型。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 记录ID]</p>
+        <p>[！UICONTROL记录ID]</p>
       </td>
       <td>输入或映射要更新的记录ID。</td> 
     </tr>
@@ -954,7 +973,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 其他字段]</p>
+        <p>[！UICONTROL其他字段]</p>
       </td>
       <td>输入其他字段的值。 可用字段取决于所选记录和字段。</td> 
     </tr>
@@ -979,25 +998,25 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择包含要更新的记录的工作区。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 记录类型ID]</p>
+        <p>[！UICONTROL记录类型ID]</p>
       </td>
       <td>选择要更新的记录类型。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 记录ID]</p>
+        <p>[！UICONTROL记录ID]</p>
       </td>
       <td>输入或映射要更新的记录ID。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 其他字段]</p>
+        <p>[！UICONTROL其他字段]</p>
       </td>
       <td>输入其他字段的值。 可用字段取决于所选记录。</td> 
     </tr>
@@ -1026,7 +1045,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择要创建字段的工作区。</td> 
     </tr>
@@ -1077,7 +1096,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 字段ID]</p>
+        <p>[！UICONTROL字段ID]</p>
       </td>
       <td>输入或映射要删除字段的 ID。</td> 
     </tr>
@@ -1098,7 +1117,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 字段ID]</p>
+        <p>[！UICONTROL字段ID]</p>
       </td>
       <td>输入或映射要检索的字段的ID。</td> 
     </tr>
@@ -1119,7 +1138,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择包含要返回的字段的工作区。</td> 
     </tr>
@@ -1131,7 +1150,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 返回的最大字段数]</p>
+        <p>[！UICONTROL返回的最大字段数]</p>
       </td>
       <td>输入或映射模块在一个执行周期内返回的最大字段数。</td> 
     </tr>
@@ -1152,19 +1171,19 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 资源类型]</p>
+        <p>[！UICONTROL资源类型]</p>
       </td>
       <td>选择包含要更新的字段的资源类型。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 字段ID]</p>
+        <p>[！UICONTROL字段ID]</p>
       </td>
       <td>选择要更新的字段。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 显示名称]</p>
+        <p>[！UICONTROL显示名称]</p>
       </td>
       <td>输入或映射字段的名称。</td> 
     </tr>
@@ -1176,7 +1195,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 其他参数]</p>
+        <p>[！UICONTROL其他参数]</p>
       </td>
       <td>输入其他字段参数的值。 可用参数取决于所选字段。</td> 
     </tr>
@@ -1206,7 +1225,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择要创建视图的工作区。</td> 
     </tr>
@@ -1257,7 +1276,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 视图ID]</p>
+        <p>[！UICONTROL视图ID]</p>
       </td>
       <td>输入或映射要删除的视图的ID。</td> 
     </tr>
@@ -1278,7 +1297,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 视图ID]</p>
+        <p>[！UICONTROL视图ID]</p>
       </td>
       <td>输入或映射要检索的视图的ID。</td> 
     </tr>
@@ -1299,7 +1318,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择包含要检索的视图的工作区。</td> 
     </tr>
@@ -1311,7 +1330,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 返回视图的最大数目]</p>
+        <p>[！UICONTROL返回视图的最大数目]</p>
       </td>
       <td>输入或映射模块在一个执行周期内返回的最大视图数。</td> 
     </tr>
@@ -1332,7 +1351,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>选择要更新视图的工作区。</td> 
     </tr>
@@ -1381,19 +1400,19 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 资源类型]</p>
+        <p>[！UICONTROL资源类型]</p>
       </td>
       <td>输入或映射要删除的Workspace的ID。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 资源ID]</p>
+        <p>[！UICONTROL资源ID]</p>
       </td>
       <td>输入或映射要取消访问请求的资源的ID。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 请求ID]</p>
+        <p>[！UICONTROL请求ID]</p>
       </td>
       <td>对于要取消的每个访问请求，单击<b>添加项</b>并输入请求ID。</td> 
     </tr>
@@ -1414,13 +1433,13 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 资源类型]</p>
+        <p>[！UICONTROL资源类型]</p>
       </td>
       <td>选择要为其检索信息的资源类型。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 资源ID]</p>
+        <p>[！UICONTROL资源ID]</p>
       </td>
       <td>输入或映射要检索其信息的资源的ID。</td> 
     </tr>
@@ -1441,13 +1460,13 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 资源类型]</p>
+        <p>[！UICONTROL资源类型]</p>
       </td>
       <td>选择要为其检索权限的资源类型。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 资源ID]</p>
+        <p>[！UICONTROL资源ID]</p>
       </td>
       <td>输入或映射要为其检索权限的资源ID。</td> 
     </tr>
@@ -1468,13 +1487,13 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 资源类型]</p>
+        <p>[！UICONTROL资源类型]</p>
       </td>
       <td>选择要为其检索信息的资源类型。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 资源ID]</p>
+        <p>[！UICONTROL资源ID]</p>
       </td>
       <td>输入或映射要检索其信息的资源的ID。</td> 
     </tr>
@@ -1495,19 +1514,19 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 资源类型]</p>
+        <p>[！UICONTROL资源类型]</p>
       </td>
       <td>选择要为其创建或更新访问请求的资源类型。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 资源ID]</p>
+        <p>[！UICONTROL资源ID]</p>
       </td>
       <td>输入或映射要为其创建或更新访问请求的资源的ID。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Message]</p>
+        <p>[！UICONTROL Message]</p>
       </td>
       <td>输入或映射要包含在访问请求中的消息文本。</td> 
     </tr>
@@ -1536,7 +1555,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workfront用户ID]</p>
+        <p>[！UICONTROL Workfront用户ID]</p>
       </td>
       <td>输入或映射要检索其授权ID的用户的Workfront ID。</td> 
     </tr>
@@ -1617,18 +1636,18 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
       <td>选择您要监视记录、记录类型还是工作区。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 要监视的对象]</td>
+      <td role="rowheader">[！UICONTROL要监视的对象]</td>
       <td>选择是要监视新记录、更新的记录、新记录和更新的记录还是删除的记录。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 配置类型]</td>
+      <td role="rowheader">[！UICONTROL配置类型]</td>
       <td>选择是需要简单配置还是高级配置。 <p>有关高级配置的详细信息，请参阅本文中的“监视事件”模块中的<a href="#example-of-advanced-logic-in-the-watch-events-module" class="MCXref xref" >高级逻辑示例</a>。</td>
     </tr>
     <tr>
       <td role="rowheader">[!UICONTROL 状态]</td>
       <td>选择您希望关注旧状态还是新状态。<ul><li><p><b>[!UICONTROL 新状态]</b></p><p>当记录状态更改<b>为</b>指定值时触发场景。</p></li><li><p><b>[!UICONTROL 旧状态]</b></p><p>当记录状态<b>从</b>指定值发生变化时触发场景。</p></li></ul></td> 
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[！UICONTROL Workspace]</td>
       <td>如果观看记录，请选择您想要观看记录的Workspace。</td>
     </tr>
     <tr>
@@ -1638,20 +1657,20 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL 事件筛选条件]</p> </td> 
-      <td> <p>您可以设置筛选条件，仅观看符合您所选条件的记录。</p> <p>对于每个筛选条件，请输入要评估的字段、运算符以及筛选条件应允许的值。 您可以通过添加 AND 规则来使用多个筛选条件。</p> <p>注意：您无法编辑现有Workfront Webhook中的筛选器。 如需为 Workfront 事件订阅设置不同的筛选条件，请删除当前 Webhook 并创建一个新的。</p> <p>有关事件过滤器的详细信息，请参阅Workfront模块文章中的Workfront &gt; [!UICONTROL 观看活动]模块中的<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">事件订阅过滤器</a>。</p> </td> 
+      <td> <p>您可以设置筛选条件，仅观看符合您所选条件的记录。</p> <p>对于每个筛选条件，请输入要评估的字段、运算符以及筛选条件应允许的值。 您可以通过添加 AND 规则来使用多个筛选条件。</p> <p>注意：您无法编辑现有Workfront Webhook中的筛选器。 如需为 Workfront 事件订阅设置不同的筛选条件，请删除当前 Webhook 并创建一个新的。</p> <p>有关事件过滤器的详细信息，请参阅Workfront模块文章中的Workfront &gt; [！UICONTROL观看活动]模块中的<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">事件订阅过滤器</a>。</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 要监视的对象]</td>
+      <td role="rowheader">[！UICONTROL要监视的对象]</td>
       <td>选择是否要监视新的。 更新、新增和更新或删除的记录。</td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 排除此连接所做的更新]</p>
+        <p>[！UICONTROL排除此连接所做的更新]</p>
       </td>
       <td>启用此选项可防止在此模块使用的连接进行更改时触发场景。 如果场景执行触发操作，这将阻止触发场景的另一个实例。</td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 启用安全挂钩]</td>
+      <td role="rowheader">[！UICONTROL启用安全挂钩]</td>
       <td>
        <p>选择是否要为此webhook启用基于authToken的安全性。</p><p>
        <b>注意</b>：自2026年8月23日起，Fusion将默认对所有Workfront计划&gt;观看活动模块（包括现有模块）启用基于authToken的安全性。 如果特定的webhook中断或出于兼容性原因需要禁用此选项，则可以关闭“启用安全挂钩”选项。</p>
@@ -1723,7 +1742,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
       <td role="rowheader">[!UICONTROL 状态]</td>
       <td>选择您希望关注旧状态还是新状态。<ul><li><p><b>[!UICONTROL 新状态]</b></p><p>当记录状态更改<b>为</b>指定值时触发场景。</p></li><li><p><b>[!UICONTROL 旧状态]</b></p><p>当记录状态<b>从</b>指定值发生变化时触发场景。</p></li></ul></td> 
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[！UICONTROL Workspace]</td>
       <td>如果观看记录，请选择您想要观看记录的Workspace。</td>
     </tr>
     <tr>
@@ -1733,15 +1752,15 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr data-mc-conditions=""> 
       <td> <p>[!UICONTROL 事件筛选条件]</p> </td> 
-      <td> <p>您可以设置筛选条件，仅观看符合您所选条件的记录。</p> <p>对于每个筛选条件，请输入要评估的字段、运算符以及筛选条件应允许的值。 您可以通过添加 AND 规则来使用多个筛选条件。</p> <p>注意：您无法编辑现有Workfront Webhook中的筛选器。 如需为 Workfront 事件订阅设置不同的筛选条件，请删除当前 Webhook 并创建一个新的。</p> <p>有关事件过滤器的详细信息，请参阅Workfront模块文章中的Workfront &gt; [!UICONTROL 观看活动]模块中的<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">事件订阅过滤器</a>。</p> </td> 
+      <td> <p>您可以设置筛选条件，仅观看符合您所选条件的记录。</p> <p>对于每个筛选条件，请输入要评估的字段、运算符以及筛选条件应允许的值。 您可以通过添加 AND 规则来使用多个筛选条件。</p> <p>注意：您无法编辑现有Workfront Webhook中的筛选器。 如需为 Workfront 事件订阅设置不同的筛选条件，请删除当前 Webhook 并创建一个新的。</p> <p>有关事件过滤器的详细信息，请参阅Workfront模块文章中的Workfront &gt; [！UICONTROL观看活动]模块中的<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">事件订阅过滤器</a>。</p> </td> 
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 要监视的对象]</td>
+      <td role="rowheader">[！UICONTROL要监视的对象]</td>
       <td>选择是否要监视新的。 更新、新增和更新或删除的记录。</td>
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 排除此连接所做的更新]</p>
+        <p>[！UICONTROL排除此连接所做的更新]</p>
       </td>
       <td>启用此选项可防止在此模块使用的连接进行更改时触发场景。 如果场景执行触发操作，这将阻止触发场景的另一个实例。</td> 
     </tr>
@@ -1773,7 +1792,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 记录类型ID]</p>
+        <p>[！UICONTROL记录类型ID]</p>
       </td>
       <td>输入或映射要删除的记录类型的ID。</td> 
     </tr>
@@ -1846,7 +1865,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Workspace]</p>
+        <p>[！UICONTROL Workspace]</p>
       </td>
       <td>输入或映射包含要搜索的记录的Workspace。</td> 
     </tr>
@@ -1858,13 +1877,13 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 记录字段]</p>
+        <p>[！UICONTROL记录字段]</p>
       </td>
       <td>对于要在搜索中使用的每个字段，请找到该字段，选择运算符，然后输入或映射要搜索的值。 根据所选的记录类型，字段可用。</td> 
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL Condition for filters]</p>
+        <p>[！UICONTROL Condition for filters]</p>
       </td>
       <td>选择过滤器的条件：<ul><li><b>和</b><p>模块返回符合所选字段值的<b>所有</b>的记录。</p></li><li><b>或者</b><p>该模块返回符合所选字段值的<b>any</b>的记录。</p></li></ul></td> 
     </tr>
@@ -1895,7 +1914,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 记录类型ID]</p>
+        <p>[！UICONTROL记录类型ID]</p>
       </td>
       <td>输入或映射要创建的记录类型。 可用的记录类型基于您的Workfront Planning帐户。</td> 
     </tr>
@@ -1923,7 +1942,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 记录ID]</p>
+        <p>[！UICONTROL记录ID]</p>
       </td>
       <td>输入或映射要删除的记录的ID。</td> 
     </tr>
@@ -1943,7 +1962,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
       <td>有关创建与 [!DNL Adobe Workfront Planning] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >创建与 [!DNL Adobe Workfront Planning]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL 记录ID]</td>
+      <td role="rowheader">[！UICONTROL记录ID]</td>
       <td>输入或映射要检索的记录的ID。</td>
     </tr>
   </tbody>
@@ -1962,7 +1981,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
       <td>有关创建与 [!DNL Adobe Workfront Planning] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >创建与 [!DNL Adobe Workfront Planning]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[！UICONTROL Workspace]</td>
       <td>选择或映射包含要检索的记录的工作区。</td>
     </tr>
     <tr>
@@ -1993,7 +2012,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
       <td>有关创建与 [!DNL Adobe Workfront Planning] 的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-workfront-planning" class="MCXref xref" >创建与 [!DNL Adobe Workfront Planning]</a> 的连接。</td>
     </tr>
     <tr>
-      <td role="rowheader">[!UICONTROL Workspace]</td>
+      <td role="rowheader">[！UICONTROL Workspace]</td>
       <td>选择或映射包含要检索的记录类型的工作区。</td>
     </tr>
   </tbody>
@@ -2013,7 +2032,7 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
     </tr>
     <tr>
       <td role="rowheader">
-        <p>[!UICONTROL 记录ID]</p>
+        <p>[！UICONTROL记录ID]</p>
       </td>
       <td>输入或映射要更新的记录类型。 可用的记录类型基于您的Workfront Planning帐户。</td> 
     </tr>
