@@ -5,11 +5,10 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 069ab0fd3d72da3b67d50e4f8e62823c825ef934
 workflow-type: tm+mt
-source-wordcount: 848
+source-wordcount: 849
 ht-degree: 4%
 
 ---
@@ -63,6 +62,9 @@ Fusion Insights仪表板允许您快速查看哪些场景运行得最多、发�
 
 在Fusion Insights仪表板中，您可以看到以下量度。
 
+* **失败的执行日志**
+此表列出了组织内执行的每个失败或警告场景，因此您可以在不离开仪表板的情况下查找并排除问题运行。
+
 * **个等待处理的执行**
 此图表显示在给定时间点等待处理的执行（也称为执行积压）的数量。
 
@@ -79,8 +81,6 @@ Fusion Insights仪表板允许您快速查看哪些场景运行得最多、发�
 此图表显示每个方案的执行次数。 不同的颜色代表不同的场景。 当您将鼠标悬停在图表上时，会出现一个窗口，显示哪种颜色是哪种方案。
 
   您可以使用此图表识别耗时超过正常时间的方案，包括受连接的应用程序或服务问题影响的方案。
-* **执行日志**
-此表列出了组织内执行的每个失败或警告场景，因此您可以在不离开仪表板的情况下查找并排除问题运行。
 
 ## 查看Fusion分析功能板
 
@@ -116,6 +116,6 @@ Fusion Insights仪表板允许您快速查看哪些场景运行得最多、发�
 1. 单击执行可查看有关其错误的更多详细信息。
 1. 要重新激活在重复失败后自动取消激活的一个或多个方案，请选择执行，然后单击&#x200B;**激活**。
 
-   <!-- BECKY CHECK ME: confirm this button's exact label against the live UI. The Slack feature request calls it "Activate," but a related community post describes the same action as "Reactivate." -->
-
-   在重新激活场景之前，调查失败的原因，如凭据过期或连接器问题，以使场景不会立即再次失败。
+   >[!NOTE]
+   >
+   >在重新激活场景之前，调查失败的原因，如凭据过期或连接器问题，以使场景不会立即再次失败。
