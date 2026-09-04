@@ -5,12 +5,11 @@ author: Becky
 feature: Workfront Fusion
 exl-id: 8f80f86a-69e5-48a1-9812-87322a4959a6
 TQID: https://experienceleague.adobe.com/tBZCbpImQxY42gOE8e04aQwCJC8EKgrDTIAt6Sw1KaU
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
 workflow-type: tm+mt
-source-wordcount: 694
-ht-degree: 5%
+source-wordcount: 848
+ht-degree: 4%
 
 ---
 
@@ -79,6 +78,8 @@ Fusion Insights仪表板允许您快速查看哪些场景运行得最多、发�
 此图表显示每个方案的执行次数。 不同的颜色代表不同的场景。 当您将鼠标悬停在图表上时，会出现一个窗口，显示哪种颜色是哪种方案。
 
   您可以使用此图表识别耗时超过正常时间的方案，包括受连接的应用程序或服务问题影响的方案。
+* **执行日志**
+此表列出了组织内执行的每个失败或警告场景，因此您可以在不离开仪表板的情况下查找并排除问题运行。
 
 ## 查看Fusion分析功能板
 
@@ -95,3 +96,25 @@ Fusion Insights仪表板允许您快速查看哪些场景运行得最多、发�
 1. 要更改仪表板的时间范围，请在仪表板右上角的时间范围字段中，选择一个新的时间范围。 可用的最长时间段为24小时，最短时间段为15分钟。
 1. 要刷新图表，请单击仪表板右上角附近的刷新图标。
 1. 要查看其他Worker池，请单击仪表板左上角附近的“池”字段，然后选择要查看的池。
+
+## 在执行日志中过滤和分类执行
+
+使用执行日志查找在您的组织中失败或返回警告的场景执行，并重新激活在重复失败后自动停用的任何场景。
+
+1. 在执行日志中，按以下任一条件筛选执行：
+
+   * [!UICONTROL 团队]
+   * [!UICONTROL 场景]
+   * [!UICONTROL 运行类型]
+   * [!UICONTROL 日期范围]
+   * [!UICONTROL 停用状态]
+   * [!UICONTROL 错误消息]
+
+   对于大多数过滤器，您可以选择仅匹配您选择的值，或者除这些值之外的所有其他值。
+
+1. 单击执行可查看有关其错误的更多详细信息。
+1. 要重新激活在重复失败后自动取消激活的一个或多个方案，请选择执行，然后单击&#x200B;**激活**。
+
+   <!-- BECKY CHECK ME: confirm this button's exact label against the live UI. The Slack feature request calls it "Activate," but a related community post describes the same action as "Reactivate." -->
+
+   在重新激活场景之前，调查失败的原因，如凭据过期或连接器问题，以使场景不会立即再次失败。
