@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: 处理来自#fusion-documentation Slack模板的Fusion文档请求 — 更新此存储库中的相关Fusion文档文章，然后在产品文档Workfront项目中创建匹配任务，并在自定义表单中填写功能描述和带格式的发行说明。 当用户共享Fusion功能的Slack文档请求线程/消息时，或者针对某个功能显示“请更新并创建任务”之类的内容时，可使用。
-source-git-commit: e354c51f13bd4f15172de068cac9720bd097eb8d
+source-git-commit: 6726c582294758de0bbab19d6014ad80bb66e553
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,18 @@ ht-degree: 0%
 
 如果请求链接到具有完整规范的Confluence Wiki页面，请在编写文档之前获取该页面(`get_wiki_content`)。 不要只依赖Slack摘要来了解技术详细信息（确切的字段名称、步骤、UI标签） — 在链接时从Wiki规范中提取技术详细信息。
 
+如果请求而是链接到非Confluence二级源（例如Experience League社区帖子、支持文章、AI生成的摘要）而不是权威规范，则可以使用该请求来填充Slack文本缺少的技术详细信息，但将其视为置信度低于Slack请求本身。 如果与Slack文本冲突或向其中添加（同一按钮/字段的其他名称，是Slack中完全未提及的细节），则不要静默选择一个 — 使用Slack请求的措辞作为主要源编写文档，并根据步骤2中的指导方针使用HTML注释（例如`<!-- BECKY CHECK ME: Slack calls this "Activate," but the linked community post calls it "Reactivate" - confirm against the live UI. -->`）内联标记差异。
+
 ## 第2步：更新文档
 
 在此存储库中查找相关的现有文章（查看相关模块名称、UI标签或设置名称 — 不要猜测文件）。 根据文章的现有结构、标题级别和住宅样式，更新它们以反映更改。
 
 &#x200B;* 请勿发明不在Slack请求或链接的Wiki规范中的技术详细信息（确切字段名称、权限范围、配置步骤）。 如果某些内容未确认，请将其内联标记为HTML评论（例如`<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`），而不是猜测 — 从不将其标记为可见标注。 它不得在已发布的页面上呈现。
-&#x200B;* 如果这需要全新的文章文件（不仅仅是对现有文章文件的编辑），请遵循此存储库的常规规则：前端内容中不存在虚构的`exl-id`/`TQID`，请将新页面电连到相关目录，并在创建文件后将该文件转换为CRLF/no-BOM（`Write`工具默认为LF）。
+&#x200B;* 如果这需要全新的文章文件（不仅仅是对现有文章文件的编辑），请遵循此存储库的常规规则：前端内容中不存在虚构的`exl-id`/`TQID`，在创建文件后将该文件转换为CRLF/no-BOM（`Write`工具默认为LF）。
+&#x200B;* 将新页面加入“目录”意味着以上两种情况，而不仅仅是一种 — 一个页面可以从子索引链接，同时读者仍然不可见：
+  - 产品区域（例如，`help/workfront-fusion/TOC.md`）的主导航文件 — 这是实际驱动已发布导航树的内容。
+  - 任何也链接到此类文章的内容中子索引/登陆页面（例如，新连接器模块页面的`apps-and-modules-toc.md`）。
+    明确检查并确认新条目与每个文件中最接近的同级文章位于同一列表（位于同一嵌套级别），请不要假设将其添加到其中一个包含其他条目。
 
 ## 步骤3：创建Workfront任务
 
@@ -50,6 +56,7 @@ ht-degree: 0%
 |---|---|
 | `name` | `Becky - {Feature Title}` |
 | `projectID` | 从上面的项目查找中 |
+| `parentID` | 父任务ID （`parentID`，系统字段 — 无`DE:`前缀） — 请参阅下面的已知值。 这使新任务成为子任务，而不是项目中的顶层任务。 |
 | `assignedToID` | 当前用户，来自`insights_get_current_user` |
 | `categoryID` | 产品文档自定义表单ID — 请参阅下面的已知值。 如果不清楚，请对此项目中任何最近的同级任务查询`task.task_categoryID`以进行确认。 |
 | `description` | **完成Slack消息文本**（请求模板中的所有字段，而非转述），后跟指向Slack对话的链接 |
@@ -88,5 +95,6 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 确认这些事件仍会解决，而不是假设它们是永久性的：
 
 &#x200B;* 项目“产品文档任务 — 适用于需要消息传送的开发问题”映射到ID `5e69583f00236b9f767c3e3944100ee4`
+&#x200B;* 父任务“Becky - Fusion-Documentation渠道中的任务”映射到ID `6a9b065100003a7554832780c2015e93`（在同一项目中） — 使用`insights_find_id_by_name` （实体`task`）进行解析，而不是硬编码，以防发生更改
 &#x200B;* 产品文档自定义表单(`categoryID`)为`5d7275b9000514604bd969d418725843`
 &#x200B;* 使用的自定义字段： `DE:Release notes`、`DE:Preview Date Known`、`DE:Preview Date`
