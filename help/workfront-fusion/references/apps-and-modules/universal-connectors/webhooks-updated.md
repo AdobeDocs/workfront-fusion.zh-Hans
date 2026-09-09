@@ -9,10 +9,10 @@ product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: 49e408630449952f67d3530f03b7a8755e0e6f6a
 workflow-type: tm+mt
-source-wordcount: 2420
-ht-degree: 8%
+source-wordcount: 3236
+ht-degree: 6%
 
 ---
 
@@ -68,13 +68,24 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 >
 >要调用第三方webhook（传出webhook），请使用其中一个HTTP模块。 有关详细信息，请参阅[HTTP模块](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md#universal-connectors)。
 
-要使用webhook将应用程序连接到Workfront Fusion，您可以设置webhook以使用客户端证书(mTLS)、基本身份验证或Adobe Identity Management System (IMS)进行身份验证。
+要使用webhook将应用程序连接到Workfront Fusion，您可以设置webhook以使用客户端证书(mTLS)、基本身份验证、Adobe Identity Management System (IMS)、API密钥或HMAC签名进行身份验证。
+
+>[!NOTE]
+>
+>**API密钥身份验证现在是新Webhook的默认授权类型**。 以前，不会预先选择任何授权。 您仍然可以将webhook的“授权”类型更改为任何其他类型，或选择空值不进行授权。
+
+* [配置webhook](#configure-a-webhook)
+* [配置webhook的数据结构](#configure-the-webhook-s-data-structure)
+
+### 配置webhook
 
 * [将webhook与客户端证书(mTLS)一起使用](#use-a-webhook-with-a-client-certificate-mtls)
 * [将webhook用于基本身份验证](#use-a-webhook-with-basic-authentication)
 * [在Adobe Identity Management System (IMS)中使用webhook](#use-a-webhook-with-adobe-identity-management-system-ims)
+* [使用带有API密钥身份验证的webhook](#use-a-webhook-with-api-key-authentication)
+* [使用webhook进行HMAC签名身份验证](#use-a-webhook-with-hmac-signature-authentication)
 
-### 将webhook与客户端证书(mTLS)一起使用
+#### 将webhook与客户端证书(mTLS)一起使用
 
 使用mTLS，您可以提供客户端证书和私钥。 调用webhook时，Fusion使用证书和密钥向目标服务验证自身。 此双向身份验证允许webhook比基本身份验证更安全。
 
@@ -85,7 +96,7 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 1. 单击Webhook字段旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;并输入新webhook的名称。
 1. （可选）单击&#x200B;**[!UICONTROL 高级设置]**。
 1. 在&#x200B;**[!UICONTROL IP限制]**&#x200B;字段中，输入模块可以接受其数据的IP地址列表（以逗号分隔）。
-1. （可选）在&#x200B;**[!UICONTROL 源限制]**&#x200B;字段中，对于要允许调用此webhook的每个源，单击&#x200B;**添加项**&#x200B;并输入源模式。 如果要允许任何来源，请将此字段留空。
+1. （可选）在&#x200B;**[!UICONTROL 允许的源]**&#x200B;字段中，对于要允许调用此webhook的每个源，单击&#x200B;**添加项**&#x200B;并输入源模式。 如果要允许任何来源，请将此字段留空。
 
    此字段接受以下模式：
 
@@ -117,7 +128,7 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 >
 >创建webhook后，您可以将其同时用于多个场景。
 
-### 将webhook用于基本身份验证
+#### 将webhook用于基本身份验证
 
 基本验证使用用户名和密码来验证要连接的服务。
 
@@ -126,7 +137,7 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 1. 单击Webhook字段旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;并输入新webhook的名称。
 1. （可选）单击&#x200B;**[!UICONTROL 高级设置]**。
 1. 在&#x200B;**[!UICONTROL IP限制]**&#x200B;字段中，输入模块可以接受其数据的IP地址列表（以逗号分隔）。
-1. （可选）在&#x200B;**[!UICONTROL 源限制]**&#x200B;字段中，对于要允许调用此webhook的每个源，单击&#x200B;**添加项**&#x200B;并输入源模式。 如果要允许任何来源，请将此字段留空。
+1. （可选）在&#x200B;**[!UICONTROL 允许的源]**&#x200B;字段中，对于要允许调用此webhook的每个源，单击&#x200B;**添加项**&#x200B;并输入源模式。 如果要允许任何来源，请将此字段留空。
 
    此字段接受以下模式：
 
@@ -147,7 +158,7 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 >
 >创建webhook后，您可以将其同时用于多个场景。
 
-### 在Adobe Identity Management System (IMS)中使用webhook
+#### 在Adobe Identity Management System (IMS)中使用webhook
 
 Adobe Identity Management System (IMS)身份验证使用您组织的Adobe IMS凭据对您连接到的服务进行身份验证。
 
@@ -156,7 +167,7 @@ Adobe Identity Management System (IMS)身份验证使用您组织的Adobe IMS凭
 1. 单击Webhook字段旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;并输入新webhook的名称。
 1. （可选）单击&#x200B;**[!UICONTROL 高级设置]**。
 1. 在&#x200B;**[!UICONTROL IP限制]**&#x200B;字段中，输入模块可以接受其数据的IP地址列表（以逗号分隔）。
-1. （可选）在&#x200B;**[!UICONTROL 源限制]**&#x200B;字段中，对于要允许调用此webhook的每个源，单击&#x200B;**添加项**&#x200B;并输入源模式。 如果要允许任何来源，请将此字段留空。
+1. （可选）在&#x200B;**[!UICONTROL 允许的源]**&#x200B;字段中，对于要允许调用此webhook的每个源，单击&#x200B;**添加项**&#x200B;并输入源模式。 如果要允许任何来源，请将此字段留空。
 
    此字段接受以下模式：
 
@@ -170,6 +181,80 @@ Adobe Identity Management System (IMS)身份验证使用您组织的Adobe IMS凭
 1. （可选）在&#x200B;**允许的客户端**&#x200B;字段中，输入允许调用此webhook的客户端ID的逗号分隔列表。 将此设置留空以接受其令牌由受信任的颁发者和受众有效签名的任何客户端。
 1. （可选）在&#x200B;**允许的用户**&#x200B;字段中，输入允许调用此webhook的用户ID的逗号分隔列表。 将此设置保留为空将允许任何用户。
 1. （可选）在&#x200B;**必需范围**&#x200B;字段中，输入以逗号分隔的范围列表，该列表必须出现在令牌的`scope`声明中。 留空将跳过范围检查。
+1. 根据需要启用其他设置。
+1. 单击&#x200B;**[!UICONTROL 保存]**
+
+创建webhook后，将显示唯一的URL。 这是webhook发送数据的地址。 Workfront Fusion会验证发送到此地址的数据，然后传递它以在场景中处理。
+
+>[!NOTE]
+>
+>创建webhook后，您可以将其同时用于多个场景。
+
+#### 使用带有API密钥身份验证的webhook
+
+API密钥身份验证使用单个密钥保护webhook端点，该密钥作为请求标头或查询参数发送。 这是新Web挂接的默认授权类型。
+
+1. 将&#x200B;**[!UICONTROL Webhook]** > **[!UICONTROL 自定义Webhook]**&#x200B;即时触发器模块添加到您的方案中。
+
+1. 单击Webhook字段旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;并输入新webhook的名称。
+1. （可选）单击&#x200B;**[!UICONTROL 高级设置]**。
+1. 在&#x200B;**[!UICONTROL IP限制]**&#x200B;字段中，输入模块可以接受其数据的IP地址列表（以逗号分隔）。
+1. （可选）在&#x200B;**[!UICONTROL 允许的源]**&#x200B;字段中，对于要允许调用此webhook的每个源，单击&#x200B;**添加项**&#x200B;并输入源模式。 如果要允许任何来源，请将此字段留空。
+
+   此字段接受以下模式：
+
+   * 确切的主机名： `app.example.com`
+   * 通配符子域： `*.example.com`
+   * 方案限定：` https://app.example.com`或`https://*.example.com`
+1. 如果要验证传入数据，请在&#x200B;**数据结构**&#x200B;字段中，选择或添加要使用的数据结构。
+
+   有关数据结构的信息，请参阅[数据结构](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)。
+1. 在&#x200B;**授权类型**&#x200B;字段中，选择&#x200B;**[!UICONTROL API密钥身份验证]**（如果尚未选择）。
+1. 在&#x200B;**密钥**&#x200B;字段中，选择要用于授权的API密钥，或单击&#x200B;**添加**&#x200B;并输入新凭据以添加新的API密钥：
+   1. 输入新凭据密钥的名称。
+   1. 在&#x200B;**密钥**&#x200B;字段中，输入要用于进行身份验证的密钥值。 使用字段旁边的眼睛图标在键入内容时显示或隐藏字段。
+   1. 在&#x200B;**API密钥位置**&#x200B;字段中，选择密钥是在标头中发送还是作为查询参数发送。
+   1. 在&#x200B;**API密钥参数名称**&#x200B;字段中，输入密钥发送所在的标头或查询参数名称，例如`X-API-Key`。
+   1. 单击&#x200B;**创建键**。
+   1. 返回webhook面板的&#x200B;**凭据**&#x200B;字段中，选择新密钥。
+1. 根据需要启用其他设置。
+1. 单击&#x200B;**[!UICONTROL 保存]**
+
+创建webhook后，将显示唯一的URL。 这是webhook发送数据的地址。 Workfront Fusion会验证发送到此地址的数据，然后传递它以在场景中处理。
+
+>[!NOTE]
+>
+>创建webhook后，您可以将其同时用于多个场景。
+
+#### 使用webhook进行HMAC签名身份验证
+
+HMAC签名验证验证传入的请求是否使用共享的签名密钥签名，防止篡改和欺骗的调用，而不会在每个请求上发送密钥本身。
+
+1. 将&#x200B;**[!UICONTROL Webhook]** > **[!UICONTROL 自定义Webhook]**&#x200B;即时触发器模块添加到您的方案中。
+
+1. 单击Webhook字段旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;并输入新webhook的名称。
+1. （可选）单击&#x200B;**[!UICONTROL 高级设置]**。
+1. 在&#x200B;**[!UICONTROL IP限制]**&#x200B;字段中，输入模块可以接受其数据的IP地址列表（以逗号分隔）。
+1. （可选）在&#x200B;**[!UICONTROL 允许的源]**&#x200B;字段中，对于要允许调用此webhook的每个源，单击&#x200B;**添加项**&#x200B;并输入源模式。 如果要允许任何来源，请将此字段留空。
+
+   此字段接受以下模式：
+
+   * 确切的主机名： `app.example.com`
+   * 通配符子域： `*.example.com`
+   * 方案限定：` https://app.example.com`或`https://*.example.com`
+1. 如果要验证传入数据，请在&#x200B;**数据结构**&#x200B;字段中，选择或添加要使用的数据结构。
+
+   有关数据结构的信息，请参阅[数据结构](/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md)。
+1. 在&#x200B;**授权类型**&#x200B;字段中，选择&#x200B;**[!UICONTROL HMAC签名]**。
+1. 在&#x200B;**key**&#x200B;字段中，选择要用于授权的签名，或单击&#x200B;**添加**&#x200B;并输入新凭据以添加新签名。
+   1. 输入新凭据密钥的名称。
+   1. 在&#x200B;**签名密钥**&#x200B;字段中，输入要使用的共享密钥。 使用字段旁边的眼睛图标在键入内容时显示或隐藏字段。
+   1. 在&#x200B;**算法**&#x200B;字段中，选择要使用的哈希算法，例如SHA-256。
+   1. 在&#x200B;**签名标头**&#x200B;字段中，输入从中读取签名的标头的名称，例如`x-fusion-signature-256`。
+   1. 在&#x200B;**签名编码**&#x200B;字段中，选择签名值的编码，例如十六进制。
+   1. （可选）在&#x200B;**签名前缀**&#x200B;字段中，如果签名值应为前缀，请输入前缀，例如`sha256=`。
+   1. 单击&#x200B;**创建键**。
+   1. 返回webhook面板的&#x200B;**凭据**&#x200B;字段中，选择新密钥。
 1. 根据需要启用其他设置。
 1. 单击&#x200B;**[!UICONTROL 保存]**
 

@@ -8,10 +8,10 @@ exl-id: 105e3d39-b0ef-4c22-901d-fb4f29e685a9
 TQID: https://experienceleague.adobe.com/3EtKXHUMeJ7FL9pEJpYVpT59fvnlyeC1BMpMK2KGD6M
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 7c16e9411b334d32e63b88b18f538f69e494b360
+source-git-commit: 5c5f46e2ec05d6f3e1fdde8d13fb1e38d2a99690
 workflow-type: tm+mt
-source-wordcount: 1366
-ht-degree: 7%
+source-wordcount: 1389
+ht-degree: 6%
 
 ---
 
@@ -65,6 +65,8 @@ ht-degree: 7%
 ### 描述
 
 在这里，您可以输入方案的说明，该说明将显示在方案列表中。 说明长度限制为240个字符。
+
+单击&#x200B;**[!UICONTROL 使用AI描述]**&#x200B;以使AI根据方案的模块和配置自动为您生成方案的描述。
 
 ### [!UICONTROL 连续处理]
 
