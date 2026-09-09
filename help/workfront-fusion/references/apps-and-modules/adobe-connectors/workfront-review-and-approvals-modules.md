@@ -4,16 +4,13 @@ description: 通过Adobe Workfront的“内容和审批”模块，您可以获�
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: e9ea91840c9be594e98b97202cb46dfa009349a9
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: 68b973fd27c2c5a40000096a29b38b46481ae190
 workflow-type: tm+mt
-source-wordcount: 3743
-ht-degree: 15%
+source-wordcount: 4194
+ht-degree: 14%
 
 ---
 
@@ -21,7 +18,7 @@ ht-degree: 15%
 
 使用Adobe Workfront统一审查和审批模块，您可以获取审批详细信息、做出资产决策、添加或删除审批参与者、添加或更新审批阶段、锁定或解锁阶段以及进行自定义API调用。
 
-有关Workfront统一审阅和批准的信息，请参阅Workfront文档中的[统一审阅和批准概述](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/review-and-approve-work/document-approvals-overview)。
+有关Workfront统一审阅和批准的信息，请参阅Workfront文档中的[统一审阅和批准概述](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)。
 
 ## 访问权限要求
 
@@ -136,16 +133,21 @@ ht-degree: 15%
 * [批量删除模板](#bulk-delete-templates)
 * [创建模板](#create-a-template)
 * [创建批准](#create-an-approval)
+* [创建分组审批](#create-grouped-approval)
 * [创建阶段](#create-stages)
 * [删除阶段上的决策](#delete-a-decision-on-a-stage)
 * [删除阶段](#delete-a-stage)
 * [删除模板](#delete-a-template)
 * [删除审批](#delete-an-approval)
 * [删除决策](#delete-decisions)
+* [删除分组的审批](#delete-grouped-approval)
 * [删除参与者](#delete-participants)
 * [锁定舞台](#lock-a-stage)
 * [做出决定](#make-a-decision)
 * [在舞台上做出决策](#make-a-decision-on-a-stage)
+* [管理分组审批的Assets](#manage-assets-on-a-grouped-approval)
+* [管理阶段参与者](#manage-stage-participants)
+* [管理分组审批的阶段](#manage-stages-on-a-grouped-approval)
 * [提醒舞台上的参与者](#remind-a-participant-on-a-stage)
 * [提醒参与者](#remind-participant)
 * [提醒未决定的参与者](#remind-undecided-participants)
@@ -154,6 +156,7 @@ ht-degree: 15%
 * [更新阶段](#update-a-stage)
 * [更新模板](#update-a-template)
 * [更新所有阶段](#update-all-stages)
+* [更新分组的审批（完整状态）](#update-grouped-approval-full-state)
 
 
 #### 添加或更新参与者
@@ -269,6 +272,23 @@ ht-degree: 15%
       </tr>
   </tbody>
 </table>
+
+#### 创建分组审批
+
+此操作模块创建一个分组审批。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe Workfront统一审查和批准的连接的说明，请参阅本文中的<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >连接到Adobe Workfront统一审查和批准</a>。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Create Grouped Approval"), without field detail. -->
 
 #### 创建阶段
 
@@ -404,6 +424,23 @@ ht-degree: 15%
   </tbody>
 </table>
 
+#### 删除分组的审批
+
+此操作模块删除指定的分组审批。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe Workfront统一审查和批准的连接的说明，请参阅本文中的<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >连接到Adobe Workfront统一审查和批准</a>。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Delete Grouped Approval"), without field detail. -->
+
 #### 删除参与者
 
 此操作模块从审批中删除参与者。
@@ -515,6 +552,57 @@ ht-degree: 15%
       </tr>
   </tbody>
 </table>
+
+#### 管理分组审批的Assets
+
+此操作模块管理分组审批中包含哪些资产。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe Workfront统一审查和批准的连接的说明，请参阅本文中的<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >连接到Adobe Workfront统一审查和批准</a>。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Assets on a Grouped Approval"), without field detail. -->
+
+#### 管理阶段参与者
+
+此操作模块用于管理阶段中的参与者。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe Workfront统一审查和批准的连接的说明，请参阅本文中的<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >连接到Adobe Workfront统一审查和批准</a>。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stage Participants"), without field detail. -->
+
+#### 管理分组审批的阶段
+
+此操作模块管理分组审批的阶段。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe Workfront统一审查和批准的连接的说明，请参阅本文中的<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >连接到Adobe Workfront统一审查和批准</a>。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stages on a Grouped Approval"), without field detail. -->
 
 #### 提醒舞台上的参与者
 
@@ -755,16 +843,37 @@ THis模块将现有审批的所有阶段替换为给定的阶段数据。 文档
   </tbody>
 </table>
 
+#### 更新分组的审批（完整状态）
+
+此操作模块将替换指定分组审批的完整状态。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe Workfront统一审查和批准的连接的说明，请参阅本文中的<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >连接到Adobe Workfront统一审查和批准</a>。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Update Grouped Approval (Full State)"), without field detail. -->
+
 ### 搜索
 
 * [获取模板](#get-a-template)
 * [获取审批详细信息](#get-approval-details)
+* [在分组审批中获取审批](#get-approvals-in-a-grouped-approval)
+* [获取分组的审批详细信息](#get-grouped-approval-details)
 * [获取多个审批](#get-multiple-approvals)
 * [获取建议的审批](#get-suggested-approvals)
 * [获取建议的参与者](#get-suggested-participants)
 * [列表机器人](#list-bots)
+* [按父项列出分组的批准](#list-grouped-approvals-by-parent)
 * [列表模板](#list-templates)
 * [搜索AI品牌审阅者](#search-ai-brand-reviews)
+* [搜索分组的批准](#search-grouped-approvals)
 
 
 #### 获取模板
@@ -816,6 +925,40 @@ THis模块将现有审批的所有阶段替换为给定的阶段数据。 文档
       </tr>
   </tbody>
 </table>
+
+#### 在分组审批中获取审批
+
+此搜索模块返回分组审批中包含的各个审批。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe Workfront统一审查和批准的连接的说明，请参阅本文中的<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >连接到Adobe Workfront统一审查和批准</a>。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Approvals in a Grouped Approval"), without field detail. -->
+
+#### 获取分组的审批详细信息
+
+此搜索模块检索指定分组审批的详细信息。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe Workfront统一审查和批准的连接的说明，请参阅本文中的<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >连接到Adobe Workfront统一审查和批准</a>。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Grouped Approval Details"), without field detail. -->
 
 #### 获取多个审批
 
@@ -925,6 +1068,23 @@ THis模块将现有审批的所有阶段替换为给定的阶段数据。 文档
   </tbody>
 </table>
 
+#### 按父项列出分组的批准
+
+此搜索模块返回指定父项的分组审批列表。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe Workfront统一审查和批准的连接的说明，请参阅本文中的<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >连接到Adobe Workfront统一审查和批准</a>。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("List Grouped Approvals by Parent"), without field detail. -->
+
 #### 列表模板
 
 此模块返回当前用户可用的所有审批模板的列表。 当前用户是其凭据用于此模块中使用的连接的用户。
@@ -984,6 +1144,23 @@ THis模块将现有审批的所有阶段替换为给定的阶段数据。 文档
        </tr>
   </tbody>
 </table>
+
+#### 搜索分组的批准
+
+此搜索模块将搜索符合指定条件的分组批准。
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">连接</td>
+      <td>有关创建与Adobe Workfront统一审查和批准的连接的说明，请参阅本文中的<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >连接到Adobe Workfront统一审查和批准</a>。</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Search Grouped Approvals"), without field detail. -->
 
 ### 其他
 
