@@ -3,9 +3,8 @@ title: Adobe Experience Manager MCP模块
 description: 使用Adobe Experience Manager MCP模块，您可以向Adobe Experience Manager的MCP服务器发送纯英语提示，并让AI模型执行该请求。
 author: Becky
 feature: Workfront Fusion
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 4c23409465b4be9fd10ff6938a750bc662ba2fe4
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+source-git-commit: 06271bbe8dd3c5eb7e3c6b45b71e7e0f7fd4d444
 workflow-type: tm+mt
 source-wordcount: 1020
 ht-degree: 11%
@@ -136,3 +135,4 @@ Adobe Experience Manager MCP连接器使用OAuth连接到Adobe Experience Manage
 </table>
 
 该模块会以文本形式返回AI的最终答案，并记录产生该答案时发生了什么情况，包括调用了哪些工具、每次调用是否成功以及处理耗时多长。
+

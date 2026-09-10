@@ -1,9 +1,9 @@
 ---
 name: fusion-release-notes
 description: 创建一个新的Workfront Fusion每周发行说明页面，并将其链接到发行活动概述页面和目录。 当用户想要编写、添加或草稿新的Fusion发行说明或每周发行页面，或者请求为发行记录新的Fusion功能时使用。 请勿在product-announcements/product-releases中使用Workfront (Quicksilver)发行说明 — 针对这些内容使用release-notes-formatter。
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+source-git-commit: fcdbfd246808c5cc7a81c4f01990a077ca189112
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ This page describes all enhancements made in Adobe Workfront Fusion the week of 
 
 For a list of all recent changes, see [Adobe Workfront Fusion release activity](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md).
 
-For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/zh-hans/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
+For a list of recent bug fixes in Workfront Fusion, see the [Workfront Maintenance Updates](https://experienceleague.adobe.com/en/docs/workfront-known-issues/releases/current-updates) page and check for any updates labeled Workfront Fusion Maintenance Update.
 
 ## {Feature title}
 
@@ -98,7 +98,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   
   {Regular description paragraph(s).}
   ```
-
 - 每个功能都应以“有关详细信息，请参阅[...]”结尾 相关帮助文章的链接。 验证链接目标是否存在于存储库中。
 
 ## 步骤4：将页面添加到概览索引
@@ -113,7 +112,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
   * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - 如果这是新年的第一个版本，请在上一年的标题上方添加新的`## Fusion releases in {YYYY}`标题，并将&#x200B;*previous*&#x200B;年的部分包装在`+++ **Click to open**` / `+++`可折叠块中（如果尚未包装）。
 
 ## 步骤5：将页面添加到目录
@@ -126,7 +124,6 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
   ```markdown
         * [Workfront Fusion release activity: Week of {Month} {Day}, {Year}](/help/workfront-fusion/fusion-product-releases/fusion-releases-{YYYY}/fusion-{YYYY}-{M}-{D}.md)
   ```
-
 - 如果当前年份的标题尚不存在，请在上一年标题上方添加`* Fusion releases - {YYYY} {#fusion-releases-{YYYY}}`。
 - **不要**&#x200B;将`{hide-from-toc}`前缀添加到新条目 — 仅用于旧条目过期后退出可见导航的条目（请参阅下面的已知不一致）。
 
@@ -145,7 +142,7 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
 - 如果&#x200B;**是**，请收集：
   - **源路径**（必须以`/en`开头，无空格）
   - **目标** — 以`/en`开头的相对路径，或完整的`https` URL（无空格）
-- 将行添加到同级`Adobe-Enterprise-Docs/redirects`存储库，在`redirects/`下，每个环境(`redirects-dev.csv`、`redirects-stage.csv`、`redirects-prod.csv`)一个文件。
+- 将该行添加到`redirects/redirects-prod.csv` **only**&#x200B;下的同级`Adobe-Enterprise-Docs/redirects`存储库。 永远不要将它添加到`redirects-dev.csv`或`redirects-stage.csv` — 生产是此技能涉及的唯一环境。
 - 行规则（来自该存储库的自述文件）：
   - 没有重复的`source`，也没有重复的`source`/`destination`对。
   - 重定向不得导致重定向循环。
