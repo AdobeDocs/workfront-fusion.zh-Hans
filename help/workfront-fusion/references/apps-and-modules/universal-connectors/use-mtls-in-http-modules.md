@@ -7,7 +7,7 @@ exl-id: 1e0b4c3b-9a0b-491d-aaf2-0011d8386abe
 TQID: https://experienceleague.adobe.com/L-0fyqwvahM--LXM15no9APxcFNkAsoYqHwAqO1bAno
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+source-git-commit: ffd91f83940f37b15229b79fa04b5a3596bd97fb
 workflow-type: tm+mt
 source-wordcount: 901
 ht-degree: 15%
@@ -95,12 +95,12 @@ ht-degree: 15%
 
 下载以下zip文件，将其解压缩，然后将PEM文件用于您的数据中心。
 
-[下载Workfront Fusion 2026证书](assets/2026-certs/fusion-prod-mtls-certificate-2026.zip)
+[下载Workfront Fusion 2026证书](assets/fusion-prod-mtls-certificate-2026-updated.zip)
 
 | 数据中心 | 下载链接 | 日期有效 |
 | --- | --- | --- |
 | 美国AWS数据中心 | `fusion-prod-us-mtls-certificate-2026.pem` | 2026年1月29日至2027年3月2日 |
-| 美国Azure群集 | `fusion-prod-az-mtls-certificate.pem` | 2025年9月21日至2026年10月23日 |
+| 美国Azure群集 | `fusion-prod-az-mtls-certificate-2026-sept.pem` | 2026年8月19日至2027年3月6日 |
 | 欧盟AWS数据中心 | `fusion-prod-eu-mtls-certificate-2026.pem` | 2026年1月29日至2027年3月2日 |
 | 欧盟Azure集群 | `fusion-prod-eu-az-mtls-certificate-2026.pem` | 2026年2月4日至2027年3月8日 |
 

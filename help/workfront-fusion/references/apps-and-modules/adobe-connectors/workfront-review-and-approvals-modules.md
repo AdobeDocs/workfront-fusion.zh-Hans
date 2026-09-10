@@ -10,7 +10,7 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: e9ea91840c9be594e98b97202cb46dfa009349a9
+source-git-commit: edf962333554869d75f0956dfceccce04dd36ec6
 workflow-type: tm+mt
 source-wordcount: 3743
 ht-degree: 15%
@@ -270,6 +270,27 @@ ht-degree: 15%
   </tbody>
 </table>
 
+<!--
+
+#### Create Grouped Approval
+
+This action module creates a grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+  </tbody>
+</table>
+
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Create Grouped Approval"), without field detail.
+
+-->
+
 #### 创建阶段
 
 此操作模块使用给定的阶段数据创建批准。
@@ -404,6 +425,27 @@ ht-degree: 15%
   </tbody>
 </table>
 
+<!--
+
+#### Delete Grouped Approval
+
+This action module deletes the specified grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+  </tbody>
+</table>
+
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Delete Grouped Approval"), without field detail.
+
+-->
+
 #### 删除参与者
 
 此操作模块从审批中删除参与者。
@@ -515,6 +557,69 @@ ht-degree: 15%
       </tr>
   </tbody>
 </table>
+
+<!--
+
+#### Manage Assets on a Grouped Approval
+
+This action module manages which assets are included in a grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+  </tbody>
+</table>
+
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Assets on a Grouped Approval"), without field detail.
+
+-->
+
+<!--
+
+#### Manage Stage Participants
+
+This action module manages participants on a stage.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+  </tbody>
+</table>
+
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stage Participants"), without field detail.
+
+-->
+
+<!--
+
+#### Manage Stages on a Grouped Approval
+
+This action module manages the stages on a grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+  </tbody>
+</table>
+
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Manage Stages on a Grouped Approval"), without field detail.
+
+-->
 
 #### 提醒舞台上的参与者
 
@@ -755,6 +860,27 @@ THis模块将现有审批的所有阶段替换为给定的阶段数据。 文档
   </tbody>
 </table>
 
+<!--
+
+#### Update Grouped Approval (Full State)
+
+This action module replaces the full state of the specified grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+  </tbody>
+</table>
+
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Update Grouped Approval (Full State)"), without field detail.
+
+-->
+
 ### 搜索
 
 * [获取模板](#get-a-template)
@@ -816,6 +942,48 @@ THis模块将现有审批的所有阶段替换为给定的阶段数据。 文档
       </tr>
   </tbody>
 </table>
+
+<!--
+
+#### Get Approvals in a Grouped Approval
+
+This search module returns the individual approvals contained in a grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+  </tbody>
+</table>
+
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Approvals in a Grouped Approval"), without field detail.
+
+-->
+
+<!--
+
+#### Get Grouped Approval Details
+
+This search module retrieves details for the specified grouped approval.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+  </tbody>
+</table>
+
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Get Grouped Approval Details"), without field detail.
+
+-->
 
 #### 获取多个审批
 
@@ -925,6 +1093,27 @@ THis模块将现有审批的所有阶段替换为给定的阶段数据。 文档
   </tbody>
 </table>
 
+<!--
+
+#### List Grouped Approvals by Parent
+
+This search module returns a list of grouped approvals for the specified parent.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+  </tbody>
+</table>
+
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("List Grouped Approvals by Parent"), without field detail.
+
+-->
+
 #### 列表模板
 
 此模块返回当前用户可用的所有审批模板的列表。 当前用户是其凭据用于此模块中使用的连接的用户。
@@ -984,6 +1173,27 @@ THis模块将现有审批的所有阶段替换为给定的阶段数据。 文档
        </tr>
   </tbody>
 </table>
+
+<!--
+
+#### Search Grouped Approvals
+
+This search module searches for grouped approvals matching the specified criteria.
+
+<table style="table-layout:auto"> 
+  <col/>
+  <col/>
+  <tbody>
+    <tr>
+      <td role="rowheader">Connection</td>
+      <td>For instructions on creating a connection to Adobe Workfront Unified Review and Approvals, see <a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >Connect to Adobe Workfront Unified Review and Approvals</a> in this article.</td>
+    </tr>
+  </tbody>
+</table>
+
+BECKY CHECK ME: confirm this module's field-level UI before publishing - the Slack request only listed this module by name ("Search Grouped Approvals"), without field detail.
+
+-->
 
 ### 其他
 
