@@ -3,7 +3,8 @@ title: Adobe Experience Manager MCP模块
 description: 使用Adobe Experience Manager MCP模块，您可以向Adobe Experience Manager的MCP服务器发送纯英语提示，并让AI模型执行该请求。
 author: Becky
 feature: Workfront Fusion
-product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
 source-git-commit: 4c23409465b4be9fd10ff6938a750bc662ba2fe4
 workflow-type: tm+mt
 source-wordcount: 1020
