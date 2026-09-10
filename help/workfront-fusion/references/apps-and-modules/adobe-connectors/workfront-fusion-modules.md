@@ -5,10 +5,10 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 557ec6de4ccf0753005fed3e4772d2eb9317537d
+source-git-commit: 7606f1b15aac0f2baef1b4ef16e3bcaa39dad27c
 workflow-type: tm+mt
-source-wordcount: 1374
-ht-degree: 21%
+source-wordcount: 1430
+ht-degree: 20%
 
 ---
 
@@ -276,6 +276,9 @@ ht-degree: 21%
 
 ### 导出
 
+* [导出活动日志](#export-activity-logs)
+* [导出方案](#export-scenarios)
+
 #### 导出活动日志
 
 此模块可导出活动日志。
@@ -311,6 +314,25 @@ ht-degree: 21%
   <tr> 
    <td role="rowheader">方向</td> 
    <td>选择要按升序或降序排序结果。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 导出方案
+
+此模块可导出一个或多个场景的Fusion Blueprint。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将Workfront Fusion连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">将Workfront Fusion连接到Workfront Fusion</a>。</p> </td> 
+  <tr> 
+   <td role="rowheader">方案ID</td> 
+   <td>对于每个要导出的方案，单击<b>添加项</b>并输入方案ID。</td> 
+  </tr> 
   </tr> 
  </tbody> 
 </table>

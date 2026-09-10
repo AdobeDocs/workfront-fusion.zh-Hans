@@ -1,9 +1,9 @@
 ---
 name: fusion-release-notes
 description: 创建一个新的Workfront Fusion每周发行说明页面，并将其链接到发行活动概述页面和目录。 当用户想要编写、添加或草稿新的Fusion发行说明或每周发行页面，或者请求为发行记录新的Fusion功能时使用。 请勿在product-announcements/product-releases中使用Workfront (Quicksilver)发行说明 — 针对这些内容使用release-notes-formatter。
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+source-git-commit: 6610b43b1f313e29654acd8cfcd339240a718f5d
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -145,10 +145,11 @@ For more information, see [{Help article title}](/help/workfront-fusion/{path-to
 - 如果&#x200B;**是**，请收集：
   - **源路径**（必须以`/en`开头，无空格）
   - **目标** — 以`/en`开头的相对路径，或完整的`https` URL（无空格）
-- 将行添加到同级`Adobe-Enterprise-Docs/redirects`存储库，在`redirects/`下，每个环境(`redirects-dev.csv`、`redirects-stage.csv`、`redirects-prod.csv`)一个文件。
+- 将该行添加到同级`Adobe-Enterprise-Docs/redirects`存储库、`redirects/redirects-prod.csv` **以及没有其他文件**。 切勿将其添加到该存储库中的`redirects-dev.csv`、`redirects-stage.csv`或任何其他文件 — prod是此技能涉及的唯一环境，分支应仅包含该文件的更改。
 - 行规则（来自该存储库的自述文件）：
   - 没有重复的`source`，也没有重复的`source`/`destination`对。
   - 重定向不得导致重定向循环。
+- 对`redirects`存储库中名为`workfront-{month}-{day}-{year}-{topic}`的新分支进行更改（小写，如`workfront-sep-10-2026-aem-mcp-redirect`） — 从不直接提交到此处的`main`。
 - **该技能仅在用户确认CSV行后添加。** 在`redirects`存储库中提升PR是此技能没有执行的单独步骤 — 告知用户，在重定向开始之前，仍需要打开并合并PR（对于1:1重定向，合并后约5分钟）。
 
 ## 步骤8：最终核对表
