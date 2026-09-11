@@ -11,9 +11,9 @@ feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 9521866c29e4e08eaf815080162735f0f70299a5
+source-git-commit: 77d29cea134abe6e048fd744151acffe256f5992
 workflow-type: tm+mt
-source-wordcount: 6739
+source-wordcount: 6777
 ht-degree: 32%
 
 ---
@@ -1677,6 +1677,12 @@ Workfront Planning连接器使用OAuth 2.0连接到Workfront Planning。
       <td>
        <p>选择是否要为此webhook启用基于authToken的安全性。</p><p>
        <b>注意</b>：自2026年8月23日起，Fusion将默认对所有Workfront计划&gt;观看活动模块（包括现有模块）启用基于authToken的安全性。 如果特定的webhook中断或出于兼容性原因需要禁用此选项，则可以关闭“启用安全挂钩”选项。</p>
+      </td>
+    </tr>
+    <tr>
+      <td role="rowheader">[!UICONTROL 自定义令牌]</td>
+      <td>
+       <p>（可选）如果[!UICONTROL Enable secure hooks]设置为[!UICONTROL Yes]，则可以输入自己的令牌值来保护webhook。 如果您将此字段留空，Fusion会自动为您生成一个令牌。</p>
       </td>
     </tr>
   </tbody>

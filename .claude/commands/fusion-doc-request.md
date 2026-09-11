@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: 处理来自#fusion-documentation Slack模板的Fusion文档请求 — 更新此存储库中的相关Fusion文档文章，然后在产品文档Workfront项目中创建匹配任务，并在自定义表单中填写功能描述和带格式的发行说明。 当用户共享Fusion功能的Slack文档请求线程/消息时，或者针对某个功能显示“请更新并创建任务”之类的内容时，可使用。
-source-git-commit: 2b1e8c3281334ac0846bd7cc6297f972dc1bad61
+source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -70,10 +70,13 @@ ht-degree: 0%
 | `description` | **完成Slack消息文本**（请求模板中的所有字段，而非转述），后跟指向Slack对话的链接 |
 | `DE:Release notes` | 带格式的发行说明，请参阅下面的格式 |
 | `DE:Preview Date Known` | `Yes`，默认 |
-| `DE:Preview Date` | 默认情况下，请求的&#x200B;**预计发布日期** |
+| `DE:Preview Date` | 默认情况下，原始Slack消息中引用的日期（请求的&#x200B;**预计发布日期**） |
+| `taskConstraint` + `constraintDate` | 将`taskConstraint`设置为`MFO`（必须完成日期），其中`constraintDate`为原始Slack消息中引用的日期（请求的&#x200B;**预计发布日期**），因此任务的计划完成日期也与该日期匹配。 |
 | 产品/区域 | 选择`Fusion` （产品文档表单上的枚举字段；如果名称不清楚，请使用`insights_search_fields`确认确切的字段名称） |
 
-将预览日期字段设置为同一创建调用的一部分 — 请勿将其留待以后或等待询问。 如果用户稍后提供不同的日期，或指出日期实际上尚不知道，请相应地更新，但默认每次都填写日期。
+将预览日期字段和计划完成日期设置为此同一创建调用的一部分 — 不要将它们留待以后或等待询问。 如果用户稍后提供不同的日期，或指出日期实际上尚不知道，请相应地更新，但默认每次都填写日期。
+
+新任务默认为持续时间为0的“尽可能早”约束，其中`plannedStartDate`/`plannedCompletionDate`是调度程序派生的，对任一任务的直接写入将被静默删除（没有错误，日期不会更改）。 使用`constraintDate`设置`taskConstraint: "MFO"`是将计划完成日期固定到Slack消息中引用的日期的可靠方法。 在此写入之前读取`workfront://knowledge/task/update` — 根据MCP服务器的规则，它是一个计划/日期字段。
 
 `DE:Release notes`字段的发行说明格式。 始终以`***FUSION***`在其自己的行中开头，然后是空白行，然后是标题 — 这将标记注释概览，使其归属于Fusion（与核心Workfront相反）：
 
