@@ -4,16 +4,13 @@ description: 通过Adobe Workfront的“内容和审批”模块，您可以获�
 author: Becky
 feature: Workfront Fusion
 exl-id: d1bc9e39-da49-4090-a106-14b52855bc8f
-product_v2:
-  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-feature_v2:
-  - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: edf962333554869d75f0956dfceccce04dd36ec6
+product_v2: id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+feature_v2: id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+source-git-commit: bb6db3153c3c85ef1df1a0d49d127c3e712dbc3c
 workflow-type: tm+mt
-source-wordcount: 3743
-ht-degree: 15%
+source-wordcount: 3631
+ht-degree: 16%
 
 ---
 
@@ -21,7 +18,7 @@ ht-degree: 15%
 
 使用Adobe Workfront统一审查和审批模块，您可以获取审批详细信息、做出资产决策、添加或删除审批参与者、添加或更新审批阶段、锁定或解锁阶段以及进行自定义API调用。
 
-有关Workfront统一审阅和批准的信息，请参阅Workfront文档中的[统一审阅和批准概述](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/review-and-approve-work/document-approvals-overview)。
+有关Workfront统一审阅和批准的信息，请参阅Workfront文档中的[统一审阅和批准概述](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)。
 
 ## 访问权限要求
 
@@ -135,7 +132,6 @@ ht-degree: 15%
 * [添加或更新参与者](#add-or-update-participants)
 * [批量删除模板](#bulk-delete-templates)
 * [创建模板](#create-a-template)
-* [创建批准](#create-an-approval)
 * [创建阶段](#create-stages)
 * [删除阶段上的决策](#delete-a-decision-on-a-stage)
 * [删除阶段](#delete-a-stage)
@@ -237,35 +233,6 @@ ht-degree: 15%
     <tr>
       <td role="rowheader"><p>共享对象为</p></td>
       <td>对于要与其共享模板的每个用户，单击<b>添加项</b>以及用户ID和所需的访问级别。</td> 
-      </tr>
-  </tbody>
-</table>
-
-#### 创建批准
-
-此操作模块可为Adobe云存储上的文档（包括暂存数据或模板）创建批准。
-
-<table style="table-layout:auto"> 
-  <col/>
-  <col/>
-  <tbody>
-    <tr>
-      <td role="rowheader">连接</td>
-      <td>有关创建与Adobe Workfront统一审查和批准的连接的说明，请参阅本文中的<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref" >连接到Adobe Workfront统一审查和批准</a>。</td>
-    </tr>
-     <tr>
-      <td role="rowheader"><p>文档 ID</p></td>
-      <td>输入或映射要为其创建批准的资源的ID。</td> 
-      </tr>
-     <tr>
-      <td role="rowheader">
-        <p>阶段</p>
-      </td>
-      <td>对于要添加的每个阶段，单击<b>添加项</b>并输入阶段数据。<p>有关详细信息，请参阅本文中的<a href="#stages-fields" class="MCXref xref" >阶段字段</a>。 </p> </td> 
-      </tr>
-    <tr>
-      <td role="rowheader"><p>模板 ID</p></td>
-      <td>输入或映射要用于此审批的模板ID。</td> 
       </tr>
   </tbody>
 </table>
