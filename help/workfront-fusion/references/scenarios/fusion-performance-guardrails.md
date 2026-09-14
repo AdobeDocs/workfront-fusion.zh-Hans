@@ -7,13 +7,12 @@ exl-id: d142a521-edbc-4d7b-b5cd-872a9d3d2e1c
 TQID: https://experienceleague.adobe.com/TARMza99lJaSq6kUUr3xxMf0ExtoQBNk6L-KzzEEL8U
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: c9c182d6c6acc34295970f9138067a6cb6c2ba2a
+    internal-label: Workfront
+source-git-commit: e9450b468ff8df80286ebd8a0c1aa4070b6cb01b
 workflow-type: tm+mt
-source-wordcount: 1360
-ht-degree: 76%
-
+source-wordcount: '1445'
+ht-degree: 72%
 ---
-
 # Fusion 性能护栏
 
 工作自动化需要快速处理，因此 Adobe Workfront Fusion 专为高性能而设计。 由于长时间运行的场景会降低工作效率，Workfront Fusion 通过限制执行时长、数据大小等场景参数，引入性能防护护栏。 Workfront Fusion 的设计人员应了解这些护栏并将其纳入设计实践中。
@@ -37,8 +36,8 @@ ht-degree: 76%
 
   包含大量字段的应用程序模块在创建或更新数据时可能导致 Blueprint 体积显著增大。
 
-   * 使用 Workfront 应用程序时，请确保仅选择创建或更新用例所需的字段。
-   * 使用其他应用程序时，对于字段数量较多的记录类型，请使用自定义 API 模块进行交互。
+  * 使用 Workfront 应用程序时，请确保仅选择创建或更新用例所需的字段。
+  * 使用其他应用程序时，对于字段数量较多的记录类型，请使用自定义 API 模块进行交互。
 
 * 虽然场景中模块数量没有上限，但如果超过 150 个模块，会对 Workfront Fusion 系统性能产生负面影响。 因此，我们不建议创建包含超过 150 个模块的场景。
 * 方案名称不能超过120个字符。
@@ -79,10 +78,14 @@ ht-degree: 76%
 * 负载的默认最大大小为 **5 MB**。
 * Webhook 的限制为&#x200B;**每秒 100 个请求**。 达到此限制时，Workfront Fusion 会返回 429（[!UICONTROL 请求过多]）状态。
 * Workfront Fusion 会将 Webhook 的负载存储 30 天。 在接收后超过 30 天访问 Webhook 负载会显示错误：“[!UICONTROL 无法从存储读取文件。]”
+* webhook的队列最多可容纳&#x200B;**100,000**&#x200B;个排队的事件。 当使用webhook的场景关闭或设置为按计划运行而不是立即运行时，队列会填充。 当队列达到100,000个事件时，新事件会被拒绝，并显示“队列已满”错误和400状态代码。
+
+  对于Workfront和Planning事件，如果队列在较长时间内保持已满状态，则禁用事件订阅，然后冻结，Workfront Fusion将停止接收该订阅的事件。
+
 * 如发生以下任一情况，Webhook 会自动停用：
 
-   * Webhook 超过 5 天未连接到任何场景
-   * Webhook 仅用于处于非活动状态的场景，并且这些场景已超过 30 天未活动。
+  * Webhook 超过 5 天未连接到任何场景
+  * Webhook 仅用于处于非活动状态的场景，并且这些场景已超过 30 天未活动。
 
 * 如停用的 Webhook 未连接至任何场景且停用超过 30 天，将会自动删除并注销。
 * Webhook 响应超时时间为 5 分钟。
