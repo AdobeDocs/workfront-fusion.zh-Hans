@@ -1,13 +1,11 @@
 ---
 name: fusion-doc-request
-description: 处理来自#fusion-documentation Slack模板的Fusion文档请求 — 更新此存储库中的相关Fusion文档文章，然后在产品文档Workfront项目中创建匹配任务，并在自定义表单中填写功能描述和带格式的发行说明。 当用户共享Fusion功能的Slack文档请求线程/消息时，或者针对某个功能显示“请更新并创建任务”之类的内容时，可使用。
-source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
+description: 处理来自的Fusion文档请求 #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
+source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1454'
 ht-degree: 0%
-
 ---
-
 
 # Fusion文档请求
 
@@ -25,11 +23,11 @@ ht-degree: 0%
 
 请求模板包含以下字段 — 提取每个字段：
 
-&#x200B;* **功能标题**
-&#x200B;* **描述**
-&#x200B;* **要添加到文档的点** *（有时存在 — 请求者希望包含的特定部分/详细信息；如果给定，则将其视为必需部分，而不是可选部分）*
-&#x200B;* **预计发行日期**
-&#x200B;* **需要公告** *(是/否 — 仅供参考；请参阅上面的说明。 不要对此字段执行操作。)*
+* **功能标题**
+* **描述**
+* **要添加到文档的点** *（有时存在 — 请求者希望包含的特定部分/详细信息；如果给定，则将其视为必需部分，而不是可选部分）*
+* **预计发行日期**
+* **需要公告** *(是/否 — 仅供参考；请参阅上面的说明。 不要对此字段执行操作。)*
 
 如果请求链接到具有完整规范的Confluence Wiki页面，请在编写文档之前获取该页面(`get_wiki_content`)。 不要只依赖Slack摘要来了解技术详细信息（确切的字段名称、步骤、UI标签） — 在链接时从Wiki规范中提取技术详细信息。
 
@@ -43,16 +41,19 @@ ht-degree: 0%
 
 如果工作树不干净（未提交来自不相关工作的更改），请停止并告知用户，而不是将其分支。
 
+此技能会创建并提交分支，但不会推送分支或打开拉取请求，除非用户单独要求您执行该操作，否则请将该请求留给用户。
+
 ## 步骤3：更新文档
 
 在此存储库中查找相关的现有文章（查看相关模块名称、UI标签或设置名称 — 不要猜测文件）。 根据文章的现有结构、标题级别和住宅样式，更新它们以反映更改。
 
-&#x200B;* 请勿发明不在Slack请求或链接的Wiki规范中的技术详细信息（确切字段名称、权限范围、配置步骤）。 如果某些内容未确认，请将其内联标记为HTML评论（例如`<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`），而不是猜测 — 从不将其标记为可见标注。 它不得在已发布的页面上呈现。
-&#x200B;* 如果这需要全新的文章文件（不仅仅是对现有文章文件的编辑），请遵循此存储库的常规规则：前端内容中不存在虚构的`exl-id`/`TQID`，在创建文件后将该文件转换为CRLF/no-BOM（`Write`工具默认为LF）。
-&#x200B;* 将新页面加入“目录”意味着以上两种情况，而不仅仅是一种 — 一个页面可以从子索引链接，同时读者仍然不可见：
+* 请勿发明不在Slack请求或链接的Wiki规范中的技术详细信息（确切字段名称、权限范围、配置步骤）。 如果某些内容未确认，请将其内联标记为HTML评论（例如`<!-- BECKY CHECK ME: confirm the exact permission scope before publishing -->`），而不是猜测 — 从不将其标记为可见标注。 它不得在已发布的页面上呈现。
+* 如果这需要全新的文章文件（不仅仅是对现有文章文件的编辑），请遵循此存储库的常规规则：前端内容中不存在虚构的`exl-id`/`TQID`，在创建文件后将该文件转换为CRLF/no-BOM（`Write`工具默认为LF）。
+* 将新页面加入“目录”意味着以上两种情况，而不仅仅是一种 — 一个页面可以从子索引链接，同时读者仍然不可见：
   - 产品区域（例如，`help/workfront-fusion/TOC.md`）的主导航文件 — 这是实际驱动已发布导航树的内容。
   - 任何也链接到此类文章的内容中子索引/登陆页面（例如，新连接器模块页面的`apps-and-modules-toc.md`）。
     明确检查并确认新条目与每个文件中最接近的同级文章位于同一列表（位于同一嵌套级别），请不要假设将其添加到其中一个包含其他条目。
+* 将文档更改保留在分支上不提交。 请勿在此技能中运行`git commit` （或`git add`） — 用户可在审阅更改后准备就绪后进行提交。 仅当用户明确要求您时才提交。
 
 ## 步骤4：创建Workfront任务
 
@@ -78,6 +79,11 @@ ht-degree: 0%
 
 新任务默认为持续时间为0的“尽可能早”约束，其中`plannedStartDate`/`plannedCompletionDate`是调度程序派生的，对任一任务的直接写入将被静默删除（没有错误，日期不会更改）。 使用`constraintDate`设置`taskConstraint: "MFO"`是将计划完成日期固定到Slack消息中引用的日期的可靠方法。 在此写入之前读取`workfront://knowledge/task/update` — 根据MCP服务器的规则，它是一个计划/日期字段。
 
+`description`字段具有4000个字符的硬性限制。 如果完整的Slack消息文本不适合：
+
+1. 首先用简短的`description`创建任务：功能标题、预计发布日期、需要公告、请求的一行摘要、关于请求全文作为第一个评论发布的注释，以及Slack跟帖链接。
+1. 然后，通过`comment-stream_create_comment` （`objectCode` `task`，`objectID`新任务的ID），将完整的、逐字的Slack消息文本（所有模板字段，而不是一个片语）作为评论发布到新创建的任务上 — 此工具没有可比较的长度限制。 包括`content` （纯文本）和`contentHTML` （以标题/列表结构化，而不只是空的`<p>`标记）。
+
 `DE:Release notes`字段的发行说明格式。 始终以`***FUSION***`在其自己的行中开头，然后是空白行，然后是标题 — 这将标记注释概览，使其归属于Fusion（与核心Workfront相反）：
 
 ```markdown
@@ -96,17 +102,18 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 
 简而言之，报告：
 
-&#x200B;* 您创建的分支。
-&#x200B;* 您更改了哪些doc文件以及添加了哪些内容。
-&#x200B;* 任务名称和URL。
-&#x200B;* 您设置的确切字段值，包括预览日期字段。
-&#x200B;* 您未完全放心的任何内容 — 例如，Slack无法访问，您仅使用粘贴的文本工作，目标文档文章不明确，或者源资料中没有技术细节，标记而不被猜到。
+* 您创建的分支（在本地提交，不推送，也不打开拉取请求 — 步骤2）。
+* 您更改了哪些doc文件以及添加了哪些内容。
+* 分支上未提交更改，正在等待用户的审阅。
+* 任务名称和URL。
+* 您设置的确切字段值，包括预览日期字段。
+* 您未完全放心的任何内容 — 例如，Slack无法访问，您仅使用粘贴的文本工作，目标文档文章不明确，或者源资料中没有技术细节，标记而不被猜到。
 
 ## 已知值（来自以前的运行）
 
 确认这些事件仍会解决，而不是假设它们是永久性的：
 
-&#x200B;* 项目“产品文档任务 — 适用于需要消息传送的开发问题”映射到ID `5e69583f00236b9f767c3e3944100ee4`
-&#x200B;* 父任务“Becky - Fusion-Documentation渠道中的任务”映射到ID `6a9b065100003a7554832780c2015e93`（在同一项目中） — 使用`insights_find_id_by_name` （实体`task`）进行解析，而不是硬编码，以防发生更改
-&#x200B;* 产品文档自定义表单(`categoryID`)为`5d7275b9000514604bd969d418725843`
-&#x200B;* 使用的自定义字段： `DE:Release notes`、`DE:Preview Date Known`、`DE:Preview Date`
+* 项目“产品文档任务 — 适用于需要消息传送的开发问题”映射到ID `5e69583f00236b9f767c3e3944100ee4`
+* 父任务“Becky - Fusion-Documentation渠道中的任务”映射到ID `6a9b065100003a7554832780c2015e93`（在同一项目中） — 使用`insights_find_id_by_name` （实体`task`）进行解析，而不是硬编码，以防发生更改
+* 产品文档自定义表单(`categoryID`)为`5d7275b9000514604bd969d418725843`
+* 使用的自定义字段： `DE:Release notes`、`DE:Preview Date Known`、`DE:Preview Date`
