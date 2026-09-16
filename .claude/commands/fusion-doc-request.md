@@ -1,13 +1,11 @@
 ---
 name: fusion-doc-request
-description: 处理来自#fusion-documentation Slack模板的Fusion文档请求 — 更新此存储库中的相关Fusion文档文章，然后在产品文档Workfront项目中创建匹配任务，并在自定义表单中填写功能描述和带格式的发行说明。 当用户共享Fusion功能的Slack文档请求线程/消息时，或者针对某个功能显示“请更新并创建任务”之类的内容时，可使用。
-source-git-commit: ac9a22b254b591ccf55270df62a85d158bb03697
+description: 处理来自的Fusion文档请求 #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
+source-git-commit: faa0716f7e0a8ce496f8f65085de32288a4b6066
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1454'
 ht-degree: 0%
-
 ---
-
 
 # Fusion文档请求
 
@@ -43,6 +41,8 @@ ht-degree: 0%
 
 如果工作树不干净（未提交来自不相关工作的更改），请停止并告知用户，而不是将其分支。
 
+此技能会创建并提交分支，但不会推送分支或打开拉取请求，除非用户单独要求您执行该操作，否则请将该请求留给用户。
+
 ## 步骤3：更新文档
 
 在此存储库中查找相关的现有文章（查看相关模块名称、UI标签或设置名称 — 不要猜测文件）。 根据文章的现有结构、标题级别和住宅样式，更新它们以反映更改。
@@ -53,6 +53,7 @@ ht-degree: 0%
   - 产品区域（例如，`help/workfront-fusion/TOC.md`）的主导航文件 — 这是实际驱动已发布导航树的内容。
   - 任何也链接到此类文章的内容中子索引/登陆页面（例如，新连接器模块页面的`apps-and-modules-toc.md`）。
     明确检查并确认新条目与每个文件中最接近的同级文章位于同一列表（位于同一嵌套级别），请不要假设将其添加到其中一个包含其他条目。
+&#x200B;* 将文档更改保留在分支上不提交。 请勿在此技能中运行`git commit` （或`git add`） — 用户可在审阅更改后准备就绪后进行提交。 仅当用户明确要求您时才提交。
 
 ## 步骤4：创建Workfront任务
 
@@ -78,6 +79,11 @@ ht-degree: 0%
 
 新任务默认为持续时间为0的“尽可能早”约束，其中`plannedStartDate`/`plannedCompletionDate`是调度程序派生的，对任一任务的直接写入将被静默删除（没有错误，日期不会更改）。 使用`constraintDate`设置`taskConstraint: "MFO"`是将计划完成日期固定到Slack消息中引用的日期的可靠方法。 在此写入之前读取`workfront://knowledge/task/update` — 根据MCP服务器的规则，它是一个计划/日期字段。
 
+`description`字段具有4000个字符的硬性限制。 如果完整的Slack消息文本不适合：
+
+1. 首先用简短的`description`创建任务：功能标题、预计发布日期、需要公告、请求的一行摘要、关于请求全文作为第一个评论发布的注释，以及Slack跟帖链接。
+1. 然后，通过`comment-stream_create_comment` （`objectCode` `task`，`objectID`新任务的ID），将完整的、逐字的Slack消息文本（所有模板字段，而不是一个片语）作为评论发布到新创建的任务上 — 此工具没有可比较的长度限制。 包括`content` （纯文本）和`contentHTML` （以标题/列表结构化，而不只是空的`<p>`标记）。
+
 `DE:Release notes`字段的发行说明格式。 始终以`***FUSION***`在其自己的行中开头，然后是空白行，然后是标题 — 这将标记注释概览，使其归属于Fusion（与核心Workfront相反）：
 
 ```markdown
@@ -96,8 +102,9 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 
 简而言之，报告：
 
-&#x200B;* 您创建的分支。
+&#x200B;* 您创建的分支（在本地提交，不推送，也不打开拉取请求 — 步骤2）。
 &#x200B;* 您更改了哪些doc文件以及添加了哪些内容。
+&#x200B;* 分支上未提交更改，正在等待用户的审阅。
 &#x200B;* 任务名称和URL。
 &#x200B;* 您设置的确切字段值，包括预览日期字段。
 &#x200B;* 您未完全放心的任何内容 — 例如，Slack无法访问，您仅使用粘贴的文本工作，目标文档文章不明确，或者源资料中没有技术细节，标记而不被猜到。

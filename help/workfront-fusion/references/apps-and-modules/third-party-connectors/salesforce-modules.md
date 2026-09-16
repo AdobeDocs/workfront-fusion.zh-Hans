@@ -7,15 +7,15 @@ exl-id: 3c7c03a7-67ea-4673-90b0-7d0506d9fa10
 TQID: https://experienceleague.adobe.com/P-GPOboH09jZI9dQ5wBfFNV3NNOk-lpSPs7SI4rXHE4
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 6d107dda1c657e7b0b7ae44cfebecc97421ca47e
 workflow-type: tm+mt
-source-wordcount: 3034
-ht-degree: 35%
-
+source-wordcount: '3056'
+ht-degree: 34%
 ---
-
 # [!DNL Salesforce] 模块
 
 在Adobe Workfront Fusion场景中，您可以自动使用[!DNL Salesforce]的工作流，并将其连接到多个第三方应用程序和服务。
@@ -111,7 +111,7 @@ Salesforce连接器使用以下对象：
 
 ## 创建与 [!DNL Salesforce] 的连接
 
-要为您的 [!DNL Salesforce] 模块创建连接：
+要为您的[!DNL Salesforce]模块创建连接，您可以使用OAuth 2或PKCE进行身份验证。
 
 1. 在任意 [!DNL Salesforce] 模块中，点击“连接”框旁的&#x200B;**[!UICONTROL 添加]**。
 
@@ -139,6 +139,12 @@ Salesforce连接器使用以下对象：
         <td role="rowheader">[!UICONTROL 类型]</td>
         <td>
           <p>选择连接服务帐户还是个人帐户。</p>
+        </td>
+      </tr>
+      <tr>
+        <td role="rowheader">[!UICONTROL 连接类型]</td>
+        <td>
+          <p>选择您要使用OAuth 2还是PKCE进行身份验证。</p>
         </td>
       </tr>
       <tr>

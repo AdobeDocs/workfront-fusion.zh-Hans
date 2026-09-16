@@ -5,13 +5,12 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 06271bbe8dd3c5eb7e3c6b45b71e7e0f7fd4d444
+    internal-label: Workfront
+source-git-commit: f39af7ec908c7ae62924635ef2d08584cf79310a
 workflow-type: tm+mt
-source-wordcount: 1020
+source-wordcount: '1020'
 ht-degree: 11%
-
 ---
-
 # Adobe Experience Manager MCP模块
 
 Adobe Experience Manager MCP连接器是Adobe Experience Manager自己的模型上下文协议(MCP)服务器的专用Fusion集成。 与典型连接器不同（每个模块执行一个固定操作），该连接器具有一个模块，用于接受开放式的纯英语指令，并允许AI模型决定需要哪些Adobe Experience Manager操作才能完成该指令，可跨站点、数字资产、内容片段、文件夹、内容存储库和内容人工智能等区域执行此操作。
@@ -98,7 +97,7 @@ Adobe Experience Manager MCP连接器使用OAuth连接到Adobe Experience Manage
 
 由于每次运行都是独立的，因此模块本身没有先前运行的内存。 要创建跨越多次运行的多圈对话体验，请存储上一个问题和答案。 您可以对此使用数据存储区，然后将该历史记录作为文本包含在下一个提示的开头处，然后是新问题。
 
-有关数据存储的信息，请参阅[数据存储](/help/workfront-fusion/create-scenarios/data-stores/data-store-overview.md)。
+有关数据存储的信息，请参阅[数据存储](/help/workfront-fusion/create-scenarios/map-data/data-stores.md)。
 
 <table style="table-layout:auto"> 
  <col/>
