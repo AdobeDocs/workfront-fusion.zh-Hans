@@ -3,13 +3,12 @@ title: 工作人员池
 description: 工作进程池是专用于一个或多个特定组织的Workfront Fusion处理资源数量。 所有Fusion操作和处理都发生在组织分配的工作进程池的上下文中。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: bb94083eb9f58dc3ae9f94a59288da43317b567b
+exl-id: 8bf508a8-d1f9-455f-af89-62f688289137
+source-git-commit: b95974d19c3dcb2fea0d6323c2b747665216a2e7
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '219'
 ht-degree: 0%
-
 ---
-
 # 工作人员池
 
 工作线程池是专用于特定组织的一系列Workfront Fusion处理资源。 所有Fusion操作和处理都发生在组织分配的工作进程池的上下文中。
