@@ -3,13 +3,12 @@ title: 编辑Webhook
 description: 您可以编辑Workfront和Workfront Planning连接器的现有Webhook。
 author: Becky
 feature: Workfront Fusion
-source-git-commit: 2561c911b9b542a7b143fae745baf4e1de45be38
+exl-id: 86849d21-5a74-43f7-9ccf-dff4421cc981
+source-git-commit: 25ba44b8ab1aab8ad6e2d6a989f55366d48a0575
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 4%
-
 ---
-
 # 编辑Webhook
 
 您可以编辑现有的Webhook。 使用这些webhook的场景将使用新的配置，这样便无需创建新的webhook并将其手动分配给所有受影响的场景。
@@ -51,4 +50,3 @@ ht-degree: 4%
 1. 在屏幕底部的蓝色横幅中，单击&#x200B;**编辑**。
 1. 对webhook进行任何所需的编辑。
 1. 单击&#x200B;**保存**&#x200B;以保存Webhook并返回Webhook列表。
-
