@@ -7,16 +7,21 @@ exl-id: 6e2df1a0-c1f9-4833-b1c2-65efb3be9657
 TQID: https://experienceleague.adobe.com/t3FcOEcjniaGfX9Ag25kYrcU6-2LKwaIdnRojHRpI5Q
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+source-git-commit: 1feb4fce42c7759ca8fc91d4270dd00c0a59da24
 workflow-type: tm+mt
-source-wordcount: 767
-ht-degree: 2%
-
+source-wordcount: '800'
+ht-degree: 3%
 ---
-
 # Adobe Workfront Fusion 许可证
 
 Workfront Fusion有两种许可模型，一种是新的基于操作的模型，另一种是基于连接器的旧模型。
+
+>[!NOTE]
+>
+>Workfront Fusion方案中的大型文件支持仅适用于Workfront Ultimate包中的组织，无论您使用哪种Fusion许可模型。
+>
+>如需了解详情，请参阅[处理大型文件](/help/workfront-fusion/references/scenarios/fusion-large-files.md)。
 
 ## 基于运营的许可模式（新）
 
@@ -60,14 +65,14 @@ Workfront流程自动化的优势包括：
 * Webhook
 * 工具和转换器模块，例如：
 
-   * 存档
-   * CSV
-   * 数据存储
-   * 图像
-   * JSON
-   * 数学
-   * MIME
-   * XML
+  * 存档
+  * CSV
+  * 数据存储
+  * 图像
+  * JSON
+  * 数学
+  * MIME
+  * XML
 
 #### 工作自动化的Workfront Fusion示例
 
