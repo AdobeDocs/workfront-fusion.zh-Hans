@@ -4,18 +4,26 @@ description: 通过Adobe I/O Events模块，您可以基于Adobe应用程序中�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: b2229f3e-a2a7-4b07-8ead-a37d193c2ec7
-TQID: https://experienceleague.adobe.com/w3uQqWnDDc3IcnAvd3UN4O3-m98PPJoez-egpWlH-jA
+TQID: 'https://experienceleague.adobe.com/w3uQqWnDDc3IcnAvd3UN4O3-m98PPJoez-egpWlH-jA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1101
+source-wordcount: '1101'
 ht-degree: 44%
-
 ---
-
 # Adobe I/O Events 模块
 
 通过Adobe I/O Events模块，您可以基于没有专用Adobe Workfront Fusion连接器的Adobe帐户和服务中的事件启动Workfront Fusion方案。
@@ -190,7 +198,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL Webhook说明]
+           [！UICONTROL Webhook说明]
          </td>
          <td>
            输入此webhook的说明。
@@ -198,7 +206,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 事件提供程序]
+           [！UICONTROL事件提供程序]
          </td>
          <td>
            选择要从中创建事件的产品或帐户。
@@ -206,7 +214,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 事件类型]
+           [！UICONTROL事件类型]
          </td>
          <td>
            选择您希望webhook观看的事件。 当这些事件发生时，将触发该方案。
@@ -236,7 +244,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 事件提供程序]
+           [！UICONTROL事件提供程序]
          </td>
          <td>
            选择要为其检索ID的提供程序。
@@ -244,7 +252,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 事件类型]
+           [！UICONTROL事件类型]
          </td>
          <td>
               选择要为其提供ID的事件。 根据事件提供程序，事件将可用。 
@@ -321,7 +329,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 注册ID]
+           [！UICONTROL注册ID]
          </td>
          <td>
            选择要检索事件的注册。
@@ -329,7 +337,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 返回的最大事件数]
+           [！UICONTROL返回的最大事件数]
          </td>
          <td>
               输入或映射每次场景执行周期中该模块允许返回的最大记录数量。 
@@ -337,7 +345,7 @@ Adobe I/O Events连接器使用以下对象：
        </tr>
        <tr>
          <td role="rowheader">
-           [!UICONTROL 返回在]之后发生的事件
+           [！UICONTROL返回在]之后发生的事件
          </td>
          <td>输入或映射日期。 模块返回在此日期之后发生的事件。
          </td>
@@ -353,7 +361,7 @@ Adobe I/O Events连接器使用以下对象：
 -->
        <tr>
          <td role="rowheader">
-           [!UICONTROL 最新]
+           [！UICONTROL最新]
          </td>
          <td>
          启用此选项可返回最新的事件。

@@ -4,18 +4,21 @@ description: 您可以将一个数组或单个数组元素映射到Adobe Workfro
 author: Becky
 feature: Workfront Fusion
 exl-id: 0534ad8a-af80-46d2-857d-de882a235edb
-TQID: https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ
+TQID: 'https://experienceleague.adobe.com/4C5kCTIb-pX7zlMxx0tMHn-0UeMPkunWAlkov-lEqPQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Metadata
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 898
+source-wordcount: '898'
 ht-degree: 10%
-
 ---
-
 # 映射数组或数组元素
 
 数组是可以包含以下内容的包项：
@@ -73,7 +76,7 @@ ht-degree: 10%
 
    可以将任意数量的项添加到数组。
 
-您可以使用迭代器将数组划分为单独的包。 有关详细信息，请参阅Adobe Workfront Fusion[&#128279;](/help/workfront-fusion/references/modules/iterator-module.md)中的[!UICONTROL 迭代器]模块。
+您可以使用迭代器将数组划分为单独的包。 有关详细信息，请参阅Adobe Workfront Fusion](/help/workfront-fusion/references/modules/iterator-module.md)中的[[!UICONTROL 迭代器]模块。
 
 ## 将项目映射到新数组
 
@@ -141,28 +144,28 @@ Workfront Fusion中的某些字段允许您将元素映射到数组中。 例如
 
 * `map`
 
-   1. `map()`函数的第一个参数是整个数组项。
-   1. 第二个参数是值项的原始名称。 要获取原始名称，请将鼠标悬停在[!UICONTROL 映射]面板中的项上：
+  1. `map()`函数的第一个参数是整个数组项。
+  1. 第二个参数是值项的原始名称。 要获取原始名称，请将鼠标悬停在[!UICONTROL 映射]面板中的项上：
 
-      ![获取原始名称](assets/obtain-raw-name-350x124.png)
+     ![获取原始名称](assets/obtain-raw-name-350x124.png)
 
-      >[!NOTE]
-      >
-      >所有参数均区分大小写。 即使在此特定示例中，项目的标签与其原始名称不同（仅在大写中不同），仍需要使用原始名称。
+     >[!NOTE]
+     >
+     >所有参数均区分大小写。 即使在此特定示例中，项目的标签与其原始名称不同（仅在大写中不同），仍需要使用原始名称。
 
-   1. 第三个参数是关键项的原始名称：
+  1. 第三个参数是关键项的原始名称：
 
-      ![第三个参数](assets/3rd-parameter-350x166.png)
+     ![第三个参数](assets/3rd-parameter-350x166.png)
 
-   1. 第四个参数是给定的键值。
+  1. 第四个参数是给定的键值。
 
   由于`map()`函数返回一个数组（因为给定键值可能有更多元素），因此必须应用`get()`函数以获取其第一个元素：
 
 * `get`
 
-   1. `get()`函数的第一个参数是`map()`函数的结果。
+  1. `get()`函数的第一个参数是`map()`函数的结果。
 
-   1. 第二个参数是元素的索引。 在此示例中，索引为`1`。
+  1. 第二个参数是元素的索引。 在此示例中，索引为`1`。
 
 此示例生成以下输出：
 

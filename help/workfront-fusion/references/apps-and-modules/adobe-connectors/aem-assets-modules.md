@@ -4,21 +4,30 @@ description: 借助 Adobe Workfront Fusion 的 Adobe Experience Manager Assets �
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 361e6c9c-1497-4f47-85bb-503619744968
-TQID: https://experienceleague.adobe.com/x0Sf-4GkVLQ2JkOXOPQdmwcVWVrM8b9JF3P6LV6BE6U
+TQID: 'https://experienceleague.adobe.com/x0Sf-4GkVLQ2JkOXOPQdmwcVWVrM8b9JF3P6LV6BE6U'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 3825
+source-wordcount: '3825'
 ht-degree: 99%
-
 ---
-
 # Adobe Experience Manager Assets 模块
 
 借助 Adobe Workfront Fusion 的 Adobe Experience Manager Assets 连接器，您可以创建、上传和更新资源，并复制或移动文件夹和资源。
@@ -70,7 +79,7 @@ ht-degree: 99%
 * 要使用这些模块，您必须拥有 Adobe Experience Manager Assets 帐户。
 * 您必须在 Adobe Developer Console 中设置服务器到服务器流程。
 
-  有关在 Adobe Developer Console 中设置服务器到服务器流程的说明，请参阅[为服务器端 API 生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hans#the-server-to-server-flow)。
+  有关在 Adobe Developer Console 中设置服务器到服务器流程的说明，请参阅[为服务器端 API 生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)。
 * 您的 Adobe Experience Manager 技术帐户必须具备写入权限。
 
   有关为 Adobe Experience Manager 技术帐户添加写入权限的说明，请参阅 Adobe Experience Manager 文档中的[服务凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials)。
@@ -121,7 +130,7 @@ Adobe Experience Manager Assets 连接器使用以下内容：
 >
 >* 这些字段所需的信息是在 Adobe Developer Console 设置服务器到服务器流程时生成的。 您可以在该设置流程生成的服务凭据 JSON 文件中找到这些值。
 >
->   有关在 Adobe Developer Console 上设置服务器到服务器流程的说明，请参阅[为服务器端 API 生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=zh-Hans#the-server-to-server-flow)。
+>   有关在 Adobe Developer Console 上设置服务器到服务器流程的说明，请参阅[为服务器端 API 生成访问令牌](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html#the-server-to-server-flow)。
 >
 >* 您的 Adobe Experience Manager 技术帐户必须具备写入权限。
 >

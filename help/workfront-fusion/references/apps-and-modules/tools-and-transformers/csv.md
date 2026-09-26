@@ -4,18 +4,21 @@ description: 通过Adobe Workfront Fusion CSV模块，您可以创建CSV文件�
 author: Becky
 feature: Workfront Fusion
 exl-id: bc6d5ddc-93c3-437b-8537-5bece1351c1d
-TQID: https://experienceleague.adobe.com/IhvuQxLno-vVgIWarBZG-EFSeu8shwQpZmce7PRBVQs
+TQID: 'https://experienceleague.adobe.com/IhvuQxLno-vVgIWarBZG-EFSeu8shwQpZmce7PRBVQs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 941
+source-wordcount: '952'
 ht-degree: 10%
-
 ---
-
 # CSV
 
 Adobe Workfront Fusion [!UICONTROL CSV]模块允许您创建CSV文件，并从接收的文本值或文件解析CSV文本。
@@ -61,23 +64,23 @@ Adobe Workfront Fusion [!UICONTROL CSV]模块允许您创建CSV文件，并从�
 
 <table style="table-layout:auto">
     <tr>
-        <td>[!UICONTROL Source Module]</td>
+        <td>[！UICONTROL Source Module]</td>
         <td>选择用于输出要用于创建CSV的字段的模块。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 聚合字段]</td>
+        <td>[！UICONTROL聚合字段]</td>
         <td>从可用字段列表中选择要聚合的字段。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Include headers in the first row]</td>
+        <td>[！UICONTROL Include headers in the first row]</td>
         <td>选择此选项以在结果中包含标头。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 分组依据]</td>
+        <td>[！UICONTROL分组依据]</td>
         <td>输入筛选条件以将结果分组。 例如，输入日期。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 在出现空聚合后停止处理]</td>
+        <td>[！UICONTROL在出现空聚合后停止处理]</td>
         <td>选择此选项可在没有结果时停止方案。</td>
     </tr>
 </table>
@@ -93,23 +96,23 @@ Adobe Workfront Fusion [!UICONTROL CSV]模块允许您创建CSV文件，并从�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Module]</td> 
+   <td role="rowheader">[！UICONTROL Source Module]</td> 
         <td>选择用于输出要用于创建CSV的字段的模块。</td>
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Data Structure]</td> 
+   <td role="rowheader">[！UICONTROL Data Structure]</td> 
    <td> <p>选择数据结构，以您希望的方式聚合字段。 定义数据结构后，您可以将项目映射到相应的字段。</p> <p>有关详细信息，请参阅<a href="/help/workfront-fusion/references/mapping-panel/data-types/data-structures.md" class="MCXref xref">数据结构</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Include headers in the first row] </td> 
+   <td role="rowheader">[！UICONTROL Include headers in the first row] </td> 
    <td>选择此选项以在结果中包含标头。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 分组依据] </td> 
+   <td role="rowheader">[！UICONTROL分组依据] </td> 
    <td>输入筛选条件以将结果分组。 例如，输入日期。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 在出现空聚合后停止处理] </td> 
+   <td role="rowheader">[！UICONTROL在出现空聚合后停止处理] </td> 
    <td>选择此选项可在没有结果时停止方案。 </td> 
   </tr> 
  </tbody> 
@@ -171,29 +174,29 @@ Adobe Workfront Fusion [!UICONTROL CSV]模块允许您创建CSV文件，并从�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 列数]</td> 
+   <td role="rowheader">[！UICONTROL列数]</td> 
    <td>指定CSV文件中的列数。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL CSV包含标头]</td> 
+   <td role="rowheader">[！UICONTROL CSV包含标头]</td> 
    <td> <p>如果CSV文本的第一行包含标题，请选择此选项。</p> <p>注意：模块不使用这些标头标记输出中的列。 相反，此字段可确保标头不会包含在输出数据中。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL delimiterType]</td> 
+   <td role="rowheader">[！UICONTROL delimiterType]</td> 
    <td> <p>选择CSV文件的分隔符。 分隔符是指示分隔值或字段之间的边界的文本字符。</p> 
     <ul> 
-     <li>[!UICONTROL 逗号]</li> 
-     <li>[!UICONTROL 选项卡]</li> 
-     <li> <p>[!UICONTROL 其他]</p> <p>如果选择[!UICONTROL 其他]，请输入CSV文件用来分隔值的分隔符字符。 必须只输入一个字符。<br></p> </li> 
+     <li>[！UICONTROL逗号]</li> 
+     <li>[！UICONTROL选项卡]</li> 
+     <li> <p>[！UICONTROL其他]</p> <p>如果选择[！UICONTROL其他]，请输入CSV文件用来分隔值的分隔符字符。 必须只输入一个字符。<br></p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 在非引号字段中保留引号]</td> 
+   <td role="rowheader">[！UICONTROL在非引号字段中保留引号]</td> 
    <td>启用此选项可保留引号。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL CSV]</td> 
-   <td>输入或映射要解析的CSV文件。<p>注意： <p>如果数据采用二进制形式（通常来自文件），则必须使用“toString()”函数将二进制数据转换为[!UICONTROL String]：</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
+   <td role="rowheader">[！UICONTROL CSV]</td> 
+   <td>输入或映射要解析的CSV文件。<p>注意： <p>如果数据采用二进制形式（通常来自文件），则必须使用“toString()”函数将二进制数据转换为[！UICONTROL String]：</p><p><img src="/help/workfront-fusion/references/apps-and-modules/assets/parse-csv-350x123.png"></p></p></td> 
   </tr> 
  </tbody> 
 </table>

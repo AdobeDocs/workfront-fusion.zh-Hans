@@ -4,16 +4,18 @@ description: 许多服务都提供Webhook，以便在服务发生特定更改时
 author: Becky
 feature: Workfront Fusion
 exl-id: 5bfda2b2-dc1c-4ff6-9236-b480bfda2e58
-TQID: https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk
+TQID: 'https://experienceleague.adobe.com/-z2vSjTR1JJTQl--BHM23CbnlaN9TSS6puFTzqLRAEk'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 99a5a892469814f450832dbc4f137fb2c5aa71ee
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1300
+source-wordcount: '1322'
 ht-degree: 9%
-
 ---
-
 # 即时触发器(webhook)
 
 许多服务都提供Webhook，以便在服务中发生特定更改（事件）时即时发送通知。 要处理这些事件，我们建议您使用即时触发器。 即时触发器显示给定连接器的模块列表中的`Instant`标记。

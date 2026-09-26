@@ -4,18 +4,21 @@ description: 您的Adobe Workfront Fusion方案可以在捆绑包中包含下面
 author: Becky
 feature: Workfront Fusion
 exl-id: 3ad65959-5c19-4727-bc9d-4ff1d238ad8b
-TQID: https://experienceleague.adobe.com/mZQcg6jwJFDuyI45vATzKOl4X7ROiTurGheyWvC0s5w
+TQID: 'https://experienceleague.adobe.com/mZQcg6jwJFDuyI45vATzKOl4X7ROiTurGheyWvC0s5w'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 580
+source-wordcount: '580'
 ht-degree: 2%
-
 ---
-
 # 项目数据类型
 
 可在捆绑包中包含下面列出的项目类型。
@@ -40,7 +43,7 @@ ht-degree: 2%
     <ul> 
      <li> <p>如果字段是必填字段，且必须填写，则会显示必填复选框。</p> <p> <img src="assets/boolean-checkbox-350x158.jpg" style="width: 350;height: 158;"> </p> </li> 
      <li> <p>可留空的可选字段将显示为选择框，允许从三个值中进行选择：<code>Yes</code>、<code>No</code>和<code>Not defined</code>（默认值）。</p> <p> <img src="assets/boolean-convert-file-350x129.jpg" style="width: 350;height: 129;"> </p> </li> 
-    </ul> <p>如果需要将值映射到其他模块中的项，可以单击<strong>[!UICONTROL 映射]</strong>。</p> </td> 
+    </ul> <p>如果需要将值映射到其他模块中的项，可以单击<strong>[！UICONTROL映射]</strong>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>日期</p> </td> 
@@ -60,7 +63,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>数组</p> </td> 
-   <td> <p>您可以使用数组类型处理相同类型的多个值，包括集合。 [!UICONTROL Email]模块就是一个例子：它们返回一系列附件，每个附件都包含名称、内容、大小等。 有关详细信息，请参阅<a href="/help/workfront-fusion/create-scenarios/map-data/map-an-array.md" class="MCXref xref">映射数组或数组元素</a>。</p> </td> 
+   <td> <p>您可以使用数组类型处理相同类型的多个值，包括集合。 [！UICONTROL Email]模块就是一个例子：它们返回一系列附件，每个附件都包含名称、内容、大小等。 有关详细信息，请参阅<a href="/help/workfront-fusion/create-scenarios/map-data/map-an-array.md" class="MCXref xref">映射数组或数组元素</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>验证</p> </td> 

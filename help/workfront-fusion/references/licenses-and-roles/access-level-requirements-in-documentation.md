@@ -5,24 +5,30 @@ author: Becky
 feature: System Setup and Administration
 role: Admin
 exl-id: 823aa376-fbfe-4750-82dc-4f34224c1a48
-TQID: https://experienceleague.adobe.com/DtdOS-HFHhcq5lm8LTtc9gdVGgDwtg9tfh9shZPwNDs
+TQID: 'https://experienceleague.adobe.com/DtdOS-HFHhcq5lm8LTtc9gdVGgDwtg9tfh9shZPwNDs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+  - id: d5896d07-2812-5418-8b18-8957a0d7f0fb
+    internal-label: System Setup and Administration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 694
+source-wordcount: '694'
 ht-degree: 2%
-
 ---
-
 # 文档中的访问权限要求
 
 Adobe Workfront Fusion文档操作方法文章包含一个表，其中说明了此过程所需的访问和权限要求。 通过此访问要求表，您可以了解是否可以在Fusion中执行特定操作，或者为什么可能无法执行。 本文介绍“访问要求”表的每个元素，并提供故障排除提示以及指向更深入信息的链接。
@@ -45,7 +51,7 @@ Adobe Workfront Fusion文档操作方法文章包含一个表，其中说明了�
    <td role="rowheader">Adobe Workfront 包 
    <td> Adobe Workfront包是指您的组织已购买的一组功能。 大多数Fusion功能在所有计划中均可用，但有一些例外情况仅适用于具有Ultimate Workfront包的组织。 
    <ul><li>要了解贵组织使用哪个Adobe Workfront包（包括贵组织使用的是新包模型还是当前包模型），请与Workfront管理员联系。</li>
-   <li>有关Workfront管理员如何找到您组织的Workfront包的说明，请参阅“防火墙概述”一文中的<a href="https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-package">查看您组织的群集和Workfront计划</a>。</li><li>有关新的Workfront包的更多信息，请参阅<a href="https://business.adobe.com/cn/products/workfront/pricing.html">Adobe Workfront定价和打包</a>。</li></ul> </td> 
+   <li>有关Workfront管理员如何找到您组织的Workfront包的说明，请参阅“防火墙概述”一文中的<a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/get-started-administration/firewall-overview#view-your-organization-s-cluster-and-workfront-package">查看您组织的群集和Workfront计划</a>。</li><li>有关新的Workfront包的更多信息，请参阅<a href="https://business.adobe.com/products/workfront/pricing.html">Adobe Workfront定价和打包</a>。</li></ul> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">Adobe Workfront许可证</td> 
@@ -54,9 +60,9 @@ Adobe Workfront Fusion文档操作方法文章包含一个表，其中说明了�
    <li>要了解您分配的许可证，请与Workfront管理员联系。</li>
    <li>Adobe Workfront正在过渡到一个新的定价和打包模式。 有关许可证的信息，请参阅：
    <ul>
-   <li>新： <a href="https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">新许可证概述</a></li>
-   <li>当前： <a href="https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">许可证概述</a></li></ul></li>
-   <li>如果您拥有正确的访问级别，但仍没有访问权限，请咨询Workfront管理员是否对您的访问级别设置了其他限制。 有关Workfront管理员如何修改您的访问级别的信息，请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/add-users/configure-access/create-modify-access-levels" class="MCXref xref">创建和修改自定义访问级别</a>。
+   <li>新： <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/access-levels/licenses-overview">新许可证概述</a></li>
+   <li>当前： <a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/legacy-access-levels/wf-licenses">许可证概述</a></li></ul></li>
+   <li>如果您拥有正确的访问级别，但仍没有访问权限，请咨询Workfront管理员是否对您的访问级别设置了其他限制。 有关Workfront管理员如何修改您的访问级别的信息，请参阅<a href="https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/configure-access/create-modify-access-levels" class="MCXref xref">创建和修改自定义访问级别</a>。
    </ul>
       </p> </td> 
   </tr> 

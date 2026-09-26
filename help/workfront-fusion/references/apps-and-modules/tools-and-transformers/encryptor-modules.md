@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion Encryptor模块允许您加密任何文本�
 author: Becky
 feature: Workfront Fusion
 exl-id: 4b119efe-6762-445e-bbc7-c59437fd5060
-TQID: https://experienceleague.adobe.com/C4okceW3ZngBJrcDS-qymjR16GwTb3pFfdZpG-CoSwc
+TQID: 'https://experienceleague.adobe.com/C4okceW3ZngBJrcDS-qymjR16GwTb3pFfdZpG-CoSwc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 863
+source-wordcount: '863'
 ht-degree: 14%
-
 ---
-
 # 加密程序
 
 Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文本数据。 它们当前支持通过AES256和PGP ([!UICONTROL OpenPGP])进行消息加密。
@@ -311,11 +313,11 @@ Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文�
         <td>选择要用于此邮件的收件人私钥。 要添加私钥，请单击<b>添加</b>并输入密钥的名称、密钥文本和密码。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 公钥]</td>
+        <td>[！UICONTROL公钥]</td>
         <td>输入发件人的公钥。 这可以对发件人的身份进行身份验证。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Message]</td>
+        <td>[！UICONTROL Message]</td>
         <td>映射要解密的消息。</td>
     </tr>
 </table>
@@ -330,11 +332,11 @@ Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文�
         <td>输入发件人的私钥。 这可以对发件人的身份进行身份验证。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 公钥]</td>
+        <td>[！UICONTROL公钥]</td>
         <td>输入收件人的公钥。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL Message]</td>
+        <td>[！UICONTROL Message]</td>
         <td>输入要加密的消息。</td>
     </tr>
     </table>

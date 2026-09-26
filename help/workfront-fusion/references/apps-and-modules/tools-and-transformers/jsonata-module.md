@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion JSONata连接器提供了一个用于处理J
 author: Becky
 feature: Workfront Fusion
 exl-id: 8c117ecb-3c05-47d4-a629-18dbc546e2a2
-TQID: https://experienceleague.adobe.com/luvZBccaWY5-8muR71o8C82qVROYJvcuAqt3Ol2LZac
+TQID: 'https://experienceleague.adobe.com/luvZBccaWY5-8muR71o8C82qVROYJvcuAqt3Ol2LZac'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 329
+source-wordcount: '329'
 ht-degree: 28%
-
 ---
-
 # [!UICONTROL JSONata]模块
 
 Adobe Workfront Fusion [!UICONTROL JSONata]连接器允许您查询JSON对象。 此模块不需要连接。
@@ -60,15 +62,15 @@ Adobe Workfront Fusion [!UICONTROL JSONata]连接器允许您查询JSON对象。
  <col data-mc-conditions=""> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 表达式]</td> 
+   <td role="rowheader">[！UICONTROL表达式]</td> 
    <td>输入要用于计算JSON对象的表达式。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 数据] </td> 
+   <td role="rowheader">[！UICONTROL数据] </td> 
    <td> 输入要计算的JSON对象。  </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Stringify输出] </td> 
+   <td role="rowheader">[！UICONTROL Stringify输出] </td> 
    <td> 启用此选项可将输出转换为字符串。  </td> 
   </tr> 
   </tbody>
@@ -115,11 +117,11 @@ Adobe Workfront Fusion [!UICONTROL JSONata]连接器允许您查询JSON对象。
    <td> <p>选择用于连接到要用于此模块的大型语言模型(LLM)的连接。</p> <p>目前，仅支持Anthropic API密钥。</p></td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入架构]</td> 
+   <td role="rowheader">[！UICONTROL输入架构]</td> 
    <td> <p>输入或映射要用于此表达式的输入架构。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输出架构]</td> 
+   <td role="rowheader">[！UICONTROL输出架构]</td> 
    <td> <p>输入或映射要用于此表达式的输出架构。</p> </td> 
   </tr> 
  </tbody> 

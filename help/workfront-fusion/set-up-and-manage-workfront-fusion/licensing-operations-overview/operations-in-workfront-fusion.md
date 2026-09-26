@@ -4,16 +4,18 @@ description: Adobe Workfront Fusion中的操作是由模块执行的任务。 �
 author: Becky
 feature: Workfront Fusion
 exl-id: c14e2bb2-1cce-48ff-8bea-acc9829d3cf2
-TQID: https://experienceleague.adobe.com/wkdEgGMzJVgzuiZpNJy4Y8-Fd435VqlQFON-WIRjwmA
+TQID: 'https://experienceleague.adobe.com/wkdEgGMzJVgzuiZpNJy4Y8-Fd435VqlQFON-WIRjwmA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 413
+source-wordcount: '413'
 ht-degree: 1%
-
 ---
-
 # 运营
 
 Adobe Workfront Fusion中的操作是由模块执行的任务。 出于跟踪目的，模块执行的任何成功操作都属于操作。
@@ -26,10 +28,10 @@ Adobe Workfront Fusion中的操作是由模块执行的任务。 出于跟踪目
 * 操作值可能有所不同。 有些将更小、更简单的操作，而另一些将更复杂。 无论操作是多么简单还是复杂，它们都会计入您的总计。
 * 在方案执行的[!UICONTROL 最终化]阶段计算操作。
 * 以下&#x200B;**不计算为操作**：
-   * 任何过滤步骤。
-   * 任何出错或中断的操作。
-   * 任何因不符合路由规则而不运行的路由，例如回退或禁用的路由。
-   * 任何未运行的操作，可能是因为过滤器不允许数据通过，也可能是因为场景因错误而停止。
+  * 任何过滤步骤。
+  * 任何出错或中断的操作。
+  * 任何因不符合路由规则而不运行的路由，例如回退或禁用的路由。
+  * 任何未运行的操作，可能是因为过滤器不允许数据通过，也可能是因为场景因错误而停止。
 
 >[!NOTE]
 >

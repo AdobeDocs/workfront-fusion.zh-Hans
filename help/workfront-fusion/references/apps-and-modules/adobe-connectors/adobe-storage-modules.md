@@ -8,21 +8,25 @@ description: 在Adobe Workfront Fusion场景中，您可以在Adobe Admin Consol
 author: Becky
 feature: Workfront Fusion
 exl-id: 78ee905f-4713-44a4-bffb-c64cdb3665c2
-TQID: https://experienceleague.adobe.com/sp6gMeEhVxN0QjviLXm9GnI7NSLEp93PnSQkH45zHXI
+TQID: 'https://experienceleague.adobe.com/sp6gMeEhVxN0QjviLXm9GnI7NSLEp93PnSQkH45zHXI'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: b58ad82f-df6b-4b01-81a3-3a02ab9567a0
+    internal-label: APIs
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1415
+source-wordcount: '1415'
 ht-degree: 25%
-
 ---
-
 # Adobe Storage 模块
 
 在Adobe Workfront Fusion场景中，您可以在Adobe Admin Console中创建和管理项目。
@@ -130,14 +134,14 @@ ht-degree: 25%
         </td>
         </tr>
         <td role="rowheader">[!UICONTROL 客户端 ID]</td>
-        <td>输入您的[!UICONTROL Adobe] [!UICONTROL 客户端ID]。 这可以在[!DNL Adobe Developer Console]中项目的[!UICONTROL 凭据详细信息]部分找到。</td>
+        <td>输入您的[！UICONTROL Adobe] [！UICONTROL客户端ID]。 这可以在[!DNL Adobe Developer Console]中项目的[！UICONTROL凭据详细信息]部分找到。</td>
         </tr>
         <tr>
         <td role="rowheader">[!UICONTROL 客户端密钥]</td>
-        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 这可以在[!DNL Adobe Developer Console]中项目的[!UICONTROL 凭据详细信息]部分找到。</td>
+        <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 这可以在[!DNL Adobe Developer Console]中项目的[！UICONTROL凭据详细信息]部分找到。</td>
         </tr>
         <tr>
-        <td role="rowheader">[!UICONTROL IMS组织ID]</td>
+        <td role="rowheader">[！UICONTROL IMS组织ID]</td>
         <td>输入或映射您的Adobe IMS组织ID。 这是一个格式为<code> 123abc@AdobeOrg</code>的字符串，其中@之前的部分是一个十六进制数字。 您可以在Adobe Admin Console或用户管理集成的Adobe.IO控制台中，将此值作为组织的URL路径的一部分找到。</td>
         </tr>
       </tbody>

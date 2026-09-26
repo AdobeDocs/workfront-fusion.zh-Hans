@@ -4,16 +4,18 @@ description: 当在执行场景期间发生错误时，通常是因为服务因�
 author: Becky
 feature: Workfront Fusion
 exl-id: 82ddaf73-ecf9-4fd6-8f8e-909351023c77
-TQID: https://experienceleague.adobe.com/3Ro1DMD2tIXSZuXo77JEw2EtlVpoS-D6CNGyR9QcFXg
+TQID: 'https://experienceleague.adobe.com/3Ro1DMD2tIXSZuXo77JEw2EtlVpoS-D6CNGyR9QcFXg'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1156
+source-wordcount: '1156'
 ht-degree: 9%
-
 ---
-
 # 添加错误处理
 
 在执行场景期间可能会出错。
@@ -171,7 +173,7 @@ ht-degree: 9%
 
 ## 处理指令时出错
 
-这些指令简要说明如下。 有关详细信息，请参阅错误处理[&#128279;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的指令。
+这些指令简要说明如下。 有关详细信息，请参阅错误处理](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的[指令。
 
 有五个指令，可根据错误后场景执行是否继续将其分组为以下类别。
 

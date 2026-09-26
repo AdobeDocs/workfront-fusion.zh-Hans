@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 74faab448149276b8d769dfde0260c96d4b0712a
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 332
+source-wordcount: '332'
 ht-degree: 0%
-
 ---
-
 # 使用运行一次以测试方案
 
 在创建、更新或优化方案时，您可以使用“运行一次”按钮根据需要触发方案。 这样，您就无需等待触发逻辑（如特定事件或轮询间隔）即可测试场景。

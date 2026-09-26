@@ -4,16 +4,18 @@ description: 使用这些模块，您可以将场景链接在一起，使一个�
 author: Becky
 feature: Workfront Fusion
 exl-id: 21429f94-fe4c-4ccc-a8c0-d7573657fecc
-TQID: https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA
+TQID: 'https://experienceleague.adobe.com/AlHUrliXikCc3OVHiBTjLNQFndCf5qLzOLuBvnDTUfA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 936fc6b4d5688e42ad6d762d4f43abf8be47e5af
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 913
+source-wordcount: '913'
 ht-degree: 10%
-
 ---
-
 # Chain 模块
 
 >[!IMPORTANT]
@@ -100,7 +102,7 @@ ht-degree: 10%
 > * **将此模块放在迭代器内时请务必小心。** 为大型迭代器中的每个项目调度子方案会创建大量平台负载。 考虑内嵌子方案的逻辑或在迭代器之外预先计算共享查找。
 > * **触发并忘记**&#x200B;意味着父级无法查看子级是否运行或成功。 仅在独立监视子级故障时使用。
 >
-> 有关完整的设计指南，请参阅[将多个方案链接在一起](https://experienceleague.adobe.com/zh-hans/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)。
+> 有关完整的设计指南，请参阅[将多个方案链接在一起](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/create-scenarios/plan-a-scenario/chain-scenarios)。
 
 >[!NOTE]
 >

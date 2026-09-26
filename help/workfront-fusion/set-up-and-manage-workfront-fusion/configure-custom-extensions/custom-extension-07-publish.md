@@ -11,15 +11,17 @@ recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 925a8ee910434c474d527c2914897d7c42e4a3d1
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1236
+source-wordcount: '1236'
 ht-degree: 1%
-
 ---
-
 # 发布自定义扩展
 
 >[!NOTE]
@@ -39,7 +41,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> **角色：**&#x200B;创建和部署需要&#x200B;**开发人员**&#x200B;角色；提交审批请求以进行发布需要&#x200B;**系统管理员**&#x200B;角色。
+> **角色：**&#x200B;创建和部署需要&#x200B;**开发人员**&#x200B;角色；提交审批请求以进行发布需要&#x200B;**系统管理员**角色。
 >有关更多信息，请参阅：
 >
 > * [设置UI扩展工具和帐户](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md)
@@ -84,7 +86,7 @@ aio app deploy
 
 >[!TIP]
 >
-> **如果部署失败，并且“扩展点&#39;fusion/nav-organization/1&#39;不存在”（错误1060）：**&#x200B;尚未为您的组织启用Fusion扩展点。 这是载入步骤，不是代码中的错误。
+> **如果部署失败，并且“扩展点&#39;fusion/nav-organization/1&#39;不存在”（错误1060）：**尚未为您的组织启用Fusion扩展点。 这是载入步骤，不是代码中的错误。
 >有关详细信息，请参阅疑难解答文章中的[扩展点不存在](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md#error-1060-extension-point-does-not-exist)。
 
 ### 步骤4：在Fusion配置文件中打开暂存测试

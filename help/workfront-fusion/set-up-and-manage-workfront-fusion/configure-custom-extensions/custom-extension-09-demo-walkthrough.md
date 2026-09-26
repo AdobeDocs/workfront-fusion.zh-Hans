@@ -11,15 +11,17 @@ recommendations: noDisplay, noCatalog
 exl-id: bbc94bb0-7432-44c5-8000-9aea25916b28
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: a9dd86f7dc4070ad98c7c4a526a6a38939097940
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 964
+source-wordcount: '964'
 ht-degree: 0%
-
 ---
-
 
 # 在Fusion中创建自定义扩展的演示演练
 
@@ -243,7 +245,7 @@ aio app deploy
 1. 转到左侧导航的&#x200B;**组织**&#x200B;区域。
 
    出现&#x200B;**“我的融合工具（舞台）”**&#x200B;按钮。
-1. 单击&#x200B;**“My Fusion tool (Stage)”**&#x200B;按钮。
+1. 单击&#x200B;**“My Fusion tool (Stage)”**按钮。
 您的UI将加载到主面板中，并显示实时用户、组织和团队。
 1. **在Fusion中切换活动组织或团队**。
 

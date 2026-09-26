@@ -6,21 +6,25 @@ author: Becky
 feature: Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: dafecd8b-96e5-46da-9ab6-15f0bc9b52a4
-TQID: https://experienceleague.adobe.com/YxbvSHbDGHOsRUv8UJ8aDUct1daxudv2IGAqG3dkGZU
+TQID: 'https://experienceleague.adobe.com/YxbvSHbDGHOsRUv8UJ8aDUct1daxudv2IGAqG3dkGZU'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 526
+source-wordcount: '526'
 ht-degree: 4%
-
 ---
-
 # 批准或取消批准“公共”选项卡的模板
 
 Adobe Workfront Fusion模板是预建方案，旨在自动化和简化各种工作流。 这些模板可帮助用户快速设置集成和自动化，而无需从头开始构建所有内容。
@@ -45,7 +49,7 @@ Adobe Workfront Fusion模板是预建方案，旨在自动化和简化各种工�
     </tr>
     <tr data-mc-conditions="">
       <td role="rowheader">Adobe Workfront许可证</td>
-      <td><p>新增：标准</p><p>或</p><p>当前： [!UICONTROL Work]或更高版本</p></td>
+      <td><p>新增：标准</p><p>或</p><p>当前： [！UICONTROL Work]或更高版本</p></td>
     </tr>
     <tr>
       <td role="rowheader">Adobe Workfront Fusion许可证**</td>
@@ -60,8 +64,8 @@ Adobe Workfront Fusion模板是预建方案，旨在自动化和简化各种工�
       <td>
         <p>新：</p>
         <ul>
-          <li>[!UICONTROL Select]或[!UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li>
-          <li>[!UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li>
+          <li>[！UICONTROL Select]或[！UICONTROL Prime] Workfront计划：您的组织必须购买Adobe Workfront Fusion。</li>
+          <li>[！UICONTROL Ultimate] Workfront计划：包括Workfront Fusion。</li>
         </ul>
         <p>或</p>
         <p>当前：您的组织必须购买Adobe Workfront Fusion。</p>

@@ -4,16 +4,18 @@ description: 创建或编辑场景时，您可以配置设置以控制数据流�
 author: Becky
 feature: Workfront Fusion
 exl-id: b3aed366-c399-44fa-8967-54ecb8647d96
-TQID: https://experienceleague.adobe.com/Gs6NF8KOawlRGN5FpVjY7-8agSjAKm8WYrSzu0ZLt8w
+TQID: 'https://experienceleague.adobe.com/Gs6NF8KOawlRGN5FpVjY7-8agSjAKm8WYrSzu0ZLt8w'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 634
+source-wordcount: '634'
 ht-degree: 16%
-
 ---
-
 # 流量控制
 
 创建或编辑场景时，您可以配置设置以控制数据流经场景的方式。
@@ -56,15 +58,15 @@ ht-degree: 16%
 
 <table>
     <tr>
-        <td>[!UICONTROL 初始值]</td>
+        <td>[！UICONTROL初始值]</td>
         <td>输入或映射您希望模块在第一迭代中的值。 默认值为 1。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 重复]</td>
+        <td>[！UICONTROL重复]</td>
         <td>输入或映射您希望模块重复执行的次数。 此数字必须大于或等于0，并且小于或等于10,000。</td>
     </tr>
     <tr>
-        <td>[!UICONTROL 步骤]</td>
+        <td>[！UICONTROL步骤]</td>
         <td>这是模块增加值所依据的数字。 默认值为 1。</td>
     </tr>
 </table>

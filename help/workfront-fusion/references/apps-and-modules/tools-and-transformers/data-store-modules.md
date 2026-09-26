@@ -4,18 +4,21 @@ description: Adobe Workfront Fusion数据存储与数据库或简单表类似，
 author: Becky
 feature: Workfront Fusion
 exl-id: 0338b822-b345-429e-850d-3978b692231d
-TQID: https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA
+TQID: 'https://experienceleague.adobe.com/xxcj73D3UZawazZrK92lAZTYaFTVj92o74zPRsnfFPA'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1139
+source-wordcount: '1139'
 ht-degree: 30%
-
 ---
-
 # [!UICONTROL 数据存储]模块
 
 Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储场景中的数据，从而可以在各个场景或场景运行之间传输数据。 在同步过程中，您可以使用数据存储来存储来自不同系统的新数据。
@@ -104,7 +107,7 @@ Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储�
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储]</td> 
+   <td>[！UICONTROL数据存储]</td> 
    <td> <p> 选择或添加要在其中创建记录的数据存储。 </p> </td> 
   </tr> 
   <tr> 
@@ -112,11 +115,11 @@ Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储�
    <td> <p>输入您希望模块添加或替换的记录的唯一键。 该键以后可用于检索记录。 如果将此字段留空，则会自动生成键。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 覆盖现有记录] </td> 
+   <td>[！UICONTROL覆盖现有记录] </td> 
    <td> <p>启用此选项以覆盖记录。 要覆盖的记录必须在上面的“键”字段中指定。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 记录] </td> 
+   <td>[！UICONTROL记录] </td> 
    <td> <p>在记录的字段中输入所需的值。</p> </td> 
   </tr> 
  </tbody> 
@@ -133,7 +136,7 @@ Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储�
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储] </td> 
+   <td>[！UICONTROL数据存储] </td> 
    <td> <p>选择要检查记录是否存在的数据存储。</p> </td> 
   </tr> 
   <tr> 
@@ -156,7 +159,7 @@ Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储�
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储] </td> 
+   <td>[！UICONTROL数据存储] </td> 
    <td> <p>选择包含要计数的记录的数据存储。</p> </td> 
   </tr> 
  </tbody> 
@@ -175,7 +178,7 @@ Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储�
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储] </td> 
+   <td>[！UICONTROL数据存储] </td> 
    <td> <p>选择要检查记录是否存在的数据存储。</p> </td> 
   </tr> 
   <tr> 
@@ -196,7 +199,7 @@ Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储�
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储] </td> 
+   <td>[！UICONTROL数据存储] </td> 
    <td> <p>选择要从中删除所有记录的数据存储。</p> </td> 
   </tr> 
  </tbody> 
@@ -215,7 +218,7 @@ Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储�
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储]</td> 
+   <td>[！UICONTROL数据存储]</td> 
    <td> <p> 选择要从中检索记录的数据存储</p> </td> 
   </tr> 
   <tr> 
@@ -238,7 +241,7 @@ Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储�
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储]</td> 
+   <td>[！UICONTROL数据存储]</td> 
    <td> <p> 选择要搜索的数据存储。</p> </td> 
   </tr> 
   <tr> 
@@ -246,15 +249,15 @@ Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储�
    <td> <p>为搜索设置过滤器。</p> </td> 
   </tr> 
   <tr> 
-   <td> <p>[!UICONTROL 排序]</p> </td> 
-   <td> <p style="font-weight: normal;">对于要作为排序依据的每个字段，请填写以下字段：</p> <p style="font-weight: bold;">[!UICONTROL 键]</p> <p>选择要作为结果排序依据的列名。</p> <p style="font-weight: bold;">[!UICONTROL 顺序]</p> <p>选择是否要以升序或降序对结果进行排序。</p> </td> 
+   <td> <p>[！UICONTROL排序]</p> </td> 
+   <td> <p style="font-weight: normal;">对于要作为排序依据的每个字段，请填写以下字段：</p> <p style="font-weight: bold;">[!UICONTROL 键]</p> <p>选择要作为结果排序依据的列名。</p> <p style="font-weight: bold;">[！UICONTROL顺序]</p> <p>选择是否要以升序或降序对结果进行排序。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 限制]</td> 
    <td> <p> 设置Workfront Fusion在一个执行周期内返回的最大搜索结果数。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 即使模块未返回任何结果，仍继续执行路由]</td> 
+   <td>[！UICONTROL即使模块未返回任何结果，仍继续执行路由]</td> 
    <td> <p> 如果启用，则此模块所属的路由将继续处理，即使此模块未返回任何结果。</p> </td> 
   </tr> 
  </tbody> 
@@ -275,7 +278,7 @@ Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储�
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL 数据存储]</td> 
+   <td>[！UICONTROL数据存储]</td> 
    <td> <p> 选择或添加要在其中创建记录的数据存储。 </p> </td> 
   </tr> 
   <tr> 
@@ -283,11 +286,11 @@ Adobe Workfront Fusion数据存储与数据库或简单表类似，可以存储�
    <td> <p>输入您希望模块更新的记录的唯一键。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Insert missing record] </td> 
+   <td>[！UICONTROL Insert missing record] </td> 
    <td> <p>启用此选项以在具有指定键的记录不存在时创建新记录。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 记录]</td> 
+   <td>[！UICONTROL记录]</td> 
    <td> <p> 在要更新的记录字段中输入所需的值。</p> </td> 
   </tr> 
  </tbody> 

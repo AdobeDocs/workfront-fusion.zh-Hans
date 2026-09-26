@@ -1,19 +1,21 @@
 ---
 title: 日期和时间格式化标记
-description: ' [!DNL Adobe Workfront Fusion mapping] 面板中提供了以下日期和时间格式令牌。'
+description: '[!DNL Adobe Workfront Fusion mapping]面板中提供了以下日期和时间格式令牌。'
 author: Becky
 feature: Workfront Fusion
 exl-id: 4a7f288e-d563-4c37-a8bf-efc7e6b759d4
-TQID: https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ
+TQID: 'https://experienceleague.adobe.com/PVtZkvmHsxtuAH7fXCoXB07zPRlHPJnG-j0M2lb-hGQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 253
+source-wordcount: '254'
 ht-degree: 16%
-
 ---
-
 # 日期和时间格式化标记
 
 ## 年、月和日令牌
@@ -43,7 +45,7 @@ ht-degree: 16%
   <tr> 
    <td><code>Y</code> </td> 
    <td><code>1970 1971 ... 9999 +10000 +10001</code> </td> 
-   <td> <p>[!UICONTROL Year，带任意数字和符号]</p> </td> 
+   <td> <p>[！UICONTROL Year，带任意数字和符号]</p> </td> 
   </tr> 
   <tr> 
    <td><code>Q</code> </td> 
@@ -63,7 +65,7 @@ ht-degree: 16%
   <tr> 
    <td><code>Mo </code> </td> 
    <td><code>1st 2nd ... 11th 12th</code> </td> 
-   <td> <p>[!UICONTROL Month]，带序数</p> </td> 
+   <td> <p>[！UICONTROL Month]，带序数</p> </td> 
   </tr> 
   <tr> 
    <td><code>MM</code> </td> 
@@ -103,7 +105,7 @@ ht-degree: 16%
   <tr> 
    <td><code>DDDo</code> </td> 
    <td><code>1st 2nd ... 364th 365th</code> </td> 
-   <td> <p>[!UICONTROL Day of year]，序数</p> </td> 
+   <td> <p>[！UICONTROL Day of year]，序数</p> </td> 
   </tr> 
   <tr> 
    <td><code>DDDD </code> </td> 
@@ -135,7 +137,7 @@ ht-degree: 16%
   <tr> 
    <td><code>do</code> </td> 
    <td><code>0th 1st ... 5th 6th </code> </td> 
-   <td> <p>[!UICONTROL ordinal]每周日期</p> </td> 
+   <td> <p>[！UICONTROL ordinal]每周日期</p> </td> 
   </tr> 
   <tr> 
    <td><code>dd </code> </td> 
@@ -165,7 +167,7 @@ ht-degree: 16%
   <tr> 
    <td><code>wo </code> </td> 
    <td><code>1st 2nd ... 52nd 53rd</code> </td> 
-   <td> <p>[!UICONTROL 包含序号的周数]</p> </td> 
+   <td> <p>[！UICONTROL包含序号的周数]</p> </td> 
   </tr> 
   <tr> 
    <td><code>ww </code> </td> 
@@ -267,12 +269,12 @@ ht-degree: 16%
   <tr> 
    <td><code>m</code> </td> 
    <td><code> 0 1 ... 58 59</code> </td> 
-   <td> <p> 分钟</p> </td> 
+   <td> <p> Minutes</p> </td> 
   </tr> 
   <tr> 
    <td><code>mm</code> </td> 
    <td><code>00 01 ... 58 59</code> </td> 
-   <td> <p>[!UICONTROL Minutes with]前导零</p> </td> 
+   <td> <p>[！UICONTROL Minutes with]前导零</p> </td> 
   </tr> 
   <tr> 
    <td><code>s</code> </td> 

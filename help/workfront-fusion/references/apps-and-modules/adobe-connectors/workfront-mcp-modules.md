@@ -5,13 +5,15 @@ author: Becky
 feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 88515edc81bafe2d1a81df627fd51dd4ed674c02
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 884
+source-wordcount: '884'
 ht-degree: 16%
-
 ---
-
 # Adobe Workfront MCP模块
 
 Adobe Workfront MCP连接器是Adobe Workfront自己的模型上下文协议(MCP)服务器的专用Fusion集成。 与典型连接器（每个模块执行一个固定操作）不同，此连接器具有一个接受开放式、纯英语指令并让AI模型决定需要哪些Workfront操作来完成它的模块。
@@ -139,7 +141,7 @@ Adobe Workfront MCP连接器使用OAuth 2.0连接到Workfront。 与其他Workfr
   </tr>  </tbody> 
 </table>
 
-有关可以为只读工具和写入/删除工具字段选择的工具列表，请参阅Workfront文档中的[Adobe Workfront MCP服务器工具](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools)。
+有关可以为只读工具和写入/删除工具字段选择的工具列表，请参阅Workfront文档中的[Adobe Workfront MCP服务器工具](https://experienceleague.adobe.com/en/docs/workfront/using/basics/workfront-mcp-server/workfront-mcp-server-tools)。
 
 模块会返回以下信息，您可以在场景中的后续模块中映射这些信息：
 

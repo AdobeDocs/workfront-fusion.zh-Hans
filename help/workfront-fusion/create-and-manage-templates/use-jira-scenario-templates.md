@@ -7,24 +7,30 @@ description: 使用这些模板可自动执行Adobe Workfront Fusion和Jira之�
 author: Becky
 feature: Workfront Fusion
 exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
-TQID: https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM
+TQID: 'https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 subfeature_v2:
   - id: d87de1f9-8e24-4c4d-aa4c-a403075091a1
+    internal-label: Custom forms
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 4277
+source-wordcount: '4283'
 ht-degree: 3%
-
 ---
-
 # 使用模板连接 Adobe Workfront Fusion 和 Jira
 
 Adobe Workfront Fusion提供了可自动执行Fusion和Jira之间常用工作流的模板。
@@ -71,7 +77,7 @@ Adobe Workfront Fusion提供了可自动执行Fusion和Jira之间常用工作流
   有关信息和说明，请参阅Adobe文档中的[技术帐户设置](https://developer.adobe.com/cloud-storage/guides/getting-started/technical-account-setup)。
 * 您必须在Adobe Admin Console产品配置文件区域将系统管理员权限应用到技术帐户。
 
-  有关信息和说明，请参阅[使用Adobe Admin Console在Workfront中创建系统管理员](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
+  有关信息和说明，请参阅[使用Adobe Admin Console在Workfront中创建系统管理员](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/admin-console#create-system-administrators-in-workfront-with-the-adobe-admin-console)
 
 ### Jira
 
@@ -166,13 +172,13 @@ When configuring this application, you will need the following scopes:
 
 1. 在Workfront中，创建系统集成用户。 此用户仅由Workfront Fusion使用，不代表人类用户。 分配给此用户的任务将触发将Workfront与Jira同步的方案。
 
-   有关说明，请参阅Workfront文档中的[添加用户](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)。
+   有关说明，请参阅Workfront文档中的[添加用户](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/add-users/create-manage-users/add-users)。
 
 #### 在Workfront中创建自定义表单
 
 1. 在Workfront中，开始创建自定义表单。
 
-   有关说明，请参阅Workfront文档中的[创建自定义表单](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)。
+   有关说明，请参阅Workfront文档中的[创建自定义表单](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/design-a-form/design-a-form)。
 1. 将表单命名为“**JIRA字段**”。
 1. 在自定义表单中包含以下字段：
 
@@ -189,7 +195,7 @@ When configuring this application, you will need the following scopes:
 >
 >我们建议限制其他用户编辑此表单。 为此，您可以确保添加到自定义表单的任何用户仅具有查看权限。
 >
->有关说明，请参阅Workfront文档中的[共享自定义表单](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)。
+>有关说明，请参阅Workfront文档中的[共享自定义表单](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/customize/custom-forms/manage-custom-forms/share-access-to-a-custom-form)。
 
 ### 在Workfront Fusion中配置连接
 
@@ -228,10 +234,10 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
 * **wfBaseURL**： Workfront实例的基本URL。  通常： `https://<domain>.my.workfront.com`，其中`<domain>`是您的特定Workfront域名。
 * **defaultJIRAReporterID**： JIRA中发生问题的用户的ID。 （示例： `557058:5aedf933-2312-40bc-b328-0c21314167f0`）
 您可以通过执行以下操作之一来获取此ID：
-   * 在JIRA中单击用户的个人资料，然后查看浏览器中的URL。
-（示例`https://myjira.atlassian.net/jira/people/<JiraUserID>`）
-   * 在您的JIRA实例上运行以下API调用，以获取JIRA中特定帐户的ID：
-     `GET /rest/api/3/user/search?query=email@example.com`
+  * 在JIRA中单击用户的个人资料，然后查看浏览器中的URL。
+    （示例`https://myjira.atlassian.net/jira/people/<JiraUserID>`）
+  * 在您的JIRA实例上运行以下API调用，以获取JIRA中特定帐户的ID：
+    `GET /rest/api/3/user/search?query=email@example.com`
 
 
 ### 情景1：Workfront到Jira：从Workfront任务或问题分配创建JIRA问题
@@ -335,7 +341,7 @@ Awaiting feedback
 #### 将模板模块连接到Workfront和Jira（模块2）
 
 1. 在&#x200B;**每个** Workfront模块的连接字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**&#x200B;保存与该模块的连接。
-1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**&#x200B;保存与该模块的连接。
+1. 在&#x200B;**每个** Jira模块的“连接”字段中，选择您在[在Workfront Fusion中配置连接](#configure-connections-in-workfront-fusion)中创建的Workfront连接，然后单击&#x200B;**确定**保存与该模块的连接。
    <!--#### Map custom fields-->
 
 +++

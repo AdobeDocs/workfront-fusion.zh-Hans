@@ -4,19 +4,28 @@ description: Adobe Workfront Fusion图像模块允许您获取有关特定图像
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: a7696c9d-002d-4bb4-ae10-1f69dc5e66fe
-TQID: https://experienceleague.adobe.com/1YlCzSkD3MpRG6VcTPHk-sW0RXK1hexs6QPmQdN07Ps
+TQID: 'https://experienceleague.adobe.com/1YlCzSkD3MpRG6VcTPHk-sW0RXK1hexs6QPmQdN07Ps'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 741
+source-wordcount: '741'
 ht-degree: 23%
-
 ---
-
 # 图像模块
 
 Adobe Workfront Fusion [!UICONTROL 图像]模块允许您获取有关特定图像（尺寸、类型等）的信息，将图像转换为其他文件格式，并直接更改图像的大小。
@@ -80,7 +89,7 @@ Adobe Workfront Fusion [!UICONTROL 图像]模块允许您获取有关特定图�
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输出格式]</td> 
+   <td role="rowheader">[！UICONTROL输出格式]</td> 
    <td>选择您希望模块将源文件转换成的格式。 </td> 
   </tr> 
  </tbody> 
@@ -114,32 +123,32 @@ Adobe Workfront Fusion [!UICONTROL 图像]模块允许您获取有关特定图�
    <td> <p>从上一个模块中选择源文件，或映射源文件的名称和数据。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 我想]</td> 
+   <td role="rowheader">[！UICONTROL我想]</td> 
    <td>选择是要保持高宽比还是将尺寸更改为指定的高度和宽度。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 根据]</td> 
+   <td role="rowheader">[！UICONTROL根据]</td> 
    <td> <p>选择您希望模块如何确定图像的新大小。 如果您在“我想”字段中选择了保持高宽比，则会显示此字段。 根据在此字段中选择的内容，将显示其他字段。</p> 
     <ul> 
-     <li> <p>[!UICONTROL 最大宽度]</p> <p>将图像缩小到您指定的宽度。 高度会自动计算。</p> </li> 
-     <li> <p>[!UICONTROL 最大高度]</p> <p>将图像缩小到您指定的高度。 会自动计算宽度。</p> </li> 
-     <li> <p>[!UICONTROL 最大高度或宽度]</p> <p>以高度和宽度不超过指定值的方式缩小图像。 由于此选项会保持高宽比，因此其中一个尺寸可能小于指定的尺寸。 例如，如果高度和宽度都指定为40，则400x300图像将减少到40X30。</p> </li> 
-     <li> <p>[!UICONTROL 最小宽度]</p> <p>将图像放大到您指定的宽度。 高度会自动计算。</p> </li> 
-     <li> <p>[!UICONTROL 最小高度]</p> <p>将图像放大到您指定的高度。 会自动计算宽度。</p> </li> 
-     <li> <p>[!UICONTROL 最小高度或宽度]</p> <p>以不小于指定值的高度和宽度来放大图像。 由于此选项会保持高宽比，因此其中一个尺寸可能大于指定的尺寸。 例如，如果高度和宽度都指定为300，则40x30图像将放大为400X300。</p> </li> 
-     <li> <p>[!UICONTROL 百分比]</p> <p>根据您指定的值按百分比更改图像大小。 </p> </li> 
+     <li> <p>[！UICONTROL最大宽度]</p> <p>将图像缩小到您指定的宽度。 高度会自动计算。</p> </li> 
+     <li> <p>[！UICONTROL最大高度]</p> <p>将图像缩小到您指定的高度。 会自动计算宽度。</p> </li> 
+     <li> <p>[！UICONTROL最大高度或宽度]</p> <p>以高度和宽度不超过指定值的方式缩小图像。 由于此选项会保持高宽比，因此其中一个尺寸可能小于指定的尺寸。 例如，如果高度和宽度都指定为40，则400x300图像将减少到40X30。</p> </li> 
+     <li> <p>[！UICONTROL最小宽度]</p> <p>将图像放大到您指定的宽度。 高度会自动计算。</p> </li> 
+     <li> <p>[！UICONTROL最小高度]</p> <p>将图像放大到您指定的高度。 会自动计算宽度。</p> </li> 
+     <li> <p>[！UICONTROL最小高度或宽度]</p> <p>以不小于指定值的高度和宽度来放大图像。 由于此选项会保持高宽比，因此其中一个尺寸可能大于指定的尺寸。 例如，如果高度和宽度都指定为300，则40x30图像将放大为400X300。</p> </li> 
+     <li> <p>[！UICONTROL百分比]</p> <p>根据您指定的值按百分比更改图像大小。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 宽度]</td> 
+   <td role="rowheader">[！UICONTROL宽度]</td> 
    <td>输入或映射调整大小的图像的所需宽度（以像素为单位）。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Height]</td> 
+   <td role="rowheader">[！UICONTROL Height]</td> 
    <td>输入或映射调整大小后图像的所需高度（以像素为单位）。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 百分比变化]</td> 
+   <td role="rowheader">[！UICONTROL百分比变化]</td> 
    <td>如果您已选择按百分比更改图像，请输入或映射要更改图像的百分比。</td> 
   </tr> 
  </tbody> 
