@@ -313,11 +313,11 @@ Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文�
         <td>选择要用于此邮件的收件人私钥。 要添加私钥，请单击<b>添加</b>并输入密钥的名称、密钥文本和密码。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL公钥]</td>
+        <td>[!UICONTROL 公钥]</td>
         <td>输入发件人的公钥。 这可以对发件人的身份进行身份验证。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL Message]</td>
+        <td>[!UICONTROL Message]</td>
         <td>映射要解密的消息。</td>
     </tr>
 </table>
@@ -332,11 +332,11 @@ Adobe Workfront Fusion [!UICONTROL 加密程序]模块允许您加密任何文�
         <td>输入发件人的私钥。 这可以对发件人的身份进行身份验证。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL公钥]</td>
+        <td>[!UICONTROL 公钥]</td>
         <td>输入收件人的公钥。</td>
     </tr>
     <tr>
-        <td>[！UICONTROL Message]</td>
+        <td>[!UICONTROL Message]</td>
         <td>输入要加密的消息。</td>
     </tr>
     </table>

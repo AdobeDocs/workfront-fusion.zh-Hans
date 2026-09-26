@@ -120,13 +120,13 @@ Adobe Experience Manager Assets 连接器使用以下内容：
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL实例URL，不带尾随斜杠]</td>
+        <td role="rowheader">[!UICONTROL 实例URL，不带尾随斜杠]</td>
         <td>
           <p>输入用于访问帐户的URL，不带最后一个斜杠。</p>
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL IMS端点]</td>
+        <td role="rowheader">[!UICONTROL IMS端点]</td>
         <td>
           <p><code>https://ims-na1.adobelogin.com</code></p>
         </td>
@@ -140,15 +140,15 @@ Adobe Experience Manager Assets 连接器使用以下内容：
         <td>输入您的[!DNL Adobe]客户端密钥。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL组织ID]</td>
+        <td role="rowheader">[!UICONTROL 组织ID]</td>
         <td>输入您的[!DNL Adobe]组织ID。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL技术帐户ID]</td>
+        <td role="rowheader">[!UICONTROL 技术帐户ID]</td>
         <td>输入您的[!DNL Adobe]技术帐户ID。 该值可在 [!DNL Adobe Developer Console] 的[!UICONTROL 凭据详细信息]部分找到。
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL Meta Scopes]</td>
+        <td role="rowheader">[!UICONTROL Meta Scopes]</td>
         <td>输入任何适当的元范围       </td>
       </tr>
       <tr>

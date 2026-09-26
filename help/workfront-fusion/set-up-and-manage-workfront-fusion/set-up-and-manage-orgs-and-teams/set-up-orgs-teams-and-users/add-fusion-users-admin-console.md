@@ -26,7 +26,7 @@ ht-degree: 20%
 
 您可以将用户添加到[!DNL Adobe Admin Console]并将他们分配给Adobe Workfront Fusion，或将[!DNL Adobe Admin Console]中的现有用户分配给Workfront Fusion。
 
-有关描述[!DNL Adobe Admin Console]中的Workfront Fusion的视频（包括如何添加用户），请参阅Adobe IMS](https://video.tv.adobe.com/v/3412464/){target=_blank}上的[[!DNL Fusion] 。
+有关描述[!DNL Adobe Admin Console]中的Workfront Fusion的视频（包括如何添加用户），请参阅Adobe IMS[&#128279;](https://video.tv.adobe.com/v/3412464/){target=_blank}上的[!DNL Fusion] 。
 
 ## 访问权限要求
 
@@ -106,7 +106,7 @@ ht-degree: 20%
 
    将在Workfront Fusion中创建用户。
 
-1. （可选）继续在Workfront Fusion](#change-a-users-access-level-in-workfront-fusion)中[更改用户的访问级别。
+1. （可选）继续在Workfront Fusion[&#128279;](#change-a-users-access-level-in-workfront-fusion)中更改用户的访问级别。
 
 ## 在Workfront Fusion中更改用户的访问级别
 

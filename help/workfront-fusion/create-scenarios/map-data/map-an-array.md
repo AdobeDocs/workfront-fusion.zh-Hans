@@ -76,7 +76,7 @@ ht-degree: 10%
 
    可以将任意数量的项添加到数组。
 
-您可以使用迭代器将数组划分为单独的包。 有关详细信息，请参阅Adobe Workfront Fusion](/help/workfront-fusion/references/modules/iterator-module.md)中的[[!UICONTROL 迭代器]模块。
+您可以使用迭代器将数组划分为单独的包。 有关详细信息，请参阅Adobe Workfront Fusion[&#128279;](/help/workfront-fusion/references/modules/iterator-module.md)中的[!UICONTROL 迭代器]模块。
 
 ## 将项目映射到新数组
 

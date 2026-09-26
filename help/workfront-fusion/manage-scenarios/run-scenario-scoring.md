@@ -81,4 +81,4 @@ ht-degree: 32%
   有关详细信息，请参阅[Fusion性能护栏](/help/workfront-fusion/references/scenarios/fusion-performance-guardrails.md#scenarios)。
 * 如果使用Workfront instant trigger模块，则必须对其进行筛选。
 
-  有关说明，请参阅Workfront > [!UICONTROL 观看活动]模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules)中的[活动订阅筛选器。
+  有关说明，请参阅Workfront > [!UICONTROL 观看活动]模块[&#128279;](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules)中的活动订阅筛选器。

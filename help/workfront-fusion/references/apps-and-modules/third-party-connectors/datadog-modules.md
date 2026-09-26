@@ -115,7 +115,7 @@ Datadog连接器使用以下对象：
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[！UICONTROL连接名称]</td> 
+      <td role="rowheader">[!UICONTROL 连接名称]</td> 
       <td> <p> 输入连接名称。</p> </td> 
      </tr> 
         <tr>
@@ -127,15 +127,15 @@ Datadog连接器使用以下对象：
         <td>选择连接服务帐户还是个人帐户。</td>
         </tr>
      <tr> 
-      <td role="rowheader">[！UICONTROL域] </td> 
+      <td role="rowheader">[!UICONTROL 域] </td> 
       <td> <p>选择要连接的域（美国或欧盟）。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL API密钥位置] </td> 
+      <td role="rowheader">[!UICONTROL API密钥位置] </td> 
       <td> <p>选择是在标头中还是在查询字符串中包含API密钥。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL API Key]</td> 
+      <td role="rowheader">[!UICONTROL API Key]</td> 
       <td> <p> 输入您的[!DNL Datadog] API密钥。 </p> <p>有关检索API密钥的说明，请参阅本文中的<a href="#retrieve-your-api-key-and-application-key" class="MCXref xref">检索API密钥和应用程序密钥</a>。</p> </td> 
      </tr> 
     </tbody> 
@@ -169,7 +169,7 @@ Datadog连接器使用以下对象：
    <td> <p>有关将 [!DNL Datadog] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-datadog-to-workfront-fusion" class="MCXref xref">将 [!DNL Datadog] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL使用专用域]</td> 
+   <td role="rowheader">[!UICONTROL 使用专用域]</td> 
    <td>一些需要大量传入流量的Datadog API端点在其专用域上运行。 选中此框以使用专用域进行API调用。</td> 
   </tr> 
   <tr> 
@@ -236,15 +236,15 @@ URL： `/v1/dashboard`
    </ul>
    </td> 
   <tr> 
-   <td role="rowheader">[！UICONTROL间隔]</td> 
+   <td role="rowheader">[!UICONTROL 间隔]</td> 
    <td> 如果度量的类型为“比率”或“计数”，则定义相应的时间间隔。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL点]</td> 
+   <td role="rowheader">[!UICONTROL 点]</td> 
    <td><p>添加与量度相关的点数。</p> <p>这是JSON点数组。 每个点的格式如下： <code>[[POSIX_timestamp, numeric_value], ...] </code></p> <p>注意：  <p>时间戳必须以秒为单位。</p> <p>时间戳必须为最新。 当前被定义为将来不超过10分钟或过去不超过1小时。</p> <p> 数值格式应为浮点值。</p> </p> <p>此字段必须包含至少1个项目。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL主机]</td> 
+   <td role="rowheader">[!UICONTROL 主机]</td> 
    <td>输入生成度量的主机的名称。 </td> 
   </tr> 
   <tr> 

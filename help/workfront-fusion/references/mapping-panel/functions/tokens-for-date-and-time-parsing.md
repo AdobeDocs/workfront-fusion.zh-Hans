@@ -45,7 +45,7 @@ ht-degree: 17%
   <tr> 
    <td><code>Y</code> </td> 
    <td><code>-25</code> </td> 
-   <td> <p>[！UICONTROL Year，带任意数字和符号]</p> </td> 
+   <td> <p>[!UICONTROL Year，带任意数字和符号]</p> </td> 
   </tr> 
   <tr> 
    <td><code>Q</code> </td> 

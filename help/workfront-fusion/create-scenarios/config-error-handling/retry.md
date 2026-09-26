@@ -55,7 +55,7 @@ Adobe Workfront Fusion当前不提供`retry`错误处理指令，但有两种变
 
 Workfront Fusion当前不提供`retry`错误处理指令。 使用以下变通方法之一来模拟重试功能。
 
-有关说明，请参阅错误处理](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的[指令。
+有关说明，请参阅错误处理[&#128279;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的指令。
 
 * [使用Break指令](#use-the-break-directive)
 * [使用中继器模块](#use-the-repeater-module)

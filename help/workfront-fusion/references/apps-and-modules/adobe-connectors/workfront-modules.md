@@ -288,16 +288,16 @@ Workfront 连接器使用 OAuth 2.0 与 Workfront 建立连接。
        </td> 
      </tr> 
      <tr> 
-      <td>[！UICONTROL启用安全挂钩]</td> 
+      <td>[!UICONTROL 启用安全挂钩]</td> 
       <td>
        <p>选择是否要为此webhook启用基于authToken的安全性。</p><p>
        <b>注意</b>：自2026年8月23日起，Fusion将默认对所有Workfront &gt;关注事件模块（包括现有模块）启用基于authToken的安全性。 如果特定的webhook中断或出于兼容性原因需要禁用此选项，则可以关闭“启用安全挂钩”选项。</p>
        </td> 
      </tr> 
      <tr> 
-      <td>[！UICONTROL自定义令牌]</td> 
+      <td>[!UICONTROL 自定义令牌]</td> 
       <td>
-       <p>（可选）如果[！UICONTROL Enable secure hooks]设置为[！UICONTROL Yes]，则可以输入自己的令牌值来保护webhook。 如果您将此字段留空，Fusion会自动为您生成一个令牌。</p>
+       <p>（可选）如果[!UICONTROL Enable secure hooks]设置为[!UICONTROL Yes]，则可以输入自己的令牌值来保护webhook。 如果您将此字段留空，Fusion会自动为您生成一个令牌。</p>
        </td> 
      </tr> 
     </tbody> 

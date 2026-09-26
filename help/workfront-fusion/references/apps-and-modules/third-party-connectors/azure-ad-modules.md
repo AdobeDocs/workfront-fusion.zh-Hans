@@ -121,7 +121,7 @@ Azure Active Directory连接器使用以下对象：
    <td>选择要监视用户记录还是组记录。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL最大记录数]</td> 
+   <td role="rowheader">[!UICONTROL 最大记录数]</td> 
    <td>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</td> 
   </tr> 
  </tbody> 
@@ -155,7 +155,7 @@ Azure Active Directory连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
-   <td>选择您要读取[！UICONTROL User]记录还是[！UICONTROL Group]记录。</td> 
+   <td>选择您要读取[!UICONTROL User]记录还是[!UICONTROL Group]记录。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 输出]</td> 
@@ -188,10 +188,10 @@ Azure Active Directory连接器使用以下对象：
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 记录类型]</td> 
-   <td>选择您要读取[！UICONTROL User]记录还是[！UICONTROL Group]记录。</td> 
+   <td>选择您要读取[!UICONTROL User]记录还是[!UICONTROL Group]记录。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL其他字段]</td> 
+   <td role="rowheader">[!UICONTROL 其他字段]</td> 
    <td>填写这些字段以设置新记录的值。</td> 
   </tr> 
  </tbody> 
@@ -257,15 +257,15 @@ Azure Active Directory连接器使用以下对象：
    <td> <p>有关将[!DNL Azure Active Directory]帐户连接到Workfront Fusion的说明，请参阅<a href="/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md" class="MCXref xref" data-mc-variable-override="">创建与Adobe Workfront Fusion的连接 — 基本说明</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[！UICONTROL搜索条件]</td> 
-   <td> <p>输入要在搜索中使用的标准。</p> <p>有关要使用的参数（如“[！UICONTROL $filter]”）的信息，请参阅[!DNL Microsoft] API文档中的<a href="https://docs.microsoft.com/en-us/graph/query-parameters">使用查询参数自定义响应</a>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 搜索条件]</td> 
+   <td> <p>输入要在搜索中使用的标准。</p> <p>有关要使用的参数（如“[!UICONTROL $filter]”）的信息，请参阅[!DNL Microsoft] API文档中的<a href="https://docs.microsoft.com/en-us/graph/query-parameters">使用查询参数自定义响应</a>。</p> </td> 
   </tr> 
   <tr data-mc-conditions=""> 
    <td role="rowheader">[!UICONTROL 输出]</td> 
    <td>选择要包含在此模块输出捆绑包中的信息。</td> 
   </tr> 
   <tr data-mc-conditions=""> 
-   <td role="rowheader">[！UICONTROL最大记录数]</td> 
+   <td role="rowheader">[!UICONTROL 最大记录数]</td> 
    <td>输入或映射每次场景执行周期中该模块允许返回的最大记录数量。</td> 
   </tr> 
  </tbody> 

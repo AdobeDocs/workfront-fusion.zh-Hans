@@ -173,7 +173,7 @@ ht-degree: 9%
 
 ## 处理指令时出错
 
-这些指令简要说明如下。 有关详细信息，请参阅错误处理](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的[指令。
+这些指令简要说明如下。 有关详细信息，请参阅错误处理[&#128279;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的指令。
 
 有五个指令，可根据错误后场景执行是否继续将其分组为以下类别。
 

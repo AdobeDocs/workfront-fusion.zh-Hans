@@ -35,10 +35,10 @@ ht-degree: 5%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p>[！UICONTROL所有者]</p> </th> 
-   <th> <p>[！UICONTROL管理员]</p> </th> 
-   <th> <p>[！UICONTROL成员]</p> </th> 
-   <th> <p>[！UICONTROL会计师]</p> </th> 
+   <th> <p>[!UICONTROL 所有者]</p> </th> 
+   <th> <p>[!UICONTROL 管理员]</p> </th> 
+   <th> <p>[!UICONTROL 成员]</p> </th> 
+   <th> <p>[!UICONTROL 会计师]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -94,10 +94,10 @@ ht-degree: 5%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -213,10 +213,10 @@ ht-degree: 5%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -262,10 +262,10 @@ ht-degree: 5%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -311,10 +311,10 @@ ht-degree: 5%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -367,10 +367,10 @@ ht-degree: 5%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -416,10 +416,10 @@ ht-degree: 5%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -465,10 +465,10 @@ ht-degree: 5%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 
@@ -521,10 +521,10 @@ ht-degree: 5%
  <thead> 
   <tr> 
    <th> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL管理员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL成员]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL监控]</p> </th> 
-   <th> <p style="text-align: left;">[！UICONTROL Operator]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 管理员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 成员]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL 监控]</p> </th> 
+   <th> <p style="text-align: left;">[!UICONTROL Operator]</p> </th> 
   </tr> 
  </thead> 
  <tbody> 

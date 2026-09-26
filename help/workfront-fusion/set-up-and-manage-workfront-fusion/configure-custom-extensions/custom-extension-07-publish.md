@@ -41,7 +41,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> **角色：**&#x200B;创建和部署需要&#x200B;**开发人员**&#x200B;角色；提交审批请求以进行发布需要&#x200B;**系统管理员**角色。
+> **角色：**&#x200B;创建和部署需要&#x200B;**开发人员**&#x200B;角色；提交审批请求以进行发布需要&#x200B;**系统管理员**&#x200B;角色。
 >有关更多信息，请参阅：
 >
 > * [设置UI扩展工具和帐户](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-02-set-up-tools-account.md)
@@ -86,7 +86,7 @@ aio app deploy
 
 >[!TIP]
 >
-> **如果部署失败，并且“扩展点&#39;fusion/nav-organization/1&#39;不存在”（错误1060）：**尚未为您的组织启用Fusion扩展点。 这是载入步骤，不是代码中的错误。
+> **如果部署失败，并且“扩展点&#39;fusion/nav-organization/1&#39;不存在”（错误1060）：**&#x200B;尚未为您的组织启用Fusion扩展点。 这是载入步骤，不是代码中的错误。
 >有关详细信息，请参阅疑难解答文章中的[扩展点不存在](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-custom-extensions/custom-extension-08-troubleshooting.md#error-1060-extension-point-does-not-exist)。
 
 ### 步骤4：在Fusion配置文件中打开暂存测试
