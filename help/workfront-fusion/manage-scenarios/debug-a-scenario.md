@@ -32,7 +32,7 @@ Adobe Workfront Fusion Devtool可帮助您了解场景并排除其故障。 使�
 有关Fusion Devtool的视频介绍和演练，请参见
 
 * [Fusion开发工具](https://video.tv.adobe.com/v/3427031/){target=_blank}
-* [Devtool演练](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=en)
+* [Devtool演练](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/fusion/troubleshooting-and-error-handling/dev-tool-walkthrough.html?lang=zh-Hans)
 
 ## 访问权限要求
 
