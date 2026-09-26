@@ -4,19 +4,23 @@ description: 数据存储类似于数据库或简单表，可以存储场景中�
 author: Becky
 feature: Workfront Fusion
 exl-id: 8bfa3201-45db-49d7-985d-9c324acd56b6
-TQID: https://experienceleague.adobe.com/pCDU9BMkWEcUJZ9r4XN0dxEA8L89rWJyGQSWk10TiDs
+TQID: 'https://experienceleague.adobe.com/pCDU9BMkWEcUJZ9r4XN0dxEA8L89rWJyGQSWk10TiDs'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1366
+source-wordcount: '1366'
 ht-degree: 8%
-
 ---
-
 # 创建和管理数据存储
 
 数据存储类似于数据库或简单表，可以存储场景中的数据，从而可以在单独的场景或场景运行之间传输数据。 在同步过程中，您可以使用数据存储来存储来自不同系统的新数据。
@@ -79,7 +83,7 @@ Ultimate包上的Fusion实例将接收：
 
 ### 选择和Prime计划
 
-Select或Prime包上的Fusion实例将接收:-->
+Select或Prime包上的Fusion实例将接收：—>
 
 * 第一个500K操作为100 MB。
 

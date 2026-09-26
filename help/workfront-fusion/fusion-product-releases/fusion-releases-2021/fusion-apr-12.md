@@ -1,16 +1,17 @@
 ---
-title: 'Workfront Fusion release activity: Week of April 12, 2021'
-description: 'Workfront Fusion release activity: Week of April 12, 2021'
+title: Workfront Fusion发行活动： 2021年4月12日开始的周
+description: Workfront Fusion发行活动： 2021年4月12日开始的周
 author: Luke
 draft: Probably
-source-git-commit: bc4c5c047f4847b929c4b047be1897d8872709e9
+product_v2:
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 35%
-
+source-wordcount: '127'
+ht-degree: 30%
 ---
-
-# Workfront Fusion release activity: Week of April 12, 2021
+# Workfront Fusion发行活动： 2021年4月12日开始的周
 
 本页介绍了2021年4月12日这一周在Adobe Workfront Fusion中所做的所有增强。
 

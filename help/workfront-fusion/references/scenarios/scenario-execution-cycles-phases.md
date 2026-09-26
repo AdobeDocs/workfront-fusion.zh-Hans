@@ -4,31 +4,33 @@ description: 本文介绍了在Adobe Workfront Fusion场景运行时发生的事
 author: Becky
 feature: Workfront Fusion
 exl-id: abf41be5-df32-4eaf-b3f4-93ddf005bfe3
-TQID: https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c
+TQID: 'https://experienceleague.adobe.com/QiQVO7jFPtqkI-ZcsG-Cl7slbYmKlY9HHnTW7MyrO7c'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 482
+source-wordcount: '482'
 ht-degree: 2%
-
 ---
-
 # 场景执行、周期与阶段
 
 每个场景执行从初始化阶段开始，以至少一个由操作和提交/回滚阶段组成的周期继续，并且以最终化阶段结束
 
 * 初始化
 * 循环#1
-   * 操作（读取或写入）
-   * 提交或回滚
+  * 操作（读取或写入）
+  * 提交或回滚
 * 循环#2
-   * 操作（读取或写入）
-   * 提交或回滚
+  * 操作（读取或写入）
+  * 提交或回滚
 * ...
 * 循环#n
-   * 操作（读取或写入）
-   * 提交或回滚
+  * 操作（读取或写入）
+  * 提交或回滚
 * 最终完成
 
 在较小规模中，每个模块也遵循这些阶段。 有关模块阶段的信息可在已处理的捆绑包信息中找到，可在场景运行后在每个模块右上角的编号气泡中找到。 有关查找已处理捆绑包信息的详细信息，请参阅方案执行流文章中有关已处理捆绑包的[信息](/help/workfront-fusion/references/scenarios/scenario-execution-flow.md#information-about-processed-bundles)。

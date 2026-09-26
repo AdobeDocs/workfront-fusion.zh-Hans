@@ -7,18 +7,20 @@ description: 使用 Adobe Workfront Fusion 需要在拥有 Adobe Workfront 许�
 author: Becky
 feature: Workfront Fusion
 exl-id: 97e3402c-d1d0-44f6-9752-11b0f5abee22
-TQID: https://experienceleague.adobe.com/OHwMJdhw3YevvWt3K-20ly90b2S0EfQ-gUz-U9J807U
+TQID: 'https://experienceleague.adobe.com/OHwMJdhw3YevvWt3K-20ly90b2S0EfQ-gUz-U9J807U'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 880
+source-wordcount: '880'
 ht-degree: 13%
-
 ---
-
 # 查看、编辑和删除模板
 
 Workfront Fusion模板功能允许您创建并使用现有模板作为Workfront Fusion方案的起点。 模板表示一些常见用例，您可以根据组织和特定用例的需要对这些用例进行配置和修改。

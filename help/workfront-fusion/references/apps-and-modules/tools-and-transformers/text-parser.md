@@ -4,19 +4,28 @@ description: 您可以使用文本解析器工具来解析文本，以供在其�
 author: Becky
 feature: Workfront Fusion, Digital Content and Documents
 exl-id: 885d714e-fc09-41a2-89dc-ebe29a355e43
-TQID: https://experienceleague.adobe.com/0hUSiU9zD2vHGXsZkhcfuKYQJrdP6CAjjwEn06CDLNM
+TQID: 'https://experienceleague.adobe.com/0hUSiU9zD2vHGXsZkhcfuKYQJrdP6CAjjwEn06CDLNM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: e14a7f57-c82c-4874-a495-5d036cbbdc3d
+    internal-label: Resource management
+subfeature_v2:
+  - id: b70a979b-965d-47a9-a360-e7ec2a19b8c1
+    internal-label: Digital content and documents
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Troubleshooting
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1324
+source-wordcount: '1324'
 ht-degree: 11%
-
 ---
-
 # [!UICONTROL 文本分析器]
 
 您可以使用[!UICONTROL 文本分析器工具]来分析文本，以供在其他Adobe Workfront Fusion方案模块中使用。 [!UICONTROL 文本分析器]不需要连接。
@@ -173,7 +182,7 @@ ht-degree: 11%
  <tbody> 
   <tr> 
    <td>[!UICONTROL 模式] </td> 
-   <td> <p>输入正则表达式模式。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE][+-]?\d+)?</code>提取所提供文本中的所有数字。</p> <p>注意：  <p>模式应至少包含一个位于括号<code>()</code>中的捕获组。 如果模式不包含任何捕获组，则输出包为空。</p> </p> </td> 
+   <td> <p>输入正则表达式模式。 </p> <p class="example" data-mc-autonum="<b>Example: </b>"><span class="autonumber"><span><b>示例： </b></span></span> <code>[+-]?(\d+(\.\d+)?|\.\d+)([eE]&#x200B;[+-]?\d+)?</code>提取所提供文本中的所有数字。</p> <p>注意：  <p>模式应至少包含一个位于括号<code>()</code>中的捕获组。 如果模式不包含任何捕获组，则输出包为空。</p> </p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 全局匹配]</td> 

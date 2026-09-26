@@ -6,16 +6,23 @@ draft: Probably
 feature: Product Announcements, Workfront Fusion
 recommendations: noDisplay, noCatalog
 exl-id: 90659af3-622c-4685-ae09-f117ea81db7d
-TQID: https://experienceleague.adobe.com/GQYrt3ccA6X27E640eW858TtaXa-hcTZbTGSqIRcQuY
+TQID: 'https://experienceleague.adobe.com/GQYrt3ccA6X27E640eW858TtaXa-hcTZbTGSqIRcQuY'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+  - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+subfeature_v2:
+  - id: a29813d3-f0cc-4b60-9396-13b558370803
+    internal-label: Product announcements
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 235
+source-wordcount: '235'
 ht-degree: 28%
-
 ---
-
 # Workfront Fusion 发行活动：2021 年 8 月 2 日当周
 
 本页介绍了2021年8月2日这一周在Adobe Workfront Fusion中所做的所有增强。
@@ -39,5 +46,5 @@ ht-degree: 28%
 
   此函数接受两个数组，并返回一个新数组。 您可以选择模块返回的新数组类型：
 
-   * 一个数组中未包含在其他数组中的元素数组
-   * 包含在一个数组或另一个数组中，但不能同时包含这两个数组的元素数组。
+  * 一个数组中未包含在其他数组中的元素数组
+  * 包含在一个数组或另一个数组中，但不能同时包含这两个数组的元素数组。

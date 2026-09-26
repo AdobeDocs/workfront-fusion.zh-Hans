@@ -4,16 +4,18 @@ description: 使用 Adobe Workfront Fusion 需要在拥有 Adobe Workfront 许�
 author: Becky
 feature: Workfront Fusion
 exl-id: de81ad4c-27e5-4b6c-acf0-f01a8c85922e
-TQID: https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc
+TQID: 'https://experienceleague.adobe.com/3bzje0OOFp4aA6KeWzSGU-hIUHSCBhAerh8GIX3GNWc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 705
+source-wordcount: '705'
 ht-degree: 100%
-
 ---
-
 # 场景概述
 
 Adobe Workfront Fusion 的作用是自动化您的业务流程，使用户无需将大量时间花在日常重复性任务上。 它通过连接应用程序和服务内部或之间的操作，构建可自动传输并转换数据的场景。 您创建的场景会监控某个应用程序或服务中的数据，并对这些数据进行处理，以生成您所需的结果。
@@ -111,5 +113,5 @@ Workfront Fusion 可以连接到其他应用程序和 Web 服务。 您可以访
 * 有关 Workfront Fusion 中使用的术语表，请参阅 [Adobe Workfront Fusion 术语表](/help/workfront-fusion/get-started-with-fusion/understand-fusion/fusion-glossary.md)。
 * 若要开始构建练习场景，请参阅[创建基础场景](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)。
 * 有关创建和管理场景的详细信息，请参阅以下内容中的文章：
-   * [创建场景](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
-   * [管理场景](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)
+  * [创建场景](/help/workfront-fusion/create-scenarios/create-scenarios-toc.md)
+  * [管理场景](/help/workfront-fusion/manage-scenarios/manage-scenarios-toc.md)

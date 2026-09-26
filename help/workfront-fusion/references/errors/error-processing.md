@@ -5,20 +5,23 @@ description: 有时，在执行场景期间可能会出错。 如果由于无法
 author: Becky
 feature: Workfront Fusion
 exl-id: abf5f844-d13b-416e-a8b8-2d4ee1786262
-TQID: https://experienceleague.adobe.com/t5chLg0xd7CSUyitvH-NCc-YUbMAEXu111sU497Uspc
+TQID: 'https://experienceleague.adobe.com/t5chLg0xd7CSUyitvH-NCc-YUbMAEXu111sU497Uspc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1214
+source-wordcount: '1227'
 ht-degree: 8%
-
 ---
-
 # 错误类型
 
 有时，在执行场景期间可能会出错。 如果由于无法连接到服务而导致服务不可用，或者如果验证失败，则通常会发生这种情况。
@@ -63,10 +66,10 @@ Adobe Workfront Fusion可区分多种基本错误类型。 错误的类型决定
 * 如果第一个模块发生错误，则场景的执行将终止，并显示警告消息。 然后，Workfront Fusion会不断尝试以递增的时间间隔重新运行场景。 如果所有尝试都失败，Workfront Fusion将停用场景。
 * 如果连接错误发生在第一个模块以外的其他模块上，则后续步骤取决于场景高级设置中的“允许存储不完整的执行”选项：
 
-   * 如果启用此选项，则方案的执行将移到[!UICONTROL 未完成执行]文件夹，Workfront Fusion会反复尝试以递增的时间间隔重新运行该方案。 如果所有尝试都失败，执行将保留在“未完成执行”文件夹中，等待用户手动解析。
+  * 如果启用此选项，则方案的执行将移到[!UICONTROL 未完成执行]文件夹，Workfront Fusion会反复尝试以递增的时间间隔重新运行该方案。 如果所有尝试都失败，执行将保留在“未完成执行”文件夹中，等待用户手动解析。
 
-     有关未完成执行的详细信息，请参阅[查看并解决未完成的执行](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)。
-   * 如果禁用了此选项，则场景的执行将结束并返回错误，然后进入回滚阶段。 然后，Workfront Fusion会不断尝试以递增的时间间隔重新运行场景。 如果所有尝试都失败，Workfront Fusion将停用场景。
+    有关未完成执行的详细信息，请参阅[查看并解决未完成的执行](/help/workfront-fusion/manage-scenarios/view-and-resolve-incomplete-executions.md)。
+  * 如果禁用了此选项，则场景的执行将结束并返回错误，然后进入回滚阶段。 然后，Workfront Fusion会不断尝试以递增的时间间隔重新运行场景。 如果所有尝试都失败，Workfront Fusion将停用场景。
 
   有关“允许存储未完成的执行”设置的详细信息，请参阅配置场景设置一文中的[允许存储未完成的执行](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#allow-storing-incomplete-executions)。
 

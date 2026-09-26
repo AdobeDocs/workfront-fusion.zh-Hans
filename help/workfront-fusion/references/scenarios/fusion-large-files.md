@@ -4,16 +4,18 @@ description: Workfront和HTTP连接器当前支持大文件。
 author: Becky
 feature: Workfront Fusion
 exl-id: 6df81943-e70c-42b3-aa44-d82343598a51
-TQID: https://experienceleague.adobe.com/VsmLVB07faHfcFVAhOHP3iJ6aV5ZMWMI4lHIm1sqbQc
+TQID: 'https://experienceleague.adobe.com/VsmLVB07faHfcFVAhOHP3iJ6aV5ZMWMI4lHIm1sqbQc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1060
+source-wordcount: '1075'
 ht-degree: 6%
-
 ---
-
 # 处理大型文件
 
 >[!IMPORTANT]
@@ -34,26 +36,26 @@ Workfront Fusion中现在提供了增强的数据传输功能，支持在场景�
 >* 不支持大文件的模块可以处理大小最大为200 MB的文件。
 
 * Workfront
-   * 上传文档
-   * 下载文档
+  * 上传文档
+  * 下载文档
 * Adobe Experience Manager Assets
-   * 上传文档
+  * 上传文档
 * Workfront 校样
-   * 上传文件
-   * 下载校对
+  * 上传文件
+  * 下载校对
 * Adobe Authenticator
-   * 进行自定义API调用
+  * 进行自定义API调用
 * Adobe Photoshop
-   * 应用PSD编辑
+  * 应用PSD编辑
 * SharePoint
-   * 创建文件
-   * 创建文件（旧版）
-   * 获取文件
+  * 创建文件
+  * 创建文件（旧版）
+  * 获取文件
 * Salesforce
-   * 上传文件
+  * 上传文件
 * AWS S3
-   * 上传文件
-   * 获取文件
+  * 上传文件
+  * 获取文件
 * HTTP
 
 其他连接器将在未来版本中受支持。

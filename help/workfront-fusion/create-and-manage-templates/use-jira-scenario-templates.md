@@ -7,24 +7,30 @@ description: 使用这些模板可自动执行Adobe Workfront Fusion和Jira之�
 author: Becky
 feature: Workfront Fusion
 exl-id: 7e30c105-54be-4499-b573-949137e6a5e6
-TQID: https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM
+TQID: 'https://experienceleague.adobe.com/1p8mg0HzgKs1U67uaAGxXshn5POSXIll9qTDfZmrzUM'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: d968a1bc-9a90-4926-a531-bcf272c32aad
+    internal-label: Administration
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
+    internal-label: Integrations
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 subfeature_v2:
   - id: d87de1f9-8e24-4c4d-aa4c-a403075091a1
+    internal-label: Custom forms
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Administration
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 4277
+source-wordcount: '4283'
 ht-degree: 3%
-
 ---
-
 # 使用模板连接 Adobe Workfront Fusion 和 Jira
 
 Adobe Workfront Fusion提供了可自动执行Fusion和Jira之间常用工作流的模板。
@@ -228,10 +234,10 @@ Jira的八个现成可用模板可帮助复制通用工作流并加快实施。 
 * **wfBaseURL**： Workfront实例的基本URL。  通常： `https://<domain>.my.workfront.com`，其中`<domain>`是您的特定Workfront域名。
 * **defaultJIRAReporterID**： JIRA中发生问题的用户的ID。 （示例： `557058:5aedf933-2312-40bc-b328-0c21314167f0`）
 您可以通过执行以下操作之一来获取此ID：
-   * 在JIRA中单击用户的个人资料，然后查看浏览器中的URL。
-（示例`https://myjira.atlassian.net/jira/people/<JiraUserID>`）
-   * 在您的JIRA实例上运行以下API调用，以获取JIRA中特定帐户的ID：
-     `GET /rest/api/3/user/search?query=email@example.com`
+  * 在JIRA中单击用户的个人资料，然后查看浏览器中的URL。
+    （示例`https://myjira.atlassian.net/jira/people/<JiraUserID>`）
+  * 在您的JIRA实例上运行以下API调用，以获取JIRA中特定帐户的ID：
+    `GET /rest/api/3/user/search?query=email@example.com`
 
 
 ### 情景1：Workfront到Jira：从Workfront任务或问题分配创建JIRA问题

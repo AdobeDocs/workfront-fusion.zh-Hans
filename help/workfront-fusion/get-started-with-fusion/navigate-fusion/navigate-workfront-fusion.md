@@ -4,16 +4,18 @@ description: 打开 Fusion 后，您可以选择执行多种操作。 本文将�
 author: Becky
 feature: Workfront Fusion
 exl-id: 427ec131-d68d-4401-b620-998d3d5162da
-TQID: https://experienceleague.adobe.com/95RrU217DFpxtEVaO3FyIx0wNR6p-sJw9J4ZDaqPkXw
+TQID: 'https://experienceleague.adobe.com/95RrU217DFpxtEVaO3FyIx0wNR6p-sJw9J4ZDaqPkXw'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: fac09ae8c8b2e248ef9c0731c38a4be58cea2994
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 895
+source-wordcount: '895'
 ht-degree: 82%
-
 ---
-
 # 浏览 Adobe Workfront Fusion
 
 您可以使用左侧导航面板浏览 Adobe Workfront Fusion 的各个区域。 在此，您可以查看 Fusion 中的所有主要区域，并在区域之间快速切换。

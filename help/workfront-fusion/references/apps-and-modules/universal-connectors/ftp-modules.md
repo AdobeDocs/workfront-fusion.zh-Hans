@@ -4,20 +4,25 @@ description: FTP模块允许您监视选定文件夹中的文件更改，将新�
 author: Becky
 feature: Workfront Fusion
 exl-id: 1e14f778-ab8c-421f-a4b4-c57be66c7cad
-TQID: https://experienceleague.adobe.com/gEM0-dJD4FYvu9TFvxoDtriimtlk001zevih7KnhKJE
+TQID: 'https://experienceleague.adobe.com/gEM0-dJD4FYvu9TFvxoDtriimtlk001zevih7KnhKJE'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Security
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 1406
+source-wordcount: '1406'
 ht-degree: 15%
-
 ---
-
 # FTP 模块
 
 FTP模块允许您监视选定文件夹中的文件更改，将新文件上传到所需文件夹，以及修改或删除文件夹中已存在的现有文件。
@@ -191,7 +196,7 @@ FTP模块允许您监视选定文件夹中的文件更改，将新文件上传�
             <td>[!UICONTROL 权限]</td>
             <td>
                <p>设置所需的文件或文件夹权限。 使用chmod参数。 例如： <code>777 </code>或<code>-rwxrwxrwx</code>。</p>
-               <p>权限必须符合模式<code> /(.?([r-][w-][x-]){3})|[0-7]{3,4}/</code>。</p>
+               <p>权限必须符合模式<code> /(.?([r-]&#x200B;[w-]&#x200B;[x-]){3})|[0-7]{3,4}/</code>。</p>
             </td>
          </tr>
    </tbody>

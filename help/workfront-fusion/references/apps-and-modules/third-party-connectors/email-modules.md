@@ -4,18 +4,21 @@ description: 在Adobe Workfront Fusion场景中，您可以将电子邮件帐户
 author: Becky
 feature: Workfront Fusion
 exl-id: 28a04bad-d3ef-4f3a-be93-8b04761a75e4
-TQID: https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4
+TQID: 'https://experienceleague.adobe.com/rHcxYxYNQchgOxfpU1Y3jc-sOxHxG3FNAKmbIsp9Dl4'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 801e8cb1a4c807aaa4275382c2d6211cf3cd6d1f
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2509
+source-wordcount: '2509'
 ht-degree: 10%
-
 ---
-
 # 电子邮件模块
 
 在Adobe Workfront Fusion场景中，您可以将电子邮件帐户连接到多个第三方应用程序和服务。这允许您通过IMAP下载电子邮件、通过SMTP发送电子邮件、创建新草稿、将电子邮件从一个文件夹移动和复制到另一个文件夹、将电子邮件标记为已读或未读，以及删除电子邮件。

@@ -1,21 +1,24 @@
 ---
 title: SFTP 模块
-description: 使用 [!DNL Adobe Workfront Fusion SFTP] 模块可以监视所选文件夹/子文件夹中的文件更改，将新文件上传到所需文件夹，修改或删除文件夹中已存在的文件，或者更改文件权限。
+description: '[!DNL Adobe Workfront Fusion SFTP]模块允许您监视所选文件夹/子文件夹中的文件更改，将新文件上传到所需文件夹，修改或删除文件夹中已存在的文件，或者更改文件权限。'
 author: Becky
 feature: Workfront Fusion
 exl-id: bde3cbda-8a19-4d9f-b970-f56d73a1f8dd
-TQID: https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc
+TQID: 'https://experienceleague.adobe.com/rXKL5kNnj33GM1Bq89wBdFUlrh4CNh59j3CG-DaZ6Kc'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-source-git-commit: 94492dbd382eee2f4e66e53d53a441ca82492bfb
+    internal-label: Customer experience
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 2240
-ht-degree: 15%
-
+source-wordcount: '2241'
+ht-degree: 14%
 ---
-
 # SFTP 模块
 
 Adobe Workfront Fusion SFTP模块允许您监视选定文件夹/子文件夹中的文件更改，将新文件上传到所需的文件夹，修改或删除文件夹中已存在的现有文件，或者更改文件权限。

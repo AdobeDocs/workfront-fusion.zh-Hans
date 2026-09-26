@@ -4,16 +4,18 @@ description: 您可以显示有关场景的事件或执行的信息，也可以�
 author: Becky
 feature: Workfront Fusion
 exl-id: 974b32b4-d86a-48cd-a8d4-1ae2cf309b9b
-TQID: https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ
+TQID: 'https://experienceleague.adobe.com/V2lG2ns3rokHSCoYYsfjfZiRfsqqOUteLJTD52RcQdQ'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 915
+source-wordcount: '915'
 ht-degree: 12%
-
 ---
-
 # 查看场景的执行历史
 
 您可以显示有关场景的事件或执行的信息，也可以搜索场景的所有执行以获取特定数据。
@@ -144,7 +146,7 @@ You can sort the scenario execution history.
    或
 
    键入&#x200B;**Ctrl+Shift+F** (Windows)或&#x200B;**Cmd+Shift+F** (Mac)
-将打开[!UICONTROL 在历史记录中搜索]窗口。
+   将打开[!UICONTROL 在历史记录中搜索]窗口。
 
 1. （可选）要搜索包含特定文本的执行内容，请在&#x200B;**[!UICONTROL 在历史记录中搜索]**&#x200B;窗口的搜索栏中输入文本。
 

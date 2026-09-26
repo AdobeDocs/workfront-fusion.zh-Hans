@@ -4,18 +4,21 @@ description: Fusion使用特定的IP地址和域进行Web通信。 必须将这�
 author: Becky
 feature: Workfront Fusion
 exl-id: 406dd45c-0863-4270-a80e-c1c115e0b367
-TQID: https://experienceleague.adobe.com/-ogVZgc8Jan8jmPV-l8PzajHzJrZ1np6dS-h7OAYY10
+TQID: 'https://experienceleague.adobe.com/-ogVZgc8Jan8jmPV-l8PzajHzJrZ1np6dS-h7OAYY10'
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
+    internal-label: Workfront Fusion
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Security
+source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
 workflow-type: tm+mt
-source-wordcount: 569
-ht-degree: 8%
-
+source-wordcount: '554'
+ht-degree: 6%
 ---
-
 # 在组织的允许列表中配置 Fusion 的 IP 地址
 
 由于Adobe Workfront Fusion与贵组织的网络进行通信，因此必须将贵组织的防火墙配置为允许该通信。 防火墙是一种高效的安全措施，通过将组织的网络与Internet分隔开来发挥作用。 它们可确保只有选定的数据和网络流量才能移入或移出组织的网络。 防火墙根据发送或接收数据的站点允许或阻止数据。 作为Fusion管理员，您必须确保发送到Fusion或从Fusion发送的数据可以通过贵组织的防火墙。
