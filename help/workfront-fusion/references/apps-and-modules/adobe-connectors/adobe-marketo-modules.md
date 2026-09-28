@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e84d0b7b77dd55c6f045c0b8d4d13aa16bfd29e6
 workflow-type: tm+mt
-source-wordcount: '2257'
-ht-degree: 99%
+source-wordcount: '2657'
+ht-degree: 86%
 ---
 # [!DNL Marketo] 模块
 
@@ -214,9 +214,12 @@ Marketo 连接器使用以下内容：
 
 * [[!UICONTROL 在列表中添加商机]](#add-leads-to-a-list)
 * [[!UICONTROL 克隆项目群]](#clone-a-program)
+* [[!UICONTROL 创建批量提取作业]](#create-a-bulk-extract-job)
 * [[!UICONTROL 创建记录]](#create-a-record)
 * [[!UICONTROL 自定义 API 调用]](#custom-api-call)
+* [[!UICONTROL 下载批量提取文件]](#download-a-bulk-extract-file)
 * [[!UICONTROL 下载文件]](#download-a-file)
+* [[!UICONTROL 获取批量提取作业状态]](#get-bulk-extract-job-status)
 * [[!UICONTROL 读取记录]](#read-a-record)
 * [[!UICONTROL 从列表中移除商机]](#remove-leads-from-a-list)
 * [[!UICONTROL 计划营销活动]](#schedule-a-campaign)
@@ -269,6 +272,45 @@ Marketo 连接器使用以下内容：
   <tr> 
    <td role="rowheader">[!UICONTROL 文件夹 ID]</td> 
    <td>输入或映射新项目群要放置的文件夹 ID。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL 创建批量提取作业]
+
+此操作模块为潜在客户和人员记录创建批量提取作业。 使用[!UICONTROL 获取批量提取作业状态]检查该作业，然后[!UICONTROL 下载批量提取文件]以检索已完成的导出。 此模块会返回状态和下载模块使用的导出ID。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 连接]</p> </td> 
+   <td> <p>有关将 [!DNL Marketo] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">将 [!DNL Marketo] 连接到 Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 字段]</td> 
+   <td> <p>对于要添加到批量提取作业的每个字段，单击<b>添加项</b>并输入字段API名称。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 输出格式]</td> 
+   <td> <p>选择提取的文件格式：CSV、TSV或SSV。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 过滤方式]</td> 
+   <td> <p>选择此模块的过滤器，然后在显示的字段中输入请求的信息：</p>
+   <ul> 
+    <li> <p><strong>[!UICONTROL 智能列表]</strong> </p> <p>输入或映射智能列表ID。</p> </li> 
+    <li> <p><strong>[!UICONTROL 已创建日期范围]</strong> </p> <p>选择要搜索的开始日期和结束日期。</p> </li> 
+   </ul> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 自定义列标题]</td> 
+   <td> <p>对于要包含在提取作业中的每个自定义列标题，单击<b>添加项</b>并输入字段的API名称和列标题文本。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 立即将作业排入队列]</td> 
+   <td> <p>选择是可将作业排入队列，以便在创建后立即运行。 选择否，稍后再使用单独的步骤将作业排入队列。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -362,6 +404,33 @@ Marketo 连接器使用以下内容：
    <td role="rowheader">[!UICONTROL 字段]</td> 
    <td> <p>对于每个要添加到 API 调用中的字段，点击<b>添加项目</b>，并输入该字段的键和值。</td> 
   </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 主体类型]</td> 
+   <td> <p>选择请求正文的格式： <b>[!UICONTROL URL编码（字段）]</b>或<b>[!UICONTROL JSON]</b>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 请求正文(JSON)]</td> 
+   <td> <p>仅在[!UICONTROL Body Type]设置为[!UICONTROL JSON]时使用。 输入原始JSON主体。</p> <p>重要信息：使用JSON时，将上面的[!UICONTROL Content-Type]标头从<code>application/x-www-form-urlencoded</code>更改为<code>application/json</code>，否则Marketo可能会拒绝该请求。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL 下载批量提取文件]
+
+此操作模块会为已完成的批量提取作业检索文件。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 连接]</p> </td> 
+   <td> <p>有关将 [!DNL Marketo] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">将 [!DNL Marketo] 连接到 Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 导出ID]</td> 
+   <td>输入或映射要为其下载文件的批量提取作业的ID。</td> 
+  </tr> 
  </tbody> 
 </table>
 
@@ -380,6 +449,25 @@ Marketo 连接器使用以下内容：
   <tr> 
    <td role="rowheader">[!UICONTROL 文件 ID]</td> 
    <td>输入或映射您想下载的文件 ID。</td> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### [!UICONTROL 获取批量提取作业状态]
+
+此操作模块使用批量提取作业的作业ID来检索其状态。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader"> <p>[!UICONTROL 连接]</p> </td> 
+   <td> <p>有关将 [!DNL Marketo] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">将 [!DNL Marketo] 连接到 Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 导出ID]</td> 
+   <td>输入或映射要检查其状态的批量提取作业的ID。</td> 
   </tr> 
  </tbody> 
 </table>
