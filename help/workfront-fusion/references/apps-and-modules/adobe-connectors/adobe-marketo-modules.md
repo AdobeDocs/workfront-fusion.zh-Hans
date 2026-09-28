@@ -293,23 +293,23 @@ Marketo 连接器使用以下内容：
    <td> <p>对于要添加到批量提取作业的每个字段，单击<b>添加项</b>并输入字段API名称。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL输出格式]</td> 
+   <td role="rowheader">[!UICONTROL 输出格式]</td> 
    <td> <p>选择提取的文件格式：CSV、TSV或SSV。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL过滤方式]</td> 
+   <td role="rowheader">[!UICONTROL 过滤方式]</td> 
    <td> <p>选择此模块的过滤器，然后在显示的字段中输入请求的信息：</p>
    <ul> 
-    <li> <p><strong>[！UICONTROL智能列表]</strong> </p> <p>输入或映射智能列表ID。</p> </li> 
-    <li> <p><strong>[！UICONTROL已创建日期范围]</strong> </p> <p>选择要搜索的开始日期和结束日期。</p> </li> 
+    <li> <p><strong>[!UICONTROL 智能列表]</strong> </p> <p>输入或映射智能列表ID。</p> </li> 
+    <li> <p><strong>[!UICONTROL 已创建日期范围]</strong> </p> <p>选择要搜索的开始日期和结束日期。</p> </li> 
    </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL自定义列标题]</td> 
+   <td role="rowheader">[!UICONTROL 自定义列标题]</td> 
    <td> <p>对于要包含在提取作业中的每个自定义列标题，单击<b>添加项</b>并输入字段的API名称和列标题文本。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL立即将作业排入队列]</td> 
+   <td role="rowheader">[!UICONTROL 立即将作业排入队列]</td> 
    <td> <p>选择是可将作业排入队列，以便在创建后立即运行。 选择否，稍后再使用单独的步骤将作业排入队列。</p> </td> 
   </tr> 
  </tbody> 
@@ -405,12 +405,12 @@ Marketo 连接器使用以下内容：
    <td> <p>对于每个要添加到 API 调用中的字段，点击<b>添加项目</b>，并输入该字段的键和值。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL主体类型]</td> 
-   <td> <p>选择请求正文的格式： <b>[！UICONTROL URL编码（字段）]</b>或<b>[！UICONTROL JSON]</b>。</p> </td> 
+   <td role="rowheader">[!UICONTROL 主体类型]</td> 
+   <td> <p>选择请求正文的格式： <b>[!UICONTROL URL编码（字段）]</b>或<b>[!UICONTROL JSON]</b>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL请求正文(JSON)]</td> 
-   <td> <p>仅在[！UICONTROL Body Type]设置为[！UICONTROL JSON]时使用。 输入原始JSON主体。</p> <p>重要信息：使用JSON时，将上面的[！UICONTROL Content-Type]标头从<code>application/x-www-form-urlencoded</code>更改为<code>application/json</code>，否则Marketo可能会拒绝该请求。</p> </td> 
+   <td role="rowheader">[!UICONTROL 请求正文(JSON)]</td> 
+   <td> <p>仅在[!UICONTROL Body Type]设置为[!UICONTROL JSON]时使用。 输入原始JSON主体。</p> <p>重要信息：使用JSON时，将上面的[!UICONTROL Content-Type]标头从<code>application/x-www-form-urlencoded</code>更改为<code>application/json</code>，否则Marketo可能会拒绝该请求。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -428,7 +428,7 @@ Marketo 连接器使用以下内容：
    <td> <p>有关将 [!DNL Marketo] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">将 [!DNL Marketo] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL导出ID]</td> 
+   <td role="rowheader">[!UICONTROL 导出ID]</td> 
    <td>输入或映射要为其下载文件的批量提取作业的ID。</td> 
   </tr> 
  </tbody> 
@@ -466,7 +466,7 @@ Marketo 连接器使用以下内容：
    <td> <p>有关将 [!DNL Marketo] 帐户连接到 Workfront Fusion 的说明，请参阅本文中的<a href="#connect-marketo-to-workfront-fusion" class="MCXref xref">将 [!DNL Marketo] 连接到 Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL导出ID]</td> 
+   <td role="rowheader">[!UICONTROL 导出ID]</td> 
    <td>输入或映射要检查其状态的批量提取作业的ID。</td> 
   </tr> 
  </tbody> 
