@@ -10,9 +10,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 5168f8b0baae4201773899f418bdf0c8b5bf3ef1
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '405'
 ht-degree: 0%
 ---
 # 向场景添加AI提示
@@ -44,4 +44,9 @@ MCP代理模块允许您使用语言模型和MCP服务器处理用户提示。
 
 您可以使用MCP代理模块向方案添加AI提示。
 
-有关说明，请参阅[MCP代理模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)。
+有关说明，请参阅以下针对特定服务器的文章：
+
+* [Adobe Experience Manager MCP模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)。
+* [Adobe Marketo Engage MCP模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-marketo-engage-mcp-module.md)。
+* [Adobe Workfront MCP模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-mcp-modules.md)。
+* [MCP代理模块](/help/workfront-fusion/references/apps-and-modules/tools-and-transformers/model-context-protocol-mcp-connector.md)。
