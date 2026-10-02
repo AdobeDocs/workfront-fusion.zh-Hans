@@ -1388,15 +1388,15 @@ THis模块将现有审批的所有阶段替换为给定的阶段数据。 文档
       <td>选择您希望模块监视的批准记录的类型。</td> 
      </tr> 
      <tr> 
-      <td>[！UICONTROL配置类型]</td> 
+      <td>[!UICONTROL 配置类型]</td> 
       <td>选择您要使用简单过滤器还是高级过滤器。<p>有关简单或高级过滤器的信息，请参阅Workfront模块文章中的<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#using-advanced-filters" class="MCXref xref">使用高级过滤器</a>。</p></td> 
      </tr> 
      <tr> 
-      <td>[！UICONTROL事件过滤器有效负载]</td> 
+      <td>[!UICONTROL 事件过滤器有效负载]</td> 
       <td>如果您使用的是高级过滤器，请输入描述该过滤器的JSON。</td> 
      </tr> 
      <tr> 
-      <td>[！UICONTROL Filter Connector]</td> 
+      <td>[!UICONTROL Filter Connector]</td> 
       <td>如果使用高级过滤器，请选择要用于过滤器的连接器。</td> 
      </tr> 
      <tr> 
@@ -1404,8 +1404,8 @@ THis模块将现有审批的所有阶段替换为给定的阶段数据。 文档
       <td>如果您使用的是简单筛选器，请选择是要查看旧状态还是新状态。<ul><li><p><b>[!UICONTROL 新状态]</b></p><p>当记录状态更改<b>为</b>指定值时触发场景。</p><p>例如，如果状态设置为 [!UICONTROL New State]，并且筛选条件设置为 [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress]，则当 [!UICONTROL Status] 更改为 [!UICONTROL In Progress] 时，Webhook 会触发场景，而不论之前的状态是什么。</p></li><li><p><b>[!UICONTROL 旧状态]</b></p><p>当记录状态<b>从</b>指定值发生变化时触发场景。</p><p>例如，如果状态设置为 [!UICONTROL Old State]，并且筛选条件设置为 [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress]，则当当前 [!UICONTROL In Progress] 状态的记录更改为其他状态时，Webhook 会触发场景。</p></li></ul></td> 
      </tr> 
      <tr data-mc-conditions=""> 
-      <td> <p>[！UICONTROL事件过滤器]</p> </td> 
-      <td> <p>如果您使用的是简单筛选器，请设置筛选器。</p> <p>对于每个筛选条件，请输入要评估的字段、运算符以及筛选条件应允许的值。 您可以通过添加 AND 规则来使用多个筛选条件。</p> <p><b>注意</b>：您无法编辑现有 Workfront Webhook 中的筛选条件。 如需为 Workfront 事件订阅设置不同的筛选条件，请删除当前 Webhook 并创建一个新的。</p> <p>有关事件过滤器的详细信息，请参阅Workfront模块文章中的Workfront &gt; [！UICONTROL观看活动]模块中的<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">事件订阅过滤器</a>。</p> </td> 
+      <td> <p>[!UICONTROL 事件过滤器]</p> </td> 
+      <td> <p>如果您使用的是简单筛选器，请设置筛选器。</p> <p>对于每个筛选条件，请输入要评估的字段、运算符以及筛选条件应允许的值。 您可以通过添加 AND 规则来使用多个筛选条件。</p> <p><b>注意</b>：您无法编辑现有 Workfront Webhook 中的筛选条件。 如需为 Workfront 事件订阅设置不同的筛选条件，请删除当前 Webhook 并创建一个新的。</p> <p>有关事件过滤器的详细信息，请参阅Workfront模块文章中的Workfront &gt; [!UICONTROL 观看活动]模块中的<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">事件订阅过滤器</a>。</p> </td> 
      </tr> 
      <tr data-mc-conditions=""> 
       <td>排除由此连接创建的事件</td> 
@@ -1419,16 +1419,16 @@ THis模块将现有审批的所有阶段替换为给定的阶段数据。 文档
        </td> 
      </tr> 
      <tr> 
-      <td>[！UICONTROL启用安全挂钩]</td> 
+      <td>[!UICONTROL 启用安全挂钩]</td> 
       <td>
        <p>选择是否要为此webhook启用基于authToken的安全性。</p><p>
        <b>注意</b>：自2026年8月23日起，Fusion将默认对所有Workfront &gt;关注事件模块（包括现有模块）启用基于authToken的安全性。 如果特定的webhook中断或出于兼容性原因需要禁用此选项，则可以关闭“启用安全挂钩”选项。</p>
        </td> 
      </tr> 
      <tr> 
-      <td>[！UICONTROL自定义令牌]</td> 
+      <td>[!UICONTROL 自定义令牌]</td> 
       <td>
-       <p>（可选）如果[！UICONTROL Enable secure hooks]设置为[！UICONTROL Yes]，则可以输入自己的令牌值来保护webhook。 如果您将此字段留空，Fusion会自动为您生成一个令牌。</p>
+       <p>（可选）如果[!UICONTROL Enable secure hooks]设置为[!UICONTROL Yes]，则可以输入自己的令牌值来保护webhook。 如果您将此字段留空，Fusion会自动为您生成一个令牌。</p>
        </td> 
      </tr> 
     </tbody> 
