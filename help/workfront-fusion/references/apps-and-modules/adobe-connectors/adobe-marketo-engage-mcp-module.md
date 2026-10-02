@@ -123,7 +123,7 @@ Adobe Marketo Engage MCP模块允许您使用人工智能模型向Adobe Marketo 
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL Munchkin ID]</td>
+        <td role="rowheader">[!UICONTROL Munchkin ID]</td>
         <td>
           <p>输入您的Marketo实例的Munchkin ID（例如，'123-ABC-456'）。 Munchkin ID显示在Marketo中的<b>管理员→Munchkin</b>下。</p>
         </td>
