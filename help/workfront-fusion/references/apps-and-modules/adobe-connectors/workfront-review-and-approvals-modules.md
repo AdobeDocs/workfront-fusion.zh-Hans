@@ -15,16 +15,16 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: a6430648344a5d02960bac7447331679e8abebe4
 workflow-type: tm+mt
-source-wordcount: '5202'
-ht-degree: 11%
+source-wordcount: '5905'
+ht-degree: 16%
 ---
 # Adobe Workfront统一审核和批准模块
 
 使用Adobe Workfront统一审查和审批模块，您可以获取审批详细信息、做出资产决策、添加或删除审批参与者、添加或更新审批阶段、锁定或解锁阶段以及进行自定义API调用。
 
-有关Workfront统一审阅和批准的信息，请参阅Workfront文档中的[统一审阅和批准概述](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/review-and-approve-work/document-approvals-overview)。
+有关Workfront统一审阅和批准的信息，请参阅Workfront文档中的[统一审阅和批准概述](https://experienceleague.adobe.com/en/docs/workfront/using/review-and-approve-work/document-approvals-overview)。
 
 ## 访问权限要求
 
@@ -131,6 +131,7 @@ ht-degree: 11%
 
 * [操作](#actions)
 * [搜索](#searches)
+* [触发器](#triggers)
 * [其他](#other)
 
 ### 操作
@@ -1353,6 +1354,89 @@ THis模块将现有审批的所有阶段替换为给定的阶段数据。 文档
 </table>
 
 <!-- BECKY CHECK ME: the screenshot shows two separate fields both labeled "Limit" - an optional pagination page-size field (max 100, default 20, ignored if Cursor is set) and a required general execution-cycle limit, matching the Limit field used in every other module in this article. Confirm this isn't a UI labeling issue before publishing, and that both rows are needed/correctly distinguished. -->
+
+### 触发器
+
+* [Watch批准事件](#watch-approval-events)
+
+#### Watch批准事件
+
+当Adobe Workfront统一审查和批准中发生与批准相关的事件时，此触发器模块会实时执行场景。
+
+模块会返回与审批事件关联的任何标准字段，以及连接访问的任何自定义字段和值。 您可以在场景后续的模块中映射这些信息。
+
+为Watch审批事件模块配置webhook：
+
+1. 单击 **Webhook** 框右侧的&#x200B;**[!UICONTROL 添加]**。
+
+1. 在显示的&#x200B;**[!UICONTROL 添加挂钩]**&#x200B;框中配置该 Webhook。
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td>[!UICONTROL Webhook 名称]</td> 
+      <td>输入 Webhook 的名称</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 连接]</td> 
+      <td> <p>有关将Workfront应用程序连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-to-adobe-workfront-unified-review-and-approvals" class="MCXref xref">连接到Adobe Workfront统一审阅和批准</a>。</p> </td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 记录类型]</td> 
+      <td>选择您希望模块监视的批准记录的类型。</td> 
+     </tr> 
+     <tr> 
+      <td>[！UICONTROL配置类型]</td> 
+      <td>选择您要使用简单过滤器还是高级过滤器。<p>有关简单或高级过滤器的信息，请参阅Workfront模块文章中的<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#using-advanced-filters" class="MCXref xref">使用高级过滤器</a>。</p></td> 
+     </tr> 
+     <tr> 
+      <td>[！UICONTROL事件过滤器有效负载]</td> 
+      <td>如果您使用的是高级过滤器，请输入描述该过滤器的JSON。</td> 
+     </tr> 
+     <tr> 
+      <td>[！UICONTROL Filter Connector]</td> 
+      <td>如果使用高级过滤器，请选择要用于过滤器的连接器。</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 状态]</td> 
+      <td>如果您使用的是简单筛选器，请选择是要查看旧状态还是新状态。<ul><li><p><b>[!UICONTROL 新状态]</b></p><p>当记录状态更改<b>为</b>指定值时触发场景。</p><p>例如，如果状态设置为 [!UICONTROL New State]，并且筛选条件设置为 [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress]，则当 [!UICONTROL Status] 更改为 [!UICONTROL In Progress] 时，Webhook 会触发场景，而不论之前的状态是什么。</p></li><li><p><b>[!UICONTROL 旧状态]</b></p><p>当记录状态<b>从</b>指定值发生变化时触发场景。</p><p>例如，如果状态设置为 [!UICONTROL Old State]，并且筛选条件设置为 [!UICONTROL Status] [!UICONTROL Equals] [!UICONTROL In Progress]，则当当前 [!UICONTROL In Progress] 状态的记录更改为其他状态时，Webhook 会触发场景。</p></li></ul></td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td> <p>[！UICONTROL事件过滤器]</p> </td> 
+      <td> <p>如果您使用的是简单筛选器，请设置筛选器。</p> <p>对于每个筛选条件，请输入要评估的字段、运算符以及筛选条件应允许的值。 您可以通过添加 AND 规则来使用多个筛选条件。</p> <p><b>注意</b>：您无法编辑现有 Workfront Webhook 中的筛选条件。 如需为 Workfront 事件订阅设置不同的筛选条件，请删除当前 Webhook 并创建一个新的。</p> <p>有关事件过滤器的详细信息，请参阅Workfront模块文章中的Workfront &gt; [！UICONTROL观看活动]模块中的<a href="/help/workfront-fusion/references/apps-and-modules/adobe-connectors/workfront-modules.md#event-subscription-filters-in-the-workfront--watch-events-modules" class="MCXref xref">事件订阅过滤器</a>。</p> </td> 
+     </tr> 
+     <tr data-mc-conditions=""> 
+      <td>排除由此连接创建的事件</td> 
+      <td>如果您使用简单过滤器，请启用此选项，以排除使用此触发器模块使用的同一连接器创建或更新的事件。 这可防止场景因自我触发而不断循环执行。 此选项可能并不适用于所有批准事件类型。</td> 
+     </tr> 
+     <tr> 
+      <td>[!UICONTROL 记录来源]</td> 
+      <td>
+       <p>选择是否要让场景监控 [!UICONTROL New Records Only]、[!UICONTROL Updated Records Only]、[!UICONTROL New and Updated Records] 或 [!DNL Deleted Records Only]。</p>
+       <p><b>注意</b>：如果您选择 [!UICONTROL New and Updated Records]，在创建 Webhook 时会生成两个事件订阅（使用相同的 Webhook 地址）。</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[！UICONTROL启用安全挂钩]</td> 
+      <td>
+       <p>选择是否要为此webhook启用基于authToken的安全性。</p><p>
+       <b>注意</b>：自2026年8月23日起，Fusion将默认对所有Workfront &gt;关注事件模块（包括现有模块）启用基于authToken的安全性。 如果特定的webhook中断或出于兼容性原因需要禁用此选项，则可以关闭“启用安全挂钩”选项。</p>
+       </td> 
+     </tr> 
+     <tr> 
+      <td>[！UICONTROL自定义令牌]</td> 
+      <td>
+       <p>（可选）如果[！UICONTROL Enable secure hooks]设置为[！UICONTROL Yes]，则可以输入自己的令牌值来保护webhook。 如果您将此字段留空，Fusion会自动为您生成一个令牌。</p>
+       </td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+Webhook 创建完成后，您可以查看事件发送到的端点地址。
+
+如需了解更多信息，请参阅 Workfront 文档中事件订阅 API 一文的[事件负载示例](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads)部分。
 
 ### 其他
 
