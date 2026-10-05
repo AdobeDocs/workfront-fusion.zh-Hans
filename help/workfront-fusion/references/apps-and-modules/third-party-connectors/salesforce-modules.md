@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 08224dc1e04d56e422cb177c65efadf5db71b136
 workflow-type: tm+mt
-source-wordcount: '3056'
+source-wordcount: '3078'
 ht-degree: 34%
 ---
 # [!DNL Salesforce] 模块
@@ -115,6 +115,13 @@ Salesforce连接器使用以下对象：
 ## 创建与 [!DNL Salesforce] 的连接
 
 要为您的[!DNL Salesforce]模块创建连接，您可以使用OAuth 2或PKCE进行身份验证。
+
+>[!NOTE]
+>
+>如果您使用PKCE进行身份验证，则必须在Salesforce中启用以下范围。
+>
+>* 完全访问： `full`
+>* 随时执行请求： `refresh_token`，`offline_access`
 
 1. 在任意 [!DNL Salesforce] 模块中，点击“连接”框旁的&#x200B;**[!UICONTROL 添加]**。
 
