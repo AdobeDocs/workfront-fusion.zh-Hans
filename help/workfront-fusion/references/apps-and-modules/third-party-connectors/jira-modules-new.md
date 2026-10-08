@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 818b14eb26bab6d81f95daf1c8c7ee831402c879
 workflow-type: tm+mt
-source-wordcount: '2406'
-ht-degree: 25%
+source-wordcount: '2675'
+ht-degree: 22%
 ---
 # Jira 模块
 
@@ -78,10 +78,14 @@ Jira连接器可用于Jira云和Jira数据服务器。
 
 ## 将Jira连接到Workfront Fusion
 
-创建与Jira的连接过程因您创建的是基本连接还是OAuth2连接而异。
+创建与Jira连接的过程取决于您使用的帐户类型和身份验证方法。 当连接与单个Jira用户关联时，使用个人帐户连接。 当打算使用专用自动化或非用户身份运行连接时，请使用服务帐户连接。
+
+在&#x200B;**连接类型**&#x200B;字段中，为您的Jira帐户选择适当的身份验证方法：
 
 * [创建与Jira的OAuth2连接](#create-an-oauth2-connection-to-jira)
 * [创建与Jira的基本连接](#create-a-basic-connection-to-jira)
+* [创建与Jira的服务帐户API令牌连接](#create-a-service-account-api-token-connection-to-jira)
+* [创建与Jira的服务帐户OAuth2连接](#create-a-service-account-oauth2-connection-to-jira)
 
 ### 创建与Jira的OAuth2连接
 
@@ -195,7 +199,7 @@ Jira连接器可用于Jira云和Jira数据服务器。
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>连接类型</p> </td> 
-      <td> <p>选择是创建基本连接还是OAuth 2连接。</p> </td> 
+      <td> <p>为此连接选择<b>基本</b>。</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>连接名称</p> </td> 
@@ -243,7 +247,7 @@ Jira连接器可用于Jira云和Jira数据服务器。
     <tbody> 
      <tr> 
       <td role="rowheader"> <p>连接类型</p> </td> 
-      <td> <p>选择是创建基本连接还是OAuth 2连接。</p> </td> 
+      <td> <p>为此连接选择<b>基本</b>。</p></td>
      </tr> 
      <tr> 
       <td role="rowheader"> <p>连接名称</p> </td> 
@@ -294,6 +298,33 @@ Jira连接器可用于Jira云和Jira数据服务器。
 * `jira.rest.csrf.disabled = true`
 
 如果此文件不存在，则必须创建它。
+
+### 创建与Jira的服务帐户API令牌连接
+
+此选项用于通过API令牌进行身份验证的Jira服务帐户。 在&#x200B;**连接类型**&#x200B;字段中，选择&#x200B;**服务帐户API令牌**。
+
+1. 在任何Jira模块中，单击&#x200B;**连接**&#x200B;字段旁边的&#x200B;**添加**。
+1. 在&#x200B;**连接类型**&#x200B;字段中，选择&#x200B;**服务帐户API令牌**。
+1. 输入&#x200B;**连接名称**。
+1. 输入Jira实例的&#x200B;**服务URL**。
+1. 选择适当的&#x200B;**Jira帐户类型**。
+1. 输入Jira服务帐户的API令牌。
+1. 选择您希望此连接使用的&#x200B;**API版本**。
+1. 单击&#x200B;**继续**&#x200B;以创建连接并返回模块。
+
+### 创建与Jira的服务帐户OAuth2连接
+
+此选项适用于通过OAuth 2身份验证的Jira服务帐户。 在&#x200B;**连接类型**&#x200B;字段中，选择&#x200B;**服务帐户OAuth 2**。
+
+1. 在任何Jira模块中，单击&#x200B;**连接**&#x200B;字段旁边的&#x200B;**添加**。
+1. 在&#x200B;**连接类型**&#x200B;字段中，选择&#x200B;**服务帐户OAuth 2**。
+1. 输入&#x200B;**连接名称**。
+1. 输入Jira实例的&#x200B;**服务URL**。
+1. 选择适当的&#x200B;**Jira帐户类型**。
+1. 输入与服务帐户关联的Jira OAuth 2应用程序的&#x200B;**客户端ID**&#x200B;和&#x200B;**客户端密钥**。
+1. 或者，输入连接所需的任何&#x200B;**其他范围**。
+1. 选择您希望此连接使用的&#x200B;**API版本**。
+1. 单击&#x200B;**继续**&#x200B;以创建连接并返回模块。
 
 ## Jira模块及其字段
 

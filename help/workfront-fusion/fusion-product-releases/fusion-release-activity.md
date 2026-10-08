@@ -23,16 +23,20 @@ feature_v2:
 subfeature_v2:
   - id: a29813d3-f0cc-4b60-9396-13b558370803
     internal-label: Product announcements
-source-git-commit: e84d0b7b77dd55c6f045c0b8d4d13aa16bfd29e6
+source-git-commit: 1f81819f3752e48bd4b070b3b3f192dc73c3a499
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 84%
+source-wordcount: '1627'
+ht-degree: 83%
 ---
 # Adobe Workfront Fusion 发行活动概述
 
 Adobe Workfront Fusion 可将您的应用程序和网络服务无缝连接，让您专注于新的任务，而无需重复执行相同的工作。
 
 ## 2026 年 Fusion 发行版本
+
+### 2026年10
+
+* [Workfront Fusion发行活动： 2026年10月5日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-5.md)
 
 ### 2026 年 9 月
 
