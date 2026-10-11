@@ -159,67 +159,67 @@ Adobe Workfront Fusion [!UICONTROL HTTP] > [!UICONTROL 发出JWT请求]模块向
    <td><p>键/值格式的查询字符串参数。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL主体类型]</p></td>
+   <td role="rowheader"><p>[!UICONTROL 主体类型]</p></td>
    <td><p>如何对请求正文进行编码。 选项包括Raw、application/x-www-form-urlencoded和multipart/form-data。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL解析响应]</p></td>
+   <td role="rowheader"><p>[!UICONTROL 解析响应]</p></td>
    <td><p>启用后，Fusion将根据响应内容类型解析响应正文。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL JWT有效负荷（声明）]</p></td>
+   <td role="rowheader"><p>[!UICONTROL JWT有效负荷（声明）]</p></td>
    <td><p>作为声明包含在JWT有效负载中的键/值对。 保留的声明<code>exp</code>、<code>iat</code>和<code>nbf</code>必须为NumericDate — 自Unix纪元以来的秒数。 声明值将保留其JSON类型，因此数字将保留数字，布尔值将保留布尔值。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL Timeout]（高级）</p></td>
+   <td role="rowheader"><p>[!UICONTROL Timeout]（高级）</p></td>
    <td><p>以秒为单位指定请求超时(1-300)。 默认值为40秒。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL重试计数]（高级）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 重试计数]（高级）</p></td>
    <td><p>指定请求因可重试错误而失败时应重试的次数。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL其他重试状态代码]（高级）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 其他重试状态代码]（高级）</p></td>
    <td><p>指定应视为可重试的其他HTTP状态代码。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL与其他HTTP模块共享Cookie]（高级）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 与其他HTTP模块共享Cookie]（高级）</p></td>
    <td><p>启用此选项可将来自服务器的Cookie与场景中的所有HTTP模块共享。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL自签名证书]（高级）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 自签名证书]（高级）</p></td>
    <td><p>如果要使用自签名证书的TLS，请上载证书。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL拒绝使用未验证（自签名）证书的连接] （高级）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 拒绝使用未验证（自签名）证书的连接] （高级）</p></td>
    <td><p>启用此选项可拒绝使用未经验证的TLS证书的连接。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL遵循重定向]（高级）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 遵循重定向]（高级）</p></td>
    <td><p>启用此选项可在3xx响应中遵循URL重定向。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL禁用将多个相同的查询字符串键序列化为数组]（高级）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 禁用将多个相同的查询字符串键序列化为数组]（高级）</p></td>
    <td><p>默认情况下，Workfront Fusion会处理与数组相同的URL查询字符串参数键的多个值。 例如，<code>www.test.com?foo=bar&amp;foo=baz</code>将转换为<code>www.test.com?foo[0]=bar&amp;foo[1]=baz</code>。 激活此选项以禁用此功能。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL请求压缩内容] （高级）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 请求压缩内容] （高级）</p></td>
    <td><p>启用此选项可请求网站的压缩版本。 添加<code>[!UICONTROL Accept-Encoding]</code>标头以请求压缩的内容。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL使用双向TLS]（高级）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 使用双向TLS]（高级）</p></td>
    <td><p>启用此选项可在HTTP请求中使用双向TLS。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL Sign Options]（高级）</p></td>
+   <td role="rowheader"><p>[!UICONTROL Sign Options]（高级）</p></td>
    <td><p>对于要添加到请求中的每个符号选项，单击<b>添加项</b>并输入参数的名称和值。</p><p>传递给JWT签名者的其他选项，如<code>expiresIn</code>、<code>issuer</code>、<code>audience</code>、<code>subject</code>和<code>keyid</code>。 持续时间值（如<code>expiresIn</code>）由<code>jsonwebtoken</code>库解释。 纯数字被视为毫秒，因此使用单位字符串（如<code>"1h"</code>或<code>"3600s"</code>）来明确显示。 算法是从连接中获取的，不能在此处覆盖。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL标头名称] （高级）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 标头名称] （高级）</p></td>
    <td><p>输入或映射接收已签名JWT的请求标头的名称。 默认值： <code>Authorization</code>。 标头名称不得包含点(<code>.</code>)，因为虚线名称会被拒绝，并且在请求日志中不能被掩盖。</p></td>
   </tr>
   <tr>
-   <td role="rowheader"><p>[！UICONTROL令牌类型]（高级）</p></td>
+   <td role="rowheader"><p>[!UICONTROL 令牌类型]（高级）</p></td>
    <td><p>输入或映射放置在令牌之前的身份验证方案，如<code>Bearer</code>。 将此项留空可发送不带前缀的原始令牌。</p></td>
   </tr>
  </tbody>
