@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
 nudge: true
-source-git-commit: 1f81819f3752e48bd4b070b3b3f192dc73c3a499
+source-git-commit: 6fa2ee67919a381e44f703ff29a353585904bf7c
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2730'
 ht-degree: 48%
 ---
 
@@ -385,6 +385,7 @@ ht-degree: 48%
     * [应用程序及其模块](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)
     * 通用连接器 {#universal-connectors}
       * [HTTP > [!UICONTROL 发出请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+      * [[!UICONTROL HTTP] > [!UICONTROL 发出JWT请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-jwt-request.md)
       * [[!UICONTROL HTTP] > [!UICONTROL 发起基本授权请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
       * [[!UICONTROL HTTP] > [!UICONTROL 发起 OAuth 2.0 请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
       * [[!UICONTROL HTTP] > [!UICONTROL 发起客户端证书授权请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)

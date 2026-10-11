@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: e3b9a5e08e78c9ddd4829ab288c353a058409a5c
 workflow-type: tm+mt
-source-wordcount: '991'
-ht-degree: 19%
+source-wordcount: '1194'
+ht-degree: 16%
 ---
 # [!UICONTROL HTTP] > [!UICONTROL 发出请求]模块
 
@@ -128,6 +128,14 @@ Adobe Workfront Fusion [!UICONTROL HTTP] > [!UICONTROL 生成请求模块]是一
   <tr> 
    <td role="rowheader">[!UICONTROL 超时] </td> 
    <td> <p>以秒为单位指定请求超时(1-300)。 默认值为40秒。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 重试计数]</td> 
+   <td> <p>指定连接错误(ETIMEDOUT、ECONNRESET、EPROTO)时重试请求的次数。 默认值为3。 设置为0可禁用重试。</p> <p>此设置仅在启用[!UICONTROL Evaluate all states as errors]时才有效。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 其他重试状态代码]</td> 
+   <td> <p>指定启用[!UICONTROL 将所有状态计算为错误]时应视为可返回的其他HTTP状态代码。 默认情况下，只有408、429和所有5xx代码都是可重试的。</p> <p>向此字段添加状态代码时，它将变为可重试的连接错误，并根据[!UICONTROL Retry Count]设置触发重试。 此处未列出的状态代码将保留其默认行为。 通常不可重试的代码（如404或422）可以通过在此处添加它们而使其可重试。</p> <p><b>示例：</b>如果您启用[!UICONTROL Evaluate all states as errors]，将[!UICONTROL Retry Count]设置为4，并将422添加到此字段，则HTTP 422响应将被视为可重试响应并像其他连接类型失败一样重试。</p> <p><b>注意：</b> [!UICONTROL Timeout]设置控制每次尝试可以等待的时间。 它不定义重试之间的暂停。 此设置仅在启用[!UICONTROL Evaluate all states as errors]时才有效。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 与其他HTTP模块共享Cookie]</td> 
