@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 50583b23190de0fee568f020722482d8e9aed76b
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '639'
 ht-degree: 24%
 ---
 # HTTP >其他模块
@@ -80,6 +80,7 @@ Adobe Workfront Fusion [!UICONTROL HTTP]应用程序为基于超文本传输协�
 有关特定请求模块说明，请参阅以下文章：
 
 * [[!UICONTROL HTTP] > [!UICONTROL 发出请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-request.md)
+* [[!UICONTROL HTTP] > [!UICONTROL 发出JWT请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-jwt-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL 发起基本授权请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-basic-auth-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL 发起 OAuth 2.0 请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-an-oauth-2-request.md)
 * [[!UICONTROL HTTP] > [!UICONTROL 发起客户端证书授权请求]模块](/help/workfront-fusion/references/apps-and-modules/universal-connectors/http-module-make-a-client-cert-auth-request.md)
@@ -99,7 +100,7 @@ Adobe Workfront Fusion [!UICONTROL HTTP]应用程序为基于超文本传输协�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 将所有状态计算为错误（2xx和3xx除外）] </td> 
+   <td role="rowheader">[！UICONTROL将所有状态计算为错误（2xx和3xx除外）] </td> 
    <td> <p>使用此选项可设置错误处理。</p> <p>有关详细信息，请参阅Adobe Workfront Fusion中的<a href="/help/workfront-fusion/create-scenarios/config-error-handling/error-handling.md" class="MCXref xref">错误处理</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -107,7 +108,7 @@ Adobe Workfront Fusion [!UICONTROL HTTP]应用程序为基于超文本传输协�
    <td> <p>输入或映射要下载的文件的URL。 </p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 与其他HTTP模块共享Cookie] </td> 
+   <td role="rowheader">[！UICONTROL与其他HTTP模块共享Cookie] </td> 
    <td> <p>如果您希望此站点的Cookie对其他模块可用，请启用此选项。 </p> </td> 
   </tr> 
  </tbody> 
@@ -127,7 +128,7 @@ Adobe Workfront Fusion [!UICONTROL HTTP]应用程序为基于超文本传输协�
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 方法] </td> 
-   <td> <p>选择您要使用[!UICONTROL HEAD]方法还是[!UICONTROL GET]方法。</p> </td> 
+   <td> <p>选择您要使用[！UICONTROL HEAD]方法还是[！UICONTROL GET]方法。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -143,7 +144,7 @@ Adobe Workfront Fusion [!UICONTROL HTTP]应用程序为基于超文本传输协�
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Source Module]</td> 
+   <td role="rowheader">[！UICONTROL Source Module]</td> 
    <td> <p> 选择要从中检索标头的模块。</p> </td> 
   </tr> 
  </tbody> 
