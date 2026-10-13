@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: c9bf5c68e4977027944114c35414fa5f46ea8751
+source-git-commit: be0cf391e02e3f8c2547494aeac0de5b7296c85d
 workflow-type: tm+mt
-source-wordcount: '5853'
+source-wordcount: '5810'
 ht-degree: 10%
 ---
 # Microsoft SharePoint Online 模块
@@ -138,11 +138,11 @@ SharePoint连接器使用以下对象：
       <td>输入您正在连接的SharePoint应用程序的客户端ID。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 客户端密码]</p> </td> 
+      <td role="rowheader"> <p>[！UICONTROL客户端密码]</p> </td> 
       <td>输入您连接到的某个SharePoint应用程序的客户端密码。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 租户ID]</p> </td> 
+      <td role="rowheader"> <p>[！UICONTROL租户ID]</p> </td> 
       <td>输入您正在连接的SharePoint应用程序的租户ID。</td> 
      </tr> 
     </tbody> 
@@ -185,7 +185,7 @@ SharePoint连接器使用以下对象：
       <td>输入您正在连接的SharePoint应用程序的客户端ID。 </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL 指纹]</p> </td> 
+      <td role="rowheader"> <p>[！UICONTROL指纹]</p> </td> 
       <td>输入您要连接的SharePoint应用程序的指纹。</td> 
      </tr> 
       <tr>
@@ -263,10 +263,6 @@ SharePoint连接器使用以下对象：
 
 #### 授予API权限（服务主体）
 
->[!IMPORTANT]
->
->BECKY检查我：与Azure DevOps不同，Microsoft Graph在此步骤中直接支持应用程序权限。 在发布此部分之前，请确认进行API调用模块所需的确切权限（例如，网站权限范围），并相应地更新以下步骤。
-
 1. 在应用程序注册中，转到&#x200B;**[!UICONTROL API权限]**。
 1. 选择&#x200B;**[!UICONTROL 添加权限]**，然后选择&#x200B;**[!UICONTROL Microsoft图形]**。
 1. 选择&#x200B;**[!UICONTROL 应用程序权限]**。
@@ -283,7 +279,7 @@ SharePoint连接器使用以下对象：
  <col>
  <tbody>
   <tr>
-   <td role="rowheader">[!UICONTROL 租户ID]</td>
+   <td role="rowheader">[！UICONTROL租户ID]</td>
    <td>在概述页面上，标记为<b>目录（租户） ID</b>。</td>
   </tr>
   <tr>
@@ -370,7 +366,7 @@ SharePoint连接器使用以下对象：
     <col>
     <tbody>
      <tr>
-      <td role="rowheader">[!UICONTROL 租户ID]</td>
+      <td role="rowheader">[！UICONTROL租户ID]</td>
       <td>在概述页面上，标记为<b>目录（租户） ID</b>。</td>
      </tr>
      <tr>
@@ -400,15 +396,15 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
     <col>
     <tbody>
      <tr>
-      <td role="rowheader">[!UICONTROL Issuer]</td>
+      <td role="rowheader">[！UICONTROL Issuer]</td>
       <td>始终<code>https://oidc.automations.adobe.com</code>。</td>
      </tr>
      <tr>
-      <td role="rowheader">[!UICONTROL 主题]</td>
+      <td role="rowheader">[！UICONTROL主题]</td>
       <td>标识此连接。 它看起来像<code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>。 您创建的每个连接都各不相同。</td>
      </tr>
      <tr>
-      <td role="rowheader">[!UICONTROL 受众]</td>
+      <td role="rowheader">[！UICONTROL受众]</td>
       <td>始终<code>api://AzureADTokenExchange</code>。</td>
      </tr>
     </tbody>
@@ -439,11 +435,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
     <col>
     <tbody>
      <tr>
-      <td role="rowheader">[!UICONTROL Issuer]</td>
+      <td role="rowheader">[！UICONTROL Issuer]</td>
       <td><code>https://oidc.automations.adobe.com</code>.</td>
      </tr>
      <tr>
-      <td role="rowheader">[!UICONTROL 主题标识符]</td>
+      <td role="rowheader">[！UICONTROL主题标识符]</td>
       <td>您从Workfront Fusion复制的主题。 完全粘贴，不添加空格。</td>
      </tr>
      <tr>
@@ -451,7 +447,7 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
       <td>用于标识此连接的名称，以便您以后查找。 例如：<code>workfront-fusion-connection-28964</code>。</td>
      </tr>
      <tr>
-      <td role="rowheader">[!UICONTROL 受众]</td>
+      <td role="rowheader">[！UICONTROL受众]</td>
       <td><code>api://AzureADTokenExchange</code>. 这通常是替您填充的。 保留默认值。</td>
      </tr>
     </tbody>
@@ -532,11 +528,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点、驱动器和文件夹ID]</td> 
+   <td role="rowheader">[！UICONTROL输入站点、驱动器和文件夹ID]</td> 
    <td> <p>选择您希望如何标识要检索更改的文件夹的位置。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射文件创建位置的<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 驱动器ID]</strong>和<strong>[!UICONTROL 文件夹ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从您关注的列表中选择]</strong> </p> <p>选择要创建文件的位置。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射文件创建位置的<strong>[！UICONTROL站点ID]</strong>、<strong>[！UICONTROL驱动器ID]</strong>和<strong>[！UICONTROL文件夹ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从您关注的列表中选择]</strong> </p> <p>选择要创建文件的位置。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -562,11 +558,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点、驱动器和文件夹ID]</td> 
+   <td role="rowheader">[！UICONTROL输入站点、驱动器和文件夹ID]</td> 
    <td> <p>选择您希望如何标识要检索更改的文件夹的位置。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射文件创建位置的<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 驱动器ID]</strong>和<strong>[!UICONTROL 文件夹ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从您关注的列表中选择]</strong> </p> <p>选择要创建文件的位置。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射文件创建位置的<strong>[！UICONTROL站点ID]</strong>、<strong>[！UICONTROL驱动器ID]</strong>和<strong>[！UICONTROL文件夹ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从您关注的列表中选择]</strong> </p> <p>选择要创建文件的位置。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -588,15 +584,15 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点、驱动器和文件夹ID]</td> 
+   <td role="rowheader">[！UICONTROL输入站点、驱动器和文件夹ID]</td> 
    <td> <p>选择您希望如何标识要创建的文件夹的位置。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射要创建文件夹的位置的<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 驱动器ID]</strong>和<strong>[!UICONTROL 文件夹ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从您关注的列表中选择]</strong> </p> <p>选择要创建文件夹的位置。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射要创建文件夹的位置的<strong>[！UICONTROL站点ID]</strong>、<strong>[！UICONTROL驱动器ID]</strong>和<strong>[！UICONTROL文件夹ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从您关注的列表中选择]</strong> </p> <p>选择要创建文件夹的位置。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 文件夹名称]</td> 
+   <td role="rowheader">[！UICONTROL文件夹名称]</td> 
    <td>输入或映射新文件夹的名称。</td> 
   </tr>
   </tbody> 
@@ -615,11 +611,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点、驱动器和文件夹ID]</td> 
+   <td role="rowheader">[！UICONTROL输入站点、驱动器和文件夹ID]</td> 
    <td> <p>选择您希望如何标识要获取的文件位置。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>为要检索的文件输入或映射<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 列表ID]</strong>和<strong>[!UICONTROL 文件ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从您关注的列表中选择]</strong> </p> <p>选择文件的位置。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>为要检索的文件输入或映射<strong>[！UICONTROL站点ID]</strong>、<strong>[！UICONTROL列表ID]</strong>和<strong>[！UICONTROL文件ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从您关注的列表中选择]</strong> </p> <p>选择文件的位置。 </p> </li> 
     </ul> </td> 
   </tr> 
 </tbody> 
@@ -638,11 +634,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点、驱动器和文件ID]</td> 
+   <td role="rowheader">[！UICONTROL输入站点、驱动器和文件ID]</td> 
    <td> <p>选择您希望如何标识要获取的文件位置。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>为要检索的文件夹输入或映射<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 列表ID]</strong>和<strong>[!UICONTROL 文件夹路径]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从您关注的列表中选择]</strong> </p> <p>选择文件夹的位置。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>为要检索的文件夹输入或映射<strong>[！UICONTROL站点ID]</strong>、<strong>[！UICONTROL列表ID]</strong>和<strong>[！UICONTROL文件夹路径]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从您关注的列表中选择]</strong> </p> <p>选择文件夹的位置。 </p> </li> 
     </ul> </td> 
   </tr> 
 </tbody> 
@@ -661,11 +657,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点、驱动器和文件ID]</td> 
+   <td role="rowheader">[！UICONTROL输入站点、驱动器和文件ID]</td> 
    <td> <p>选择您希望如何标识要获取的文件位置。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>为要检索的文件夹或文件输入或映射<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 列表ID]</strong>和<strong>[!UICONTROL 文件夹或项ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从您关注的列表中选择]</strong> </p> <p>选择文件夹的位置。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>为要检索的文件夹或文件输入或映射<strong>[！UICONTROL站点ID]</strong>、<strong>[！UICONTROL列表ID]</strong>和<strong>[！UICONTROL文件夹或项ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从您关注的列表中选择]</strong> </p> <p>选择文件夹的位置。 </p> </li> 
     </ul> </td> 
   </tr> 
   </tr> 
@@ -688,11 +684,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点、驱动器和文件夹ID]</td> 
+   <td role="rowheader">[！UICONTROL输入站点、驱动器和文件夹ID]</td> 
    <td> <p>选择您希望如何标识要获取的文件位置。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在显示的字段中输入或映射<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 列表ID]</strong>和<strong>[!UICONTROL 文件夹ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从您关注的列表中选择]</strong> </p> <p>选择要监视的文件夹的位置。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>在显示的字段中输入或映射<strong>[！UICONTROL站点ID]</strong>、<strong>[！UICONTROL列表ID]</strong>和<strong>[！UICONTROL文件夹ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从您关注的列表中选择]</strong> </p> <p>选择要监视的文件夹的位置。 </p> </li> 
     </ul> </td> 
   </tr> 
    <td role="rowheader">[!UICONTROL 限制]</td> 
@@ -731,16 +727,16 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td role="rowheader">输入站点、驱动器和文件夹ID</td> 
    <td> <p>选择您要如何标识包含要复制项目的站点和驱动器。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射要复制的项的<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 驱动器ID]</strong>和<strong>[!UICONTROL 项ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从您关注的列表中选择]</strong> </p> <p>在“项目类型”字段中，选择要移动字段还是文件夹。  选择包含要复制项目的站点，然后选择列表，然后选择项目。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射要复制的项的<strong>[！UICONTROL站点ID]</strong>、<strong>[！UICONTROL驱动器ID]</strong>和<strong>[！UICONTROL项ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从您关注的列表中选择]</strong> </p> <p>在“项目类型”字段中，选择要移动字段还是文件夹。  选择包含要复制项目的站点，然后选择列表，然后选择项目。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 目标ID]</td> 
+   <td role="rowheader">[！UICONTROL目标ID]</td> 
    <td> 输入或映射要向其复制项目的文件夹的ID。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 新名称]</td> 
+   <td role="rowheader">[！UICONTROL新名称]</td> 
    <td>输入或映射项目新副本的名称。 </td> 
   </tr> 
  </tbody> 
@@ -759,11 +755,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 创建项目]</td> 
+   <td role="rowheader">[！UICONTROL创建项目]</td> 
    <td> <p>选择您希望如何标识站点和要在其中创建项目的驱动器。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射要在其中创建该项的<strong>[!UICONTROL 站点ID]</strong>和<strong>[!UICONTROL 列表ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要在其中创建项目的列表的站点，然后选择列表。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射要在其中创建该项的<strong>[！UICONTROL站点ID]</strong>和<strong>[！UICONTROL列表ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要在其中创建项目的列表的站点，然后选择列表。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -786,11 +782,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 更新项]</td> 
+   <td role="rowheader">[！UICONTROL更新项]</td> 
    <td> <p>选择您希望如何标识站点以及包含要删除项目的列表。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射要删除的项目的<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 列表ID]</strong>和<strong>[!UICONTROL 项目ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要删除项目的站点，然后选择列表，然后选择项目。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射要删除的项目的<strong>[！UICONTROL站点ID]</strong>、<strong>[！UICONTROL列表ID]</strong>和<strong>[！UICONTROL项目ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要删除项目的站点，然后选择列表，然后选择项目。 </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -809,11 +805,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 获取项目]</td> 
+   <td role="rowheader">[！UICONTROL获取项目]</td> 
    <td> <p>选择您希望如何标识站点以及包含您要获取项目的列表。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射要为其返回数据的项的<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 列表ID]</strong>和<strong>[!UICONTROL 项ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要从中检索项目的列表的站点，然后选择该列表，然后选择该项目。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射要为其返回数据的项的<strong>[！UICONTROL站点ID]</strong>、<strong>[！UICONTROL列表ID]</strong>和<strong>[！UICONTROL项ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要从中检索项目的列表的站点，然后选择该列表，然后选择该项目。 </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -851,11 +847,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 列表项]</td> 
+   <td role="rowheader">[！UICONTROL列表项]</td> 
    <td> <p>选择您希望如何标识要从中检索项目的列表。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射<strong>[!UICONTROL 站点ID]</strong>和<strong>[!UICONTROL 列表ID]</strong>作为要为其列出项目的列表。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要从中检索项目的列表的站点，然后选择该列表。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射<strong>[！UICONTROL站点ID]</strong>和<strong>[！UICONTROL列表ID]</strong>作为要为其列出项目的列表。</p> </li> 
+     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要从中检索项目的列表的站点，然后选择该列表。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -881,16 +877,16 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td role="rowheader">输入站点、驱动器和文件夹ID</td> 
    <td> <p>选择您希望如何标识站点以及包含要移动项目的列表。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>为要移动的项输入或映射<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 列表ID]</strong>和<strong>[!UICONTROL 项ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从您关注的列表中选择]</strong> </p> <p>在“项目类型”字段中，选择要移动字段还是文件夹。 选择包含要复制项目的站点，然后选择列表，然后选择项目。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>为要移动的项输入或映射<strong>[！UICONTROL站点ID]</strong>、<strong>[！UICONTROL列表ID]</strong>和<strong>[！UICONTROL项ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从您关注的列表中选择]</strong> </p> <p>在“项目类型”字段中，选择要移动字段还是文件夹。 选择包含要复制项目的站点，然后选择列表，然后选择项目。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 目标ID]</td> 
+   <td role="rowheader">[！UICONTROL目标ID]</td> 
    <td> 输入或映射要将项目移动到的文件夹的ID。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 新名称]</td> 
+   <td role="rowheader">[！UICONTROL新名称]</td> 
    <td>输入或映射已移动项目的名称。 </td> 
   </tr> 
  </tbody> 
@@ -909,11 +905,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 更新项]</td> 
+   <td role="rowheader">[！UICONTROL更新项]</td> 
    <td> <p>选择您要如何标识包含要更新的项目的站点和列表。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射要更新的项的<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 列表ID]</strong>和<strong>[!UICONTROL 项ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要更新的项目的站点，然后选择列表，然后选择项目。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射要更新的项的<strong>[！UICONTROL站点ID]</strong>、<strong>[！UICONTROL列表ID]</strong>和<strong>[！UICONTROL项ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要更新的项目的站点，然后选择列表，然后选择项目。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -936,15 +932,15 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 监视列表]</td> 
+   <td role="rowheader">[！UICONTROL监视列表]</td> 
    <td>选择是要按创建时间（新项目）还是按修改时间（更新项目）监视列表。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点和列表ID]</td> 
+   <td role="rowheader">[！UICONTROL输入站点和列表ID]</td> 
    <td> <p>选择您希望如何识别要监视的站点和列表。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射要监视的<strong>[!UICONTROL 站点ID]</strong>和<strong>[!UICONTROL 列表ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从您关注的列表中选择]</strong> </p> <p>选择要监视的站点，然后选择列表。 这些下拉列表仅检索关注的网站。</p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射要监视的<strong>[！UICONTROL站点ID]</strong>和<strong>[！UICONTROL列表ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从您关注的列表中选择]</strong> </p> <p>选择要监视的站点，然后选择列表。 这些下拉列表仅检索关注的网站。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -974,15 +970,15 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点ID]</td> 
+   <td role="rowheader">[！UICONTROL输入站点ID]</td> 
    <td> <p>选择您希望如何标识要创建列表的站点。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射要在其中创建列表的<strong>[!UICONTROL 站点ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择要创建列表的站点。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射要在其中创建列表的<strong>[！UICONTROL站点ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择要创建列表的站点。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 显示名称]</td> 
+   <td role="rowheader">[！UICONTROL显示名称]</td> 
    <td>输入或映射新列表的名称。</td> 
   </tr> 
   <tr> 
@@ -990,8 +986,8 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td>输入或映射新列表的说明。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL Add Columns]</td> 
-   <td>对于要为新列表设置的每一列，单击<b>添加项</b>，为该字段输入<strong>[!UICONTROL 名称]</strong>，然后选择希望新列具有的值<strong>[!UICONTROL 类型]</strong>。</td> 
+   <td role="rowheader">[！UICONTROL Add Columns]</td> 
+   <td>对于要为新列表设置的每一列，单击<b>添加项</b>，为该字段输入<strong>[！UICONTROL名称]</strong>，然后选择希望新列具有的值<strong>[！UICONTROL类型]</strong>。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -1009,11 +1005,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 获取列表]</td> 
+   <td role="rowheader">[！UICONTROL获取列表]</td> 
    <td> <p>选择您希望如何标识站点以及包含您要获取项目的列表。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射要返回的<strong>[!UICONTROL 站点ID]</strong>和<strong>列表ID</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要检索的列表的站点，然后选择该列表。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射要返回的<strong>[！UICONTROL站点ID]</strong>和<strong>列表ID</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要检索的列表的站点，然后选择该列表。 </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -1032,11 +1028,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 列表列表]</td> 
+   <td role="rowheader">[！UICONTROL列表列表]</td> 
    <td> <p>选择您希望如何标识要从其中检索列表的站点。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射包含要返回的列表的<strong>[!UICONTROL 站点ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要检索的列表的站点。 下拉列表将仅检索您关注的站点。</p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射包含要返回的列表的<strong>[！UICONTROL站点ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要检索的列表的站点。 下拉列表将仅检索您关注的站点。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -1059,15 +1055,15 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 监视列表]</td> 
+   <td role="rowheader">[！UICONTROL监视列表]</td> 
    <td>选择是要按创建时间（新项目）还是按修改时间（更新项目）监视列表。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点ID]</td> 
+   <td role="rowheader">[！UICONTROL输入站点ID]</td> 
    <td> <p>选择您希望如何识别要监视列表的站点。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射要监视列表的<strong>[!UICONTROL 站点ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从您关注的列表中选择]</strong> </p> <p>选择要监视的站点。 下拉列表只会检索您关注的站点。</p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射要监视列表的<strong>[！UICONTROL站点ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从您关注的列表中选择]</strong> </p> <p>选择要监视的站点。 下拉列表只会检索您关注的站点。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -1101,11 +1097,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 获取页面]</td> 
+   <td role="rowheader">[！UICONTROL获取页面]</td> 
    <td> <p>选择您希望如何标识要检索的页面。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射<strong>[!UICONTROL 站点ID]</strong>和<strong>[!UICONTROL 页面ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要检索的页面的站点，然后选择该页面。</p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射<strong>[！UICONTROL站点ID]</strong>和<strong>[！UICONTROL页面ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要检索的页面的站点，然后选择该页面。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -1124,11 +1120,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 列表页面]</td> 
+   <td role="rowheader">[！UICONTROL列表页面]</td> 
    <td> <p>选择您希望如何标识要列出的页面。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射包含要列出的页面的网站的<strong>[!UICONTROL 网站ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要列出的页面的网站。</p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射包含要列出的页面的网站的<strong>[！UICONTROL网站ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要列出的页面的网站。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -1151,11 +1147,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 发布页面]</td> 
+   <td role="rowheader">[！UICONTROL发布页面]</td> 
    <td> <p>选择您希望如何识别要发布的页面。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射<strong>[!UICONTROL 站点ID]</strong>和<strong>[!UICONTROL 页面ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要发布的页面的站点，然后选择该页面。</p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射<strong>[！UICONTROL站点ID]</strong>和<strong>[！UICONTROL页面ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要发布的页面的站点，然后选择该页面。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -1174,11 +1170,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点ID]</td> 
+   <td role="rowheader">[！UICONTROL输入站点ID]</td> 
    <td> <p>选择您希望如何标识要列出的页面。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射包含要监视的页面的网站的<strong>[!UICONTROL 网站ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从您关注的列表中选择]</strong> </p> <p>选择包含要监视的页面的网站。</p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射包含要监视的页面的网站的<strong>[！UICONTROL网站ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从您关注的列表中选择]</strong> </p> <p>选择包含要监视的页面的网站。</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -1206,11 +1202,11 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 获取站点]</td> 
+   <td role="rowheader">[！UICONTROL获取站点]</td> 
    <td> <p>选择您希望如何标识要检索的页面。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>输入或映射<strong>[!UICONTROL 站点ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择要检索的站点。</p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>输入或映射<strong>[！UICONTROL站点ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择要检索的站点。</p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -1229,7 +1225,7 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">显示名称的[!UICONTROL 关键字]</td> 
+   <td role="rowheader">显示名称的[！UICONTROL关键字]</td> 
    <td> <p>输入或映射要搜索网站的搜索词。</p> </td> 
   </tr> 
   <tr> 
@@ -1258,15 +1254,15 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td> <p>有关将Microsoft SharePoint Online帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">将Microsoft SharePoint Online连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 输入站点、驱动器和文件夹ID]</td> 
+   <td role="rowheader">[！UICONTROL输入站点、驱动器和文件夹ID]</td> 
    <td> <p>选择您要如何标识包含要更新的项目的站点和驱动器。</p> 
     <ul> 
-     <li> <p><strong>[!UICONTROL 手动输入]</strong> </p> <p>在显示的字段中输入或映射<strong>[!UICONTROL 站点ID]</strong>、<strong>[!UICONTROL 驱动器ID]</strong>和<strong>[!UICONTROL 文件夹ID]</strong>。</p> </li> 
-     <li> <p><strong>[!UICONTROL 从列表中选择]</strong> </p> <p>选择包含要更新的项目的站点，然后选择驱动器，然后选择文件夹。 </p> </li> 
+     <li> <p><strong>[！UICONTROL手动输入]</strong> </p> <p>在显示的字段中输入或映射<strong>[！UICONTROL站点ID]</strong>、<strong>[！UICONTROL驱动器ID]</strong>和<strong>[！UICONTROL文件夹ID]</strong>。</p> </li> 
+     <li> <p><strong>[！UICONTROL从列表中选择]</strong> </p> <p>选择包含要更新的项目的站点，然后选择驱动器，然后选择文件夹。 </p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 令牌]</td> 
+   <td role="rowheader">[！UICONTROL令牌]</td> 
    <td> 该令牌可标识模块应从何时开始检索更改。  </td> 
   </tr> 
  </tbody> 
@@ -1327,7 +1323,7 @@ Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
    <td role="rowheader">[!UICONTROL Connection]</td> 
    <td> <p>For instructions about connecting your Microsoft SharePoint Online account to Workfront Fusion, see <a href="#connect-microsoft-sharepoint-online-to-workfront-fusion" class="MCXref xref" data-mc-variable-override="">Connect Microsoft SharePoint Online to Workfront Fusion</a> in this article.</p> </td> 
   </tr> 
-  -->
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL Webhook]</td> 
    <td> <p>选择现有的webhook，或单击“添加”并输入连接以创建新的webhook。</p> 
