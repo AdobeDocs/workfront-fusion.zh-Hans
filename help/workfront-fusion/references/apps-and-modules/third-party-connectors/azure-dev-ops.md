@@ -16,10 +16,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 0922a5503bbeded91ae116849465d0f898ef4686
 workflow-type: tm+mt
-source-wordcount: '2647'
-ht-degree: 23%
+source-wordcount: '3789'
+ht-degree: 17%
 ---
 # [!DNL Azure DevOps] 模块
 
@@ -92,10 +92,200 @@ Azure DevOps连接器使用以下对象：
 
 ## 将 [!DNL Azure DevOps] 连接到 Workfront Fusion {#connect-azure-devops-to-workfront-fusion}
 
+* [使用联合连接将Azure DevOps连接到Workfront Fusion](#connect-azure-devops-to-workfront-fusion-using-a-federated-connection)
 * [使用EntraApp将Azure DevOps连接到Workfront Fusion](#connect-azure-devops-to-workfront-fusion-using-entraapp)
 * [使用服务主体将Azure DevOps连接到Workfront Fusion](#connect-azure-devops-to-workfront-fusion-using-a-service-principal)
 
+### 使用联合连接将Azure DevOps连接到Adobe Workfront Fusion
+
+联合连接的工作方式与服务主体连接类似，只不过它不使用客户端密钥。
+
+告诉Microsoft Entra ID信任Workfront Fusion为某个特定连接颁发的令牌，而不是存储密钥。 当连接运行时，Fusion提供短暂的标识验证，Microsoft Entra ID返回访问令牌。 由于没有客户端密钥，因此没有过期的任何内容，也没有要轮换或存储的密钥。
+
++++ 展开可查看有关使用联合连接将Azure DevOps连接到Adobe Workfront Fusion的说明。
+
+>[!NOTE]
+>
+>* 要设置此连接，需要访问Microsoft Entra管理中心两次。 首先注册应用程序，然后在Workfront Fusion中创建连接，然后返回到Microsoft Entra ID以添加联合凭据。 这是因为联合凭据标识了一个特定连接，在创建连接之前，该标识符不存在。
+>* 此连接与服务主体连接具有相同的限制。 少数管理员级别的操作（如管理用户许可证）仍需要个人帐户连接。
+
+* [使用联合连接将Azure DevOps连接到Workfront Fusion的先决条件](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-federated-connection)
+* [在Microsoft Entra ID（Federated连接）中创建应用程序注册](#create-the-app-registration-in-microsoft-entra-id-federated-connection)
+* [收集您的连接详细信息（联合连接）](#collect-your-connection-details-federated-connection)
+* [在Workfront Fusion中创建连接（联合连接）](#create-the-connection-in-workfront-fusion-federated-connection)
+* [在Microsoft Entra ID中添加联合凭据](#add-the-federated-credential-in-microsoft-entra-id)
+* [验证连接（联合连接）](#verify-the-connection-federated-connection)
+
+#### 使用联合连接将Azure DevOps连接到Workfront Fusion的先决条件
+
+
+要创建此连接，您需要满足以下条件：
+
+* 在Microsoft Entra ID中拥有全局管理员或应用程序管理员访问权限，可注册应用程序并添加联合凭据。 如果您没有此访问权限，请让您的IT或身份团队中的某人为您完成这些步骤。
+* 具有您的Azure DevOps组织中的项目集合管理员访问权限，以将服务主体添加为成员。 此人通常与管理Microsoft Entra ID的人不同。
+* Azure DevOps组织的名称。 您可以在Azure DevOps URL中找到此项： `dev.azure.com/<your organization name>`。
+
+#### 在Microsoft Entra ID（Federated连接）中创建应用程序注册
+
+1. 登录到Microsoft Entra管理中心。
+1. 转到“应用程序注册”>“新注册”。
+1. 为应用程序提供一个清晰且可识别的名称。 例如：`Workfront Fusion Azure DevOps Integration`。
+1. 将重定向URI保留为空。 此连接不涉及通过浏览器登录。
+1. 选择“注册”。
+1. 请勿创建客户端密码。 联合连接不使用联合连接。
+1. 继续[收集您的连接详细信息](#collect-your-connection-details-federated-connection)。
+
+
+#### 收集您的连接详细信息（联合连接）
+
+1. 在应用程序注册的“概述”页面中，注意以下值。 在模块中创建连接时输入这些参数。
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL 租户ID]</td>
+      <td>在概述页面上，标记为<b>目录（租户） ID</b>。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 客户端 ID]</td>
+      <td>在概述页面上，标记为<b>应用程序（客户端） ID</b>。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 组织]</td>
+      <td>您的Azure DevOps组织名称。 例如，如果URL是<code>dev.azure.com/yourorg</code>，请输入<code>yourorg</code>。</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. 继续[在Workfront Fusion中创建连接](#create-the-connection-in-workfront-fusion-federated-connection)。
+
+>[!NOTE]
+>
+>与服务主体连接一样，您可以跳过应用程序注册的API权限区域。 在下一步中，将在Azure DevOps中授予对Azure DevOps的访问权限。
+
+#### 在Workfront Fusion中创建连接（联合连接）
+
+1. 在模块的连接设置屏幕中，选择联合连接类型。
+1. 输入以下内容：
+
+   * 租户ID
+   * 客户端 ID
+   * 组织
+
+1. 选择&#x200B;**创建**。
+
+   Workfront Fusion显示三个值。 保持此页面处于打开状态，因为稍后在创建连接的过程中您将需要这些值。
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Issuer]</td>
+      <td><code>https://oidc.automations.adobe.com</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 主题]</td>
+      <td>这将标识此连接。 它看起来像<code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>。 您创建的每个连接都各不相同。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 受众]</td>
+      <td><code>api://AzureADTokenExchange</code>.</td>
+     </tr>
+    </tbody>
+   </table>
+
+   >[!IMPORTANT]
+   >
+   >不要关闭面板或选择“取消”。 在完成其余步骤之前，连接不会完成。 如果关闭面板，则必须删除连接并重新启动，因为新连接会收到新主题。
+
+1. 复制&#x200B;**主题**&#x200B;值。
+1. 继续[在Microsoft Entra ID](#add-the-federated-credential-in-microsoft-entra-id)中添加联合凭据。
+
+#### 在Microsoft Entra ID中添加联合凭据
+
+此过程将替换客户端密码。 它会告知Microsoft Entra ID接受Workfront Fusion为此连接颁发的令牌。
+
+1. 在新的浏览器选项卡中，返回Microsoft Entra管理中心并打开您的应用程序注册。
+1. 转到“证书和密码”>“联合凭据”。
+1. 选择添加凭据。
+1. 在“联合凭据”方案中，选择“其他颁发者”。
+1. 输入以下内容：
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Issuer]</td>
+      <td><code>https://oidc.automations.adobe.com</code></td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 主题标识符]</td>
+      <td>您从Workfront Fusion复制的主题。 完全粘贴，不添加空格。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 名称]</td>
+      <td>用于标识此连接的名称，以便您以后查找。 例如：<code>workfront-fusion-connection-28964</code>。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 受众]</td>
+      <td><code>api://AzureADTokenExchange</code>. 这通常是替您填充的。 保留默认值。</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. 单击&#x200B;**添加**。
+1. 继续[验证连接](#verify-the-connection-federated-connection)。
+
+>[!NOTE]
+>
+>Microsoft Entra ID在单个应用程序注册中最多允许20个联合凭据，并且主体标识符必须完全匹配。 不支持通配符。 由于每个Workfront Fusion连接都有其自己的主题，因此每个连接都需要其自己的联合凭据。 如果您需要超过20个连接，请注册多个应用程序并在这些应用程序之间分布连接。
+
+
+#### 验证连接（联合连接）
+
+1. 返回到Workfront Fusion浏览器选项卡，其中连接面板仍处于打开状态。
+1. 单击&#x200B;**保存**。
+
+   * 如果一切设置正确，则连接验证成功，您可以继续配置模块。
+   * 如果验证失败，面板将保持打开状态并显示错误。 请更正Microsoft Entra ID或Azure DevOps中的问题，然后再次选择“保存”。 您不需要重新创建连接，并且主题不会更改。
+
+>[!NOTE]
+>
+>您在Microsoft Entra ID中添加的联合凭据可能需要很短时间才能变为活动状态。 如果在添加凭据后验证立即失败，请等待一分钟并再次选择“保存”，然后进一步调查。
+
+
+故障排除
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">连接验证失败，客户端无效或请求错误</td>
+   <td>Microsoft Entra ID无法将令牌与联合凭据进行匹配。 检查颁发者是否刚好为<code>https://oidc.automations.adobe.com</code>，没有尾随斜杠，并且主题标识符的字符对字符与Workfront Fusion中显示的主题相同。 从其他连接复制的主题是最常见的原因。</td>
+  </tr>
+  <tr>
+   <td role="rowheader">连接验证，但模块从Azure DevOps返回401或403</td>
+   <td>该身份值得信任，但它无法访问您的Azure DevOps数据。 确认您已完成<a href="#add-the-service-principal-to-your-azure-devops-organization">将服务主体添加到Azure DevOps组织</a>，并且服务主体已分配给模块使用的特定项目。</td>
+  </tr>
+  <tr>
+   <td role="rowheader">您无法添加其他联合凭据</td>
+   <td>您已达到该应用程序注册的20个联合凭据的限制。 注册其他应用程序并创建针对该应用程序的更多连接。</td>
+  </tr>
+ </tbody>
+</table>
+
++++
+
 ### 使用EntraApp将Azure DevOps连接到Workfront Fusion
+
+您可以使用EntraApp将Azure DevOps连接到Workfront Fusion。
+
++++ 展开以查看有关使用EntraApp将Azure DevOps连接到Workfront Fusion的说明
 
 1. 将[!DNL Azure DevOps]模块添加到您的方案。
 1. 单击[!UICONTROL 连接]字段旁边的&#x200B;**[!UICONTROL 添加]**。
@@ -133,20 +323,25 @@ Azure DevOps连接器使用以下对象：
 1. 要输入Azure DevOps应用程序ID或客户端密钥，请单击<b>显示高级设置</b>，然后在打开的字段中输入它们。
 1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;完成连接设置并继续创建方案。
 
++++
+
 ### 使用服务主体将Azure DevOps连接到Workfront Fusion
 
 您可以创建使用服务主体（应用程序API连接）而不是个人帐户的连接。 当您希望连接作为应用程序或服务标识而不是作为特定人员运行时，这将很有用。 例如，如果某人离开公司或更改密码，则集成不会中断，这可能会很有用。
 
 此连接类型适用于所有Azure DevOps模块。
 
++++ 展开以查看有关使用服务主体将Azure DevOps连接到Adobe Workfront Fusion的说明。
+
+
 >[!NOTE]
 >
 >服务主体身份验证不支持每个Azure DevOps功能。 少数管理员级别的操作（如管理用户许可证）仍需要个人帐户连接。 如果仅对工作项、展示板、存储库或管道需要此身份验证，请使用服务主体身份验证。
 
 * [使用服务主体将Azure DevOps连接到Workfront Fusion的先决条件](#prerequisites-to-connecting-azure-devops-to-workfront-fusion-using-a-service-principal)
-* [在Microsoft Entra ID中创建应用程序注册](#create-the-app-registration-in-microsoft-entra-id)
+* [在Microsoft Entra ID中创建应用程序注册](#create-the-app-registration-in-microsoft-entra-id-service-principal)
 * [创建客户端密码](#create-a-client-secret)
-* [收集您的连接详细信息](#collect-your-connection-details)
+* [收集您的连接详细信息](#collect-your-connection-details-service-principal)
 * [将服务主体添加到您的Azure DevOps组织](#add-the-service-principal-to-your-azure-devops-organization)
 * [创建连接](#create-the-connection)
 
@@ -158,7 +353,7 @@ Azure DevOps连接器使用以下对象：
 * 在您的Azure DevOps组织中&#x200B;**项目集合管理员**&#x200B;访问权限，以将服务主体添加为成员。 此人通常与管理Microsoft Entra ID的人不同。
 * Azure DevOps组织的名称。 您可以在Azure DevOps URL中找到此项： `dev.azure.com/<your organization name>`。
 
-#### 在Microsoft Entra ID中创建应用程序注册
+#### 在Microsoft Entra ID（服务主体）中创建应用程序注册
 
 1. 登录到[!DNL Microsoft Entra]管理中心。
 1. 转到&#x200B;**[!UICONTROL 应用注册]** > **[!UICONTROL 新注册]**。
@@ -175,7 +370,7 @@ Azure DevOps连接器使用以下对象：
 1. 立即复制密码的&#x200B;**[!UICONTROL 值]**。 它只显示一次。 如果您在复制它之前导航离开，则必须创建一个新路径。
 1. 继续[收集您的连接详细信息](#collect-your-connection-details)。
 
-#### 收集您的连接详细信息
+#### 收集您的连接详细信息（服务主体）
 
 1. 在应用程序注册的&#x200B;**[!UICONTROL 概述]**&#x200B;页面中，注意以下值。 在模块中创建连接时输入这些参数。
 
@@ -223,9 +418,9 @@ Azure DevOps连接器使用以下对象：
 
 1. 按照贵组织的常规访问惯例，将服务主体分配给所需的一个或多个特定项目。
 1. 选择&#x200B;**[!UICONTROL 添加]**。
-1. 继续[创建连接](#create-the-connection)。
+1. 继续[在Workfront Fusion中创建连接](#create-the-connection-in-workfront-fusion-service-principal)。
 
-#### 创建连接
+#### 在Workfront Fusion（服务主体）中创建连接
 
 1. 在模块的连接设置屏幕中，选择&#x200B;**[!UICONTROL 服务主体]**&#x200B;连接类型。
 1. 输入以下内容：
@@ -238,6 +433,8 @@ Azure DevOps连接器使用以下对象：
 1. 保存连接。
 
    如果一切设置正确，连接验证成功。
+
++++
 
 ## [!UICONTROL Azure DevOps]模块及其字段
 

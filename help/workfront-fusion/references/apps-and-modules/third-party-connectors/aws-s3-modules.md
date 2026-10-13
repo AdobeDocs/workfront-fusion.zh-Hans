@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 7c25013f7a94000651e8331199ad985d40651ae3
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 26%
+source-wordcount: '2637'
+ht-degree: 16%
 ---
 # AWS S3 模块
 
@@ -88,6 +88,195 @@ AWS S3连接器使用以下对象：
 
 ## 将 [!DNL AWS] 连接到 Workfront Fusion {#connect-aws-to-workfront-fusion}
 
+* [使用联合连接将AWS连接到Workfront Fusion](#connect-aws-to-workfront-fusion-using-a-federated-connection)
+* [使用API用户将AWS连接到Workfront Fusion](#connect-aws-to-workfront-fusion-using-an-api-user)
+
+### 使用联合连接将AWS连接到Workfront Fusion
+
++++ 展开以查看此连接类型的说明。
+
+* [使用联合连接将AWS连接到Workfront Fusion的先决条件](#prerequisites-to-connecting-aws-to-workfront-fusion-using-a-federated-connection)
+* [在AWS中添加Workfront Fusion作为身份提供程序](#add-workfront-fusion-as-an-identity-provider-in-aws)
+* [创建IAM角色](#create-the-iam-role)
+* [在Workfront Fusion中创建连接](#create-the-connection-in-workfront-fusion)
+* [添加与角色信任策略的连接](#add-the-connection-to-the-roles-trust-policy)
+* [验证连接](#verify-the-connection)
+* [故障排除](#troubleshooting)
+
+通过联合连接，Workfront Fusion无需在Fusion中创建IAM用户或存储访问密钥即可访问您的AWS帐户。
+您而是要将Workfront Fusion注册为AWS帐户中的可信身份提供程序，并配置哪个单一Fusion连接允许使用特定IAM角色。 当连接运行时，Fusion会提供一个短暂的身份证明，而AWS会返回自行过期的临时凭据。 不会创建、存储或旋转任何长生命周期密钥。
+
+>[!NOTE]
+>
+>设置此连接需要访问AWS控制台两次。 首先创建角色，然后在Workfront Fusion中创建连接，然后返回AWS以完成信任策略。 这是因为信任策略的一部分标识了一个特定连接，并且该标识符在创建连接之前不存在。
+
+#### 使用联合连接将AWS连接到Workfront Fusion的先决条件
+
+要创建此连接，您需要满足以下条件：
+
+* 在AWS IAM中创建身份提供程序以及创建和编辑角色的权限。 这通常意味着策略或等效策略。 如果您没有此访问权限，请向云中的某人咨询或
+安全团队为您完成AWS步骤。
+* 可在Workfront Fusion中创建连接。
+
+
+#### 在AWS中添加Workfront Fusion作为身份提供程序
+
+此步骤可告知AWS由Workfront Fusion颁发的令牌值得信任。 每个AWS帐户执行一次此操作。 如果贵组织中的某人已添加此提供程序，请跳至[创建IAM角色](#create-the-iam-role)。
+
+1. 登录到AWS控制台，然后转到&#x200B;**IAM** > **身份提供程序**。
+1. 选择&#x200B;**添加提供程序**。
+1. 对于提供程序类型，选择&#x200B;**OpenID Connect**。
+1. 在提供程序URL中，输入以下内容，然后选择&#x200B;**获取指纹**：
+
+   ```
+   https://oidc.automations.adobe.com
+   ```
+
+1. 在受众中，输入以下内容：
+
+   ```
+   sts.amazonaws.com
+   ```
+
+1. 选择&#x200B;**添加提供程序**。
+1. 继续[创建IAM角色](#create-the-iam-role)。
+
+#### 创建IAM角色
+
+角色定义允许在您的AWS帐户中进行的连接。 您可以为每个连接创建一个角色，以便可以单独授予和撤销每个连接的访问权限。
+
+1. 在IAM中，转到&#x200B;**角色**&#x200B;并选择&#x200B;**创建角色**。
+1. 对于受信任的实体类型，请选择&#x200B;**Web标识**。
+1. 在身份提供程序中，选择`oidc.automations.adobe.com`。
+1. 在受众中，选择`sts.amazonaws.com`。
+1. 选择&#x200B;**下一步**，然后附加此连接所需的权限策略。
+仅授予连接实际使用的权限。 例如，只读取以下内容的连接：
+一个存储段不需要`AmazonS3FullAccess`。
+1. 为角色提供一个清晰、可识别的名称。 例如：`WorkfrontFusionFederatedConnection`。
+1. 选择&#x200B;**创建角色**。
+1. 打开您刚刚创建的角色，并从“摘要”区域复制其ARN。 它看起来像这样：`arn:aws:iam::123456789012:role/WorkfrontFusionFederatedConnection`
+
+1. 继续[在Workfront Fusion中创建连接](#create-the-connection-in-workfront-fusion)。
+
+#### 在Workfront Fusion中创建连接
+
+1. 在模块的连接设置屏幕中，选择联合连接类型。
+1. 输入您在[创建IAM角色](#create-the-iam-role)中复制的角色ARN。
+1. 选择&#x200B;**创建**。
+Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
+
+<table>
+  <tr>
+    <td>发出</td>
+    <td>始终<code>https://oidc.automations.adobe.com</code>。 这与您在AWS中添加的标识提供程序匹配。</td>
+  </tr>
+  <tr>
+    <td>主题</td>
+    <td>标识此连接。 它看起来像<code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>。 您创建的每个连接都各不相同。</td>
+  </tr>
+  <tr>
+    <td>受众</td>
+    <td>始终<code>sts.amazonaws.com</code>。</td>
+  </tr>
+</table>
+
+1. 保持此面板打开并复制主题值。
+
+   >[!NOTE]
+   >
+   >不要关闭面板或选择“取消”。 在完成其余步骤之前，连接不会完成。 如果关闭面板，则必须删除连接并重新启动，因为新连接会收到新主题。
+
+1. 继续[将连接添加到角色的信任策略](#add-the-connection-to-the-roles-trust-policy)。
+
+#### 添加与角色信任策略的连接
+
+在完成此过程之前，角色通常信任Workfront Fusion，但尚不允许此特定连接使用它。
+
+1. 在新的浏览器选项卡中，返回AWS控制台并打开您创建的角色。
+1. 选择&#x200B;**信任关系**&#x200B;选项卡，然后选择&#x200B;**编辑信任策略**。
+1. 将策略替换为以下内容，并替换您自己的值：
+
+   * 将`123456789012`替换为您的AWS帐户ID
+   * 将`sub`值替换为您从Workfront Fusion复制的主题。
+
+
+   ```
+   {
+     "Version": "2012-10-17",
+     "Statement": [
+       {
+         "Effect": "Allow", 
+         "Principal": {
+           "Federated": "arn:aws:iam::123456789012:oidc-provider/oidc.automations.adobe.com"
+       },
+       "Action": "sts:AssumeRoleWithWebIdentity", "Condition": {
+        "StringEquals": {
+          "oidc.automations.adobe.com:sub": "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", 
+          "oidc.automations.adobe.com:aud": "sts.amazonaws.com"
+        }
+       }
+      }
+    ]
+   }
+   ```
+
+1. 选择&#x200B;**更新策略**。
+1. 继续[验证连接](#verify-the-connection)。
+
+>[!TIP]
+>
+>要使多个连接使用相同的角色，请将主体作为数组列出。 如果令牌与列表中的任意值相匹配，则AWS允许使用该角色：
+>
+>```
+>"oidc.automations.adobe.com:sub": [ "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964", "fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:29011"
+>]
+>```
+>
+>请勿将子值替换为通配符。 这样，贵组织中的任何连接都可以使用角色，包括其他人以后创建的连接
+
+
+#### 验证连接
+
+1. 返回到Workfront Fusion浏览器选项卡，其中连接面板仍处于打开状态。
+1. 单击&#x200B;**保存**。
+
+   Workfront Fusion联系AWS，后者检查信任策略并返回临时凭据。 如果一切设置正确，连接验证成功，您可以继续设置模块。
+   如果验证失败，面板将保持打开状态并显示错误。 在AWS中更正问题，然后再次选择“保存”。 您不需要重新创建连接，并且主题不会更改。
+
+从此刻起，连接将更新其自身的凭据。 没有要轮换的键，也没有您需要维护的过期项。
+
+#### 故障排除
+
+
+<table>
+  <tr>
+    <th>错误</th>
+    <th>它的含义</th>
+    <th>检查内容</th>
+  </tr>
+  <tr>
+    <td>InvalidIdentityToken</td>
+    <td>AWS无法将该令牌与已注册的身份提供程序进行匹配。</td>
+    <td>检查您是否已将添加Workfront Fusion中所述的身份提供程序作为AWS中的身份提供程序，以及其URL是否与https://oidc.automations.adobe.com完全一致，没有尾随斜杠。</td>
+  </tr>
+  <tr>
+    <td>AccessDenied担任角色时</td>
+    <td>已注册身份提供程序，但信任策略与此连接不匹配。</td>
+    <td>检查信任策略中的子值是否与Workfront Fusion中显示的主题相同的字符换字符，以及该aud是否为sts.amazonaws.com。 从其他连接复制的主题是最常见的原因。</td>
+  </tr>
+  <tr>
+    <td>连接可正常工作，但稍后会失败</td>
+    <td> </td>
+    <td>检查角色的权限策略是否已更改，或者角色是否已删除并重新创建。 重新创建角色不会更改其ARN，但会重置其信任策略。</td>
+  </tr>
+</table>
+
++++
+
+### 使用API用户将AWS连接到Workfront Fusion
+
++++ 展开以查看此连接类型的说明。
+
 要将[!DNL AWS S3]连接到Workfront Fusion，您必须将您的[!DNL AWS]帐户连接到Workfront Fusion。 为此，您首先需要在[!DNL AWS] [!UICONTROL IAM]中创建API用户。
 
 1. 登录到您的[!DNL AWS] [!UICONTROL IAM]帐户。
@@ -105,7 +294,12 @@ AWS S3连接器使用以下对象：
 
 已建立连接。 您可以继续设置模块。
 
++++
+
 ## [!DNL AWS S3] 模块及其字段
+
+* [操作](#actions)
+* [搜索](#searches)
 
 在您配置 [!DNL AWS S3] 模块时，Workfront Fusion 会显示以下字段。 除这些字段外，根据您的应用程序或服务访问权限级别，可能会显示更多 [!DNL AWS S3] 字段。 模块中的加粗标题表示必填字段。
 

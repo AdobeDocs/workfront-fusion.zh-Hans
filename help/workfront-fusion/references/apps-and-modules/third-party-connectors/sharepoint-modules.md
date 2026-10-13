@@ -18,10 +18,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: c9bf5c68e4977027944114c35414fa5f46ea8751
 workflow-type: tm+mt
-source-wordcount: '4846'
-ht-degree: 12%
+source-wordcount: '5853'
+ht-degree: 10%
 ---
 # Microsoft SharePoint Online 模块
 
@@ -105,9 +105,15 @@ SharePoint连接器使用以下对象：
 
 ### 使用[!DNL Microsoft]帐户将Microsoft SharePoint Online连接到Workfront Fusion
 
-您可以使用您的[!DNL Microsoft]帐户创建与Microsoft SharePoint Online的连接。 有关将[!DNL Sharepoint]帐户连接到Workfront Fusion的说明，请参阅[创建与Adobe Workfront Fusion的连接 — 基本说明](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)
++++ 展开以查看有关使用Microsoft帐户将Microsoft SharePoint Online连接到Workfront Fusion的说明。
+
+您可以使用您的[!DNL Microsoft]帐户创建与Microsoft SharePoint Online的连接。 有关将[!DNL Sharepoint]帐户连接到Workfront Fusion的说明，请参阅[创建与Adobe Workfront Fusion的连接 — 基本说明](/help/workfront-fusion/create-scenarios/connect-to-apps/connect-to-fusion-general.md)。
+
++++
 
 ### 使用高级设置将Microsoft SharePoint Online连接到Workfront Fusion
+
++++ 展开以查看有关使用高级设置将Microsoft SharePoint Online连接到Workfront Fusion的说明。
 
 要在连接中包含凭据，请启用显示高级设置选项。 对于此类连接，您需要客户端ID、客户端密钥和租户ID。
 
@@ -144,7 +150,11 @@ SharePoint连接器使用以下对象：
 
 1. 点击&#x200B;**继续**&#x200B;保存连接并返回模块。
 
++++
+
 ### 使用证书授权将Microsoft SharePoint Online连接到Workfront Fusion
+
++++ 展开以查看有关使用证书授权将Microsoft SharePoint Online连接到Workfront Fusion的说明。
 
 您可以使用证书授权连接到SharePoint。
 
@@ -209,7 +219,11 @@ SharePoint连接器使用以下对象：
 
 1. 点击&#x200B;**继续**&#x200B;保存连接并返回模块。
 
++++
+
 ### 使用服务主体将Microsoft SharePoint Online连接到Workfront Fusion
+
++++ 展开以查看有关使用服务主体将Microsoft SharePoint Online连接到Workfront Fusion的说明。
 
 您可以创建使用服务主体（应用程序API连接）而不是个人帐户的连接。 如果您希望连接作为应用程序或服务身份而不是特定人员运行（例如，这样当该人员离开公司或更改其密码时，集成不会中断），则此功能非常有用。
 
@@ -230,7 +244,7 @@ SharePoint连接器使用以下对象：
 
 继续[在Microsoft Entra ID](#create-the-app-registration-in-microsoft-entra-id)中创建应用程序注册。
 
-#### 在Microsoft Entra ID中创建应用程序注册
+#### 在Microsoft Entra ID（服务主体）中创建应用程序注册
 
 1. 登录到[!DNL Microsoft Entra]管理中心。
 1. 转到&#x200B;**[!UICONTROL 应用注册]** > **[!UICONTROL 新注册]**。
@@ -239,7 +253,7 @@ SharePoint连接器使用以下对象：
 1. 选择&#x200B;**[!UICONTROL 注册]**。
 1. 继续[创建客户端密钥](#create-a-client-secret)。
 
-#### 创建客户端密码
+#### 创建客户端密钥（服务主体）
 
 1. 在新应用注册中，转到&#x200B;**[!UICONTROL 证书和密钥]**。
 1. 选择&#x200B;**[!UICONTROL 新客户端密钥]**，添加说明，并选择有效期。
@@ -247,7 +261,7 @@ SharePoint连接器使用以下对象：
 1. 立即复制密码的&#x200B;**[!UICONTROL 值]**。 它只显示一次。 如果您在复制它之前导航离开，则必须创建一个新路径。
 1. 继续[授予API权限](#grant-api-permissions)。
 
-#### 授予API权限
+#### 授予API权限（服务主体）
 
 >[!IMPORTANT]
 >
@@ -260,7 +274,7 @@ SharePoint连接器使用以下对象：
 1. 选择&#x200B;**[!UICONTROL 为您的组织]**&#x200B;授予管理员同意，然后确认。
 1. 继续[收集您的连接详细信息](#collect-your-connection-details)。
 
-#### 收集您的连接详细信息
+#### 收集您的连接详细信息（服务主体）
 
 在应用程序注册的&#x200B;**[!UICONTROL 概述]**&#x200B;页面中，注意以下值。 在模块中创建连接时输入这些参数。
 
@@ -285,7 +299,7 @@ SharePoint连接器使用以下对象：
 
 继续[创建连接](#create-the-connection)。
 
-#### 创建连接
+#### 创建连接（服务主体）
 
 1. 在[!UICONTROL 进行API调用]模块中，单击“连接”字段附近的&#x200B;**[!UICONTROL 添加]**&#x200B;以打开&#x200B;**[!UICONTROL 创建连接]**&#x200B;框。
 1. 单击&#x200B;**[!UICONTROL 显示高级设置]**。
@@ -299,6 +313,186 @@ SharePoint连接器使用以下对象：
 1. 点击&#x200B;**继续**&#x200B;保存连接并返回模块。
 
    如果一切设置正确，连接验证成功。
+
++++
+
+### 使用联合连接将Microsoft SharePoint Online连接到Adobe Workfront Fusion
+
++++ 展开可查看有关使用联合连接将Microsoft SharePoint Online连接到Adobe Workfront Fusion的说明。
+
+联合连接的工作方式与服务主体连接类似，只不过它不使用客户端密钥。
+告诉Microsoft Entra ID信任Workfront Fusion为某个特定连接颁发的令牌，而不是存储密钥。 当连接运行时，Fusion提供短暂的标识验证，Microsoft Entra ID返回访问令牌。 由于没有客户端密钥，因此没有过期的任何内容，也没有要轮换或存储的密钥。
+
+>[!NOTE]
+>
+>设置此连接需要访问Microsoft Entra管理中心两次。 首先注册应用程序，然后在Workfront Fusion中创建连接，然后返回Microsoft Entra ID以添加联合凭据。 这是因为联合凭据标识一个特定连接，并且该标识符在创建连接之前不存在。
+
+* [使用联合连接将Microsoft SharePoint Online连接到Workfront Fusion的先决条件](#prerequisites-to-connecting-microsoft-sharepoint-online-to-workfront-fusion-using-a-federated-connection)
+* [在Microsoft Entra ID（Federated连接）中创建应用程序注册](#create-the-app-registration-in-microsoft-entra-id-federated-connection)
+* [授予API权限（联合连接）](#grant-api-permissions-federated-connection)
+* [收集您的连接详细信息（联合连接）](#collect-your-connection-details-federated-connection)
+* [在Workfront Fusion中创建连接（联合连接）](#create-the-connection-in-workfront-fusion-federated-connection)
+* [在Microsoft Entra ID（Federated连接）中添加联合凭据](#add-the-federated-credential-in-microsoft-entra-id-federated-connection)
+* [验证连接（联合连接）](#verify-the-connection-federated-connection)
+* [故障排除](#troubleshooting)
+
+#### 使用联合连接将Microsoft SharePoint Online连接到Workfront Fusion的先决条件
+
+您需要在Microsoft Entra ID中拥有“全局管理员”、“应用程序管理员”或“特权角色管理员”访问权限，才能注册应用程序、授予其权限并添加联合凭据。 如果您没有此访问权限，请让您的IT或身份团队中的某人为您完成这些步骤。
+
+#### 在Microsoft Entra ID（Federated连接）中创建应用程序注册
+
+1. 登录到Microsoft Entra管理中心。
+1. 转到“应用程序注册”>“新注册”。
+1. 为应用程序提供一个清晰且可识别的名称。 例如：`Workfront Fusion SharePoint Integration`。
+1. 将重定向URI保留为空。 此连接不涉及通过浏览器登录的任何人。
+1. 选择&#x200B;**注册**。
+请勿创建客户端密码。 联合连接不使用联合连接。
+1. 继续授予API权限。
+
+
+#### 授予API权限（联合连接）
+
+1. 在应用程序注册中，转到&#x200B;**API权限**。
+1. 选择&#x200B;**添加权限**，然后选择&#x200B;**Microsoft图形**。
+1. 选择&#x200B;**应用程序权限**。
+1. 选择API调用所需的权限，然后选择&#x200B;**添加权限**。
+1. 选择&#x200B;**为您的组织授予管理员同意**，然后确认。
+1. 继续[收集您的连接详细信息](#collect-your-connection-details-federated-connection)。
+
+
+#### 收集您的连接详细信息（联合连接）
+
+1. 在应用程序注册的“概述”页面中，注意以下值。 在模块中创建连接时输入这些参数。
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL 租户ID]</td>
+      <td>在概述页面上，标记为<b>目录（租户） ID</b>。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 客户端 ID]</td>
+      <td>在概述页面上，标记为<b>应用程序（客户端） ID</b>。</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. 继续[在Workfront Fusion中创建连接](#create-the-connection-in-workfront-fusion-federated-connection)。
+
+#### 在Workfront Fusion中创建连接（联合连接）
+
+1. 在进行API调用模块中，单击连接字段附近的b ，打开创建连接框。
+1. 单击（联合连接）。
+1. 在连接类型字段中，选择联合连接类型。
+1. 输入以下内容：
+
+   * 租户ID
+   * 客户端 ID
+
+1. 选择&#x200B;**创建**。
+Workfront Fusion显示三个值。 您可以在下一个过程中使用它们。
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Issuer]</td>
+      <td>始终<code>https://oidc.automations.adobe.com</code>。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 主题]</td>
+      <td>标识此连接。 它看起来像<code>fusion:6e5b1c2a345bd8d1ed98b6b4f1459818:28964</code>。 您创建的每个连接都各不相同。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 受众]</td>
+      <td>始终<code>api://AzureADTokenExchange</code>。</td>
+     </tr>
+    </tbody>
+   </table>
+
+
+1. 保持此面板处于打开状态并复制&#x200B;**主题**&#x200B;值。
+
+   >[!NOTE]
+   >
+   >不要关闭面板或选择“取消”。 在完成其余步骤之前，连接不会完成。 如果关闭面板，则必须删除连接并重新启动，因为新连接会收到新主题。
+
+
+1. 继续[在Microsoft Entra ID](#add-the-federated-credential-in-microsoft-entra-id-federated-connection)中添加联合凭据。
+
+#### 在Microsoft Entra ID（Federated连接）中添加联合凭据
+
+此过程将替换客户端密码。 它会告知Microsoft Entra ID接受Workfront Fusion为此连接颁发的令牌。
+
+1. 在新的浏览器选项卡中，返回Microsoft Entra管理中心并打开您的应用程序注册。
+1. 转到&#x200B;**证书和密钥** > **联合凭据**。
+1. 选择&#x200B;**添加凭据**。
+1. 在联合凭据方案中，选择&#x200B;**其他颁发者**。
+1. 输入以下内容：
+
+   <table style="table-layout:auto">
+    <col>
+    <col>
+    <tbody>
+     <tr>
+      <td role="rowheader">[!UICONTROL Issuer]</td>
+      <td><code>https://oidc.automations.adobe.com</code>.</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 主题标识符]</td>
+      <td>您从Workfront Fusion复制的主题。 完全粘贴，不添加空格。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 名称]</td>
+      <td>用于标识此连接的名称，以便您以后查找。 例如：<code>workfront-fusion-connection-28964</code>。</td>
+     </tr>
+     <tr>
+      <td role="rowheader">[!UICONTROL 受众]</td>
+      <td><code>api://AzureADTokenExchange</code>. 这通常是替您填充的。 保留默认值。</td>
+     </tr>
+    </tbody>
+   </table>
+
+1. 选择&#x200B;**添加**。
+1. 继续[验证连接](#verify-the-connection-federated-connection)。
+
+
+#### 验证连接（联合连接）
+
+1. 返回到Workfront Fusion浏览器选项卡，其中连接面板仍处于打开状态。
+2. 选择&#x200B;**保存**。
+
+   * 如果一切设置正确，连接验证成功，您可以继续设置模块。
+   * 如果验证失败，面板将保持打开状态并显示错误。 请更正Microsoft Entra ID中的问题，然后再次选择“保存”。 您不需要重新创建连接，并且主题不会更改。
+
+
+#### 故障排除
+
+
+<table style="table-layout:auto">
+ <col>
+ <col>
+ <tbody>
+  <tr>
+   <td role="rowheader">连接验证失败，客户端无效或请求错误</td>
+   <td>Microsoft Entra ID无法将令牌与联合凭据进行匹配。 检查颁发者是否刚好为<code>https://oidc.automations.adobe.com</code>，没有尾随斜杠，并且主题标识符的字符对字符与Workfront Fusion中显示的主题相同。 从其他连接复制的主题是最常见的原因。</td>
+  </tr>
+  <tr>
+   <td role="rowheader">连接验证，但API调用返回403</td>
+   <td>该身份值得信任，但应用程序没有您调用所需的Microsoft Graph权限。 返回到授予API权限，添加所需的应用程序权限，并授予管理员同意。</td>
+  </tr>
+  <tr>
+   <td role="rowheader">您无法添加其他联合凭据</td>
+   <td>您已达到该应用程序注册的20个联合凭据的限制。 注册其他应用程序并创建针对该应用程序的更多连接。</td>
+  </tr>
+ </tbody>
+</table>
+
++++
 
 ## Microsoft SharePoint模块及其字段
 
