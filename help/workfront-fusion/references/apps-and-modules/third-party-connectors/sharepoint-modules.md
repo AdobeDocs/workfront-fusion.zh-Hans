@@ -18,9 +18,9 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: c9bf5c68e4977027944114c35414fa5f46ea8751
+source-git-commit: be0cf391e02e3f8c2547494aeac0de5b7296c85d
 workflow-type: tm+mt
-source-wordcount: '5853'
+source-wordcount: '5810'
 ht-degree: 10%
 ---
 # Microsoft SharePoint Online 模块
@@ -262,10 +262,6 @@ SharePoint连接器使用以下对象：
 1. 继续[授予API权限](#grant-api-permissions)。
 
 #### 授予API权限（服务主体）
-
->[!IMPORTANT]
->
->BECKY检查我：与Azure DevOps不同，Microsoft Graph在此步骤中直接支持应用程序权限。 在发布此部分之前，请确认进行API调用模块所需的确切权限（例如，网站权限范围），并相应地更新以下步骤。
 
 1. 在应用程序注册中，转到&#x200B;**[!UICONTROL API权限]**。
 1. 选择&#x200B;**[!UICONTROL 添加权限]**，然后选择&#x200B;**[!UICONTROL Microsoft图形]**。
