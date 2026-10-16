@@ -1,9 +1,9 @@
 ---
 title: Adobe Workfront Fusion MCP服务器工具
 description: Adobe Workfront Fusion MCP服务器向AI代理平台和同事公开的工具的参考列表。
-source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
+source-git-commit: 1bfcdb6abe42eca27d2f3ae5a1a1d2cfd3901d33
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1546'
 ht-degree: 7%
 ---
 
@@ -31,6 +31,25 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | 列出组织 | `fusion_orgs_list` | 读取 | 列出您可以访问的Fusion组织，包括ID、区域（区域）和标签。 |
 | 设置活动组织 | `fusion_orgs_set` | 会话 | 切换当前会话的活动组织。 不更改任何Fusion数据。 |
+| 获取当前组织 | `fusion_organizations_get` | 读取 | 返回当前组织。 |
+| 列出组织 | `fusion_organizations_list` | 读取 | 列出您可以查看的每个组织。 |
+
+## 团队
+
+| 工具 | 名称 | 操作 | 描述 |
+| --- | --- | --- | --- |
+| 列出团队 | `fusion_teams_list` | 读取 | 列出您可以查看的组织团队。 |
+| 获取团队 | `fusion_teams_get` | 读取 | 返回组织中的单个团队。 |
+| 删除团队 | `fusion_teams_delete` | 写入 | 删除团队。 这还会停止其方案并删除其权限。 无法通过API撤消此操作，需要确认。 |
+
+## 用户
+
+| 工具 | 名称 | 操作 | 描述 |
+| --- | --- | --- | --- |
+| 获取融合区域 | `fusion_users_get_regions` | 读取 | 返回您可以访问的Fusion区域和组织。 使用它可查找有效的组织ID。 |
+| 获取当前用户 | `fusion_users_get_me` | 读取 | 返回您的配置文件以及您的组织和团队角色。 |
+| 列出用户 | `fusion_users_list` | 读取 | 列出组织的用户。 |
+| 获取用户 | `fusion_users_get` | 读取 | 返回组织中的单个用户。 |
 
 ## 场景工具
 
@@ -40,6 +59,7 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | 列出方案 | `fusion_scenarios_list` | 读取 | 列出组织中的方案。 |
 | 获取方案 | `fusion_scenarios_get` | 读取 | 返回方案，包括其完整的Blueprint。 |
+| 获取方案链接 | `fusion_scenarios_get_link` | 读取 | 返回Fusion UI链接以在浏览器中打开方案。 |
 | 获取方案依赖关系 | `fusion_scenarios_getDependencies` | 读取 | 返回连接、键、数据存储、数据结构和Webhook方案的蓝图引用。 |
 | 查找相关方案 | `fusion_scenarios_dependents` | 读取 | 查找引用给定webhook、数据存储、数据结构、连接、键或方案的方案。 在更改或删除资源之前进行影响分析很有用。 |
 | 验证Blueprint | `fusion_scenarios_validate_blueprint` | 读取 | 从结构上验证团队的Blueprint（模块引用、连接、必填字段），而不保存任何内容。 |
@@ -63,6 +83,7 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | 列出方案版本 | `fusion_scenario_versions_list` | 读取 | 列出方案的已保存版本。 按`version`、`createdAt`、`comment`筛选。 |
 | 获取方案版本 | `fusion_scenario_versions_get` | 读取 | 返回特定版本的Blueprint和元数据。 |
+| 创建方案版本 | `fusion_scenario_versions_create` | 写入 | 将Blueprint发布为新场景版本，该版本将成为实时Blueprint。 将保留早期版本，并且发布相同的Blueprint不会执行任何操作。 |
 
 示例提示：
 
@@ -109,8 +130,10 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | 搜索连接 | `fusion_connections_search` | 读取 | 列出连接。 按`name`、`accountName`、`accountType`、`expire`、`teamId`、`scopesCount`、`editable`、`environmentType`、`authenticationType`筛选。 |
 | 获取连接 | `fusion_connections_get` | 读取 | 返回单个连接的详细信息。 |
+| 删除连接 | `fusion_connections_delete` | 写入 | 删除连接。 如果webhook仍然依赖它，则失败。 使用它的方案将被分离而不是阻止删除。 |
 | 搜索键 | `fusion_keys_search` | 读取 | 列出键。 按`name`、`typeName`、`teamId`筛选。 |
 | 获取密钥 | `fusion_keys_get` | 读取 | 返回单个键的详细信息。 |
+| Delete键 | `fusion_keys_delete` | 写入 | 删除键。 使用它的方案不会阻止删除。 |
 
 示例提示：
 
@@ -124,6 +147,9 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | 列出Webhook | `fusion_hooks_list` | 读取 | 列出Webhook（挂钩）。 按`name`、`teamId`、`type`、`enabled`、`gone`、`typeName`、`scenarioId`、`priority`、`detached`等筛选。 |
 | 获取webhook | `fusion_hooks_get` | 读取 | 返回webhook的配置、所有者绑定和外部引用。 |
+| 获取webhook依赖项 | `fusion_hooks_dependencies` | 读取 | 列出webhook引用的连接、数据结构和键。 请在克隆前运行它。 |
+| 克隆webhook | `fusion_hooks_clone` | 写入 | 将具有新URL的webhook复制到另一个组中（可选）。 可以替换其连接、数据结构或键。 |
+| 删除webhook | `fusion_hooks_delete` | 写入 | 删除webhook及其排队的事件。 只有webhook的创建者可以删除它。 |
 | 查找依赖的Webhook | `fusion_hooks_dependents` | 读取 | 查找引用给定连接的Webhook。 |
 
 ### Webhook队列
@@ -133,7 +159,7 @@ ht-degree: 7%
 | 获取队列统计信息 | `fusion_queue_stats` | 读取 | 返回已排队事件的数量、队列限制以及webhook是否已启用。 |
 | 列出队列 | `fusion_queue_list` | 读取 | 列出等待处理的webhook事件。 |
 | 获取队列项目 | `fusion_queue_get` | 读取 | 返回单个排队的事件，包括其已解码的有效负载。 |
-| 删除队列项目 | `fusion_queue_delete` | 写入 | 删除特定排队的事件（最多50个）或清除队列，可以选择排除某些事件。 无法删除当前处理的事件。 |
+| 删除队列项目 | `fusion_hook_queue_delete` | 写入 | 按ID删除已排队的webhook事件（最多50个），或删除具有可选排除项的所有事件。 连接的工具名称为`fusion_hook_queue_delete`，与旧的`fusion_queue_delete`名称不匹配。 |
 
 示例提示：
 
@@ -146,10 +172,14 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | 列出数据存储 | `fusion_datastores_list` | 读取 | 列出具有记录计数、大小和最大大小的数据存储。 |
 | 获取数据存储 | `fusion_datastores_get` | 读取 | 返回数据存储的元数据和用法、链接的数据结构和严格验证设置。 |
+| 删除数据存储 | `fusion_datastores_delete` | 写入 | 删除数据存储及其所有记录。 如果场景仍使用它，则失败。 |
 | 列出数据存储记录 | `fusion_data_list` | 读取 | 使用偏移分页从数据存储中读取记录（键+ JSON数据）。 |
+| 删除数据存储记录 | `fusion_data_stores_data_delete` | 写入 | 按键删除多个记录，或删除具有可选排除项的所有记录。 |
+| 删除数据存储记录 | `fusion_data_stores_data_key_delete` | 写入 | 按键删除一个记录。 即使键不存在，也会成功。 |
 | 查找相关数据存储 | `fusion_datastores_dependents` | 读取 | 查找使用给定数据结构的数据存储。 |
 | 搜索数据结构 | `fusion_data_structures_search` | 读取 | 列出数据结构。 按`name`、`strict`、`teamId`筛选。 |
 | 获取数据结构 | `fusion_data_structures_get` | 读取 | 返回数据结构，包括其完整字段规范。 |
+| 删除数据结构 | `fusion_data_structures_delete` | 写入 | 删除数据结构。 如果数据存储仍使用它，则失败。 |
 
 示例提示：
 
@@ -167,6 +197,12 @@ ht-degree: 7%
 
 * _过去7天内谁删除了方案？_
 * _将本季度的所有连接更改导出到Excel。_
+
+## 反馈
+
+| 工具 | 名称 | 操作 | 描述 |
+| --- | --- | --- | --- |
+| 提交反馈 | `fusion_feedback_submit` | 写入 | 将您的反馈（错误、错误结果、功能请求、表扬或其他）发送到Fusion团队。 |
 
 ## 同事
 
