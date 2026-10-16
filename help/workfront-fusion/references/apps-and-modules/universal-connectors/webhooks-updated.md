@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
 workflow-type: tm+mt
-source-wordcount: '3236'
+source-wordcount: '3219'
 ht-degree: 6%
 ---
 # Webhook
@@ -126,10 +126,6 @@ webhook是由事件触发的HTTP调用。 您可以使用Webhook激活即时触�
 1. 单击&#x200B;**[!UICONTROL 保存]**
 
 创建webhook后，将显示唯一的URL。 这是webhook发送数据的地址。 Workfront Fusion会验证发送到此地址的数据，然后传递它以在场景中处理。
-
->[!NOTE]
->
->创建webhook后，您可以将其同时用于多个场景。
 
 #### 将webhook用于基本身份验证
 
@@ -551,3 +547,4 @@ Content-Type: application/json
 ![重新确定数据结构](/help/workfront-fusion/references/apps-and-modules/assets/redetermine-data-structure-btn-350x195.png)
 
 然后按照本文中[配置webhook的数据结构](#configure-the-webhook-s-data-structure)部分中描述的步骤进行操作。
+
