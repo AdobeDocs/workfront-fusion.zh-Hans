@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
+source-git-commit: c0d5bb30cb41d9ad8db07c1ea13a533df10bcb43
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3193'
 ht-degree: 6%
 ---
 # Webhook
@@ -279,22 +279,22 @@ HMAC签名验证验证传入的请求是否使用共享的签名密钥签名，�
     <tbody> 
      <tr> 
       <td role="rowheader"><p>[!UICONTROL URL] </p></td> 
-      <td>输入webhook的URL。 您可以在用于设置webhook的[!UICONTROL Webhooks]模块中找到此URL。</td> 
+      <td>输入webhook的URL。 您可以在用于设置webhook的[！UICONTROL Webhooks]模块中找到此URL。</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 方法] </td> 
-      <td><p>[!UICONTROL POST]</p></td> 
+      <td><p>[！UICONTROL POST]</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 主体类型]</td> 
-      <td><p> [!UICONTROL Raw]</p></td> 
+      <td role="rowheader">[！UICONTROL主体类型]</td> 
+      <td><p> [！UICONTROL Raw]</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 内容类型]</td> 
+      <td role="rowheader">[！UICONTROL内容类型]</td> 
       <td><p> JSON (application/json)</p></td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 请求内容]</td> 
+      <td role="rowheader">[！UICONTROL请求内容]</td> 
       <td><p>webhook中需要原始JSON</p></td> 
      </tr> 
     </tbody> 
@@ -325,10 +325,6 @@ HMAC签名验证验证传入的请求是否使用共享的签名密钥签名，�
 ## webhook队列
 
 如果webhook收到数据，并且不存在需要该数据的活动场景，则数据存储在队列中。 激活场景后，它将按顺序处理队列中等待的所有包。
-
->[!IMPORTANT]
->
->Webhook队列在使用相同webhook的场景之间共享。 如果其中一个方案被禁用，则所有传入数据都将保留在队列中。
 
 ## 支持的传入数据格式
 
@@ -473,27 +469,27 @@ Content-Type: application/json
 >按如下方式配置[!UICONTROL Webhook响应]模块：
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL 状态] </td> 
->&gt;   <td> <p>2xx成功HTTP状态代码，例如200</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL 正文] </td> 
->&gt;   <td> <p>HTML代码</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>键</strong>： Content-type</li> 
->&gt;     <li><strong>值</strong>： text/html</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[！UICONTROL状态] </td> 
+&gt;   <td> <p>2xx成功HTTP状态代码，例如200</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[!UICONTROL 正文] </td> 
+&gt;   <td> <p>HTML代码</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[！UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>键</strong>： Content-type</li> 
+&gt;     <li><strong>值</strong>： text/html</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![自定义标头](/help/workfront-fusion/references/apps-and-modules/assets/custom-headers-350x235.png)
 >
@@ -508,23 +504,23 @@ Content-Type: application/json
 >**示例：**&#x200B;按如下方式配置[!UICONTROL Webhook响应]模块：
 >
 ><table style="table-layout:auto"> 
->&gt; <col> 
->&gt; <col> 
->&gt; <tbody> 
->&gt;  <tr> 
->&gt;   <td role="rowheader">[!UICONTROL 状态] </td> 
->&gt;   <td> <p>3xx重定向HTTP状态代码，例如303</p> </td> 
->&gt;  </tr> 
->&gt;  <tr> 
->&gt;   <td role="rowheader"> <p>[!UICONTROL Custom headers]</p> </td> 
->&gt;   <td> 
->&gt;    <ul> 
->&gt;     <li><strong>[!UICONTROL 键]</strong>：位置</li> 
->&gt;     <li><strong>[!UICONTROL 值]</strong>：要重定向到的URL。</li> 
->&gt;    </ul> </td> 
->&gt;  </tr> 
->&gt; </tbody> 
->&gt;</table>
+&gt; <col> 
+&gt; <col> 
+&gt; <tbody> 
+&gt;  <tr> 
+&gt;   <td role="rowheader">[！UICONTROL状态] </td> 
+&gt;   <td> <p>3xx重定向HTTP状态代码，例如303</p> </td> 
+&gt;  </tr> 
+&gt;  <tr> 
+&gt;   <td role="rowheader"> <p>[！UICONTROL Custom headers]</p> </td> 
+&gt;   <td> 
+&gt;    <ul> 
+&gt;     <li><strong>[！UICONTROL键]</strong>：位置</li> 
+&gt;     <li><strong>[！UICONTROL值]</strong>：要重定向到的URL。</li> 
+&gt;    </ul> </td> 
+&gt;  </tr> 
+&gt; </tbody> 
+&gt;</table>
 >
 >![Webhook响应](/help/workfront-fusion/references/apps-and-modules/assets/webhook-response-350x279.png)
 
