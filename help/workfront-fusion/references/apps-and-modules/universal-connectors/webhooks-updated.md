@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 983b7ab013c49747760da4a22a47715c68555ec0
+source-git-commit: c0d5bb30cb41d9ad8db07c1ea13a533df10bcb43
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3193'
 ht-degree: 6%
 ---
 # Webhook
@@ -325,10 +325,6 @@ HMAC签名验证验证传入的请求是否使用共享的签名密钥签名，�
 ## webhook队列
 
 如果webhook收到数据，并且不存在需要该数据的活动场景，则数据存储在队列中。 激活场景后，它将按顺序处理队列中等待的所有包。
-
->[!IMPORTANT]
->
->Webhook队列在使用相同webhook的场景之间共享。 如果其中一个方案被禁用，则所有传入数据都将保留在队列中。
 
 ## 支持的传入数据格式
 
