@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8ea986eb6573bb49accfad312bb0796faa2642ab
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 8%
+source-wordcount: '750'
+ht-degree: 5%
 ---
 # 常规函数
 
@@ -22,11 +22,39 @@ ht-degree: 8%
 
 您可以使用这些常规变量来标识有关执行的详细信息：
 
-* `executionID`：此方案执行的ID
-* `triggerTimestamp`：触发此执行的时间
-* `scenarioID`：当前打开的场景的 ID
+* `executionId`：此方案执行的ID
+* `scenarioId`：当前打开的场景的 ID
 * `scenarioName`：当前正在运行的方案的名称
+* `scenarioUrl`： Fusion用户界面中当前方案的链接
+* `executionUrl`：指向Fusion用户界面中当前方案执行的链接
+* `scenarioApiUrl`：当前方案的Fusion API URL
+* `executionApiUrl`：当前执行详细信息的融合API URL
+* `teamId`：拥有当前场景的Fusion团队的ID
+* `organizationId`：与当前执行关联的Fusion组织的ID。 这不是Adobe IMS组织ID。
+* `triggerTimestamp`：触发此执行的时间
 * `operationsConsumed`：场景在该点已使用的操作次数
+
+变量名称区分大小写。 例如，使用`scenarioUrl`，而不是`scenarioURL`。
+
+您可以在映射的字段中使用这些变量，而无需构建URL或硬编码团队和组织ID。 例如，您可以在通知的映射文本字段中包含以下内容：
+
+<pre><code>
+Scenario: &#123;&#123;scenarioName&#125;&#125;
+Open scenario: &#123;&#123;scenarioUrl&#125;&#125;
+Open execution: &#123;&#123;executionUrl&#125;&#125;
+Team: &#123;&#123;teamId&#125;&#125;
+Organization: &#123;&#123;organizationId&#125;&#125;
+</code></pre>
+
+在使用这些变量时，请牢记以下几点：
+
+* 当场景运行时，将解析值。 映射面板会列出变量，但不会预览其值。
+* `scenarioUrl`和`executionUrl`链接到Fusion用户界面中的方案和执行。 `scenarioApiUrl`和`executionApiUrl`是API终结点URL，而不是指向Fusion页面的链接。
+* API URL变量仅返回文本。 他们不会提出请求或提供身份验证凭据。 普通API身份验证和权限仍然适用。
+* 链接不授予其他访问权限。 普通Fusion权限在此适用。
+* 对于未保存到执行历史记录中的运行（如沙盒运行或在历史记录同步关闭的情况下运行），不会生成`executionUrl`。 生成的链接并不保证执行详细信息在您使用该链接时可用。
+* 无法为模板或未保存的方案生成`scenarioUrl`。
+* 如果无法生成URL，则变量没有值。
 
 ## [!UICONTROL get （对象或数组；路径）]
 
