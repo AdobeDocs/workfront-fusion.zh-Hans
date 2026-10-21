@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 20%
+source-wordcount: '1550'
+ht-degree: 19%
 ---
 # Workfront Fusion模块
 
@@ -70,18 +70,18 @@ ht-degree: 20%
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 客户端 ID]</td> 
-      <td>输入您的 [!DNL Adobe] [!UICONTROL 客户端 ID]。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL Credentials]详细信息部分找到。</td> 
+      <td>输入您的 [!DNL Adobe] [!UICONTROL 客户端 ID]。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL Credentials]详细信息部分找到。</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 客户端密钥]</td> 
-      <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 这可以在[!DNL Adobe Developer Console]的[!UICONTROL Credentials]详细信息部分找到。</td> 
+      <td>输入您的[!DNL Adobe] [!UICONTROL 客户端密钥]。 这可以在[!DNL Adobe Developer Console]的[！UICONTROL Credentials]详细信息部分找到。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 组织ID]</td> 
+      <td role="rowheader">[！UICONTROL组织ID]</td> 
       <td>输入您的[!DNL Adobe] IMS组织ID。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 区域]</td> 
+      <td role="rowheader">[！UICONTROL区域]</td> 
       <td>选择此连接的Fusion区域。</td> 
      </tr> 
     </tbody> 
@@ -127,12 +127,12 @@ ht-degree: 20%
    <td> 选择要克隆的记录类型。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">方案ID</td> 
-   <td> 输入或映射要克隆的方案的ID。 </td> 
+   <td role="rowheader">场景ID/挂接ID/数据结构ID</td> 
+   <td> 输入或映射要克隆的项目的ID。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">名称</td> 
-   <td> 输入或映射新方案的名称。</td> 
+   <td> 输入或映射新方案、挂接或数据结构的名称。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -202,6 +202,10 @@ ht-degree: 20%
   <tr> 
    <td role="rowheader">记录类型</td> 
    <td>选择要返回列表的记录类型。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">字段</td> 
+   <td>选择要包含在结果中的任何字段。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">属性</td> 
@@ -380,9 +384,36 @@ ht-degree: 20%
    <td> 选择要检索从属关系的记录类型。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">方案ID</td> 
+   <td role="rowheader">场景ID/挂接ID</td> 
    <td> 输入或映射要检索其依赖关系的记录的ID。 </td> 
   </tr> 
+  </tr> 
+ </tbody> 
+</table>
+
+#### 获取记录依赖项
+
+此模块确定依赖给定资源的内容。 在删除资源之前，请使用此模块检查是否有任何内容依赖该资源，以及删除是否会影响该资源。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将Workfront Fusion连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">将Workfront Fusion连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">记录类型</td> 
+   <td>选择要检查从属项的记录类型。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">种类</td> 
+   <td>选择要检查的依赖项种类……</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">ID</td> 
+   <td>输入或映射要为其返回依赖项的记录的ID。</td> 
   </tr> 
  </tbody> 
 </table>
