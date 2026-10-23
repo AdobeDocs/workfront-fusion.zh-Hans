@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: b800142d824927e5765eed50a831731e6b5d9925
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 16%
@@ -98,7 +98,7 @@ ht-degree: 16%
 ![工具面板](assets/tools-scenario-editor.png)
 
 | 操作 | 详细信息 |
-|---------- | ---------- |
+| ---------- | ---------- |
 | 流量控制 | 配置设置以控制数据流经的方式。 有关详细信息，[查看所需的链接]。 |
 | 工具 | 工具部分包含几个可以增强方案的有用模块。 有关详细信息，[查看所需的链接]。 |
 | 文本分析器 | 使用文本解析器工具解析文本，以供在其他方案模块中使用。 文本解析器不需要连接。 有关详细信息，[查看所需的链接]。 |
