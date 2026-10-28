@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 16%
+source-wordcount: '684'
+ht-degree: 15%
 ---
 # 流量控制
 
 创建或编辑场景时，您可以配置设置以控制数据流经场景的方式。
+
+>[!NOTE]
+>
+>Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡期间，经典体验和新体验均可用，您可以随时在它们之间切换。 我们建议使用新Experience。 有关详细信息，请参阅文章场景编辑器中的[新体验和经典体验](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)。
 
 ## 访问权限要求
 
@@ -75,7 +79,7 @@ ht-degree: 16%
 
 例如，您可以通过将&#x200B;**[!UICONTROL 电子邮件] >[!UICONTROL 向我发送电子邮件]**&#x200B;模块连接到[!UICONTROL 中继器]模块，使用[!UICONTROL 中继器]模块发送主题为“Hello 1”、“Hello 2”等的五封电子邮件。
 
-1. 单击屏幕底部的[!UICONTROL 流量控制]图标![流量控制图标](/help/workfront-fusion/references/apps-and-modules/assets/flow-control-icon.gif)，然后在显示的菜单中单击&#x200B;**[!UICONTROL 中继器]**。
+1. 单击屏幕底部的[!UICONTROL 流量控制]图标![流量控制图标](/help/workfront-fusion/references/apps-and-modules/assets/new-flow-control-icon.png)，然后在显示的菜单中单击&#x200B;**[!UICONTROL 中继器]**。
 1. 单击[!UICONTROL 中继器]模块，然后在显示的框中单击&#x200B;**[!UICONTROL 自动连接]**。
 
    此时会打开中继器模块。
@@ -84,7 +88,7 @@ ht-degree: 16%
 
    在本例中，您将输入5。
 
-   ![中继器](/help/workfront-fusion/references/apps-and-modules/assets/repeater-2-350x207.png)
+   ![中继器](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater.png)
 
    每次重复时，该项的值将增加在&#x200B;**[!UICONTROL 步骤]**&#x200B;字段中指定的值，您可以通过选择&#x200B;**[!UICONTROL 显示高级设置]**&#x200B;来查看该字段。 默认情况下，此数字为1。
 
@@ -95,7 +99,7 @@ ht-degree: 16%
 
    在我们的电子邮件示例中，您可以在[!UICONTROL 主题]框中键入Hello，然后从中继器模块映射`i`。
 
-   ![中继器](/help/workfront-fusion/references/apps-and-modules/assets/repeater-3-350x207.png)
+   ![中继器](/help/workfront-fusion/references/apps-and-modules/assets/new-repeater-3.png)
 
 
 

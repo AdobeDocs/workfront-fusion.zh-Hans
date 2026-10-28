@@ -13,16 +13,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 51%
+source-wordcount: '133'
+ht-degree: 44%
 ---
 # 管理方案：文章索引
 
 * [管理连接](/help/workfront-fusion/manage-scenarios/manage-connections.md)
 * [激活或停用场景](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
 * [调试场景](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+* [使用Live Trail查看场景运行](/help/workfront-fusion/manage-scenarios/live-trail.md)
+* [在场景中查找和替换变量、源和连接](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
 * [恢复场景版本](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
 * [将模块更新到新版本](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
 * [管理锁定的场景](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)

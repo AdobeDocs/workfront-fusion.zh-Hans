@@ -13,10 +13,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 68%
+source-wordcount: '89'
+ht-degree: 62%
 ---
 # 添加模块：文章索引
 
@@ -24,6 +24,7 @@ ht-degree: 68%
 * [配置模块](/help/workfront-fusion/create-scenarios/add-modules/configure-a-modules-settings.md)
 * [向场景添加AI提示](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
 * [复制模块或场景](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
+* [保存和重用包含代码片段的方案部分](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md)
 * [使用 Adobe Workfront Fusion 模板创建场景](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
 * [使用 cURL 添加 HTTP 模块](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)
 * [为未提供连接器的 Web 服务配置 Webhook](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)

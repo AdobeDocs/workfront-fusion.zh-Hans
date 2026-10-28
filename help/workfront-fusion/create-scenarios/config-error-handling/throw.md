@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Integrations
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 25%
@@ -67,7 +67,7 @@ ht-degree: 25%
 
 要有条件地引发错误，您可以配置模块，使其在操作期间故意失败。 一种方法是使用[!UICONTROL JSON] > [!UICONTROL 分析JSON]模块，该模块配置为可选地引发错误（在本例中为`BundleValidationError`）：
 
-![JSON错误](assets/json-parse-json.png)
+![JSON错误](assets/new-json-parse-json.png)
 
 然后，可以将其中一个错误处理指令附加到错误处理路由：
 
@@ -78,4 +78,4 @@ ht-degree: 25%
 
 以下示例显示了[!DNL Rollback]指令的使用：
 
-![Rollback指令](assets/rollback-directive.png)
+![Rollback指令](assets/new-rollback-directive.png)

@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '370'
 ht-degree: 0%
 ---
 # 使用运行一次以测试方案
@@ -23,6 +23,10 @@ ht-degree: 0%
 >[!TIP]
 >
 >我们建议您在创建和优化场景时经常进行测试。
+
+>[!NOTE]
+>
+>在新版Experience中，运行一次始终保留请求和响应详细信息。 对于方案的常规运行，可以通过在方案设置中打开临时调试日志来收集它们。 有关详细信息，请参阅[配置方案设置](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs)。
 
 ## 使用运行一次功能
 

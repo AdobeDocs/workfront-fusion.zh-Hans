@@ -10,9 +10,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '554'
 ht-degree: 16%
 ---
 # 查看和管理链接方案关系
@@ -64,21 +64,17 @@ ht-degree: 16%
 
 您可以查看当前方案及其父方案或子方案的映射。 该图显示了链接方案中的数据流图表。
 
-![链接方案关系](assets/chained-scenario-relationships-2.png)
-
-<!--get a better picture-->
-
 要查看链接方案的关系图，请执行以下操作：
 
 1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡，然后单击方案。
 
    或
 
-   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](assets/exit-editing-arrow.png)。
+   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png)。
 
 1. 单击&#x200B;**关系**&#x200B;选项卡。
 
-   ![关系选项卡](assets/relations-tab.png)
+   ![关系选项卡](assets/new-relationships-tab.png)
 
 1. 有关每个链接方案的一般详细信息，请检查标记。
 

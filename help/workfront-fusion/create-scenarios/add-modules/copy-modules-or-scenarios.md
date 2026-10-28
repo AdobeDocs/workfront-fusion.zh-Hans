@@ -14,9 +14,9 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f11394266811578664228f44a6202bc6621a75a0
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '966'
 ht-degree: 10%
 ---
 # 复制模块或场景
@@ -69,18 +69,19 @@ ht-degree: 10%
 
 ### 复制模块
 
-复制一组模块与复制单个模块类似。
+您可以复制单个模块或一组模块。
+
+
+>[!NOTE]
+>
+>按住[!UICONTROL Shift]并单击要复制的模块，可选择多个模块。 复制一组模块时，还会复制它们之间的任何连接线、过滤器或路由逻辑。
 
 1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要复制模块的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
-1. 右键单击要复制的模块。
-
-   >[!NOTE]
-   >
-   >按住[!UICONTROL Shift]并单击要复制的模块，可选择多个模块。 复制一组模块时，还会复制它们之间的任何连接线、过滤器或路由逻辑。
-
-1. 选择&#x200B;**[!UICONTROL 复制模块]**。
+1. 如果要复制多个模块，请按住Shift并单击要复制的模块。
+1. 右键单击要复制的模块或模块之一。
+1. 选择&#x200B;**[!UICONTROL 复制模块]**&#x200B;或&#x200B;**[!UICONTROL 复制模块]**。
 1. 将光标移动到您希望场景副本所在的场景区域。
 1. 右键单击，然后选择&#x200B;**[!UICONTROL 粘贴]**。
 1. 通过将粘贴的模块拖动到方案中的适当位置，将其连接到方案。
@@ -101,7 +102,7 @@ ht-degree: 10%
 
       或
 
-      如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](assets/exit-editing-arrow.png)。
+      如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](assets/new-exit-editing-arrow.png)。
 
 1. 右键单击页面右上角的&#x200B;**[!UICONTROL 选项]**。
 1. 选择&#x200B;**[!UICONTROL 克隆]**。

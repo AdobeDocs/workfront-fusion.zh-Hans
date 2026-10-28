@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1156'
-ht-degree: 9%
+source-wordcount: '1677'
+ht-degree: 6%
 ---
 # 添加错误处理
 
@@ -39,6 +39,10 @@ ht-degree: 9%
 >
 >Workfront Fusion支持路由级别的错误处理，允许您为每个路由定义一次错误处理逻辑，而不是将错误处理程序附加到每个单独的模块。
 >由于路由级别的错误处理是一种更可扩展、更一致和更简洁的错误管理方法，尤其是在高级、多分支自动化中，因此我们建议使用路由级别的错误处理作为最佳实践。
+
+>[!NOTE]
+>
+>Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡期间，经典体验和新体验均可用，您可以随时在它们之间切换。 我们建议使用新Experience。 有关详细信息，请参阅文章场景编辑器中的[新体验和经典体验](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)。
 
 ## 访问权限要求
 
@@ -88,9 +92,9 @@ ht-degree: 9%
 
 ### 示例
 
-请考虑以下示例场景：
+请考虑以下示例情景，这里以紧凑的视图显示以便阅读：
 
-![显示路由和错误处理程序的示例方案](assets/error-handling-route-example-with-numbers.png)
+![显示路由和错误处理程序的示例方案](assets/new-error-handler-examples-with-numbers.png)
 
 1. 此模块具有错误处理程序。 此模块上的任何错误都由Commit指令处理。
 1. 此模块没有错误处理程序。 如果此模块遇到错误，该错误将由创建模块路由的路由器上的处理程序处理。 此模块上的任何错误都由Rollback指令处理。
@@ -113,7 +117,41 @@ ht-degree: 9%
 
 ### 向模块添加错误处理程序
 
-向模块添加错误处理程序：
+* [向新Experience中的模块添加错误处理程序（推荐）](#add-an-error-handler-to-a-module-in-the-new-experience-recommended)
+* [将错误处理程序添加到经典Experience中的模块](#add-an-error-handler-to-a-module-in-the-classic-experience)
+
+#### 向新Experience中的模块添加错误处理程序（推荐）
+
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
+1. 选择要添加错误处理路由的方案。
+1. 单击方案上的任意位置以进入方案编辑器。
+1. 右键单击要添加错误处理程序路由的模块，然后选择&#x200B;**[!UICONTROL 添加错误处理程序]**：
+
+   ![在菜单中添加错误处理程序](assets/new-add-error-handler-in-menu.png)
+
+   错误处理程序路由已添加到模块。 如果该模块是路由中的最后一个模块，则错误处理程序将直接跟踪该模块。 如果模块之后有更多的模块，则会添加单独的错误处理程序路由。
+
+   错误处理模块显示指令列表，以及在您的方案中使用的应用程序。
+
+   ![处理指令时出错](assets/new-error-handling-directives.png)
+
+1. 选择指令之一。
+
+   或
+
+   将一个或多个模块添加到错误处理程序路由。
+
+   如果向路由添加更多模块，则缺省情况下将应用“忽略”指令。 如果出现错误，则会处理该路由上的后续模块。
+
+   有关指令的详细信息，请参阅本文中的[处理指令](#error-handling-directives)时出错。
+
+1. （可选）将过滤器添加到错误处理路由。 有关说明，请参阅[将筛选和嵌套添加到错误处理路由](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)。
+
+>[!NOTE]
+>
+>错误处理程序路由用带有红色&#x200B;**[!UICONTROL 错误处理程序]**&#x200B;标签的虚线标记。
+
+#### 将错误处理程序添加到经典Experience中的模块
 
 1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要添加错误处理路由的方案。
@@ -145,6 +183,40 @@ ht-degree: 9%
 >请注意，错误处理程序路由由透明圆组成，而常规路由由实心圆组成。
 
 ### 向路由器添加错误处理程序
+
+* [在新版Experience中为路由器添加错误处理程序（推荐）](#add-an-error-handler-to-a-router-in-the-new-experience-recommended)
+* [在经典体验中为路由器添加错误处理程序](#add-an-error-handler-to-a-router-in-the-classic-experience)
+
+#### 在新版Experience中为路由器添加错误处理程序（推荐）
+
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
+1. 选择要添加错误处理路由的方案。
+1. 单击方案上的任意位置以进入方案编辑器。
+1. 右键单击要添加错误处理程序路由的路由器，然后选择&#x200B;**[!UICONTROL 添加错误处理程序]**。
+
+   已向路由器添加错误处理程序路由。
+
+   错误处理模块显示指令列表，以及在您的方案中使用的应用程序。
+
+   ![处理指令时出错](assets/new-error-handling-directives.png)
+
+1. 选择指令之一。
+
+   或
+
+   将一个或多个模块添加到错误处理程序路由。
+
+   如果向路由添加更多模块，则缺省情况下将应用“忽略”指令。 如果出现错误，则会处理该路由上的后续模块。
+
+   有关指令的详细信息，请参阅本文中的[处理指令](#error-handling-directives)时出错。
+
+1. （可选）将过滤器添加到错误处理路由。 有关说明，请参阅[将筛选和嵌套添加到错误处理路由](/help/workfront-fusion/create-scenarios/config-error-handling/advanced-error-handling.md)。
+
+>[!NOTE]
+>
+>错误处理程序路由用带有红色&#x200B;**[!UICONTROL 错误处理程序]**&#x200B;标签的虚线标记。
+
+#### 在经典体验中为路由器添加错误处理程序
 
 1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要添加错误处理路由的方案。

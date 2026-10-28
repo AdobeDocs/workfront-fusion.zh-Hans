@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cd90795caaf835de238b52e30fddbcc6da9e9443
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 23%
+source-wordcount: '695'
+ht-degree: 15%
 ---
 # 查看特定场景的执行
 
@@ -74,7 +74,7 @@ ht-degree: 23%
 
 1. 要查看模块中的输出，请单击模块附近的输出详细信息气泡。 气泡中的数字表示模块输出的捆绑数。
 
-   ![模块附近的输出气泡](assets/output-bubble.png)
+   ![模块附近的输出气泡](assets/new-output-bubble.png)
 
 1. 要查看通过过滤器的包，请单击过滤器。 过滤器附近的数字表示通过过滤器的捆绑数。
 1. 要在执行面板中搜索特定的模块或事件，请在&#x200B;**搜索执行事件**&#x200B;框中输入搜索词。 键入内容时，将显示结果。
@@ -93,3 +93,21 @@ ht-degree: 23%
 >查看场景时，`<module-id>`引用模块标签旁边的数字。
 >
 >这在调试方案或复制模块配置时可能很有用。
+
+## 在新的场景编辑器中查看执行
+
+在新版Experience中，当您从执行历史记录中打开执行时，画布右侧附近的控件可帮助您找到错误之处，而无需编辑场景：
+
+![查看执行](assets/review-an-execution.png)
+
+| 控件 | 详细信息 |
+| ---------- | ---------- |
+| 转到下一个错误或警告 | 显示当前周期中有多少模块出现问题。 每次单击都会移到下一个点击，首先显示错误，然后从左到右依次显示警告。 它将模块居中并打开第一个失败的操作。 当执行没有错误或警告时，按钮将隐藏。 |
+| 搜索模块 | 按名称查找模块并将其放在画布中心。 按Ctrl+K (Windows)或Command+K (Mac)。 |
+| 注释 | 显示或隐藏方案的注释。 此控件仅在场景具有注释，并且注释在此处为只读时才显示。 |
+| 说明流程 | 设置场景模块运行顺序的动画。 再次单击或按Esc停止。 |
+| 放大、缩小、聚焦和小型地图 | 与编辑模式的工作方式相同。 |
+
+**紧凑视图**&#x200B;开关也可在右上角使用。 查看执行时，它仅在查看该执行时更改布局。 它不会更改用于编辑的紧凑视图设置，并且不会将任何内容保存到方案。
+
+在执行中选择要居中的事件，并突出显示匹配模块。 当操作详细信息可用时，请求和响应面板将打开。 如果面板没有数据，则不会为该运行保留请求和响应详细信息。 若要收集这些日志以供将来运行，请参阅[临时调试日志](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs)。

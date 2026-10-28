@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 19%
+source-wordcount: '942'
+ht-degree: 11%
 ---
 # 为场景添加筛选条件
 
@@ -26,6 +26,10 @@ ht-degree: 19%
 
 * 如果是，则捆绑包将传递到场景中的下一个模块。
 * 如果不存在，则终止对捆绑包的处理。
+
+>[!NOTE]
+>
+>Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡期间，经典体验和新体验均可用，您可以随时在它们之间切换。 我们建议使用新Experience。 有关详细信息，请参阅文章场景编辑器中的[新体验和经典体验](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)。
 
 ## 访问权限要求
 
@@ -60,7 +64,37 @@ ht-degree: 19%
 
 必须先将两个模块添加到方案中，然后才能在它们之间添加过滤器。
 
-## 在两个模块之间添加过滤器：
+## 在两个模块之间添加过滤器
+
+* [在新版Experience的两个模块之间添加过滤器（推荐）](#add-a-filter-between-two-modules-in-the-new-experience-recommended)
+* [在经典体验的两个模块之间添加过滤器](#add-a-filter-between-two-modules-in-the-classic-experience)
+
+### 在新版Experience的两个模块之间添加过滤器（推荐）
+
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
+1. 选择要添加过滤器的方案。
+1. 单击方案上的任意位置以进入方案编辑器。
+1. 左键单击要添加过滤器的模块之间的路径。
+
+   将直接打开&#x200B;**[!UICONTROL 设置过滤器]**&#x200B;窗口。 （右键单击路径将打开其他菜单。）
+
+1. 在显示的框中，输入筛选器的&#x200B;**[!UICONTROL 标签]**。
+1. 定义筛选器&#x200B;**[!UICONTROL 条件]**。
+
+   在第一个字段中输入要作为筛选依据的字段、运算符，以及（如有必要）要与字段比较的值。
+
+   >[!TIP]
+   >
+   >您可以从映射面板在筛选器字段中输入值
+   >有关映射的详细信息，请参阅[将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md)。
+
+   例如，如果您希望过滤器在Adobe Workfront中传递以XML结尾的文件，则应在第一个框中输入&#x200B;**[!UICONTROL File name]**，在第二个框中输入。**[!UICONTROL xml]**。 在它们之间的下拉菜单中，选择&#x200B;**[!UICONTROL 结尾为（不区分大小写）]**。 此过滤器将应用于来自第一个模块(Workfront)的传入包。 只有包含XML文件的包才会传递到下一个模块。
+
+   ![设置筛选器](assets/new-filter-setup-xml-example.png)
+
+1. 单击 **[!DNL OK]**。
+
+### 在经典体验的两个模块之间添加过滤器
 
 1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要添加过滤器的方案。
@@ -86,6 +120,22 @@ ht-degree: 19%
 
 您可以复制现有筛选器并将其粘贴到场景中的其他位置。
 
+* [在新版Experience中复制过滤器（推荐）](#copy-a-filter-in-the-new-experience-recommended)
+* [在经典体验中复制筛选器](#copy-a-filter-in-the-classic-experience)
+
+### 在新版Experience中复制过滤器（推荐）
+
+1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
+1. 选择要添加过滤器的方案。
+1. 单击方案上的任意位置以进入方案编辑器。
+1. 右键单击过滤器所在的模块之间的路径。
+1. 选择&#x200B;**复制筛选器**。
+1. 右键单击要粘贴过滤器的模块之间的路径。
+1. 选择&#x200B;**粘贴筛选器**。
+1. （可选）要调整筛选器，请单击筛选器图标或标签，然后输入值，如[本文中的新体验](#add-a-filter-between-two-modules-in-the-new-experience-recommended)中的在两个模块之间添加筛选器中所述。
+
+### 在经典体验中复制筛选器
+
 1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要添加过滤器的方案。
 1. 单击方案上的任意位置以进入方案编辑器。
@@ -93,7 +143,7 @@ ht-degree: 19%
 1. 选择&#x200B;**复制筛选器**。
 1. 右键单击要粘贴过滤器的模块之间的连接点。
 1. 选择&#x200B;**粘贴**&#x200B;筛选器
-1. （可选）要调整筛选器，请单击筛选器图标或标签，然后输入值，如本文中的[在两个模块之间添加筛选器](#add-a-filter-between-two-modules)中所述。
+1. （可选）要调整筛选器，请单击筛选器图标或标签，然后输入值，如[本文中的经典体验中的两个模块之间添加筛选器](#add-a-filter-between-two-modules-in-the-classic-experience)中所述。
 
 
 

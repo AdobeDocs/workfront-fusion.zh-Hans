@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 6%
+source-wordcount: '1962'
+ht-degree: 5%
 ---
 # 调试场景
 
@@ -28,6 +28,26 @@ Adobe Workfront Fusion Devtool可帮助您了解场景并排除其故障。 使�
 >[!NOTE]
 >
 >对于机密场景、自动执行和成功操作，调试器面板中的记录将受限或不可用。
+
+>[!NOTE]
+>
+>在新版Experience中，有多个DevTool工具内置到场景编辑器中，因此无需打开DevTool即可使用它们：
+>
+>| 工具 | 在何处在新体验中找到它 |
+>| ---------- | ---------- |
+>| 获取应用程序元数据 | 右键单击模块并选择&#x200B;**应用程序元数据**。 |
+>| 复制映射 | 右键单击源模块，选择&#x200B;**复制映射**，然后将其粘贴到兼容的模块上。 |
+>| 复制筛选器 | 右键单击筛选的链接，选择&#x200B;**复制筛选器**，然后将其粘贴到其他链接上。 |
+>| 复制模块名称 | 右键单击模块并选择&#x200B;**复制模块名称**&#x200B;或&#x200B;**粘贴模块名称**。 |
+>| 交换连接 | 打开“查找和替换”，然后使用&#x200B;**连接**&#x200B;选项卡。 |
+>| 交换变量 | 打开“查找和替换”，然后使用&#x200B;**变量**&#x200B;选项卡。 |
+>| 重新映射源 | 打开“查找和替换”，然后使用&#x200B;**Source**&#x200B;选项卡。 |
+>
+>这些工具仍可在DevTool的&#x200B;**工具**&#x200B;选项卡上使用，还可在焦点模块、通过映射查找模块以及基础64上使用。 您还可以在映射中使用`base64()`和二进制转换函数。
+>
+>您还可以直接从[实时跟踪](/help/workfront-fusion/manage-scenarios/live-trail.md)中查看请求和响应详细信息以及方案编辑器中的执行历史记录。 有关查找和替换的详细信息，请参阅[查找和替换方案中的变量、源和连接](/help/workfront-fusion/manage-scenarios/find-and-replace.md)。
+<!-- BECKY CHECK ME: DevTool screenshots (10/27/26) show all ten tools still on the Tools tab, so this note now says the seven built-in tools are available in both places. The release notes implied only Focus a module, Find modules by mapping, and Base 64 would remain. Confirm after release whether the other seven are removed from the DevTool, and update this note and the Tools section if so.  -->
+<!-- BECKY CHECK ME: note added from the 10/23/26 release notes; the DevTool is NOT being removed. This article still needs a fuller restructure (new/classic split for the seven tools, Live Trail section or separate article). Confirm the menu labels. -->
 
 有关Fusion Devtool的视频介绍和演练，请参见
 
@@ -67,6 +87,26 @@ Adobe Workfront Fusion Devtool可帮助您了解场景并排除其故障。 使�
 
 如果您在Adobe Unified Shell中使用Fusion，或者已更新到新的Fusion Experience，则可以从场景编辑器访问Devtool。
 
+### 在新版Experience中访问Devtool
+
+1. 转到要调试的方案的方案编辑器。
+
+   要查找方案编辑器，请参阅[方案编辑器](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)。
+
+1. 单击“控件”区域中的三个点图标，然后选择&#x200B;**DevTool**。
+
+或：
+
+1. 转到要调试的方案的方案编辑器。
+1. 右键单击页面的空白区域（不是模块）。
+1. 选择&#x200B;**打开Devtool**。
+
+DevTool将在画布下方的面板中打开。
+
+<!-- BECKY CHECK ME: new-experience access steps from your 10/27/26 notes (three-dot menu in Controls, or right-click). Confirm the menu label ('DevTool') and the 'panel below the canvas' description, and add a screenshot. I assumed the Helper tools icon steps below apply to the classic experience only; confirm. -->
+
+### 在经典体验中访问Devtool
+
 1. 单击靠近屏幕底部的&#x200B;**帮助程序工具** ![帮助程序工具](assets/debugger-icon.png)图标。
 
 或：
@@ -80,15 +120,20 @@ Adobe Workfront Fusion Devtool可帮助您了解场景并排除其故障。 使�
 
 ## 使用Workfront Fusion Devtool
 
-Workfront Fusion Devtool分为3个主要部分。 您可以在Devtool窗口的左侧面板中找到这些内容。
+Workfront Fusion Devtool分为3个主要部分和一个帮助链接。 您可以在Devtool窗口的左侧面板中找到这些内容。
 
 * [实时流](#live-stream)
 * [方案调试器](#scenario-debugger)
 * [工具](#tools)
+* **DevTool帮助**：单击问号图标以打开有关DevTool的文章。
+
+<!-- BECKY CHECK ME: the DevTool left panel now has a fourth item, 'DevTool help' (question mark icon), per your 10/27/26 screenshots. Confirm the label, that it opens this article or another one, and whether to apply this to the classic experience too. Retake the left-panel screenshot. -->
 
 ### 实时流
 
 在您的场景中单击运行一次后，实时流会显示后台发生的情况。
+
+<!-- BECKY CHECK ME: HOLD: in the new experience, Live Stream shows a 'no events available' message even while a scenario is running, which may be a bug. No updates have been made to this section. Re-test after release before changing anything here. If it is intended behavior, this section may need to point to Live Trail instead. -->
 
 1. 单击&#x200B;**[!UICONTROL 实时流]**&#x200B;图标![实时流图标](assets/live-stream-icon.png)以打开实时流部分。
 1. 执行以下任一操作：
@@ -149,18 +194,42 @@ Workfront Fusion Devtool分为3个主要部分。 您可以在Devtool窗口的�
 场景调试器适用于更复杂的场景。 它显示方案运行的历史记录，使您能够按名称或ID搜索模块。
 
 1. 单击&#x200B;**[!UICONTROL 方案调试器]**&#x200B;图标![调试器图标](assets/scenario-debugger-icon.png)以打开方案调试器。
-1. （可选）在搜索字段中输入搜索词（名称或模块ID）。
+
+   场景调试器列出了场景中的模块。 每个模块会显示其名称、应用程序和操作，以及带有模块ID的编号徽章。
+
+1. （可选）在&#x200B;**按名称或ID搜索模块**&#x200B;字段中输入搜索词（名称或模块ID）。
 1. 单击模块名称。
-1. 单击操作可查看请求详细信息。
+
+   模块最近运行的周期列在模块列表旁边。 如果模块没有运行数据，则方案调试器显示&#x200B;**未找到结果**。
+
+1. 展开循环，然后单击操作。
+
+   每个操作都显示是否成功以及操作所花费的时间，例如，持续时间为0毫秒的&#x200B;**操作1**。
+
+1. 查看请求的详细信息。 使用选项卡可查看：
+
+   * **请求标头**： API端点URL、调用请求时的HTTP方法和请求标头。
+   * **请求正文**
+   * **响应标头**
+   * **响应正文**
+
+1. （可选）要复制请求，请单击&#x200B;**复制RAW**&#x200B;或&#x200B;**复制cURL**。
+
+<!-- BECKY CHECK ME: Scenario Debugger steps expanded from your 10/27/26 new-experience DevTool screenshots. Confirm: (1) the 'Search modules by Name or ID' label; (2) that the module list sub-labels, badge (module ID), cycle/operation layout, and 'No Result found' state are described correctly; (3) the tab names, since Response Body was partly hidden behind the Copy buttons in the screenshot; (4) whether Copy RAW and Copy cURL copy the request only or the request and response; (5) whether the classic experience's Scenario Debugger looks the same, or this needs a new/classic split. The screenshot also shows a collapsed 'Live trail' tab with an event count on the right edge of the editor; see the Live Trail article. Retake the Scenario Debugger screenshots. -->
 
 ### 工具
 
 Workfront Fusion Devtool提供了一些工具，可更轻松地设置场景。
 
 1. 单击&#x200B;**[!UICONTROL 工具]**&#x200B;图标![控制台工具图标](assets/console-tools-icon.png)以打开“工具”。
+1. （可选）要查找工具，请在&#x200B;**按名称**&#x200B;搜索工具字段中输入其名称。
 1. 选择要使用的工具
 1. 配置字段，如下所述。
 1. 单击&#x200B;**[!UICONTROL 运行]**。
+
+在选择工具之前，面板右侧会提示您选择工具。 “工具”选项卡底部的链接会将您转到有关DevTool的文章。
+
+<!-- BECKY CHECK ME: added from your 10/27/26 screenshots: the 'Search tool by name' field, the select-a-tool prompt, and the link to the DevTool article. Confirm the field label and link destination; retake the Tools screenshot. -->
 
 工具及其字段：
 

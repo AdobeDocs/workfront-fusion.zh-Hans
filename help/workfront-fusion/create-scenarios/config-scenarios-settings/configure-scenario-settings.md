@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 850372a59529141a31a1a55035c55a3e506e69fb
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '1389'
-ht-degree: 6%
+source-wordcount: '1757'
+ht-degree: 5%
 ---
 # 配置场景设置
 
 您可以在方案设置面板中配置方案的特定设置。
+
+>[!NOTE]
+>
+>Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡期间，经典体验和新体验均可用，您可以随时在它们之间切换。 我们建议使用新Experience。 有关详细信息，请参阅文章场景编辑器中的[新体验和经典体验](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)。
 
 ## 访问权限要求
 
@@ -51,6 +55,23 @@ ht-degree: 6%
 +++
 
 ## 打开方案设置
+
+* [在新版Experience中打开方案设置（推荐）](#open-the-scenario-settings-in-the-new-experience-recommended)
+* [在经典体验中打开方案设置](#open-the-scenario-settings-in-the-classic-experience)
+
+### 在新版Experience中打开方案设置（推荐）
+
+1. 单击左侧面板中的&#x200B;**方案**。
+1. 找到所需的方案，然后单击名称。
+1. 单击方案上的任意位置以输入方案编辑器。
+1. 在控件区域中单击&#x200B;**方案设置**&#x200B;图标![方案设置图标](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scenario-settings-icon-new.png)。
+
+   您可能需要先单击“控件”区域中的三个点图标才能查看该控件。
+
+   在显示的[!UICONTROL 方案设置]面板中，您可以为该方案配置各种高级设置。
+1. 根据需要启用或禁用方案设置。 请参阅下面的[方案设置选项](#scenario-settings-options)。
+
+### 在经典体验中打开方案设置
 
 1. 单击左侧面板中的&#x200B;**方案**。
 1. 找到所需的方案，然后单击名称。
@@ -150,13 +171,13 @@ ht-degree: 6%
 
 **示例：** Workfront > [!UICONTROL 监视记录]监视出现的新问题，Workfront >[!UICONTROL 转换对象]将新请求转换为项目并为其分配适当的模板。
 
-![方案设置](assets/scenario-settings-ex-1-350x157.png)
+![方案设置](assets/new-scenario-settings-ex-1.png)
 
 仅当您计划方案执行时，才应用[!UICONTROL 更多周期]设置。 当您使用[!UICONTROL 运行一次]按钮时，周期设置将被考虑在内。
 
 #### 最大循环数设置为1（默认）
 
-![最大循环数](assets/max-number-cycles-1-350x201.png)
+![最大循环数](assets/new-max-number-cycles.png)
 
 Workfront >观察记录模块中的最大周期数设置为`10`。
 如果将向Workfront提交100个请求，并且最大周期数字段设置为10，则运行一个方案后仍有90个文件未处理。 在下次计划场景执行中处理接下来的10个文件。
@@ -169,9 +190,7 @@ Workfront >观察记录模块中的最大周期数设置为`10`。
 
 所有文件都在1个场景运行内处理。
 
-您可以在方案详细信息中查看已运行的周期：
-
-![方案详细信息](assets/scenario-detail-350x207.png)
+您可以在“方案详细信息”页面的“历史记录”区域查看已运行的周期。
 
 有关此页面的详细信息，请参阅[方案详细信息](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)。
 
@@ -192,6 +211,34 @@ Workfront >观察记录模块中的最大周期数设置为`10`。
 要为通知类型设置方案级别覆盖，请选中或取消选中通知类型旁边的复选框。
 
 有关通知设置（包括方案级别的覆盖）的信息，请参阅[设置通知选项](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/set-up-orgs-teams-and-users/set-team-notification-options.md)。
+
+### 临时调试日志
+
+>[!NOTE]
+>
+>* 临时调试日志仅在新的方案设计器中可用，并且仅在您的组织启用该功能时才可用。
+>* 更改设置需要编辑方案的权限。
+
+对于每次计划运行或触发运行，请求和响应详细信息都不会保留，因为它们占用大量存储。 运行一次会始终保留它们。
+
+要收集方案定期运行的请求和响应详细信息，请选择收集时间长度：
+
+* 在接下来的1小时
+* 对于接下来的1天
+* 用于下一次运行
+* 对于接下来的10次运行
+
+这种变化立刻生效。 您无需保存场景。
+
+当临时调试日志打开时，此设置显示它们何时保持打开状态或剩余运行次数。 若要在此之前停止收集请求和响应详细信息，请单击&#x200B;**关闭**。
+
+调试日志会在运行时间或次数用完时自动关闭。 每次运行计数，包括未找到新数据的计划运行。
+
+>[!NOTE]
+>
+>临时调试日志仅在新Experience中可用，并且仅在为您的组织启用该功能时才可用。 要更改此设置，您必须具有编辑方案的权限。
+
+<!-- BECKY CHECK ME: section added from the 10/23/26 release notes. Confirm the exact option labels, where the setting sits in the panel (I placed it before Worker pool), and the access requirement wording. Add a screenshot. -->
 
 ### 工作线程池
 

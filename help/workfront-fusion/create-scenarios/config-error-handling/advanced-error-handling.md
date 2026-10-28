@@ -11,14 +11,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '886'
-ht-degree: 12%
+source-wordcount: '950'
+ht-degree: 11%
 ---
 # 为错误处理路由添加筛选和嵌套
 
 您可以通过包括筛选和嵌套将高级错误处理技术添加到错误处理路由中。
+
+>[!NOTE]
+>
+>Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡期间，经典体验和新体验均可用，您可以随时在它们之间切换。 我们建议使用新Experience。 有关详细信息，请参阅文章场景编辑器中的[新体验和经典体验](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)。
 
 ## 访问权限要求
 
@@ -74,7 +78,13 @@ ht-degree: 12%
 
 ### 示例：使用过滤器处理错误
 
+<!-- BECKY CHECK ME: this example scenario (through the end of the Nesting example below) is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience (recommend using Workfront modules instead of Dropbox, consistent with other rebuilt articles) - not just new screenshots of this same Dropbox scenario. Flagging only, not editing - see tracking spreadsheet. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>此示例使用经典场景编辑器。
 
 此示例场景显示这些过滤器如何用于错误处理。
 
@@ -122,7 +132,13 @@ Dropbox > List all files in a folder模块配置为返回目标文件夹中的�
 
 可以在所有模块上（路由器除外）创建和配置错误处理程序路由。 因此，您可以为已经是现有错误处理程序路由一部分的模块创建错误处理程序路由。
 
+<!-- BECKY CHECK ME: this example scenario is built and illustrated entirely in the classic experience. It needs a new example scenario built in the new experience - see the flag on the "Example: Error handling with filters" example above. -->
+
 >[!BEGINSHADEBOX]
+
+>[!NOTE]
+>
+>此示例使用经典场景编辑器。
 
 示例：
 

@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '513'
-ht-degree: 17%
+source-wordcount: '563'
+ht-degree: 16%
 ---
 # 将模块移动到链
 
@@ -21,6 +21,10 @@ ht-degree: 17%
 >此功能位于Beta中，不建议用于任务关键型生产工作流。 作为Beta功能，行为可能会发生更改，并且可能无法完全处理边缘情况。
 
 您可以选择方案中的一组模块并将它们移动到新的链接方案中，而无需手动重新创建映射或数据结构。 这提供了一种将大型场景模块化的简单方法。
+
+>[!NOTE]
+>
+>Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡期间，经典体验和新体验均可用，您可以随时在它们之间切换。 我们建议使用新Experience。 有关详细信息，请参阅文章场景编辑器中的[新体验和经典体验](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)。
 
 将一组模块移动到链中时，Workfront Fusion：
 

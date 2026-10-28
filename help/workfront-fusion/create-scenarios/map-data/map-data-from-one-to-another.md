@@ -14,7 +14,7 @@ feature_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 17%
@@ -75,7 +75,7 @@ ht-degree: 17%
    搜索结果包含搜索词且不区分大小写。
 1. 要选择某个值，该值是某个收集的一个要素，请单击该收集旁边的箭头，然后在该要素出现时选择该要素。
 
-   ![收藏集元素](assets/collection-dropdown.png)
+   ![收藏集元素](/help/workfront-fusion/get-started-with-fusion/understand-fusion/assets/new-collection-dropdown.png)
 
 1. 单击映射面板中的项以将其插入到字段中。
 

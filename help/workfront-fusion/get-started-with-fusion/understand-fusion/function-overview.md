@@ -13,7 +13,7 @@ feature_v2:
     internal-label: APIs
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 59%
@@ -44,7 +44,7 @@ Workfront Fusion包含内置函数，可让您创建简单或复杂的公式。 
 | **日期和时间** <br> ![日期和时间函数](assets/toolbar-icon-date-time-functions.png) | <ul><li>[日期和时间函数](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[日期和时间格式化标记](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [日期和时间解析标记](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **用于处理数组的函数**<br> ![数组函数](assets/toolbar-icon-functions-for-arrays.png) | [数组函数](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
 
-![函数工具栏](assets/functions-toolbar-350x189.png)
+![函数工具栏](assets/new-functions-toolbar.png)
 
 ## 自定义函数
 
@@ -52,4 +52,4 @@ Workfront Fusion包含内置函数，可让您创建简单或复杂的公式。 
 
 由于自定义函数可通过Adobe App Builder使用，因此您的组织必须具有Adobe App Builder许可证才能使用它们。
 
-有关自定义函数的信息和说明，请参阅使用自定义函数访问数据。
+有关自定义函数的信息和说明，请参阅[使用自定义函数映射数据](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md)。

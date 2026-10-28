@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '583'
 ht-degree: 18%
 ---
 # 场景详细信息概述
@@ -59,11 +59,11 @@ ht-degree: 18%
 
    或
 
-   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](assets/exit-editing-arrow.png)。
+   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png)。
 
 1. 在显示的页面上，您可以查看下表中列出的元素：
 
-   ![方案详细信息](assets/scenario-detail-350x207.png)
+   ![方案详细信息](assets/new-scenario-detail.png)
 
    <table style="table-layout:auto"> 
     <col> 
@@ -111,9 +111,11 @@ ht-degree: 18%
       <td role="rowheader">[!UICONTROL 选项]</td> 
       <td> <p>此菜单为您提供了额外的选项，无需打开场景编辑器。 这些功能包括：</p> 
        <ul> 
+        <li>[!UICONTROL 解锁执行]</li> 
         <li>[!UICONTROL 计划]</li> 
         <li>[!UICONTROL 重命名]</li> 
         <li>[!UICONTROL 克隆]</li> 
+        <li>[!UICONTROL 克隆作为模板]</li> 
         <li>[!UICONTROL Delete]</li> 
        </ul> </td> 
      </tr> 

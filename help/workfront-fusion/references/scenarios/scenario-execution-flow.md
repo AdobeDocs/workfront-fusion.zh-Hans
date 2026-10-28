@@ -12,14 +12,18 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 1%
+source-wordcount: '821'
+ht-degree: 0%
 ---
 # 场景执行流程
 
 本文介绍了场景如何执行以及数据流经场景以及如何查看每个模块处理的数据。
+
+>[!NOTE]
+>
+>Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡期间，经典体验和新体验均可用，您可以随时在它们之间切换。 我们建议使用新Experience。 有关详细信息，请参阅文章场景编辑器中的[新体验和经典体验](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)。
 
 要查看数据如何流经活动方案，请参阅[查看正在运行方案中的数据流](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)。
 
@@ -43,7 +47,7 @@ ht-degree: 1%
 
 如果第一个模块返回一个捆绑包，则该捆绑包将传递场景的其余部分。 在此示例中，捆绑包将转到第二个模块，后者将请求转换为项目。
 
-![Workfront场景的执行流程](assets/example-execution-flow-wf-only.png)
+![Workfront场景的执行流程](assets/new-example-execution-flow-wf-only.png)
 
 >[!ENDSHADEBOX]
 
@@ -51,13 +55,13 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-**示例：**&#x200B;在这种从Adobe Workfront下载文档并将文档发送到[!DNL Dropbox]中的文件夹的情况中，数据将按如下方式流动：
+**示例：**&#x200B;在这种情况下，从Adobe Workfront下载文档并将它们发送到[!DNL Dropbox]中的文件夹中，数据将按如下方式流动：
 
 场景的第一步由第一个模块执行，即在Workfront中查看文档。 找到的每个文档都被视为一个捆绑包。 如果模块运行时未找到任何捆绑包，则场景将在第一个模块后结束。
 
 如果返回一个束，则该束将通过场景的其余部分。 在此示例中，方案的其余部分由第二个模块组成，该模块将包上载到[!DNL Dropbox]文件夹。
 
-![集成方案的执行流程](assets/example-execution-flow-wf-dropbox.png)
+![集成方案的执行流程](assets/new-example-execution-flow-wf-dropbox.png)
 
 如果第一个模块返回多个包，则在上传第二个包之前，会将第一个包上传到[!DNL Dropbox]。 然后，第二个包上传，第三个包上传，依此类推。
 
@@ -78,7 +82,7 @@ ht-degree: 1%
 
 场景运行完成后，每个模块会显示一个图标，其中显示了执行的操作数。 您可以单击此图标以显示有关进程中每个步骤的已处理捆绑的详细信息。 您可以查看使用了哪些模块设置以及每个模块返回的包。
 
-![已处理的包](assets/Info-processed-bundles.png)
+![已处理的包](assets/new-Info-processed-bundles.png)
 
 在此示例中，模块接收了如下输入信息：
 

@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '774'
 ht-degree: 3%
 ---
 # 创建场景的工作流程
@@ -152,11 +152,13 @@ ht-degree: 3%
    <td>Ctrl+Shift+Enter</td> 
    <td>Cmd+Shift+Enter</span> </td> 
   </tr> 
+<!--
   <tr> 
-   <td role="rowheader">[!UICONTROL 打开DevTool]</td> 
+   <td role="rowheader">[!UICONTROL Open the DevTool]</td> 
    <td>F12</td> 
    <td>Ctrl+Fn+F12</span> </td> 
   </tr> 
+-->
   <tr> 
    <td role="rowheader">[!UICONTROL 选择多个模块]</td> 
    <td>Shift +拖动</td> 
