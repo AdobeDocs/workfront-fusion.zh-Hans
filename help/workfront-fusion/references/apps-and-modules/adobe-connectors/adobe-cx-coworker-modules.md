@@ -129,16 +129,16 @@ ht-degree: 6%
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL Include原始结果] <i>（可选，高级）</i></td> 
+   <td>[!UICONTROL Include原始结果] <i>（可选，高级）</i></td> 
    <td> <p>此选项默认处于关闭状态。 在输出中包含完整的同事响应。 响应可能包含敏感信息。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 连接]</td> 
-   <td> <p>选择您在原始<b>[！UICONTROL运行提示]</b>执行中使用的相同连接。</p> </td> 
+   <td> <p>选择您在原始<b>[!UICONTROL 运行提示]</b>执行中使用的相同连接。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL任务ID]</td> 
-   <td> <p>映射<b>[！UICONTROL返回的任务ID运行提示]</b>。 与返回的内容完全相同，保留为文本。</p> </td> 
+   <td>[!UICONTROL 任务ID]</td> 
+   <td> <p>映射<b>[!UICONTROL 返回的任务ID运行提示]</b>。 与返回的内容完全相同，保留为文本。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -158,15 +158,15 @@ ht-degree: 6%
    <td> <p>选择您的同事连接。 有关说明，请参阅本文中的<a href="#connect-adobe-cx-coworker-to-workfront-fusion" class="MCXref xref">将Adobe CX Enterprise Coworker连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL用户提示]</td> 
+   <td>[!UICONTROL 用户提示]</td> 
    <td> <p>输入您的说明。 您可以使用早期模块中的多行并映射信息。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL等待完成] <i>（可选，高级）</i></td> 
+   <td>[!UICONTROL 等待完成] <i>（可选，高级）</i></td> 
    <td> <p>此选项默认处于打开状态。 如果希望模块等待任务完成或需要注意，请启用此选项。 将其关闭以立即返回初始结果。</p><p>有关详细信息，请参阅本文中的<a href="#wait-for-completion">等待完成</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL Include原始结果] <i>（可选，高级）</i></td> 
+   <td>[!UICONTROL Include原始结果] <i>（可选，高级）</i></td> 
    <td> <p>此选项默认处于关闭状态。 如果您希望模块在输出中包含完整的同事响应，请启用此选项。 响应可能包含敏感信息。</p> </td> 
   </tr> 
  </tbody> 
@@ -198,11 +198,11 @@ ht-degree: 6%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[！UICONTROL任务ID]</td> 
-   <td> <p>标识任务。 当同事提供即时答案而不创建任务时，此项为空。 将此值与<b>[！UICONTROL Get Execution Status]</b>一起使用。</p> </td> 
+   <td role="rowheader">[!UICONTROL 任务ID]</td> 
+   <td> <p>标识任务。 当同事提供即时答案而不创建任务时，此项为空。 将此值与<b>[!UICONTROL Get Execution Status]</b>一起使用。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL上下文ID]</td> 
+   <td role="rowheader">[!UICONTROL 上下文ID]</td> 
    <td> <p>标识对话。 它不是继续对话的输入。</p><p>有关详细信息，请参阅本文中的<a href="#use-previous-answers">使用以前的答案</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -210,24 +210,24 @@ ht-degree: 6%
    <td> <p>当前任务状态。 请参阅本文中的<a href="#task-states" class="MCXref xref">任务状态</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL已完成]</td> 
+   <td role="rowheader">[!UICONTROL 已完成]</td> 
    <td> <p>当任务完成或同事提供即时答案时为True。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL需要注意]</td> 
+   <td role="rowheader">[!UICONTROL 需要注意]</td> 
    <td> <p>当同事需要输入或授权时为True。</p><p>有关详细信息，请参阅本文中的<a href="#requests-that-need-attention">需要注意的请求</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL最终助理文本]</td> 
+   <td role="rowheader">[!UICONTROL 最终助理文本]</td> 
    <td> <p>任务完成时的最终答案。 当任务处于待处理状态或需要注意时，此项为空。 已完成的响应也可能没有应答文本。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL文本构件（可能包括中间文本）]</td> 
+   <td role="rowheader">[!UICONTROL 文本构件（可能包括中间文本）]</td> 
    <td> <p>工作期间返回的文本。 每个项目都可以包括工件ID、名称和文本。 这些项目不一定是最终答案。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[！UICONTROL原始结果（选择加入）]</td> 
-   <td> <p>完整响应。 仅当<b>[！UICONTROL Include Raw result]</b>处于打开状态时，才会包含此项。</p> </td> 
+   <td role="rowheader">[!UICONTROL 原始结果（选择加入）]</td> 
+   <td> <p>完整响应。 仅当<b>[!UICONTROL Include Raw result]</b>处于打开状态时，才会包含此项。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -258,15 +258,15 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td role="rowheader"><code>submitted</code>, <code>working</code></td> 
-   <td> <p>任务待处理。 <b>[！UICONTROL已完成]</b>为false。 <b>[！UICONTROL运行提示]</b>在等待时继续等待。 否则，请保存任务ID并稍后检查。</p> </td> 
+   <td> <p>任务待处理。 <b>[!UICONTROL 已完成]</b>为false。 <b>[!UICONTROL 运行提示]</b>在等待时继续等待。 否则，请保存任务ID并稍后检查。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"><code>completed</code></td> 
-   <td> <p><b>[！UICONTROL已完成]</b>为true。 查看<b>[！UICONTROL最终助理文本]</b>和预期的结果。</p> </td> 
+   <td> <p><b>[!UICONTROL 已完成]</b>为true。 查看<b>[!UICONTROL 最终助理文本]</b>和预期的结果。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"><code>input-required</code>, <code>auth-required</code></td> 
-   <td> <p>这个任务需要注意。 <b>[！UICONTROL已完成]</b>为false，<b>[！UICONTROL需要注意]</b>为true。 等待停止。 将结果传送给人工审核。</p> </td> 
+   <td> <p>这个任务需要注意。 <b>[!UICONTROL 已完成]</b>为false，<b>[!UICONTROL 需要注意]</b>为true。 等待停止。 将结果传送给人工审核。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"><code>failed</code>, <code>canceled</code>, <code>rejected</code></td> 
@@ -341,7 +341,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td role="rowheader">状态检查失败</td> 
-   <td> <p>如果错误包括已接受的任务ID，请使用<b>[！UICONTROL Get Execution Status]</b>调查该任务。 不要自动重新启动提示。</p> </td> 
+   <td> <p>如果错误包括已接受的任务ID，请使用<b>[!UICONTROL Get Execution Status]</b>调查该任务。 不要自动重新启动提示。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">运行提示超时或失去响应</td> 
