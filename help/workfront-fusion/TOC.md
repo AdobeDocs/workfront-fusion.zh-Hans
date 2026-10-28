@@ -3,10 +3,10 @@ user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
 nudge: true
-source-git-commit: d31db4d825746ac3e7b19cd8f7efcc593bc03bf7
+source-git-commit: e4bc75f0536c96896254f97d276a88b7a1aa18ce
 workflow-type: tm+mt
-source-wordcount: '2752'
-ht-degree: 48%
+source-wordcount: '2791'
+ht-degree: 47%
 ---
 
 # Adobe Workfront Fusion 文档 {#using}
@@ -15,6 +15,7 @@ ht-degree: 48%
 * Fusion 发行活动 {#fusion-release-activity}
   * [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Fusion版本 — 2026 {#fusion-releases-2026}
+    * [Workfront Fusion发行活动： 2026年10月26日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-26.md)
     * [Workfront Fusion发行活动： 2026年10月19日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-19.md)
     * [Workfront Fusion发行活动： 2026年10月12日起的一周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-12.md)
     * [Workfront Fusion发行活动： 2026年10月5日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-10-5.md)
@@ -265,6 +266,7 @@ ht-degree: 48%
     * [向场景添加AI提示](/help/workfront-fusion/create-scenarios/add-modules/add-an-ai-prompt-to-your-scenario.md)
     * {hide-from-toc}[使用AI生成场景区段](/help/workfront-fusion/create-scenarios/add-modules/add-a-module-with-ai.md)
     * [复制模块或场景](/help/workfront-fusion/create-scenarios/add-modules/copy-modules-or-scenarios.md)
+    * [保存和重用包含代码片段的方案部分](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md)
     * [使用 Adobe Workfront Fusion 模板创建场景](/help/workfront-fusion/create-scenarios/add-modules/create-scenarios-with-fusion-templates.md)
     * [使用 cURL 添加 HTTP 模块](/help/workfront-fusion/create-scenarios/add-modules/use-curl-create-http.md)
     * [为未提供连接器的 Web 服务配置 Webhook](/help/workfront-fusion/create-scenarios/add-modules/receive-a-webhook-from-a-web-service.md)
@@ -306,6 +308,8 @@ ht-degree: 48%
   * [管理连接](/help/workfront-fusion/manage-scenarios/manage-connections.md)
   * [激活或停用场景](/help/workfront-fusion/manage-scenarios/activate-deactivate-scenarios.md)
   * [调试场景](/help/workfront-fusion/manage-scenarios/debug-a-scenario.md)
+  * [使用Live Trail查看场景运行](/help/workfront-fusion/manage-scenarios/live-trail.md)
+  * [在场景中查找和替换变量、源和连接](/help/workfront-fusion/manage-scenarios/find-and-replace.md)
   * [恢复场景版本](/help/workfront-fusion/manage-scenarios/restore-a-scenario-version.md)
   * [将模块更新到新版本](/help/workfront-fusion/manage-scenarios/update-module-to-new-version.md)
   * [管理锁定的场景](/help/workfront-fusion/manage-scenarios/view-manage-locked-scenario.md)
@@ -316,7 +320,7 @@ ht-degree: 48%
   * [将模块移动到链](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [查看运行中场景的数据流](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [查看 Webhook 队列](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront Fusion中的AI助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * Workfront Fusion中的{hide-from-toc}[AI助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [运行场景评分专家](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [删除场景元素](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [从方案区域管理方案](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
@@ -405,6 +409,7 @@ ht-degree: 48%
       * [Adobe Campaign 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-campaign-classic-connector.md)
       * [Adobe Content Tagger模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/content-tagging-modules.md)
       * [Adobe Creative Cloud Libraries 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/creative-cloud-libraries-modules.md)
+      * [Adobe CX Enterprise Coworker模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-cx-coworker-modules.md)
       * [Adobe Experience Manager Assets 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-assets-modules.md)
       * [Adobe Experience Manager Forms 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-forms-modules.md)
       * [Adobe Experience Manager MCP模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)
