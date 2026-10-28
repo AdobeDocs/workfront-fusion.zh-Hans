@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 13%
@@ -55,7 +55,7 @@ Adobe Workfront Fusion当前不提供`retry`错误处理指令，但有两种变
 
 Workfront Fusion当前不提供`retry`错误处理指令。 使用以下变通方法之一来模拟重试功能。
 
-有关说明，请参阅错误处理[&#128279;](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的指令。
+有关说明，请参阅错误处理](/help/workfront-fusion/references/errors/directives-for-error-handling.md)的[指令。
 
 * [使用Break指令](#use-the-break-directive)
 * [使用中继器模块](#use-the-repeater-module)
@@ -115,7 +115,7 @@ Break指令执行时，场景执行的状态存储在未完成执行的队列中
 
 在此示例方案中，[!UICONTROL HTTP] > [!UICONTROL 发出请求]模块表示可能失败的模块：
 
-![HTTP发出请求](assets/http-make-request.png)
+![HTTP发出请求](assets/new-http-make-request.png)
 
 >[!ENDSHADEBOX]
 

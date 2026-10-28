@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '583'
 ht-degree: 18%
 ---
 # 场景详细信息概述
@@ -59,27 +59,27 @@ ht-degree: 18%
 
    或
 
-   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](assets/exit-editing-arrow.png)。
+   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](/help/workfront-fusion/manage-scenarios/assets/new-exit-editing-arrow.png)。
 
 1. 在显示的页面上，您可以查看下表中列出的元素：
 
-   ![方案详细信息](assets/scenario-detail-350x207.png)
+   ![方案详细信息](assets/new-scenario-detail.png)
 
    <table style="table-layout:auto"> 
     <col> 
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 模块图] </td> 
+      <td role="rowheader">[！UICONTROL模块图] </td> 
       <td>此选项卡显示方案的可视表示形式。 此图表与您在方案编辑器中看到的图表相同。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL Reports]选项卡 </td> 
+      <td role="rowheader">[！UICONTROL Reports]选项卡 </td> 
       <td> <p>打开此选项卡，查看此方案在过去30天内执行的操作数的图表。</p>  </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL History]选项卡 </td> 
-      <td> <p>打开此选项卡可查看方案的历史记录，包括对方案所做的编辑。 </p> <p>[!UICONTROL 历史记录]选项卡还提供了每次运行的场景执行历史记录，其中包括以下内容：</p> 
+      <td role="rowheader">[！UICONTROL History]选项卡 </td> 
+      <td> <p>打开此选项卡可查看方案的历史记录，包括对方案所做的编辑。 </p> <p>[！UICONTROL历史记录]选项卡还提供了每次运行的场景执行历史记录，其中包括以下内容：</p> 
        <ul> 
         <li>每次运行的状态（成功或错误）</li> 
         <li>运行持续时间</li> 
@@ -89,7 +89,7 @@ ht-degree: 18%
        </ul> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 未完成的执行]</td> 
+      <td role="rowheader">[！UICONTROL未完成的执行]</td> 
       <td> <p>此选项卡提供有关场景的所有未完成执行的信息。 它包含每个未完成运行的以下信息：</p> 
        <ul> 
         <li>创建日期</li> 
@@ -100,29 +100,31 @@ ht-degree: 18%
        </ul> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 激活方案] （打开/关闭按钮）</td> 
+      <td role="rowheader">[！UICONTROL激活方案] （打开/关闭按钮）</td> 
       <td>场景创建后需要激活，才能根据其计划执行。 通过单击右上角附近的打开/关闭按钮，您可以激活或停用方案。 启用后，场景将根据其计划运行。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 编辑]</td> 
+      <td role="rowheader">[！UICONTROL编辑]</td> 
       <td>单击方案图以打开方案编辑器并对方案进行更改。</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 选项]</td> 
       <td> <p>此菜单为您提供了额外的选项，无需打开场景编辑器。 这些功能包括：</p> 
        <ul> 
-        <li>[!UICONTROL 计划]</li> 
-        <li>[!UICONTROL 重命名]</li> 
-        <li>[!UICONTROL 克隆]</li> 
-        <li>[!UICONTROL Delete]</li> 
+        <li>[！UICONTROL解锁执行]</li> 
+        <li>[！UICONTROL计划]</li> 
+        <li>[！UICONTROL重命名]</li> 
+        <li>[！UICONTROL克隆]</li> 
+        <li>[！UICONTROL克隆作为模板]</li> 
+        <li>[！UICONTROL Delete]</li> 
        </ul> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[!UICONTROL 当前正在运行]</td> 
+      <td role="rowheader">[！UICONTROL当前正在运行]</td> 
       <td>此区域显示与当前正在运行的执行相关的信息。</td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL History]面板</p> <p> </p> </td> 
+      <td role="rowheader"> <p>[！UICONTROL History]面板</p> <p> </p> </td> 
       <td> <p>此区域显示与方案上次运行相关的信息。 对于每次运行，它都会显示：</p> 
        <ul> 
         <li>运行日期</li> 
@@ -133,11 +135,11 @@ ht-degree: 18%
        </ul> </td> 
      </tr> 
          <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Events]面板</p>  </td> 
+      <td role="rowheader"> <p>[！UICONTROL Events]面板</p>  </td> 
       <td>此区域显示与方案相关的事件信息。  </td> 
      </tr> 
      <tr> 
-      <td role="rowheader"> <p>[!UICONTROL Processing banner]</p>  </td>
+      <td role="rowheader"> <p>[！UICONTROL Processing banner]</p>  </td>
 
    <td>如果方案最近已执行，您可能会看到一条横幅，上面写着：<p><code>Data is still being processed. Only partial scenario history will show until processing is complete.</code></p>这会在执行详细信息写入存储时显示。 在场景执行后立即进行处理。 并且持续时间不应超过几分钟。 处理执行时，场景执行的详细信息可能不可见。</td> 
      </tr> 

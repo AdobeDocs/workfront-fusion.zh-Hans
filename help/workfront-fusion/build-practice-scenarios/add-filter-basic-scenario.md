@@ -10,15 +10,15 @@ exl-id: 78ab27fe-e2dd-4b52-b986-77b4b7ea3b5e
 TQID: https://experienceleague.adobe.com/KEVVlHp7OzsV6SJHNdJaUgI6GGiBX9abWqD6U6fiiB0
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
 feature_v2:
   - id: f48b5020-b9cd-4d99-bc6e-42c35e90c1f8
-source-git-commit: 219b9dbf3a7e4be1676b21bc3d3752d70d743b13
+    internal-label: Integrations
+source-git-commit: 4cd8b43e9ce9a16aca16397ce140cdd2467bf7d4
 workflow-type: tm+mt
-source-wordcount: 617
-ht-degree: 17%
-
+source-wordcount: '1072'
+ht-degree: 9%
 ---
-
 # 向基础场景添加筛选条件
 
 通过过滤器，您可以确保场景仅在满足某些条件时推进。
@@ -29,7 +29,8 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->Workfront触发器模块包括过滤器，这些过滤器允许仅在满足某些条件时才启动方案。 但是，由于模块间过滤器用于每个非触发器和非Workfront用例，因此了解如何在模块之间使用过滤器非常重要。 此示例将模块间过滤器用于可能与模块内过滤器相符的功能。
+>* Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡期间，经典体验和新体验均可用，您可以随时在它们之间切换。 我们建议使用新Experience。 有关详细信息，请参阅文章场景编辑器中的[新体验和经典体验](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)。
+>* Workfront触发器模块包括过滤器，这些过滤器允许仅在满足某些条件时才启动方案。 但是，由于模块间过滤器用于每个非触发器和非Workfront用例，因此了解如何在模块之间使用过滤器非常重要。 此示例将模块间过滤器用于可能与模块内过滤器相符的功能。
 
 ## 访问权限要求
 
@@ -64,7 +65,11 @@ ht-degree: 17%
 
 在执行此过程之前，您必须先创建[创建基本方案](/help/workfront-fusion/build-practice-scenarios/create-basic-scenario.md)中所述的方案。
 
-## 添加筛选器
+## 在新体验中添加过滤器（推荐）
+
+* [准备添加过滤器](#prepare-to-add-the-filter)
+* [添加并配置过滤器](#add-and-configure-the-filter)
+* [测试和激活](#test-and-activate)
 
 ### 准备添加过滤器
 
@@ -85,16 +90,78 @@ ht-degree: 17%
 ### 添加并配置过滤器
 
 1. 返回到方案编辑器中的方案。
+1. 用左键单击第一个模块和第二个模块之间的路径。
+
+   将打开&#x200B;**[!UICONTROL 设置过滤器]**&#x200B;窗口。
+
+1. 在标签字段中，输入此过滤器的标签，如“过滤请求队列”。
+1. 在&#x200B;**Condition**&#x200B;区域的顶部字段中，映射第一个模块中的`projectID`。
+
+   ![映射项目ID](assets/new-map-in-filter.png)
+
+1. 将&#x200B;**Condition**&#x200B;运算符保留为Equal to。
+1. 在&#x200B;**条件**&#x200B;区域的底部字段中，粘贴您从[准备添加筛选器](#prepare-to-add-the-filter)的项目URL中记录的项目ID。
+1. 单击&#x200B;**确定**&#x200B;以保存筛选器设置。
+
+### 测试和激活
+
+1. 转到Fusion所连接到的Workfront环境，并将问题添加到您在筛选器中指定的项目。 将另一个问题添加到其他项目。
+1. 单击&#x200B;**[!UICONTROL 运行一次]**&#x200B;图标。
+
+   运行一次在新版Experience中是仅用于图标的。 将鼠标悬停在该图标上可查看&#x200B;**[!UICONTROL 运行一次]**&#x200B;工具提示。
+
+   ![运行方案按钮](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/run-once-new.png)
+
+1. 检查输出以确保方案按预期运行。
+
+   这两个问题都应该显示在第一个模块的输出中，但只有指定项目中的问题应该显示为第二个模块的输入。
+1. 如果您对方案按预期工作感到满意，请单击&#x200B;**计划**&#x200B;切换到&#x200B;**开启**。
+
+   这将激活方案。
+
+   ![计划切换](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/scheduling-new.png)
+
+1. 单击“控件”区域中的&#x200B;**保存**&#x200B;图标![保存图标](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/assets/save-icon-new.png)以保存方案进度。
+
+   >[!IMPORTANT]
+   >
+   >在磨练和测试场景时经常保存。 您可能需要在Workfront帐户中创建新问题以触发场景。
+
+## 在经典体验中添加筛选器
+
+* [准备添加过滤器(Classic)](#prepare-to-add-the-filter-classic)
+* [添加并配置过滤器（经典）](#add-and-configure-the-filter-classic)
+* [测试和激活(Classic)](#test-and-activate-classic)
+
+### 准备添加过滤器(Classic)
+
+1. 打开方案。
+1. 单击第一个模块以将其打开。
+1. 在&#x200B;**输出**&#x200B;区域，选择`Project`。
+您现在应该已选择`ID`、`Name`和`Project`。
+1. 单击确定以保存模块设置。
+1. 打开Workfront。
+1. 在Workfront中，找到表示Fusion场景将使用的请求队列的项目。
+
+   此项目必须位于为Fusion连接设置的Workfront帐户中。
+
+1. 在URL中记下项目ID。
+
+   示例： https://\&lt;MyDomain\>.my.workfront.com/project/\&lt;ProjectID\>/tasks
+
+### 添加并配置过滤器（经典）
+
+1. 返回到方案编辑器中的方案。
 1. 单击第一和第二模块之间的扳手图标![扳手图标](assets/wrench-icon.png)，然后选择&#x200B;**设置过滤器**。
 1. 在标签字段中，输入此过滤器的标签，如“过滤请求队列”。
 1. 在&#x200B;**Condition**&#x200B;区域的顶部字段中，映射第一个模块中的`projectID`。
 
    ![映射项目ID](assets/map-proj-id.png)
 1. 将&#x200B;**Condition**&#x200B;运算符保留为Equal to。
-1. 在&#x200B;**条件**&#x200B;区域的底部字段中，粘贴您从[准备添加筛选器](#prepare-to-add-the-filter)的项目URL中记录的项目ID。
+1. 在&#x200B;**条件**&#x200B;区域的底部字段中，粘贴您从[准备添加筛选器（经典）](#prepare-to-add-the-filter-classic)中的项目URL中记录的项目ID。
 1. 单击&#x200B;**确定**&#x200B;以保存筛选器设置。
 
-### 测试和激活
+### 测试和激活(Classic)
 
 1. 转到Fusion所连接到的Workfront环境，并将问题添加到您在筛选器中指定的项目。 将另一个问题添加到其他项目。
 1. 在方案编辑器的左下角单击&#x200B;**[!UICONTROL 运行一次]**。

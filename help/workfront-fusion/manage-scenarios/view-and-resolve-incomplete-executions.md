@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '580'
 ht-degree: 7%
 ---
 # 查看并解决未完成的执行
@@ -26,9 +26,11 @@ ht-degree: 7%
 >
 >有关方案设置的详细信息，请参阅[配置方案设置](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)。
 
-## 整篇文章的突出显示的预览 {#highlighted-preview-article-level}
+已突出显示完整文章{#highlighted-preview-article-level}的预览
 
-<span class="preview">此页面上的信息引用了尚未公开的功能。 它仅在“预览Sandbox”环境中可用。</span>##查看未完成的执行
+<span class="preview">此页面上的信息引用了尚未公开的功能。 它仅在“预览Sandbox”环境中可用。</span>
+
+## 查看未完成的执行
 
 如果模块在操作过程中遇到错误，则会将新的未完成执行添加到“未完成执行”文件夹。 每个不完整的执行都包含场景的Blueprint以及可以映射到失败模块的所有捆绑包。 通过单击场景详细信息页面上的[!UICONTROL 未完成的执行]选项卡，可以打开未完成的执行列表。
 
@@ -61,7 +63,7 @@ ht-degree: 7%
 1. 打开模块的日志，其中显示了模块的所有操作。
 1. 找到失败的操作，然后单击&#x200B;**[!UICONTROL 解决]**：
 
-   ![解决按钮](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 
 
@@ -75,7 +77,7 @@ ht-degree: 7%
 1. 打开模块的日志，其中显示了模块的所有操作。
 1. 找到失败的操作，然后单击&#x200B;**[!UICONTROL 解决]**：
 
-   ![解决按钮](assets/resolve-btn-350x188.png)
+   <!--![Resolve button](assets/resolve-btn-350x188.png)-->
 
 ## 与未完成执行相关的选项
 

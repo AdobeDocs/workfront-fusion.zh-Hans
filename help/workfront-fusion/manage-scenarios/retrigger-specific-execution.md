@@ -9,7 +9,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 16%
@@ -82,7 +82,7 @@ ht-degree: 16%
 1. 在页面右侧的执行列表中找到要重新触发的执行。
 1. 对该方案单击&#x200B;**重新触发程序**。
 
-从关系图![重新触发程序](assets/retrigger-from-diagram.png)
+从关系图![重新触发程序](assets/new-retrigger-from-diagram.png)
 
 ### 从方案历史记录中重新触发执行
 
@@ -95,7 +95,7 @@ ht-degree: 16%
 1. 找到要重新触发的执行。 如有必要，您可以使用全文搜索来查找它。
 1. 对该方案单击&#x200B;**重新触发程序**。
 
-![从历史记录中重新触发程序](assets/retrigger-from-history.png)
+![从历史记录中重新触发程序](assets/new-retrigger-from-history.png)
 
 ### 从场景执行页面重新触发场景
 
@@ -108,7 +108,7 @@ ht-degree: 16%
 1. 在执行页面上，单击&#x200B;**重新触发程序**。
 
 
-![执行中的重新触发程序](assets/retrigger-from-execution.png)
+![执行中的重新触发程序](assets/new-retrigger-from-execution.png)
 
 
 

@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 25%
+source-wordcount: '446'
+ht-degree: 22%
 ---
 # 管理连接
 
@@ -71,6 +71,10 @@ ht-degree: 25%
 1. （可选）要重新授权连接，请单击该连接行中的&#x200B;**重新授权**。
 1. （可选）要验证与服务的连接是否正常工作，请单击该连接行中的&#x200B;**验证**。
 1. （可选）要删除连接，请单击该连接行中的&#x200B;**删除**，然后单击&#x200B;**是否确定？**。
+
+>[!NOTE]
+>
+>要在场景的模块中使用不同的连接，您可以在场景编辑器中从同一应用程序复制到一个或所有兼容模块的连接。 有关详细信息，请参阅[查找并替换方案中的变量、源和连接](/help/workfront-fusion/manage-scenarios/find-and-replace.md)。
 
 ## 续订连接
 

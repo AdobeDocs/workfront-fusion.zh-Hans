@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '371'
 ht-degree: 27%
 ---
 # 将模块升级到新版本
@@ -74,7 +74,7 @@ ht-degree: 27%
 ## 将非Workfront模块升级到新版本
 
 1. 单击要升级到新版本的模块上的&#x200B;**升级模块**&#x200B;图标![升级图标](assets/upgrade-icon.png)。
-   ![更新图标](assets/update-indicator.png)
+   <!--![Update icon](assets/update-indicator.png)-->
 1. 单击&#x200B;**选择新**。
 1. 选择要替换前一模块的模块。
 1. 使用与现有模块相同的设置配置模块。

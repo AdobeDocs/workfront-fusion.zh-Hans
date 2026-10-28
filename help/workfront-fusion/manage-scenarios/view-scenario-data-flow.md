@@ -11,22 +11,38 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 36%
+source-wordcount: '392'
+ht-degree: 26%
 ---
 # 查看运行中场景的数据流
 
 您可以观看正在运行的场景，以了解数据如何流经该场景。
 
-当场景运行时，活动模块被围绕该模块的增长环标记。 此环只显示模块正在运行，而不显示其进度。 快速运行的模块可能只显示环的一小部分。
+>[!NOTE]
+>
+>Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡期间，经典体验和新体验均可用，您可以随时在它们之间切换。 我们建议使用新Experience。 有关详细信息，请参阅文章场景编辑器中的[新体验和经典体验](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)。
 
-![在模块周围振铃](assets/ring-around-module.png)
+当场景运行时，活动模块会由新版Experience中模块图标上的旋转环来标记，或者由经典Experience中模块周围的生长环来标记。 此环只显示模块正在运行，而不显示其进度。 快速运行的模块可能只显示环的一小部分。
+
+新体验
+
+新版Experience中模块图标上的![旋转环](assets/new-spinning-icon.png)
+
+经典体验
+
+在经典体验中![环绕](assets/ring-around-module.png)模块
 
 运行模块后，将显示输出指示器。
 
-![输出指示器](assets/data-flow-output.png)
+新体验
+
+新体验中的![输出指示器](assets/new-output-indicator.png)
+
+经典体验
+
+传统体验中的![输出指示器](assets/data-flow-output.png)
 
 如果模块处理多个缓冲区，则每个已处理的捆绑都会出现环状，并且输出指示符会将其输出的每个捆绑累计。
 
@@ -65,6 +81,7 @@ ht-degree: 36%
 
 1. 单击左侧面板中的&#x200B;**[!UICONTROL 方案]**&#x200B;选项卡。
 1. 选择要查看数据流的方案。
+1. 单击方案上的任意位置以进入方案编辑器。
 1. 如果方案未运行，请激活它或单击&#x200B;**运行一次**&#x200B;以开始方案执行。
 1. 选择要在执行历史记录面板的“当前正在运行”部分中查看的执行。
 

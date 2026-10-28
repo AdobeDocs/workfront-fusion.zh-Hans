@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 12%
+source-wordcount: '987'
+ht-degree: 11%
 ---
 # 查看场景的执行历史
 
@@ -26,7 +26,13 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->方案的历史记录显示方案在过去30天内的所有执行。
+>* 方案的历史记录显示方案在过去30天内的所有执行。
+>* 在新Experience中，方案编辑器还具有“执行历史记录”面板。 它显示每次运行的状态、持续时间、操作和数据大小。 在此，您可以：
+>
+>   * 按状态筛选
+>   * 搜索事件
+>   * 使用&#x200B;**Previous**&#x200B;和&#x200B;**Next**&#x200B;在两次运行之间移动，而不返回执行列表
+>   * 选择要居中的事件，并在画布上突出显示匹配的模块。 当操作详细信息可用时，将为该事件打开请求和响应面板。
 
 ## 访问权限要求
 
@@ -72,14 +78,14 @@ ht-degree: 12%
 
    或
 
-   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](assets/exit-editing-arrow.png)。
+   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](assets/new-exit-editing-arrow.png)。
 
 1. 单击方案名称附近的&#x200B;**历史记录**。
    ![历史记录选项卡](assets/history-tab.png)
 
    针对方案的每次执行都列出了以下详细信息：
 
-   * 运行开始日期&#x200B;**&#x200B;**
+   * 运行开始日期&#x200B;****
    * 执行Id
    * **[!UICONTROL 状态]** （成功或失败）
    * 运行&#x200B;**[!UICONTROL 持续时间]**
@@ -103,7 +109,7 @@ ht-degree: 12%
 
    或
 
-   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](assets/exit-editing-arrow.png)。
+   如果您在方案编辑器中处理方案，请单击窗口左上角附近的左箭头![退出编辑箭头](assets/new-exit-editing-arrow.png)。
 
 1. 单击右侧面板中的&#x200B;**[!UICONTROL 历史记录]**&#x200B;选项卡。
 1. （可选）有关所选方案运行的详细信息，请单击右侧面板中的执行。
@@ -120,7 +126,7 @@ ht-degree: 12%
 
 您可以过滤执行历史记录以仅查看具有指定值的执行。
 
-1. 打开方案的全页历史记录，如本文中[!UICONTROL 历史记录]选项卡[&#128279;](#view-scenario-history-on-the-history-tab)上的查看方案执行历史记录中所述。
+1. 打开方案的全页历史记录，如本文中[!UICONTROL 历史记录]选项卡](#view-scenario-history-on-the-history-tab)上的[查看方案执行历史记录中所述。
 1. 单击要作为筛选依据的列标题中的[!UICONTROL 筛选器]图标![方案筛选器图标](assets/fusion-scenario-filter-icon.png)。
 1. 在[!UICONTROL 筛选器]对话框中，输入筛选依据的值。
 1. 单击&#x200B;**[!UICONTROL 保存]**。
@@ -140,7 +146,7 @@ You can sort the scenario execution history.
 
 ## 搜索场景的所有执行
 
-1. 打开方案的全页历史记录，如本文中[!UICONTROL 历史记录]选项卡[&#128279;](#view-scenario-history-on-the-history-tab)上的查看方案执行历史记录中所述。
+1. 打开方案的全页历史记录，如本文中[!UICONTROL 历史记录]选项卡](#view-scenario-history-on-the-history-tab)上的[查看方案执行历史记录中所述。
 1. 单击执行列表顶部的&#x200B;**[!UICONTROL 全文搜索]**。
 
    或

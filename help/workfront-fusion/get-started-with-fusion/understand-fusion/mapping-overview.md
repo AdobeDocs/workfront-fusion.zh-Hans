@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 96%
+source-wordcount: '488'
+ht-degree: 75%
 ---
 # 映射概述
 
@@ -23,6 +23,10 @@ ht-degree: 96%
 模块运行后会生成零个、一个或多个捆绑包作为输出。 捆绑包由一个或多个项目组成。
 
 您可以将这些项目映射到后续模块的字段中。
+
+>[!NOTE]
+>
+>Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡期间，经典体验和新体验均可用，您可以随时在它们之间切换。 我们建议使用新Experience。 有关详细信息，请参阅文章场景编辑器中的[新体验和经典体验](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)。
 
 当您点击场景中可插入前一模块输出值的字段时，映射面板会随即显示。 您可以在此选择要映射的项目。 映射可包含以下一种或多种内容：
 
@@ -37,15 +41,15 @@ ht-degree: 96%
 
 单个项目
 
-![映射单个项目](assets/map-single.png)
+![映射单个项目](assets/new-map-single.png)
 
 多个项目与文本组合
 
-![映射多个项目](assets/map-multiple-with-text.png)
+![映射多个项目](assets/new-map-multiple-with-text.png)
 
 包含多个项目与文本的函数
 
-![映射包含文本的公式](assets/map-formula-with-text.png)
+![映射包含文本的公式](assets/new-map-formula-with-text.png)
 
 
 >[!ENDSHADEBOX]
@@ -61,11 +65,11 @@ ht-degree: 96%
 
 当您点击一个可映射数据的字段时，映射面板会自动打开。
 
-第一个标签页![从其他模块映射](assets/toolbar-icon-functions-you-map-from-other-modules.png)会显示可从其他模块映射的项目。
+第一个选项卡显示可从其他模块映射的项目。
 
 其他标签页包含可用于创建公式的函数、运算符和关键字。 这些内容会根据其处理的数据类型分组到不同的标签页中。
 
-![映射面板](assets/mapping-panel-blank.png)
+![映射面板](assets/new-mapping-panel-blank.png)
 
 
 有关函数标签页的更多信息，请参阅[函数概述](/help/workfront-fusion/get-started-with-fusion/understand-fusion/function-overview.md)。
@@ -78,13 +82,13 @@ ht-degree: 96%
 
 收藏集类型的捆绑包会在模块输出的捆绑包标签旁显示 `(Collection)`。
 
-![收藏集](assets/collection.png)
+![收藏集](assets/new-collection.png)
 
 在大多数情况下，您会映射收藏集中的各个元素，而不是映射代表整个收藏集的项目。
 
 在映射面板中查找收藏集元素时，请点击收藏集旁的箭头。
 
-![收藏集下拉列表](assets/collection-dropdown.png)
+![收藏集下拉列表](assets/new-collection-dropdown.png)
 
 有关收藏集的更多信息，请参阅[项目数据类型](/help/workfront-fusion/references/mapping-panel/data-types/item-data-types.md)。
 
@@ -96,8 +100,8 @@ ht-degree: 96%
 
 数组类型的捆绑包会在模块输出的捆绑包标签旁显示 `(Array)`。
 
-在映射面板中，数组会以方括号形式显示。 您可以通过项目标签末尾的方括号来识别数组类型项目。 要在映射面板中查找数组的具体元素，请点击数组旁的箭头。
+在映射面板中，数组以方括号显示。 您可以通过项目标签末尾的方括号来标识数组类型的项目。 要在映射面板中定位特定的数组元素，请单击数组旁边的箭头。
 
-![数组](assets/array.png)
+![数组](assets/new-array.png)
 
 有关映射数组及数组元素的详细信息和操作说明，请参阅[映射数组及数组元素](/help/workfront-fusion/create-scenarios/map-data/map-an-array.md)。

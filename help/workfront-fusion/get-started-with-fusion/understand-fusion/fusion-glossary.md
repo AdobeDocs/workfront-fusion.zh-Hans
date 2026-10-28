@@ -16,15 +16,18 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 98%
+source-wordcount: '976'
+ht-degree: 93%
 ---
 # Adobe Workfront Fusion 术语表
 
 以下术语表解释了 Adobe Workfront Fusion 中的一些常用术语。
 
+>[!NOTE]
+>
+>Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡期间，经典体验和新体验均可用，您可以随时在它们之间切换。 我们建议使用新Experience。 有关详细信息，请参阅文章场景编辑器中的[新体验和经典体验](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#new-and-classic-experiences)。
 
 <table style="table-layout:auto">
  <col> 
@@ -88,7 +91,7 @@ ht-degree: 98%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>模块</p> </td> 
-   <td> <p>场景中的单个步骤，在关联的应用程序或服务中执行某项功能，例如创建记录。</p> <p>每个应用程序或服务都具有多个模块，这些模块定义了其响应请求的方式。</p>  <p> <img src="assets/module.png"> </p> <p>有关更多信息，请参阅<a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">模块概述</a>。</p> </td> 
+   <td> <p>场景中的单个步骤，在关联的应用程序或服务中执行某项功能，例如创建记录。</p> <p>每个应用程序或服务都具有多个模块，这些模块定义了其响应请求的方式。</p>  <p> <img src="assets/new-module.png"> </p> <p>有关更多信息，请参阅<a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/module-overview.md" class="MCXref xref">模块概述</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>操作</p> </td> 
@@ -104,7 +107,7 @@ ht-degree: 98%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>场景</p> </td> 
-   <td> <p>由用户创建的一系列自动化步骤，每个步骤由一个模块表示并执行。 场景的目的在于移动和处理数据。</p> <p> <img src="assets/entire-scenario-blank.png" style="width: 350;height: 178;"> </p> <p> 有关更多信息，请参阅<a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">场景概述</a>。</p> </td> 
+   <td> <p>由用户创建的一系列自动化步骤，每个步骤由一个模块表示并执行。 场景的目的在于移动和处理数据。</p> <p> <img src="assets/new-scenario-example-unmarked.png" style="width: 350;height: 92;"> </p> <p> 有关更多信息，请参阅<a href="/help/workfront-fusion/get-started-with-fusion/understand-fusion/scenario-overview.md" class="MCXref xref">场景概述</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>场景区段</p> </td> 
