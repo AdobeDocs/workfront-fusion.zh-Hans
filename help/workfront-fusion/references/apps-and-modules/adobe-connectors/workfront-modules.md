@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
 workflow-type: tm+mt
-source-wordcount: '7725'
+source-wordcount: '7804'
 ht-degree: 92%
 ---
 # Adobe Workfront 模块
@@ -312,6 +312,13 @@ Webhook 创建完成后，您可以查看事件发送到的端点地址。
 如需了解更多信息，请参阅 Workfront 文档中事件订阅 API 一文的[事件负载示例](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads)部分。
 
 有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
+
+>[!NOTE]
+>
+>重复检测适用于包含`x-event-id`标头并将其`User-Agent`标识为`Workfront Event Subscription`的通知。
+>
+>当Fusion收到符合条件的通知时，它将记录该webhook的事件ID **1小时**。 如果另一条具有同一事件ID的通知在此时段到达同一webhook，则Fusion会确认该通知，而不会转发它以进行场景处理。
+>重复检测特定于每个webhook。 同一事件可由不同的Webhook独立处理。 接收重复项不会重新启动一小时周期。
 
 #### [!UICONTROL 监控字段]
 
