@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 36bcfdbb0e88a4c742f7c3d0a6c9295a8e64b99a
 workflow-type: tm+mt
-source-wordcount: '7725'
+source-wordcount: '7804'
 ht-degree: 92%
 ---
 # Adobe Workfront 模块
@@ -288,16 +288,16 @@ Workfront 连接器使用 OAuth 2.0 与 Workfront 建立连接。
        </td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL 启用安全挂钩]</td> 
+      <td>[！UICONTROL启用安全挂钩]</td> 
       <td>
        <p>选择是否要为此webhook启用基于authToken的安全性。</p><p>
        <b>注意</b>：自2026年8月23日起，Fusion将默认对所有Workfront &gt;关注事件模块（包括现有模块）启用基于authToken的安全性。 如果特定的webhook中断或出于兼容性原因需要禁用此选项，则可以关闭“启用安全挂钩”选项。</p>
        </td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL 自定义令牌]</td> 
+      <td>[！UICONTROL自定义令牌]</td> 
       <td>
-       <p>（可选）如果[!UICONTROL Enable secure hooks]设置为[!UICONTROL Yes]，则可以输入自己的令牌值来保护webhook。 如果您将此字段留空，Fusion会自动为您生成一个令牌。</p>
+       <p>（可选）如果[！UICONTROL Enable secure hooks]设置为[！UICONTROL Yes]，则可以输入自己的令牌值来保护webhook。 如果您将此字段留空，Fusion会自动为您生成一个令牌。</p>
        </td> 
      </tr> 
     </tbody> 
@@ -312,6 +312,13 @@ Webhook 创建完成后，您可以查看事件发送到的端点地址。
 如需了解更多信息，请参阅 Workfront 文档中事件订阅 API 一文的[事件负载示例](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api#examples-of-event-payloads)部分。
 
 有关可与此模块一起使用的 Workfront 对象类型列表，请参阅[每个 Workfront 模块可用的 Workfront 对象类型](#workfront-object-types-available-for-each-workfront-module)。
+
+>[!NOTE]
+>
+>重复检测适用于包含`x-event-id`标头并将其`User-Agent`标识为`Workfront Event Subscription`的通知。
+>
+>当Fusion收到符合条件的通知时，它将记录该webhook的事件ID **1小时**。 如果另一条具有同一事件ID的通知在此时段到达同一webhook，则Fusion会确认该通知，而不会转发它以进行场景处理。
+>重复检测特定于每个webhook。 同一事件可由不同的Webhook独立处理。 接收重复项不会重新启动一小时周期。
 
 #### [!UICONTROL 监控字段]
 
@@ -1055,7 +1062,7 @@ Workfront 最近发布了新版事件订阅服务。 该新版并未更改 Workf
 
 有关新版事件订阅的更多信息，请参阅 Workfront 文档中[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
 
-如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=zh-Hans)。
+如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)。
 
 <table style="table-layout:auto">
  <col> 
@@ -2371,7 +2378,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   有关新版事件订阅的更多信息，请参阅 Workfront 文档中[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
 >
->   如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=zh-Hans)。
+>   如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)。
 
 Workfront 的[!UICONTROL 监控事件]模块会根据一个在 Workfront API 中创建事件订阅的 Webhook 来触发场景。 事件订阅是一组数据，用于确定哪些事件会发送至该 Webhook。 例如，如果您设置一个监控问题的[!UICONTROL 监控事件]模块，则该事件订阅只会将与问题相关的事件发送过来。
 
