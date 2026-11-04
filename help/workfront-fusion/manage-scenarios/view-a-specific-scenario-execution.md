@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '981'
 ht-degree: 10%
 ---
 # 查看特定场景的执行
@@ -127,7 +127,7 @@ ht-degree: 10%
 | 控件 | 详细信息 |
 | ---------- | ---------- |
 | 转到下一个错误或警告 | 显示当前周期中有多少模块出现问题。 每次单击都会移到下一个点击，首先显示错误，然后从左到右依次显示警告。 它将模块居中并打开第一个失败的操作。 当执行没有错误或警告时，按钮将隐藏。 |
-| 搜索模块 | 按名称查找模块并将其放在画布中心。 按Ctrl+K (Windows)或Command+K (Mac)。 |
+| 搜索 | 按名称或ID查找模块，并将其放在画布上。 按Ctrl+K (Windows)或Command+K (Mac)。 |
 | 注释 | 显示或隐藏方案的注释。 此控件仅在场景具有注释，并且注释在此处为只读时才显示。 |
 | 说明流程 | 设置场景模块运行顺序的动画。 再次单击或按Esc停止。 |
 | 放大、缩小、聚焦和小型地图 | 与编辑模式的工作方式相同。 |

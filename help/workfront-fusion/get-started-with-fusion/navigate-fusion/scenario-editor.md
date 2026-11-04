@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 78612057a0bfc76a7c9bf9d0efd6fc632a152369
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2755'
 ht-degree: 5%
 ---
 # 方案编辑器
@@ -72,6 +72,7 @@ Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡�
 * [Live Trail](/help/workfront-fusion/manage-scenarios/live-trail.md)，一个显示场景运行情况的面板。
 * 场景编辑器中现在内置了多个开发人员工具。
 * 临时调试日志，您可以在场景设置中打开该日志。
+* 一种搜索，用于查找常用面板操作的模块名称、映射值、模块设置和筛选条件，以及键盘快捷键。
 
 要在经典体验和新体验之间切换，请执行以下操作：
 
@@ -110,6 +111,7 @@ Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡�
 * [咨询AI](#ask-ai)
 * [画布导航](#canvas-navigation)
 * [画布显示](#canvas-display)
+* [键盘快捷键](#keyboard-shortcuts)
 
 #### 编辑操作
 
@@ -148,7 +150,7 @@ Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡�
 | 方案设置 <p>![方案设置图标](assets/scenario-settings-icon-new.png)</p> | 方案设置面板包含方案的高级设置。 有关可用设置的详细信息，请参阅[配置方案设置](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)。 不会为每次运行保留请求和响应详细信息。 要为方案的常规运行收集这些日志，请打开临时调试日志。 有关详细信息，请参阅[临时调试日志](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md#temporary-debug-logs)。 |
 | 注释 <p>![注释图标](assets/notes-icon-new.png)</p> | 记录方案。 其他用户可以在场景中查看这些注释。 有关详细信息，请参阅[向方案添加注释](/help/workfront-fusion/create-scenarios/config-scenarios-settings/add-notes-to-scenario.md)。 |
 | 自动对齐 <p>![自动对齐图标](assets/auto-align-icon-new.png)</p> | 自动对齐场景中的模块。 |
-| 搜索模块 <p>![搜索模块图标](assets/search-modules-icon-new.png)</p> | 从该列表中选择一个模块，转到场景中的该模块，或输入搜索词以查找模块，然后单击要转到该模块的搜索结果。 您可以按模块名称、ID、类型或应用程序进行搜索。 |
+| 搜索 <p>![搜索图标](assets/search-modules-icon-new.png)</p> | 打开搜索（在Windows上按&#x200B;**Ctrl + K**&#x200B;或在Mac上按&#x200B;**⌘K**）。 搜索按名称或ID查找模块。 它还查找场景中的每个映射值、每个模块设置以及每个过滤条件。 每个结果都会显示找到匹配项的位置，例如&#x200B;_映射器·审批ID_，匹配的文本突出显示。 过滤器在其各自部分中列出。 要查找每个使用值的位置，请粘贴引用，如`{{1.name}}`。 搜索仅查找该引用，但不查找`{{21.name}}`或`{{1.names}}`。 单击结果以打开模块或过滤器。 匹配字段会简要高亮显示并滚动到视图中。 使用箭头键浏览过滤器结果时，画布会显示过滤器及其连接的两个模块。<!-- BECKY CHECK ME: Search row rewritten from the 11/2/26 release note (fusion-2026-11-2.md) (renamed from 'Search modules' to 'Search'). The old text also said you can search by module type or application; the release note does not mention that, so I removed it. Confirm, and confirm the icon and the tool tip label. --> |
 | 查找和替换 <p>![查找和替换图标](assets/find-and-replace-icon-new.png)</p> | <p>在方案的模块中搜索和替换变量、映射的值源或连接。 使用选项卡可以：</p><ul><li>在整个场景中或在一个模块中替换映射的变量。</li><li>将引用从一个源模块重新映射到另一个源模块。</li><li>将连接从同一应用程序复制到一个或所有兼容的模块。</li></ul><p>在进行更改之前，该面板会预览将受影响的模块。 在预览中选择一行以转到画布上的该模块。</p> <p>有关详细信息，请参阅[查找并替换方案中的变量、源和连接](/help/workfront-fusion/manage-scenarios/find-and-replace.md)。</p> |
 | 片段 <p>![代码片段图标](assets/snippets-icon-new.png)</p> | <p>片段是另存为单位的方案部分。 要创建模块，请选择模块并将其另存为代码片段。 在“代码片段”面板中，您可以搜索、标记、预览、固定、排序和拖放代码片段，还可以导入和导出它们。 您可以与团队或组织共享代码片段，或直接将副本发送给其他用户。 共享代码片段将显示在其自己的选项卡中。</p> <p>有关详细信息，请参阅[保存和重用包含代码片段的方案部分](/help/workfront-fusion/create-scenarios/add-modules/use-snippets.md)。</p> |
 | 说明流程 <p>![说明流程图标](assets/explain-flow-icon-new.png)</p> | 查看动画，其中移动圆点显示数据如何在场景中流动。 |
@@ -208,7 +210,25 @@ Workfront Fusion正在将场景编辑器转换为新Experience。 在此过渡�
 | 缩放详细信息 | 放大时将显示信息卡详细信息。 缩小时，模块会简化为图标，以便您仍然可以查看整个场景。 |
 | 折叠路由器 | 在编辑模式下，可以折叠路由器以隐藏其路由。 有关详细信息，请参阅[折叠路由器](/help/workfront-fusion/create-scenarios/add-modules/router-module.md#fold-a-router)。 |
 | 深色模式 | 画布将遵循Adobe首选项下的深色外观设置，包括模块卡片、链接、面板、控件和状态信息。 |
-| 右侧面板 | 在画布右侧的同一面板中打开模块设置、模块检查、模块浏览器、查找和替换、代码片段、[实时跟踪](/help/workfront-fusion/manage-scenarios/live-trail.md)以及请求和响应详细信息。 |
+| 打开模块或过滤器 | 打开模块时，画布不再移动。 相反，模块会获得一个移动虚线轮廓。 打开筛选器时，它在连接上的标签将获得相同的轮廓。 轮廓颜色与模块的颜色相匹配，并自动调整以便它在明暗模式下保持可见。 |
+| 右侧面板 | 在画布右侧的同一面板中打开模块设置、模块检查、模块浏览器、查找和替换、代码片段、[实时跟踪](/help/workfront-fusion/manage-scenarios/live-trail.md)以及请求和响应详细信息。 </br>若要调整面板的大小，请拖动其左边缘使其变宽或变窄，或者双击该边缘以返回到默认宽度。 系统会记住您的宽度，包括从其他浏览器登录时的宽度。 在较小的屏幕上，面板会自动适应窗口。 当面板最大化时，您无法更改其宽度。 |
+
+#### 键盘快捷键
+
+这些快捷方式可帮助您在不移动鼠标的情况下在面板中工作。
+
+| 快捷方式(Mac / Windows) | 作用 |
+| ---------- | ---------- |
+| **⌘Enter** / **Ctrl + Enter** | 确认打开的面板（与&#x200B;**确定**&#x200B;相同）。 在您键入时有效。 在不打开面板的情况下，运行场景一次。 |
+| **Esc** | 关闭打开的面板而不保存。 如果映射面板处于打开状态，则仅关闭该面板。 |
+| **⌥←** / **⌥→** (Mac)，**Alt + ←** / **Alt + →** (Windows) | 确认面板并打开上一个或下一个模块。 也可用作面板标题中的&#x200B;**“**”按钮。 光标不在文本字段中时有效。 |
+| **⌘Shift + Enter** / **Ctrl + Shift + Enter** | 确认打开的面板并运行场景一次。 如果面板有错误，则不会运行任何内容。 |
+| **⌘K** / **Ctrl + K** | 打开搜索。 |
+| **?** | 显示所有方案设计器快捷键的列表。 也可从&#x200B;**键盘快捷键**&#x200B;下的三点菜单访问。 |
+
+* 宽面板在底部显示确认和取消快捷键的提醒。
+* **运行一次**&#x200B;和&#x200B;**保存**&#x200B;按钮的工具提示中显示其快捷方式。
+* 当您移动到下一个或上一个模块并且它隐藏在面板后或屏幕外时，画布移动足以显示它。
 
 ## 在经典体验中使用场景编辑器
 

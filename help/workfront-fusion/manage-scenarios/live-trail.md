@@ -6,9 +6,9 @@ feature: Workfront Fusion
 product_v2:
   - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
     internal-label: Workfront
-source-git-commit: 94449f8511d7480f1a4fc0ac6e8db9b067977abd
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '539'
 ht-degree: 17%
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 17%
 
 
 
-此时将在画布右侧的面板中打开Live Trail。 如果在运行期间关闭面板，则通过屏幕右侧的小选项卡，可以再次打开该面板，而不会丢失捕获的事件。
+此时将在画布右侧的面板中打开Live Trail。 可以通过拖动面板的左边缘来调整其大小。 如果在运行期间关闭面板，则通过屏幕右侧的小选项卡，可以再次打开该面板，而不会丢失捕获的事件。
 
 ## 查看Live Trail中的事件
 

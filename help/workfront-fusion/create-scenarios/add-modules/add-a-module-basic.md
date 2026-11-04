@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 78612057a0bfc76a7c9bf9d0efd6fc632a152369
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1538'
 ht-degree: 8%
 ---
 # 将模块添加到场景中
@@ -84,7 +84,7 @@ ht-degree: 8%
 
 1. 配置模块。
 
-   模块设置将在画布右侧的面板中打开。
+   模块设置将在画布右侧的面板中打开。 可以通过拖动面板的左边缘来调整其大小。
 
    有关配置特定模块的说明，请参阅[Fusion应用程序及其模块引用中列出的选定应用程序的文章：文章索引](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
@@ -139,7 +139,7 @@ ht-degree: 8%
 
 1. 配置模块。
 
-   模块设置将在画布右侧的面板中打开。
+   模块设置将在画布右侧的面板中打开。 可以通过拖动面板的左边缘来调整其大小。
 
    有关配置特定模块的说明，请参阅[Fusion应用程序及其模块引用中列出的选定应用程序的文章：文章索引](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
@@ -180,7 +180,7 @@ ht-degree: 8%
 
 1. 配置模块。
 
-   模块设置将在画布右侧的面板中打开。
+   模块设置将在画布右侧的面板中打开。 可以通过拖动面板的左边缘来调整其大小。
 
    有关配置特定模块的说明，请参阅[Fusion应用程序及其模块引用中列出的选定应用程序的文章：文章索引](/help/workfront-fusion/references/apps-and-modules/apps-and-modules-toc.md)。
 
