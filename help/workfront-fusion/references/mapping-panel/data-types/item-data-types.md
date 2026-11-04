@@ -14,10 +14,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 2%
+source-wordcount: '616'
+ht-degree: 1%
 ---
 # 项目数据类型
 
@@ -43,11 +43,11 @@ ht-degree: 2%
     <ul> 
      <li> <p>如果字段是必填字段，且必须填写，则会显示必填复选框。</p> <p> <img src="assets/boolean-checkbox-350x158.jpg" style="width: 350;height: 158;"> </p> </li> 
      <li> <p>可留空的可选字段将显示为选择框，允许从三个值中进行选择：<code>Yes</code>、<code>No</code>和<code>Not defined</code>（默认值）。</p> <p> <img src="assets/boolean-convert-file-350x129.jpg" style="width: 350;height: 129;"> </p> </li> 
-    </ul> <p>如果需要将值映射到其他模块中的项，可以单击<strong>[!UICONTROL 映射]</strong>。</p> </td> 
+    </ul> <p>如果需要将值映射到其他模块中的项，可以单击<strong>[！UICONTROL映射]</strong>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>日期</p> </td> 
-   <td> <p>日期以ISO 8601日期格式输入，例如<code>2015-09-18T11:58Z</code>。 您可以在配置文件设置中更改时区。 </p> <p>如果单击需要日期的字段，则模块设置中会显示一个弹出日历。 某些项目不需要时间。</p> <p>日期项目的值使用在您的配置文件中选择的本地和Web时区进行格式化。 将鼠标悬停在日期项上可以显示日期项值的ISO 8601版本。</p> <p>注意：如果ISO值未显示，则该项目可能是文本，而不是日期。</p> <p>时间以<code>hours:minutes:seconds</code>格式输入，例如<code>14:03:52</code>。</p> </td> 
+   <td> <p>日期以ISO 8601日期格式输入，例如<code>2015-09-18T11:58Z</code>。 您可以在配置文件设置中更改时区。 </p> <p>如果单击需要日期的字段，则模块设置中会显示一个弹出日历。 某些项目不需要时间。</p> <p>日期项目的值使用在您的配置文件中选择的本地和Web时区进行格式化。 将鼠标悬停在日期项上可以显示日期项值的ISO 8601版本。</p> <p>有关查看和管理Fusion配置文件中的时区设置的信息，请参阅[查看和管理时区](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)。</p> <p>注意：如果ISO值未显示，则该项目可能是文本，而不是日期。</p> <p>时间以<code>hours:minutes:seconds</code>格式输入，例如<code>14:03:52</code>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>缓冲区（二进制数据）</p> </td> 
@@ -63,7 +63,7 @@ ht-degree: 2%
   </tr> 
   <tr> 
    <td role="rowheader"> <p>数组</p> </td> 
-   <td> <p>您可以使用数组类型处理相同类型的多个值，包括集合。 [!UICONTROL Email]模块就是一个例子：它们返回一系列附件，每个附件都包含名称、内容、大小等。 有关详细信息，请参阅<a href="/help/workfront-fusion/create-scenarios/map-data/map-an-array.md" class="MCXref xref">映射数组或数组元素</a>。</p> </td> 
+   <td> <p>您可以使用数组类型处理相同类型的多个值，包括集合。 [！UICONTROL Email]模块就是一个例子：它们返回一系列附件，每个附件都包含名称、内容、大小等。 有关详细信息，请参阅<a href="/help/workfront-fusion/create-scenarios/map-data/map-an-array.md" class="MCXref xref">映射数组或数组元素</a>。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"> <p>验证</p> </td> 

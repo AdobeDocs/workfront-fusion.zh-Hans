@@ -15,9 +15,9 @@ feature_v2:
     internal-label: APIs
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '37'
+source-wordcount: '34'
 ht-degree: 100%
 ---
 # 浏览 Fusion：文章索引
@@ -26,4 +26,3 @@ ht-degree: 100%
 * [场景编辑器概述](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md)
 * [场景详细信息概述](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-details.md)
 * [在组织或团队之间切换](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/switch-orgs-or-teams.md)
-* [更改轮廓设置](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/change-profile-settings.md)
