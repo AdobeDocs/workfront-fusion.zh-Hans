@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 6e900ea61e12b9e5adfd6bc374479aeeff0408d5
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 11%
+source-wordcount: '980'
+ht-degree: 10%
 ---
 # 查看特定场景的执行
 
@@ -85,6 +85,7 @@ ht-degree: 11%
    要查看由过滤器处理的特定捆绑包，您可以使用过滤器的搜索栏，或过滤具有特定状态（例如“通过”或“失败”）的捆绑包。
 1. 要在执行面板中搜索特定的模块或事件，请在&#x200B;**搜索执行事件**&#x200B;框中输入搜索词。 键入内容时，将显示结果。
 1. 要按状态（如成功或警告）限制执行面板搜索结果，请单击&#x200B;**状态筛选器**&#x200B;下拉列表并选择状态。
+1. 若要获得执行中错误的纯语言说明，请单击错误下的&#x200B;**[!UICONTROL Explain]**。 有关详细信息，请参阅[解释AI的场景错误](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)。
 
 
 

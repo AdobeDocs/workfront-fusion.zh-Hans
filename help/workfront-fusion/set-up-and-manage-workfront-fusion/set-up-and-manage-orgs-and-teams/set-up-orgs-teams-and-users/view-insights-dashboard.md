@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 45c755a2f6152b6e230864e4c840d0334705bd22
+source-git-commit: 628fb65a2bd3aa7ed434cde26a55077d176f67f6
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1334'
 ht-degree: 2%
 ---
 # 查看组织的分析仪表板
@@ -208,6 +208,7 @@ Fusion Insights仪表板允许您快速查看哪些场景运行得最多、发�
    对于大多数过滤器，您可以选择仅匹配您选择的值，或者除这些值之外的所有其他值。
 
 1. 单击执行可查看有关其错误的更多详细信息。
+1. 若要获得错误的纯语言说明，请将鼠标悬停在失败的执行上，然后单击&#x200B;**[!UICONTROL 说明]**。 有关详细信息，请参阅[解释AI的场景错误](/help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md)。
 1. 要重新激活在重复失败后自动取消激活的一个或多个方案，请选择执行，然后单击&#x200B;**激活**。
 
    >[!NOTE]

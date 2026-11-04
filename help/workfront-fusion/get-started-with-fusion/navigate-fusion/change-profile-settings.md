@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 8f8ecad04a66f3859bba69460b316e8ba20984e6
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 54%
+source-wordcount: '208'
+ht-degree: 47%
 ---
 # 更改轮廓设置
 
@@ -59,3 +59,5 @@ ht-degree: 54%
 * 为[!DNL Adobe Experience Cloud]设置&#x200B;**[!UICONTROL 首选项]**，包括主要语言首选项和次要语言首选项。
 * 访问您的&#x200B;**[!UICONTROL Workfront配置文件]**。 进入配置文件后，单击&#x200B;**[!UICONTROL 更多]**&#x200B;菜单并选择&#x200B;**[!UICONTROL 编辑]**。
 * **[!UICONTROL 注销]** Adobe Experience Cloud。
+
+您的Fusion配置文件还包括时区设置，这些设置会影响日期和时间的显示和解释方式。 有关详细信息，请参阅[查看和管理时区](/help/workfront-fusion/set-up-and-manage-workfront-fusion/configure-fusion-account/view-and-manage-time-zones.md)。
