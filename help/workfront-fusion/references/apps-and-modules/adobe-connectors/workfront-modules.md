@@ -128,7 +128,7 @@ ht-degree: 90%
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[！UICONTROL作用域] <i>（可选）</i></td>
+        <td role="rowheader">[!UICONTROL 作用域] <i>（可选）</i></td>
         <td>输入此连接的任何其他范围。 将此字段留空以使用默认范围。</td>
       </tr>
       <tr>
@@ -295,16 +295,16 @@ ht-degree: 90%
        </td> 
      </tr> 
      <tr> 
-      <td>[！UICONTROL启用安全挂钩]</td> 
+      <td>[!UICONTROL 启用安全挂钩]</td> 
       <td>
        <p>选择是否要为此webhook启用基于authToken的安全性。</p><p>
        <b>注意</b>：自2026年8月23日起，Fusion将默认对所有Workfront &gt;关注事件模块（包括现有模块）启用基于authToken的安全性。 如果特定的webhook中断或出于兼容性原因需要禁用此选项，则可以关闭“启用安全挂钩”选项。</p>
        </td> 
      </tr> 
      <tr> 
-      <td>[！UICONTROL自定义令牌]</td> 
+      <td>[!UICONTROL 自定义令牌]</td> 
       <td>
-       <p>（可选）如果[！UICONTROL Enable secure hooks]设置为[！UICONTROL Yes]，则可以输入自己的令牌值来保护webhook。 如果您将此字段留空，Fusion会自动为您生成一个令牌。</p>
+       <p>（可选）如果[!UICONTROL Enable secure hooks]设置为[!UICONTROL Yes]，则可以输入自己的令牌值来保护webhook。 如果您将此字段留空，Fusion会自动为您生成一个令牌。</p>
        </td> 
      </tr> 
     </tbody> 
