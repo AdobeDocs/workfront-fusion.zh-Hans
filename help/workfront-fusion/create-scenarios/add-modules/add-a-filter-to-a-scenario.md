@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 11%
+source-wordcount: '1012'
+ht-degree: 10%
 ---
 # 为场景添加筛选条件
 
@@ -77,6 +77,10 @@ ht-degree: 11%
 1. 左键单击要添加过滤器的模块之间的路径。
 
    将直接打开&#x200B;**[!UICONTROL 设置过滤器]**&#x200B;窗口。 （右键单击路径将打开其他菜单。）
+
+   过滤器面板显示了过滤器位于两个模块之间。 在面板标题旁边，您会看到模块ID，例如&#x200B;**→#13**。 在筛选器设置上方，一行（如&#x200B;**Between ● Router #12 → ● HTTP #13**）显示每个模块的颜色和名称。 将鼠标悬停在模块名称上可查看其操作。 当面板打开时，连接上的过滤器标签具有移动虚线。
+
+   ![筛选器面板](/help/workfront-fusion/fusion-product-releases/assets/04-filter-panel-light.png)
 
 1. 在显示的框中，输入筛选器的&#x200B;**[!UICONTROL 标签]**。
 1. 定义筛选器&#x200B;**[!UICONTROL 条件]**。

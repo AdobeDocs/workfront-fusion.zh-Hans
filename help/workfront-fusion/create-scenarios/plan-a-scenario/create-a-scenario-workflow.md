@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '810'
 ht-degree: 3%
 ---
 # 创建场景的工作流程
@@ -185,6 +185,10 @@ ht-degree: 3%
   </tr> 
  </tbody> 
 </table>
+
+>[!NOTE]
+>
+>新的方案编辑器具有其他键盘快捷键，包括用于确认或关闭面板、在模块之间移动以及打开所有快捷键列表的快捷键。 有关详细信息，请参阅方案编辑器文章中的[键盘快捷键](/help/workfront-fusion/get-started-with-fusion/navigate-fusion/scenario-editor.md#keyboard-shortcuts)。
 
 
 

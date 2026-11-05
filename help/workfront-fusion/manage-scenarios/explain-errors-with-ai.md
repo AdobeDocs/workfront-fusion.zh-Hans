@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: e2420c8a25fd9e38c4b0300b00560fe1837a5e43
+source-git-commit: 565302f1d994819607051014d18779ccfb2645cb
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '577'
 ht-degree: 15%
 ---
 # 解释人工智能的场景错误
@@ -27,6 +27,8 @@ ht-degree: 15%
 >[!NOTE]
 >
 >**[!UICONTROL Explain]**&#x200B;按钮仅在新的方案设计器中可用。 在旧版场景设计器中不可用。
+>
+>您的组织必须具有AI许可证才能使用此功能。
 
 ## 访问权限要求
 
