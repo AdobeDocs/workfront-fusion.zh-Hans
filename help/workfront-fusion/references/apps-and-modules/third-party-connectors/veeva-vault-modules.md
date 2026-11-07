@@ -16,10 +16,10 @@ topic_v2:
     internal-label: Metadata
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: cb90aa39325068566e17bbb102969a537e527dc2
 workflow-type: tm+mt
-source-wordcount: '4127'
-ht-degree: 13%
+source-wordcount: '4353'
+ht-degree: 14%
 ---
 # Veeva Vault 模块
 
@@ -1152,13 +1152,65 @@ ht-degree: 13%
 
 ### 其他
 
-* [发起自定义 API 调用](#make-a-custom-api-call)
+* [进行自定义API调用](#make-a-custom-api-call)
+* [进行自定义API调用（旧版）](#make-a-custom-api-call-legacy)
 * [进行VQL查询](#make-a-vql-query)
 * [读取日志](#read-logs)
 
-#### 发起自定义 API 调用
+#### 进行自定义API调用
 
-此操作模块对Veeva保险库API进行自定义调用。
+此操作模块对Veeva保险库API进行自定义调用。 它支持多种请求正文类型。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接</td> 
+   <td> <p>有关将Veeva Vault帐户连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-veeva-vault-to-workfront-fusion" class="MCXref xref">将Veeva Vault连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">URL</td> 
+   <td>输入相对于 <code>baseurl/api/v</code> 的路径。  例如：<code>/objects/documents</code>。 不包括<code>baseurl/api/v/</code>，因为它已包括在内。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">方法</td> 
+   <td> <p>选择用于配置此 API 调用的 HTTP 请求方法。 有关更多信息，请参阅 <a href="/help/workfront-fusion/references/modules/http-request-methods.md" class="MCXref xref">HTTP 请求方法</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">标头</td> 
+   <td> <p>以标准 JSON 对象的形式添加请求标头。</p> <p>例如， <code>{"Content-type":"application/json"}</code></p> <p>Workfront Fusion会为您添加授权标头。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">查询字符串</td> 
+   <td> <p>以标准 JSON 对象的形式添加 API 调用的查询。</p> <p>例如： <code>{"name":"something-urgent"}</code></p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">正文类型</td> 
+   <td> <p>选择要随请求一起发送的主体类型：</p>
+     <ul>
+       <li><code>urlencoded</code></li>
+       <li><code>multipart_form_data</code></li>
+       <li><code>raw</code></li>
+       <li><code>binary</code></li>
+     </ul>
+   </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">请求内容</td> 
+   <td> <p>如果您使用原始或二进制正文类型，请输入或映射API调用的正文内容。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">字段</td> 
+   <td> <p>如果要为要添加数据的每个字段使用URLENCODED或多部分表单数据主体类型或二进制主体类型，请单击<b>添加项</b>并输入字段的键和值。</p> </td> 
+  </tr> 
+ </tbody> 
+</table>
+
+
+#### 进行自定义API调用（旧版）
+
+此操作模块对Veeva保险库API进行自定义调用。 此模块仅支持`raw`主体类型。 若要使用其他正文类型，请使用[进行自定义API调用](#make-a-custom-api-call)模块。
 
 <table style="table-layout:auto"> 
  <col> 
