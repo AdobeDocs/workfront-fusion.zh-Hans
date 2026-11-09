@@ -1,10 +1,10 @@
 ---
 title: 配置Adobe Workfront Fusion MCP服务器
 description: 将Adobe Workfront Fusion连接到与MCP兼容的AI代理平台或Co-worker（独立或Fusion右边栏中）。
-source-git-commit: 5f3bd6b7b8837632af245ea2c172205625e4ecba
+source-git-commit: d5861015b3bb0e9c176fcf4fd71db426671764dd
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 0%
+source-wordcount: '1343'
+ht-degree: 7%
 ---
 
 # 配置Adobe Workfront Fusion MCP服务器
@@ -13,9 +13,78 @@ Adobe Workfront Fusion MCP服务器允许您在受支持的AI代理平台上通�
 
 有关Adobe Workfront Fusion MCP服务器中可用工具的列表，请参阅[Adobe Workfront Fusion MCP服务器工具](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/fusion-mcp-server-tools.md)。
 
-## 支持的AI代理平台
+## 访问权限要求
 
-Fusion MCP服务器可与任何支持Model Context Protocol (MCP)和具有OAuth的远程（可流化HTTP） MCP服务器的AI代理平台配合使用。
++++ 展开可查看本文所述功能的访问权限要求。
+
+<table style="table-layout:auto">
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">Adobe Workfront 包</td> 
+   <td> <p>任意 Adobe Workfront Workflow 包以及任意 Adobe Workfront 自动化和集成包</p><p>Workfront Ultimate</p><p>Workfront Prime 和 Select 包，且需额外购买 Workfront Fusion。</p> </td> 
+  </tr> 
+  <tr data-mc-conditions=""> 
+   <td role="rowheader">Adobe Workfront 许可证</td> 
+   <td> <p>标准</p><p>工作版或更高版本</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">产品</td> 
+   <td>
+   <p>如果您的组织使用的 Workfront Select 或 Prime 包不包含 Workfront 自动化和集成，则必须单独购买 Adobe Workfront Fusion。</p>
+   </td> 
+  </tr>
+ </tbody> 
+</table>
+
+有关此表中信息的更多详细说明，请参阅[文档中的访问权限要求](/help/workfront-fusion/references/licenses-and-roles/access-level-requirements-in-documentation.md)。
+
++++
+
+## 先决条件
+
+在将Fusion连接到AI代理平台之前，您必须：
+
+* 拥有活动的Adobe Workfront Fusion许可证并访问至少一个Fusion组织。
+* 拥有Fusion用户角色和团队角色，这些角色可授予对要处理的数据的访问权限。
+* 使用Adobe ID (Adobe Identity Management System， IMS)登录。
+* 有权访问与MCP兼容的AI代理平台，或访问合作者。
+
+## 支持的MCP应用程序
+
+Fusion MCP服务器可与以下应用程序配合使用。
+
+**聊天应用程序**
+
+* 克洛德
+* OpenAI ChatGPT
+* Microsoft 365 Copilot
+
+**开发人员工具**
+
+* 人工克劳德码
+* 光标
+* GitHub Copilot
+* VS代码
+* OpenAI代码
+* MCP检查器、 mcp-remote和使用本地回调的其他工具
+
+**自动化和AI平台**
+
+* Adobe Workfront Fusion
+* Google顶点AI 搜索
+* Glean
+* 作家AI Studio
+* Postman
+
+### 限制
+
+* 只有此部分列出的应用程序可以连接到Fusion MCP服务器。
+* 如果桌面应用程序和命令行界面(CLI)在您自己的计算机(`localhost`)上接收到登录回调，则它们可以正常工作。
+* 您无法添加自己的应用程序。 要请求对新应用程序的支持，请通过[fusiondev@adobe.com](mailto:fusiondev@adobe.com)联系Fusion团队。
+
+<!-- BECKY CHECK ME: Other parts of this article might conflict with these limitations. See the comments in the important note below, in the section Connect Fusion to a custom MCP solution, and in the troubleshooting table. -->
 
 >[!NOTE]
 >
@@ -30,44 +99,36 @@ Fusion MCP服务器可与任何支持Model Context Protocol (MCP)和具有OAuth�
 
 >[!IMPORTANT]
 >
->如果您使用其他MCP兼容平台（如Gemini、Cursor或VS Code），请按照该平台的文档添加自定义MCP服务器。 当系统提示输入MCP服务器URL时，请输入：
+>如果您使用不同的MCP兼容平台，请按照该平台的文档添加自定义MCP服务器。 当系统提示输入MCP服务器URL时，请输入：
 >
 >```
 >https://mcp.fusion.adobe.com/mcp
 >```
 
-## 先决条件
-
-在将Fusion连接到AI代理平台之前，您必须：
-
-* 拥有活动的Adobe Workfront Fusion许可证并访问至少一个Fusion组织。
-* 拥有Fusion用户角色和团队角色，这些角色可授予对要处理的数据的访问权限。
-* 使用Adobe ID (Adobe Identity Management System， IMS)登录。
-* 有权访问与MCP兼容的AI代理平台，或访问合作者。
-
 ## 将Fusion与同事一起使用
 
 同事是Adobe的人工智能代理。 Fusion内置于协同工作中，因此您无需输入MCP URL或注册OAuth应用程序。 您可以在以下两个位置使用Fusion的协同工作：
 
-* [同事（独立）](#use-fusion-in-coworker)：与您的其他Adobe应用程序一起使用Fusion。
-* Fusion右边栏中的[同事](#use-coworker-in-the-fusion-right-rail)：在Fusion UI内的面板中打开同事。
+* 同事（独立）：与其他Adobe应用程序一起使用Fusion。
+* Fusion右边栏中的同事：在Fusion UI内的面板中打开同事。
 
 两者都使用相同的Fusion MCP工具、Adobe ID和Fusion权限。 “Read（读取）”或“Write（写入）”MCP工具设置同时适用于这两者。 破坏性操作（如删除、清除队列或覆盖）始终需要确认。
 
 ### 在同事中使用Fusion
 
-1. 打开同事。
-2. 打开&#x200B;**自定义** > **集成**
-3. 找到&#x200B;**fusion-mcp**&#x200B;并单击&#x200B;**测试**。
-4. 如果您有权访问多个Fusion组织，则将自动选择该组织。 如有必要，您可以稍后要求同事切换组织。
+1. 打开同事。 您可以在https://experience.adobe.com/#/coworker上找到它。
+1. 打开&#x200B;**自定义项** > **集成**
+1. 搜索或找到&#x200B;**fusion-mcp**&#x200B;并单击它。
+1. 在打开的窗口中，单击&#x200B;**测试**。
+1. 如果您有权访问多个Fusion组织，则将自动选择该组织。 如有必要，您可以稍后要求同事切换组织。
 
 ### 在Fusion右边栏中使用同事
 
 在Fusion中，将在右边栏中打开同事
 
 1. 登录到Workfront Fusion。
-2. 单击右边栏中的&#x200B;**同事**&#x200B;图标。
-3. 在面板中提问。
+1. 单击右边栏中的&#x200B;**同事**&#x200B;图标。
+1. 在面板中提问。
 
 ### 示例提示
 
@@ -85,17 +146,17 @@ Fusion MCP服务器可与任何支持Model Context Protocol (MCP)和具有OAuth�
 > 在Claude Team/Enterprise中，您必须是所有者才能添加自定义连接器。 有关信息，请参阅Claude文档中的[使用远程MCP的自定义连接器入门](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp)。
 
 1. 登录到[克劳德](https://claude.ai)。
-2. 在左侧菜单中，选择&#x200B;**自定义**。
-3. 选择&#x200B;**连接器**。
-4. 选择&#x200B;**+**，然后选择&#x200B;**添加自定义连接器**。
-5. 输入名称（例如“Workfront Fusion”）和MCP服务器URL：
+1. 在左侧菜单中，选择&#x200B;**自定义**。
+1. 选择&#x200B;**连接器**。
+1. 选择&#x200B;**+**，然后选择&#x200B;**添加自定义连接器**。
+1. 输入名称（例如“Workfront Fusion”）和MCP服务器URL：
 
    ```
    https://mcp.fusion.adobe.com/mcp
    ```
 
-6. 单击&#x200B;**连接**。
-7. 登录。 选择配置文件和Fusion组织。
+1. 单击&#x200B;**连接**。
+1. 登录。 选择配置文件和Fusion组织。
 
 对于Claude Code ，可以从命令行添加服务器：
 
@@ -110,34 +171,30 @@ claude mcp add --transport http fusion-mcp https://mcp.fusion.adobe.com/mcp
 ### ChatGPT桌面或代码
 
 1. 在ChatGPT中，打开&#x200B;**设置**。
-2. 单击&#x200B;**插件**。
-3. 单击&#x200B;**添加服务器**。
-4. 输入服务器的名称。
-5. 对于类型，选择&#x200B;**可流式处理HTTP**。
-6. 输入MCP服务器URL：
+1. 单击&#x200B;**插件**。
+1. 单击&#x200B;**添加服务器**。
+1. 输入服务器的名称。
+1. 对于类型，选择&#x200B;**可流式处理HTTP**。
+1. 输入MCP服务器URL：
 
    ```
    https://mcp.fusion.adobe.com/mcp
    ```
 
-7. 单击&#x200B;**保存**。
-8. 为新服务器单击&#x200B;**身份验证**&#x200B;并登录。
-9. 确保打开了服务器旁边的切换开关。
+1. 单击&#x200B;**保存**。
+1. 为新服务器单击&#x200B;**身份验证**&#x200B;并登录。
+1. 确保打开了服务器旁边的切换开关。
 
 ### Web上的ChatGPT
 
 1. 登录到[ChatGPT](https://chatgpt.com)。
-2. 转到[https://chatgpt.com/plugins](https://chatgpt.com/plugins)。 （可能需要在&#x200B;**设置**&#x200B;下启用开发人员模式；在商业/企业计划中，管理员必须允许自定义连接器。）
-3. 单击&#x200B;**+**。
-4. 输入&#x200B;**名称**。
-5. 对于&#x200B;**连接**，请选择&#x200B;**服务器URL**&#x200B;并输入MCP服务器URL。
-6. 将&#x200B;**Authentication**&#x200B;保留设置为&#x200B;**OAuth**。
-7. 阅读风险消息并选中复选框。
-8. 单击&#x200B;**创建**，然后使用您的登录。
-
-## 将Fusion连接到自定义MCP解决方案
-
-如果您正在构建自己的应用程序或代理，请直接连接到Fusion MCP服务器。
+1. 转到[https://chatgpt.com/plugins](https://chatgpt.com/plugins)。 （可能需要在&#x200B;**设置**&#x200B;下启用开发人员模式；在商业/企业计划中，管理员必须允许自定义连接器。）
+1. 单击&#x200B;**+**。
+1. 输入&#x200B;**名称**。
+1. 对于&#x200B;**连接**，请选择&#x200B;**服务器URL**&#x200B;并输入MCP服务器URL。
+1. 将&#x200B;**Authentication**&#x200B;保留设置为&#x200B;**OAuth**。
+1. 阅读风险消息并选中复选框。
+1. 单击&#x200B;**创建**，然后使用您的登录。
 
 ## 切换到其他Fusion组织
 
@@ -159,7 +216,7 @@ claude mcp add --transport http fusion-mcp https://mcp.fusion.adobe.com/mcp
 | 您看到一条消息，指出MCP访问被禁用。 | 您的Fusion组织的MCP访问已关闭。 | 请咨询Fusion管理员以启用它。 |
 | 代理可以读取方案，但不能创建、运行、更新或删除方案。 | 写入MCP工具已禁用，或者您的团队角色不允许使用它。 | 要求您的Fusion管理员启用编写工具，或授予您所需的团队角色。 |
 | 自定义应用程序身份验证被拒绝。 | 回调URL不在授权列表中。 | 要求您的管理员添加精确的回调URL。 |
-| Fusion未列在Co-worker中，或Fusion右边栏中缺少Co-worker。 | 您的组织未启用该功能。<!-- BECKY CHECK ME: confirm whether this is the correct admin guidance before publishing. --> | 请与Fusion管理员联系。 |
+| Fusion未列在Co-worker中，或Fusion右边栏中缺少Co-worker。 | 您的组织未启用该功能。 | 请与Fusion管理员联系。 |
 
 ## 常见问题
 
