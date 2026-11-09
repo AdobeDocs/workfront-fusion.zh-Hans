@@ -11,9 +11,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: ddf7d3e48a5aee72d8f39b5b6746d1e3e884a7d0
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '554'
 ht-degree: 7%
 ---
 # 查看并解决未完成的执行
@@ -25,10 +25,6 @@ ht-degree: 7%
 >默认情况下，不完整执行的存储被禁用。 要启用它，请在场景高级设置中启用[!UICONTROL 允许存储未完成的执行]选项。
 >
 >有关方案设置的详细信息，请参阅[配置方案设置](/help/workfront-fusion/create-scenarios/config-scenarios-settings/configure-scenario-settings.md)。
-
-已突出显示完整文章{#highlighted-preview-article-level}的预览
-
-<span class="preview">此页面上的信息引用了尚未公开的功能。 它仅在“预览Sandbox”环境中可用。</span>
 
 ## 查看未完成的执行
 
