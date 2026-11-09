@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 1eeb0f543b77b52c18c45ebc773e0322391d2042
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 27%
@@ -22,7 +22,7 @@ ht-degree: 27%
 
 如果您在场景中的某个模块上看到绿色的升级模块图标，表示Workfront Fusion已发布该模块的新版本。
 
-![更新图标](assets/update-indicator-workfront.png)
+![更新图标](assets/new-update-indicator-workfront.png)
 
 您可以更新模块，而无需创建新方案。
 
@@ -57,8 +57,8 @@ ht-degree: 27%
 
 ## 将Workfront模块升级到新版本
 
-1. 单击要升级到新版本的模块上的&#x200B;**升级模块**&#x200B;图标![升级图标](assets/upgrade-icon.png)。
-   ![更新图标](assets/update-indicator-workfront.png)
+1. 单击要升级到新版本的模块上的&#x200B;**升级模块**&#x200B;图标![升级图标](assets/new-upgrade-icon.png)。
+   ![更新图标](assets/new-update-indicator-workfront.png)
 1. 选择下列选项之一：
 
    * 要选择新模块以替换此模块（而不是升级此模块），请单击&#x200B;**选择新模块**，然后按照[将非Workfront模块升级到新版本](#upgrade-a-non-workfront-module-to-a-new-version)中的说明继续操作。
@@ -73,7 +73,7 @@ ht-degree: 27%
 
 ## 将非Workfront模块升级到新版本
 
-1. 单击要升级到新版本的模块上的&#x200B;**升级模块**&#x200B;图标![升级图标](assets/upgrade-icon.png)。
+1. 单击要升级到新版本的模块上的&#x200B;**升级模块**&#x200B;图标![升级图标](assets/new-upgrade-icon.png)。
    <!--![Update icon](assets/update-indicator.png)-->
 1. 单击&#x200B;**选择新**。
 1. 选择要替换前一模块的模块。
