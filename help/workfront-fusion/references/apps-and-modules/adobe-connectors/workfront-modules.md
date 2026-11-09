@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
+source-git-commit: d3bb4ef202fd92ab7663ad5c2816c70e8bab6685
 workflow-type: tm+mt
-source-wordcount: '7761'
-ht-degree: 90%
+source-wordcount: '7773'
+ht-degree: 89%
 ---
 # Adobe Workfront 模块
 
@@ -128,7 +128,7 @@ ht-degree: 90%
         </td>
       </tr>
       <tr>
-        <td role="rowheader">[!UICONTROL 作用域] <i>（可选）</i></td>
+        <td role="rowheader">[！UICONTROL作用域] <i>（可选）</i></td>
         <td>输入此连接的任何其他范围。 将此字段留空以使用默认范围。</td>
       </tr>
       <tr>
@@ -295,16 +295,16 @@ ht-degree: 90%
        </td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL 启用安全挂钩]</td> 
+      <td>[！UICONTROL启用安全挂钩]</td> 
       <td>
        <p>选择是否要为此webhook启用基于authToken的安全性。</p><p>
        <b>注意</b>：自2026年8月23日起，Fusion将默认对所有Workfront &gt;关注事件模块（包括现有模块）启用基于authToken的安全性。 如果特定的webhook中断或出于兼容性原因需要禁用此选项，则可以关闭“启用安全挂钩”选项。</p>
        </td> 
      </tr> 
      <tr> 
-      <td>[!UICONTROL 自定义令牌]</td> 
+      <td>[！UICONTROL自定义令牌]</td> 
       <td>
-       <p>（可选）如果[!UICONTROL Enable secure hooks]设置为[!UICONTROL Yes]，则可以输入自己的令牌值来保护webhook。 如果您将此字段留空，Fusion会自动为您生成一个令牌。</p>
+       <p>（可选）如果[！UICONTROL Enable secure hooks]设置为[！UICONTROL Yes]，则可以输入自己的令牌值来保护webhook。 如果您将此字段留空，Fusion会自动为您生成一个令牌。</p>
        </td> 
      </tr> 
     </tbody> 
@@ -1069,7 +1069,7 @@ Workfront 最近发布了新版事件订阅服务。 该新版并未更改 Workf
 
 有关新版事件订阅的更多信息，请参阅 Workfront 文档中[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
 
-如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=zh-Hans)。
+如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)。
 
 <table style="table-layout:auto">
  <col> 
@@ -2385,7 +2385,7 @@ See a list of the Workfront object types for which you can use this module in [W
 >
 >   有关新版事件订阅的更多信息，请参阅 Workfront 文档中[事件订阅版本控制](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-versioning)
 >
->   如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182?profile.language=zh-Hans)。
+>   如需了解在事件订阅升级期间如何保护 Workfront Fusion 场景（包括网络研讨会录像），请参阅[事件订阅 V2 升级期间保护您的 Fusion 场景](https://experienceleaguecommunities.adobe.com/t5/workfront-discussions/event-follow-up-preserving-your-fusion-scenarios-during-the/td-p/754182)。
 
 Workfront 的[!UICONTROL 监控事件]模块会根据一个在 Workfront API 中创建事件订阅的 Webhook 来触发场景。 事件订阅是一组数据，用于确定哪些事件会发送至该 Webhook。 例如，如果您设置一个监控问题的[!UICONTROL 监控事件]模块，则该事件订阅只会将与问题相关的事件发送过来。
 
@@ -2403,11 +2403,11 @@ Workfront > “监控事件”筛选条件支持以下运算符：
 * 小于或等于
 * 包含
 * 已存在
-  * 此运算符不需要指定值，因此不会显示“值”字段。
+  * 此运算符不需要值，因此筛选器中不包含值字段。
 * 不存在
-  * 此运算符不需要指定值，因此不会显示“值”字段。
+  * 此运算符不需要值，因此筛选器中不包含值字段。
 * 已更改
-  * 此运算符不需要指定值，因此不会显示“值”字段。
+  * 此运算符不需要值，因此筛选器中不包含值字段。
   * 此运算符会忽略“状态”字段。
   * 使用 `Changed` 时，请在&#x200B;**记录来源**&#x200B;字段中选择&#x200B;**仅更新事件**。
 
