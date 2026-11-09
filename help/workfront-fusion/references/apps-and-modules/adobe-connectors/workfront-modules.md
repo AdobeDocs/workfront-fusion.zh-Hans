@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 4d64f865dd3e826daef02abaaf3c68daa7ed363e
+source-git-commit: d3bb4ef202fd92ab7663ad5c2816c70e8bab6685
 workflow-type: tm+mt
-source-wordcount: '7761'
-ht-degree: 90%
+source-wordcount: '7773'
+ht-degree: 89%
 ---
 # Adobe Workfront 模块
 
@@ -2403,11 +2403,11 @@ Workfront > “监控事件”筛选条件支持以下运算符：
 * 小于或等于
 * 包含
 * 已存在
-  * 此运算符不需要指定值，因此不会显示“值”字段。
+  * 此运算符不需要值，因此筛选器中不包含值字段。
 * 不存在
-  * 此运算符不需要指定值，因此不会显示“值”字段。
+  * 此运算符不需要值，因此筛选器中不包含值字段。
 * 已更改
-  * 此运算符不需要指定值，因此不会显示“值”字段。
+  * 此运算符不需要值，因此筛选器中不包含值字段。
   * 此运算符会忽略“状态”字段。
   * 使用 `Changed` 时，请在&#x200B;**记录来源**&#x200B;字段中选择&#x200B;**仅更新事件**。
 
