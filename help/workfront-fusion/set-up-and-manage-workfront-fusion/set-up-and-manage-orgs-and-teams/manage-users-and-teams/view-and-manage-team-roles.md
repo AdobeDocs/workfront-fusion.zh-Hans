@@ -51,7 +51,7 @@ ht-degree: 9%
   <tr data-mc-conditions=""> 
    <td role="rowheader">访问级别配置</td> 
    <td> 
-     <p>您在团队中必须具有<b>[！UICONTROL管理成员]</b>权限。 在预定义角色中，此权限包括在“团队管理员”和“组织所有者”角色中。</p>
+     <p>您在团队中必须具有<b>[!UICONTROL 管理成员]</b>权限。 在预定义角色中，此权限包括在“团队管理员”和“组织所有者”角色中。</p>
    </td> 
   </tr> 
  </tbody> 
@@ -97,7 +97,7 @@ ht-degree: 9%
    * 若要一次设置某个区域中的所有权限，请单击该区域名称旁边的&#x200B;**[!UICONTROL 无访问权限]**、**[!UICONTROL 仅查看]**&#x200B;或&#x200B;**[!UICONTROL 完全访问]**。
    * 要选择特定权限，请选中或清除每个权限对应的复选框。
 
-   有关权限的列表，请参阅本文中您可以包含在角色](#permissions-that-you-can-include-in-a-role)中的[权限。
+   有关权限的列表，请参阅本文中您可以包含在角色[&#128279;](#permissions-that-you-can-include-in-a-role)中的权限。
 
    <!-- BECKY CHECK ME: Confirm the options in the Role template dropdown and what each one selects. Confirm exactly what No access, View only, and Full access select in each area (in the screenshot, View only selects the view permissions). Confirm whether there is a Description field, and whether there are areas below Team on the page (the screenshots end at Team). -->
 
@@ -121,39 +121,39 @@ ht-degree: 9%
  </thead>
  <tbody>
  <tr>
-   <td role="rowheader">[！UICONTROL Automations]</td>
+   <td role="rowheader">[!UICONTROL Automations]</td>
    <td>查看列表，查看详细信息，查看运行历史记录，管理通知，重置统计信息，运行一次，编辑计划，激活，停用，创建，编辑，发布，删除</td>
   </tr>
  <tr>
-   <td role="rowheader">[！UICONTROL未完成的执行]</td>
+   <td role="rowheader">[!UICONTROL 未完成的执行]</td>
    <td>查看，管理</td>
   </tr>
  <tr>
-   <td role="rowheader">[！UICONTROL Webhooks]</td>
+   <td role="rowheader">[!UICONTROL Webhooks]</td>
    <td>查看、查看队列、创建、编辑、管理队列、更改优先级、删除</td>
   </tr>
  <tr>
-   <td role="rowheader">[！UICONTROL Connections]</td>
+   <td role="rowheader">[!UICONTROL Connections]</td>
    <td>查看、创建、编辑、删除</td>
   </tr>
  <tr>
-   <td role="rowheader">[！UICONTROL键]</td>
+   <td role="rowheader">[!UICONTROL 键]</td>
    <td>查看、创建、编辑、删除</td>
   </tr>
  <tr>
-   <td role="rowheader">[！UICONTROL数据存储]</td>
+   <td role="rowheader">[!UICONTROL 数据存储]</td>
    <td>查看列表，浏览记录，创建，编辑，删除</td>
   </tr>
  <tr>
-   <td role="rowheader">[！UICONTROL数据结构]</td>
+   <td role="rowheader">[!UICONTROL 数据结构]</td>
    <td>查看、创建、编辑、删除</td>
   </tr>
  <tr>
-   <td role="rowheader">[！UICONTROL模板]</td>
+   <td role="rowheader">[!UICONTROL 模板]</td>
    <td>查看列表，查看详细信息，创建，编辑，删除</td>
   </tr>
  <tr>
-   <td role="rowheader">[！UICONTROL团队]</td>
+   <td role="rowheader">[!UICONTROL 团队]</td>
    <td>查看团队、编辑团队设置、管理成员、删除团队</td>
   </tr>
  </tbody>
@@ -181,27 +181,27 @@ ht-degree: 9%
     <col> 
     <tbody> 
      <tr> 
-      <td role="rowheader">[！UICONTROL Source role]</td> 
+      <td role="rowheader">[!UICONTROL Source role]</td> 
       <td> <p>当前团队中的角色及其权限摘要。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 操作]</td> 
-      <td> <p>该怎么处理这个角色。 例如，<b>[！UICONTROL Copy to existing role]</b>将源角色的权限复制到目标团队中已存在的角色。</p> </td> 
+      <td> <p>该怎么处理这个角色。 例如，<b>[!UICONTROL Copy to existing role]</b>将源角色的权限复制到目标团队中已存在的角色。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL目标]</td> 
+      <td role="rowheader">[!UICONTROL 目标]</td> 
       <td> <p>源角色复制到的目标团队中的角色。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL更改]</td> 
-      <td> <p>目标角色是否不同于源角色。 例如，<b>[！UICONTROL已在同步]</b>意味着目标角色已具有与源角色相同的权限。</p> </td> 
+      <td role="rowheader">[!UICONTROL 更改]</td> 
+      <td> <p>目标角色是否不同于源角色。 例如，<b>[!UICONTROL 已在同步]</b>意味着目标角色已具有与源角色相同的权限。</p> </td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 用户]</td> 
-      <td> <p>有关拥有角色的用户的信息。 例如，<b>[！UICONTROL没有匹配的用户]</b>表示没有要包括的用户。</p> </td> 
+      <td> <p>有关拥有角色的用户的信息。 例如，<b>[!UICONTROL 没有匹配的用户]</b>表示没有要包括的用户。</p> </td> 
      </tr> 
      <tr> 
-      <td role="rowheader">[！UICONTROL状态]</td> 
+      <td role="rowheader">[!UICONTROL 状态]</td> 
       <td> <p>克隆后角色的结果。</p> </td> 
      </tr> 
     </tbody> 
