@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
 # 发行说明参考模板
 
@@ -144,8 +143,7 @@ The enhancements on this page are available in the Preview environment. This pag
 - 功能单元格： `<a>`标记，带有`class="MCXref xref" xrefformat="{para}"`，后跟`<p>`说明
 - `href`链接到产品区域页面（不是特定锚点）
 - 日期单元格：包装在`<p>`标记中
-- 对于计划外项目，在链接后添加`<p>[!BADGE Off schedule]{type=Neutral}</p>`
-- 无需徽章时，可接受链接后清空`<p></p>`
+- 对于计划外项目，请将`<p>[!BADGE Off schedule]{type=Neutral}</p>`添加为链接段落正下方的自身段落，在说明段落之前 — 链接之后为空`<p></p>`，无需徽章
 - 保持HTML缩进与现有文件一致
 
 ### 概述结尾部分
