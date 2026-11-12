@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 2%
+source-wordcount: '795'
+ht-degree: 1%
 ---
 # Adobe Workfront Fusion组织和团队概述
 
@@ -87,3 +87,25 @@ Workfront Fusion用户属于一个组织。
 * **[!UICONTROL 团队限制成员]**：此角色的功能当前不可用，并且将在不久的将来可用。 我们建议目前不要将用户分配给此角色。
 
 有关每个团队角色中用户可以执行的特定操作的信息，请参阅[组织和团队角色](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)。
+
+### 自定义团队角色
+
+<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release before publishing, and whether this section should say that the feature is available only to some organizations. -->
+
+除了预定义团队角色之外，每个团队都有一个&#x200B;**[!UICONTROL 角色]**&#x200B;选项卡，您可以在其中创建自己的角色。 您可以创建、更新和删除角色，并准确选择每个角色包括的权限。 您不再受限于一组固定的角色。
+
+有关说明，请参阅[查看和管理团队角色](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)。
+
+通过自定义角色，您可以：
+
+* 仅向每个人提供其工作所需的访问权限，这降低了关键场景意外更改的风险。
+* 设置访问权限以匹配组织的工作方式，而不是将您的团队安排到预定义角色中。
+* 无需联系支持人员即可自行管理访问权限。
+
+团队中具有&#x200B;**[!UICONTROL 管理成员]**&#x200B;权限的任何人都可以创建、更新、删除用户，并将用户分配给该团队中的角色。 在预定义角色中，此权限包括在“团队管理员”和“组织所有者”角色中。
+
+* 组织所有者可以创建和管理所有团队中的角色。
+* 组织管理员只能管理其所属的团队中的角色，并且他们具有&#x200B;**[!UICONTROL 管理成员]**&#x200B;权限。
+* 团队管理员可以管理其团队中的角色。
+
+<!-- BECKY CHECK ME: The source does not describe the steps in the Roles tab, the list of permissions that you can choose from, or whether you can edit or delete the predefined roles. Add the steps and permissions list once confirmed. Also confirm that Team Admins can manage roles (the source says the Manage members permission was previously given to Team Admin and Org Owner roles, and that team and org admins can create roles only in the teams where they are admins). -->

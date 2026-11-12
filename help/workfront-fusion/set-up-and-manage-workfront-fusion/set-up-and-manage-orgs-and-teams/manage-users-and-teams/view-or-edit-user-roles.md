@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 62dff65d6de1c2301ca8e99f5aaeda05e6a34ffe
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 18%
+source-wordcount: '542'
+ht-degree: 17%
 ---
 # 查看或编辑用户角色
 
@@ -87,7 +87,12 @@ Adobe Workfront Fusion管理员可以查看和更新组织的用户角色。
 
 Adobe Workfront Fusion管理员和团队管理员可以查看和更新用户角色。
 
+>[!NOTE]
+>
+>除了预定义角色之外，团队还可以具有自定义角色。 有关创建和管理自定义角色的信息，请参阅[查看和管理团队角色](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)。
+
 1. 以Workfront Fusion管理员身份登录时，在左侧导航中选择&#x200B;**[!UICONTROL 所有用户]**。
 1. 在要查看的用户行中单击&#x200B;**[!UICONTROL 详细信息]**。
 1. 在包含要查看或编辑用户角色的团队的组织行中，单击&#x200B;**[!DNL Role]**&#x200B;列中的“团队”图标。
 1. （可选）要更新团队中用户的角色，请单击团队中要更改用户角色的行&#x200B;**[!DNL Role]**&#x200B;列中的下拉列表，然后选择新角色。
+

@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 31%
+source-wordcount: '347'
+ht-degree: 29%
 ---
 # 将用户添加到团队
 
@@ -66,3 +66,7 @@ ht-degree: 31%
 1. 单击用户名右侧的&#x200B;**无**，然后选择您希望他们在团队中的角色。
 
    用户将添加到团队，并拥有您选择的角色。
+
+   >[!NOTE]
+   >
+   >除了预定义角色之外，团队还可以具有自定义角色。 有关创建自定义角色的信息，请参阅[查看和管理团队角色](/help/workfront-fusion/set-up-and-manage-workfront-fusion/set-up-and-manage-orgs-and-teams/manage-users-and-teams/view-and-manage-team-roles.md)。
