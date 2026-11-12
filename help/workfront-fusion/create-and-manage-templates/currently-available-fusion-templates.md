@@ -16,9 +16,9 @@ feature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 29913d8252c39b66cfe4688d760bffb074dbf56c
 workflow-type: tm+mt
-source-wordcount: '2436'
+source-wordcount: '2732'
 ht-degree: 0%
 ---
 # 当前可用的 Adobe Workfront Fusion 模板
@@ -34,8 +34,6 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 这些模板可自动化Workfront流程和工作流。
 
 ### Workfront — 当任务提早完成时，自动调整项目时间线
-
-<!--New June 10, 2025-->
 
 此模板旨在支持采用更灵活的“随使用计划”方法而不是严格的基于PMI的项目管理方法的组织。
 
@@ -165,13 +163,41 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 此模板按顺序对您的问题进行编号。 它假定您使用“Workfront — 连续编号系列：创建对象自定义表单和字段”模板创建了一个自定义表单和字段，但您可以使用现有的表单和字段。
 
+### Workfront — 使用AEM工作流创建项目
+
+[!BADGE 新！]{type=Informative}
+
+<!--New November 11, 2026-->
+
+<!-- BECKY CHECK ME: The request is titled "Automation New Templates" and lists the fields of two templates, "Create project with AEM workflow" and "Create multiple records". It does not give the exact template names, the trigger, or a description of what each template does. I wrote the descriptions from the field list. Confirm the template names as they appear in the Templates area, the trigger for each template, and the descriptions. -->
+
+此模板可从项目模板创建项目，并可创建为项目模板配置的AEM链接文件夹并将其链接到新项目。
+
+>[!TIP]
+>
+>* 仅当所选项目模板具有已启用的[AEM工作流](https://experienceleague.adobe.com/en/docs/workfront/using/administration-and-setup/configure-integrations/configure-aacs-integration#set-up-workflows-optional)，且其中至少有一个文件夹树时，才会创建AEM链接文件夹。 如果不包含，则项目将在没有链接文件夹的情况下创建。
+>* 保存自动化时，将从项目模板中获取文件夹树。 如果以后在项目模板中添加或删除文件夹树，则必须再次编辑并保存自动化以包含更改。
+
+### Workfront — 创建多个记录
+
+[!BADGE 新！]{type=Informative}
+
+<!--New November 11, 2026-->
+
+此模板根据当前记录上的字段中的选择，在记录类型上创建一个或多个记录。
+
+>[!TIP]
+>
+>* 将为当前记录中存在的每个选择创建一个记录，该记录具有字段映射。 将跳过没有映射的选择，并且不会为其创建记录。
+>* 要命名创建的记录，请将源字段映射到新记录类型的主（名称）字段。 然后，每个记录都命名为&#x200B;*[当前记录名称]选择值*。 如果不映射主字段，则记录的名称将留空。
+>* 如果所选记录中没有一个在所选字段中包含映射选择，则不会创建任何记录，并且消息会告知您哪个字段为空。
+>* 保存自动化时，将从当前记录类型中读取字段选择和映射。 如果以后添加或更改字段或选项，则必须再次编辑并保存自动化以包含更改。
+
 ## Workfront - Workfront Proof模板
 
 这些模板可自动执行将Workfront与Workfront Proof相结合的工作流。
 
 ### Workfront > Workfront Proof — 将验证用户角色更改为只读，并在项目关闭时锁定验证
-
-<!--New March 12, 2025-->
 
 此模板用于监视项目是否更新到等于被拒绝、已完成或终止的状态。 然后，它会将任何具有待处理验证决策的用户的身份更改为只读。 最后，它会锁定验证并向文档发送更新。
 
@@ -244,7 +270,7 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 这些模板支持Workfront-Anaplan集成，并期待在Workfront中的Anaplan中进行特定配置。 有关这些模板及其所需配置的信息，请参阅各个模板的文章。
 
-有关Workfront-Anaplan集成的详细信息，请参阅Workfront文档中的[Adobe Workfront与Anaplan](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)。
+有关Workfront-Anaplan集成的详细信息，请参阅Workfront文档中的[Adobe Workfront与Anaplan](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/anaplan-integration)。
 
 >[!NOTE]
 >
@@ -252,19 +278,19 @@ Adobe Workfront Fusion中当前提供以下公共模板。
 
 ### 支出优化工作流
 
-* [将Adobe Workfront项目更新发送到 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
-* [将Adobe Workfront费用发送到 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
-* [向 [!DNL Anaplan] 列表项发送Adobe Workfront实际小时数更新](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
+* [将Adobe Workfront项目更新发送到 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-updates-to-anaplan-list-item)
+* [将Adobe Workfront费用发送到 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-expenses-to-anaplan-list-item)
+* [向 [!DNL Anaplan] 列表项发送Adobe Workfront实际小时数更新](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/send-workfront-project-actual-hours-updates-to-anaplan-list-item)
 
 ### 用于链接预算请求的工作流
 
-* [根据Adobe Workfront预算请求创建 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
-* [将 [!DNL Anaplan] 预算分配应用于Adobe Workfront项目](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
+* [根据Adobe Workfront预算请求创建 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-budget-request)
+* [将 [!DNL Anaplan] 预算分配应用于Adobe Workfront项目](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-projects)
 
 ### 用于链接营销活动请求的工作流
 
-* [根据Adobe Workfront营销活动请求创建 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
-* [将 [!DNL Anaplan] 预算分配应用于Adobe Workfront营销活动请求或营销活动项目](https://experienceleague.adobe.com/zh-hans/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
+* [根据Adobe Workfront营销活动请求创建 [!DNL Anaplan] 列表项](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/create-an-anaplan-list-item-from-a-workfront-campaign-request)
+* [将 [!DNL Anaplan] 预算分配应用于Adobe Workfront营销活动请求或营销活动项目](https://experienceleague.adobe.com/en/docs/workfront/using/adobe-workfront-integrations/workfront-with-anaplan/apply-anaplan-budget-allocation-to-workfront-campaign-requests-and-projects)
 
 ## Workfront - Jira模板
 

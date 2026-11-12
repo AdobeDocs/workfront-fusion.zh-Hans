@@ -1,9 +1,8 @@
 ---
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
 # 发行说明参考模板
 
@@ -11,7 +10,7 @@ ht-degree: 0%
 `help/quicksilver/product-announcements/product-releases/release-note-templates/`和
 最近季度版本中使用的实际格式。
 
-&#x200B;---
+---
 
 ## 产品区域页面模板
 
@@ -57,17 +56,15 @@ For more information, see [Help article title](/help/quicksilver/path/to/article
   >Production fast release: {date}
   >Production for everyone: {date}
   ```
-
 - 如果暂时删除了某个功能，请在日期后添加一行：
 
   ```
   >
   >This feature has been temporarily removed from the Production environment on {date}.
   ```
-
 - 帮助链接使用以`/help/quicksilver/`开头的绝对路径
 
-&#x200B;---
+---
 
 ## “概述”页面模板
 
@@ -144,8 +141,7 @@ The enhancements on this page are available in the Preview environment. This pag
 - 功能单元格： `<a>`标记，带有`class="MCXref xref" xrefformat="{para}"`，后跟`<p>`说明
 - `href`链接到产品区域页面（不是特定锚点）
 - 日期单元格：包装在`<p>`标记中
-- 对于计划外项目，在链接后添加`<p>[!BADGE Off schedule]{type=Neutral}</p>`
-- 无需徽章时，可接受链接后清空`<p></p>`
+- 对于计划外项目，请将`<p>[!BADGE Off schedule]{type=Neutral}</p>`添加为链接段落正下方的自身段落，在说明段落之前 — 链接之后为空`<p></p>`，无需徽章
 - 保持HTML缩进与现有文件一致
 
 ### 概述结尾部分
@@ -157,7 +153,7 @@ The enhancements on this page are available in the Preview environment. This pag
 
 ### Workfront Fusion enhancements
 
-New features in Workfront Fusion are available in Production at a cadence outside of the standard release schedule. For more information about the latest features, see [Adobe Workfront Fusion release activity](https://experienceleague.adobe.com/zh-hans/docs/workfront-fusion/using/fusion-release-activity/fusion-release-activity).
+New features in Workfront Fusion are available in Production at a cadence outside of the standard release schedule. For more information about the latest features, see [Adobe Workfront Fusion release activity](https://experienceleague.adobe.com/en/docs/workfront-fusion/using/fusion-release-activity/fusion-release-activity).
 
 ### Workfront Planning enhancements
 
@@ -183,14 +179,14 @@ There are no updates for the following at this point in the release:
 
 ### Workfront Maintenance Updates
 
-For information about the maintenance updates made during the {Written Quarter} {Year} release, see [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html?lang=zh-Hans).
+For information about the maintenance updates made during the {Written Quarter} {Year} release, see [Workfront Maintenance Updates](https://experienceleague.adobe.com/docs/workfront-known-issues/releases/current-updates.html).
 
 ### Training updates
 
-Explore the latest updates made to learning programs, learning paths, videos, and guides for each Adobe Workfront product release. For more information, see the "What's New" section of the [Workfront Tutorials page](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/home.html?lang=zh-Hans).
+Explore the latest updates made to learning programs, learning paths, videos, and guides for each Adobe Workfront product release. For more information, see the "What's New" section of the [Workfront Tutorials page](https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/home.html).
 ```
 
-&#x200B;---
+---
 
 ## Look and Feel页面模板
 
@@ -219,7 +215,7 @@ For a list of all changes available with the {Written Quarter} {Year} release, s
 Description of the look-and-feel change.
 ```
 
-&#x200B;---
+---
 
 ## 日期标注格式
 
@@ -249,7 +245,7 @@ Description of the look-and-feel change.
 >Preview release: February 9, 2023; Planned Production release: February 23, 2023
 ```
 
-&#x200B;---
+---
 
 ## 需要注意的已知不一致
 

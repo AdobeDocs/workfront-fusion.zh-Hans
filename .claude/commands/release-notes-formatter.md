@@ -1,13 +1,11 @@
 ---
 name: release-notes-formatter
 description: 格式化并验证Workfront发行说明，确保一致性、正确结构和正确链接。 仅用于产品版本目录中的发行说明文件，或者用户提及发行说明、产品版本或季度版本时。 不适用于操作方法文章或常规文档。
-source-git-commit: 4d32e8aab5b3b8a12dbc23e61f517fc4fd6dc9e5
+source-git-commit: 873d91ff9db954bfad835ccb4d8f423ea7f46102
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 2%
-
+source-wordcount: '1013'
+ht-degree: 1%
 ---
-
 
 # 发行说明格式化程序
 
@@ -73,7 +71,7 @@ exl-id: <existing UUID — never generate or change>
 >Production for everyone: {Month Day, Year}
 ```
 
-&#x200B;5. **正文**：功能描述，然后链接到帮助文档
+5. **正文**：功能描述，然后链接到帮助文档
 
 #### 概述页面
 
@@ -90,16 +88,19 @@ exl-id: <existing UUID — never generate or change>
 * [Document enhancements](#document-enhancements)
 ```
 
-&#x200B;5. 带有HTML功能表的每个产品区域&#x200B;**H3**（请参阅。claude/commands/_release-notes-formatter-reference.md#overview-feature-table）
-   - 在每个表中，**最新功能排在前** — 最新行显示在表的顶部（标题行之后）
+- 如果产品区域部分被注释掉，请完全删除此列表中的其链接。 请勿注释掉链接。
 
-&#x200B;6. **尾随部分** (H2)：其他区域的发行说明、桌面校对查看器更新、公告、API版本、维护更新、培训更新
+5. 带有HTML功能表的每个产品区域&#x200B;**H3**（请参阅。claude/commands/_release-notes-formatter-reference.md#overview-feature-table）
+   - 在每个表中，**最新功能排在前** — 最新行显示在表的顶部（标题行之后）
+   - 如果某个功能有徽章（如`[!BADGE Off schedule]{type=Neutral}`），请将其放在它自己的`<p>`中，直接位于功能链接段落中，描述段落之前。
+
+6. **尾随部分** (H2)：其他区域的发行说明、桌面校对查看器更新、公告、API版本、维护更新、培训更新
 
 ### 步骤3：验证链接
 
 - 产品区域页面中的&#x200B;**概述链接**：必须指向同一季度
-   - 正确： `26-q2-release-activity/26-q2-release-overview.md`
-   - 错误： `26-q1-release-activity/26-q1-release-overview.md`
+  - 正确： `26-q2-release-activity/26-q2-release-overview.md`
+  - 错误： `26-q1-release-activity/26-q1-release-overview.md`
 - 概览中的&#x200B;**锚点链接**：必须匹配H3 ID（小写、连字符）
 - 概览表中的&#x200B;**功能链接**：必须使用`class="MCXref xref" xrefformat="{para}"`
 - **帮助文档链接**：必须以`/help/quicksilver/`开头
@@ -124,6 +125,9 @@ exl-id: <existing UUID — never generate or change>
 | 编号说明行中的额外空格 | 修剪尾随空格 |
 | 产品区域页面中的HTML | 保留为Markdown（HTML仅适用于概览表） |
 | 缺少`exl-id` | 将其排除 — 不生成一个 |
+| 在概述表格中，将徽章放置在描述之后 | 直接在功能链接下将其移至其自己的`<p>` |
+| 指向注释掉部分的迷你TOC链接 | 从列表中删除链接；请勿将其注释掉 |
+| 概述中的增强功能表，无迷你目录链接 | 按照与表格相同的顺序，添加指向Adobe Workfront增强功能列表的链接 |
 
 ### 步骤6：更新目录
 
@@ -133,9 +137,9 @@ exl-id: <existing UUID — never generate or change>
 
 - 目录在标题下每季度有一个节，如`* 2026 Q3 Release {#release-26-q3}`。 如果季度标题尚不存在（新季度的第一页），请将其添加到上一季度的上方，这样最新季度就会位于最上方。
 - 在该季度标题下，按以下顺序列出页面：
-   1. 首先&#x200B;**概述** (`Third Quarter 2026 release overview`)。
-   2. **产品区域页面**&#x200B;按区域名称（管理员、文档、企业运营、项目、报表、请求）的字母顺序排列。
-   3. **其他增强功能**&#x200B;最后进行（始终在按字母顺序排列的产品区域之后）。
+  1. 首先&#x200B;**概述** (`Third Quarter 2026 release overview`)。
+  2. **产品区域页面**&#x200B;按区域名称（管理员、文档、企业运营、项目、报表、请求）的字母顺序排列。
+  3. **其他增强功能**&#x200B;最后进行（始终在按字母顺序排列的产品区域之后）。
 
 每个TOC条目都是一个使用页面标题和绝对存储库路径的Markdown链接：
 
@@ -184,6 +188,8 @@ exl-id: <existing UUID — never generate or change>
 - [ 概述中的]功能表行与产品区域页面内容匹配
 - [ ]没有断开的内部链接
 - [ 概述中的]个锚点链接与H3节ID匹配
+- [ ]概述中未注释的每个增强功能表在迷你目录中都有一个匹配的链接，因此未注释时添加回的部分不会丢失
+- [ ]概述迷你目录没有指向注释掉部分的链接，徽章直接位于功能链接下方
 - [ ]功能以最新先的方式排序（包括产品区域页面和概述表）
 - [ ]个新发行说明页面在`help/quicksilver/TOC.md`中按正确的季度列出，概览在前，产品区域按字母顺序（其他在后）排列
 
