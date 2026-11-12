@@ -71,7 +71,7 @@ exl-id: <existing UUID — never generate or change>
 >Production for everyone: {Month Day, Year}
 ```
 
-5. **正文**：功能描述，然后链接到帮助文档
+&#x200B;5. **正文**：功能描述，然后链接到帮助文档
 
 #### 概述页面
 
@@ -90,11 +90,11 @@ exl-id: <existing UUID — never generate or change>
 
 - 如果产品区域部分被注释掉，请完全删除此列表中的其链接。 请勿注释掉链接。
 
-5. 带有HTML功能表的每个产品区域&#x200B;**H3**（请参阅。claude/commands/_release-notes-formatter-reference.md#overview-feature-table）
+&#x200B;5. 带有HTML功能表的每个产品区域&#x200B;**H3**（请参阅。claude/commands/_release-notes-formatter-reference.md#overview-feature-table）
    - 在每个表中，**最新功能排在前** — 最新行显示在表的顶部（标题行之后）
    - 如果某个功能有徽章（如`[!BADGE Off schedule]{type=Neutral}`），请将其放在它自己的`<p>`中，直接位于功能链接段落中，描述段落之前。
 
-6. **尾随部分** (H2)：其他区域的发行说明、桌面校对查看器更新、公告、API版本、维护更新、培训更新
+&#x200B;6. **尾随部分** (H2)：其他区域的发行说明、桌面校对查看器更新、公告、API版本、维护更新、培训更新
 
 ### 步骤3：验证链接
 
