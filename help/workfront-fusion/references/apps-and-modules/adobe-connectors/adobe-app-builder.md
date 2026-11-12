@@ -4,13 +4,11 @@ description: Adobe App Builder连接器允许您在场景中使用自定义函�
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: e24fc726107fcfa34e9288e9a35af445fc0cc765
+source-git-commit: 02c396f33b6398635462bac8741f446eb82bf5a9
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 19%
-
+source-wordcount: '754'
+ht-degree: 16%
 ---
-
 # Adobe App Builder模块
 
 您可以在Fusion的“函数”区域中创建自定义函数。 然后，以Adobe App Builder模块的形式将这些函数添加到场景中。
@@ -46,6 +44,62 @@ ht-degree: 19%
 
 +++
 
+## 创建与Adobe App Builder的连接
+
+该连接使用App Builder项目工作区的Adobe I/O Runtime凭据。 在创建连接之前，请从Adobe Developer Console获取这些凭据。
+
+### 获取运行时凭据
+
+1. 使用拥有您的Adobe Developer Console许可证的组织登录到[App Builder](https://developer.adobe.com/console)。
+1. 打开包含您的函数的App Builder项目，然后选择要连接的工作区（例如，**生产**）。
+1. 单击右上角的&#x200B;**全部下载**&#x200B;以下载工作区配置JSON文件。
+1. 打开文件并找到`runtime`部分。 主库文件包含：
+
+   * `namespace`：要在&#x200B;**命名空间**&#x200B;字段中输入的值
+   * `auth`：格式为`username:password`的值。 冒号之前的部分是&#x200B;**用户名**，冒号之后的部分是&#x200B;**密码**。
+
+   >[!NOTE]
+   >
+   >您还可以通过在Adobe I/O CLI中运行`aio runtime namespace get`或`aio app use`来查找命名空间和身份验证值。
+
+### 创建连接
+
+1. 在模块中，单击&#x200B;**连接**&#x200B;字段旁边的&#x200B;**添加**。
+1. 填写以下字段：
+
+   <table style="table-layout:auto"> 
+    <col> 
+    <col> 
+    <tbody> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL 连接名称]</td> 
+      <td>输入此连接的名称。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL 环境]</td> 
+      <td>选择您要连接到生产环境还是非生产环境。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL 类型]</td> 
+      <td>选择<b>服务帐户</b>。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[！UICONTROL用户名]</td> 
+      <td>输入您工作区的<code>auth</code>值（冒号之前的部分）中的用户名。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[!UICONTROL 密码]</td> 
+      <td>从工作区的<code>auth</code>值（冒号后的部分）输入密码。</td> 
+     </tr> 
+     <tr> 
+      <td role="rowheader">[！UICONTROL命名空间]</td> 
+      <td>从工作区配置文件的<code>runtime</code>部分输入<code>namespace</code>值。</td> 
+     </tr> 
+    </tbody> 
+   </table>
+
+1. 单击&#x200B;**继续**&#x200B;以保存连接。
+
 ## Adobe App Builder模块
 
 ### 运行自定义代码块
@@ -61,7 +115,7 @@ ht-degree: 19%
    <td>选择包含要运行的自定义函数的连接。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 代码块]</td> 
+   <td role="rowheader">[！UICONTROL代码块]</td> 
    <td>输入您希望模块运行的代码块。<p>若要格式化代码以便于阅读，请单击<b>格式化代码</b>图标。</td> 
   </tr> 
    </tbody> 
@@ -82,11 +136,11 @@ ht-degree: 19%
    <td>选择包含要运行的自定义函数的连接。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 包]</td> 
+   <td role="rowheader">[！UICONTROL包]</td> 
    <td>选择包含要在场景中运行的函数的包。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 变量] </td> 
+   <td role="rowheader">[！UICONTROL变量] </td> 
    <td>选择要在场景中运行的函数。</p></td> 
   </tr> 
    </tbody> 
@@ -107,11 +161,11 @@ ht-degree: 19%
    <td>选择包含要运行的自定义函数的连接。 </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 包]</td> 
+   <td role="rowheader">[！UICONTROL包]</td> 
    <td>选择包含要纳入场景的变量的资源包。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 变量] </td> 
+   <td role="rowheader">[！UICONTROL变量] </td> 
    <td>选择要纳入场景的变量。</p></td> 
   </tr> 
    </tbody> 
@@ -136,7 +190,7 @@ ht-degree: 19%
    <td>选择要运行的自定义函数。</td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 参数] </td> 
+   <td role="rowheader">[！UICONTROL参数] </td> 
    <td>输入函数参数的值。 可用参数基于创建函数时配置的参数。<p>如果某个参数具有默认值，则您将不会在字段中看到该默认值，但可以通过在字段中输入或映射值来覆盖该默认值。</p></td> 
   </tr> 
    </tbody> 
