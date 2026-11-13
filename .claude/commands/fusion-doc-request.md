@@ -1,9 +1,9 @@
 ---
 name: fusion-doc-request
 description: 处理来自的Fusion文档请求 #fusion-documentation Slack template - update the relevant Fusion docs article(s) in this repo, then create a matching task in the Product Documentation Workfront project with the feature description and a formatted release note filled in on the custom form. Use when the user shares a Slack documentation-request thread/message for a Fusion feature, or says something like "please update and create a task" for one.
-source-git-commit: 535a10407766d054b00d31869e511753bf07a9b7
+source-git-commit: 17a2d521197e676e41b4b899f7be142430a18c2f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1704'
 ht-degree: 0%
 ---
 
@@ -36,6 +36,8 @@ ht-degree: 0%
 ## 第2步：为请求创建分支
 
 在接触任何文件之前，请为此请求创建一个新的Git分支并签出它。 从当前默认分支(`main`)中分支，而不是从任何要签出的分支中分支。
+
+如果用户已创建并命名分支，请使用它而不是创建一个新分支，并在步骤4中的任务的`Documentation Branch`字段中记录该名称。
 
 命名分支`becky-{short-kebab-case-description}`，它派生自&#x200B;**功能标题** — 第一个单词必须是`becky`，与此存储库的现有分支约定匹配（例如`becky-webhook-update`，`becky-storage-beta-sos`）。 简明扼要 — 只说几句，不要逐字逐句地记下全名。
 
@@ -74,9 +76,12 @@ ht-degree: 0%
 | `DE:Preview Date` | 默认情况下，原始Slack消息中引用的日期（请求的&#x200B;**预计发布日期**） |
 | `taskConstraint` + `constraintDate` | 将`taskConstraint`设置为`MFO`（必须完成日期），其中`constraintDate`为原始Slack消息中引用的日期（请求的&#x200B;**预计发布日期**），因此任务的计划完成日期也与该日期匹配。 |
 | `DE:Articles to update` | 您为此请求创建或更新的文章列表（见下文） |
+| `DE:Documentation Branch` | 文档更改所在的git分支的名称（见下文） |
 | 产品/区域 | 选择`Fusion` （产品文档表单上的枚举字段；如果名称不清楚，请使用`insights_search_fields`确认确切的字段名称） |
 
 `DE:Articles to update` （产品文档表单上的文本字段）列出了您在步骤3中创建或更改的每个文章文件，每行一个存储库相对路径（例如`help/workfront-fusion/manage-scenarios/explain-errors-with-ai.md`）。 包含新文章（在路径后添加`(new)`）以及您编辑的任何TOC或索引文件。 由于文档编辑在步骤3中进行，因此在创建任务时该列表是已知的，因此在相同的创建调用中对其进行设置。 如果用户要求您在不编辑文档的情况下创建任务，请将该字段留空，并在编辑文档后进行更新。
+
+`DE:Documentation Branch` （产品文档表单上的文本字段）包含文档编辑所在的git分支的确切名称，例如`becky-explain-errors-with-ai`。 使用名为的用户的分支或您编辑的存储库中当前签出的分支；不要创建名称。 在与其他字段相同的创建调用中设置它。 如果用户要求您创建任务而不进行文档编辑，并且不存在分支，请将该字段留空并稍后更新。
 
 将预览日期字段和计划完成日期设置为此同一创建调用的一部分 — 不要将它们留待以后或等待询问。 如果用户稍后提供不同的日期，或指出日期实际上尚不知道，请相应地更新，但默认每次都填写日期。
 
@@ -108,6 +113,7 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 * 您创建的分支（在本地提交，不推送，也不打开拉取请求 — 步骤2）。
 * 您更改了哪些doc文件以及添加了哪些内容。
 * 已更改的文章在任务的`Articles to update`字段中列出。
+* 您在任务的`Documentation Branch`字段中输入的分支名称。
 * 分支上未提交更改，正在等待用户的审阅。
 * 任务名称和URL。
 * 您设置的确切字段值，包括预览日期字段。
@@ -120,4 +126,4 @@ For more information, see [{Article title}](/help/workfront-fusion/{path-to-arti
 * 项目“产品文档任务 — 适用于需要消息传送的开发问题”映射到ID `5e69583f00236b9f767c3e3944100ee4`
 * 父任务“Becky - Fusion-Documentation渠道中的任务”映射到ID `6a9b065100003a7554832780c2015e93`（在同一项目中） — 使用`insights_find_id_by_name` （实体`task`）进行解析，而不是硬编码，以防发生更改
 * 产品文档自定义表单(`categoryID`)为`5d7275b9000514604bd969d418725843`
-* 使用的自定义字段： `DE:Release notes`、`DE:Preview Date Known`、`DE:Preview Date`
+* 使用的自定义字段： `DE:Release notes`、`DE:Preview Date Known`、`DE:Preview Date`、`DE:Articles to update`、`DE:Documentation Branch`
