@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 75%
+source-wordcount: '522'
+ht-degree: 70%
 ---
 # 映射概述
 
@@ -68,6 +68,9 @@ ht-degree: 75%
 第一个选项卡显示可从其他模块映射的项目。
 
 其他标签页包含可用于创建公式的函数、运算符和关键字。 这些内容会根据其处理的数据类型分组到不同的标签页中。
+
+**[!UICONTROL 由AI填充]**&#x200B;选项卡允许您以纯语言描述您希望字段包含的内容，并且AI会为您生成表达式。 有关详细信息，请参阅[使用AI生成表达式](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai)。
+
 
 ![映射面板](assets/new-mapping-panel-blank.png)
 

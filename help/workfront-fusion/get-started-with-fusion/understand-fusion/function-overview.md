@@ -13,10 +13,10 @@ feature_v2:
     internal-label: APIs
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: cc160f0e8c2465b4f102b6d1755088335b2a9fe5
+source-git-commit: 9396113bb466ef309e8fcdb06e423a100b6fb271
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 59%
+source-wordcount: '306'
+ht-degree: 57%
 ---
 # 函数概述
 
@@ -38,11 +38,13 @@ Workfront Fusion包含内置函数，可让您创建简单或复杂的公式。 
 | 函数类型 | 有关更多信息，请参阅： |
 | --- | --- |
 | **从其他模块映射**<br>![&#x200B;从其他模块映射](assets/toolbar-icon-functions-you-map-from-other-modules.png) | [将信息从一个模块映射到另一个模块](/help/workfront-fusion/create-scenarios/map-data/map-data-from-one-to-another.md) |
+| **由AI填充**<br>![&#x200B;由AI填充](assets/toolbar-icon-fill-by-ai.png) | [使用AI生成表达式](/help/workfront-fusion/create-scenarios/map-data/map-using-functions.md#generate-an-expression-with-ai) |
 | **常规函数**<br>![&#x200B;常规函数](assets/toolbar-icon-general-function.png) | [常规函数](/help/workfront-fusion/references/mapping-panel/functions/general-functions.md) |
 | **数学函数**<br>![&#x200B;数学函数](assets/toolbar-icon-math-functions.png) | [数学函数](/help/workfront-fusion/references/mapping-panel/functions/math-functions.md) |
 | **文本和二进制函数**<br>![&#x200B;字符串函数](assets/toolbar-icon-text-binary-functions.png) | [字符串函数](/help/workfront-fusion/references/mapping-panel/functions/string-functions.md) |
 | **日期和时间** <br> ![日期和时间函数](assets/toolbar-icon-date-time-functions.png) | <ul><li>[日期和时间函数](/help/workfront-fusion/references/mapping-panel/functions/date-and-time-functions.md)</li><li>[日期和时间格式化标记](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-formatting.md)</li><li> [日期和时间解析标记](/help/workfront-fusion/references/mapping-panel/functions/tokens-for-date-and-time-parsing.md)</li></ul> |
 | **用于处理数组的函数**<br> ![数组函数](assets/toolbar-icon-functions-for-arrays.png) | [数组函数](/help/workfront-fusion/references/mapping-panel/functions/array-functions.md) |
+
 
 ![函数工具栏](assets/new-functions-toolbar.png)
 
