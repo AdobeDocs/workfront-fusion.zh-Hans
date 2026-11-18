@@ -11,10 +11,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 1c28e4007e3e9d6503618482002e506f9393ee57
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 29%
+source-wordcount: '590'
+ht-degree: 16%
 ---
 # 查看webhook的队列
 
@@ -61,12 +61,40 @@ ht-degree: 29%
 
 ![队列横幅](assets/queue-banner.png)
 
-查看webhook的队列：
+webhook的队列页面具有与&#x200B;**[!UICONTROL 方案]**&#x200B;和&#x200B;**[!UICONTROL Webhook]**&#x200B;列表相同的布局。
+
+>[!NOTE]
+>
+>搜索和排序仅适用于当前加载到表中的事件，而不适用于整个队列。 要包含更多事件，请首先加载其他事件。
+
+要查看和管理webhook的队列，请执行以下操作：
 
 1. 单击左侧菜单中的&#x200B;**[!UICONTROL Webhooks]**。
 1. 找到要查看其队列的Webhook。
-1. 在“接收的事件”按钮中找到事件数。
+1. 找到事件数“队列已满”列。
 
    ![Webhook队列](assets/webhook-queue.png)
 
-1. 单击按钮可查看有关队列中事件的详细信息。
+1. 单击&#x200B;**操作**&#x200B;按钮可查看有关队列中事件的详细信息。
+
+   webhook的队列页面将打开。 该页面在表中列出了队列中的事件，这些事件具有以下列： **[!UICONTROL ID]**、**[!UICONTROL 创建于]**、**[!UICONTROL 大小]**&#x200B;和&#x200B;**[!UICONTROL 详细信息]**。
+
+1. （可选）要筛选表中的事件，请在表上方的&#x200B;**[!UICONTROL 搜索]**&#x200B;字段中输入文本。
+1. （可选）要对事件进行排序，请单击&#x200B;**[!UICONTROL ID]**、**[!UICONTROL 创建于]**&#x200B;或&#x200B;**[!UICONTROL Size]**&#x200B;列标题。
+1. （可选）要更改每个页面上显示的事件数，请在页面底部的&#x200B;**[!UICONTROL 显示]**&#x200B;下拉列表中选择一个数字。
+1. （可选）若要在事件页面之间移动，请单击页面底部的&#x200B;**[!UICONTROL First]**、**[!UICONTROL Previous]**、**[!UICONTROL Next]**&#x200B;或&#x200B;**[!UICONTROL Last]**。
+
+   当队列只有一页事件时，这些按钮不可用。
+
+1. （可选）要查看事件的有效负载，请单击该事件行中的&#x200B;**[!UICONTROL 详细信息]**。
+
+   这将打开详细信息对话框，并显示事件的有效负载。
+
+1. （可选）要删除事件，请执行以下操作：
+
+   1. 通过执行以下操作之一，Select要删除的事件：
+
+      * Select中每个要选择的事件旁边的复选框。
+      * Select **[!UICONTROL Select all]**&#x200B;复选框可选择整个队列，而不仅仅是当前加载的事件。 然后，您可以清除要从选定范围中排除的任何事件的复选框。
+
+   1. 在靠近屏幕底部的栏中，单击&#x200B;**删除**。
