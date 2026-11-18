@@ -22,10 +22,10 @@ feature_v2:
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
     internal-label: Customer experience
-source-git-commit: 01689332f97c15b317e686d11a27cb4dc7e2e8bd
+source-git-commit: 231f1c67031a396b8752fb84a5ff6d017df94267
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 25%
+source-wordcount: '1542'
+ht-degree: 23%
 ---
 # Adobe Storage 模块
 
@@ -84,7 +84,7 @@ ht-degree: 25%
 1. 在Adobe Developer Console中打开您的项目。
 1. 单击&#x200B;**添加到项目**，然后选择&#x200B;**API**。
 1. 从可用API列表中，选择&#x200B;**Adobe Cloud Platform和Collaboration API**。
-1. 在选择身份验证类型屏幕上，选择&#x200B;**OAuth服务器到服务器**，然后单击&#x200B;**下一步**。
+1. 在Select身份验证类型屏幕上，选择&#x200B;**OAuth服务器到服务器**，然后单击&#x200B;**下一步**。
 1. 为凭据添加名称。
 1. 单击&#x200B;**下一步**，然后单击&#x200B;**保存配置的API**。
 1. 记下提供的凭据，在Workfront Fusion中配置连接时将使用这些凭据。
@@ -268,7 +268,7 @@ ht-degree: 25%
   </tr> 
   <tr> 
    <td role="rowheader">角色</td> 
-   <td>选择您希望新受邀用户具有的资产角色。<ul><li>所有者</li><li>编辑者</li><li>查看者</li></ul></td> 
+   <td>Select您希望新邀请的用户具有的资产角色。<ul><li>所有者</li><li>编辑者</li><li>查看者</li></ul></td> 
   </tr> 
   <tr> 
    <td role="rowheader">可以评论</td> 
@@ -366,4 +366,35 @@ ht-degree: 25%
       <p> <img src="/help/workfront-fusion/references/apps-and-modules/assets/quotes-in-json-350x120.png" style="width: 350;height: 120;"> </p> 
      </div> </p> </td>     </tr>
   </tbody>
+</table>
+
+#### 上传文件
+
+此操作模块只需一步即可将文件上传到Adobe Storage。 它创建目标文件、初始化上传、通过预签名的URL传输文件内容并完成上传。 您无需配置单独的传输和完成步骤。
+
+模块支持大文件。
+
+<!-- BECKY CHECK ME: Add the module's output (the screenshot shows only the setup fields). Confirm what the Project and Folder fields list, whether Folder is required, what the File Content field accepts (the hint says binary or text data), and whether the Limit field applies to this module, since the module uploads one file. Also confirm whether the Show advanced settings option contains any fields, and whether the request's comparison to "Generate Presigned Upload URL" should be mentioned here. That module is not documented in this article. -->
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">连接</td> 
+   <td>有关创建与Adobe Storage的连接的说明，请参阅本文中的<a href="#create-a-connection-to-adobe-storage" class="MCXref xref" >创建与Adobe Storage的连接</a>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">项目</td> 
+   <td>Select包含要将该文件上传到的文件夹的项目。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">文件夹</td> 
+   <td>将您要上传文件的文件夹Select。 要将文件上传到项目的根目录，请选择<code>/</code>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">源文件</td> 
+   <td>Select上一个模块中的文件，或映射文件的名称、内容和内容类型。</td> 
+  </tr> 
+ </tbody> 
 </table>
