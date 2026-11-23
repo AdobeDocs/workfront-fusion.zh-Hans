@@ -3,9 +3,9 @@ user-guide-title: Adobe Workfront Fusion 文档
 breadcrumb-title: Adobe Workfront Fusion
 user-guide-description: 使用文档、教程和其他资源，了解如何在贵组织中实施和有效使用 Adobe Workfront Fusion。
 nudge: true
-source-git-commit: 1c28e4007e3e9d6503618482002e506f9393ee57
+source-git-commit: 9df7ab4710dd5b0edc55dc2f640861bda4a173bc
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2853'
 ht-degree: 46%
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 46%
 * Fusion 发行活动 {#fusion-release-activity}
   * [Adobe Workfront Fusion 发行活动](/help/workfront-fusion/fusion-product-releases/fusion-release-activity.md)
   * Fusion版本 — 2026 {#fusion-releases-2026}
+    * [Workfront Fusion发行活动： 2026年11月23日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-11-23.md)
     * [Workfront Fusion发行活动： 2026年11月16日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-11-16.md)
     * [Workfront Fusion发行活动： 2026年11月9日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-11-9.md)
     * [Workfront Fusion发布活动： 2026年11月2日开始的周](/help/workfront-fusion/fusion-product-releases/fusion-releases-2026/fusion-2026-11-2.md)
@@ -328,7 +329,7 @@ ht-degree: 46%
   * [将模块移动到链](/help/workfront-fusion/manage-scenarios/move-modules-to-a-chain.md)
   * [查看运行中场景的数据流](/help/workfront-fusion/manage-scenarios/view-scenario-data-flow.md)
   * [查看 Webhook 队列](/help/workfront-fusion/manage-scenarios/view-webhook-queue.md)
-  * {hide-from-toc}[Workfront Fusion中的AI助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
+  * Workfront Fusion中的{hide-from-toc}[AI助手](/help/workfront-fusion/manage-scenarios/fusion-ai-assistant.md)
   * [运行场景评分专家](/help/workfront-fusion/manage-scenarios/run-scenario-scoring.md)
   * [删除场景元素](/help/workfront-fusion/manage-scenarios/delete-scenario-elements.md)
   * [从方案区域管理方案](/help/workfront-fusion/manage-scenarios/manage-scenarios-from-list.md)
