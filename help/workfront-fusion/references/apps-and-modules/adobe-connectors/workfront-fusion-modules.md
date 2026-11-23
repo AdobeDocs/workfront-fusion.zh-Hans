@@ -9,10 +9,10 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: d50909b128b469ef3e25b93c7dbdede5d4226064
+source-git-commit: 06b6c3b3a37d2b66eae61951ffc0aaf558d1b180
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 19%
+source-wordcount: '1806'
+ht-degree: 17%
 ---
 # Workfront Fusion模块
 
@@ -62,7 +62,7 @@ ht-degree: 19%
     <tbody> 
      <tr> 
       <td role="rowheader">[!UICONTROL 连接类型]</td> 
-      <td>选择要创建的连接类型。</td> 
+      <td>Select要创建的连接类型。</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 连接名称]</td> 
@@ -82,7 +82,7 @@ ht-degree: 19%
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 区域]</td> 
-      <td>选择此连接的Fusion区域。</td> 
+      <td>此连接的Fusion区域Select。</td> 
      </tr> 
     </tbody> 
    </table>
@@ -97,9 +97,53 @@ ht-degree: 19%
 
 ![映射切换](/help/workfront-fusion/references/apps-and-modules/assets/map-toggle-350x74.png)
 
+* [触发器](#triggers)
 * [操作](#actions)
 * [导出](#export)
 * [杂项](#misc)
+
+### 触发器
+
+* [观察记录](#watch-records)
+
+#### 观察记录
+
+此触发器模块在创建、更新或同时创建、更新Workfront Fusion记录时启动方案。 您可以使用过滤器来关注对团队重要的更改，因此无需手动查看Workfront Fusion。
+
+<table style="table-layout:auto"> 
+ <col> 
+ <col> 
+ <tbody> 
+  <tr> 
+   <td role="rowheader">[!UICONTROL 连接]</td> 
+   <td> <p>有关将Workfront Fusion连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">将Workfront Fusion连接到Workfront Fusion</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">观看</td> 
+   <td>Select您希望模块关注的更改类型。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">记录类型</td> 
+   <td>Select要监视的记录类型： <b>方案</b>或<b>执行</b>。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">方案ID</td> 
+   <td><p>如果要监视执行，请选择或映射要监视执行的方案。</p><p>此字段为可选字段。 如果将其留空，则模块将在整个组织中搜索执行。</p></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">显示检查运行</td> 
+   <td><p>如果要监视执行，请选择结果是否包括检查运行：</p><ul><li><b>是</b>：包含检查运行。</li><li><b>否</b>：不包含检查运行。</li><li><b>未定义</b>：不按检查运行筛选结果。</li></ul></td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">筛选</td> 
+   <td>在<b>属性</b>下，对于要使用的每个属性筛选器，单击<b>添加项</b>，选择字段和运算符，然后输入或映射要筛选的值。 值字段仅会显示在需要它的运算符中。 例如，<b>Exists</b>之类的运算符不需要值。 Scenario和Execution记录类型的属性筛选器相同。</td> 
+  </tr> 
+  <tr> 
+   <td role="rowheader">限制</td> 
+   <td>输入或映射Workfront Fusion在一个执行周期内处理的最大结果数。 默认值为200。</td> 
+  </tr> 
+ </tbody> 
+</table>
 
 ### 操作
 
@@ -244,7 +288,7 @@ ht-degree: 19%
   </tr> 
   <tr> 
    <td role="rowheader">记录类型</td> 
-   <td> 选择要删除的记录类型。 </td> 
+   <td> Select要删除的记录类型。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">其他字段</td> 
@@ -267,7 +311,7 @@ ht-degree: 19%
   </tr> 
   <tr> 
    <td role="rowheader">记录类型</td> 
-   <td> 选择要更新的记录类型。 </td> 
+   <td> Select要更新的记录类型。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">名称</td> 
@@ -299,7 +343,7 @@ ht-degree: 19%
   </tr> 
   <tr> 
    <td role="rowheader">文件类型</td> 
-   <td>选择要将日志导出到的文件格式。</td> 
+   <td>Select您要导出日志的文件格式。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">属性</td> 
@@ -315,7 +359,7 @@ ht-degree: 19%
   </tr> 
   <tr> 
    <td role="rowheader">排序方式</td> 
-   <td>选择要作为结果排序依据的字段。</td> 
+   <td>Select要作为结果排序依据的字段。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">方向</td> 
@@ -381,7 +425,7 @@ ht-degree: 19%
    <td> <p>有关将Workfront Fusion连接到Workfront Fusion的说明，请参阅本文中的<a href="#connect-workfront-fusion-to-workfront-fusion" class="MCXref xref">将Workfront Fusion连接到Workfront Fusion</a>。</p> </td> 
   <tr> 
    <td role="rowheader">记录类型</td> 
-   <td> 选择要检索从属关系的记录类型。 </td> 
+   <td> Select要检索其依赖关系的记录类型。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">场景ID/挂接ID</td> 
@@ -471,8 +515,3 @@ ht-degree: 19%
   </tr> 
  </tbody> 
 </table>
-
-
-
-
-
