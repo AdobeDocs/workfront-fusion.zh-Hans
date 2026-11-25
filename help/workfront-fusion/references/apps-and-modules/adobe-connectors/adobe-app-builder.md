@@ -4,10 +4,10 @@ description: Adobe App Builder连接器允许您在场景中使用自定义函�
 author: Becky
 feature: Workfront Fusion
 exl-id: 92661a0c-436b-4fbd-808a-a4fbe3cd2339
-source-git-commit: 02c396f33b6398635462bac8741f446eb82bf5a9
+source-git-commit: c716296d771974ffdb59e916f9865c9efb2ad5a9
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 16%
+source-wordcount: '787'
+ht-degree: 15%
 ---
 # Adobe App Builder模块
 
@@ -64,6 +64,8 @@ ht-degree: 16%
 
 ### 创建连接
 
+使用这些步骤连接已存在的App Builder项目。 有关使用此连接在Fusion中设置自定义函数的步骤，请参阅[连接现有App Builder项目](/help/workfront-fusion/create-scenarios/map-data/map-using-custom-functions.md#connect-an-existing-app-builder-project)。
+
 1. 在模块中，单击&#x200B;**连接**&#x200B;字段旁边的&#x200B;**添加**。
 1. 填写以下字段：
 
@@ -77,11 +79,11 @@ ht-degree: 16%
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 环境]</td> 
-      <td>选择您要连接到生产环境还是非生产环境。</td> 
+      <td>Select（无论您是连接到生产环境还是非生产环境）。</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 类型]</td> 
-      <td>选择<b>服务帐户</b>。</td> 
+      <td>Select <b>服务帐户</b>。</td> 
      </tr> 
      <tr> 
       <td role="rowheader">[!UICONTROL 用户名]</td> 
@@ -112,7 +114,7 @@ ht-degree: 16%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td>
-   <td>选择包含要运行的自定义函数的连接。 </td> 
+   <td>Select包含要运行的自定义函数的连接。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 代码块]</td> 
@@ -133,15 +135,15 @@ ht-degree: 16%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td>
-   <td>选择包含要运行的自定义函数的连接。 </td> 
+   <td>Select包含要运行的自定义函数的连接。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 包]</td> 
-   <td>选择包含要在场景中运行的函数的包。</td> 
+   <td>Select包含要在场景中运行的函数的包。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 变量] </td> 
-   <td>选择要在场景中运行的函数。</p></td> 
+   <td>Select要在此场景中运行的函数。</p></td> 
   </tr> 
    </tbody> 
 </table>
@@ -158,15 +160,15 @@ ht-degree: 16%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td>
-   <td>选择包含要运行的自定义函数的连接。 </td> 
+   <td>Select包含要运行的自定义函数的连接。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 包]</td> 
-   <td>选择包含要纳入场景的变量的资源包。</td> 
+   <td>Select包含要纳入场景的变量的资源包。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 变量] </td> 
-   <td>选择要纳入场景的变量。</p></td> 
+   <td>Select要纳入场景的变量。</p></td> 
   </tr> 
    </tbody> 
 </table>
@@ -183,11 +185,11 @@ ht-degree: 16%
  <tbody> 
   <tr> 
    <td role="rowheader">[!UICONTROL 连接]</td>
-   <td>选择包含要运行的自定义函数的连接。 </td> 
+   <td>Select包含要运行的自定义函数的连接。 </td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 操作]</td> 
-   <td>选择要运行的自定义函数。</td> 
+   <td>Select要运行的自定义函数。</td> 
   </tr> 
   <tr> 
    <td role="rowheader">[!UICONTROL 参数] </td> 
