@@ -207,12 +207,12 @@ claude mcp add --transport http fusion-mcp https://mcp.fusion.adobe.com/mcp
  <col>
  <tbody>
   <tr>
-   <td role="rowheader">[！UICONTROL只读MCP工具]</td>
+   <td role="rowheader">[!UICONTROL 只读MCP工具]</td>
    <td>仅读取数据的工具，如列出和获取方案、执行、连接和数据存储。</td>
   </tr>
   <tr>
-   <td role="rowheader">[！UICONTROL写入MCP工具]</td>
-   <td><p>用于创建、更新、删除或运行项目的工具，例如创建或更新方案、运行方案或删除连接。</p><p>除非同时启用了<b>[！UICONTROL只读MCP工具]</b>，否则无法启用<b>[！UICONTROL写入MCP工具]</b>。</p></td>
+   <td role="rowheader">[!UICONTROL 写入MCP工具]</td>
+   <td><p>用于创建、更新、删除或运行项目的工具，例如创建或更新方案、运行方案或删除连接。</p><p>除非同时启用了<b>[!UICONTROL 只读MCP工具]</b>，否则无法启用<b>[!UICONTROL 写入MCP工具]</b>。</p></td>
   </tr>
  </tbody>
 </table>
