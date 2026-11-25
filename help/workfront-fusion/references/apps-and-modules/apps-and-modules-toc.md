@@ -16,10 +16,10 @@ feature_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 6efe84af0487893a3c33ba2bf6e3db5200f25446
+source-git-commit: 759bfd6f1cf59e597053db18c69f4aa724f60049
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 88%
+source-wordcount: '549'
+ht-degree: 87%
 ---
 # Fusion 应用程序及其模块参考：文章索引
 
@@ -59,6 +59,7 @@ Fusion 为 Adobe 的众多产品和服务提供连接器。
 * [Adobe Experience Manager MCP模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/aem-mcp-modules.md)
 * [Adobe Express模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-express-modules.md)
 * [Adobe Firefly音频和视频模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-audio-video.md)
+* [Adobe Firefly Creative生产MCP模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-creative-production-mcp-modules.md)
 * [Adobe Firefly 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-modules.md)
 * [Adobe Firefly Lightroom模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/adobe-firefly-lightroom.md)
 * [Adobe Frame.io Beta (V4) 模块](/help/workfront-fusion/references/apps-and-modules/adobe-connectors/frame-io-modules.md)

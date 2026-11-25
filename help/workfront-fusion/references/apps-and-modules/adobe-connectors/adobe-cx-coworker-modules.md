@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 6efe84af0487893a3c33ba2bf6e3db5200f25446
+source-git-commit: dbe4560cea79834a0d967cbaf6b98772d8ee09ce
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '2153'
 ht-degree: 6%
 ---
 # Adobe CX Enterprise Coworker模块
@@ -24,8 +24,6 @@ ht-degree: 6%
 * **[!UICONTROL 获取执行状态]**&#x200B;检查您之前启动的请求。
 
 ## 访问权限要求
-
-<!-- BECKY CHECK ME: This table is copied from other Fusion connector articles. The source material does not list access requirements, but says you need an Adobe account that has access to Coworker. Confirm the requirements and whether Coworker needs its own license or entitlement. -->
 
 +++ 展开可查看本文所述功能的访问权限要求。
 
@@ -82,7 +80,7 @@ ht-degree: 6%
       <tr>
         <td role="rowheader">环境</td>
         <td>
-          <p>选择您要连接到生产环境还是非生产环境。</p>
+          <p>Select（无论您是连接到生产环境还是非生产环境）。</p>
         </td>
       </tr>
       <tr>
@@ -97,7 +95,7 @@ ht-degree: 6%
           <p>输入或映射此连接的可选覆盖。 否则，请使用此帐户类型的平台管理的clientId。 为专用的Co-worker帐户注册显示的Fusion回调URL。</p>
         </td>
       <tr>
-        <td role="rowheader">客户端密码</td>
+        <td role="rowheader">客户端密钥</td>
         <td>
           <p>输入或映射此连接的可选覆盖。 否则，使用此帐户类型的平台管理的clientSecret。 使用为配置的IMS环境颁发的凭据。</p>
         </td>
@@ -134,7 +132,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td>[!UICONTROL 连接]</td> 
-   <td> <p>选择您在原始<b>[!UICONTROL 运行提示]</b>执行中使用的相同连接。</p> </td> 
+   <td> <p>Select与您在原始<b>[!UICONTROL 运行提示]</b>执行中使用的连接相同。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 任务ID]</td> 
@@ -155,7 +153,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td>[!UICONTROL 连接]</td> 
-   <td> <p>选择您的同事连接。 有关说明，请参阅本文中的<a href="#connect-adobe-cx-coworker-to-workfront-fusion" class="MCXref xref">将Adobe CX Enterprise Coworker连接到Workfront Fusion</a>。</p> </td> 
+   <td> <p>Select您的同事连接。 有关说明，请参阅本文中的<a href="#connect-adobe-cx-coworker-to-workfront-fusion" class="MCXref xref">将Adobe CX Enterprise Coworker连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 用户提示]</td> 
@@ -164,6 +162,10 @@ ht-degree: 6%
   <tr> 
    <td>[!UICONTROL 等待完成] <i>（可选，高级）</i></td> 
    <td> <p>此选项默认处于打开状态。 如果希望模块等待任务完成或需要注意，请启用此选项。 将其关闭以立即返回初始结果。</p><p>有关详细信息，请参阅本文中的<a href="#wait-for-completion">等待完成</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[!UICONTROL 确认所有工具操作] <i>（可选，高级）</i></td> 
+   <td> <p>此选项默认处于关闭状态。 如果希望同事在此运行期间自动批准支持的工具权限请求，请启用此选项。 工具可能会修改或删除数据。</p><p>有关详细信息，请参阅本文中的<a href="#confirm-all-tool-actions">确认所有工具操作</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL Include原始结果] <i>（可选，高级）</i></td> 
@@ -187,6 +189,19 @@ ht-degree: 6%
 等待受Fusion的模块超时限制。 如果模块超时或停止，则同事可以继续工作。 在这种情况下，您可能无法收到输出或任务ID。
 
 若要完成更多工作，请关闭等待并保存初始&#x200B;**[!UICONTROL 任务ID]**，以便您稍后查看任务。 超时后不要再次自动运行提示。 第一个请求可能已在进行中，重复它可能会重复更改。
+
+#### 确认所有工具操作
+
+当&#x200B;**[!UICONTROL 确认所有工具操作]**&#x200B;处于打开状态时，模块会在运行期间自动批准受支持的工具权限请求，最多可批准20轮和100次工具调用。 此选项默认处于关闭状态。
+
+>[!WARNING]
+>
+>工具可能会修改或删除数据。 启用此选项仅表示您同意执行该操作。 这不是永久的许可授权。
+
+以下条件适用：
+
+* 此选项需要&#x200B;**[!UICONTROL 等待完成]**&#x200B;和兼容的实时权限流。
+* 限制、重播请求、登录、问题和其他审批需要手动审查。
 
 
 ## 模块输出
@@ -238,7 +253,7 @@ ht-degree: 6%
 
 同事可能需要更多信息或授权才能继续。 发生此情况时，**[!UICONTROL 需要注意]**&#x200B;为true，**[!UICONTROL 已完成]**&#x200B;为false。 将结果路由到人，而不是将其视为已完成的工作。
 
-这些模块无法回答后续问题或代表您批准操作。 **[!UICONTROL 获取执行状态]**&#x200B;可以检查任务状态是否已更改，但无法解析输入或授权请求。
+这些模块无法回答后续问题或代表您批准操作，但&#x200B;**[!UICONTROL 确认所有工具操作]**&#x200B;自动批准的支持的工具权限请求除外。 **[!UICONTROL 获取执行状态]**&#x200B;可以检查任务状态是否已更改，但无法解析输入或授权请求。
 
 ### 使用上一个答案
 
@@ -318,6 +333,7 @@ ht-degree: 6%
 * 这些模块不提供限制单个工具的方法。 诸如“不更改任何内容”之类的说明描述了您的意图，但并非强制的只读模式。
 * 可用的工具和技能因客户而异。 连接器不提供技能选择器或保证特定操作，例如创建历程或更新项目。 请勿假定需要批准的请求将在无人参与的情况下完成。
 * 连接器将启动并检查同事请求。 它不会监视项目更改或自动将答案保存到其他应用程序。 根据需要向方案添加适当的触发器、存储和后续模块。
+* 打开&#x200B;**[!UICONTROL 仅确认受信任提示的所有工具操作]**。 启用此选项后，Co-worker会自动批准受支持的工具权限请求，工具可以修改或删除数据。
 * 人工智能生成的答案可能不完整或不准确。 在使用重要结果做出更改或决策之前验证这些结果。
 * 连接器不会自动重试失败的请求。 确保场景的错误处理不会重复出现结果不确定的提示。
 
@@ -329,7 +345,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td role="rowheader">缺少必填字段</td> 
-   <td> <p>选择连接并输入所需的提示或任务ID。</p> </td> 
+   <td> <p>Select连接，并输入所需的提示或任务ID。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">登录失败或访问被拒绝</td> 
