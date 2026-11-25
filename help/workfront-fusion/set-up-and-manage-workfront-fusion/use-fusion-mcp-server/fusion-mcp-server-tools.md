@@ -1,9 +1,9 @@
 ---
 title: Adobe Workfront Fusion MCP服务器工具
 description: Adobe Workfront Fusion MCP服务器向AI代理平台和同事公开的工具的参考列表。
-source-git-commit: 1bfcdb6abe42eca27d2f3ae5a1a1d2cfd3901d33
+source-git-commit: daed5498e4830c7eb66e295081dfd486d3ef610b
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1632'
 ht-degree: 7%
 ---
 
@@ -22,6 +22,8 @@ ht-degree: 7%
 
 * **读取**：检索信息而不更改任何内容，例如列出方案或获取执行。
 * **写入**：创建、更改、运行或删除Fusion数据，例如克隆场景或清除webhook队列。
+
+组织所有者和管理员可以允许或禁用整个组织的只读工具和写入工具。 禁用的工具不会出现在工具列表中，如果代理调用它们，Fusion会拒绝它们。 此设置仅限制通过官方Fusion MCP服务器发出的工具调用。 用户在Fusion用户界面中、通过API或通过任何其他集成执行的操作，仍由每个用户在Fusion中拥有的权限控制。 有关详细信息，请参阅[管理组织的MCP首选项](/help/workfront-fusion/set-up-and-manage-workfront-fusion/use-fusion-mcp-server/configure-fusion-mcp-server.md#manage-mcp-preferences-for-your-organization)。
 
 ## 组织工具
 
@@ -204,7 +206,7 @@ ht-degree: 7%
 | --- | --- | --- | --- |
 | 提交反馈 | `fusion_feedback_submit` | 写入 | 将您的反馈（错误、错误结果、功能请求、表扬或其他）发送到Fusion团队。 |
 
-## 同事
+## Coworker
 
 本文中的所有工具均以协作方式提供，包括独立工具和Fusion右边栏工具，具体取决于相同的读/写设置和您的权限。
 
