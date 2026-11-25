@@ -11,7 +11,7 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: f9cdbcf936fc6b022f6513f47b9b377424731419
+source-git-commit: bf67d1764395a48715cd8a5f665318857d0bdff1
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 1%
@@ -89,8 +89,6 @@ Workfront Fusion用户属于一个组织。
 有关每个团队角色中用户可以执行的特定操作的信息，请参阅[组织和团队角色](/help/workfront-fusion/references/licenses-and-roles/organization-roles.md)。
 
 ### 自定义团队角色
-
-<!-- BECKY CHECK ME: The source material (the Slack announcement) says flexible permissions are live in QA and for internal customers, with a limited pilot with paid customers next, then general availability. Confirm availability at the 2026-11-12 release before publishing, and whether this section should say that the feature is available only to some organizations. -->
 
 除了预定义团队角色之外，每个团队都有一个&#x200B;**[!UICONTROL 角色]**&#x200B;选项卡，您可以在其中创建自己的角色。 您可以创建、更新和删除角色，并准确选择每个角色包括的权限。 您不再受限于一组固定的角色。
 
