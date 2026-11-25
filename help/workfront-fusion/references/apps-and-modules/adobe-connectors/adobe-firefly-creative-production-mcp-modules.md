@@ -125,27 +125,27 @@ Workfront Fusion处理OAuth客户端注册和令牌管理。 您不输入访问�
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL LLM键] <i>（可选，高级）</i></td> 
-   <td> <p>将此字段留空以使用Fusion管理员配置的Adobe托管AI。 若要改用您自己的密钥，请选择一个现有的OpenAI、Anthropic或Amazon Bedrock密钥，或单击<b>[！UICONTROL添加]</b>创建一个密钥。</p><p>您的Firefly登录与LLM凭据不同。</p> </td> 
+   <td>[!UICONTROL LLM键] <i>（可选，高级）</i></td> 
+   <td> <p>将此字段留空以使用Fusion管理员配置的Adobe托管AI。 若要改用您自己的密钥，请选择一个现有的OpenAI、Anthropic或Amazon Bedrock密钥，或单击<b>[!UICONTROL 添加]</b>创建一个密钥。</p><p>您的Firefly登录与LLM凭据不同。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 连接]</td> 
    <td> <p>模块用于发现和调用工具的Adobe Firefly Creative生产连接。 有关说明，请参阅本文中的<a href="#connect-adobe-firefly-creative-production-mcp-to-workfront-fusion" class="MCXref xref">将Adobe Firefly Creative生产MCP连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL只读工具] <i>（可选）</i></td> 
+   <td>[!UICONTROL 只读工具] <i>（可选）</i></td> 
    <td> <p>Select服务器标识为只读的工具。 要选择当前列出的每个工具，请选择<b>Select全部</b>。</p><p>列出的工具数会显示在字段的标签中。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL写入/删除工具] <i>（可选）</i></td> 
+   <td>[!UICONTROL 写入/删除工具] <i>（可选）</i></td> 
    <td> <p>Select服务器未标识为只读的工具。 这些操作可以更改数据或运行工作流。 要选择当前列出的每个工具，请选择<b>Select全部</b>。</p><p>列出的工具数会显示在字段的标签中。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL其他工具（未知权限）] <i>（可选）</i></td> 
+   <td>[!UICONTROL 其他工具（未知权限）] <i>（可选）</i></td> 
    <td> <p>Select工具没有可识别的只读注释。 仅当此类工具可用时，才会显示此字段。 在启用这些工具之前，请查看其行为方式。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL输入提示]</td> 
+   <td>[!UICONTROL 输入提示]</td> 
    <td> <p>描述所需的工作流发现、构成或执行。 最大长度为10,000个JavaScript字符串单位。 有些字符（包括许多表情符号）被计为两个单位。</p><p>在需要时显式请求执行或发布。 运行工作流可能会冲减积分。 异步运行可能会在运行完成之前返回批次ID。</p> </td> 
   </tr> 
  </tbody> 
@@ -178,19 +178,19 @@ Workfront Fusion处理OAuth客户端注册和令牌管理。 您不输入访问�
  <col> 
  <tbody> 
   <tr> 
-   <td>[！UICONTROL响应] (<code>data.response</code>)</td> 
+   <td>[!UICONTROL 响应] (<code>data.response</code>)</td> 
    <td> <p>最终文本响应。 其内容取决于提示和工具结果。 不保证为URL或结构化JSON。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL审核跟踪] (<code>data.auditTrail</code>)</td> 
+   <td>[!UICONTROL 审核跟踪] (<code>data.auditTrail</code>)</td> 
    <td> <p>有关如何处理提示和工具调用的详细信息，包括其参数、结果、时间和成功信息。 根据您组织的数据处理要求处理这些详细信息。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL摘要] (<code>data.summary</code>)</td> 
+   <td>[!UICONTROL 摘要] (<code>data.summary</code>)</td> 
    <td> <p>工具调用的次数、处理时间和执行状态。 查看摘要、响应和审核跟踪，包括任何<code>partial_success</code>结果。</p> </td> 
   </tr> 
   <tr> 
-   <td>[！UICONTROL LLM用法] (<code>data.usage</code>)</td> 
+   <td>[!UICONTROL LLM用法] (<code>data.usage</code>)</td> 
    <td> <p>可选。 观察到LLM响应中的令牌总使用量。 这不是Firefly服务器中的提供商计费、Firefly信用消耗或Fusion无法观察的LLM活动。</p> </td> 
   </tr> 
  </tbody> 
