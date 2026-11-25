@@ -9,9 +9,9 @@ product_v2:
 feature_v2:
   - id: c3a155b4-a54b-4a82-a3d2-c8f0f971673e
     internal-label: Workfront Fusion
-source-git-commit: 6efe84af0487893a3c33ba2bf6e3db5200f25446
+source-git-commit: dbe4560cea79834a0d967cbaf6b98772d8ee09ce
 workflow-type: tm+mt
-source-wordcount: '1974'
+source-wordcount: '2153'
 ht-degree: 6%
 ---
 # Adobe CX Enterprise Coworker模块
@@ -24,8 +24,6 @@ ht-degree: 6%
 * **[!UICONTROL 获取执行状态]**&#x200B;检查您之前启动的请求。
 
 ## 访问权限要求
-
-<!-- BECKY CHECK ME: This table is copied from other Fusion connector articles. The source material does not list access requirements, but says you need an Adobe account that has access to Coworker. Confirm the requirements and whether Coworker needs its own license or entitlement. -->
 
 +++ 展开可查看本文所述功能的访问权限要求。
 
@@ -82,7 +80,7 @@ ht-degree: 6%
       <tr>
         <td role="rowheader">环境</td>
         <td>
-          <p>选择您要连接到生产环境还是非生产环境。</p>
+          <p>Select（无论您是连接到生产环境还是非生产环境）。</p>
         </td>
       </tr>
       <tr>
@@ -97,7 +95,7 @@ ht-degree: 6%
           <p>输入或映射此连接的可选覆盖。 否则，请使用此帐户类型的平台管理的clientId。 为专用的Co-worker帐户注册显示的Fusion回调URL。</p>
         </td>
       <tr>
-        <td role="rowheader">客户端密码</td>
+        <td role="rowheader">客户端密钥</td>
         <td>
           <p>输入或映射此连接的可选覆盖。 否则，使用此帐户类型的平台管理的clientSecret。 使用为配置的IMS环境颁发的凭据。</p>
         </td>
@@ -129,16 +127,16 @@ ht-degree: 6%
  <col> 
  <tbody> 
   <tr> 
-   <td>[!UICONTROL Include原始结果] <i>（可选，高级）</i></td> 
+   <td>[！UICONTROL Include原始结果] <i>（可选，高级）</i></td> 
    <td> <p>此选项默认处于关闭状态。 在输出中包含完整的同事响应。 响应可能包含敏感信息。</p> </td> 
   </tr> 
   <tr> 
    <td>[!UICONTROL 连接]</td> 
-   <td> <p>选择您在原始<b>[!UICONTROL 运行提示]</b>执行中使用的相同连接。</p> </td> 
+   <td> <p>Select与您在原始<b>[！UICONTROL运行提示]</b>执行中使用的连接相同。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 任务ID]</td> 
-   <td> <p>映射<b>[!UICONTROL 返回的任务ID运行提示]</b>。 与返回的内容完全相同，保留为文本。</p> </td> 
+   <td>[！UICONTROL任务ID]</td> 
+   <td> <p>映射<b>[！UICONTROL返回的任务ID运行提示]</b>。 与返回的内容完全相同，保留为文本。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -155,18 +153,22 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td>[!UICONTROL 连接]</td> 
-   <td> <p>选择您的同事连接。 有关说明，请参阅本文中的<a href="#connect-adobe-cx-coworker-to-workfront-fusion" class="MCXref xref">将Adobe CX Enterprise Coworker连接到Workfront Fusion</a>。</p> </td> 
+   <td> <p>Select您的同事连接。 有关说明，请参阅本文中的<a href="#connect-adobe-cx-coworker-to-workfront-fusion" class="MCXref xref">将Adobe CX Enterprise Coworker连接到Workfront Fusion</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 用户提示]</td> 
+   <td>[！UICONTROL用户提示]</td> 
    <td> <p>输入您的说明。 您可以使用早期模块中的多行并映射信息。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL 等待完成] <i>（可选，高级）</i></td> 
+   <td>[！UICONTROL等待完成] <i>（可选，高级）</i></td> 
    <td> <p>此选项默认处于打开状态。 如果希望模块等待任务完成或需要注意，请启用此选项。 将其关闭以立即返回初始结果。</p><p>有关详细信息，请参阅本文中的<a href="#wait-for-completion">等待完成</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>[!UICONTROL Include原始结果] <i>（可选，高级）</i></td> 
+   <td>[！UICONTROL确认所有工具操作] <i>（可选，高级）</i></td> 
+   <td> <p>此选项默认处于关闭状态。 如果希望同事在此运行期间自动批准支持的工具权限请求，请启用此选项。 工具可能会修改或删除数据。</p><p>有关详细信息，请参阅本文中的<a href="#confirm-all-tool-actions">确认所有工具操作</a>。</p> </td> 
+  </tr> 
+  <tr> 
+   <td>[！UICONTROL Include原始结果] <i>（可选，高级）</i></td> 
    <td> <p>此选项默认处于关闭状态。 如果您希望模块在输出中包含完整的同事响应，请启用此选项。 响应可能包含敏感信息。</p> </td> 
   </tr> 
  </tbody> 
@@ -188,6 +190,19 @@ ht-degree: 6%
 
 若要完成更多工作，请关闭等待并保存初始&#x200B;**[!UICONTROL 任务ID]**，以便您稍后查看任务。 超时后不要再次自动运行提示。 第一个请求可能已在进行中，重复它可能会重复更改。
 
+#### 确认所有工具操作
+
+当&#x200B;**[!UICONTROL 确认所有工具操作]**&#x200B;处于打开状态时，模块会在运行期间自动批准受支持的工具权限请求，最多可批准20轮和100次工具调用。 此选项默认处于关闭状态。
+
+>[!WARNING]
+>
+>工具可能会修改或删除数据。 启用此选项仅表示您同意执行该操作。 这不是永久的许可授权。
+
+以下条件适用：
+
+* 此选项需要&#x200B;**[!UICONTROL 等待完成]**&#x200B;和兼容的实时权限流。
+* 限制、重播请求、登录、问题和其他审批需要手动审查。
+
 
 ## 模块输出
 
@@ -198,11 +213,11 @@ ht-degree: 6%
  <col> 
  <tbody> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 任务ID]</td> 
-   <td> <p>标识任务。 当同事提供即时答案而不创建任务时，此项为空。 将此值与<b>[!UICONTROL Get Execution Status]</b>一起使用。</p> </td> 
+   <td role="rowheader">[！UICONTROL任务ID]</td> 
+   <td> <p>标识任务。 当同事提供即时答案而不创建任务时，此项为空。 将此值与<b>[！UICONTROL Get Execution Status]</b>一起使用。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 上下文ID]</td> 
+   <td role="rowheader">[！UICONTROL上下文ID]</td> 
    <td> <p>标识对话。 它不是继续对话的输入。</p><p>有关详细信息，请参阅本文中的<a href="#use-previous-answers">使用以前的答案</a>。</p> </td> 
   </tr> 
   <tr> 
@@ -210,24 +225,24 @@ ht-degree: 6%
    <td> <p>当前任务状态。 请参阅本文中的<a href="#task-states" class="MCXref xref">任务状态</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 已完成]</td> 
+   <td role="rowheader">[！UICONTROL已完成]</td> 
    <td> <p>当任务完成或同事提供即时答案时为True。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 需要注意]</td> 
+   <td role="rowheader">[！UICONTROL需要注意]</td> 
    <td> <p>当同事需要输入或授权时为True。</p><p>有关详细信息，请参阅本文中的<a href="#requests-that-need-attention">需要注意的请求</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 最终助理文本]</td> 
+   <td role="rowheader">[！UICONTROL最终助理文本]</td> 
    <td> <p>任务完成时的最终答案。 当任务处于待处理状态或需要注意时，此项为空。 已完成的响应也可能没有应答文本。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 文本构件（可能包括中间文本）]</td> 
+   <td role="rowheader">[！UICONTROL文本构件（可能包括中间文本）]</td> 
    <td> <p>工作期间返回的文本。 每个项目都可以包括工件ID、名称和文本。 这些项目不一定是最终答案。</p> </td> 
   </tr> 
   <tr> 
-   <td role="rowheader">[!UICONTROL 原始结果（选择加入）]</td> 
-   <td> <p>完整响应。 仅当<b>[!UICONTROL Include Raw result]</b>处于打开状态时，才会包含此项。</p> </td> 
+   <td role="rowheader">[！UICONTROL原始结果（选择加入）]</td> 
+   <td> <p>完整响应。 仅当<b>[！UICONTROL Include Raw result]</b>处于打开状态时，才会包含此项。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -238,7 +253,7 @@ ht-degree: 6%
 
 同事可能需要更多信息或授权才能继续。 发生此情况时，**[!UICONTROL 需要注意]**&#x200B;为true，**[!UICONTROL 已完成]**&#x200B;为false。 将结果路由到人，而不是将其视为已完成的工作。
 
-这些模块无法回答后续问题或代表您批准操作。 **[!UICONTROL 获取执行状态]**&#x200B;可以检查任务状态是否已更改，但无法解析输入或授权请求。
+这些模块无法回答后续问题或代表您批准操作，但&#x200B;**[!UICONTROL 确认所有工具操作]**&#x200B;自动批准的支持的工具权限请求除外。 **[!UICONTROL 获取执行状态]**&#x200B;可以检查任务状态是否已更改，但无法解析输入或授权请求。
 
 ### 使用上一个答案
 
@@ -258,15 +273,15 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td role="rowheader"><code>submitted</code>, <code>working</code></td> 
-   <td> <p>任务待处理。 <b>[!UICONTROL 已完成]</b>为false。 <b>[!UICONTROL 运行提示]</b>在等待时继续等待。 否则，请保存任务ID并稍后检查。</p> </td> 
+   <td> <p>任务待处理。 <b>[！UICONTROL已完成]</b>为false。 <b>[！UICONTROL运行提示]</b>在等待时继续等待。 否则，请保存任务ID并稍后检查。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"><code>completed</code></td> 
-   <td> <p><b>[!UICONTROL 已完成]</b>为true。 查看<b>[!UICONTROL 最终助理文本]</b>和预期的结果。</p> </td> 
+   <td> <p><b>[！UICONTROL已完成]</b>为true。 查看<b>[！UICONTROL最终助理文本]</b>和预期的结果。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"><code>input-required</code>, <code>auth-required</code></td> 
-   <td> <p>这个任务需要注意。 <b>[!UICONTROL 已完成]</b>为false，<b>[!UICONTROL 需要注意]</b>为true。 等待停止。 将结果传送给人工审核。</p> </td> 
+   <td> <p>这个任务需要注意。 <b>[！UICONTROL已完成]</b>为false，<b>[！UICONTROL需要注意]</b>为true。 等待停止。 将结果传送给人工审核。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader"><code>failed</code>, <code>canceled</code>, <code>rejected</code></td> 
@@ -318,6 +333,7 @@ ht-degree: 6%
 * 这些模块不提供限制单个工具的方法。 诸如“不更改任何内容”之类的说明描述了您的意图，但并非强制的只读模式。
 * 可用的工具和技能因客户而异。 连接器不提供技能选择器或保证特定操作，例如创建历程或更新项目。 请勿假定需要批准的请求将在无人参与的情况下完成。
 * 连接器将启动并检查同事请求。 它不会监视项目更改或自动将答案保存到其他应用程序。 根据需要向方案添加适当的触发器、存储和后续模块。
+* 打开&#x200B;**[!UICONTROL 仅确认受信任提示的所有工具操作]**。 启用此选项后，Co-worker会自动批准受支持的工具权限请求，工具可以修改或删除数据。
 * 人工智能生成的答案可能不完整或不准确。 在使用重要结果做出更改或决策之前验证这些结果。
 * 连接器不会自动重试失败的请求。 确保场景的错误处理不会重复出现结果不确定的提示。
 
@@ -329,7 +345,7 @@ ht-degree: 6%
  <tbody> 
   <tr> 
    <td role="rowheader">缺少必填字段</td> 
-   <td> <p>选择连接并输入所需的提示或任务ID。</p> </td> 
+   <td> <p>Select连接，并输入所需的提示或任务ID。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">登录失败或访问被拒绝</td> 
@@ -341,7 +357,7 @@ ht-degree: 6%
   </tr> 
   <tr> 
    <td role="rowheader">状态检查失败</td> 
-   <td> <p>如果错误包括已接受的任务ID，请使用<b>[!UICONTROL Get Execution Status]</b>调查该任务。 不要自动重新启动提示。</p> </td> 
+   <td> <p>如果错误包括已接受的任务ID，请使用<b>[！UICONTROL Get Execution Status]</b>调查该任务。 不要自动重新启动提示。</p> </td> 
   </tr> 
   <tr> 
    <td role="rowheader">运行提示超时或失去响应</td> 
